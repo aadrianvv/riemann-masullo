@@ -132,7 +132,7 @@ We now let $f\in\mathrm H^0(\mathcal O_{F_v}^\times,\mathcal S(F_v))$. The funct
 
 By compactness of the support of $f$, there exists an integer $N'$ such that $f$ vanishes over $F_v-\pi_v^{N'}\mathcal O_{F_v}$, and since $\pi_v^k\mathcal O_{F_v}\subset\pi_v^{N'}\mathcal O_{F_v}$ for every $k\ge N'$, the set of integers $k\in\mathbf Z$ such that $f$ is nonzero over $\pi_v^k\mathcal O_{F_v}$ is bounded below. There therefore exists a minimal such $k\ge N'$, and we rename it as $N'$.
 
-Let $c_{N'}$ be the value of $f$ over the collar $\pi_v^{N'}\mathcal O_{F_v}-\pi_v^{N'+1}\mathcal O_{F_v}$. Then $f-c_{m'}u_{m'}$ vanishes over $\pi_v^{N'}\mathcal O_{F_v}-\pi_v^{N'+1}\mathcal O_{F_v}$, and hence its support, again compact, is contained in $\pi_v^{N'+1}\mathcal O_{F_v}$.
+Let $c_{N'}$ be the value of $f$ over the collar $\pi_v^{N'}\mathcal O_{F_v}-\pi_v^{N'+1}\mathcal O_{F_v}$. Then $f-c_mu_m$ vanishes over $\pi_v^{N'}\mathcal O_{F_v}-\pi_v^{N'+1}\mathcal O_{F_v}$, and hence its support, again compact, is contained in $\pi_v^{N'+1}\mathcal O_{F_v}$.
 
 Upon iterating finitely many times, we obtain a subset $\{c_m,m\in\mathbf Z\}\subset\mathbf C$ such that $c_m$ is nonzero for at most finitely many integers $m$, and such that $f-\sum_{m\in\mathbf Z}c_mu_m$ vanishes over $\pi_v^k\mathcal O_{F_v}-\pi_v^{k+1}\mathcal O_{F_v}$ for every $k\in\mathbf Z$. This means that $f-\sum_{m\in\mathbf Z}c_mu_m$ vanishes over $F_v^\times$, and by continuity it vanishes over $F_v$, forcing $f=\sum_{m\in\mathbf Z}c_mu_m$.
 
@@ -333,7 +333,7 @@ where the $\mathbf C[\mathcal O_{F,S'}^\times]$-module structure on $\mathcal S(
 By the change-of-rings spectral sequence for Tor-functors, we have a canonical $\mathbf C$-linear isomorphism:
 
 $$
-\mathrm{Tor}^{\mathbf C[\mathcal O_{F,S}^\times]}_0(\mathbf C,\mathcal S(\mathbf A_{F,S}))\to\mathrm{Tor}^{\mathbf C[\mathcal O_{F,S'}^\times]}_0(\mathbf C,\mathcal S(\mathbf A_{F,S'}))
+\mathrm{Tor}^{\mathbf C[\mathcal O_{F,S}^\times]}_0(\mathbf C,\mathcal S(\mathbf A_{F,S}))\to\mathrm{Tor}^{\mathbf C[\mathcal O_{F,S'}^\times]}_0(\mathbf C,\mathcal S(\mathbf A_{F,S})\otimes\mathbf C[\mathcal O_{F,S'}^\times/\mathcal O_{F,S}^\times])
 $$
 
 which implies that the image of the linear operator from (6.1.2.18) is:
@@ -604,7 +604,7 @@ $$
 *for each $v\in S_f$, by:*
 
 $$
-\Psi^\infty_{F,S,\chi_S}(f)(x):=\sum_{1\le k\le h_F}\int_{\mathrm{GL}^1(\mathbf A_{F,S_\infty})^1}f(g_{k,\infty}^{-1}g^{-1}x)\chi_{S,\infty}(g_{k,\infty}g)\,\mathrm d\mu_{S_\infty,1}(g) \tag{6.2.2.3}
+\Psi^\infty_{F,S,\chi_S}(f)(x):=\sum_{1\le k\le h_F}\int_{\mathrm{GL}_1(\mathbf A_{F,S_\infty})^1}f(g_{k,\infty}^{-1}g^{-1}x)\chi_{S,\infty}(g_{k,\infty}g)\,\mathrm d\mu_{S_\infty,1}(g) \tag{6.2.2.3}
 $$
 
 ## PDF page 299
@@ -627,7 +627,7 @@ $$
 (\mathcal S(\mathbf A_{F,S_\infty})/\ker(\Psi^\infty_{F,S,\chi_{S,\infty}}))\otimes\rho_{\omega_S}\to\mathrm H_{0,\mathrm{cont}}(\omega_S,\mathcal S(\mathbf A_{F,S})). \tag{6.2.2.5}
 $$
 
-(2) For any $f\in\mathcal S(\mathbf A_{F,S_\infty})$, $\Psi^\infty_{F,S,\chi_S,\infty}(f)$ has semi-exponential decay over $J_{F,S}/J^1_{F,S}$.
+(2) For any $f\in\mathcal S(\mathbf A_{F,S_\infty})$, $\Psi^\infty_{F,S,\chi_{S,\infty}}(f)$ has semi-exponential decay over $J_{F,S}/J^1_{F,S}$.
 
 EXAMPLE 6.2.2.2. For $F=\mathbf Q$ and $\omega=1$, Theorem 6.2.2.1 informs us that $\mathrm H_{0,\mathrm{cont}}(1,\mathcal S(\mathbf A_{\mathbf Q}))$ is linearly and topologically a quotient of $\mathcal S(\mathbf R)\otimes 1_{\widehat{\mathbf Z}}$. This is already a consequence of Theorem 6.2.1.1(2).
 
@@ -639,7 +639,7 @@ The one-dimensional subspace $\mathbf C\cdot\rho_\omega\subset\bigotimes_{v\in S
 
 By [Jar, Part III,Ch.15,§15.2,Prop.3(b),p.327], $\mathcal S(\mathbf A_{F,S_\infty})\otimes\rho_\omega$ is a complemented, hence closed, subspace of $\mathcal S(\mathbf A_{F,S})$, and it is a nuclear Fréchet space since $\mathcal S(\mathbf A_{F,S_\infty})$ is (note that we do not need to use nuclearity of $\mathcal S(\mathbf A_{F,S_\infty})$ to show that the tensor product $\mathcal S(\mathbf A_{F,S_\infty})\otimes\rho_\omega$, as a subspace of $\mathcal S(\mathbf A_{F,S})$, carries the projective tensor product topology, because $\mathbf C\cdot\rho_\omega$ is finite dimensional, and so [Jar, Part III,Ch.15,§15.2,Prop.3(b),p.327] suffices).
 
-By [Gro-f, Ch.4,§5,Thm.2(1),p.148] (see also [SN, §2,Cor.3,p.8]), which applies because both source, by the foregoing, and target, by Theorem 5.2.1.1(2) and Theorem 5.4.1.2(2), are LF-spaces, in order to show openness and surjectivity of the operator in (6.2.2.1), it is enough to show surjectivity.
+By [Gro-f, Ch.4,§5,Thm.2(1),p.148] (see also [SN, §2,Cor.3,p.8]), which applies because both source, by the foregoing, and target, by Theorem 5.2.1.1(2) and Theorem 5.4.1.1(2), are LF-spaces, in order to show openness and surjectivity of the operator in (6.2.2.1), it is enough to show surjectivity.
 
 The operator $\Psi^\infty_{F,S,\chi_S}$ is well defined because the innermost integral converges for all $x\in\mathrm{GL}_1(\mathbf A_{F,S_\infty})$, which is shown by means of an argument closely following that for Lemma 2.2.2.1, since $f$ is of rapid decay at infinity over the real Euclidean space $\mathbf A_{F,S_\infty}$, and $\mathrm{GL}_1(\mathbf A_{F,S_\infty})^1$ is an extension of a compact Hausdorff abelian group by the countable discrete subgroup $\mathcal O^\times_F$, whose action on $\mathbf A_{F,S_\infty}$ by left translation is free and proper, admittiing, by Proposition A.2.4.4 applies to $S=S_\infty$, a fundamental domain with non-empty interior, of the form $\tau(\mathbf R_{>0})\cdot E_{S_\infty,0}$, for $\tau$ a choice of continuous homomorphic section to the $S_\infty$-idelic norm.
 
@@ -694,7 +694,7 @@ We write $g_k=g_{k,\infty}\cdot g_{k,f}$, with $g_{k,\infty}$ the projection of 
 We now use the special form of $f=f_\infty\otimes\bigotimes_{v\in S_f}1_{K_v}$, and rewrite (6.2.2.7) as:
 
 $$
-\int_{\prod_{v\in S_f}F^\times_v}\chi_{S,f}(g_f)\bigotimes_{v\in S_f}1_{K_v}(g_v^{-1}x_v)\,\mathrm d(\bigotimes_{v\in S_f}\mu_v(g_v))\cdot\sum_{1\le k\le h_F}\int_{\mathrm{GL}^1(\mathbf A_{F,S_\infty})^1}\chi_{S,\infty}(g_\infty g_{k,\infty})f_\infty(g_\infty^{-1}g_{k,\infty}^{-1}x)\,\mathrm d\mu_{S_\infty,1}(g_\infty) \tag{6.2.2.9}
+\int_{\prod_{v\in S_f}F^\times_v}\chi_{S,f}(g_f)\bigotimes_{v\in S_f}1_{K_v}(g_v^{-1}x_v)\,\mathrm d(\bigotimes_{v\in S_f}\mu_v(g_v))\cdot\sum_{1\le k\le h_F}\int_{\mathrm{GL}_1(\mathbf A_{F,S_\infty})^1}\chi_{S,\infty}(g_\infty g_{k,\infty})f_\infty(g_\infty^{-1}g_{k,\infty}^{-1}x)\,\mathrm d\mu_{S_\infty,1}(g_\infty) \tag{6.2.2.9}
 $$
 
 where $g_f=(g_v)_{v\in S_f}$ (noting that for any $g\in\mathrm{GL}_1(\mathbf A_{F,S})^1$, the image of $g=(g_v)_{v\in S}$, where the $v$-indexed coordinates are obtained by viewing $g$ as an element of $\mathrm{GL}_1(\mathbf A_{F,S})$, into the quotient $\mathrm{GL}_1(\mathbf A_{F,S})^1/\mathrm{GL}_1(\mathbf A_{F,S_\infty})^1$ is sent to $(g_v)_{v\in S_f}$ by the isomorphism from (6.2.2.6)), and $g_f=(\xi_{S-S_\infty})_f\cdot g_{f,1}\cdot g_{k,f}$. We further note that $\bigcup_{1\le k\le h_F}(\mathcal O^\times_{F,S}/\mathcal O^\times_F)_f\cdot\prod_{v\in S_f}\mathcal O^\times_{F_v}\cdot g_{k,f}=\prod_{v\in S_f}F^\times_v$.
@@ -765,9 +765,9 @@ We define $f_0:=f-A\cdot 1_{\pi^N_v\mathcal O_{F_v}}$, and note that $f_0$ is in
 
 **302** · **CHAPTER 6. LOCAL-GLOBAL STRUCTURES**
 
-We have $Z_v(f_0, \chi_v|\cdot|^s_v) = Z_v(f, \chi_v|\cdot|^s_v) - A\cdot Z_v(1_{\pi^{N_v}_v\mathcal O_{F_v}}, \chi_v|\cdot|^s_v)$ as holomorphic functions on the complex $s$-plane.
+We have $Z_v(f_0, \chi_v|\cdot|^s_v) = Z_v(f, \chi_v|\cdot|^s_v) - A\cdot Z_v(1_{\pi^N_v\mathcal O_{F_v}}, \chi_v|\cdot|^s_v)$ as holomorphic functions on the complex $s$-plane.
 
-We now note that $\pi^{N_v}_v\mathcal O_{F_v}$ is a $\mathcal O^\times_{F_v}$-invariant compact open neighborhood of $0\in F_v$, and hence $1_{\pi^{N_v}_v\mathcal O_{F_v}}$ is a $\mathcal O^\times_{F_v}$-invariant function. It follows, since $\chi_v|_{\mathcal O^\times_{F_v}}$ is non-trivial, that we have $Z_v(1_{\pi^{N_v}_v\mathcal O_{F_v}}, \chi_v|\cdot|^s_v) = 0$.
+We now note that $\pi^N_v\mathcal O_{F_v}$ is a $\mathcal O^\times_{F_v}$-invariant compact open neighborhood of $0\in F_v$, and hence $1_{\pi^N_v\mathcal O_{F_v}}$ is a $\mathcal O^\times_{F_v}$-invariant function. It follows, since $\chi_v|_{\mathcal O^\times_{F_v}}$ is non-trivial, that we have $Z_v(1_{\pi^N_v\mathcal O_{F_v}}, \chi_v|\cdot|^s_v) = 0$.
 
 The calculation from (6.2.2.7) also shows that the induced operator from (6.2.2.5) is a continuous linear bijection, and since both source and target are Fréchet spaces, since $\mathcal S(\mathbf A_{F,S_\infty})/\ker(\Psi^\infty_{F,S,\chi_S})$ is a separated quotient of $\mathcal S(\mathbf A_{F,S_\infty})$ by continuity of $\Psi^\infty_{F,S,\chi_S}$ and $\mathcal S(\mathbf A_{F,S_\infty})$ is a Fréchet space by Proposition 2.1.1.6, and $\mathrm H_{0,\mathrm{cont}}(\omega_S, \mathcal S(\mathbf A_{F,S}))$ is a Fréchet space by Theorem 5.4.1.1(2).
 
@@ -796,10 +796,10 @@ $$
 for large enough fixed $A > 0$. By Theorem A.4.1.1, we deduce that there exists a real number $C > 0$ such that, as $|g|_{S_\infty}\to 0^+$, we have:
 
 $$
-|\Psi^\infty_{F,S,\chi_S,\infty}(f)(g)|\le C|\log|g|_{F,S_\infty}|^{r_1+r_2-1}. \tag{6.2.2.12}
+|\Psi^\infty_{F,S,\chi_{S,\infty}}(f)(g)|\le C|\log|g|_{F,S_\infty}|^{r_1+r_2-1}. \tag{6.2.2.12}
 $$
 
-The estimate in (6.2.2.12) and the rapid decay of $f$ over $\mathbf A_{F,S_\infty}$ imply that $\Psi^\infty_{F,S,\chi_S,\infty}(f)$ is of semi-exponential decay over $J_{F,S}/J^1_{F,S}$.
+The estimate in (6.2.2.12) and the rapid decay of $f$ over $\mathbf A_{F,S_\infty}$ imply that $\Psi^\infty_{F,S,\chi_{S,\infty}}(f)$ is of semi-exponential decay over $J_{F,S}/J^1_{F,S}$.
 
 $\square$
 
@@ -1002,7 +1002,7 @@ $$
 We now consider the linear map:
 
 $$
-T_{S,\chi}\colon A\mathcal S(\mathbf C_{>0})\times A\mathcal S(\mathbf C_{<1}) \xrightarrow{\times(1-s-it_0)^{\delta_\chi}L_{\Sigma_F-S}(\chi,s),\,\times(s+it_0)^{\delta_\chi}L_{\Sigma_F-S}(\overline{\chi},1-s)} A\mathcal S(\mathbf C_{>0})\times A\mathcal S(\mathbf C_{<1}) \tag{6.3.2.11}
+T_{S,\chi}\colon A\mathcal S(\mathbf C_{>0})\times A\mathcal S(\mathbf C_{<1}) \xrightarrow{(\times(1-s-it_0)^{\delta_\chi}L_{\Sigma_F-S}(\chi,s),\,\times(s+it_0)^{\delta_\chi}L_{\Sigma_F-S}(\overline{\chi},1-s))} A\mathcal S(\mathbf C_{>0})\times A\mathcal S(\mathbf C_{<1}) \tag{6.3.2.11}
 $$
 
 with $\delta_\chi = 0$ if $\chi|_{C^1_F}\ne 1$, and $\delta_\chi = 1$ if $\chi|_{C^1_F} = 1$, and with $t_0\in\mathbf R$ uniquely determined by $\chi$ and $\tau$ (i.e. $t_0\in\mathbf R$ is the unique real number such that $\chi(\tau(t)) = t^{it_0}$ as smooth functions of $t\in\mathbf R_{>0}$) such that $s = 1-it_0$ is the unique simple pole of $L_{\Sigma_F-S}(\chi,s)$ (if any) contained in $\mathbf C_{>0}$, sending a pair $(\phi,\psi)$ of holomorphic functions on $\mathbf C_{>0}$, respectively $\mathbf C_{<1}$, each Schwartz uniformly on the vertical strips of bounded width of $\mathbf C_{>0}$, respectively $\mathbf C_{<1}$, to the pair $((1-s-it_0)^{\delta_\chi}L_{\Sigma_F-S}(\chi,s)\phi(s), (s+it_0)^{\delta_\chi}L_{\Sigma_F-S}(\overline{\chi},1-s)\psi(s))$, where
@@ -1025,7 +1025,7 @@ $$
 
 **306** · **CHAPTER 6. LOCAL-GLOBAL STRUCTURES**
 
-if $\chi|_{C^1_F} = 1$. This subspace of $\mathrm H_{0,\mathrm{cont}}((\chi|_{C^1_F})_S, \mathcal S(\mathbf A_{F,S}))$ is linearly and topologically isomorphic to $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ under $\pi_S$.
+if $\chi|_{C^1_F} = 1$. This subspace of $\mathrm H_{0,\mathrm{cont}}((\chi|_{C^1_F})_S, \mathcal S(\mathbf A_{F,S}))$ is linearly and topologically isomorphic to $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ under $\overline{\pi}_S$.
 
 To study the range of $L$ from (6.3.2.3) and (6.3.2.4), we first study the range of $T_{S,\chi}\circ U_{S,\chi}$ within $A\mathcal S(\mathbf C_{>0})\times A\mathcal S(\mathbf C_{<1})$.
 
@@ -1039,7 +1039,7 @@ and observe that by the $S$-local functional equation (see (3.3.1.2) of Theorem 
 
 The operator $T_{S,\chi}$ is sequentially closed. Indeed, for $\{(\phi_m,\psi_m)\}_{m\ge 0}\subset A\mathcal S(\mathbf C_{>0})\times A\mathcal S(\mathbf C_{<1})$ a sequence such that $\{T_{S,\chi}(\phi_m,\psi_m)\}_{m\ge 0}\subset A\mathcal S(\mathbf C_{>0})\times A\mathcal S(\mathbf C_{<1})$ is a Cauchy sequence with limit $(\tilde{\phi},\tilde{\psi})\in A\mathcal S(\mathbf C_{>0})\times A\mathcal S(\mathbf C_{<1})$, the convergence of $(1-s-it_0)^{\delta_\chi}L_{\Sigma_F-S}(\chi,s)\phi_m(s)$ to $\tilde{\phi}(s)$ and of $(s+it_0)^{\delta_\chi}L_{\Sigma_F-S}(\overline{\chi},1-s)\psi_m(s)$ to $\tilde{\psi}_m(s)$ is uniform over the vertical strips of bounded width within $\mathbf C_{>0}$, respectively within $\mathbf C_{<1}$, by the polynomial growth of $(1-s-it_0)^{\delta_\chi}L_{\Sigma_F-S}(\chi,s)$ and $(s+it_0)^{\delta_\chi}L_{\Sigma_F-S}(\overline{\chi},1-s)$ and their derivatives of any order, uniformly on the vertical strips of bounded width within $\mathbf C_{>0}$, respectively $\mathbf C_{<1}$.
 
-In particular, $\tilde{\phi}(s)$ is divisible by $(1-s-it_0)^{\delta_\chi}L_{\Sigma_F-S}(\chi,s)$ and $\tilde{\psi}(s)$ is divisible by $(s+it_0)^{\delta_\chi}L_{\Sigma_F-S}(\overline{\chi},1-s)$ as meromorphic functions over $\mathbf C_{<1}$, i.e. there exist meromorphic functions $\tilde{\phi}_0$ and $\tilde{\psi}_0$ over $\mathbf C_{>0}$, respectively $\mathbf C_{<1}$, holomorphic away from the zeros of $(1-s-it_0)^{\delta_\chi}L_{\Sigma_F-S}(\chi,s)$, respectively $(s+it_0)^{\delta_\chi}L_S(\tilde{e}_\chi,1-s)$, such that $\tilde{\phi}(s) = (1-s-it_0)^{\delta_\chi}L_{\Sigma_F-S}(\chi,s)\tilde{\phi}_0(s)$ over $\mathbf C_{>0}$, and $\tilde{\psi}(s) = (s+it_0)^{\delta_\chi}L_{\Sigma_F-S}(\chi,1-s)\tilde{\psi}_0(s)$ over $\mathbf C_{<0}$.
+In particular, $\tilde{\phi}(s)$ is divisible by $(1-s-it_0)^{\delta_\chi}L_{\Sigma_F-S}(\chi,s)$ and $\tilde{\psi}(s)$ is divisible by $(s+it_0)^{\delta_\chi}L_{\Sigma_F-S}(\overline{\chi},1-s)$ as meromorphic functions over $\mathbf C_{<1}$, i.e. there exist meromorphic functions $\tilde{\phi}_0$ and $\tilde{\psi}_0$ over $\mathbf C_{>0}$, respectively $\mathbf C_{<1}$, holomorphic away from the zeros of $(1-s-it_0)^{\delta_\chi}L_{\Sigma_F-S}(\chi,s)$, respectively $(s+it_0)^{\delta_\chi}L_S(\widetilde{\chi},1-s)$, such that $\tilde{\phi}(s) = (1-s-it_0)^{\delta_\chi}L_{\Sigma_F-S}(\chi,s)\tilde{\phi}_0(s)$ over $\mathbf C_{>0}$, and $\tilde{\psi}(s) = (s+it_0)^{\delta_\chi}L_{\Sigma_F-S}(\overline{\chi},1-s)\tilde{\psi}_0(s)$ over $\mathbf C_{<0}$.
 
 We now prove that in fact both $\tilde{\phi}_0(s)$ and $\tilde{\psi}_0(s)$ are holomorphic. To this end, we use the Asymptotic Residue Theorem (see Theorem B.3.2.1), and the polynomial growth of the reciprocal of $L_{\Sigma_F-S}(\chi,s)$ and its derivatives, on a sequence of horizontal segments with growing absolute ordinates, of a vertical strip of the form $\mathbf C_{[-\varepsilon,1+\varepsilon]}$ for any $0<\varepsilon<1$ (see Corollary B.6.1.8).
 
@@ -1101,7 +1101,7 @@ where $\Psi^\infty_{F,S,\omega_S}$ is the linear operator defined in (6.2.2.2) o
 
 Note that by Theorem 6.2.2.1, the $\mathbf C$-linear subspace of finite linear combinations of entire functions of the form described in (1), (2) and (3), agrees with the range of $L$ in $A\mathcal S(\mathbf C)$, and it is not merely dense in it. This is a consequence of each $\mathcal S(F_v)$ carrying the finest locally convex topology, rendering the algebraic tensor products in Proposition 2.1.4.1 and Theorem 6.2.2.1 topologized with the projective tensor product topology, already complete.
 
-Note also that since we restrict the source of $L$ to the closed co-dimension 2 subspace $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ of $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$, and formation of this closed subspace is compatible with $\pi_S$, i.e. $\pi_S$ for every $S$ sends $\mathrm H_{0,\mathrm{cont}}(\chi_S|_{J^1_{F,S}}, \mathcal S_0(\mathbf A_{F,S}))$ linearly and topologically isomorphically onto $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$, for $\mathcal S_0(\mathbf A_{F,S}) := \ker(\delta_0)\cap\ker(\widehat{\delta}_0)$ (the Fourier transform being the $S$-adelic Fourier transform, defined using the standard additive character), we can choose $f_\infty$ to satisfy these two vanishing conditions in $\mathcal S(\mathbf A_{F,S_\infty})$, in the sole case they are necessary (i.e. $\chi = 1$).
+Note also that since we restrict the source of $L$ to the closed co-dimension 2 subspace $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ of $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$, and formation of this closed subspace is compatible with $\overline{\pi}_S$, i.e. $\overline{\pi}_S$ for every $S$ sends $\mathrm H_{0,\mathrm{cont}}(\chi_S|_{J^1_{F,S}}, \mathcal S_0(\mathbf A_{F,S}))$ linearly and topologically isomorphically onto $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$, for $\mathcal S_0(\mathbf A_{F,S}) := \ker(\delta_0)\cap\ker(\widehat{\delta}_0)$ (the Fourier transform being the $S$-adelic Fourier transform, defined using the standard additive character), we can choose $f_\infty$ to satisfy these two vanishing conditions in $\mathcal S(\mathbf A_{F,S_\infty})$, in the sole case they are necessary (i.e. $\chi = 1$).
 
 The meromorphic function $\psi(s)$ therefore has only removable singularities over $\mathbf C_{>0}$, because the integral defining $\psi$ in (6.3.2.15) is absolutely and locally uniformly convergent for $s\in\mathbf C_{>0}$ (by an analog of the estimate from Theorem 2.4.2.1 leading to Corollary 2.4.3.2, the only difference being that the character of $\mathrm{GL}_1(\mathbf A_{F,S_\infty})$ being used to define the $\theta$-function operator $\Psi_{F,S,\omega_S}$ is not $\mathcal O^\times_F$: it is only the restriction to $\mathrm{GL}_1(\mathbf A_{F,S_\infty})$ of the $\mathcal O^\times_{F,S}$-invariant character $\chi_S$. With this caveat, the same argument for Theorem 2.4.2.1 leads to the analog of Corollary 2.4.3.2 that implies the regularity of $\psi$ over $\mathbf C_{>0}$. We refer the reader to the proof of Theorem 6.2.2.1(2)).
 

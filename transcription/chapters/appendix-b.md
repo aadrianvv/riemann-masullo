@@ -39,7 +39,7 @@ We review classical facts on the growth of “finite” Hecke $L$-functions (i.e
 | B.4.4.1. Weil’s Principal Values from the Explicit Formulas via additive local Fourier transform | 619 |
 | B.4.4.2. Change of local additive character. | 621 |
 
-<sup>1</sup>perhaps omit this mention if in the end the discussion of zero-free regions is removed if not needed
+$^{1}$perhaps omit this mention if in the end the discussion of zero-free regions is removed if not needed
 
 587
 
@@ -355,7 +355,7 @@ $$
 
 if $\mathrm{Re}(z)>a'$. This is [Dur, Ch.11, Thm.11.8].
 
-In this section we provide formulas similar to those above, when the holomorphic function $\Phi(s)$ is not in the class $H^p(\mathbf{C}_{<a})$, but rather it satisfies certain decay properties towards infinity uniformly only on vertical strips$^7$ and not necessarily over the half-plane $\mathbf{C}_{<a}$. Such analogs will involve integrating over the vertical lines bounding a fixed vertical strip.
+In this section we provide formulas similar to those above, when the holomorphic function $\Phi(s)$ is not in the class $H^p(\mathbf{C}_{<a})$, but rather it satisfies certain decay properties towards infinity uniformly only on vertical strips$^7$ and not necessarily over the half-plane $\mathbf{C}_{<a}$. Such analogs will involve integrating over the vertical lines bounding a fixed vertical strips.
 
 We will also be needing an asymptotic version of Cauchy's Residue Theorem, valid under the same assumptions on $\Phi(s)$ as above. The holomorphic functions $\Phi(s)$ we will be considering are Mellin transforms of Schwartz functions on the real line whose support is contained within $\mathbf{R}_{>0}$, which satisfy decay conditions towards both $\infty$ and $0$.
 
@@ -464,7 +464,7 @@ $$
 *(3) For every real number $p\ge 1$, for every integer $N>1$, there exists a real number $B_{N,a,b}>0$ depending also on $\phi$ such that for every $a\le\sigma\le b$, we have the inequality:*
 
 $$
-\|\Phi(\sigma+iy)\|_{L^p(\mathbf{R},\mathrm{d}y)}\le\left(B_{N,a,b}^p+C_{N,a,b}^p\int_{|y|\ge 1/2}\frac{1}{|y|^{pN}}\,\mathrm{d}y\right)^{1/p}. \tag{B.2.1.5}
+\|\Phi(\sigma+iy)\|_{L^p(\mathbf{R},\mathrm{d}y)}\le\left\{B_{N,a,b}^p+C_{N,a,b}^p\int_{|y|\ge 1/2}\frac{1}{|y|^{pN}}\,\mathrm{d}y\right\}^{1/p}. \tag{B.2.1.5}
 $$
 
 *To prove this, we need the following:*
@@ -530,13 +530,13 @@ $$
 and hence, upon calling $B_{N,a,b}$ the right side of (B.2.1.11), we deduce from (B.2.1.11) and (B.2.1.10) the inequality
 
 $$
-|\Phi(\sigma+iy)|\le B_{N,a,b}\cdot\mathrm{1}_{|y|<1/2}(y)+C_{N,a,b}\frac{1}{|y|^N}\cdot\mathrm{1}_{|y|\ge 1/2}(y) \tag{B.2.1.12}
+|\Phi(\sigma+iy)|\le B_{N,a,b}\cdot\mathrm{1}_{|y|<1/2}(y)+\frac{C_{N,a,b}}{|y|^N}\cdot\mathrm{1}_{|y|\ge 1/2}(y) \tag{B.2.1.12}
 $$
 
 for all $a\le\sigma\le b$. We deduce from (B.2.1.12) that for every $p\ge 1$, upon choosing $N>1$:
 
 $$
-\|\Phi(\sigma+iy)\|_{L^p(\mathbf{R},\mathrm{d}y)}\le\left(B_{N,a,b}^p+C_{N,a,b}^p\int_{|y|\ge 1/2}\frac{1}{|y|^{pN}}\,\mathrm{d}y\right)^{1/p} \tag{B.2.1.13}
+\|\Phi(\sigma+iy)\|_{L^p(\mathbf{R},\mathrm{d}y)}\le\left\{B_{N,a,b}^p+C_{N,a,b}^p\int_{|y|\ge 1/2}\frac{1}{|y|^{pN}}\,\mathrm{d}y\right\}^{1/p} \tag{B.2.1.13}
 $$
 
 for all $a\le\sigma\le b$. $\square$
@@ -622,13 +622,13 @@ converges absolutely and uniformly on the compact subsets of the vertical strip 
 For $z\in\mathbf{C}_{>0}$ and any integer $k\ge 0$, it is elementary to verify that
 
 $$
-\int_0^1 t^z(\log t)^k\,\frac{\mathrm{d}t}{t}=\int_{-\infty}^0 e^{zx}x^k\,\mathrm{d}x=(-1)^k k!\,\frac{1}{z^{k+1}}
+\int_0^1 t^z(\log t)^k\,\frac{\mathrm{d}t}{t}=\int_{-\infty}^0 e^{zx}x^k\,\mathrm{d}x=\frac{(-1)^k\,k!}{z^{k+1}}
 $$
 
 (the final equality using induction on $k$ via either $z$-differentiation under the integral sign or integration by parts). Thus, for $\mathrm{Re}(s)>-\mathrm{Re}(\Sigma)$, so $\mathrm{Re}(s+\alpha)>0$ for all $\alpha\in\Sigma$, the value of the integral in (B.2.1.18) is
 
 $$
-g(s):=M(\phi)(s)-\sum_{\alpha\in\Sigma}\sum_{1\le k\le m_\alpha}c_{\alpha,k}(-1)^{k-1}\frac{(k-1)!}{(s+\alpha)^k}
+g(s):=M(\phi)(s)-\sum_{\alpha\in\Sigma}\sum_{1\le k\le m_\alpha}\frac{c_{\alpha,k}(-1)^{k-1}\,(k-1)!}{(s+\alpha)^k}
 $$
 
 but $g(s)=M(\psi)(s)$ is holomorphic over $\mathbf{C}_{(A,b)}$, so we get a meromorphic continuation of $M(\phi)$ over that same strip with poles exactly at $-\Sigma$ with pole-order $m_\alpha$ at $-\alpha$ for each $\alpha\in\Sigma$. $\square$
@@ -651,13 +651,13 @@ Proof. Since $N>1$, we deduce that $f|_{\sigma+i\mathbf{R}}\in L^2(\mathbf{R},\m
 
 For every $\sigma\in(a,b)$, on $\mathbf{R}_{>0}$ the Fourier transform $\phi_\sigma(x):=\frac{1}{2\pi i}\int_{-\infty}^{+\infty}f(\sigma+i\tau)x^{-i\tau}\,\mathrm{d}\tau$ of $f|_{\sigma+i\mathbf{R}}$ (which indeed is given by the integral $\frac{1}{2\pi i}\int_{-\infty}^{+\infty}f(\sigma+i\tau)x^{-i\tau}\,\mathrm{d}\tau$, by absolute integrability of $f$ on $\sigma+i\mathbf{R}$) therefore satisfies $\phi_\sigma\in C_0^m(\mathbf{R}_{>0})$ for all integers $0\le m<N-1$ via $x$-differentiation under the integral sign and the Riemann-Lebesgue Lemma. Each $\phi_\sigma$ is itself square-integrable by Plancherel's Theorem (see [Fol, Thm. 8.29]). By using the Cauchy integral formula for $f(s)x^{-s}$ on rectangles with vertical edges along $\mathrm{Re}(s)=\sigma,\sigma'\in(a,b)$ and heights $T,-T'$ with $T,T'\to\infty$, the decay $f(s)=O(|s|^{-N})$ ensures $x^{-\sigma}\phi_\sigma(x)=x^{-\sigma'}\phi_{\sigma'}(x)$ for all $x>0$; call this $\phi(x)$.
 
-We claim $\phi_\sigma$ is absolutely $(\mathrm{d}t/t)$-integrable over $\mathbf{R}_{>0}$ for all $\sigma\in(a,b)$. Granting this for now, for all $\sigma\in(a,b)$ the inverse Fourier transform of $\phi_\sigma$ is given by $\int_{\mathbf{R}_{>0}}\phi_\sigma(t)t^{ix}\,\frac{dt}{t}$ as a function of $x\in\mathbf{R}$, and this function belongs to $C_0(\mathbf{R})$. Thus, we have
+We claim $\phi_\sigma$ is absolutely $(\mathrm{d}t/t)$-integrable over $\mathbf{R}_{>0}$ for all $\sigma\in(a,b)$. Granting this for now, for all $\sigma\in(a,b)$ the inverse Fourier transform of $\phi_\sigma$ is given by $\int_{\mathbf{R}_{>0}}\phi_\sigma(t)t^{ix}\,\frac{\mathrm{d}t}{t}$ as a function of $x\in\mathbf{R}$, and this function belongs to $C_0(\mathbf{R})$. Thus, we have
 
 $$
 M(\phi)(\sigma+ix):=\int_{\mathbf{R}_{>0}}\phi(t)t^{\sigma+ix}\,\frac{\mathrm{d}t}{t}=\int_{\mathbf{R}_{>0}}\phi_\sigma(t)t^{ix}\,\frac{\mathrm{d}t}{t}=f(\sigma+ix)
 $$
 
-for all $x\in\mathbf{R}$, where the integrand defining $M(\phi)$ is absolutely integrable and the final equality initially holds only for $\mathrm{d}x$-almost all $x$ but then holds for all $x$ since both sides are continuous in $x$. This yields that over $\mathbf{C}_{(a,b)}$ the Mellin transform $M(\phi)$ is an absolutely convergent integral that coincides with the holomorphic $f$.
+for all $x\in\mathbf{R}$, where the integrand defining $M(\phi)$ is absolutely integrable and the final equality initially holds initially only for $\mathrm{d}x$-almost all $x$ but then holds for all $x$ since both sides are continuous in $x$. This yields that over $\mathbf{C}_{(a,b)}$ the Mellin transform $M(\phi)$ is an absolutely convergent integral that coincides with the holomorphic $f$.
 
 ## PDF page 598
 
@@ -736,7 +736,7 @@ $$
 *(3) For every real number $p\ge 1$ and any integer $N>1$, we have the inequality:*
 
 $$
-\|\Phi(\sigma+iy)\|_{L^p(\mathbf{R},\mathrm{d}y)}\le\left(\|\phi(t)e^{(\max\{|a|,|b|\}+N)|\log(t)|}\|_{L^1(\mathbf{R}_{>0},dt/t)}^p+C_{N,a,b}^p\int_{|y|\ge 1/2}\frac{1}{|y|^{pN}}\,\mathrm{d}y\right)^{1/p}. \tag{B.2.1.28}
+\|\Phi(\sigma+iy)\|_{L^p(\mathbf{R},\mathrm{d}y)}\le\left\{\|\phi(t)e^{(\max\{|a|,|b|\}+N)|\log(t)|}\|_{L^1(\mathbf{R}_{>0},\frac{\mathrm{d}t}{t})}^p+C_{N,a,b}^p\int_{|y|\ge 1/2}\frac{1}{|y|^{pN}}\,\mathrm{d}y\right\}^{1/p}. \tag{B.2.1.28}
 $$
 
 *(4) If $\phi$ is supported over $\mathbf{R}_{>1}$, then $C_{N,a,b}$ from (B.2.1.26) depends only on $N,b$, and $\phi$ but not on $a$, and $\Phi\in H^p(\mathbf{C}_{<b})$ for every real number $p\ge 1$.*
@@ -786,19 +786,19 @@ $$
 (3) : We have, for every $y\in\mathbf{R}$:
 
 $$
-|\Phi(\sigma+iy)|\le\|\phi(e^x)e^{\max\{|a|,|b|\}\cdot|x|}\|_{L^1(\mathbf{R},dx)} \tag{B.2.1.36}
+|\Phi(\sigma+iy)|\le\|\phi(e^x)e^{\max\{|a|,|b|\}\cdot|x|}\|_{L^1(\mathbf{R},\mathrm{d}x)} \tag{B.2.1.36}
 $$
 
 and hence from (B.2.1.36) and (B.2.1.34):
 
 $$
-|\Phi(\sigma+iy)|\le\|\phi(e^x)e^{\max\{|a|,|b|\}\cdot|x|}\|_{L^1(\mathbf{R},dx)}\cdot\mathrm{1}_{|y|<1/2}(y)+C_{N,a,b}\frac{1}{|y|^N}\cdot\mathrm{1}_{|y|\ge 1/2}(y). \tag{B.2.1.37}
+|\Phi(\sigma+iy)|\le\|\phi(e^x)e^{\max\{|a|,|b|\}\cdot|x|}\|_{L^1(\mathbf{R},\mathrm{d}x)}\cdot\mathrm{1}_{|y|<1/2}(y)+\frac{C_{N,a,b}}{|y|^N}\cdot\mathrm{1}_{|y|\ge 1/2}(y). \tag{B.2.1.37}
 $$
 
 We deduce from (B.2.1.37) that for every $p\ge 1$, upon choosing $N>1$:
 
 $$
-\|\Phi(\sigma+iy)\|_{L^p(\mathbf{R},\mathrm{d}y)}\le\left(\|\phi(e^x)e^{\max\{|a|,|b|\}\cdot|x|}\|_{L^1(\mathbf{R},dx)}^p+C_{N,a,b}^p\int_{|y|\ge 1/2}\frac{1}{|y|^{pN}}\,\mathrm{d}y\right)^{1/p}. \tag{B.2.1.38}
+\|\Phi(\sigma+iy)\|_{L^p(\mathbf{R},\mathrm{d}y)}\le\left\{\|\phi(e^x)e^{\max\{|a|,|b|\}\cdot|x|}\|_{L^1(\mathbf{R},\mathrm{d}x)}^p+C_{N,a,b}^p\int_{|y|\ge 1/2}\frac{1}{|y|^{pN}}\,\mathrm{d}y\right\}^{1/p}. \tag{B.2.1.38}
 $$
 
 ## PDF page 600
@@ -836,7 +836,7 @@ B.2.2.1. *Cauchy Integrals.* We introduce a class of holomorphic functions that 
 Definition B.2.2.1. *Let $a<b$ be real numbers. Let $\Phi:\mathbf{C}_{(a,b)}\to\mathbf{C}$ be a holomorphic function. We say that $\Phi$ is uniformly Schwartz over the vertical strip $\mathbf{C}_{(a,b)}$ if and only if for every $\varepsilon>0$ such that $a+\varepsilon<b-\varepsilon$, and for every integer $N\ge 1$, there exists a real number $C_{N,\varepsilon}>0$ such that for all sufficiently large $|y|$ uniformly over all $a+\varepsilon\le\sigma\le b-\varepsilon$ we have*
 
 $$
-|\Phi(\sigma+iy)|\le C_{N,\varepsilon}\frac{1}{|y|^N} \tag{B.2.2.1}
+|\Phi(\sigma+iy)|\le\frac{C_{N,\varepsilon}}{|y|^N} \tag{B.2.2.1}
 $$
 
 *(so in particular $\Phi$ is bounded on each $\mathbf{C}_{(a+\varepsilon,b-\varepsilon)}$).*
@@ -866,7 +866,7 @@ Proposition B.2.2.3 (Uniform Riemann-Lebesgue - I). *Let $a,b\in\mathbf{R}$ be t
 *(2) For any integer $N\ge 1$, there exists a real number $C_{N,a,b}>0$ such that for any $a\le\sigma\le b$, we have:*
 
 $$
-|M(\phi)(s)|\le C_{N,a,b}\frac{1}{|y|^N} \tag{B.2.2.2}
+|M(\phi)(s)|\le\frac{C_{N,a,b}}{|y|^N} \tag{B.2.2.2}
 $$
 
 *as $|y|\to+\infty$, uniformly in such $\sigma$. In particular, $M(\phi)$ is uniformly Schwartz over all open vertical strips contained within $\mathbf{C}_{[a,b]}$.*
@@ -1125,7 +1125,7 @@ $$
 -\frac{1}{2\pi i}\int_{a+\varepsilon_1-iT_k}^{a+\varepsilon_1+iT_k}+\frac{1}{2\pi i}\int_{b-\varepsilon_2-iT_k}^{b-\varepsilon_2+iT_k}-\frac{1}{2\pi i}\int_{a+\varepsilon_1-iT_k}^{b-\varepsilon_2-iT_k}+\frac{1}{2\pi i}\int_{a+\varepsilon_1+iT_k}^{b-\varepsilon_2+iT_k}(\Phi(s)f(s)\,\mathrm{d}s), \tag{B.3.2.4}
 $$
 
-The uniformly Schwartz condition on $\Phi$ and slow growth condition on $f$ (which includes at most polynomial growth along vertical lines) ensure that $\Phi(s)f(s)$ is absolutely integrable on the two vertical lines $\operatorname{Re}(s)=a+\varepsilon_1,b-\varepsilon_2$, and if we let $|k|\to+\infty$ then by Lemma B.3.1.2 the third and fourth integrals in (B.3.2.4) tend to $0$ as $|k|\to\infty$, so as $|k|\to\infty$ the left side of (B.3.2.3) has a limit that is equal to
+The uniformly Schwartz condition on $\Phi$ and slow growth condition on $f$ (which includes at most polynomial growth along vertical lines) ensure that $\Phi(s)f(s)$ is absolutely integrable on the two vertical lines $\operatorname{Re}(s)=a+\varepsilon_1,b-\varepsilon_2$, and if we let $|k|\to+\infty$ then by Lemma B.3.1.2 the third and fourth integrals in (B.3.2.4) tend to $0$ $|k|\to\infty$, so as $|k|\to\infty$ the left side of (B.3.2.3) has a limit that is equal to
 
 $$
 -\frac{1}{2\pi i}\int_{a+\varepsilon_1-i\infty}^{a+\varepsilon_1+i\infty}\Phi(s)f(s)\,\mathrm{d}s+\frac{1}{2\pi i}\int_{b-\varepsilon_2-i\infty}^{b-\varepsilon_2+i\infty}\Phi(s)f(s)\,\mathrm{d}s. \tag{B.3.2.5}
@@ -1179,7 +1179,7 @@ $$
 
 *uniformly over the vertical strips of bounded width in $\mathbf C$ as $|s|\to+\infty$ over each fixed such strip.*
 
-PROOF. Let $\{t_1,\ldots,t_N\}\subset\mathbf R_{>0}$ be the finitely many singularities of $\phi$, and call $A>0$ a real number such that $\{t_1,\ldots,t_N\}\subset(1/A,A)$. Then $\int_{1/A}^A\phi(t)t^s\frac{dt}{t}$ is an entire function of $s\in\mathbf C$ since (i) $\phi$ is bounded over $[1/A,A]$ and (ii) by (2), $\int_0^{1/A}+\int_A^{+\infty}\phi(t)t^s\frac{dt}{t}$ (limit of $\int_{1/n}^{1/A}+\int_A^n$ as $n\to\infty$) is an entire function of $s\in\mathbf C$ since both integrals converge absolutely and uniformly on all vertical strips of bounded width in $\mathbf C$. This proves $\Phi$ is entire.
+PROOF. Let $\{t_1,\ldots,t_N\}\subset\mathbf R_{>0}$ be the finitely many singularities of $\phi$, and call $A>0$ a real number such that $\{t_1,\ldots,t_N\}\subset(1/A,A)$. Then $\int_{1/A}^A\phi(t)t^s\frac{\mathrm{d}t}{t}$ is an entire function of $s\in\mathbf C$ since (i) $\phi$ is bounded over $[1/A,A]$ and (ii) by (2), $\int_0^{1/A}+\int_A^{+\infty}\left(\phi(t)t^s\frac{\mathrm{d}t}{t}\right)$ (limit of $\int_{1/n}^{1/A}+\int_A^n$ as $n\to\infty$) is an entire function of $s\in\mathbf C$ since both integrals converge absolutely and uniformly on all vertical strips of bounded width in $\mathbf C$. This proves $\Phi$ is entire.
 
 It remains to prove (B.4.1.2). Let $\{\varphi_0,\varphi_1,\ldots,\varphi_N\}$ be a smooth partition of unity on $\mathbf R_{>0}$ with $\varphi_m$ compactly supported near $t_m$ for $1\le m\le N$ and equal to $1$ near $t_m$ (so $\varphi_0$ vanishes near each $t_m$), we can write
 
@@ -1220,7 +1220,7 @@ $$
 *The following identity holds:*
 
 $$
-\log(\theta)\sum_{m\in\mathbf Z}\chi(\theta^m)\frac{\lim_{t\to(\theta^m)+}\phi(t)+\lim_{t\to(\theta^m)-}\phi(t)}{2}=\sum_{m\in\mathbf Z}\Phi\left(\frac{\log\chi(\theta)+2\pi im}{\log(\theta)}\right), \tag{B.4.1.7}
+\log(\theta)\sum_{m\in\mathbf Z}\chi(\theta^m)\frac{\lim_{t\to(\theta^m)^+}\phi(t)+\lim_{t\to(\theta^m)^-}\phi(t)}{2}=\sum_{m\in\mathbf Z}\Phi\left(\frac{\log\chi(\theta)+2\pi im}{\log(\theta)},\right) \tag{B.4.1.7}
 $$
 
 *where the series in the right side is convergent and independent of the choice of $\log\chi(\theta)$.*
@@ -1230,7 +1230,7 @@ We refer the reader to **[Pinsky**, Ch. 4, §4.2, Exercise 4.2.9, p. 226**]** fo
 REMARK B.4.1.3. There are at most finitely many integers $m\in\mathbf Z$ such that $\theta^m\in\{t_1,\ldots,t_N\}$, and so, away from finitely many integers $m\in\mathbf Z$ we have
 
 $$
-\frac{\lim_{t\to(\theta^m)+}\phi(t)+\lim_{t\to(\theta^m)-}\phi(t)}{2}=\phi(\theta^m).
+\frac{\lim_{t\to(\theta^m)^+}\phi(t)+\lim_{t\to(\theta^m)^-}\phi(t)}{2}=\phi(\theta^m).
 $$
 
 REMARK B.4.1.4. The series in the right side of (B.4.1.7) is generally not absolutely convergent under the stated assumptions on $\phi$,$^{12}$ though it is so if $\phi$ is smooth (as opposed to only piece-wise smooth). An example of $\phi$ that satisfies the assumptions but is not smooth is
@@ -1250,7 +1250,7 @@ which is entire, with value $\log(2)$ at $s=0$.
 Upon choosing, for instance, $\chi=1$ and $\theta=2$, we obtain $\Phi\left(\frac{2\pi im}{\log(2)}\right)=0$ for all $m\in\mathbf Z-\{0\}$ whereas $\Phi(0)=\log(2)$. The left side of (B.4.1.7) is
 
 $$
-\log(2)\sum_{m\in\mathbf Z}\frac{\mathrm{1}_{[1,2]}((2^m)+)+\mathrm{1}_{[1,2]}((2^m)-)}{2}=\log(2)\frac{\mathrm{1}_{[1,2]}(1)}{2}+\log(2)\frac{\mathrm{1}_{[1,2]}(2)}{2}=\log(2).
+\log(2)\sum_{m\in\mathbf Z}\frac{\mathrm{1}_{[1,2]}((2^m)^+)+\mathrm{1}_{[1,2]}((2^m)^-)}{2}=\log(2)\frac{\mathrm{1}_{[1,2]}(1)}{2}+\log(2)\frac{\mathrm{1}_{[1,2]}(2)}{2}=\log(2).
 $$
 
 $^{12}$Can you give an example in which absolute convergence of the sum provably does not hold?
@@ -1290,7 +1290,7 @@ $$
 and the pointwise limit of (B.4.1.11) is:
 
 $$
-\frac{\alpha(x+)+\alpha(x-)}{2} \tag{B.4.1.13}
+\frac{\alpha(x^+)+\alpha(x^-)}{2} \tag{B.4.1.13}
 $$
 
 where for each sign $\pm$ we define the notation $f(x^{\pm}):=\lim_{u\to x^{\pm}}f(u)$ for a function $f$ defined on a punctured neighborhood of $x$. In particular, the limit in (B.4.1.11) is $\alpha(x)$ at each point $x\in\mathbf R$ at which $\alpha$ is continuous.
@@ -1298,7 +1298,7 @@ where for each sign $\pm$ we define the notation $f(x^{\pm}):=\lim_{u\to x^{\pm}
 We have:
 
 $$
-a_m=\int_0^1\alpha(x)\,e^{-2\pi imx}\,\mathrm{d}x=\int_0^1\left(\sum_{k\in\mathbf Z}\phi_0(e^{x+k})\right)e^{-2\pi imx}\,\mathrm{d}x=\sum_{k\in\mathbf Z}\int_0^1\phi_0(e^{x+k})\,e^{-2\pi imx}\,\mathrm{d}x.
+a_m=\int_0^1\alpha(x)\,e^{-2\pi imx}\,\mathrm{d}x=\int_0^1\left\{\sum_{k\in\mathbf Z}\phi_0(e^{x+k})\right\}e^{-2\pi imx}\,\mathrm{d}x=\sum_{k\in\mathbf Z}\int_0^1\phi_0(e^{x+k})\,e^{-2\pi imx}\,\mathrm{d}x.
 $$
 
 The exchange in the order of summation and integration is valid due to $\phi_0(e^x)$ being in $L^1(\mathbf R)$. We further have:
@@ -1322,14 +1322,14 @@ $$
 where $\mathcal F$ denotes the Fourier transform on $\mathbf R$. We deduce the identity of sums of pointwise convergent series:
 
 $$
-\sum_{m\in\mathbf Z:|m|\le N_0}\frac{\phi_0(e^{x+}+m)+\phi_0(e^{x-}+m)}{2}+\sum_{m\in\mathbf Z:|m|>N_0}\phi_0(e^{x+m})=\sum_{m\in\mathbf Z}\mathcal F(\phi_0(e^x))(m)e^{2\pi imx} \tag{B.4.1.14}
+\sum_{m\in\mathbf Z:|m|\le N_0}\frac{\phi_0(e^{x^++m})+\phi_0(e^{x^-+m})}{2}+\sum_{m\in\mathbf Z:|m|>N_0}\phi_0(e^{x+m})=\sum_{m\in\mathbf Z}\mathcal F(\phi_0(e^x))(m)e^{2\pi imx} \tag{B.4.1.14}
 $$
 
 ## PDF page 610
 
 **610** · **CHAPTER B. PREPARATIONS FROM ANALYTIC NUMBER THEORY**
 
-where $N_0>0$ is a large enough integer locally dependent on $x$ such that for every $m\in\mathbf Z$ with $|m|>N_0$ we have $x+m\notin\{t_1,\ldots,t_N\}$.
+where $N_0>0$ is a large enough integer locally dependent on $x$ such that for every $m\in\mathbf Z$ with $|m|>N_0$ we have $x+m\notin\{e^{t_1},\ldots,e^{t_N}\}$.
 
 Any continuous character of $e^{\mathbf Z}$ lifts to a continuous character of $\mathbf R_{>0}$. The dual group $\widehat{e^{\mathbf Z}}$ is the quotient $\mathbf R/2\pi\mathbf Z$, and it is described as the group of characters of the form $\chi(e)=e^{-iu}$ for $u\in\mathbf R$. For $\chi$ one such character, $u$ is uniquely determined modulo $2\pi\mathbf Z$.
 
@@ -1338,7 +1338,7 @@ For $u_0\in\mathbf R$ the unique real number contained in the interval $[0,2\pi)
 Now set $\phi_0:=\widetilde{\chi}\phi$ and apply (B.4.1.14) to this choice of $\phi_0$ to obtain, for every $x\in\mathbf R_{>0}$:
 
 $$
-\sum_{m\in\mathbf Z:|m|\le N_0}\chi(e^m)\frac{\phi(e^{x+}+m)+\phi(e^{x-}+m)}{2}+\sum_{m\in\mathbf Z:|m|>N_0}\chi(e^m)\phi(e^{x+m})=\sum_{m\in\mathbf Z}\mathcal F(\phi_0(e^x))(m)e^{2\pi imx} \tag{B.4.1.15}
+\sum_{m\in\mathbf Z:|m|\le N_0}\chi(e^m)\frac{\phi(e^{x^++m})+\phi(e^{x^-+m})}{2}+\sum_{m\in\mathbf Z:|m|>N_0}\chi(e^m)\phi(e^{x+m})=\sum_{m\in\mathbf Z}\mathcal F(\phi_0(e^x))(m)e^{2\pi imx} \tag{B.4.1.15}
 $$
 
 and we compute:
@@ -1524,7 +1524,7 @@ $$
 As in **[Den**, (2.13)**]**, we obtain:
 
 $$
-\frac{1}{2\pi i}\int_{a-i\infty}^{a+i\infty}\Phi(s)\frac{L'_{\mathfrak p}(s,\chi)}{L_{\mathfrak p}(s,\chi)}\,\mathrm{d}s=\frac{1}{4\pi i}\log N(\mathfrak p)\int_{a-i\infty}^{a+i\infty}\Phi(s)\,\mathrm{d}s-\frac{1}{2\pi i}\int_{a-i\infty}^{a+i\infty}\Phi(s)\frac{1}{s-\frac{\log\chi(\mathfrak p)}{\log N(\mathfrak p)}}\,\mathrm{d}s
+\frac{1}{2\pi i}\int_{a-i\infty}^{a+i\infty}\Phi(s)\frac{L'_{\mathfrak p}(s,\chi)}{L_{\mathfrak p}(s,\chi)}\,\mathrm{d}s=\frac{1}{4\pi i}\log N(\mathfrak p)\int_{a-i\infty}^{a+i\infty}\Phi(s)\,\mathrm{d}s-\frac{1}{2\pi i}\int_{a-i\infty}^{a+i\infty}\frac{\Phi(s)}{s-\frac{\log\chi(\mathfrak p)}{\log N(\mathfrak p)}}\,\mathrm{d}s
 $$
 
 $$
@@ -1540,7 +1540,7 @@ where the exchange of the order of summation and integration is valid by Dominat
 We have $\int_{a+i\mathbf R}\Phi(s)\,\mathrm{d}s=\int_{a+i\mathbf R}(s\Phi(s)/s)\,\mathrm{d}s=0$ by Theorem B.2.2.4(2) with $N=0$, so
 
 $$
-\frac{1}{2\pi i}\int_{a-i\infty}^{a+i\infty}\Phi(s)\frac{L'_{\mathfrak p}(s,\chi)}{L_{\mathfrak p}(s,\chi)}\,\mathrm{d}s=-\frac{1}{2\pi i}\sum_{m\in\mathbf Z}\int_{a-i\infty}^{a+i\infty}\Phi(s)\frac{1}{s-\frac{\log\chi(\mathfrak p)+2\pi im}{\log N(\mathfrak p)}}\,\mathrm{d}s \tag{B.4.1.34}
+\frac{1}{2\pi i}\int_{a-i\infty}^{a+i\infty}\Phi(s)\frac{L'_{\mathfrak p}(s,\chi)}{L_{\mathfrak p}(s,\chi)}\,\mathrm{d}s=-\frac{1}{2\pi i}\sum_{m\in\mathbf Z}\int_{a-i\infty}^{a+i\infty}\frac{\Phi(s)}{s-\frac{\log\chi(\mathfrak p)+2\pi im}{\log N(\mathfrak p)}}\,\mathrm{d}s \tag{B.4.1.34}
 $$
 
 which by (B.2.2.6) from Theorem B.2.2.4 (with $N=0$ and pure imaginary $z=(\log\chi(\mathfrak p)+2\pi im)/\log N\mathfrak p$) gives
@@ -1559,7 +1559,7 @@ $$
 f(s)=\frac{L'(s,\chi)}{L(s,\chi)} \tag{B.4.2.1}
 $$
 
-has slow growth near its poles (in the sense of Definition B.3.1.1) over the vertical strip $\mathbf C_{(1-a,a)}$ for any $1<a\le 2$. Moreover, $\Phi$ is uniformly Schwartz over any vertical strip. Upon replacing $a$ with $a-\varepsilon$ for small enough $\varepsilon>0$ so that $a>1$ and $f$ has no poles on $\sigma=a,1-a$, we may apply the Asymptotic Residue Theorem (namely Theorem B.3.2.1) to obtain the identity with convergence on both sides
+has slow growth near its poles (in the sense of Definition B.3.1.1)) over the vertical strip $\mathbf C_{(1-a,a)}$ for any $1<a\le 2$. Moreover, $\Phi$ is uniformly Schwartz over any vertical strip. Upon replacing $a$ with $a-\varepsilon$ for small enough $\varepsilon>0$ so that $a>1$ and $f$ has no poles on $\sigma=a,1-a$, we may apply the Asymptotic Residue Theorem (namely Theorem B.3.2.1) to obtain the identity with convergence on both sides
 
 $$
 \delta_{\chi}(\Phi(0)+\Phi(1))-\sum_{\rho:L(\rho,\chi)=0}\Phi(\rho)=\lim_{T\to+\infty}\sum_{\rho:|\operatorname{Im}(\rho)|<T}\Phi(\rho)n_{\rho}
@@ -1630,19 +1630,19 @@ $$
 By Dominated Convergence, we are allowed to interchange the order of summation and integration to get
 
 $$
-\log N(\mathfrak p_v)\sum_{m>0}\chi(\mathfrak p_v)^m\int_{a-i\infty}^{a+i\infty}\Phi(s)\frac{1}{N(\mathfrak p_v)^{ms}}\,\mathrm{d}s=\log N(\mathfrak p_v)\sum_{m>0}\frac{i\chi(\mathfrak p_v)^m}{N(\mathfrak p_v)^{ma}}\int_{-\infty}^{+\infty}\Phi(a+it)\frac{1}{N(\mathfrak p_v)^{imt}}\,\mathrm{d}t. \tag{B.4.2.9}
+\log N(\mathfrak p_v)\sum_{m>0}\chi(\mathfrak p_v)^m\int_{a-i\infty}^{a+i\infty}\frac{\Phi(s)}{N(\mathfrak p_v)^{ms}}\,\mathrm{d}s=\log N(\mathfrak p_v)\sum_{m>0})\frac{i\chi(\mathfrak p_v)^m}{N(\mathfrak p_v)^{ma}}\int_{-\infty}^{+\infty}\frac{\Phi(a+it)}{N(\mathfrak p_v)^{imt}}\,\mathrm{d}t. \tag{B.4.2.9}
 $$
 
 By viewing $\Phi(a+it)\in\mathcal S(\mathbf R)$ and $N(\mathfrak p_v)^{imt}$ as tempered distributions for $m>0$, Mellin/Fourier inversion (for $\phi\in\mathcal S(\mathbf R_{>0})$) gives the identity:
 
 $$
-\log N(\mathfrak p_v)\frac{\chi(\mathfrak p_v)^m}{N(\mathfrak p_v)^{ma}}\int_{-\infty}^{+\infty}\Phi(a+it)\frac{1}{N(\mathfrak p_v)^{imt}}\,\mathrm{d}t=\log N(\mathfrak p_v)\chi(\mathfrak p_v)^m\,\delta_{N(\mathfrak p_v)^m}(\phi) \tag{B.4.2.10}
+\log N(\mathfrak p_v)\frac{\chi(\mathfrak p_v)^m}{N(\mathfrak p_v)^{ma}}\int_{-\infty}^{+\infty}\frac{\Phi(a+it)}{N(\mathfrak p_v)^{imt}}\,\mathrm{d}t=\log N(\mathfrak p_v)\chi(\mathfrak p_v)^m\,\delta_{N(\mathfrak p_v)^m}(\phi) \tag{B.4.2.10}
 $$
 
 where $\delta_{N(\mathfrak p_v)^m}$ is Dirac’s $\delta$-distribution. Similarly, we obtain (using that $\mathrm{d}s=i\,\mathrm{d}t$ and $1-s=(1-a)-it$)
 
 $$
-\log N(\mathfrak p_v)\int_{a-i\infty}^{a+i\infty}\Phi(1-s)\frac{\bar\chi(\mathfrak p_v)^m}{N(\mathfrak p_v)^{ms}}\,\mathrm{d}s=-i\log N(\mathfrak p_v)\frac{\bar\chi(\mathfrak p_v)^m}{N(\mathfrak p_v)^m}\delta_{N(\mathfrak p_v)^{-m}}(\phi) \tag{B.4.2.11}
+\log N(\mathfrak p_v)\int_{a-i\infty}^{a+i\infty}\Phi(1-s)\frac{\bar\chi(\mathfrak p_v)^m}{N(\mathfrak p_v)^{ms}}\,\mathrm{d}s=-i\log N(\mathfrak p_v)\frac{\bar\chi(\mathfrak p_v^m)}{N(\mathfrak p_v)^m}\delta_{N(\mathfrak p_v)^{-m}}(\phi) \tag{B.4.2.11}
 $$
 
 B.4.2.3. *Archimedean Local Factors.* We now fix $v$ an Archimedean place.
@@ -1715,7 +1715,7 @@ $^{15}$Brian should double-check this.
 
 **B.4. EXPLICIT FORMULAS FOR HECKE L-FUNCTIONS** · **617**
 
-Proof. The identity in (B.4.2.17) is obtained by combining (B.4.2.2) with (B.4.2.5), (B.4.2.6), (B.4.2.10) and (B.4.2.11), together with Proposition B.4.2.1. $\square$
+Proof. The identity in (B.4.2.17) is obtained by combining (B.4.2.2) with (B.4.2.5), (B.4.2.6), (B.4.2.7), (B.4.2.10) and (B.4.2.11), together with Proposition B.4.2.1. $\square$
 
 We note that the main difficulty in the proof of the main result in [Weil-b], explained in [Lang-a, Ch. X], and in [Bar], further explained in [Lang-b, Ch. XVII] stems from dropping any smoothness assumptions on the test function $\phi$. As discussed in this section, under the additional assumption that $\phi$ be Schwartz and with exponential decay the Explicit Formulas are ultimately a consequence of the Residue Theorem in its asymptotic version of Theorem B.3.2.1, and Mellin/Fourier inversion.
 
@@ -1854,7 +1854,7 @@ $$
 *(1) If $v$ is real, then we have:*
 
 $$
-\tag{B.4.3.13} \langle\widehat{J_v},f\rangle_{\mathcal{S}(F_v),\mathcal{S}(F_v)'} = -\lim_{\varepsilon\to 0^+}\left[\int_{|x|\ge\varepsilon} \frac{f(x)\,\mathrm{d}x}{|x|} + 2f(0)\log(\varepsilon)\right] - 2(\log(2\pi)+\gamma)f(0)
+\tag{B.4.3.13} \langle\widehat{J_v},f\rangle_{\mathcal{S}(F_v),\mathcal{S}(F_v)'} = -\lim_{\varepsilon\to 0^+}\left(\int_{|x|\ge\varepsilon} f(x)\,\frac{\mathrm{d}x}{|x|} + 2f(0)\log(\varepsilon)\right) - 2(\log(2\pi)+\gamma)f(0)
 $$
 
 *for every $f \in \mathcal{S}(\mathbf{R})$.*
@@ -1862,7 +1862,7 @@ $$
 *(2) If $v$ is complex, then we have:*
 
 $$
-\tag{B.4.3.14} \langle\widehat{J_v},f\rangle_{\mathcal{S}(F_v),\mathcal{S}(F_v)'} = -\lim_{\varepsilon\to 0^+}\left[\int_{|z|_2\ge\varepsilon} \frac{f(x)\,|\mathrm{d}z\wedge \mathrm{d}\bar{z}|}{|z|_2} + 2\pi f(0)\log(\varepsilon)\right] - 4\pi(\log(2\pi)+\gamma)f(0)
+\tag{B.4.3.14} \langle\widehat{J_v},f\rangle_{\mathcal{S}(F_v),\mathcal{S}(F_v)'} = -\lim_{\varepsilon\to 0^+}\left(\int_{|z|^2\ge\varepsilon} f(x)\,\frac{|\mathrm{d}z\wedge \mathrm{d}\bar{z}|}{|z|^2} + 2\pi f(0)\log(\varepsilon)\right) - 4\pi(\log(2\pi)+\gamma)f(0)
 $$
 
 *for every $f \in \mathcal{S}(\mathbf{C})$.*
@@ -1881,7 +1881,7 @@ $$
 \tag{B.4.4.1} \mathrm{C}_{\alpha_{v,0}}\int_{F_v^\times} f(g)\,\mathrm{d}\mu_v(g) := \begin{cases} -\langle\widehat{J_v},f\rangle_{\mathcal{S}(F_v),\mathcal{S}(F_v)'}, & v\mid\infty, \\ -\mu_v(\mathcal{O}_{F_v}^\times)\langle\widehat{J_v},f\rangle_{\mathcal{S}(F_v),\mathcal{S}(F_v)'}, & v\nmid\infty \end{cases}
 $$
 
-*for all $f \in \mathcal{S}(F_v)$, where the notation $\langle\widehat{J_v},\cdot\rangle_{\mathcal{S}(F_v),\mathcal{S}(F_v)'}$ means $\int_{F_v} J_v\widehat{f}\,\mathrm{d}\nu_v$ by definition, where $\nu_v$ is the self-dual measure on $F_v$ with respect to $\alpha_{v,0}$ and the Fourier transform $\widehat{f}$ also rests on $\nu_v$.$^{21}$ We refer to $\mathrm{C}_{\alpha_{v,0}}\int_{F_v^\times}(\cdot)\,\mathrm{d}\mu_v$ as Connes' Principal Value relative to $\alpha_{v,0}$, for $\int_{F_v^\times}(\cdot)\,d\mu_v$.*
+*for all $f \in \mathcal{S}(F_v)$, where the notation $\langle\widehat{J_v},\cdot\rangle_{\mathcal{S}(F_v),\mathcal{S}(F_v)'}$ means $\int_{F_v} J_v\widehat{f}\,\mathrm{d}\nu_v$ by definition, where $\nu_v$ is the self-dual measure on $F_v$ with respect to $\alpha_{v,0}$ and the Fourier transform $\widehat{f}$ also rests on $\nu_v$.$^{21}$ We refer to $\mathrm{C}_{\alpha_{v,0}}\int_{F_v^\times}(\cdot)\,\mathrm{d}\mu_v$ as Connes' Principal Value relative to $\alpha_{v,0}$, for $\int_{F_v^\times}(\cdot)\,\mathrm{d}\mu_v$.*
 
 $^{16}$Brian needs to recheck the proof, both for factors of 2 and $2\pi$ in the integrals and for the coefficient of $f(0)$ in both parts
 
@@ -1988,7 +1988,7 @@ $$
 $$
 
 $$
-\tag{B.4.4.8} = \frac{N(\mathfrak{p}_v)}{N(\mathfrak{p}_v)-1}\int_{F_v} \frac{f(1+x)}{|1+x|_v^{1/2}}\frac{\mathrm{d}\nu_v(x)}{|x|_v} = \frac{N(\mathfrak{p}_v)}{N(\mathfrak{p}_v)-1}\int_{F_v} \frac{f(1+y^{-1})}{|1+y^{-1}|_v^{1/2}}\frac{\mathrm{d}\nu_v(y^{-1})}{|y^{-1}|_v} = \frac{N(\mathfrak{p}_v)}{N(\mathfrak{p}_v)-1}\int_{F_v} \frac{f(y)|y|_v}{|y-1|_v|y|_v^{1/2}}\frac{\mathrm{d}\nu_v(y)}{|y|_v} = \int_{F_v^\times} \frac{f(x)|x|_v^{1/2}}{|1-x|_v}\,\mathrm{d}\mu_v(x),
+\tag{B.4.4.8} = \frac{N(\mathfrak{p}_v)}{N(\mathfrak{p}_v)-1}\int_{F_v} \frac{f(1+x)}{|1+x|_v^{1/2}}\frac{\mathrm{d}\nu_v(x)}{|x|_v} = \frac{N(\mathfrak{p}_v)}{N(\mathfrak{p}_v)-1}\int_{F_v} \frac{f(1+y-1)}{|1+y-1|_v^{1/2}}\frac{\mathrm{d}\nu_v(y-1)}{|y-1|_v} = \frac{N(\mathfrak{p}_v)}{N(\mathfrak{p}_v)-1}\int_{F_v} \frac{f(y)|y|_v}{|y-1|_v|y|_v^{1/2}}\frac{\mathrm{d}\nu_v(y)}{|y|_v} = \int_{F_v^\times} \frac{f(x)|x|_v^{1/2}}{|1-x|_v}\,\mathrm{d}\mu_v(x),
 $$
 
 We deduce that (B.4.4.5) holds on the hyperplane $\ker(\delta_1) \subset C_c^\infty(F_v^\times)$.
@@ -1996,11 +1996,11 @@ We deduce that (B.4.4.5) holds on the hyperplane $\ker(\delta_1) \subset C_c^\in
 We have:
 
 $$
-\langle\widehat{J_v},f(1+x)|1+x|_v^{-1/2}\rangle_{\mathcal{D}(F_v^\times),\mathcal{D}(F_v^\times)'} = \langle J_v,\int_{F_v} f(1+y)|1+y|_v^{-1/2}\alpha_{v,0}(xy)\,\mathrm{d}\nu_v(y)\rangle_{\mathcal{D}(F_v^\times),\mathcal{D}(F_v^\times)'}
+\langle\widehat{J_v},f(1+x)|1+x|_v^{-1/2}\rangle_{\mathcal{D}(F_v^\times),\mathcal{D}(F_v^\times)'} = \langle J_v,\int_{F_v} f(1+y)|1+y|_v^{-1/2}\overline{\alpha_{v,0}(xy)}\,\mathrm{d}\nu_v(y)\rangle_{\mathcal{D}(F_v^\times),\mathcal{D}(F_v^\times)'}
 $$
 
 $$
-\tag{B.4.4.9} = \langle J_v,\alpha_{v,0}(x)\int_{F_v} f(z)|z|_v^{-1/2}\alpha_{v,0}(xz)\,\mathrm{d}\nu_v(z)\rangle_{\mathcal{D}(F_v^\times),\mathcal{D}(F_v^\times)'} = \langle\widehat{\alpha_{v,0}\cdot J_v},f(x)|x|_v^{-1/2}\rangle_{\mathcal{D}(F_v^\times),\mathcal{D}(F_v^\times)'}
+\tag{B.4.4.9} = \langle J_v,\alpha_{v,0}(x)\int_{F_v} f(z)|z|_v^{-1/2}\overline{\alpha_{v,0}(xz)}\,\mathrm{d}\nu_v(z)\rangle_{\mathcal{D}(F_v^\times),\mathcal{D}(F_v^\times)'} = \langle\widehat{\alpha_{v,0}\cdot J_v},f(x)|x|_v^{-1/2}\rangle_{\mathcal{D}(F_v^\times),\mathcal{D}(F_v^\times)'}
 $$
 
 which, combined with (B.4.4.5), shows that $T := \widehat{\alpha_{v,0}\cdot J_v}$ is the unique element in $\mathcal{D}(F_v^\times)'$ that restricts on $\ker(\delta_1) \subset \mathcal{D}(F_v^\times)$ to the functional:
@@ -2195,7 +2195,7 @@ Proof. Multiplication by $|\cdot|_F^a$ is a linear topological automorphism on $
 
 $^{25}$Need some hypothesis on $\mathcal{Z}$ preventing “too many” $c \in \mathcal{Z}$ near a given large height.
 
-$^{26}$Must explain clearly how we are bringing in that $Z$ doesn't accumulate too much at a given height.
+$^{26}$Must explain clearly how we are bringing in that $\mathcal{Z}$ doesn't accumulate too much at a given height.
 
 ## PDF page 625
 
@@ -2327,7 +2327,7 @@ $$
 
 defined as the composition of $\gamma_N(t):=t\cdot(\tau_1,\dots,\tau_N)\in\mathbf{R}^N$ followed by the projection $\theta_N:\mathbf{R}^N\to\mathbf{T}^N$.
 
-When $\tau_1,\dots,\tau_N$ are $\mathbf{Q}$-linearly independent, $\gamma_N$ is injective with dense image, as we will be recalling in Theorem B.5.2.1. In this case, $\overline{\gamma}_N$ is a one-parameter subgroup of the torus $\mathbf{T}^N$, and it induces a continuous flow on $\mathbf{T}^N$ by left-translation with dense image.
+When $\tau_1,\dots,\tau_N$ are $\mathbf{Q}$-linearly independent, $\overline{\gamma}_N$ is injective with dense image, as we will be recalling in Theorem B.5.2.1. In this case, $\overline{\gamma}_N$ is a one-parameter subgroup of the torus $\mathbf{T}^N$, and it induces a continuous flow on $\mathbf{T}^N$ by left-translation with dense image.
 
 **B.5.2. Kronecker-Weyl.** The following Theorem is the multi-dimensional version of [HK, Part 1, Thm.4.1.15] and its method of proof is analogous to the argument [HK, Part 1, §4.1.6]. We will only be requiring the case when $(\tau_1,\dots,\tau_N)\in\mathbf{R}^N$ has $\mathbf{Q}$-independent coordinates. A full proof in the general case when the vector $(\tau_1,\dots,\tau_N)\in\mathbf{R}^N$ in the statement has not necessarily $\mathbf{Q}$-independent coordinates can be found in the appendix of [Hu1, §4.3, Proof of Lemma 4.3], and we will be following it closely to establish the case of continuous functions.
 
@@ -2384,14 +2384,14 @@ $$
 for all $x\in X$. We now observe that we have
 
 $$
-\int_X (u_2-u_1)(x)\,\mathrm{d}\mu(x)\le\mu(U')-\mu(K_1)=\mu(U'-\bar U)+\mu(\partial U)+\mu(\bar U)-\mu(K_1)<\varepsilon/2+\mu(\partial U)+\varepsilon/2=\varepsilon
+\int_X (u_2-u_1)(x)\,\mathrm{d}\mu(x)\le\mu(U')-\mu(K_1)=\mu(U'-\bar U)+\mu(\partial U)+\mu(U)-\mu(K_1)<\varepsilon/2+\mu(\partial U)+\varepsilon/2=\varepsilon
 $$
 
 since we assumed $\mu(\partial U)=0$. This completes the proof of the Lemma.
 
 $\square$
 
-REMARK B.5.2.3. (1) Let $U\subset[0,1)^N$ be a subset such that $\partial U$ (in $[0,1)^N$) is a Lebesgue null-set. Then, upon denoting by $\hat U$ the image of $U$ under $\theta_N$ in $\mathbf{T}^N$, we have $\mu_N(\partial\hat U)=0$. To see this, we proceed as follows. Since $\theta_N:\mathbf{R}^N\to\mathbf{T}^N$ is a covering map, it is open. When restricted to $[0,1]^N$, it is also closed since $\mathbf{T}^N$ is compact and $[0,1]^N$ is Hausdorff. Upon calling $\bar U$ the closure of $U$ in $[0,1]^N$, the Lebesgue measure of the boundary of $\bar U$ in $[0,1]^N$ is again zero, since $(\bar U-U)\cap[0,1)^N$ has measure zero by assumption, and $[0,1]^N-[0,1)^N$ is a null-set. Since we have $\theta_N(\bar U-U)=\partial\hat U$, it follows that $\partial\hat U$ is a $\mu_N$-null set.
+REMARK B.5.2.3. (1) Let $U\subset[0,1)^N$ be a subset such that $\partial U$ (in $[0,1)^N$) is a Lebesgue null-set. Then, upon denoting by $\hat U$ the image of $U$ under $\theta_N$ in $\mathbf{T}^N$, we have $\mu_N(\partial\hat U)=0$. To see this, we proceed as follows. Since $\theta_N:\mathbf{R}^N\to\mathbf{T}^N$ is a covering map, it is open. When restricted to $[0,1]^N$, it is also closed since $\mathbf{T}^N$ is compact and $[0,1]^N$ is Hausdorff. Upon calling $\bar U$ the closure of $U$ in $[0,1]^N$, the Lebesgue measure of the boundary of $U$ in $[0,1]^N$ is again zero, since $(\bar U-U)\cap[0,1)^N$ has measure zero by assumption, and $[0,1]^N-[0,1)^N$ is a null-set. Since we have $\theta_N(\bar U-U)=\partial\hat U$, it follows that $\partial\hat U$ is a $\mu_N$-null set.
 
 (2) For any Jordan-measurable subset $\Delta\subset[0,1)^N$, we deduce that the image $\hat\Delta$ in $\mathbf{T}^N$ has boundary of $\mu_N$-measure zero, and so its interior qualifies for the $U$ in Lemma B.5.2.2 and has the same $\mu_N$-measure as $\hat\Delta$.
 
@@ -2407,7 +2407,7 @@ $$
 
 gives a $\mathbf{Q}$-linear dependence relation among the $N$ coordinates of $\tau$ since $N>1$, a contradiction. Thus, $\overline{\gamma}$ is injective.
 
-We now call $G$ the closure of the image of $\overline{\gamma}$ in $\mathbf{T}^N$. This is a closed connected subgroup of $\mathbf{T}^N$ and as such it is contained in the kernel of a non-trivial character $\chi:\mathbf{T}^N\to\mathbf{T}$ if the dimension of $G$ is less than $N$. But
+We now call $G$ the closure of the image of $\overline{\gamma}$ in $\mathbf{T}^N$. This is a closed connected subgroup of $\mathbf{T}^N$ and as such it is contained in the kernel a non-trivial character $\chi:\mathbf{T}^N\to\mathbf{T}$ if the dimension of $G$ is less than $N$. But
 
 $$
 \chi(z_1,\dots,z_N)=\prod_j z_j^{a_j}
@@ -2421,11 +2421,11 @@ In the general case, let $G$ be the closure of the image of $\overline{\gamma}$.
 
 **B.5. RECURRENCE AND EQUIDISTRIBUTION** · **629**
 
-Then $\chi$ is of the form $\chi(z_1\cdots z_N)=\prod_{1\le k\le N}z_k^{a_k}$ for a unique vector $(a_k)_{1\le k\le N}\in\mathbf{Z}^N$, and the defining condition of $G^\perp$ is $1=\chi(e^{2\pi i\tau_1 t}\cdots e^{2\pi i\tau_N t})=e^{2\pi i t(\sum_{1\le k\le N}\tau_k a_k)}$ for all $t\in\mathbf{R}$, which reads $\sum_{1\le k\le N}\tau_k a_k=0$.
+Then $\chi$ is of the form $\chi(z_1\cdots z_N)=\prod_{1\le k\le N}z_k^{a_k}$ for a unique vector $(a_k)_{1\le k\le N}\in\mathbf{Z}^N$, and the defining condition of $G^\perp$ is $1=\chi(e^{2\pi i\tau_1 t}\cdots e^{2\pi i\tau_N t})=e^{2\pi i t(\sum\tau_k a_k)}$ for all $t\in\mathbf{R}$, which reads $\sum_{1\le k\le N}\tau_k a_k=0$.
 
-It follows that $G^\perp$ is contained within a $\mathbf{Q}$-linear subspace of $\mathbf{Q}^N$ of codimension $d$, and it equals the intersection of such a subspace with $\mathbf{Z}^N$. The rank of $G^\perp$ is therefore $N-d$, and $\widehat{\mathbf{T}^N/G^\perp}\simeq\hat G$ by [DE, Prop. 3.6.1(c)] (see also Lemma D.1.4.6(3)), from which it follows that $G$ is a $d$-dimensional closed subtorus of $\mathbf{T}^N$.
+It follows that $G^\perp$ is contained within a $\mathbf{Q}$-linear subspace of $\mathbf{Q}^N$ of codimension $d$, and it equals the intersection of such a subspace with $\mathbf{Z}^N$. The rank of $G^\perp$ is therefore $N-d$, and $\widehat{\mathbf{T}^N}/G^\perp\simeq\hat G$ by [DE, Prop. 3.6.1(c)] (see also Lemma D.1.4.6(3)), from which it follows that $G$ is a $d$-dimensional closed subtorus of $\mathbf{T}^N$.
 
-(2): We first assume that the coordinates of $\tau$ are $\mathbf{Q}$-linearly independent, so $\gamma(\mathbf{R})$ has closure $\mathbf{T}^N$ by (1). Assume that (B.5.2.1) holds for all continuous functions $u\in C(\mathbf{T}^N)$. Let $\Delta\subset[0,1)^N$ be any Jordan-measurable open subset (so $\mu(\partial\Delta)=0$) and denote by $\hat\Delta$ its image in $\mathbf{T}^N$.
+(2): We first assume that the coordinates of $\tau$ are $\mathbf{Q}$-linearly independent, so $\overline{\gamma(\mathbf{R})}$ has closure $\mathbf{T}^N$ by (1). Assume that (B.5.2.1) holds for all continuous functions $u\in C(\mathbf{T}^N)$. Let $\Delta\subset[0,1)^N$ be any Jordan-measurable open subset (so $\mu(\partial\Delta)=0$) and denote by $\hat\Delta$ its image in $\mathbf{T}^N$.
 
 Since $\Delta$ is Jordan-measurable, its boundary is a null-set for the Lebesgue measure on $\mathbf{R}^N$, and hence $\mu_N(\partial\hat\Delta)=0$. Since integration on $\mathbf{T}^N$ with respect to $\mu_N$ is insensitive to $\mu_N$-null-sets, by openness of $\theta$ (a continuous quotient homomorphism of topological groups) we may replace $\Delta$ by its interior, to the effect of replacing $\hat\Delta$ by its interior.
 
@@ -2507,7 +2507,7 @@ By the Stone-Weierstrass Theorem, $A\subset C(\mathbf{T}^N)$ is dense with respe
 
 Before treating such $u$, we return to the general case (allowing $\mathbf{Q}$-linear dependence among the coordinates of $\tau$). Since $G$ is a closed connected subgroup of $\mathbf{T}^N$, it is itself isomorphic, as a Lie group, to a torus. Any choice of isomorphism $G\simeq\mathbf{T}^d$ of Lie groups pushes forward $\mu_G$ to the standard volume-1 Haar measure on $\mathbf{T}^d$.
 
-We may replace $\mu_N$ with the finite regular Borel measure $\mu$ on $\mathbf{T}^N$ defined on the Borel sets $A$ of $\mathbf{T}^N$ as $\mu(A):=\mu_G(G\cap A)$, and apply Lemma B.5.2.2 with this choice of $\mu$, to propagate the assertion in (B.5.2.1) from the case of continuous complex-valued functions on $G$, to the case of Riemann integrable functions on $G$. The rest of the reductions in the foregoing apply upon replacing $\mathbf{T}^N$ with $G$. Now it remains to treat the $\mathbf{Q}$-linearly independent case (since using a uniformization of $G$ yields $\tau'$ that satisfies $\mathbf{Q}$-linear independence for its $d$ coordinates).
+We may replace $\mu_N$ with the finite regular Borel measure $\mu$ on $\mathbf{T}^N$ defined on the Borel sets $A$ of $\mathbf{T}^N$ as $\mu(A):=\mu_G(G\cap A)$, and apply Lemma B.5.2.2 with this choice of $\mu$, to propagate the assertion in (B.5.2.1) from the case of continuous complex-valued functions on $G$, to the case of Riemann integrable functions on $G$. The rest of the reductions in the foregoing apply upon replacing $\mathbf{T}^N$ with $G$. Now it remains to treat the $\mathbf{Q}$-linearly independent case (since using a uniformization of $G$ yields $\tau'$ that that satisfies $\mathbf{Q}$-linear independence for its $d$ coordinates).
 
 Any $u\in A$ is of the form
 
@@ -2530,7 +2530,7 @@ for a unique $a=(a_1,\dots,a_N)\in\mathbf{Z}^N$. We write $\chi_a$ for the conti
 We have
 
 $$
-\hat u(\chi_b)=\int_{\mathbf{T}^N}u(\xi)\cdot\chi_b(\xi)\,\mathrm{d}\mu(\xi)=\int_{[0,1)^N}\sum_{a\in\mathbf{Z}^N}c_a\cdot e^{2\pi i a_1 x_1}\cdot\ldots\cdot e^{2\pi i a_N x_N}\cdot e^{2\pi i b_1 x_1}\cdot\ldots\cdot e^{2\pi i b_N x_N}\,\mathrm{d}x_1\cdot\ldots\cdot \mathrm{d}x_N. \tag{B.5.2.11}
+\hat u(\chi_b)=\int_{\mathbf{T}^N}u(\xi)\cdot\overline{\chi_b(\xi)}\,\mathrm{d}\mu(\xi)=\int_{[0,1)^N}\sum_{a\in\mathbf{Z}^N}c_a\cdot e^{2\pi i a_1 x_1}\cdot\ldots\cdot e^{2\pi i a_N x_N}\cdot\overline{e^{2\pi i b_1 x_1}\cdot\ldots\cdot e^{2\pi i b_N x_N}}\,\mathrm{d}x_1\cdot\ldots\cdot \mathrm{d}x_N. \tag{B.5.2.11}
 $$
 
 By orthogonality of the exponentials $\{e^{2\pi i t N}, N\in\mathbf{Z}\}\subset L^2([0,1))$, we obtain
@@ -2600,13 +2600,13 @@ $$
 In particular, if $I=(a,b)$ is a bounded open interval, we have
 
 $$
-\mathbf{C}_I:=\{s\in\mathbf{C}:a<\mathrm{Re}(s)<b\}
+\mathbf{C}_I=\{s\in\mathbf{C}:a<\mathrm{Re}(s)<b\}
 $$
 
 and if $I=[a,b)$, $(a,\infty)$, respectively $[a,\infty)$, we have
 
 $$
-\mathbf{C}_I:=\{s\in\mathbf{C}:a\le\mathrm{Re}(s)<b\},\;\mathbf{C}_I:=\{s\in\mathbf{C}:\mathrm{Re}(s)>a\},\;\mathbf{C}_I:=\{s\in\mathbf{C}:\mathrm{Re}(s)\ge a\}.
+\mathbf{C}_I=\{s\in\mathbf{C}:a\le\mathrm{Re}(s)<b\},\;\mathbf{C}_I=\{s\in\mathbf{C}:\mathrm{Re}(s)>a\},\;\mathbf{C}_I=\{s\in\mathbf{C}:\mathrm{Re}(s)\ge a\}.
 $$
 
 DEFINITION B.5.3.1. (1) For a subset $X\subset\mathbf{R}$ we define the upper density of $X$ to be
@@ -2641,7 +2641,7 @@ $$
 \prod_{v\in S_f}|\mathrm{1}-\chi(\pi_v)q_v^{-iT_k}|^{-1}\le N_S. \tag{B.5.3.3}
 $$
 
-In this subsection we provide a direct argument for Proposition B.5.3.2, resting on the Kronecker-Weyl Theorem and a uniform version of a classical Theorem of Carlson. An alternative argument has been provided in Proposition 7.1.1.1 using the results of [Ba1, Ch. 2].
+In this subsection we provide a direct argument for Proposition B.5.3.2, resting on the Kronecker-Weyl Theorem and a uniform version of a classical Theorem of Carlson An alternative argument has been provided in Proposition 7.1.1.1 using the results of [Ba1, Ch. 2].
 
 We prove the following stronger assertion:
 
@@ -2654,13 +2654,13 @@ PROPOSITION B.5.3.3 (Strong recurrence of reciprocal partial Euler products). Le
 Let $I\subset\mathbf{R}$ be an open non-empty bounded interval containing $0\in\mathbf{R}$. Let $K\subset \mathbf{C}_I$ be an arbitrary compact subset with non-empty interior. Then for any real number $\varepsilon>0$, the subsets:
 
 $$
-(t\in[0,+\infty):\sup_{s\in K}|\prod_{v\in S}L_v(\chi_v|\cdot|_v^{s+it})^{-1}-\prod_{v\in S}L_v(\chi_v|\cdot|_v^s)^{-1}|<\varepsilon)\subset\mathbf{R} \tag{B.5.3.4}
+\left\{t\in[0,+\infty):\sup_{s\in K}\left|\prod_{v\in S}L_v(\chi_v|\cdot|_v^{s+it})^{-1}-\prod_{v\in S}L_v(\chi_v|\cdot|_v^s)^{-1}\right|<\varepsilon\right\}\subset\mathbf{R} \tag{B.5.3.4}
 $$
 
 and
 
 $$
-(t\in(-\infty,0]:\sup_{s\in K}|\prod_{v\in S}L_v(\chi_v|\cdot|_v^{s+it})^{-1}-\prod_{v\in S}L_v(\chi_v|\cdot|_v^s)^{-1}|<\varepsilon)\subset\mathbf{R} \tag{B.5.3.5}
+\left\{t\in(-\infty,0]:\sup_{s\in K}\left|\prod_{v\in S}L_v(\chi_v|\cdot|_v^{s+it})^{-1}-\prod_{v\in S}L_v(\chi_v|\cdot|_v^s)^{-1}\right|<\varepsilon\right\}\subset\mathbf{R} \tag{B.5.3.5}
 $$
 
 both have positive upper-density.
@@ -2790,7 +2790,7 @@ and since $X(\varepsilon)\cap G$ is open in $G$ and non-empty (it contains the n
 Since we have:
 
 $$
-\{t\in I_T:\bar\gamma_\tau(t)\in X(\varepsilon)\}=(t\in I_T:\int_K|\prod_{v\in S}L_v(\chi_v|\cdot|_v^{s+it})^{-1}-\prod_{v\in S}L_v(\chi_v|\cdot|_v^s)^{-1}|^2\,\mathrm{d}\mu_A(s)<\varepsilon) \tag{B.5.3.15}
+\{t\in I_T:\bar\gamma_\tau(t)\in X(\varepsilon)\}=\left\{t\in I_T:\int_K|\prod_{v\in S}L_v(\chi_v|\cdot|_v^{s+it})^{-1}-\prod_{v\in S}L_v(\chi_v|\cdot|_v^s)^{-1}|^2\,\mathrm{d}\mu_A(s)<\varepsilon\right\} \tag{B.5.3.15}
 $$
 
 for $I_T$ either of the two intervals $[-T,T]$ and $[0,T]$, we deduce from (B.5.3.14), from positivity of $\mu_G(X(\varepsilon)\cap G)$, and from Lemma B.5.3.5, that $\prod_{v\in S}L_v(\chi_v|\cdot|_v^s)^{-1}$ is indeed strongly recurrent over $\mathbf{C}_I$ (with a different $\varepsilon>0$ dependent on $\varepsilon$ and the distance between $K$ and the boundary of the strip) for $K\subset \mathbf{C}_I$ any compact subset with non-empty interior, and hence in particular for $K$ satisfying the assumptions of the Proposition. By combining (B.5.3.15) with (B.5.3.14) all assertions of the Proposition follow.
@@ -2847,7 +2847,7 @@ $$
 
 *and if $L_f(\sigma,\chi)=0$ for some $\sigma\in[1/2,1]$ then $\chi$ is quadratic and $\sigma$ is unique, simple, and satisfies $\sigma<1$.*
 
-*The real number $A_{F,\chi}$ can in fact be chosen to be $|N(\mathfrak{d}_{F/\mathbf Q})||N_{F/\mathbf Q}(\mathfrak f_\chi)|$ where $\mathfrak f_\chi$ is the conductor of $\chi$* [IK, Ch. 5, §5.1, (5.4)]. Proposition B.6.1.1 can be deduced from [IK, §5.4, Thm. 5.10, p. 106] upon setting $d=[F:\mathbf Q]$, $A_{F,\chi}:=\mathfrak{q}(f,0)$ in the notation of *loc.cit.* to denote the analytic conductor of the $L$-function (see [IK, Ch. 5, (5.7), p. 95]), and noting that the Rankin-Selberg convolutions $L_f(s,\chi\otimes\chi)$ and $L_f(s,\chi\otimes\bar\chi)$ both exist with the former entire when $\bar\chi\ne\overline{\chi}$ (equivalently, when $\chi^2\ne 1$) since $L_f(s,\chi^2)$ is entire when $\chi$ is not quadratic, and the latter is $\zeta_F(s)$ (so it has a simple pole at $s=1$).
+*The real number $A_{F,\chi}$ can in fact be chosen to be $|N(\mathfrak{d}_{F/\mathbf Q})||N_{F/\mathbf Q}(\mathfrak f_\chi)|$ where $\mathfrak f_\chi$ is the conductor of $\chi$* [IK, Ch. 5, §5.1, (5.4)]. Proposition B.6.1.1 can be deduced from [IK, §5.4, Thm. 5.10, p. 106] upon setting $d=[F:\mathbf Q]$, $A_{F,\chi}:=\mathfrak{q}(f,0)$ in the notation of *loc.cit.* to denote the analytic conductor of the $L$-function (see [IK, Ch. 5, (5.7), p. 95]), and noting that the Rankin-Selberg convolutions $L_f(s,\chi\otimes\chi)$ and $L_f(s,\chi\otimes\bar\chi)$ both exist with the former entire when $\chi\ne\overline{\chi}$ (equivalently, when $\chi^2\ne 1$) since $L_f(s,\chi^2)$ is entire when $\chi$ is not quadratic, and the latter is $\zeta_F(s)$ (so it has a simple pole at $s=1$).
 
 **B.6.1.2. Estimates for $L'_f(s,\chi)/L_f(s,\chi)$.** Let $F$ be a number field and $\chi\in\widehat{C_F}$ a continuous character.
 
@@ -2995,7 +2995,7 @@ $$
 
 **B.6. CLASSICAL ZERO-FREE REGIONS FOR HECKE L-FUNCTIONS** · **639**
 
-and define the two circle[s]
+and define the two circle
 
 $$
 \gamma_1(T):=\{s\in\mathbf C:|s-s_0|=2\alpha\eta(T)\}, \tag{B.6.1.18}
@@ -3180,7 +3180,7 @@ for all $s\in\mathbf C_{[\sigma_0-r,\sigma_0+r]}$ with $|{\rm I\mathrm{m}}(s)|>T
 We fix $T\in\mathbf R$ such that $|T|>T_0$. By (B.6.1.37) and [T2, Ch. III, §3, Lemma $\alpha$, p. 56] applied to $f(s)=L_{\Sigma_F-S}(\chi,s)$ with $s_0=\sigma_0+iT$, $M=A_2\log(T)$, $r=4((\sigma_0+1)^2+1)^{1/2}$, with $A_2:=\sup_{T\ge T_0+r}\left(N+\frac{1}{\log T}\log(A_1\zeta_F(\sigma_0))\right)$ (noting that $|1/L_{\Sigma_F-S}(\chi,\sigma_0+iT)|\le\zeta_F(\sigma_0)$), we obtain
 
 $$
-\left|\frac{L'_{\Sigma_F-S}(\chi,s)}{L_{\Sigma_F-S}(\chi,s)}-\sum_{\rho:|\rho-\sigma_0-iT|\le r/2}\frac{1}{s-\rho}\right|\le A\frac{A_2}{r}\log(T) \tag{B.6.1.39}
+\left|\frac{L'_{\Sigma_F-S}(\chi,s)}{L_{\Sigma_F-S}(\chi,s)}-\sum_{\rho:|\rho-\sigma_0-iT|\le r/2}\frac{1}{s-\rho}\right|\le \frac{AA_2}{r}\log(T) \tag{B.6.1.39}
 $$
 
 where $A>0$ is provided by the cited Lemma in [T2] and the sum is indexed by the zeros of $L_{\Sigma_F-S}(\chi,s)$ (counted with multiplicity) within the disc $|s-s_0|\le r/2$. The application of [T2] uses that the disc $|s-s_0|\le r$ is contained inside $\mathbf C_{\ge\sigma_0-r}$.
@@ -3188,7 +3188,7 @@ where $A>0$ is provided by the cited Lemma in [T2] and the sum is indexed by the
 Note that the box $[-1,\sigma_0]+i(T+[-1,1])$ is entirely contained within the disc $|s-s_0|\le r/4$. We now choose $T=t$ with $|t|>T_0+r$, and keep it fixed, and deduce
 
 $$
-\left|\frac{L'_{\Sigma_F-S}(\chi,\sigma+it)}{L_{\Sigma_F-S}(\chi,\sigma+it)}-\sum_{\rho:|\rho-\sigma_0-it|\le r/2}\frac{1}{\sigma+it-\rho}\right|\le A\frac{A_2}{r}\log(|t|) \tag{B.6.1.40}
+\left|\frac{L'_{\Sigma_F-S}(\chi,\sigma+it)}{L_{\Sigma_F-S}(\chi,\sigma+it)}-\sum_{\rho:|\rho-\sigma_0-it|\le r/2}\frac{1}{\sigma+it-\rho}\right|\le \frac{AA_2}{r}\log(|t|) \tag{B.6.1.40}
 $$
 
 for all $\sigma\in[-1,\sigma_0]$. We further note that if $\rho=\beta+i\gamma$ is a zero of $L_{\Sigma_F-S}(\chi,s)$ satisfying $|\gamma-t|\le 1$ then since $0<\sigma_0-\beta\le\sigma_0$ we see that $\rho$ is contained within the disc $|s-\sigma_0-it|\le r/2$.
@@ -3241,7 +3241,7 @@ $$
 
 *for all $k\in\mathbf{Z}$.*
 
-Proof. This is a consequence of Theorem B.6.1.7 (which handles $t\in[-T-1,-T]$ by passing to $\bar\chi$) using$^{29}$ boundedness on vertical strips (including the uniformly Schwartz property) for all derivatives of the completed $L$-functions of $\chi$ and exponential control on $\Gamma$-factors to apply the Phragmèn-Lindelöf Theorem and the convexity bound on the derivatives $L^{(k)}_f(s,\chi)$. $\square$
+Proof. This is a consequence of Theorem B.6.1.7 (which handles $t\in[-T-1,-T]$ by passing to $\bar\chi$) using$^{29}$ boundedness on vertical strips (including the uniformly Schwartz property) for all derivatives of the completed $L$-functions of $\chi$ and exponential control on $\Gamma$-factors to apply the Phragmen-Lindelöf Theorem and the convexity bound on the derivatives $L^{(k)}_f(s,\chi)$. $\square$
 
 **B.7. Reciprocals and Partial Euler products on the 1-line**
 
@@ -3304,14 +3304,14 @@ Lemma B.7.1.1 is [T2, Ch. III, Lemma 3.12]. It is a version of Perron's formula 
 Proof of Lemma B.7.1.1. We know $f(s)=\sum_{m\ge 1}a_mm^{-s}$ has abscissa of absolute convergence $\sigma_a\le 1$. Let $\sigma$ and $c$ be real numbers, $c>0$, such that $\sigma+c>\sigma_a$, for $\sigma:=\mathrm{Re}(s)$. Let $T,x\ge 1$ be real numbers. If $x$ is not an integer then we have
 
 $$
-\sum_m\frac{a_m}{m^s} = \frac{1}{2\pi i}\int_{c-iT}^{c+iT}f(s+w)\frac{x^w}{w}\,\mathrm{d}w + O\left(\frac{x^c}{T}\sum_{m\ge 1}\frac{|a_m|}{m^{\sigma+c}|\log(x/m)|}\right) \tag{B.7.1.6}
+\sum_{1\le m<x}\frac{a_m}{m^s} = \frac{1}{2\pi i}\int_{c-iT}^{c+iT}f(s+w)\frac{x^w}{w}\,\mathrm{d}w + O\left(\frac{x^c}{T}\sum_{m\ge 1}\frac{|a_m|}{m^{\sigma+c}|\log(x/m)|}\right) \tag{B.7.1.6}
 $$
 
 where the $O$-constant is $1/\pi$.
 
 The formula in (B.7.1.6) follows from [QQ, Ch. 4, Thm. 4.2.3], applied as follows. We choose the coefficients $a_m$ in loc. cit. to be $a_mm^{-s}$, in which case the abscissa of absolute convergence $\sigma_a$ in loc. cit. is $\sigma_a-\sigma$. The positive real number $\rho$ in loc. cit. is $c$, and the $s$-variable of integration is $w$ in (B.7.1.6). With these notational changes, (B.7.1.6) is [QQ, Ch. 4, (4.2.5)] up to recognizing the $O$-constant as $1/\pi$, which emerges from the method of proof.
 
-If $m<x/2$ or $m>2x$, we have $|\log(x/m)|>A:=\log(2)>0$, so the parts of the sum $\sum_{m\ge 1}|a_m|/(m^{\sigma+c}|\log(x/m)|)$ indexed by these integers are $O(\sum_{m\ge 1}|a_m|m^{-\sigma-c})$, the implied constant being $1/\log(2)$. By (B.7.1.3), this is $O(1/(\sigma+c-1)^{\alpha})$, the implied constant depending on $\alpha$ and the $O$-constant in (1): this gives the first $O$-term in (B.7.1.4).
+If $m<x/2$ or $m>2x$, we have $|\log(x/m)|>A:=\log(2)>0$, so the parts of the sum $\sum_{m\ge 1}|a_m|/(m^{\sigma+c}|\log(x/m)|)$ indexed by these integers are $O(\sum_{m\ge 1}|a_m|m^{-\sigma-c})$, the implied constant being $1/\log(2)$. By (B.7.1.3), this is $O(1/(\sigma+c-1)^{\alpha})$, the implied constant depending on $\alpha$ and the $O$-constant in (1): this gives the first O-term in (B.7.1.4).
 
 In the range $N<m\le 2x$, the relevant estimate is contained at the top of [T2, Ch. III, p. 62], and the implied constant can be taken to be an absolute constant times the implied constant in $a_n=O(\psi(n))$
 
@@ -3412,7 +3412,7 @@ Figure 4. A rectangle oriented counterclockwise for shifting a vertical contour 
 We have
 
 $$
--\frac{1}{2\pi i}\int_{c-iT}^{c+iT}\frac{\zeta'_F(s-it_0+w)}{\zeta_F(s-it_0+w)}\frac{x^w}{w}\,\mathrm{d}w - \frac{1}{2\pi i}\int_{-\delta-iT}^{-\delta+iT}\frac{\zeta'_F(s-it_0+w)}{\zeta_F(s-it_0+w)}\frac{x^w}{w}\,\mathrm{d}w
+-\frac{1}{2\pi i}\int_{c-iT}^{c+iT}\frac{\zeta'_F(s-it_0+w)}{\zeta_F(s-it_0+w)}\frac{x^w}{w}\,\mathrm{d}w - \frac{1}{2\pi i}\int_{-\delta-iT}^{c-iT}\frac{\zeta'_F(s-it_0+w)}{\zeta_F(s-it_0+w)}\frac{x^w}{w}\,\mathrm{d}w
 $$
 
 $$
@@ -3472,13 +3472,13 @@ for $x\ge 1$.
 Along the top and bottom sides of the rectangle we have the estimates
 
 $$
-\int_{-\delta+iT}^{c+iT}\frac{\zeta'_F(s-it_0+w)}{\zeta_F(s-it_0+w)}\frac{x^w}{w}\,\mathrm{d}w\ll_{\alpha}\frac{(\log|T+t-t_0|)^2}{T}\int_{-\delta}^{c}x^u\,\mathrm{d}u = O_{\alpha,F}\frac{x^c(\log|T+t-t_0|)^2}{T\log(x)} \tag{B.7.1.13}
+\int_{-\delta+iT}^{c+iT}\frac{\zeta'_F(s-it_0+w)}{\zeta_F(s-it_0+w)}\frac{x^w}{w}\,\mathrm{d}w\ll_{\alpha}\frac{(\log|T+t-t_0|)^2}{T}\int_{-\delta}^{c}x^u\,\mathrm{d}u = O_{\alpha,F}\left(\frac{x^c(\log|T+t-t_0|)^2}{T\log(x)}\right) \tag{B.7.1.13}
 $$
 
 for $x>1$, and:
 
 $$
-\int_{-\delta-iT}^{c-iT}\frac{\zeta'_F(s-it_0+w)}{\zeta_F(s-it_0+w)}\frac{x^w}{w}\,\mathrm{d}w\ll_{\alpha}\frac{(\log|T+t-t_0|)^2}{T}\int_{-\delta}^{c}x^u\,\mathrm{d}u = O_{\alpha,F}\frac{x^c(\log|T+t-t_0|)^2}{\log(x)T}. \tag{B.7.1.14}
+\int_{-\delta-iT}^{c-iT}\frac{\zeta'_F(s-it_0+w)}{\zeta_F(s-it_0+w)}\frac{x^w}{w}\,\mathrm{d}w\ll_{\alpha}\frac{(\log|T+t-t_0|)^2}{T}\int_{-\delta}^{c}x^u\,\mathrm{d}u = O_{\alpha,F}\left(\frac{x^c(\log|T+t-t_0|)^2}{\log(x)T}\right). \tag{B.7.1.14}
 $$
 
 We define
@@ -3494,11 +3494,11 @@ $$
 for $s\in 1+i(\mathbf{R}-\{t_0\})$. As a function of $s$, $f_x(s)$ is analytic and it has a removable singularity at $s=1+it_0$. The Residue Theorem calculation and (B.7.1.11) show
 
 $$
-f_x(s) = \frac{1}{2\pi i}\int_{c-iT}^{-\delta-iT} - \frac{1}{2\pi i}\int_{-\delta-iT}^{-\delta+iT} - \frac{1}{2\pi i}\int_{-\delta+iT}^{c+iT}\frac{\zeta'_F(s-it_0+w)}{\zeta_F(s-it_0+w)}\frac{x^w}{w}\,\mathrm{d}w + O\left(\frac{x^c}{Tc}\right) + O_F\left(\frac{(\log x)^2}{T}\right)
+f_x(s) = \frac{1}{2\pi i}\left(\int_{-\delta-iT}^{c-iT} - \int_{-\delta-iT}^{-\delta+iT} - \int_{-\delta+iT}^{c+iT}\frac{\zeta'_F(s-it_0+w)}{\zeta_F(s-it_0+w)}\frac{x^w}{w}\,\mathrm{d}w\right) + O\left(\frac{x^c}{Tc}\right) + O_F\left(\frac{(\log x)^2}{T}\right)
 $$
 
 $$
-+ \begin{cases} O_F\left(\frac{\log x}{T\,d(x,\mathbf{Z})}\right), & x\notin\mathbf{Z} \\ O_F\left(\frac{c\log x}{Tx}\right), & x\in\mathbf{Z}. \end{cases}
++ \begin{cases} O_F\left(\frac{\log x}{T|x-N|}\right), & x\notin\mathbf{Z} \\ O_F\left(\frac{c\log x}{Tx}\right), & x\in\mathbf{Z}. \end{cases}
 $$
 
 Now choose $c=1/\log(x)$ and $T=(\log(x))^3$, so
@@ -3510,7 +3510,7 @@ $$
 for some constants $B,C>0$. Plugging these into (B.7.1.11), (B.7.1.13), and (B.7.1.14), (compare with [T2, Ch. III, §3.13, p. 63]), we claim $f_x(s)\to 0$ as $x\to+\infty$ with $x$ varying through $J_b$ and $s=1+it$ for $t$ in an arbitrary but fixed compact subset of $\mathbf{R}-\{t_0\}$. This requires some additional work for the decay of the upper bound in (B.7.1.14) as $x\to+\infty$. That bound is
 
 $$
-O_{F,t_0,K}((\log T)^3x^{-\delta}) = O_{F,t_0,K}\left(\frac{(\log(\log x))^3}{x^{M/\log(T-t_0+3)}}\right) = O_{F,t_0,K}\frac{(\log(\log x))^3}{x^{M'/\log(\log x)}}
+O_{F,t_0,K}((\log T)^3x^{-\delta}) = O_{F,t_0,K}\left(\frac{(\log(\log x))^3}{x^{M/\log(T)}}\right) = O_{F,t_0,K}\left(\frac{(\log(\log x))^3}{x^{M'/\log(\log x)}}\right)
 $$
 
 for constants $M$ and $M'$ depending on $t_0$ and $\alpha$. Thus, we just need to verify $\log(\log x)/x^{A/\log(\log x)}\to 0$ as $x\to+\infty$ for any $A>0$. For $y=\log(x)\to+\infty$, this is
@@ -3533,12 +3533,12 @@ $$
 \frac{\zeta'_F(s-it_0)}{\zeta_F(s-it_0)} - \frac{1}{1+it_0-s},\quad \frac{1}{1+it_0-s} - \frac{x^{1+it_0-s}}{1+it_0-s}
 $$
 
-extend by continuity across the singularity $s=1+it_0$ to analytic functions over $1+i\mathbf{R}$. Upon letting $s$ tend to $1+it_0$ in (B.7.1.8) we obtain$^{30}$ (B.7.1.9) using L'Hôpital's rule. The implied constant in (B.7.1.9) is absolute and amounts to the sum of $\|f_x(s)\|_u$ from (B.7.1.8) and the limit as $s\to 1+it_0$ over $1+i\mathbf{R}$ of the leftmost function in (B.7.1.16).
+extend by continuity across the singularity $s=1+it_0$ to analytic functions over $1+i\mathbf{R}$. Upon letting $s$ tend to $1+it_0$ in (B.7.1.8) we obtain$^{30}$ (B.7.1.9) using L'Hopital's rule. The implied constant in (B.7.1.9) is absolute and amounts to the sum of $\|f_x(s)\|_u$ from (B.7.1.8) and the limit as $s\to 1+it_0$ over $1+i\mathbf{R}$ of the leftmost function in (B.7.1.16).
 
 (2) : The same method, resting on Proposition B.6.1.1, gives (B.7.1.10) upon observing that the integrand
 
 $$
-\frac{L'_f(s+w,\chi)}{L_f(s+w,\chi)}\frac{x^w}{w} \tag{B.7.1.17}
+\frac{L'_f(s+w\chi)}{L_f(s+w,\chi)}\frac{x^w}{w} \tag{B.7.1.17}
 $$
 
 as a function of $w$ has only one pole, at $w=0$, whose residue is $L'_f(s,\chi)/L_f(s,\chi)$ (in particular, no pole $w=1-s$ when $s\ne 1$). $\square$
@@ -3571,7 +3571,7 @@ $$
 g_n(s):=-\frac{1-n^{1+it_0-s}}{1+it_0-s}, \tag{B.7.2.2}
 $$
 
-*and the function $F_x(s)$ is continuous over $1+iK$ and satisfies $\|F_x|_{1+iK,u}\|\le 2\varepsilon/\log(x)$ for $x\ge x_0$.*
+*and the function $F_x(s)$ is continuous over $1+iK$ and satisfies $\|F_x|_{1+iK,u}|\le 2\varepsilon/\log(x)$ for $x\ge x_0$.*
 
 (2) *Fix a compact subset $K\subset\mathbf{R}$. If $\chi|_{C^1_F}$ is non-trivial then for every $s\in iK$ and $M$ the smallest integer $\ge x$, for every $\varepsilon>0$ there exists a real number $x_0>1$ (depending on $K$ and $\varepsilon$) such that for all $s\in 1+iK$ and $x\ge x_0$ we have:*
 
@@ -3584,7 +3584,7 @@ $$
 Remark B.7.2.2. In (B.7.2.1) and (B.7.2.3), the sum over $\mathfrak{p}$'s on the left side means by definition
 
 $$
-\sum_{\mathfrak{p}}\sum_{\substack{n\ge x \\ N(\mathfrak{p}^m)=n}}\frac{\chi(\mathfrak{p}^m)}{m}\frac{1}{n^s}.
+\sum_{n\ge x}\left(\sum_{N(\mathfrak{p}^m)=n}\frac{\chi(\mathfrak{p}^m)}{m}\right)\frac{1}{n^s}.
 $$
 
 Proof. We set $b_n:=\sum_{0\ne I\subset\mathcal{O}_F:N(I)=n}\chi(I)\Lambda_F(I)/n^s$, and $a_n:=1/\log(n)$ for $n>1$, and $a_0=a_1:=0$. Upon defining
@@ -3654,7 +3654,7 @@ $$
 where
 
 $$
-h(s):=-\frac{\zeta'_F(s-it_0)}{\zeta_F(s-it_0)} + \frac{1}{1+it_0-s},\quad g_m(s):=-1-\frac{1-m^{1+it_0-s}}{1+it_0-s}, \tag{B.7.2.12}
+h(s):=-\frac{\zeta'_F(s-it_0)}{\zeta_F(s-it_0)} + \frac{1}{1+it_0-s},\quad g_m(s):=-\frac{1-m^{1+it_0-s}}{1+it_0-s}, \tag{B.7.2.12}
 $$
 
 and $h$ extends to an analytic function across the removable singularity at $s=1+it_0$, as does the function $g_m$, and $f_m(s)$ is analytic over $1+i\mathbf{R}$ as per Theorem B.7.1.2.

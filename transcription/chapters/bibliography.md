@@ -11,11 +11,11 @@
 [Apiola] H. Apiola. *Every nuclear Fréchet space is a quotient of a Köthe Schwartz space.* Arch.Math. Vol.35, 1980.
 [Ara] J. Aramaki. *Complex powers of a class of pseudodifferential operators and their applications.* Hokkaido Mathematical
 Journal Vol.12 (1983 p. 199-225.
-[Arm] J.V. Armitage. *Zeta functions with a zero at s = 1/2.* Inventiones Mathematicae, 15: pp.199-205 (1972).
+[Arm] J.V. Armitage. *Zeta functions with a zero at $s = 1/2$.* Inventiones Mathematicae, 15: pp.199-205 (1972).
 [Art-1] E. Artin. *Theory of algebraic numbers.* G. Striker, Schildweg 12, Göttingen (1959).
 [Art-2] E. Artin. *Über die zetafunktionen gewisser agebraischer Zahlkörper.* Math. Annalen, 89 (1923), pp.147-156.
-[Arthur] J. Arthur. *The Selberg Trace Formula for groups of F-rank one.* Ann. of Math. Vol.100, No.2 (1974).
-[AS] M.F. Atiyah and G. Segal. *Twisted K-Theory.* Ukr. Mat. Visn. 1, pp.287-330 (19) (2004).
+[Arthur] J. Arthur. *The Selberg Trace Formula for groups of $F$-rank one.* Ann. of Math. Vol.100, No.2 (1974).
+[AS] M.F. Atiyah and G. Segal. *Twisted $K$-Theory.* Ukr. Mat. Visn. 1, pp.287-330 (19) (2004).
 [AT] E. Artin, J.T. Tate. *Class Field Theory.* W.A. Benjamin, 1967.
 [AtChe] J.S. Athreya and Y. Cheung. *A Poincaré Section for the Horocycle Flow on the Space of Lattices.* International
 Mathematics Research Notices, Vol.2014, Issue 10, 2014, pp.2643-2690.
@@ -44,7 +44,7 @@ London (1975).
 Internat. J. Math. and Math. Sci. Vol. 6, No.1 (1983), pp.189-192.
 [Bl] B.E. Blackadar. *The Regular Representation of Restricted Direct Product Groups*. Journal of Functional Analysis 25, 267-274
 (1977).
-[BL] H. Bohr and E. Landau. *Sur les zéros de la fonction ζ(s) de Riemann.* C.R. 158 (1914), 106-10.
+[BL] H. Bohr and E. Landau. *Sur les zéros de la fonction $\zeta(s)$ de Riemann.* C.R. 158 (1914), 106-10.
 
 933
 
@@ -82,7 +82,7 @@ Internat. J. Math. and Math. Sci. Vol. 6, No.1 (1983), pp.189-192.
 
 [Br1] R. Brown. Some problems of algebraic topology: a study of function spaces, function complexes, and FD-complexes. D.Phil. thesis, Oxford University, 1961.
 
-[Br2] R. Brown. Ten topologies for X × Y. Quart. J.Math. (2) 14 (1963), 303-319.
+[Br2] R. Brown. Ten topologies for $X \times Y$. Quart. J.Math. (2) 14 (1963), 303-319.
 
 [Br3] R. Brown. Function spaces and product topologies. Quart. J.Math. (2) 15 (1964), 238-250.
 
@@ -92,11 +92,11 @@ Internat. J. Math. and Math. Sci. Vol. 6, No.1 (1983), pp.189-192.
 
 [Bris-b] C.M. Brislawn. Kernels of Trace Class Operators. Proceedings of the American Mathematical Society. Vol. 104, Number 4, Dec. 1988.
 
-[Bru] F. Bruhat. Distributions sur un groupe localement compact et applications a' l'étude des représentations des groupes p-adiques. Bulletin de la S.M.F., tome 89 (1961).
+[Bru] F. Bruhat. Distributions sur un groupe localement compact et applications a' l'étude des représentations des groupes $p$-adiques. Bulletin de la S.M.F., tome 89 (1961).
 
 [BT] R. Bott, L.W. Tu. Differential Forms in Algebraic Topology. Graduate Texts in Mathematics 82. Springer-Verlag New York (1982).
 
-[Car] F. Carlson. Über die Nullstellen der Dirichletschen Reihen und der Riemannschen ζ-Funktion. Arkiv för Mat. Ast. och. Fýs., t.15 (1920), No.20.
+[Car] F. Carlson. Über die Nullstellen der Dirichletschen Reihen und der Riemannschen $\zeta$-Funktion. Arkiv för Mat. Ast. och. Fýs., t.15 (1920), No.20.
 
 [Carleson] L. Carleson. On Convergence and Growth of Partial Sums of Fourier Series. Acta Math. 116: pp.135-157 (1966).
 
@@ -126,7 +126,7 @@ Internat. J. Math. and Math. Sci. Vol. 6, No.1 (1983), pp.189-192.
 
 [Conrad] B. Conrad. Weil and Grothendieck approaches to adelic points. Available online.
 
-[CPS] J.W. Cogdell and I.I. Piatetski-Shapiro. Converse theorems for GL_n. Publications mathématiques de l'I.H.É.S., tome 79 (1994), p.157-214.
+[CPS] J.W. Cogdell and I.I. Piatetski-Shapiro. Converse theorems for $\mathrm{GL}_n$. Publications mathématiques de l'I.H.É.S., tome 79 (1994), p.157-214.
 
 ## PDF page 935
 
@@ -162,7 +162,7 @@ Internat. J. Math. and Math. Sci. Vol. 6, No.1 (1983), pp.189-192.
 
 [Dunford] N. Dunford. Uniformity in Linear Spaces.
 
-[Dur] P. Duren. Theory of H^p Spaces. Academic Press. 1970.
+[Dur] P. Duren. Theory of $H^p$ Spaces. Academic Press. 1970.
 
 [DyM] A.S. Dynin and B. Mitjagin. Criterion for nuclearity in terms of approximative dimension. Bull. Acad. Polon. Sci. Sér. Sci. Math. Astronom. Phys. 8 (1960), pp.535-540.
 
@@ -172,17 +172,17 @@ Internat. J. Math. and Math. Sci. Vol. 6, No.1 (1983), pp.189-192.
 
 [EGAII] A. Grothendieck, J. Dieudonné. Éléments de géométrie algébrique: II. Étude globale. élémentaire de quelques classes de morphismes. Publ. Math. de l'IHÉS. 8: 5-222. 1961.
 
-[EGAIII1] A. Grothendieck, J. Dieudonné. Éléments de géométrie algébrique: III. Étude cohomologique des faisceaux cohérents, Première partie. Publ. Math. de l'IHÉS. 11: 5-167. 1961.
+[EGAIII$_1$] A. Grothendieck, J. Dieudonné. Éléments de géométrie algébrique: III. Étude cohomologique des faisceaux cohérents, Premiére partie. Publ. Math. de l'IHÉS. 11: 5-167. 1961.
 
-[EGAIII2] A. Grothendieck, J. Dieudonné. Éléments de géométrie algébrique: III. Étude cohomologique des faisceaux cohérents, Seconde partie. Publ. Math. de l'IHÉS. 17: 5-91. 1963.
+[EGAIII$_2$] A. Grothendieck, J. Dieudonné. Éléments de géométrie algébrique: III. Étude cohomologique des faisceaux cohérents, Seconde partie. Publ. Math. de l'IHÉS. 17: 5-91. 1963.
 
-[EGAIV1] A. Grothendieck, J. Dieudonné. Éléments de géométrie algébrique: IV. Étude locales des schémas et des morphismes de schémas, Première partie. Publ. Math. de l'IHÉS. 20: 5-259. 1964.
+[EGAIV$_1$] A. Grothendieck, J. Dieudonné. Éléments de géométrie algébrique: IV. Étude locales des schémas et des morphismes de schémas, Premiére partie. Publ. Math. de l'IHÉS. 20: 5-259. 1964.
 
-[EGAIV2] A. Grothendieck, J. Dieudonné. Éléments de géométrie algébrique: IV. Étude locales des schémas et des morphismes de schémas, Seconde partie. Publ. Math. de l'IHÉS. 24: 5-231. 1965.
+[EGAIV$_2$] A. Grothendieck, J. Dieudonné. Éléments de géométrie algébrique: IV. Étude locales des schémas et des morphismes de schémas, Seconde partie. Publ. Math. de l'IHÉS. 24: 5-231. 1965.
 
-[EGAIV3] A. Grothendieck, J. Dieudonné. Éléments de géométrie algébrique: IV. Étude locales des schémas et des morphismes de schémas, Troisième partie. Publ. Math. de l'IHÉS. 28: 5-255. 1966.
+[EGAIV$_3$] A. Grothendieck, J. Dieudonné. Éléments de géométrie algébrique: IV. Étude locales des schémas et des morphismes de schémas, Troisiéme partie. Publ. Math. de l'IHÉS. 28: 5-255. 1966.
 
-[EGAIV4] A. Grothendieck, J. Dieudonné. Éléments de géométrie algébrique: IV. Étude locales des schémas et des morphismes de schémas, Quatrième partie. Publ. Math. de l'IHÉS. 32: 5-361. 1967.
+[EGAIV$_4$] A. Grothendieck, J. Dieudonné. Éléments de géométrie algébrique: IV. Étude locales des schémas et des morphismes de schémas, Quatriéme partie. Publ. Math. de l'IHÉS. 32: 5-361. 1967.
 
 [Ehr1] C. Ehresmann. Catégories doubles et catégories structurées, C. R. Acad. Sci. Paris 256 (1963), 1198-1201.
 
@@ -310,7 +310,7 @@ Internat. J. Math. and Math. Sci. Vol. 6, No.1 (1983), pp.189-192.
 
 [IK] Iwaniec-Kowalski.
 
-[Ingh1] A.E. Ingham. On the estimation of N(σ, T). The Quarterly Journal of Mathematics, Vol. os-11, Issue 1, 1940, pp. 201-202.
+[Ingh1] A.E. Ingham. On the estimation of $N(\sigma, T)$. The Quarterly Journal of Mathematics, Vol. os-11, Issue 1, 1940, pp. 201-202.
 
 [Ingh2] A.E. Ingham. On the difference between consecutive primes. Q.J.O. 8 (1937), 255-66.
 
@@ -324,7 +324,7 @@ Internat. J. Math. and Math. Sci. Vol. 6, No.1 (1983), pp.189-192.
 
 [Jech] Jech, T. Set Theory. The Third Millennium Edition, revised and expanded. Springer Berlin, Heidelberg. XIV, 772. 2002.
 
-[JL] H. Jacquet and R. Langlands. Automorphic forms on GL_2. Lecture Notes in Mathematics. Springer-Verlag. 1970.
+[JL] H. Jacquet and R. Langlands. Automorphic forms on $\mathrm{GL}_2$. Lecture Notes in Mathematics. Springer-Verlag. 1970.
 
 [JL] J. Jorgenson and S. Lang. A Parseval formula for functions with an asymptotic expansion at the origin. Basic Analysis of Regularized Series and Products. Springer Lecture Notes 1564, 1993.
 
@@ -366,7 +366,7 @@ Internat. J. Math. and Math. Sci. Vol. 6, No.1 (1983), pp.189-192.
 
 [Kol] A. Kolmogorov. Une série de Fourier-Lebesgue divergente partout. C.R. Acad. Sci. Paris 183 (1926), pp.1327-1328.
 
-[TKYK] T. Komura and Y. Komura. Über die Einbettung der nuklearen Räume in s^A. Math. Ann. 162 (1966), pp.284-288.
+[TKYK] T. Komura and Y. Komura. Über die Einbettung der nuklearen Räume in $\mathfrak{s}^A$. Math. Ann. 162 (1966), pp.284-288.
 
 [Kothe-I] G. Köthe. Topological Vector Spaces I. Springer.
 
@@ -388,7 +388,7 @@ Internat. J. Math. and Math. Sci. Vol. 6, No.1 (1983), pp.189-192.
 
 [Kunen] Kunen, K. Set Theory. Elsevier Science Publishers. 1980.
 
-[La] W.F. Lamartin. On the foundations of k-group theory. Dissertationes Mathematicæ, Tom CXLVI. Instytut Matematyczny Polskiej Akademii Nauk (1977).
+[La] W.F. Lamartin. On the foundations of $k$-group theory. Dissertationes Mathematicæ, Tom CXLVI. Instytut Matematyczny Polskiej Akademii Nauk (1977).
 
 [Langlands] R.P. Langlands. On the Functional Equation of the Artin L-Functions. Unpublished Preprint. 1970.
 
@@ -416,7 +416,7 @@ Internat. J. Math. and Math. Sci. Vol. 6, No.1 (1983), pp.189-192.
 
 [Lit-II] G.L. Litvinov. Traces of linear operators in locally convex spaces. Funktsional'nyi Analiz i Ego Prilozheniya, Vol.13, No.1 (1979), pp.73-74.
 
-[LM] J. Lawson, B. Madison. Quotients of k-semigroups. Semigroup Forum Vol. 9 (1974), 1-18.
+[LM] J. Lawson, B. Madison. Quotients of $k$-semigroups. Semigroup Forum Vol. 9 (1974), 1-18.
 
 [LMS] L.G. Lewis, Jr., J.P. May, M. Steinberger. Equivariant Stable Homotopy Theory. Lecture Notes in Mathematics, vol. 1213, Springer-Verlag, 1986.
 
@@ -476,7 +476,7 @@ Internat. J. Math. and Math. Sci. Vol. 6, No.1 (1983), pp.189-192.
 
 [MVa] H. Montgomery and R.C. Vaughan. Multiplicative Number Theory, I. Cambridge Studies in Advanced Mathematics. 2006.
 
-[MVe] P. Michel and A. Venkatesh. The subconvexity problem for GL_2. Publications Mathématiques de l'IHÉS, Vol. 111 (2010), pp.171-271.
+[MVe] P. Michel and A. Venkatesh. The subconvexity problem for $\mathrm{GL}_2$. Publications Mathématiques de l'IHÉS, Vol. 111 (2010), pp.171-271.
 
 [MZ] D. Montgomery and L. Zippin. Topological Transformation Groups. Interscience Tracts in Pure and Applied Mathematics. 1955.
 
@@ -492,13 +492,13 @@ Internat. J. Math. and Math. Sci. Vol. 6, No.1 (1983), pp.189-192.
 
 [nLab1] nCatLab Authors. Convenient category of topological spaces. Nov. 4, 2023 version. Available online.
 
-[Oes] J. Oesterlé. Nombres de Tamagawa et groupes unipotents en charactéristique p. Inventiones Math.
+[Oes] J. Oesterlé. Nombres de Tamagawa et groupes unipotents en charactéristique $p$. Inventiones Math.
 
 [Omar] S. Omar. On Artin L-Functions for Octic Quaternion Fields. Experimental Mathematics 10:2, p.237.
 
 [Pa] V.P. Palamodov. Homological methods in the theory of locally convex spaces. Russ. Math. Surv. 26, 1 (1971).
 
-[PB] π-Base Authors. π-Base.
+[PB] $\pi$-Base Authors. $\pi$-Base.
 
 [Pinsky] M.A. Pinsky. Introduction to Fourier Analysis and Wavelets. Graduate Studies in Mathematics. Vol.102. AMS. 2002.
 
@@ -574,7 +574,7 @@ Internat. J. Math. and Math. Sci. Vol. 6, No.1 (1983), pp.189-192.
 
 [StSe] L.A. Steen, J.A. Seebach, Jr. Counterexamples in Topology. 2nd Ed. Springer-Verlag, New York, Heidelberg, Berlin (1978).
 
-[StStr] E.M. Stein and J.-O. Str "omberg. Behavior of maximal functions in R^n for large n. Ark. Mat. 21 (1983), No.2, pp.259-269.
+[StStr] E.M. Stein and J.-O. Str "omberg. Behavior of maximal functions in $\mathbf{R}^n$ for large $n$. Ark. Mat. 21 (1983), No.2, pp.259-269.
 
 [Ste] N. E. Steenrod. A convenient category of topological spaces. Michigan Math. J. 14 (1967), 133-152.
 
@@ -602,7 +602,7 @@ Internat. J. Math. and Math. Sci. Vol. 6, No.1 (1983), pp.189-192.
 
 [Vogt-1] D. Vogt. Regularity properties of (LF)-spaces. Progress in Functional Analysis. K.-D. Bierstedt, J. Bonet, J. Horváth and M. Maestre (eds.). Elsevier Science Publishers B.V. (1992).
 
-[Vogt-2] D. Vogt. Subspaces and quotient spaces of s. K.-D. Bierstedt, B. Fuchssteiner (eds.) Functional Analysis: Surveys and Recent Results. North-Holland (1977).
+[Vogt-2] D. Vogt. Subspaces and quotient spaces of $\mathfrak{s}$. K.-D. Bierstedt, B. Fuchssteiner (eds.) Functional Analysis: Surveys and Recent Results. North-Holland (1977).
 
 [Voigt] J. Voigt. A Course on Topological Vector Spaces. Birkhäuser. 2020.
 
@@ -628,7 +628,7 @@ Internat. J. Math. and Math. Sci. Vol. 6, No.1 (1983), pp.189-192.
 
 [W] D. Widder. The Laplace transform. Princeton University Press. London: Humphrey Milford. Oxford University Press. 1946.
 
-[Wi] A. Wilansky. Between T_1 and T_2. The American Mathematics Monthly, Vol.74, No.3 (1967), pp. 261-266.
+[Wi] A. Wilansky. Between $T_1$ and $T_2$. The American Mathematics Monthly, Vol.74, No.3 (1967), pp. 261-266.
 
 [Wil] S. Willard. General Topology. Reading, MA. Addison-Wesley (1970).
 

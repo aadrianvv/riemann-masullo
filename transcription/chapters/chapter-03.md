@@ -750,11 +750,11 @@ Since $Z_S(f,c)$ is holomorphic in $c\in\Omega(J_{F,S})_{>0}$, and $Z_S(\widehat
 
 (2) : Absolute and locally uniform convergence over $\Omega(J_{F,S})_{>0}$ of the integral in (3.3.1.5) is a consequence of the estimates in Proposition 2.3.1.2 (as $\lvert g\rvert_{F,S}\to+\infty$) and Proposition 2.4.3.1 (as $\lvert g\rvert_{F,S}\to 0^+$, see also Theorem 2.4.2.1).
 
-(3) : This follows from compactness of $J^1_{F,S}$: the locally uniform convergence over $\Omega(J_{F,S})_{>0}(\omega)$ of the integral in (3.3.1.5) is a consequence of the estimates in Proposition 2.3.1.4 (as $\lvert g\rvert_{F,S}\to+\infty$and for the $\omega$-homogeneous $\theta$-function) and Proposition 2.4.3.1 (as $\lvert g\rvert_{F,S}\to 0^+$ and for the $\omega$-homogeneous $\theta$-function, see also Theorem 2.4.2.1).
+(3) : This follows from compactness of $J^1_{F,S}$: the locally uniform convergence over $\Omega(J_{F,S})_{>0}(\omega)$ of the integral in (3.3.1.5) is a consequence of the estimates in Proposition 2.3.1.4 (as $\lvert g\rvert_{F,S}\to+\infty$ and for the $\omega$-homogeneous $\theta$-function) and Proposition 2.4.3.1 (as $\lvert g\rvert_{F,S}\to 0^+$ and for the $\omega$-homogeneous $\theta$-function, see also Theorem 2.4.2.1).
 
 The identity in (3.3.1.6) holds by compactness of $J^1_{F,S}$ and the absolute convergence, for each $c\in\Omega(J_{F,S})_{>0}$, of the integral in (3.3.1.4) (which renders Theorem D.1.2.1 applicable). $\square$
 
-<sup>1</sup>
+$^{1}$
 
 REMARK 3.3.1.4 (Tensor decomposition of $Z_S(\cdot,c)$ for $c\in\Omega(J_{F,S})$). Let $F$ be a number field, $S$ a finite set of places containing all the Archimedean places, $c\in\Omega(J_{F,S})_{>0}$ a fixed quasi-character. We call $c_{\infty}$ the restriction of $c$ to the closed subgroup $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$, and for each place $v$ of $F$ we call $c_v$ the restriction of $c$ to the closed subgroup $F_v^{\times}$.
 
@@ -776,7 +776,7 @@ $$
 
 ---
 
-<sup>1</sup>Commented out a Remark on sequential continuity and local boundedness that is never cited.
+$^{1}$Commented out a Remark on sequential continuity and local boundedness that is never cited.
 
 ## PDF page 132
 
@@ -1104,7 +1104,7 @@ $$
 \frac{Z_S(f,\chi\lvert\cdot\rvert_{F,S}^{\sigma+it})}{L_S(\chi\lvert\cdot\rvert_{F,S}^{\sigma+it})}=\epsilon_S(\chi\lvert\cdot\rvert_{F,S}^{\sigma+it})\frac{1}{L_{S_{\infty}}(\chi\lvert\cdot\rvert_{F,S_{\infty}}^{\sigma+it})}\cdot\frac{Z_S(f,\chi\lvert\cdot\rvert_{F,S}^{\sigma+it})}{\prod_{v\in S_f}L_v(\chi_v\lvert\cdot\rvert_v^{\sigma+it})} \tag{3.3.1.34}
 $$
 
-with $S_f:=S\cap\Sigma_{F,f}$. The third factor is Schwartz as a function of $t$, uniformly with respect to $\sigma\in[a,b]$.<sup>2</sup> Since $1/L_{S_{\infty}}(\chi\lvert\cdot\rvert_{F,S_{\infty}}^{\sigma+it})$ is a product of vertical translations of $\Gamma$-functions, the estimate from (3.3.1.27) holds by Stirling Approximation (see specifically [IK, Ch.5,§A.4,(5.114),(5.115),p.151]).
+with $S_f:=S\cap\Sigma_{F,f}$. The third factor is Schwartz as a function of $t$, uniformly with respect to $\sigma\in[a,b]$.$^{2}$ Since $1/L_{S_{\infty}}(\chi\lvert\cdot\rvert_{F,S_{\infty}}^{\sigma+it})$ is a product of vertical translations of $\Gamma$-functions, the estimate from (3.3.1.27) holds by Stirling Approximation (see specifically [IK, Ch.5,§A.4,(5.114),(5.115),p.151]).
 
 The formula for $\epsilon_v$ for each $v\in S$ follows by comparing (3.3.1.2) with (3.3.1.33), as in the proof of [RV, Ch.7,§7.1,Thm.7.2,p.246]. $\square$
 
@@ -1126,7 +1126,7 @@ The theory of vector-valued holomorphic and meromorphic functions (which is disc
 
 ---
 
-<sup>2</sup>Need to give a reference for a proof of this “uniform Schwartz” assertion.
+$^{2}$Need to give a reference for a proof of this “uniform Schwartz” assertion.
 
 ## PDF page 138
 
@@ -1510,7 +1510,7 @@ $$
 c=\chi\lvert\cdot\rvert_F^s \tag{3.4.1.7}
 $$
 
-with $\mathrm{Re}(s)>1$, then we have that the identities of holomorphic functions in (3.4.1.5) and (3.4.1.6) hold over $\Omega(C_F)(\chi|_{C_F^1})_{>1}$.³
+with $\mathrm{Re}(s)>1$, then we have that the identities of holomorphic functions in (3.4.1.5) and (3.4.1.6) hold over $\Omega(C_F)(\chi|_{C_F^1})_{>1}$.$^{3}$
 
 Since $\widetilde{Z}(f,\chi\lvert\cdot\rvert_F^s)$ is holomorphic over $\Omega(C_F)(\chi|_{C_F^1})_{>0}$, and since both $L_f(s,\chi)$, and hence also $L_{\Sigma_F-S_0}(s,\chi)$, and $Z(f,\chi\lvert\cdot\rvert_F^s)$ extend to meromorphic functions over $\Omega(C_F)(\chi|_{C_F^1})_{>0}$, where $L_f(s,\chi)$ is regarded as a meromorphic function on $\Omega(C_F)(\chi|_{C_F^1})_{>0}$ by means of the parametrization of $\Omega(C_F)(\chi|_{C_F^1})_{>0}$ from (3.4.1.7) with $\mathrm{Re}(s)>0$, the identities in (3.4.1.5) and (3.4.1.6) hold over $\Omega(C_F)(\chi|_{C_F^1})_{>0}$ by the Identity Theorem. $\square$
 
@@ -1518,7 +1518,7 @@ Since $\widetilde{Z}(f,\chi\lvert\cdot\rvert_F^s)$ is holomorphic over $\Omega(C
 
 ---
 
-<sup>3</sup>Why do such identities hold? Must say more about how this follows.
+$^{3}$Why do such identities hold? Must say more about how this follows.
 
 ## PDF page 145
 
@@ -1568,7 +1568,7 @@ $$
 
 for the Hecke $L$-function $L(s, \chi)$, as $S'$ varies over all finite sets of finite places of $F$ such that $S' \cap S = \emptyset$, converges pointwise to $L_f(s, \chi) \prod_{v \in S_0} L_v(\chi_v|\cdot|^s_v)^{-1}$ over $1+i\mathbf{R}$ if $\chi|_{C^1_F} \ne 1$ (uniformly on its compact subsets), and $1 + i(\mathbf{R} - (-A - x_0, A - x_0))$ if $\chi = |\cdot|^{ix_0}_F$ (uniformly on its compact subsets).
 
-This is indeed the case by Corollary B.7.2.5 (a consequence of Perron’s Formula; see also [T2, Ch.III, §3.15, p.66]] for the special case $F = \mathbf{Q}$ and $\chi = 1$). $\square$
+This is indeed the case by Corollary B.7.2.5 (a consequence of Perron’s Formula; see also [T2, Ch.III, §3.15, p.66] for the special case $F = \mathbf{Q}$ and $\chi = 1$). $\square$
 
 3.4.2.2. Estimates on adelic $\theta$-functions, uniformly on Schwartz-Bruhat-bounded subsets. We record here the following result as another application of Theorem 3.4.1.1, presenting a different method to establish some
 
@@ -1638,7 +1638,7 @@ $$
 Z(f, |\cdot|^s_F) = \int_{\mathbf{R}_{>0}} \Phi_{F,\omega=1}(f)(\tau(t)) t^s \,\frac{\mathrm{d}t}{t} = M(\Phi_{F,\omega=1}(f)\circ\tau)(s)
 $$
 
-adhering to the notation $M(\phi)(s) := \int_{\mathbf{R}_{>0}} \phi(t) t^s \,\frac{dt}{t}$ for the Mellin transform (see (B.2.1.2)).
+adhering to the notation $M(\phi)(s) := \int_{\mathbf{R}_{>0}} \phi(t) t^s \,\frac{\mathrm{d}t}{t}$ for the Mellin transform (see (B.2.1.2)).
 
 By Theorem 3.2.2.1(3), we know that, for $\phi := \Phi_{F,\omega=1}(f)\circ\tau$, $M(\phi)(s)$ converges absolutely and uniformly on the compact subsets of $\mathbf{C}_{>1}$.
 
@@ -1666,7 +1666,7 @@ We now apply the Asymptotic Residue Theorem (see Theorem B.3.2.1) to the meromor
 
 In order to apply the Asymptotic Residue Theorem over a vertical strip of bounded width $\mathbf{C}_I$, for $I \subset \mathbf{R}$ a connected open non-empty interval, it is sufficient to show the following (compare with the statement of Theorem B.3.2.1). We must show that $Z(f, |\cdot|^s_F)$ can be written as a product $\Phi(s)u(s)$ over a slightly larger open vertical strip $\mathbf{C}_J$ of bounded width containing $\mathbf{C}_I$, with $\Phi$ holomorphic over $\mathbf{C}_J$ and $u$ meromorphic on $\mathbf{C}_J$ with slow growth near its poles (for this concept, the reader is referred to Definition B.3.1.1). The function $\Phi$ must further satisfy the assumption that $\Phi$ is Schwartz uniformly on any open vertical strip of bounded width contained within $\mathbf{C}_J$.
 
-Indeed, $\prod_{v \in S_f} (1 - q_v^{-s})$ is bounded uniformly on vertical strips of bounded width, together with all of its derivatives, and its zeros resolve the singularities of $Z_S(f_S, |\cdot|^s_{F,S})$ located on the imaginary line of the complex $s$-plane, with the sole possible exception of a single point, i.e. $s = 0$. The meromorphic function $\zeta_F(s)$ grows polynomially uniformly over the vertical strips of bounded width of the complex $s$-plane (see Proposition B.1.1.3), and it has simple poles at $s = 0$ and $s = 1$. The functions $\tilde{Z}_v(1_{K_v}, |\cdot|^s_v)$ are, for each $v \in S_f$, entire (by (3.4.1.3) combined with the local functional equation, see [CF, Ch.XV, Thm.2.4.1]] and [CF, Ch.XV, §2.5]]) and bounded uniformly on vertical strips (by vertical periodicity) together with all of their derivatives.
+Indeed, $\prod_{v \in S_f} (1 - q_v^{-s})$ is bounded uniformly on vertical strips of bounded width, together with all of its derivatives, and its zeros resolve the singularities of $Z_S(f_S, |\cdot|^s_{F,S})$ located on the imaginary line of the complex $s$-plane, with the sole possible exception of a single point, i.e. $s = 0$. The meromorphic function $\zeta_F(s)$ grows polynomially uniformly over the vertical strips of bounded width of the complex $s$-plane (see Proposition B.1.1.3), and it has simple poles at $s = 0$ and $s = 1$. The functions $\tilde{Z}_v(1_{K_v}, |\cdot|^s_v)$ are, for each $v \in S_f$, entire (by (3.4.1.3) combined with the local functional equation, see [CF, Ch.XV, Thm.2.4.1] and [CF, Ch.XV, §2.5]) and bounded uniformly on vertical strips (by vertical periodicity) together with all of their derivatives.
 
 Finally, $Z_S(f_S, |\cdot|^s_{F,S})$ is Schwartz uniformly over the vertical strips of bounded width of the complex half-plane $\mathbf{C}_{>0}$ by the Uniform Riemann-Lebesgue Lemma of Proposition B.2.2.3, which applies as a consequence of Theorem 2.3.1.4 and Proposition 2.3.2.2. The $S$-local functional equation (see (3.3.1.3) from Theorem 3.3.1.1) together with the estimates on $\rho_S$ and its derivatives from Proposition 3.3.1.5) then exhibit $Z_S(f_S, |\cdot|^s_{F,S})$ as being indeed of the form $\Phi(s)u(s)$ with $\Phi$ Schwartz uniformly on the vertical strips of bounded width of the complex half-plane $\mathbf{C}_{>-N}$ for each fixed $N > 0$, and $u$ meromorphic with slow growth near its poles therein.
 

@@ -320,7 +320,7 @@ This way, we will have that the product $|x|_{F,S}^a|y|_{F,S}^a$ arising by comp
 
 This forces the $1/2$ in the very statement of GRH. Connes’ expectation on the $S$-adelic Fourier transform playing this role and being related to the necessity of the $1/2$ in the very statement of GRH, is therefore correct.
 
-(2) A version of known calculations of Connes from his paper from 1998<sup>1</sup>.
+(2) A version of known calculations of Connes from his paper from 1998$^{1}$.
 
 **1.2.4. Poles of the $S$-idelic Zeta functions.**
 
@@ -338,7 +338,7 @@ Let $\gamma\in\mathbf R_{>0}$ such that $\gamma>1$.
 
 ---
 
-<sup>1</sup>A. Connes. *Trace Formula in Noncommutative Geometry and the Zeros of the Riemann Zeta Function.* Selecta Mathematica. Vol.5, No.29, (1999).
+$^{1}$A. Connes. *Trace Formula in Noncommutative Geometry and the Zeros of the Riemann Zeta Function.* Selecta Mathematica. Vol.5, No.29, (1999).
 
 ## PDF page 17
 
@@ -370,7 +370,7 @@ $$
 0\to\ker(\Phi_\gamma)\to\mathcal S_{\mathrm E}(\mathbf R_{>0})\to\mathcal S(\mathbf R_{>0}/\gamma^{\mathbf Z})\to 0
 $$
 
-is linearly and topologically exact. The Mellin transform $M:\phi\mapsto\int_{\mathbf R_{>0}}\phi(t)t^s\frac{dt}{t}$ now identifies the above sequence with
+is linearly and topologically exact. The Mellin transform $M:\phi\mapsto\int_{\mathbf R_{>0}}\phi(t)t^s\frac{\mathrm dt}{t}$ now identifies the above sequence with
 
 $$
 0\to(1-\gamma^{-s})A\mathcal S(\mathbf C)\to A\mathcal S(\mathbf C)\to A\mathcal S(\mathbf C)/(1-\gamma^{-s})A\mathcal S(\mathbf C)\to 0
@@ -380,7 +380,7 @@ therefore characterizing $\ker(\Phi_\gamma)$ in terms of the image of the Mellin
 
 Now note that $\mathbf R_{>0}$ acts on $\mathcal S_{\mathrm E}(\mathbf R_{>0})$, on $\ker(\Phi_\gamma)$ and on the subquotient $\mathcal S(\mathbf R_{>0}/\gamma^{\mathbf Z})$ by left-scaling by the inverse.
 
-This is then turned into a convolution action of $\mathcal D(\mathbf R_{>0})$. In turns out that this convolution action sending $\varphi$ to $A(\varphi)(\phi):=\int_{\mathbf R_{>0}}\varphi(t)\phi(t^{-1}x)\frac{dt}{t}$ is nuclear on $\mathcal S(\mathbf R_{>0}/\gamma^{\mathbf Z})$ and the trace of $A(\varphi)$ on $\mathcal S(\mathbf R_{>0}/\gamma^{\mathbf Z})$ is computed using the Schauder basis $\{\delta_{z_m}\}$.
+This is then turned into a convolution action of $\mathcal D(\mathbf R_{>0})$. In turns out that this convolution action sending $\varphi$ to $A(\varphi)(\phi):=\int_{\mathbf R_{>0}}\varphi(t)\phi(t^{-1}x)\frac{\mathrm dt}{t}$ is nuclear on $\mathcal S(\mathbf R_{>0}/\gamma^{\mathbf Z})$ and the trace of $A(\varphi)$ on $\mathcal S(\mathbf R_{>0}/\gamma^{\mathbf Z})$ is computed using the Schauder basis $\{\delta_{z_m}\}$.
 
 Just work out what the (adjoint) scaling action on each $\delta_{z_m}$ is, and you get that it is by multiplication by $t^{\frac{2\pi im}{\log(\gamma)}}$ and so the trace of $A(\varphi)$, which equals the trace of the transpose $A(\varphi)'$, is the sum of the eigenvalues:
 
@@ -997,11 +997,11 @@ $$
 (\mathrm{GL}_1(\mathbf A_{F,S'})\times\widehat{\mathcal O}^{\times}_{\Sigma_F-S'})\times\mathrm{GL}_1(\mathbf A_F)
 $$
 
-for $S'$ large enough, when we look at their contributions to the trace. Then compute their effect on the $S'$-local $\theta$-functions using the Shell Structure.<sup>5</sup>
+for $S'$ large enough, when we look at their contributions to the trace. Then compute their effect on the $S'$-local $\theta$-functions using the Shell Structure.$^{5}$
 
 **1.3.4. Acting on the Paley-Wiener Levels.** Introduce the Paley-Wiener levels and explain how to compute the orbital kernels by truncating them on the source and letting them act on the Paley-Wiener levels (after twisting the global geometric kernel by inversion on source and target, using Tate’s Riemann-Roch Theorem).
 
-Compute the orbital traces following the toy example.<sup>6</sup>
+Compute the orbital traces following the toy example.$^{6}$
 
 **1.4. Putting everything together: Trace Formula and consequences**
 
@@ -1009,8 +1009,8 @@ Putting everything together, we obtain the Trace Formula, valid on all $\varphi\
 
 ---
 
-<sup>5</sup>Finish!  
-<sup>6</sup>Finish!
+$^{5}$Finish!  
+$^{6}$Finish!
 
 ## PDF page 28
 
@@ -1510,9 +1510,9 @@ with $f_S\in\mathcal S(\prod_{v\in S}F_v)$, if we replace $1_{\mathcal O_{F_v}}$
 
 At the $S$-local level, Connes already had a perfectly good technique to compute the relevant trace. His calculation is a reformulation of a calculation of Weil's from his papers on the Explicit Formulas, resting on the observation that a certain additive local Fourier transform of a logarithm function would be expressed as a principal value arising out of the Residue Theorem applied to the logarithmic derivative of the Hecke $L$-function.
 
-In my eyes, a version of Connes' $S$-local calculation is definitive, i.e. at the ``$S$-local level'', it is the right scenario to hope for indeed. I have come to view parts of the calculations in Connes' $S$-local ``trace formula'' as his most important contribution (I have a feeling he would get annoyed, if told).
+In my eyes, a version of Connes' $S$-local calculation is definitive, i.e. at the “$S$-local level”, it is the right scenario to hope for indeed. I have come to view parts of the calculations in Connes' $S$-local “trace formula” as his most important contribution (I have a feeling he would get annoyed, if told).
 
-And so the strategy ``degenerate something global into something $S$-local'' seems a good rule of thumb to follow. This is exactly what Ralf Meyer does in his paper [Me1]: he uses operators which, under Mellin transform, turn into multiplication operators by finite reciprocal Euler factors. For his method to succeed, he needs them to converge to infinite reciprocal Euler products (with a few finitely many Euler factors removed).
+And so the strategy “degenerate something global into something $S$-local” seems a good rule of thumb to follow. This is exactly what Ralf Meyer does in his paper [Me1]: he uses operators which, under Mellin transform, turn into multiplication operators by finite reciprocal Euler factors. For his method to succeed, he needs them to converge to infinite reciprocal Euler products (with a few finitely many Euler factors removed).
 
 This is possible only by working with very fine locally convex strict-LF topologies (or ensuing bornologies, as he does) and indeed his method of degeneration from global to $S$-local pans out, and leads to a trace formula in the vein that Connes was partly hoping for.
 
@@ -1536,7 +1536,7 @@ $$
 
 and so an infinite iteration of this process will converge as an operator (on the quotient of all $\chi|_{C_F^1}$-homogeneous adelic $\theta$-functions) only when we endow the function space with a topology that is matched under Mellin transform by a topology at least as fine as the topology of uniform convergence on all vertical strips of bounded width of $\mathbf C_{>1}=\{\sigma>1\}$ for $Z(f,\chi|\cdot|_F^s)$, and of $\mathbf C_{<0}=\{\sigma<0\}$ for $Z(\widehat f,\overline{\chi}|\cdot|_F^{1-s})$.
 
-This is, loosely, what Meyer does: he degenerates a global convolution operator using infinite Euler products, makes a trace calculation following Connes at the $S$-local level, and observes that by enlarging $S$ by a finite amount the ``part of the kernel'' that he has left behind in the degeneration process contributes zero to the global trace. Convergence of infinite Euler products is crucial for him to prove this last fact.
+This is, loosely, what Meyer does: he degenerates a global convolution operator using infinite Euler products, makes a trace calculation following Connes at the $S$-local level, and observes that by enlarging $S$ by a finite amount the “part of the kernel” that he has left behind in the degeneration process contributes zero to the global trace. Convergence of infinite Euler products is crucial for him to prove this last fact.
 
 The obstruction to repeating what Meyer does, but by working in normed completions such as the $L^2$-norm topology on $\mathcal S(C_F)$, is that infinite Euler products do not converge absolutely within the critical strip, by Mertens' Theorem.
 
@@ -1544,15 +1544,15 @@ The obstruction to repeating what Meyer does, but by working in normed completio
 
 40  CHAPTER 1.  INTRODUCTION
 
-The advantage of proving a global trace formula while working with respect to much coarser normed topologies as my work does, as opposed to the very fine limit-Fr\'echet topologies or bornologies that Meyer has to work with to make infinite Euler product operators converge, is enormous because the spectral side of such a global trace formula is affected by the choice of topology: not all zeros support point-masses (and their derivatives) that extend by continuity!
+The advantage of proving a global trace formula while working with respect to much coarser normed topologies as my work does, as opposed to the very fine limit-Fréchet topologies or bornologies that Meyer has to work with to make infinite Euler product operators converge, is enormous because the spectral side of such a global trace formula is affected by the choice of topology: not all zeros support point-masses (and their derivatives) that extend by continuity!
 
 Mertens' Theorem is, in my eyes, a herald for GRH. If you clash against it, it means that you are entering forbidden territory: it means you have to come up with something new.
 
 What occurred to me is the following: what if instead of doing this wished-for degeneration process from global to $S$-local by using an infinite iteration of $1_{\mathcal O_{F_{v_k}}}\mapsto 1_{\mathcal O_{F_{v_k}}^\times}$ to reach (1.8.1.1) (equivalently, to infinitely iterate multiplication by terms as in (1.8.1.2)), which is what Meyer does (I am paraphrasing a lot for him), *we did it one step at a time only*?
 
-What if there is a way to keep track of the loss of information, *step by step*, instead of going all the way down straight away? And what if we could compute pieces of the trace step by step, until all that is left is at the ``$S$-local level''? Imagine that $f$ varies across all Schwartz-Bruhat functions on the global adeles (remove global poles by assuming $f(0)=\widehat f(0)=0$) and follow me into the following toy example.
+What if there is a way to keep track of the loss of information, *step by step*, instead of going all the way down straight away? And what if we could compute pieces of the trace step by step, until all that is left is at the “$S$-local level”? Imagine that $f$ varies across all Schwartz-Bruhat functions on the global adeles (remove global poles by assuming $f(0)=\widehat f(0)=0$) and follow me into the following toy example.
 
-**Example 1.8.1.1.** Denote by $\mathcal S_{\mathrm E}(\mathbf R_{>0})$ the nuclear Fr\'echet space of *exponentially decaying* Schwartz-Bruhat functions on $\mathbf R_{>0}$, i.e. those $\phi\in\mathcal S(\mathbf R_{>0})$ such that $|\cdot|^a\phi\in\mathcal S(\mathbf R_{>0})$ for every $a\in\mathbf R$. It is topologized in the evident manner with its projective locally convex topology, and the Mellin transform $M(\phi):=\int_{\mathbf R_{>0}}\phi(t)t^s\frac{dt}{t}$ identifies it linearly and topologically with what I call the Schwartz-Hardy space $A\mathcal S(\mathbf C)$ of those entire functions which are Schwartz uniformly on vertical strips of bounded width, topologized with the uniform Schwartz topology (equivalently, by the Residue Theorem, with the topology of uniform convergence on vertical strips of bounded width for functions and their products with all monomials $s^N$ in the holomorphic $s$-variable).
+**Example 1.8.1.1.** Denote by $\mathcal S_{\mathrm E}(\mathbf R_{>0})$ the nuclear Fréchet space of *exponentially decaying* Schwartz-Bruhat functions on $\mathbf R_{>0}$, i.e. those $\phi\in\mathcal S(\mathbf R_{>0})$ such that $|\cdot|^a\phi\in\mathcal S(\mathbf R_{>0})$ for every $a\in\mathbf R$. It is topologized in the evident manner with its projective locally convex topology, and the Mellin transform $M(\phi):=\int_{\mathbf R_{>0}}\phi(t)t^s\frac{\mathrm dt}{t}$ identifies it linearly and topologically with what I call the Schwartz-Hardy space $A\mathcal S(\mathbf C)$ of those entire functions which are Schwartz uniformly on vertical strips of bounded width, topologized with the uniform Schwartz topology (equivalently, by the Residue Theorem, with the topology of uniform convergence on vertical strips of bounded width for functions and their products with all monomials $s^N$ in the holomorphic $s$-variable).
 
 Pick $\gamma>1$ (think of the norm $N(\mathfrak p)$ for a prime ideal $\mathfrak p$ of $\mathcal O_F$). The space $\mathcal S(\mathbf R_{>0}/\gamma^{\mathbf Z})=C^\infty(\mathbf R_{>0}/\gamma^{\mathbf Z})$ carries an absolute Schauder basis, namely the exponential system
 
@@ -1580,7 +1580,7 @@ $$
 0\to\ker(\Phi_\gamma)\to\mathcal S_{\mathrm E}(\mathbf R_{>0})\to\mathcal S(\mathbf R_{>0}/\gamma^{\mathbf Z})\to 0
 $$
 
-is linearly and topologically exact. The Mellin transform $M:\phi\mapsto\int_{\mathbf R_{>0}}\phi(t)t^s\frac{dt}{t}$ now identifies the above sequence with
+is linearly and topologically exact. The Mellin transform $M:\phi\mapsto\int_{\mathbf R_{>0}}\phi(t)t^s\frac{\mathrm dt}{t}$ now identifies the above sequence with
 
 $$
 0\to(1-\gamma^{-s})A\mathcal S(\mathbf C)\to A\mathcal S(\mathbf C)\to A\mathcal S(\mathbf C)/(1-\gamma^{-s})A\mathcal S(\mathbf C)\to 0
@@ -1592,7 +1592,7 @@ $$
 
 therefore characterizing $\ker(\Phi_\gamma)$ in terms of the image of the Mellin transform in the Schwartz-Hardy space $A\mathcal S(\mathbf C)$. The left term in the exact sequence above is reminiscent of a reciprocal Euler factor at a non-Archimedean place.
 
-Now note that $\mathbf R_{>0}$ acts on $\mathcal S_{\mathrm E}(\mathbf R_{>0})$, on $\ker(\Phi_\gamma)$ and on the subquotient $\mathcal S(\mathbf R_{>0}/\gamma^{\mathbf Z})$ by left-scaling by the inverse. This is then turned into a convolution action of $\mathcal D(\mathbf R_{>0})$. It turns out that this convolution action sending $\phi$ to $A(\varphi)(\phi):=\int_{\mathbf R_{>0}}\varphi(t)\phi(t^{-1}x)\frac{dt}{t}$ is nuclear on $\mathcal S(\mathbf R_{>0}/\gamma^{\mathbf Z})$ and the trace of $A(\varphi)$ on $\mathcal S(\mathbf R_{>0}/\gamma^{\mathbf Z})$ is computed using the Schauder basis $\{\delta_{z_m}\}$.
+Now note that $\mathbf R_{>0}$ acts on $\mathcal S_{\mathrm E}(\mathbf R_{>0})$, on $\ker(\Phi_\gamma)$ and on the subquotient $\mathcal S(\mathbf R_{>0}/\gamma^{\mathbf Z})$ by left-scaling by the inverse. This is then turned into a convolution action of $\mathcal D(\mathbf R_{>0})$. It turns out that this convolution action sending $\phi$ to $A(\varphi)(\phi):=\int_{\mathbf R_{>0}}\varphi(t)\phi(t^{-1}x)\frac{\mathrm dt}{t}$ is nuclear on $\mathcal S(\mathbf R_{>0}/\gamma^{\mathbf Z})$ and the trace of $A(\varphi)$ on $\mathcal S(\mathbf R_{>0}/\gamma^{\mathbf Z})$ is computed using the Schauder basis $\{\delta_{z_m}\}$.
 
 Upon computing what the (adjoint) scaling action on each $\delta_{z_m}$ is, you get that it is by multiplication by $t^{\frac{2\pi im}{\log(\gamma)}}$ and so the trace of $A(\varphi)$, which equals the trace of the transpose $A(\varphi)'$, is the sum of the eigenvalues:
 
@@ -1626,25 +1626,25 @@ $$
 1-\chi(\mathfrak p_{v_k})q_{v_k}^{-s}
 $$
 
-for each $k\ge 0$. The trace calculation outlined in the toy example with large $\gamma=N(\mathfrak p_{v_k})$ finds its analog (incorporating twists by characters systematically), and depending on the *fixed* choice of test function $\varphi\in\mathcal D(C_F)$ (we also take $S$ big enough depending on the support of such a fixed $\varphi$ as well) these ``partial traces'' will be zero!
+for each $k\ge 0$. The trace calculation outlined in the toy example with large $\gamma=N(\mathfrak p_{v_k})$ finds its analog (incorporating twists by characters systematically), and depending on the *fixed* choice of test function $\varphi\in\mathcal D(C_F)$ (we also take $S$ big enough depending on the support of such a fixed $\varphi$ as well) these “partial traces” will be zero!
 
-This is the key idea: follow the rough strategy of ``degenerating a global convolution kernel from global to $S$-local'', but instead of doing it using infinite Euler product operators, as Meyer instead does (paraphrasing), doing it step by step using Schauder bases of point-masses at the zeros of reciprocal local non-Archimedean Euler factors.
+This is the key idea: follow the rough strategy of “degenerating a global convolution kernel from global to $S$-local”, but instead of doing it using infinite Euler product operators, as Meyer instead does (paraphrasing), doing it step by step using Schauder bases of point-masses at the zeros of reciprocal local non-Archimedean Euler factors.
 
 Shift the burden of the degeneration process a little onto the function space, as opposed to the Euler product operators of Meyer's, thus replacing this step in Meyer's trace formula with something that can work in coarser topologies too.
 
 At this point the question is: can we make the calculation of the geometric side of the Trace Formula, while working solely inside a norm completion, such as those alluded to coming out of the Hardy-Sobolev norms from (1.8.2.2)?
 
-**The answer is ``yes''.**
+**The answer is “yes”.**
 
-Long story short, the Hardy-Sobolev norms give us all we need to find, after completion, ``enough'' of the Schauder bases to pull off the step-wise deconstruction I have alluded to above (and specifically to write down
+Long story short, the Hardy-Sobolev norms give us all we need to find, after completion, “enough” of the Schauder bases to pull off the step-wise deconstruction I have alluded to above (and specifically to write down
 
 ## PDF page 42
 
 42  CHAPTER 1.  INTRODUCTION
 
-explicitly ``pieces'' of a global convolution kernel as trace-norm limits of finite rank kernels constructed by acting on basis elements), and reduce the calculation of the geometric side of the trace formula to an analog of the $S$-local trace calculation put forth by Connes, Meyer and, before them, Weil (in a way).
+explicitly “pieces” of a global convolution kernel as trace-norm limits of finite rank kernels constructed by acting on basis elements), and reduce the calculation of the geometric side of the trace formula to an analog of the $S$-local trace calculation put forth by Connes, Meyer and, before them, Weil (in a way).
 
-A version of the idea of the bases of point-masses at the zeros of reciprocal non-Archimedean Euler factors to compute a ``piece'' of the total trace is what came to me very early on.
+A version of the idea of the bases of point-masses at the zeros of reciprocal non-Archimedean Euler factors to compute a “piece” of the total trace is what came to me very early on.
 
 Upon recognizing its value, the writing of the paper got started, and became all-consuming. A full-time endeavor taking 12 years to put it all together through efforts to find the right context (spanning functional analysis, harmonic analysis, and analytic number theory) and run various sanity checks. Back then, I became concerned that you might view it as a pipe-dream, one of many, had I shared a form of the ideas before such time as a paper would be fully or almost fully written up, so we stayed at Stanford.
 
@@ -1659,7 +1659,7 @@ We will be using the following terminology: the *backward side* of the Mellin tr
 **1.8.2.1.** *Spaces of Schwartz-Bruhat functions.*
 
 - $\mathcal S(G)$ the space of Schwartz-Bruhat functions on a Hausdorff locally compact abelian group $G$. We will be usually assuming $G$ is second-countable. The examples of main interest are $G=F_v,F_v^\times,\mathbf A_F,\mathbf A_{F,S}=\prod_{v\in S}F_v,C_F=\mathrm{GL}_1(\mathbf A_F)/F^\times,J_{F,S}=\mathrm{GL}_1(\mathbf A_{F,S})/\mathcal O_{F,S}^\times$.
-- Assume $G$ is a second-countable $\mathbf R_{>0}$-modulated group. For $I\subset\mathbf R$ a nonempty interval, $\mathcal S_I(G)$ is the space of $I$-*exponentially decaying* Schwartz-Bruhat functions, i.e. $\phi\in C^\infty(G)$ such that $|\cdot|_G^a\phi\in\mathcal S(G)$ for all $a\in I$. We topologize $\mathcal S_I(G)$ with the locally convex inductive limit topology of the nuclear Fr\'echet topologies on $\mathcal S_I(k,G)$ for $k\subset G$ varying over the compact subgroups of $G$ whose orthogonal $k^\perp\subset\widehat G$ is compactly generated. The topology on $\mathcal S_I(k,G)$ is the subspace topology induced by the linear injection
+- Assume $G$ is a second-countable $\mathbf R_{>0}$-modulated group. For $I\subset\mathbf R$ a nonempty interval, $\mathcal S_I(G)$ is the space of $I$-*exponentially decaying* Schwartz-Bruhat functions, i.e. $\phi\in C^\infty(G)$ such that $|\cdot|_G^a\phi\in\mathcal S(G)$ for all $a\in I$. We topologize $\mathcal S_I(G)$ with the locally convex inductive limit topology of the nuclear Fréchet topologies on $\mathcal S_I(k,G)$ for $k\subset G$ varying over the compact subgroups of $G$ whose orthogonal $k^\perp\subset\widehat G$ is compactly generated. The topology on $\mathcal S_I(k,G)$ is the subspace topology induced by the linear injection
 
 $$
 T:\mathcal S_I(k,G)\to\prod_{a\in I}\mathcal S(k,G) \tag{1.8.2.1}
@@ -1680,7 +1680,7 @@ promote the Mellin transform into a linear topological isomorphism, are discusse
 
 The first to ever introduce an incarnation of these “weighted” spaces, was Tate, who, without every initiating a systematic study, introduces an “$L^1$-version” in [CF, Ch.XV,§4.4,p.338]. Meyer’s is a “smooth version” of Tate’s definition, with no topology but only retaining a good theory of bounded sets, and in my paper its topology is defined and studied, both directly and through the lens of the Mellin transform.
 
-1.8.2.2.  *S-local and global $\theta$-functions.* Recall that we denote by:
+1.8.2.2.  *$S$-local and global $\theta$-functions.* Recall that we denote by:
 
 • $\mathrm H_{0,\mathrm{cont}}(\mathcal O_{F,S}^\times,\mathcal S(\mathbf A_{F,S}))$ the quotient of $\mathcal S(\mathbf A_{F,S})$ by the kernel of the $\theta$-function operator $\Phi_{F,S}$
 
@@ -2170,7 +2170,7 @@ $$
 (\mathrm{GL}_1(\mathbf{A}_{F,S})\times\widehat{\mathcal O}_{\Sigma_F-S}^\times)\times\mathrm{GL}_1(\mathbf{A}_F)
 $$
 
-and invariant under $\widehat{\mathcal O}_{\Sigma_F-S}^\times$ in the first variable (which is by convention the $y$-variable, i.e. it is listed as second). This, we will call $k_{S,\varphi}$, and we will be computing, by means of an analog of (1.3.1.12) and using calculations very close to those Connes performed in his “$S$-local trace formula” from his paper from 1998$^{7}$, reprised by Meyer, its diagonal mass, leading to the Trace Formula which is the main subject of this work.
+and invariant under $\widehat{\mathcal O}_{\Sigma_F-S}^\times$ in the first variable (which is by convention the $y$-variable, i.e. it is listed as second). This, we will call $k_{S,\varphi}$, and we will be computing, by means of an analog of (1.3.1.12) and using calculations very close to those Connes performed in his “$S$-local trace formula” from his paper from 1998, reprised by Meyer, its diagonal mass, leading to the Trace Formula which is the main subject of this work.
 
 In light of this, the main Trace Formula now reads as follows:
 
@@ -2208,7 +2208,7 @@ This forces the $1/2$ in the very statement of GRH. Connes’ expectation on the
 
 ---
 
-<sup>7</sup>A. Connes. *Trace Formula in Noncommutative Geometry and the Zeros of the Riemann Zeta Function.* Selecta Mathematica. Vol.5, No.29, (1999).
+$^{7}$A. Connes. *Trace Formula in Noncommutative Geometry and the Zeros of the Riemann Zeta Function.* Selecta Mathematica. Vol.5, No.29, (1999).
 
 ## PDF page 53
 

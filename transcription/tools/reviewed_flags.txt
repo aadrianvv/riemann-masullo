@@ -17,7 +17,7 @@ p213 script: L^G in PDF, md has sub | }(s) := \frac{1}{(s-z_m)^j}L_{G,S,\phi}(
 p213 script: L^S in PDF, md has sub | s) := \frac{1}{(s-z_m)^j}L_{G,S,\phi}(s)
 p213 script: L^ϕ in PDF, md has sub |  := \frac{1}{(s-z_m)^j}L_{G,S,\phi}(s) \
 p215 script: 1_1 in PDF, md has sup | amma_1})'$ of $P_{\gamma_1}^{-1}\circ\Ph
-p228 script: f^m in PDF, md has sub | rm{GL}_1(\mathbf{A}_F)_{>1}}f_m(g)\chi(g
+p228 script: f^m in PDF, md has sub | rm{GL}_1(\mathbf{A}_F)^{>1}}f_m(g)\chi(g
 p299 script: Ψ_∞ in PDF, md has sup | hbf A_{F,S_\infty})/\ker(\Psi^\infty_{F,
 p299 script: Ψ_∞ in PDF, md has sup | athbf A_{F,S_\infty})$, $\Psi^\infty_{F,
 p300 script: χ^S in PDF, md has sub | mathbf A_{F,S_\infty})^1}\chi_S(g)f(g_f^
@@ -39,6 +39,14 @@ p358 alphabet: S: PDF it, md rm | tors* $\mathrm{PV}^{\mathrm{ABS}}_{S',S_
 p363 script: χ^S in PDF, md has sub | cal O_{F_v}},\overline{\chi}_{S'}|\cdot|
 p367 script: χ_s in PDF, md has sup | d_{v \in S_p} L_v(\chi|\cdot|^s_F)^{-1}$
 p401 script: R_2 in PDF, md has sup | idean space $\mathbf{R}^{1+(s/2)}$, the 
+p431 script: K^φ in PDF, md has sub | athbf{R}_{>0}} \int_{G^1} K'_{\varphi,\r
+p431 script: K^ρ in PDF, md has sub | _{>0}} \int_{G^1} K'_{\varphi,\rho}(\tau
+p431 script: K^φ in PDF, md has sub | a+\varepsilon} \int_{G^1} K'_{\varphi,\r
+p431 script: K^ρ in PDF, md has sub | silon} \int_{G^1} K'_{\varphi,\rho}(\tau
+p431 script: K^φ in PDF, md has sub | lon}^{\Lambda} \int_{G^1} K'_{\varphi,\r
+p431 script: K^ρ in PDF, md has sub | ambda} \int_{G^1} K'_{\varphi,\rho}(\tau
+p431 script: K^φ in PDF, md has sub | a-\varepsilon} \int_{G^1} K'_{\varphi,\r
+p431 script: K^ρ in PDF, md has sub | silon} \int_{G^1} K'_{\varphi,\rho}(\tau
 p455 script: t_R in PDF, md has sup | )!}(\log(t))^{i-n} t^{\mathrm{Re}(z)}| \
 p455 script: t_e in PDF, md has sup | !}(\log(t))^{i-n} t^{\mathrm{Re}(z)}| \,
 p455 script: t_z in PDF, md has sup | \log(t))^{i-n} t^{\mathrm{Re}(z)}| \,\ma
@@ -68,7 +76,7 @@ p613 substitution: PDF N vs md χ | hfrak p)-\frac{1}{s-\frac{\log\chi(\math
 p613 substitution: PDF χ vs md N | c{\log\chi(\mathfrak p)}{\log N(\mathfra
 p613 substitution: PDF N vs md χ | {1}{\left|\sigma+it-\frac{\log\chi(\math
 p613 substitution: PDF χ vs md N | c{\log\chi(\mathfrak p)}{\log N(\mathfra
-p613 substitution: PDF N vs md χ | y}\Phi(s)\frac{1}{s-\frac{\log\chi(\math
+p613 substitution: PDF N vs md χ | ty}\frac{\Phi(s)}{s-\frac{\log\chi(\math
 p613 substitution: PDF χ vs md N | c{\log\chi(\mathfrak p)}{\log N(\mathfra
 p624 script: G^G in PDF, md has sub | ^1 \to G \xrightarrow{|\cdot|_G} \mathbf
 p646 script: O^F in PDF, md has sub | }{T}\right) + \begin{cases} O_F\left(\fr
@@ -96,9 +104,8 @@ p838 substitution: PDF − vs md i | mes_0 Y) \xrightarrow{\mathrm{id}} \math
 p838 substitution: PDF → vs md d | es_0 Y) \xrightarrow{\mathrm{id}} \mathr
 p838 substitution: PDF − vs md i | mes_0 Y) \xrightarrow{\mathrm{id}} \math
 p838 substitution: PDF → vs md d | es_0 Y) \xrightarrow{\mathrm{id}} \mathr
-p868 substitution: PDF X vs md 1 | he sites to be used.  ---  $^{15}$Must s
-p868 substitution: PDF Y vs md 5 | e sites to be used.  ---  $^{15}$Must sh
 p911 substitution: PDF 2 vs md ⊙ | e 2-morphisms $\gamma$ using $\odot$ wit
 p912 substitution: PDF 2 vs md ⊙ | ACKS**  PROOF. Indeed, since $\odot$ is 
 p913 substitution: PDF 2 vs md G | nterested reader to [$\mathbf{GR}$, Ch. 
 p913 substitution: PDF 1 vs md R | terested reader to [$\mathbf{GR}$, Ch. 2
+p930 alphabet: X: PDF cal, md it | d epimorphism:  $$ \underline{X} \times_

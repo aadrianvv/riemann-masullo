@@ -29,7 +29,7 @@ CHAPTER 13
 
 **13.3.1.  The Divisor of the Hecke $L$-function $L$ on $\Omega(C_F)$.** We record here below the statement of the Trace Formula, established in Theorem 12.5.1.1
 
-THEOREM 13.3.1.1 (Trace Formula). *Let $F$ be a number field.*¹
+THEOREM 13.3.1.1 (Trace Formula). *Let $F$ be a number field.* $^{1}$
 
 *We define, on the set $\{c \in \Omega(C_F) : L(c) = 0\}$, the counting function $N_{\mathrm{spec}}(c)$ assigned by the formula:*
 
@@ -65,14 +65,14 @@ $$-\sum_{v \in S_{F,f}}\log(q_{v})\int'_{F_v^\times,\alpha_{v,0}}\frac{\varphi(g
 
 Upon combining Theorem 13.3.1.1 and Theorem **??**, we obtain the following:
 
-THEOREM 13.3.1.2 (Divisor of $L(s,\chi)$). ²
+THEOREM 13.3.1.2 (Divisor of $L(s,\chi)$). $^{2}$
 
-³
+$^{3}$
 
 ---
 
-¹Correct statement.
+$^{1}$Correct statement.
 
-²Insert statement.
+$^{2}$Insert statement.
 
-³State and prove the Main Theorems, also explaining how to deduce them by approximation $\varphi \to e^{-s|\log(t)|}$ as $\mathrm{Re}(s) > 1$.
+$^{3}$State and prove the Main Theorems, also explaining how to deduce them by approximation $\varphi \to e^{-s|\log(t)|}$ as $\mathrm{Re}(s) > 1$.

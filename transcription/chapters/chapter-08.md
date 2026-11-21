@@ -392,11 +392,11 @@ Such actions factor through the quotients of $\mathrm{GL}_{1}(\mathbf{A}_{F,S})^
 
 $\square$
 
-PROPOSITION 8.2.0.6. *Let $F$ be a number field, $S$ a finite set of places of $F$ containing all the Archimedean places. Let $v_{0}$ be an Archimedean place contained in $S$. We let $\tau_{S,v_{0}}:\mathbf{R}_{>0} \hookrightarrow \mathrm{GL}_{1}(\mathbf{A}_{F,S})$ be the choice of continuous homomorphic section to the $S$-idelic norm based at the $v_{0}$-indexed factor of $\mathrm{GL}_{1}(\mathbf{A}_{F,S})$, and $\tau_{v_{0}}:\mathbf{R}_{>0} \hookrightarrow \mathrm{GL}_{1}(\mathbf{A}_{F})$ the choice of continuous homomorphic section to the idelic norm based at the $v_{0}$-indexed factor of $\mathrm{GL}_{1}(\mathbf{A}_{F})$, as per Definition A.2.2.5.*
+PROPOSITION 8.2.0.6. *Let $F$ be a number field, $S$ a finite set of places of $F$ containing all the Archimedean places. Let $v_{0}$ be an Archimedean place contained in $S$. We let $\tau_{S,v_{0}}:\mathbf{R}_{>0} \to \mathrm{GL}_{1}(\mathbf{A}_{F,S})$ be the choice of continuous homomorphic section to the $S$-idelic norm based at the $v_{0}$-indexed factor of $\mathrm{GL}_{1}(\mathbf{A}_{F,S})$, and $\tau_{v_{0}}:\mathbf{R}_{>0} \to \mathrm{GL}_{1}(\mathbf{A}_{F})$ the choice of continuous homomorphic section to the idelic norm based at the $v_{0}$-indexed factor of $\mathrm{GL}_{1}(\mathbf{A}_{F})$, as per Definition A.2.2.5.*
 
-*(1) The closure within $D_{F,S}$ of $\tau_{S,v_{0}}(\mathbf{R}_{>0}) \cdot D_{S,1}$ is $\tau_{S,v_{0}}(\mathbf{R}_{>0}) \cup \{e_{v_{0}}\}$.*
+*(1) The closure within $D_{F,S}$ of $\tau_{S,v_{0}}(\mathbf{R}_{>0}) \subset D_{S,1}$ is $\tau_{S,v_{0}}(\mathbf{R}_{>0}) \cup \{e_{v_{0}}\}$.*
 
-*(2) The closure within $D_{F}$ of $\tau_{v_{0}}(\mathbf{R}_{>0}) \cdot D_{1}$ is $\tau_{v_{0}}(\mathbf{R}_{>0}) \cup \{e_{v_{0}}\}$.*
+*(2) The closure within $D_{F}$ of $\tau_{v_{0}}(\mathbf{R}_{>0}) \subset D_{1}$ is $\tau_{v_{0}}(\mathbf{R}_{>0}) \cup \{e_{v_{0}}\}$.*
 
 *Proof. In either case, $\tau_{v_{0}}(\mathbf{R}_{>0}) \cup \{e_{v_{0}}\}$ is homeomorphic to $[0,+\infty)$, a complete metric subspace of the metrizable spaces $D_{F,S}$, respectively $D_{F}$, and, as such, sequentially closed, hence closed, being the ambient second-countable, hence sequential, by Lemma 8.2.0.3.*
 
@@ -408,7 +408,7 @@ Let $F$ be a number field, $S$ a finite set of places of $F$ containing all the 
 
 Let $\chi \in \widehat{C_{F}}$ be a continuous character, and define $\chi_{S}$ the unique continuous character of $J_{F,S}$ obtained from $\chi$ by descending the restriction of $\chi$ to $C_{F,S}$ to $J_{F,S}$ by $\widehat{\mathcal{O}}^{\times}_{\Sigma_{F}-S}$-invariance.
 
-The following Theorem describes the loci of $\mathbf{A}_{F,S}$, modulo the continuous left-translation action of $\mathrm{GL}_{1}(\mathbf{A}_{F,S})^{1}$, over which the Orbital subquotients of $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}(\mathbf{A}_{F,S}))$ from (7.3.1.5) and (7.3.4.3) are supported.
+The following Theorem describes the loci of $\mathbf{A}_{F,S}$, modulo the continuous left-translation action of $\mathrm{GL}_{1}(\mathbf{A}_{F,S})^{1}$, over which the Orbital subquotients of $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}(\mathbf{A}_{F,S}))$ from (7.3.1.5) and (7.3.4.3) are supported.
 
 Theorem 8.3.0.1 (On Orbital Supports - II). *Let $F$ be a number field, $S$ a finite set of finite places of $F$ containing all the Archimedean places. Assume $\mathrm{Pic}(\mathcal{O}_{F,S}) = 1$. Let $\chi \in \widehat{C_{F}}$ be a continuous character. Assume $\chi$ is unramified outside $S$.*
 
@@ -416,10 +416,10 @@ Theorem 8.3.0.1 (On Orbital Supports - II). *Let $F$ be a number field, $S$ a fi
 
 *We denote by $\chi_{S}$ the unique continuous character of $J^{1}_{F,S}$ obtained from $\chi$ by descending the restriction of $\chi$ to $C_{F,S}$ by $\widehat{\mathcal{O}}^{\times}_{\Sigma_{F}-S}$-invariance.*
 
-*Let $\mathscr{E}$ denote either of the Orbital subquotients of $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}(\mathbf{A}_{F,S}))$:*
+*Let $\mathscr{E}$ denote either of the Orbital subquotients of $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}(\mathbf{A}_{F,S}))$:*
 
 $$
-\mathscr{E}_{S,S_{p}}(\chi_{S}|J^{1}_{F,S}), \quad \mathscr{E}_{S,S_{\infty}}(\chi_{S}|J^{1}_{F,S})
+\mathscr{E}_{S,S_{p}}(\chi|_{J^{1}_{F,S}}), \quad \mathscr{E}_{S,S_{\infty}}(\chi|_{J^{1}_{F,S}})
 $$
 
 *from (7.3.1.5), respectively (7.3.4.3), for $p$ a prime number such that $S_{p} \subset S$.*
@@ -427,7 +427,7 @@ $$
 *For every tempered distribution $T$ on $\mathbf{A}_{F,S}$ in the linear image of the continuous adjoint of the quotient map*
 
 $$
-\mathcal{S}(\mathbf{A}_{F,S}) \hookrightarrow \mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}(\mathbf{A}_{F,S})) \hookrightarrow \mathscr{E}
+\mathcal{S}(\mathbf{A}_{F,S}) \to \mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}(\mathbf{A}_{F,S})) \to \mathscr{E}
 $$
 
 *and every $f \in \mathcal{S}(\mathbf{A}_{F,S})$, there exists $f_{0} \in \mathcal{S}(\mathbf{A}_{F,S})$ such that*
@@ -457,13 +457,13 @@ $$
 is $2$-isomorphic to the quotient stack:
 
 $$
-\bigsqcup_{v\in S_{p}}[\mathbf{R}_{>0}/F_{v}^{\times}] \tag{8.3.0.4}
+\coprod_{v\in S_{p}}[\mathbf{R}_{>0}/F_{v}^{\times}] \tag{8.3.0.4}
 $$
 
 where $F_{v}^{\times}$ acts on $\mathbf{R}_{>0}$ by left translation through the $S$-idelic norm, with $\mathcal{O}_{F_{v}}^{\times}$ inertia. Its coarse space is the topological disjoint union of compact Hausdorff loops:
 
 $$
-\bigsqcup_{v\in S_{p}}\mathbf{R}_{>0}/N(\mathfrak{p}_{v})^{\mathbf{Z}} \tag{8.3.0.5}
+\coprod_{v\in S_{p}}\mathbf{R}_{>0}/N(\mathfrak{p}_{v})^{\mathbf{Z}} \tag{8.3.0.5}
 $$
 
 where $\mathfrak{p}_{v} \subset \mathcal{O}_{F}$ is the unique prime ideal corresponding to the finite place $v \in S_{p}$.
@@ -483,12 +483,12 @@ $$
 is $2$-isomorphic to the quotient stack:
 
 $$
-\bigsqcup_{v\in S_{\infty}}BU_{v} \tag{8.3.0.8}
+\coprod_{v\in S_{\infty}}BU_{v} \tag{8.3.0.8}
 $$
 
 where $U_{v} \subset F_{v}^{\times}$ is the compact subgroup $\ker(|\cdot|_{v})$, and $BU_{v}$ is its topological classifying stack. Its coarse space is the disjoint union of $r_{1} + r_{2}$ points, one per each Archimedean place of $F$.
 
-Proof. (1) : By Theorem 8.1.0.1(1), the continuous functionals in $\mathscr{E}_{S,S_{p}}(\chi_{S}|_{J^{1}_{F,S}})^{\prime}_{\beta}$ map under the continuous adjoint to the quotient map $\mathcal{S}(\mathbf{A}_{F,S}) \hookrightarrow \mathscr{E}_{S,S_{p}}(\chi_{S}|_{J^{1}_{F,S}})$ to the image of a unique continuous functional on $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}_{p}(\mathbf{A}_{F,S}))$, where $\mathcal{S}_{p}(\mathbf{A}_{F,S}) \subset \mathcal{S}(\mathbf{A}_{F,S})$ is the closed subspace defined in (8.1.0.4). This means that, for each such $T$ and for every $f \in \mathcal{S}(\mathbf{A}_{F,S})$, there exists $f_{1} \in \mathrm{PV}_{S,S_{p}}\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}(\mathbf{A}_{F,S}))$ such that $f -f_{1} \in \mathcal{S}_{p}(\mathbf{A}_{F,S})$, and $T(f -f_{1}) = T(f)$.
+Proof. (1) : By Theorem 8.1.0.1(1), the continuous functionals in $\mathscr{E}_{S,S_{p}}(\chi_{S}|_{J^{1}_{F,S}})^{\prime}_{\beta}$ map under the continuous adjoint to the quotient map $\mathcal{S}(\mathbf{A}_{F,S}) \to \mathscr{E}_{S,S_{p}}(\chi_{S}|_{J^{1}_{F,S}})$ to the image of a unique continuous functional on $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}_{p}(\mathbf{A}_{F,S}))$, where $\mathcal{S}_{p}(\mathbf{A}_{F,S}) \subset \mathcal{S}(\mathbf{A}_{F,S})$ is the closed subspace defined in (8.1.0.4). This means that, for each such $T$ and for every $f \in \mathcal{S}(\mathbf{A}_{F,S})$, there exists $f_{1} \in \mathrm{PV}_{S,S_{p}}\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}(\mathbf{A}_{F,S}))$ such that $f -f_{1} \in \mathcal{S}_{p}(\mathbf{A}_{F,S})$, and $T(f -f_{1}) = T(f)$.
 
 The elements of $\mathcal{S}_{p}(\mathbf{A}_{F,S})$ are supported on $H_{S,S_{p}}$. The remaining assertions in (1) follow from Proposition 8.2.0.4 and the observation that we have, as topological subspaces of $\mathbf{A}_{F,S}$:
 
@@ -520,7 +520,7 @@ $\Box$
 Let $F$ be a number field, $S$ a finite set of places of $F$ containing all the Archimedean places, and such
 that $\mathrm{Pic}(\mathcal{O}_{F,S}) = 1$. Assume $S$ is saturated.
 
-We let $\chi \in \widehat{C}_{F}$ be a continuous character, unramified outside $S$.
+We let $\chi \in \widehat{C_{F}}$ be a continuous character, unramified outside $S$.
 
 We let $\chi_{S}$ be the unique continuous character of $J_{F,S}$ obtained by descending the restriction of $\chi$ to $C_{F,S}$
 by $\widehat{\mathcal{O}}^{\times}_{\Sigma_{F}-S}$-invariance.
@@ -533,9 +533,9 @@ Kronecker-Weyl Theorem; see Theorem B.5.2.1), led to the asymptotic expansion: W
 as follows: let $f \in \mathcal{S}(\mathbf{A}_{F,S})$ be any Schwartz-Bruhat function. Then, for all $g \in J_{F,S}$ as $|g|_{F,S} \to 0^{+}$, we have,
 for any real number $A > 0$:
 
-$$\Phi_{F,S,\chi_{S}|J^{1}_{F,S}}(f)(g) =$$
-$$\sum_{v \in S_{\infty}} \sum_{m \in \mathbf{N}_{>0}, m < A} \sum_{1 \le k \le m_{S}(f,c_{v,m},\chi)} \frac{(-1)^{k-1} a_{k-1}(f,c_{v,m},\chi)}{(k-1)!} (\log|g|_{F,S})^{k-1} \chi|\cdot|^{m+it_{v}}_{F,S} \tag{8.4.0.1}$$
-$$+ \sum_{p: S_{p} \subset S_{f}-S_{\chi}} \sum_{v \in S_{p}} \sum_{m \in \mathbf{Z}} \sum_{1 \le k \le m_{S}(f,c_{v,m},\chi)} \frac{(-1)^{k-1} a_{k-1}(f,c_{v,m},\chi)}{(k-1)!} (\log|g|_{F,S})^{k-1} \chi|\cdot|^{\frac{-2\pi i m}{\log(q_{v})}+it_{v}}_{F,S} \tag{8.4.0.2}$$
+$$\Phi_{F,S,\chi_{S}|_{J^{1}_{F,S}}}(f)(g) =$$
+$$\sum_{v \in S_{\infty}} \sum_{m \in \mathbf{N}_{>0}, m < A} \sum_{1 \le k \le m_{S}(f,c_{v,m,\chi})} \frac{(-1)^{k-1} a_{k-1}(f,c_{v,m,\chi})}{(k-1)!} (\log|g|_{F,S})^{k-1} \chi|g|^{m+it_{v}}_{F,S} \tag{8.4.0.1}$$
+$$+ \sum_{p: S_{p} \subset S_{f}-S_{\chi}} \sum_{v \in S_{p}} \sum_{m \in \mathbf{Z}} \sum_{1 \le k \le m_{S}(f,c_{v,m,\chi})} \frac{(-1)^{k-1} a_{k-1}(f,c_{v,m,\chi})}{(k-1)!} (\log|g|_{F,S})^{k-1} \chi|\cdot|^{-\frac{2\pi i m}{\log(q_{v})}+it_{v}}_{F,S} \tag{8.4.0.2}$$
 $$+ O_{A}(|g|^{A}_{F,S}) \tag{8.4.0.3}$$
 
 which we have reorganized in light of Theorem 7.3.1.6, to highlight the absolute convergence of the sums
@@ -546,11 +546,11 @@ can find Schwartz-Bruhat functions $f$ supported entirely over
 $$\{x \in \mathbf{A}_{F,S} : x_{v} = 0, x_{w} \neq 0 \text{ for all } w \in S-\{v\}\} \subset \mathbf{A}_{F,S}$$
 and such that their own asymptotic expansion as $|g|_{F,S} \to 0^{+}$ takes the form:
 
-$$\Phi_{F,S,\chi_{S}|J^{1}_{F,S}}(f)(g) = \frac{(-1)^{k-1} a_{k-1}(f,c_{v,m},\chi)}{(k-1)!} (\log|g|_{F,S})^{k-1} \chi|\cdot|^{m+it_{v}}_{F,S} + O_{A}(|g|^{A}_{F,S}) \tag{8.4.0.4}$$
+$$\Phi_{F,S,\chi_{S}|_{J^{1}_{F,S}}}(f)(g) = \frac{(-1)^{k-1} a_{k-1}(f,c_{v,m,\chi})}{(k-1)!} (\log|g|_{F,S})^{k-1} \chi|g|^{m+it_{v}}_{F,S} + O_{A}(|g|^{A}_{F,S}) \tag{8.4.0.4}$$
 
 with $v \in S_{\infty}$ fixed and $m < A$, and:
 
-$$\Phi_{F,S,\chi_{S}|J^{1}_{F,S}}(f)(g) = \frac{(-1)^{k-1} a_{k-1}(f,c_{v,m},\chi)}{(k-1)!} (\log|g|_{F,S})^{k-1} \chi|\cdot|^{\frac{-2\pi i m}{\log(q_{v})}+it_{v}}_{F,S} + O_{A}(|g|^{A}_{F,S}) \tag{8.4.0.5}$$
+$$\Phi_{F,S,\chi_{S}|_{J^{1}_{F,S}}}(f)(g) = \frac{(-1)^{k-1} a_{k-1}(f,c_{v,m,\chi})}{(k-1)!} (\log|g|_{F,S})^{k-1} \chi|\cdot|^{-\frac{2\pi i m}{\log(q_{v})}+it_{v}}_{F,S} + O_{A}(|g|^{A}_{F,S}) \tag{8.4.0.5}$$
 
 for $v \in S_{f}$ at which $\chi$ is unramified, with $q_{v} := N(\mathfrak{p}_{v})$ where $\mathfrak{p}_{v} \subset \mathcal{O}_{F}$ is the unique prime ideal corresponding
 to the finite place $v$ of $F$.
@@ -586,7 +586,7 @@ space is supported on.
 The Orbital quotients $\mathscr{E}_{S,S_{\infty}}(\chi_{S}|_{J^{1}_{F,S}})$, respectivey $\mathscr{E}_{S,S_{p}}(\chi_{S}|_{J^{1}_{F,S}})$ (where we omit mentioning the continuous
 character $\chi_{S}$, identifying the $\chi_{S}$-isotype of each such subquotient), are thought of as being supported over the
 fat points $BU_{v}$ for each Archimedean place $v \in S_{\infty}$, respectively over the periodic orbits $[\mathbf{R}_{>0}/F^{\times}_{v}]$ (whose
-coarse spaces are, respectively, a loop $\mathbf{R}_{>0}/N(\mathfrak{p}_{v})\mathbf{Z}$, for each finite place $v \in S$.
+coarse spaces are, respectively, a loop $\mathbf{R}_{>0}/N(\mathfrak{p}_{v})^{\mathbf{Z}}$, for each finite place $v \in S$.
 
 We now look into the effect of the $S$-idelic Mellin transform $L_{S}$ (see (5.1.1.2)) on the diagram in (8.4.0.6).
 It turns it into the following divisor exact sequence:
@@ -601,7 +601,7 @@ L_{S}\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}_{00}(\mat
 ```
 
 where $\Omega(J_{F,S})(\chi_{S}|_{J^{1}_{F,S}})$ is the connected component parametrized by $\chi_{S}|_{J^{1}_{F,S}}$ of the Riemann surface $\Omega(J_{F,S})$ of
-$S$-idelic quasi-characters, $X_{S}(\chi_{S}|_{J^{1}_{F,S}})$ is a topological completion whose boundary is the divisor $\mathcal{U}_{S_{\infty}} \sqcup (\sqcup^{\prime}_{p:S_{p}\subset S} \mathcal{U}_{S_{p}})$,
+$S$-idelic quasi-characters, $X_{S}(\chi_{S}|_{J^{1}_{F,S}})$ is a topological completion whose boundary is the divisor $\mathcal{U}_{S_{\infty}} \coprod (\coprod^{\prime}_{p:S_{p}\subset S} \mathcal{U}_{S_{p}})$,
 where each divisor $\mathcal{U}_{S_{\infty}}$, respectively $\mathcal{U}_{S_{p}}$, is defined in (5.3.4.13) from Proposition 5.3.4.5, respectively (7.2.2.1).
 
 The Second Structure Theorem (see Theorem 5.4.1.1), provides an explicit description of the nuclear
@@ -634,8 +634,8 @@ ORBITAL TRACES
 \end{tikzcd}
 ```
 
-where now the coproduct $\sqcup_{p} \sqcup_{v \in S_{p}} [\mathbf{R}_{>0}/F^{\times}_{v}]$ is indexed by all prime numbers, and its coarse space is a
-countable disjoint union of loops $\sqcup_{p} \sqcup_{v \in S_{p}} \mathbf{R}_{>0}/N(\mathfrak{p}_{v})\mathbf{Z}$ organized according to splitting patterns.
+where now the coproduct $\coprod_{p} \coprod_{v \in S_{p}} [\mathbf{R}_{>0}/F^{\times}_{v}]$ is indexed by all prime numbers, and its coarse space is a
+countable disjoint union of loops $\coprod_{p} \coprod_{v \in S_{p}} \mathbf{R}_{>0}/N(\mathfrak{p}_{v})^{\mathbf{Z}}$ organized according to splitting patterns.
 
 The global idelic Mellin transform turns the diagram in (8.4.0.8) into the following:
 
@@ -648,15 +648,15 @@ L\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^{1}_{F}}, \mathcal{S}_{00}(\mathbf{A}_{F}
 \end{tikzcd}
 ```
 
-where $X(\chi|_{C^{1}_{F}})$ is a completion of the connected component $\Omega(C_{F})(\chi|_{C^{1}_{F}})$ with boundary divisor $\mathcal{U}_{S_{\infty}} \sqcup (\sqcup_{p} \mathcal{U}_{S_{p}})$.
+where $X(\chi|_{C^{1}_{F}})$ is a completion of the connected component $\Omega(C_{F})(\chi|_{C^{1}_{F}})$ with boundary divisor $\mathcal{U}_{S_{\infty}} \coprod (\coprod_{p} \mathcal{U}_{S_{p}})$.
 
-In all four diagrams (8.4.0.6), (8.4.0.7), (8.4.0.8) and (8.4.0.9), the notation $\sqcup^{\prime}$ denotes the coproduct
+In all four diagrams (8.4.0.6), (8.4.0.7), (8.4.0.8) and (8.4.0.9), the notation $\coprod^{\prime}$ denotes the coproduct
 over only those places at which $\chi_{S}$, respectively $\chi$, is unramified.
 
 Remark 8.4.0.1. The topological spaces $X_{S}(\chi_{S}|_{J^{1}_{F,S}})$ and $X(\chi|_{C^{1}_{F}})$ can be assembled together into families
-parametrized by the discrete character groups $\widehat{J}^{1}_{F,S}$, respectively $\widehat{C}^{1}_{F}$:
-$$p_{S} : \mathcal{X}_{S} \to \widehat{J}^{1}_{F,S}, \quad p : \mathcal{X} \to \widehat{C}^{1}_{F}.$$
-The boundaries of $X_{S}(\chi_{S}|_{J^{1}_{F,S}})$ and $X(\chi|_{C^{1}_{F}})$ also relativize over $\widehat{J}^{1}_{F,S}$, respectively $\widehat{C}^{1}_{F}$.
+parametrized by the discrete character groups $\widehat{J^{1}_{F,S}}$, respectively $\widehat{C^{1}_{F}}$:
+$$p_{S} : \mathcal{X}_{S} \to \widehat{J^{1}_{F,S}}, \quad p : \mathcal{X} \to \widehat{C^{1}_{F}}.$$
+The boundaries of $X_{S}(\chi_{S}|_{J^{1}_{F,S}})$ and $X(\chi|_{C^{1}_{F}})$ also relativize over $\widehat{J^{1}_{F,S}}$, respectively $\widehat{C^{1}_{F}}$.
 
 The vertical arrows in (8.4.0.6), (8.4.0.7), (8.4.0.8), respectively (8.4.0.9), are not morphisms, but rather
 merely refer to the intuition, guided by Theorem 8.1.0.1 and Theorem 7.3.4.1(4), that each nuclear Fréchet space
@@ -726,17 +726,17 @@ The trace of $A(\varphi)$ on $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S
 
 We can proceed heuristically and combine the calculations performed in Theorem 7.4.2.1 and Theorem
 7.4.3.2, to infer that its value will be:
-$$\mathrm{Trace}(A(\varphi)) = \sum_{p:S_{p}\subset S} \sum_{\varepsilon_{p}} N(\chi_{S}|\cdot|^{\epsilon_{p}}_{F,S}) \int_{J_{F,S}} \varphi(g) \chi_{S}(g) |g|^{\epsilon_{p}}_{F} \, \mathrm{d}\overline{\mu}_{S}(g) \tag{8.4.0.10}$$
+$$\mathrm{Trace}(A(\varphi)) = \sum_{p:S_{p}\subset S} \sum_{\varepsilon_{p}} N(\chi_{S}|\cdot|^{\varepsilon_{p}}_{F,S}) \int_{J_{F,S}} \varphi(g) \chi_{S}(g) |g|^{\varepsilon_{p}}_{F} \, \mathrm{d}\overline{\mu}_{S}(g) \tag{8.4.0.10}$$
 $$+ \sum_{z} N(\chi_{S}|\cdot|^{z}_{F,S}) \int_{J_{F,S}} \varphi(g) \chi_{S}(g) |g|^{z}_{F} \, \mathrm{d}\overline{\mu}_{S}(g) \tag{8.4.0.11}$$
 where $\varepsilon_{p}$ varies over the poles of $\prod_{v \in S_{p}} L_{v}(\chi_{v}|\cdot|^{s}_{v})$, for each prime $p$ such that $S_{p} \subset S$, and $z$ varies over
-the poles of the $\Gamma$-factor of the Hecke $L$-function $L(s,\chi)$, $N(\chi_{S}|\cdot|^{\epsilon_{p}}_{F,S})$ and $N(\chi_{S}|\cdot|^{z}_{F,S})$ being the respective
+the poles of the $\Gamma$-factor of the Hecke $L$-function $L(s,\chi)$, $N(\chi_{S}|\cdot|^{\varepsilon_{p}}_{F,S})$ and $N(\chi_{S}|\cdot|^{z}_{F,S})$ being the respective
 multiplicity functions.
 
 The reader will now recognize, through the lens of the Poisson Summation Formula (in its form from
 Proposition B.4.1.2) and the Asymptotic Residue Theorem (see Theorem B.3.2.1 and Theorem B.4.2.2), the
 geometric side of Weil’s Explicit Formulas, namely:
-$$\sum_{v \in S_{f}-S_{\chi}} \sum_{m>0} \frac{\log N(\mathfrak{p}_{v})}{N(\mathfrak{p}_{v})^{m/2}} \{\chi(\mathfrak{p}^{m}_{v}) \varphi(N(\mathfrak{p}_{v})^{m}) + \overline{\chi(\mathfrak{p}^{m}_{v})} \varphi(N(\mathfrak{p}_{v})^{-m})\} \tag{8.4.0.12}$$
-$$- \sum_{v \in S_{\infty}} \int^{+\infty}_{0} \left( N_{v}\phi(1)\frac{1}{x} - (\phi(e^{x})e^{s_{v}x} + \phi(e^{-x})e^{-s_{v}x}) \frac{e^{(\frac{2}{N_{v}}-\frac{1}{2})x}}{1-e^{-\frac{2}{N_{v}}x}} \right) \mathrm{d}x \tag{8.4.0.13}$$
+$$\sum_{v \in S_{f}-S_{\chi}} \sum_{m>0} \frac{\log N(\mathfrak{p}_{v})}{N(\mathfrak{p}_{v})^{m/2}} \{\chi(\mathfrak{p}^{m}_{v}) \varphi(N(\mathfrak{p}_{v})^{m}) + \overline{\chi}(\mathfrak{p}^{m}_{v}) \varphi(N(\mathfrak{p}_{v})^{-m})\} \tag{8.4.0.12}$$
+$$- \sum_{v \in S_{\infty}} \int^{+\infty}_{0} \left\{ \frac{N_{v}\phi(1)}{x} - (\phi(e^{x})e^{s_{v}x} + \phi(e^{-x})e^{-s_{v}x}) \frac{e^{(\frac{2}{N_{v}}-\frac{1}{2})x}}{1-e^{-\frac{2}{N_{v}}x}} \right\} \mathrm{d}x \tag{8.4.0.13}$$
 
 ## PDF page 393
 
@@ -795,7 +795,7 @@ topologies on the ambient $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S^{\prime}}|_{J^{1
 A choice of test function $\varphi \in \mathcal{D}(C_{F})$, which we again assume supported over the closed semigroup $C^{\ge 1}_{F}$,
 induces a test function $\varphi_{S} \in \mathcal{D}(J_{F,S})$ for all large enough $S$. Indeed, for $S$ any finite set of places of $F$
 containing all the Archimedean places, such that $\chi$ is unramified outside $S$, and with $\mathrm{Pic}(\mathcal{O}_{F,S}) = 1$, we have
-that $\varphi$ is $k$-invariant for $k \subset C_{F}$ a compact subgroup with open compactly generated orthogonal $k^{\perp} \subset \widehat{C}_{F}$.
+that $\varphi$ is $k$-invariant for $k \subset C_{F}$ a compact subgroup with open compactly generated orthogonal $k^{\perp} \subset \widehat{C_{F}}$.
 
 ## PDF page 394
 

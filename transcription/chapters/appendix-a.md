@@ -559,7 +559,7 @@ such that $|\cdot|_F \circ s$ is the identity on $\mathbf{R}_{>0}$. We note that
 **A.2.2.1. The canonical section.** The topological groups $\mathrm{GL}_1(\mathbf{A}_{\mathbf{Q}})$ and $C_{\mathbf{Q}}$ can be described explicitly. We have an isomorphism of topological groups
 
 $$
-\theta : \mathbf{R}^{\times} \times \mathbf{Q}_{>0} \times \widehat{\mathbf{Z}}^{\times} \xrightarrow{\sim} \mathrm{GL}_1(\mathbf{A}_{\mathbf{Q}}) \tag{A.2.2.1}
+\theta : \mathbf{R}^{\times} \times \mathbf{Q}_{>0} \times \widehat{\mathbf{Z}}^{\times} \xrightarrow{\simeq} \mathrm{GL}_1(\mathbf{A}_{\mathbf{Q}}) \tag{A.2.2.1}
 $$
 
 given explicitly as $\theta(t,q,h) := tqh$, for $t \in \mathbf{R}^{\times}$, $q \in \mathbf{Q}_{>0}$, $h \in \mathrm{GL}_1(\widehat{\mathbf{Z}})$. It satisfies:
@@ -573,7 +573,7 @@ where $|\cdot|_{\mathbf{R}}$ is the Euclidean absolute value on $\mathbf{R}^{\ti
 This induces an isomorphism of Hausdorff locally compact abelian groups
 
 $$
-\theta : \mathbf{R}_{>0} \times \widehat{\mathbf{Z}}^{\times} \xrightarrow{\sim} C_{\mathbf{Q}} \tag{A.2.2.3}
+\theta : \mathbf{R}_{>0} \times \widehat{\mathbf{Z}}^{\times} \xrightarrow{\simeq} C_{\mathbf{Q}} \tag{A.2.2.3}
 $$
 
 Lemma A.2.2.1. The function
@@ -713,7 +713,7 @@ the map $\mathscr{L}$ from (A.2.3.3) satisfies the following conditions:
 
 (1) $\mathscr{L}$ is a continuous group homomorphism, and $\mathscr{L}(\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1) \subset H_{\log}$.
 
-(2) $\mathscr{L}$ is a smooth submersion whose kernel is isomorphic, as a Lie group, to the compact Lie group $(\pm 1)^{r_1} \times \mathrm{U}(1)^{r_2}$.
+(2) $\mathscr{L}$ is a smooth submersion whose kernel is isomorphic, as a Lie group, to the compact Lie group $(\mu_2)^{r_1} \times \mathrm{U}(1)^{r_2}$.
 
 (3) $\mathscr{L}$ is a proper smooth submersion.
 
@@ -752,7 +752,7 @@ $$
 and a fundamental domain for the left translation action of $\mathscr{L}(\mathcal{O}_F^{\times})$ on $\mathscr{L}(\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1) \simeq \mathbf{R}^{r_1+r_2-1}$ is given by the parallelotope
 
 $$
-P = \left(\sum_{i=1}^{r_1+r_2-1} x_i \mathscr{L}(\varepsilon_i) : (x_i) \in Q\right) \tag{A.2.3.9}
+P = \left\{\sum_{i=1}^{r_1+r_2-1} x_i \mathscr{L}(\varepsilon_i) : (x_i) \in Q\right\} \tag{A.2.3.9}
 $$
 
 where $Q$ is the hypercube
@@ -985,15 +985,15 @@ Lemma A.2.3.13. We fix an Archimedean place $v_0$ of $F$, and let $T_{v_0} \subs
 
 (1) The subset $K_{v_0} \cdot \overline{E}_0 \subset \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ is compact. If $K_{v_0}$ has non-empty interior in $T_{v_0,\infty}$, then so does $K_{v_0} \cdot \overline{E}_0$ in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$.
 
-(2) We have $(K_{v_0} \cdot E_0) \cap (\bigcup_{v\in S_{\infty}} H_v) = \emptyset$.
+(2) We have $(K_{v_0} \cdot \overline{E}_0) \cap (\bigcup_{v\in S_{\infty}} H_v) = \emptyset$.
 
 (3) If $K_{v_0}$ has non-empty interior in $T_{v_0,\infty}$, then so does $K_{v_0} \cdot \overline{E}_0$ in $\mathbf{A}_{F,S_{\infty}}$.
 
-Proof. (1): Compactness of $K_{v_0} \cdot \overline{E}_0$ follows from Lemma A.2.3.8(1). The interior of $K_{v_0} \cdot \overline{E}_0$ in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ contains the open subset $\mathrm{Int}_{T_{v_0,\infty}}(K_{v_0}) \times \mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1}(\overline{E}_0) \subset T_{v_0,\infty} \times \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1 = \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$. If $\mathrm{Int}_{T_{v_0,\infty}}(K_{v_0})$ is non-empty then since $\mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1}(\overline{E}_0) = \mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1}(E_0)$ is also non-empty by Lemma A.2.3.8(1), so is $\mathrm{Int}_{T_{v_0,\infty}}(K_{v_0}) \cdot \mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1}(E_0) \subset \mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})}(K_{v_0} \cdot E_0)$.
+Proof. (1): Compactness of $K_{v_0} \cdot \overline{E}_0$ follows from Lemma A.2.3.8(1). The interior of $K_{v_0} \cdot \overline{E}_0$ in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ contains the open subset $\mathrm{Int}_{T_{v_0,\infty}}(K_{v_0}) \times \mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1}(\overline{E}_0) \subset T_{v_0,\infty} \times \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1 = \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$. If $\mathrm{Int}_{T_{v_0,\infty}}(K_{v_0})$ is non-empty then since $\mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1}(\overline{E}_0) = \mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1}(E_0)$ is also non-empty by Lemma A.2.3.8(1), so is $\mathrm{Int}_{T_{v_0,\infty}}(K_{v_0}) \cdot \mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1}(\overline{E}_0) \subset \mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})}(K_{v_0} \cdot \overline{E}_0)$.
 
-(2): Since $K_{v_0} \subset T_{v_0,\infty}$ and $E_0 \subset \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$, we have $K_{v_0} \cdot E_0$ is entirely contained within $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$, and the complement of $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ is $\bigcup_{v\in S_{\infty}} H_v$.
+(2): Since $K_{v_0} \subset T_{v_0,\infty}$ and $\overline{E}_0 \subset \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$, we have $K_{v_0} \cdot \overline{E}_0$ is entirely contained within $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$, and the complement of $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ is $\bigcup_{v\in S_{\infty}} H_v$.
 
-(3): Clearly $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}}) \simeq \prod_{v\in S_{\infty}} F_v^{\times}$ is open in $\mathbf{A}_{F,S_{\infty}}$. If $K_{v_0} \subset T_{v_0,\infty}$ is a compact subset with non-empty interior in $T_{v_0,\infty}$, then by (1) we have that the interior of $K_{v_0} \cdot E_0$ in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ is non-empty, and since it is open, it is open and non-empty also in $\mathbf{A}_{F,S_{\infty}}$ because $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ is open in $\mathbf{A}_{F,S_{\infty}}$. The interior $\mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})}(K_{v_0} \cdot \overline{E}_0)$ formed in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ coincides with the interior $\mathrm{Int}_{\mathbf{A}_{F,S_{\infty}}}(K_{v_0} \cdot \overline{E}_0)$ formed within $\mathbf{A}_{F,S_{\infty}}$ by compactness of $K_{v_0}\overline{E}_0$ and openness of $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ in $\mathbf{A}_{F,S_{\infty}}$. $\square$
+(3): Clearly $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}}) \simeq \prod_{v\in S_{\infty}} F_v^{\times}$ is open in $\mathbf{A}_{F,S_{\infty}}$. If $K_{v_0} \subset T_{v_0,\infty}$ is a compact subset with non-empty interior in $T_{v_0,\infty}$, then by (1) we have that the interior of $K_{v_0} \cdot \overline{E}_0$ in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ is non-empty, and since it is open, it is open and non-empty also in $\mathbf{A}_{F,S_{\infty}}$ because $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ is open in $\mathbf{A}_{F,S_{\infty}}$. The interior $\mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})}(K_{v_0} \cdot \overline{E}_0)$ formed in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ coincides with the interior $\mathrm{Int}_{\mathbf{A}_{F,S_{\infty}}}(K_{v_0} \cdot \overline{E}_0)$ formed within $\mathbf{A}_{F,S_{\infty}}$ by compactness of $K_{v_0}\overline{E}_0$ and openness of $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ in $\mathbf{A}_{F,S_{\infty}}$. $\square$
 
 **A.2.4. Fundamental domain for $\mathbf{A}_{F,S}/\mathcal{O}_{F,S}$ and $C_{F,S}$.** In this subsection we construct an $S$-local analog of the fundamental domain $D_F$ from (A.2.1.2) for the $F$-action on $\mathbf{A}_F$, i.e. a fundamental domain for the continuous additive translation action by $\mathcal{O}_{F,S}$ on $\mathbf{A}_{F,S}$, and for the $\mathcal{O}_{F,S}^{\times}$-action on $\mathrm{GL}_1(\mathbf{A}_{F,S})^1$.
 
@@ -1370,7 +1370,7 @@ We refer to $\mu_v$ as the *local multiplicative Tamagawa measure* on $F_v^{\tim
 Lemma A.3.2.3. Let $F$ be a number field. For every $v\in\Sigma_{F,f}$, let $\mu_v$ be the local multiplicative Tamagawa measure on $F_v^{\times}$. We have, as Haar measures on $F_v^{\times}$:
 
 $$
-\mu_v = \frac{q_v}{q_v-1}\frac{\nu_{\underline{v}}}{|\cdot|_v} \tag{A.3.2.3}
+\mu_v = \frac{q_v}{q_v-1}\frac{\nu_v}{|\cdot|_v} \tag{A.3.2.3}
 $$
 
 where $q_v$ is the size of the residue field at $v$ and $\nu_v$ is the local additive Tamagawa measure on $F_v$.
@@ -1592,7 +1592,7 @@ PROOF OF CLAIM A.4.1.2. We are considering only $g$ basic, which we recall means
 
 Let's find a real number $C_0 > 0$ depending only on $|S|$ such that $(-\mathscr{L}_S(g_i g) + Z) \cap H_{\mathrm{log}}$ is contained in the closed ball in $\mathbf{R}^S$ centered at the origin and of radius $C_0 |\log|g|_{F,S}| + M_i$ for a constant $M_i$ depending only on the fixed $g_i$ and $S$. Observe that the vector $\mathscr{L}_S(g_i g)$ has supremum norm bounded above by the maximum of the real numbers $|\log|(g_i)_v g_v|_v|$ as $v$ varies over the finitely many places of $F$ in $S$, with these real numbers equal to $|\log|g_i|_v|$ for finite $v$ (which is $1$ for all but finitely many $v$) since $g$ is basic: we have $g = \tau(t_0) g_0$ for a unique $t_0 \in \mathbf{R}_{>0}$ and $g_0 \in E_{S_\infty,0} \times \widehat{\mathcal{O}}_F^\times$.
 
-Since $E_{S_\infty,0}$ is relatively compact in $\mathbf{R}^{S_\infty}$, we conclude that $\log(|(g_i g)_w|_w)$ is bounded as $g$ varies over $E_{S_\infty,0} \times \widehat{\mathcal{O}}_F^\times \subset \mathrm{GL}_1(\mathbf{A}_{F,S})$ and $w$ varies over the places in $S$. In particular, for each $v \in S$, we have $|\log|(g_i g)_v|_v| \le C_0 \max_{v \in S_\infty} |\log|\tau(t)_v|_v|$ for a real number $C_0 > 0$ and all basic $g = \tau(t_0) g_0$ with real $t_0 > 0$ and $g_0 \in E_{S_\infty,0} \times \widehat{\mathcal{O}}_F^\times$. Since we chose the diagonal section $\tau = s_{F,\delta}$, for every $v \in S_\infty$ we have $|\log|\tau(t)_v|_v| \le |\log(t)|$ for all $t \in \mathbf{R}_{>0}$. Hence, the sup-norm of $\mathscr{L}_S(g_i g) \in \mathbf{R}^S$ is bounded above by $C_0|\log(t_0)| + B_i$, where $B_i = \max_{v \in S_f} |\log(|(g_i)_v|)|$. But $\tau$ is a section to the idelic norm and $g_0 \in \mathrm{GL}_1(\mathbf{A}_{F,S})^1$, so $|g|_{F,S} = |\tau(t_0|_{F,S} = t_0$, yielding that $\mathscr{L}_S(g_i g)$ has sup-norm as most $C_0 |\log(|g|_{F,S})| + B_i$ as desired.
+Since $E_{S_\infty,0}$ is relatively compact in $\mathbf{R}^{S_\infty}$, we conclude that $\log(|(g_i g)_w|_w)$ is bounded as $g$ varies over $E_{S_\infty,0} \times \widehat{\mathcal{O}}_F^\times \subset \mathrm{GL}_1(\mathbf{A}_{F,S})$ and $w$ varies over the places in $S$. In particular, for each $v \in S$, we have $|\log|(g_i g)_v|_v| \le C_0 \max_{v \in S_\infty} |\log|\tau(t)_v|_v|$ for a real number $C_0 > 0$ and all basic $g = \tau(t_0) g_0$ with real $t_0 > 0$ and $g_0 \in E_{S_\infty,0} \times \widehat{\mathcal{O}}_F^\times$. Since we chose the diagonal section $\tau = s_{F,\delta}$, for every $v \in S_\infty$ we have $|\log|\tau(t)_v|_v| \le |\log(t)|$ for all $t \in \mathbf{R}_{>0}$. Hence, the sup-norm of $\mathscr{L}_S(g_i g) \in \mathbf{R}^S$ is bounded above by $C_0|\log(t_0)| + B_i$. where $B_i = \max_{v \in S_f} |\log(|(g_i)_v|)|$. But $\tau$ is a section to the idelic norm and $g_0 \in \mathrm{GL}_1(\mathbf{A}_{F,S})^1$, so $|g|_{F,S} = |\tau(t_0|_{F,S} = t_0$, yielding that $\mathscr{L}_S(g_i g)$ has sup-norm as most $C_0 |\log(|g|_{F,S})| + B_i$ as desired.
 
 ## PDF page 565
 
@@ -1677,7 +1677,7 @@ $$
 (3) For $p > 1$, if $f \in L^p(\mathbf{R},\mathrm{d}x)$ then there exists a real number $C_p > 0$ independent of $f$ such that
 
 $$
-\|Mf\|^p_{L^p(\mathbf{R},\mathrm{d}x)} \le \frac{2^p \cdot 3^p}{p-1} \|f\|^p_{L^p(\mathbf{R},\mathrm{d}x)}. \tag{A.5.1.4}
+\|Mf\|^p_{L^p(\mathbf{R},\mathrm{d}x)} \le \frac{2^p \cdot 3p}{p-1} \|f\|^p_{L^p(\mathbf{R},\mathrm{d}x)}. \tag{A.5.1.4}
 $$
 
 PROOF. (1) : We note that $Mf$ is measurable since the function of $x$ given by $\frac{1}{2r} \int_{x-r}^{x+r} |f(x)|\,\mathrm{d}y$ is continuous for every $r > 0$. We let $r > 0$ be an arbitrary real number. Since $f \in L^1_{\mathrm{loc}}(\mathbf{R},\mathrm{d}x)$, $f \cdot \mathrm{1}_{[-r,r]}$ is absolutely integrable over $\mathbf{R}$. Following the proof of [HR-2, Ch. XI, 44.50(d), p. 670], we choose an arbitrary
@@ -1708,7 +1708,7 @@ where we used [HR-2, Ch. XI, 44.50(a.ii), p. 669] to obtain the last inequality.
 We now apply [Fol, Thm. 7.27] to the Lebesgue measure $\mu$ on $\mathbf{R}$, $\varphi(y) = \log(y)$, and $E = [-r,r]$, to obtain:
 
 $$
-\frac{C_0}{(1-\delta)} \int_{1/\delta}^{+\infty} \left( \int_{[-r,r]} |\{x \in \mathbf{R} : |f(x)| > \delta y\}| \cdot |f(x)|\,\mathrm{d}x \right) \frac{\mathrm{d}y}{y} = \frac{C_0}{(1-\delta)} \int_{x \in [-r,r]} |f(x)| \int_1^{+\infty} |\{y \in \mathbf{R} : |f(x)| > y\}| \frac{\mathrm{d}y}{y}\,\mathrm{d}x \tag{A.5.1.6}
+\frac{C_0}{(1-\delta)} \int_{1/\delta}^{+\infty} \left\{ \int_{[-r,r]} |\{x \in \mathbf{R} : |f(x)| > \delta y\}| \cdot |f(x)|\,\mathrm{d}x \right\} \frac{\mathrm{d}y}{y} = \frac{C_0}{(1-\delta)} \int_{x \in [-r,r]} |f(x)| \int_1^{+\infty} |\{y \in \mathbf{R} : |f(x)| > y\}| \frac{\mathrm{d}y}{y}\,\mathrm{d}x \tag{A.5.1.6}
 $$
 
 $$
@@ -1724,7 +1724,7 @@ which gives the local integrability of $Mf$ over $\mathbf{R}$, and hence its fin
 We note that $F_\delta$ is absolutely integrable for every $\delta > 0$, since, by [Fol, Thm. 6.17], we have:
 
 $$
-|\{x \in \mathbf{R} : |f(x)| > \delta/2\}| \le \frac{2^p}{\delta^p} \|f\|^p_{L^p(\mathbf{R},\mathrm{d}x)}
+|\{x \in \mathbf{R} : |f(x)| > \delta/2\} \le \frac{2^p}{\delta^p} \|f\|^p_{L^p(\mathbf{R},\mathrm{d}x)}
 $$
 
 for every $\delta > 0$, and hence $F_\delta(x)$ is nonzero only on a measurable subset of $\mathbf{R}$ of finite Lebesgue measure.
@@ -1744,7 +1744,7 @@ $$
 By combining (A.5.1.9) and (A.5.1.8) we obtain:
 
 $$
-\|Mf\|^p_{L^p(\mathbf{R},\mathrm{d}x)} \le 2 \cdot 3p \int_0^{+\infty} \int_{|f(x)| > y/2} y^{p-2} |f(x)|\,\mathrm{d}x\,\mathrm{d}y = 2^p \cdot 3p \int_0^{+\infty} \int_{|f(x)| > y} y^{p-2} |f(x)|\,\mathrm{d}x\,\mathrm{d}y \tag{A.5.1.10}
+\|Mf\|^p_{L^p(\mathbf{R},\mathrm{d}x)} \le 2 \cdot 3p \int_0^{+\infty} \int_{|f(x)| > y/2}^{+\infty} y^{p-2} |f(x)|\,\mathrm{d}x\,\mathrm{d}y = 2^p \cdot 3p \int_0^{+\infty} \int_{|f(x)| > y} y^{p-2} |f(x)|\,\mathrm{d}x\,\mathrm{d}y \tag{A.5.1.10}
 $$
 
 and Fubini's Theorem (along with the equality $\int_0^a y^{p-1}\,\mathrm{d}y/y = a^{p-1}/(p-1)$) gives
@@ -2197,9 +2197,9 @@ $$
 
 is a symmetric $D'$-sequence for $\mathrm{GL}_1(\mathbf{A}_F)^1$ and for $\mathrm{GL}_1(\mathbf{A}_{F,S} \times \widehat{\mathcal{O}}_{F,\Sigma_F-S})^1$.
 
-(2) For each integer $k \ge 0$ and for $\overline{U}_{F,k}$ the image in $C^1_F$ of $U_{F,k}$ under the continuous quotient homomorphism $\mathrm{GL}_1(\mathbf{A}_F)^1 \to C^1_F$, the sequence $\{U_{F,k}\}_{k \ge 0}$ is a symmetric $D'$-sequence for $C^1_F$.
+(2) For each integer $k \ge 0$ and for $\overline{U}_{F,k}$ the image in $C^1_F$ of $U_{F,k}$ under the continuous quotient homomorphism $\mathrm{GL}_1(\mathbf{A}_F)^1 \to C^1_F$, the sequence $\{\overline{U}_{F,k}\}_{k \ge 0}$ is a symmetric $D'$-sequence for $C^1_F$.
 
-(3) For each integer $k \ge 0$ and for $U_{F,S,k}$ the image in $C^1_{F,S}$ of $U_{F,k}$ under the continuous quotient homomorphism $\mathrm{GL}_1(\mathbf{A}_{F,S} \times \widehat{\mathcal{O}}_{F,\Sigma_F-S})^1 \to C^1_{F,S}$, the sequence $\{\overline{U}_{F,S,k}\}_{k \ge 0}$ is a symmetric $D'$-sequence for $C^1_{F,S}$.
+(3) For each integer $k \ge 0$ and for $\overline{U}_{F,S,k}$ the image in $C^1_{F,S}$ of $U_{F,k}$ under the continuous quotient homomorphism $\mathrm{GL}_1(\mathbf{A}_{F,S} \times \widehat{\mathcal{O}}_{F,\Sigma_F-S})^1 \to C^1_{F,S}$, the sequence $\{\overline{U}_{F,S,k}\}_{k \ge 0}$ is a symmetric $D'$-sequence for $C^1_{F,S}$.
 
 PROOF. (1) holds by Lemma A.5.2.3(2), combined with Lemma A.5.2.3(1) and Lemma A.5.2.5.
 
@@ -2243,7 +2243,7 @@ We refer to the open symmetric $D'$-sequences:
 
 (3) $\{U_{F,k}\}_{k \ge 0}$ from (A.5.2.23) for $\mathrm{GL}_1(\mathbf{A}_F)^1$, respectively $\mathrm{GL}_1(\mathbf{A}_{F,S} \times \widehat{\mathcal{O}}_{F,\Sigma_F-S})^1$.
 
-(4) $\{U_{F,k}\}_{k \ge 0}$ from Lemma A.5.2.16(2), for $C^1_F$, $\{\overline{U}_{F,S,k}\}_{k \ge 0}$ from Lemma A.5.2.16(3), for $C^1_{F,S}$.
+(4) $\{\overline{U}_{F,k}\}_{k \ge 0}$ from Lemma A.5.2.16(2), for $C^1_F$, $\{\overline{U}_{F,S,k}\}_{k \ge 0}$ from Lemma A.5.2.16(3), for $C^1_{F,S}$.
 
 (5) $\{U_k\}_{k \ge 0}$ from (A.5.2.22) for $\mathrm{GL}_1(\mathbf{A}_{F,S})$.
 

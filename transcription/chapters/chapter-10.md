@@ -126,7 +126,7 @@ $$
 
 *(2) The continuous left-translation action of $C_F$ on $W_I^s(C_F)$ preserves $W_{a,I}^s\,\mathrm{H}_{0,\mathrm{cont}}(F^\times,\mathcal{S}_0(\mathbf{A}_F))$ and restricts to the continuous left-translation action of $C_F$ on $|\cdot|_F^a\,\mathrm{H}_{0,\mathrm{cont}}(F^\times,\mathcal{S}_0(\mathbf{A}_F))$ induced by the continuous left-translation action of $\mathrm{GL}_1(\mathbf{A}_F)$ on $\mathcal{S}_0(\mathbf{A}_F)$.*
 
-PROOF. Since $C_F$ is second-countable, $W_I^s(C_F)$ is a separable Hilbert space by Lemma 9.1.1.2$^2$, applied to $G=\widehat{C_F}$, $\mu:=\widehat{\bar\mu}_1$. Since $W_{a,I}^s\,\mathrm{H}_{0,\mathrm{cont}}(F^\times,\mathcal{S}_0(\mathbf{A}_F))$ is closed in $W_I^s(C_F)$, it is itself a separable Hilbert space, and the normed topology on it is induced by the norm $\|\cdot\|_{I,s}$ on the ambient, which gives (10.1.1.6). $\square$
+PROOF. Since $C_F$ is second-countable, $W_I^s(C_F)$ is a separable Hilbert space by Lemma 9.1.1.2$^2$, applied to $G=\widehat{C_F}$, $\mu:=\widehat{\bar\mu_1}$. Since $W_{a,I}^s\,\mathrm{H}_{0,\mathrm{cont}}(F^\times,\mathcal{S}_0(\mathbf{A}_F))$ is closed in $W_I^s(C_F)$, it is itself a separable Hilbert space, and the normed topology on it is induced by the norm $\|\cdot\|_{I,s}$ on the ambient, which gives (10.1.1.6). $\square$
 
 Recall that we have denoted the continuous left-translation action of $\mathrm{GL}_1(\mathbf{A}_{F,S})$ on $\mathbf{A}_{F,S}$ by $\rho_{F,S}:\mathrm{GL}_1(\mathbf{A}_{F,S})\times\mathbf{A}_{F,S}\to\mathbf{A}_{F,S}$.
 
@@ -320,7 +320,7 @@ from which we deduce that $J$ completes the following diagram of continuous line
 
 rendering it commutative.
 
-(1) : Since $|\cdot|^z_F$ is a bounded multiplier on $W^s_I(C_F)$ if and only if $\mathrm{Re}(z)=0^5$, we deduce from (10.1.2.4) that continuity of $\mathcal F$ in the $||\cdot||_{a,I}$ is equivalent to $a=1/2$, in which case we may define $\mathcal F:=J$. From commutativity of (10.1.2.5) we deduce that (10.1.2.2) commutes with this choice of $\mathcal F$ on $W^s_{a,I}\mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S_0(\mathbf A_F))$.
+(1) : Since $|\cdot|^z_F$ is a bounded multiplier on $W^s_I(C_F)$ if and only if $\mathrm{Re}(z)=0$ $^{5}$, we deduce from (10.1.2.4) that continuity of $\mathcal F$ in the $||\cdot||_{a,I}$ is equivalent to $a=1/2$, in which case we may define $\mathcal F:=J$. From commutativity of (10.1.2.5) we deduce that (10.1.2.2) commutes with this choice of $\mathcal F$ on $W^s_{a,I}\mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S_0(\mathbf A_F))$.
 
 (2) : If $a=1/2$, then the definition $\mathcal F:=J$, indeed provides a continuous linear automorphism on $W^s_{a,I}\mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S_0(\mathbf A_F))$ making the diagram in (10.1.2.2) commute, so long as $I=-I$, which holds since $I=[-\alpha,\alpha]$ for a real number $\alpha\ge 0$. $\square$
 
@@ -342,7 +342,7 @@ It is, however, a Markushevich basis. The property that is lost under coarsening
 
 We let $F$ be a number field, $S$ a finite set of places of $F$ containing all the Archimedean places. Let $\chi$ be a continuous character of $C_F$, respectively of $J_{F,S}$.
 
-In the remaining sections of this Chapter, we analyze to what extent the Schauder bases constructed in the previous Chapter with respect to the strong topology on the Hausdorff locally convex space $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$
+In the remaining sections of this Chapter, we analyze to what extent the Schauder bases constructed in the previous Chapter with respect to the strong topology on the Hausdorff locally convex space $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S(\mathbf A_F))$
 
 ---
 $^5$Return here.
@@ -500,7 +500,7 @@ $$
 
 where the orthogonal $\mathrm H_{0,\mathrm{cont}}(\omega,\mathcal S_0(\mathbf A_F))^\perp$ within $\mathcal{S}_{\mathrm{E}}(C_F)(\omega)'_\beta$ is being formed with respect to the duality $\langle \mathcal{S}_{\mathrm{E}}(C_F)(\omega),\mathcal{S}_{\mathrm{E}}(C_F)(\omega)'_\beta\rangle$.
 
-Since $\mathcal{S}_{\mathrm{E}}(C_F)(\omega)$ is linearly and topologically isomorphic to $A\mathcal S(\mathbf C)$ under the Mellin transform $\phi\mapsto M(\phi)(s):=\int_{\mathbf R_{>0}}\phi(t)t^s\frac{dt}{t}$ pre-composed with the linear topological isomorphism induced by pull-back under a fixed choice of continuous homomorphic section $\tau$ to the idelic norm, and $M$ restricts to $L$ from (5.1.1.4) on $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ up to a vertical translation on the complex $s$-plane (We further refer the reader to Discussion 4.4.1.1. For $\chi\in\widehat{C_F}$ chosen according to our choice of holomorphic parametrization of $\Omega(C_F)$, and for any $f\in\mathcal S_0(\mathbf A_F)$, we have, for $x_0\in\mathbf R$ the unique real number such that $\chi(\tau(t))=t^{ix_0}$ as smooth functions on $\mathbf R_{>0}$:
+Since $\mathcal{S}_{\mathrm{E}}(C_F)(\omega)$ is linearly and topologically isomorphic to $A\mathcal S(\mathbf C)$ under the Mellin transform $\phi\mapsto M(\phi)(s):=\int_{\mathbf R_{>0}}\phi(t)t^s\frac{\mathrm{d}t}{t}$ pre-composed with the linear topological isomorphism induced by pull-back under a fixed choice of continuous homomorphic section $\tau$ to the idelic norm, and $M$ restricts to $L$ from (5.1.1.4) on $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ up to a vertical translation on the complex $s$-plane (We further refer the reader to Discussion 4.4.1.1. For $\chi\in\widehat{C_F}$ chosen according to our choice of holomorphic parametrization of $\Omega(C_F)$, and for any $f\in\mathcal S_0(\mathbf A_F)$, we have, for $x_0\in\mathbf R$ the unique real number such that $\chi(\tau(t))=t^{ix_0}$ as smooth functions on $\mathbf R_{>0}$:
 
 $$
 M(\Phi_{F,\chi|_{C^1_F}}(f)(\tau(t)))(s+ix_0)=Z(f,\chi|\cdot|^s_F)
@@ -552,7 +552,7 @@ $$
 A(\varphi):=\int_{C_F}\varphi(g)\psi(g^{-1}x)\,\mathrm{d}\overline{\mu}(g)
 $$
 
-which was shown to be well-defined and continuous as a linear endomorphism of $W^{s,2}(C_F)$ in Lemma 9.3.2.1.
+which was shown to be well-defined and continuous as a linear endomorphism of $W^{s,2}(C_F)$ in Lemma 9.3.2.1
 
 We fix a single $\chi\in\widehat{C_F}$ among the base points of the connected components of $\Omega(C_F)$ according to the chosen holomorphic parametrization of $\Omega(C_F)$ (i.e. we choose a connected component $\Omega(C_F)(\omega)$, and consider the corresponding already chosen lift $\chi$ of $\omega$ to a continuous character of $C_F$), and we will be keeping track of this choice through the notation for the rest of this argument.
 
@@ -574,11 +574,11 @@ section $\tau$ to the idelic norm) is compactly supported over the interval $[-m
 
 We call $Q_{\chi,m}$ the orthogonal projector on $W^{s,2}(C_F)(\chi|_{C^1_F})$ onto such closed subspace, and $\overline{Q}_{\chi,m}$ the orthogonal projector on $\mathscr H^s_{F,a}(\chi|_{C^1_F})$ onto the closure of the linear image of such closed subspace under the quotient $W^{s,2}(C_F)(\chi|_{C^1_F})\to\mathscr H^s_{F,a}(\chi|_{C^1_F})$, a closed subspace of $\mathscr H^s_{F,a}(\chi|_{C^1_F})$.
 
-Since $P_{\chi,m}\to\mathrm{Id}$ in $\mathscr{B}_{\mathrm{SOT}}(W^{s,2}(C_F)(\chi|_{C^1_F}))$, as $m\to+\infty$, by Lemma 9.3.2.1, the same holds for $Q_{\chi,m}$ as $m\to+\infty$, and therefore $Q_{\chi,m}\to\mathrm{Id}$ in $\mathscr{B}_{\mathrm{SOT}}(\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F}))$.
+Since $P_{\chi,m}\to\mathrm{Id}$ in $\mathscr{B}_{\mathrm{SOT}}(W^{s,2}(C_F)(\chi|_{C^1_F}))$, as $m\to+\infty$, by Lemma 9.3.2.1, the same holds for $Q_{\chi,m}$ as $m\to+\infty$, and therefore $\overline{Q}_{\chi,m}\to\mathrm{Id}$ in $\mathscr{B}_{\mathrm{SOT}}(\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F}))$.
 
 The same therefore holds for the sequence of continuous adjoints $\overline{Q}'_{\chi,m}$ in $(\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F}))'_\beta$, as $m\to+\infty$, in $\mathscr{B}_{\mathrm{SOT}}((\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F}))'_\beta)$.
 
-The range of $Q'_{\chi,m}$ in $(\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F}))'_\beta$ is finite dimensional and is linearly generated by the functionals $\{D^k_t\}$ as $t\in[-m,m]$ and $0\le k\le N_s(\rho_{\chi,t})-1$. It follows that the range of $\overline{Q}_{\chi,m}$ in $\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F})$ is also finite dimensional and linearly generated by the bi-orthogonal set of the finite set of functionals $\{D^k_t\}$ as $t\in[-m,m]$ and $0\le k\le N_s(\rho_{\chi,t})-1$. This proves both denseness conditions for the set of continuous functionals $\{D^k_t\}$ as $0\le k\le N_s(\rho_{\chi,t})-1$ and $t\in\mathbf R$ varying over the ordinates of the zeros of $L(s,\chi)$ on the $a$-line, in $(\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F}))'_\beta$, and for its bi-orthogonal set in $\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F})$. $\square$
+The range of $\overline{Q}'_{\chi,m}$ in $(\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F}))'_\beta$ is finite dimensional and is linearly generated by the functionals $\{D^k_t\}$ as $t\in[-m,m]$ and $0\le k\le N_s(\rho_{\chi,t})-1$. It follows that the range of $\overline{Q}_{\chi,m}$ in $\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F})$ is also finite dimensional and linearly generated by the bi-orthogonal set of the finite set of functionals $\{D^k_t\}$ as $t\in[-m,m]$ and $0\le k\le N_s(\rho_{\chi,t})-1$. This proves both denseness conditions for the set of continuous functionals $\{D^k_t\}$ as $0\le k\le N_s(\rho_{\chi,t})-1$ and $t\in\mathbf R$ varying over the ordinates of the zeros of $L(s,\chi)$ on the $a$-line, in $(\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F}))'_\beta$, and for its bi-orthogonal set in $\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F})$. $\square$
 
 **10.2.1.2. Basic properties of the $a$-line basis.** We prove the following properties of the Markushevich basis $\{\eta_{\chi,t,m}\}$ introduced in (10.2.1.5) of Theorem 10.2.1.1, for the orthogonal $W^{s,2}_a\mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S_0(\mathbf A_F))^\perp$ in $W^{-s,2}(C_F)$ with respect to the pairing $\langle\cdot,\cdot\rangle_{s,2}$ from (10.2.1.3).
 
@@ -792,7 +792,7 @@ $^6$Return here.
 PROOF. For $s>1$, then:
 
 $$
-\|\eta_{\chi,t,b,m}\|_{I,-s} = \left(\int_{C_F} \frac{|g|_F^{2b} |\log|g|_F|^{2m}}{\max\{|g|_F^{2\alpha},|g|_F^{-2\alpha}\}} (1+|\log|g|_F|^2)^{s/2}\, \mathrm{d}\bar\mu(g)\right)^{1/2}
+\|\eta_{\chi,t,b,m}\|_{I,-s} = \left(\int_{C_F} \frac{|g|_F^{2b} |\log|g|_F|^{2m}}{\max\{|g|_F^{2\alpha},|g|_F^{-2\alpha}\} (1+|\log|g|_F|^2)^{s/2}}\, \mathrm{d}\bar\mu(g)\right)^{1/2}
 $$
 
 by Proposition 9.2.2.11, and so $\|\eta_{\chi,t,m}\|_{I,-s}$ can only attain values within a compact interval which does not contain $0\in\mathbf R$. There therefore exists a real number $C>0$ such that $1/C$ is a strict lower bound for their minimum, and $C$ is a strict upper bound for their maximum. $\square$
@@ -993,7 +993,7 @@ $$
 \{\chi_k|\cdot|^{i[a_{K,k},b_{K,k}]}_F,\; k\in\mathbf N\}\subset\widehat{C_F}.
 $$
 
-We note that in light of the orthogonality of the $\chi_k|_{C^1_F}$- and $\chi_{k'}|_{C^1_F}$-isotypes, for $k\ne k'$, then for each fixed integer $k$, the finite rank operator, whose range is indeed contained within $\mathscr H^s_{F,a}(\chi_k|_{C^1_F})$, defined in (10.3.1.15), factors through the orthogonal projection $P_{B_{K,k}}$ onto the closed subspace of $\mathscr H^s_{F,a}(\chi_k|_{C^1_F})$ given by the $\chi_k|_{C^1_F}$-isotype of the range of $P_{B_K}$. Such subspace is finite dimensional, since is dual is linearly and topologically generated by the elements of $W^{-s,2}(C_F)(\overline{\chi}_k|_{C^1_F})$:
+We note that in light of the orthogonality of the $\chi_k|_{C^1_F}$- and $\chi_{k'}|_{C^1_F}$-isotypes, for $k\ne k'$, then for each fixed integer $k$, the finite rank operator, whose range is indeed contained within $\mathscr H^s_{F,a}(\chi_k|_{C^1_F})$, defined in (10.3.1.15), factors through the orthogonal projection $P_{B_K,k}$ onto the closed subspace of $\mathscr H^s_{F,a}(\chi_k|_{C^1_F})$ given by the $\chi_k|_{C^1_F}$-isotype of the range of $P_{B_K}$. Such subspace is finite dimensional, since is dual is linearly and topologically generated by the elements of $W^{-s,2}(C_F)(\overline{\chi}_k|_{C^1_F})$:
 
 $$
 \eta_{\chi_k,t_{k,j},m_{k,j}}:\; t_{k,j}\in[a_{K,k},b_{K,k}],\; 0\le m_{k,j}\le N_s(\rho_{\chi_k,t_{k,j}})-1. \tag{10.3.1.16}
@@ -1010,10 +1010,10 @@ by [Lang-b, Ch.XVII,§2,Prop.2.4,p.334].
 The following factorization for $A_{K,(k,j)}$ therefore holds:
 
 $$
-A_{K,(k,j)} = A^{\mathrm{finite}}_{K,(k,j)}\circ P_{B_{K,k}}
+A_{K,(k,j)} = A^{\mathrm{finite}}_{K,(k,j)}\circ P_{B_K,k}
 $$
 
-for $A^{\mathrm{finite}}_{K,(k,j)}$ the unique finite rank operator $A^{\mathrm{finite}}_{K,(k,j)}\in\mathscr L(\mathrm{Im}(P_{B_{K,k}}))$ induced by $A_{K,(k,j)}$, because the range of $P_{B_{K,k}}$ is a finite dimensional indecomposable sub-representation of $C_F$.
+for $A^{\mathrm{finite}}_{K,(k,j)}$ the unique finite rank operator $A^{\mathrm{finite}}_{K,(k,j)}\in\mathscr L(\mathrm{Im}(P_{B_K,k}))$ induced by $A_{K,(k,j)}$, because the range of $P_{B_K,k}$ is a finite dimensional indecomposable sub-representation of $C_F$.
 
 $A^{\mathrm{finite}}_{K,(k,j)} = A^{\mathrm{finite}}_{\{(k,j)\},(k,j)}$ is represented by the $N\times N$ matrix:
 
@@ -1022,7 +1022,7 @@ $$
 \widehat\varphi(it_{k,j}) & 0 & 0 & 0 & 0 & \cdots & 0 \\
 \widehat\varphi^{(1)}(it_{k,j}) & \widehat\varphi(it_{k,j}) & 0 & 0 & 0 & \cdots & 0 \\
 \widehat\varphi^{(2)}(it_{k,j}) & \binom{2}{1}\widehat\varphi^{(1)}(it_{k,j}) & \widehat\varphi(it_{k,j}) & 0 & 0 & \cdots & 0 \\
-\widehat\varphi^{(3)}(it_{k,j}) & \binom{3}{2}\widehat\varphi^{(2)}(it_{k,j}) & \binom{3}{1}\widehat\varphi^{(1)}(it_{k,j}) & \widehat\varphi(it_{k,j}) & 0 & \cdots & 0 \\
+\widehat\varphi^{(3)}(it_{k,j}) & \binom{3}{2}\widehat\varphi^{(2)}(it_{k,j}) & \binom{3}{1}\widehat\varphi^{(1)}(it_{k,j}) & \widehat\varphi(it_{k}) & 0 & \cdots & 0 \\
 \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots \\
 \widehat\varphi^{(N-1)}(it_{k,j}) & \binom{N-1}{N-2}\widehat\varphi^{(N-2)}(it_{k,j}) & \binom{N-1}{N-3}\widehat\varphi^{(N-3)}(it_{k,j}) & \binom{N-1}{N-4}\widehat\varphi^{(N-4)}(it_{k,j}) & \binom{N-1}{N-5}\widehat\varphi^{(N-5)}(it_{k,j}) & \cdots & \widehat\varphi(it_{k,j})
 \end{bmatrix} \tag{10.3.1.17}
@@ -1079,7 +1079,7 @@ $$
 Since, for every integer $m\ge 1$, we have $\sigma_m(A_{K,(k,j)}) = \sigma_m(A_{K',(k,j)})$ for every pair of finite subsets $K\subset K'\subset\mathbf N\times\mathbf N$ with $(k,j)\in K$, then the net of finite rank operators $\{A_{K,(k,j)}\}_K$ converges in $S_p(\mathscr H^s_{F,a})$ for every $p\ge 1$ to the finite rank operator:
 
 $$
-A_{(k,j)} := \sum_{0\le m_{k,j}\le N_s(\rho_{\chi_k,t_{k,j}},m_{k,j})-1} \langle A(\varphi)'\eta_{\chi_k,t_{k,j},m_{k,j}},\cdot\rangle_{s,2}\; \psi_{\chi_k,t_{k,j},m_{k,j}}. \tag{10.3.1.21}
+A_{(k,j)} := \sum_{0\le m_{k,j}\le N_s(\rho_{\chi_k,t_{k,j},m_{k,j}})-1} \langle A(\varphi)'\eta_{\chi_k,t_{k,j},m_{k,j}},\cdot\rangle_{s,2}\; \psi_{\chi_k,t_{k,j},m_{k,j}}. \tag{10.3.1.21}
 $$
 
 To infer the convergence, we are using (10.3.1.20) upon observing that the rightmost side of (10.3.1.20) does not depend on $K$.
@@ -1243,15 +1243,15 @@ $$\sum_{k\ge 0}\sum_{j\ge 0}\left(\sum_{0\le i\le N_{I,s}(\rho_{\chi_k,t_{k,j},b
 We note that we have, for each $\chi \in \widetilde{C_F}$ and upon choosing a continuous homomorphic section $\tau$ to the idelic norm:
 
 $$
-|M(\varphi)^{(i)}(z)| \le \int_{\mathbf{R}_{>0}} \int_{C^1_F} |(t\partial_t)^N(\varphi(\tau(t)g)\log(t)^i)t^{\mathrm{Re}(z)}| \,\mathrm{d}\overline{\mu}(g)\,\frac{\mathrm{d}t}{t} \tag{10.3.2.8}
+|z^N M(\varphi)^{(i)}(z)| \le \int_{\mathbf{R}_{>0}} \left(\int_{C^1_F} |(t\partial_t)^N(\varphi(\tau(t)g)\log(t)^i)t^{\mathrm{Re}(z)}| \,\mathrm{d}\overline{\mu}(g)\right)\frac{\mathrm{d}t}{t} \tag{10.3.2.8}
 $$
 
 $$
-\le \sum_{0\le n\le N} \binom{N}{n} \int_{\mathbf{R}_{>0}} \int_{C^1_F} ((t\partial_t)^{N-n}\varphi(\tau(t)g)) \cdot \frac{i!}{(i-n)!}(\log(t))^{i-n} t^{\mathrm{Re}(z)}| \,\mathrm{d}\overline{\mu}(g)\,\frac{\mathrm{d}t}{t} \tag{10.3.2.9}
+\le \sum_{0\le n\le N} \binom{N}{n} \int_{\mathbf{R}_{>0}} \left(\int_{C^1_F} ((t\partial_t)^{N-n}\varphi(\tau(t)g)) \cdot \frac{i!}{(i-n)!}(\log(t))^{i-n} t^{\mathrm{Re}(z)}| \,\mathrm{d}\overline{\mu}(g)\right)\frac{\mathrm{d}t}{t} \tag{10.3.2.9}
 $$
 
 $$
-\le \sum_{0\le n\le N} \binom{N}{n} \prod_{0\le n\le N-1}(i-n) \int_{\mathbf{R}_{>0}} \int_{C^1_F} |(t\partial_t)^{N-n}\varphi(\tau(t)g)\max\{t^{\alpha},t^{-\alpha}\}(1+|\log(t)|^2)^{s/2} \,\mathrm{d}\overline{\mu}(g)\,\frac{\mathrm{d}t}{t} \tag{10.3.2.10}
+\le \sum_{0\le n\le N} \binom{N}{n} \prod_{0\le n\le N-1}(i-n) \int_{\mathbf{R}_{>0}} \left(\int_{C^1_F} |(t\partial_t)^{N-n}\varphi(\tau(t)g)\max\{t^{\alpha},t^{-\alpha}\}(1+|\log(t)|^2)^{s/2} \,\mathrm{d}\overline{\mu}(g)\right)\frac{\mathrm{d}t}{t} \tag{10.3.2.10}
 $$
 
 for any integer $0 \le i \le N_{I,s}(z)-1$. It follows that, upon calling $C_{N,I,s}(\varphi)>0$ the value of each integral in the last finite sum in (10.3.2.8), we have:
@@ -1260,7 +1260,7 @@ $$
 |M(\varphi)^{(i)}(z)| \le \frac{C_{N,I,s}(\varphi)\prod_{0\le n\le N-1}(i-n)}{|z|^N} \tag{10.3.2.11}
 $$
 
-for all $z \in \mathbf{C}_I$, $\mathrm{Im}(z)\ne 0$. Using [Lang-e, Ch.XVII, Prop.2.6], we obtain $N_{I,s}(b+i\tau)=O(\log|\tau|)$, with the implied constant being uniform over all $b\in[-\alpha,\alpha]$, and $\prod_{0\le n\le N-1}(i-n)=C\cdot N\cdot O(\log|\tau|)$ with the same implied constant in $O(\log|\tau|)$, and for $C>0$ a universal constant depending only on $N\ge 0$. We now choose $N>1$, and obtain the desired convergence of (10.3.2.7) for every $p>1$. The estimates from the proof of Theorem 10.3.1.1 now carry over, and the rest of the argument for Theorem 10.3.1.1 also establishes Theorem 10.3.2.1.
+for all $z \in \mathbf{C}_I$, $\mathrm{Im}(z)\ne 0$. Using [Lang-e, Ch.XVII, Prop.2.6], we obtain $N_{I,s}(b+i\tau)=O(\log|\tau|)$, with the implied constant being uniform over all $b\in[-\alpha,\alpha]$, and $\prod_{0\le n\le N-1}(i-n)=C\cdot N\cdot O(\log|\tau)$ with the same implied constant in $O(\log|\tau|)$, and for $C>0$ a universal constant depending only on $N\ge 0$. We now choose $N>1$, and obtain the desired convergence of (10.3.2.7) for every $p>1$. The estimates from the proof of Theorem 10.3.1.1 now carry over, and the rest of the argument for Theorem 10.3.1.1 also establishes Theorem 10.3.2.1.
 
 $\square$
 
@@ -1454,7 +1454,7 @@ $$
 
 which we will be studying for suitable $a$, and upon choosing $s\ge 0$ large enough, and as $\rho\to 1$ while having $\varepsilon\Lambda=o(1)$ as $\Lambda\to+\infty$.
 
-To study $P^{\mathrm{spec}}_{\rho,a}\circ A(\varphi)$, we first prove that it is nuclear for every $(\Lambda,\varepsilon)$-cutoff $\rho$, and we then compute its trace as $\rho\to 1$ while $\varepsilon\Lambda=o(1)$ as $\Lambda\to+\infty$. This is the scope of this subsection and the next.
+To study $P^{\mathrm{spec}}_{\rho,a}\circ A(\varphi)$, we first prove that it is nuclear for every $(\Lambda,\varepsilon)$-cutoff $\rho$, and we then compute its trace as $\rho 1$ while $\varepsilon\Lambda=o(1)$ as $\Lambda\to+\infty$. This is the scope of this subsection and the next.
 
 ## PDF page 459
 
@@ -1798,7 +1798,7 @@ $$
 $$
 
 $$
-=\chi(g)|g|^{b+it}_F\sum_{0\le i\le m}\binom{m}{i}(\log|g|_F)^i\,\chi(y)|y|^{b+it}_F(\log|y|_F)^{m-i} \tag{10.4.2.32}
+=\chi(g)|g|^{b+it}_F\sum_{0\le i\le m}\binom{m}{i}(\log|g|_F)^i\,\{\chi(y)|y|^{b+it}_F(\log|y|_F)^{m-i}\} \tag{10.4.2.32}
 $$
 
 $$
@@ -1808,7 +1808,7 @@ $$
 Using the estimate in (9.3.1.6) from Lemma 9.3.1.5, combined with (10.4.2.29) and un-doing the shearing, we obtain that up to a positive real constant independent of the choice label $(\chi,t,b,m)$, the following sum is an upper bound for the $S_2$-norm, and hence the $S_1$-norm, of (10.4.2.25):
 
 $$
-\sum_{k\ge 0}\sum_{j\ge 0}\left(N_{I,s}(\rho_{\chi_k,t_{k,j},b_{k,j}})^2 N_{I,s}(\rho_{\chi_k,t_{k,j},b_{k,j}})^{-1}\sum_{0\le i\le N_{I,s}(\rho_{\chi_k,t_{k,j},b_{k,j}})-1}|M(\varphi)^{(i)}(b_{k,j}+it_{k,j})|\right)^2 \tag{10.4.2.34}
+\sum_{k\ge 0}\sum_{j\ge 0}\left(N_{I,s}(\rho_{\chi_k,t_{k,j},b_{k,j}})2^{N_{I,s}(\rho_{\chi_k,t_{k,j},b_{k,j}})-1}\sum_{0\le i\le N_{I,s}(\rho_{\chi_k,t_{k,j},b_{k,j}})-1}|M(\varphi)^{(i)}(b_{k,j}+it_{k,j})|\right)^2 \tag{10.4.2.34}
 $$
 
 The argument for the proof of Theorem 10.3.2.1 can now be repeated, giving that the $S_1$-limit of the sum of the rank-1 operators from (10.4.2.25) exists and agrees with $A(\varphi)\circ P^{\mathrm{spec}}_a$, which is therefore nuclear and has the same trace as $P^{\mathrm{spec}}_a\circ A(\varphi)$. The remaining assertions of the Theorem follow as a consequence.$^8$
@@ -1884,7 +1884,7 @@ $$
 
 where now $\rho-a$ is a zero of $L(s+a,\chi)$.
 
-In particular, for any real number $a$, and for each pair $(a+\rho,m)$ such that $a+\rho$ is a zero of $L(s,\chi)$ of multiplicity $N(a+\rho)$, and $m$ is an integer $0\le m\le N(a+\rho)-1$, there exists a unique bi-orthogonal sequence of elements $\psi_{a+\rho,m}\in\mathcal S_{\mathrm E}(C_F)(\chi|_{C^1_F})$ satisfying:
+In particular, for any real number $a$, and for each pair $(\rho,m)$ such that $a+\rho$ is a zero of $L(s,\chi)$ of multiplicity $N(a+\rho)$, and $m$ is an integer $0\le m\le N(a+\rho)-1$, there exists a unique bi-orthogonal sequence of elements $\psi_{a+\rho,m}\in\mathcal S_{\mathrm E}(C_F)(\chi|_{C^1_F})$ satisfying:
 
 $$
 D_{a+\rho,m}(\psi_{a+\rho',m'})=\delta_{(a+\rho,m),(a+\rho',m')} \tag{10.4.3.5}
@@ -2172,7 +2172,7 @@ $$
 
 **10.4. TRACE FORMULA: SPECTRAL SIDE** · **471**
 
-are representative functions for the Hilbert-Schmidt kernel in $L^2(C_F\times C_F,((1+|\log|\cdot|_F|^2)^{s/2}\overline{\mu})^{\otimes 2})$ of the operator $P^{\mathrm{spec}}_a\circ A(\varphi)$ on $W^{s,2}(C_F)$, respectively for the Hilbert-Schmidt kernel in $L^2(C_F\times C_F,((1+|\log|\cdot|_F|^2)^{s/2}\mu)^{\otimes 2})$ of the operator $P^{\mathrm{geom}}_{\rho,a}\circ A(\varphi)$ on $W^{s,2}(C_F)$.
+are representative functions for the Hilbert-Schmidt kernel in $L^2(C_F\times C_F,((1+|\log|\cdot|_F|^2)^{s/2}\overline{\mu})^{\otimes 2})$ of the operator $P^{\mathrm{spec}}_a\circ A(\varphi)$ on $W^{s,2}(C_F)$, respectively for the Hilbert-Schmidt kernel in $L^2(C_F\times C_F,((1+|\log|\cdot|_F|^2)^{s/2}\overline{\mu})^{\otimes 2})$ of the operator $P^{\mathrm{geom}}_{\rho,a}\circ A(\varphi)$ on $W^{s,2}(C_F)$.
 
 (3) The function:
 

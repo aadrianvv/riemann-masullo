@@ -300,7 +300,7 @@ for nonzero integers $N_i$ and $a_i\in\mathbf Q_p$, and for $c_i\in\mathbf C$.
 
 **2.1. SCHWARTZ-BRUHAT FUNCTIONS** · **65**
 
-EXAMPLE 2.1.2.6. Similarly to Example 2.1.2.5, every Schwartz-Bruhat function on $F_v$, $v$ a non-Archimedean place of the number field $F$, is smooth and compactly supported, hence locally constant with compact support. Every open subset in $F_v$ is a finite disjoint union of subsets of the form $a+\pi_v^N\mathcal O_{F_v}$, for $\pi_v$ a uniformizer at $v$, for some $N\in\mathbf Z^+$ and $a\in F_v$, then, upon writing $1_{a+\pi_v^N\mathcal O_{F_v}}$ for the indicator function of $a+\pi_v^N\mathcal O_{F_v}$, each $f\in\mathcal S(F_v)$ is of the form:
+EXAMPLE 2.1.2.6. Similarly to Example 2.1.2.5, every Schwartz-Bruhat function on $F_v$, $v$ a non-Archimedean place of the number field $F$, is smooth and compactly supported, hence locally constant with compact support. Every open subset in $F_v$ is a finite disjoint union of subsets of the form $a+\pi_v^N\mathcal O_{F_v}$, for $\pi_v$ a uniformizer at $v$, for some $N\in\mathbf Z^+$ and $a\in F_v$, then, upon writing $1_{a+\pi_v^N\mathcal O_v}$ for the indicator function of $a+\pi_v^N\mathcal O_{F_v}$, each $f\in\mathcal S(F_v)$ is of the form:
 
 $$
 f=\sum_{i=1}^n c_i1_{a_i+\pi_v^{N_i}\mathcal O_{F_v}} \tag{2.1.2.1}
@@ -2237,7 +2237,7 @@ groups, and the $S$-local analogs of the respective fundamental domains within $
 
 **2.3. S-LOCAL ADELIC $\theta$-FUNCTIONS** · **99**
 
-We further refer the reader to Definition A.3.4.1 for the construction of the $S$-local additive and multi-plicative Tamagawa measures $\nu_S$ on $\mathbf{A}_{F,S}$, $\mu_S$ on $\mathrm{GL}_1(\mathbf{A}_{F,S})$, $\overline{\mu}_S$ on $C_{F,S}$, as well as $\mu_{S,1}$ on $\mathrm{GL}_1(\mathbf{A}_{F,S})^1$ and $\overline{\mu}_{S,1}$ on $J^1_{F,S}$.
+We further refer the reader to Definition A.3.4.1 for the construction of the $S$-local additive and multiplicative Tamagawa measures $\nu_S$ on $\mathbf{A}_{F,S}$, $\mu_S$ on $\mathrm{GL}_1(\mathbf{A}_{F,S})$, $\overline{\mu}_S$ on $C_{F,S}$, as well as $\mu_{S,1}$ on $\mathrm{GL}_1(\mathbf{A}_{F,S})^1$ and $\overline{\mu}_{S,1}$ on $J^1_{F,S}$.
 
 Recall that we denote by $\mathbf{A}_{F,S}$ the product $\prod_{v\in S}F_v$, where $F_v$ is the additive topological group of the local field $F_v$.
 

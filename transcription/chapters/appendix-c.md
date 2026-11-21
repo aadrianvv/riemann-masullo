@@ -303,7 +303,7 @@ Example C.1.4.6. Of main interest to this work are the following classes of loca
 
 (3) The spaces $\mathcal{S}(G)$ of Schwartz-Bruhat functions on second-countable locally compact abelian groups $G$, especially those $G$ of arithmetic origin such as the adele ring of a number field, the idele class group of a number field, and their local analogs. As was discussed in Remark C.1.3.3, these have natural locally convex topologies that are often non-metrizable but complete.
 
-Much deeper is that such spaces $\mathcal{S}(G)$ are nuclear (a concept reviewed in §C.2.4) and Montel (this means compactness of closed bounded subsets and reflexivity in the sense that the continuous double-duality map $E \to (E'_{\beta})'_{\beta}$ for the strong-dual topologies [Scha, pp. 144-5] is a topological isomorphism). These further properties are established in Theorem D.1.5.7.
+Much deeper is that such spaces $\mathcal{S}(G)$ are nuclear (a concept reviewed in §C.2.4) and Montel (this means compactness of closed bounded subsets and reflexivty in the sense that the continuous double-duality map $E \to (E'_{\beta})'_{\beta}$ for the strong-dual topologies [Scha, pp. 144-5] is a topological isomorphism). These further properties are established in Theorem D.1.5.7.
 
 (4) LF-spaces: As will be discussed in §C.1.5, for any inductive system $\{E_{\alpha}\}$ of locally convex topological vector spaces there is a natural locally convex topology on $\varinjlim E_{\alpha}$ making it have the expected universal mapping property [Scha, Ch. II, p. 54]. By construction the natural continuous linear map $\oplus E_{\alpha} \to \varinjlim E_{\alpha}$ is a topological quotient map, so a base for the topology in such inductive limits is given by the image of a base for the topology in the corresponding locally convex direct sum $\oplus E_{\alpha}$; one such base for the latter is given in (C.1.5.1) below.
 
@@ -410,7 +410,7 @@ Proof. We write $E=\varinjlim E_k$ for an inductive system $\{E_k\}$ of Fréchet
 
 the resulting continuous linear bijection $\varinjlim F_n\to F$ might not be a homeomorphism; we don't even know if the locally convex topology on $\varinjlim F_n$ is Hausdorff).
 
-Our aim is to show that the linear inverse of the continuous linear bijection $q:F\to E=\varinjlim E_k$ is continuous. By the universal property of such a locally convex inductive limit, we just have to show that each linear map $E_k\to E \xrightarrow{q^{-1}} F$ is continuous. Since $E$ is exhausted by the rising sequence of subspaces $q(F_n)$ with $q:F_n\to E$ a continuous linear injection with Fréchet $F_n$, by Lemma C.1.5.4 each $E_k\to E$ factors continuously through some $F_{n_k}\to E$. In other words, $q(F_{n_k})\supset E_k$ with the resulting linear map $E_k\to F_{n_k}$ continuous. But then the composite map $E_k\to F_{n_k}\xrightarrow{u_{n_k}}F$ is continuous, and this is exactly $q^{-1}|_{E_k}$. $\square$
+Our aim is to show that the linear inverse of the continuous linear bijection $q:F\to E=\varinjlim E_k$ is continuous. By the universal property of such a locally convex inductive limit, we just have to show that each linear map $E_k\to E \overset{q^{-1}}{\simeq} F$ is continuous. Since $E$ is exhausted by the rising sequence of subspaces $q(F_n)$ with $q:F_n\to E$ a continuous linear injection with Fréchet $F_n$, by Lemma C.1.5.4 each $E_k\to E$ factors continuously through some $F_{n_k}\to E$. In other words, $q(F_{n_k})\supset E_k$ with the resulting linear map $E_k\to F_{n_k}$ continuous. But then the composite map $E_k\to F_{n_k}\xrightarrow{u_{n_k}}F$ is continuous, and this is exactly $q^{-1}|_{E_k}$. $\square$
 
 $^1$
 
@@ -466,7 +466,7 @@ $$
 \sigma(\sigma^{-1}((x_k)_{k\ge 0}))=(\sum_{0\le j\le k}x_j-\sum_{0\le j\le k-1}x_j)_{k\ge 0}=(x_k)_{k\ge 0}
 $$
 
-and $\sigma^{-1}(\sigma((x_k)_{k\ge 0}))=\sigma((x_k-x_{k-1})_{k\ge 0})$ with $x_{-1}:=0$, which reads $\sigma^{-1}(\sigma((x_k)_{k\ge 0}))=(x_k)_{k\ge 0}$. Acyclicity of $(\{E_k,f_k\})_{k\ge 0}$ is therefore equivalent to $\sigma^{-1}$ being continuous.
+and $\sigma^{-1}(\sigma((x_k)_{k\ge 0}))=\sigma((x_k-x_{k-1})_{k\ge 0})$ with $x_{-1}:=0$, which reads $\sigma^{-1}(\sigma((x_k)_{k\ge 0}))=(x_k)_{k\ge 0}$. Acyclicity of $\{(E_k,f_k)\}_{k\ge 0}$ is therefore equivalent to $\sigma^{-1}$ being continuous.
 
 By [Vogt-1, Cor. 1.3], which rests on Grothendieck's Factorization Theorem (Lemma C.1.5.4) and the Open Mapping Theorem for LF-spaces (Theorem C.1.5.5), Definition C.1.5.8 with Fréchet $E_k$'s depends only on the Hausdorff inductive limit LF-space $E=\varinjlim E_k$: it is independent of the chosen defining sequence of Fréchet spaces with Hausdorff inductive limit $E$. Moreover, as a special case of [Vogt-1, Thm. 2.10], a *strict* LF-space is always acyclic.$^5$
 
@@ -492,9 +492,9 @@ $^5$The array of references originally given was incomprehensible; e.g., [Vogt-1
 
 **668** · **CHAPTER C. PREPARATIONS ON LOCALLY CONVEX TOPOLOGICAL VECTOR SPACES**
 
-image in the normed space $E_U$ (the maximal Hausdorff quotient of $E$ defined by the semi-norm associated to the gauge $p_U:E\to\mathbf R_{\ge 0}$ of $U$); i.e., the image of $V$ in the Banach space completion $\widehat{E}_U$ has compact closure. For our purposes, nuclear spaces are the key source of locally convex spaces that are Schwartz:
+image in the normed space $E_U$ (the maximal Hausdorff quotient of $E$ defined by the semi-norm associated to the gauge $p_U:E\to\mathbf R_{\ge 0}$ of $U$); i.e., the image of $V$ in the Banach space completion $\widehat{E_U}$ has compact closure. For our purposes, nuclear spaces are the key source of locally convex spaces that are Schwartz:
 
-Example C.1.5.10. If a locally convex topological vector space $E$ is a nuclear then we claim it is Schwartz. By [Scha, Ch. III, 7.2], for every convex circled $0$-neighborhood $U\subset E$ (in particular, such $U$ that are closed) there exists a convex circled $0$-neighborhood $V\subset U$ such that the natural map of Banach spaces $T:\widehat{E}_V\to\widehat{E}_U$ is nuclear. But any nuclear map between Banach spaces is a norm-topology limit of finite-rank operators [Scha, p. 98] and hence is compact. Since $V$ maps into the closed unit ball of $\widehat{E}_V$, its image under $T$ has compact closure. Taking $U$ to be closed, such $V$ fulfills the requirement in the definition of $E$ to be Schwartz.
+Example C.1.5.10. If a locally convex topological vector space $E$ is a nuclear then we claim it is Schwartz. By [Scha, Ch. III, 7.2], for every convex circled $0$-neighborhood $U\subset E$ (in particular, such $U$ that are closed) there exists a convex circled $0$-neighborhood $V\subset U$ such that the natural map of Banach spaces $T:\widehat{E_V}\to\widehat{E_U}$ is nuclear. But any nuclear map between Banach spaces is a norm-topology limit of finite-rank operators [Scha, p. 98] and hence is compact. Since $V$ maps into the closed unit ball of $\widehat{E_V}$, its image under $T$ has compact closure. Taking $U$ to be closed, such $V$ fulfills the requirement in the definition of $E$ to be Schwartz.
 
 The examples of the bounded lifting property that arise throughout this work are quotient maps $q:E\twoheadrightarrow G$ where $G$ is Hausdorff and $E$ is a strict countable inductive limit of nuclear Fréchet spaces (it is not apparent yet that all such $q$ satisfy the bounded lifting property since such an $E$ is generally not Fréchet, but in Corollary C.1.5.13 we will see that they all do). Note that any such $E$ is nuclear, hence Schwartz, and $G=E/F$ for the subspace $F=\ker(q)\subset E$ that is closed since $G$ is Hausdorff. Such quotients arise in the following result.
 
@@ -721,7 +721,7 @@ The datum of a duality $\langle E,F\rangle$ leads to an axiomatization of the ro
 Theorem C.2.2.1 (Bi-polar Theorem). *Let $\langle E,F\rangle$ be a duality. Let $A\subset E$ be a subset. Then:*
 
 $$
-(A^{\circ})^{\circ}=\overline{\mathrm{cch}(A\cup\{0\})} \tag{C.2.2.5}
+(A^{\circ})^{\circ}=\overline{\mathrm{cch}}(A\cup\{0\}) \tag{C.2.2.5}
 $$
 
 ## PDF page 674
@@ -744,7 +744,9 @@ a seminorm on $E$. The “unit ball” with respect to $p_B$ is exactly the pola
 
 C.2.2.2. *Consistent topologies.* We conclude this account of the main elements of the construction of polar topologies by highlighting a great advantage of the local convexity assumption on linear topologies of topological vector spaces. It affords flexibility on the concepts of boundedness, closure, and denseness in terms of refining the polar topology on $E$ induced by a duality $\langle E,F\rangle$.
 
-Specifically, certain properties of subsets of $E$ defined in terms of a polar topology using $F$ are independent of the choice of such topology so long as the polar topology is *consistent* with $\langle E,F\rangle$ in the sense that the space of continuous linear functionals on $E$ with respect to that topology is exactly $F$. For example, the weak topology $\sigma(E,F)$ on $E$ is always consistent with a given separating duality $g:E\times F\to\mathbf C$ (as is a given Hausdorff locally convex topology on $E$ when $F=E'$ is the topological dual and $g$ is the evaluation pairing). A first important example of this phenomenon is the equivalence of boundedness and weak boundedness, as well as formation of closure, respectively weakly closure for convex sets in any Hausdorff locally convex topological $\mathbf C$-vector space: see [Scha, Ch. IV, 3.1, 3.3].
+Specifically, certain properties of subsets of $E$ defined in terms of a polar topology using $F$ are independent of the choice of such topology so long as the polar topology is *consistent* with $\langle E,F\rangle$ in the sense that the space of continuous linear functionals on $E$ with respect to that topology is exactly $F$. For example, the weak topology $\sigma(E,F)$ on $E$ is always consistent with a given separating duality $g:E\times F\to\mathbf C$ (as is a given Hausdorff locally convex topology on $E$ when $F=E'$ is the topological dual and $g$ is the evaluation pairing).
+
+A first important example of this phenomenon is the equivalence of boundedness and weak boundedness, as well as formation of closure, respectively weakly closure for convex sets in any Hausdorff locally convex topological $\mathbf C$-vector space: see [Scha, Ch. IV, 3.1, 3.3].
 
 Although consistency is defined on all linear topologies on $E$, for Hausdorff locally convex topologies the extremes of such consistent topologies are known. This is the content of the Mackey-Arens Theorem [Scha, Ch. IV, 3.2-3.3]. It rests crucially on the local convexity assumption and ultimately on separations theorems [Scha, Ch. II, §9] relying upon the Hahn-Banach Theorem. The statement of the result is that such topologies are precisely those which are finer than $\sigma(E,F)$ and coarser than the *Mackey topology* $\tau(E,F)$ that is the $\mathfrak S$-topology on $E$ for the collection $\mathfrak S$ of all subsets of $F$ that are convex, circled and $\sigma(F,E)$-compact. (In [Jar], this topology is denoted using the letter $\mu$ rather than $\tau$.)
 
@@ -822,7 +824,7 @@ $$
 E\otimes_{\varepsilon}F \tag{C.2.3.4}
 $$
 
-to be the $\mathbf C$-vector space $E\otimes F$ topologized with the subspace topology via $E\otimes F \xrightarrow[\rho]{\simeq} B(E'_{\sigma},F'_{\sigma})\subset\mathscr B_{\varepsilon}(E'_{\sigma},F'_{\sigma})$. The topological vector space $E\otimes_{\varepsilon}F$ is Hausdorff and locally convex by [Scha, Ch. III, Cor. to 3.2] applied to $\mathscr L_{\varepsilon}(E'_{\tau},F)$. We denote by $E\widehat{\otimes}_{\varepsilon}F$ the completion of $E\otimes_{\varepsilon}F$.
+to be the $\mathbf C$-vector space $E\otimes F$ topologized with the subspace topology via $E\otimes F \overset{\rho}{\simeq} B(E'_{\sigma},F'_{\sigma})\subset\mathscr B_{\varepsilon}(E'_{\sigma},F'_{\sigma})$. The topological vector space $E\otimes_{\varepsilon}F$ is Hausdorff and locally convex by [Scha, Ch. III, Cor. to 3.2] applied to $\mathscr L_{\varepsilon}(E'_{\tau},F)$. We denote by $E\widehat{\otimes}_{\varepsilon}F$ the completion of $E\otimes_{\varepsilon}F$.
 
 ## PDF page 677
 
@@ -1026,7 +1028,7 @@ $$
 
 For the convenience of the reader, we provide a direct argument below to bypass additional technical concepts that arise in various proofs one finds in the literature. It rests on a simple construction with $0$-neighborhoods in locally convex direct sums that we gave in Lemma C.1.5.1.
 
-Proof of Proposition C.2.3.10. Since $\otimes_\pi$ takes quotient maps to quotient maps, in view of the construction of locally convex inductive limits as quotients of the corresponding direct sums it suffices to prove the analogous result for countable direct sums. By symmetry between the $E_k$'s and the $F_{k'}$'s in the normability hypotheses, it suffices to show that projective tensor product against $F:=\bigoplus_{k\ge 0}F_k$ passes through countable locally convex direct sums of normable spaces.
+Proof of Proposition C.2.3.10. Since $\otimes_\pi$ takes quotient maps to quotient maps, in view of the construction of locally convex inductive limits as quotients of the corresponding direct sums it suffices to prove the analogous result for countable direct sums. By symmetry between the $E_k$'s and $F_{k'}$'s in the normability hypotheses, it suffices to show that projective tensor product against $F:=\bigoplus_{k\ge 0}F_k$ passes through countable locally convex direct sums of normable spaces.
 
 In other words, we want to show that the inverse of the natural continuous linear bijection
 
@@ -1196,7 +1198,7 @@ Just as we showed strictness for each $\{E_i\widehat{\otimes}_\pi F_k\}_{k\ge 0}
 
 of an inductive limit via the corresponding direct sum as in (C.1.5.1) shows that for a compatible system of linear quotient maps $f_i:V_i\to\overline{V}_i$ the resulting map $\varinjlim_i V_i\to\varinjlim_i\overline{V}_i$ is also a quotient map. Thus, $\mathrm{coker}(j:E_1\overline{\otimes}F\to E_2\overline{\otimes}F)$ equipped with its quotient topology from $E_2\overline{\otimes}F$ is linearly and topologically identified with the strict locally convex inductive limit $(E_2/E_1)\overline{\otimes}F$ of the nuclear Fréchet spaces $(E_2/E_1)\widehat{\otimes}_\pi F_k$.
 
-We deduce that the continuous linear map $q:E_2\overline{\otimes}F\to (E_2/E_1)\overline{\otimes}F$ between strict LF-space spaces is a quotient map whose closed kernel $\ker(q)$ received a continuous linear bijection from $E_1\overline{\otimes}F$. Since the source and target of $q$ are strict inductive limits of nuclear Fréchet spaces, Corollary C.1.5.13 (whose proof ultimately rests on the Open Mapping Theorem for LF-spaces) tells us that the closed subspace $\ker(q)$ is a limit subspace of $E_2\overline{\otimes}F$. More specifically, since $\ker(q)$ meets each layer $E_2\overline{\otimes}F_k=E_2\widehat{\otimes}_\pi F_k$ of $E_2\overline{\otimes}F$ in exactly $E_1\overline{\otimes}F_k=E_1\widehat{\otimes}_\pi F_k$, Corollary C.1.5.13 gives that $\varinjlim_k E_1\overline{\otimes}F_k\to\ker(q)$ is a topological isomorphism. This latter inductive limit is topologically $E_1\overline{\otimes}F$, so the continuous injective linear map (C.2.3.28) is a topological embedding as desired. $\square$
+We deduce that the continuous linear map $q:E_2\overline{\otimes}F\to (E_2/E_1)\overline{\otimes}F$ between strict LF-space spaces is a quotient map whose closed kernel $\ker(q)$ received a continuous linear bijection from $E_1\overline{\otimes}F$. Since the source and target of $q$ are strict inductive limits of nuclear Fréchet spaces, Corollary C.1.5.13 (whose proof ultimately rests on the Open Mapping Theorem for LF-spaces) tells us that the closed subspace $\ker(q)$ is a limit subspace of $E_2\overline{\otimes}F$. More specifically, since $\ker(q)$ meets each layer $E_2\overline{\otimes}F_k=E_2\widehat{\otimes}_\pi F_k$ of $E_2\overline{\otimes}F$ in exactly $E_1\overline{\otimes}F_k=E_1\widehat{\otimes}F_k$, Corollary C.1.5.13 gives that $\varinjlim_k E_1\overline{\otimes}F_k\to\ker(q)$ is a topological isomorphism. This latter inductive limit is topologically $E_1\overline{\otimes}F$, so the continuous injective linear map (C.2.3.28) is a topological embedding as desired. $\square$
 
 C.2.4. **Nuclear spaces.** The two topological tensor products $\otimes_\pi$ and $\otimes_\varepsilon$ of Hausdorff locally convex topological $\mathbf C$-vector spaces $E,F$ are related: the projective topology $\otimes_\pi$ on $E\otimes F$ is finer than the injective topology $\otimes_\varepsilon$, which is to say the identity map
 
@@ -1231,7 +1233,7 @@ As simple as Definition C.2.4.1 appears, the theory of nuclearity cannot take of
 a sequence $\{f_k\}_{k\ge 0}\subset E'$ converging to $0$ (in the usual Banach-dual topology), and $\{x_k\}_{k\ge 0}\subset F$ converging to $0$ such that
 
 $$
-T=\sum_{k\ge 0}\lambda_k\langle\cdot,f_k\rangle_{E,E'}x_k \tag{C.2.4.2}
+T=\sum_{k\ge 0}\lambda_k(\langle\cdot,f_k\rangle_{E,E'})x_k \tag{C.2.4.2}
 $$
 
 where any such sum always converges pointwise on $E$. In particular, finite-rank linear maps are nuclear.
@@ -1276,7 +1278,9 @@ Consider the linear subspace $V:=\bigcap_{1\le k\le N}\ker(\iota_E(x_k))\subset 
 
 We will be using below the following observation: by Lemma C.2.1.7, if $E$ is barrelled then $E'_\sigma$ is quasi-complete, and hence the (weakly-)closed convex circled hull of a weakly compact subset of $E'_\sigma$ is weakly compact. This is a consequence of the preservation of pre-compactness (i.e., compactness of closure in the completion) under formation of the convex circled hull in any Hausdorff locally convex topological $\mathbf C$-vector space [Scha, Ch. II, 4.3]. Indeed, in a quasi-complete Hausdorff locally convex topological vector space $F$ any pre-compact subset $C\subset F$ is bounded in $\widehat{F}$ (as compactness implies boundedness) and hence is bounded in $F$. Thus, the closure $\overline{C}\subset F$ is bounded [Scha, Ch. I, 5.1] and thus is complete in $F$ (as $F$ is quasi-complete), so $\overline{C}$ is also closed in $\overline{F}$. By pre-compactness of $C$ in $\widehat{F}$, this gives the compactness of $\overline{C}$ as desired.
 
-Remark C.2.4.5. The barreledness of $E$ above as a sufficient condition for quasi-completeness of $E'_\sigma$ cannot be entirely dropped: there are examples of Hausdorff locally convex topological $\mathbf C$-vector spaces $E$ for which $E'_\sigma$ is not quasi-complete. We refer the reader to [Gro-e, II, §1, p. 88] for an example of a Fréchet space $F$ whose strong dual $E:=F'_\beta$ is not bornological (equivalently, not barrelled; see [Scha, Ch. IV, 6.6]) and whose weak dual $E'_\sigma$ is not quasi-complete. To see this example is not quasi-complete, we assume to the contrary that the nuclear space $E'_\sigma$ is quasi-complete and seek a contradiction.$^{15}$
+Remark C.2.4.5. The barreledness of $E$ above as a sufficient condition for quasi-completeness of $E'_\sigma$ cannot be entirely dropped: there are examples of Hausdorff locally convex topological $\mathbf C$-vector spaces $E$ for which $E'_\sigma$ is not quasi-complete.
+
+We refer the reader to [Gro-e, II, §1, p. 88] for an example of a Fréchet space $F$ whose strong dual $E:=F'_\beta$ is not bornological (equivalently, not barrelled; see [Scha, Ch. IV, 6.6]) and whose weak dual $E'_\sigma$ is not quasi-complete. To see this example is not quasi-complete, we assume to the contrary that the nuclear space $E'_\sigma$ is quasi-complete and seek a contradiction.$^{15}$
 
 We now return to the task at hand. The following lemma is outlined in [Tre, pp. 500-501]. We provide here below the details of the argument, in light of its importance in the description of the continuous dual of $E\otimes_\varepsilon F$ for $E,F$ Hausdorff locally convex topological $\mathbf C$-vector spaces:
 
@@ -1418,7 +1422,7 @@ $$
 
 *where the convergence is with respect to the topology (on the space of continuous bilinear forms) of uniform convergence on the bounded subsets of $E\times F$.*
 
-We refer the reader to [Scha, Ch. III, §5, p. 91] for a discussion of the topology (on the space of continuous bilinear forms) of uniform convergence on the bounded subsets of $E\times F$, particularly that it is a Hausdorff locally convex topological $\mathbf C$-vector space structure (the notation of loc.cit. writes this space as $\mathscr B(E,F;\mathbf C)$ whereas [Tre, Ch. 42] denotes it as $B(E,F)$). Continuity of $B:E\times F\to\mathbf C$ implies that the image $B(S,T)\subset\mathbf C$ is bounded for any bounded subset $S\times T\subset E\times F$.
+We refer the reader to [Scha, Ch. III, §5, p. 91] for a discussion of the topology (on the space of continuous bilinear forms) of uniform convergence on the bounded subsets of $E\times F$, particularly that it is a Hausdorff locally convex topological $\mathbf C$-vector space structure (the notation of loc.cit., writes this space as $\mathscr B(E,F;\mathbf C)$ whereas [Tre, Ch. 42] denotes it as $B(E,F)$). Continuity of $B:E\times F\to\mathbf C$ implies that the image $B(S,T)\subset\mathbf C$ is bounded for any bounded subset $S\times T\subset E\times F$.
 
 We now specialize to the case of a complete nuclear Hausdorff locally convex topological $\mathbf C$-vector space $E$, and a continuous linear map $T:E\to E'_\beta$, so the bilinear form on $E\times E$ defined by
 
@@ -1717,7 +1721,7 @@ C.3.4.1. *Trace-class operators: definitions and basic properties.* In the speci
 
 Lemma C.3.4.1. *Let $H$ be a Hilbert space. Let $\Sigma$ be an orthonormal basis of $H$. If $T\in\mathscr{B}_{\mathrm{NT}}(H)$ is nuclear (equivalently, trace-class) then:*
 
-*(1) the infinite sum $\sum_{\phi\in\Sigma}|\langle T(\phi),\phi\rangle_H|$ converges; i.e., $\langle T(\phi),\phi\rangle_H$ vanishes for all but countably many $\phi$, and the sum of the countably many nonzero ones is absolutely convergent.*
+*(1) the infinite sum $\sum_{\phi\in\Sigma}|\langle T(\phi),\phi\rangle_H|$ converges;' i.e., $\langle T(\phi),\phi\rangle_H$ vanishes for all but countably many $\phi$, and the sum of the countably many nonzero ones is absolutely convergent.*
 
 *(2) The value of the sum $\sum_{\phi\in\Sigma}|\langle T(\phi),\phi\rangle_H|$ is independent of the choice of $\Sigma$.*
 
@@ -2161,7 +2165,7 @@ $$
 
 (2) *The space of Hilbert-Schmidt operators $E\to F$, to be the $S_2(E,F)$.*
 
-(3) *The space of trace-class operators $E\to F$, to be the $S_1(E,F)$.*
+(3) *The space of trace-class operators $E\to F$, to be $S_1(E,F)$.*
 
 We record here a generalization of Lemma C.3.5.4 for singular values of continuous operators $E\to F$ when $E$ and $F$ are general Hilbert spaces, allowing $E\ne F$.
 
@@ -2252,7 +2256,7 @@ $$
 PROOF. Assume first that $A$ is of finite rank $N\ge 0$. We may write
 
 $$
-A=\sum_{1\le r\le N}\lambda_r\langle\cdot,e_r\rangle_E\,f_r
+A=\sum_{1\le r\le N}\lambda_r\langle\cdot e_r\rangle_E\,f_r
 \tag{C.3.6.11}
 $$
 
@@ -2571,7 +2575,7 @@ conditions upon replacing an $I$-indexed net $\{x_i\}_{i\in I}$ with the resulti
 
 To make examples, we begin with the simpler construction of an unbounded convergent net. Let $I=\mathbf R_{>0}$ equipped with its natural ordering. Define $z_a:=a^{-1}\in\mathbf C$ for each $a\in I$. The net of complex numbers $\{z_a\}_{a\in I}$ is convergent to $0\in\mathbf C$, but the net is not bounded in $\mathbf C$. However, this net is eventually bounded; e.g., $\{z_a\}_{a\ge 1}$ is bounded.
 
-To make a net converging to $0$ in the meterizable case such that the net is not eventually bounded, consider an infinite-dimensional nuclear metrizable locally convex space $F$ (such as the Schwartz space $\mathscr S(\mathbf R)$) and pick a decreasing base of convex $0$-neighborhoods $U_1\supset U_2\supset\cdots$ (this exists by metrizability). For each *nonzero* $x\in U_1$, define $n(x)$ to be the largest positive integer $N$ such that $x\in U_N$, and let $J$ be the set $U_1-\{0\}$ with the partial ordering $x\ge y$ precisely when $n(x)\ge n(y)$. Defining $x_j=j\in U_1$, the net $\{x_j\}_{j\in J}$ converges to $0$ and we claim no tail $\{x_j\}_{j\ge j_0}$ is bounded. Suppose to the contrary that some such tail is bounded, so the convex $0$-neighborhood $U_{n(x_{j_0})}$ is bounded. Then $F$ is normable [Scha, Ch. II, 2.1], but a nuclear normable locally convex space is finite-dimensional [Tre, Cor. 2 to Prop. 50.2], a contradiction.
+To make a net converging to $0$ in the meterizable case such that the net is not eventually bounded, consider an infinite-dimensional nuclear metrizable locally convex space $F$ (such as the Schwartz space $\mathcal S(\mathbf R)$) and pick a decreasing base of convex $0$-neighborhoods $U_1\supset U_2\supset\cdots$ (this exists by metrizability). For each *nonzero* $x\in U_1$, define $n(x)$ to be the largest positive integer $N$ such that $x\in U_N$, and let $J$ be the set $U_1-\{0\}$ with the partial ordering $x\ge y$ precisely when $n(x)\ge n(y)$. Defining $x_j=j\in U_1$, the net $\{x_j\}_{j\in J}$ converges to $0$ and we claim no tail $\{x_j\}_{j\ge j_0}$ is bounded. Suppose to the contrary that some such tail is bounded, so the convex $0$-neighborhood $U_{n(x_{j_0})}$ is bounded. Then $F$ is normable [Scha, Ch. II,, 2.1], but a nuclear normable locally convex space is finite-dimensional [Tre, Cor. 2 to Prop. 50.2], a contradiction.
 
 In the non-metrizable locally convex case, to make a Cauchy set that is not eventually bounded (as will also help to make examples that are quasi-complete but not complete, a distinction that does not arise in the metrizable setting), let $H$ be an infinite-dimensional separable Hilbert space and $E:=\mathscr B_{\mathrm{SOT}}(H)$ be the $\mathbf C$-vector space of bounded endomorphisms of $H$ equipped with the strong operator topology (i.e., pointwise convergence). By Lemma C.3.3.1, this $E$ is Hausdorff, locally convex, and quasi-complete. We will construct a Cauchy net in $E$ that has no limit (so $E$ is not complete) so by quasi-completeness of $E$ such a Cauchy net cannot be eventually bounded (as otherwise it would have a limit, by quasi-completeness). This also shows $E$ is not metrizable, since quasi-completeness implies completeness in the metrizable case.
 
@@ -2785,7 +2789,7 @@ ${}^{20}$Completeness of measures has been added in to ensure $\mu\otimes\nu$ is
 
 **718** · **CHAPTER C. PREPARATIONS ON LOCALLY CONVEX TOPOLOGICAL VECTOR SPACES**
 
-By the Remark in [Bou-I, Ch. III, §4, p. III.43] and [Bou-I, Ch. III, Lemma 2], the functions $f(x,\cdot)$ and $f(\cdot,y)$ are elements of $\widetilde{\mathscr K}(Y,E)$, respectively $\widetilde{\mathscr K}(X,E)$, in the notation of *loc.cit.* (see [Bou-I, Ch. III, §3, p. III.32]), and these are continuous $E$-valued functions on $Y$, respectively $X$, such that their composition with every $\varphi\in E'$ is compactly supported as a scalar-valued function.
+By the Remark in [Bou-I, Ch. III, §4, p. III.43] and [Bou-I, Ch. III, Lemma 2], the functions $f(x,\cdot)$ and $(\cdot,y)$ are elements of $\widetilde{\mathscr K}(Y,E)$, respectively $\widetilde{\mathscr K}(X,E)$, in the notation of *loc.cit.* (see [Bou-I, Ch. III, §3, p. III.32]), and these are continuous $E$-valued functions on $Y$, respectively $X$, such that their composition with every $\varphi\in E'$ is compactly supported as a scalar-valued function.
 
 Since $\langle f(x,y),\varphi\rangle_{E,E'}$ is a continuous scalar-valued integrable function on $X\times Y$, [Bou-I, Ch. III, §4, Lemma 2] applies and implies that both $y\mapsto\int_X\langle f(x,y),\varphi\rangle_{E,E'}\,\mathrm{d}\mu(x)$ and $x\mapsto\int_Y\langle f(x,y),\varphi\rangle_{E,E'}\,\mathrm{d}\nu(y)$ are continuous compactly supported functions on $Y$, respectively $X$, for every $\varphi\in E'$. By (C.4.3.3) and by compactness of the support of the above functions, the integrals in (C.4.4.1) are contained in $E$ by Theorem C.4.3.5, being $E$ quasi-complete. However, the integrals $\int_X f(x,\cdot)\,\mathrm{d}\nu$ and $\int_X f(\cdot,y)\,\mathrm{d}\mu$ are a priori only elements $(E')^*$. Lemma C.4.4.1, instead, *assumes* that they are elements in $E\subset (E')^*$.
 
@@ -3486,7 +3490,9 @@ $$
 
 by the Fundamental Theorem of Calculus. Since the space $E'$ separates the points of $E$, (C.5.1.37) holds. $\square$
 
-**C.5.1.4. Vector-valued differentiability criterion.** We will now discuss a differentiability criterion, extending Lemma C.5.1.13 to higher order directional derivatives. Such a criterion will hold under the additional assumption on the Hausdorff locally convex topological $\mathbf{C}$-vector space $E$ being quasi-complete. The following Lemma is the key ingredient upon which the differentiability criterion of Theorem C.5.1.24 below rests. We record here the following consequence of Lemma C.5.1.12, Lemma C.5.1.13, Lemma C.5.1.15 and Lemma C.5.1.16:
+**C.5.1.4. Vector-valued differentiability criterion.** We will now discuss a differentiability criterion, extending Lemma C.5.1.13 to higher order directional derivatives. Such a criterion will hold under the additional assumption on the Hausdorff locally convex topological $\mathbf{C}$-vector space $E$ being quasi-complete. The following Lemma is the key ingredient upon which the differentiability criterion of Theorem C.5.1.24 below rests.
+
+We record here the following consequence of Lemma C.5.1.12, Lemma C.5.1.13, Lemma C.5.1.15 and Lemma C.5.1.16:
 
 **Theorem C.5.1.21 (Strong vector-valued differentiability).** Let $E$ be a Hausdorff locally convex topological $\mathbf{C}$-vector space, $d \ge 1$ an integer, $k$ either one of the Archimedean topological fields $k = \mathbf{R}, \mathbf{C}$, endowed with their Euclidean topology. Let $\Omega \subset k^d$ be an open subset, $f : \Omega \to E$ a function. The following conditions are equivalent:
 
@@ -3578,7 +3584,9 @@ $$
 f(\xi_1) - f(\xi_2) \in (\xi_1 - \xi_2)A \subset E. \tag{C.5.1.42}
 $$
 
-For any Cauchy sequence $\{\xi'_k\}_{k \ge 0}$ contained in $\Omega - \{\xi_0\}$ and converging to $\xi_0$, it follows from (C.5.1.42) that $\{f(\xi'_k)\}_{k \ge 0}$ is a Cauchy sequence in $E$. Since $E$ is quasi-complete and Cauchy sequences are bounded, $\{f(\xi'_k)\}$ converges. We define $F(\xi_0)$ to be its limit. The containment in (C.5.1.42) implies that $F(\xi_0)$ does not depend on the choice of convergent Cauchy sequence $\{\xi'_k\}_{k \ge 0}$, and $F$, thus defined at $\xi_0$, is sequentially continuous at $\xi_0$ and hence over $\Omega$ upon defining $F := f$ over $\Omega - \{\xi_0\}$. Thus, $F$ is continuous.
+For any Cauchy sequence $\{\xi'_k\}_{k \ge 0}$ contained in $\Omega - \{\xi_0\}$ and converging to $\xi_0$, it follows from (C.5.1.42) that $\{f(\xi'_k)\}_{k \ge 0}$ is a Cauchy sequence in $E$.
+
+Since $E$ is quasi-complete and Cauchy sequences are bounded, $\{f(\xi'_k)\}$ converges. We define $F(\xi_0)$ to be its limit. The containment in (C.5.1.42) implies that $F(\xi_0)$ does not depend on the choice of convergent Cauchy sequence $\{\xi'_k\}_{k \ge 0}$, and $F$, thus defined at $\xi_0$, is sequentially continuous at $\xi_0$ and hence over $\Omega$ upon defining $F := f$ over $\Omega - \{\xi_0\}$. Thus, $F$ is continuous.
 
 We let $\varphi$ be the arbitrary continuous functional on $E$. Clearly the continuous function $\langle F, \varphi \rangle_{E,E'}$ is the unique continuous extension of $\langle f, \varphi \rangle_{E,E'} : \Omega - \{\xi_0\} \to \mathbf{C}$ to $\Omega$. That continuous extension is continuously differentiable by hypothesis, so $F$ is weakly differentiable. $\square$
 
@@ -3630,7 +3638,9 @@ We claim $f$ satisfies the assumptions of Lemma C.5.1.16(3) with (C.5.1.32) equa
 
 We have shown that for each integer $1 \le i \le d$, $\mathrm{D}_i f$ is valued in $E$ and continuous with respect to the Euclidean topology on $\Omega$ and the initial topology on $E$. Note that for each integer $1 \le i \le d$, the function $\mathrm{D}_i f$ is $E$-valued, continuous, and weakly continuously differentiable $m - 1$ times. By inductive hypothesis, it is continuously differentiable $m - 2$ times. We have therefore shown that $f$ is continuously differentiable $m - 1$ times. $\square$
 
-**Corollary C.5.1.25 (On the agreement of the concepts of $E$-valued smoothness).** Let $E$ be a Hausdorff locally convex topological $\mathbf{C}$-vector space. Let $d \ge 1$ be an integer, $k$ either one of the two Archimedean topological field $k = \mathbf{R}, \mathbf{C}$, endowed with their Euclidean topology. Let $\Omega \subset k^d$ be an open subset, $f : \Omega \to E$ a function. Assume $E$ is quasi-complete. Then, the following conditions are equivalent:
+**Corollary C.5.1.25 (On the agreement of the concepts of $E$-valued smoothness).** Let $E$ be a Hausdorff locally convex topological $\mathbf{C}$-vector space. Let $d \ge 1$ be an integer, $k$ either one of the two Archimedean topological field $k = \mathbf{R}, \mathbf{C}$, endowed with their Euclidean topology.
+
+Let $\Omega \subset k^d$ be an open subset, $f : \Omega \to E$ a function. Assume $E$ is quasi-complete. Then, the following conditions are equivalent:
 
 (1) $f$ is infinitely differentiable.
 
@@ -3662,7 +3672,9 @@ We topologize $\mathcal{S}(\mathbf{T}^d, E)$ with the unique Hausdorff topologic
 
 We topologize $\mathcal{S}(\mathbf{R}^d, E)$ with the unique Hausdorff topological vector space structure for which a net $\{f_i\}_{i \in I} \subset \mathcal{S}(\mathbf{R}^d, E)$ converges to $0$ in $\mathcal{S}(\mathbf{R}^d, E)$ if and only if for every $\varphi \in E'$, the net of smooth complex-valued functions $\{\langle f_i, \varphi \rangle_{E,E'}\}_{i \in I}$ converges to $0$ with respect to the topology of uniform convergence over $\mathbf{R}^d$, uniformly as $\varphi$ varies over each equicontinuous subset of $E'$.
 
-**Remark C.5.1.27.** Definition C.5.1.26 makes sense for an arbitrary Hausdorff locally convex topological $\mathbf{C}$-vector space $E$ (no quasi-completeness hypothesis) by defining smooth $E$-valued functions as those that are weakly infinitely differentiable and by defining the two respective function spaces $\mathcal{S}(\mathbf{T}^d, E)$ and $\mathcal{S}(\mathbf{R}^d, E)$ as the linear subspaces of $C^\infty(\mathbf{R}^n, E)$ of those smooth $E$-valued functions $f : \mathbf{R}^d \to E$ such that for any $\varphi \in E'$, the complex-valued smooth function $\langle f, \varphi \rangle_{E,E'}$ is $\mathbf{Z}^d$-invariant over $\mathbf{R}^d$, respectively Schwartz over $\mathbf{R}^d$. This latter way to define $\mathcal{S}(\mathbf{T}^d, E)$ and $\mathcal{S}(\mathbf{R}^d, E)$ is denoted in [Sch-b, §1, p. 102] by $\widetilde{\mathrm{H}}^d(E)$ for $\mathrm{H}$ either $\mathcal{S}(\mathbf{T}^d)$ or $\mathcal{S}(\mathbf{R}^d)$. By [Sch-b, Prop. 8, p. 104], for $E$ quasi-complete this definition and Definition C.5.1.26 are equivalent; see also Corollary C.5.1.25, and [Sch-b, Prop. 4, p. 97].
+**Remark C.5.1.27.** Definition C.5.1.26 makes sense for an arbitrary Hausdorff locally convex topological $\mathbf{C}$-vector space $E$ (no quasi-completeness hypothesis) by defining smooth $E$-valued functions as those that are weakly infinitely differentiable and by defining the two respective function spaces $\mathcal{S}(\mathbf{T}^d, E)$ and $\mathcal{S}(\mathbf{R}^d, E)$ as the linear subspaces of $C^\infty(\mathbf{R}^n, E)$ of those smooth $E$-valued functions $f : \mathbf{R}^d \to E$ such that for any $\varphi \in E'$, the complex-valued smooth function $\langle f, \varphi \rangle_{E,E'}$ is $\mathbf{Z}^d$-invariant over $\mathbf{R}^d$, respectively Schwartz over $\mathbf{R}^d$.
+
+This latter way to define $\mathcal{S}(\mathbf{T}^d, E)$ and $\mathcal{S}(\mathbf{R}^d, E)$ is denoted in [Sch-b, §1, p. 102] by $\widetilde{\mathrm{H}}^d(E)$ for $\mathrm{H}$ either $\mathcal{S}(\mathbf{T}^d)$ or $\mathcal{S}(\mathbf{R}^d)$. By [Sch-b, Prop. 8, p. 104], for $E$ quasi-complete this definition and Definition C.5.1.26 are equivalent; see also Corollary C.5.1.25, and [Sch-b, Prop. 4, p. 97].
 
 **Remark C.5.1.28 (Fundamental families of seminorms for $\mathcal{S}(\mathbf{T}^d, E)$ and $\mathcal{S}(\mathbf{R}^d, E)$).** In light of Lemma C.2.2.2, the topology thus defined on $\mathcal{S}(\mathbf{T}^d, E)$, respectively $\mathcal{S}(\mathbf{R}^d, E)$, is locally convex: for $\{q_i\}_{i \in I}$ a fundamental family of continuous seminorms for $E$, a fundamental family of seminorms for $\mathcal{S}(\mathbf{T}^d, E)$ is assigned on each $f \in \mathcal{S}(\mathbf{T}^d, E)$ by
 
@@ -3682,7 +3694,9 @@ $$
 
 as $p$ varies over all complex-valued polynomial functions on $\mathbf{R}^d$, equivalently over all monomial functions over $\mathbf{R}^d$, and $\alpha \in \mathbf{N}^d$ is an arbitrary multi-index.
 
-**Remark C.5.1.29.** Definition C.5.1.26 makes sense for the arbitrary Hausdorff locally convex topological $\mathbf{C}$-vector space $E$, by defining smooth $E$-valued functions as being those that are weakly infinitely differentiable, and by defining each of the two function spaces $\mathcal{S}(\mathbf{T}^d, E)$ and $\mathcal{S}(\mathbf{R}^d, E)$ as being the linear subspaces of $C^\infty(\mathbf{R}^n, E)$ of those smooth $E$-valued functions $f : \mathbf{R}^d \to E$ such that for any $\varphi \in E'$, the complex-valued smooth function $\langle f, \varphi \rangle_{E,E'}$ is $\mathbf{Z}^d$-invariant over $\mathbf{R}^d$, respectively Schwartz over $\mathbf{R}^d$. This latter way to define $\mathcal{S}(\mathbf{T}^d, E)$ and $\mathcal{S}(\mathbf{R}^d, E)$ is denoted in [Sch-b, §1, p. 102] by $\widetilde{\mathrm{H}}^d(E)$ for $\mathrm{H}$ either $\mathcal{S}(\mathbf{T}^d)$ or $\mathcal{S}(\mathbf{R}^d)$. By [Sch-b, Prop. 8, p. 104], for $E$ quasi-complete this definition and Definition C.5.1.26 are equivalent; see also Corollary C.5.1.25, and [Sch-b, Prop. 4, p. 97].
+**Remark C.5.1.29.** Definition C.5.1.26 makes sense for the arbitrary Hausdorff locally convex topological $\mathbf{C}$-vector space $E$, by defining smooth $E$-valued functions as being those that are weakly infinitely differentiable, and by defining each of the two function spaces $\mathcal{S}(\mathbf{T}^d, E)$ and $\mathcal{S}(\mathbf{R}^d, E)$ as being the linear subspaces of $C^\infty(\mathbf{R}^n, E)$ of those smooth $E$-valued functions $f : \mathbf{R}^d \to E$ such that for any $\varphi \in E'$, the complex-valued smooth function $\langle f, \varphi \rangle_{E,E'}$ is $\mathbf{Z}^d$-invariant over $\mathbf{R}^d$, respectively Schwartz over $\mathbf{R}^d$.
+
+This latter way to define $\mathcal{S}(\mathbf{T}^d, E)$ and $\mathcal{S}(\mathbf{R}^d, E)$ is denoted in [Sch-b, §1, p. 102] by $\widetilde{\mathrm{H}}^d(E)$ for $\mathrm{H}$ either $\mathcal{S}(\mathbf{T}^d)$ or $\mathcal{S}(\mathbf{R}^d)$. By [Sch-b, Prop. 8, p. 104], for $E$ quasi-complete this definition and Definition C.5.1.26 are equivalent; see also Corollary C.5.1.25, and [Sch-b, Prop. 4, p. 97].
 
 Most of the following properties of $\mathcal{S}(\mathbf{R}^d, E)$ are due to Schwartz, and we further refer the reader to [Sch-b, §1, p. 93].
 
@@ -3706,7 +3720,11 @@ $$
 \mathcal{S}(X \times Y) \to \mathcal{S}(X, \mathcal{S}(Y)). \tag{C.5.1.48}
 $$
 
-*Proof.* (1) and (2): Let $\{f_i\}_{i \in I} \subset \mathcal{S}(\mathbf{R}^d, E)$ be a bounded Cauchy net. Since $\mathcal{S}(\mathbf{R}^d)$ is complete, it converges weakly; i.e., with respect to the $\sigma(\mathcal{S}(\mathbf{R}^d, E), \mathcal{S}(\mathbf{R}^d, E)')$-topology on $\mathcal{S}(\mathbf{R}^d, E)$. Since it is bounded by assumption, for each $x \in \mathbf{R}^d$ Remark C.5.1.28 gives that $\{f_i(x)\}_{i \in I}$ is a bounded Cauchy net in $E$, which therefore converges for each $x \in \mathbf{R}^d$ since $E$ is quasi-complete. We denote by $f : \mathbf{R}^d \to E$ the limit function. For any $\varphi \in E'$, $\langle f, \varphi \rangle_{E,E'}$ is the pointwise limit of $\langle f_i, \varphi \rangle$, yet $\langle f_i, \varphi \rangle$ is Cauchy in the complete $\mathcal{S}(\mathbf{R}^d)$ and so has a limit in $\mathcal{S}(\mathbf{R}^d)$. Hence, $\langle f, \varphi \rangle$ is that limit, so it is Schwartz. By Corollary C.5.1.25, $f$ is smooth as an $E$-valued function. For any polynomial function $p$ on $\mathbf{R}^d$ and every multi-index $\alpha \in \mathbf{N}^d$, $p \cdot \mathrm{D}^\alpha f$ takes values in a weakly bounded subset of $E$ since each $\langle f, \varphi \rangle$ is Schwartz, so $p \cdot \mathrm{D}^\alpha f$ takes values in a bounded subset of $E$ by [Scha, Ch. IV, 3.3]. We deduce that $f \in \mathcal{S}(\mathbf{R}^d, E)$. It remains to show that $f_i \to f$ in $\mathcal{S}(\mathbf{R}^d, E)$. If $\varphi \in E'$ varies over an arbitrary equicontinuous subset $A$ of $E'$ then by equicontinuity we have $\langle f_i, \varphi \rangle_{E,E'} \to \langle f, \varphi \rangle_{E,E'}$ uniformly with respect to $\varphi \in A$. We deduce that $f_i \to f$ in $\mathcal{S}(\mathbf{R}^d, E)$, by definition of the locally convex topology on $\mathcal{S}(\mathbf{R}^d, E)$.
+*Proof.* (1) and (2): Let $\{f_i\}_{i \in I} \subset \mathcal{S}(\mathbf{R}^d, E)$ be a bounded Cauchy net. Since $\mathcal{S}(\mathbf{R}^d)$ is complete, it converges weakly; i.e., with respect to the $\sigma(\mathcal{S}(\mathbf{R}^d, E), \mathcal{S}(\mathbf{R}^d, E)')$-topology on $\mathcal{S}(\mathbf{R}^d, E)$.
+
+Since it is bounded by assumption, for each $x \in \mathbf{R}^d$ Remark C.5.1.28 gives that $\{f_i(x)\}_{i \in I}$ is a bounded Cauchy net in $E$, which therefore converges for each $x \in \mathbf{R}^d$ since $E$ is quasi-complete. We denote by $f : \mathbf{R}^d \to E$ the limit function. For any $\varphi \in E'$, $\langle f, \varphi \rangle_{E,E'}$ is the pointwise limit of $\langle f_i, \varphi \rangle$, yet $\langle f_i, \varphi \rangle$ is Cauchy in the complete $\mathcal{S}(\mathbf{R}^d)$ and so has a limit in $\mathcal{S}(\mathbf{R}^d)$. Hence, $\langle f, \varphi \rangle$ is that limit, so it is Schwartz.
+
+By Corollary C.5.1.25, $f$ is smooth as an $E$-valued function. For any polynomial function $p$ on $\mathbf{R}^d$ and every multi-index $\alpha \in \mathbf{N}^d$, $p \cdot \mathrm{D}^\alpha f$ takes values in a weakly bounded subset of $E$ since each $\langle f, \varphi \rangle$ is Schwartz, so $p \cdot \mathrm{D}^\alpha f$ takes values in a bounded subset of $E$ by [Scha, Ch. IV, 3.3]. We deduce that $f \in \mathcal{S}(\mathbf{R}^d, E)$. It remains to show that $f_i \to f$ in $\mathcal{S}(\mathbf{R}^d, E)$. If $\varphi \in E'$ varies over an arbitrary equicontinuous subset $A$ of $E'$ then by equicontinuity we have $\langle f_i, \varphi \rangle_{E,E'} \to \langle f, \varphi \rangle_{E,E'}$ uniformly with respect to $\varphi \in A$. We deduce that $f_i \to f$ in $\mathcal{S}(\mathbf{R}^d, E)$, by definition of the locally convex topology on $\mathcal{S}(\mathbf{R}^d, E)$.
 
 The same argument works if $\{f_i\}_{i \in I}$ is an arbitrary (not necessarily bounded) Cauchy net in $\mathcal{S}(\mathbf{R}^d, E)$ and $E$ is complete rather than just quasi-complete.
 
@@ -3970,4 +3988,6 @@ can be topologized (the former with the topology of locally uniform convergence,
 
 **742** · **CHAPTER C. PREPARATIONS ON LOCALLY CONVEX TOPOLOGICAL VECTOR SPACES**
 
-topologies are themselves quasi-complete, and promote the residue operators to continuous linear maps. They have been studied, for example, in [Jor-a, BJM], in analogy with [GE] on the case of $\mathscr{M}(\Omega, E)$ for $E = \mathbf{C}$. We will not require a study of the complex vector spaces $\mathscr{H}(\Omega, E)$ and $\mathscr{M}(\Omega, E)$ for quasi-complete $E$: rather, we will be studying, throughout Appendix D and the main text, smaller linear subspaces of holomorphic and meromorphic vector-valued functions satisfying decay conditions uniformly over vertical strips of bounded width, topologized with stronger topologies of uniform convergence over vertical strips of bounded width.
+topologies are themselves quasi-complete, and promote the residue operators to continuous linear maps. They have been studied, for example, in [Jor-a, BJM], in analogy with [GE] on the case of $\mathscr{M}(\Omega, E)$ for $E = \mathbf{C}$.
+
+We will not require a study of the complex vector spaces $\mathscr{H}(\Omega, E)$ and $\mathscr{M}(\Omega, E)$ for quasi-complete $E$: rather, we will be studying, throughout Appendix D and the main text, smaller linear subspaces of holomorphic and meromorphic vector-valued functions satisfying decay conditions uniformly over vertical strips of bounded width, topologized with stronger topologies of uniform convergence over vertical strips of bounded width.

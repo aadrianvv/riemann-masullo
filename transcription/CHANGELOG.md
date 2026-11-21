@@ -119,3 +119,36 @@ changed (585 of 940 in total since the first version).
   928), and the 2-cells φ that had been left out of the diagrams on pp. 910 and 913.
 - **Random sample.** 45 tagged equations drawn at random after these corrections: 43 exact; the
   two wrong ones ((5.3.2.8) p. 246, (12.2.2.31) p. 513) are corrected.
+
+## 8. Page-by-page visual review
+
+Every one of the 940 pages was read against its page image (200 dpi, with 300–400 dpi crops of
+small print) by AI reviewers: Claude on all pages and, independently, Gemini on 485 of them (420
+pages were read by both, and their corrections were merged and compared). ≈ 1,030 corrections on
+354 pages (659 of 940 pages changed in total since the first version). Each correction was checked
+against the PDF glyphs where they align (258 improved the alignment; the 16 that lowered it were
+looked at on the image; 3 edits contradicted by the PDF fonts were reverted), word changes in prose against the PDF text layer,
+and a random sample by eye. All the checks in the README were run again afterwards.
+
+- **Sub- and superscripts** (≈ 200): exponents written on the baseline (`|S|-1` for `^{|S|-1}`,
+  p. 325), indices dropped or added (`L^2` vs `L^2_\omega`, p. 178; `O_v` vs `O_{F_v}`, p. 65),
+  `H^0_{\mathrm{cont}}` for the printed `H_{0,\mathrm{cont}}` (p. 181), `\Phi_{\gamma\mathbf Z}`
+  for `\Phi_{\gamma^{\mathbf Z}}` (p. 209).
+- **Letter alphabets** (≈ 190): calligraphic, script, bold, blackboard and upright letters that
+  differed from the print, e.g. the upright d in `\mathrm{d}x`, `\mathcal A` vs `\mathscr A`.
+- **Bars, hats, tildes and underlines** (≈ 160), e.g. the overlined (inductive) tensor product
+  (pp. 198–200), `\bar n` for `\underline n` (p. 272), a bar over ω(g) and not over g (p. 178).
+- **Arrows and signs** (≈ 110): `\hookrightarrow` and `\to` (pp. 246, 257), `\coprod` and
+  `\bigsqcup`/`\sqcup` (pp. 388–391), `-` for `\setminus` (pp. 240, 243), missing minus signs
+  (p. 194); and ⇉ (`\rightrightarrows`) for the groupoid brackets [𝒢 ⇉ X] and pairs of maps,
+  which the PDF text layer reports as ⇒ (Appendix E, ≈ 100 places). After this, every
+  double-arrow glyph of the PDF was matched by font (MSAM ⇉, CMSY ⇒) against the transcription:
+  the same count on every page.
+- **Primes** (≈ 30): `g'g` for `g''` (pp. 182, 187), primes added or dropped (pp. 203, 240–244,
+  431, 928–929).
+- **Prose** (≈ 100): typographic quotes for LaTeX backtick quotes (pp. 39–42), missing or extra
+  words and spaces, and misprints of the paper kept as printed (e.g. "reflexivty", p. 662;
+  "L’Hopital", p. 648; "7,5" in a citation, p. 757).
+- **Citations and footnotes** (≈ 80): doubled opening brackets `[[` (pp. 195–207), bold citation
+  keys, and footnote markers written as HTML `<sup>` instead of the `$^{1}$` convention.
+- **Diagrams**: a 2-cell drawn as ⇔ in the print (p. 911) and arrows in Appendix E.

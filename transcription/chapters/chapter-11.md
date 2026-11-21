@@ -138,7 +138,7 @@ $$
 \Phi_m(\cdot) = \sum_{i=1}^N (\varphi_m f)(\xi_i\cdot) \tag{11.1.1.7}
 $$
 
-where $N$ depends only on $m$ and $U_0$, and $\{\xi_1,\dots,\xi_N\}$ is the finite set of elements of $F^\times$ comprising the intersection $F^\times \cap (U_0^{-1} K_{m+1})$, the finiteness being ensured by the compactness of the closure of $U_0^{-1} K_{m+1}$, which holds since $(U_0)^{-1}K_{m+1}$ is compact by [DE, Lemma 1.1.3(d)]. It follows that $\Phi_m$ is, over $U_0 \cap Z$, a finite sum of Borel-measurable functions (since the left-translation action by $F^\times$ on $\mathrm{GL}_1(\mathbf A_F)$ is continuous). Here we are using the foregoing applied to the Schwartz-Bruhat functions $f_k(\xi_i\cdot)$ in place of $f_k$, and to $f(\xi_i\cdot)$ in place of $f$, to deduce that each $f(\xi_i\cdot)$, for $1 \le i \le N$, is also Borel-measurable over $Z$.
+where $N$ depends only on $m$ and $U_0$, and $\{\xi_1,\dots,\xi_N\}$ is the finite set of elements of $F^\times$ comprising the intersection $F^\times \cap (U_0^{-1} K_{m+1})$, the finiteness being ensured by the compactness of the closure of $U_0^{-1} K_{m+1}$, which holds since $(\overline{U}_0)^{-1}K_{m+1}$ is compact by [DE, Lemma 1.1.3(d)]. It follows that $\Phi_m$ is, over $U_0 \cap Z$, a finite sum of Borel-measurable functions (since the left-translation action by $F^\times$ on $\mathrm{GL}_1(\mathbf A_F)$ is continuous). Here we are using the foregoing applied to the Schwartz-Bruhat functions $f_k(\xi_i\cdot)$ in place of $f_k$, and to $f(\xi_i\cdot)$ in place of $f$, to deduce that each $f(\xi_i\cdot)$, for $1 \le i \le N$, is also Borel-measurable over $Z$.
 
 Being $U_0$ arbitrary, as an open subset of $\mathrm{GL}_1(\mathbf A_F)$ with compact closure, and being $\mathrm{GL}_1(\mathbf A_F)$ locally compact Hausdorff, it follows that $\Phi_m$ is Borel-measurable over $Z$, because there exists a covering $\{U_{0,i}\}_{i\in I}$ by open subsets of $\mathrm{GL}_1(\mathbf A_F)$ with compact closure, such that for each $i \in I$, $\Phi_m$ is Borel-measurable over $U_{0,i} \cap Z$.
 
@@ -184,11 +184,11 @@ $$
 
 *pointwise over $C_F$.*
 
-*We note that the upper bound to the series in (11.1.1.8) from Corollary 11.1.1.4(2) depends on $g \in C_F$.*
+We note that the upper bound to the series in (11.1.1.8) from Corollary 11.1.1.4(2) depends on $g \in C_F$.
 
 *Proof.* We apply Proposition 11.1.1.2 to the Borel set $Z := \{g\}$, and $\eta := \delta_{\{g\}}$, the Dirac measure on $\mathrm{GL}_1(\mathbf A_F)$ concentrated at $\{g\}$. By (2.a) and (2.b), conditions (1) and (2) of Proposition 11.1.1.2 are satisfied with $r = 1$, and hence the series in (11.1.1.12) is absolutely convergent, and (11.1.1.13) holds with respect to the norm topology on $L^1(\{g\},\delta_{\{g\}})$, which is to say that $\Phi_F(f_k) \to \Phi_F(f)$ pointwise over $\mathrm{GL}_1(\mathbf A_F)$. Being each function $\Phi_F(f_k)$ and $\Phi_F(f)$, invariant under the left-translation action of $F^\times$ on $\mathrm{GL}_1(\mathbf A_F)$, the identity in (11.1.1.13) holds as functions over $C_F$. $\square$
 
-We recall that we have chosen a continuous homomorphic section $\tau : \mathbf R_{>0} \to \mathrm{GL}_1(\mathbf A_F)$ to the idelic norm, and that such choice defines a closed subgroup $T := \tau(\mathbf R_{>0}) \subset \mathrm{GL}_1(\mathbf A_F)$, and provides the isomorphism of abelian topological groups*
+We recall that we have chosen a continuous homomorphic section $\tau : \mathbf R_{>0} \to \mathrm{GL}_1(\mathbf A_F)$ to the idelic norm, and that such choice defines a closed subgroup $T := \tau(\mathbf R_{>0}) \subset \mathrm{GL}_1(\mathbf A_F)$, and provides the isomorphism of abelian topological groups
 
 $$
 \theta_{F,\tau} : \mathbf R_{>0} \times \mathrm{GL}_1(\mathbf A_F)^1 \xrightarrow{\;\simeq\;} T\cdot \mathrm{GL}_1(\mathbf A_F)^1 = \mathrm{GL}_1(\mathbf A_F)
@@ -427,7 +427,7 @@ The subset $Z \subset \mathrm{GL}_1(\mathbf A_F)$ is Borel with non-empty interi
 
 We choose $\eta := \mathrm{1}_{(1/\Lambda,+\infty)}\cdot (1+|\log|\cdot|_F|^2)^{s/2}\,\mu$ as positive Radon measure on $\mathrm{GL}_1(\mathbf A_F)$, and choose $r = 2$ in the statement of Proposition 11.1.1.2.
 
-We choose $f \in \mathcal S_0(\mathbf A_F)$ of the form $f = f_\infty \prod_{v\in\Sigma_{F,f}} f_v$ for $f_\infty \in \mathcal S(\mathbf A_{F,S_\infty})$ and $f_v \in \mathcal S(F_v)$ for every $v \in \Sigma_{F,f}$, with $f_v = 1_{\mathcal O_{F_v}}$ for all but finitely many finite places $v$ of $F$ all contained in $S$. We assume that $f_S := f_\infty \otimes \prod_{v\in S\cap\Sigma_{F,f}} f_v \in \mathcal S(\mathbf A_{F,S})$ satisfies $f_S(0) = \hat f_S(0) = 0$.
+We choose $f \in \mathcal S_0(\mathbf A_F)$ of the form $f = f_\infty \prod_{v\in\Sigma_{F,f}} f_v$ for $f_\infty \in \mathcal S(\mathbf A_{F,S_\infty})$ and $f_v \in \mathcal S(F_v)$ for every $v \in \Sigma_{F,f}$, with $f_v = 1_{\mathcal O_{F_v}}$ for all but finitely many finite places $v$ of $F$ all contained in $S$. We assume that $f_S := f_\infty \otimes \prod_{v\in S\cap\Sigma_{F,f}} f_v \in \mathcal S(\mathbf A_{F,S})$ satisfies $f_S(0) = \widehat{f_S}(0) = 0$.
 
 Note that Schwartz-Bruhat functions of this form $\mathbf C$-linearly span a subspace $W$ within $\mathcal S_0(\mathbf A_F)$ which is linearly mapped onto a dense subspace in $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ by our assumptions on $S$ and by the Fifth Structure Theorem (see Theorem 6.2.1.1).
 
@@ -467,11 +467,13 @@ $$
 1_{(1/\Lambda,+\infty)} \cdot (f_S \otimes \prod_{v \notin S} 1_{\mathcal O_{F_v}^\times})
 $$
 
-for $f_S \in \mathcal S(\mathbf A_{F,S})$ satisfying only the one vanishing condition $\widehat{f}_S(0) = 0$. If the closure $\overline{W}_{S,\Lambda,0}$ of $W_{S,\Lambda,0}$ in $W^{s,2}(C_F)(\chi|_{C^1_F})$ is not $\overline{W}_{S,\Lambda}$ itself, then the kernel of the continuous linear quotient $\overline{W}_{S,\Lambda} \to W_{S,\Lambda}/W_{S,\Lambda,0}$ provides a continuous extension of $\widehat{\delta}_0$ to the completion of $\mathcal S(\mathbf A_{F,S})$ with respect to the $L^2$-norm topology induced by the Radon measure $1_{(1/\Lambda,+\infty)} \cdot (1 + |\log|\cdot|_{F,S}|^2)^{s/2}\mu_S$ on $\mathrm{GL}_1(\mathbf A_{F,S})$. However, $\widehat{\delta}_0$ is discontinuous with respect to such topology on $\mathcal S(\mathbf A_{F,S})$, because multiplication by $|\cdot|_{F,S}$ is a discontinuous operator with respect to this topology, since $|\cdot|_{F,S}$ grows polynomially as $g \in \{g \in \mathrm{GL}_1(\mathbf A_{F,S}) : |g|_{F,S} \ge 1/\Lambda\}$ satisfies $|g|_{F,S} \to +\infty$.
+for $f_S \in \mathcal S(\mathbf A_{F,S})$ satisfying only the one vanishing condition $\widehat{f_S}(0) = 0$. If the closure $\overline{W}_{S,\Lambda,0}$ of $W_{S,\Lambda,0}$ in $W^{s,2}(C_F)(\chi|_{C^1_F})$ is not $\overline{W}_{S,\Lambda}$ itself, then the kernel of the continuous linear quotient $\overline{W}_{S,\Lambda} \to \overline{W}_{S,\Lambda}/\overline{W}_{S,\Lambda,0}$ provides a continuous extension of $\widehat{\delta}_0$ to the completion of $\mathcal S(\mathbf A_{F,S})$ with respect to the $L^2$-norm topology induced by the Radon measure $1_{(1/\Lambda,+\infty)} \cdot (1 + |\log|\cdot|_{F,S}|^2)^{s/2}\mu_S$ on $\mathrm{GL}_1(\mathbf A_{F,S})$. However, $\widehat{\delta}_0$ is discontinuous with respect to such topology on $\mathcal S(\mathbf A_{F,S})$, because multiplication by $|\cdot|_{F,S}$ is a discontinuous operator with respect to this topology, since $|\cdot|_{F,S}$ grows polynomially as $g \in \{g \in \mathrm{GL}_1(\mathbf A_{F,S}) : |g|_{F,S} \ge 1/\Lambda\}$ satisfies $|g|_{F,S} \to +\infty$.
 
 We deduce that we have $\overline{W}_{S,\Lambda,0} = \overline{W}_{S,\Lambda}$. Since $\overline{W}_{S,\Lambda}$ is exactly $R_{\Lambda,S} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$, we deduce that (3) holds.
 
 $\square$
+
+$^{6}$
 
 **11.2. The pieces of the puzzle: Paley-Wiener levels and Orbital Markushevich Bases**
 
@@ -487,7 +489,8 @@ $$
 \langle\phi, \psi\rangle_{s,2} := \int_{C_F} \phi(g)\psi(g)\,\mathrm{d}\bar\mu(g).
 $$
 
-↩Return here.
+---
+$^{6}$Return here.
 
 ## PDF page 484
 
@@ -562,7 +565,7 @@ $\square$
 We record here below a result that is analogous to Theorem 10.2.1.1, identifying a Markushevich basis for the orthogonal to
 
 $$
-\mathrm{PV}_{S_0} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F)) \subset W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F)) = W^{s,2}(C_F)
+\mathrm{PV}_{S_0} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F)) \subset W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F) = W^{s,2}(C_F)
 $$
 
 where $\mathrm{PV}_{S_0} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ is the closed subspace defined in (11.2.0.3), and orthogonality is defined with respect to the duality pairing $\langle\cdot,\cdot\rangle_{s,2}$ from (9.1.1.11), whose definition we recalled in (10.2.1.3).
@@ -850,7 +853,7 @@ endowed with the quotient topology. $\mathscr{E}^s_{0,S_p}(\chi|_{C^1_F})$ is th
 
 **490** · **CHAPTER 11. THE SHELL STRUCTURE**
 
-We further refer the reader to (7.4.0.2), observing that $\mathcal E^s_{0,S_p}(\chi|_{C^1_F})$ is the completion of $\mathscr{E}_{S_p}(\chi|_{C^1_F})$ with respect to the quotient of the normed topology on $W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$; see also Theorem 7.4.2.1.
+We further refer the reader to (7.4.0.2), observing that $\mathscr{E}^s_{0,S_p}(\chi|_{C^1_F})$ is the completion of $\mathscr{E}_{S_p}(\chi|_{C^1_F})$ with respect to the quotient of the normed topology on $W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$; see also Theorem 7.4.2.1.
 
 Theorem 11.2.2.1 (Orbital Nuclearity on the 0-line). Let $F$ be a number field, $\chi \in \widehat{C_F}$ a continuous character. Let $s > 1$ be a real number. Assume:
 
@@ -981,14 +984,14 @@ $$
 where
 
 $$
-f=f_S\otimes\bigotimes_{v\nmid S}1_{\mathcal O_{F_v}} \tag{11.3.1.1}
+f=f_S\otimes\bigotimes_{v\notin S}1_{\mathcal O_{F_v}} \tag{11.3.1.1}
 $$
 
 for some $f_S\in \mathcal{S}(\mathbf A_{F,S})$.
 
 This is the last of the five Structure Theorems, proved at the end of Chapter 5 of this work.
 
-The stratification of the global ideles $\mathrm{GL}_1(\mathbf A_F)$ that we are about to define will weld itself perfectly well with the non-Archimedean “transversal” (i.e. tensor component) $\bigotimes_{v\nmid S}1_{\mathcal O_{F_v}}$ which all the global Schwartz-Bruhat functions on $\mathbf A_F$ representing the $\chi|_{C^1_F}$-homogeneous global $\theta$-functions can be made to share in common.
+The stratification of the global ideles $\mathrm{GL}_1(\mathbf A_F)$ that we are about to define will weld itself perfectly well with the non-Archimedean “transversal” (i.e. tensor component) $\bigotimes_{v\notin S}1_{\mathcal O_{F_v}}$ which all the global Schwartz-Bruhat functions on $\mathbf A_F$ representing the $\chi|_{C^1_F}$-homogeneous global $\theta$-functions can be made to share in common.
 
 The guiding principle is simple: since $\mathcal O_{F_v}^\times\subset F_v^\times$ is compact and open, hence so it is in $F_v$, and we have $1_{\mathcal O_{F_v}^\times}\cdot 1_{\mathcal O_{F_v}}=1_{\mathcal O_{F_v}^\times}$ as Schwartz-Bruhat functions on $F_v$. Under the local Mellin transform, $Z_v(1_{\mathcal O_{F_v}^\times},c)$ and $Z_v(1_{\mathcal O_{F_v}},c)$ are related by “Weil’s Identity”:
 
@@ -998,14 +1001,14 @@ $$
 
 as meromorphic functions on $\Omega(F_v^\times)(\chi_v)$.
 
-Multiplication by $1_{\mathcal O_{F_v}^\times}$ of $1_{\mathcal O_{F_v}}$ has the effect of replacing the local $Z$-function $Z_v(1_{\mathcal O_{F_v}},\chi_v\lvert\cdot\rvert^s_v)$ with the product by the reciprocal local Euler factor $L_v(\chi_v\lvert\cdot\rvert^s_v)^{-1}$.
+Multiplication by $1_{\mathcal O_{F_v}^\times}$ of $1_{\mathcal O_{F_v}}$ has the effect of replacing the local $Z$-function $Z_v(1_{\mathcal O_{F_v}},\chi_v\lvert\cdot\rvert^s_v)$ with the product by the reciprocal local Euler factor $L_v(\chi_v\lvert\cdot\rvert^s_v)$.
 
 Note also that the infinite product of the volumes $\mu_v(\mathcal O_{F_v}^\times)$ over all the finite places $v$ of $F$ is a finite product (these volumes are $1$ for all but finitely many $v$’s) and therefore converges to the square root of the absolute different.
 
 We define
 
 $$
-\rho_v:=\bigotimes_{w\in S}1_{F_w}\otimes\bigotimes_{w\nmid S,w\ne v}1_{F_v}\otimes 1_{\mathcal O_{F_v}^\times}.
+\rho_v:=\bigotimes_{w\in S}1_{F_w}\otimes\bigotimes_{w\notin S,w\ne v}1_{F_v}\otimes 1_{\mathcal O_{F_v}^\times}.
 $$
 
 This is a smooth function on $\mathrm{GL}_1(\mathbf A_F)$ (since $\mathcal O_{F_v}^\times\subset F_v$ is a compact open subset).
@@ -1067,7 +1070,7 @@ $$
 the indicator function of the $k$th stratum of the primary divisorial stratification on $\mathrm{GL}_1(\mathbf A_F)$, we have
 
 $$
-\alpha_k\cdot(f_S\otimes\bigotimes_{v\nmid S}1_{\mathcal O_{F_v}})=f_S\otimes\bigotimes_{v\in S-P_k}1_{\mathcal O_{F_v}}\otimes\bigotimes_{v\in P_k}1_{\mathcal O_{F_v}^\times}
+\alpha_k\cdot(f_S\otimes\bigotimes_{v\notin S}1_{\mathcal O_{F_v}})=f_S\otimes\bigotimes_{v\in S-P_k}1_{\mathcal O_{F_v}}\otimes\bigotimes_{v\in P_k}1_{\mathcal O_{F_v}^\times}
 $$
 
 and hence multiplication by $\alpha_k$ replaces the Zeta function of $f$ with the product of $Z(f,\chi\lvert\cdot\rvert^s_F)$ by the finitely many reciprocal Euler factors of $L(s,\chi)$ at the non-Archimedean places $v$ of $F$ indexed by $P_k$ (the reciprocal of the product of the volumes of the local units is $1$ because $S$ is now assumed to contain all the ramified places of $F$!).
@@ -1083,7 +1086,7 @@ $$
 Now recall the main idea: “degenerate” a global adelic $\theta$-function into an $S$-local one, by representing it as the image of a global Schwartz-Bruhat function
 
 $$
-f=f_S\otimes\bigotimes_{v\nmid S}1_{\mathcal O_{F_v}}
+f=f_S\otimes\bigotimes_{v\notin S}1_{\mathcal O_{F_v}}
 $$
 
 and then replacing each $1_{\mathcal O_{F_v}}$ by $1_{\mathcal O_{F_v}^\times}$. Here $S$ is large enough (it satisfies the assumptions we stated so far throughout this subsection, and it is fixed). Note that replacing $1_{\mathcal O_{F_v}}$ by $1_{\mathcal O_{F_v}^\times}$ has the effect of sending $f$ to the function of $x\in\mathbf A_F$:
@@ -1126,7 +1129,7 @@ $$
 k_{p_k}(x,y):=(\alpha_{k+1}-\alpha_k)k_{\mathrm{geom},I,\varphi}(x,y) \tag{11.3.1.4}
 $$
 
-(this will be what we called $k_{p_k,\varphi}(x,y)$) and write them down explicitly by letting them act on (lifts of the) Schauder basis elements on the subquotients (11.3.1.3), upon incorporating the effect of multiplication by $\lvert\cdot\rvert^{1/2}_F$ (here I am omitting several items. The subquotients used to this effect incorporate a support condition on the Fourier transform of the comprising global Schwartz-Bruhat functions $f$. They carry such Schauder bases because they are all realized as copies of twisted forms of the exponential system itself, and we can always arrange such support condition to hold (by compactness of the quotients $C_F/\pi_v^{\mathbf Z}$ for each $v\nmid S$, in a nutshell). The version of the subquotients from (11.3.1.3) incorporating such support condition is termed Paley-Wiener Levels in the paper. The support condition aims at making multiplication by $\lvert\cdot\rvert^a_F$ for any $a>0$, continuous on the closure of the subspace generated by the Schwartz-Bruhat functions $f$ satisfying such support condition on their Fourier transform. We are going to omit all of this from this overview. These elements are not difficult, and they are quite natural: they only make for a very long story).
+(this will be what we called $k_{p_k,\varphi}(x,y)$) and write them down explicitly by letting them act on (lifts of the) Schauder basis elements on the subquotients (11.3.1.3), upon incorporating the effect of multiplication by $\lvert\cdot\rvert^{1/2}_F$ (here I am omitting several items. The subquotients used to this effect incorporate a support condition on the Fourier transform of the comprising global Schwartz-Bruhat functions $f$. They carry such Schauder bases because they are all realized as copies of twisted forms of the exponential system itself, and we can always arrange such support condition to hold (by compactness of the quotients $C_F/\pi_v^{\mathbf Z}$ for each $v\notin S$, in a nutshell). The version of the subquotients from (11.3.1.3) incorporating such support condition is termed Paley-Wiener Levels in the paper. The support condition aims at making multiplication by $\lvert\cdot\rvert^a_F$ for any $a>0$, continuous on the closure of the subspace generated by the Schwartz-Bruhat functions $f$ satisfying such support condition on their Fourier transform. We are going to omit all of this from this overview. These elements are not difficult, and they are quite natural: they only make for a very long story).
 
 (2) Smoothen the “partial kernels” $k_{p_k,\varphi}$ along the diagonal (using a version of the Hardy-Littlewood Maximal Theorem) and compute their own mass along the diagonal, by using their explicit form as a limit of finite rank operators, obtained by using the basis.
 
@@ -1158,7 +1161,7 @@ In other words, for all but finitely many finite places $v$ of $F$, the “parti
 
 **11.3.2. Calculation of the Orbital Traces.**
 
-THEOREM 11.3.2.1 (Orbital Traces on the Paley-Wiener Levels). *Let $F$ be a number field, $\chi\in\widehat{C_F}$ a continuous character. Let $\varphi\in\mathcal D(C_F)$ be a test function. Let $S$ be a finite set of places of $F$ containing all the Archimedean places, all the places at which $F$ is ramified over $\mathbf Q$, all the places at which $\chi$ is ramified, and such that $\varphi$ is invariant under the continuous left-translation action of the image in $C_F$ of the closed subgroup $\prod_{v\nmid S}\mathcal O_{F_v}^\times\subset\mathrm{GL}_1(\mathbf A_F)$. Assume $\mathrm{Pic}(\mathcal O_{F,S})=1$. Let $a=1/2$, $s>1$ a real number, $I=[-\alpha,\alpha]$ a compact interval, with $\alpha\ge 0$ a real number. Assume $\varphi$ is supported over $C^{>1}_F$. Let $\tau:\mathbf R_{>0}\to\mathrm{GL}_1(\mathbf A_F)$ be a choice of continuous homomorphic section to the idelic norm. Then:*
+THEOREM 11.3.2.1 (Orbital Traces on the Paley-Wiener Levels). *Let $F$ be a number field, $\chi\in\widehat{C_F}$ a continuous character. Let $\varphi\in\mathcal D(C_F)$ be a test function. Let $S$ be a finite set of places of $F$ containing all the Archimedean places, all the places at which $F$ is ramified over $\mathbf Q$, all the places at which $\chi$ is ramified, and such that $\varphi$ is invariant under the continuous left-translation action of the image in $C_F$ of the closed subgroup $\prod_{v\notin S}\mathcal O_{F_v}^\times\subset\mathrm{GL}_1(\mathbf A_F)$. Assume $\mathrm{Pic}(\mathcal O_{F,S})=1$. Let $a=1/2$, $s>1$ a real number, $I=[-\alpha,\alpha]$ a compact interval, with $\alpha\ge 0$ a real number. Assume $\varphi$ is supported over $C^{>1}_F$. Let $\tau:\mathbf R_{>0}\to\mathrm{GL}_1(\mathbf A_F)$ be a choice of continuous homomorphic section to the idelic norm. Then:*
 
 $$
 \sum_{\xi\in F^\times}\int_{g\in E^1_F}((\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\varphi})(\tau(t),\xi g\tau(t))\,\mathrm{d}\mu_1(g)\,\frac{\mathrm{d}t}{t}=\frac{\log(q_v)}{\mu_v(\mathcal O_{F_v}^\times)}\sum_{k\in\mathbf Z}\varphi(\pi_v^k) \tag{11.3.2.1}
@@ -1173,14 +1176,14 @@ $$
 *Proof. We observe that $k^\Delta_{\mathrm{geom},a,I,s,\varphi}(\tau(t),\xi g\tau(t))$ vanishes unless $\xi\in F^\times$ maps to a uniformizer in $F_v^\times$ for some $v\in P_{k+1}-P_k$. We denote the set of such $\xi$’s as $\Xi_k$. In particular, the subset $\{\xi g\tau(t),\,t\in\mathbf R_{>0},\,g\in E^1_F,\,\xi\in\Xi_k\}$ satisfies:*
 
 $$
-\{\xi g\tau(t),\,t\in\mathbf R_{>0},\,g\in E^1_F,\,\xi\in\Xi_k\}\subset\mathrm{GL}_1(\mathbf A_{F,S'})\times\prod_{v\nmid S'}\mathcal O_{F_v}^\times
+\{\xi g\tau(t),\,t\in\mathbf R_{>0},\,g\in E^1_F,\,\xi\in\Xi_k\}\subset\mathrm{GL}_1(\mathbf A_{F,S'})\times\prod_{v\notin S'}\mathcal O_{F_v}^\times
 $$
 
 *for $S'$ large enough containing $S$ and $P_{k+1}-P_k$.*
 
-*We call $\beta_{S'}$ the indicator function of $\mathrm{GL}_1(\mathbf A_{F,S'})\times\prod_{v\nmid S'}\mathcal O_{F_v}^\times$ within $\mathrm{GL}_1(\mathbf A_F)$. Multiplication of $(\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\varphi}$ by the indicator function $\alpha_{k_1}$ (as a function of the second named variable) for $k_1\ge k_0$ for a suitable large enough integer $k_0\ge 0$ such that the support of $\alpha_{k_1}$ contains $\mathrm{GL}_1(\mathbf A_{F,S'})\times\prod_{v\nmid S'}\mathcal O_{F_v}^\times$, preserves the value of the left side of (11.3.2.1). We let $\rho$ be a smooth $(\varepsilon,\Lambda)$-cutoff and multiply $(\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\varphi}$ by $\rho$ as a function of the first named variable.*
+*We call $\beta_{S'}$ the indicator function of $\mathrm{GL}_1(\mathbf A_{F,S'})\times\prod_{v\notin S'}\mathcal O_{F_v}^\times$ within $\mathrm{GL}_1(\mathbf A_F)$. Multiplication of $(\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\varphi}$ by the indicator function $\alpha_k$ (as a function of the second named variable) for $k\ge k_0$ for a suitable large enough integer $k_0\ge 0$ such that the support of $\alpha_k$ contains $\mathrm{GL}_1(\mathbf A_{F,S'})\times\prod_{v\notin S'}\mathcal O_{F_v}^\times$, preserves the value of the left side of (11.3.2.1). We let $\rho$ be a smooth $(\varepsilon,\Lambda)$-cutoff and multiply $(\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\varphi}$ by $\rho$ as a function of the first named variable.*
 
-*Then the process of multiplication by $\alpha_{k_1}$ in the second named variable converges within $W^s_I(C_F)$ by Theorem 11.1.2.1, and by Proposition 12.2.2.2 the value:*
+*Then the process of multiplication by $\alpha_k$ in the second named variable converges within $W^s_I(C_F)$ by Theorem 11.1.2.1, and by Proposition 12.2.2.2 the value:*
 
 $$
 \sum_{\xi\in F^\times}\int_{g\in E^1_F}\rho(\tau(t))((\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\varphi})(\tau(t),\xi g\tau(t))\alpha_{k_1}(\xi g\tau(t))\,\mathrm{d}\mu_1(g)\,\frac{\mathrm{d}t}{t} \tag{11.3.2.3}
@@ -1188,7 +1191,7 @@ $$
 
 *equals the value of the trace of the nuclear operator on $W^s_I(C_F)$ which is the unique continuous extension that the kernel $\rho(\tau(t))((\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\varphi})(\tau(t),\xi g\tau(t))\alpha_{k_1}(\xi g\tau(t))$ induces, by defining a continuous integral operator $\mathcal{S}(\mathbf A_F)\to W^s_I(C_F)$ valued in the range of $M_\rho$.*
 
-*As $k_1\to+\infty$ the effect of this latter on the arbitrary Schwartz-Bruhat function matches the effect of convolution on the resulting $S'$-local Schwartz-Bruhat function, by invariance under of $\prod_{v\nmid S}\mathcal O_{F_v}^\times$ of $\varphi$, and with $S'$ determined by $k$ as in the foregoing, so that the indicator function of $\mathrm{GL}_1(\mathbf A_{F,S'})\times\prod_{v\nmid S'}\mathcal O_{F_v}^\times$ is the
+*As $k_1\to+\infty$ the effect of this latter on the arbitrary Schwartz-Bruhat function matches the effect of convolution on the resulting $S'$-local Schwartz-Bruhat function, by invariance under of $\prod_{v\notin S}\mathcal O_{F_v}^\times$ of $\varphi$, and with $S'$ determined by $k$ as in the foregoing, so that the indicator function of $\mathrm{GL}_1(\mathbf A_{F,S'})\times\prod_{v\notin S'}\mathcal O_{F_v}^\times$ is the
 
 ## PDF page 496
 
@@ -1201,7 +1204,7 @@ The images under $\Phi_{F,\chi|_{C^1_F}}$ of such Schwartz-Bruhat functions comp
 This gives us its trace, and hence the value of:
 
 $$
-\sum_{\xi\in F^\times}\int_{g\in E^1_F}\rho(\tau(t))((\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\varphi})(\tau(t),\xi g\tau(t))\beta_{S'}(\xi g\tau(t))1_{g\in\mathrm{GL}_1(\mathbf A_{F,S'})>\lambda'}(\xi g\tau(t))\,\mathrm{d}\mu_1(g)\,\frac{\mathrm{d}t}{t} \tag{11.3.2.4}
+\sum_{\xi\in F^\times}\int_{g\in E^1_F}\rho(\tau(t))((\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\varphi})(\tau(t),\xi g\tau(t))\beta_{S'}(\xi g\tau(t))1_{g\in\mathrm{GL}_1(\mathbf A_{F,S'})^{>\lambda'}}(\xi g\tau(t))\,\mathrm{d}\mu_1(g)\,\frac{\mathrm{d}t}{t} \tag{11.3.2.4}
 $$
 
 which, as $\lambda'$ is large enough and for $\Lambda\to+\infty$ in the regime $\varepsilon\Lambda=o(1)$, attains the limit value:

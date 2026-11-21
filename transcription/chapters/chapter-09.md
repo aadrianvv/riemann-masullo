@@ -242,7 +242,7 @@ The identities in (9.1.1.17) imply that the continuous linear operator from (9.1
 
 It is bijective on $C_c(\hat G)$ being $(1+w^2)^{-s/2}$ continuous and nowhere vanishing, with continuous and nowhere vanishing reciprocal. It follows that it has dense range, and it is therefore surjective, being its range closed (as is the range of any linear topological embedding of a complete Hausdorff locally convex topological vector space into another). It is therefore an isometric isomorphism. $\square$
 
-**9.1.2. Sobolev spaces $W^{s,2}$ of $\mathbf{R}_{>0}$-modulated groups.** We will be specializing the Sobolev spaces defined in Definition 9.1.1.1 and discussed in Proposition 9.1.1.3, to the case $G=\hat C_F$, for $F$ a number field, for $\mu_G=\hat{\bar\mu}$ the Plancherel measure associated to the Haar measure $\bar\mu$ on $C_F$, whose Plancherel measure is $\bar\mu$ by Fourier inversion, and for $w:\hat G=C_F\to[0,+\infty)$ of the following form:
+**9.1.2. Sobolev spaces $W^{s,2}$ of $\mathbf{R}_{>0}$-modulated groups.** We will be specializing the Sobolev spaces defined in Definition 9.1.1.1 and discussed in Proposition 9.1.1.3, to the case $G=\widehat{C_F}$, for $F$ a number field, for $\mu_G=\hat{\bar\mu}$ the Plancherel measure associated to the Haar measure $\bar\mu$ on $C_F$, whose Plancherel measure is $\bar\mu$ by Fourier inversion, and for $w:\hat G=C_F\to[0,+\infty)$ of the following form:
 
 $$
 w(g):=\lvert\log\lvert g\rvert_F\rvert \tag{9.1.2.1}
@@ -250,13 +250,13 @@ $$
 
 which indeed satisfies (9.1.1.2) by multiplicativity of $\lvert\cdot\rvert_F$, additivity of $\log:\mathbf{R}_{>0}\to\mathbf{R}$, and the triangle inequality for the Euclidean absolute value $\lvert\cdot\rvert$ on $\mathbf{R}$, which gives $C_w=1$.
 
-Since we are choosing $G=\hat C_F$, and not $G=C_F$, we introduce notation for $H^2_w(G,\mu_G)$, which we will be retaining throughout the remainder of this work.
+Since we are choosing $G=\widehat{C_F}$, and not $G=C_F$, we introduce notation for $H^2_w(G,\mu_G)$, which we will be retaining throughout the remainder of this work.
 
 We do so by discussing the intermediate case of $\mathbf{R}_{>0}$-modulated Hausdorff locally compact abelian groups. We recall from Definition D.2.1.1 (see also §D.3.3). We recall that a Hausdorff locally compact abelian group $G$ is $\mathbf{R}_{>0}$-modulated if it is equipped with a continuous surjective proper homomorphism $\lvert\cdot\rvert_G:G\to\mathbf{R}_{>0}$. The fibre $G^1$ over the neutral element $1\in\mathbf{R}_{>0}$ is therefore compact Hausdorff.
 
 We refer the reader to Theorem D.3.3.7 for more on function spaces of Schwartz-Bruhat functions (with $I$-exponential decay) on $\mathbf{R}_{>0}$-modulated groups.
 
-DEFINITION 9.1.2.1 (Sobolev Spaces of $\mathbf{R}_{>0}$-modulated groups). *Let $G$ be an $\mathbf{R}_{>0}$-modulated group, with module $\lvert\cdot\rvert_G$. Let $\mu_G$ be a choice of Haar measure on $G$, and $\mu_{\hat G}$ its Plancherel measure. Let $s\ge 0$ be a real number. We define:*
+DEFINITION 9.1.2.1 (Sobolev Spaces of $\mathbf{R}_{>0}$-modulated groups). *Let $G$ be an $\mathbf{R}_{>0}$-modulated group, with module $\lvert\cdot\rvert_G$. We let $\mu_G$ be a choice of Haar measure on $G$, and $\mu_{\hat G}$ its Plancherel measure. Let $s\ge 0$ be a real number. We define:*
 
 $$
 W^{s,2}(G):=H^s_w(\hat G,\mu_{\hat G}) \tag{9.1.2.2}
@@ -276,11 +276,11 @@ We refer to $s$ as the Sobolev degree of $W^{s,2}(G)$.
 
 Before stating the next Lemma, we observe the following. For $G$ an $\mathbf{R}_{>0}$-modulated group, and for any choice $\tau$ of continuous homomorphic section to the module $\lvert\cdot\rvert_G$ (noting that such sections exist by Remark D.2.1.2), we have an isomorphism, induced by the choice of $\tau$, of Hausdorff locally compact abelian groups $G\simeq\mathbf{R}_{>0}\times G^1$, with $G^1:=\ker(\lvert\cdot\rvert_G)$ a compact Hausdorff abelian group.
 
-The choice of Haar measure $\mu_G$ on $G$ is pushed forward to $\mathrm{d}t/t\otimes\mu_1$ for a unique Haar measure $\mu_1$ on $G^1$. This isomorphism is compatible with formation of dual groups (see [DE, Cor.3.6.2] combined with functoriality of formation of the dual group with respect to continuous group homomorphisms), giving an isomorphism of Hausdorff locally compact abelian groups $\hat G\simeq\hat{\mathbf{R}}_{>0}\times\hat G^1$ where $\hat{\mathbf{R}}_{>0}\simeq\mathbf{R}$ upon choosing the basic character $t\mapsto t^{2\pi i}$ to choose the isomorphism $\hat{\mathbf{R}}_{>0}\simeq\mathbf{R}$.
+The choice of Haar measure $\mu_G$ on $G$ is pushed forward to $\mathrm{d}t/t\otimes\mu_1$ for a unique Haar measure $\mu_1$ on $G^1$. This isomorphism is compatible with formation of dual groups (see [DE, Cor.3.6.2] combined with functoriality of formation of the dual group with respect to continuous group homomorphisms), giving an isomorphism of Hausdorff locally compact abelian groups $\hat G\simeq\widehat{\mathbf{R}_{>0}}\times\widehat{G^1}$ where $\widehat{\mathbf{R}_{>0}}\simeq\mathbf{R}$ upon choosing the basic character $t\mapsto t^{2\pi i}$ to choose the isomorphism $\widehat{\mathbf{R}_{>0}}\simeq\mathbf{R}$.
 
-Since $\hat G^1$ is a discrete abelian group, every continuous $1$-parameter group $\mathbf{R}_{>0}\to\hat G^1$ is constant (since its image is connected and contains the neutral element), and every continuous $1$-parameter group $\mathbf{R}_{>0}\to\hat G$ has image contained within $\hat{\mathbf{R}}_{>0}\times 1$, which is the connected component of the neutral element of $\hat G$.
+Since $\widehat{G^1}$ is a discrete abelian group, every continuous $1$-parameter group $\mathbf{R}_{>0}\to\widehat{G^1}$ is constant (since its image is connected and contains the neutral element), and every continuous $1$-parameter group $\mathbf{R}_{>0}\to\hat G$ has image contained within $\widehat{\mathbf{R}_{>0}}\times 1$, which is the connected component of the neutral element of $\hat G$.
 
-The $\mathbf{C}$-algebra of differential operators on $\hat G$ is therefore generated by a single degree-$1$ differential operator, which we call $D$. Under the isomorphism $\hat{\mathbf{R}}_{>0}\simeq\mathbf{R}$, $D$ matches a generator for the $\mathbf{C}$-algebra of differential operators on $\mathbf{R}$, and we can renormalize $D$ so as to arrange such generator to be $\partial_x$.
+The $\mathbf{C}$-algebra of differential operators on $\hat G$ is therefore generated by a single degree-$1$ differential operator, which we call $D$. Under the isomorphism $\widehat{\mathbf{R}_{>0}}\simeq\mathbf{R}$, $D$ matches a generator for the $\mathbf{C}$-algebra of differential operators on $\mathbf{R}$, and we can renormalize $D$ so as to arrange such generator to be $\partial_x$.
 
 We further refer the reader to Definition D.1.6.5 and Definition D.1.6.8 of §D.1.6 from Appendix D, for more on differential operators on Hausdorff locally compact abelian groups.
 
@@ -338,12 +338,12 @@ $$
 
 for each integer $0\le k\le s/2$, where $\mathcal{F}:L^2(G,\mu_G)\to L^2(\hat G,\mu_{\hat G})$ is the Fourier transform, normalized according to the assignment $\phi\mapsto\mathcal{F}(\phi)(\chi):=\int_G\phi(g)\bar\chi(g)\,\mathrm{d}\mu_{\hat G}(\chi)$.
 
-Upon choosing a continuous homomorphic section $\tau$ to the idelic norm, we normalize the choice of generator $D$ of the $\mathbf{C}$-algebra of differential operators on $\hat G$, so as to match under the isomorphism of Hausdorff locally compact abelian groups $\hat G\simeq\mathbf{R}\times\hat G^1$ induced by $\tau$ and by the choice of basic character $t\mapsto t^{2\pi i}$ on $\mathbf{R}_{>0}$, the differential operators $-(2\pi i)^{-1}\partial_x\otimes 1$.
+Upon choosing a continuous homomorphic section $\tau$ to the idelic norm, we normalize the choice of generator $D$ of the $\mathbf{C}$-algebra of differential operators on $\hat G$, so as to match under the isomorphism of Hausdorff locally compact abelian groups $\hat G\simeq\mathbf{R}\times\widehat{G^1}$ induced by $\tau$ and by the choice of basic character $t\mapsto t^{2\pi i}$ on $\mathbf{R}_{>0}$, the differential operators $-(2\pi i)^{-1}\partial_x\otimes 1$.
 
 We have, as functions on $\hat G$:
 
 $$
-\mathcal{F}(f(g)(\log\lvert g\rvert_G)^k)(\chi)=\int_{\mathbf{R}_{>0}}t^{-2\pi ix}\left(\int_{G^1}\chi(g_0)f(\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\right)(\log(t))^k\frac{\mathrm{d}t}{t} \tag{9.1.2.11}
+\mathcal{F}(f(g)(\log\lvert g\rvert_G)^k)(\chi)=\int_{\mathbf{R}_{>0}}t^{-2\pi ix}\left(\int_{G^1}\overline{\chi}(g_0)f(\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\right)(\log(t))^k\frac{\mathrm{d}t}{t} \tag{9.1.2.11}
 $$
 
 where $x\in\mathbf{R}$ is a real number uniquely determined by $\chi$ such that $\chi(\tau(t))=t^{-2\pi ix}$ as smooth functions of $t\in\mathbf{R}_{>0}$, and $g_0\in C_F^1$ is the unique element such that $g=\tau(t)g_0$.
@@ -351,7 +351,7 @@ where $x\in\mathbf{R}$ is a real number uniquely determined by $\chi$ such that 
 We now assume $f\in C_c^\infty(C_F)$. The rightmost integral from (9.1.2.11) then in turn equals, by [Fol, Thm.8.22(d)]:
 
 $$
-(-2\pi i)^{-k}\partial_x^k\int_{\mathbf{R}_{>0}}t^{-2\pi ix}\left(\int_{G^1}\chi(g_0)f(\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\right)\frac{\mathrm{d}t}{t}=(D^k\hat f)(\chi). \tag{9.1.2.12}
+(-2\pi i)^{-k}\partial_x^k\int_{\mathbf{R}_{>0}}t^{-2\pi ix}\left(\int_{G^1}\overline{\chi}(g_0)f(\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\right)\frac{\mathrm{d}t}{t}=(D^k\hat f)(\chi). \tag{9.1.2.12}
 $$
 
 We further refer the reader to Lemma D.1.6.19.
@@ -360,7 +360,7 @@ Upon combining this with (9.1.2.10) we obtain $\lVert f\rVert'_{s,k,2}=\lVert f\
 
 This shows that the seminorms $\{\lVert\cdot\rVert_{s,k,2}\}_{0\le k\le s/2}$ generate the same topology defined on $W^{s,2}(G)$ by the norm $\lVert\cdot\rVert_{s,2}$. $\square$
 
-REMARK 9.1.2.3. Lemma 9.1.2.2 holds more generally for all Hausdorff locally compact abelian groups, upon generalizing the definition of $\lVert\cdot\rVert_{s,k,2}$. Namely, upon using all monomial elements of the $\mathbf{C}$-algebra of differential operators of $G$, in place of the sole $D^k$ from (9.1.2.5). This recovers the definition in (9.1.2.5) for $\mathbf{R}_{>0}$-modulated $G$, the kernel $G_1$ of the module $\lvert\cdot\rvert_G$ is compact Hausdorff, with, therefore, discrete dual. The only non-trivial differential operators on $\hat G$ are therefore contributed by $G/G^1\simeq\mathbf{R}_{>0}$, and generated by $D$, up to a choice of normalization for $D$.
+REMARK 9.1.2.3. Lemma 9.1.2.2 holds more generally for all Hausdorff locally compact abelian groups, upon generalizing the definition of $\lVert\cdot\rVert_{s,k,2}$. Namely, upon using all monomial elements of the $\mathbf{C}$-algebra of differential operators of $G$, in place of the sole $D^k$ from (9.1.2.5). This recovers the definition in (9.1.2.5) for $\mathbf{R}_{>0}$-modulated $G$, the kernel $G^1$ of the module $\lvert\cdot\rvert_G$ is compact Hausdorff, with, therefore, discrete dual. The only non-trivial differential operators on $\hat G$ are therefore contributed by $G/G^1\simeq\mathbf{R}_{>0}$, and generated by $D$, up to a choice of normalization for $D$.
 
 For $G=\mathbf{R}$, the seminorms $\lVert\cdot\rVert_{s,k,2}$ recovers the classical Sobolev seminorms on $\mathbf{R}$, i.e. $\lVert f\rVert_{s,k,2}=\lVert\partial_x^k f\rVert_{L^2(\mathbf{R},\mathrm{d}x)}$ for all $0\le k\le s/2$.
 
@@ -376,7 +376,7 @@ $$
 
 *is absolutely integrable if and only if $s>1$.*
 
-PROOF. We call $\phi(g):=(1+\lvert\log\lvert g\rvert_G\rvert^2)^{-s/2}$. The function $\phi$ is continuous over $G$, and invariant under the left-translation action of the compact Hausdorff closed subgroup $G_1$, since $\lvert\cdot\rvert_G$ is.
+PROOF. We call $\phi(g):=(1+\lvert\log\lvert g\rvert_G\rvert^2)^{-s/2}$. The function $\phi$ is continuous over $G$, and invariant under the left-translation action of the compact Hausdorff closed subgroup $G^1$, since $\lvert\cdot\rvert_G$ is.
 
 To check integrability of $\phi$ it therefore suffices to choose a continuous homomorphic section $\tau$ to the module, and analyze the integrability of the continuous function $\psi(t):=\phi(\tau(t))=(1+\lvert\log(t)\rvert^2)^{-s/2}$ on $\mathbf{R}_{>0}$ with respect to the normalized Haar measure $\mathrm{d}t/t$.
 
@@ -564,7 +564,7 @@ We refer to $\mathrm{PW}^{2N,2}_b(\mathbf C,a)$ as the $b$-line Paley-Wiener spa
 Proof. (1) : The assertion follows from the following: $\mathcal S_\mathrm{E}(\mathbf R_{>0},(1/a,+\infty))$ is sequentially dense within the closed subspace $M_{\rho_{a,+}}W^{2N,2}_b(\mathbf R_{>0})\subset W^{2N,2}_b(\mathbf R_{>0})$. The Hausdorff locally convex topology induced on $\mathcal S_\mathrm{E}(\mathbf R_{>0})$ by the finitely many norms $\{\|\cdot\|_{b,k}\}_{0\le k\le N}$ is equivalent to the normed topology induced by the norm:
 
 $$
-|\cdot|_{2N,2}\colon \phi\mapsto \|\phi\|_{2N,2} := \left(\int_{\mathbf R_{>0}} |\phi(t)|^2 t^{2b}|1+|\log(t)|^2|^N\,\frac{\mathrm{d}t}{t}\right)^{1/2}
+\|\cdot\|_{2N,2}\colon \phi\mapsto \|\phi\|_{2N,2} := \left(\int_{\mathbf R_{>0}} |\phi(t)|^2 t^{2b}|1+|\log(t)|^2|^N\,\frac{\mathrm{d}t}{t}\right)^{1/2}
 $$
 
 the proof of the equivalence of the two topologies being seen by an argument analogous to that provided for Lemma 9.1.2.2.
@@ -572,7 +572,7 @@ the proof of the equivalence of the two topologies being seen by an argument ana
 We define
 
 $$
-\nu_{a,b,N} := \rho_{a,+}\cdot |\cdot|^{2b}_{\mathbf R}\,|1+|\log|\cdot||^2_{\mathbf R}|^N\,\frac{\mathrm{d}t}{t}
+\nu_{a,b,N} := \rho_{a,+}\cdot |\cdot|^{2b}_{\mathbf R}\,|1+|\log|\cdot|^2_{\mathbf R}|^N\,\frac{\mathrm{d}t}{t}
 $$
 
 a Radon measure on $\mathbf R_{>0}$. The closed subspace $M_{\rho_{a,+}}W^{2N,2}_b(\mathbf R_{>0})$ is isometric to the completion of the linear space of smooth compactly supported functions on $(1/a,+\infty)$ with respect to the $L^2(\mathbf R_{>0},\nu_{a,b,N})$-norm, which shows that $\mathcal S_\mathrm{E}(\mathbf R_{>0},(1/a,+\infty))$ is sequentially dense within $M_{\rho_{a,+}}W^{2N,2}_b(\mathbf R_{>0})$.
@@ -619,7 +619,7 @@ $$
 
 This shows that $M$, restricted to $M_{[1/a,1]}W^{2N,2}_b(\mathbf R_{>0})$, is valued in $\mathrm{PW}^{2N,2}_b(\mathbf C,a)$.
 
-Let $\phi\in\mathrm{PW}^{2N,2}_b(\mathbf C,a)$ be an arbitrary element. By [Dur, Ch.11,§11.2,Thm.11.4,p.192] applied to $\phi$ and its holomorphic derivatives of order $1\le k\le N$, the boundary value functions $\phi_b$ and $(\partial^k_s\phi)_b$ obtained by asymptotic restriction of $\phi(s)$ to the $b$-line (i.e. by formation of the limit $\lim_{\sigma\to 0-}(\partial^k_s\phi)(\sigma+b+ix)$, which converges for $\mathrm{d}x$-almost all $x$ and each $0\le k\le N$), is an element of the Sobolev space $W^{2N,2}(\mathbf R)$ (using Fourier Inversion to show that indeed $(\partial^k_s\phi)_b$ represents the weak $k$th derivative of $\phi_b$, since it is the Fourier transform of $|t|^a_{\mathbf R}u(t)\,(\log(t))^k$ for $|\cdot|^b_{\mathbf R}u$ the Fourier anti-transform of $\phi_b$). It follows that the Mellin anti-transform $u$ of $\phi$ is an element of $W^{2N,2}_b(\mathbf R_{>0})$.
+Let $\phi\in\mathrm{PW}^{2N,2}_b(\mathbf C,a)$ be an arbitrary element. By [Dur, Ch.11,§11.2,Thm.11.4,p.192] applied to $\phi$ and its holomorphic derivatives of order $1\le k\le N$, the boundary value functions $\phi_b$ and $(\partial^k_s\phi)_b$ obtained by asymptotic restriction of $\phi(s)$ to the $b$-line (i.e. by formation of the limit $\lim_{\sigma\to 0^-}(\partial^k_s\phi)(\sigma+b+ix)$, which converges for $\mathrm{d}x$-almost all $x$ and each $0\le k\le N$), is an element of the Sobolev space $W^{2N,2}(\mathbf R)$ (using Fourier Inversion to show that indeed $(\partial^k_s\phi)_b$ represents the weak $k$th derivative of $\phi_b$, since it is the Fourier transform of $|t|^a_{\mathbf R}u(t)\,(\log(t))^k$ for $|\cdot|^b_{\mathbf R}u$ the Fourier anti-transform of $\phi_b$). It follows that the Mellin anti-transform $u$ of $\phi$ is an element of $W^{2N,2}_b(\mathbf R_{>0})$.
 
 By the proof of [Dur, Ch.11,§11.5,Corollary,p.197], $|\cdot|^b_{\mathbf R}u$ is supported over $(0,1]$, and hence so is $u$.
 
@@ -860,9 +860,9 @@ $$
 \langle\phi,\psi\rangle := \int_{\mathbf R_{>0}} \phi(t)\psi(t)\,\frac{\mathrm{d}t}{t} \tag{9.2.1.32}
 $$
 
-upon choosing the measure space $(X,\mathcal M,\mu)$ to be $X := \mathbf R_{>0}$, $\mathcal M$ the Borel $\sigma$-algebra, and $\mu_s := w_{I,s}\frac{dt}{t}$, with $p = q = 2$, is separately continuous and induces an isometry between $L^2(\mathbf R_{>0},w_{I,s}\mathrm{d}t/t)'_\beta$ equipped with the dual norm (defined in [Fol, Prop.6.13]) and $L^2(\mathbf R_{>0},w_{I,s}\mathrm{d}t/t)$ itself, which is $W^s_I(\mathbf R_{>0})$.
+upon choosing the measure space $(X,\mathcal M,\mu)$ to be $X := \mathbf R_{>0}$, $\mathcal M$ the Borel $\sigma$-algebra, and $\mu_s := w_{I,s}\frac{\mathrm{d}t}{t}$, with $p = q = 2$, is separately continuous and induces an isometry between $L^2(\mathbf R_{>0},w_{I,s}\mathrm{d}t/t)'_\beta$ equipped with the dual norm (defined in [Fol, Prop.6.13]) and $L^2(\mathbf R_{>0},w_{I,s}\mathrm{d}t/t)$ itself, which is $W^s_I(\mathbf R_{>0})$.
 
-We write $\mu_{-s} := w^{-1}_{I,s}\frac{dt}{t}$.
+We write $\mu_{-s} := w^{-1}_{I,s}\frac{\mathrm{d}t}{t}$.
 
 For every $\phi\in L^2(\mathbf R_{>0},\mu_s)$ and $\psi\in L^2(\mathbf R_{>0},\mu_{-s})$, the integral:
 
@@ -876,7 +876,7 @@ $$
 \int_{\mathbf R_{>0}} |\phi(t)\psi(t)|\,\frac{\mathrm{d}t}{t} = \int_{\mathbf R_{>0}} |\phi(t)\psi(t)|\frac{w_{I,s}(t)^{1/2}}{w_{I,s}(t)^{1/2}}\,\frac{\mathrm{d}t}{t} \le \|\phi\|^{1/2}_{L^2(\mathbf R_{>0},\mu_s)}\,\|\psi\|^{1/2}_{L^2(\mathbf R_{>0},\mu_{-s})}. \tag{9.2.1.34}
 $$
 
-We define $\langle\phi,\psi\rangle_{I,s}$ to be the value of the integral $\int_{\mathbf R_{>0}}\phi(t)\psi(t)\,\frac{dt}{t}$. The notation is justified since the restriction of $\langle\cdot,\cdot\rangle_{I,s}$ to $\mathcal S_J(\mathbf R_{>0})\times\mathcal S_J(\mathbf R_{>0})$ is the pairing defined in (9.2.1.27).
+We define $\langle\phi,\psi\rangle_{I,s}$ to be the value of the integral $\int_{\mathbf R_{>0}}\phi(t)\psi(t)\,\frac{\mathrm{d}t}{t}$. The notation is justified since the restriction of $\langle\cdot,\cdot\rangle_{I,s}$ to $\mathcal S_J(\mathbf R_{>0})\times\mathcal S_J(\mathbf R_{>0})$ is the pairing defined in (9.2.1.27).
 
 We have, for all such $\phi,\psi\in L^2(\mathbf R_{>0},\mu_s)$:
 
@@ -1341,7 +1341,7 @@ $^5$Return here.
 
 The Proposition is proved in a manner analogous to the proof of Proposition 9.2.1.8, or by using Lemma 9.2.2.10(1).
 
-COROLLARY 9.2.2.12. Let $G$ be a second-countable $\mathbf{R}_{>0}$-modulated group. Let $a,s \in \mathbf{R}$ be real numbers, $a > 1$, $s \ge 0$. Let $I \subset \mathbf{R}$ be a non-empty closed interval. We denote by $M$ the Mellin transform $M : \mathcal{S}_I(G) \to A\mathcal{S}(\mathbf{C}_I) \otimes \mathcal{S}(\widehat{G^1})$.
+COROLLARY 9.2.2.12. Let $G$ be a second-countable $\mathbf{R}_{>0}$-modulated group. Let $a,s \in \mathbf{R}$ be real numbers, $a > 1$, $s \ge 0$. Let $I \subset \mathbf{R}$ be a non-empty closed interval. We denote by $M$ the Mellin transform $M : \mathcal{S}_I(G) \to A\mathcal{S}(\mathbf{C}_I) \overline{\otimes} \mathcal{S}(\widehat{G^1})$.
 
 (1) For every point $z \in \mathbf{C}_{\mathrm{Int}(I)}$, the point-evaluation functional $\delta_z \otimes \delta_\omega$ and its derivatives $\delta^{(k)}_z \otimes \delta_\omega$, with $\omega \in \widehat{G^1}$ and $\delta_\omega$ the point-mass at $\omega$ on the space of square-summable sequences on the countable discrete abelian group $\widehat{G^1}$, are continuous on $\mathrm{HS}^s(\mathbf{C}_I,(1/a,+\infty))\,\widehat{\otimes}_\sigma L^2(\widehat{G^1},\widehat{\mu}_1)$.
 
@@ -1454,7 +1454,7 @@ $$\alpha_i(g):=\varphi_i(g)\rho_G(g,\cdot),\quad g\in G.$$
 
 Since $\varphi_i\to\varphi$ uniformly as continuous functions on $K$, and since $K$ is compact, then the convergence of $\varphi_i$ to $\varphi$ is also in the $L^1$-topology on $K$ with respect to $\mu_G$.
 
-To check that $\alpha_i\to\alpha$ uniformly, we compose with the operator $M:\mathcal{S}_I(G)\to A(\mathbf{C}_I)\overline{\otimes}\mathcal{S}(\widehat{G^1})$, the Mellin transform from Theorem D.3.3.13, which gives, upon calling $\alpha:=\varphi\rho_G$, $M(\alpha_i(f))(c)=M(\varphi_i)(c)M(f)(c)$ and $M(\alpha(f))(c)=M(\varphi)(c)M(f)(c)$ as holomorphic functions on $\Omega(G)$, for all $f\in\mathcal{S}_I(G)$.
+To check that $\alpha_i\to\alpha$ uniformly, we compose with the operator $M:\mathcal{S}_I(G)\to A\mathcal{S}(\mathbf{C}_I)\overline{\otimes}\mathcal{S}(\widehat{G^1})$, the Mellin transform from Theorem D.3.3.13, which gives, upon calling $\alpha:=\varphi\rho_G$, $M(\alpha_i(f))(c)=M(\varphi_i)(c)M(f)(c)$ and $M(\alpha(f))(c)=M(\varphi)(c)M(f)(c)$ as holomorphic functions on $\Omega(G)$, for all $f\in\mathcal{S}_I(G)$.
 
 If $B\subset\mathcal{S}_I(G)$ is a bounded subset then $M(\alpha_i(f))(c)\to M(\alpha(f))(c)$ uniformly as $f\in B$, because $M(\alpha(f))(c)=M(\varphi)(c)M(f)(c)$, and $M(\varphi_i)(c)\to M(\varphi)(c)$ by $L^1(G,|\cdot|^{\sigma(c)}_G\mu_G)$-convergence of $\varphi_i$ to $\varphi$.
 
@@ -1626,7 +1626,7 @@ $$
 
 For every integer $m>0$, $\beta_m$ is a Schwartz-Bruhat function on $\mathbf{R}_{>0}$ such that the Fourier transform $\widehat{\beta_m}$ is supported on $[-m,m]$. Indeed, we have
 
-$$\int_{\mathbf{R}_{>0}}\beta_m(t)t^{-2\pi ix}\,\frac{\mathrm{d}t}{t}=m\int_{+\infty}^{-\infty}\alpha_0(e^{my})e^{-2\pi ixy}\,\mathrm{d}y=\int_{+\infty}^{-\infty}\alpha_0(e^y)e^{-2\pi ixy/m}\,\mathrm{d}y=\phi_0(x/m)$$
+$$\int_{\mathbf{R}_{>0}}\beta_m(t)t^{-2\pi ix}\,\frac{\mathrm{d}t}{t}=m\int_{-\infty}^{+\infty}\alpha_0(e^{my})e^{-2\pi ixy}\,\mathrm{d}y=\int_{-\infty}^{+\infty}\alpha_0(e^y)e^{-2\pi ixy/m}\,\mathrm{d}y=\phi_0(x/m)$$
 
 which is supported over $[-m,m]$.
 
@@ -1646,12 +1646,12 @@ We have:
 
 $$\|A(\varphi_{m,\omega})\|=\sup_{\|u\|_{s,2}=1}\left(\int_G\left|\int_G\varphi_{m,\omega}(g)u(g^{-1}h)\,\mathrm{d}\mu_G(g)\right|^2(1+|\log|h|_G|^2)^{s/2}\,\mathrm{d}\mu_G(h)\right)^{1/2}$$
 
-$$=\sup_{\|u\|_{s,2}=1}\left(\int_G\left|\int_G\frac{\varphi_{m,\omega}(g)}{(1+|\log|g|_G|^2)^{s/2}}u(g^{-1}h)(1+|\log|g|_G|^2)^{s/2}\,\mathrm{d}\mu_G(g)\right|^2(1+|\log|h|_G|^2)^{s/2}\,\mathrm{d}\mu_G(h)\right)^{1/2}.$$
+$$=\sup_{\|u\|_{s,2}=1}\left(\int_G\left|\int_G\left\{\frac{\varphi_{m,\omega}(g)}{(1+|\log|g|_G|^2|^{s/2}}\right\}u(g^{-1}h)(1+|\log|g|_G|^2)^{s/2}\,\mathrm{d}\mu_G(g)\right|^2(1+|\log|h|_G|^2)^{s/2}\,\mathrm{d}\mu_G(h)\right)^{1/2}.$$
 
 We now call
 
 $$
-\phi(g):=\frac{\varphi_{m,\omega}(g)}{(1+|\log|g|_G|^2)^{s/2}} \tag{9.3.2.5}
+\phi(g):=\left\{\frac{\varphi_{m,\omega}(g)}{(1+|\log|g|_G|^2|^{s/2}}\right\} \tag{9.3.2.5}
 $$
 
 a continuous, compactly supported function of $g\in G$, and $\nu:=(1+|\log|\cdot|_G|^2)^{s/2}\mu_G$, a regular Radon measure on $G$.
@@ -1659,7 +1659,7 @@ a continuous, compactly supported function of $g\in G$, and $\nu:=(1+|\log|\cdot
 We then have:
 
 $$
-\int_G\left|\int_G\frac{\varphi_{m,\omega}(g)}{(1+|\log|g|_G|^2)^{s/2}}u(g^{-1}h)(1+|\log|g|_G|^2)^{s/2}\,\mathrm{d}\mu_G(g)\right|^2(1+|\log|h|_G|^2)^{s/2}\,\mathrm{d}\mu_G(h) \tag{9.3.2.6}
+\left(\int_G\left|\int_G\left\{\frac{\varphi_{m,\omega}(g)}{(1+|\log|g|_G|^2|^{s/2}}\right\}u(g^{-1}h)(1+|\log|g|_G|^2)^{s/2}\,\mathrm{d}\mu_G(g)\right|^2(1+|\log|h|_G|^2)^{s/2}\,\mathrm{d}\mu_G(h)\right)^{1/2} \tag{9.3.2.6}
 $$
 
 $$=\|\phi*u\|_{L^2(G,\nu)}.$$
@@ -1708,7 +1708,7 @@ Corollary 9.3.2.3. Let $G$ be a second-countable $\mathbf{R}_{>0}$-modulated gro
 
 (2) The set of those elements $u\in W^{s,2}(G)$ such that $\widehat{u}$ is compactly supported, is dense in $W^{s,2}(G)$.
 
-Proof. (1): The indicator function $\mathrm{1}_{\{\chi|_{G_1}\}}$ of the subset $\{\chi|_{G^1}\}\subset\widehat{G^1}$ is continuous and compactly supported, being $\widehat{G^1}$ discrete by [DE, Thm.3.2.1], as $G^1$ is compact. As such, its inverse Fourier transform $F$ is continuous, and hence continuous and compactly supported.
+Proof. (1): The indicator function $\mathrm{1}_{\{\chi|_{G^1}\}}$ of the subset $\{\chi|_{G^1}\}\subset\widehat{G^1}$ is continuous and compactly supported, being $\widehat{G^1}$ discrete by [DE, Thm.3.2.1], as $G^1$ is compact. As such, its inverse Fourier transform $F$ is continuous, and hence continuous and compactly supported.
 
 Let $\tau$ be a continuous homomorphic section to the idelic norm. We define $x_0$ to be the unique real number such that $\chi(\tau(t))=t^{ix_0}$ for all $t\in\mathbf{R}_{>0}$. We let $\phi_0$ be a smooth cut-off function on $\mathbf{R}$ whose support is contained in $x_0+[\alpha,\beta]\subset\mathbf{R}$ and such that $\phi_0|_{x_0+[\alpha+\varepsilon,\beta-\varepsilon]}=1$. Such $\phi_0$ exists by [Horm, Ch.I, Thm.1.4.1, p.25]. We let $\varphi$ be the inverse Fourier transform on $\mathbf{R}_{>0}$ of $\phi_0$. The function $u:=\varphi\otimes F$ is an element of $W^{s,2}(G)$ for any $s\ge 0$, and $\widehat{u}$ is supported only over $\chi|\cdot|^{i[\alpha,\beta]}_G$, and it is identically $1$ over the subset $\chi|\cdot|^{i[\alpha+\varepsilon,\beta-\varepsilon]}_F$.
 
@@ -1740,7 +1740,7 @@ Lemma 9.3.2.5. Let $G$ be a second-countable $\mathbf{R}_{>0}$-modulated group. 
 
 **426** · **CHAPTER 9. HARDY-SOBOLEV TOPOLOGIES**
 
-Let $\phi \in \mathcal{S}_{\mathrm{E}}(G)$. Assume that all the zeros of $M(\phi)(\chi\lvert\cdot\rvert^z_G)$ are contained in the interior of the vertical strip $\mathbf{C}I$. Then the quotient of $\mathcal{S}_{\mathrm{E}}(G)$ by the convolution ideal $\phi \ast \mathcal{S}_{\mathrm{E}}(G)$ admits an absolute Schauder basis whose set of coefficient functionals is given by the point-evaluation functionals at the zeros of $M(\phi)(\chi\lvert\cdot\rvert^z_G)$ and their derivatives, i.e. $\delta^{(k)}_{\rho}$ as $\rho$ varies over the zeros of $M(\phi)(\chi\lvert\cdot\rvert^z_G)$ and $0 \le k \le N(\rho)-1$, with $N(\rho)$ the multiplicity of $\rho$.
+Let $\phi \in \mathcal{S}_{\mathrm{E}}(G)$. Assume that all the zeros of $M(\phi)(\chi\lvert\cdot\rvert^z_G)$ are contained in the interior of the vertical strip $\mathbf{C}_I$. Then the quotient of $\mathcal{S}_{\mathrm{E}}(G)$ by the convolution ideal $\phi \ast \mathcal{S}_{\mathrm{E}}(G)$ admits an absolute Schauder basis whose set of coefficient functionals is given by the point-evaluation functionals at the zeros of $M(\phi)(\chi\lvert\cdot\rvert^z_G)$ and their derivatives, i.e. $\delta^{(k)}_{\rho}$ as $\rho$ varies over the zeros of $M(\phi)(\chi\lvert\cdot\rvert^z_G)$ and $0 \le k \le N(\rho)-1$, with $N(\rho)$ the multiplicity of $\rho$.
 
 Proof. The exponential decay condition defining $\mathcal{S}_{\mathrm{E}}(G)$ implies the convergence axiom defining Schauder bases, using Lemma 9.3.2.4 and Theorem D.3.3.13, combined with the description of the topology on $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0})$ provided by Lemma D.3.1.2. By Theorem 4.1.2.6(1) and (3), indeed the Schauder basis is absolute.$^6$ $\square$
 
@@ -1796,7 +1796,7 @@ DEFINITION 9.3.3.1 (Smooth cutoffs). Let $G$ be an $\mathbf{R}_{>0}$-modulated g
 
 (2) $\rho$ is constant on the fibres of the module $\lvert\cdot\rvert_G: G \to \mathbf{R}_{>0}$, equivalently $\rho$ is $G^1$-invariant.
 
-(3) The unique function induced by $\rho$ on $\mathbf{R}_{>0}$ by $G_1$-invariance and through the module $\lvert\cdot\rvert_G: G/G^1 \simeq \mathbf{R}_{>0}$, is smooth away from finitely many points, at each of which its derivatives of any nonnegative integer order have at worst jump discontinuities, such that both one-ended limits exist and are finite.
+(3) The unique function induced by $\rho$ on $\mathbf{R}_{>0}$ by $G^1$-invariance and through the module $\lvert\cdot\rvert_G: G/G^1 \simeq \mathbf{R}_{>0}$, is smooth away from finitely many points, at each of which its derivatives of any nonnegative integer order have at worst jump discontinuities, such that both one-ended limits exist and are finite.
 
 (4) $\rho$ is multiplicatively symmetric, i.e. $\rho(g) = \rho(g^{-1})$.
 
@@ -1845,7 +1845,7 @@ which implies that $M_{\rho}$ is a positive operator. By [Cnw-a, Ch.II,§2,Prop.
 DEFINITION 9.3.3.3 (Absolute cutoffs). Let $G$ be an $\mathbf{R}_{>0}$-modulated group, with module $\lvert\cdot\rvert_G$. We let $\mu_G$ be a choice of Haar measure on $G$. Let $I$ be a closed non-empty interval. Let $\Lambda > 0$ and $s \ge 0$ real numbers. We let $\rho_{\Lambda,+},\rho_{\Lambda,-}: G \to \mathbf{R}_{\ge 0}$ be the bounded functions:
 
 $$
-\rho_{\Lambda,+}(x) := \mathrm{1}_{G_{\ge 1/\Lambda}}(x),\; \rho_{\Lambda,-}(x) := \mathrm{1}_{G_{\le \Lambda}}(x),\; x \in G \tag{9.3.3.4}
+\rho_{\Lambda,+}(x) := \mathrm{1}_{G^{\ge 1/\Lambda}}(x),\; \rho_{\Lambda,-}(x) := \mathrm{1}_{G^{\le \Lambda}}(x),\; x \in G \tag{9.3.3.4}
 $$
 
 and $\rho_{\Lambda}: G \to \mathbf{R}_{\ge 0}$ be the bounded function:
@@ -1956,17 +1956,17 @@ $$
 
 for $\mu_G$-almost all $x \in G$, which indeed shows, by of Hilbert-Schmidt kernels, that $K_{\varphi,\rho}$ indeed is the integral kernel of the commutator operator from (9.3.3.12) (explicitly, the convolution action of $K_{\varphi,\rho}$ on the Schwartz-Bruhat functions on $G$, valued in $L^2(G)$, agrees with that of the commutator operator from (9.3.3.12), and since both operators are Hilbert-Schmidt on $L^2(G)$, their integral kernels agree $(\mu_G \otimes \mu_G)$-almost everywhere on $G \times G$. One of them being already an integral operator with integral kernel $K_{\varphi,\rho}$, we obtain the desired identification of the Hilbert-Schmidt kernel.
 
-When $\rho$ and $\varphi$ are smooth, see also [Tre, Part III,Ch.51,Cor.51.7], Corollary to [Tre, Part III,Ch.51,Thm.51.6], and Theorem C.2.4.19), noting that $K_{\varphi,\rho}$ maps from an element of $L^2((G)_x \times (G)_y)$ to the Schwartz kernel of the operator from (9.3.3.13) restricted to $\mathcal{S}(G)$ and valued in tempered distributions over $G$, as an element of $\mathcal{S}(G)'_{\beta} \hat{\boxtimes}_{\pi} \mathcal{S}(G)'_{\beta}$.
+When $\rho$ and $\varphi$ are smooth, see also [Tre, Part III,Ch.51,Cor.51.7], Corollary to [Tre, Part III,Ch.51,Thm.51.6], and Theorem C.2.4.19), noting that $K_{\varphi,\rho}$ maps from an element of $L^2((G)_x \times (G)_y)$ to the Schwartz kernel of the operator from (9.3.3.13) restricted to $\mathcal{S}(G)$ and valued in tempered distributions over $G$, as an element of $\mathcal{S}(G)'_{\beta} \widehat{\otimes}_{\pi} \mathcal{S}(G)'_{\beta}$.
 
 As such, the given operator is Hilbert-Schmidt, and $K_{\varphi,\rho}$ is its Hilbert-Schmidt kernel. The function $K_{\varphi,\rho}$ is smooth over $G \times G$ away from a $(\mu_G \otimes \mu_G)$-negligible subset of the form $(\bigcup_{1 \le k \le N}\{g \in G : \lvert g\rvert = t_k\}) \times (\bigcup_{1 \le k \le N}\{g \in G : \lvert g\rvert = t_k\})$ for $\{t_1,\dots,t_N\} \subset \mathbf{R}_{>0}$ a finite subset, and it is $(\mu_G \otimes \mu_G)$-integrable. In particular, the diagonal in $G_x \times G_y$ is contained in the Lebesgue set of $K_{\varphi,\rho}$, up to a subset of $\mu_G$-measure zero (see Theorem A.5.4.1 and Remark A.5.4.2). Along the diagonal in $(G)_x \times (G)_y$, the smoothening $\tilde{K}_{\varphi,\rho}$ (in the sense of Theorem A.5.4.1 and [Bris-a, §3]; see also [Bris-a, §3.1,Thm.3.1]) vanishes $\mu_G$-almost everywhere. In fact, $K_{\varphi,\rho}$ is itself already defined $\mu_G$-almost everywhere along the diagonal at its points of continuity, a subset of the diagonal whose complement in the diagonal is $\mu_G$-negligible. Away from a $\mu_G$-negligible subset, $K_{\varphi,\rho}$ and $\tilde{K}_{\varphi,\rho}$ agree. The operator from (9.3.3.13) is therefore an integral Hilbert-Schmidt operator whose kernel has an absolutely integrable smoothening along the diagonal, whose mass vanishes.
 
-If both $\rho$ and $\varphi$ are smooth, then it is nuclear on $L^2(G)$ (because the kernel is smooth and compactly supported over $G \times G$, and hence an element of $\mathcal{S}(G) \hat{\boxtimes}_{\pi} \mathcal{S}(G)$ (in fact an element of the smaller $\mathcal{S}(G) \overline{\otimes} \mathcal{S}(G)$, since $\varphi$ is contained in some $\mathcal{D}_K(G,k)$ for a compact subgroup $k \subset G$ with compactly generated orthogonal $k^{\perp}$, with $K \subset G$ a compact subset with non-empty interior, and $\mathcal{D}_K(G,k)$ is a Fréchet space), which therefore
+If both $\rho$ and $\varphi$ are smooth, then it is nuclear on $L^2(G)$ (because the kernel is smooth and compactly supported over $G \times G$, and hence an element of $\mathcal{S}(G) \widehat{\otimes}_{\pi} \mathcal{S}(G)$ (in fact an element of the smaller $\mathcal{S}(G) \overline{\otimes} \mathcal{S}(G)$, since $\varphi$ is contained in some $\mathcal{D}_K(G,k)$ for a compact subgroup $k \subset G$ with compactly generated orthogonal $k^{\perp}$, with $K \subset G$ a compact subset with non-empty interior, and $\mathcal{D}_K(G,k)$ is a Fréchet space), which therefore
 
 ## PDF page 431
 
 **9.3. MODULE STRUCTURES OVER $\mathcal{D}(G)$ AND APPROXIMATE UNITS** · **431**
 
-maps to $S_1(G) = L^2(G) \hat{\boxtimes}_{\pi} L^2(G)$ by [Jar, ]) and by Lemma C.3.7.1(2) its trace vanishes by Lemma C.3.7.1(1) (see also [Bris-a, Cor.3.2]).
+maps to $S_1(G) = L^2(G) \widehat{\otimes}_{\pi} L^2(G)$ by [Jar, ]) and by Lemma C.3.7.1(2) its trace vanishes by Lemma C.3.7.1(1) (see also [Bris-a, Cor.3.2]).
 
 To show that the operator in (9.3.3.11) is an integral Hilbert-Schmidt operator whose kernel has an absolutely integrable smoothening along the diagonal, and, if $\rho$ and $\varphi$ are smooth, is nuclear, it is enough to show that its sum with the operator in (9.3.3.13) is. Such sum is the operator:
 
@@ -1983,15 +1983,15 @@ $$
 whose smoothening is again integrable along the diagonal of $(G)_x \times (G)_y$. If $\rho$ and $\varphi$ are smooth, the same argument as in the foregoing implies nuclearity, and Lemma C.3.7.1(2) implies that the trace of the nuclear operator in (9.3.3.14) is computed by the integral of the smoothening of $K'_{\varphi,\rho}$ along the diagonal of $(G)_x \times (G)_y$ (see also [Bris-a, Cor.3.2], a generalization of Mercer's Theorem). It remains to perform the calculation. We choose a continuous homomorphic section $\tau$ to the module $\lvert\cdot\rvert_G$, and use the resulting isomorphism of Hausdorff locally compact abelian groups $\mathbf{R}_{>0} \times G^1 \simeq G$ through which $(\mathrm{d}t/t) \otimes \mu_1$ matches $\mu_G$. We rename the smoothening of $K'_{\varpi,\rho}$ as $K'_{\varphi,\rho}$, and we have:
 
 $$
-\int_G K'_{\varphi,\rho}(g,g)\,\mathrm{d}\mu_G(g) = \int_{\mathbf{R}_{>0}} \int_{G^1} K'^{\varphi,\rho}(\tau(t)g_0,\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\,\frac{\mathrm{d}t}{t} \tag{9.3.3.16}
+\int_G K'_{\varphi,\rho}(g,g)\,\mathrm{d}\mu_G(g) = \int_{\mathbf{R}_{>0}} \int_{G^1} K'_{\varphi,\rho}(\tau(t)g_0,\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\,\frac{\mathrm{d}t}{t} \tag{9.3.3.16}
 $$
 
 $$
-= \int_{1/\Lambda}^{1/\Lambda+\varepsilon} \int_{G^1} K'^{\varphi,\rho}(\tau(t)g_0,\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\,\frac{\mathrm{d}t}{t} + \int_{\Lambda-\varepsilon}^{\Lambda} \int_{G^1} K'^{\varphi,\rho}(\tau(t)g_0,\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\,\frac{\mathrm{d}t}{t} \tag{9.3.3.17}
+= \int_{1/\Lambda}^{1/\Lambda+\varepsilon} \int_{G^1} K'_{\varphi,\rho}(\tau(t)g_0,\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\,\frac{\mathrm{d}t}{t} + \int_{\Lambda-\varepsilon}^{\Lambda} \int_{G^1} K'_{\varphi,\rho}(\tau(t)g_0,\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\,\frac{\mathrm{d}t}{t} \tag{9.3.3.17}
 $$
 
 $$
-+ \int_{1/\Lambda+\varepsilon}^{\Lambda-\varepsilon} \int_{G^1} K'^{\varphi,\rho}(\tau(t)g_0,\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\,\frac{\mathrm{d}t}{t} \tag{9.3.3.18}
++ \int_{1/\Lambda+\varepsilon}^{\Lambda-\varepsilon} \int_{G^1} K'_{\varphi,\rho}(\tau(t)g_0,\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\,\frac{\mathrm{d}t}{t} \tag{9.3.3.18}
 $$
 
 $$

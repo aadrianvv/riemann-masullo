@@ -94,7 +94,7 @@ W_F\to\varprojlim_{E/F}W_{E/F} \tag{14.1.1.5}
 $$
 *as $E$ varies over the finite separable sub-extensions of $F$ contained within $\overline F$, which is an isomorphism of topological groups.*
 
-*(3) If $F$ is global, for any place $v$ of $F$, upon denoting $\overline{F_v}$ a choice of separable closure of the local field $F_v$, and for any $F$-homomorphism $i_v:\overline F\to\overline{F_v}$, we define, for each finite extension $E/F$ contained within $\overline F$, $E_v:=i(E)F_v$. There exists a continuous injective homomorphism:*
+*(3) If $F$ is global, for any place $v$ of $F$, upon denoting $\overline F_v$ a choice of separable closure of the local field $F_v$, and for any $F$-homomorphism $i_v:\overline F\to\overline F_v$, we define, for each finite extension $E/F$ contained within $\overline F$, $E_v:=i(E)F_v$. There exists a continuous injective homomorphism:*
 $$
 \theta_v:W_{F_v}\to W_F \tag{14.1.1.6}
 $$
@@ -134,9 +134,9 @@ We now review Weil’s generalization of Artin $L$-functions, and recall their m
 
 Let $F$ be a global field, and $E/F$ a finite Galois extension.
 
-We fix a choice $\overline F$ of separable closure, and for each finite place $v$ of $E$, $\overline{E_v}$ a choice of separable closure of the non-Archimedean local field $E_v$.
+We fix a choice $\overline F$ of separable closure, and for each finite place $v$ of $E$, $\overline E_v$ a choice of separable closure of the non-Archimedean local field $E_v$.
 
-We denote by $v_0$ the unique finite place of $F$ of which $v$ is an extension to $E$. Then $E_v$ is a finite Galois extension of $F_{v_0}$ contained in $\overline{E_v}$.
+We denote by $v_0$ the unique finite place of $F$ of which $v$ is an extension to $E$. Then $E_v$ is a finite Galois extension of $F_{v_0}$ contained in $\overline E_v$.
 
 The local Weil group $W_{E_v/F_{v_0}}$ is equipped with a ramification filtration inherited from the local Galois group. We refer the reader to [Langlands, Ch.6,p.23], where the upper-numbering filtration is defined, resting on the upper-numbering ramification filtration on $G_{E_v/F_{v_0}}:=\mathrm{Gal}(E_v/F_{v_0})$ from [Se, Ch.IV,§2,3].
 
@@ -164,9 +164,9 @@ L_v(s,\rho):=\prod_{1\le k\le\dim(V)}\frac{1}{1-c_{v,k}(\pi_v)|\pi_v|_v^s} \tag{
 $$
 holomorphic for $\mathrm{Re}(s)>0$.
 
-If $v$ is an Archimedean place of $E$, then, upon denoting by $v_0$ the unique Archimedean place of $F$ of which $v$ is an extension to $E$, and $E_v$, $F_{v_0}$ the respective completions, then $W_{E_v/F_{v_0}}$ is isomorphic, as a Hausdorff locally compact topological group, to either $\mathbf C^\times$, or a central extension of $\mu_2$ by $\mathbf C^\times$.
+If $v$ is an Archimedean place of $E$, then, upon denoting by $v_0$ the unique Archimedean place of $F$ of which $v$ is an extension to $E$, and $E_v$, $F_{v_0}$ the respective completions, then $W_{E_v/F_v}$ is isomorphic, as a Hausdorff locally compact topological group, to either $\mathbf C^\times$, or a central extension of $\mu_2$ by $\mathbf C^\times$.
 
-In either case, finite dimensional continuous representations of $W_{E_v/F_{v_0}}$ and their local Artin-Weil $L$-functions are defined explicitly (we refer the reader to [Langlands, Ch.20,p.212]).
+In either case, finite dimensional continuous representations of $W_{E_v/F_v}$ and their local Artin-Weil $L$-functions are defined explicitly (we refer the reader to [Langlands, Ch.20,p.212]).
 
 Global Artin-Weil $L$-functions are then defined as follows. Let $\rho:W_{E/F}\to\mathrm{GL}(V)$ be a finite dimensional continuous complex representation. We denote by $\rho_v$ the continuous finite dimensional complex representation of $W_{E_v/F_{v_0}}$ for each place $v$ of $E$, obtained by composition with $\theta_v$ from (14.1.1.6) of Proposition 14.1.1.1(3).
 
@@ -439,7 +439,7 @@ In fact, it likely is, since, proceeding heuristically by comparison with a form
 $$
 \frac{\mu_{S_\infty,1}(U)}{[F:\mathbf Q]}\int_2^x\frac{\mathrm{d}y}{\log(y)}
 $$
-where $U\subset\mathrm{GL}_1(\mathbf A_{F,S_\infty})^1/\mathcal O_F^\times$ is the image in $\mathrm{GL}_1(\mathbf A_{F,S_\infty})^1/\mathcal O_F^\times$ of the maximal closed subset of $\mathrm{GL}_1(\mathbf A_{F,S_\infty})^1$ on which the restriction of $\chi$ to $\mathrm{GL}_1(\mathbf A_{F,S_\infty})^1$ is trivial, and $\mu_{S_\infty}$ is the multiplicative Tamagawa measure on $\mathrm{GL}_1(\mathbf A_{F,S_\infty})$, with $\mu_{S_\infty,1}$ the Haar measure on the closed subgroup $\mathrm{GL}_1(\mathbf A_{F,S_\infty})^1$ obtained by choosing a continuous homomorphic section to the $S_\infty$-idelic norm.
+where $U\subset\mathrm{GL}_1(\mathbf A_{F,S_\infty})^1/\mathcal O_F^\times$ is the image in $\mathrm{GL}_1(\mathbf A_{F,S_\infty})^1/\mathcal O_F^\times$ of the maximal closed subset of $\mathrm{GL}_1(\mathbf A_{F,S_\infty})^1$ on which the restriction of $\chi$ to $\mathrm{GL}_1(\mathbf A_{F,S_\infty})$ is trivial, and $\mu_{S_\infty}$ is the multiplicative Tamagawa measure on $\mathrm{GL}_1(\mathbf A_{F,S_\infty})$, with $\mu_{S_\infty,1}$ the Haar measure on the closed subgroup $\mathrm{GL}_1(\mathbf A_{F,S_\infty})^1$ obtained by choosing a continuous homomorphic section to the $S_\infty$-idelic norm.
 
 However, $\mu_{S_\infty,1}(U)=0$ for most Hecke characters $\chi$. $U$ will have non-empty interior for $\chi$ of finite order, and more generally for Hecke characters of Galois type (i.e. of the form $\chi|\cdot|_F^{ix_0}$ for some $x_0\in\mathbf R$, possibly nonzero, and $\chi$ of finite order). I know of no other example where $\mu_{S_\infty,1}(U)$ is nonzero.
 
@@ -558,5 +558,7 @@ $$
 In particular, for $F = \mathbf{Q}$, the bound is the rank $n$ itself, which shows how the Grand Simplicity Hypothesis remains beyond the reach of the methods developed throughout this work, and its version $\mathrm{GL}_n$.
 
 We will now share a few elements of the version of these methods for $\mathrm{GL}_n(\mathbf{A}_F)$, i.e. to analyze the divisor of the completed, unitarily normalized, $L$-function of a cuspidal automorphic representation $\pi$ of $\mathrm{GL}_n(\mathbf{A}_F)$, to highlight what changes from the case $n = 1$.
+
+$^{2}$
 
 $^2$Say a few words on $\mathrm{GL}_n$. Add that the version for $\mathrm{GL}_n$ is the subject of ongoing work with Brian Conrad.
