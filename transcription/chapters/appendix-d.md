@@ -2394,8 +2394,6 @@ $$
 
 *(2) For the above sets of seminorms, the seminorms obtained upon replacing $1+|\log(\cdot)|^r$ by $|\log(\cdot)|^r$.*
 
-*(3) For the above sets of seminorms, the seminorms obtained upon replacing $\{1+|\log(\cdot)|^r\}_{r\in\mathbf{N}}$ by the absolute*
-
 ## PDF page 792
 
 **792** · **CHAPTER D. SCHWARTZ-BRUHAT FUNCTIONS**
