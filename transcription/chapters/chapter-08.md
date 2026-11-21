@@ -572,7 +572,7 @@ and its suquotients $\mathscr{E}_{S,S_{\infty}}(\chi_{S}|_{J^{1}_{F,S}})$ and $\
 ```latex
 \begin{tikzcd}
 \mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}_{00}(\mathbf{A}_{F,S})) \arrow[r] \arrow[d] & \mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}(\mathbf{A}_{F,S})) \arrow[r] \arrow[d] & \mathscr{E}_{S,S_{\infty}}(\chi_{S}|_{J^{1}_{F,S}}) \times \prod^{\prime}_{p:S_{p}\subset S} \mathscr{E}_{S,S_{p}}(\chi_{S}|_{J^{1}_{F,S}}) \arrow[d] \\
-[D_{S,1}/\mathrm{GL}_{1}(\mathbf{A}_{F,S})^{1}] \arrow[r, "j"'] \arrow[d, "\simeq"'] & [D_{F,S}/\mathrm{GL}_{1}(\mathbf{A}_{F,S})^{1}] & \coprod^{\prime}_{v \in S} [D_{S,v}/\mathrm{GL}_{1}(\mathbf{A}_{F,S})^{1}] \arrow[d, "\simeq"] \arrow[l, "i"] \\
+{[D_{S,1}/\mathrm{GL}_{1}(\mathbf{A}_{F,S})^{1}]} \arrow[r, "j"'] \arrow[d, "\simeq"'] & {[D_{F,S}/\mathrm{GL}_{1}(\mathbf{A}_{F,S})^{1}]} & \coprod^{\prime}_{v \in S} [D_{S,v}/\mathrm{GL}_{1}(\mathbf{A}_{F,S})^{1}] \arrow[d, "\simeq"] \arrow[l, "i"] \\
 \underline{J_{F,S}/J^{1}_{F,S}} &  & \left(\coprod_{v \in S_{\infty}} BU_{v}\right) \coprod \left(\coprod_{p:S_{p}\subset S} \coprod^{\prime}_{v \in S_{p}} [\mathbf{R}_{>0}/F^{\times}_{v}]\right)
 \end{tikzcd}
 ```
@@ -629,7 +629,7 @@ ORBITAL TRACES
 ```latex
 \begin{tikzcd}
 \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^{1}_{F}}, \mathcal{S}_{00}(\mathbf{A}_{F})) \arrow[r] \arrow[d] & \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^{1}_{F}}, \mathcal{S}(\mathbf{A}_{F})) \arrow[r] \arrow[d] & \mathscr{E}_{S_{\infty}}(\chi|_{C^{1}_{F}}) \times \prod^{\prime}_{p} \mathscr{E}_{S_{p}}(\chi|_{C^{1}_{F}}) \arrow[d] \\
-[D_{F,1}/\mathrm{GL}_{1}(\mathbf{A}_{F})^{1}] \arrow[r, "j"'] \arrow[d, "\simeq"'] & [D_{F}/\mathrm{GL}_{1}(\mathbf{A}_{F})^{1}] & \coprod^{\prime}_{v \in \Sigma_{F}} [D_{F,v}/\mathrm{GL}_{1}(\mathbf{A}_{F})^{1}] \arrow[d, "\simeq"] \arrow[l, "i"] \\
+{[D_{F,1}/\mathrm{GL}_{1}(\mathbf{A}_{F})^{1}]} \arrow[r, "j"'] \arrow[d, "\simeq"'] & {[D_{F}/\mathrm{GL}_{1}(\mathbf{A}_{F})^{1}]} & \coprod^{\prime}_{v \in \Sigma_{F}} [D_{F,v}/\mathrm{GL}_{1}(\mathbf{A}_{F})^{1}] \arrow[d, "\simeq"] \arrow[l, "i"] \\
 \underline{C_{F}/C^{1}_{F}} &  & \left(\coprod_{v \in S_{\infty}} BU_{v}\right) \coprod \left(\coprod_{p} \coprod^{\prime}_{v \in S_{p}} [\mathbf{R}_{>0}/F^{\times}_{v}]\right)
 \end{tikzcd}
 ```
@@ -772,7 +772,7 @@ We may therefore complete the diagram in (8.4.0.6) into the following:
 \begin{tikzcd}
 0 \arrow[r] \arrow[d] & \mathrm{PW}_{S,X}(\chi_{S^{\prime}}|_{J^{1}_{F,S^{\prime}}}, \mathcal{S}(\mathbf{A}_{F,S^{\prime}})) \arrow[r] \arrow[d] & \mathscr{E}_{S^{\prime},S_{\infty}}(\chi_{S^{\prime}}|_{J^{1}_{F,S^{\prime}}}) \times \prod^{\prime}_{p:S_{p}\subset S^{\prime}} \mathscr{E}^{\mathrm{ABS}}_{S^{\prime},S_{p},X}(\chi_{S^{\prime}}|_{J^{1}_{F,S^{\prime}}}) \arrow[d] \\
 \mathrm{H}_{0,\mathrm{cont}}(\chi_{S^{\prime}}|_{J^{1}_{F,S^{\prime}}}, \mathcal{S}_{00}(\mathbf{A}_{F,S^{\prime}})) \arrow[r] \arrow[d] & \mathrm{H}_{0,\mathrm{cont}}(\chi_{S^{\prime}}|_{J^{1}_{F,S^{\prime}}}, \mathcal{S}(\mathbf{A}_{F,S^{\prime}})) \arrow[r] \arrow[d] & \mathscr{E}_{S^{\prime},S_{\infty}}(\chi_{S^{\prime}}|_{J^{1}_{F,S^{\prime}}}) \times \prod^{\prime}_{p:S_{p}\subset S^{\prime}} \mathscr{E}_{S^{\prime},S_{p}}(\chi_{S^{\prime}}|_{J^{1}_{F,S^{\prime}}}) \arrow[d] \\
-[D_{S^{\prime},1}/\mathrm{GL}_{1}(\mathbf{A}_{F,S^{\prime}})^{1}] \arrow[r, "j"'] \arrow[d, "\simeq"'] & [D_{F,S^{\prime}}/\mathrm{GL}_{1}(\mathbf{A}_{F,S^{\prime}})^{1}] & \coprod^{\prime}_{v \in S^{\prime}} [D_{S^{\prime},v}/\mathrm{GL}_{1}(\mathbf{A}_{F,S^{\prime}})^{1}] \arrow[d, "\simeq"] \arrow[l, "i"] \\
+{[D_{S^{\prime},1}/\mathrm{GL}_{1}(\mathbf{A}_{F,S^{\prime}})^{1}]} \arrow[r, "j"'] \arrow[d, "\simeq"'] & {[D_{F,S^{\prime}}/\mathrm{GL}_{1}(\mathbf{A}_{F,S^{\prime}})^{1}]} & \coprod^{\prime}_{v \in S^{\prime}} [D_{S^{\prime},v}/\mathrm{GL}_{1}(\mathbf{A}_{F,S^{\prime}})^{1}] \arrow[d, "\simeq"] \arrow[l, "i"] \\
 \underline{J_{F,S^{\prime}}/J^{1}_{F,S^{\prime}}} &  & \left(\coprod_{v \in S_{\infty}} BU_{v}\right) \coprod \left(\coprod_{p:S_{p}\subset S^{\prime}} \coprod^{\prime}_{v \in S_{p}} [\mathbf{R}_{>0}/F^{\times}_{v}]\right)
 \end{tikzcd}
 ```

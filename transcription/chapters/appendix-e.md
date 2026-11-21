@@ -3827,7 +3827,7 @@ The bifunctors $c_{A,B,C}$ and the functor $u_A$ are assumed to satisfy the foll
 
 ```latex
 \begin{tikzcd}
-\mathbf{1}\times\mathbf{Hom}_{\mathcal{C}}(A,B) \arrow[d, "(u_A,\mathbf{id})"] & \mathbf{Hom}_{\mathcal{C}}(A,B) \arrow[r] \arrow[d, equal] \arrow[l] & \mathbf{Hom}_{\mathcal{C}}(A,B)\times\mathbf{1} \arrow[d, "(\mathbf{id},u_A)"] \\
+\mathbf{1}\times\mathbf{Hom}_{\mathcal{C}}(A,B) \arrow[d, "{(u_A,\mathbf{id})}"'] & \mathbf{Hom}_{\mathcal{C}}(A,B) \arrow[r] \arrow[d, equal] \arrow[l] & \mathbf{Hom}_{\mathcal{C}}(A,B)\times\mathbf{1} \arrow[d, "{(\mathbf{id},u_A)}"] \\
 \mathbf{Hom}_{\mathcal{C}}(A,A)\times\mathbf{Hom}_{\mathcal{C}}(A,B) \arrow[r, "c_{A,A,B}"'] & \mathbf{Hom}_{\mathcal{C}}(A,B) & \mathbf{Hom}_{\mathcal{C}}(A,B)\times\mathbf{Hom}_{\mathcal{C}}(B,B) \arrow[l, "c_{A,B,B}"]
 \end{tikzcd}
 ```
@@ -3840,7 +3840,7 @@ where the top horizontal arrows are equivalences of categories, and where $\math
 
 ```latex
 \begin{tikzcd}
-\mathbf{Hom}_{\mathcal{C}}(A,B)\times\mathbf{Hom}_{\mathcal{C}}(B,C)\times\mathbf{Hom}_{\mathcal{C}}(C,D) \arrow[r, "(\mathbf{id},c_{B,C,D})"] \arrow[d, "(c_{A,B,C},\mathbf{id})"] & \mathbf{Hom}_{\mathcal{C}}(A,B)\times\mathbf{Hom}_{\mathcal{C}}(B,D) \arrow[d, "c_{A,B,D}"] \\
+\mathbf{Hom}_{\mathcal{C}}(A,B)\times\mathbf{Hom}_{\mathcal{C}}(B,C)\times\mathbf{Hom}_{\mathcal{C}}(C,D) \arrow[r, "{(\mathbf{id},c_{B,C,D})}"] \arrow[d, "{(c_{A,B,C},\mathbf{id})}"'] & \mathbf{Hom}_{\mathcal{C}}(A,B)\times\mathbf{Hom}_{\mathcal{C}}(B,D) \arrow[d, "c_{A,B,D}"] \\
 \mathbf{Hom}_{\mathcal{C}}(A,C)\times\mathbf{Hom}_{\mathcal{C}}(C,D) \arrow[r, "c_{A,C,D}"'] & \mathbf{Hom}_{\mathcal{C}}(A,D)
 \end{tikzcd}
 ```
@@ -4090,7 +4090,7 @@ The datum $(F,F_{\bullet,\bullet},\gamma_{\bullet,\bullet,\bullet},\delta_{\bull
 
 ```latex
 \begin{tikzcd}
-F_{A,B}(f)\circ\mathbf{1}_{F(A)} \arrow[r, Rightarrow, "\mathbf{1}_{F_{A,B}(f)}\star(\delta_A)_*"] \arrow[d, Rightarrow, "\mathbf{1}_{F_{A,B}(f)}"] & F_{A,B}(f)\circ F_{A,A}(\mathbf{1}_A) \arrow[d, Rightarrow, "\gamma_{A,A,B}(\mathbf{1}_A,f)"] \\
+F_{A,B}(f)\circ\mathbf{1}_{F(A)} \arrow[r, Rightarrow, "\mathbf{1}_{F_{A,B}(f)}\star(\delta_A)_*"] \arrow[d, Rightarrow, "\mathbf{1}_{F_{A,B}(f)}"'] & F_{A,B}(f)\circ F_{A,A}(\mathbf{1}_A) \arrow[d, Rightarrow, "{\gamma_{A,A,B}(\mathbf{1}_A,f)}"] \\
 F_{A,B}(f) \arrow[r, Rightarrow, "\mathbf{1}_{F_{A,B}(f)}"'] & F_{A,B}(f\circ\mathbf{1}_A)
 \end{tikzcd}
 ```
@@ -4101,7 +4101,7 @@ where $(\delta_A)_*$ denotes the 2-morphism $\mathbf{1}_A\Rightarrow F_{A,A}(\ma
 
 ```latex
 \begin{tikzcd}
-\mathbf{1}_{F(B)}\circ F_{A,B}(f) \arrow[r, Rightarrow, "(\delta_B)_*\star F_{A,A}(f)"] \arrow[d, Rightarrow, "\mathbf{1}_{F_{A,B}(f)}"] & F_{B,B}(\mathbf{1}_B)\circ F_{A,B}(f) \arrow[d, Rightarrow, "\gamma_{A,B,B}(f,\mathbf{1}_B)"] \\
+\mathbf{1}_{F(B)}\circ F_{A,B}(f) \arrow[r, Rightarrow, "(\delta_B)_*\star F_{A,A}(f)"] \arrow[d, Rightarrow, "\mathbf{1}_{F_{A,B}(f)}"'] & F_{B,B}(\mathbf{1}_B)\circ F_{A,B}(f) \arrow[d, Rightarrow, "{\gamma_{A,B,B}(f,\mathbf{1}_B)}"] \\
 F_{A,B}(f) \arrow[r, Rightarrow, "\mathbf{1}_{F_{A,B}(f)}"'] & F_{A,B}(\mathbf{1}_B\circ f)
 \end{tikzcd}
 ```
@@ -4114,8 +4114,8 @@ where $(\delta_B)_*$ denotes the 2-morphism $\mathbf{1}_B\Rightarrow F_{B,B}(\ma
 
 ```latex
 \begin{tikzcd}
-F_{C,D}(h)\circ F_{B,C}(g)\circ F_{A,B}(f) \arrow[r, Rightarrow, "\mathbf{1}_{F_{C,D}(h)}\star\gamma_{A,B,C}(f,g)"] \arrow[d, Rightarrow, "\gamma_{B,C,D}(g,h)\star\mathbf{1}_{F_{A,B}(f)}"] & F_{C,D}(h)\circ F_{A,C}(g\circ f) \arrow[d, Rightarrow, "\gamma_{A,C,D}(g\circ f,h)"] \\
-F_{B,D}(h\circ g)\circ F_{A,B}(f) \arrow[r, Rightarrow, "\gamma_{A,B,D}(f,h\circ g)"'] & F_{A,D}(h\circ g\circ f)
+F_{C,D}(h)\circ F_{B,C}(g)\circ F_{A,B}(f) \arrow[r, Rightarrow, "{\mathbf{1}_{F_{C,D}(h)}\star\gamma_{A,B,C}(f,g)}"] \arrow[d, Rightarrow, "{\gamma_{B,C,D}(g,h)\star\mathbf{1}_{F_{A,B}(f)}}"'] & F_{C,D}(h)\circ F_{A,C}(g\circ f) \arrow[d, Rightarrow, "{\gamma_{A,C,D}(g\circ f,h)}"] \\
+F_{B,D}(h\circ g)\circ F_{A,B}(f) \arrow[r, Rightarrow, "{\gamma_{A,B,D}(f,h\circ g)}"'] & F_{A,D}(h\circ g\circ f)
 \end{tikzcd}
 ```
 
@@ -5570,7 +5570,7 @@ $$
 ```latex
 \begin{tikzcd}
 \mathcal{X} := [X/\mathcal{G}]\times_{[X'/\mathcal{G}']}\underline{X}' \arrow[r] \arrow[d] & \underline{X}' \arrow[d] \\
-{[X/\mathcal{G}]} \arrow[r] & [X'/\mathcal{G}']
+{[X/\mathcal{G}]} \arrow[r] & {[X'/\mathcal{G}']}
 \end{tikzcd}
 ```
 

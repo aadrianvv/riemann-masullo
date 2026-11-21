@@ -2753,7 +2753,7 @@ $$
 
 for $q_v:=N(\mathfrak{p}_v)$, with $\mathfrak{p}_v\subset\mathcal{O}_F$ the prime ideal corresponding to the finite place $v$ of $F$.
 
-Since $\chi$ is unramified at $v\in S$, we have $L_v(\chi_v|\cdot|_v^s)^{-1}=1-\chi_v(\pi_v)q_v^{-s}|\cdot|$. Thus, the function $u:\mathbf{C}\times\mathbf{T}^S\to\mathbf{C}$ is continuous and its holomorphic derivatives of arbitrary order with respect to $s$, formed pointwise over $\mathbf{C}\times\mathbf{T}^S$, are also continuous over $\mathbf{C}\times\mathbf{T}^S$.
+Since $\chi$ is unramified at $v\in S$, we have $L_v(\chi_v|\cdot|_v^s)^{-1}=1-\chi_v(\pi_v)q_v^{-s}|$. Thus, the function $u:\mathbf{C}\times\mathbf{T}^S\to\mathbf{C}$ is continuous and its holomorphic derivatives of arbitrary order with respect to $s$, formed pointwise over $\mathbf{C}\times\mathbf{T}^S$, are also continuous over $\mathbf{C}\times\mathbf{T}^S$.
 
 Let $K\subset \mathbf{C}_I$ be a compact subset with non-empty interior. We define, for every real number $\varepsilon>0$:
 

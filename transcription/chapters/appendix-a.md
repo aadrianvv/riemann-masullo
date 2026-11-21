@@ -1225,7 +1225,7 @@ $$
 \psi_{\mathrm{std}} : \mathbf{Q}_p\to U(1)
 $$
 
-obtained as the composition of the quotient $\mathbf{Q}_p\to\mathbf{Q}_p/\mathbf{Z}_p$, followed the natural injective continuous homomorphism $\mathbf{Q}_p/\mathbf{Z}_p = (\mathbf{Q}/\mathbf{Z})[p^\infty]\subset\mathbf{R}/\mathbf{Z}$, followed by $\exp(2\pi it)$. Then $\chi(g) = \chi_{\mathrm{std}}(cg)$ for a unique $c\in\mathbf{Q}_p$ depending only on $\chi\in\widehat{\mathbf{Q}}_p$. This identifies, as Hausdorff locally compact abelian groups, $\mathbf{Q}_p$ with its dual group. Upon calling $f_0 := 1_{\mathbf{Z}_p}$, then $1_{p^N\mathbf{Z}_p} = f_0(p^{-N}x)$, and $f(x) = f_0(p^{-N}x-p^{-N}a)$. We then have
+obtained as the composition of the quotient $\mathbf{Q}_p\to\mathbf{Q}_p/\mathbf{Z}_p$, followed the natural injective continuous homomorphism $\mathbf{Q}_p/\mathbf{Z}_p = (\mathbf{Q}/\mathbf{Z})[p^\infty]\subset\mathbf{R}/\mathbf{Z}$, followed by $\exp(2\pi it)$. Then $\chi(g) = \chi_{\mathrm{std}}(cg)$ for a unique $c\in\mathbf{Q}_p$ depending only on $\chi\in\widehat{\mathbf{Q}_p}$. This identifies, as Hausdorff locally compact abelian groups, $\mathbf{Q}_p$ with its dual group. Upon calling $f_0 := 1_{\mathbf{Z}_p}$, then $1_{p^N\mathbf{Z}_p} = f_0(p^{-N}x)$, and $f(x) = f_0(p^{-N}x-p^{-N}a)$. We then have
 
 $$
 \widehat{f}(x) = p^{-N}\widehat{f}_0(p^N(x-a)) = p^{-N}\psi_{\mathrm{std}}(ax)\cdot 1_{p^{-N}\mathbf{Z}_p}(x), \tag{A.3.1.5}
@@ -1249,7 +1249,7 @@ Example A.3.1.7 (Local Plancherel measures). We exhibit the Plancherel measure f
 
 **558** · **CHAPTER A. PREPARATIONS FROM ALGEBRAIC NUMBER THEORY**
 
-is self-dual via $\psi_{\mathrm{std}}$, the Plancherel measure is a positive real multiple of $\mu_{\mathbf{Q}_p}$. Say $\mu_{\widehat{\mathbf{Q}}_p} = c\cdot\mu_{\mathbf{Q}_p}$ for some unique $c\in\mathbf{R}_{>0}$. It is enough to compute:
+is self-dual via $\psi_{\mathrm{std}}$, the Plancherel measure is a positive real multiple of $\mu_{\mathbf{Q}_p}$. Say $\mu_{\widehat{\mathbf{Q}_p}} = c\cdot\mu_{\mathbf{Q}_p}$ for some unique $c\in\mathbf{R}_{>0}$. It is enough to compute:
 
 $$
 \widehat{1_{\mathbf{Z}_p}}(y) = \int_{\mathbf{Q}_p}1_{\mathbf{Z}_p}(x)\overline{\psi_{\mathrm{std}}(xy)}\,\mathrm{d}\mu_{\mathbf{Q}_p}(x)
@@ -1257,7 +1257,7 @@ $$
 
 which is $1_{\mathbf{Z}_p}(y)$ by Example A.3.1.6.
 
-By Lemma D.1.1.2(5), this can only be so if $\mu_{\mathbf{Q}_p} = \mu_{\widehat{\mathbf{Q}}_p}$, and so $c = 1$. Note that $\mu_{\mathbf{Q}_p}$ is also the local Tamagawa measure for the local field $\mathbf{Q}_p$ chosen in Definition A.3.1.2(3).
+By Lemma D.1.1.2(5), this can only be so if $\mu_{\mathbf{Q}_p} = \mu_{\widehat{\mathbf{Q}_p}}$, and so $c = 1$. Note that $\mu_{\mathbf{Q}_p}$ is also the local Tamagawa measure for the local field $\mathbf{Q}_p$ chosen in Definition A.3.1.2(3).
 
 Example A.3.1.8 (Global standard additive character - I). The self-duality of $\mathbf{A}_{\mathbf{Q}}$ is defined by the standard character
 

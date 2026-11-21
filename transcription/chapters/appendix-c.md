@@ -3578,7 +3578,7 @@ which is a continuous function over $\Omega \times \Omega$ since the function $\
 
 It follows that $\langle G(C), \varphi \rangle_{E,E'}$ is a bounded subset of $\mathbf{C}$. Since $\varphi \in E'$ is arbitrary, $G(C)$ is bounded with respect to the $\sigma(E, E')$-topology on $E$, so it is bounded with respect to the given topology on $E$ [Scha, Ch. IV, 3.3].
 
-We let $A$ be its (bounded!) closed convex circled hull in $E$. For any $(\xi_1, \xi_2) \in B - \{x\beta_0\}$ we therefore have, in light of the design of $G$ from (C.5.1.41) (treating $\xi_1 \ne \xi_2$ separately from $\xi_1 = \xi_2$)
+We let $A$ be its (bounded!) closed convex circled hull in $E$. For any $(\xi_1, \xi_2) \in B - \{x\text{ß}_0\}$ we therefore have, in light of the design of $G$ from (C.5.1.41) (treating $\xi_1 \ne \xi_2$ separately from $\xi_1 = \xi_2$)
 
 $$
 f(\xi_1) - f(\xi_2) \in (\xi_1 - \xi_2)A \subset E. \tag{C.5.1.42}

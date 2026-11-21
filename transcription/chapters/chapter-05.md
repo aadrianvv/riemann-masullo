@@ -2682,8 +2682,8 @@ Theorem 5.4.2.2 (S-local Čech sequences). Let $F$ be a number field, $S$ a fini
 
 ```latex
 \begin{tikzcd}
-\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}}, \mathcal S(\mathbf A_{F,S})) \arrow[r, "(\mathrm{Id},\mathcal F_S)"] \arrow[d, equal] & \mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}}) \times \mathcal S_I(J_{F,S})(\bar\chi|_{J^1_{F,S}}) \arrow[r, "\mathrm{pr}_1-\widetilde{\mathrm{pr}}_2"] \arrow[d, "(M_{I,\tau},M_{I,\tau})"] & \mathcal S_{I\cap(1-I)}(\mathbf R_{>0}) \arrow[d, "T_{ix_0}\circ M_{I\cap(1-I)}"] \\
-\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}}, \mathcal S(\mathbf A_{F,S})) \arrow[r, "(L_S,L_S\circ\mathcal F_S)"] & A\mathcal S(\mathbf C_{>0}) \times A\mathcal S(\mathbf C_{>0}) \arrow[r, "\mathrm{pr}_1-\widetilde{J}\circ\mathrm{pr}_2"] & A\mathcal S(\mathbf C_{I\cap(1-I)})
+\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}}, \mathcal S(\mathbf A_{F,S})) \arrow[r, "{(\mathrm{Id},\mathcal F_S)}"] \arrow[d, equal] & \mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}}) \times \mathcal S_I(J_{F,S})(\bar\chi|_{J^1_{F,S}}) \arrow[r, "\mathrm{pr}_1-\widetilde{\mathrm{pr}}_2"] \arrow[d, "{(M_{I,\tau},M_{I,\tau})}"] & \mathcal S_{I\cap(1-I)}(\mathbf R_{>0}) \arrow[d, "T_{ix_0}\circ M_{I\cap(1-I)}"] \\
+\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}}, \mathcal S(\mathbf A_{F,S})) \arrow[r, "{(L_S,L_S\circ\mathcal F_S)}"'] & A\mathcal S(\mathbf C_{>0}) \times A\mathcal S(\mathbf C_{>0}) \arrow[r, "\mathrm{pr}_1-\widetilde{J}\circ\mathrm{pr}_2"'] & A\mathcal S(\mathbf C_{I\cap(1-I)})
 \end{tikzcd}
 ```
 

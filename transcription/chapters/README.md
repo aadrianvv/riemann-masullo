@@ -21,7 +21,7 @@ Every page of every file has been machine-checked against the PDF with `../tools
 | [Chapter 12. Trace formula: Geometric Side](chapter-12.md) | 497–520 | 18 of 24 |
 | [Chapter 13. Zeros of Hecke L-functions](chapter-13.md) | 521–522 | 1 of 2 |
 | [Chapter 14. Complements](chapter-14.md) | 523–536 | 7 of 14 |
-| [Appendix A. Preparations from Algebraic Number Theory](appendix-a.md) | 537–586 | 31 of 50 |
+| [Appendix A. Preparations from Algebraic Number Theory](appendix-a.md) | 537–586 | 33 of 50 |
 | [Appendix B. Preparations from Analytic Number Theory](appendix-b.md) | 587–654 | 60 of 68 |
 | [Appendix C. Preparations on locally convex topological vector spaces](appendix-c.md) | 655–742 | 49 of 88 |
 | [Appendix D. Schwartz-Bruhat functions](appendix-d.md) | 743–822 | 62 of 80 |

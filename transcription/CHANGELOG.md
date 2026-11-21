@@ -160,3 +160,21 @@ and a random sample by eye. All the checks in the README were run again afterwar
   four displayed formulas that had been run into the text (pp. 365, 367, 379, 552), the italic
   of Proposition B.6.1.1 running on into the next paragraph (p. 636), and italics and punctuation
   on pp. 354, 824.
+
+## 9. After the merge
+
+From the maintainers' spot check in #2471 and the checks it suggested.
+
+- **Hat over a subscripted symbol.** The print has $\widehat{\mathbf Q_p}$ (the hat over all of
+  Q_p) where the transcription had `\widehat{\mathbf{Q}}_p`: p. 558 (twice) and p. 557 (once;
+  the other `\widehat{\mathbf{Q}}_p` on p. 557 is as printed).
+- **Misprints kept as printed.** p. 634: the print ends `1-\chi_v(\pi_v)q_v^{-s}|` with one
+  stray bar, not `|\cdot|`; p. 733: the glyph after x in the excluded point is a ß (CMR), not a
+  β, so `\{x\text{ß}_0\}`.
+- **Diagrams that did not compile.** Every `latex` block was compiled with pdflatex and tikz-cd
+  (`tools/diagrams.py`): 11 of 84 failed, because of commas inside arrow labels (pp. 276, 899,
+  904) or a cell starting with `[`, which tikz-cd reads as options (pp. 20, 390, 391, 393, 930).
+  Such labels are now braced (`"{(a,b)}"`), and such cells are wrapped in `{…}`. All 84 compile.
+  The 11 were compared with the page image after rendering: labels drawn on the wrong side of
+  their arrow are fixed (pp. 276, 899, 904).
+
