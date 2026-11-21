@@ -33,16 +33,20 @@ files=$(git diff --name-only "$base...$head")
 echo "files changed:"; echo "$files" | sed 's/^/  /'
 stray=$(echo "$files" | awk '!/^RiemannMasullo\/.*\.lean$/ || /^RiemannMasullo\/External\//')
 [ -z "$stray" ] || { echo "REFUSED: changes outside the library; read these by hand before running anything:"; echo "$stray" | sed 's/^/  /'; exit 1; }
+git merge -q --no-edit "$head" || { echo "REFUSED: does not merge cleanly into main"; exit 1; }
 
-# The starting point, built from main's own code, which is trusted. It is the same for every
-# pull request checked against one commit of main, so it is computed once and kept.
+# A conflict needs no Lean build. On a cache miss, return to trusted main before
+# running the baseline build, then restore the exact merge for the sandbox.
 basefile="$main/.agent/base/pinned-main-$base.txt"
 if [ ! -s "$basefile" ]; then
+  merged=$(git rev-parse HEAD)
+  git checkout -q --detach "$base"
   mkdir -p "$main/.agent/base"
-  scripts/signatures.sh >"$basefile.$$" && mv "$basefile.$$" "$basefile"
+  scripts/signatures.sh >"$basefile.$$"
+  mv "$basefile.$$" "$basefile"
+  git checkout -q --detach "$merged"
 fi
 cp "$basefile" .agent/base.txt
-git merge -q --no-edit "$head" || { echo "REFUSED: does not merge cleanly into main"; exit 1; }
 echo "sorries added: $(git diff "$base" HEAD | grep -E '^\+[^+]' | grep -cw sorry || true)"
 
 sandboxed() {
