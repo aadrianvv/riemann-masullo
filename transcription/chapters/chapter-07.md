@@ -658,7 +658,7 @@ $\square$
 
 From Theorem 7.1.3.2 and Theorem 7.1.2.3, we deduce the following:
 
-*Corollary 7.1.3.3. Let $F$ be a number field, $S$ a finite set of places of $F$ containing the unique Archimedean place. Let $\chi \in \widehat{J_{F,S}}$, and $f \in \mathcal{S}(\mathbf{A}_{F,S})$. There exists a real number $C > 0$ depending on $S$, $\chi$ and $f$, such that:*
+Corollary 7.1.3.3. *Let $F$ be a number field, $S$ a finite set of places of $F$ containing the unique Archimedean place. Let $\chi \in \widehat{J_{F,S}}$, and $f \in \mathcal{S}(\mathbf{A}_{F,S})$. There exists a real number $C > 0$ depending on $S$, $\chi$ and $f$, such that:*
 
 $$
 |\Phi_{F,S,\chi|_{J^1_{F,S}}}(f)(g)| \le C_{S,\chi,f} |\log|g|_{F,S}|^{|S|-1} + O_{S,\chi,f}(|\log|g|_{F,S}|^{m-1}) \tag{7.1.3.2}

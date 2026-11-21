@@ -1985,7 +1985,7 @@ This shows that every $f\in\mathcal S_{00}(\mathbf A_{F,S})$ of the form $f_\inf
 
 $\square$
 
-*LEMMA 5.3.4.3. Let $I:=(-\infty,+\infty)=\mathbf R$, and let $\phi\in\mathcal S_I(\mathbf R_{>0})$ be a Schwartz-Bruhat function with $I$-exponential decay.*
+LEMMA 5.3.4.3. *Let $I:=(-\infty,+\infty)=\mathbf R$, and let $\phi\in\mathcal S_I(\mathbf R_{>0})$ be a Schwartz-Bruhat function with $I$-exponential decay.*
 
 *Let $F$ be a number field, $S$ a finite set of places of $F$ containing all the Archimedean places.*
 
@@ -2099,7 +2099,7 @@ The element from (5.3.4.11) corresponds under the linear topological isomorphism
 
 $\square$
 
-*PROPOSITION 5.3.4.4. Let $F$ be a number field. Let $S$ be a finite set of places of $F$ containing all the Archimedean places. Let $\chi\in\widehat{J_{F,S}}$ be a continuous character.*
+PROPOSITION 5.3.4.4. *Let $F$ be a number field. Let $S$ be a finite set of places of $F$ containing all the Archimedean places. Let $\chi\in\widehat{J_{F,S}}$ be a continuous character.*
 
 *The following conditions on Schwartz-Bruhat functions $f\in\mathcal S(\mathbf A_{F,S})$ are equivalent:*
 
@@ -2125,7 +2125,7 @@ $\square$
 
 We have the following result, explaining how to use Weil's Principal Value Operators $\mathrm{PV}_{S,S_0}$ to resolve some of the singularities of the $L$-functions of Schwartz-Bruhat functions on $\mathbf A_{F,S}$.
 
-*PROPOSITION 5.3.4.5. Let $F$ be a number field, $S$ a finite set of places of $F$ containing all the Archimedean places.*
+PROPOSITION 5.3.4.5. *Let $F$ be a number field, $S$ a finite set of places of $F$ containing all the Archimedean places.*
 
 *Let $f\in\mathcal S(\mathbf A_{F,S})$. Then:*
 

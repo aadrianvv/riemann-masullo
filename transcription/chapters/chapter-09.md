@@ -1756,7 +1756,7 @@ Lemma 9.3.2.5. *Let $G$ be a second-countable $\mathbf{R}_{>0}$-modulated group.
 
 Proof. The exponential decay condition defining $\mathcal{S}_{\mathrm{E}}(G)$ implies the convergence axiom defining Schauder bases, using Lemma 9.3.2.4 and Theorem D.3.3.13, combined with the description of the topology on $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0})$ provided by Lemma D.3.1.2. By Theorem 4.1.2.6(1) and (3), indeed the Schauder basis is absolute.$^6$ $\square$
 
-*THEOREM 9.3.2.6 (Approximate units in $\mathscr{L}_{\sigma}(W^s_I(G))$). Let $G$ be a second-countable $\mathbf{R}_{>0}$-modulated group. Let $I \subset \mathbf{R}$ be a closed interval with non-empty interior, $s \ge 0$ a real number. For $T > 0$ a real number, we define the closed subspace:*
+THEOREM 9.3.2.6 (Approximate units in $\mathscr{L}_{\sigma}(W^s_I(G))$). *Let $G$ be a second-countable $\mathbf{R}_{>0}$-modulated group. Let $I \subset \mathbf{R}$ be a closed interval with non-empty interior, $s \ge 0$ a real number. For $T > 0$ a real number, we define the closed subspace:*
 
 $$
 W^s_I(G)_{\le T} := \bigcap_{\rho: M(\phi)(\chi\lvert\cdot\rvert^{\rho}_G)=0, \lvert\mathrm{Im}(\rho)\rvert \le T} \bigcap_{0 \le k \le N(\rho)-1} \ker(\delta^{(k)}_{\rho}). \tag{9.3.2.10}

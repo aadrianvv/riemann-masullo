@@ -198,7 +198,7 @@ $$
 
 We observe that the subset $T\cdot E^1_F \subset \mathrm{GL}_1(\mathbf A_F)$ is a Borel set, with $E^1_F$ the idelic fundamental domain of (A.2.3.14). Indeed, $T$ can be written as an increasing countable union of compact subsets, and $E^1_F$ is relatively compact, presenting $T\cdot E^1_F$ as an increasing countable union of relatively compact subsets with non-empty interior within $\mathrm{GL}_1(\mathbf A_F)$ (see Proposition A.2.3.10(1)), each of which is therefore a Borel set.
 
-*COROLLARY 11.1.1.5. We let $\{f_k\}_{k\ge 0} \subset \mathcal S(\mathbf A_F)$ be a sequence of Schwartz-Bruhat functions on $\mathbf A_F$. Assume:*
+COROLLARY 11.1.1.5. *We let $\{f_k\}_{k\ge 0} \subset \mathcal S(\mathbf A_F)$ be a sequence of Schwartz-Bruhat functions on $\mathbf A_F$. Assume:*
 
 *(1) for every $g \in \mathrm{GL}_1(\mathbf A_F)$, $f(g) := \lim_{k\to +\infty} f_k(g)$ exists.*
 

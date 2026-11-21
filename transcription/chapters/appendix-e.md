@@ -224,7 +224,7 @@ Remark E.1.1.2. On Definition E.1.1.1, we make the following observations.
 
 Our definition of “compactly generated” space will rest on:
 
-*Lemma E.1.1.3. Let $X$ be a topological space. The following four conditions are equivalent:*
+Lemma E.1.1.3. *Let $X$ be a topological space. The following four conditions are equivalent:*
 
 (1) *For all topological spaces $Y$ and any set-function $f : X \to Y$, the following conditions are equivalent:*
 
@@ -994,15 +994,15 @@ Remark E.2.1.2. Clearly subspaces of weakly Hausdorff spaces are weakly Hausdorf
 
 Remark E.2.1.3. We recall that if $X$ is Hausdorff then any compact subspace is closed. In particular, Hausdorff spaces are weakly Hausdorff. For an example of a weakly Hausdorff (compact) topological space that is not Hausdorff, we refer the reader to Lemma E.2.4.9.
 
-*Lemma E.2.1.4. Let $K$ be a compact weakly Hausdorff topological space. Assume that there exists a compact Hausdorff topological space $K'$ and a surjective continuous map $q:K'\to K$. Then $K$ is Hausdorff.*
+Lemma E.2.1.4. *Let $K$ be a compact weakly Hausdorff topological space. Assume that there exists a compact Hausdorff topological space $K'$ and a surjective continuous map $q:K'\to K$. Then $K$ is Hausdorff.*
 
 Proof. Since $K$ is weakly Hausdorff, every point of $K$ is closed and so $q$ has compact fibers over $K$. Indeed, for every $x\in K$, $q^{-1}(\{x\})$ is closed in $K'$, and this latter is a compact Hausdorff topological space. It follows $q^{-1}(\{x\})$ is compact. It is moreover Hausdorff. For any $C\subset K'$ closed, $C$ is compact Hausdorff in $K'$ and so $q(C)$ is compact in $K$, and closed since $K$ is weakly Hausdorff by assumption. We deduce that $q$ is a closed map, and so $q$ is submersive. Let $x,x'\in K$ be distinct points. Since $K$ is weakly Hausdorff, its points are closed. As $K'$ is normal and $q^{-1}(\{x\})$ and $q^{-1}(\{x'\})$ are closed, there exist disjoint open subspaces $U,U'\subset K'$ such that $q^{-1}(\{x\})\subset U$ and $q^{-1}(\{x'\})\subset U'$. The subspaces of $K'$ given by $K'-U$ and $K'-U'$ are closed, and as $q$ is a closed map, then $C:=q(K'-U)$ and $C':=q(K'-U')$ are closed. It follows that $K-C$ and $K-C'$ are disjoint open subspaces of $K$ containing $x$ and $x'$ respectively. We deduce that $K$ is Hausdorff. $\square$
 
-*Lemma E.2.1.5. If $X$ is a weakly Hausdorff topological space then so is $k(X)$.*
+Lemma E.2.1.5. *If $X$ is a weakly Hausdorff topological space then so is $k(X)$.*
 
 Proof. Let $K$ be a compact Hausdorff topological space, and $g':K\to k(X)$ a continuous map. Compose with the continuous bijection $k(X)\to K$ to define a continuous $g:K\to X$. Since $X$ is weakly Hausdorff, $g(K)$ is closed in $X$. By continuity of $k(X)\to X$, it follows that $g'(K)$ is closed in $k(X)$. We deduce $k(X)$ is weakly Hausdorff. $\square$
 
-*Lemma E.2.1.6. Let $X$ be a topological space. We consider the following conditions:*
+Lemma E.2.1.6. *Let $X$ be a topological space. We consider the following conditions:*
 
 (1) $X$ is weakly Hausdorff,
 
@@ -1079,7 +1079,7 @@ Example E.2.1.10. We let $X$ be the one-point compactification of the Arens-Fort
 
 The following lemma concludes the preparations:
 
-*Lemma E.2.1.11. Let $X$ be a compactly generated space, and $R\subset X\times X$ an equivalence relation. Then the following conditions are equivalent:*
+Lemma E.2.1.11. *Let $X$ be a compactly generated space, and $R\subset X\times X$ an equivalence relation. Then the following conditions are equivalent:*
 
 (1) *the quotient space $X/R$ is weakly Hausdorff,*
 
@@ -1093,7 +1093,7 @@ Example E.2.1.12. As a simple example of a non-closed $R\subset X\times X$ resul
 
 The following important structural result holds specifically for compactly generated weakly Hausdorff spaces.
 
-*Proposition E.2.1.13. Let $X$ be a compactly generated topological space. The following conditions are equivalent:*
+Proposition E.2.1.13. *Let $X$ be a compactly generated topological space. The following conditions are equivalent:*
 
 ## PDF page 849
 
@@ -1153,7 +1153,7 @@ In light of Proposition E.2.1.13, we see that compactly generated weakly Hausdor
 
 We need the following:
 
-*Lemma E.2.1.15. Let $\{X_n\}_{n\ge 0}$ be a directed sequence of topological spaces. Assume:*
+Lemma E.2.1.15. *Let $\{X_n\}_{n\ge 0}$ be a directed sequence of topological spaces. Assume:*
 
 (1) for every integer $n\ge 0$, $X_n$ is a $T_1$-space;
 
@@ -1177,7 +1177,7 @@ Then $X$ is locally compact.
 
 Proof. We let $\{K_n\}_{n\ge 0}$ be a sequence of compact subspaces such that every compact subspace $K\subset X$ is contained in $K_n$ for some integer $n\ge 0$. Let $x\in X$ be a point, and $\{U_m\}_{m\ge 0}$ a countable local base at $x$. We may and do assume that $U_{m+1}\subseteq U_m$ holds for every $m\ge 0$. Suppose that for every integer $n\ge 0$, $(X-K_n)\cap U_n\ne\varnothing$. We choose $x_n$ in the intersection and consider the union of the sequence and its limit point $F:=\{x_n\}_{n\ge 0}\cup\{x\}$. Then $F\subset X$ is compact, and hence contained in $K_N$, for some integer $N\ge 0$. However, since $x_N\in F$ is an element of $U_N$, it cannot be an element of $K_N$, a contradiction. It follows that there exists an integer $n\ge 0$ such that $U_n$ is contained in $K_n$, and hence $K_n$ is a compact neighborhood of $x$ in $X$. As $x\in X$ is arbitrary, $X$ is locally compact. $\square$
 
-*Corollary E.2.1.17. Let $X$ be a weakly Hausdorff space. If $X$ is first-countable and countably compactly generated$^8$ then it is locally compact.*
+Corollary E.2.1.17. *Let $X$ be a weakly Hausdorff space. If $X$ is first-countable and countably compactly generated$^8$ then it is locally compact.*
 
 $^5$This proof needs correction; either make a simple fix or give a literature reference for a correct proof.
 
@@ -1257,7 +1257,7 @@ $$
 
 We begin by proving an analog of Lemma E.1.2.1; see [Str, Prop. 2.22] and [Str, Cor. 2.23].
 
-*Lemma E.2.2.4. Let $X$ be a compactly generated space, and $\Sigma\subset 2^{X\times X}$ the set of all subspaces $R\subset X\times X$ such that:*
+Lemma E.2.2.4. *Let $X$ be a compactly generated space, and $\Sigma\subset 2^{X\times X}$ the set of all subspaces $R\subset X\times X$ such that:*
 
 (a) $R^{\mathrm{set}}$ is an equivalence relation on $X^{\mathrm{set}}\times X^{\mathrm{set}}$.
 
@@ -1324,7 +1324,7 @@ $$
 
 which means that $f$ factors through $q_X$. We further observe that both $q$ and $\psi$ are unique: $q$ by universality of topological quotients and Lemma E.1.2.14, and $\psi$ by the universal property of co-equalizers and the definition of the map $f'$ of (E.2.2.10). We have shown that for any compactly generated spaces $X,Y$ with $Y$ weakly Hausdorff, and any continuous map $f:X\to Y$, $f$ factors uniquely through $q_X:X\to h(X)$ from (E.2.2.5). This proves functoriality of $h(\cdot)$ and part (2). Part (3) is clear from the universal property, and (4) is part of the formalism of adjunction. $\square$
 
-*Lemma E.2.2.5. The category $\mathbf{CGWH}$ contains all small limits and all small colimits. Moreover, for any small category $I$ and diagram $P:I\to\mathbf{CGWH}$:*
+Lemma E.2.2.5. *The category $\mathbf{CGWH}$ contains all small limits and all small colimits. Moreover, for any small category $I$ and diagram $P:I\to\mathbf{CGWH}$:*
 
 (1) *$\lim_I P$ in $\mathbf{CGWH}$ is computed in $\mathbf{CG}$, i.e. the forgetful functor $u_{\mathrm{wh}}$ reflects and commutes with small limits.*
 
@@ -1367,7 +1367,7 @@ Remark E.2.2.8. In Definition E.1.2.4, we introduced notation to distinguish arb
 
 We have the following:
 
-*Corollary E.2.2.9. Let $I$ be a small category, and $P:I\to\mathbf{CGWH}$ a diagram. Then:*
+Corollary E.2.2.9. *Let $I$ be a small category, and $P:I\to\mathbf{CGWH}$ a diagram. Then:*
 
 (1) *The product $\prod_I u_{\mathrm{wh}}\circ P$ in $\mathbf{CG}$ computes the product $\prod_I P$ in $\mathbf{CGWH}$.*
 
@@ -1386,7 +1386,7 @@ Notation E.2.2.1. When $X$ and $Y$ are compactly generated weakly Hausdorff spac
 
 The above change in notation is justified by the following Lemma, for which we refer the reader to [Str, Prop.2.24].
 
-*Proposition E.2.2.10. If $X$ and $Y$ are compactly generated topological spaces and $Y$ is weakly Hausdorff, then $\mathscr{C}ont_k(X,Y)$ is a compactly generated weakly Hausdorff topological space. The cartesian symmetric monoidal category $(\mathbf{CGWH},\times,*)$ inherits from the cartesian symmetric monoidal category $(\mathbf{CG},\times,*)$ the cartesian-closed monoidal category structure.*
+Proposition E.2.2.10. *If $X$ and $Y$ are compactly generated topological spaces and $Y$ is weakly Hausdorff, then $\mathscr{C}ont_k(X,Y)$ is a compactly generated weakly Hausdorff topological space. The cartesian symmetric monoidal category $(\mathbf{CGWH},\times,*)$ inherits from the cartesian symmetric monoidal category $(\mathbf{CG},\times,*)$ the cartesian-closed monoidal category structure.*
 
 Proof. As $(\mathbf{CGWH},\times,*)$ is a full symmetric monoidal subcategory of $(\mathbf{CG},\times,*)$, the last assertion follows from the first. It is therefore enough to check that for $X$ and $Y$ compactly generated spaces, with $Y$ weakly Hausdorff, then the compactly generated function space $\mathscr{C}ont_k(X,Y)$ is weakly Hausdorff. We now let $W:=\mathscr{C}ont_k(X,Y)$, and for any $x\in X$ let $e_x:W\to Y$ be given by $e_x(f):=f(x)$. Since $e_x$ is obtained by $\mathscr{C}ont_k$-functoriality with respect to $\{x\}\to X$, $e_x$ is continuous. We now observe that as subspaces of $W\times_0 W$:
 

@@ -3464,7 +3464,7 @@ In the Lemma below, we denote by $\mathrm{d}t$ the Lebesgue measure on the real 
 
 **C.5. MEROMORPHIC FUNCTIONS VALUED IN A QUASI-COMPLETE LOCALLY CONVEX TVS** · **731**
 
-***Lemma C.5.1.19 (Vector-valued Fundamental Theorem of Calculus).** Let $E$ be a Hausdorff locally convex topological $\mathbf{C}$-vector space, $k$ either one of the fields $k = \mathbf{R}, \mathbf{C}$, endowed with their Euclidean topology. Let $d \ge 1$ be an integer. Let $\Omega \subset k^d$ be an open subset, and $f : \Omega \to E$ a function. Let $\gamma : (a_0, b_0) \to \Omega$ a once-differentiable function, with $a_0, b_0 \in \mathbf{R}$, $a_0 < b_0$. Let $[a, b] \subset (a_0, b_0)$ be a non-empty closed interval. Assume:*
+**Lemma C.5.1.19 (Vector-valued Fundamental Theorem of Calculus).** *Let $E$ be a Hausdorff locally convex topological $\mathbf{C}$-vector space, $k$ either one of the fields $k = \mathbf{R}, \mathbf{C}$, endowed with their Euclidean topology. Let $d \ge 1$ be an integer. Let $\Omega \subset k^d$ be an open subset, and $f : \Omega \to E$ a function. Let $\gamma : (a_0, b_0) \to \Omega$ a once-differentiable function, with $a_0, b_0 \in \mathbf{R}$, $a_0 < b_0$. Let $[a, b] \subset (a_0, b_0)$ be a non-empty closed interval. Assume:*
 
 (1) *$f$ is continuously differentiable over an open neighborhood of $\gamma([a, b])$.*
 
@@ -3494,7 +3494,7 @@ by the Fundamental Theorem of Calculus. Since the space $E'$ separates the point
 
 We record here the following consequence of Lemma C.5.1.12, Lemma C.5.1.13, Lemma C.5.1.15 and Lemma C.5.1.16:
 
-***Theorem C.5.1.21 (Strong vector-valued differentiability).** Let $E$ be a Hausdorff locally convex topological $\mathbf{C}$-vector space, $d \ge 1$ an integer, $k$ either one of the Archimedean topological fields $k = \mathbf{R}, \mathbf{C}$, endowed with their Euclidean topology. Let $\Omega \subset k^d$ be an open subset, $f : \Omega \to E$ a function. The following conditions are equivalent:*
+**Theorem C.5.1.21 (Strong vector-valued differentiability).** *Let $E$ be a Hausdorff locally convex topological $\mathbf{C}$-vector space, $d \ge 1$ an integer, $k$ either one of the Archimedean topological fields $k = \mathbf{R}, \mathbf{C}$, endowed with their Euclidean topology. Let $\Omega \subset k^d$ be an open subset, $f : \Omega \to E$ a function. The following conditions are equivalent:*
 
 ## PDF page 732
 
@@ -3528,7 +3528,7 @@ If (4) holds then by Lemma C.5.1.16(3) so does (1). If (1) holds then by Lemma C
 
 We will now be discussing an important differentiability criterion in the special case $E$ is quasi-complete, due to Grothendieck (see [Gro-a, §2, Footnote 4, p. 39]) and whose proof is recorded in more detail by Schwartz in [Sch-b, Appendice, Lemma II, p. 146]. We’ll give a somewhat different proof below. Before we do so, we include below a result on removable singularities for vector-valued functions, smooth away from an isolated point, adapting an argument from [Ga-2, §15.1].
 
-***Lemma C.5.1.22 (Removable singularities in dimension $d = 1$).** Let $E$ be a Hausdorff locally convex topological $\mathbf{C}$-vector space, $k$ either one of the fields $k = \mathbf{R}, \mathbf{C}$, endowed with their Euclidean topology. Let $\Omega \subset k$ be an open subset, and $\xi_0 \in \Omega$ a point. Let $f : \Omega - \{\xi_0\} \to E$ be a function. Assume:*
+**Lemma C.5.1.22 (Removable singularities in dimension $d = 1$).** *Let $E$ be a Hausdorff locally convex topological $\mathbf{C}$-vector space, $k$ either one of the fields $k = \mathbf{R}, \mathbf{C}$, endowed with their Euclidean topology. Let $\Omega \subset k$ be an open subset, and $\xi_0 \in \Omega$ a point. Let $f : \Omega - \{\xi_0\} \to E$ be a function. Assume:*
 
 (1) $E$ is quasi-complete.
 
@@ -3616,7 +3616,7 @@ We denote by $C^m(\Omega, E)$ the $\mathbf{C}$-vector space of $E$-valued functi
 
 The following result is due to Grothendieck, and it is recorded in [Sch-b, Appendice, Lemme II, p. 146].
 
-***Theorem C.5.1.24.** Let $E$ be a Hausdorff locally convex topological $\mathbf{C}$-vector space, $k$ either one of the fields $k = \mathbf{R}, \mathbf{C}$, endowed with their Euclidean topology. Let $\Omega \subset k^d$ be an open subset and $f : \Omega \to E$ a function. Assume that $E$ is quasi-complete. Let $m \ge 1$ be an integer. If for every $\varphi \in E'$, the function $\langle f, \varphi \rangle_{E,E'}$ is continuously differentiable $m$ times, then $f$ is differentiable $m - 1$ times.*
+**Theorem C.5.1.24.** *Let $E$ be a Hausdorff locally convex topological $\mathbf{C}$-vector space, $k$ either one of the fields $k = \mathbf{R}, \mathbf{C}$, endowed with their Euclidean topology. Let $\Omega \subset k^d$ be an open subset and $f : \Omega \to E$ a function. Assume that $E$ is quasi-complete. Let $m \ge 1$ be an integer. If for every $\varphi \in E'$, the function $\langle f, \varphi \rangle_{E,E'}$ is continuously differentiable $m$ times, then $f$ is differentiable $m - 1$ times.*
 
 *Proof.* Since $m \ge 1$, from Lemma C.5.1.13(1) we deduce that $f$ is Lipschitz-continuous. This proves the case $m = 1$.
 
@@ -3780,7 +3780,7 @@ We record Grothendieck’s Theorem (see [Gro-a, Thm.1]) below. Throughout this w
 
 The following is immediate from complex analysis:
 
-***Theorem C.5.2.4.** Let $E$ be a Hausdorff locally convex topological $\mathbf{C}$-vector space, $\Omega \subset \mathbf{C}$ a domain. Let $f : \Omega \to E$ be a function. The following conditions are equivalent:*
+**Theorem C.5.2.4.** *Let $E$ be a Hausdorff locally convex topological $\mathbf{C}$-vector space, $\Omega \subset \mathbf{C}$ a domain. Let $f : \Omega \to E$ be a function. The following conditions are equivalent:*
 
 (1) The function $f$ is weakly holomorphic.
 
@@ -3804,7 +3804,7 @@ as elements of $(E')^*$.
 
 If we assume that $E$ is quasi-complete, then the Theorem can be strengthen into the following:
 
-***Theorem C.5.2.6 (Grothendieck’s holomorphy criterion).** Let $E$ be a Hausdorff quasi-complete locally convex topological $\mathbf{C}$-vector space, $\Omega \subset \mathbf{C}$ a complex domain of the complex $\xi$-plane. Let $f : \Omega \to E$ be a function. The following conditions are equivalent:*
+**Theorem C.5.2.6 (Grothendieck’s holomorphy criterion).** *Let $E$ be a Hausdorff quasi-complete locally convex topological $\mathbf{C}$-vector space, $\Omega \subset \mathbf{C}$ a complex domain of the complex $\xi$-plane. Let $f : \Omega \to E$ be a function. The following conditions are equivalent:*
 
 (1) $f$ is weakly holomorphic.
 
@@ -3872,7 +3872,7 @@ We define $\mathscr{M}(\Omega, E)$ the complex vector space of meromorphic $E$-v
 
 We check the following, as an application of Theorem C.5.2.4
 
-***Lemma C.5.3.2.** Let $E$ be a Hausdorff quasi-complete locally convex topological vector space, $\Omega \subset \mathbf{C}$ a domain. Let $f : \Omega \to E$ be a meromorphic function. For every $\xi_0 \in \Omega$, and every closed positively oriented simple curve $\Gamma \subset \Omega$ enclosing $\xi_0$ in its interior and with no other possible poles enclosed in its interior and on*
+**Lemma C.5.3.2.** *Let $E$ be a Hausdorff quasi-complete locally convex topological vector space, $\Omega \subset \mathbf{C}$ a domain. Let $f : \Omega \to E$ be a meromorphic function. For every $\xi_0 \in \Omega$, and every closed positively oriented simple curve $\Gamma \subset \Omega$ enclosing $\xi_0$ in its interior and with no other possible poles enclosed in its interior and on*
 
 ## PDF page 740
 
@@ -3904,7 +3904,7 @@ $$
 \operatorname{Res}_\xi(f) := a_{-1}(\xi, f), \quad \xi \in \Omega. \tag{C.5.3.5}
 $$
 
-***Lemma C.5.3.3.** Let $E$ be a Hausdorff quasi-complete locally convex topological $\mathbf{C}$-vector space, $\Omega \subset \mathbf{C}$ a domain, $f$ a meromorphic $E$-valued function on $\Omega$. Then:*
+**Lemma C.5.3.3.** *Let $E$ be a Hausdorff quasi-complete locally convex topological $\mathbf{C}$-vector space, $\Omega \subset \mathbf{C}$ a domain, $f$ a meromorphic $E$-valued function on $\Omega$. Then:*
 
 (1) For every $\xi \in \Omega$, the map
 
@@ -3960,7 +3960,7 @@ We see from Theorem C.5.4.1 how it is natural to constrain $E$ so as to ensure t
 
 The following is an analog of Riemann’s Theorem on removable singularities. We refer the reader to [Kruse, Thm. 7.4].
 
-***Lemma C.5.4.2 (On removable singularities).** Let $E$ be a Hausdorff quasi-complete locally convex topological $\mathbf{C}$-vector space, $\Omega \subset \mathbf{C}$ a domain, $Z \subset \Omega$ a discrete subset and $f : \Omega - Z \to E$ a holomorphic function. If for every $\xi_0 \in \Omega$ there exists a disc $B \subset \Omega$ containing $\xi_0$, such that $f$ is bounded on $B - Z$, then $f$ uniquely extends to a holomorphic function $f : \Omega \to E$.*
+**Lemma C.5.4.2 (On removable singularities).** *Let $E$ be a Hausdorff quasi-complete locally convex topological $\mathbf{C}$-vector space, $\Omega \subset \mathbf{C}$ a domain, $Z \subset \Omega$ a discrete subset and $f : \Omega - Z \to E$ a holomorphic function. If for every $\xi_0 \in \Omega$ there exists a disc $B \subset \Omega$ containing $\xi_0$, such that $f$ is bounded on $B - Z$, then $f$ uniquely extends to a holomorphic function $f : \Omega \to E$.*
 
 Here too quasi-completeness is being used to know holomorphic is equivalent to weakly holomorphic. Finer analytic continuation results are available (see [Jor-b, Thms. 6, 8]) again under a local completeness assumption.
 
@@ -3968,7 +3968,7 @@ We will, throughout this work, always be able to assume quasi-completeness of th
 
 **C.5.4.1. Vector-valued Identity Theorem.** We record here below the following analog of the Identity Theorem from classical complex analysis:
 
-***Lemma C.5.4.3.** Let $E$ be a Hausdorff quasi-complete locally convex topological $\mathbf{C}$-vector space, $\Omega \subset \mathbf{C}$ a domain, $(f_1, D_1)$ and $(f_2, D_2)$ two meromorphic $E$-valued functions on $\Omega$. Let $B \subset \Omega - (D_1 \cup D_2)$ be a non-empty open disc such that*
+**Lemma C.5.4.3.** *Let $E$ be a Hausdorff quasi-complete locally convex topological $\mathbf{C}$-vector space, $\Omega \subset \mathbf{C}$ a domain, $(f_1, D_1)$ and $(f_2, D_2)$ two meromorphic $E$-valued functions on $\Omega$. Let $B \subset \Omega - (D_1 \cup D_2)$ be a non-empty open disc such that*
 
 $$
 f_1|_B = f_2|_B. \tag{C.5.4.2}
