@@ -1642,7 +1642,7 @@ adhering to the notation $M(\phi)(s) := \int_{\mathbf{R}_{>0}} \phi(t) t^s \,\fr
 
 By Theorem 3.2.2.1(3), we know that, for $\phi := \Phi_{F,\omega=1}(f)\circ\tau$, $M(\phi)(s)$ converges absolutely and uniformly on the compact subsets of $\mathbf{C}_{>1}$.
 
-By Theorem 3.2.2.1(1), the Mellin transform $M(\phi)(s)$ extends to a meromorphic function over the entire complex $s$-plane, with simple poles at most at $s = 0, 1$, whose residues are $-\mu_1(C_F)f(0)$ and $\mu_1(C_F)\hat{f}(0)$, respectively.
+By Theorem 3.2.2.1(1), the Mellin transform $M(\phi)(s)$ extends to a meromorphic function over the entire complex $s$-plane, with simple poles at most at $s = 0, 1$, whose residues are $-\overline{\mu}_1(C_F)f(0)$ and $\overline{\mu}_1(C_F)\hat{f}(0)$, respectively.
 
 We now use Weil’s Identity. Let $S$ be a finite set of places of $F$ containing all the Archimedean places. We fix $f \in \mathcal{S}(\mathbf{A}_F)$ of the form $f = f_\infty \otimes \bigotimes_{v \in \Sigma_{F,f}} f_v$ with $f_v = 1_{K_v}$ for $K_v \subset F_v$ a compact open subset for every finite place $v$, and $K_v = \mathcal{O}_{F_v}$ for every $v \notin S$. This we can arrange once such $f$ is chosen, up to enlarging $S$.
 
@@ -1799,7 +1799,7 @@ We observe that it implies (3.4.2.15) and (3.4.2.16). Indeed, from (3.4.2.10), (
 (3.4.2.17)
 
 $$
-\lvert\Phi_F(f)(g)\rvert\le\frac{\lvert g\rvert_F^N}{2\pi}\lVert M(\Phi_{F,\bar{\omega}}(\widehat{f})\circ\tau)(1+N-ix)\rVert_{L^1(\mathbf{R}\times\widehat{C_F^1},\mathrm{d}x\otimes\mathrm{d}\widehat{\mu}_1)}
+\lvert\Phi_F(f)(g)\rvert\le\frac{\lvert g\rvert_F^N}{2\pi}\lVert M(\Phi_{F,\bar{\omega}}(\widehat{f})\circ\tau)(1+N-ix)\rVert_{L^1(\mathbf{R}\times\widehat{C_F^1},\mathrm{d}x\otimes\mathrm{d}\widehat{\overline{\mu}}_1)}
 $$
 
 as $\lvert g\rvert_F<1$, and
@@ -1807,7 +1807,7 @@ as $\lvert g\rvert_F<1$, and
 (3.4.2.18)
 
 $$
-\lvert\Phi_F(f)(g)-(\lvert g\rvert_F^{-1}\widehat{f}(0)-f(0))\delta(g)\rvert\le\frac{\lvert g\rvert_F^{-N}}{2\pi}\lVert M(\Phi_{F,\omega}(f)\circ\tau)(N+ix)\rVert_{L^1(\mathbf{R}\times\widehat{C_F^1},\mathrm{d}x\otimes\mathrm{d}\widehat{\mu}_1)}.
+\lvert\Phi_F(f)(g)-(\lvert g\rvert_F^{-1}\widehat{f}(0)-f(0))\delta(g)\rvert\le\frac{\lvert g\rvert_F^{-N}}{2\pi}\lVert M(\Phi_{F,\omega}(f)\circ\tau)(N+ix)\rVert_{L^1(\mathbf{R}\times\widehat{C_F^1},\mathrm{d}x\otimes\mathrm{d}\widehat{\overline{\mu}}_1)}.
 $$
 
 as $\lvert g\rvert_F>1$.
@@ -1815,7 +1815,7 @@ as $\lvert g\rvert_F>1$.
 We now, at last, recognize the constants
 
 $$
-C_N(f):=\frac{1}{2\pi}\lVert M(\Phi_{F,\bar{\omega}}(\widehat{f})\circ\tau)(1+N-ix)\rVert_{L^1(\mathbf{R}\times\widehat{C_F^1},\mathrm{d}x\otimes\mathrm{d}\widehat{\mu}_1)},\; C_N'(f):=\frac{1}{2\pi}\lVert M(\Phi_{F,\omega}(f)\circ\tau)(N+ix)\rVert_{L^1(\mathbf{R}\times\widehat{C_F^1},\mathrm{d}x\otimes\mathrm{d}\widehat{\mu}_1)}
+C_N(f):=\frac{1}{2\pi}\lVert M(\Phi_{F,\bar{\omega}}(\widehat{f})\circ\tau)(1+N-ix)\rVert_{L^1(\mathbf{R}\times\widehat{C_F^1},\mathrm{d}x\otimes\mathrm{d}\widehat{\overline{\mu}}_1)},\; C_N'(f):=\frac{1}{2\pi}\lVert M(\Phi_{F,\omega}(f)\circ\tau)(N+ix)\rVert_{L^1(\mathbf{R}\times\widehat{C_F^1},\mathrm{d}x\otimes\mathrm{d}\widehat{\overline{\mu}}_1)}
 $$
 
 as serving the same role of the constants $C_N$ from Theorem 2.2.5.4. They depend on $f$ (and on $N$, as they should), but they do so continuously in $f$. This will be shown much later throughout this treatise, and the proof of this fact will *not* use Theorem 2.2.5.4 and the uniform constants $C_{\mathcal{B},N}$ as an input!

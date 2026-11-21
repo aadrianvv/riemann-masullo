@@ -1368,7 +1368,7 @@ $$
 \begin{array}{ccc}
 \mathcal{L}(G) & \xrightarrow{\Psi} & \mathrm{Hom}_{\mathrm{cont}}(\widehat{G},\widehat{\mathbf{R}})\\
 {\scriptstyle a\mapsto\partial_a}\downarrow & & \downarrow{\scriptstyle \simeq}\\
-\mathrm{Diff}^1_r(G) & \xrightarrow[\sigma]{} & \mathrm{Hom}_{\mathrm{cont}}(\widehat{G},\mathbf{R})
+\mathrm{Diff}^1_r(G) & \xrightarrow[\overline{\sigma}]{} & \mathrm{Hom}_{\mathrm{cont}}(\widehat{G},\mathbf{R})
 \end{array}
 $$
 
@@ -1798,7 +1798,7 @@ $$
 \mathcal{S}(G_1)'_{\beta}=\lim_{\longleftarrow}E'_{m,\beta},\ \mathcal{S}(G_2)'_{\beta}=\lim_{\longleftarrow}F'_{m,\beta}.
 $$
 
-(with all transition maps surjective). Since $\mathcal{S}(G_1\times G_2)'_{\beta}$ is compatibly identified as a topological vector space with the inverse limit of the spaces $(\mathcal{S}(\Gamma_{m,1}/k_{m,1})\overline{\otimes}_{\pi}\mathcal{S}(\Gamma_{m,2}/k_{m,2}))'_{\beta}$ by (1), the desired result thereby reduces to checking that for the countable inverse systems $\{E'_{m,\beta}\}$ and $\{F'_{m,\beta}\}$, the natural continuous linear map
+(with all transition maps surjective). Since $\mathcal{S}(G_1\times G_2)'_{\beta}$ is compatibly identified as a topological vector space with the inverse limit of the spaces $(\mathcal{S}(\Gamma_{m,1}/k_{m,1})\widehat{\otimes}_{\pi}\mathcal{S}(\Gamma_{m,2}/k_{m,2}))'_{\beta}$ by (1), the desired result thereby reduces to checking that for the countable inverse systems $\{E'_{m,\beta}\}$ and $\{F'_{m,\beta}\}$, the natural continuous linear map
 
 $$
 \lim_{\longleftarrow}E'_{m,\beta}\widehat{\otimes}_{\pi}\lim_{\longleftarrow}F'_{m,\beta}\to\lim_{\longleftarrow}(E_m\widehat{\otimes}_{\pi}F_m)'_{\beta}=\lim_{\longleftarrow}(E'_{m,\beta}\widehat{\otimes}_{\pi}F'_{m,\beta})
@@ -2307,28 +2307,28 @@ Remark D.1.10.8. We note that the image of each $\gamma_j$ from Proposition D.1.
 
 Proof. Upon choosing a continuous homomorphic section $\tau$ to the idelic norm, we have an induced isomorphism of Hausdorff locally compact abelian groups:
 $$
-\theta_{\tau}:\mathbf{R}_{>0}\times C_F^1\to C_F
+\overline{\theta}_{\tau}:\mathbf{R}_{>0}\times C_F^1\to C_F
 \tag{D.1.10.16}
 $$
-defined as $\theta_{\tau}(t,g):=\tau(t)g$.
+defined as $\overline{\theta}_{\tau}(t,g):=\tau(t)g$.
 
-By [AT, Ch. IX, §1, Thm. 3], the compact norm-1 subgroup $G\subset C_F^0$ is $(\mathbf{R}/\mathbf{Z})^{r_2}\times\mathbf{S}^{r_1+r_2-1}$ where $\mathbf{S}=\varprojlim_{x\mapsto Nx}\mathbf{R}/\mathbf{Z}\simeq\mathbf{A}_{\mathbf{Q}}/\mathbf{Q}$. Since $G$ is compact, so all elementary abelian Lie group quotients of $G$ are compact, $\mathcal{S}(G)=C^{\infty}(G)$. Thus, Lemma D.1.8.1(1) identifies the Schwartz-Bruhat space $\mathcal{S}(G)=C^{\infty}(G)$ with $C^{\infty}((\mathbf{R}/\mathbf{Z})^{r_2})\otimes C^{\infty}(\mathbf{S}^{r_1+r_2-1})$ where $C^{\infty}((\mathbf{R}/\mathbf{Z})^{r_2})$ is equipped with the Fréchet topology of uniform convergence of functions and their derivatives or arbitrary order.
+By [AT, Ch. IX, §1, Thm. 3], the compact norm-1 subgroup $G\subset C_F^0$ is $(\mathbf{R}/\mathbf{Z})^{r_2}\times\mathbf{S}^{r_1+r_2-1}$ where $\mathbf{S}=\varprojlim_{x\mapsto Nx}\mathbf{R}/\mathbf{Z}\simeq\mathbf{A}_{\mathbf{Q}}/\mathbf{Q}$. Since $G$ is compact, so all elementary abelian Lie group quotients of $G$ are compact, $\mathcal{S}(G)=C^{\infty}(G)$. Thus, Lemma D.1.8.1(1) identifies the Schwartz-Bruhat space $\mathcal{S}(G)=C^{\infty}(G)$ with $C^{\infty}((\mathbf{R}/\mathbf{Z})^{r_2})\overline{\otimes} C^{\infty}(\mathbf{S}^{r_1+r_2-1})$ where $C^{\infty}((\mathbf{R}/\mathbf{Z})^{r_2})$ is equipped with the Fréchet topology of uniform convergence of functions and their derivatives or arbitrary order.
 
 ## PDF page 790
 
 **790** · **CHAPTER D. SCHWARTZ-BRUHAT FUNCTIONS**
 
-Via the compatibility of $\otimes$ with countable strict inductive limits in Proposition C.2.3.13(2), we claim that that for every integer $r\ge 0$ (such as $r=r_1+r_2-1$) the space $C^{\infty}(\mathbf{S}^r)$ is naturally identified with the countable strict locally convex inductive limit of copies of $C^{\infty}((\mathbf{R}/\mathbf{Z})^r)$ under the topological embedding transition operators induced by the positive integer-multiplication maps on $(\mathbf{R}/\mathbf{Z})^r$. To see this, we may pass to the case $r=1$ to reduce to checking that every smooth function on $\mathbf{S}$ factors through some finite layer $\mathbf{R}/\mathbf{Z}$ in the inverse limit defining $\mathbf{S}$. By definition, smooth functions on $\mathbf{S}$ are $K$-invariant for a proper compact subgroup $K\subset\mathbf{S}$ such that the nonzero orthogonal $K^{\perp}\subset\widehat{\mathbf{S}}=\mathbf{Q}$ is finitely generated, hence contained inside $(1/N)\mathbf{Z}$ for some $N\ge 1$. The latter provides a finite layer through which the $K$-invariant smooth functions factor, as desired.
+Via the compatibility of $\overline{\otimes}$ with countable strict inductive limits in Proposition C.2.3.13(2), we claim that that for every integer $r\ge 0$ (such as $r=r_1+r_2-1$) the space $C^{\infty}(\mathbf{S}^r)$ is naturally identified with the countable strict locally convex inductive limit of copies of $C^{\infty}((\mathbf{R}/\mathbf{Z})^r)$ under the topological embedding transition operators induced by the positive integer-multiplication maps on $(\mathbf{R}/\mathbf{Z})^r$. To see this, we may pass to the case $r=1$ to reduce to checking that every smooth function on $\mathbf{S}$ factors through some finite layer $\mathbf{R}/\mathbf{Z}$ in the inverse limit defining $\mathbf{S}$. By definition, smooth functions on $\mathbf{S}$ are $K$-invariant for a proper compact subgroup $K\subset\mathbf{S}$ such that the nonzero orthogonal $K^{\perp}\subset\widehat{\mathbf{S}}=\mathbf{Q}$ is finitely generated, hence contained inside $(1/N)\mathbf{Z}$ for some $N\ge 1$. The latter provides a finite layer through which the $K$-invariant smooth functions factor, as desired.
 
 Passing to a sufficiently large finitely generated subgroup $k^{\perp}\subset\widehat{G}=\mathbf{Z}^{r_2}\times\mathbf{Q}^{r_1+r_2-1}$ (a cofinal system of which is given by $\mathbf{Z}^{r_2}\times(1/N)\mathbf{Z}^{r_1+r_2-1}$) corresponds to passing to a sufficiently small compact subgroup $k\subset G$ with finitely generated orthogonal, so we may assume $k$ is the closed subgroup of $\mathbf{S}^{r_1+r_2-1}$ corresponding to kernel of projection to a finite layer $(\mathbf{R}/\mathbf{Z})^{r_1+r_2-1}$.
 
-The completed inductive tensor product $\mathcal{S}((\mathbf{R}/\mathbf{Z})^{r_2})\otimes\mathcal{S}(k,\mathbf{S}^{r_1+r_2-1})$, which by Corollary C.2.3.12 is topologically isomorphic to the completed projective tensor product $\mathcal{S}((\mathbf{R}/\mathbf{Z})^{r_2})\widehat{\otimes}_{\pi}\mathcal{S}(k,\mathbf{S}^{r_1+r_2-1})$, is therefore linearly topologically isomorphic to $\mathcal{S}(k,G)$ equipped with the topology of uniform convergence of functions and their directional derivatives of arbitrary order along the coordinate continuous 1-parameter subgroups induced by the continuous homomorphism
+The completed inductive tensor product $\mathcal{S}((\mathbf{R}/\mathbf{Z})^{r_2})\overline{\otimes}\mathcal{S}(k,\mathbf{S}^{r_1+r_2-1})$, which by Corollary C.2.3.12 is topologically isomorphic to the completed projective tensor product $\mathcal{S}((\mathbf{R}/\mathbf{Z})^{r_2})\widehat{\otimes}_{\pi}\mathcal{S}(k,\mathbf{S}^{r_1+r_2-1})$, is therefore linearly topologically isomorphic to $\mathcal{S}(k,G)$ equipped with the topology of uniform convergence of functions and their directional derivatives of arbitrary order along the coordinate continuous 1-parameter subgroups induced by the continuous homomorphism
 $$
 \mathbf{R}^{r_2}\times(\mathbf{R}^{r_1+r_2-1}\times\{0\})\to(\mathbf{R}/\mathbf{Z})^{r_2}\times(\mathbf{R}^{r_1+r_2-1}\times\widehat{\mathbf{Z}})\to(\mathbf{R}/\mathbf{Z})^{r_2}\times\mathbf{S}^{r_1+r_2-1}
 $$
 further composed with the continuous quotient homomorphism $(\mathbf{R}/\mathbf{Z})^{r_2}\times\mathbf{S}^{r_1+r_2-1}\to(\mathbf{R}/\mathbf{Z})^{r_2}\times(\mathbf{S}^{r_1+r_2-1}/k)$ with $\mathbf{S}^{r_1+r_2-1}/k=(\mathbf{R}/\mathbf{Z})^{r_1+r_2-1}$. These induce continuous 1-parameter subgroups of $C_F^1$.
 
-Since $\mathcal{S}(C_F^0/k)$ is linearly and topologically isomorphic to $\mathcal{S}(\mathbf{R}_{>0})\otimes\mathcal{S}((C_F^1)^0/k)$ (equal to the completed projective tensor product since $(C_F^1)^0/k$ is an elementary abelian Lie group), we are reduced to showing that the Hausorff locally convex topology on $\mathcal{S}(\mathbf{R}_{>0})$ is induced by the set of seminorms
+Since $\mathcal{S}(C_F^0/k)$ is linearly and topologically isomorphic to $\mathcal{S}(\mathbf{R}_{>0})\overline{\otimes}\mathcal{S}((C_F^1)^0/k)$ (equal to the completed projective tensor product since $(C_F^1)^0/k$ is an elementary abelian Lie group), we are reduced to showing that the Hausorff locally convex topology on $\mathcal{S}(\mathbf{R}_{>0})$ is induced by the set of seminorms
 $$
 p_{r,m}(f):=\sup_{t\in\mathbf{R}_{>0}}|((t\partial_t)^mf(t))(1+|\log(t)|^r)|.
 $$
@@ -2340,7 +2340,7 @@ Proposition D.1.10.9 (Fundamental family of continuous seminorms on $\mathcal{S}
 
 *(1) for varying $r\in\mathbf{N}$, $m\in\mathbf{N}$, $\alpha\in\mathbf{N}^{r_1+2r_2-1}$, and a fixed real number $p\ge 1$, $\{\nu_{r,m,\alpha}^p\}$ defined on $\mathcal{S}(k,C_F)$ by*
 $$
-\nu_{r,m,\alpha}^p(f):=\left(\int_{\mathbf{R}_{>0}}\int_{C_F^1}|(t\partial_t)^m(\partial_{\gamma_1}^{\alpha_1}\cdots\partial_{\gamma_{r_1+2r_2-1}}^{\alpha_{r_1+2r_2-1}})(f)(\tau(t)g)(1+|\log(t)|^r)|^p\,\mathrm{d}\mu_1(g)\,\frac{\mathrm{d}t}{t}\right)^{1/p}.
+\nu_{r,m,\alpha}^p(f):=\left(\int_{\mathbf{R}_{>0}}\int_{C_F^1}|(t\partial_t)^m(\partial_{\gamma_1}^{\alpha_1}\cdots\partial_{\gamma_{r_1+2r_2-1}}^{\alpha_{r_1+2r_2-1}})(f)(\tau(t)g)(1+|\log(t)|^r)|^p\,\mathrm{d}\overline{\mu}_1(g)\,\frac{\mathrm{d}t}{t}\right)^{1/p}.
 \tag{D.1.10.17}
 $$
 
@@ -2370,14 +2370,14 @@ where $\mathcal{L}(\mathbf{S}^{r_1+r_2-1})$ is $\mathbf{R}$-linearly isomorphic 
 
 In light of the isomorphism of Hausdorff locally compact abelian groups
 $$
-\theta_{\tau}:\mathbf{R}_{>0}\times C_F^1\to C_F
+\overline{\theta}_{\tau}:\mathbf{R}_{>0}\times C_F^1\to C_F
 \tag{D.1.10.19}
 $$
 induced by the choice $\tau$ of continuous homomorphic section to the idelic norm, to compute the $\mathbf{R}$-linear space of symbols of invariant differential operators on the dual group $\widehat{C_F}$ it is enough to compute the symbols of the linear differential operators on the dual group of $\mathbf{R}_{>0}$, since the dual of the compact $C_F^1$ is discrete (and so has no nonzero invariant differential operator).
 
 We can $k$ small enough so that $C_F^0/k$ has the same dimension as $\mathcal{L}(C_F^0)$ (as we may clearly do). Integrating $k$-invariant functions on $C_F$ and over $C_F/k$ differs only in a constant multiplier by a volume, so via Proposition D.1.10.6 we see that for each real number $p\ge 1$, as we vary $P\in\mathbf{R}[X]$, $m\in\mathbf{N}$, and $\alpha\in\mathbf{N}^{r_1+2r_2-1}$ the associated seminorms
 $$
-\nu_{P,m,\alpha}^p(f):=\left(\int_{\mathbf{R}_{>0}}\int_{C_F^1}|(t\partial_t)^m(\partial_{\gamma_1}^{\alpha_1}\cdots\partial_{\gamma_{r_1+2r_2-1}}^{\alpha_{r_1+2r_2-1}})(f)(\tau(t)g)|P(\log(t))||^p\,\mathrm{d}\mu_1(g)\,\frac{\mathrm{d}t}{t}\right)^{1/p}
+\nu_{P,m,\alpha}^p(f):=\left(\int_{\mathbf{R}_{>0}}\int_{C_F^1}|(t\partial_t)^m(\partial_{\gamma_1}^{\alpha_1}\cdots\partial_{\gamma_{r_1+2r_2-1}}^{\alpha_{r_1+2r_2-1}})(f)(\tau(t)g)|P(\log(t))||^p\,\mathrm{d}\overline{\mu}_1(g)\,\frac{\mathrm{d}t}{t}\right)^{1/p}
 $$
 generate the Hausdorff locally convex topology on $\mathcal{S}(C_F)$. That the Schwartz-Bruhat topology on $\mathcal{S}(C_F)$ remains unaltered upon changing the seminorms $\nu_{r,m,\alpha}^p$ into the seminorms from (D.1.10.17), or those obtained upon replacing $(1+|\log(t)|^r)$ from (D.1.10.17) by $|\log(t)|^r$, is a consequence of the triangle inequality for $L^p$-norms. $\square$
 
@@ -2389,7 +2389,7 @@ Proposition D.1.10.10 (Fundamental family of continuous seminorms on $\mathcal{S
 
 *(1) for varying $r\in\mathbf{N}$, $m\in\mathbf{N}$, $\alpha\in\mathbf{N}^{r_1+2r_2-1}$, and a fixed real number $p\ge 1$, $\{\nu_{r,m,\alpha}^p\}$ on $\mathcal{S}(k,C_{F,S})$ defined by*
 $$
-\nu_{r,m,\alpha}^p(f):=\left(\int_{\mathbf{R}_{>0}}\int_{C_{F,S}^1}|(t\partial_t)^m(\partial_{\gamma_1}^{\alpha_1}\cdots\partial_{\gamma_{r_1+2r_2-1}}^{\alpha_{r_1+2r_2-1}})(f)(\tau(t)g)(1+|\log(t)|^r)|^p\,\mathrm{d}\mu_{S,1}(g)\,\frac{\mathrm{d}t}{t}\right)^{1/p}.
+\nu_{r,m,\alpha}^p(f):=\left(\int_{\mathbf{R}_{>0}}\int_{C_{F,S}^1}|(t\partial_t)^m(\partial_{\gamma_1}^{\alpha_1}\cdots\partial_{\gamma_{r_1+2r_2-1}}^{\alpha_{r_1+2r_2-1}})(f)(\tau(t)g)(1+|\log(t)|^r)|^p\,\mathrm{d}\overline{\mu}_{S,1}(g)\,\frac{\mathrm{d}t}{t}\right)^{1/p}.
 \tag{D.1.10.20}
 $$
 
@@ -2621,14 +2621,14 @@ induced continuous action of $G$, without mentioning the linear topological isom
 
 Similarly, for $T\in\mathscr L(\mathcal S(G))$ compatible with the continuous left-translation action of $G^1$ on $\mathcal S(G)$ up to continuous automorphisms of $G$ (i.e. satisfying the identity in (D.2.2.6) for every $g\in G^1$) we will refer to $T_{\omega}$ and $\overline{T}_{\omega}$ as the operators induced by $T$ “on isotypes”. Constructions on isotypes of $\mathcal S(G)$ are inherited by the isotypes of $E$ under the assumptions of the Lemma on $E$ and on continuous endomorphisms of $\mathcal S(G)$ extending to $E$ compatibly with the continuous actions of $G$ on source and target.
 
-Next we record a description of the isotypes of $\mathcal S(G)$ for $G$ a modulated Hausdorff locally compact abelian group. We refer the reader to §C.2.3.4, particularly Corollary C.2.3.12 and Proposition C.2.3.13, for the main properties of the inductive tensor product topology $\otimes_{\iota}$ and its completion $\widehat{\otimes}_{\iota}$ that are used below.
+Next we record a description of the isotypes of $\mathcal S(G)$ for $G$ a modulated Hausdorff locally compact abelian group. We refer the reader to §C.2.3.4, particularly Corollary C.2.3.12 and Proposition C.2.3.13, for the main properties of the inductive tensor product topology $\otimes_{\iota}$ and its completion $\widehat{\overline{\otimes}}_{\iota}$ that are used below.
 
 LEMMA D.2.2.2 ($G^1$-isotypes under coarsening of the topology - II). *Let $G$ be a second-countable Hausdorff locally compact abelian modulated group, with module $|\cdot|_G$, and let $\tau$ be a continuous homomorphic section to the module $|\cdot|_G$.*
 
 *(1) The section $\tau$ induces a linear topological isomorphism*
 
 $$
-\mathcal S(G^1)\widehat{\otimes}_{\iota}\mathcal S(\Gamma)\to\mathcal S(G) \tag{D.2.2.10}
+\mathcal S(G^1)\widehat{\overline{\otimes}}_{\iota}\mathcal S(\Gamma)\to\mathcal S(G) \tag{D.2.2.10}
 $$
 
 *compatible with the continuous left-translation action of $G^1\times\Gamma$ on the source through the tensor factors, and of $G$ on the target.*
@@ -3364,12 +3364,12 @@ that is $G$-equivariant where we use the left-translation action of $G$ on sourc
 Under the linear topological isomorphism from (D.3.3.3), $M_I$ matches the linear topological isomorphism
 
 $$
-\check{\mathcal{F}}_{G_1}\otimes M_I : \mathcal{S}(G^1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})\to\mathcal{S}(\widehat{G}^1)\otimes A\mathcal{S}(\mathbf{C}_I) \tag{D.3.3.12}
+\check{\mathcal{F}}_{G_1}\overline{\otimes} M_I : \mathcal{S}(G^1)\overline{\otimes}\mathcal{S}_I(\mathbf{R}_{>0})\to\mathcal{S}(\widehat{G}^1)\overline{\otimes} A\mathcal{S}(\mathbf{C}_I) \tag{D.3.3.12}
 $$
 
 where $\mathcal{F}_{G_1}$ is the Fourier transform on $\mathcal{S}(G^1)$ and $\check{\mathcal{F}}_{G^1}$ is the composition of $\mathcal{F}_{G^1}$ with the inversion automorphism on $G^1$.
 
-Proof. Pick a continuous section $\tau$ to $|\cdot|_G$ and use it to define a linear topological isomorphism $C^\infty(G^1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})=\mathcal{S}(G^1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})\simeq\mathcal{S}_I(G)$
+Proof. Pick a continuous section $\tau$ to $|\cdot|_G$ and use it to define a linear topological isomorphism $C^\infty(G^1)\overline{\otimes}\mathcal{S}_I(\mathbf{R}_{>0})=\mathcal{S}(G^1)\overline{\otimes}\mathcal{S}_I(\mathbf{R}_{>0})\simeq\mathcal{S}_I(G)$
 
 ## PDF page 813
 
@@ -3377,7 +3377,7 @@ Proof. Pick a continuous section $\tau$ to $|\cdot|_G$ and use it to define a li
 
 from (D.3.3.3). We shall use this to show that $M(\phi)$ is absolutely convergent pointwise on $\Omega(G)_I$ and holomorphic on this open domain inside $\Omega(G)$. Scale the Haar measure on $G=G^1\times\mathbf{R}_{>0}$ to be $\mu_1\times(\mathrm{d}t/t)$ where $\mu_1$ is the volume-$1$ Haar measure on $G^1$.
 
-We may and do pick a compact subgroup $k\subset G^1$ such that $\phi\in\mathcal{S}_I(k,G)$, so $\phi$ arises from $C^\infty(G^1/k)\otimes\mathcal{S}_I(\mathbf{R}_{>0})=C^\infty(G^1/k)\widehat{\otimes}_\pi\mathcal{S}_I(\mathbf{R}_{>0})$ (topological isomorphism by (D.3.3.5)). By Grothendieck’s description of elements of completed projective tensor products as infinite series [Scha, Ch. III, 6.4], we have
+We may and do pick a compact subgroup $k\subset G^1$ such that $\phi\in\mathcal{S}_I(k,G)$, so $\phi$ arises from $C^\infty(G^1/k)\overline{\otimes}\mathcal{S}_I(\mathbf{R}_{>0})=C^\infty(G^1/k)\widehat{\otimes}_\pi\mathcal{S}_I(\mathbf{R}_{>0})$ (topological isomorphism by (D.3.3.5)). By Grothendieck’s description of elements of completed projective tensor products as infinite series [Scha, Ch. III, 6.4], we have
 
 $$
 \phi=\sum_{n\ge 1}\lambda_n h_n\otimes f_n
@@ -3424,10 +3424,10 @@ $$
 we claim the holomorphic $M(\phi)$ is supported in the factors labeled by $k^\perp=\widehat{G^1/k}$, which is to say it arises from the subspace $\mathscr{H}(\Omega(G/k)_I)=\prod_{\omega\in\widehat{G^1/k}}\mathscr{H}(\Omega(G/k)_{I,\omega})$ embedded using $0$ along all factors not labeled by $\widehat{G^1/k}$ (note that $\Omega(G/k)_{I,\omega}=\Omega(G)_{I,\omega}$ when $\omega(k)=1$). This is a direct calculation: if $\omega|_k$ is non-trivial then for $c\in\Omega(G)_{I,\omega}$ the assumed $k$-invariance of $\phi$ implies
 
 $$
-M(\phi)(c)=\int_G\phi(g)c(g)\,\mathrm{d}\mu(g)=\int_{G/k}\phi(g)c(g)\left(\int_k c(x)\,\mathrm{d}\mu_k(x)\right)\mathrm{d}\mu(g)
+M(\phi)(c)=\int_G\phi(g)c(g)\,\mathrm{d}\mu(g)=\int_{G/k}\phi(\overline{g})c(g)\left(\int_k c(x)\,\mathrm{d}\mu_k(x)\right)\mathrm{d}\overline{\mu}(\overline{g})
 $$
 
-(with $g$ a representative of $g\in G/k$), and the inner integral over $k$ is $\int_k\omega\,\mathrm{d}\mu_k=0$ since $\omega|_k$ is non-trivial. Thus, $M_I$ for $G$ is obtained as the direct limit of the corresponding Fourier-Mellin transforms for $G/k$ as $k$ varies through a countable cofinal decreasing sequence $\{k_m\}$ of compact subgroups $k\subset G^1$ with finitely generated orthogonal inside $\widehat{G}^1$. Topologically $\mathcal{S}_I(G)$ is the locally convex inductive limit of the spaces $\mathcal{S}_I(k_m,G)=\mathcal{S}_I(G/k_m)$, so by the good behavior of $\overline{\otimes}$ with respect to countable strict inductive limits (Proposition C.2.3.13(2)) we may and do now focus on each $G/k_m$ in place of $G$; i.e., we consider $G$ that is an elementary abelian Lie group (equivalently, the compact $G^1$ has compactly generated dual group).
+(with $g$ a representative of $\overline{g}\in G/k$), and the inner integral over $k$ is $\int_k\omega\,\mathrm{d}\mu_k=0$ since $\omega|_k$ is non-trivial. Thus, $M_I$ for $G$ is obtained as the direct limit of the corresponding Fourier-Mellin transforms for $G/k$ as $k$ varies through a countable cofinal decreasing sequence $\{k_m\}$ of compact subgroups $k\subset G^1$ with finitely generated orthogonal inside $\widehat{G}^1$. Topologically $\mathcal{S}_I(G)$ is the locally convex inductive limit of the spaces $\mathcal{S}_I(k_m,G)=\mathcal{S}_I(G/k_m)$, so by the good behavior of $\overline{\otimes}$ with respect to countable strict inductive limits (Proposition C.2.3.13(2)) we may and do now focus on each $G/k_m$ in place of $G$; i.e., we consider $G$ that is an elementary abelian Lie group (equivalently, the compact $G^1$ has compactly generated dual group).
 
 The choice of $\tau$ identifies $\Omega(G)_I$ with $\widehat{G}^1\times\mathbf{C}_I$ for $\widehat{G}^1$ discrete, so $\mathscr{H}(\Omega(G)_I)=\prod_{\omega\in\widehat{G}^1}\mathscr{H}(\mathbf{C}_I)$. Equipping the $\omega$-component with the unitary base point $\chi(\tau(t)g^1)=\omega(g^1)$, (D.3.3.14) says that the restriction of the Fourier-Mellon transform to an elementary tensor $h\otimes f\in C^\infty(G^1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})\subset\mathcal{S}_I(G)$ is the tuple
 
@@ -3509,9 +3509,9 @@ $$
 p_D(c):=(Dc)(e) \tag{D.3.4.1}
 $$
 
-for $e\in G$ the neutral element (on $\widehat{G}\subset\Omega(G)$ this recovers the symbol $p(D)$ from Definition D.1.6.10). Fix a Haar measure $\mu$ on $G$ to define the Fourier-Mellin transform $M : \mathcal{S}_IG)\to\mathcal{S}_I(G)$ $M_I\to\mathscr{H}(\Omega(G)_I)$ by $M(\phi) : c\mapsto\int_G\phi(g)c(g)\,\mathrm{d}\mu(g)$.
+for $e\in G$ the neutral element (on $\widehat{G}\subset\Omega(G)$ this recovers the symbol $p(D)$ from Definition D.1.6.10). Fix a Haar measure $\mu$ on $G$ to define the Fourier-Mellin transform $M : \mathcal{S}_{\overline{I}}G)\to\mathcal{S}_I(G)$ $M_I\to\mathscr{H}(\Omega(G)_I)$ by $M(\phi) : c\mapsto\int_G\phi(g)c(g)\,\mathrm{d}\mu(g)$.
 
-For every bounded subset $\mathcal{B}\subset\mathcal{S}_I(G)$ and a fixed choice of $\omega\in\widehat{G}^1$ there exist constants $C_{\mathcal{B},D,I}>0$ and $M_{\omega,\mathcal{B},D,I}>0$ such that
+For every bounded subset $\mathcal{B}\subset\mathcal{S}_{\overline{I}}(G)$ and a fixed choice of $\omega\in\widehat{G}^1$ there exist constants $C_{\mathcal{B},D,I}>0$ and $M_{\omega,\mathcal{B},D,I}>0$ such that
 
 $$
 |M(\phi)(c)|\le\frac{C_{\mathcal{B},D,I}}{|p_D(c)|} \tag{D.3.4.2}
@@ -3533,9 +3533,9 @@ $$
 
 Thus, $C_{\mathcal{B},D,I}:=NC'_{\mathcal{B},D,I}$ and $M_{\omega,\mathcal{B},D,I}$ do the job for $D$.
 
-Now we may and do assume $D=\partial^{r_1}_{a_1}\cdots\partial^{r_n}_{a_n}$ for some exponents $r_i\in\mathbf{N}$. Next we reduce to the case that $G$ is an elementary abelian Lie group. By second-countability, there is a cofinal decreasing sequence $\{k_m\}$ of compact subgroups of $G$ with compactly generated orthogonal such that $\mathcal{S}_I(G)=\varinjlim_m\mathcal{S}_I(k_m,G)$ as a countable strict inductive limit, so $\mathcal{B}\subset\mathcal{S}_I(k_{m_0},G)$ for some $m_0$ by [Scha, Ch. II, 6.5]. Increasing $m_0$ if necessary allows us to also arrange that $\omega(k_{m_0})=1$. In particular, for $k=k_{m_0}$ we see that every $\phi\in \mathcal{B}$ is $k$-invariant and $\omega\in\widehat{(G/k)}^1$. Clearly also $D(\phi)$ is $k$-invariant since $D$ is an invariant differential operator, and $D(\phi)\in\mathcal{S}_I(G)$ by Remark D.3.4.1, so $D(\phi)\in\mathcal{S}_I(k,G)\simeq\mathcal{S}_I(G/k)$. The quotient $G/k$ is an elementary abelian Lie group and it is $\mathbf{R}_{>0}$-modulated because $k\subset G^1$.
+Now we may and do assume $D=\partial^{r_1}_{a_1}\cdots\partial^{r_n}_{a_n}$ for some exponents $r_i\in\mathbf{N}$. Next we reduce to the case that $G$ is an elementary abelian Lie group. By second-countability, there is a cofinal decreasing sequence $\{k_m\}$ of compact subgroups of $G$ with compactly generated orthogonal such that $\mathcal{S}_{\overline{I}}(G)=\varinjlim_m\mathcal{S}_{\overline{I}}(k_m,G)$ as a countable strict inductive limit, so $\mathcal{B}\subset\mathcal{S}_{\overline{I}}(k_{m_0},G)$ for some $m_0$ by [Scha, Ch. II, 6.5]. Increasing $m_0$ if necessary allows us to also arrange that $\omega(k_{m_0})=1$. In particular, for $k=k_{m_0}$ we see that every $\phi\in \mathcal{B}$ is $k$-invariant and $\omega\in\widehat{(G/k)}^1$. Clearly also $D(\phi)$ is $k$-invariant since $D$ is an invariant differential operator, and $D(\phi)\in\mathcal{S}_{\overline{I}}(G)$ by Remark D.3.4.1, so $D(\phi)\in\mathcal{S}_{\overline{I}}(k,G)\simeq\mathcal{S}_{\overline{I}}(G/k)$. The quotient $G/k$ is an elementary abelian Lie group and it is $\mathbf{R}_{>0}$-modulated because $k\subset G^1$.
 
-For any $1$-parameter subgroup $b : \mathbf{R}\to G$ with composite $1$-parameter subgroup $\bar b : \mathbf{R}\to G/k$, we have $(\partial_b\phi)(x)=\lim_{t\to 0}\frac{\phi(b(t)x)-\phi(x)}{t}=(\partial_{\bar b}\bar\phi)(x\bmod k)$ for $\bar\phi : G/k\to\mathbf{C}$ the corresponding element of $\mathcal{S}_I(G/k)$ (see Lemma D.1.5.4). Thus, $D(\phi)\in\mathcal{S}_I(k,G)$ corresponding to $\bar D(\bar\phi)\in\mathcal{S}_I(G/k)$ where $\bar D:=\partial^{r_1}_{\bar a_1}\cdots\partial^{r_n}_{\bar a_n}$ as an invariant differential operator on $C^\infty(G/k)$. (The $\bar a_i$’s may merely span $\mathcal{L}(G/k)$ rather than be a basis for it, but that doesn’t matter because once we reduce to studying $D$ and $\mathcal{B}\subset\mathcal{S}_I(G/k)$ we can go again through the reduction to a product among the first-order operators associated to a basis of $\mathcal{L}(G/k)$.)
+For any $1$-parameter subgroup $b : \mathbf{R}\to G$ with composite $1$-parameter subgroup $\bar b : \mathbf{R}\to G/k$, we have $(\partial_b\phi)(x)=\lim_{t\to 0}\frac{\phi(b(t)x)-\phi(x)}{t}=(\partial_{\bar b}\bar\phi)(x\bmod k)$ for $\bar\phi : G/k\to\mathbf{C}$ the corresponding element of $\mathcal{S}_{\overline{I}}(G/k)$ (see Lemma D.1.5.4). Thus, $D(\phi)\in\mathcal{S}_{\overline{I}}(k,G)$ corresponding to $\bar D(\bar\phi)\in\mathcal{S}_{\overline{I}}(G/k)$ where $\bar D:=\partial^{r_1}_{\bar a_1}\cdots\partial^{r_n}_{\bar a_n}$ as an invariant differential operator on $C^\infty(G/k)$. (The $\bar a_i$’s may merely span $\mathcal{L}(G/k)$ rather than be a basis for it, but that doesn’t matter because once we reduce to studying $\overline{D}$ and $\mathcal{B}\subset\mathcal{S}_{\overline{I}}(G/k)$ we can go again through the reduction to a product among the first-order operators associated to a basis of $\mathcal{L}(G/k)$.)
 
 By using Weil’s coset integration formula from Theorem D.1.2.1 exactly as in the passage to elementary abelian Lie groups in the proof of Theorem D.3.3.13, we see from the $k$-invariance of $\phi$ that $M(\phi)(c)=0$
 
@@ -3547,9 +3547,9 @@ except possibly when $c\in k^\perp=\widehat{G/k}$, and that if $c\in k^\perp$ th
 
 Since $G$ is $\mathbf{R}_{>0}$-modulated, any choice $\tau$ of continuous homomorphic section to the module $|\cdot|_G$ induces an isomorphism of Hausdorff locally compact abelian groups $G\simeq\mathbf{R}_{>0}\times G^1$, and hence the compact Hausdorff abelian group $G^1=\ker(|\cdot|_G)$ is an elementary abelian Lie group: $G^1\simeq\mathbf{T}^m\times F$ for an integer $m=n-1\ge 0$ and a finite abelian group $F$ (with $\mathbf{T}=\mathbf{R}/\mathbf{Z}$). We have $F=\pi_0(G)$ and the $1$-parameter subgroups of $G$ are all contained in the identity component, so by treating the restrictions of $\phi$ to each of the finitely many connected components of $G$ separately we may and do assume $G$ is connected: $G=\mathbf{R}_{>0}\times\mathbf{T}^m$.
 
-Now $\mathcal{S}_I(G)\simeq\mathcal{S}_I(\mathbf{R}_{>0})\otimes\mathcal{S}(\mathbf{T}^m)\simeq\mathcal{S}_I(\mathbf{R}_{>0})\widehat{\otimes}_\pi\mathcal{S}(\mathbf{T}^m)$ where both tensor factors are Fréchet spaces. Since $\mathcal{S}_I(G)$ is Montel (Theorem D.3.3.7), the closure of $\mathcal{B}$ (which is also bounded [Scha, Ch. I, 5.1]) is compact. Thus, by [Tre, Cor. 2 to Thm. 45.2] there are compact subsets $K_1\subset\mathcal{S}_I(\mathbf{R}_{>0})$ and $K_2\subset\mathcal{S}(\mathbf{T}^m)$ such that $\mathcal{B}$ is contained in the closure $\mathrm{cch}(K_1\otimes K_2)$ of the convex circled hull of the set of elementary tensors $f_1\otimes f_2$ for $f_1\in K_1$ and $f_2\in K_2$. If a constant $C_{\mathcal{B},D,I}$ can be found that works for all such elementary tensors then it also works for their circled hull as well as for all convex combinations from the circled hull, and then for the closure thereof. In other words, it suffices to treat the case $\phi=f_1\otimes f_2$. Writing $c=c_1\otimes\omega$ for $c_1\in\Omega(\mathbf{R}_{>0})_I$, we have $M(\phi)(c)=M(f_1)(c_1)M(f_2)(\omega)$ (for a choice of Haar measures on $\mathbf{R}_{>0}$ and $G^1$ whose product measure is the chosen one on $G$).
+Now $\mathcal{S}_{\overline{I}}(G)\simeq\mathcal{S}_{\overline{I}}(\mathbf{R}_{>0})\otimes\mathcal{S}(\mathbf{T}^m)\simeq\mathcal{S}_{\overline{I}}(\mathbf{R}_{>0})\widehat{\otimes}_\pi\mathcal{S}(\mathbf{T}^m)$ where both tensor factors are Fréchet spaces. Since $\mathcal{S}_{\overline{I}}(G)$ is Montel (Theorem D.3.3.7), the closure of $\mathcal{B}$ (which is also bounded [Scha, Ch. I, 5.1]) is compact. Thus, by [Tre, Cor. 2 to Thm. 45.2] there are compact subsets $K_1\subset\mathcal{S}_{\overline{I}}(\mathbf{R}_{>0})$ and $K_2\subset\mathcal{S}(\mathbf{T}^m)$ such that $\mathcal{B}$ is contained in the closure $\mathrm{cch}(K_1\otimes K_2)$ of the convex circled hull of the set of elementary tensors $f_1\otimes f_2$ for $f_1\in K_1$ and $f_2\in K_2$. If a constant $C_{\mathcal{B},D,I}$ can be found that works for all such elementary tensors then it also works for their circled hull as well as for all convex combinations from the circled hull, and then for the closure thereof. In other words, it suffices to treat the case $\phi=f_1\otimes f_2$. Writing $c=c_1\otimes\omega$ for $c_1\in\Omega(\mathbf{R}_{>0})_I$, we have $M(\phi)(c)=M(f_1)(c_1)M(f_2)(\omega)$ (for a choice of Haar measures on $\mathbf{R}_{>0}$ and $G^1$ whose product measure is the chosen one on $G$).
 
-Writing $D=D_1\otimes D_2$ on $\mathcal{S}_I(G)=\mathcal{S}_I(\mathbf{R}_{>0})\otimes\mathcal{S}(G^1)$ (where $D_1=(t\partial_t)^{r_1}$ for some integer $r_1\ge 0$ and $D_2$ is a product of $r_2\ge 0$ operators $\partial_{z_j}$’s — with repetition allowed — among the $\partial_{z_j}$’s for $(z_1,\dots,z_m)$ the standard coordinates on $G^1=\mathbf{T}^m$), clearly
+Writing $D=D_1\otimes D_2$ on $\mathcal{S}_{\overline{I}}(G)=\mathcal{S}_{\overline{I}}(\mathbf{R}_{>0})\overline{\otimes}\mathcal{S}(G^1)$ (where $D_1=(t\partial_t)^{r_1}$ for some integer $r_1\ge 0$ and $D_2$ is a product of $r_2\ge 0$ operators $\partial_{z_j}$’s — with repetition allowed — among the $\partial_{z_j}$’s for $(z_1,\dots,z_m)$ the standard coordinates on $G^1=\mathbf{T}^m$), clearly
 
 $$
 p_D(c)=p_{D_1}(c_1)p_{D_2}(\omega).
@@ -3557,13 +3557,13 @@ $$
 
 Since $p_{D_2}(\omega)$ is a fixed value (as $D$ and $\omega$ are fixed), keeping $|p_D(c)|$ above a positive constant $M$ ensures $|p_{D_1}(c_1)|\ge M/|p_{D_2}(\omega)|$ as we vary such $c=c_1\otimes\omega$. In this way we see it suffices to separately treat the case $G=\mathbf{R}_{>0}$ and an analogous result for the compact $G^1=\mathbf{T}^m$: for any compact subset $K\subset\mathcal{S}(G^1)$ and the differential operator $D=\partial^{r_1}_{z_1}\cdots\partial^{r_m}_{z_m}$ on $G^1=\mathbf{T}^m$, if $p_D(\omega)\ne 0$ then there is a constant $C_K>0$ such that $|M(\phi)(\omega)|\le C_K$ for all $\phi\in K$. Since $\mathcal{S}(\mathbf{T}^m)\simeq\mathcal{S}(\mathbf{T}^{m-1})\widehat{\otimes}_\pi\mathcal{S}(\mathbf{T})$, if $m>1$ then we can go through an analogous argument to pass to the separate cases of $\mathbf{T}^{m-1}$ and $\mathbf{T}$. In other words, it suffices to treat the case $G=\mathbf{R}_{>0}$ and the analogous result as stated above for $G=\mathbf{T}=\mathbf{R}/\mathbf{Z}$. For $G=\mathbf{R}_{>0}$ we may assume $D=(t\partial_t)^r$ for some $r\ge 1$ and for $G=\mathbf{T}$ we may assume $D=\partial^r_z$ for some $r\ge 1$.
 
-For $G=\mathbf{R}_{>0}$ we have $c(t)=t^s$ for $s\in\mathbf{C}_I$, so then $p_{(t\partial_t)^r}(c)=s^r$. Since $|s^r|/|\mathrm{Im}(s)|^r$ is uniformly bounded above on the region when $|\mathrm{Im}(s)|$ stays above a chosen $\delta>0$, requiring $|p_D(c)|\ge(\delta+\max(|a|,|b|))^r$ where $I=(a,b)$ ensures $|\mathrm{Im}(s)|\ge\delta$, Thus, we can use Proposition B.2.2.3(2) provided the constant there (which depends on $\phi$, as seen at the end of its proof) is bounded independently of $\phi$ varying in a compact subset $K\subset\mathcal{S}_I(\mathbf{R})$. By construction the constant there can be taken to be
+For $G=\mathbf{R}_{>0}$ we have $c(t)=t^s$ for $s\in\mathbf{C}_I$, so then $p_{(t\partial_t)^r}(c)=s^r$. Since $|s^r|/|\mathrm{Im}(s)|^r$ is uniformly bounded above on the region when $|\mathrm{Im}(s)|$ stays above a chosen $\delta>0$, requiring $|p_D(c)|\ge(\delta+\max(|a|,|b|))^r$ where $I=(a,b)$ ensures $|\mathrm{Im}(s)|\ge\delta$, Thus, we can use Proposition B.2.2.3(2) provided the constant there (which depends on $\phi$, as seen at the end of its proof) is bounded independently of $\phi$ varying in a compact subset $K\subset\mathcal{S}_{\overline{I}}(\mathbf{R})$. By construction the constant there can be taken to be
 
 $$
 \|t^a(t\partial_t)^r(\phi)\|_{L^1(\mathbf{R}_{>0},\mathrm{d}t/t)}+\|t^b(t\partial_t)^r(\phi)\|_{L^1(\mathbf{R}_{>0},\mathrm{dt}/t)}
 $$
 
-where $I=(a,b)$. This constant is bounded for $\phi$ varying through a compact subset of $\mathcal{S}_I(\mathbf{R}_{>0})$ because $\mathcal{S}_{[a,b]}(\mathbf{R}_{>0})\to\mathcal{S}(\mathbf{R}_{>0})\times\mathcal{S}(\mathbf{R}_{>0})$ via $\phi\mapsto(t^a\phi,t^b\phi)$ is a topological embedding and the seminorm $f\mapsto\|(t\partial_t)^r(f)\|_{L^1(\mathbf{R}_{>0},\mathrm{d}t/t)}$ on $\mathcal{S}(\mathbf{R}_{>0})$ is among a collection of seminorms defining the topology on $\mathcal{S}(\mathbf{R}_{>0})$ (see (D.1.10.7) applied to $\mathbf{R}\simeq\mathbf{R}_{>0}$).
+where $I=(a,b)$. This constant is bounded for $\phi$ varying through a compact subset of $\mathcal{S}_{\overline{I}}(\mathbf{R}_{>0})$ because $\mathcal{S}_{[a,b]}(\mathbf{R}_{>0})\to\mathcal{S}(\mathbf{R}_{>0})\times\mathcal{S}(\mathbf{R}_{>0})$ via $\phi\mapsto(t^a\phi,t^b\phi)$ is a topological embedding and the seminorm $f\mapsto\|(t\partial_t)^r(f)\|_{L^1(\mathbf{R}_{>0},\mathrm{d}t/t)}$ on $\mathcal{S}(\mathbf{R}_{>0})$ is among a collection of seminorms defining the topology on $\mathcal{S}(\mathbf{R}_{>0})$ (see (D.1.10.7) applied to $\mathbf{R}\simeq\mathbf{R}_{>0}$).
 
 ## PDF page 818
 
@@ -3606,7 +3606,7 @@ $$
 for $1\le k\le m$ and for all $g\in G^1$, the following identity holds for all $x\in G$:
 
 $$
-\sum_{n\in\mathbf{Z}}\chi_0(\gamma^n x)\phi(\gamma^n x)=\frac{1}{\log|\gamma|_G}\sum_{m\in\mathbf{Z}}\widehat{\phi}\left(\chi_0|\cdot|^{-\frac{2\pi im}{\log|\gamma|_G}+it_0}_G\right)|x|^{\frac{2\pi im}{\log|\gamma|_G}}_G \tag{D.3.5.3}
+\sum_{n\in\mathbf{Z}}\chi_0(\gamma^n x)\phi(\gamma^n x)=\frac{1}{\log|\gamma|_G}\sum_{m\in\mathbf{Z}}\widehat{\phi}\left(\overline{\chi}_0|\cdot|^{-\frac{2\pi im}{\log|\gamma|_G}+it_0}_G\right)|x|^{\frac{2\pi im}{\log|\gamma|_G}}_G \tag{D.3.5.3}
 $$
 
 where $t_0\in[0,2\pi/\log|\gamma|_G)$ satisfies $\chi_0(\gamma)=|\gamma|^{it_0}_G$.
@@ -3636,10 +3636,10 @@ Proof of Proposition D.3.5.1. We observe that for each $x\in G$, writing $x=\tau
 We define $\psi(x):=\chi_0(x)\phi(x)$, for $x\in G$; this is invariant under left-translation by $G^1$, so for $x\in G$ the value $\psi(x)$ only depends on $|x|_G$. Note that $\psi$ also satisfies (D.3.5.1) since $\chi_0$ is unitary. We have
 
 $$
-\widehat{\psi}(\chi)=\int_G\psi(y)\chi(y)\,\mathrm{d}\mu_G(y)=\int_{\mathbf{R}_{>0}}\psi(\tau(t))\chi(\tau(t))\,\frac{\mathrm{d}t}{t}=\int_{G^1}\chi(g)\,\mathrm{d}\mu_1(g) \tag{D.3.5.5}
+\widehat{\psi}(\chi)=\int_G\psi(y)\overline{\chi}(y)\,\mathrm{d}\mu_G(y)=\int_{\mathbf{R}_{>0}}\psi(\tau(t))\overline{\chi}(\tau(t))\,\frac{\mathrm{d}t}{t}=\int_{G^1}\chi(g)\,\mathrm{d}\mu_1(g) \tag{D.3.5.5}
 $$
 
-and the rightmost side of (D.3.5.5) is nonzero only if $\chi|_{G^1}=1$. The identity in (D.3.5.3) therefore follows from Proposition B.4.1.2 applied to $\psi\circ\tau$ and (in the notation of the Proposition) $\chi=1$, $\theta=|\gamma|_G$ upon rewriting the hypotheses on $\phi$ in terms of $\psi$. $\square$
+and the rightmost side of (D.3.5.5) is nonzero only if $\overline{\chi}|_{G^1}=1$. The identity in (D.3.5.3) therefore follows from Proposition B.4.1.2 applied to $\psi\circ\tau$ and (in the notation of the Proposition) $\chi=1$, $\theta=|\gamma|_G$ upon rewriting the hypotheses on $\phi$ in terms of $\psi$. $\square$
 
 D.3.6. Approximation by smooth compactly supported functions. The following approximation result will be useful for us:
 
@@ -3651,10 +3651,10 @@ Proof. Each $\phi\in\mathcal{D}(G)$ certainly satisfies $|\cdot|^a_G\phi\in\math
 
 For every $a\in\mathbf{R}$, multiplication by the smooth function $|\cdot|^a_G$ is continuous and continuously invertible on $\mathcal{D}(G)$. Thus, the composition of $T_a : \mathcal{S}_I(G)\to\mathcal{S}(G)$ with the injective linear inclusion $\mathcal{D}(G)\subset\mathcal{S}_I(G)$ is continuous for every $a\in\mathbf{R}$. By design of the projective topology on $\mathcal{S}_I(G)$, the inclusion $j_G : \mathcal{D}(G)\to\mathcal{S}_I(G)$ is therefore continuous.
 
-Upon choosing a continuous homomorphic section $\tau$ to $|\cdot|_G$, by Theorem D.3.3.7(1) (which uses second-countability of $G$) we have a linear topological isomorphism $\mathcal{S}_I(G)\simeq\mathcal{S}(G^1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})=\mathcal{D}(G^1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})$ (the final equality using that $G^1$ is compact). We similarly have a linear topological isomorphism $\mathcal{D}(G)\simeq\mathcal{D}(G^1)\otimes\mathcal{D}(\mathbf{R}_{>0})$ by [Bru, §5, Thm.3(a), p. 55]. The continuous inclusion $\mathcal{D}(G)\to\mathcal{S}_I(G)$ is thereby identified with the natural continuous map
+Upon choosing a continuous homomorphic section $\tau$ to $|\cdot|_G$, by Theorem D.3.3.7(1) (which uses second-countability of $G$) we have a linear topological isomorphism $\mathcal{S}_I(G)\simeq\mathcal{S}(G^1)\overline{\otimes}\mathcal{S}_I(\mathbf{R}_{>0})=\mathcal{D}(G^1)\overline{\otimes}\mathcal{S}_I(\mathbf{R}_{>0})$ (the final equality using that $G^1$ is compact). We similarly have a linear topological isomorphism $\mathcal{D}(G)\simeq\mathcal{D}(G^1)\overline{\otimes}\mathcal{D}(\mathbf{R}_{>0})$ by [Bru, §5, Thm.3(a), p. 55]. The continuous inclusion $\mathcal{D}(G)\to\mathcal{S}_I(G)$ is thereby identified with the natural continuous map
 
 $$
-\mathrm{id}_{\mathcal{D}(G^1)}\otimes j_{\mathbf{R}_{>0}} : \mathcal{D}(G^1)\otimes\mathcal{D}(\mathbf{R}_{>0})\to\mathcal{D}(G^1)\otimes\mathcal{S}_I(\mathbf{R}_{>0}) \tag{D.3.6.1}
+\mathrm{id}_{\mathcal{D}(G^1)}\overline{\otimes} j_{\mathbf{R}_{>0}} : \mathcal{D}(G^1)\overline{\otimes}\mathcal{D}(\mathbf{R}_{>0})\to\mathcal{D}(G^1)\overline{\otimes}\mathcal{S}_I(\mathbf{R}_{>0}) \tag{D.3.6.1}
 $$
 
 since by continuity it suffices to check on the dense subspace $\mathcal{D}(G^1)\otimes\mathcal{D}(\mathbf{R}_{>0})$ (and so by linearity it suffices to check on elementary tensors).

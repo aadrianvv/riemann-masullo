@@ -658,7 +658,7 @@ $$
 \check{\mathrm{H}}^1(\mathbf{C},\mathscr{O}/\mathscr{J})=\mathrm{H}^1(\mathbf{C},\mathscr{O}/\mathscr{J})=0
 $$
 
-and therefore upon choosing a locally finite countable open cover $\{B_m\}_{m\ge 0}$ of the complex $s$-plane by open balls each of which contains at most one of the zeros $z$ of $1-\gamma^{-s}$, then, upon denoting by $B_k$ the intersection $\bigcap_{m\in k}B_m$ for $k$ varying over all non-empty finite subsets of the nonnegative integer, we deduce that $\mathrm{H}^0(B_k,\mathscr{O}/\mathscr{J})$ is trivial if $k$ contains at least two elements, and it is either trivial or 1-dimensional if $k$ contains one element exactly.
+and therefore upon choosing a locally finite countable open cover $\{B_m\}_{m\ge 0}$ of the complex $s$-plane by open balls each of which contains at most one of the zeros $z$ of $1-\gamma^{-s}$, then, upon denoting by $B_{\underline{k}}$ the intersection $\bigcap_{m\in \underline{k}}B_m$ for $\underline{k}$ varying over all non-empty finite subsets of the nonnegative integer, we deduce that $\mathrm{H}^0(B_{\underline{k}},\mathscr{O}/\mathscr{J})$ is trivial if $\underline{k}$ contains at least two elements, and it is either trivial or 1-dimensional if $\underline{k}$ contains one element exactly.
 
 To see this, we let $z\in\mathbf{C}$ be a zero of $1-\gamma^{-s}$ contained in the open ball $B:=B_m$ only. We observe that we have $\mathscr{O}(B)/(1-\gamma^{-s})\mathscr{O}(B)=\mathscr{O}(B)/(s-z)\mathscr{O}(B)$ linearly and topologically, since $1-\gamma^{-s}$ has only simple zeros.
 
@@ -1125,7 +1125,7 @@ That, under these assumptions, $G^1$ is compact Hausdorff (and hence $G$ is $\ma
 For any continuous character $\omega$ of $G^1$, we have a continuous linear map:
 
 $$
-\Pi_{G,\omega}(\varphi)(x) := \int_{G^1} \overline{\omega}(g)\varphi(g^{-1}x)\,\mathrm{d}\nu_1(g) = \int_{G^1} \omega(g)\varphi(gx)\,\mathrm{d}\nu_1(g) \tag{4.3.2.1}
+\Pi_{G,\omega}(\varphi)(x) := \int_{G^1} \overline{\omega}(\overline{g})\varphi(g^{-1}x)\,\mathrm{d}\nu_1(g) = \int_{G^1} \omega(g)\varphi(gx)\,\mathrm{d}\nu_1(g) \tag{4.3.2.1}
 $$
 
 defined for $\nu$-almost all $x \in G$, where $\nu_1$ is, recall, a choice of Haar measure on $G^1$.
@@ -1242,7 +1242,7 @@ $$
 
 We refer to $R(G)(\omega)$ as the $\omega$-isotype of $R(G)$, and to the orthogonal projector $\nu_1(G^1)^{-1}\Pi_{G^1,\omega}$ as the projection onto the $\omega$-isotype.
 
-We note that for each $\omega \in \widehat{G^1}$, the closed subspace $R(G)(\omega)$ is isometric to $L^2_\omega(\mathbf{R}_{>0},\frac{\mathrm{d}t}{t})$ under the operator $\Pi_{G,\omega,\tau}$ of (4.3.2.7): the operator $\Pi_{G,\omega,\tau}$ factors through an isometry $R(G)(\omega) \to L^2_\omega(\mathbf{R}_{>0},\frac{\mathrm{d}t}{t})$, and the kernel of $\Pi_{G,\omega,\tau}$ is linearly and topologically generated within $R(G)$ by the elements of the form $\varphi - \omega(g)\rho_G(g,\varphi)$ as $(\varphi,g)$ varies over $R(G) \times G^1$.
+We note that for each $\omega \in \widehat{G^1}$, the closed subspace $R(G)(\omega)$ is isometric to $L^2_\omega(\mathbf{R}_{>0},\frac{\mathrm{d}t}{t})$ under the operator $\Pi_{G,\omega,\tau}$ of (4.3.2.7): the operator $\Pi_{G,\omega,\tau}$ factors through an isometry $R(G)(\omega) \to L^2_\omega(\mathbf{R}_{>0},\frac{\mathrm{d}t}{t})$, and the kernel of $\Pi_{G,\omega,\tau}$ is linearly and topologically generated within $R(G)$ by the elements of the form $\varphi - \overline{\omega}(g)\rho_G(g,\varphi)$ as $(\varphi,g)$ varies over $R(G) \times G^1$.
 
 4.3.3. $G$-invariants in a quasi-complete Hausdorff locally convex topological vector space. Using the results on integration in the sense of Pettis from §C.4, the following Lemma 4.3.3.1 studies formation of continuous invariants and co-invariants under the continuous action of a compact Hausdorff abelian group $G$, on a quasi-complete Hausdorff locally convex topological $\mathbf{C}$-vector space $E$.
 
@@ -1793,7 +1793,7 @@ $$
 $$
 
 We will be denoting by $A\mathcal{S}(\mathbf{C}_I)(\chi)$, respectively $A\mathcal{S}(\mathbf{C}_I)(\omega)$, the top, respectively bottom copy of $A\mathcal{S}(\mathbf{C}_I)$ in the diagram from (4.4.1.3).
-We further note that upon denoting by $\mathbf{C}(\omega)$ the 1-dimensional complex representation of $G^1$ through its character $\omega$, then the Mellin transform $M$ is a linear topological isomorphism $\mathcal{S}_I(G)(\omega)\to A\mathcal{S}(\mathbf{C}_I)\bar\otimes\mathbf{C}(\omega)=A\mathcal{S}(\mathbf{C}_I)(\omega)$, as per Theorem D.3.3.7.
+We further note that upon denoting by $\mathbf{C}(\omega)$ the 1-dimensional complex representation of $G^1$ through its character $\omega$, then the Mellin transform $M$ is a linear topological isomorphism $\mathcal{S}_I(G)(\omega)\to A\mathcal{S}(\mathbf{C}_I)\widehat{\otimes}\mathbf{C}(\omega)=A\mathcal{S}(\mathbf{C}_I)(\omega)$, as per Theorem D.3.3.7.
 
 In practice, we will be choosing $\gamma$ such that $\lvert\gamma\rvert_G>1$, of the form $\gamma=\pi^{-1}$, with $\pi$ a global or $S$-local idele, or idele class, corresponding to a choice of uniformizer at a non-Archimedean place of the number field $F$. The $\mathbf{R}_{>0}$-modulated group will either be $C_F$ or $J_{F,S}$, and the module will either be the idelic norm $\lvert\cdot\rvert_F$, or the $S$-idelic norm $\lvert\cdot\rvert_{F,S}$.
 
@@ -1904,10 +1904,10 @@ Remark 4.4.2.8. The notation $\mathcal{O}_M(\Gamma)$, for $\Gamma$ a Hausdorff l
 $\mathcal{O}_M(\Gamma)$ will only play a role here, to enable us to deduce that certain products, such as $uv$ in Lemma 4.4.2.6(2), are sequences of rapid decay (see also [[Tre, Part III,Ch.51,p.527]).
 In the special case $G=\mathbf{R}_{>0}$, we choose $\chi=1$, in which case $(\gamma^{\mathbf{Z}})^\perp$ is the subgroup of $\widehat{G}$ of those characters of the form $t\mapsto t^{\frac{2\pi im}{\log(\gamma)}}$ (noting that we have $\lvert\gamma\rvert_G=\gamma$ in this case).
 The sequence $a_{\chi,m}(\phi)$ is the sequence of Fourier coefficients of $\phi$, and since $\phi\in\mathcal{S}(\mathbf{R}_{>0}/\gamma^{\mathbf{Z}})$, it is a sequence of rapid decay, i.e. an element of $\mathcal{S}(\frac{2\pi i}{\log(\gamma)}\mathbf{Z})\simeq\mathcal{S}((\gamma^{\mathbf{Z}})^\perp)$.
-A fundamental family of continuous seminorms $\{q_k\}_{k\ge 0}$ on $\mathcal{S}(\mathbf{R}_{>0}/\gamma^{\mathbf{Z}})$ is obtained from the family of seminorms $\bar q_k:=\lVert(t\partial_t)^k(\cdot)\rVert_u$ on $\mathcal{S}(\mathbf{R}_{>0})$ following the definition of quotient seminorms from [[NB, Thm.5.11.2]. In particular
+A fundamental family of continuous seminorms $\{q_k\}_{k\ge 0}$ on $\mathcal{S}(\mathbf{R}_{>0}/\gamma^{\mathbf{Z}})$ is obtained from the family of seminorms $\widetilde{q}_k:=\lVert(t\partial_t)^k(\cdot)\rVert_u$ on $\mathcal{S}(\mathbf{R}_{>0})$ following the definition of quotient seminorms from [[NB, Thm.5.11.2]. In particular
 
 $$
-q_k(\lvert\cdot\rvert_{\mathbf{R}}^{\frac{-2\pi im}{\log(\gamma)}})\le\bar q_k(\lvert\cdot\rvert_{\mathbf{R}}^{\frac{-2\pi im}{\log(\gamma)}})=\left(\frac{2\pi\lvert m\rvert}{\log(\gamma)}\right)^k\bar q_0(\lvert\cdot\rvert_{\mathbf{R}}^{\frac{-2\pi im}{\log(\gamma)}})=\left(\frac{2\pi\lvert m\rvert}{\log(\gamma)}\right)^k
+q_k(\lvert\cdot\rvert_{\mathbf{R}}^{\frac{-2\pi im}{\log(\gamma)}})\le\widetilde{q}_k(\lvert\cdot\rvert_{\mathbf{R}}^{\frac{-2\pi im}{\log(\gamma)}})=\left(\frac{2\pi\lvert m\rvert}{\log(\gamma)}\right)^k\widetilde{q}_0(\lvert\cdot\rvert_{\mathbf{R}}^{\frac{-2\pi im}{\log(\gamma)}})=\left(\frac{2\pi\lvert m\rvert}{\log(\gamma)}\right)^k
 $$
 
 which illustrates the meaning of Lemma 4.4.2.6(2.b): the sequence $q_k(e_{\chi,m})$, for each $k\ge 0$ (i.e. for each member of a fundamental family of continuous seminorms, and hence, up to absolute constants, for any continuous seminorm) is a sequence of polynomial growth, and hence a Schwartz multiplier for $\mathcal{S}(\mathbf{Z})$.
@@ -1950,22 +1950,22 @@ $$
 uniquely determines a continuous function on the discrete group $(\gamma^{\mathbf{Z}})^\perp\simeq\widehat{G/\gamma^{\mathbf{Z}}}$ (by [[DE, Prop.3.1.5(a)] and [[DE, Prop.3.6.1(a)], since $G/\gamma^{\mathbf{Z}}$ is compact Hausdorff) satisfying the following property: for $\mathcal{F}\colon\mathcal{S}(G/\gamma^{\mathbf{Z}})\to\mathcal{S}(\widehat{G/\gamma^{\mathbf{Z}}})$ the Fourier transform, defined as
 
 $$
-\phi\mapsto\mathcal{F}(\phi)(\eta):=\frac{1}{\log(\lvert\gamma\rvert_G)\mu_1(G^1)}\int_{G/\gamma^{\mathbf{Z}}}\phi(g)\eta(g)\,\mathrm{d}\bar\mu_\gamma(g)
+\phi\mapsto\mathcal{F}(\phi)(\eta):=\frac{1}{\log(\lvert\gamma\rvert_G)\mu_1(G^1)}\int_{G/\gamma^{\mathbf{Z}}}\phi(g)\overline{\eta}(g)\,\mathrm{d}\bar\mu_\gamma(g)
 $$
 
 we have:
 
 $$
-\mathcal{F}(\phi)(\eta)=a_{\chi,m}(\phi) \tag{4.4.2.10}
+\mathcal{F}(\phi)(\overline{\eta})=a_{\chi,m}(\phi) \tag{4.4.2.10}
 $$
 
-for $\eta=\chi\lvert\cdot\rvert_G^{\frac{2\pi im}{\log(\lvert\gamma\rvert_G)}+it_0(\chi)}$, noting that all $\eta\in(\gamma^{\mathbf{Z}})^\perp$ are described uniquely in this manner, by Lemma 4.4.2.5.
-We further note that $\mathcal{F}(\phi)(\eta)$ is supported over $k_r^\perp\cap(\gamma^{\mathbf{Z}})^\perp\subset\widehat{G}$. In particular, $a_{\chi,m}(\phi)=0$ for all $(\chi,m)\in\widetilde{G^1}\times\mathbf{Z}$ satisfying $\chi\in k_r^\perp$.
+for $\eta=\overline{\chi}\lvert\cdot\rvert_G^{\frac{2\pi im}{\log(\lvert\gamma\rvert_G)}+it_0(\chi)}$, noting that all $\eta\in(\gamma^{\mathbf{Z}})^\perp$ are described uniquely in this manner, by Lemma 4.4.2.5.
+We further note that $\mathcal{F}(\phi)(\overline{\eta})$ is supported over $k_r^\perp\cap(\gamma^{\mathbf{Z}})^\perp\subset\widehat{G}$. In particular, $a_{\chi,m}(\phi)=0$ for all $(\chi,m)\in\widetilde{G^1}\times\mathbf{Z}$ satisfying $\chi\in k_r^\perp$.
 In order to show that the sum in (4.4.2.8) converges absolutely (which we are required to do, in order to verify the defining properties of an absolute Schauder basis; see the discussion preceding [[Jar, Part II,Ch.14,§14.2,Prop.3,p.298] and the discussion at the beginning of [[Jar, Part II,Ch.14,§14.6,p.305], as well as the discussion following [[Jar, Part II,Ch.14,§14.7,Cor.6,p.314]) as $M\to+\infty$ and $j\to+\infty$, it is enough to show that the following assertion holds.
 Let $G_0$ be a compact abelian Lie group (which, in our situation, is chosen to be $G/(\gamma^{\mathbf{Z}}\cdot k_r)$, where we may choose $k_r\subset G^1$ for each integer $r\ge 0$ large enough), $\mu_0$ the volume-1 Haar measure on $G_0$, $\phi\in\mathcal{S}(G_0)=\mathcal{D}(G_0)$. Then the sum:
 
 $$
-\sum_{\xi\in\widehat{G_0}}\mathcal{F}(\phi)(\xi)\xi \tag{4.4.2.11}
+\sum_{\xi\in\widehat{G_0}}\mathcal{F}(\phi)(\xi)\overline{\xi} \tag{4.4.2.11}
 $$
 
 ## PDF page 196
@@ -2085,13 +2085,13 @@ REMARK 4.5.1.3 (Caveat on tensor products and inductive limits). The phenomenon 
 
 Then $\varinjlim_{m \ge 0} (F_m\, {}^{b}\!\otimes_{\pi} E) \to F\, {}^{b}\!\otimes_{\pi} E$ is not a linear topological isomorphism.
 
-In the case of $\mathcal{S}_I(G)$ for $G$ a general modulated group, by Theorem D.3.3.7(3) any choice of continuous homomorphic section $\tau$ to the module $|\cdot|_G$ induces a linear topological isomorphism $\mathcal{S}_I(G) \simeq \mathcal{S}_I(\mathbf{R}_{>0}) \otimes \mathcal{S}(G^1)$, with $G^1 := \ker(|\cdot|_G)$ a compact Hausdorff abelian closed subgroup.
+In the case of $\mathcal{S}_I(G)$ for $G$ a general modulated group, by Theorem D.3.3.7(3) any choice of continuous homomorphic section $\tau$ to the module $|\cdot|_G$ induces a linear topological isomorphism $\mathcal{S}_I(G) \simeq \mathcal{S}_I(\mathbf{R}_{>0}) \overline{\otimes} \mathcal{S}(G^1)$, with $G^1 := \ker(|\cdot|_G)$ a compact Hausdorff abelian closed subgroup.
 
 The Schwartz-Bruhat space $\mathcal{S}(G^1)$ is indeed a strict LF-space, since $G$ is assumed to be second-countable, which forces $G^1$ to also be second-countable.
 
 If $G^1$ does not have finitely generated dual group, then a defining sequence $\{F_m\}_{m \ge 0}$ as in the foregoing can be found, i.e. such that the closed inclusions $F_m \subset F_{m+1}$ are strict.
 
-Since $\mathcal{S}_I(\mathbf{R}_{>0})$ is a non-normable Fréchet space, we are led to the conclusion from Remark 4.5.1.2, i.e. the inductive tensor product topology on $\mathcal{S}_I(\mathbf{R}_{>0}) \otimes \mathcal{S}(G^1)$ and the projective tensor product topology on $\mathcal{S}_I(\mathbf{R}_{>0})\, {}^{b}\!\otimes_{\pi} \mathcal{S}(G^1)$ are not equivalent. The canonical continuous linear operator $\mathcal{S}_I(\mathbf{R}_{>0}) \otimes \mathcal{S}(G^1) \to \mathcal{S}_I(\mathbf{R}_{>0})\, {}^{b}\!\otimes_{\pi} \mathcal{S}(G^1)$ is, however, a continuous bijection.
+Since $\mathcal{S}_I(\mathbf{R}_{>0})$ is a non-normable Fréchet space, we are led to the conclusion from Remark 4.5.1.2, i.e. the inductive tensor product topology on $\mathcal{S}_I(\mathbf{R}_{>0}) \overline{\otimes} \mathcal{S}(G^1)$ and the projective tensor product topology on $\mathcal{S}_I(\mathbf{R}_{>0})\, {}^{b}\!\otimes_{\pi} \mathcal{S}(G^1)$ are not equivalent. The canonical continuous linear operator $\mathcal{S}_I(\mathbf{R}_{>0}) \overline{\otimes} \mathcal{S}(G^1) \to \mathcal{S}_I(\mathbf{R}_{>0})\, {}^{b}\!\otimes_{\pi} \mathcal{S}(G^1)$ is, however, a continuous bijection.
 
 Its linear inverse is sequentially continuous (as an application of Proposition C.2.3.11) and hence source and target have equivalent von-Neumann bornologies.
 
@@ -2103,7 +2103,7 @@ PROOF. (1) : By Theorem D.3.3.7(3), applied for $I = \mathbf{R}$, the choice $\t
 
 $$
 \tag{4.5.1.4}
-\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0}) \otimes \mathcal{S}(G^1) \to \mathcal{S}_{\mathrm{E}}(G)
+\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0}) \overline{\otimes} \mathcal{S}(G^1) \to \mathcal{S}_{\mathrm{E}}(G)
 $$
 
 compatible with the left-translation action of $G^1$ through the right tensor factor on the source, and by left-translation on the target.
@@ -2126,7 +2126,7 @@ For $k \subset G$ a compact subgroup such that $k^{\perp}$ is compactly generate
 
 $\Phi_{\gamma}$ is surjective because $G/\gamma^{\mathbf{Z}}$ is compact Hausdorff: we may therefore find a smooth compactly supported function $u_0 \in \mathcal{D}(G)$ such that $\Phi_{\gamma}(u_0) = 1$, the constant function with value 1 on $G/\gamma^{\mathbf{Z}}$, and for every $\phi \in \mathcal{S}(G/\gamma^{\mathbf{Z}})$, the function $\psi := u_0 \cdot (\phi \circ \pi)$, for $\pi : G \to G/\gamma^{\mathbf{Z}}$ the quotient homomorphism, is smooth and compactly supported over $G$, hence of exponential decay, and we have $\Phi_{\gamma}(\psi) = \phi$ (we further refer the reader to [[Bou-II, Ch.VII,§2,No.1,Lemma 1,INT VII.28] and to the footnote [[Bou-II, Ch.VII,§2,No.1,Remark 1,INT VII.30] for similar arguments).
 
-For the purposes of showing continuity of the linear operator $\Phi_{\gamma}$, we observe that any convergent Cauchy net $\{f_i\}_{i \in I} \subset \mathcal{S}_{\mathrm{E}}(G)$ is eventually bounded<sup>1</sup> (i.e. there exists $i_0 \in I$ such that $\{f_i\}_{i \in I, i \ge i_0}$ is bounded), and hence, up to replacing $I$ with $I_0 := \{i \in I : i \ge i_0\}$ for some $i_0$ large enough and renaming $I_0$ as $I$, it is contained within the pre-image $\mathcal{S}_{\mathrm{E}}(\Gamma \cdot \tau(\mathbf{R}_{>0}), k)$ of $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0}) \otimes \mathcal{S}(k, \Gamma)$ under (4.5.1.12) (see Definition D.1.5.3 for the construction of the Hausdorff locally convex topological $\mathbf{C}$-vector space of Schwartz-Bruhat functions on a Hausdorff locally compact abelian group), where $k \subset G^1$ is a compact subgroup whose orthogonal $k^{\perp} \subset \widehat{G^1}$ is compactly generated, $\Gamma \subset G^1$ is an open
+For the purposes of showing continuity of the linear operator $\Phi_{\gamma}$, we observe that any convergent Cauchy net $\{f_i\}_{i \in I} \subset \mathcal{S}_{\mathrm{E}}(G)$ is eventually bounded<sup>1</sup> (i.e. there exists $i_0 \in I$ such that $\{f_i\}_{i \in I, i \ge i_0}$ is bounded), and hence, up to replacing $I$ with $I_0 := \{i \in I : i \ge i_0\}$ for some $i_0$ large enough and renaming $I_0$ as $I$, it is contained within the pre-image $\mathcal{S}_{\mathrm{E}}(\Gamma \cdot \tau(\mathbf{R}_{>0}), k)$ of $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0}) \overline{\otimes} \mathcal{S}(k, \Gamma)$ under (4.5.1.12) (see Definition D.1.5.3 for the construction of the Hausdorff locally convex topological $\mathbf{C}$-vector space of Schwartz-Bruhat functions on a Hausdorff locally compact abelian group), where $k \subset G^1$ is a compact subgroup whose orthogonal $k^{\perp} \subset \widehat{G^1}$ is compactly generated, $\Gamma \subset G^1$ is an open
 
 ---
 
@@ -2142,7 +2142,7 @@ Indeed, since $G^1$ is compact, we may choose $\Gamma = G^1$. The assertion on a
 
 We may further denote by $G^1_0$ the quotient $G^1/k$ and define $G_0 := (\tau(\mathbf{R}_{>0}) \cdot G^1)/k = G/k$, promoting it to an $\mathbf{R}_{>0}$-modulated group by defining the module $|\cdot|_{G_0}$ by $k$-invariance (being $k$ contained in $G^1$, the module descends to $(\tau(\mathbf{R}_{>0}) \cdot G^1)/k$, since $|k|_G = 1$).
 
-We let $\gamma^{\mathbf{Z}}$ acts by left-multiplication on the left cosets $G/k$, obtaining a continuous action of $\gamma^{\mathbf{Z}}$ on $\mathcal{S}_{\mathrm{E}}(G/k) \simeq \mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0}) \otimes \mathcal{S}(G^1_0)$ by left-translation that is compatible with the one inherited from the left-translation action of the subgroup $\gamma^{\mathbf{Z}} \subset G$ on $\mathcal{S}_{\mathrm{E}}(G)$ (i.e. even though $\gamma^{\mathbf{Z}}$ is not a subgroup of $G/k$ anymore).
+We let $\gamma^{\mathbf{Z}}$ acts by left-multiplication on the left cosets $G/k$, obtaining a continuous action of $\gamma^{\mathbf{Z}}$ on $\mathcal{S}_{\mathrm{E}}(G/k) \simeq \mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0}) \overline{\otimes} \mathcal{S}(G^1_0)$ by left-translation that is compatible with the one inherited from the left-translation action of the subgroup $\gamma^{\mathbf{Z}} \subset G$ on $\mathcal{S}_{\mathrm{E}}(G)$ (i.e. even though $\gamma^{\mathbf{Z}}$ is not a subgroup of $G/k$ anymore).
 
 We note that, since $G$ is abelian, we have the canonical identification of homogeneous spaces topologized with the respective quotient topologies: $\gamma^{\mathbf{Z}}\backslash G/k = G/(\gamma^{\mathbf{Z}} \cdot k)$.
 
@@ -2160,7 +2160,7 @@ where the horizontal arrows, sending functions on $G/k$, respectively $G/(\gamma
 
 It is therefore enough to show that $\Phi_{\gamma,0}$ is continuous (for any such $k$), to conclude that we have, for $f$ the limit in $\mathcal{S}_{\mathrm{E}}(G)$ of the Cauchy net $\{f_i\}_{i \in I}$, also contained in $\mathcal{S}_{\mathrm{E}}(k, G)$ since this latter is a closed subspace, $\Phi_{\gamma}(f_i) = \Phi_{\gamma,0}(f_i) \to \Phi_{\gamma,0}(f) = \Phi_{\gamma}(f)$.<sup>2</sup>
 
-We are using Theorem D.3.3.7(3) to deduce that the bounded subsets of $\mathcal{S}_I(G)$ are indeed contained in some $\mathcal{S}_I(k, G)$, the pre-image under the linear topological isomorphism $\mathcal{S}_I(G) \simeq \mathcal{S}_I(\mathbf{R}_{>0}) \otimes \mathcal{S}(G^1)$ of $\mathcal{S}_I(\mathbf{R}_{>0}) \otimes \mathcal{S}(k, G^1) \simeq \mathcal{S}_I(G/k)$.
+We are using Theorem D.3.3.7(3) to deduce that the bounded subsets of $\mathcal{S}_I(G)$ are indeed contained in some $\mathcal{S}_I(k, G)$, the pre-image under the linear topological isomorphism $\mathcal{S}_I(G) \simeq \mathcal{S}_I(\mathbf{R}_{>0}) \overline{\otimes} \mathcal{S}(G^1)$ of $\mathcal{S}_I(\mathbf{R}_{>0}) \otimes \mathcal{S}(k, G^1) \simeq \mathcal{S}_I(G/k)$.
 
 We now return to continuity of $\Phi_{\gamma,0}$. The elementary Lie group $G/(\gamma^{\mathbf{Z}} \cdot k)$ is now compact Hausdorff, and the Hausdorff locally convex topology on $\mathcal{S}(G/(\gamma^{\mathbf{Z}} \cdot k))$ is now equivalent to the topology of uniform convergence on smooth functions and their derivatives of arbitrary order along any continuous, equivalently smooth, 1-parameter subgroup.
 
@@ -2401,7 +2401,7 @@ PROOF. (1) : The subspace topology on $\mathcal{S}_K(k, G)$ is stronger than the
 
 With respect to the subspace topology, $\mathcal{S}_K(k, G)$ is a sequentially closed subspace, since such topology preserves the support and $k$-invariance conditions upon formation of limits in $\mathcal{S}_{\mathrm{E}}(G)$ of Cauchy sequences of elements in $\mathcal{S}_K(k, G)$, and hence $\mathcal{S}_K(k, G)$ is sequentially closed in $\mathcal{S}_{\mathrm{E}}(G)$.
 
-We note that $\mathcal{S}_K(k, G)$ is contained within the pre-image $\mathcal{S}_{\mathrm{E}}(k, G)$ in $\mathcal{S}_{\mathrm{E}}(G)$ of the closed subspace $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0}) \otimes \mathcal{S}(k, G^1)$ of $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0}) \otimes \mathcal{S}(G^1)$ under the linear topological isomorphism from Theorem D.3.3.7(3), where $\mathcal{S}(k, G^1)$ is the closed subspace of those smooth functions on $G^1$ that are $k$-invariant, and indeed $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0}) \otimes \mathcal{S}(k, G^1)$ is a closed subspace of $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0}) \otimes \mathcal{S}(G^1)$ by nuclearity of $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0})$, which holds by Lemma D.3.2.3(1), and by Proposition C.2.3.13(2).
+We note that $\mathcal{S}_K(k, G)$ is contained within the pre-image $\mathcal{S}_{\mathrm{E}}(k, G)$ in $\mathcal{S}_{\mathrm{E}}(G)$ of the closed subspace $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0}) \overline{\otimes} \mathcal{S}(k, G^1)$ of $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0}) \overline{\otimes} \mathcal{S}(G^1)$ under the linear topological isomorphism from Theorem D.3.3.7(3), where $\mathcal{S}(k, G^1)$ is the closed subspace of those smooth functions on $G^1$ that are $k$-invariant, and indeed $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0}) \otimes \mathcal{S}(k, G^1)$ is a closed subspace of $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0}) \overline{\otimes} \mathcal{S}(G^1)$ by nuclearity of $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0})$, which holds by Lemma D.3.2.3(1), and by Proposition C.2.3.13(2).
 
 It is therefore enough to show that $\mathcal{S}_K(k, G)$ is closed as a linear subspace of $\mathcal{S}_{\mathrm{E}}(k, G)$. Since $\mathcal{S}_{\mathrm{E}}(k, G)$ is a Fréchet space by [[Jar, Part III,Ch.15,§15.1,Cor.4,p.26], it is sequential, and hence $\mathcal{S}_K(k, G)$ is closed, being sequentially closed within the larger ambient, and since $\mathcal{S}_{\mathrm{E}}(k, G)$ is itself closed within the larger ambient by the foregoing.
 
@@ -2437,9 +2437,9 @@ is contained in a compact subset of the form $\tau(K_0) \cdot G^1$ with $K_0 \su
 
 REMARK 4.5.2.2. Note that in the proof of Proposition 4.5.2.1 we are not claiming that $\mathcal{S}_{\mathrm{E}}(G)$ is a sequential space, nor are we claiming that in a strict LF-space, a subspace is closed if and only if its pre-image in each of the spaces in a defining sequence is closed.
 
-In the special case at hand, $\mathcal{S}_K(k, G)$ is already entirely contained within $\mathcal{S}_{\mathrm{E}}(k, G) := \mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0}) \otimes \mathcal{S}(k, G^1)$, which is itself linearly and topologically isomorphic to $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0})\, {}^{b}\!\otimes_{\pi} \mathcal{S}(k, G^1)$ since the tensor factors are Fréchet spaces (see Corollary C.2.3.12), and the projective tensor product topology on the latter is equivalent to the subspace topology inherited by $\mathcal{S}_{\mathrm{E}}(G)$. We use [[Jar, Part III,Ch.16,§16.2,Cor.3,p.348] and nuclearity of $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0})$, to identify injective and projective tensor topologies; see also Proposition C.2.3.13(2).
+In the special case at hand, $\mathcal{S}_K(k, G)$ is already entirely contained within $\mathcal{S}_{\mathrm{E}}(k, G) := \mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0}) \overline{\otimes} \mathcal{S}(k, G^1)$, which is itself linearly and topologically isomorphic to $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0})\, {}^{b}\!\otimes_{\pi} \mathcal{S}(k, G^1)$ since the tensor factors are Fréchet spaces (see Corollary C.2.3.12), and the projective tensor product topology on the latter is equivalent to the subspace topology inherited by $\mathcal{S}_{\mathrm{E}}(G)$. We use [[Jar, Part III,Ch.16,§16.2,Cor.3,p.348] and nuclearity of $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0})$, to identify injective and projective tensor topologies; see also Proposition C.2.3.13(2).
 
-We deduce that $\mathcal{S}_{\mathrm{E}}(k, G) := \mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0}) \otimes \mathcal{S}(k, G^1) \simeq \mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0})\, {}^{b}\!\otimes_{\pi} \mathcal{S}(k, G^1)$ is metrizable, hence sequential, and it therefore suffices to prove sequential closedness of $\mathcal{S}_K(k, G)$ in $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0})\, {}^{b}\!\otimes_{\pi} \mathcal{S}(k, G^1)$ to deduce closedness of $\mathcal{S}_K(k, G)$ in $\mathcal{S}_{\mathrm{E}}(k, G)$, and hence in $\mathcal{S}_{\mathrm{E}}(G)$, being $\mathcal{S}_{\mathrm{E}}(k, G)$ a closed subspace of $\mathcal{S}_{\mathrm{E}}(G)$ (since $\mathcal{S}(k, G^1) \subset \mathcal{S}(G^1)$ is).
+We deduce that $\mathcal{S}_{\mathrm{E}}(k, G) := \mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0}) \overline{\otimes} \mathcal{S}(k, G^1) \simeq \mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0})\, {}^{b}\!\otimes_{\pi} \mathcal{S}(k, G^1)$ is metrizable, hence sequential, and it therefore suffices to prove sequential closedness of $\mathcal{S}_K(k, G)$ in $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0})\, {}^{b}\!\otimes_{\pi} \mathcal{S}(k, G^1)$ to deduce closedness of $\mathcal{S}_K(k, G)$ in $\mathcal{S}_{\mathrm{E}}(k, G)$, and hence in $\mathcal{S}_{\mathrm{E}}(G)$, being $\mathcal{S}_{\mathrm{E}}(k, G)$ a closed subspace of $\mathcal{S}_{\mathrm{E}}(G)$ (since $\mathcal{S}(k, G^1) \subset \mathcal{S}(G^1)$ is).
 
 THEOREM 4.5.2.3 (Sourcing Periodic Schauder Bases - IV). *Let $G$ be an $\mathbf{R}_{>0}$-modulated group. We adopt the assumptions and choices from Situation 4.4.2.3. Let $\chi \in \widehat{G}$ be a continuous character. Assume $\chi$ is an element of the set $\widehat{G^1}$ of representatives of the continuous characters of $G^1$ chosen in Situation 4.4.2.3.*
 

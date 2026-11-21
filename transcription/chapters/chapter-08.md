@@ -682,7 +682,7 @@ We denote by $E$ any of the three Fréchet spaces in the top row of (8.4.0.6).
 
 For each $\varphi \in \mathcal{D}(J_{F,S})$:
 $$A(\varphi) : E \to E$$
-defined as $u \mapsto A(\varphi)(u) := \int_{J_{F,S}} \varphi(g) u(g^{-1}x) \, \mathrm{d}\mu_{S}(g)$ is a continuous linear endomorphism, which, on $E =$
+defined as $u \mapsto A(\varphi)(u) := \int_{J_{F,S}} \varphi(g) u(g^{-1}x) \, \mathrm{d}\overline{\mu}_{S}(g)$ is a continuous linear endomorphism, which, on $E =$
 $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}_{00}(\mathbf{A}_{F,S}))$, admits an integral kernel, namely
 $$\varphi(xy^{-1}) : J_{F,S} \times J_{F,S} \to \mathbf{C}$$
 
@@ -732,8 +732,8 @@ The trace of $A(\varphi)$ on $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S},
 
 We can proceed heuristically and combine the calculations performed in Theorem 7.4.2.1 and Theorem
 7.4.3.2, to infer that its value will be:
-$$\mathrm{Trace}(A(\varphi)) = \sum_{p:S_{p}\subset S} \sum_{\epsilon_{p}} N(\chi_{S}|\cdot|^{\epsilon_{p}}_{F,S}) \int_{J_{F,S}} \varphi(g) \chi_{S}(g) |g|^{\epsilon_{p}}_{F} \, \mathrm{d}\mu_{S}(g) \tag{8.4.0.10}$$
-$$+ \sum_{z} N(\chi_{S}|\cdot|^{z}_{F,S}) \int_{J_{F,S}} \varphi(g) \chi_{S}(g) |g|^{z}_{F} \, \mathrm{d}\mu_{S}(g) \tag{8.4.0.11}$$
+$$\mathrm{Trace}(A(\varphi)) = \sum_{p:S_{p}\subset S} \sum_{\epsilon_{p}} N(\chi_{S}|\cdot|^{\epsilon_{p}}_{F,S}) \int_{J_{F,S}} \varphi(g) \chi_{S}(g) |g|^{\epsilon_{p}}_{F} \, \mathrm{d}\overline{\mu}_{S}(g) \tag{8.4.0.10}$$
+$$+ \sum_{z} N(\chi_{S}|\cdot|^{z}_{F,S}) \int_{J_{F,S}} \varphi(g) \chi_{S}(g) |g|^{z}_{F} \, \mathrm{d}\overline{\mu}_{S}(g) \tag{8.4.0.11}$$
 where $\epsilon_{p}$ varies over the poles of $\prod_{v \in S_{p}} L_{v}(\chi_{v}|\cdot|^{s}_{v})$, for each prime $p$ such that $S_{p} \subset S$, and $z$ varies over
 the poles of the $\Gamma$-factor of the Hecke $L$-function $L(s,\chi)$, $N(\chi_{S}|\cdot|^{\epsilon_{p}}_{F,S})$ and $N(\chi_{S}|\cdot|^{z}_{F,S})$ being the respective
 multiplicity functions.
@@ -816,7 +816,7 @@ In particular, $\varphi$ is invariant under the compact subgroup given by the im
 for all large enough $S^{\prime}$. Upon replacing $S^{\prime}$ with a larger set $S^{\prime}$ if necessary, so as to have that $\chi$ is unramified
 outside $S^{\prime}$ and $\mathrm{Pic}(\mathcal{O}_{F,S^{\prime}}) = 1$, we may descend $\varphi$ to a unique $\varphi_{S^{\prime}} \in \mathcal{D}(J_{F,S^{\prime}})$ and $A(\varphi_{S^{\prime}})$ acts on
 $$\mathrm{H}_{0,\mathrm{cont}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}, \mathcal{S}(\mathbf{A}_{F,S^{\prime}}))$$
-compatibly with the action of $A(\varphi)$ on the global $\mathrm{H}_{0,\mathrm{cont}}(\chi|C^{1}_{F}, \mathcal{S}(\mathbf{A}_{F}))$ under the transition operator $\pi_{S^{\prime}}$,
+compatibly with the action of $A(\varphi)$ on the global $\mathrm{H}_{0,\mathrm{cont}}(\chi|C^{1}_{F}, \mathcal{S}(\mathbf{A}_{F}))$ under the transition operator $\overline{\pi}_{S^{\prime}}$,
 which, under the above conditions on $S^{\prime}$, is a linear topological isomorphism.
 
 We conclude this Chapter by observing that as $S$ grows to encompass all places of $F$, the trace of $A(\varphi_{S})$

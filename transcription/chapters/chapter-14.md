@@ -282,7 +282,7 @@ Serre produced an example of another number field, a quaternionic Galois extensi
 
 Central zeros with high multiplicity are, however, expected to not exceed the multiplicity bound of Theorem 13.3.1.2, even though the multiplicity bound of Theorem 13.3.1.2 does not apply to them.
 
-A conjecture of Serre in fact predicts that the Artin $L$-functions of irreducible representations of the Galois group of $\overline{\mathbf Q}$ have only simple zeros (central zeros being no exception), and expects that a central zero exist if and only if the character of the Artin representation is real and the root number is $-1$. We refer the reader to [Goss, Ch.8,§8.24,Conjecture 8.24.1,p.324] for the statement of Serre’s conjecture.
+A conjecture of Serre in fact predicts that the Artin $L$-functions of irreducible representations of the Galois group of $\mathbf Q$ have only simple zeros (central zeros being no exception), and expects that a central zero exist if and only if the character of the Artin representation is real and the root number is $-1$. We refer the reader to [Goss, Ch.8,§8.24,Conjecture 8.24.1,p.324] for the statement of Serre’s conjecture.
 
 Some evidence in support of such conjecture of Serre can be found in [Omar, §6].
 
@@ -417,7 +417,7 @@ $\square$
 
 REMARK 14.1.2.7. An example of a Mordell curve $E_d$, for $d\in\mathbf Z$, $d<0$, of Mordell-Weil rank at least $17$, was announced by Elkies in February 2016.
 
-REMARK 14.1.2.8. We note that, under the assumption of (14.1.2.4), itself a consequence of the BSD Conjecture for Mordell elliptic curves over $\mathbf Q$, Proposition 14.1.2.5 implies that if we replace the Galois group of $\overline{\mathbf Q}$ with the Weil group $W_{\mathbf Q}$, the analog of Serre’s Conjecture from [Goss, Ch.8,§8.24,Conjecture 8.24.1,p.324] does not hold.
+REMARK 14.1.2.8. We note that, under the assumption of (14.1.2.4), itself a consequence of the BSD Conjecture for Mordell elliptic curves over $\mathbf Q$, Proposition 14.1.2.5 implies that if we replace the Galois group of $\mathbf Q$ with the Weil group $W_{\mathbf Q}$, the analog of Serre’s Conjecture from [Goss, Ch.8,§8.24,Conjecture 8.24.1,p.324] does not hold.
 
 Let $F$ be a number field, and $\overline F$ a fixed choice of separable closure.
 

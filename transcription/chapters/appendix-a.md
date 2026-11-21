@@ -829,7 +829,7 @@ where $\mathcal{O}_F^{\times}$ is diagonally embedded into $\mathrm{GL}_1(\mathb
 (3) Upon denoting by $\overline{E}_0$ the closure of $E_0 \subset \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$, for any compact subset $K \subset \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$ there exist at most finitely many elements $\xi \in \mathcal{O}_F^{\times}$ such that
 
 $$
-\xi E_0 \cap \overline{E}_0 \ne \emptyset. \tag{A.2.3.18}
+\xi \overline{E}_0 \cap \overline{E}_0 \ne \emptyset. \tag{A.2.3.18}
 $$
 
 Due to lack of a reference for a proof in standard books, we give a proof below although the result is very classical.
@@ -958,7 +958,7 @@ $$
 
 and hence to see that (A.2.3.25) holds and the union is disjoint, it is enough to check that we have $F^{\times}(E_0 \times \widehat{\mathcal{O}}_F^{\times}) = F^{\times}(\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}}) \times \widehat{\mathcal{O}}_F^{\times})$ within $\mathrm{GL}_1(\mathbf{A}_F)^1$, which follows from $\mathcal{O}_F^{\times} E_0 = \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$, which is given by Lemma A.2.3.8(2). The disjointness condition for non-trivial $F^{\times}$-translates in (A.2.3.26) follows from (A.2.3.17) of Lemma A.2.3.8(2) upon observing that $\xi(\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1 \times \widehat{\mathcal{O}}_F^{\times}) \cap (\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1 \times \widehat{\mathcal{O}}_F^{\times}) = \emptyset$ within $\mathrm{GL}_1(\mathbf{A}_F)^1$ if $\xi$ is not a global unit.
 
-(3): In light of (1) and (2), it is enough to treat the case $K = \overline{E}_F^1$. Since $\mathrm{Pic}(\mathcal{O}_F)$ is finite by Theorem A.1.4.3(3), it is enough to prove, in light of (A.2.3.16), that, upon denoting by $\overline{E}_0$ the closure of $E_0 \subset \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$, there exist at most finitely many elements $\xi \in \mathcal{O}_F^{\times}$ such that $\xi E_0 \cap \overline{E}_0 \ne \emptyset$. This is Lemma A.2.3.8(3). $\square$
+(3): In light of (1) and (2), it is enough to treat the case $K = \overline{E}_F^1$. Since $\mathrm{Pic}(\mathcal{O}_F)$ is finite by Theorem A.1.4.3(3), it is enough to prove, in light of (A.2.3.16), that, upon denoting by $\overline{E}_0$ the closure of $E_0 \subset \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$, there exist at most finitely many elements $\xi \in \mathcal{O}_F^{\times}$ such that $\xi \overline{E}_0 \cap \overline{E}_0 \ne \emptyset$. This is Lemma A.2.3.8(3). $\square$
 
 ## PDF page 553
 
@@ -982,17 +982,17 @@ the hyperplane of those elements $x \in \mathbf{A}_{F,S_{\infty}}$ whose coordin
 
 Lemma A.2.3.13. We fix an Archimedean place $v_0$ of $F$, and let $T_{v_0} \subset F_{v_0}^{\times} \to \mathbf{A}_{F,S_{\infty}}^{\times}$ be the canonical copy of $\mathbf{R}_{>0}$. Let $K_{v_0} \subset T_{v_0,\infty}$ be a compact subset.
 
-(1) The subset $K_{v_0} \cdot E_0 \subset \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ is compact. If $K_{v_0}$ has non-empty interior in $T_{v_0,\infty}$, then so does $K_{v_0} \cdot E_0$ in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$.
+(1) The subset $K_{v_0} \cdot \overline{E}_0 \subset \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ is compact. If $K_{v_0}$ has non-empty interior in $T_{v_0,\infty}$, then so does $K_{v_0} \cdot \overline{E}_0$ in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$.
 
 (2) We have $(K_{v_0} \cdot E_0) \cap (\bigcup_{v\in S_{\infty}} H_v) = \emptyset$.
 
-(3) If $K_{v_0}$ has non-empty interior in $T_{v_0,\infty}$, then so does $K_{v_0} \cdot E_0$ in $\mathbf{A}_{F,S_{\infty}}$.
+(3) If $K_{v_0}$ has non-empty interior in $T_{v_0,\infty}$, then so does $K_{v_0} \cdot \overline{E}_0$ in $\mathbf{A}_{F,S_{\infty}}$.
 
-Proof. (1): Compactness of $K_{v_0} \cdot E_0$ follows from Lemma A.2.3.8(1). The interior of $K_{v_0} \cdot E_0$ in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ contains the open subset $\mathrm{Int}_{T_{v_0,\infty}}(K_{v_0}) \times \mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1}(E_0) \subset T_{v_0,\infty} \times \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1 = \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$. If $\mathrm{Int}_{T_{v_0,\infty}}(K_{v_0})$ is non-empty then since $\mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1}(E_0) = \mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1}(\overline{E}_0)$ is also non-empty by Lemma A.2.3.8(1), so is $\mathrm{Int}_{T_{v_0,\infty}}(K_{v_0}) \cdot \mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1}(E_0) \subset \mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})}(K_{v_0} \cdot E_0)$.
+Proof. (1): Compactness of $K_{v_0} \cdot \overline{E}_0$ follows from Lemma A.2.3.8(1). The interior of $K_{v_0} \cdot \overline{E}_0$ in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ contains the open subset $\mathrm{Int}_{T_{v_0,\infty}}(K_{v_0}) \times \mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1}(\overline{E}_0) \subset T_{v_0,\infty} \times \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1 = \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$. If $\mathrm{Int}_{T_{v_0,\infty}}(K_{v_0})$ is non-empty then since $\mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1}(\overline{E}_0) = \mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1}(E_0)$ is also non-empty by Lemma A.2.3.8(1), so is $\mathrm{Int}_{T_{v_0,\infty}}(K_{v_0}) \cdot \mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1}(E_0) \subset \mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})}(K_{v_0} \cdot E_0)$.
 
 (2): Since $K_{v_0} \subset T_{v_0,\infty}$ and $E_0 \subset \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$, we have $K_{v_0} \cdot E_0$ is entirely contained within $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$, and the complement of $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ is $\bigcup_{v\in S_{\infty}} H_v$.
 
-(3): Clearly $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}}) \simeq \prod_{v\in S_{\infty}} F_v^{\times}$ is open in $\mathbf{A}_{F,S_{\infty}}$. If $K_{v_0} \subset T_{v_0,\infty}$ is a compact subset with non-empty interior in $T_{v_0,\infty}$, then by (1) we have that the interior of $K_{v_0} \cdot E_0$ in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ is non-empty, and since it is open, it is open and non-empty also in $\mathbf{A}_{F,S_{\infty}}$ because $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ is open in $\mathbf{A}_{F,S_{\infty}}$. The interior $\mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})}(K_{v_0} \cdot E_0)$ formed in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ coincides with the interior $\mathrm{Int}_{\mathbf{A}_{F,S_{\infty}}}(K_{v_0} \cdot E_0)$ formed within $\mathbf{A}_{F,S_{\infty}}$ by compactness of $K_{v_0}E_0$ and openness of $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ in $\mathbf{A}_{F,S_{\infty}}$. $\square$
+(3): Clearly $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}}) \simeq \prod_{v\in S_{\infty}} F_v^{\times}$ is open in $\mathbf{A}_{F,S_{\infty}}$. If $K_{v_0} \subset T_{v_0,\infty}$ is a compact subset with non-empty interior in $T_{v_0,\infty}$, then by (1) we have that the interior of $K_{v_0} \cdot E_0$ in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ is non-empty, and since it is open, it is open and non-empty also in $\mathbf{A}_{F,S_{\infty}}$ because $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ is open in $\mathbf{A}_{F,S_{\infty}}$. The interior $\mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})}(K_{v_0} \cdot \overline{E}_0)$ formed in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ coincides with the interior $\mathrm{Int}_{\mathbf{A}_{F,S_{\infty}}}(K_{v_0} \cdot \overline{E}_0)$ formed within $\mathbf{A}_{F,S_{\infty}}$ by compactness of $K_{v_0}\overline{E}_0$ and openness of $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ in $\mathbf{A}_{F,S_{\infty}}$. $\square$
 
 **A.2.4. Fundamental domain for $\mathbf{A}_{F,S}/\mathcal{O}_{F,S}$ and $C_{F,S}$.** In this subsection we construct an $S$-local analog of the fundamental domain $D_F$ from (A.2.1.2) for the $F$-action on $\mathbf{A}_F$, i.e. a fundamental domain for the continuous additive translation action by $\mathcal{O}_{F,S}$ on $\mathbf{A}_{F,S}$, and for the $\mathcal{O}_{F,S}^{\times}$-action on $\mathrm{GL}_1(\mathbf{A}_{F,S})^1$.
 
@@ -1369,7 +1369,7 @@ We refer to $\mu_v$ as the *local multiplicative Tamagawa measure* on $F_v^{\tim
 Lemma A.3.2.3. Let $F$ be a number field. For every $v\in\Sigma_{F,f}$, let $\mu_v$ be the local multiplicative Tamagawa measure on $F_v^{\times}$. We have, as Haar measures on $F_v^{\times}$:
 
 $$
-\mu_v = \frac{q_v}{q_v-1}\frac{\nu_v}{|\cdot|_v} \tag{A.3.2.3}
+\mu_v = \frac{q_v}{q_v-1}\frac{\nu_{\underline{v}}}{|\cdot|_v} \tag{A.3.2.3}
 $$
 
 where $q_v$ is the size of the residue field at $v$ and $\nu_v$ is the local additive Tamagawa measure on $F_v$.
@@ -1940,7 +1940,7 @@ Proof of Proposition A.5.2.6. We note that since $q$ is continuous, for any Bore
 
 By [Klee, (2.4), p. 487], since $G$ admits a countable unit-neighborhood base, and each member of such base is invariant under all inner automorphisms of $G$ (since $G$ is abelian), $G$ admits an invariant metric $d$ (i.e. both left- and right-invariant).
 
-By [Klee, (2.5), p. 487], the invariant metric on $G$ promotes $G$ to a complete metric space $(G,d)$. Indeed, if $\{g_k\}$ is a Cauchy sequence and we consider all $k,m$ large enough so that $g_k g_m^{-1} \in U$ for a chosen $e$-neighborhood $U$ in $G$. We can arrange that $U$ is compact, so convergence of the Cauchy sequence follows.
+By [Klee, (2.5), p. 487], the invariant metric on $G$ promotes $G$ to a complete metric space $(G,d)$. Indeed, if $\{g_k\}$ is a Cauchy sequence and we consider all $k,m$ large enough so that $g_k g_m^{-1} \in \overline{U}$ for a chosen $e$-neighborhood $U$ in $G$. We can arrange that $\overline{U}$ is compact, so convergence of the Cauchy sequence follows.
 
 We deduce that $G$ is completely metrizable,$^9$ and there exists an invariant complete metric on $G$. Since $G$ is second-countable by assumption, it is a second-countable completely metrizable space and hence it is separable. In particular, Theorem A.5.2.8 applies with $X = G$ and $Y = G/H$, since the quotient $q : G \to G/H$ is open and hence $G/H$ is also second countable and (as for $G$) completely metrizable, hence separable and completely metrizable.
 
@@ -2196,9 +2196,9 @@ $$
 
 is a symmetric $D'$-sequence for $\mathrm{GL}_1(\mathbf{A}_F)^1$ and for $\mathrm{GL}_1(\mathbf{A}_{F,S} \times \widehat{\mathcal{O}}_{F,\Sigma_F-S})^1$.
 
-(2) For each integer $k \ge 0$ and for $U_{F,k}$ the image in $C^1_F$ of $U_{F,k}$ under the continuous quotient homomorphism $\mathrm{GL}_1(\mathbf{A}_F)^1 \to C^1_F$, the sequence $\{U_{F,k}\}_{k \ge 0}$ is a symmetric $D'$-sequence for $C^1_F$.
+(2) For each integer $k \ge 0$ and for $\overline{U}_{F,k}$ the image in $C^1_F$ of $U_{F,k}$ under the continuous quotient homomorphism $\mathrm{GL}_1(\mathbf{A}_F)^1 \to C^1_F$, the sequence $\{U_{F,k}\}_{k \ge 0}$ is a symmetric $D'$-sequence for $C^1_F$.
 
-(3) For each integer $k \ge 0$ and for $U_{F,S,k}$ the image in $C^1_{F,S}$ of $U_{F,k}$ under the continuous quotient homomorphism $\mathrm{GL}_1(\mathbf{A}_{F,S} \times \widehat{\mathcal{O}}_{F,\Sigma_F-S})^1 \to C^1_{F,S}$, the sequence $\{U_{F,S,k}\}_{k \ge 0}$ is a symmetric $D'$-sequence for $C^1_{F,S}$.
+(3) For each integer $k \ge 0$ and for $U_{F,S,k}$ the image in $C^1_{F,S}$ of $U_{F,k}$ under the continuous quotient homomorphism $\mathrm{GL}_1(\mathbf{A}_{F,S} \times \widehat{\mathcal{O}}_{F,\Sigma_F-S})^1 \to C^1_{F,S}$, the sequence $\{\overline{U}_{F,S,k}\}_{k \ge 0}$ is a symmetric $D'$-sequence for $C^1_{F,S}$.
 
 PROOF. (1) holds by Lemma A.5.2.3(2), combined with Lemma A.5.2.3(1) and Lemma A.5.2.5.
 
@@ -2242,7 +2242,7 @@ We refer to the open symmetric $D'$-sequences:
 
 (3) $\{U_{F,k}\}_{k \ge 0}$ from (A.5.2.23) for $\mathrm{GL}_1(\mathbf{A}_F)^1$, respectively $\mathrm{GL}_1(\mathbf{A}_{F,S} \times \widehat{\mathcal{O}}_{F,\Sigma_F-S})^1$.
 
-(4) $\{U_{F,k}\}_{k \ge 0}$ from Lemma A.5.2.16(2), for $C^1_F$, $\{U_{F,S,k}\}_{k \ge 0}$ from Lemma A.5.2.16(3), for $C^1_{F,S}$.
+(4) $\{U_{F,k}\}_{k \ge 0}$ from Lemma A.5.2.16(2), for $C^1_F$, $\{\overline{U}_{F,S,k}\}_{k \ge 0}$ from Lemma A.5.2.16(3), for $C^1_{F,S}$.
 
 (5) $\{U_k\}_{k \ge 0}$ from (A.5.2.22) for $\mathrm{GL}_1(\mathbf{A}_{F,S})$.
 
@@ -2365,13 +2365,13 @@ THEOREM A.5.3.5 (Measure-theoretic Maximal Theorem - II). Let $G$ be a Hausdorff
 Let $\{U_k\}_{k \ge 0}$ be a $D'$-sequence in $G$. Let $\nu$ be a positive Radon measure on $G$. We define, for each $x \in G$:$^{18}$
 
 $$
-(M\nu)(x) := \limsup_{k \ge 0} \frac{\nu(xU_k)}{\mu_G(U_k)}. \tag{A.5.3.5}
+(\overline{M}\nu)(x) := \limsup_{k \ge 0} \frac{\nu(xU_k)}{\mu_G(U_k)}. \tag{A.5.3.5}
 $$
 
 Let $K \subset G$ be a compact subset. For any real number $\alpha > 0$, we have:
 
 $$
-\mu_G(K \cap \{x \in G : (M\nu)(x) > \alpha\}) \le \frac{C}{\alpha} \nu(K). \tag{A.5.3.6}
+\mu_G(K \cap \{x \in G : (\overline{M}\nu)(x) > \alpha\}) \le \frac{C}{\alpha} \nu(K). \tag{A.5.3.6}
 $$
 
 PROOF. Let $N \ge 0$ be a nonnegative integer, and consider, as in the proof of [HR-2, Ch. XI, Thm.44.14, p. 641], the $D$-sequence in $G$ defined by $\{U_k\}_{k \ge N}$. Since $\{U_k\}_{k \ge 0}$ is a $D'$-sequence, for any compact unit-neighborhood $V$ there exists a large enough integer $k_0 \ge 0$ such that $U_{k_0}$, and hence $U_k$ for all $k \ge k_0$, is contained in $V$. This implies that the closure of each $U_k$ for every $k \ge k_0$ is compact.
@@ -2379,7 +2379,7 @@ PROOF. Let $N \ge 0$ be a nonnegative integer, and consider, as in the proof of 
 We fix $N \ge k_0$. Let $K \subset G$ be a compact subset. Then $K \cdot \overline{U}_k$ is compact for every $k \ge N$, and hence $\mu_G(K \cdot U_N)$ is finite. By Theorem A.5.3.4, we have, for every real number $\alpha > 0$:
 
 $$
-\mu_G(K \cap \{x \in G : (M\nu)(x) > \alpha\}) \le \frac{C}{\alpha} \nu(K \cdot U_N). \tag{A.5.3.7}
+\mu_G(K \cap \{x \in G : (\overline{M}\nu)(x) > \alpha\}) \le \frac{C}{\alpha} \nu(K \cdot U_N). \tag{A.5.3.7}
 $$
 
 For any open subset $V$ containing $K$, there exists a unit-neighborhood $U$ in $G$ such that $K \cdot U \subset V$. Since $\{U_k\}_{k \ge 0}$ is a $D'$-sequence, there exists a large enough integer $k_1 \ge k_0$ such that $U_{k_1} \subset U$, and hence $K \cdot U_{k_1} \subset V$.
@@ -2584,7 +2584,7 @@ It follows that $\rho_G$ is uniformly continuous (see [Bou-GT, Ch. II, §2, No. 
 
 (2) : We will be following the proof of Theorem A.5.1.3. It is enough to treat the case when $f$ is real-valued.
 
-Let $V\subset G$ be an arbitrary open neighborhood of $x\in G$ with compact closure. Since $G$ is Hausdorff, locally compact and second-countable, by [Fol, Prop. 7.5] (a regularity property of $\mu$ in the $\sigma$-finite case, which applies since $V$ is compact), a compact subset $K\subset V$ containing $x$ and such that $\mu_G(V-K)$ is as small as we please.
+Let $V\subset G$ be an arbitrary open neighborhood of $x\in G$ with compact closure. Since $G$ is Hausdorff, locally compact and second-countable, by [Fol, Prop. 7.5] (a regularity property of $\mu$ in the $\sigma$-finite case, which applies since $\overline{V}$ is compact), a compact subset $K\subset V$ containing $x$ and such that $\mu_G(V-K)$ is as small as we please.
 
 Clearly there exists an open unit-neighborhood $U\subset G$ such that $U\cdot K\subset V$, and since $\{U_k\}_{k\ge 0}$ is a $D'$-sequence, there exists a large enough integer $k_0\ge 0$ such that $U_k\subset U$ for every integer $k\ge k_0$ and each
 

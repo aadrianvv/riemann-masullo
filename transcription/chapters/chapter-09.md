@@ -459,7 +459,7 @@ $\square$
 We recall from Appendix D.3.2, that for $G$ a Hausdorff locally compact abelian group, modulated by a proper surjective module homomorphism $|\cdot|_G\colon G\to\mathbf R_{>0}$ whose kernel we denote by $G^1$ (i.e. $\mathbf R_{>0}$-modulated; see §D.3.3) and for $I\subset\mathbf R$ a non-empty connected open interval equal to either $(0,+\infty)$ or $I = \mathbf R$, the Fourier-Mellin transform:
 
 $$
-M_I\colon \mathcal S_I(G)\to A_{\mathcal S}(\mathbf C_I)\,\widehat{\otimes}\,\mathcal S(\widehat{G^1}) \tag{9.2.0.1}
+M_I\colon \mathcal S_I(G)\to A_{\mathcal S}(\mathbf C_I)\,\widehat{\overline{\otimes}}\,\mathcal S(\widehat{G^1}) \tag{9.2.0.1}
 $$
 
 from (D.3.2.2) is a linear topological isomorphism (recall that the Hausdorff locally convex topology on the Schwartz-Bergman space $A_{\mathcal S}(\mathbf C_I)$ was defined as the topology of $L^p$-convergence on vertical lines within $\mathbf C_I$ for functions $\phi$ and $s^N\phi$ for all integers $N\ge 0$, for a, equivalently any, $p > 1$. In particular, the topology is independent of $p\ge 1$, similarly to the independence of $p\ge 1$ of the topology of $L^p$-convergence of functions $f\colon\mathbf R\to\mathbf C$ and $q_1(x)q_2(\partial_x)f$ for any polynomials $q_1,q_2\in\mathbf C[X]$, which is equivalent to the topology of the Schwartz space; see §D.1.10.1, and [KG, Part I,Thm.29,p.72]. We refer the reader to Definition D.3.1.3 and Lemma D.3.1.2).
@@ -472,7 +472,7 @@ $$
 
 where $\bar\mu_1$ and $\mathrm{d}t/t$ uniquely determine and are determined, as per Theorem D.1.2.1, by the canonical Haar measure $\mu_G$ on $G$. $M_I(\phi)(s,\omega)$ is holomorphic over $\mathbf C_I$ and Schwartz uniformly on every vertical strip of bounded width contained within $\mathbf C_I$ (see Proposition D.3.2.5).
 
-It is identified with $\mathcal F_{G^1}\otimes M_I$ where $\mathcal F_{G^1}$ is the Fourier transform $\mathcal S(G^1)\to\mathcal S(\widehat{G^1})$ and $M_I\colon\mathcal S_I(\mathbf R_{>0})\to A_{\mathcal S}(\mathbf C_I)$ is the Fourier-Mellin transform in the special case $G = \mathbf R_{>0}$ (see Theorem D.3.3.13).
+It is identified with $\mathcal F_{G^1}\overline{\otimes} M_I$ where $\mathcal F_{G^1}$ is the Fourier transform $\mathcal S(G^1)\to\mathcal S(\widehat{G^1})$ and $M_I\colon\mathcal S_I(\mathbf R_{>0})\to A_{\mathcal S}(\mathbf C_I)$ is the Fourier-Mellin transform in the special case $G = \mathbf R_{>0}$ (see Theorem D.3.3.13).
 
 Remark 9.2.0.1. Recall that our choice of Haar measure $\bar\mu$ on $C_F$ is not the canonical measure (see Remark D.2.1.4 and [Weil-e, §3,p.6]), which requires the normalization giving $C^1_F$ volume 1. The canonical measure $\mu_{C_F}$ is $\bar\mu_1(C^1_F)^{-1}\,\bar\mu$.
 
@@ -486,7 +486,7 @@ Throughout this Chapter we will be mentioning the choice of normalization for th
 
 We refer the reader to Proposition D.3.2.5.
 
-**9.2.1. The special case $I = \{b\}$: $b$-line Hardy-Sobolev spaces and Paley-Wiener Theorem.** As a warmup, we will now be entering a brief interlude, discussing completions of both source and target of $M_I$ from (9.2.0.1) with respect to the Sobolev topologies discussed in Definition 9.1.1.1. We will be terming the corresponding completions of $A_{\mathcal S}(\mathbf C_I)\,\widehat{\otimes}\,\mathcal S(\widehat{G^1})$ and of its isotypes, Hardy-Sobolev spaces of $G$.
+**9.2.1. The special case $I = \{b\}$: $b$-line Hardy-Sobolev spaces and Paley-Wiener Theorem.** As a warmup, we will now be entering a brief interlude, discussing completions of both source and target of $M_I$ from (9.2.0.1) with respect to the Sobolev topologies discussed in Definition 9.1.1.1. We will be terming the corresponding completions of $A_{\mathcal S}(\mathbf C_I)\,\widehat{\overline{\otimes}}\,\mathcal S(\widehat{G^1})$ and of its isotypes, Hardy-Sobolev spaces of $G$.
 
 Definition 9.2.1.1 ($b$-line Hardy-Sobolev spaces). Let $b\in\mathbf R$ be a real number, $N\ge 1$ an integer. We define:
 
@@ -702,7 +702,7 @@ $\square$
 
 We can now incorporate the module-1 subgroup of a Hausdorff locally compact abelian $\mathbf R_{>0}$-modulated group into the assertions of Theorem 9.2.1.2 and Corollary 9.2.1.4.
 
-Theorem 9.2.1.5 (Paley-Wiener Theorem for Hardy-Sobolev Spaces - II). Let $a\in\mathbf R$ be a real number, $a > 1$. Let $G$ be an $\mathbf R_{>0}$-modulated Hausdorff locally compact abelian group. We denote by $M$ the Mellin transform $M\colon\mathcal S_\mathrm{E}(G)\to A_{\mathcal S}(\mathbf C)\otimes\mathcal S(\widehat{G^1})$.
+Theorem 9.2.1.5 (Paley-Wiener Theorem for Hardy-Sobolev Spaces - II). Let $a\in\mathbf R$ be a real number, $a > 1$. Let $G$ be an $\mathbf R_{>0}$-modulated Hausdorff locally compact abelian group. We denote by $M$ the Mellin transform $M\colon\mathcal S_\mathrm{E}(G)\to A_{\mathcal S}(\mathbf C)\overline{\otimes}\mathcal S(\widehat{G^1})$.
 
 ## PDF page 408
 
@@ -802,7 +802,7 @@ as holomorphic functions over $\mathbf C_{<b}$.
 
 The following is an analog of Corollary 9.2.1.4.
 
-Corollary 9.2.1.7. Let $G$ be a Hausdorff locally compact $\mathbf R_{>0}$-modulated group. Let $a,b\in\mathbf R$ be real numbers, $a > 1$. We denote by $M$ the Mellin transform $M\colon\mathcal S_\mathrm{E}(G)\to A_{\mathcal S}(\mathbf C)\otimes\mathcal S(\widehat{G^1})$.
+Corollary 9.2.1.7. Let $G$ be a Hausdorff locally compact $\mathbf R_{>0}$-modulated group. Let $a,b\in\mathbf R$ be real numbers, $a > 1$. We denote by $M$ the Mellin transform $M\colon\mathcal S_\mathrm{E}(G)\to A_{\mathcal S}(\mathbf C)\overline{\otimes}\mathcal S(\widehat{G^1})$.
 
 For every point $z\in\mathbf C_{<b}$ and every continuous character $\omega\in\widehat{G^1}$, equivalently every point $c\in\Omega(G)_{<b}$ of the Riemann surface of continuous quasi-characters of $G$, the point-evaluation functional $\delta_{(z,\omega)}$ and its derivatives $\delta^{(m)}_{(z,\omega)}$ for $1\le m\le N-1$, induce continuous functionals on $L^2(G^1,\mu_1)\,\widehat{\otimes}_\sigma\mathrm{HS}^{2N,2}_b(\mathbf C,(1/a,+\infty))$ uniquely determined by the following formula: for every $\phi\in M_{\rho_{a,+}}W^{2N,2}_b(G)$, we have, for a, equivalently any, choice of continuous homomorphic section $\tau$ to the module $|\cdot|_G$:
 
@@ -1231,7 +1231,7 @@ PROOF. This is a consequence of Corollary 9.2.2.5.$^4$ $\square$
 9.2.2.2. The Hardy-Sobolev spaces $W^s_I(G)$. We now return to the generality of $G$ an $\mathbf{R}_{>0}$-modulated group with module $|\cdot|_G$ and compact subgroup of module-$1$ elements $G^1$ (i.e. $G^1 := \ker(|\cdot|_G)$). Recall that the Mellin transform is a linear topological isomorphism:
 
 $$
-M : \mathcal{S}_I(G) \to A\mathcal{S}(\mathbf{C}_I) \otimes \mathcal{S}(\widehat{G^1})
+M : \mathcal{S}_I(G) \to A\mathcal{S}(\mathbf{C}_I) \overline{\otimes} \mathcal{S}(\widehat{G^1})
 $$
 
 for any non-empty open interval $I \subset \mathbf{R}$, obtained as follows. We choose a unitary base-point $\chi$ for each connected component of the Riemann surface $\Omega(G)$, and for any $\phi \in \mathcal{S}_I(G)$, $M(\phi)$ sends $\phi$ to the element:
@@ -1370,7 +1370,7 @@ for each integer $k \ge 0$.
 
 PROOF. The Corollary follows from Lemma 9.2.2.10 combined with Corollary 9.2.2.5. $\square$
 
-THEOREM 9.2.2.13 (Paley-Wiener Theorem for Hardy-Sobolev Spaces - IV). Let $G$ be a second-countable $\mathbf{R}_{>0}$-modulated abelian group. Let $a \in \mathbf{R}$ be a real number, $a > 1$. Let $I \subset \mathbf{R}$ be a non-empty closed interval. We denote by $M$ the Mellin transform $M : \mathcal{S}_I(G) \to A\mathcal{S}(\mathbf{C}_I) \otimes \mathcal{S}(\widehat{G^1})$.
+THEOREM 9.2.2.13 (Paley-Wiener Theorem for Hardy-Sobolev Spaces - IV). Let $G$ be a second-countable $\mathbf{R}_{>0}$-modulated abelian group. Let $a \in \mathbf{R}$ be a real number, $a > 1$. Let $I \subset \mathbf{R}$ be a non-empty closed interval. We denote by $M$ the Mellin transform $M : \mathcal{S}_I(G) \to A\mathcal{S}(\mathbf{C}_I) \overline{\otimes} \mathcal{S}(\widehat{G^1})$.
 
 We denote by:
 
@@ -1466,7 +1466,7 @@ $$\alpha_i(g):=\varphi_i(g)\rho_G(g,\cdot),\quad g\in G.$$
 
 Since $\varphi_i\to\varphi$ uniformly as continuous functions on $K$, and since $K$ is compact, then the convergence of $\varphi_i$ to $\varphi$ is also in the $L^1$-topology on $K$ with respect to $\mu_G$.
 
-To check that $\alpha_i\to\alpha$ uniformly, we compose with the operator $M:\mathcal{S}_I(G)\to A(\mathbf{C}_I)\otimes\mathcal{S}(\widehat{G^1})$, the Mellin transform from Theorem D.3.3.13, which gives, upon calling $\alpha:=\varphi\rho_G$, $M(\alpha_i(f))(c)=M(\varphi_i)(c)M(f)(c)$ and $M(\alpha(f))(c)=M(\varphi)(c)M(f)(c)$ as holomorphic functions on $\Omega(G)$, for all $f\in\mathcal{S}_I(G)$.
+To check that $\alpha_i\to\alpha$ uniformly, we compose with the operator $M:\mathcal{S}_I(G)\to A(\mathbf{C}_I)\overline{\otimes}\mathcal{S}(\widehat{G^1})$, the Mellin transform from Theorem D.3.3.13, which gives, upon calling $\alpha:=\varphi\rho_G$, $M(\alpha_i(f))(c)=M(\varphi_i)(c)M(f)(c)$ and $M(\alpha(f))(c)=M(\varphi)(c)M(f)(c)$ as holomorphic functions on $\Omega(G)$, for all $f\in\mathcal{S}_I(G)$.
 
 If $B\subset\mathcal{S}_I(G)$ is a bounded subset then $M(\alpha_i(f))(c)\to M(\alpha(f))(c)$ uniformly as $f\in B$, because $M(\alpha(f))(c)=M(\varphi)(c)M(f)(c)$, and $M(\varphi_i)(c)\to M(\varphi)(c)$ by $L^1(G,|\cdot|^{\sigma(c)}_G\mu_G)$-convergence of $\varphi_i$ to $\varphi$.
 
@@ -1495,7 +1495,7 @@ $$
 assigned by, for each $\phi\in\mathcal{D}(J_{F,S})$:
 
 $$
-A_S(\phi):=\int_{J_{F,S}}\phi(g)\rho_{F,S}(g,\cdot)\,\mathrm{d}\mu_S(g) \tag{9.3.1.4}
+A_S(\phi):=\int_{J_{F,S}}\phi(g)\rho_{F,S}(g,\cdot)\,\mathrm{d}\overline{\mu}_S(g) \tag{9.3.1.4}
 $$
 
 where the integral is in the sense of Pettis, and the same argument from Lemma 9.3.1.3 implies its continuity by the Second Structure Theorem (see Theorem 5.4.1.1), which reduces the continuity assertion to the case of the convolution action of $\mathcal{D}(J_{F,S})$ on $\mathcal{S}_{(0,+\infty)}(J_{F,S})$.
@@ -1685,7 +1685,7 @@ $$
 Moreover, by design of $\varphi$ from (9.3.2.5), we have:
 
 $$
-\|\varphi\|_{L^1(G,\nu)}=\|\phi_{m,\omega}\|_{L^1(G,\mu)}\le\int_{\mathbf{R}_{>0}}|\beta_m(t)|\,\frac{\mathrm{d}t}{t}\,\|\psi_\omega\|_{L^1(G^1,\mu_1)}\le\int_{\mathbf{R}_{>0}}|\beta_m(t)|\,\frac{\mathrm{d}t}{t}=\|\alpha_0\|_{L^1(\mathbf{R}_{>0},\mathrm{d}t/t)}. \tag{9.3.2.8}
+\|\varphi\|_{L^1(G,\nu)}=\|\phi_{m,\omega}\|_{L^1(G,\overline{\mu})}\le\int_{\mathbf{R}_{>0}}|\beta_m(t)|\,\frac{\mathrm{d}t}{t}\,\|\psi_\omega\|_{L^1(G^1,\mu_1)}\le\int_{\mathbf{R}_{>0}}|\beta_m(t)|\,\frac{\mathrm{d}t}{t}=\|\alpha_0\|_{L^1(\mathbf{R}_{>0},\mathrm{d}t/t)}. \tag{9.3.2.8}
 $$
 
 Since we choose $\alpha_0$ to be the inverse Fourier transform of $\varphi_0$, which is in turn supported over $[-1,1]$ and bounded above by $1$, we see that we have $\|\alpha_0\|_{L^2(\mathbf{R}_{>0},\mathrm{d}t/t)}\le 2$.
@@ -1698,7 +1698,7 @@ $$
 
 We have therefore shown that the net $B:=\{\phi_{m,\omega}\}_{(m,\omega)\in\mathbf{N}\times\widehat{G^1}}$ fulfills (1), (2) and (3) from the statement of the Lemma.
 
-Since, by Lemma 4.3.2.2, the operators $\{1/\mu_1(G^1)P_{F,\omega}\}_{\omega\in\widehat{G^1}}$ are projectors and the closure of their convex hull within $\mathscr{B}_{\mathrm{SOT}}(W^{s,2}(G))$ contains the identity, in order to show that $B$ fulfills (4) it is enough to show that the net $\{\phi_{m,\omega}\}_{m\ge 0}$, for each fixed $\omega$, of $\omega$-homogeneous Schwartz-Bruhat functions on $G$ is such that the identity is in the closure in $\mathscr{B}_{\mathrm{SOT}}(W^{s,2}(G)(\omega))$ of $A(\{\phi_{m,\omega}\}_{m\ge 0})$.
+Since, by Lemma 4.3.2.2, the operators $\{1/\overline{\mu}_1(G^1)P_{F,\omega}\}_{\omega\in\widehat{G^1}}$ are projectors and the closure of their convex hull within $\mathscr{B}_{\mathrm{SOT}}(W^{s,2}(G))$ contains the identity, in order to show that $B$ fulfills (4) it is enough to show that the net $\{\phi_{m,\omega}\}_{m\ge 0}$, for each fixed $\omega$, of $\omega$-homogeneous Schwartz-Bruhat functions on $G$ is such that the identity is in the closure in $\mathscr{B}_{\mathrm{SOT}}(W^{s,2}(G)(\omega))$ of $A(\{\phi_{m,\omega}\}_{m\ge 0})$.
 
 In turn, it is enough to show that the identity in $\mathscr{B}_{\mathrm{SOT}}(L^2(\mathbf{R}_{>0},(1+|\log(t)|^2)^{s/2}\mathrm{d}t/t))$ is in the closure of the linear span of the sequence of operators:
 
@@ -1972,7 +1972,7 @@ When $\rho$ and $\varphi$ are smooth, see also [Tre, Part III,Ch.51,Cor.51.7], C
 
 As such, the given operator is Hilbert-Schmidt, and $K_{\varphi,\rho}$ is its Hilbert-Schmidt kernel. The function $K_{\varphi,\rho}$ is smooth over $G \times G$ away from a $(\mu_G \otimes \mu_G)$-negligible subset of the form $(\bigcup_{1 \le k \le N}\{g \in G : \lvert g\rvert = t_k\}) \times (\bigcup_{1 \le k \le N}\{g \in G : \lvert g\rvert = t_k\})$ for $\{t_1,\dots,t_N\} \subset \mathbf{R}_{>0}$ a finite subset, and it is $(\mu_G \otimes \mu_G)$-integrable. In particular, the diagonal in $G_x \times G_y$ is contained in the Lebesgue set of $K_{\varphi,\rho}$, up to a subset of $\mu_G$-measure zero (see Theorem A.5.4.1 and Remark A.5.4.2). Along the diagonal in $(G)_x \times (G)_y$, the smoothening $\tilde{K}_{\varphi,\rho}$ (in the sense of Theorem A.5.4.1 and [Bris-a, §3]; see also [Bris-a, §3.1,Thm.3.1]) vanishes $\mu_G$-almost everywhere. In fact, $K_{\varphi,\rho}$ is itself already defined $\mu_G$-almost everywhere along the diagonal at its points of continuity, a subset of the diagonal whose complement in the diagonal is $\mu_G$-negligible. Away from a $\mu_G$-negligible subset, $K_{\varphi,\rho}$ and $\tilde{K}_{\varphi,\rho}$ agree. The operator from (9.3.3.13) is therefore an integral Hilbert-Schmidt operator whose kernel has an absolutely integrable smoothening along the diagonal, whose mass vanishes.
 
-If both $\rho$ and $\varphi$ are smooth, then it is nuclear on $L^2(G)$ (because the kernel is smooth and compactly supported over $G \times G$, and hence an element of $\mathcal{S}(G) \hat{\boxtimes}_{\pi} \mathcal{S}(G)$ (in fact an element of the smaller $\mathcal{S}(G) \otimes \mathcal{S}(G)$, since $\varphi$ is contained in some $\mathcal{D}_K(G,k)$ for a compact subgroup $k \subset G$ with compactly generated orthogonal $k^{\perp}$, with $K \subset G$ a compact subset with non-empty interior, and $\mathcal{D}_K(G,k)$ is a Fréchet space), which therefore
+If both $\rho$ and $\varphi$ are smooth, then it is nuclear on $L^2(G)$ (because the kernel is smooth and compactly supported over $G \times G$, and hence an element of $\mathcal{S}(G) \hat{\boxtimes}_{\pi} \mathcal{S}(G)$ (in fact an element of the smaller $\mathcal{S}(G) \overline{\otimes} \mathcal{S}(G)$, since $\varphi$ is contained in some $\mathcal{D}_K(G,k)$ for a compact subgroup $k \subset G$ with compactly generated orthogonal $k^{\perp}$, with $K \subset G$ a compact subset with non-empty interior, and $\mathcal{D}_K(G,k)$ is a Fréchet space), which therefore
 
 ## PDF page 431
 

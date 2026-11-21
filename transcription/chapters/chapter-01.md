@@ -1534,7 +1534,7 @@ $$
 1-\chi(\mathfrak p_{v_k})q_{v_k}^{-s}, \tag{1.8.1.2}
 $$
 
-and so an infinite iteration of this process will converge as an operator (on the quotient of all $\chi|_{C_F^1}$-homogeneous adelic $\theta$-functions) only when we endow the function space with a topology that is matched under Mellin transform by a topology at least as fine as the topology of uniform convergence on all vertical strips of bounded width of $\mathbf C_{>1}=\{\sigma>1\}$ for $Z(f,\chi|\cdot|_F^s)$, and of $\mathbf C_{<0}=\{\sigma<0\}$ for $Z(\widehat f,\chi|\cdot|_F^{1-s})$.
+and so an infinite iteration of this process will converge as an operator (on the quotient of all $\chi|_{C_F^1}$-homogeneous adelic $\theta$-functions) only when we endow the function space with a topology that is matched under Mellin transform by a topology at least as fine as the topology of uniform convergence on all vertical strips of bounded width of $\mathbf C_{>1}=\{\sigma>1\}$ for $Z(f,\chi|\cdot|_F^s)$, and of $\mathbf C_{<0}=\{\sigma<0\}$ for $Z(\widehat f,\overline{\chi}|\cdot|_F^{1-s})$.
 
 This is, loosely, what Meyer does: he degenerates a global convolution operator using infinite Euler products, makes a trace calculation following Connes at the $S$-local level, and observes that by enlarging $S$ by a finite amount the ``part of the kernel'' that he has left behind in the degeneration process contributes zero to the global trace. Convergence of infinite Euler products is crucial for him to prove this last fact.
 

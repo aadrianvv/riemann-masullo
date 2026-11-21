@@ -1087,7 +1087,7 @@ Lemma E.2.1.11. Let $X$ be a compactly generated space, and $R\subset X\times X$
 
 We refer the reader to [Str, Prop. 2.17, Prop. 2.20], and [Str, Cor. 2.21].
 
-Proof. We call $\Delta$ the diagonal subspace in $(X/R)\times_0 (X/R)$. Since $X/R$ inherits compact generatedness from $X$, the map $q:X\times X\to (X/R)\times (X/R)$ is a submersive map by Lemma E.1.2.17 applied to $X=Y$, $X'=Y'=X/R$, and $f=g$ chosen to be the quotient map $X\to X/R$. As $q^{-1}(\Delta)=R\subset X\times X$, we see that (2) is equivalent to the statement that $\Delta$ is closed in $(X/R)\times (X/R)$, since $q$ is a submersive map. This latter assertion is in turn equivalent to $\Delta$ being $k$-closed in $(X/R)\times_0 (X/R)$. By the equivalence of part (1) and part (2) of Lemma E.2.1.6, which holds since $X$ is compactly generated, we conclude. $\square$
+Proof. We call $\overline{\Delta}$ the diagonal subspace in $(X/R)\times_0 (X/R)$. Since $X/R$ inherits compact generatedness from $X$, the map $q:X\times X\to (X/R)\times (X/R)$ is a submersive map by Lemma E.1.2.17 applied to $X=Y$, $X'=Y'=X/R$, and $f=g$ chosen to be the quotient map $X\to X/R$. As $q^{-1}(\overline{\Delta})=R\subset X\times X$, we see that (2) is equivalent to the statement that $\overline{\Delta}$ is closed in $(X/R)\times (X/R)$, since $q$ is a submersive map. This latter assertion is in turn equivalent to $\overline{\Delta}$ being $k$-closed in $(X/R)\times_0 (X/R)$. By the equivalence of part (1) and part (2) of Lemma E.2.1.6, which holds since $X$ is compactly generated, we conclude. $\square$
 
 Example E.2.1.12. As a simple example of a non-closed $R\subset X\times X$ resulting in a non-weakly Hausdorff (compactly generated) quotient, we take $X$ to be the real line $\mathbf R$ endowed with its Euclidean topology, and $R$ to be the subset of $\mathbf R\times_0\mathbf R$ of those elements $(x,y)$ such that $x=0$ if and only if $y=0$, and if $y\ne 0$ then $x/y\in\mathbf Q^{\times}$. Then $R$ is not closed in the compactly generated Hausdorff $\mathbf R\times_0\mathbf R$. We note that $\mathbf R\times_0\mathbf R=\mathbf R\times\mathbf R$ (Proposition E.1.2.19(2)). The quotient $X/R$ is homeomorphic to the quotient of $\mathbf R$ by the left-multiplication action by $\mathbf Q^{\times}$, with $\mathbf Q^{\times}$ being endowed with the subspace topology inherited from the Euclidean topology on $\mathbf R$. This quotient is then not weakly Hausdorff.
 
@@ -4432,7 +4432,7 @@ $$
 \begin{array}{ccc}
 D & \xrightarrow{a} & B \\
 {\scriptstyle b}\downarrow & \phi & \downarrow{\scriptstyle f} \\
-C & \xrightarrow[g]{} & A
+C & \xrightarrow[\overline{g}]{} & A
 \end{array}
 \tag{E.5.5.1}
 $$
@@ -4449,7 +4449,7 @@ $$
 \begin{array}{ccc}
 D & \xrightarrow{a} & B \\
 {\scriptstyle b}\downarrow & \phi & \downarrow{\scriptstyle f} \\
-C & \xrightarrow[g]{} & A
+C & \xrightarrow[\overline{g}]{} & A
 \end{array}
 $$
 
@@ -4486,7 +4486,7 @@ D' \xrightarrow{k} D,\quad D' \xrightarrow{c} B,\quad D' \xrightarrow[d]{} C,\qu
 \begin{array}{ccc}
 D & \xrightarrow{a} & B \\
 {\scriptstyle b}\downarrow & \phi & \downarrow{\scriptstyle f} \\
-C & \xrightarrow[g]{} & A
+C & \xrightarrow[\overline{g}]{} & A
 \end{array}
 \qquad
 \begin{array}{ccc}
@@ -4525,7 +4525,7 @@ C & \xrightarrow[g]{} & A
 \end{array}
 \qquad
 \begin{array}{ccc}
-c & \xRightarrow{\alpha} & a\circ k \\
+c & \xRightarrow{\underline{\alpha}} & a\circ k \\
 {\scriptstyle \alpha'}\searrow & & \downarrow{\scriptstyle {\mathbf 1}_{a}\star\gamma} \\
 & & a\circ k'
 \end{array}
@@ -5269,7 +5269,7 @@ $$
 \begin{array}{ccc}
 x & \xrightarrow{r} & y \\
 {\scriptstyle g}\downarrow & & \downarrow{\scriptstyle h} \\
-x & \xrightarrow[r]{} & y
+x & \xrightarrow[\overline{r}]{} & y
 \end{array}
 $$
 
@@ -5369,7 +5369,7 @@ $$
 \begin{array}{ccc}
 \mathcal{I}_{x:\underline{T} \to \mathcal{X}} & \longrightarrow & \mathcal{I}_{\mathcal{X}} \\
 \downarrow & & \downarrow{\scriptstyle \iota} \\
-\underline{T} & \xrightarrow[x]{} & \mathcal{X}
+\underline{T} & \xrightarrow[\overline{x}]{} & \mathcal{X}
 \end{array}
 $$
 
@@ -5383,7 +5383,7 @@ $$
 \begin{array}{ccc}
 \mathcal{I}_{x:\underline{T} \to \mathcal{X}}(T') & \longrightarrow & \mathcal{I}_{\mathcal{X}}(T') \\
 \downarrow & & \downarrow{\scriptstyle \iota} \\
-h_{T}(T') & \xrightarrow[x]{} & \mathcal{X}(T')
+h_{T}(T') & \xrightarrow[\overline{x}]{} & \mathcal{X}(T')
 \end{array}
 \tag{E.6.3.1}
 $$
@@ -5402,12 +5402,12 @@ $$
 \mathcal{X}(T') = [\mathcal{G}(T') \rightrightarrows X(T')], \; \mathcal{I}_{\mathcal{X}}(T') = [\mathcal{G}' \rightrightarrows I_{[\mathcal{G}(T') \Rightarrow X(T')]}]
 $$
 
-where $\mathcal{G}'$ refers to the notation from Lemma E.6.3.6. The groupoid-theoretic fibre product thereby recovers the description of $\mathcal{I}_{x:\underline{T} \to \mathcal{X}}(T')$ as in the construction of $\mathcal{I}_{x:\underline{T} \to \mathcal{X}}$. $\square$
+where $\mathcal{G}'$ refers to the notation from Lemma E.6.3.6. The groupoid-theoretic fibre product thereby recovers the description of $\mathcal{I}_{x:\underline{\overline{T}} \to \mathcal{X}}(T')$ as in the construction of $\mathcal{I}_{x:\underline{\overline{T}} \to \mathcal{X}}$. $\square$
 
 **Remark E.6.3.12.** In the special case $T = X$ and $x$ is the quotient $\underline{X} \to [X/\mathcal{G}]$, $\mathcal{I}_{x:\underline{T} \to \mathcal{X}} = I_{[\mathcal{G} \Rightarrow X]}$ and for any point $y \in X$ the induced morphism $y : \underline{\{y\}} \to \underline{X} \to \mathcal{X}$ fits into the assertion of the Lemma with $T = \{y\}$ and gives:
 
 $$
-\mathcal{I}_{y:\underline{\{y\}} \to \mathcal{X}} = \{y\} \times_{y, \mathcal{X}, \iota} \mathcal{I}_{\mathcal{X}} = \{y\} \times_{y, X} I_{[\mathcal{G} \Rightarrow X]} = I_y.
+\mathcal{I}_{y:\underline{\{y\}} \to \mathcal{X}} = \{\underline{y}\} \times_{y, \mathcal{X}, \iota} \mathcal{I}_{\mathcal{X}} = \{y\} \times_{y, X} I_{[\mathcal{G} \Rightarrow X]} = I_y.
 $$
 
 In other words, the inertia stack interpolates the inertia groups of all points of $X$.

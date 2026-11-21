@@ -298,7 +298,7 @@ $^4$Return here.
 
 **438** · **CHAPTER 10. TRACE FORMULA: SPECTRAL SIDE**
 
-Since the Sobolev weight $w=\max\{|g|^{2\alpha}_F,|g|^{-2\alpha}_F\}(1+|\log|\cdot|_F|^2)^{s/2}$ is invariant under inversion on $C_F$, and so is the Haar measure $\mu_1$, $J$ is indeed norm-preserving on $W^s_I(C_F)$, and hence induces a continuous isometric automorphism on $W^s_I(C_F)$.
+Since the Sobolev weight $w=\max\{|g|^{2\alpha}_F,|g|^{-2\alpha}_F\}(1+|\log|\cdot|_F|^2)^{s/2}$ is invariant under inversion on $C_F$, and so is the Haar measure $\overline{\mu}_1$, $J$ is indeed norm-preserving on $W^s_I(C_F)$, and hence induces a continuous isometric automorphism on $W^s_I(C_F)$.
 
 We observe, as a consequence of Theorem 2.2.3.2, that we have the following identity, as elements of $\mathcal S(C_F)$:
 
@@ -412,7 +412,7 @@ $$
 where $\langle\cdot,\cdot\rangle_{s,2}$ is assigned by:
 
 $$
-\langle\phi,\psi\rangle_{s,2}:=\int_{C_F}\phi(g)\psi(g)\,\mathrm{d}\mu(g).
+\langle\phi,\psi\rangle_{s,2}:=\int_{C_F}\phi(g)\psi(g)\,\mathrm{d}\overline{\mu}(g).
 $$
 
 The duality pairing $\langle\cdot,\cdot\rangle_{s,2}$ further identifies, by [NB, Thm.8.12.4(b)], the continuous dual $(\mathscr H^s_{F,a})'$ of the quotient $\mathscr H^s_{F,a}$ with the orthogonal in the sense of [NB, Def.8.9.1] of $W^{s,2}_a\mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S_0(\mathbf A_F))$.
@@ -420,10 +420,10 @@ The duality pairing $\langle\cdot,\cdot\rangle_{s,2}$ further identifies, by [NB
 We note that the pairing $\langle\cdot,\cdot\rangle_{s,2}$ respects $C^1_F$-isotypes, i.e. it induces a non-degenerate duality pairing:
 
 $$
-\langle\cdot,\cdot\rangle_{s,2}:W^{s,2}(C_F)(\omega)\times W^{-s,2}(C_F)(\omega)\to\mathbf C
+\langle\cdot,\cdot\rangle_{s,2}:W^{s,2}(C_F)(\omega)\times W^{-s,2}(C_F)(\overline{\omega})\to\mathbf C
 $$
 
-by invariance of the Haar measure $\mu$ on $C_F$.
+by invariance of the Haar measure $\overline{\mu}$ on $C_F$.
 
 Notation 10.2.1.1. Throughout, we fix a choice of holomorphic parametrization for $\Omega(C_F)$. This amounts to choosing, for every $\omega\in\widehat{C^1_F}$, a continuous unitary character $\chi\in\widehat{C_F}$, and parametrize every point of $\Omega(C_F)(\omega)$, the fibre of $\Omega(C_F)$ over $\omega\in\widehat{C^1_F}$, the discrete parameter space of connected components of $\Omega(C_F)$, as:
 
@@ -517,12 +517,12 @@ $$
 
 as a dense linear subspace, where $J_{a+\rho}$ was defined in (7.1.4.3).
 
-We note that $U(J_{a+\rho})$ is in the image of (10.2.1.8) if and only if $\rho\in i\mathbf R$, since otherwise the functionals $U(\delta^{(m)}_{a+\rho})$ are discontinuous with respect to the Sobolev topology on $W^{s,2}(C_F)$, since multiplication by a quasi-character of nonzero exponent is a discontinuous linear operator on $W^{s,2}(C_F)$ (valued in $\mu$-measurable functions on $C_F$. It is only valued in $W^{s,2}(C_F)$ if and only if the exponent of the quasi-character is zero. In which case such multiplication operator is a linear topological automorphism on $W^{s,2}(C_F)$, preserving $C^1_F$-isotypes).
+We note that $U(J_{a+\rho})$ is in the image of (10.2.1.8) if and only if $\rho\in i\mathbf R$, since otherwise the functionals $U(\delta^{(m)}_{a+\rho})$ are discontinuous with respect to the Sobolev topology on $W^{s,2}(C_F)$, since multiplication by a quasi-character of nonzero exponent is a discontinuous linear operator on $W^{s,2}(C_F)$ (valued in $\overline{\mu}$-measurable functions on $C_F$. It is only valued in $W^{s,2}(C_F)$ if and only if the exponent of the quasi-character is zero. In which case such multiplication operator is a linear topological automorphism on $W^{s,2}(C_F)$, preserving $C^1_F$-isotypes).
 
 Explicitly, the element $U(\delta^{(m)}_{a+it})$ is the image of the continuous linear functional on $W^{s,2}(C_F)(\omega)$:
 
 $$
-D^m_t:\phi\mapsto\int_{C_F}\phi(g)\chi(g)|g|^{it}_F(\log|g|_F)^m\,\mathrm{d}\mu(g)=\int_{C_F}\phi(g)\eta_{\chi,t,m}(g)\,\mathrm{d}\mu(g) \tag{10.2.1.9}
+D^m_t:\phi\mapsto\int_{C_F}\phi(g)\chi(g)|g|^{it}_F(\log|g|_F)^m\,\mathrm{d}\overline{\mu}(g)=\int_{C_F}\phi(g)\eta_{\chi,t,m}(g)\,\mathrm{d}\overline{\mu}(g) \tag{10.2.1.9}
 $$
 
 so long as $0\le m\le N_s(\rho_{\chi,t})-1$ (by Proposition 9.1.2.5).
@@ -546,7 +546,7 @@ By Lemma 9.3.2.1, there exists, for each $\chi\in\widehat{C_F}$ chosen as in the
 where $A$ is the continuous linear operator $\mathcal S(C_F)\to\mathscr{L}(W^{s,2}(C_F))$ defined by the assignment:
 
 $$
-A(\varphi):=\int_{C_F}\varphi(g)\psi(g^{-1}x)\,\mathrm{d}\mu(g)
+A(\varphi):=\int_{C_F}\varphi(g)\psi(g^{-1}x)\,\mathrm{d}\overline{\mu}(g)
 $$
 
 which was shown to be well-defined and continuous as a linear endomorphism of $W^{s,2}(C_F)$ in Lemma 9.3.2.1.
@@ -569,13 +569,13 @@ $P_{\chi,m}$ has range contained within the closed subspace of $W^{s,2}(C_F)(\ch
 
 section $\tau$ to the idelic norm) is compactly supported over the interval $[-m,m]$, because it is isomorphic under the Fourier transform on $W^{s,2}(C_F)(\chi|_{C^1_F})$ (which is indeed defined by Proposition 9.1.2.6) to the multiplication operator by the Fourier transform of $\phi_{m,\chi|_{C^1_F}}$.
 
-We call $Q_{\chi,m}$ the orthogonal projector on $W^{s,2}(C_F)(\chi|_{C^1_F})$ onto such closed subspace, and $Q_{\chi,m}$ the orthogonal projector on $\mathscr H^s_{F,a}(\chi|_{C^1_F})$ onto the closure of the linear image of such closed subspace under the quotient $W^{s,2}(C_F)(\chi|_{C^1_F})\to\mathscr H^s_{F,a}(\chi|_{C^1_F})$, a closed subspace of $\mathscr H^s_{F,a}(\chi|_{C^1_F})$.
+We call $Q_{\chi,m}$ the orthogonal projector on $W^{s,2}(C_F)(\chi|_{C^1_F})$ onto such closed subspace, and $\overline{Q}_{\chi,m}$ the orthogonal projector on $\mathscr H^s_{F,a}(\chi|_{C^1_F})$ onto the closure of the linear image of such closed subspace under the quotient $W^{s,2}(C_F)(\chi|_{C^1_F})\to\mathscr H^s_{F,a}(\chi|_{C^1_F})$, a closed subspace of $\mathscr H^s_{F,a}(\chi|_{C^1_F})$.
 
 Since $P_{\chi,m}\to\mathrm{Id}$ in $\mathscr{B}\mathrm{SOT}(W^{s,2}(C_F)(\chi|_{C^1_F}))$, as $m\to+\infty$, by Lemma 9.3.2.1, the same holds for $Q_{\chi,m}$ as $m\to+\infty$, and therefore $Q_{\chi,m}\to\mathrm{Id}$ in $\mathscr{B}\mathrm{SOT}(\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F}))$.
 
-The same therefore holds for the sequence of continuous adjoints $Q'_{\chi,m}$ in $(\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F}))'_\beta$, as $m\to+\infty$, in $\mathscr{B}\mathrm{SOT}((\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F}))'_\beta)$.
+The same therefore holds for the sequence of continuous adjoints $\overline{Q}'_{\chi,m}$ in $(\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F}))'_\beta$, as $m\to+\infty$, in $\mathscr{B}\mathrm{SOT}((\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F}))'_\beta)$.
 
-The range of $Q'_{\chi,m}$ in $(\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F}))'_\beta$ is finite dimensional and is linearly generated by the functionals $\{D^k_t\}$ as $t\in[-m,m]$ and $0\le k\le N_s(\rho_{\chi,t})-1$. It follows that the range of $Q_{\chi,m}$ in $\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F})$ is also finite dimensional and linearly generated by the bi-orthogonal set of the finite set of functionals $\{D^k_t\}$ as $t\in[-m,m]$ and $0\le k\le N_s(\rho_{\chi,t})-1$. This proves both denseness conditions for the set of continuous functionals $\{D^k_t\}$ as $0\le k\le N_s(\rho_{\chi,t})-1$ and $t\in\mathbf R$ varying over the ordinates of the zeros of $L(s,\chi)$ on the $a$-line, in $(\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F}))'_\beta$, and for its bi-orthogonal set in $\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F})$. $\square$
+The range of $Q'_{\chi,m}$ in $(\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F}))'_\beta$ is finite dimensional and is linearly generated by the functionals $\{D^k_t\}$ as $t\in[-m,m]$ and $0\le k\le N_s(\rho_{\chi,t})-1$. It follows that the range of $\overline{Q}_{\chi,m}$ in $\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F})$ is also finite dimensional and linearly generated by the bi-orthogonal set of the finite set of functionals $\{D^k_t\}$ as $t\in[-m,m]$ and $0\le k\le N_s(\rho_{\chi,t})-1$. This proves both denseness conditions for the set of continuous functionals $\{D^k_t\}$ as $0\le k\le N_s(\rho_{\chi,t})-1$ and $t\in\mathbf R$ varying over the ordinates of the zeros of $L(s,\chi)$ on the $a$-line, in $(\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F}))'_\beta$, and for its bi-orthogonal set in $\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F})$. $\square$
 
 **10.2.1.2. Basic properties of the $a$-line basis.** We prove the following properties of the Markushevich basis $\{\eta_{\chi,t,m}\}$ introduced in (10.2.1.5) of Theorem 10.2.1.1, for the orthogonal $W^{s,2}_a\mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S_0(\mathbf A_F))^\perp$ in $W^{-s,2}(C_F)$ with respect to the pairing $\langle\cdot,\cdot\rangle_{s,2}$ from (10.2.1.3).
 
@@ -604,7 +604,7 @@ In particular, the set of functions from (10.2.1.11) is not contained in the ope
 Proof. As for Proposition 11.2.0.4, we proceed as follows. For $s>1$, then:
 
 $$
-||\eta_{\chi,t,m}||_{-s,2}=\left(\int_{C_F}|\log|g|_F|^{2m}(1+|\log|g|_F|^2)^{-s/2}\,\mathrm{d}\mu(g)\right)^{1/2}
+||\eta_{\chi,t,m}||_{-s,2}=\left(\int_{C_F}|\log|g|_F|^{2m}(1+|\log|g|_F|^2)^{-s/2}\,\mathrm{d}\overline{\mu}(g)\right)^{1/2}
 $$
 
 ## PDF page 444
@@ -655,7 +655,7 @@ Remark 10.2.1.5 (Approximations of the identity and basis projectors). We follow
 
 In the special case $E=\mathscr H^s_{F,a}(\chi|_{C^1_F})$, for $a,s\in\mathbf R$, $s>1$, the $a$-line spectral Markushevich bases $\{(x_m,f_m)\}_{m\ge 0}\subset E\times E'_\beta$ provided by Theorem 10.2.1.1 are all normalized by Proposition 10.2.1.3; see Corollary 10.2.1.4.
 
-They also satisfy a close analog of the “simplicity” condition: $\{x_m\}_{m\ge 0}$ is not a Schauder basis, and so the basis projections, all finite rank idempotent operators, do not converge strongly to the identity. However, the orthogonal projectors $Q_{\chi,N}$ from the proof of Theorem 10.2.1.1, onto the closed subspace of those elements of $\mathscr H^s_{F,a}(\chi|_{C^1_F})$ which are images of elements in $W^{s,2}(C_F)(\chi|_{C^1_F})$ whose Fourier transform, pre-composed with pull-back along the chosen continuous homomorphic section $\tau$ to the idelic norm, is compactly supported over the interval $[-N,N]\subset\mathbf R$, serve as a replacement of the basis projectors, and they do converge to the identity on $\mathscr H^s_{F,a}(\chi|_{C^1_F})$ strongly, as a consequence of Lemma 9.3.2.1.
+They also satisfy a close analog of the “simplicity” condition: $\{x_m\}_{m\ge 0}$ is not a Schauder basis, and so the basis projections, all finite rank idempotent operators, do not converge strongly to the identity. However, the orthogonal projectors $\overline{Q}_{\chi,N}$ from the proof of Theorem 10.2.1.1, onto the closed subspace of those elements of $\mathscr H^s_{F,a}(\chi|_{C^1_F})$ which are images of elements in $W^{s,2}(C_F)(\chi|_{C^1_F})$ whose Fourier transform, pre-composed with pull-back along the chosen continuous homomorphic section $\tau$ to the idelic norm, is compactly supported over the interval $[-N,N]\subset\mathbf R$, serve as a replacement of the basis projectors, and they do converge to the identity on $\mathscr H^s_{F,a}(\chi|_{C^1_F})$ strongly, as a consequence of Lemma 9.3.2.1.
 
 ## PDF page 445
 
@@ -700,7 +700,7 @@ $$
 where $\langle\cdot,\cdot\rangle_{I,s}$ is assigned by:
 
 $$
-\langle\phi,\psi\rangle_{I,s}:=\int_{C_F}\phi(g)\psi(g)\,\mathrm{d}\mu(g).
+\langle\phi,\psi\rangle_{I,s}:=\int_{C_F}\phi(g)\psi(g)\,\mathrm{d}\overline{\mu}(g).
 $$
 
 The duality pairing $\langle\cdot,\cdot\rangle_{I,s}$ further identifies, by [NB, Thm.8.12.4(b)], the continuous dual $(\mathscr H^s_{F,a,I})'$ of the quotient $\mathscr H^s_{F,a,I}$ with the orthogonal in the sense of [NB, Def.8.9.1] of $W^s_{a,I}\mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S_0(\mathbf A_F))$.
@@ -708,10 +708,10 @@ The duality pairing $\langle\cdot,\cdot\rangle_{I,s}$ further identifies, by [NB
 We note that the pairing $\langle\cdot,\cdot\rangle_{I,s}$ respects $C^1_F$-isotypes, i.e. it induces a non-degenerate duality pairing:
 
 $$
-\langle\cdot,\cdot\rangle_{I,s}:W^s_I(C_F)(\omega)\times W^{-s}_I(C_F)(\omega)\to\mathbf C
+\langle\cdot,\cdot\rangle_{I,s}:W^s_I(C_F)(\omega)\times W^{-s}_I(C_F)(\overline{\omega})\to\mathbf C
 $$
 
-by invariance of the Haar measure $\mu$ on $C_F$.
+by invariance of the Haar measure $\overline{\mu}$ on $C_F$.
 
 Notation 10.2.2.1. Throughout, we fix a choice of holomorphic parametrization for $\Omega(C_F)$ as in Notation 10.2.1.1.
 
@@ -904,7 +904,7 @@ $$
 
 **10.3. SPECTRAL NUCLEARITY** · **449**
 
-*(3) If $\varphi$ is homogeneous of weight $\omega\in\widehat{C^1_F}$ under the continuous left-translation action of $C_F$ on $\mathcal D(C_F)$, then $A(\varphi)$ is valued in the linear subspace $\mathscr S(\mathscr H^s_{F,a}(\omega))$ of strongly nuclear operators on the isotype $\mathscr H^s_{F,a}(\omega)$, and its trace is:*
+*(3) If $\varphi$ is homogeneous of weight $\overline{\omega}\in\widehat{C^1_F}$ under the continuous left-translation action of $C_F$ on $\mathcal D(C_F)$, then $A(\varphi)$ is valued in the linear subspace $\mathscr S(\mathscr H^s_{F,a}(\omega))$ of strongly nuclear operators on the isotype $\mathscr H^s_{F,a}(\omega)$, and its trace is:*
 
 $$
 \mathrm{Trace}\; A(\varphi) = \sum_{t\in\mathbf R:L(a+it,\chi)=0} N_s(\rho_{\chi,t}) \int_{C_F} \varphi(g)\chi|g|^{it}_F\, \mathrm{d}\bar\mu(g) \tag{10.3.1.5}
@@ -990,7 +990,7 @@ $$
 \{\chi_k|\cdot|^{i[a_{K,k},b_{K,k}]}_F,\; k\in\mathbf N\}\subset\widehat{C_F}.
 $$
 
-We note that in light of the orthogonality of the $\chi_k|_{C^1_F}$- and $\chi_{k'}|_{C^1_F}$-isotypes, for $k\ne k'$, then for each fixed integer $k$, the finite rank operator, whose range is indeed contained within $\mathscr H^s_{F,a}(\chi_k|_{C^1_F})$, defined in (10.3.1.15), factors through the orthogonal projection $P_{B_{K,k}}$ onto the closed subspace of $\mathscr H^s_{F,a}(\chi_k|_{C^1_F})$ given by the $\chi_k|_{C^1_F}$-isotype of the range of $P_{B_K}$. Such subspace is finite dimensional, since is dual is linearly and topologically generated by the elements of $W^{-s,2}(C_F)(\chi_k|_{C^1_F})$:
+We note that in light of the orthogonality of the $\chi_k|_{C^1_F}$- and $\chi_{k'}|_{C^1_F}$-isotypes, for $k\ne k'$, then for each fixed integer $k$, the finite rank operator, whose range is indeed contained within $\mathscr H^s_{F,a}(\chi_k|_{C^1_F})$, defined in (10.3.1.15), factors through the orthogonal projection $P_{B_{K,k}}$ onto the closed subspace of $\mathscr H^s_{F,a}(\chi_k|_{C^1_F})$ given by the $\chi_k|_{C^1_F}$-isotype of the range of $P_{B_K}$. Such subspace is finite dimensional, since is dual is linearly and topologically generated by the elements of $W^{-s,2}(C_F)(\overline{\chi}_k|_{C^1_F})$:
 
 $$
 \eta_{\chi_k,t_{k,j},m_{k,j}}:\; t_{k,j}\in[a_{K,k},b_{K,k}],\; 0\le m_{k,j}\le N_s(\rho_{\chi_k,t_{k,j}})-1. \tag{10.3.1.16}
@@ -1240,15 +1240,15 @@ $$\sum_{k\ge 0}\sum_{j\ge 0}\left(\sum_{0\le i\le N_{I,s}(\rho_{\chi_k,t_{k,j},b
 We note that we have, for each $\chi \in \widehat{C_F}$ and upon choosing a continuous homomorphic section $\tau$ to the idelic norm:
 
 $$
-|M(\varphi)^{(i)}(z)| \le \int_{\mathbf{R}_{>0}} \int_{C^1_F} |(t\partial_t)^N(\varphi(\tau(t)g)\log(t)^i)t^{\mathrm{Re}(z)}| \,\mathrm{d}\mu(g)\,\frac{\mathrm{d}t}{t} \tag{10.3.2.8}
+|M(\varphi)^{(i)}(z)| \le \int_{\mathbf{R}_{>0}} \int_{C^1_F} |(t\partial_t)^N(\varphi(\tau(t)g)\log(t)^i)t^{\mathrm{Re}(z)}| \,\mathrm{d}\overline{\mu}(g)\,\frac{\mathrm{d}t}{t} \tag{10.3.2.8}
 $$
 
 $$
-\le \sum_{0\le n\le N} \binom{N}{n} \int_{\mathbf{R}_{>0}} \int_{C^1_F} ((t\partial_t)^{N-n}\varphi(\tau(t)g)) \cdot \frac{i!}{(i-n)!}(\log(t))^{i-n} t^{\mathrm{Re}(z)}| \,\mathrm{d}\mu(g)\,\frac{\mathrm{d}t}{t} \tag{10.3.2.9}
+\le \sum_{0\le n\le N} \binom{N}{n} \int_{\mathbf{R}_{>0}} \int_{C^1_F} ((t\partial_t)^{N-n}\varphi(\tau(t)g)) \cdot \frac{i!}{(i-n)!}(\log(t))^{i-n} t^{\mathrm{Re}(z)}| \,\mathrm{d}\overline{\mu}(g)\,\frac{\mathrm{d}t}{t} \tag{10.3.2.9}
 $$
 
 $$
-\le \sum_{0\le n\le N} \binom{N}{n} \prod_{0\le n\le N-1}(i-n) \int_{\mathbf{R}_{>0}} \int_{C^1_F} |(t\partial_t)^{N-n}\varphi(\tau(t)g)\max\{t^{\alpha},t^{-\alpha}\}(1+|\log(t)|^2)^{s/2} \,\mathrm{d}\mu(g)\,\frac{\mathrm{d}t}{t} \tag{10.3.2.10}
+\le \sum_{0\le n\le N} \binom{N}{n} \prod_{0\le n\le N-1}(i-n) \int_{\mathbf{R}_{>0}} \int_{C^1_F} |(t\partial_t)^{N-n}\varphi(\tau(t)g)\max\{t^{\alpha},t^{-\alpha}\}(1+|\log(t)|^2)^{s/2} \,\mathrm{d}\overline{\mu}(g)\,\frac{\mathrm{d}t}{t} \tag{10.3.2.10}
 $$
 
 for any integer $0 \le i \le N_{I,s}(z)-1$. It follows that, upon calling $C_{N,I,s}(\varphi)>0$ the value of each integral in the last finite sum in (10.3.2.8), we have:
@@ -1265,7 +1265,7 @@ $\square$
 
 Let $F$ be a number field, $\chi \in \widehat{C_F}$ a continuous character.
 
-We fix a real number $s\ge 0$, and we assume $s>1$ to ensure that every element of $W^{s,2}(C_F)$ is absolutely $\mu$-integrable (see Proposition 9.1.2.6). Let $I$ be a compact interval, $I=[-\alpha,\alpha]$ for a real number $\alpha\ge 0$. Then we still choose $s>1$ in $W^s_I(C_F)$, to ensure the integrability of the functions $|\cdot|^b_F(\log|g|_F)^m$ for $b=\pm\alpha$ and $m<[\frac{s-1}{2}+1]$.
+We fix a real number $s\ge 0$, and we assume $s>1$ to ensure that every element of $W^{s,2}(C_F)$ is absolutely $\overline{\mu}$-integrable (see Proposition 9.1.2.6). Let $I$ be a compact interval, $I=[-\alpha,\alpha]$ for a real number $\alpha\ge 0$. Then we still choose $s>1$ in $W^s_I(C_F)$, to ensure the integrability of the functions $|\cdot|^b_F(\log|g|_F)^m$ for $b=\pm\alpha$ and $m<[\frac{s-1}{2}+1]$.
 
 We further fix a real number $a\in\mathbf{R}$. We will be strengthening the assumptions on $s$ and $a$ as the need arises.
 
@@ -1381,7 +1381,7 @@ in $\mathscr{L}_{\beta}(W^s_I(C_F))$.
 
 We further note that since the Sobolev weight function $\max\{|g|^{\alpha}_F,|g|^{-\alpha}_F\}(1+|\log|\cdot|_F|^2)^{s/2}$ is not $C_F$-invariant (see Lemma 9.3.1.5), the continuous left-translation action of $C_F$ on $W^s_I(C_F)$ is through linear topological automorphisms, but not through isometries, and in particular it does not preserve orthogonality within the metric space $W^s_I(C_F)$.
 
-It does, however, preserve the pairing $\langle\cdot,\cdot\rangle_{I,s}$ from (9.2.1.28), by invariance of the Haar measure $\mu$ on $C_F$.
+It does, however, preserve the pairing $\langle\cdot,\cdot\rangle_{I,s}$ from (9.2.1.28), by invariance of the Haar measure $\overline{\mu}$ on $C_F$.
 
 To fix ideas, we choose $I=[-\alpha,\alpha]=\{0\}$, i.e. $\alpha=0$.
 
@@ -1548,7 +1548,7 @@ as $\Lambda\to+\infty$, where $A^{\mathrm{spec}}_a(\varphi)$ is the nuclear oper
 Remark 10.4.2.3. Theorem 10.4.2.2 will be proved throughout the remainder of this section. The rest of this Chapter will be devoted to computing the trace of the geometric truncation of $A(\varphi)$ of level $\rho$, for then using the formula from (10.4.2.3) of Theorem 10.4.2.1 to obtain an asymptotic identity between $\mathrm{Trace}\,(A^{\mathrm{spec}}_a(\varphi))$, which involves the zeros of all Hecke $L$-functions of $F$, and the quantity:
 
 $$
-2\log(\Lambda)\mu_1(C^1_F)\varphi(1)-\mathrm{Trace}\,(P^{\mathrm{geom}}_{\rho,a}\circ A(\varphi)) \tag{10.4.2.10}
+2\log(\Lambda)\overline{\mu}_1(C^1_F)\varphi(1)-\mathrm{Trace}\,(P^{\mathrm{geom}}_{\rho,a}\circ A(\varphi)) \tag{10.4.2.10}
 $$
 
 for $s\ge 0$ and $a$ to be chosen, and for $\Lambda>0$ to be sent to $+\infty$ (with $\varepsilon\Lambda=o(1)$ as $\Lambda\to+\infty$, which forces $\rho\to 1$ pointwise over $C_F$ while remaining nonnegative, continuous and uniformly bounded above by the constant function with value $1$).
@@ -1668,12 +1668,12 @@ For any $u\in E_0$, we have $\tilde\phi_k(u+u_m)=\tilde\phi_k(u_m)$, and hence $
 The quotient topology on $E/E_0$ is induced, by [NB, Thm.5.11.2], by the norm
 
 $$
-p(x):=\inf_{u_0\in E_0}||u_0+u||_E \tag{10.4.2.19}
+\overline{p}(x):=\inf_{u_0\in E_0}||u_0+u||_E \tag{10.4.2.19}
 $$
 
 for $u$ a choice of element of $E$ whose image in $E/E_0$ is $x$.
 
-Since $\{x_m\}_{m\ge 0}$ is bounded and regular (i.e. bounded away from $0\in E/E_0$; see [Kal, §1, Def.1.1, p.91]), there exist real numbers $r,r'>0$ with $r<r'$, such that $r\le p(x_m)\le r'$ for each $m\ge 0$.
+Since $\{x_m\}_{m\ge 0}$ is bounded and regular (i.e. bounded away from $0\in E/E_0$; see [Kal, §1, Def.1.1, p.91]), there exist real numbers $r,r'>0$ with $r<r'$, such that $r\le \overline{p}(x_m)\le r'$ for each $m\ge 0$.
 
 For each integer $m\ge 0$, and for any $u_m\in E$ as in the foregoing, $u+u_m$ also satisfies the conditions in (10.4.2.17) for any $u\in E_0$.
 
@@ -1730,7 +1730,7 @@ $$
 \psi_{\chi,t,b,m},\,(t,b)\in\mathbf{R}^2:L(s+b+it,\chi)=0,\,0\le m\le N(\rho_{\chi,t,b,m})-1 \tag{10.4.2.21}
 $$
 
-on the $I$-based strip (see (10.2.2.4)) provided by Theorem 10.2.2.1, whose continuous coefficient functionals are, as per the theorem, provided by integration with respect to the Haar measure $\mu$ on $C_F$ against the functions of $g\in C_F$:
+on the $I$-based strip (see (10.2.2.4)) provided by Theorem 10.2.2.1, whose continuous coefficient functionals are, as per the theorem, provided by integration with respect to the Haar measure $\overline{\mu}$ on $C_F$ against the functions of $g\in C_F$:
 
 $$
 \eta_{\chi,t,b,m}(g)=\chi(g)|g|^{a+b+it}_F(\log|g|_F)^m,\,(t,b)\in\mathbf{R}^2:L(s+b+it,\chi)=0,\,0\le m\le N(\rho_{\chi,t,b,m})-1 \tag{10.4.2.22}
@@ -1763,7 +1763,7 @@ $$
 equals their $S_2$-norm (see [Cnw-b, Ch.3, §18, Thm.18.13, p.91]), which is in turn computed as the square of the following integral:
 
 $$
-\int_{C_F\times C_F}\left|\int_{C_F}\varphi(g)\,\tilde\psi_{\chi,t,b,m}(g^{-1}x)\,\mathrm{d}\mu(g)\,\eta_{\chi,t,b,m}(y)\right|^2 w_{I,s}(x)w_{I,s}(y)^{-1}\,\mathrm{d}(\mu\otimes\mu)(x,y). \tag{10.4.2.26}
+\int_{C_F\times C_F}\left|\int_{C_F}\varphi(g)\,\tilde\psi_{\chi,t,b,m}(g^{-1}x)\,\mathrm{d}\overline{\mu}(g)\,\eta_{\chi,t,b,m}(y)\right|^2 w_{I,s}(x)w_{I,s}(y)^{-1}\,\mathrm{d}(\overline{\mu}\otimes\overline{\mu})(x,y). \tag{10.4.2.26}
 $$
 
 We note that we can arrange the $\tilde\psi_{\chi,t,b,m}$ to be in $\mathcal{S}\mathrm{E}(C_F)$, by Lemma 10.4.2.5.
@@ -1771,13 +1771,13 @@ We note that we can arrange the $\tilde\psi_{\chi,t,b,m}$ to be in $\mathcal{S}\
 We now estimate the integral in (10.4.2.26). We have that the integral in (10.4.2.26) equals:
 
 $$
-\int_{C_F\times C_F}\int_{C_F\times C_F}\varphi(g_1)\varphi(g_2)\,\tilde\psi_{\chi,t,b,m}(g^{-1}_1x)\,\tilde\psi_{\chi,t,b,m}(g^{-1}_2x)\,\mathrm{d}(\mu\otimes\mu)(g_1,g_2)\,\eta_{\chi,t,b,m}(y)^2\,w_{I,s}(x)w_{I,s}(y)^{-1}\,\mathrm{d}(\mu\otimes\mu)(x,y). \tag{10.4.2.27}
+\int_{C_F\times C_F}\int_{C_F\times C_F}\varphi(g_1)\varphi(g_2)\,\tilde\psi_{\chi,t,b,m}(g^{-1}_1x)\,\tilde\psi_{\chi,t,b,m}(g^{-1}_2x)\,\mathrm{d}(\overline{\mu}\otimes\overline{\mu})(g_1,g_2)\,\eta_{\chi,t,b,m}(y)^2\,w_{I,s}(x)w_{I,s}(y)^{-1}\,\mathrm{d}(\overline{\mu}\otimes\overline{\mu})(x,y). \tag{10.4.2.27}
 $$
 
 By Fubini’s Theorem (see [Fol, Thm.7.28]) and shearing under the transformation $(x,y)\mapsto(g_1x,g_1y)$, we obtain that the integral in (10.4.2.27) equals:
 
 $$
-\int_{C_F\times C_F}\tilde\psi_{\chi,t,b,m}(x)\int_{C_F\times C_F}\varphi(g_1)\varphi(g_2)\,\tilde\psi_{\chi,t,b,m}(g^{-1}_2g_1x)\,\eta_{\chi,t,b,m}(g_1y)^2\,w_{I,s}(g_1x)w_{I,s}(g_1y)^{-1}\,\mathrm{d}(\mu\otimes\mu)(x,y)\,\mathrm{d}(\mu\otimes\mu)(g_1,g_2). \tag{10.4.2.28}
+\int_{C_F\times C_F}\tilde\psi_{\chi,t,b,m}(x)\int_{C_F\times C_F}\varphi(g_1)\varphi(g_2)\,\tilde\psi_{\chi,t,b,m}(g^{-1}_2g_1x)\,\eta_{\chi,t,b,m}(g_1y)^2\,w_{I,s}(g_1x)w_{I,s}(g_1y)^{-1}\,\mathrm{d}(\overline{\mu}\otimes\overline{\mu})(x,y)\,\mathrm{d}(\overline{\mu}\otimes\overline{\mu})(g_1,g_2). \tag{10.4.2.28}
 $$
 
 We have:
@@ -1848,7 +1848,7 @@ $$
 W_{\chi}:=\Lambda(s,\chi)\,\mathscr{O}(\mathbf C)\cap A\mathcal S(\mathbf C)
 $$
 
-topologized, in light of Theorem 6.3.2.1, with the subspace topology inherited from the separable nuclear Fréchet space $A\mathcal S(\mathbf C)$, and where the notation $\mathscr{H}^s_{F,a}(\chi|_{C^1_F})$ was introduced in (10.2.1.1), where $K_{\chi}$ is the subquotient $A\mathcal S(\mathbf C)/W_{\chi}$, and $\check K_{\chi}$ is its image under the anti-transform $M^{-1}$, where $M$ is the Mellin transform $\phi\mapsto\int_{C_F}\phi(g)\chi(g)|g|^s_F\,\mathrm{d}\mu(g)$, where $\chi$ is the fixed character of $C_F$, noting that $M$ restricts to $L$ from (5.2.3.14) on $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$.
+topologized, in light of Theorem 6.3.2.1, with the subspace topology inherited from the separable nuclear Fréchet space $A\mathcal S(\mathbf C)$, and where the notation $\mathscr{H}^s_{F,a}(\chi|_{C^1_F})$ was introduced in (10.2.1.1), where $K_{\chi}$ is the subquotient $A\mathcal S(\mathbf C)/W_{\chi}$, and $\check K_{\chi}$ is its image under the anti-transform $M^{-1}$, where $M$ is the Mellin transform $\phi\mapsto\int_{C_F}\phi(g)\chi(g)|g|^s_F\,\mathrm{d}\overline{\mu}(g)$, where $\chi$ is the fixed character of $C_F$, noting that $M$ restricts to $L$ from (5.2.3.14) on $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$.
 
 We refer the reader to the discussion on the Mellin transform on $\mathbf R_{>0}$-modulated groups from Discussion 4.4.1.1, and we recall that the operator $M$ in the foregoing is related to $M_I$ for $I=\mathbf R$ by a vertical translation by $ix_0$ on the holomorphic coordinate $s$, which depends on the choice of $\tau$, and on the continuous character $\chi\in\widehat{C_F}$: $x_0\in\mathbf R$ is the unique real number such that $\chi(\tau(t))=t^{ix_0}$ as smooth functions of $t\in\mathbf R_{>0}$.
 
@@ -1865,7 +1865,7 @@ Let $(\rho,m)$ be a pair comprising a zero of $L(s,\chi)$ of mutiplicity $N(\rho
 Such continuous functionals in $(\check K_{\chi})'_{\beta}$ are, for each $(\rho,m)$, given explicitly by the assignment:
 
 $$
-D_{\rho,m}:\phi\mapsto\int_{C_F}\phi(g)\chi(g)|g|^{\rho}_F(\log|g|_F)^m\,\mathrm{d}\mu(g). \tag{10.4.3.3}
+D_{\rho,m}:\phi\mapsto\int_{C_F}\phi(g)\chi(g)|g|^{\rho}_F(\log|g|_F)^m\,\mathrm{d}\overline{\mu}(g). \tag{10.4.3.3}
 $$
 
 ## PDF page 466
@@ -1875,7 +1875,7 @@ $$
 Multiplication by the quasi-character $|\cdot|^a_F$ on $\mathcal S_{\mathrm E}(C_F)(\chi|_{C^1_F})$, which is a linear topological automorphism on $\mathcal S_{\mathrm E}(C_F)(\chi|_{C^1_F})$, sends $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ to $|\cdot|^a_F\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ as closed subspaces of $\mathcal S_{\mathrm E}(C_F)(\chi|_{C^1_F})$, and its adjoint sends each $D_{\rho,m}$ from (10.4.3.3) to the functionals:
 
 $$
-D_{-a+\rho,m}:\phi\mapsto\int_{C_F}\phi(g)\chi(g)|g|^{\rho-a}_F(\log|g|_F)^m\,\mathrm{d}\mu(g) \tag{10.4.3.4}
+D_{-a+\rho,m}:\phi\mapsto\int_{C_F}\phi(g)\chi(g)|g|^{\rho-a}_F(\log|g|_F)^m\,\mathrm{d}\overline{\mu}(g) \tag{10.4.3.4}
 $$
 
 where now $\rho-a$ is a zero of $L(s+a,\chi)$.
@@ -2066,7 +2066,7 @@ by the projective tensor product topology on the target, is the projective tenso
 
 Indeed, both $T_s$ and $S_a$ are linear topological embeddings whose range is closed and linearly and topologically complemented, being each linear isometries, and being their sources and targets Hilbert spaces. By [Jar, Part III,Ch.15,§15.2,Prop.3(b),p.327], combined with [Jar, Part III,Ch.15,§15.2,Prop.1,p.326], $T_s\otimes S_a$ is a linear topological isomorphism onto its range, and its range $W$ is a linearly and topologically complemented subspace of $W^{-s,2}(C_F)\otimes_{\pi}W^{s,2}(C_F)$.
 
-The unique linear topological isomorphism induced by [Jar, Part I,Ch.3,§3.4,Thm.2,p.61] between the completions of source and target is $(T_s\otimes S_a)^{\wedge}:(\mathscr{H}^s_{F,a})'_{\beta}\hat\otimes_{\pi}\mathscr{H}^s_{F,a}\to\bar W$ agrees with $T_s\hat\otimes_{\pi}S_a$, because, by [Jar, Part I,Ch.3,§3.4,Thm.2,p.61], $\bar W\subset W^{-s,2}(C_F)\hat\otimes_{\pi}W^{s,2}(C_F)$ is also closed and linearly and topologically complemented (which is seen by applying [Jar, Part I,Ch.3,§3.4,Thm.2,p.61] to the continuous section splitting the linear topological embedding $W\subset W^{-s,2}(C_F)\otimes_{\pi}W^{s,2}(C_F)$) in particular, it carries the subspace topology.
+The unique linear topological isomorphism induced by [Jar, Part I,Ch.3,§3.4,Thm.2,p.61] between the completions of source and target is $(T_s\otimes S_a)^{\wedge}:(\mathscr{H}^s_{F,a})'_{\beta}\hat\otimes_{\pi}\mathscr{H}^s_{F,a}\to\widehat{W}$ agrees with $T_s\hat\otimes_{\pi}S_a$, because, by [Jar, Part I,Ch.3,§3.4,Thm.2,p.61], $\widehat{W}\subset W^{-s,2}(C_F)\hat\otimes_{\pi}W^{s,2}(C_F)$ is also closed and linearly and topologically complemented (which is seen by applying [Jar, Part I,Ch.3,§3.4,Thm.2,p.61] to the continuous section splitting the linear topological embedding $W\subset W^{-s,2}(C_F)\otimes_{\pi}W^{s,2}(C_F)$) in particular, it carries the subspace topology.
 
 We further refer the reader to [Tre, Part III,Ch.43,Rem.43.2,p.442].
 
@@ -2111,16 +2111,16 @@ the target being the Hilbert-Schmidt tensor product from Proposition C.3.6.4.
 There is a continuous linear isometry:
 
 $$
-W^{-s,2}(C_F)\hat\otimes_{\sigma}W^{s,2}(C_F)\to L^2(C_F\times C_F,(1+|\log|\cdot|_F|^2)^{-s/2}\mu\otimes(1+|\log|\cdot|_F|^2)^{s/2}\mu) \tag{10.4.3.24}
+W^{-s,2}(C_F)\hat\otimes_{\sigma}W^{s,2}(C_F)\to L^2(C_F\times C_F,(1+|\log|\cdot|_F|^2)^{-s/2}\overline{\mu}\otimes(1+|\log|\cdot|_F|^2)^{s/2}\overline{\mu}) \tag{10.4.3.24}
 $$
 
-The image of $K^{\mathrm{spec}}_{\varphi,a,s}$ under the composition of the continuous linear operator from (10.4.3.23) with the continuous linear isometry from (10.4.3.24) is the unique element $k\in L^2(C_F\times C_F,(1+|\log|\cdot|_F|^2)^{-s/2}\mu\otimes(1+|\log|\cdot|_F|^2)^{s/2}\mu)$ such that, for every $\phi\in W^{s,2}(C_F)$:
+The image of $K^{\mathrm{spec}}_{\varphi,a,s}$ under the composition of the continuous linear operator from (10.4.3.23) with the continuous linear isometry from (10.4.3.24) is the unique element $k\in L^2(C_F\times C_F,(1+|\log|\cdot|_F|^2)^{-s/2}\overline{\mu}\otimes(1+|\log|\cdot|_F|^2)^{s/2}\overline{\mu})$ such that, for every $\phi\in W^{s,2}(C_F)$:
 
 $$
-\int_{C_F}k(x,y)\phi(y)\,(1+|\log|y|_F|^2)^{-s/2}\mathrm{d}\mu(y)=(P^{\mathrm{spec}}_a\circ A(\varphi))(\phi)(x) \tag{10.4.3.25}
+\int_{C_F}k(x,y)\phi(y)\,(1+|\log|y|_F|^2)^{-s/2}\mathrm{d}\overline{\mu}(y)=(P^{\mathrm{spec}}_a\circ A(\varphi))(\phi)(x) \tag{10.4.3.25}
 $$
 
-for $\mu$-almost all $x\in C_F$.
+for $\overline{\mu}$-almost all $x\in C_F$.
 
 Definition 10.4.3.2 (Global Spectral and Geometric Kernels - the case $I=\{0\}$). Let $F$ be a number field, $a,s$ real numbers, $s\ge 3$.
 
@@ -2145,17 +2145,17 @@ We refer to $k^{\mathrm{geom}}_{\varphi,a,s}$ as the Global Geometric Kernel of 
 Remark 10.4.3.3. The function $k^{\mathrm{spec}}_{\varphi,a,s}$ satisfies, for every $\phi\in W^{s,2}(C_F)$:
 
 $$
-\int_{C_F}k^{\mathrm{spec}}_{\varphi,a,s}(x,y)\phi(y)\,\mathrm{d}\mu(y)=P^{\mathrm{spec}}_a\circ A(\varphi) \tag{10.4.3.28}
+\int_{C_F}k^{\mathrm{spec}}_{\varphi,a,s}(x,y)\phi(y)\,\mathrm{d}\overline{\mu}(y)=P^{\mathrm{spec}}_a\circ A(\varphi) \tag{10.4.3.28}
 $$
 
-for $\mu$-almost all $x\in C_F$, as a consequence of (10.4.3.25).
+for $\overline{\mu}$-almost all $x\in C_F$, as a consequence of (10.4.3.25).
 
 Theorem 10.4.3.4. Let $F$ be a number field, $a,s$ real numbers, $a>0$, $s>1$. Let $\Lambda,\varepsilon>0$ be real numbers, such that $0<1/\Lambda+\varepsilon<\Lambda-\varepsilon$. Let $\rho:C_F\to\mathbf C$ be a $(\Lambda,\varepsilon)$-cutoff.
 
-(1) For any $\phi\in W^{s,2}_a\mathrm H_{0,\mathrm{cont}}(F^{\times},\mathcal S_0(\mathbf A_F))$, we have, for $\mu$-almost all $x\in C_F$:
+(1) For any $\phi\in W^{s,2}_a\mathrm H_{0,\mathrm{cont}}(F^{\times},\mathcal S_0(\mathbf A_F))$, we have, for $\overline{\mu}$-almost all $x\in C_F$:
 
 $$
-A(\varphi)(\phi)(x)=(P^{\mathrm{geom}}_a\circ A(\varphi))(\phi)(x)=\int_{C_F}k^{\mathrm{geom}}_{\varphi,a,s}(x,y)\phi(y)\,\mathrm{d}\mu(y). \tag{10.4.3.29}
+A(\varphi)(\phi)(x)=(P^{\mathrm{geom}}_a\circ A(\varphi))(\phi)(x)=\int_{C_F}k^{\mathrm{geom}}_{\varphi,a,s}(x,y)\phi(y)\,\mathrm{d}\overline{\mu}(y). \tag{10.4.3.29}
 $$
 
 (2) The functions:
@@ -2168,7 +2168,7 @@ $$
 
 **10.4. TRACE FORMULA: SPECTRAL SIDE** · **471**
 
-are representative functions for the Hilbert-Schmidt kernel in $L^2(C_F\times C_F,((1+|\log|\cdot|_F|^2)^{s/2}\mu)^{\otimes 2})$ of the operator $P^{\mathrm{spec}}_a\circ A(\varphi)$ on $W^{s,2}(C_F)$, respectively for the Hilbert-Schmidt kernel in $L^2(C_F\times C_F,((1+|\log|\cdot|_F|^2)^{s/2}\mu)^{\otimes 2})$ of the operator $P^{\mathrm{geom}}_{\rho,a}\circ A(\varphi)$ on $W^{s,2}(C_F)$.
+are representative functions for the Hilbert-Schmidt kernel in $L^2(C_F\times C_F,((1+|\log|\cdot|_F|^2)^{s/2}\overline{\mu})^{\otimes 2})$ of the operator $P^{\mathrm{spec}}_a\circ A(\varphi)$ on $W^{s,2}(C_F)$, respectively for the Hilbert-Schmidt kernel in $L^2(C_F\times C_F,((1+|\log|\cdot|_F|^2)^{s/2}\mu)^{\otimes 2})$ of the operator $P^{\mathrm{geom}}_{\rho,a}\circ A(\varphi)$ on $W^{s,2}(C_F)$.
 
 (3) The function:
 
@@ -2181,26 +2181,26 @@ is a representative function for the Hilbert-Schmidt kernel of the operator $P^{
 Proof. (1) : We compute:
 
 $$
-\int_{C_F}k^{\mathrm{geom}}_{\varphi,a,s}(x,y)\phi(y)\,\mathrm{d}\mu(y)=\int_{C_F}(\varphi(xy^{-1})-k^{\mathrm{spec}}_{\varphi,a,s}(x,y))\phi(y)\,\mathrm{d}\mu(y) \tag{10.4.3.32}
+\int_{C_F}k^{\mathrm{geom}}_{\varphi,a,s}(x,y)\phi(y)\,\mathrm{d}\overline{\mu}(y)=\int_{C_F}(\varphi(xy^{-1})-k^{\mathrm{spec}}_{\varphi,a,s}(x,y))\phi(y)\,\mathrm{d}\overline{\mu}(y) \tag{10.4.3.32}
 $$
 
 $$
-=\int_{C_F}\varphi(xy^{-1})\phi(y)\,\mathrm{d}\mu(y)-\int_{C_F}k^{\mathrm{spec}}_{\varphi,a,s}(x,y)\phi(y)\,\mathrm{d}\mu(y) \tag{10.4.3.33}
+=\int_{C_F}\varphi(xy^{-1})\phi(y)\,\mathrm{d}\overline{\mu}(y)-\int_{C_F}k^{\mathrm{spec}}_{\varphi,a,s}(x,y)\phi(y)\,\mathrm{d}\overline{\mu}(y) \tag{10.4.3.33}
 $$
 
 $$
-=\int_{C_F}\varphi(y)\phi(y^{-1}x)\,\mathrm{d}\mu(y)-(P^{\mathrm{spec}}_a\circ A(\varphi))(\phi)(x) \tag{10.4.3.34}
+=\int_{C_F}\varphi(y)\phi(y^{-1}x)\,\mathrm{d}\overline{\mu}(y)-(P^{\mathrm{spec}}_a\circ A(\varphi))(\phi)(x) \tag{10.4.3.34}
 $$
 
 $$
 =A(\varphi)(\phi)(x)-(P^{\mathrm{spec}}_a\circ A(\varphi))(\phi)(x) \tag{10.4.3.35}
 $$
 
-where we have used (10.4.3.28) from Remark 10.4.3.3 to identify $\int_{C_F}k^{\mathrm{spec}}_{\varphi,a,s}(x,y)\phi(y)\,\mathrm{d}\mu(y)$ with $(P^{\mathrm{spec}}_a\circ A(\varphi))(\phi)(x)$, for $\mu$-almost all $x\in C_F$.
+where we have used (10.4.3.28) from Remark 10.4.3.3 to identify $\int_{C_F}k^{\mathrm{spec}}_{\varphi,a,s}(x,y)\phi(y)\,\mathrm{d}\overline{\mu}(y)$ with $(P^{\mathrm{spec}}_a\circ A(\varphi))(\phi)(x)$, for $\overline{\mu}$-almost all $x\in C_F$.
 
 Since $A(\varphi)-P^{\mathrm{spec}}_a\circ A(\varphi)=(\mathrm{Id}-P^{\mathrm{spec}}_a)\circ A(\varphi)$, and $\mathrm{Id}-P^{\mathrm{spec}}_a=P^{\mathrm{geom}}_a$, we deduce that (10.4.3.29) holds.
 
-(2) : Since $(P^{\mathrm{spec}}_a\circ A(\varphi))(\phi)(x)=\int_{C_F}(1+|\log|y|_F|^2)^{-s/2}k^{\mathrm{spec}}_{\varphi,a,s}(x,y)\,(1+|\log|y|_F|^2)^{s/2}\mathrm{d}\mu(y)$ we deduce, by uniqueness of the Hilbert-Schmidt kernel associated to the nuclear, hence Hilbert-Schmidt, operator $P^{\mathrm{spec}}_a\circ A(\varphi)$, that $(1+|\log|y|_F|^2)^{-s/2}k^{\mathrm{spec}}_{\varphi,a,s}(x,y)$ is a representative kernel function for the Hilbert-Schmidt kernel of $P^{\mathrm{spec}}_a\circ A(\varphi)$ (i.e. any other such function agrees with $(1+|\log|y|_F|^2)^{-s/2}k^{\mathrm{spec}}_{\varphi,a,s}(x,y)$ almost everywhere over $C_F\times C_F$ with respect to the product measure $(1+|\log|\cdot|_F|^2)^{-s/2}\mu)^{\otimes 2}$, equivalently $\mu\otimes\mu$, since the two measures have the same null sets in $C_F\times C_F$).
+(2) : Since $(P^{\mathrm{spec}}_a\circ A(\varphi))(\phi)(x)=\int_{C_F}(1+|\log|y|_F|^2)^{-s/2}k^{\mathrm{spec}}_{\varphi,a,s}(x,y)\,(1+|\log|y|_F|^2)^{s/2}\mathrm{d}\overline{\mu}(y)$ we deduce, by uniqueness of the Hilbert-Schmidt kernel associated to the nuclear, hence Hilbert-Schmidt, operator $P^{\mathrm{spec}}_a\circ A(\varphi)$, that $(1+|\log|y|_F|^2)^{-s/2}k^{\mathrm{spec}}_{\varphi,a,s}(x,y)$ is a representative kernel function for the Hilbert-Schmidt kernel of $P^{\mathrm{spec}}_a\circ A(\varphi)$ (i.e. any other such function agrees with $(1+|\log|y|_F|^2)^{-s/2}k^{\mathrm{spec}}_{\varphi,a,s}(x,y)$ almost everywhere over $C_F\times C_F$ with respect to the product measure $(1+|\log|\cdot|_F|^2)^{-s/2}\overline{\mu})^{\otimes 2}$, equivalently $\overline{\mu}\otimes\overline{\mu}$, since the two measures have the same null sets in $C_F\times C_F$).
 
 A similar argument shows that $\rho(x)\,(1+|\log|y|_F|^2)^{-s/2}k^{\mathrm{spec}}_{\varphi,a,s}(x,y)$ is a representative function over $C_F\times C_F$ for the Hilbert-Schmidt kernel of $P^{\mathrm{spec}}_{\rho,a}\circ A(\varphi)$.
 
@@ -2310,10 +2310,10 @@ Let $w_{I,s}$ is the weight function defined in (9.2.2.41) as: $w_{I,s}(g):=\max
 
 Then:
 
-(1) For any $\phi\in W^s_{a,I}\mathrm H_{0,\mathrm{cont}}(F^{\times},\mathcal S_0(\mathbf A_F))$, we have, for $\mu$-almost all $x\in C_F$:
+(1) For any $\phi\in W^s_{a,I}\mathrm H_{0,\mathrm{cont}}(F^{\times},\mathcal S_0(\mathbf A_F))$, we have, for $\overline{\mu}$-almost all $x\in C_F$:
 
 $$
-A(\varphi)(\phi)(x)=(A(\varphi)\circ P^{\mathrm{geom}}_a)(\phi)(x)=\int_{C_F}k^{\mathrm{geom}}_{\varphi,a,I,s}(x,y)\phi(y)\,\mathrm{d}\mu(y). \tag{10.4.3.46}
+A(\varphi)(\phi)(x)=(A(\varphi)\circ P^{\mathrm{geom}}_a)(\phi)(x)=\int_{C_F}k^{\mathrm{geom}}_{\varphi,a,I,s}(x,y)\phi(y)\,\mathrm{d}\overline{\mu}(y). \tag{10.4.3.46}
 $$
 
 (2) The functions:
@@ -2322,7 +2322,7 @@ $$
 w_{I,s}(y)^{-1}k^{\mathrm{spec}}_{\varphi,a,I,s}(x,y),\quad \rho(x)\,w_{I,s}(y)^{-1}k^{\mathrm{spec}}_{\varphi,a,I,s}(x,y) \tag{10.4.3.47}
 $$
 
-are representative functions for the Hilbert-Schmidt kernel in $L^2(C_F\times C_F,(w_{I,s}\mu)^{\otimes 2})$ of the operator $A(\varphi)\circ P^{\mathrm{spec}}_a$ on $W^s_I(C_F)$, respectively for the Hilbert-Schmidt kernel in $L^2(C_F\times C_F,(w_{I,s}\mu)^{\otimes 2})$ of the operator $M_{\rho}\circ A(\varphi)\circ P^{\mathrm{geom}}_a$ on $W^s_I(C_F)$.
+are representative functions for the Hilbert-Schmidt kernel in $L^2(C_F\times C_F,(w_{I,s}\overline{\mu})^{\otimes 2})$ of the operator $A(\varphi)\circ P^{\mathrm{spec}}_a$ on $W^s_I(C_F)$, respectively for the Hilbert-Schmidt kernel in $L^2(C_F\times C_F,(w_{I,s}\overline{\mu})^{\otimes 2})$ of the operator $M_{\rho}\circ A(\varphi)\circ P^{\mathrm{geom}}_a$ on $W^s_I(C_F)$.
 
 (3) The function:
 

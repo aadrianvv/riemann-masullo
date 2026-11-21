@@ -1359,9 +1359,9 @@ where $N_0>0$ is a large enough integer locally dependent on $x$ such that for e
 
 Any continuous character of $e^{\mathbf Z}$ lifts to a continuous character of $\mathbf R_{>0}$. The dual group $\widehat{e^{\mathbf Z}}$ is the quotient $\mathbf R/2\pi\mathbf Z$, and it is described as the group of characters of the form $\chi(e)=e^{-iu}$ for $u\in\mathbf R$. For $\chi$ one such character, $u$ is uniquely determined modulo $2\pi\mathbf Z$.
 
-For $u_0\in\mathbf R$ the unique real number contained in the interval $[0,2\pi)$ such that $\chi(e)=e^{-iu_0}$, we see that $\bar\chi(x):=x^{-iu_0}$ is a lift of $\chi$ to a continuous character of $\mathbf R_{>0}$. As such, $\bar\chi$ is smooth and multiplication by $\bar\chi$ preserves the hypotheses on $\phi$.
+For $u_0\in\mathbf R$ the unique real number contained in the interval $[0,2\pi)$ such that $\chi(e)=e^{-iu_0}$, we see that $\widetilde{\chi}(x):=x^{-iu_0}$ is a lift of $\chi$ to a continuous character of $\mathbf R_{>0}$. As such, $\widetilde{\chi}$ is smooth and multiplication by $\widetilde{\chi}$ preserves the hypotheses on $\phi$.
 
-Now set $\phi_0:=\bar\chi\phi$ and apply (B.4.1.14) to this choice of $\phi_0$ to obtain, for every $x\in\mathbf R_{>0}$:
+Now set $\phi_0:=\widetilde{\chi}\phi$ and apply (B.4.1.14) to this choice of $\phi_0$ to obtain, for every $x\in\mathbf R_{>0}$:
 
 $$
 \sum_{m\in\mathbf Z:|m|\le N_0}\chi(e^m)\frac{\phi(e^{x+}+m)+\phi(e^{x-}+m)}{2}+\sum_{m\in\mathbf Z:|m|>N_0}\chi(e^m)\phi(e^{x+m})=\sum_{m\in\mathbf Z}\mathcal F(\phi_0(e^x))(m)e^{2\pi imx} \tag{B.4.1.15}
@@ -1370,7 +1370,7 @@ $$
 and we compute:
 
 $$
-\mathcal F(\phi_0(e^x))(y)=\int_{\mathbf R}\bar\chi(e^x)\phi(e^x)e^{-2\pi ixy}\,\mathrm{d}x=\int_{\mathbf R}e^{-2\pi ix\frac{u_0}{2\pi}}\phi(e^x)e^{-2\pi ixy}\,\mathrm{d}x=\Phi(-iu_0-2\pi iy). \tag{B.4.1.16}
+\mathcal F(\phi_0(e^x))(y)=\int_{\mathbf R}\widetilde{\chi}(e^x)\phi(e^x)e^{-2\pi ixy}\,\mathrm{d}x=\int_{\mathbf R}e^{-2\pi ix\frac{u_0}{2\pi}}\phi(e^x)e^{-2\pi ixy}\,\mathrm{d}x=\Phi(-iu_0-2\pi iy). \tag{B.4.1.16}
 $$
 
 Upon combining (B.4.1.10) and (B.4.1.16), we deduce that we have
@@ -2327,7 +2327,7 @@ $$
 \gamma(t)\in U\bmod 1 \tag{B.5.1.2}
 $$
 
-to mean that the image of $\gamma(t)$ in $\mathbf{T}^N$ under the quotient map $\theta$ is contained in the image of $U$, i.e. $\gamma(t)\in\theta(U)$. Equivalently, $\gamma(t)\in U+\mathbf{Z}^N$. We write, for any interval $I\subset\mathbf{R}$
+to mean that the image of $\gamma(t)$ in $\mathbf{T}^N$ under the quotient map $\theta$ is contained in the image of $U$, i.e. $\overline{\gamma}(t)\in\theta(U)$. Equivalently, $\gamma(t)\in U+\mathbf{Z}^N$. We write, for any interval $I\subset\mathbf{R}$
 
 $$
 I_U:=\{t\in I:\gamma(t)\in U\bmod 1\}\subset I. \tag{B.5.1.3}
@@ -2348,12 +2348,12 @@ whose kernel is the discrete subgroup $\mathbf{Z}\subset\mathbf{R}$.
 For any integer $N\ge 1$ and any vector $(\tau_1,\dots,\tau_N)$ in $\mathbf{R}^N$, we may consider the smooth map:
 
 $$
-\gamma_N:\mathbf{R}\to\mathbf{T}^N
+\overline{\gamma}_N:\mathbf{R}\to\mathbf{T}^N
 $$
 
 defined as the composition of $\gamma_N(t):=t\cdot(\tau_1,\dots,\tau_N)\in\mathbf{R}^N$ followed by the projection $\theta_N:\mathbf{R}^N\to\mathbf{T}^N$.
 
-When $\tau_1,\dots,\tau_N$ are $\mathbf{Q}$-linearly independent, $\gamma_N$ is injective with dense image, as we will be recalling in Theorem B.5.2.1. In this case, $\gamma_N$ is a one-parameter subgroup of the torus $\mathbf{T}^N$, and it induces a continuous flow on $\mathbf{T}^N$ by left-translation with dense image.
+When $\tau_1,\dots,\tau_N$ are $\mathbf{Q}$-linearly independent, $\gamma_N$ is injective with dense image, as we will be recalling in Theorem B.5.2.1. In this case, $\overline{\gamma}_N$ is a one-parameter subgroup of the torus $\mathbf{T}^N$, and it induces a continuous flow on $\mathbf{T}^N$ by left-translation with dense image.
 
 **B.5.2. Kronecker-Weyl.** The following Theorem is the multi-dimensional version of [HK, Part 1, Thm.4.1.15] and its method of proof is analogous to the argument [HK, Part 1, §4.1.6]. We will only be requiring the case when $(\tau_1,\dots,\tau_N)\in\mathbf{R}^N$ has $\mathbf{Q}$-independent coordinates. A full proof in the general case when the vector $(\tau_1,\dots,\tau_N)\in\mathbf{R}^N$ in the statement has not necessarily $\mathbf{Q}$-independent coordinates can be found in the appendix of [Hu1, §4.3, Proof of Lemma 4.3], and we will be following it closely to establish the case of continuous functions.
 
@@ -2371,12 +2371,12 @@ THEOREM B.5.2.1 (Kronecker-Weyl). Let $\tau:=(\tau_1,\dots,\tau_N)\in\mathbf{R}^
 
 Then
 
-(1) $\tau$ generates a continuous 1-parameter group $\gamma_\tau:\mathbf{R}\to\mathbf{T}^N$ whose image has closure a $d$-dimensional closed torus $G$ within $\mathbf{T}^N$.
+(1) $\tau$ generates a continuous 1-parameter group $\overline{\gamma}_\tau:\mathbf{R}\to\mathbf{T}^N$ whose image has closure a $d$-dimensional closed torus $G$ within $\mathbf{T}^N$.
 
 (2) For every Riemann integrable function $u:G\to\mathbf{C}$, the following identity holds
 
 $$
-\lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T u(\gamma(t))\,\mathrm{d}t=\lim_{T\to+\infty}\frac{1}{T}\int_0^T u(\gamma(t))\,\mathrm{d}t=\int_G u(\xi)\,\mathrm{d}\mu_G(\xi) \tag{B.5.2.1}
+\lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T u(\overline{\gamma}(t))\,\mathrm{d}t=\lim_{T\to+\infty}\frac{1}{T}\int_0^T u(\overline{\gamma}(t))\,\mathrm{d}t=\int_G u(\xi)\,\mathrm{d}\mu_G(\xi) \tag{B.5.2.1}
 $$
 
 where $\mu_G$ is the volume-1 Haar measure on $G$.
@@ -2425,15 +2425,15 @@ The proof recorded below follows closely the argument provided in [Hu1, §4.3, P
 
 PROOF of Theorem B.5.2.1. (1): The case $N=1$ is easy, so assume $N>1$. We start off by discussing the special case in which the coordinates of $\tau$ are $\mathbf{Q}$-linearly independent.
 
-In this case, $\gamma$ is injective. Indeed, if $\gamma(t)=\gamma(t')$ for distinct $t,t'\in\mathbf{R}$ then
+In this case, $\overline{\gamma}$ is injective. Indeed, if $\gamma(t)=\gamma(t')$ for distinct $t,t'\in\mathbf{R}$ then
 
 $$
 (t-t')\cdot\tau\in\mathbf{Z}^N
 $$
 
-gives a $\mathbf{Q}$-linear dependence relation among the $N$ coordinates of $\tau$ since $N>1$, a contradiction. Thus, $\gamma$ is injective.
+gives a $\mathbf{Q}$-linear dependence relation among the $N$ coordinates of $\tau$ since $N>1$, a contradiction. Thus, $\overline{\gamma}$ is injective.
 
-We now call $G$ the closure of the image of $\gamma$ in $\mathbf{T}^N$. This is a closed connected subgroup of $\mathbf{T}^N$ and as such it is contained in the kernel of a non-trivial character $\chi:\mathbf{T}^N\to\mathbf{T}$ if the dimension of $G$ is less than $N$. But
+We now call $G$ the closure of the image of $\overline{\gamma}$ in $\mathbf{T}^N$. This is a closed connected subgroup of $\mathbf{T}^N$ and as such it is contained in the kernel of a non-trivial character $\chi:\mathbf{T}^N\to\mathbf{T}$ if the dimension of $G$ is less than $N$. But
 
 $$
 \chi(z_1,\dots,z_N)=\prod_j z_j^{a_j}
@@ -2441,7 +2441,7 @@ $$
 
 for some nonzero $a\in\mathbf{Z}^N$ (viewing $\mathbf{T}$ multiplicatively), so this would give a $\mathbf{Q}$-linear dependence relation on the coordinates of $\tau$, contradicting the assumption. We deduce that we have $G=\mathbf{T}^N$.
 
-In the general case, let $G$ be the closure of the image of $\gamma$. This is a closed connected subgroup of $\mathbf{T}^N$, and as such it is itself a torus. We call $r$ its dimension. Then $G^\perp\subset\widehat{\mathbf{T}^N}$ is a finitely generated free subgroup of rank $N-r$. Let $\chi\in G^\perp$.
+In the general case, let $G$ be the closure of the image of $\overline{\gamma}$. This is a closed connected subgroup of $\mathbf{T}^N$, and as such it is itself a torus. We call $r$ its dimension. Then $G^\perp\subset\widehat{\mathbf{T}^N}$ is a finitely generated free subgroup of rank $N-r$. Let $\chi\in G^\perp$.
 
 ## PDF page 629
 
@@ -2470,13 +2470,13 @@ $$
 By (B.5.2.1) applied to the continuous function $u=u_2-u_1$, we also obtain
 
 $$
-\lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T (u_2-u_1)(\gamma(t))\,\mathrm{d}t<\varepsilon \tag{B.5.2.6}
+\lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T (u_2-u_1)(\overline{\gamma}(t))\,\mathrm{d}t<\varepsilon \tag{B.5.2.6}
 $$
 
 and therefore
 
 $$
-\lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T u_2(\gamma(t))\,\mathrm{d}t-\varepsilon<\lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T\mathrm{1}_{\hat\Delta}(\gamma(t))\,\mathrm{d}t<\lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T u_1(\gamma(t))\,\mathrm{d}t+\varepsilon, \tag{B.5.2.7}
+\lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T u_2(\overline{\gamma}(t))\,\mathrm{d}t-\varepsilon<\lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T\mathrm{1}_{\hat\Delta}(\overline{\gamma}(t))\,\mathrm{d}t<\lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T u_1(\overline{\gamma}(t))\,\mathrm{d}t+\varepsilon, \tag{B.5.2.7}
 $$
 
 and likewise
@@ -2492,13 +2492,13 @@ This case then propagates (B.5.2.1) to arbitrary Riemann sums, since each Rieman
 We next deduce that (B.5.2.1) holds for all Riemann-integrable $\mathbf{R}$-valued functions $u$ on $\mathbf{T}^N$. For $\varepsilon>0$, we can pick a Riemann step function $\tilde u$ on $\mathbf{T}^N$ so that $|\tilde u-u|\le\varepsilon$ pointwise on $\mathbf{T}^N$. Thus,
 
 $$
-\left|\frac{1}{T}\int_0^T\tilde u(\gamma(t))\,\mathrm{d}t-\frac{1}{T}\int_0^T u(\gamma(t))\,\mathrm{d}t\right|\le\frac{1}{T}\int_0^T|\tilde u-u|\circ\gamma(t)\,\mathrm{d}t\le\varepsilon,
+\left|\frac{1}{T}\int_0^T\tilde u(\overline{\gamma}(t))\,\mathrm{d}t-\frac{1}{T}\int_0^T u(\overline{\gamma}(t))\,\mathrm{d}t\right|\le\frac{1}{T}\int_0^T|\tilde u-u|\circ\overline{\gamma}(t)\,\mathrm{d}t\le\varepsilon,
 $$
 
 and similarly with $(1/(2T))\int_{-T}^T$ and $\int_{\mathbf{T}^N}\mathrm{d}\mu_N$. By the settled Riemann step-function case for $\tilde u$, if $T$ is sufficiently large then
 
 $$
-\left|\int_{\mathbf{T}^N}\tilde u\,\mathrm{d}\mu_N-\frac{1}{T}\int_0^T\tilde u(\gamma(t))\,\mathrm{d}t\right|\le\varepsilon,\quad\left|\int_{\mathbf{T}^N}\tilde u\,\mathrm{d}\mu_N-\frac{1}{2T}\int_{-T}^T\tilde u(\gamma(t))\,\mathrm{d}t\right|\le\varepsilon.
+\left|\int_{\mathbf{T}^N}\tilde u\,\mathrm{d}\mu_N-\frac{1}{T}\int_0^T\tilde u(\overline{\gamma}(t))\,\mathrm{d}t\right|\le\varepsilon,\quad\left|\int_{\mathbf{T}^N}\tilde u\,\mathrm{d}\mu_N-\frac{1}{2T}\int_{-T}^T\tilde u(\overline{\gamma}(t))\,\mathrm{d}t\right|\le\varepsilon.
 $$
 
 ## PDF page 630
@@ -2510,16 +2510,16 @@ Thus, we get analogous estimates for $3\varepsilon$ with $u$ in place of $\tilde
 We are thereby reduced to the case of continuous $u$ in (B.5.2.1) when the coordinates of $\tau$ are $\mathbf{Q}$-linearly independent. For a $\mathbf{C}$-sub-algebra $A\subset C(\mathbf{T}^N)$ dense with respect to the uniform-norm topology on $C(\mathbf{T}^N)$, with $A$ to be chosen, we now assume that (B.5.2.1) holds for all the elements of $A$ and deduce it for all continuous functions $u$ on $\mathbf{T}^N$. Pick $\varepsilon>0$ and $v\in A$ such that $|v-u|\le\varepsilon$ pointwise on $\mathbf{T}^N$. We then have $\left|\int_{\mathbf{T}^N}v\,\mathrm{d}\mu_N-\int_{\mathbf{T}^N}u\,\mathrm{d}\mu_N\right|\le\varepsilon$ and for all sufficiently large $T$ (depending on $\varepsilon$ and $v$) we have
 
 $$
-\left|\frac{1}{T}\int_0^T v(\gamma(t))\,\mathrm{d}t-\int_{\mathbf{T}^N}v\,\mathrm{d}\mu_N\right|\le\varepsilon,\quad\left|\frac{1}{2T}\int_{-T}^T v(\gamma(t))\,\mathrm{d}t-\int_{\mathbf{T}^N}v\,\mathrm{d}\mu_N\right|\le\varepsilon,
+\left|\frac{1}{T}\int_0^T v(\overline{\gamma}(t))\,\mathrm{d}t-\int_{\mathbf{T}^N}v\,\mathrm{d}\mu_N\right|\le\varepsilon,\quad\left|\frac{1}{2T}\int_{-T}^T v(\overline{\gamma}(t))\,\mathrm{d}t-\int_{\mathbf{T}^N}v\,\mathrm{d}\mu_N\right|\le\varepsilon,
 $$
 
-so each of $(1/T)\int_0^T v(\gamma(t))\,\mathrm{d}t$ and $(1/(2T))\int_{-T}^T v(\gamma(t))\,\mathrm{d}t$ are within $2\varepsilon$ of $\int_{\mathbf{T}^N}u\,\mathrm{d}\mu_N$. But also
+so each of $(1/T)\int_0^T v(\overline{\gamma}(t))\,\mathrm{d}t$ and $(1/(2T))\int_{-T}^T v(\overline{\gamma}(t))\,\mathrm{d}t$ are within $2\varepsilon$ of $\int_{\mathbf{T}^N}u\,\mathrm{d}\mu_N$. But also
 
 $$
-\left|\frac{1}{T}\int_0^T v(\gamma(t))\,\mathrm{d}t-\frac{1}{T}\int_0^T u(\gamma(t))\,\mathrm{d}t\right|\le\frac{1}{T}\int_0^T|v-u|(\gamma(t))\,\mathrm{d}t\le\varepsilon
+\left|\frac{1}{T}\int_0^T v(\overline{\gamma}(t))\,\mathrm{d}t-\frac{1}{T}\int_0^T u(\overline{\gamma}(t))\,\mathrm{d}t\right|\le\frac{1}{T}\int_0^T|v-u|(\overline{\gamma}(t))\,\mathrm{d}t\le\varepsilon
 $$
 
-and likewise for $(1/(2T))\int_{-T}^T$, so both $(1/T)\int_0^T u(\gamma(t))\,\mathrm{d}t$ and $(1/(2T))\int_{-T}^T u(\gamma(t))\,\mathrm{d}t$ are within $3\varepsilon$ of $\int_{\mathbf{T}^N}u\,\mathrm{d}\mu_N$ for all sufficiently large $T$. This yields the desired result for $u$ once we have such an algebra $A$.
+and likewise for $(1/(2T))\int_{-T}^T$, so both $(1/T)\int_0^T u(\overline{\gamma}(t))\,\mathrm{d}t$ and $(1/(2T))\int_{-T}^T u(\overline{\gamma}(t))\,\mathrm{d}t$ are within $3\varepsilon$ of $\int_{\mathbf{T}^N}u\,\mathrm{d}\mu_N$ for all sufficiently large $T$. This yields the desired result for $u$ once we have such an algebra $A$.
 
 We now choose $A$. Upon denoting by $\widehat{\mathbf{T}^N}$ the group of continuous unitary characters of $\mathbf{T}^N$, we consider the subset
 
@@ -2584,7 +2584,7 @@ as $T\to+\infty$.
 The right side of (B.5.2.13) therefore equals $\sum_{b:b_1\tau_1+\cdots+b_N\tau_N=0}c_b$. The left side of (B.5.2.13) is also written as
 
 $$
-\lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T u(e^{2\pi i t\tau_1},\dots,e^{2\pi i t\tau_N})\,\mathrm{d}t=\lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T u(\gamma(t))\,\mathrm{d}t.
+\lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T u(e^{2\pi i t\tau_1},\dots,e^{2\pi i t\tau_N})\,\mathrm{d}t=\lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T u(\overline{\gamma}(t))\,\mathrm{d}t.
 $$
 
 But $\sum_{b:b_1\tau_1+\cdots+b_N\tau_N=0}c_b=\int_{G^\perp}\hat u(\chi)\chi(1)\,\mathrm{d}\mu_{G^\perp}(\chi)$ with $\mu_{G^\perp}$ the counting measure on $G^\perp$ dual to the volume-1 measure on $\mathbf{T}^N/G$. This integral over $G^\perp$ is equal to
@@ -2722,7 +2722,7 @@ LEMMA B.5.3.5. Let $I\subset\mathbf{R}$ be a non-empty open bounded interval, an
 Fix $T>0$. Upon defining the subsets
 
 $$
-A_{U,r}(X,T):=\{t\in[-T,T]:\int_U|f(s+it)-f(s)|^2\,\mathrm{d}\mu_A(s)<X\}\subset\mathbf{R} \tag{B.5.3.6}
+A_{\overline{U},r}(X,T):=\{t\in[-T,T]:\int_{\overline{U}}|f(s+it)-f(s)|^2\,\mathrm{d}\mu_A(s)<X\}\subset\mathbf{R} \tag{B.5.3.6}
 $$
 
 $$
@@ -2732,7 +2732,7 @@ $$
 for $X>0$, and the function $c(X):=\pi\delta^2 X^2$, for $X>0$, we have
 
 $$
-A_{U,2}(c(X),T)\subset A_K(X,T) \tag{B.5.3.8}
+A_{\overline{U},2}(c(X),T)\subset A_K(X,T) \tag{B.5.3.8}
 $$
 
 $^{28}$Brian needs to check the next two lemmas and how they are used in the subsequent proof of the preceding Proposition.
@@ -2745,18 +2745,18 @@ for all $T>0$.
 
 PROOF. We first show that an open subset $U\subset \mathbf{C}_I$ satisfying the assumptions (1),(2) exists, to conclude that the statement is non-vacuous. Let $a>0$ be the distance between $K$ and the complement of $\mathbf{C}_I$, and cover $K$ with finitely many discs of radius $a/2$. The union of their interiors is an example of such $U$. It is totally bounded by compactness of $K$. Its boundary is contained in a finite union of circles, and hence it is contained within $\mathbf{C}_I$. The closure of $U$ is therefore also contained within $\mathbf{C}_I$.
 
-For any $s\in K$, we therefore have $D_\delta(s)\subset U$.
+For any $s\in K$, we therefore have $\overline{D}_\delta(s)\subset U$.
 
 We fix $s\in K$ arbitrary. Since, for every $t\in\mathbf{R}$, $|f(z+it)-f(z)|^2$ is a sub-harmonic function of $z\in U$, it follows that
 
 $$
-|f(s+it)-f(s)|^2\le\frac{1}{\pi\delta^2}\int_{D_\delta(s)}|f(z+it)-f(z)|^2\,\mathrm{d}\mu_A(z)\le\frac{1}{\pi\delta^2}\int_U|f(z+it)-f(z)|^2\,\mathrm{d}\mu_A(z) \tag{B.5.3.9}
+|f(s+it)-f(s)|^2\le\frac{1}{\pi\delta^2}\int_{\overline{D}_\delta(s)}|f(z+it)-f(z)|^2\,\mathrm{d}\mu_A(z)\le\frac{1}{\pi\delta^2}\int_{\overline{U}}|f(z+it)-f(z)|^2\,\mathrm{d}\mu_A(z) \tag{B.5.3.9}
 $$
 
 where $\mathrm{d}\mu_A(z)=|\mathrm{d}x\,\mathrm{d}y|$, for $z=x+iy$, is the normalized area measure on the complex $z$-plane. If $t\in\mathbf{R}$ satisfies the condition
 
 $$
-\int_U|f(s+it)-f(s)|^2\,\mathrm{d}\mu_A(s)<\pi\delta^2 X^2=c(X) \tag{B.5.3.10}
+\int_{\overline{U}}|f(s+it)-f(s)|^2\,\mathrm{d}\mu_A(s)<\pi\delta^2 X^2=c(X) \tag{B.5.3.10}
 $$
 
 then by (B.5.3.9) we have, for all $s\in K$
@@ -2765,7 +2765,7 @@ $$
 |f(s+it)-f(s)|<X. \tag{B.5.3.11}
 $$
 
-Since (B.5.3.10) implies (B.5.3.11) we therefore have $A_{U,2}(c(X),T)\subset A_K(X,T)$.
+Since (B.5.3.10) implies (B.5.3.11) we therefore have $A_{\overline{U},2}(c(X),T)\subset A_K(X,T)$.
 
 $\square$
 
@@ -2799,7 +2799,7 @@ $$
 u(s,\bar\gamma_\tau(t))=\prod_{v\in S}L_v(\chi_v|\cdot|_v^{s+it})^{-1}-\prod_{v\in S}L_v(\chi_v|\cdot|_v^s)^{-1}.
 $$
 
-We denote by $G$ the closure of the image of $\bar\gamma_\tau$ in $\mathbf{T}^S$, a closed sub-torus. We call $\mu_G$ the volume-1 Haar measure on $G$.
+We denote by $G$ the closure of the image of $\gamma_\tau$ in $\mathbf{T}^S$, a closed sub-torus. We call $\mu_G$ the volume-1 Haar measure on $G$.
 
 Assume for the moment that we have $\mu_G(\partial(X(\varepsilon)\cap G))=0$. Then by Corollary B.5.2.4 we have
 
@@ -2873,7 +2873,7 @@ $$
 
 *and if $L_f(\sigma,\chi)=0$ for some $\sigma\in[1/2,1]$ then $\chi$ is quadratic and $\sigma$ is unique, simple, and satisfies $\sigma<1$.*
 
-*The real number $A_{F,\chi}$ can in fact be chosen to be $|N(\mathfrak{d}_{F/\mathbf Q})||N_{F/\mathbf Q}(\mathfrak f_\chi)|$ where $\mathfrak f_\chi$ is the conductor of $\chi$* [IK, Ch. 5, §5.1, (5.4)]. Proposition B.6.1.1 can be deduced from [IK, §5.4, Thm. 5.10, p. 106] upon setting $d=[F:\mathbf Q]$, $A_{F,\chi}:=\mathfrak{q}(f,0)$ in the notation of *loc.cit.* to denote the analytic conductor of the $L$-function (see [IK, Ch. 5, (5.7), p. 95]), and noting that the Rankin-Selberg convolutions $L_f(s,\chi\otimes\chi)$ and $L_f(s,\chi\otimes\bar\chi)$ both exist with the former entire when $\bar\chi\ne\chi$ (equivalently, when $\chi^2\ne 1$) since $L_f(s,\chi^2)$ is entire when $\chi$ is not quadratic, and the latter is $\zeta_F(s)$ (so it has a simple pole at $s=1$).
+*The real number $A_{F,\chi}$ can in fact be chosen to be $|N(\mathfrak{d}_{F/\mathbf Q})||N_{F/\mathbf Q}(\mathfrak f_\chi)|$ where $\mathfrak f_\chi$ is the conductor of $\chi$* [IK, Ch. 5, §5.1, (5.4)]. Proposition B.6.1.1 can be deduced from [IK, §5.4, Thm. 5.10, p. 106] upon setting $d=[F:\mathbf Q]$, $A_{F,\chi}:=\mathfrak{q}(f,0)$ in the notation of *loc.cit.* to denote the analytic conductor of the $L$-function (see [IK, Ch. 5, (5.7), p. 95]), and noting that the Rankin-Selberg convolutions $L_f(s,\chi\otimes\chi)$ and $L_f(s,\chi\otimes\bar\chi)$ both exist with the former entire when $\bar\chi\ne\overline{\chi}$ (equivalently, when $\chi^2\ne 1$) since $L_f(s,\chi^2)$ is entire when $\chi$ is not quadratic, and the latter is $\zeta_F(s)$ (so it has a simple pole at $s=1$).
 
 **B.6.1.2. Estimates for $L'_f(s,\chi)/L_f(s,\chi)$.** Let $F$ be a number field and $\chi\in\widehat{C_F}$ a continuous character.
 
@@ -2924,7 +2924,7 @@ Lemma B.6.1.2. *Let $F$ be a number field, $\chi\in\widehat{C_F}$ a continuous c
 *(1) If $\chi|_{C^1_F}$ is trivial then for the unique real number $t_0\in\mathbf R$ such that $\chi=|\cdot|^{-it_0}_F$ we have*
 
 $$
-\frac{S_{F,\chi|\cdot|^{it_0}_F}(x)}{x}=N(\mathfrak{d}_{F/\mathbf Q})^{-1/2}\mu_1(C^1_F)+o(1) \tag{B.6.1.7}
+\frac{S_{F,\chi|\cdot|^{it_0}_F}(x)}{x}=N(\mathfrak{d}_{F/\mathbf Q})^{-1/2}\overline{\mu}_1(C^1_F)+o(1) \tag{B.6.1.7}
 $$
 
 *(2) If $\chi|_{C^1_F}$ is non-trivial then*
@@ -2933,7 +2933,7 @@ $$
 \frac{S_{F,\chi}(x)}{x}=o(1). \tag{B.6.1.8}
 $$
 
-*Proof.* (1) : The Hecke $L$-function $L_f(s,\chi|\cdot|^{it_0}_F)=\zeta_F(s)$ has a simple pole at $s=1$ whose residue is $N(\mathfrak{d}_{F/\mathbf Q})^{-1/2}\mu_1(C^1_F)$. Upon applying [MVa, Cor. 8.8] with $c=N(\mathfrak{d}_{F/\mathbf Q})^{-1/2}\mu_1(C^1_F)$, we see that (B.6.1.7) holds.
+*Proof.* (1) : The Hecke $L$-function $L_f(s,\chi|\cdot|^{it_0}_F)=\zeta_F(s)$ has a simple pole at $s=1$ whose residue is $N(\mathfrak{d}_{F/\mathbf Q})^{-1/2}\overline{\mu}_1(C^1_F)$. Upon applying [MVa, Cor. 8.8] with $c=N(\mathfrak{d}_{F/\mathbf Q})^{-1/2}\overline{\mu}_1(C^1_F)$, we see that (B.6.1.7) holds.
 
 (2) : The Hecke $L$-function $L_f(s,\chi)$ is holomorphic over $\mathbf C_{>0}$. Upon applying [MVa, Cor. 8.8] with $c=0$, we see that (B.6.1.8) holds. $\square$
 
@@ -3051,9 +3051,9 @@ $$
 |Z'_{F,\chi}(s)|<\frac{2r_2(T)}{(r_2(T)-r_1(T))^2}\{C_F\log(T)-{\rm R\mathrm{e}}(Z_{F,\chi}(s_0))\}<\frac{4(1+2\alpha)}{(1-\alpha^2)\eta(T)}\left(C_F\log(T)+\frac{1}{\alpha\eta(T)}\right) \tag{B.6.1.20}
 $$
 
-over the closure of the smaller disc $D_1(T)$. The inequality in (B.6.1.20) holds in particular on the horizontal radial segment from the center $s_0$ to $1\pm\alpha\eta(T)+iT$ on $\gamma_1(T)$. Equivalently, the inequality holds at all $s=\sigma+iT$ with $1-\alpha\eta(T)\le\sigma\le 1+\alpha\eta(T)$.
+over the closure of the smaller disc $\overline{D}_1(T)$. The inequality in (B.6.1.20) holds in particular on the horizontal radial segment from the center $s_0$ to $1\pm\alpha\eta(T)+iT$ on $\gamma_1(T)$. Equivalently, the inequality holds at all $s=\sigma+iT$ with $1-\alpha\eta(T)\le\sigma\le 1+\alpha\eta(T)$.
 
-By assumption (3) on $\eta$ and (B.6.1.20), we obtain $|Z'_{F,\chi}(s)|=O((\log(T))^2)$, and since $Z_{F,\chi}(s)=\log L_f(s,\chi)$ over $D_2(T)\subset\Omega$, (B.6.1.10) follows on $\{1-\alpha\eta(t)\le\sigma\le 1+\alpha\eta(t):t\ge 1\}$. We already treated $\sigma>1+\alpha\eta(t)$ for $t\ge 1$, so we are done. $\square$
+By assumption (3) on $\eta$ and (B.6.1.20), we obtain $|Z'_{F,\chi}(s)|=O((\log(T))^2)$, and since $Z_{F,\chi}(s)=\log L_f(s,\chi)$ over $\overline{D}_2(T)\subset\Omega$, (B.6.1.10) follows on $\{1-\alpha\eta(t)\le\sigma\le 1+\alpha\eta(t):t\ge 1\}$. We already treated $\sigma>1+\alpha\eta(t)$ for $t\ge 1$, so we are done. $\square$
 
 Corollary B.6.1.5 (Logarithmic derivative on the $1$-line). *Let $F$ be a number field, $\chi\in\widehat{C_F}$ a continuous character. Then*
 
@@ -3356,7 +3356,7 @@ depends only on the one in assumption (1) on $a_N$.
 The same reasoning applies to the range $x/2\le m<N$, by writing $m=N-r$ where $1\le r\le N-x/2$. We therefore have
 
 $$
-\log\frac{N-1/2}{m} = \log\left(1+\frac{N-r-(N-1/2)}{N-r}\right) \ge \log\left(1+\frac{r-1/2}{N-r}\right) \ge \frac12\cdot\frac{r-1/2}{N-r}\ge \frac12\cdot\frac{r-1/2}{2N}\ge \frac{r}{3x}.
+\log\frac{N-1/2}{\overline{m}} = \log\left(1+\frac{N-r-(N-1/2)}{N-r}\right) \ge \log\left(1+\frac{r-1/2}{N-r}\right) \ge \frac12\cdot\frac{r-1/2}{N-r}\ge \frac12\cdot\frac{r-1/2}{2N}\ge \frac{r}{3x}.
 $$
 
 The part of the sum $\sum_{m\ge 1}|a_m|/(m^{\sigma+c}|\log(x/m)|)$ indexed by the integers $m$ in that range is therefore
