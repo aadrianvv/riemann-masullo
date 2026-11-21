@@ -116,8 +116,9 @@ def query(**params):
 
 def matters_to_everyone(path):
     """Whether a change to this file on main can change the result of any pull request's check."""
-    if path == "scripts/progress/template.html":
-        return False  # Only the progress-map publisher reads this template.
+    # The map and the statement reviewer run independently of proof checks.
+    if path in ("scripts/progress/template.html", "scripts/review.sh"):
+        return False
     if path in BUILD_FILES or path.startswith(BUILD_DIRS):
         return True
     return path.endswith(".lean") and not plain_proof.library_file(path)
