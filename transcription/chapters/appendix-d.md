@@ -3352,7 +3352,7 @@ Since $|\cdot|_G$ is trivial on $G^1$, a direct calculation shows $\Phi_{G,\omeg
 
 D.3.3.2. Fourier-Melllin transform on $\mathcal{S}_I(G)$. We conclude this subsection on the structure of $\mathcal{S}_I(G)$ for second-countable $\mathbf{R}_{>0}$-modulated groups $G$ with the following result on the Fourier-Mellin transform in analogy with, and generalizing, Proposition D.3.2.5 that treats the case $G=\mathbf{R}_{>0}$.
 
-Theorem D.3.3.13 (Fourier-Mellin transform on $\mathcal{S}_I(G)$). Let $G$ be a second-countable $\mathbf{R}_{>0}$-modulated group. Let $I\subset\mathbf{R}$ be a non-empty open interval, and let $\mu$ be a choice of Haar measure on $G$.
+Theorem D.3.3.13 (Fourier-Mellin transform on $\mathcal{S}_I(G)$). *Let $G$ be a second-countable $\mathbf{R}_{>0}$-modulated group. Let $I\subset\mathbf{R}$ be a non-empty open interval, and let $\mu$ be a choice of Haar measure on $G$.*
 
 *For $\phi\in\mathcal{S}_I(G)$, its Fourier-Mellin transform $M(\phi) : c\mapsto \int_G\phi(g)c(g)\,\mathrm{d}\mu(g)$ for $c\in\Omega(G)$ is absolutely convergent on $\Omega(G)_I$ and is holomorphic in $c$, defining a linear map*
 
@@ -3504,7 +3504,7 @@ where $|b(t)|_G=e^{rt}$ for some $r\in\mathbf{R}$. Since $r|\cdot|^a_G\phi\in\ma
 
 **816** · **CHAPTER D. SCHWARTZ-BRUHAT FUNCTIONS**
 
-Theorem D.3.4.2 (Uniform Riemann-Lebesgue - II). Let $G$ be a second-countable $\mathbf{R}_{>0}$-modulated Hausdorff locally compact abelian group, and $I\subset\mathbf{R}$ a non-empty bounded open interval. Let $D$ be an invariant differential operator on $C^\infty(G)$, and define $p_D : \Omega(G)\to\mathbf{C}$ be
+Theorem D.3.4.2 (Uniform Riemann-Lebesgue - II). *Let $G$ be a second-countable $\mathbf{R}_{>0}$-modulated Hausdorff locally compact abelian group, and $I\subset\mathbf{R}$ a non-empty bounded open interval. Let $D$ be an invariant differential operator on $C^\infty(G)$, and define $p_D : \Omega(G)\to\mathbf{C}$ be*
 
 $$
 p_D(c):=(Dc)(e) \tag{D.3.4.1}
@@ -3588,7 +3588,7 @@ D.3.5. Poisson Summation Formula on $\mathbf{R}_{>0}$-modulated groups: isolated
 
 Now let $(G,|\cdot|_G)$ be an $\mathbf{R}_{>0}$-modulated group equipped with the canonical Haar measure $\mu_G$ that is the unique one such that, upon denoting by $\mu_1$ the volume-$1$ Haar measure on $G^1$, the unique Haar measure obtained on $G/G^1\simeq\mathbf{R}_{>0}$ (the isomorphism being the module $|\cdot|_G$) as per Theorem D.1.2.1 is $\mathrm{d}t/t$ on $\mathbf{R}_{>0}$.
 
-Proposition D.3.5.1 (Poisson Summation Formula - jump singularities on $\mathbf{R}_{>0}$-modulated groups). Let $G$ be an $\mathbf{R}_{>0}$-modulated group with module $|\cdot|_G$. Let $\mu_G$ be the canonical Haar measure on $G$. Let $\gamma\in G$ be an element satisfying $|\gamma|_G>1$. Let $\chi_0\in\widehat{G}$ be a continuous (unitary) character, and let $\tau : \mathbf{R}_{>0}\to G$ be a choice of continuous homomorphic section to the module $|\cdot|_G$.
+Proposition D.3.5.1 (Poisson Summation Formula - jump singularities on $\mathbf{R}_{>0}$-modulated groups). *Let $G$ be an $\mathbf{R}_{>0}$-modulated group with module $|\cdot|_G$. Let $\mu_G$ be the canonical Haar measure on $G$. Let $\gamma\in G$ be an element satisfying $|\gamma|_G>1$. Let $\chi_0\in\widehat{G}$ be a continuous (unitary) character, and let $\tau : \mathbf{R}_{>0}\to G$ be a choice of continuous homomorphic section to the module $|\cdot|_G$.*
 
 Let $\phi : G\to\mathbf{C}$ be a function. Assume:
 
@@ -3656,7 +3656,7 @@ and the rightmost side of (D.3.5.5) is nonzero only if $\overline{\chi}|_{G^1}=1
 
 D.3.6. Approximation by smooth compactly supported functions. The following approximation result will be useful for us:
 
-Lemma D.3.6.1 (Approximation by smooth compactly supported functions). Let $(G,|\cdot|_G)$ be a second-countable locally compact Hausdorff $\mathbf{R}_{>0}$-modulated abelian group. Let $I\subset\mathbf{R}$ be a non-empty interval. Then $\mathcal{D}(G):=C^\infty_c(G)$ is a dense subspace of $\mathcal{S}_I(G)$ with continuous inclusion.
+Lemma D.3.6.1 (Approximation by smooth compactly supported functions). *Let $(G,|\cdot|_G)$ be a second-countable locally compact Hausdorff $\mathbf{R}_{>0}$-modulated abelian group. Let $I\subset\mathbf{R}$ be a non-empty interval. Then $\mathcal{D}(G):=C^\infty_c(G)$ is a dense subspace of $\mathcal{S}_I(G)$ with continuous inclusion.*
 
 We equip $\mathcal{D}(G)$ with the usual countable strict inductive limit topology (via any choice of countable exhaustion of $G$ by compact subsets).
 

@@ -1220,7 +1220,7 @@ C.2.4.1. *Characterizations of nuclearity.* The first of the two questions at ha
 
 The second part of Grothendieck's doctoral dissertation is devoted to answering and studying this question, leading to the definition of nuclear spaces. The following is [Gro-b, Ch. II, §2.1, Def. 4].
 
-Definition C.2.4.1 (Nuclear Hausdorff locally convex topological $\mathbf C$-vector spaces). *Let $E$ be a Hausdorff locally convex topological $\mathbf C$-vector space. We say $E$ is nuclear if and only if the identity map $E\otimes_\pi F\to E\otimes_\varepsilon F$ is a linear topological isomorphism for every Hausdorff locally convex topological $\mathbf C$-vector space $F$.*
+Definition C.2.4.1 (Nuclear Hausdorff locally convex topological $\mathbf C$-vector spaces). Let $E$ be a Hausdorff locally convex topological $\mathbf C$-vector space. We say $E$ is nuclear if and only if the identity map $E\otimes_\pi F\to E\otimes_\varepsilon F$ is a linear topological isomorphism for every Hausdorff locally convex topological $\mathbf C$-vector space $F$.
 
 It is equivalent to work with the completed tensor products in this definition, since the uncompleted versions are Hausdorff (and so topologically embed into their completions). There is a different definition of nuclearity given in [Scha, Ch. III, p. 100], but this is equivalent to the above definition by combining [Scha, Ch. III, 7.2] with a long list of equivalents to Definition C.2.4.1 given in [Tre, Thm. 50.1].
 
@@ -2147,7 +2147,7 @@ $$
 \tag{C.3.6.2}
 $$
 
-DEFINITION C.3.6.2 (Schatten-von-Neumann classes). *Let $E,F$ be Hilbert space spaces. Let $p\ge 1$ be a real number. We define:*
+DEFINITION C.3.6.2 (Schatten-von-Neumann classes). Let $E,F$ be Hilbert space spaces. Let $p\ge 1$ be a real number. We define:
 
 (1) *The Schatten-von Neumann class of index $p$ to be the $\mathbf C$-linear subspace:*
 
@@ -2163,9 +2163,9 @@ $$
 \tag{C.3.6.4}
 $$
 
-(2) *The space of Hilbert-Schmidt operators $E\to F$, to be the $S_2(E,F)$.*
+(2) The space of Hilbert-Schmidt operators $E\to F$, to be the $S_2(E,F)$.
 
-(3) *The space of trace-class operators $E\to F$, to be $S_1(E,F)$.*
+(3) The space of trace-class operators $E\to F$, to be $S_1(E,F)$.
 
 We record here a generalization of Lemma C.3.5.4 for singular values of continuous operators $E\to F$ when $E$ and $F$ are general Hilbert spaces, allowing $E\ne F$.
 
@@ -3301,7 +3301,13 @@ We now define partial derivatives of a function $f:\Omega\to E$, with $\Omega\su
 
 DEFINITION C.5.1.14 (Weak partial derivative operators). Let $E$ be a Hausdorff locally convex topological $\mathbf C$-vector space, $d\ge 1$ an integer, $k$ either one of the Archimedean topological fields $k=\mathbf R,\mathbf C$, endowed with their Euclidean topology. Let $\Omega\subset k^d$ be a non-empty open subset, and $f:\Omega\to E$ a function. We call $e_i$ the $i$-th unit vector in the standard $k$-linear basis for $k^d$, for $1\le i\le d$.
 
-We say $f$ is *weakly differentiable in the $e_i$-direction* over $\Omega$ if and only if for every $\varphi\in E'$, the function $\langle f,\varphi\rangle_{E,E'}:\Omega\to\mathbf C$ is differentiable in the $e_i$-direction in the ordinary sense (i.e. real-differentiable if $k=\mathbf R$, and differentiable in the complex sense if $k=\mathbf C$).
+We say $f$ is *weakly differentiable in the $e_i$-direction* over $\Omega$ if and only if for every $\varphi\in E'$, the function
+
+$$
+\langle f,\varphi\rangle_{E,E'}:\Omega\to\mathbf C
+$$
+
+is differentiable in the $e_i$-direction in the ordinary sense (i.e. real-differentiable if $k=\mathbf R$, and differentiable in the complex sense if $k=\mathbf C$).
 
 For $f$ weakly differentiable in the $e_i$-direction over $\Omega$, we define the function $\mathrm{D}_if:\Omega\to (E')^*$ by
 
@@ -3638,7 +3644,7 @@ We claim $f$ satisfies the assumptions of Lemma C.5.1.16(3) with (C.5.1.32) equa
 
 We have shown that for each integer $1 \le i \le d$, $\mathrm{D}_i f$ is valued in $E$ and continuous with respect to the Euclidean topology on $\Omega$ and the initial topology on $E$. Note that for each integer $1 \le i \le d$, the function $\mathrm{D}_i f$ is $E$-valued, continuous, and weakly continuously differentiable $m - 1$ times. By inductive hypothesis, it is continuously differentiable $m - 2$ times. We have therefore shown that $f$ is continuously differentiable $m - 1$ times. $\square$
 
-**Corollary C.5.1.25 (On the agreement of the concepts of $E$-valued smoothness).** Let $E$ be a Hausdorff locally convex topological $\mathbf{C}$-vector space. Let $d \ge 1$ be an integer, $k$ either one of the two Archimedean topological field $k = \mathbf{R}, \mathbf{C}$, endowed with their Euclidean topology.
+**Corollary C.5.1.25 (On the agreement of the concepts of $E$-valued smoothness).** *Let $E$ be a Hausdorff locally convex topological $\mathbf{C}$-vector space. Let $d \ge 1$ be an integer, $k$ either one of the two Archimedean topological field $k = \mathbf{R}, \mathbf{C}$, endowed with their Euclidean topology.*
 
 *Let $\Omega \subset k^d$ be an open subset, $f : \Omega \to E$ a function. Assume $E$ is quasi-complete. Then, the following conditions are equivalent:*
 
@@ -3700,7 +3706,7 @@ This latter way to define $\mathcal{S}(\mathbf{T}^d, E)$ and $\mathcal{S}(\mathb
 
 Most of the following properties of $\mathcal{S}(\mathbf{R}^d, E)$ are due to Schwartz, and we further refer the reader to [Sch-b, §1, p. 93].
 
-**Theorem C.5.1.30 (Main properties of the function spaces $\mathcal{S}(\mathbf{T}^d, E)$ and $\mathcal{S}(\mathbf{R}^d, E)$).** Let $E$ be a Hausdorff locally convex topological $\mathbf{C}$-vector space, $d \ge 1$ an integer. Assume $E$ is quasi-complete.
+**Theorem C.5.1.30 (Main properties of the function spaces $\mathcal{S}(\mathbf{T}^d, E)$ and $\mathcal{S}(\mathbf{R}^d, E)$).** *Let $E$ be a Hausdorff locally convex topological $\mathbf{C}$-vector space, $d \ge 1$ an integer. Assume $E$ is quasi-complete.*
 
 (1) *The spaces $\mathcal{S}(\mathbf{T}^d, E)$ and $\mathcal{S}(\mathbf{R}^d, E)$ are quasi-complete.*
 
@@ -3946,7 +3952,7 @@ as $\mathbf{C}$-linear operators $\mathscr{M}(\Omega, E_2) \to E_2$, for every $
 
 **C.5. MEROMORPHIC FUNCTIONS VALUED IN A QUASI-COMPLETE LOCALLY CONVEX TVS** · **741**
 
-**Theorem C.5.4.1 (Residue Theorem for vector-valued meromorphic functions).** Let $E$ be a Hausdorff quasi-complete locally convex complex topological vector space, $\Omega \subset \mathbf{C}$ a domain. Let $f$ be a meromorphic $E$-valued function on $\Omega$. Let $\Gamma \subset \Omega$ be a cycle which is homologous to zero and does not contain any poles of $f$. Then
+**Theorem C.5.4.1 (Residue Theorem for vector-valued meromorphic functions).** *Let $E$ be a Hausdorff quasi-complete locally convex complex topological vector space, $\Omega \subset \mathbf{C}$ a domain. Let $f$ be a meromorphic $E$-valued function on $\Omega$. Let $\Gamma \subset \Omega$ be a cycle which is homologous to zero and does not contain any poles of $f$. Then*
 
 $$
 \frac{1}{2\pi i} \int_\Gamma f(\xi)\, \mathrm{d}\xi = \sum_{\xi_0 \in D} n(\Gamma, \xi_0) \operatorname{Res}_{\xi_0}(f) \tag{C.5.4.1}

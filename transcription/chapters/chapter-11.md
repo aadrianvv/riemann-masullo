@@ -102,9 +102,21 @@ $$
 
 Remark 11.1.1.3. We note that the orbit of the Borel set $Z \subset \mathrm{GL}_1(\mathbf A_F)$ under the free and proper left-translation action of $F^\times$ on $\mathrm{GL}_1(\mathbf A_F)$ from Proposition 11.1.1.2, is also a Borel set, since $F^\times Z$ is a countable union of Borel sets.
 
-*Proof.* (1) : We let $g \in Z$ be fixed, and we denote by $\delta_{\{g\}}$ the finite, positive Radon measure on $\mathrm{GL}_1(\mathbf A_F)$ determined under [Fol, Thm.7.2] by the assignment of the functional $\delta_{\{g\}} : C_c(\mathrm{GL}_1(\mathbf A_F)) \to \mathbf C$ defined by $\delta_{\{g\}}(f) := f(g)$.
+*Proof.* (1) : We let $g \in Z$ be fixed, and we denote by $\delta_{\{g\}}$ the finite, positive Radon measure on $\mathrm{GL}_1(\mathbf A_F)$ determined under [Fol, Thm.7.2] by the assignment of the functional
 
-Since the continuous action of $F^\times$ on $\mathrm{GL}_1(\mathbf A_F)$ by left-translation is free and discrete, the orbit $F^\times g = \{\xi g\}_{\xi \in F^\times}$ is a discrete subset of $\mathrm{GL}_1(\mathbf A_F)$. We endow it with the following Radon measure. We consider the $\mathbf C$-linear space $C_c(F^\times g)$ of continuous compactly supported functions, and define: $\Delta_{\{g\}} : C_c(F^\times g) \to \mathbf C$ by $\Delta_{\{g\}}(\varphi) := \sum_{\xi \in F^\times} \varphi(\xi g)$. By [Fol, Thm.7.2], $\Delta_{\{g\}}$ determines a unique complex Radon measure on $F^\times g$, which we denote $\mu_g$. The Radon measure $\mu_g$ is real, positive, and it agrees with the counting measure on $F^\times g$ by uniqueness (see [Bou-II, INT VII.31, §2, Prop.4(a)], applied to $X = F^\times g$ endowed with the discrete topology, $H = F^\times$ as a discrete topological group acting freely and properly on $X$ by left-translation), since it is $F^\times$-invariant (in the sense of [Bou-II, INT VII.2, §1, Def.1(a)]).
+$$
+\delta_{\{g\}} : C_c(\mathrm{GL}_1(\mathbf A_F)) \to \mathbf C
+$$
+
+defined by $\delta_{\{g\}}(f) := f(g)$.
+
+Since the continuous action of $F^\times$ on $\mathrm{GL}_1(\mathbf A_F)$ by left-translation is free and discrete, the orbit $F^\times g = \{\xi g\}_{\xi \in F^\times}$ is a discrete subset of $\mathrm{GL}_1(\mathbf A_F)$. We endow it with the following Radon measure. We consider the $\mathbf C$-linear space $C_c(F^\times g)$ of continuous compactly supported functions, and define:
+
+$$
+\Delta_{\{g\}} : C_c(F^\times g) \to \mathbf C
+$$
+
+by $\Delta_{\{g\}}(\varphi) := \sum_{\xi \in F^\times} \varphi(\xi g)$. By [Fol, Thm.7.2], $\Delta_{\{g\}}$ determines a unique complex Radon measure on $F^\times g$, which we denote $\mu_g$. The Radon measure $\mu_g$ is real, positive, and it agrees with the counting measure on $F^\times g$ by uniqueness (see [Bou-II, INT VII.31, §2, Prop.4(a)], applied to $X = F^\times g$ endowed with the discrete topology, $H = F^\times$ as a discrete topological group acting freely and properly on $X$ by left-translation), since it is $F^\times$-invariant (in the sense of [Bou-II, INT VII.2, §1, Def.1(a)]).
 
 ## PDF page 477
 

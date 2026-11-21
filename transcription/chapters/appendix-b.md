@@ -389,7 +389,7 @@ for all $m,N\ge 0$.
 
 We now define a subspace of $\mathcal{S}(\mathbf{R}_{>0})$ comprised of those functions that decay very rapidly towards both $\infty$ and $0$.
 
-Definition B.2.1.1 (Schwartz-Bruhat functions on $\mathbf{R}_{>0}$ with (semi-)exponential decay). *Let $\phi\in\mathcal{S}(\mathbf{R}_{>0})$ be a Schwartz-Bruhat function. Say $\phi$ has:*
+Definition B.2.1.1 (Schwartz-Bruhat functions on $\mathbf{R}_{>0}$ with (semi-)exponential decay). Let $\phi\in\mathcal{S}(\mathbf{R}_{>0})$ be a Schwartz-Bruhat function. Say $\phi$ has:
 
 (1) *forward semi-exponential decay* if $\phi$ and its derivatives decay faster than any positive power of $t^{-1}$ as $t\to+\infty$. We denote by $\mathcal{S}_{\mathrm{SE}}(\mathbf{R}_{>0})$ the space of $\phi$'s with foward semi-exponential decay. Likewise say $\phi$ has *backward semi-exponential decay* if $\phi$ and its derivatives decay faster than any positive power of $t$ as $t\to 0^+$. We denote by $\check{\mathcal{S}}_{\mathrm{SE}}(\mathbf{R}_{>0})$ the space of $\phi$'s with backward semi-exponential decay.
 
@@ -841,7 +841,7 @@ $$
 
 (so in particular $\Phi$ is bounded on each $\mathbf{C}_{(a+\varepsilon,b-\varepsilon)}$).
 
-*If $\Phi$ is entire, we say it is Schwartz on vertical strips if and only if for every bounded open interval $(a,b)\subset\mathbf{R}$ it is uniformly Schwartz over the vertical strip $\mathbf{C}_{(a,b)}$. If $\Phi:\mathbf{C}_{<b}\to\mathbf{C}$ is holomorphic, we say it is Schwartz on the half-plane $\mathbf{C}_{<b}$ if and only if for every $\varepsilon>0$ and for every integer $N\ge 1$, $\Phi(\sigma+iy)$ satisfies condition (B.2.2.1) for all large enough $|y|$ uniformly over all $\sigma\le b-\varepsilon$.*
+If $\Phi$ is entire, we say it is Schwartz on vertical strips if and only if for every bounded open interval $(a,b)\subset\mathbf{R}$ it is uniformly Schwartz over the vertical strip $\mathbf{C}_{(a,b)}$. If $\Phi:\mathbf{C}_{<b}\to\mathbf{C}$ is holomorphic, we say it is Schwartz on the half-plane $\mathbf{C}_{<b}$ if and only if for every $\varepsilon>0$ and for every integer $N\ge 1$, $\Phi(\sigma+iy)$ satisfies condition (B.2.2.1) for all large enough $|y|$ uniformly over all $\sigma\le b-\varepsilon$.
 
 The "justification" of this terminology is that by Lemma D.3.1.1 each of the derivatives $\partial_y^j(\Phi(\sigma+iy)$ satisfy the same uniform decay estimates as $|y|\to\infty$ when $\sigma$ varies in a compact interval. In other words, the Schwartz decay properties along each vertical line have uniform constants and uniform largeness conditions on $|y|$ as $\sigma$ varies in a compact interval.
 
@@ -1879,7 +1879,7 @@ B.4.4. Idelic Explicit Formulas. Let $F$ be a number field. We conclude this sec
 
 *B.4.4.1. Weil's Principal Values from the Explicit Formulas via additive local Fourier transform.*
 
-DEFINITION B.4.4.1 (Connes-Weil Principal Values). *Let $F$ be a number field. For every place $v$ of $F$, we define, relative to the standard additive character $\alpha_{v,0}$ of $F_v$:$^{18}$*
+DEFINITION B.4.4.1 (Connes-Weil Principal Values). Let $F$ be a number field. For every place $v$ of $F$, we define, relative to the standard additive character $\alpha_{v,0}$ of $F_v$:$^{18}$
 
 (1) The continuous$^{19}$ functional on $\mathcal{S}(F_v)$ assigned by:$^{20}$
 
@@ -2651,7 +2651,7 @@ In this subsection we provide a direct argument for Proposition B.5.3.2, resting
 
 We prove the following stronger assertion:
 
-PROPOSITION B.5.3.3 (Strong recurrence of reciprocal partial Euler products). Let $F$ be a number field, $S$ a finite set of finite places of $F$. Let $\chi\in\widehat{C_F}$ be a continuous character unramified at all places in $S$.
+PROPOSITION B.5.3.3 (Strong recurrence of reciprocal partial Euler products). *Let $F$ be a number field, $S$ a finite set of finite places of $F$. Let $\chi\in\widehat{C_F}$ be a continuous character unramified at all places in $S$.*
 
 ## PDF page 633
 
@@ -2945,7 +2945,13 @@ $$
 
 *(3) $1/\eta(t)=O(\log(t))$.*
 
-*Let $\alpha=\alpha_F$ be a real number satisfying $0<\alpha<1$ such that $\zeta_F(s)$ is non-vanishing on $\{0<|s-1|<\alpha\}. $ Assume that $L_f(s,\chi)$ has no zeros in the region $\sigma>1-\eta(|t|).$ Then*
+*Let $\alpha=\alpha_F$ be a real number satisfying $0<\alpha<1$ such that $\zeta_F(s)$ is non-vanishing on $\{0<|s-1|<\alpha\}. $ Assume that $L_f(s,\chi)$ has no zeros in the region*
+
+$$
+\sigma>1-\eta(|t|).
+$$
+
+*Then*
 
 $$
 \frac{L'_f(s,\chi)}{L_f(s,\chi)}=O_{\alpha,\chi}((\log(t))^2) \tag{B.6.1.10}
@@ -2969,7 +2975,13 @@ $$
 -\sum_{I\subset\mathcal O_F}\frac{\Lambda_{F,\chi}(I)}{N(I)^s} \tag{B.6.1.12}
 $$
 
-where $\Lambda_{F,\chi}(I):=\chi(I)\Lambda_F(I)$ with the von Mangoldt function $\Lambda_F$ for $F$ defined by
+where
+
+$$
+\Lambda_{F,\chi}(I):=\chi(I)\Lambda_F(I)
+$$
+
+with the von Mangoldt function $\Lambda_F$ for $F$ defined by
 
 $$
 \Lambda_F(I):=\begin{cases}\log(N\mathfrak p), & I=\mathfrak p^k\text{ a prime power with }k\ge 1,\\ 0, & \text{otherwise (including }I=(1)\text{).}\end{cases} \tag{B.6.1.13}

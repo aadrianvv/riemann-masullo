@@ -1586,7 +1586,13 @@ $$
 A:\mathcal{S}(G)\to \mathscr{B}_{\mathrm{NT}}(W^s_{\{b\}}(G)). \tag{9.3.2.1}
 $$
 
-*For each continuous character $\omega\in\widehat{G^1}$, we choose a continuous character $\chi\in\widehat{G}$ such that $\chi|_{G^1}=\omega$. There exists a countable subset $B=\{\varphi_{m,\omega}\}_{(m,\omega)\in\mathbf{N}\times\widehat{G^1}}\subset C^\infty(G)$ of smooth functions, such that $|\cdot|^b_G\cdot B\subset\mathcal{S}(G)$ (i.e. $B\subset\mathcal{S}_I(G)$ for $I=\{b\}$) satisfying the following properties:*
+*For each continuous character $\omega\in\widehat{G^1}$, we choose a continuous character $\chi\in\widehat{G}$ such that $\chi|_{G^1}=\omega$. There exists a countable subset $B=\{\varphi_{m,\omega}\}_{(m,\omega)\in\mathbf{N}\times\widehat{G^1}}\subset C^\infty(G)$ of smooth functions, such that*
+
+$$
+|\cdot|^b_G\cdot B\subset\mathcal{S}(G)
+$$
+
+*(i.e. $B\subset\mathcal{S}_I(G)$ for $I=\{b\}$) satisfying the following properties:*
 
 (1) $A(B)$ is norm-bounded by $2$ in $W^s_{\{b\}}(G)$.
 

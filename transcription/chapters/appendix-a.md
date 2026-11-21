@@ -322,7 +322,7 @@ $$
 C_F := \mathrm{GL}_1(\mathbf{A}_F)/F^\times \tag{A.1.4.1}
 $$
 
-*as the quotient Hausdorff locally compact abelian group. We refer to $C_F$ as the idele class group of $F$.*
+as the quotient Hausdorff locally compact abelian group. We refer to $C_F$ as the idele class group of $F$.
 
 As per Lemma A.1.3.4(3), the idelic norm $|\cdot|_F : \mathrm{GL}_1(\mathbf{A}_F) \to \mathbf{R}_{>0}$ descends to a continuous homomorphism of Hausdorff locally compact abelian groups
 
@@ -370,7 +370,13 @@ $$
 
 the group of units of $\mathbf{A}_{F,S}$, topologized with the subspace topology. Clearly this topology on $\mathrm{GL}_1(\mathbf{A}_{F,S})$ agrees with the product topology upon endowing each $F^\times_v \subset F_v$ with the subspace topology. The group $\mathrm{GL}_1(\mathbf{A}_{F,S})$ is thereby promoted to a Hausdorff locally compact topological group.
 
-We refer to $\mathbf{A}_{F,S}$ as the *$S$-adele ring* of $F$, and to $\mathrm{GL}_1(\mathbf{A}_{F,S})$ as the *$S$-idele group* of $F$. The ring of $S$-integers in $F$ is $\mathcal{O}_{F,S} = \{\xi \in F : \iota_v(\xi) \in \mathcal{O}_{F_v} \text{ for all } v \notin S\}$. We denote by
+We refer to $\mathbf{A}_{F,S}$ as the *$S$-adele ring* of $F$, and to $\mathrm{GL}_1(\mathbf{A}_{F,S})$ as the *$S$-idele group* of $F$. The ring of $S$-integers in $F$ is
+
+$$
+\mathcal{O}_{F,S} = \{\xi \in F : \iota_v(\xi) \in \mathcal{O}_{F_v} \text{ for all } v \notin S\}.
+$$
+
+We denote by
 
 $$
 \iota_S : \mathcal{O}_{F,S} \to \mathbf{A}_{F,S} \tag{A.1.5.3}
@@ -771,7 +777,13 @@ $$
 (\xi + P) \cap P = \varnothing. \tag{A.2.3.11}
 $$
 
-The natural map $\mathrm{GL}_1(\mathbf{A}_F) \to \mathrm{Pic}(\mathcal{O}_F)$ sends $\mathrm{GL}_1(\mathbf{A}_F)^1$ onto $\mathrm{Pic}(\mathcal{O}_F)$, so there exist ideles
+The natural map
+
+$$
+\mathrm{GL}_1(\mathbf{A}_F) \to \mathrm{Pic}(\mathcal{O}_F)
+$$
+
+sends $\mathrm{GL}_1(\mathbf{A}_F)^1$ onto $\mathrm{Pic}(\mathcal{O}_F)$, so there exist ideles
 
 $$
 g_1 := 1,\dots,g_{h_F} \in \mathrm{GL}_1(\mathbf{A}_F)^1 \tag{A.2.3.12}
@@ -985,7 +997,13 @@ within $\mathrm{GL}_1(\mathbf{A}_F)^1$, which follows from $\mathcal{O}_F^{\time
 
 **A.2.3.6. Fundamental domain $E_F$ for the $F^{\times}$-action on $\mathrm{GL}_1(\mathbf{A}_F)$.**
 
-Lemma A.2.3.11. *Let $F$ be a number field. Let $s_{\infty}$ be any continuous homomorphic section to the continuous homomorphism $|\cdot|_{\infty} : \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}}) \to \mathbf{R}_{>0}$. Then $\mathbf{R}_{>0} \times \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1 \to \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ defined by $(t,g^1) \mapsto s_{\infty}(t)g^1$ is an isomorphism of Lie groups.*
+Lemma A.2.3.11. *Let $F$ be a number field. Let $s_{\infty}$ be any continuous homomorphic section to the continuous homomorphism $|\cdot|_{\infty} : \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}}) \to \mathbf{R}_{>0}$. Then*
+
+$$
+\mathbf{R}_{>0} \times \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1 \to \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})
+$$
+
+*defined by $(t,g^1) \mapsto s_{\infty}(t)g^1$ is an isomorphism of Lie groups.*
 
 The following is immediate from Proposition A.2.3.10(2).
 
@@ -1017,7 +1035,13 @@ If $\mathrm{Int}_{T_{v_0,\infty}}(K_{v_0})$ is non-empty then since $\mathrm{Int
 
 (2): Since $K_{v_0} \subset T_{v_0,\infty}$ and $\overline{E}_0 \subset \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$, we have $K_{v_0} \cdot \overline{E}_0$ is entirely contained within $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$, and the complement of $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ is $\bigcup_{v\in S_{\infty}} H_v$.
 
-(3): Clearly $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}}) \simeq \prod_{v\in S_{\infty}} F_v^{\times}$ is open in $\mathbf{A}_{F,S_{\infty}}$. If $K_{v_0} \subset T_{v_0,\infty}$ is a compact subset with non-empty interior in $T_{v_0,\infty}$, then by (1) we have that the interior of $K_{v_0} \cdot \overline{E}_0$ in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ is non-empty, and since it is open, it is open and non-empty also in $\mathbf{A}_{F,S_{\infty}}$ because $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ is open in $\mathbf{A}_{F,S_{\infty}}$. The interior $\mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})}(K_{v_0} \cdot \overline{E}_0)$ formed in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ coincides with the interior $\mathrm{Int}_{\mathbf{A}_{F,S_{\infty}}}(K_{v_0} \cdot \overline{E}_0)$ formed within $\mathbf{A}_{F,S_{\infty}}$ by compactness of $K_{v_0}\overline{E}_0$ and openness of $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ in $\mathbf{A}_{F,S_{\infty}}$. $\square$
+(3): Clearly $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}}) \simeq \prod_{v\in S_{\infty}} F_v^{\times}$ is open in $\mathbf{A}_{F,S_{\infty}}$. If $K_{v_0} \subset T_{v_0,\infty}$ is a compact subset with non-empty interior in $T_{v_0,\infty}$, then by (1) we have that the interior of $K_{v_0} \cdot \overline{E}_0$ in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ is non-empty, and since it is open, it is open and non-empty also in $\mathbf{A}_{F,S_{\infty}}$ because $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ is open in $\mathbf{A}_{F,S_{\infty}}$. The interior
+
+$$
+\mathrm{Int}_{\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})}(K_{v_0} \cdot \overline{E}_0)
+$$
+
+formed in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ coincides with the interior $\mathrm{Int}_{\mathbf{A}_{F,S_{\infty}}}(K_{v_0} \cdot \overline{E}_0)$ formed within $\mathbf{A}_{F,S_{\infty}}$ by compactness of $K_{v_0}\overline{E}_0$ and openness of $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ in $\mathbf{A}_{F,S_{\infty}}$. $\square$
 
 **A.2.4. Fundamental domain for $\mathbf{A}_{F,S}/\mathcal{O}_{F,S}$ and $C_{F,S}$.** In this subsection we construct an $S$-local analog of the fundamental domain $D_F$ from (A.2.1.2) for the $F$-action on $\mathbf{A}_F$, i.e. a fundamental domain for the continuous additive translation action by $\mathcal{O}_{F,S}$ on $\mathbf{A}_{F,S}$, and for the $\mathcal{O}_{F,S}^{\times}$-action on $\mathrm{GL}_1(\mathbf{A}_{F,S})^1$.
 
@@ -1793,7 +1817,7 @@ The inequality in (A.5.1.3) is called weak $(1,1)$-type while (A.5.1.4) is calle
 
 A.5.1.2. $1$-dimensional Lebesgue Differentiation Theorem. Using the weak $(1,1)$-estimate from (A.5.1.3) for the Hardy-Littlewood maximal function, we can prove the following Theorem of Lebesgue:
 
-THEOREM A.5.1.3 (Lebesgue's Differentiation Theorem). Let $f \in L^1_{\mathrm{loc}}(\mathbf{R},\mathrm{d}x)$ be a locally integrable function on $\mathbf{R}$. Then, for almost all $x \in \mathbf{R}$, the following identity:
+THEOREM A.5.1.3 (Lebesgue's Differentiation Theorem). *Let $f \in L^1_{\mathrm{loc}}(\mathbf{R},\mathrm{d}x)$ be a locally integrable function on $\mathbf{R}$. Then, for almost all $x \in \mathbf{R}$, the following identity:*
 
 $$
 f(x) = \lim_{r \to 0^+} \frac{1}{2r} \int_{x-r}^{x+r} f(y)\,\mathrm{d}y \tag{A.5.1.12}
@@ -1918,7 +1942,7 @@ REMARK A.5.2.7. In light of Lemma A.5.2.10 below, if $H$ is discrete then there 
 
 Before proving the Proposition, we record here the following result from [Kech, Ch. II, §15, Thm. 15.1] for which we need only an elementary special case:
 
-THEOREM A.5.2.8 (Lusin-Souslin Theorem on Borel embeddings). Let $X,Y$ be separable and completely metrizable$^7$ topological spaces, $f : X \to Y$ a continuous map.
+THEOREM A.5.2.8 (Lusin-Souslin Theorem on Borel embeddings). *Let $X,Y$ be separable and completely metrizable$^7$ topological spaces, $f : X \to Y$ a continuous map.*
 
 *For $B \subset X$ a Borel set, if $f|_B$ is injective then $f(B) \subset Y$ is a Borel set.*
 
@@ -2342,7 +2366,7 @@ PROOF. Let $\{K_m\}_{m \ge 0}$ be a countable exhaustion of $G$ by compact subse
 
 A.5.3.1. Hardy-Littlewood Maximal Theorems on Hausdorff locally compact abelian groups. The following is a special case of [HR-2, Ch.XI,§44,Thm.44.13,p.640]:
 
-THEOREM A.5.3.4 (Measure-theoretic Maximal Theorem - I). Let $G$ be a Hausdorff locally compact abelian group, $\mu_G$ a choice of Haar measure on $G$. Assume $G$ is second countable.
+THEOREM A.5.3.4 (Measure-theoretic Maximal Theorem - I). *Let $G$ be a Hausdorff locally compact abelian group, $\mu_G$ a choice of Haar measure on $G$. Assume $G$ is second countable.*
 
 *Let $\{U_k\}_{k \ge 0}$ be a Borel $D$-sequence in $G$. Let $\nu$ be a positive Radon measure on $G$. We define, for each $x \in G$:$^{16}$*
 
@@ -2391,7 +2415,7 @@ $$
 
 In the presence of a $D'$-sequence in $G$, a more precise result is available. The following is a special case of [HR-2, Ch. XI, Thm.44.14, p. 641]:
 
-THEOREM A.5.3.5 (Measure-theoretic Maximal Theorem - II). Let $G$ be a Hausdorff locally compact abelian group, $\mu_G$ a choice of Haar measure on $G$. Assume $G$ is second countable.
+THEOREM A.5.3.5 (Measure-theoretic Maximal Theorem - II). *Let $G$ be a Hausdorff locally compact abelian group, $\mu_G$ a choice of Haar measure on $G$. Assume $G$ is second countable.*
 
 *Let $\{U_k\}_{k \ge 0}$ be a $D'$-sequence in $G$. Let $\nu$ be a positive Radon measure on $G$. We define, for each $x \in G$:$^{18}$*
 

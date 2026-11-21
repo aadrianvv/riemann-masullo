@@ -194,3 +194,21 @@ From the maintainers' spot check in #2471 and the checks it suggested.
   proofs on pp. 258–263, 796–800 and elsewhere) are not. 98.7% of paragraphs now agree with the
   print; the rest mix italic and upright. Literal `(*)` in citations is escaped as `(\*)`.
 
+
+## 10. Follow-up checks
+
+- **More displayed formulas.** A looser search for run-in displays, with every candidate checked on
+  the page image, found 18 more: pp. 328, 334, 340, 363, 371, 422, 443, 446, 476 (two), 543, 549,
+  553 (two), 637, 638, 728, 873.
+- **More italic paragraphs.** Theorems whose numbers start with a letter (THEOREM A.5.1.3, Lemma
+  D.3.6.1, …) had been skipped by the italics pass: 12 more statements are now in `*…*`. 8 more
+  paragraphs that were in `*…*` but are upright in the print, mostly definitions (pp. 542, 593,
+  600, 619, 685, 704), are not. 98.9% of paragraphs now agree with the print.
+- **Unaligned math glyphs.** Every run of 3 or more PDF math glyphs that does not align with the
+  transcription, outside the diagrams, was looked at. Apart from the display on p. 873, they are
+  differences in how the glyphs are read, not in the formulas: words set in math ("for all",
+  "holomorphic over"), `\varinjlim`/`\varprojlim`, limits and subscripts read in a different order,
+  footnote numbers, and figure labels.
+- **Not yet done.** Whether a small hat or tilde covers a subscript (`\widehat{f}_0` or
+  `\widehat{f_0}`) could not be measured reliably from the glyph positions; it still has to be
+  checked page by page.
