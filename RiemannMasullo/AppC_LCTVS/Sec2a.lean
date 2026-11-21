@@ -911,7 +911,26 @@ variable [IsTopologicalAddGroup E] [PolynormableSpace ℂ E] [T2Space E]
 /-- Paper: Lemma C.2.2.2, p. 675. The polar of every zero-neighborhood belongs to the
 equicontinuous compactology. -/
 theorem polar_mem_equicontinuousCompactology (U : Set E) (hU : U ∈ 𝓝 0) :
-    StrongDual.toWeakDual '' (StrongDual.polar ℂ U) ∈ equicontinuousCompactology E := by sorry
+    StrongDual.toWeakDual '' (StrongDual.polar ℂ U) ∈ equicontinuousCompactology E := by
+  let B : E →ₗ[ℂ] WeakDual ℂ E →ₗ[ℂ] ℂ :=
+    (topDualPairing ℂ E).flip.compl₂ WeakDual.toStrongDual.toLinearMap
+  have hpolar : StrongDual.toWeakDual '' StrongDual.polar ℂ U = B.polar U :=
+    StrongDual.toWeakDual.image_eq_preimage_symm _
+  rw [hpolar]
+  refine ⟨?_, LinearMap.polar_AbsConvex (B := B) U, ?_⟩
+  · rw [Metric.equicontinuousAt_iff_right]
+    intro ε hε
+    obtain ⟨a, ha, haε⟩ := NormedField.exists_norm_lt ℂ hε
+    have hnear : a • U ∈ 𝓝 (0 : E) := by
+      simpa using smul_mem_nhds_smul₀ (norm_pos_iff.mp ha) hU
+    filter_upwards [hnear] with x hx φ
+    obtain ⟨y, hy, rfl⟩ := hx
+    change dist (φ.val 0) (φ.val (a • y)) < ε
+    rw [map_zero, dist_zero_left, map_smul, norm_smul]
+    exact (mul_le_of_le_one_right ha.le (φ.property y hy)).trans_lt haε
+  · rw [B.polar_eq_biInter_preimage]
+    exact isClosed_biInter fun x _ ↦
+      Metric.isClosed_closedBall.preimage (WeakDual.eval_continuous x)
 
 /-- Paper: Lemma C.2.2.2, p. 675. The polars in E of the members of the equicontinuous
 compactology form a zero-neighborhood basis for the original topology on E. -/
