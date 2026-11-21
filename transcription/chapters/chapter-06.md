@@ -172,7 +172,7 @@ Indeed, by Proposition 2.1.4.1(1), $\mathcal S(\mathbf A_{F,S})$ is nuclear, and
 
 Upon applying this to $E_1=\mathbf C[z_v^{\pm 1},v\in S'-S]$ and $E_2=\mathcal S(\prod_{v\in S'-S}F_v)$, we obtain from (1) that the continuous linear operator from (6.1.2.5) is a linear topological embedding. By (2), we obtain that it is surjective, and hence a linear topological isomorphism.
 
-(1) follows from compatibility of the linear operator (6.1.2.7) with the linear topological isomorphism $\mathcal S(\prod_{v\in S'-S}F_v)\simeq\widehat{\bigotimes}_{v\in S'-S}\mathcal S(F_v)$, the tensor product being projective and already complete, since the factors are endowed with the final locally convex topology, being $S'-S$ comprised of non-Archimedean places only. The linear topological embeddings $\mathbf C[z_v^{\pm 1}]\to\mathcal S(F_v)$ combine into the continuous linear operator in (6.1.2.7), itself a linear topological embedding by [Jar, Part III,Ch.16.2,Cor.3].
+(1) follows from compatibility of the linear operator (6.1.2.7) with the linear topological isomorphism $\mathcal S(\prod_{v\in S'-S}F_v)\simeq\bigotimes_{v\in S'-S}\mathcal S(F_v)$, the tensor product being projective and already complete, since the factors are endowed with the final locally convex topology, being $S'-S$ comprised of non-Archimedean places only. The linear topological embeddings $\mathbf C[z_v^{\pm 1}]\to\mathcal S(F_v)$ combine into the continuous linear operator in (6.1.2.7), itself a linear topological embedding by [Jar, Part III,Ch.16.2,Cor.3].
 
 Since $\mathrm{Pic}(\mathcal O_{F,S})=1$, the quotient homomorphism
 
@@ -322,12 +322,18 @@ $$
 
 The $\mathbf C$-algebra map $\mathbf C[\mathcal O_{F,S}^\times]\to\mathbf C[\mathcal O_{F,S'}^\times]$ is flat, and identifies, upon choosing a homomorphic section $\sigma$ to the surjective group homomorphism $\mathcal O_{F,S'}^\times\to\mathcal O_{F,S'}^\times/\mathcal O_{F,S}^\times$, the $\mathbf C$-algebra $\mathbf C[\mathcal O_{F,S'}^\times]$ with the $\mathbf C$-algebra $\mathbf C[\mathcal O_{F,S}^\times]\otimes_{\mathbf C}\mathbf C[\mathcal O_{F,S'}^\times/\mathcal O_{F,S}^\times]$.
 
-By Lemma 6.1.2.2(2), the $\mathbf C[\mathcal O_{F,S'}^\times]$-module $\mathcal S(\mathbf A_{F,S'})$ is isomorphic, as a $\mathbf C[\mathcal O_{F,S'}^\times]$-module, to $\mathcal S(\mathbf A_{F,S})\otimes_{\mathbf C[\mathcal O_{F,S'}^\times/\mathcal O_{F,S}^\times]}$ where the $\mathbf C[\mathcal O_{F,S'}^\times]$-module structure on $\mathcal S(\mathbf A_{F,S})$ is defined through the quotient $\mathbf C[\mathcal O_{F,S'}^\times]\to\mathbf C[\mathcal O_{F,S}^\times]$ induced by the quotient by $\sigma(\mathcal O_{F,S'}^\times/\mathcal O_{F,S}^\times)$, and on $\mathbf C[\mathcal O_{F,S'}^\times/\mathcal O_{F,S}^\times]$ by the quotient $\mathcal O_{F,S'}^\times\to\mathcal O_{F,S'}^\times/\mathcal O_{F,S}^\times$.
+By Lemma 6.1.2.2(2), the $\mathbf C[\mathcal O_{F,S'}^\times]$-module $\mathcal S(\mathbf A_{F,S'})$ is isomorphic, as a $\mathbf C[\mathcal O_{F,S'}^\times]$-module, to
+
+$$
+\mathcal S(\mathbf A_{F,S})\otimes\mathbf C[\mathcal O_{F,S'}^\times/\mathcal O_{F,S}^\times]
+$$
+
+where the $\mathbf C[\mathcal O_{F,S'}^\times]$-module structure on $\mathcal S(\mathbf A_{F,S})$ is defined through the quotient $\mathbf C[\mathcal O_{F,S'}^\times]\to\mathbf C[\mathcal O_{F,S}^\times]$ induced by the quotient by $\sigma(\mathcal O_{F,S'}^\times/\mathcal O_{F,S}^\times)$, and on $\mathbf C[\mathcal O_{F,S'}^\times/\mathcal O_{F,S}^\times]$ by the quotient $\mathcal O_{F,S'}^\times\to\mathcal O_{F,S'}^\times/\mathcal O_{F,S}^\times$.
 
 By the change-of-rings spectral sequence for Tor-functors, we have a canonical $\mathbf C$-linear isomorphism:
 
 $$
-\mathrm{Tor}^{\mathbf C[\mathcal O_{F,S}^\times]}_0(\mathbf C,\mathcal S(\mathbf A_{F,S}))\to\mathrm{Tor}^{\mathbf C[\mathcal O_{F,S'}^\times]}_0(\mathbf C,\mathcal S(\mathbf A_{F,S})\otimes_{\mathbf C[\mathcal O_{F,S'}^\times/\mathcal O_{F,S}^\times]})
+\mathrm{Tor}^{\mathbf C[\mathcal O_{F,S}^\times]}_0(\mathbf C,\mathcal S(\mathbf A_{F,S}))\to\mathrm{Tor}^{\mathbf C[\mathcal O_{F,S'}^\times]}_0(\mathbf C,\mathcal S(\mathbf A_{F,S'}))
 $$
 
 which implies that the image of the linear operator from (6.1.2.18) is:
@@ -787,7 +793,7 @@ $$
 \{x\in\mathbf A_{F,S_\infty}\colon |x|_v\in [-A,A]\ \text{for all}\ v\in S_\infty\}
 $$
 
-for large enough fixed $A > 0$. By Theorem A.4.1.1, we deduce that there exists a real number $C > 0$ such that, as $|g|_{S_\infty}\to 0+$, we have:
+for large enough fixed $A > 0$. By Theorem A.4.1.1, we deduce that there exists a real number $C > 0$ such that, as $|g|_{S_\infty}\to 0^+$, we have:
 
 $$
 |\Psi^\infty_{F,S,\chi_S,\infty}(f)(g)|\le C|\log|g|_{F,S_\infty}|^{r_1+r_2-1}. \tag{6.2.2.12}
@@ -907,7 +913,7 @@ $$
 \delta_0 = \Delta_F(1),\quad \widehat{\delta}_0 = \Delta_F(|\cdot|_F).
 $$
 
-Theorem 6.3.2.1 (Global Converse Theorem). Let $F$ be a number field, $\chi\in \widehat{C_F}$ a continuous character. Let $A_{\mathcal S}(\mathbf C)$ be the Schwartz-Bergman space as per Definition D.3.1.3. We parametrize $\Omega(C_F)(\chi|_{C^1_F})$ by the global holomorphic parametrization
+Theorem 6.3.2.1 (Global Converse Theorem). Let $F$ be a number field, $\chi\in \widehat{C_F}$ a continuous character. Let $A\mathcal S(\mathbf C)$ be the Schwartz-Bergman space as per Definition D.3.1.3. We parametrize $\Omega(C_F)(\chi|_{C^1_F})$ by the global holomorphic parametrization
 
 $$
 \chi|\cdot|^s_F,\ s\in\mathbf C.
@@ -916,16 +922,16 @@ $$
 (1) If $\chi|_{C^1_F}\ne 1$, then the continuous linear map:
 
 $$
-Z\colon \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S(\mathbf A_F))\to A_{\mathcal S}(\mathbf C) \tag{6.3.2.3}
+Z\colon \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S(\mathbf A_F))\to A\mathcal S(\mathbf C) \tag{6.3.2.3}
 $$
 
-is a linear topological embedding with closed range. equal to $L(s,\chi)\,\mathscr{O}(\mathbf C)\cap A_{\mathcal S}(\mathbf C)\subset A_{\mathcal S}(\mathbf C)$. If $\chi|_{C^1_F} = 1$, then the continuous linear map:
+is a linear topological embedding with closed range. equal to $L(s,\chi)\,\mathscr{O}(\mathbf C)\cap A\mathcal S(\mathbf C)\subset A\mathcal S(\mathbf C)$. If $\chi|_{C^1_F} = 1$, then the continuous linear map:
 
 $$
-Z\circ\Phi_{F,1}\colon \mathcal S_0(\mathbf A_F)\to A_{\mathcal S}(\mathbf C) \tag{6.3.2.4}
+Z\circ\Phi_{F,1}\colon \mathcal S_0(\mathbf A_F)\to A\mathcal S(\mathbf C) \tag{6.3.2.4}
 $$
 
-is relatively open with closed range, equal to $((s+it_0)(1-s-it_0))^{\delta_{\chi|_{C^1_F}}}L(s,\chi)\,\mathscr{O}(\mathbf C)\cap A_{\mathcal S}(\mathbf C)$, with $\delta_{\chi|_{C^1_F}} = 0$ if $\chi|_{C^1_F}\ne 1$, and kernel equal to $\ker(\Phi_{F,1})\cap\mathcal S_0(\mathbf A_F)$.
+is relatively open with closed range, equal to $((s+it_0)(1-s-it_0))^{\delta_{\chi|_{C^1_F}}}L(s,\chi)\,\mathscr{O}(\mathbf C)\cap A\mathcal S(\mathbf C)$, with $\delta_{\chi|_{C^1_F}} = 0$ if $\chi|_{C^1_F}\ne 1$, and kernel equal to $\ker(\Phi_{F,1})\cap\mathcal S_0(\mathbf A_F)$.
 
 (2) The following sequence of $\mathbf C$-linear operators:
 
@@ -948,16 +954,16 @@ $$
 is strict exact, and under the Mellin transform $\phi\mapsto M(\phi)(s) := \int_{C_F}\phi(g)\chi(g)|g|^s_F\,\mathrm{d}\overline{\mu}(g)$ it is linearly and topologically isomorphic to the short exact sequence:
 
 $$
-0\to L(s,\chi)\,\mathscr{O}(\mathbf C)\cap A_{\mathcal S}(\mathbf C)\to L(s,\chi)\,\mathscr{O}(\mathbf C)\cap A_{\mathcal S}(\mathbf C)\to 0 \tag{6.3.2.7}
+0\to L(s,\chi)\,\mathscr{O}(\mathbf C)\cap A\mathcal S(\mathbf C)\to L(s,\chi)\,\mathscr{O}(\mathbf C)\cap A\mathcal S(\mathbf C)\to 0 \tag{6.3.2.7}
 $$
 
-if $\chi|_{C^1_F}\ne 1$, the middle operator in (6.3.2.7) being the identity, and the topology on $L(s,\chi)\,\mathscr{O}(\mathbf C)\cap A_{\mathcal S}(\mathbf C)$ being the subspace topology inherited from $A_{\mathcal S}(\mathbf C)$, and to the short exact sequence:
+if $\chi|_{C^1_F}\ne 1$, the middle operator in (6.3.2.7) being the identity, and the topology on $L(s,\chi)\,\mathscr{O}(\mathbf C)\cap A\mathcal S(\mathbf C)$ being the subspace topology inherited from $A\mathcal S(\mathbf C)$, and to the short exact sequence:
 
 $$
-0\to (s-it_0)(1-s-it_0)\,\widehat{\zeta}_F(s+it_0)\,\mathscr{O}(\mathbf C)\cap A_{\mathcal S}(\mathbf C)\to\widehat{\zeta}_F(s+it_0)\,\mathscr{O}(\mathbf C)\cap A_{\mathcal S}(\mathbf C)\to\mathbf C\oplus\mathbf C\to 0 \tag{6.3.2.8}
+0\to (s-it_0)(1-s-it_0)\,\widehat{\zeta}_F(s+it_0)\,\mathscr{O}(\mathbf C)\cap A\mathcal S(\mathbf C)\to\widehat{\zeta}_F(s+it_0)\,\mathscr{O}(\mathbf C)\cap A\mathcal S(\mathbf C)\to\mathbf C\oplus\mathbf C\to 0 \tag{6.3.2.8}
 $$
 
-for a real number $t_0\in\mathbf R$ uniquely determined by $\chi$, where the rightmost operator sends an element of $\widehat{\zeta}_F(s+it_0)\,\mathscr{O}(\mathbf C)\cap A_{\mathcal S}(\mathbf C)$ to the pair of residues at $s = -it_0, 1-it_0$, the topology on the leftmost space of meromorphic functions from (6.3.2.8) being the subspace topology inherited from $A_{\mathcal S}(\mathbf C)$, and the
+for a real number $t_0\in\mathbf R$ uniquely determined by $\chi$, where the rightmost operator sends an element of $\widehat{\zeta}_F(s+it_0)\,\mathscr{O}(\mathbf C)\cap A\mathcal S(\mathbf C)$ to the pair of residues at $s = -it_0, 1-it_0$, the topology on the leftmost space of meromorphic functions from (6.3.2.8) being the subspace topology inherited from $A\mathcal S(\mathbf C)$, and the
 
 ## PDF page 305
 
@@ -982,7 +988,7 @@ We choose a continuous homomorphic section $\tau$ to the idelic norm $|\cdot|_F$
 The continuous linear operator
 
 $$
-U_{S,\tau_S,(\chi|_{C^1_F})_S}\colon \mathrm H_{0,\mathrm{cont}}((\chi|_{C^1_F})_S, \mathcal S(\mathbf A_{F,S}))\to A_{\mathcal S}(\mathbf C_{>0})\times A_{\mathcal S}(\mathbf C_{<1}) \tag{6.3.2.10}
+U_{S,\tau_S,(\chi|_{C^1_F})_S}\colon \mathrm H_{0,\mathrm{cont}}((\chi|_{C^1_F})_S, \mathcal S(\mathbf A_{F,S}))\to A\mathcal S(\mathbf C_{>0})\times A\mathcal S(\mathbf C_{<1}) \tag{6.3.2.10}
 $$
 
 defined in (5.4.1.2) by $U_{S,\tau_S,(\chi|_{C^1_F})_S}(f) := (Z_S(f,\chi|\cdot|^s_{F,S}), Z_S(\widehat{f},\overline{\chi}|\cdot|^{1-s}_{F,S}))$ is, by the Second Structure Theorem (see Theorem 5.4.1.1(1)), a linear topological embedding. Its range is closed, since the source is complete by the First Structure Theorem (see Theorem 5.2.3.1(2)).
@@ -996,7 +1002,7 @@ $$
 We now consider the linear map:
 
 $$
-T_{S,\chi}\colon A_{\mathcal S}(\mathbf C_{>0})\times A_{\mathcal S}(\mathbf C_{<1}) \xrightarrow{\times(1-s-it_0)^{\delta_\chi}L_{\Sigma_F-S}(\chi,s),\,\times(s+it_0)^{\delta_\chi}L_{\Sigma_F-S}(\overline{\chi},1-s)} A_{\mathcal S}(\mathbf C_{>0})\times A_{\mathcal S}(\mathbf C_{<1}) \tag{6.3.2.11}
+T_{S,\chi}\colon A\mathcal S(\mathbf C_{>0})\times A\mathcal S(\mathbf C_{<1}) \xrightarrow{\times(1-s-it_0)^{\delta_\chi}L_{\Sigma_F-S}(\chi,s),\,\times(s+it_0)^{\delta_\chi}L_{\Sigma_F-S}(\overline{\chi},1-s)} A\mathcal S(\mathbf C_{>0})\times A\mathcal S(\mathbf C_{<1}) \tag{6.3.2.11}
 $$
 
 with $\delta_\chi = 0$ if $\chi|_{C^1_F}\ne 1$, and $\delta_\chi = 1$ if $\chi|_{C^1_F} = 1$, and with $t_0\in\mathbf R$ uniquely determined by $\chi$ and $\tau$ (i.e. $t_0\in\mathbf R$ is the unique real number such that $\chi(\tau(t)) = t^{it_0}$ as smooth functions of $t\in\mathbf R_{>0}$) such that $s = 1-it_0$ is the unique simple pole of $L_{\Sigma_F-S}(\chi,s)$ (if any) contained in $\mathbf C_{>0}$, sending a pair $(\phi,\psi)$ of holomorphic functions on $\mathbf C_{>0}$, respectively $\mathbf C_{<1}$, each Schwartz uniformly on the vertical strips of bounded width of $\mathbf C_{>0}$, respectively $\mathbf C_{<1}$, to the pair $((1-s-it_0)^{\delta_\chi}L_{\Sigma_F-S}(\chi,s)\phi(s), (s+it_0)^{\delta_\chi}L_{\Sigma_F-S}(\overline{\chi},1-s)\psi(s))$, where
@@ -1007,7 +1013,7 @@ $$
 
 is defined in (6.3.1.6) of Terminology 6.3.1.1.
 
-$T_{S,\chi}$ is indeed valued in $A_{\mathcal S}(\mathbf C_{>0})\times A_{\mathcal S}(\mathbf C_{<1})$ and continuous, since $(1-s-it_0)^{\delta_\chi}L_{\Sigma_F-S}(\chi,s)$ is holomorphic over $\mathbf C_{>0}-\{1-it_0\}$, and with at most a removable singularity at $s = 1-it_0$ (see Proposition 3.2.1.3), and it grows at most polynomially, uniformly on the vertical strips of bounded width of $\mathbf C_{>0}$, as do its derivatives (see Remark B.1.1.4).
+$T_{S,\chi}$ is indeed valued in $A\mathcal S(\mathbf C_{>0})\times A\mathcal S(\mathbf C_{<1})$ and continuous, since $(1-s-it_0)^{\delta_\chi}L_{\Sigma_F-S}(\chi,s)$ is holomorphic over $\mathbf C_{>0}-\{1-it_0\}$, and with at most a removable singularity at $s = 1-it_0$ (see Proposition 3.2.1.3), and it grows at most polynomially, uniformly on the vertical strips of bounded width of $\mathbf C_{>0}$, as do its derivatives (see Remark B.1.1.4).
 
 The kernel of the composition $T_{S,\chi}\circ U_{S,\chi}$ is trivial if $\chi|_{C^1_F}\ne 1$, and it is trivial when restricted to the subspace
 
@@ -1021,23 +1027,23 @@ $$
 
 if $\chi|_{C^1_F} = 1$. This subspace of $\mathrm H_{0,\mathrm{cont}}((\chi|_{C^1_F})_S, \mathcal S(\mathbf A_{F,S}))$ is linearly and topologically isomorphic to $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ under $\pi_S$.
 
-To study the range of $L$ from (6.3.2.3) and (6.3.2.4), we first study the range of $T_{S,\chi}\circ U_{S,\chi}$ within $A_{\mathcal S}(\mathbf C_{>0})\times A_{\mathcal S}(\mathbf C_{<1})$.
+To study the range of $L$ from (6.3.2.3) and (6.3.2.4), we first study the range of $T_{S,\chi}\circ U_{S,\chi}$ within $A\mathcal S(\mathbf C_{>0})\times A\mathcal S(\mathbf C_{<1})$.
 
 We define the continuous linear map:
 
 $$
-R_{S,\chi}\colon A_{\mathcal S}(\mathbf C_{>0})\times A_{\mathcal S}(\mathbf C_{<1}) \xrightarrow{(\phi,\psi)\mapsto(\phi(s)-\psi(s))|_{\mathbf C_{(0,1)}}} A_{\mathcal S}(\mathbf C_{(0,1)}) \tag{6.3.2.13}
+R_{S,\chi}\colon A\mathcal S(\mathbf C_{>0})\times A\mathcal S(\mathbf C_{<1}) \xrightarrow{(\phi,\psi)\mapsto(\phi(s)-\psi(s))|_{\mathbf C_{(0,1)}}} A\mathcal S(\mathbf C_{(0,1)}) \tag{6.3.2.13}
 $$
 
 and observe that by the $S$-local functional equation (see (3.3.1.2) of Theorem 3.3.1.1) and the global functional equation (see (3.2.2.2) of Theorem 3.2.2.1), $T_{S,\chi}\circ U_{S,\chi}$ is valued in the kernel of $R_{S,\chi}$.
 
-The operator $T_{S,\chi}$ is sequentially closed. Indeed, for $\{(\phi_m,\psi_m)\}_{m\ge 0}\subset A_{\mathcal S}(\mathbf C_{>0})\times A_{\mathcal S}(\mathbf C_{<1})$ a sequence such that $\{T_{S,\chi}(\phi_m,\psi_m)\}_{m\ge 0}\subset A_{\mathcal S}(\mathbf C_{>0})\times A_{\mathcal S}(\mathbf C_{<1})$ is a Cauchy sequence with limit $(\tilde{\phi},\tilde{\psi})\in A_{\mathcal S}(\mathbf C_{>0})\times A_{\mathcal S}(\mathbf C_{<1})$, the convergence of $(1-s-it_0)^{\delta_\chi}L_{\Sigma_F-S}(\chi,s)\phi_m(s)$ to $\tilde{\phi}(s)$ and of $(s+it_0)^{\delta_\chi}L_{\Sigma_F-S}(\overline{\chi},1-s)\psi_m(s)$ to $\tilde{\psi}_m(s)$ is uniform over the vertical strips of bounded width within $\mathbf C_{>0}$, respectively within $\mathbf C_{<1}$, by the polynomial growth of $(1-s-it_0)^{\delta_\chi}L_{\Sigma_F-S}(\chi,s)$ and $(s+it_0)^{\delta_\chi}L_{\Sigma_F-S}(\overline{\chi},1-s)$ and their derivatives of any order, uniformly on the vertical strips of bounded width within $\mathbf C_{>0}$, respectively $\mathbf C_{<1}$.
+The operator $T_{S,\chi}$ is sequentially closed. Indeed, for $\{(\phi_m,\psi_m)\}_{m\ge 0}\subset A\mathcal S(\mathbf C_{>0})\times A\mathcal S(\mathbf C_{<1})$ a sequence such that $\{T_{S,\chi}(\phi_m,\psi_m)\}_{m\ge 0}\subset A\mathcal S(\mathbf C_{>0})\times A\mathcal S(\mathbf C_{<1})$ is a Cauchy sequence with limit $(\tilde{\phi},\tilde{\psi})\in A\mathcal S(\mathbf C_{>0})\times A\mathcal S(\mathbf C_{<1})$, the convergence of $(1-s-it_0)^{\delta_\chi}L_{\Sigma_F-S}(\chi,s)\phi_m(s)$ to $\tilde{\phi}(s)$ and of $(s+it_0)^{\delta_\chi}L_{\Sigma_F-S}(\overline{\chi},1-s)\psi_m(s)$ to $\tilde{\psi}_m(s)$ is uniform over the vertical strips of bounded width within $\mathbf C_{>0}$, respectively within $\mathbf C_{<1}$, by the polynomial growth of $(1-s-it_0)^{\delta_\chi}L_{\Sigma_F-S}(\chi,s)$ and $(s+it_0)^{\delta_\chi}L_{\Sigma_F-S}(\overline{\chi},1-s)$ and their derivatives of any order, uniformly on the vertical strips of bounded width within $\mathbf C_{>0}$, respectively $\mathbf C_{<1}$.
 
 In particular, $\tilde{\phi}(s)$ is divisible by $(1-s-it_0)^{\delta_\chi}L_{\Sigma_F-S}(\chi,s)$ and $\tilde{\psi}(s)$ is divisible by $(s+it_0)^{\delta_\chi}L_{\Sigma_F-S}(\overline{\chi},1-s)$ as meromorphic functions over $\mathbf C_{<1}$, i.e. there exist meromorphic functions $\tilde{\phi}_0$ and $\tilde{\psi}_0$ over $\mathbf C_{>0}$, respectively $\mathbf C_{<1}$, holomorphic away from the zeros of $(1-s-it_0)^{\delta_\chi}L_{\Sigma_F-S}(\chi,s)$, respectively $(s+it_0)^{\delta_\chi}L_S(\tilde{e}_\chi,1-s)$, such that $\tilde{\phi}(s) = (1-s-it_0)^{\delta_\chi}L_{\Sigma_F-S}(\chi,s)\tilde{\phi}_0(s)$ over $\mathbf C_{>0}$, and $\tilde{\psi}(s) = (s+it_0)^{\delta_\chi}L_{\Sigma_F-S}(\chi,1-s)\tilde{\psi}_0(s)$ over $\mathbf C_{<0}$.
 
 We now prove that in fact both $\tilde{\phi}_0(s)$ and $\tilde{\psi}_0(s)$ are holomorphic. To this end, we use the Asymptotic Residue Theorem (see Theorem B.3.2.1), and the polynomial growth of the reciprocal of $L_{\Sigma_F-S}(\chi,s)$ and its derivatives, on a sequence of horizontal segments with growing absolute ordinates, of a vertical strip of the form $\mathbf C_{[-\varepsilon,1+\varepsilon]}$ for any $0<\varepsilon<1$ (see Corollary B.6.1.8).
 
-Since the growth of $L_{\Sigma_F-S}(\chi,s)$, respectively $L_{\Sigma_F-S}(\overline{\chi},1-s)$, together with their holomorphic derivatives of any order, is at most polynomial uniformly over the vertical strips of bounded width of $\mathbf C_{>0}$, respectively $\mathbf C_{<1}$, then $\tilde{\phi}_0(s)$ and $\tilde{\psi}_0(s)$ are again elements of $A_{\mathcal S}(\mathbf C_{>0})$, respectively $A_{\mathcal S}(\mathbf C_{<1})$, as a consequence of the Asymptotic Residue Theorem (see Theorem B.3.2.1) and Lemma D.3.1.1.
+Since the growth of $L_{\Sigma_F-S}(\chi,s)$, respectively $L_{\Sigma_F-S}(\overline{\chi},1-s)$, together with their holomorphic derivatives of any order, is at most polynomial uniformly over the vertical strips of bounded width of $\mathbf C_{>0}$, respectively $\mathbf C_{<1}$, then $\tilde{\phi}_0(s)$ and $\tilde{\psi}_0(s)$ are again elements of $A\mathcal S(\mathbf C_{>0})$, respectively $A\mathcal S(\mathbf C_{<1})$, as a consequence of the Asymptotic Residue Theorem (see Theorem B.3.2.1) and Lemma D.3.1.1.
 
 We have shown that we have:
 
@@ -1045,31 +1051,31 @@ $$
 \lim_{m\to +\infty}T_{S,\chi}(\phi_m,\psi_m) = T_{S,\chi}(\tilde{\phi}_0,\tilde{\psi}_0)
 $$
 
-in $A_{\mathcal S}(\mathbf C_{>0})\times A_{\mathcal S}(\mathbf C_{<1})$, which shows that the range of $T_{S,\chi}$ is sequentially closed.
+in $A\mathcal S(\mathbf C_{>0})\times A\mathcal S(\mathbf C_{<1})$, which shows that the range of $T_{S,\chi}$ is sequentially closed.
 
-Since $A_{\mathcal S}(\mathbf C_{>0})\times A_{\mathcal S}(\mathbf C_{<1})$ is a Fréchet space by Lemma D.3.1.2, the range of $T_{S,\chi}$ is closed, and being $T_{S,\chi}$ injective and continuous, it is a linear topological isomorphism onto its image.
+Since $A\mathcal S(\mathbf C_{>0})\times A\mathcal S(\mathbf C_{<1})$ is a Fréchet space by Lemma D.3.1.2, the range of $T_{S,\chi}$ is closed, and being $T_{S,\chi}$ injective and continuous, it is a linear topological isomorphism onto its image.
 
-Since $R_{S,\chi}$ is continuous, its kernel is closed in $A_{\mathcal S}(\mathbf C_{>0})\times A_{\mathcal S}(\mathbf C_{<1})$, and hence the range of $T_{S,\chi}\circ U_{S,\chi}$ is closed in the kernel of $R_{S,\chi}$.
+Since $R_{S,\chi}$ is continuous, its kernel is closed in $A\mathcal S(\mathbf C_{>0})\times A\mathcal S(\mathbf C_{<1})$, and hence the range of $T_{S,\chi}\circ U_{S,\chi}$ is closed in the kernel of $R_{S,\chi}$.
 
-We will now analyze the kernel of $R_{S,\chi}$ as a subspace of $A_{\mathcal S}(\mathbf C_{>0})\times A_{\mathcal S}(\mathbf C_{<1})$.
+We will now analyze the kernel of $R_{S,\chi}$ as a subspace of $A\mathcal S(\mathbf C_{>0})\times A\mathcal S(\mathbf C_{<1})$.
 
 We define the linear map:
 
 $$
-A\colon A_{\mathcal S}(\mathbf C)\to A_{\mathcal S}(\mathbf C_{>0})\times A_{\mathcal S}(\mathbf C_{<1})
+A\colon A\mathcal S(\mathbf C)\to A\mathcal S(\mathbf C_{>0})\times A\mathcal S(\mathbf C_{<1})
 $$
 
-assigned by sending $\phi\in A_{\mathcal S}(\mathbf C)$ to $(\phi(s),\phi(s))\in A_{\mathcal S}(\mathbf C_{>0})\times A_{\mathcal S}(\mathbf C_{<1})$.
+assigned by sending $\phi\in A\mathcal S(\mathbf C)$ to $(\phi(s),\phi(s))\in A\mathcal S(\mathbf C_{>0})\times A\mathcal S(\mathbf C_{<1})$.
 
-$A$ is continuous, injective, and with closed range since $A_{\mathcal S}(\mathbf C_{>0})$ and $A_{\mathcal S}(\mathbf C_{<1})$ are Hausdorff. It is therefore a linear topological embedding, and its range contains the kernel of $R_{S,\chi}$ (in fact, it agrees with the kernel of $R_{S,\chi}$). It follows that $T_{S,\chi}\circ U_{S,\chi}$ factors through $A$ linearly and topologically, inducing a unique continuous linear operator from $\mathrm H_{0,\mathrm{cont}}((\chi|_{C^1_F})_S, \mathcal S(\mathbf A_{F,S}))$, if $\chi|_{C^1_F}\ne 1$, and from the subspace of $\mathrm H_{0,\mathrm{cont}}((\chi|_{C^1_F})_S, \mathcal S(\mathbf A_{F,S}))$ from (6.3.2.12) if $\chi|_{C^1_F} = 1$, to $A_{\mathcal S}(\mathbf C)$: such operator is $L\circ\overline{\pi}_S$.
+$A$ is continuous, injective, and with closed range since $A\mathcal S(\mathbf C_{>0})$ and $A\mathcal S(\mathbf C_{<1})$ are Hausdorff. It is therefore a linear topological embedding, and its range contains the kernel of $R_{S,\chi}$ (in fact, it agrees with the kernel of $R_{S,\chi}$). It follows that $T_{S,\chi}\circ U_{S,\chi}$ factors through $A$ linearly and topologically, inducing a unique continuous linear operator from $\mathrm H_{0,\mathrm{cont}}((\chi|_{C^1_F})_S, \mathcal S(\mathbf A_{F,S}))$, if $\chi|_{C^1_F}\ne 1$, and from the subspace of $\mathrm H_{0,\mathrm{cont}}((\chi|_{C^1_F})_S, \mathcal S(\mathbf A_{F,S}))$ from (6.3.2.12) if $\chi|_{C^1_F} = 1$, to $A\mathcal S(\mathbf C)$: such operator is $L\circ\overline{\pi}_S$.
 
 ## PDF page 307
 
 **6.3. LOCAL AND GLOBAL CONVERSE THEOREMS** · **307**
 
-Since $\overline{\pi}_S$ is a linear topological isomorphism onto $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S(\mathbf A_F))$ if $\chi|_{C^1_F}\ne 1$, and onto $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ if $\chi|_{C^1_F} = 1$, we have shown that $L$ is valued in $A_{\mathcal S}(\mathbf C)$ and it is continuous, injective and with closed range. In particular, it is a linear topological embedding, hence relatively open.
+Since $\overline{\pi}_S$ is a linear topological isomorphism onto $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S(\mathbf A_F))$ if $\chi|_{C^1_F}\ne 1$, and onto $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ if $\chi|_{C^1_F} = 1$, we have shown that $L$ is valued in $A\mathcal S(\mathbf C)$ and it is continuous, injective and with closed range. In particular, it is a linear topological embedding, hence relatively open.
 
-To conclude the proof of (1), we are to identify the range explicitly within $A_{\mathcal S}(\mathbf C)$. In order to do this, it is enough to compute the range of $L\circ\overline{\pi}_S$, for the choice of $S$ made at the outset.
+To conclude the proof of (1), we are to identify the range explicitly within $A\mathcal S(\mathbf C)$. In order to do this, it is enough to compute the range of $L\circ\overline{\pi}_S$, for the choice of $S$ made at the outset.
 
 Let $f\in\mathcal S(\mathbf A_{F,S})$ be given. Then $Z(\pi_S(f),\chi|\cdot|^s_F) = Z_S(f,\chi_S|\cdot|^s_{F,S})L_{\Sigma_F-S}(\chi,s)$, where $\chi_S$ is the unique character of $J_{F,S}$ obtained by descending to $J_{F,S}$ the restriction of $\chi$ to $C_{F,S}$, being $\chi$ unramified outside $S$.
 
@@ -1089,11 +1095,11 @@ $$
 
 where $\Psi^\infty_{F,S,\omega_S}$ is the linear operator defined in (6.2.2.2) of the Theorem, for $\omega_S := (\chi_S)|_{J^1_{F,S}}$).
 
-(2) $\phi$ is an element of $A_{\mathcal S}(\mathbf C)$.
+(2) $\phi$ is an element of $A\mathcal S(\mathbf C)$.
 
 (3) $\phi$ has zeros at the zeros of $L_f(s,\chi)$ contained in $\mathbf C_{>0}$, with matching multiplicities.
 
-Note that by Theorem 6.2.2.1, the $\mathbf C$-linear subspace of finite linear combinations of entire functions of the form described in (1), (2) and (3), agrees with the range of $L$ in $A_{\mathcal S}(\mathbf C)$, and it is not merely dense in it. This is a consequence of each $\mathcal S(F_v)$ carrying the finest locally convex topology, rendering the algebraic tensor products in Proposition 2.1.4.1 and Theorem 6.2.2.1 topologized with the projective tensor product topology, already complete.
+Note that by Theorem 6.2.2.1, the $\mathbf C$-linear subspace of finite linear combinations of entire functions of the form described in (1), (2) and (3), agrees with the range of $L$ in $A\mathcal S(\mathbf C)$, and it is not merely dense in it. This is a consequence of each $\mathcal S(F_v)$ carrying the finest locally convex topology, rendering the algebraic tensor products in Proposition 2.1.4.1 and Theorem 6.2.2.1 topologized with the projective tensor product topology, already complete.
 
 Note also that since we restrict the source of $L$ to the closed co-dimension 2 subspace $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ of $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$, and formation of this closed subspace is compatible with $\pi_S$, i.e. $\pi_S$ for every $S$ sends $\mathrm H_{0,\mathrm{cont}}(\chi_S|_{J^1_{F,S}}, \mathcal S_0(\mathbf A_{F,S}))$ linearly and topologically isomorphically onto $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$, for $\mathcal S_0(\mathbf A_{F,S}) := \ker(\delta_0)\cap\ker(\widehat{\delta}_0)$ (the Fourier transform being the $S$-adelic Fourier transform, defined using the standard additive character), we can choose $f_\infty$ to satisfy these two vanishing conditions in $\mathcal S(\mathbf A_{F,S_\infty})$, in the sole case they are necessary (i.e. $\chi = 1$).
 
@@ -1117,9 +1123,9 @@ $$
 \phi(s) = u(s)((s+it_0)(1-s-it_0))^{\delta_{\chi|_{C^1_F}}}L(s,\chi)
 $$
 
-which shows that indeed the range of $L$ is contained within $((s+it_0)(1-s-it_0))^{\delta_{\chi|_{C^1_F}}}L(s,\chi)\,\mathscr{O}(\mathbf C)\cap A_{\mathcal S}(\mathbf C)$.
+which shows that indeed the range of $L$ is contained within $((s+it_0)(1-s-it_0))^{\delta_{\chi|_{C^1_F}}}L(s,\chi)\,\mathscr{O}(\mathbf C)\cap A\mathcal S(\mathbf C)$.
 
-Conversely, let $\phi\in A_{\mathcal S}(\mathbf C)$ be of the form:
+Conversely, let $\phi\in A\mathcal S(\mathbf C)$ be of the form:
 
 $$
 \phi(s) = u(s)((s+it_0)(1-s-it_0))^{\delta_{\chi|_{C^1_F}}}L(s,\chi)
@@ -1219,7 +1225,7 @@ $\square$
 
 The following is a version of Theorem 6.3.2.1, providing a description of the range of the Mellin transform $L$ from (5.2.3.14), restricted to closed subspaces of $\mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S(\mathbf A_F))$ defined to account for the removal of finitely many non-Archimedean “Euler factors” from $\mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S(\mathbf A_F))$. It can be viewed as an incarnation of a “non primitive version” of the Converse Theorem for $\mathrm{GL}_1$ (see [CPS, Thm.1,p.165]).
 
-Theorem 6.3.2.2 (Converse Theorem for $\mathrm{GL}_1$ - non-principal case). Let $F$ be a number field, $\chi\in \widehat{C_F}$ a continuous character. Let $A_{\mathcal S}(\mathbf C)$ be the Schwartz-Bergman space as per Definition D.3.1.3. We parametrize $\Omega(C_F)(\chi|_{C^1_F})$ by the global holomorphic parametrization
+Theorem 6.3.2.2 (Converse Theorem for $\mathrm{GL}_1$ - non-principal case). Let $F$ be a number field, $\chi\in \widehat{C_F}$ a continuous character. Let $A\mathcal S(\mathbf C)$ be the Schwartz-Bergman space as per Definition D.3.1.3. We parametrize $\Omega(C_F)(\chi|_{C^1_F})$ by the global holomorphic parametrization
 
 $$
 \chi|\cdot|^s_F,\ s\in\mathbf C.
@@ -1238,18 +1244,18 @@ We define $q_v := N(\mathfrak p_v)$, with $\mathfrak p_v$ the unique prime ideal
 (1) If $\chi|_{C^1_F}\ne 1$, then the continuous linear map:
 
 $$
-Z\colon \mathrm{PV}_{S_0}\,\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S(\mathbf A_F))\to A_{\mathcal S}(\mathbf C) \tag{6.3.2.19}
+Z\colon \mathrm{PV}_{S_0}\,\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S(\mathbf A_F))\to A\mathcal S(\mathbf C) \tag{6.3.2.19}
 $$
 
-is a linear topological embedding with closed range equal to $\prod_{v\in S_0-(S_0\cap S_\chi)}(1-q^{-s-it_v}_v)L(s,\chi)\,\mathscr{O}(\mathbf C)\cap A_{\mathcal S}(\mathbf C)\subset A_{\mathcal S}(\mathbf C)$.
+is a linear topological embedding with closed range equal to $\prod_{v\in S_0-(S_0\cap S_\chi)}(1-q^{-s-it_v}_v)L(s,\chi)\,\mathscr{O}(\mathbf C)\cap A\mathcal S(\mathbf C)\subset A\mathcal S(\mathbf C)$.
 
 If $\chi|_{C^1_F} = 1$, then the continuous linear map:
 
 $$
-L\circ\Phi_{F,1}\colon \mathrm{PV}_{S_0}\,\mathcal S_0(\mathbf A_F)\to A_{\mathcal S}(\mathbf C) \tag{6.3.2.20}
+L\circ\Phi_{F,1}\colon \mathrm{PV}_{S_0}\,\mathcal S_0(\mathbf A_F)\to A\mathcal S(\mathbf C) \tag{6.3.2.20}
 $$
 
-is relatively open with closed range equal to $\prod_{v\in S_0-(S_0\cap S_\chi)}(1-q^{-s-it_v}_v)s(s-1)\widehat{\zeta}_F(s)\,\mathscr{O}(\mathbf C)\subset A_{\mathcal S}(\mathbf C)$, and kernel equal to $\mathrm{PV}_{S_0}(\ker(\Phi_{F,1})\cap\mathcal S_0(\mathbf A_F))$.
+is relatively open with closed range equal to $\prod_{v\in S_0-(S_0\cap S_\chi)}(1-q^{-s-it_v}_v)s(s-1)\widehat{\zeta}_F(s)\,\mathscr{O}(\mathbf C)\subset A\mathcal S(\mathbf C)$, and kernel equal to $\mathrm{PV}_{S_0}(\ker(\Phi_{F,1})\cap\mathcal S_0(\mathbf A_F))$.
 
 (2) The following sequence of $\mathbf C$-linear operators:
 
@@ -1274,24 +1280,24 @@ with $\delta_{\chi|_{C^1_F}} = 0$ if $\chi|_{C^1_F}\ne 1$, and $\delta_1 = 1$.
 is strict exact, and under the Mellin transform $\phi\mapsto M(\phi)(s) := \int_{C_F}\phi(g)\chi(g)|g|^s_F\,\mathrm{d}\overline{\mu}(g)$ it is linearly and topologically isomorphic to the short exact sequence:
 
 $$
-0\to\prod_{v\in S_0-(S_0\cap S_\chi)}(1-q^{-s-it_v}_v)L(s,\chi)\,\mathscr{O}(\mathbf C)\cap A_{\mathcal S}(\mathbf C)\to\prod_{v\in S_0-(S_0\cap S_\chi)}(1-q^{-s-it_v}_v)L(s,\chi)\,\mathscr{O}(\mathbf C)\cap A_{\mathcal S}(\mathbf C)\to 0 \tag{6.3.2.23}
+0\to\prod_{v\in S_0-(S_0\cap S_\chi)}(1-q^{-s-it_v}_v)L(s,\chi)\,\mathscr{O}(\mathbf C)\cap A\mathcal S(\mathbf C)\to\prod_{v\in S_0-(S_0\cap S_\chi)}(1-q^{-s-it_v}_v)L(s,\chi)\,\mathscr{O}(\mathbf C)\cap A\mathcal S(\mathbf C)\to 0 \tag{6.3.2.23}
 $$
 
-if $\chi|_{C^1_F}\ne 1$, the middle operator in (6.3.2.23) being the identity, and the topology on $\prod_{v\in S_0-(S_0\cap S_\chi)}(1-q^{-s-it_v}_v)L(s,\chi)\,\mathscr{O}(\mathbf C)$ being the subspace topology inherited from $A_{\mathcal S}(\mathbf C)$, and to the short exact sequence:
+if $\chi|_{C^1_F}\ne 1$, the middle operator in (6.3.2.23) being the identity, and the topology on $\prod_{v\in S_0-(S_0\cap S_\chi)}(1-q^{-s-it_v}_v)L(s,\chi)\,\mathscr{O}(\mathbf C)$ being the subspace topology inherited from $A\mathcal S(\mathbf C)$, and to the short exact sequence:
 
 $$
-0\to (s-it_0)(1-s-it_0)\prod_{v\in S_0-(S_0\cap S_\chi)}(1-q^{-s-it_v}_v)\widehat{\zeta}_F(s+it_0)\,\mathscr{O}(\mathbf C)\cap A_{\mathcal S}(\mathbf C) \tag{6.3.2.24}
+0\to (s-it_0)(1-s-it_0)\prod_{v\in S_0-(S_0\cap S_\chi)}(1-q^{-s-it_v}_v)\widehat{\zeta}_F(s+it_0)\,\mathscr{O}(\mathbf C)\cap A\mathcal S(\mathbf C) \tag{6.3.2.24}
 $$
 
 $$
-\to\prod_{v\in S_0-(S_0\cap S_\chi)}(1-q^{-s-it_v}_v)\widehat{\zeta}_F(s+it_0)\,\mathscr{O}(\mathbf C)\cap A_{\mathcal S}(\mathbf C) \tag{6.3.2.25}
+\to\prod_{v\in S_0-(S_0\cap S_\chi)}(1-q^{-s-it_v}_v)\widehat{\zeta}_F(s+it_0)\,\mathscr{O}(\mathbf C)\cap A\mathcal S(\mathbf C) \tag{6.3.2.25}
 $$
 
 $$
 \to\mathbf C\oplus\mathbf C\to 0 \tag{6.3.2.26}
 $$
 
-for a real number $t_0\in\mathbf R$ uniquely determined by $\chi$, where the rightmost operator sends an element of $\prod_{v\in S_0-(S_0\cap S_\chi)}(1-q^{-s-it_v}_v)\widehat{\zeta}_F(s+it_0)\,\mathscr{O}(\mathbf C)$ to the pair of residues at $s = -it_0, 1-it_0$, the topology on the leftmost space of meromorphic functions from (6.3.2.24) being the subspace topology inherited from $A_{\mathcal S}(\mathbf C)$, and the topology on the middle space of meromorphic functions being the quotient topology induced by $L$ from $\mathrm H_{0,\mathrm{cont}}(|\cdot|^{it_0}_F, \mathcal S(\mathbf A_F))$.
+for a real number $t_0\in\mathbf R$ uniquely determined by $\chi$, where the rightmost operator sends an element of $\prod_{v\in S_0-(S_0\cap S_\chi)}(1-q^{-s-it_v}_v)\widehat{\zeta}_F(s+it_0)\,\mathscr{O}(\mathbf C)$ to the pair of residues at $s = -it_0, 1-it_0$, the topology on the leftmost space of meromorphic functions from (6.3.2.24) being the subspace topology inherited from $A\mathcal S(\mathbf C)$, and the topology on the middle space of meromorphic functions being the quotient topology induced by $L$ from $\mathrm H_{0,\mathrm{cont}}(|\cdot|^{it_0}_F, \mathcal S(\mathbf A_F))$.
 
 Proof. Both (1) and (2) follow from the combination of Lemma 5.3.1.5 and Theorem 6.3.2.1.
 

@@ -391,11 +391,11 @@ We now define a subspace of $\mathcal{S}(\mathbf{R}_{>0})$ comprised of those fu
 
 Definition B.2.1.1 (Schwartz-Bruhat functions on $\mathbf{R}_{>0}$ with (semi-)exponential decay). *Let $\phi\in\mathcal{S}(\mathbf{R}_{>0})$ be a Schwartz-Bruhat function. Say $\phi$ has:*
 
-(1) *forward semi-exponential decay* if $\phi$ and its derivatives decay faster than any positive power of $t^{-1}$ as $t\to+\infty$. We denote by $\mathcal{S}\mathrm{SE}(\mathbf{R}_{>0})$ the space of $\phi$'s with foward semi-exponential decay. Likewise say $\phi$ has *backward semi-exponential decay* if $\phi$ and its derivatives decay faster than any positive power of $t$ as $t\to 0^+$. We denote by $\check{\mathcal{S}}\mathrm{SE}(\mathbf{R}_{>0})$ the space of $\phi$'s with backward semi-exponential decay.
+(1) *forward semi-exponential decay* if $\phi$ and its derivatives decay faster than any positive power of $t^{-1}$ as $t\to+\infty$. We denote by $\mathcal{S}_{\mathrm{SE}}(\mathbf{R}_{>0})$ the space of $\phi$'s with foward semi-exponential decay. Likewise say $\phi$ has *backward semi-exponential decay* if $\phi$ and its derivatives decay faster than any positive power of $t$ as $t\to 0^+$. We denote by $\check{\mathcal{S}}_{\mathrm{SE}}(\mathbf{R}_{>0})$ the space of $\phi$'s with backward semi-exponential decay.
 
 (2) *exponential decay* if $\phi$ and its derivatives decay faster than any positive power $e^{-|\log(t)|}$, as $|\log(t)|\to+\infty$. We denote by $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0})$ the $\mathbf{C}$-linear space of Schwartz-Bruhat functions of exponential decay.
 
-Remark B.2.1.2. The role of applying $\partial_t$ in the preceding definition can be replaced by applying $t\partial_t$; the latter has the merit of being invariant and negating under inversion on $t$. It is elementary to check that membership in $\mathcal{S}\mathrm{SE}(\mathbf{R}_{>0})$ is equivalent to the requirement $t^a\phi\in\mathcal{S}(\mathbf{R}_{>0})$ for all $a\ge 0$, and via the exponential isomorphism $\mathbf{R}\simeq\mathbf{R}_{>0}$ this corresponds to functions $f\in\mathcal{S}(\mathbf{R})$ such that $f^{(j)}\in O(e^{-x})$ as $x\to+\infty$ for all $j\ge 0$.
+Remark B.2.1.2. The role of applying $\partial_t$ in the preceding definition can be replaced by applying $t\partial_t$; the latter has the merit of being invariant and negating under inversion on $t$. It is elementary to check that membership in $\mathcal{S}_{\mathrm{SE}}(\mathbf{R}_{>0})$ is equivalent to the requirement $t^a\phi\in\mathcal{S}(\mathbf{R}_{>0})$ for all $a\ge 0$, and via the exponential isomorphism $\mathbf{R}\simeq\mathbf{R}_{>0}$ this corresponds to functions $f\in\mathcal{S}(\mathbf{R})$ such that $f^{(j)}\in O(e^{-x})$ as $x\to+\infty$ for all $j\ge 0$.
 
 We will often abbreviate "forward exponential decay" into "exponential decay", when no confusion is expected to arise.$^8$
 
@@ -409,13 +409,13 @@ $$
 
 *for $t\in\mathbf{R}_{>0}$ (so $\phi\in \mathcal{S}_{\mathrm{E}}(\mathbf{R})$ if and only if $\check{\phi}\in \mathcal{S}_{\mathrm{E}}(\mathbf{R})$),*
 
-*(1) If $\phi\in\check{\mathcal{S}}\mathrm{SE}(\mathbf{R}_{>0})$ then the extension of $\phi$ to $\mathbf{R}$ by zero for $t\in(-\infty,0]$ is Schwartz over $\mathbf{R}$.*
+*(1) If $\phi\in\check{\mathcal{S}}_{\mathrm{SE}}(\mathbf{R}_{>0})$ then the extension of $\phi$ to $\mathbf{R}$ by zero for $t\in(-\infty,0]$ is Schwartz over $\mathbf{R}$.*
 
-*(2) The involution $\phi\mapsto\check{\phi}$ is a linear topological automorphism of $\mathcal{S}(\mathbf{R}_{>0})$ respecting the linear subspace $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0})$, and identifying $\mathcal{S}\mathrm{SE}(\mathbf{R}_{>0})$ with $\check{\mathcal{S}}\mathrm{SE}(\mathbf{R}_{>0})$.*
+*(2) The involution $\phi\mapsto\check{\phi}$ is a linear topological automorphism of $\mathcal{S}(\mathbf{R}_{>0})$ respecting the linear subspace $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0})$, and identifying $\mathcal{S}_{\mathrm{SE}}(\mathbf{R}_{>0})$ with $\check{\mathcal{S}}_{\mathrm{SE}}(\mathbf{R}_{>0})$.*
 
 *(3) The extension by zero of any function in $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0})$ to the real line is Schwartz.*
 
-*(4) The operator $t\partial_t$ on $\mathcal{S}(\mathbf{R}_{>0})$ preserves $\mathcal{S}\mathrm{SE}(\mathbf{R}_{>0})$, $\check{\mathcal{S}}\mathrm{SE}(\mathbf{R}_{>0})$, and $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0})$.*
+*(4) The operator $t\partial_t$ on $\mathcal{S}(\mathbf{R}_{>0})$ preserves $\mathcal{S}_{\mathrm{SE}}(\mathbf{R}_{>0})$, $\check{\mathcal{S}}_{\mathrm{SE}}(\mathbf{R}_{>0})$, and $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0})$.*
 
 Proof. (1) : We need to check smoothness at $t=0$ of $\partial_t^N\phi$ for every integer $N\ge 0$. We know that $\partial_t^N\phi$ exists and is smooth over $\mathbf{R}^\times$. It is therefore enough to check that it is continuous at $t=0$: that says $\partial_t^N\phi\to 0$ as $t\to 0^+$ for each $N$. For $t=e^x$ we have $\partial_t=e^{-x}\partial_x$, so we are given that $f(x):=\phi(e^x)\in\mathcal{S}(\mathbf{R})$ and its derivatives all have decay more rapid than $e^{-M|x|}$ as $x\to-\infty$ for each $M>0$ and we want to show
 
@@ -429,7 +429,7 @@ $(e^{-x}\partial_x)^N f\to 0$ as $x\to-\infty$. Via the product rule, $(e^{-x}\p
 
 (2) and (3) follow from the definitions and from (1).
 
-(4) : If $\phi\in \mathcal{S}\mathrm{SE}(\mathbf{R}_{>0})$ then for any real number $A>0$, we have $t^A\phi\in\mathcal{S}(\mathbf{R}_{>0})$. It follows that $(t\partial_t)(t^A\phi)\in\mathcal{S}(\mathbf{R}_{>0})$. But $(t\partial_t)(t^A\phi)=At^A\phi+t^A(t\partial_t)\phi\in\mathcal{S}(\mathbf{R}_{>0})$, which gives $t^A(t\partial_t)\phi\in\mathcal{S}(\mathbf{R}_{>0})$. It follows that $(t\partial_t)\phi$ has semi-exponential decay. The same assertion holds for backward semi-exponential decay (by passing to $1/t$) and exponential decay in place of semi-exponential decay. $\square$
+(4) : If $\phi\in \mathcal{S}_{\mathrm{SE}}(\mathbf{R}_{>0})$ then for any real number $A>0$, we have $t^A\phi\in\mathcal{S}(\mathbf{R}_{>0})$. It follows that $(t\partial_t)(t^A\phi)\in\mathcal{S}(\mathbf{R}_{>0})$. But $(t\partial_t)(t^A\phi)=At^A\phi+t^A(t\partial_t)\phi\in\mathcal{S}(\mathbf{R}_{>0})$, which gives $t^A(t\partial_t)\phi\in\mathcal{S}(\mathbf{R}_{>0})$. It follows that $(t\partial_t)\phi$ has semi-exponential decay. The same assertion holds for backward semi-exponential decay (by passing to $1/t$) and exponential decay in place of semi-exponential decay. $\square$
 
 Let $\phi:\mathbf{R}_{>0}\to\mathbf{C}$ be a measurable function, and $s\in\mathbf{C}$. We define the Mellin transform $M(\phi)$ by
 
@@ -1193,7 +1193,7 @@ We can apply the *proof* of Proposition B.2.1.9(2) (with the integer $N$ there, 
 
 **608** · **CHAPTER B. PREPARATIONS FROM ANALYTIC NUMBER THEORY**
 
-supported over $(1/A,A)$ for some $A>1$ and is smooth except for one jump singularity at $t=1$. Define $a:=\phi(1+)-\phi(1-)$.
+supported over $(1/A,A)$ for some $A>1$ and is smooth except for one jump singularity at $t=1$. Define $a:=\phi(1^+)-\phi(1^-)$.
 
 We have
 
@@ -1409,7 +1409,7 @@ $$
 
 We provide a proof of Lemma B.4.1.7 below.
 
-REMARK B.4.1.8. The identity is obtained upon combining **[Den**, (2.13)**]** with **[Den**, (2.18)**]** and **[Den**, (2.19)**]**, noting that $\Phi$ fulfils the requirements of **[Den**, Thm.1.7**]** (which are only needed for $e_a=a$, in the notation of loc.cit.). Indeed, since $\phi$ is Schwartz and with exponential decay, then $\Phi(\sigma+ix)$ is Schwartz as a function of $x$ for every $\sigma$, and in fact uniformly for $\sigma$ varying over bounded intervals, by Lemma B.2.1.9(2). This implies that $\Phi$ satisfies conditions **[Den**, Thm.1.7,(1),(2)**]**. We need only show that condition **[Den**, Thm.1.7,(3)**]** is also satisfied. This is a consequence of Lemma B.2.1.9(3).
+REMARK B.4.1.8. The identity is obtained upon combining **[Den**, (2.13)**]** with **[Den**, (2.18)**]** and **[Den**, (2.19)**]**, noting that $\Phi$ fulfils the requirements of **[Den**, Thm.1.7**]** (which are only needed for $\widetilde{a}=a$, in the notation of loc.cit.). Indeed, since $\phi$ is Schwartz and with exponential decay, then $\Phi(\sigma+ix)$ is Schwartz as a function of $x$ for every $\sigma$, and in fact uniformly for $\sigma$ varying over bounded intervals, by Lemma B.2.1.9(2). This implies that $\Phi$ satisfies conditions **[Den**, Thm.1.7,(1),(2)**]**. We need only show that condition **[Den**, Thm.1.7,(3)**]** is also satisfied. This is a consequence of Lemma B.2.1.9(3).
 
 The identity in (B.4.1.20) therefore holds by **[Den**, (2.18)**]**. Note that the restriction on $a$ to satisfy $a\le 2$ in **[Den**, Thm.1.17**]** (with $w=0$ there) is unnecessary for the arguments proving **[Den**, (2.18)**]** to hold, and it
 
@@ -2143,10 +2143,10 @@ $^{24}$the right side should be double-checked
 
 **624** · **CHAPTER B. PREPARATIONS FROM ANALYTIC NUMBER THEORY**
 
-LEMMA B.4.4.8. *Let $G$ be an $\mathbf{R}_{>0}$-modulated group abelian Lie group (possibly disconnected). Let $\mu_G$ be a choice of Haar measure on $G$. Let $\mathcal{Z} \subset \Omega(G)$ be a subset whose intersection with every connected component of $\Omega(G)$ is discrete and contained within a single vertical strip of bounded width of the connected component.$^{25}$ For any $\phi \in \mathcal{D}(G)$, the sum*
+LEMMA B.4.4.8. *Let $G$ be an $\mathbf{R}_{>0}$-modulated group abelian Lie group (possibly disconnected). Let $\mu_G$ be a choice of Haar measure on $G$. Let $\mathcal{Z} \subset \Omega(G)$ be a subset whose intersection with every connected component of $\Omega(G)$ is discrete and contained within a single vertical strip of bounded width of the connected component.$^{25}$ For any $\varphi \in \mathcal{D}(G)$, the sum*
 
 $$
-\tag{B.4.4.17} \sum_{c\in \mathcal{Z}} \int_G \phi(g)c(g)\,\mathrm{d}\mu_G(g)
+\tag{B.4.4.17} \sum_{c\in \mathcal{Z}} \int_G \varphi(g)c(g)\,\mathrm{d}\mu_G(g)
 $$
 
 *is absolutely convergent.*
@@ -2154,17 +2154,17 @@ $$
 Proof. We choose the Haar measure $\mu_1$ on $G^1$ compatible with the given $\mu_G$ on $G$ and the measure $\mathrm{d}t/t$ on $\mathbf{R}_{>0}$ via the exact sequence of topological groups $1 \to G^1 \to G \xrightarrow{|\cdot|_G} \mathbf{R}_{>0} \to 1$. For a choice of continuous homomorphic section $\tau$ to $|\cdot|_G$, (B.4.4.17) can be rewritten termwise as
 
 $$
-\tag{B.4.4.18} \sum_{c\in \mathcal{Z}} \int_{\mathbf{R}_{>0}} t^{s_c(\tau(t))}\int_{G^1} \phi(g\tau(t))\chi_1(g)\,\mathrm{d}\mu_1(g)\,\frac{\mathrm{d}t}{t}
+\tag{B.4.4.18} \sum_{c\in \mathcal{Z}} \int_{\mathbf{R}_{>0}} t^s c(\tau(t))\int_{G^1} \varphi(g\tau(t))\chi_1(g)\,\mathrm{d}\mu_1(g)\,\frac{\mathrm{d}t}{t}
 $$
 
 where $\chi_1 := c|_{G^1}$.
 
-Since $G^1$ is a (possibly disconnected) compact abelian Lie group, up to splitting the sum into finitely many sub-sums and adjusting $\phi$ accordingly, we may focus on integrating over $(G^1)^0 = \mathbf{T}^N$ for an integer $N \ge 0$. We therefore have for all $z = (z_k)_{1\le k\le N} \in \mathbf{T}^N$ that $\chi_1(z) = \prod_{1\le k\le N} z_k^{a_k}$ for some $(a_k)_{1\le k\le N} \in \mathbf{Z}^N$.
+Since $G^1$ is a (possibly disconnected) compact abelian Lie group, up to splitting the sum into finitely many sub-sums and adjusting $\varphi$ accordingly, we may focus on integrating over $(G^1)^0 = \mathbf{T}^N$ for an integer $N \ge 0$. We therefore have for all $z = (z_k)_{1\le k\le N} \in \mathbf{T}^N$ that $\chi_1(z) = \prod_{1\le k\le N} z_k^{a_k}$ for some $(a_k)_{1\le k\le N} \in \mathbf{Z}^N$.
 
 As a function of $(s,(a_k)_{1\le k\le N}) \in \mathbf{C}\times\mathbf{Z}^N$, the term for $c$ in (B.4.4.18) is, up to a positive multiplicative constant (depending on $\mu_1((G^1)^0)$),
 
 $$
-\Phi(s,(a_k)_{1\le k\le N}) = \int_{\mathbf{R}_{>0}} t^{s_c(\tau(t))}\int_{\mathbf{T}^N} \phi(z\tau(t))\prod_{1\le k\le N} z_k^{a_k}\,\mathrm{d}\mu_N(z)\,\frac{\mathrm{d}t}{t}
+\Phi(s,(a_k)_{1\le k\le N}) = \int_{\mathbf{R}_{>0}} t^s c(\tau(t))\int_{\mathbf{T}^N} \varphi(z\tau(t))\prod_{1\le k\le N} z_k^{a_k}\,\mathrm{d}\mu_N(z)\,\frac{\mathrm{d}t}{t}
 $$
 
 where $\mu_N$ is the volume-1 Haar measure on $\mathbf{T}^N$. This decays rapidly on the vertical strips $\mathbf{C}_I$ of bounded width of the Riemann surface $\mathbf{C}\times\mathbf{Z}^N$: for every real number $T > 0$ and integer $M \ge 0$, there exists a real number $C_{T,M} > 0$ independent of $c$ such that:
@@ -2175,7 +2175,7 @@ $$
 
 This rapid decay condition is a consequence of the Uniform Riemann-Lebesgue Lemma (Theorem D.3.4.2 with $D = (t\partial_t)^M(\sum_{1\le k\le N}(z_k\partial_{z_k})^2)^M$), and thereby implies the absolute convergence of the sum in (B.4.4.17).$^{26}$ $\square$
 
-LEMMA B.4.4.9 (Convergence of sums of Mellin transforms). *Let $F$ be a number field, $\phi \in \mathcal{D}(C_F)$.*
+LEMMA B.4.4.9 (Convergence of sums of Mellin transforms). *Let $F$ be a number field, $\varphi \in \mathcal{D}(C_F)$.*
 
 *Then for any subset $\mathcal{Z}$ of the set:*
 
@@ -2186,7 +2186,7 @@ $$
 *where $L(c)$ is the Hecke $L$-function of $F$, and for any real number $a \in \mathbf{R}$, the sum:*
 
 $$
-\tag{B.4.4.19} \sum_{c\in \mathcal{Z}} \int_{C_F} \phi(g)c(g)|g|_F^a\,\mathrm{d}\mu(g)
+\tag{B.4.4.19} \sum_{c\in \mathcal{Z}} \int_{C_F} \varphi(g)c(g)|g|_F^a\,\mathrm{d}\mu(g)
 $$
 
 *converges absolutely.*
@@ -2763,7 +2763,7 @@ $$
 
 Since $u(s,\cdot)$ is a continuous function on $\mathbf{T}^S$ and $K$ is compact, $\int_K|u(s,(t_v)_{v\in S})|^2\,\mathrm{d}\mu_A(s)$ is also continuous on $\mathbf{T}^S$ and has a zero at $0\in\mathbf{T}^S$ (i.e. at $(t_v)_{v\in S}=0$). It follows that $X(\varepsilon)$ is open and non-empty.
 
-We define $\tau=(\tau_v)_{v\in S}$ to be the vector in $\mathbf{R}^S$ whose coordinates are $\tau_v:=\log(q_v)/2\pi$.
+We define $\tau=(\tau_v)_{v\in S}$ to be the vector in $\mathbf{R}^S$ whose coordinates are $\tau_v:=\frac{\log(q_v)}{2\pi}$.
 
 We denote by $\gamma_\tau:\mathbf{R}\to\mathbf{R}^S$ the continuous 1-parameter subgroup generated by $\tau$, and by $\bar\gamma_\tau:\mathbf{R}\to\mathbf{T}^S$ the continuous 1-parameter group obtained by composition with the quotient homomorphism $\theta_S:\mathbf{R}^S\to\mathbf{T}^S$.
 
@@ -3610,7 +3610,7 @@ $$
 In particular, applying this to $X=M-1$ for $M=\lceil x\rceil$ the smallest integer $\ge x$ and subtracting it from (B.7.2.4) yields
 
 $$
-\sum_{\mathfrak{p}\subset\mathcal{O}_F:x\le N(\mathfrak{p}^m)\le X}\frac{\chi(\mathfrak{p}^m)}{mN(\mathfrak{p})^{ms}} = \sum_{M\le n\le N}a_nb_n \tag{B.7.2.6}
+\sum_{\mathfrak{p}\subset\mathcal{O}_F:x\le N(\mathfrak{p}^m)\le X}\sum_{m\ge 1}\frac{\chi(\mathfrak{p}^m)}{mN(\mathfrak{p})^{ms}} = \sum_{M\le n\le N}a_nb_n \tag{B.7.2.6}
 $$
 
 $$
@@ -3692,11 +3692,11 @@ As $N\to+\infty$, the functions $(1/\log(N)-1/\log(M-1))h(s)$ tend to $-h(s)/\lo
 We may therefore send $X\to+\infty$ in (B.7.2.13) and deduce from (B.7.2.9) the following identity on $1+iK$:
 
 $$
-\sum_{\mathfrak{p}\subset\mathcal{O}_F:N(\mathfrak{p}^m)\ge x}\frac{\chi(\mathfrak{p}^m)}{mN(\mathfrak{p})^{ms}} = -\frac{g_{M-1}(s)}{\log(M-1)} + \frac{(M-1)^{1+it_0-s}}{(1+it_0-s)\log(M-1)} - \frac{\zeta'_F(s-it_0)}{\zeta_F(s-it_0)\log(M-1)} + f_{M-1}(s)/\log(M-1) \tag{B.7.2.14}
+\sum_{\mathfrak{p}\subset\mathcal{O}_F:N(\mathfrak{p}^m)\ge x}\frac{\chi(\mathfrak{p}^m)}{mN(\mathfrak{p})^{ms}} = -\frac{1}{\log(M-1)}\left\{-\frac{\zeta'_F(s-it_0)}{\zeta_F(s-it_0)}+\frac{(M-1)^{1+it_0-s}}{1+it_0-s}+f_{M-1}(s)\right\} \tag{B.7.2.14}
 $$
 
 $$
-- \frac{h(s)}{\log(M-1)} - F_x(s) - \sum_{n\ge x}g_{n-1}(s)\left(\frac{1}{\log(n)}-\frac{1}{\log(n-1)}\right)
++\frac{h(s)}{\log(M-1)} - F_x(s) - \sum_{n\ge x}g_{n-1}(s)\left(\frac{1}{\log(n)}-\frac{1}{\log(n-1)}\right)
 $$
 
 where the left side is defined in Remark B.7.2.2. Upon renaming $-f_{M-1}(s)/\log(M-1)-F_x(s)$ as $F_x(s)$, and noting that $|f_{M-1}(s)/\log(M-1)|\le\varepsilon/\log(x)$ for $s\in 1+iK$ and $M:=\lceil x\rceil$ big enough, we see that part (1) is established.

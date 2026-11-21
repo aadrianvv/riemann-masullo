@@ -22,12 +22,18 @@ the physical PDF page markers kept (`## PDF page N`; printed page number = PDF p
 | Math delimiters, LaTeX | all pages | every `$`/`$$` balanced; every formula outside the diagram blocks parses (KaTeX) |
 | Footnotes, equation tags | all pages | every footnote and every `(X.Y.Z)` tag is under the page it is printed on |
 | Bars and underlines | all pages, from the rules drawn in the PDF | present where printed, absent where not |
-| Commutative diagrams | all 83 diagrams on 60 pages | compared with the page image (pp. 856–863 and 883–891 at reduced resolution) |
-| Random sample | 16 randomly drawn tagged equations | 16 exact |
+| Accents | every hat, tilde and check glyph of the PDF | same kind and same count on every page |
+| φ/ϕ, ε/ϵ | every aligned glyph | the printed shape (the paper uses both phis) |
+| Commutative diagrams | all 83 diagrams on 60 pages | compared with the page image at 200 dpi |
+| Random sample | 45 tagged equations drawn at random (after all other checks) | 43 exact, 2 wrong (now corrected): read this as a residual error rate of a few percent per equation (95% interval roughly 1–15%) |
 
-**Not verified:** an exhaustive symbol-by-symbol reading of every page by a person; the kind of
-accent (hat vs tilde vs check) is not machine-checked; text typography (bold/italic/small caps in
-prose) is collapsed; the four contour figures (pp. 596, 602, 605, 798) are not reproduced.
+**Not verified:** an exhaustive symbol-by-symbol reading of every page by a person. About 3% of the
+PDF's math glyphs do not align one-to-one with the transcription; most of those differences are
+harmless (reading order of limits and fractions, words set in math, footnote numbers), and the
+larger ones were checked, but not every small one was. Expect some remaining errors of the kinds
+listed in `CHANGELOG.md`, and check any formula you formalize against the page image. Text
+typography (bold/italic/small caps in prose) is collapsed; the four contour figures (pp. 596, 602,
+605, 798) are not reproduced.
 
 Run the checks yourself (from the repository root, needs `pip install pymupdf`):
 

@@ -36,7 +36,7 @@ Hardy-Sobolev topologies
 
 9.3.3.1. Cutoffs 426
 
-9.3.3.2. Calculation of the trace of $M_\rho\circ A(\phi)$ 429
+9.3.3.2. Calculation of the trace of $M_\rho\circ A(\varphi)$ 429
 
 Let $F$ be a number field, $S$ a finite set of places of $F$ containing all the Archimedean places. Let $\chi$ be a continuous character of $C_F$, respectively of $J_{F,S}$.
 
@@ -459,10 +459,10 @@ $\square$
 We recall from Appendix D.3.2, that for $G$ a Hausdorff locally compact abelian group, modulated by a proper surjective module homomorphism $|\cdot|_G\colon G\to\mathbf R_{>0}$ whose kernel we denote by $G^1$ (i.e. $\mathbf R_{>0}$-modulated; see §D.3.3) and for $I\subset\mathbf R$ a non-empty connected open interval equal to either $(0,+\infty)$ or $I = \mathbf R$, the Fourier-Mellin transform:
 
 $$
-M_I\colon \mathcal S_I(G)\to A_{\mathcal S}(\mathbf C_I)\,\widehat{\overline{\otimes}}\,\mathcal S(\widehat{G^1}) \tag{9.2.0.1}
+M_I\colon \mathcal S_I(G)\to A\mathcal S(\mathbf C_I)\overline{\otimes}\mathcal S(\widehat{G^1}) \tag{9.2.0.1}
 $$
 
-from (D.3.2.2) is a linear topological isomorphism (recall that the Hausdorff locally convex topology on the Schwartz-Bergman space $A_{\mathcal S}(\mathbf C_I)$ was defined as the topology of $L^p$-convergence on vertical lines within $\mathbf C_I$ for functions $\phi$ and $s^N\phi$ for all integers $N\ge 0$, for a, equivalently any, $p > 1$. In particular, the topology is independent of $p\ge 1$, similarly to the independence of $p\ge 1$ of the topology of $L^p$-convergence of functions $f\colon\mathbf R\to\mathbf C$ and $q_1(x)q_2(\partial_x)f$ for any polynomials $q_1,q_2\in\mathbf C[X]$, which is equivalent to the topology of the Schwartz space; see §D.1.10.1, and [KG, Part I,Thm.29,p.72]. We refer the reader to Definition D.3.1.3 and Lemma D.3.1.2).
+from (D.3.2.2) is a linear topological isomorphism (recall that the Hausdorff locally convex topology on the Schwartz-Bergman space $A\mathcal S(\mathbf C_I)$ was defined as the topology of $L^p$-convergence on vertical lines within $\mathbf C_I$ for functions $\phi$ and $s^N\phi$ for all integers $N\ge 0$, for a, equivalently any, $p > 1$. In particular, the topology is independent of $p\ge 1$, similarly to the independence of $p\ge 1$ of the topology of $L^p$-convergence of functions $f\colon\mathbf R\to\mathbf C$ and $q_1(x)q_2(\partial_x)f$ for any polynomials $q_1,q_2\in\mathbf C[X]$, which is equivalent to the topology of the Schwartz space; see §D.1.10.1, and [KG, Part I,Thm.29,p.72]. We refer the reader to Definition D.3.1.3 and Lemma D.3.1.2).
 
 We recall that $M_I$ was defined, upon describing each continuous quasi-character $c\in\Omega(G)$ as the corresponding unique pair $(s,\omega)$, once a choice of continuous section $\tau$ to the module $|\cdot|_G$ is fixed, for $s\in\mathbf C$ and $\omega\in\widehat{G^1}$:
 
@@ -472,7 +472,7 @@ $$
 
 where $\bar\mu_1$ and $\mathrm{d}t/t$ uniquely determine and are determined, as per Theorem D.1.2.1, by the canonical Haar measure $\mu_G$ on $G$. $M_I(\phi)(s,\omega)$ is holomorphic over $\mathbf C_I$ and Schwartz uniformly on every vertical strip of bounded width contained within $\mathbf C_I$ (see Proposition D.3.2.5).
 
-It is identified with $\mathcal F_{G^1}\overline{\otimes} M_I$ where $\mathcal F_{G^1}$ is the Fourier transform $\mathcal S(G^1)\to\mathcal S(\widehat{G^1})$ and $M_I\colon\mathcal S_I(\mathbf R_{>0})\to A_{\mathcal S}(\mathbf C_I)$ is the Fourier-Mellin transform in the special case $G = \mathbf R_{>0}$ (see Theorem D.3.3.13).
+It is identified with $\mathcal F_{G^1}\overline{\otimes} M_I$ where $\mathcal F_{G^1}$ is the Fourier transform $\mathcal S(G^1)\to\mathcal S(\widehat{G^1})$ and $M_I\colon\mathcal S_I(\mathbf R_{>0})\to A\mathcal S(\mathbf C_I)$ is the Fourier-Mellin transform in the special case $G = \mathbf R_{>0}$ (see Theorem D.3.3.13).
 
 Remark 9.2.0.1. Recall that our choice of Haar measure $\bar\mu$ on $C_F$ is not the canonical measure (see Remark D.2.1.4 and [Weil-e, §3,p.6]), which requires the normalization giving $C^1_F$ volume 1. The canonical measure $\mu_{C_F}$ is $\bar\mu_1(C^1_F)^{-1}\,\bar\mu$.
 
@@ -486,7 +486,7 @@ Throughout this Chapter we will be mentioning the choice of normalization for th
 
 We refer the reader to Proposition D.3.2.5.
 
-**9.2.1. The special case $I = \{b\}$: $b$-line Hardy-Sobolev spaces and Paley-Wiener Theorem.** As a warmup, we will now be entering a brief interlude, discussing completions of both source and target of $M_I$ from (9.2.0.1) with respect to the Sobolev topologies discussed in Definition 9.1.1.1. We will be terming the corresponding completions of $A_{\mathcal S}(\mathbf C_I)\,\widehat{\overline{\otimes}}\,\mathcal S(\widehat{G^1})$ and of its isotypes, Hardy-Sobolev spaces of $G$.
+**9.2.1. The special case $I = \{b\}$: $b$-line Hardy-Sobolev spaces and Paley-Wiener Theorem.** As a warmup, we will now be entering a brief interlude, discussing completions of both source and target of $M_I$ from (9.2.0.1) with respect to the Sobolev topologies discussed in Definition 9.1.1.1. We will be terming the corresponding completions of $A\mathcal S(\mathbf C_I)\overline{\otimes}\mathcal S(\widehat{G^1})$ and of its isotypes, Hardy-Sobolev spaces of $G$.
 
 Definition 9.2.1.1 ($b$-line Hardy-Sobolev spaces). Let $b\in\mathbf R$ be a real number, $N\ge 1$ an integer. We define:
 
@@ -504,7 +504,7 @@ $$
 
 We refer to the Hilbert space $W^{2N,2}_b(\mathbf R_{>0})$ as the $b$-line Sobolev space of $\mathbf R_{>0}$.
 
-(2) The completion $\mathrm{HS}^{2N,2}_b(\mathbf C)$ of the Schwartz-Bergman space $A_{\mathcal S}(\mathbf C)$ with respect to the metrizable topology induced by the finite family of continuous norms $\{\|\cdot\|^{\mathrm{HS}}_{b,k},\,0\le k\le N\}$:
+(2) The completion $\mathrm{HS}^{2N,2}_b(\mathbf C)$ of the Schwartz-Bergman space $A\mathcal S(\mathbf C)$ with respect to the metrizable topology induced by the finite family of continuous norms $\{\|\cdot\|^{\mathrm{HS}}_{b,k},\,0\le k\le N\}$:
 
 $$
 \|\phi\|^{\mathrm{HS}}_{b,k} := \frac{1}{2\pi}\left(\int_{b-i\infty}^{b+i\infty} |\partial^k_s M(\phi)(s)|^2\,|\mathrm{d}s|\right)^{1/2}. \tag{9.2.1.3}
@@ -514,7 +514,7 @@ We refer to the Hilbert space $\mathrm{HS}^{2N,2}_b(\mathbf C)$ as the $b$-line 
 
 In the next subsection, §9.2.2, we will rethink $\mathrm{HS}^{2N,2}_b(\mathbf C)$ as the special case of the Hardy-Sobolev space $\mathrm{HS}^{2N,2}_I(\mathbf C)$, to be defined therein, with base interval $I = \{b\}$, to be identified, under the Mellin transform, with the Hardy-Sobolev space $W^{2N,2}_I(\mathbf C)$, for $I = \{b\}$.
 
-Theorem 9.2.1.2 (Paley-Wiener Theorem for Hardy-Sobolev Spaces - I). Let $a\in\mathbf R$ be a real number, $a > 1$. We denote by $M$ the Mellin transform $M_I\colon\mathcal S_I(\mathbf R_{>0})\to A_{\mathcal S}(\mathbf C_I)$ for $I := (-\infty,+\infty)$. We denote by:
+Theorem 9.2.1.2 (Paley-Wiener Theorem for Hardy-Sobolev Spaces - I). Let $a\in\mathbf R$ be a real number, $a > 1$. We denote by $M$ the Mellin transform $M_I\colon\mathcal S_I(\mathbf R_{>0})\to A\mathcal S(\mathbf C_I)$ for $I := (-\infty,+\infty)$. We denote by:
 
 $$
 \mathcal S_\mathrm{E}(\mathbf R_{>0},(1/a,+\infty))\subset\mathcal S_\mathrm{E}(\mathbf R_{>0}) \tag{9.2.1.4}
@@ -677,7 +677,7 @@ By Theorem 9.2.1.2(3), the functions $u_1 := M(\mathrm{1}_{[1,+\infty)}\cdot\phi
 
 $\square$
 
-Corollary 9.2.1.4. Let $a,b\in\mathbf R$ be real numbers, $a > 1$. We denote by $M$ the Mellin transform $M_I\colon\mathcal S_I(\mathbf R_{>0})\to A_{\mathcal S}(\mathbf C_I)$ for $I := (-\infty,+\infty)$.
+Corollary 9.2.1.4. Let $a,b\in\mathbf R$ be real numbers, $a > 1$. We denote by $M$ the Mellin transform $M_I\colon\mathcal S_I(\mathbf R_{>0})\to A\mathcal S(\mathbf C_I)$ for $I := (-\infty,+\infty)$.
 
 For every point $z\in\mathbf C_{<b}$, the point-evaluation functional $\delta_z$ and its derivatives $\delta^{(m)}_z$ for $1\le m\le N-1$, are continuous on $\mathrm{HS}^{2N,2}_b(\mathbf C,(1/a,+\infty))$.
 
@@ -695,7 +695,7 @@ $\square$
 
 We can now incorporate the module-1 subgroup of a Hausdorff locally compact abelian $\mathbf R_{>0}$-modulated group into the assertions of Theorem 9.2.1.2 and Corollary 9.2.1.4.
 
-Theorem 9.2.1.5 (Paley-Wiener Theorem for Hardy-Sobolev Spaces - II). Let $a\in\mathbf R$ be a real number, $a > 1$. Let $G$ be an $\mathbf R_{>0}$-modulated Hausdorff locally compact abelian group. We denote by $M$ the Mellin transform $M\colon\mathcal S_\mathrm{E}(G)\to A_{\mathcal S}(\mathbf C)\overline{\otimes}\mathcal S(\widehat{G^1})$.
+Theorem 9.2.1.5 (Paley-Wiener Theorem for Hardy-Sobolev Spaces - II). Let $a\in\mathbf R$ be a real number, $a > 1$. Let $G$ be an $\mathbf R_{>0}$-modulated Hausdorff locally compact abelian group. We denote by $M$ the Mellin transform $M\colon\mathcal S_\mathrm{E}(G)\to A\mathcal S(\mathbf C)\overline{\otimes}\mathcal S(\widehat{G^1})$.
 
 ## PDF page 408
 
@@ -788,7 +788,7 @@ as holomorphic functions over $\mathbf C_{<b}$.
 
 The following is an analog of Corollary 9.2.1.4.
 
-Corollary 9.2.1.7. Let $G$ be a Hausdorff locally compact $\mathbf R_{>0}$-modulated group. Let $a,b\in\mathbf R$ be real numbers, $a > 1$. We denote by $M$ the Mellin transform $M\colon\mathcal S_\mathrm{E}(G)\to A_{\mathcal S}(\mathbf C)\overline{\otimes}\mathcal S(\widehat{G^1})$.
+Corollary 9.2.1.7. Let $G$ be a Hausdorff locally compact $\mathbf R_{>0}$-modulated group. Let $a,b\in\mathbf R$ be real numbers, $a > 1$. We denote by $M$ the Mellin transform $M\colon\mathcal S_\mathrm{E}(G)\to A\mathcal S(\mathbf C)\overline{\otimes}\mathcal S(\widehat{G^1})$.
 
 For every point $z\in\mathbf C_{<b}$ and every continuous character $\omega\in\widehat{G^1}$, equivalently every point $c\in\Omega(G)_{<b}$ of the Riemann surface of continuous quasi-characters of $G$, the point-evaluation functional $\delta_{(z,\omega)}$ and its derivatives $\delta^{(m)}_{(z,\omega)}$ for $1\le m\le N-1$, induce continuous functionals on $L^2(G^1,\mu_1)\,\widehat{\otimes}_\sigma\mathrm{HS}^{2N,2}_b(\mathbf C,(1/a,+\infty))$ uniquely determined by the following formula: for every $\phi\in M_{\rho_{a,+}}W^{2N,2}_b(G)$, we have, for a, equivalently any, choice of continuous homomorphic section $\tau$ to the module $|\cdot|_G$:
 
@@ -1218,7 +1218,7 @@ PROOF. This is a consequence of Corollary 9.2.2.5.$^4$ $\square$
 9.2.2.2. The Hardy-Sobolev spaces $W^s_I(G)$. We now return to the generality of $G$ an $\mathbf{R}_{>0}$-modulated group with module $|\cdot|_G$ and compact subgroup of module-$1$ elements $G^1$ (i.e. $G^1 := \ker(|\cdot|_G)$). Recall that the Mellin transform is a linear topological isomorphism:
 
 $$
-M : \mathcal{S}_I(G) \to A\mathcal{S}(\mathbf{C}_I) \overline{\otimes} \mathcal{S}(\widehat{G^1})
+M : \mathcal{S}_I(G) \to A\mathcal{S}(\mathbf{C}_I) \overline{\otimes} \mathcal{S}(G^1)
 $$
 
 for any non-empty open interval $I \subset \mathbf{R}$, obtained as follows. We choose a unitary base-point $\chi$ for each connected component of the Riemann surface $\Omega(G)$, and for any $\phi \in \mathcal{S}_I(G)$, $M(\phi)$ sends $\phi$ to the element:
@@ -1416,9 +1416,9 @@ In this section we discuss, for $G$ a second-countable $\mathbf{R}_{>0}$-modulat
 
 For any $\varphi\in\mathcal{D}(G)$, we may regularize the continuous left-translation action $\rho_G$ of $G$ on $\mathcal{S}(G)$ and its closed $G$-invariant subspaces, to obtain an operator $A(\varphi)$. Such operator may extend by continuity to completions of $\mathcal{S}(G)$ with respect to coarser topologies.
 
-For $G$ a second-countable $\mathbf{R}_{>0}$-modulated group, $G$ acts continuously by left-translation on $\mathcal{S}_I(G)$, for $I\subset\mathbf{R}$ any non-empty open interval. We denote by $\rho_G:G\times\mathcal{S}_I(G)\to\mathcal{S}_I(G)$ such action, i.e. $\rho_G(g,\phi)(x):=\phi(g^{-1}x)$ as functions of $x\in G$. The same construction as in the foregoing defines a module structure of $\mathcal{D}(G)$ on $\mathcal{S}_I(G)$ which is continuous, giving the convolution operator $A(\phi)$ associated to each $\phi\in\mathcal{D}(G)$.
+For $G$ a second-countable $\mathbf{R}_{>0}$-modulated group, $G$ acts continuously by left-translation on $\mathcal{S}_I(G)$, for $I\subset\mathbf{R}$ any non-empty open interval. We denote by $\rho_G:G\times\mathcal{S}_I(G)\to\mathcal{S}_I(G)$ such action, i.e. $\rho_G(g,\phi)(x):=\phi(g^{-1}x)$ as functions of $x\in G$. The same construction as in the foregoing defines a module structure of $\mathcal{D}(G)$ on $\mathcal{S}_I(G)$ which is continuous, giving the convolution operator $A(\varphi)$ associated to each $\varphi\in\mathcal{D}(G)$.
 
-The operator $A(\phi)$ may extend by continuity to completions of $\mathcal{S}_I(G)$ with respect to coarser topologies. This is the subject of study of this subsection: we discuss herein the convolution action of $G$ on $W^s_I(G)$ for any real number $s\ge 0$.
+The operator $A(\varphi)$ may extend by continuity to completions of $\mathcal{S}_I(G)$ with respect to coarser topologies. This is the subject of study of this subsection: we discuss herein the convolution action of $G$ on $W^s_I(G)$ for any real number $s\ge 0$.
 
 Definition 9.3.1.1. Let $G$ be a second-countable $\mathbf{R}_{>0}$-modulated group. Let $\mu_G$ be a choice of Haar measure on $G$. Let $I$ be a non-empty closed interval, $s\ge 0$ a real number. We define the $\mathcal{D}(G)$-module structure on $E:=\mathcal{S}_I(G)$, respectively $E:=W^s_I(G)$, to be the linear map:
 
@@ -1426,15 +1426,15 @@ $$
 A:\mathcal{D}(G)\to \mathscr{L}_\beta(E) \tag{9.3.1.1}
 $$
 
-assigned by, for each $\phi\in\mathcal{D}(G)$:
+assigned by, for each $\varphi\in\mathcal{D}(G)$:
 
 $$
-A(\phi):=\int_G\phi(g)\rho_G(g,\cdot)\,\mathrm{d}\mu_G(g) \tag{9.3.1.2}
+A(\varphi):=\int_G\varphi(g)\rho_G(g,\cdot)\,\mathrm{d}\mu_G(g) \tag{9.3.1.2}
 $$
 
-where the integral is in the sense of Pettis. We further refer to $A(\phi)$ as the $\phi$-regularized action of $G$ by continuous left-translation on $E$.
+where the integral is in the sense of Pettis. We further refer to $A(\varphi)$ as the $\varphi$-regularized action of $G$ by continuous left-translation on $E$.
 
-Remark 9.3.1.2. Let $G$ be a second-countable $\mathbf{R}_{>0}$-modulated group, $E:=\mathcal{S}_I(G)$, $W^s_I(G)$ respectively, for $I$ a non-empty closed interval. Since $\phi$ is compactly supported, we deduce that indeed $A$ is valued in $\mathscr{L}(E)$, the $\mathbf{C}$-algebra of continuous endomorphisms of $E$, by Theorem C.4.3.5, since $E$ is complete (see Theorem D.3.3.7(2) for the case $E=\mathcal{S}_I(G)$), hence quasi-complete.
+Remark 9.3.1.2. Let $G$ be a second-countable $\mathbf{R}_{>0}$-modulated group, $E:=\mathcal{S}_I(G)$, $W^s_I(G)$ respectively, for $I$ a non-empty closed interval. Since $\varphi$ is compactly supported, we deduce that indeed $A$ is valued in $\mathscr{L}(E)$, the $\mathbf{C}$-algebra of continuous endomorphisms of $E$, by Theorem C.4.3.5, since $E$ is complete (see Theorem D.3.3.7(2) for the case $E=\mathcal{S}_I(G)$), hence quasi-complete.
 
 Lemma 9.3.1.3. Let $G$ be a second-countable $\mathbf{R}_{>0}$-modulated group. Let $I\subset\mathbf{R}$ be a closed non-empty interval, $s\ge 0$ be a real number. Then the linear operators $A$ from (9.3.1.1) from $\mathcal{D}(G)$ to $\mathscr{L}(\mathcal{S}_I(G))$, and to $\mathscr{L}(W^s_I(G))$, respectively, is continuous with respect to the locally convex inductive limit topology on the source, and the topology of uniform convergence on bounded subsets on the target.
 
@@ -1480,10 +1480,10 @@ $$
 A_S:\mathcal{D}(J_{F,S})\to \mathscr{L}_\beta(\mathrm{H}_{0,\mathrm{cont}}(\mathcal{O}_{F,S}^\times,\mathcal{S}(\mathbf{A}_{F,S}))) \tag{9.3.1.3}
 $$
 
-assigned by, for each $\phi\in\mathcal{D}(J_{F,S})$:
+assigned by, for each $\varphi\in\mathcal{D}(J_{F,S})$:
 
 $$
-A_S(\phi):=\int_{J_{F,S}}\phi(g)\rho_{F,S}(g,\cdot)\,\mathrm{d}\overline{\mu}_S(g) \tag{9.3.1.4}
+A_S(\varphi):=\int_{J_{F,S}}\varphi(g)\rho_{F,S}(g,\cdot)\,\mathrm{d}\overline{\mu}_S(g) \tag{9.3.1.4}
 $$
 
 where the integral is in the sense of Pettis, and the same argument from Lemma 9.3.1.3 implies its continuity by the Second Structure Theorem (see Theorem 5.4.1.1), which reduces the continuity assertion to the case of the convolution action of $\mathcal{D}(J_{F,S})$ on $\mathcal{S}_{(0,+\infty)}(J_{F,S})$.
@@ -1588,35 +1588,35 @@ We note that $\mathscr{B}_{\mathrm{NT}}(W^s_{\{b\}}(G))$, the $\mathbf{C}$-algeb
 
 Remark 9.3.2.2. We note that the nomenclature "Bounded Approximation" does not refer to the BAP, the Bounded Approximation Property, for Hausdorff locally convex topological $\mathbf{C}$-vector spaces. All normed spaces in this Chapter will be separable Hilbert spaces, and they have the Metric Approximation Property (see [Scha, Ch.III, §9]), since every countable orthonormal topological basis is a Schauder basis with basis constant (the supremum of the operator-norm of the projectors onto the line spanned by each basis element) equal to one.
 
-Proof. The linear operator $\phi\mapsto|\cdot|^b_G\phi$ induces a linear isometry $W^s_{\{b\}}(G)\to W^{s,2}(G)$. Similarly, $\phi\mapsto|\cdot|^b_G\phi$ induces a linear topological isomorphism $\mathcal{S}(G)\to\mathcal{S}_{\{b\}}(G)$. It is therefore enough to treat the case $b=0$. Let $\phi\in\mathcal{S}(G)$ be a Schwartz-Bruhat function. We define the assignment:
+Proof. The linear operator $\phi\mapsto|\cdot|^b_G\phi$ induces a linear isometry $W^s_{\{b\}}(G)\to W^{s,2}(G)$. Similarly, $\phi\mapsto|\cdot|^b_G\phi$ induces a linear topological isomorphism $\mathcal{S}(G)\to\mathcal{S}_{\{b\}}(G)$. It is therefore enough to treat the case $b=0$. Let $\varphi\in\mathcal{S}(G)$ be a Schwartz-Bruhat function. We define the assignment:
 
 $$
-A(\phi):u\mapsto A(\phi)(u):=\int_G\phi(g)\rho_G(g,u)\,\mathrm{d}\mu_G(g) \tag{9.3.2.2}
+A(\varphi):u\mapsto A(\varphi)(u):=\int_G\varphi(g)\rho_G(g,u)\,\mathrm{d}\mu_G(g) \tag{9.3.2.2}
 $$
 
 ## PDF page 423
 
 **9.3. MODULE STRUCTURES OVER $\mathcal{D}(G)$ AND APPROXIMATE UNITS** · **423**
 
-on each element $u\in W^s_{\{b\}}(G)$. Upon defining the Radon measure $\mu:=|\phi|\mu_G$ on $G$, a Hausdorff locally compact topological space, $\mu$ is finite Radon on $G$, and the function $g\mapsto\rho_G(g,u)$ is weakly measurable on $G$ for every $u\in W^{s,2}(G)$ (see Definition C.4.2.1), since it is continuous, being the left-translation action of $G$ on $W^{s,2}(G)$ continuous with respect to the strong operator topology.
+on each element $u\in W^s_{\{b\}}(G)$. Upon defining the Radon measure $\mu:=|\varphi|\mu_G$ on $G$, a Hausdorff locally compact topological space, $\mu$ is finite Radon on $G$, and the function $g\mapsto\rho_G(g,u)$ is weakly measurable on $G$ for every $u\in W^{s,2}(G)$ (see Definition C.4.2.1), since it is continuous, being the left-translation action of $G$ on $W^{s,2}(G)$ continuous with respect to the strong operator topology.
 
-The function $g\mapsto\|\rho_G(g,\cdot)\|$, the norm being the operator norm on $\mathscr{B}(W^{s,2}(G))$, is $\mu$-measurable and $\mu$-integrable, since, by Lemma 9.3.1.5, it is bounded above by the function $C|\log|g|_G|^s$ for a positive absolute constant $C$, and $\phi$ is Schwartz-Bruhat over $G$, and hence decays faster than any positive power of $|\log|g|_G|^{-1}$ as $|\log|g|_G|\to+\infty$.
+The function $g\mapsto\|\rho_G(g,\cdot)\|$, the norm being the operator norm on $\mathscr{B}(W^{s,2}(G))$, is $\mu$-measurable and $\mu$-integrable, since, by Lemma 9.3.1.5, it is bounded above by the function $C|\log|g|_G|^s$ for a positive absolute constant $C$, and $\varphi$ is Schwartz-Bruhat over $G$, and hence decays faster than any positive power of $|\log|g|_G|^{-1}$ as $|\log|g|_G|\to+\infty$.
 
-From Lemma C.4.3.11 applied to $E:=W^{s,2}(G)$, to our choice of $\mu$ dependent on $\phi$, and to the function $f:g\mapsto\rho_G(g,\cdot)$, valued in $\mathscr{B}(E)$, we deduce that $A(\phi)$ from (9.3.2.2) is a bounded $\mathbf{C}$-linear endomorphism on $W^{s,2}(G)$.
+From Lemma C.4.3.11 applied to $E:=W^{s,2}(G)$, to our choice of $\mu$ dependent on $\varphi$, and to the function $f:g\mapsto\rho_G(g,\cdot)$, valued in $\mathscr{B}(E)$, we deduce that $A(\varphi)$ from (9.3.2.2) is a bounded $\mathbf{C}$-linear endomorphism on $W^{s,2}(G)$.
 
-The assignment $\phi\mapsto A(\phi)$ defined in (9.3.2.2) therefore provides the desired extension of $A$ from (9.3.1.1) to the Schwartz-Bruhat functions $\mathcal{S}(G)$ on $G$, from $\mathcal{D}(G)$ (i.e. it extends $A$ from (9.3.1.1) from $\mathcal{D}(G)$ to the larger domain $\mathcal{S}(G)$).
+The assignment $\varphi\mapsto A(\varphi)$ defined in (9.3.2.2) therefore provides the desired extension of $A$ from (9.3.1.1) to the Schwartz-Bruhat functions $\mathcal{S}(G)$ on $G$, from $\mathcal{D}(G)$ (i.e. it extends $A$ from (9.3.1.1) from $\mathcal{D}(G)$ to the larger domain $\mathcal{S}(G)$).
 
 We now show that $A:\mathcal{S}(G)\to \mathscr{B}_{\mathrm{NT}}(W^{s,2}(G))$ is continuous (with respect to the operator-norm topology on the target). This follows from Lemma C.4.3.9: indeed, the continuous norm on $\mathscr{B}_{\mathrm{NT}}(W^{s,2}(G))$ given by the operator-norm $\|\cdot\|$ satisfies:
 
-$$\int_G\|\rho_G(g,\cdot)\|\,|\phi(g)|\,\mu_G(g)\le C\int_G|\phi(g)|\,|\log|g|_G|^s\,\mathrm{d}\mu_G(g)$$
+$$\int_G\|\rho_G(g,\cdot)\|\,|\varphi(g)|\,\mu_G(g)\le C\int_G|\varphi(g)|\,|\log|g|_G|^s\,\mathrm{d}\mu_G(g)$$
 
-for a positive absolute constant $C$. Since the function $f(g):=\int_G|\phi(g)|\,|\log|g|_G|^s\,\mathrm{d}\mu_G(g)$ is itself a continuous seminorm on $\mathcal{S}(G)$, we deduce from Lemma C.4.3.9 that $A$ is continuous with respect to the Schwartz-Bruhat topology on the source, and the operator-norm topology on the target.
+for a positive absolute constant $C$. Since the function $f(g):=\int_G|\varphi(g)|\,|\log|g|_G|^s\,\mathrm{d}\mu_G(g)$ is itself a continuous seminorm on $\mathcal{S}(G)$, we deduce from Lemma C.4.3.9 that $A$ is continuous with respect to the Schwartz-Bruhat topology on the source, and the operator-norm topology on the target.
 
-Let $\varepsilon>0$ be a fixed real number such that $-1+\varepsilon<1-\varepsilon$, and $\varphi_0\in C^\infty_c(\mathbf{R})$ be a smooth cut-off function supported on $[-1,1]$, such that $\varphi_0$ is bounded above by $1$, and equal to $1$ over the interval $[-1+\varepsilon,1-\varepsilon]$. Such $\varphi_0$ exists by [Horm, Ch.I, Thm.1.4.1, p.25].
+Let $\varepsilon>0$ be a fixed real number such that $-1+\varepsilon<1-\varepsilon$, and $\phi_0\in C^\infty_c(\mathbf{R})$ be a smooth cut-off function supported on $[-1,1]$, such that $\phi_0$ is bounded above by $1$, and equal to $1$ over the interval $[-1+\varepsilon,1-\varepsilon]$. Such $\phi_0$ exists by [Horm, Ch.I, Thm.1.4.1, p.25].
 
-Let $\alpha_0\in\mathcal{S}(\mathbf{R}_{>0})$ be the inverse Fourier transform of $\varphi_0$, i.e.:
+Let $\alpha_0\in\mathcal{S}(\mathbf{R}_{>0})$ be the inverse Fourier transform of $\phi_0$, i.e.:
 
-$$\alpha_0(t):=\int_{-1}^{1}\varphi_0(x)t^{2\pi ix}\,\mathrm{d}x.$$
+$$\alpha_0(t):=\int_{-1}^{1}\phi_0(x)t^{2\pi ix}\,\mathrm{d}x.$$
 
 We define, for each integer $m\ge 0$:
 
@@ -1626,14 +1626,14 @@ $$
 
 For every integer $m>0$, $\beta_m$ is a Schwartz-Bruhat function on $\mathbf{R}_{>0}$ such that the Fourier transform $\widehat{\beta_m}$ is supported on $[-m,m]$. Indeed, we have
 
-$$\int_{\mathbf{R}_{>0}}\beta_m(t)t^{-2\pi ix}\,\frac{\mathrm{d}t}{t}=m\int_{+\infty}^{-\infty}\alpha_0(e^{my})e^{-2\pi ixy}\,\mathrm{d}y=\int_{+\infty}^{-\infty}\alpha_0(e^y)e^{-2\pi ixy/m}\,\mathrm{d}y=\varphi_0(x/m)$$
+$$\int_{\mathbf{R}_{>0}}\beta_m(t)t^{-2\pi ix}\,\frac{\mathrm{d}t}{t}=m\int_{+\infty}^{-\infty}\alpha_0(e^{my})e^{-2\pi ixy}\,\mathrm{d}y=\int_{+\infty}^{-\infty}\alpha_0(e^y)e^{-2\pi ixy/m}\,\mathrm{d}y=\phi_0(x/m)$$
 
 which is supported over $[-m,m]$.
 
 We now define, for each $\omega\in\widehat{G^1}$:
 
 $$
-\phi_{m,\omega}:=\varphi_m\otimes\psi_\omega \tag{9.3.2.4}
+\varphi_{m,\omega}:=\varphi_m\otimes\psi_\omega \tag{9.3.2.4}
 $$
 
 where $\psi_\omega$ is any choice of smooth compactly supported function on $G^1$ whose uniform norm is bounded above by $1/\mu_1(G^1)$, for $\mu_1$ the unique choice of Haar measure on $G^1$ such that $\mathrm{d}t/t$ is the push-forward of the quotient measure induced as per Theorem D.1.2.1 by the choices $\mu_G$ on $G$ and $\mu_1$ on $G^1$, and which is $\omega$-homogeneous.
@@ -1644,14 +1644,14 @@ where $\psi_\omega$ is any choice of smooth compactly supported function on $G^1
 
 We have:
 
-$$\|A(\phi_{m,\omega})\|=\sup_{\|u\|_{s,2}=1}\left(\int_G\left|\int_G\phi_{m,\omega}(g)u(g^{-1}h)\,\mathrm{d}\mu_G(g)\right|^2(1+|\log|h|_G|^2)^{s/2}\,\mathrm{d}\mu_G(h)\right)^{1/2}$$
+$$\|A(\varphi_{m,\omega})\|=\sup_{\|u\|_{s,2}=1}\left(\int_G\left|\int_G\varphi_{m,\omega}(g)u(g^{-1}h)\,\mathrm{d}\mu_G(g)\right|^2(1+|\log|h|_G|^2)^{s/2}\,\mathrm{d}\mu_G(h)\right)^{1/2}$$
 
-$$=\sup_{\|u\|_{s,2}=1}\left(\int_G\left|\int_G\frac{\phi_{m,\omega}(g)}{(1+|\log|g|_G|^2)^{s/2}}u(g^{-1}h)(1+|\log|g|_G|^2)^{s/2}\,\mathrm{d}\mu_G(g)\right|^2(1+|\log|h|_G|^2)^{s/2}\,\mathrm{d}\mu_G(h)\right)^{1/2}.$$
+$$=\sup_{\|u\|_{s,2}=1}\left(\int_G\left|\int_G\frac{\varphi_{m,\omega}(g)}{(1+|\log|g|_G|^2)^{s/2}}u(g^{-1}h)(1+|\log|g|_G|^2)^{s/2}\,\mathrm{d}\mu_G(g)\right|^2(1+|\log|h|_G|^2)^{s/2}\,\mathrm{d}\mu_G(h)\right)^{1/2}.$$
 
 We now call
 
 $$
-\varphi(g):=\frac{\phi_{m,\omega}(g)}{(1+|\log|g|_G|^2)^{s/2}} \tag{9.3.2.5}
+\phi(g):=\frac{\varphi_{m,\omega}(g)}{(1+|\log|g|_G|^2)^{s/2}} \tag{9.3.2.5}
 $$
 
 a continuous, compactly supported function of $g\in G$, and $\nu:=(1+|\log|\cdot|_G|^2)^{s/2}\mu_G$, a regular Radon measure on $G$.
@@ -1659,34 +1659,34 @@ a continuous, compactly supported function of $g\in G$, and $\nu:=(1+|\log|\cdot
 We then have:
 
 $$
-\int_G\left|\int_G\frac{\phi_{m,\omega}(g)}{(1+|\log|g|_G|^2)^{s/2}}u(g^{-1}h)(1+|\log|g|_G|^2)^{s/2}\,\mathrm{d}\mu_G(g)\right|^2(1+|\log|h|_G|^2)^{s/2}\,\mathrm{d}\mu_G(h) \tag{9.3.2.6}
+\int_G\left|\int_G\frac{\varphi_{m,\omega}(g)}{(1+|\log|g|_G|^2)^{s/2}}u(g^{-1}h)(1+|\log|g|_G|^2)^{s/2}\,\mathrm{d}\mu_G(g)\right|^2(1+|\log|h|_G|^2)^{s/2}\,\mathrm{d}\mu_G(h) \tag{9.3.2.6}
 $$
 
-$$=\|\varphi*u\|_{L^2(G,\nu)}.$$
+$$=\|\phi*u\|_{L^2(G,\nu)}.$$
 
 The rightmost side of (9.3.2.6) is, by [HR-1, Cor.20.14, p.293], bounded from above as:
 
 $$
-\|\varphi*u\|_{L^2(G,\nu)}\le\|\varphi\|_{L^1(G,\nu)}\|u\|_{L^2(G,\nu)}=\|\varphi\|_{L^1(G,\nu)}\|u\|_{s,2}. \tag{9.3.2.7}
+\|\phi*u\|_{L^2(G,\nu)}\le\|\phi\|_{L^1(G,\nu)}\|u\|_{L^2(G,\nu)}=\|\phi\|_{L^1(G,\nu)}\|u\|_{s,2}. \tag{9.3.2.7}
 $$
 
-Moreover, by design of $\varphi$ from (9.3.2.5), we have:
+Moreover, by design of $\phi$ from (9.3.2.5), we have:
 
 $$
-\|\varphi\|_{L^1(G,\nu)}=\|\phi_{m,\omega}\|_{L^1(G,\overline{\mu})}\le\int_{\mathbf{R}_{>0}}|\beta_m(t)|\,\frac{\mathrm{d}t}{t}\,\|\psi_\omega\|_{L^1(G^1,\mu_1)}\le\int_{\mathbf{R}_{>0}}|\beta_m(t)|\,\frac{\mathrm{d}t}{t}=\|\alpha_0\|_{L^1(\mathbf{R}_{>0},\mathrm{d}t/t)}. \tag{9.3.2.8}
+\|\phi\|_{L^1(G,\nu)}=\|\varphi_{m,\omega}\|_{L^1(G,\overline{\mu})}\le\int_{\mathbf{R}_{>0}}|\beta_m(t)|\,\frac{\mathrm{d}t}{t}\,\|\psi_\omega\|_{L^1(G^1,\mu_1)}\le\int_{\mathbf{R}_{>0}}|\beta_m(t)|\,\frac{\mathrm{d}t}{t}=\|\alpha_0\|_{L^1(\mathbf{R}_{>0},\mathrm{d}t/t)}. \tag{9.3.2.8}
 $$
 
-Since we choose $\alpha_0$ to be the inverse Fourier transform of $\varphi_0$, which is in turn supported over $[-1,1]$ and bounded above by $1$, we see that we have $\|\alpha_0\|_{L^2(\mathbf{R}_{>0},\mathrm{d}t/t)}\le 2$.
+Since we choose $\alpha_0$ to be the inverse Fourier transform of $\phi_0$, which is in turn supported over $[-1,1]$ and bounded above by $1$, we see that we have $\|\alpha_0\|_{L^2(\mathbf{R}_{>0},\mathrm{d}t/t)}\le 2$.
 
 We deduce that we have, for every $(m,\omega)\in\mathbf{N}\times\widehat{G^1}$:
 
 $$
-\|A(\phi_{m,\omega})\|\le 2. \tag{9.3.2.9}
+\|A(\varphi_{m,\omega})\|\le 2. \tag{9.3.2.9}
 $$
 
-We have therefore shown that the net $B:=\{\phi_{m,\omega}\}_{(m,\omega)\in\mathbf{N}\times\widehat{G^1}}$ fulfills (1), (2) and (3) from the statement of the Lemma.
+We have therefore shown that the net $B:=\{\varphi_{m,\omega}\}_{(m,\omega)\in\mathbf{N}\times\widehat{G^1}}$ fulfills (1), (2) and (3) from the statement of the Lemma.
 
-Since, by Lemma 4.3.2.2, the operators $\{1/\overline{\mu}_1(G^1)P_{F,\omega}\}_{\omega\in\widehat{G^1}}$ are projectors and the closure of their convex hull within $\mathscr{B}_{\mathrm{SOT}}(W^{s,2}(G))$ contains the identity, in order to show that $B$ fulfills (4) it is enough to show that the net $\{\phi_{m,\omega}\}_{m\ge 0}$, for each fixed $\omega$, of $\omega$-homogeneous Schwartz-Bruhat functions on $G$ is such that the identity is in the closure in $\mathscr{B}_{\mathrm{SOT}}(W^{s,2}(G)(\omega))$ of $A(\{\phi_{m,\omega}\}_{m\ge 0})$.
+Since, by Lemma 4.3.2.2, the operators $\{1/\overline{\mu}_1(G^1)P_{F,\omega}\}_{\omega\in\widehat{G^1}}$ are projectors and the closure of their convex hull within $\mathscr{B}_{\mathrm{SOT}}(W^{s,2}(G))$ contains the identity, in order to show that $B$ fulfills (4) it is enough to show that the net $\{\varphi_{m,\omega}\}_{m\ge 0}$, for each fixed $\omega$, of $\omega$-homogeneous Schwartz-Bruhat functions on $G$ is such that the identity is in the closure in $\mathscr{B}_{\mathrm{SOT}}(W^{s,2}(G)(\omega))$ of $A(\{\varphi_{m,\omega}\}_{m\ge 0})$.
 
 In turn, it is enough to show that the identity in $\mathscr{B}_{\mathrm{SOT}}(L^2(\mathbf{R}_{>0},(1+|\log(t)|^2)^{s/2}\mathrm{d}t/t))$ is in the closure of the linear span of the sequence of operators:
 
@@ -1710,7 +1710,7 @@ Corollary 9.3.2.3. Let $G$ be a second-countable $\mathbf{R}_{>0}$-modulated gro
 
 Proof. (1): The indicator function $\mathrm{1}_{\{\chi|_{G_1}\}}$ of the subset $\{\chi|_{G^1}\}\subset\widehat{G^1}$ is continuous and compactly supported, being $\widehat{G^1}$ discrete by [DE, Thm.3.2.1], as $G^1$ is compact. As such, its inverse Fourier transform $F$ is continuous, and hence continuous and compactly supported.
 
-Let $\tau$ be a continuous homomorphic section to the idelic norm. We define $x_0$ to be the unique real number such that $\chi(\tau(t))=t^{ix_0}$ for all $t\in\mathbf{R}_{>0}$. We let $\varphi_0$ be a smooth cut-off function on $\mathbf{R}$ whose support is contained in $x_0+[\alpha,\beta]\subset\mathbf{R}$ and such that $\varphi_0|_{x_0+[\alpha+\varepsilon,\beta-\varepsilon]}=1$. Such $\varphi_0$ exists by [Horm, Ch.I, Thm.1.4.1, p.25]. We let $\phi$ be the inverse Fourier transform on $\mathbf{R}_{>0}$ of $\varphi_0$. The function $u:=\phi\otimes F$ is an element of $W^{s,2}(G)$ for any $s\ge 0$, and $\widehat{u}$ is supported only over $\chi|\cdot|^{i[\alpha,\beta]}_G$, and it is identically $1$ over the subset $\chi|\cdot|^{i[\alpha+\varepsilon,\beta-\varepsilon]}_F$.
+Let $\tau$ be a continuous homomorphic section to the idelic norm. We define $x_0$ to be the unique real number such that $\chi(\tau(t))=t^{ix_0}$ for all $t\in\mathbf{R}_{>0}$. We let $\phi_0$ be a smooth cut-off function on $\mathbf{R}$ whose support is contained in $x_0+[\alpha,\beta]\subset\mathbf{R}$ and such that $\phi_0|_{x_0+[\alpha+\varepsilon,\beta-\varepsilon]}=1$. Such $\phi_0$ exists by [Horm, Ch.I, Thm.1.4.1, p.25]. We let $\varphi$ be the inverse Fourier transform on $\mathbf{R}_{>0}$ of $\phi_0$. The function $u:=\varphi\otimes F$ is an element of $W^{s,2}(G)$ for any $s\ge 0$, and $\widehat{u}$ is supported only over $\chi|\cdot|^{i[\alpha,\beta]}_G$, and it is identically $1$ over the subset $\chi|\cdot|^{i[\alpha+\varepsilon,\beta-\varepsilon]}_F$.
 
 (2): Let $u\in W^{s,2}(G)$ be an arbitrary element. By Lemma 9.3.2.1, there exists a countable net $B\subset\mathcal{S}(G)$ such that $A(B)$ is norm-bounded in $\mathscr{B}(W^{s,2}(G))$, the Fourier transform of each element of $B$ is compactly supported, and the identity is contained in the closure of $A(B)$ with respect to the strong operator topology. In particular, for any $\varepsilon>0$ there exists $b\in B$ such that $\|A(b)(u)-u\|_{s,2}<\varepsilon$. Since $\widehat{A(b)(u)}=\widehat{b}\widehat{u}$, and $\widehat{b}$ is compactly supported over $\widehat{G}$, then so is $\widehat{A(b)(u)}$.
 
@@ -1722,15 +1722,15 @@ We begin with the following:
 
 Lemma 9.3.2.4. Let $G$ be an $\mathbf{R}_{>0}$-modulated group. Let $\chi\in\widehat{G}$ be a fixed continuous character. Let $I\subset\mathbf{R}$ be a compact interval with non-empty interior.
 
-Let $\varphi\in\mathcal{S}_\mathrm{E}(G)$. Let $T\in\mathbf{R}$ be a real number. Then the number of zeros of $M(\varphi)(\chi|\cdot|^z_G)$ contained in the box $I\times i[T,T+1]$ is $O(\log|T|)$, where the implied constant depends on $\varphi$ and $I$.
+Let $\phi\in\mathcal{S}_\mathrm{E}(G)$. Let $T\in\mathbf{R}$ be a real number. Then the number of zeros of $M(\phi)(\chi|\cdot|^z_G)$ contained in the box $I\times i[T,T+1]$ is $O(\log|T|)$, where the implied constant depends on $\phi$ and $I$.
 
-Proof. Let $a\in\mathbf{R}$ be a real number such that $M(\varphi)(\chi|\cdot|^z_G)$ has no zeros on the boundary of $\mathbf{C}_I$ and $a+i\mathbf{R}$ is not contained in $\mathbf{C}_I$. We define $z_0:=a+iT+i/2$, $r\ge 0$ a real number large enough so as to arrange that the closed ball centered at $z_0$ with radius $r$ contains the box $I+i[T,T+1]$. We fix a real number $R>r$. By [Lang-b, Ch.XVII, §2, Lemma 2.2, p.333], the Maximum Principle and since $R/r>1$, we have, upon calling $N(T)$ the number of zeros of $M(\varphi)(\chi|\cdot|^z_G)$ contained in $B(z_0,r)$:
+Proof. Let $a\in\mathbf{R}$ be a real number such that $M(\phi)(\chi|\cdot|^z_G)$ has no zeros on the boundary of $\mathbf{C}_I$ and $a+i\mathbf{R}$ is not contained in $\mathbf{C}_I$. We define $z_0:=a+iT+i/2$, $r\ge 0$ a real number large enough so as to arrange that the closed ball centered at $z_0$ with radius $r$ contains the box $I+i[T,T+1]$. We fix a real number $R>r$. By [Lang-b, Ch.XVII, §2, Lemma 2.2, p.333], the Maximum Principle and since $R/r>1$, we have, upon calling $N(T)$ the number of zeros of $M(\phi)(\chi|\cdot|^z_G)$ contained in $B(z_0,r)$:
 
-$$N(T)\log(R/r)\le\log(B)-\log|M(\varphi)(\chi|\cdot|^{z_0}_G)|$$
+$$N(T)\log(R/r)\le\log(B)-\log|M(\phi)(\chi|\cdot|^{z_0}_G)|$$
 
-for a large enough real number $B>0$, and hence $N(T)=O(\log|M(\varphi)(\chi|\cdot|^{a+iT+i/2}_G)|)$. Since $M(\varphi)$ is uniformly Schwartz on every vertical strip of bounded width of each connected component of $\Omega(G)$, we deduce that for every integer $N\ge 0$, there exists a real number $C_N>0$ such that $M(\varphi)(\chi|\cdot|^{a+iT+i/2}_G)=O(|T|^N)$ as $|T|\to+\infty$.
+for a large enough real number $B>0$, and hence $N(T)=O(\log|M(\phi)(\chi|\cdot|^{a+iT+i/2}_G)|)$. Since $M(\phi)$ is uniformly Schwartz on every vertical strip of bounded width of each connected component of $\Omega(G)$, we deduce that for every integer $N\ge 0$, there exists a real number $C_N>0$ such that $M(\phi)(\chi|\cdot|^{a+iT+i/2}_G)=O(|T|^N)$ as $|T|\to+\infty$.
 
-We deduce that $N(T)=O(\log|T|)$ holds, with a possibly different implied constant, depending on $\varphi$ and $I$.
+We deduce that $N(T)=O(\log|T|)$ holds, with a possibly different implied constant, depending on $\phi$ and $I$.
 
 $\square$
 
@@ -1790,7 +1790,7 @@ $$
 
 a compact subset of $G$ with non-empty interior.
 
-DEFINITION 9.3.3.1 (Smooth cutoffs). Let $G$ be an $\mathbf{R}_{>0}$-modulated group, with module $\lvert\cdot\rvert_G$. We let $\mu_G$ be a choice of Haar measure on $G$. Let $I$ be a closed non-empty interval. Let $\Lambda,\epsilon > 0$ and $s \ge 0$ be real numbers. Assume $0 < 1/\Lambda-\epsilon < \Lambda-\epsilon$. We let $\rho: G \to \mathbf{C}$ be a function such that:
+DEFINITION 9.3.3.1 (Smooth cutoffs). Let $G$ be an $\mathbf{R}_{>0}$-modulated group, with module $\lvert\cdot\rvert_G$. We let $\mu_G$ be a choice of Haar measure on $G$. Let $I$ be a closed non-empty interval. Let $\Lambda,\varepsilon > 0$ and $s \ge 0$ be real numbers. Assume $0 < 1/\Lambda-\varepsilon < \Lambda-\varepsilon$. We let $\rho: G \to \mathbf{C}$ be a function such that:
 
 (1) $\rho$ is bounded with $\lVert\rho\rVert_u = 1$, real-valued and nonnegative.
 
@@ -1802,9 +1802,9 @@ DEFINITION 9.3.3.1 (Smooth cutoffs). Let $G$ be an $\mathbf{R}_{>0}$-modulated g
 
 (5) $\rho$ is supported over $G^{[1/\Lambda,\Lambda]}$.
 
-(6) $\rho$ is identically $1$ over $G^{[1/\Lambda+\epsilon,\Lambda-\epsilon]}$.
+(6) $\rho$ is identically $1$ over $G^{[1/\Lambda+\varepsilon,\Lambda-\varepsilon]}$.
 
-We refer to $\rho$ as a $(\Lambda,\epsilon)$-cutoff. If $\rho$ is smooth, then we refer to $\rho$ as a smooth $(\Lambda,\epsilon)$-cutoff. For $\rho$ a $(\Lambda,\epsilon)$-cutoff, we define the $\rho$-truncation operator to be the multiplication operator:
+We refer to $\rho$ as a $(\Lambda,\varepsilon)$-cutoff. If $\rho$ is smooth, then we refer to $\rho$ as a smooth $(\Lambda,\varepsilon)$-cutoff. For $\rho$ a $(\Lambda,\varepsilon)$-cutoff, we define the $\rho$-truncation operator to be the multiplication operator:
 
 $$
 M_{\rho}: W^s_I(G) \to W^s_I(G) \tag{9.3.3.1}
@@ -1890,7 +1890,7 @@ We refer the reader to §A.5.3, §A.5.4, and to [Bris-a, §3], where a generaliz
 
 9.3.3.2. Calculation of the trace of $M_{\rho} \circ A(\varphi)$. We have the following:
 
-THEOREM 9.3.3.5 (Nuclearity of the smoothly truncated regular representation on $W^s_I(G)$). Let $G$ be an $\mathbf{R}_{>0}$-modulated group, with module $\lvert\cdot\rvert_G$. Assume $G$ is second-countable. Let $I$ be a non-empty closed interval. We let $\mu_G$ be a choice of Haar measure on $G$. Let $\Lambda,\epsilon > 0$ and $s \ge 0$ real numbers. Assume $0 < 1/\Lambda+\epsilon < \Lambda-\epsilon$. Let $\rho: G \to \mathbf{R}_{\ge 0}$ be a $(\Lambda,\epsilon)$-cutoff. Then:
+THEOREM 9.3.3.5 (Nuclearity of the smoothly truncated regular representation on $W^s_I(G)$). Let $G$ be an $\mathbf{R}_{>0}$-modulated group, with module $\lvert\cdot\rvert_G$. Assume $G$ is second-countable. Let $I$ be a non-empty closed interval. We let $\mu_G$ be a choice of Haar measure on $G$. Let $\Lambda,\varepsilon > 0$ and $s \ge 0$ real numbers. Assume $0 < 1/\Lambda+\varepsilon < \Lambda-\varepsilon$. Let $\rho: G \to \mathbf{R}_{\ge 0}$ be a $(\Lambda,\varepsilon)$-cutoff. Then:
 
 (1) for every bounded compactly supported complex-valued function $\varphi$ on $G$, the following endomorphism of $W^s_I(G)$:
 
@@ -1900,9 +1900,9 @@ $$
 
 is an integral Hilbert-Schmidt operator whose integral kernel has an absolutely $\mu_G$-integrable smoothening along the diagonal.
 
-(2) For every smooth compactly supported $\varphi \in \mathcal{D}(G)$ and every smooth $(\Lambda,\epsilon)$-cutoff, then the Hilbert-Schmidt operator in (9.3.3.8) is nuclear, and its nuclear trace equals the integral of the integral kernel along the diagonal.
+(2) For every smooth compactly supported $\varphi \in \mathcal{D}(G)$ and every smooth $(\Lambda,\varepsilon)$-cutoff, then the Hilbert-Schmidt operator in (9.3.3.8) is nuclear, and its nuclear trace equals the integral of the integral kernel along the diagonal.
 
-(3) As $\rho \to 1$ pointwise over $G$ with $\epsilon\Lambda = o(1)$ as $\Lambda \to +\infty$, then the integral of the smoothening along the diagonal of the integral kernel of the operator in (9.3.3.8) is:
+(3) As $\rho \to 1$ pointwise over $G$ with $\varepsilon\Lambda = o(1)$ as $\Lambda \to +\infty$, then the integral of the smoothening along the diagonal of the integral kernel of the operator in (9.3.3.8) is:
 
 $$
 \mathrm{Trace}(M_{\rho} \circ A_G(\varphi)) = 2\log(\Lambda)\,\mu_1(G^1)\,\varphi(1) + o(1). \tag{9.3.3.9}
@@ -1987,37 +1987,37 @@ $$
 $$
 
 $$
-= \int_{1/\Lambda}^{1/\Lambda+\epsilon} \int_{G^1} K'^{\varphi,\rho}(\tau(t)g_0,\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\,\frac{\mathrm{d}t}{t} + \int_{\Lambda-\epsilon}^{\Lambda} \int_{G^1} K'^{\varphi,\rho}(\tau(t)g_0,\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\,\frac{\mathrm{d}t}{t} \tag{9.3.3.17}
+= \int_{1/\Lambda}^{1/\Lambda+\varepsilon} \int_{G^1} K'^{\varphi,\rho}(\tau(t)g_0,\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\,\frac{\mathrm{d}t}{t} + \int_{\Lambda-\varepsilon}^{\Lambda} \int_{G^1} K'^{\varphi,\rho}(\tau(t)g_0,\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\,\frac{\mathrm{d}t}{t} \tag{9.3.3.17}
 $$
 
 $$
-+ \int_{1/\Lambda+\epsilon}^{\Lambda-\epsilon} \int_{G^1} K'^{\varphi,\rho}(\tau(t)g_0,\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\,\frac{\mathrm{d}t}{t} \tag{9.3.3.18}
++ \int_{1/\Lambda+\varepsilon}^{\Lambda-\varepsilon} \int_{G^1} K'^{\varphi,\rho}(\tau(t)g_0,\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\,\frac{\mathrm{d}t}{t} \tag{9.3.3.18}
 $$
 
 $$
-= \varphi(1) \int_{1/\Lambda}^{1/\Lambda+\epsilon} \int_{G^1} \rho(\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\,\frac{\mathrm{d}t}{t} + \varphi(1) \int_{\Lambda-\epsilon}^{\Lambda} \int_{G^1} \rho(\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\,\frac{\mathrm{d}t}{t} \tag{9.3.3.19}
+= \varphi(1) \int_{1/\Lambda}^{1/\Lambda+\varepsilon} \int_{G^1} \rho(\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\,\frac{\mathrm{d}t}{t} + \varphi(1) \int_{\Lambda-\varepsilon}^{\Lambda} \int_{G^1} \rho(\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\,\frac{\mathrm{d}t}{t} \tag{9.3.3.19}
 $$
 
 $$
-+ \varphi(1) \int_{1/\Lambda+\epsilon}^{\Lambda-\epsilon} \left(\int_{G^1} \mathrm{d}\mu_1(g)\right)\frac{\mathrm{d}t}{t}. \tag{9.3.3.20}
++ \varphi(1) \int_{1/\Lambda+\varepsilon}^{\Lambda-\varepsilon} \left(\int_{G^1} \mathrm{d}\mu_1(g)\right)\frac{\mathrm{d}t}{t}. \tag{9.3.3.20}
 $$
 
 We have:
 
 $$
-\left\lvert\varphi(1) \int_{1/\Lambda}^{1/\Lambda+\epsilon} \int_{G^1} \rho(\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\,\frac{\mathrm{d}t}{t} + \varphi(1) \int_{\Lambda-\epsilon}^{\Lambda} \int_{G^1} \rho(\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\,\frac{\mathrm{d}t}{t}\right\rvert \le \lvert\varphi(1)\rvert \left\{\log\left(\frac{1/\Lambda+\epsilon}{1/\Lambda}\right) + \log\left(\frac{\Lambda}{\Lambda-\epsilon}\right)\right\} \tag{9.3.3.21}
+\left\lvert\varphi(1) \int_{1/\Lambda}^{1/\Lambda+\varepsilon} \int_{G^1} \rho(\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\,\frac{\mathrm{d}t}{t} + \varphi(1) \int_{\Lambda-\varepsilon}^{\Lambda} \int_{G^1} \rho(\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\,\frac{\mathrm{d}t}{t}\right\rvert \le \lvert\varphi(1)\rvert \left\{\log\left(\frac{1/\Lambda+\varepsilon}{1/\Lambda}\right) + \log\left(\frac{\Lambda}{\Lambda-\varepsilon}\right)\right\} \tag{9.3.3.21}
 $$
 
 and:
 
 $$
-\varphi(1) \int_{1/\Lambda+\epsilon}^{\Lambda-\epsilon} \left(\int_{G^1} \mathrm{d}\mu_1(g)\right)\frac{\mathrm{d}t}{t} = \log\left(\frac{\Lambda-\epsilon}{1/\Lambda+\epsilon}\right)\mu_1(G^1)\varphi(1). \tag{9.3.3.22}
+\varphi(1) \int_{1/\Lambda+\varepsilon}^{\Lambda-\varepsilon} \left(\int_{G^1} \mathrm{d}\mu_1(g)\right)\frac{\mathrm{d}t}{t} = \log\left(\frac{\Lambda-\varepsilon}{1/\Lambda+\varepsilon}\right)\mu_1(G^1)\varphi(1). \tag{9.3.3.22}
 $$
 
-Since, by assumption, $\epsilon\Lambda = o(1)$ as $\Lambda \to +\infty$, we deduce that we have:
+Since, by assumption, $\varepsilon\Lambda = o(1)$ as $\Lambda \to +\infty$, we deduce that we have:
 
 $$
-\log\left(\frac{1/\Lambda+\epsilon}{1/\Lambda}\right) + \log\left(\frac{\Lambda}{\Lambda-\epsilon}\right) = o(1),\; \log\left(\frac{\Lambda-\epsilon}{1/\Lambda+\epsilon}\right) = 2\log(\Lambda) + o(1) \tag{9.3.3.23}
+\log\left(\frac{1/\Lambda+\varepsilon}{1/\Lambda}\right) + \log\left(\frac{\Lambda}{\Lambda-\varepsilon}\right) = o(1),\; \log\left(\frac{\Lambda-\varepsilon}{1/\Lambda+\varepsilon}\right) = 2\log(\Lambda) + o(1) \tag{9.3.3.23}
 $$
 
 as $\Lambda \to +\infty$, which shows that (9.3.3.9) holds. It remains to treat the case when $I$ does not contain $0$. We choose $b \in \mathbf{R}$ such that $b+I$ contains $0$. Then $\phi \mapsto \lvert\cdot\rvert^b_G \phi$ is a linear topological isomorphism $W^s_{b+I}(G) \to W^s_I(G)$

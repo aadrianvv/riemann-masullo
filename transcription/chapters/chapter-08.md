@@ -726,17 +726,17 @@ The trace of $A(\varphi)$ on $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S
 
 We can proceed heuristically and combine the calculations performed in Theorem 7.4.2.1 and Theorem
 7.4.3.2, to infer that its value will be:
-$$\mathrm{Trace}(A(\varphi)) = \sum_{p:S_{p}\subset S} \sum_{\epsilon_{p}} N(\chi_{S}|\cdot|^{\epsilon_{p}}_{F,S}) \int_{J_{F,S}} \varphi(g) \chi_{S}(g) |g|^{\epsilon_{p}}_{F} \, \mathrm{d}\overline{\mu}_{S}(g) \tag{8.4.0.10}$$
+$$\mathrm{Trace}(A(\varphi)) = \sum_{p:S_{p}\subset S} \sum_{\varepsilon_{p}} N(\chi_{S}|\cdot|^{\epsilon_{p}}_{F,S}) \int_{J_{F,S}} \varphi(g) \chi_{S}(g) |g|^{\epsilon_{p}}_{F} \, \mathrm{d}\overline{\mu}_{S}(g) \tag{8.4.0.10}$$
 $$+ \sum_{z} N(\chi_{S}|\cdot|^{z}_{F,S}) \int_{J_{F,S}} \varphi(g) \chi_{S}(g) |g|^{z}_{F} \, \mathrm{d}\overline{\mu}_{S}(g) \tag{8.4.0.11}$$
-where $\epsilon_{p}$ varies over the poles of $\prod_{v \in S_{p}} L_{v}(\chi_{v}|\cdot|^{s}_{v})$, for each prime $p$ such that $S_{p} \subset S$, and $z$ varies over
+where $\varepsilon_{p}$ varies over the poles of $\prod_{v \in S_{p}} L_{v}(\chi_{v}|\cdot|^{s}_{v})$, for each prime $p$ such that $S_{p} \subset S$, and $z$ varies over
 the poles of the $\Gamma$-factor of the Hecke $L$-function $L(s,\chi)$, $N(\chi_{S}|\cdot|^{\epsilon_{p}}_{F,S})$ and $N(\chi_{S}|\cdot|^{z}_{F,S})$ being the respective
 multiplicity functions.
 
 The reader will now recognize, through the lens of the Poisson Summation Formula (in its form from
 Proposition B.4.1.2) and the Asymptotic Residue Theorem (see Theorem B.3.2.1 and Theorem B.4.2.2), the
 geometric side of Weil’s Explicit Formulas, namely:
-$$\sum_{v \in S_{f}-S_{\chi}} \sum_{m>0} \frac{\log N(\mathfrak{p}_{v})}{N(\mathfrak{p}_{v})^{m/2}} \{\chi(\mathfrak{p}^{m}_{v}) \phi(N(\mathfrak{p}_{v})^{m}) + \overline{\chi(\mathfrak{p}^{m}_{v})} \phi(N(\mathfrak{p}_{v})^{-m})\} \tag{8.4.0.12}$$
-$$- \sum_{v \in S_{\infty}} \int^{+\infty}_{0} \left( N_{v}\varphi(1)\frac{1}{x} - (\varphi(e^{x})e^{s_{v}x} + \varphi(e^{-x})e^{-s_{v}x}) \frac{e^{(\frac{2}{N_{v}}-\frac{1}{2})x}}{1-e^{-\frac{2}{N_{v}}x}} \right) \mathrm{d}x \tag{8.4.0.13}$$
+$$\sum_{v \in S_{f}-S_{\chi}} \sum_{m>0} \frac{\log N(\mathfrak{p}_{v})}{N(\mathfrak{p}_{v})^{m/2}} \{\chi(\mathfrak{p}^{m}_{v}) \varphi(N(\mathfrak{p}_{v})^{m}) + \overline{\chi(\mathfrak{p}^{m}_{v})} \varphi(N(\mathfrak{p}_{v})^{-m})\} \tag{8.4.0.12}$$
+$$- \sum_{v \in S_{\infty}} \int^{+\infty}_{0} \left( N_{v}\phi(1)\frac{1}{x} - (\phi(e^{x})e^{s_{v}x} + \phi(e^{-x})e^{-s_{v}x}) \frac{e^{(\frac{2}{N_{v}}-\frac{1}{2})x}}{1-e^{-\frac{2}{N_{v}}x}} \right) \mathrm{d}x \tag{8.4.0.13}$$
 
 ## PDF page 393
 

@@ -336,7 +336,7 @@ $$
 
 *defined for $\mu_{G/H}$-almost all $x \in G/H$ is $\mu_{G/H}$-measurable and $\mu_{G/H}$-integrable.*
 
-(1) *Under the isomorphism $H^\perp \to \widehat{G/H}$, $f^H$ pulls back to $\widehat{f}|_{H^\perp} \in C(H^\perp)$.*
+(1) *Under the isomorphism $H^\perp \to \widehat{G/H}$, $\widehat{f^H}$ pulls back to $\widehat{f}|_{H^\perp} \in C(H^\perp)$.*
 
 (2) *If $\widehat{f}|_{H^\perp}$ is $\mu_{H^\perp}$-integrable then the Poisson Summation Formula*
 
@@ -1364,10 +1364,11 @@ $$
 *This map $\sigma$ is an $\mathbf{R}$-linear isomorphism, upon endowing the target with the pointwise $\mathbf{R}$-linear structure. The following diagram:*
 
 (D.1.6.15)
+
 ```latex
 \begin{tikzcd}
 \mathcal{L}(G) \arrow[r, "\Psi"] \arrow[d, "a\mapsto\partial_a"'] & \mathrm{Hom}_{\mathrm{cont}}(\widehat{G},\widehat{\mathbf{R}}) \\
-\mathrm{Diff}^1_r(G) \arrow[r, "\overline{\sigma}"'] & \mathrm{Hom}_{\mathrm{cont}}(\widehat{G},\mathbf{R}) \arrow[u, "\simeq"']
+\mathrm{Diff}^1_r(G) \arrow[r, "\sigma"'] & \mathrm{Hom}_{\mathrm{cont}}(\widehat{G},\mathbf{R}) \arrow[u, "\simeq"']
 \end{tikzcd}
 ```
 
@@ -1449,7 +1450,7 @@ for $e\in\mathbf{R}^m$, $d\in\mathbf{R}^r$ encoding $a_2$ and $c\in\mathbf{R}^m$
 
 In general, as we let $D_2$ vary through all non-empty products of finitely many $\partial_a$’s with $a$ varying through the 1-parameter subgroups of $\widehat{G}$ we see that $p(D_2):G\to\mathbf{C}$ varies through all products of linear forms in $(x,a)$; the empty product (corresponding to the constant operator $D_2=1$) has $p(D_2)=1$. Likewise, as we let $D_1$ vary through all such non-empty products with 1-parameter subgroups of $G$ clearly $D_1(f)$ varies through the output of $f$ when hit by all products of finitely many first-order linear differential operators in the $\partial_{x_j}$’s and $\partial_{z_{\ell}}$’s (and $D_1(f)=f$ for the empty product corresponding to $D_1=1$). The boundedness condition in (2) thereby expresses *exactly* the finiteness on $f$ for all seminorms in (D.1.3.9), and that condition defines $\mathcal{S}(G)$ as a subspace of $C^{\infty}(G)$ by Lemma D.1.3.4. $\square$
 
-D.1.6.3. *Differential operators, symbols and the Fourier transform.* We conclude this review on the Schwartz-Bruhat space of a Hausdorff locally compact abelian group $G$, with a fundamental property of the Fourier transform $\mathcal{F}_G:L^1(G,\mu_G)\to C_0(\widehat{G})$, where $\mu_G$ is a fixed choice of Haar measure on $G$, uniquely determining a dual Haar measure $\mu_{\widehat{G}}$ on $\widehat{G}$ (see Lemma D.1.1.2).
+D.1.6.3. *Differential operators, symbols and the Fourier transform.* We conclude this review on the Schwartz-Bruhat space of a Hausdorff locally compact abelian group $G$, with a fundamental property of the Fourier transform $\mathcal{F}_G:L^1(G,\mu_G)\to C_0(G)$, where $\mu_G$ is a fixed choice of Haar measure on $G$, uniquely determining a dual Haar measure $\mu_{\widehat{G}}$ on $\widehat{G}$ (see Lemma D.1.1.2).
 
 For a structural pair $(k,\Gamma)$ of $G$, we choose the volume-1 Haar measure on $k$ and denote it $\mu_k$, and together with the restriction $\mu_G$ to the open subgroup $\Gamma\subset G$ this uniquely determines a Haar measure $\mu_{\Gamma/k}$ on the elementary abelian Lie group $\Gamma/k$ by Theorem D.1.2.1. Likewise, the measures $\mu_G$ and $\mu_k$ determine a Haar measure $\mu_{G/k}$ on $G/k$. By Lemma D.1.1.2 we likewise get the Plancherel measures $\mu_{\widehat{G}}$ on $\widehat{G}$, $\mu_{\widehat{\Gamma/k}}$ on $\widehat{\Gamma/k}=k^{\perp}/\Gamma^{\perp}$, and $\mu_{k^{\perp}}$ on $k^{\perp}=\widehat{G/k}$. Then $\mu_{\widehat{\Gamma/k}}$ and $\mu_{k^{\perp}}$ determine a Haar measure $\mu_{\Gamma^{\perp}}$ on the compact subgroup $\Gamma^{\perp}\subset\widehat{G}$.$^3$
 
@@ -2372,7 +2373,7 @@ $$
 \overline{\theta}_{\tau}:\mathbf{R}_{>0}\times C_F^1\to C_F
 \tag{D.1.10.19}
 $$
-induced by the choice $\tau$ of continuous homomorphic section to the idelic norm, to compute the $\mathbf{R}$-linear space of symbols of invariant differential operators on the dual group $\widehat{C_F}$ it is enough to compute the symbols of the linear differential operators on the dual group of $\mathbf{R}_{>0}$, since the dual of the compact $C_F^1$ is discrete (and so has no nonzero invariant differential operator).
+induced by the choice $\tau$ of continuous homomorphic section to the idelic norm, to compute the $\mathbf{R}$-linear space of symbols of invariant differential operators on the dual group $C_F$ it is enough to compute the symbols of the linear differential operators on the dual group of $\mathbf{R}_{>0}$, since the dual of the compact $C_F^1$ is discrete (and so has no nonzero invariant differential operator).
 
 We can $k$ small enough so that $C_F^0/k$ has the same dimension as $\mathcal{L}(C_F^0)$ (as we may clearly do). Integrating $k$-invariant functions on $C_F$ and over $C_F/k$ differs only in a constant multiplier by a volume, so via Proposition D.1.10.6 we see that for each real number $p\ge 1$, as we vary $P\in\mathbf{R}[X]$, $m\in\mathbf{N}$, and $\alpha\in\mathbf{N}^{r_1+2r_2-1}$ the associated seminorms
 $$
@@ -2620,14 +2621,14 @@ induced continuous action of $G$, without mentioning the linear topological isom
 
 Similarly, for $T\in\mathscr L(\mathcal S(G))$ compatible with the continuous left-translation action of $G^1$ on $\mathcal S(G)$ up to continuous automorphisms of $G$ (i.e. satisfying the identity in (D.2.2.6) for every $g\in G^1$) we will refer to $T_{\omega}$ and $\overline{T}_{\omega}$ as the operators induced by $T$ “on isotypes”. Constructions on isotypes of $\mathcal S(G)$ are inherited by the isotypes of $E$ under the assumptions of the Lemma on $E$ and on continuous endomorphisms of $\mathcal S(G)$ extending to $E$ compatibly with the continuous actions of $G$ on source and target.
 
-Next we record a description of the isotypes of $\mathcal S(G)$ for $G$ a modulated Hausdorff locally compact abelian group. We refer the reader to §C.2.3.4, particularly Corollary C.2.3.12 and Proposition C.2.3.13, for the main properties of the inductive tensor product topology $\otimes_{\iota}$ and its completion $\widehat{\overline{\otimes}}_{\iota}$ that are used below.
+Next we record a description of the isotypes of $\mathcal S(G)$ for $G$ a modulated Hausdorff locally compact abelian group. We refer the reader to §C.2.3.4, particularly Corollary C.2.3.12 and Proposition C.2.3.13, for the main properties of the inductive tensor product topology $\otimes_{\iota}$ and its completion $\overline{\otimes}$ that are used below.
 
 LEMMA D.2.2.2 ($G^1$-isotypes under coarsening of the topology - II). *Let $G$ be a second-countable Hausdorff locally compact abelian modulated group, with module $|\cdot|_G$, and let $\tau$ be a continuous homomorphic section to the module $|\cdot|_G$.*
 
 *(1) The section $\tau$ induces a linear topological isomorphism*
 
 $$
-\mathcal S(G^1)\widehat{\overline{\otimes}}_{\iota}\mathcal S(\Gamma)\to\mathcal S(G) \tag{D.2.2.10}
+\mathcal S(G^1)\overline{\otimes}\mathcal S(\Gamma)\to\mathcal S(G) \tag{D.2.2.10}
 $$
 
 *compatible with the continuous left-translation action of $G^1\times\Gamma$ on the source through the tensor factors, and of $G$ on the target.*
@@ -3495,7 +3496,7 @@ $$
 p_D(c):=(Dc)(e) \tag{D.3.4.1}
 $$
 
-for $e\in G$ the neutral element (on $\widehat{G}\subset\Omega(G)$ this recovers the symbol $p(D)$ from Definition D.1.6.10). Fix a Haar measure $\mu$ on $G$ to define the Fourier-Mellin transform $M : \mathcal{S}_{\overline{I}}G)\to\mathcal{S}_I(G)$ $M_I\to\mathscr{H}(\Omega(G)_I)$ by $M(\phi) : c\mapsto\int_G\phi(g)c(g)\,\mathrm{d}\mu(g)$.
+for $e\in G$ the neutral element (on $\widehat{G}\subset\Omega(G)$ this recovers the symbol $p(D)$ from Definition D.1.6.10). Fix a Haar measure $\mu$ on $G$ to define the Fourier-Mellin transform $M : \mathcal{S}_{\overline{I}}G)\to\mathcal{S}_I(G)\xrightarrow{M_I}\mathscr{H}(\Omega(G)_I)$ by $M(\phi) : c\mapsto\int_G\phi(g)c(g)\,\mathrm{d}\mu(g)$.
 
 For every bounded subset $\mathcal{B}\subset\mathcal{S}_{\overline{I}}(G)$ and a fixed choice of $\omega\in\widehat{G}^1$ there exist constants $C_{\mathcal{B},D,I}>0$ and $M_{\omega,\mathcal{B},D,I}>0$ such that
 
@@ -3603,13 +3604,13 @@ Remark D.3.5.2. We recall that for $G$ an $\mathbf{R}_{>0}$-modulated group and 
 
 **D.3. SCHWARTZ-BRUHAT FUNCTIONS WITH I-EXPONENTIAL DECAY** · **819**
 
-with $s\in\mathbf{C}$ and $\chi$ varying over a choice $\mathfrak{F}_{G^1}$ of continuous (unitary) characters each lifting each point of the discrete set $\widehat{G}^1$, the continuous characters of $G$ that are trivial on the discrete closed subgroup $\gamma^{\mathbf{Z}}$ are all parametrized as
+with $s\in\mathbf{C}$ and $\chi$ varying over a choice $\widetilde{G^1}$ of continuous (unitary) characters each lifting each point of the discrete set $\widehat{G^1}$, the continuous characters of $G$ that are trivial on the discrete closed subgroup $\gamma^{\mathbf{Z}}$ are all parametrized as
 
 $$
 \chi|\cdot|^{\frac{2\pi im}{\log|\gamma|_G}-it(\chi)}_G
 $$
 
-as $\chi$ varies over $\mathfrak{F}_{G^1}$ and $m\in\mathbf{Z}$, with $t(\chi)$ the unique real number contained in $[0,2\pi/\log|\gamma|_G)$ satisfying:
+as $\chi$ varies over $\widetilde{G^1}$ and $m\in\mathbf{Z}$, with $t(\chi)$ the unique real number contained in $[0,2\pi/\log|\gamma|_G)$ satisfying:
 
 $$
 e^{it(\chi)\log|\gamma|_G}=\chi(\gamma). \tag{D.3.5.4}
@@ -3673,7 +3674,7 @@ $$
 
 for $(a,k)\in I\times\mathbf{N}$ with $I\subset(0,\infty)$. Pick $\psi\in\mathcal{D}(\mathbf{R})$ with support contained in $[-2,2]$, and $\psi(\mathbf{R})\subset\mathbf{R}_{\ge 0}$ with $\psi([-1,1])=\{1\}$. Choose $\varphi\in\mathcal{S}_I(\mathbf{R})$.
 
-For every integer $m\ge 1$, we define $\psi_m(x):=\psi(x/m)$ and define $\phi_m:=\psi_m\cdot\varphi$, an element of $\mathcal{D}(\mathbf{R})$. We now show that $\lim_{m\to+\infty}\phi_m=\phi$ in $\mathcal{S}_I(\mathbf{R})$, so $\mathcal{D}(\mathbf{R})$ would then be dense in the metric space $\mathcal{S}_I(\mathbf{R})$. For all $x\in\mathbf{R}$, every integer $m\ge 1$, and every pair $(a,k)\in I\times\mathbf{N}$,
+For every integer $m\ge 1$, we define $\psi_m(x):=\psi(x/m)$ and define $\phi_m:=\psi_m\cdot\phi$, an element of $\mathcal{D}(\mathbf{R})$. We now show that $\lim_{m\to+\infty}\phi_m=\phi$ in $\mathcal{S}_I(\mathbf{R})$, so $\mathcal{D}(\mathbf{R})$ would then be dense in the metric space $\mathcal{S}_I(\mathbf{R})$. For all $x\in\mathbf{R}$, every integer $m\ge 1$, and every pair $(a,k)\in I\times\mathbf{N}$,
 
 $$
 \partial^k\phi_m(x)=\sum_{0\le r\le k}\left(\frac{1}{m}\right)^{k-r}\binom{k}{r}\partial^r_x\phi(x)\partial^{k-r}_x\psi(x/m) \tag{D.3.6.2}

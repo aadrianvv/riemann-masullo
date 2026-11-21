@@ -293,7 +293,7 @@ Similarly, as a consequence of Theorem 3.3.1.1, the $S$-Idelic $Z$-function oper
 Recall from (3.3.1.32) that $L_S(c)$ is related to the correcting factor $\rho_S(c)$ in the $S$-local functional equation of (3.3.1.2) from Theorem 3.3.1.1, by the identity of meromorphic functions on $\Omega(J_{F,S})$:
 
 $$
-\rho_S(c) = \epsilon_S(c)\frac{L_S(c)}{L_S(\bar{c})}
+\rho_S(c) = \epsilon_S(c)\frac{L_S(c)}{L_S(\widehat{c})}
 $$
 
 ## PDF page 227
@@ -934,9 +934,9 @@ $$
 P_v:\mathcal S(F_v)\to\mathcal S(F_v) \tag{5.3.1.1}
 $$
 
-defined by $P_v(f):=f-\rho_v(\pi_v,f)$, does not depend on the choice of $\pi_v$, and it is a linear topological embedding. Its range is the kernel of the continuous functional $\delta_0\in\mathcal S(F_v)'$.
+defined by $P_v(f):=f-\rho_v(\pi_v,f)$, does not depend on the choice of $\pi_v$, and it is a linear topological embedding. Its range is the kernel of the continuous functional $\delta_0\in\mathcal S(F_v)'_\beta$.
 
-Proof. The range of $P_v$ is closed by Proposition C.2.5.1, since $\mathcal S(F_v)$ carries the finest locally convex topology by Proposition 2.1.2.4. It is contained in the kernel of $\delta_0\in\mathcal S(F_v)'$. Assume $f\in\mathcal S(F_v)$ is such that $f(0)=0$.
+Proof. The range of $P_v$ is closed by Proposition C.2.5.1, since $\mathcal S(F_v)$ carries the finest locally convex topology by Proposition 2.1.2.4. It is contained in the kernel of $\delta_0\in\mathcal S(F_v)'_\beta$. Assume $f\in\mathcal S(F_v)$ is such that $f(0)=0$.
 
 Since $\delta_0$ is $\mathcal O_{F_v}^\times$-invariant, we may write its kernel, up to linear topological isomorphism, as $\bigoplus_{\omega\in\widehat{\mathcal O_{F_v}^\times}}\ker(\delta_0)(\omega)$, compatibly with the linear and topological decomposition $\mathcal S(F_v)\simeq\bigoplus_{\omega\in\widehat{\mathcal O_{F_v}^\times}}\mathcal S(F_v)(\omega)$, and since $P_v$ is compatible with both decompositions and multiplication by $\pi_v^{-1}$ is a bounded invertible linear operator on $\ker(\delta_0)$ permuting the linear topological direct summands, we may assume without loss of generality that $f$ is $\mathcal O_{F_v}^\times$-invariant.
 
@@ -950,16 +950,16 @@ $$
 
 for $v$ any finite place of $F$, defined in (5.3.1.1).
 
-We recall from Theorem 3.4.3.3 that for each non-Archimedean place $v$ of $F$, and for each $c_v\in\widehat{F_v^\times}$, there exists a unique local eigendistribution $\Delta_v^\chi\in\mathcal S(F_v)'$ (see Theorem 3.4.3.3(1)) such that:
+We recall from Theorem 3.4.3.3 that for each non-Archimedean place $v$ of $F$, and for each $c_v\in\Omega(F_v^\times)$, there exists a unique local eigendistribution $\Delta_v^\chi\in\mathcal S(F_v)'_\beta$ (see Theorem 3.4.3.3(1)) such that:
 
 $$
-\langle\Delta_v^\chi(c_v),\mathrm{1}_{\mathcal O_{F_v}^\times}\rangle_{\mathcal S(F_v)',\mathcal S(F_v)}=1 \tag{5.3.1.3}
+\langle\Delta_v^\chi(c_v),\mathrm{1}_{\mathcal O_{F_v}^\times}\rangle_{\mathcal S(F_v)'_\beta,\mathcal S(F_v)}=1 \tag{5.3.1.3}
 $$
 
 if $c_v$ is unramified at $v$, and
 
 $$
-\langle\Delta_v^\chi(c_v),c_v^{-1}\mathrm{1}_{\mathcal O_{F_v}^\times}\rangle_{\mathcal S(F_v)',\mathcal S(F_v)}=1 \tag{5.3.1.4}
+\langle\Delta_v^\chi(c_v),c_v^{-1}\mathrm{1}_{\mathcal O_{F_v}^\times}\rangle_{\mathcal S(F_v)'_\beta,\mathcal S(F_v)}=1 \tag{5.3.1.4}
 $$
 
 if $c$ is ramified at $v$.
@@ -972,7 +972,7 @@ For $\pi_v\in F_v$ a choice of uniformizer at $v$, $P_v$ is defined by sending $
 
 **5.3. WEIL’S PRINCIPAL VALUE OPERATORS** · **241**
 
-Lemma 5.3.1.1 described the range of $P_v$: it is the kernel of $\delta_0\in\mathcal S(F_v)'$. The kernel of $P_v$ is trivial: indeed, if $f(x)=f(\pi_v^{-1}x)$ for all $x\in F_v$, then we also have $f(\pi_v^{\mathbf Z}x)=f(x)$ for all $x\in F_v$, and since $f$ is compactly supported, say over $K_v\subset F_v$, and $\pi_v^{\mathbf Z}K_v\cap K_v$ is finite, we see that $f$ must vanish identically, since for each $x\in K_v$ there exists $m\in\mathbf Z$ such that $\pi_v^mx\notin K_v$.
+Lemma 5.3.1.1 described the range of $P_v$: it is the kernel of $\delta_0\in\mathcal S(F_v)'_\beta$. The kernel of $P_v$ is trivial: indeed, if $f(x)=f(\pi_v^{-1}x)$ for all $x\in F_v$, then we also have $f(\pi_v^{\mathbf Z}x)=f(x)$ for all $x\in F_v$, and since $f$ is compactly supported, say over $K_v\subset F_v$, and $\pi_v^{\mathbf Z}K_v\cap K_v$ is finite, we see that $f$ must vanish identically, since for each $x\in K_v$ there exists $m\in\mathbf Z$ such that $\pi_v^mx\notin K_v$.
 
 Lemma 5.3.1.1 proves that $P_v$ is relatively open (in fact, a linear topological embedding onto its closed range), thanks to the Hausdorff locally convex topology on $\mathcal S(F_v)$ being the finest locally convex topology (see Proposition 2.1.2.4).
 
@@ -1080,17 +1080,17 @@ We begin with the two cases of interest, $\mathbf R$, $\mathbf C$.
 
 We recall here that the bi-dual of a Hausdorff locally convex topological $\mathbf C$-vector space is defined to be the continuous dual of the strong dual; see [Jar, Part II,Ch.11,§11.2]. This convention, adopted throughout this work, is also in force throughout [Köthe-I, Köthe-II] (see [Köthe-I, Ch.V,§23,p.298]), as is in [Scha, Ch.IV,p.143], from which we shall be referring on occasion throughout this subsection, concerning topologies on the bi-dual.
 
-Recall that the support of a tempered distribution $T\in\mathcal S(\mathbf R^m)'$ for each integer $m\ge 0$, is defined to be the smallest closed subset $\mathrm{supp}(T)$ of $\mathbf R^m$ such that for any $x\in\mathbf R^m\setminus\mathrm{supp}(T)$, there exists an open neighborhood $U\subset\mathbf R^m\setminus\mathrm{supp}(T)$ of $x$ such that for any $f\in\mathcal S(\mathbf R^m)$ whose support is entirely contained in $U$, then $\langle T,f\rangle_{\mathcal S(\mathbf R^m)',\mathcal S(\mathbf R^m)}=0$.
+Recall that the support of a tempered distribution $T\in\mathcal S(\mathbf R^m)'$ for each integer $m\ge 0$, is defined to be the smallest closed subset $\mathrm{supp}(T)$ of $\mathbf R^m$ such that for any $x\in\mathbf R^m\setminus\mathrm{supp}(T)$, there exists an open neighborhood $U\subset\mathbf R^m\setminus\mathrm{supp}(T)$ of $x$ such that for any $f\in\mathcal S(\mathbf R^m)$ whose support is entirely contained in $U$, then $\langle T,f\rangle_{\mathcal S(\mathbf R^m)'_\beta,\mathcal S(\mathbf R^m)}=0$.
 
-We refer the reader to [Hörm, Ch.II,§2.2,Def.2.2.2], which applies by definition to elements of $\mathcal S(\mathbf R^m)'$ too, since $\mathcal S(\mathbf R^m)'$ is a $\mathbf C$-linear subspace of $\mathcal D(\mathbf R^m)'$ equipped with a finer topology, and to Definition D.1.8.2, which shows how to generalize this definition to tempered distributions on Hausdorff locally compact abelian groups.
+We refer the reader to [Hörm, Ch.II,§2.2,Def.2.2.2], which applies by definition to elements of $\mathcal S(\mathbf R^m)'_\beta$ too, since $\mathcal S(\mathbf R^m)'_\beta$ is a $\mathbf C$-linear subspace of $\mathcal D(\mathbf R^m)'_\beta$ equipped with a finer topology, and to Definition D.1.8.2, which shows how to generalize this definition to tempered distributions on Hausdorff locally compact abelian groups.
 
-Theorem 5.3.2.1. Let $T\in\mathcal S(\mathbf R)'$ be supported at $0\in\mathbf R$. Then there exists an integer $N\ge 0$, complex numbers $c_0,\dots,c_N$, such that, as elements of $\mathcal S(\mathbf R)'$, we have:
+Theorem 5.3.2.1. Let $T\in\mathcal S(\mathbf R)'_\beta$ be supported at $0\in\mathbf R$. Then there exists an integer $N\ge 0$, complex numbers $c_0,\dots,c_N$, such that, as elements of $\mathcal S(\mathbf R)'_\beta$, we have:
 
 $$
 T=\sum_{0\le k\le N}c_k\delta_0^{(k)}. \tag{5.3.2.1}
 $$
 
-(1) Let $\mathcal S_{00}(\mathbf R)$ be the closed subspace defined as $\bigcap_{k\ge 0}\ker(\delta_0^{(k)})$. The orthogonal in $\mathcal S(\mathbf R)'$ of $\mathcal S_{00}(\mathbf R)$ with respect to the duality $\langle\mathcal S(\mathbf R),\mathcal S(\mathbf R)'\rangle$ is a linear subspace of $\mathcal S(\mathbf R)'$ linearly isomorphic to the continuous dual of the quotient $\mathcal S(\mathbf R)/\mathcal S_{00}(\mathbf R)$, which, topologized with the strong topology on the continuous dual of the quotient, is linearly and topologically isomorphic to the $\mathbf C$-linear space underlying the polynomial algebra $\mathbf C[X]$ equipped with the finest locally convex topology, equivalently the topology induced by the family of seminorms $\{p_N\}_{N\ge 0}$ with:
+(1) Let $\mathcal S_{00}(\mathbf R)$ be the closed subspace defined as $\bigcap_{k\ge 0}\ker(\delta_0^{(k)})$. The orthogonal in $\mathcal S(\mathbf R)'_\beta$ of $\mathcal S_{00}(\mathbf R)$ with respect to the duality $\langle\mathcal S(\mathbf R),\mathcal S(\mathbf R)'_\beta\rangle$ is a linear subspace of $\mathcal S(\mathbf R)'$ linearly isomorphic to the continuous dual of the quotient $\mathcal S(\mathbf R)/\mathcal S_{00}(\mathbf R)$, which, topologized with the strong topology on the continuous dual of the quotient, is linearly and topologically isomorphic to the $\mathbf C$-linear space underlying the polynomial algebra $\mathbf C[X]$ equipped with the finest locally convex topology, equivalently the topology induced by the family of seminorms $\{p_N\}_{N\ge 0}$ with:
 
 $$
 p_N(c_0+c_1X+\dots+c_NX^N):=\sup_{0\le k\le N}\lvert c_k\rvert \tag{5.3.2.2}
@@ -1106,27 +1106,27 @@ $$
 
 the isomorphism being defined by sending each $f\in\mathcal S(\mathbf R)$ to the formal power series $\sum_{k\ge 0}\frac{f^{(k)}(0)}{k!}X^k$.
 
-Remark 5.3.2.2. Note that the strong topology of the quotient topology of $\mathcal S_{00}(\mathbf R)'$ is equivalent to the subspace topology of the strong topology on $\mathcal S(\mathbf R)'$, since $\mathcal S(\mathbf R)$ is quasi-normable and its bounded subsets are pre-compact, by nuclearity (see [Jar, Part II,Ch.10,§10.7,Cor.3]). See Lemma 4.2.1.3. There is, in particular, no ambiguity on how to topologize $\mathcal S_{00}(\mathbf R)'$.
+Remark 5.3.2.2. Note that the strong topology of the quotient topology of $\mathcal S_{00}(\mathbf R)^\perp$ is equivalent to the subspace topology of the strong topology on $\mathcal S(\mathbf R)'$, since $\mathcal S(\mathbf R)$ is quasi-normable and its bounded subsets are pre-compact, by nuclearity (see [Jar, Part II,Ch.10,§10.7,Cor.3]). See Lemma 4.2.1.3. There is, in particular, no ambiguity on how to topologize $\mathcal S_{00}(\mathbf R)^\perp$.
 
-Proof. By [Hörm, Ch.VII,Thm.7.1.18,p.168], since, if $T\in\mathcal D(\mathbf R)'$ is supported at $0\in\mathbf R$, then its restriction (see [Hörm, Ch.II,§2.2,p.41]) to $\mathbf R\setminus\{0\}$ is homogeneous of degree $a\in\mathbf R$ (see [Hörm,
+Proof. By [Hörm, Ch.VII,Thm.7.1.18,p.168], since, if $T\in\mathcal D(\mathbf R)'_\beta$ is supported at $0\in\mathbf R$, then its restriction (see [Hörm, Ch.II,§2.2,p.41]) to $\mathbf R\setminus\{0\}$ is homogeneous of degree $a\in\mathbf R$ (see [Hörm,
 
 ## PDF page 244
 
 **244** · **CHAPTER 5. SPACES OF ADELIC $\theta$-FUNCTIONS AND IDELIC Z-FUNCTIONS**
 
-Ch.III,Def.3.2.2,p.74]) for any $a\in\mathbf R$, and hence $T$ is tempered and supported at the origin. If $T\in\mathcal S(\mathbf R)'$ is supported at the origin, then, since the continuous injective linear operator $\mathcal D(\mathbf R)\to\mathcal S(\mathbf R)$ induces a continuous injective (by denseness of $\mathcal D(\mathbf R)\subset\mathcal S(\mathbf R)$; see [Hörm, Ch.VII,Lemma 7.1.8,p.163]) linear operator $\mathcal S(\mathbf R)'\to\mathcal D(\mathbf R)'$, $T$ is also a distribution supported at $0$.
+Ch.III,Def.3.2.2,p.74]) for any $a\in\mathbf R$, and hence $T$ is tempered and supported at the origin. If $T\in\mathcal S(\mathbf R)'_\beta$ is supported at the origin, then, since the continuous injective linear operator $\mathcal D(\mathbf R)\to\mathcal S(\mathbf R)$ induces a continuous injective (by denseness of $\mathcal D(\mathbf R)\subset\mathcal S(\mathbf R)$; see [Hörm, Ch.VII,Lemma 7.1.8,p.163]) linear operator $\mathcal S(\mathbf R)'_\beta\to\mathcal D(\mathbf R)'_\beta$, $T$ is also a distribution supported at $0$.
 
-The continuous injective linear operator $\mathcal S(\mathbf R)'\to\mathcal D(\mathbf R)'$ therefore induces a linear bijection from the space of tempered distributions supported at $0\in\mathbf R$, and the space of distributions supported at $0\in\mathbf R$.
+The continuous injective linear operator $\mathcal S(\mathbf R)'_\beta\to\mathcal D(\mathbf R)'_\beta$ therefore induces a linear bijection from the space of tempered distributions supported at $0\in\mathbf R$, and the space of distributions supported at $0\in\mathbf R$.
 
-We note that every distribution $T\in\mathcal D(\mathbf R)'$ supported at $0\in\mathbf R$ is of finite order (see [Hörm, Ch.II,Example 2.1.2,p.34]). By [Hörm, Ch.II,Thm.2.3.4,p.46], $T=\sum_{0\le k\le N}c_k\delta_0^{(k)}$, for $N$ the finite order of $T$.
+We note that every distribution $T\in\mathcal D(\mathbf R)'_\beta$ supported at $0\in\mathbf R$ is of finite order (see [Hörm, Ch.II,Example 2.1.2,p.34]). By [Hörm, Ch.II,Thm.2.3.4,p.46], $T=\sum_{0\le k\le N}c_k\delta_0^{(k)}$, for $N$ the finite order of $T$.
 
-(1) : Let $T\in\mathcal S(\mathbf R)'$ be a tempered distribution such that $T(\mathcal S_{00}(\mathbf R))=0$, i.e. an element of $\mathcal S_{00}(\mathbf R)^\circ\subset\mathcal S(\mathbf R)'$. Let $x\in\mathbf R$, $x\ne 0$. For any open neighborhood $U\subset\mathbf R$ of $x$ such that $0\notin U$, we let $\varphi\in\mathcal D(\mathbf R)$ be supported within $U$.
+(1) : Let $T\in\mathcal S(\mathbf R)'_\beta$ be a tempered distribution such that $T(\mathcal S_{00}(\mathbf R))=0$, i.e. an element of $\mathcal S_{00}(\mathbf R)^\perp\subset\mathcal S(\mathbf R)'_\beta$. Let $x\in\mathbf R$, $x\ne 0$. For any open neighborhood $U\subset\mathbf R$ of $x$ such that $0\notin U$, we let $\phi\in\mathcal D(\mathbf R)$ be supported within $U$.
 
-Then $\varphi\in\mathcal S_{00}(\mathbf R)$, and hence $T(\varphi)=0$. It follows that $T$ is supported at $0$, and hence of the form as in (5.3.2.1). Conversely, every tempered distribution of the form as in (5.3.2.1) is an element of $\mathcal S_{00}(\mathbf R)^\circ$.
+Then $\phi\in\mathcal S_{00}(\mathbf R)$, and hence $T(\phi)=0$. It follows that $T$ is supported at $0$, and hence of the form as in (5.3.2.1). Conversely, every tempered distribution of the form as in (5.3.2.1) is an element of $\mathcal S_{00}(\mathbf R)^\perp$.
 
-This shows that indeed the assignment $X^N\mapsto\frac{1}{N!}\delta_0^{(N)}$ is a linear isomorphism $\mathbf C[X]\to\mathcal S_{00}(\mathbf R)^\circ$, and the degree $N$ of a polynomial matches the order of the resulting tempered distribution supported at $0\in\mathbf R$.
+This shows that indeed the assignment $X^N\mapsto\frac{1}{N!}\delta_0^{(N)}$ is a linear isomorphism $\mathbf C[X]\to\mathcal S_{00}(\mathbf R)^\perp$, and the degree $N$ of a polynomial matches the order of the resulting tempered distribution supported at $0\in\mathbf R$.
 
-The linear operator $\mathbf C[X]\to\mathcal S_{00}(\mathbf R)^\circ$ is continuous, upon endowing the source with the finest locally convex topology, and the target with the strong topology on the continuous dual of the quotient $\mathcal S(\mathbf R)/\mathcal S_{00}(\mathbf R)$, noting that by [NB, Thm.8.12.1(a)], the continuous dual of $\mathcal S(\mathbf R)/\mathcal S_{00}(\mathbf R)$ is linearly isomorphic to $\mathcal S_{00}(\mathbf R)^\circ$.
+The linear operator $\mathbf C[X]\to\mathcal S_{00}(\mathbf R)^\perp$ is continuous, upon endowing the source with the finest locally convex topology, and the target with the strong topology on the continuous dual of the quotient $\mathcal S(\mathbf R)/\mathcal S_{00}(\mathbf R)$, noting that by [NB, Thm.8.12.1(a)], the continuous dual of $\mathcal S(\mathbf R)/\mathcal S_{00}(\mathbf R)$ is linearly isomorphic to $\mathcal S_{00}(\mathbf R)^\perp$.
 
 It is therefore a continuous bijection.
 
@@ -1154,7 +1154,7 @@ The continuous operator $\mathbf C[X]\to F_\beta'$ is therefore a linear topolog
 
 **5.3. WEIL’S PRINCIPAL VALUE OPERATORS** · **245**
 
-It follows that the composition of the linear topological isomorphisms $\mathbf C[X]\to F_\beta'\simeq\mathcal S_{00}(\mathbf R)^\circ$, which is the linear operator $\mathbf C[X]\to\mathcal S_{00}(\mathbf R)^\circ$, is indeed a linear topological isomorphism.
+It follows that the composition of the linear topological isomorphisms $\mathbf C[X]\to F_\beta'\simeq\mathcal S_{00}(\mathbf R)^\perp$, which is the linear operator $\mathbf C[X]\to\mathcal S_{00}(\mathbf R)^\perp$, is indeed a linear topological isomorphism.
 
 (2) : That the continuous linear operator $\mathcal S(\mathbf R)/\mathcal S_{00}(\mathbf R)\to\mathbf C[[X]]$ is a linear topological isomorphism follows from (1) and [Tre, Part II,Ch.22,Thm.22.1(b),p.228] (see also [Tre, Part I,Ch.10,Example III,p.91] and [Tre, Part I,Ch.13,Example I,p.130]), which gives that its continuous adjoint is a linear topological isomorphism, by [NB, Thm.8.13.5] and [NB, Thm.14.4.5(b)]. $\square$
 
@@ -1162,7 +1162,7 @@ Theorem 5.3.2.3. Let $m\ge 0$ be an integer. We denote by $x_k:\mathbf R^m\to\ma
 
 For $x\in\mathbf R^m$, we denote by $x_Z$ the vector in $\mathbf R^{\lvert Z\rvert}$ whose coordinates are $(x_k)_{k\in Z}$, and by $x_{Z^c}$ the vector in $\mathbf R^{m-\lvert Z\rvert}$ whose coordinates are $(x_k)_{k\notin Z}$, adopting the same notation for the multi-indices $\alpha_Z$, $\alpha_{Z^c}$ associated to $\alpha\in\mathbf N^m$.
 
-Let $T\in\mathcal D(\mathbf R^m)'$ be compactly supported within the closed subset $H_Z:=\bigcap_{k\in Z}H_k$. Assume $T$ is of finite order $N\ge 0$.
+Let $T\in\mathcal D(\mathbf R^m)'_\beta$ be compactly supported within the closed subset $H_Z:=\bigcap_{k\in Z}H_k$. Assume $T$ is of finite order $N\ge 0$.
 
 Let $R_{H_Z}:\mathcal D(\mathbf R^m)\to\mathcal D(\mathbf R^{m-\lvert Z\rvert})$ be the linear operator assigned by sending $f$ to the smooth function $R_{H_Z}(f)$ obtained by restriction of $f$ to $H_Z\simeq\mathbf R^{m-\lvert Z\rvert}$.
 
@@ -1170,25 +1170,25 @@ Then:
 
 (1) $R_{H_Z}$ is valued in $\mathcal D(\mathbf R^{m-\lvert Z\rvert})$ and continuous, and the same assignment defines a continuous linear operator $R_{H_Z}:\mathcal S(\mathbf R^m)\to\mathcal S(\mathbf R^{m-\lvert Z\rvert})$.
 
-(2) There exist $N^m$ distributions $T_\alpha\in\mathcal D(\mathbf R^{m-\lvert Z\rvert})'$, for $\alpha\in\mathbf N^m$ such that $\lvert\alpha\rvert\le N$, compactly supported and of order $N-\lvert\alpha\rvert$, and such that for all $\varphi\in\mathcal D(\mathbf R^m)$, we have:
+(2) There exist $N^m$ distributions $T_\alpha\in\mathcal D(\mathbf R^{m-\lvert Z\rvert})'_\beta$, for $\alpha\in\mathbf N^m$ such that $\lvert\alpha\rvert\le N$, compactly supported and of order $N-\lvert\alpha\rvert$, and such that for all $\phi\in\mathcal D(\mathbf R^m)$, we have:
 
 $$
-\langle T,\varphi\rangle_{\mathcal D(\mathbf R^m)',\mathcal D(\mathbf R^m)}=\sum_{\alpha\in\mathbf N^m:\lvert\alpha\rvert\le N}\langle R_{H_Z}^*(T_\alpha),\partial_x^\alpha\varphi\rangle_{\mathcal D(\mathbf R^m)',\mathcal D(\mathbf R^m)}. \tag{5.3.2.4}
+\langle T,\phi\rangle_{\mathcal D(\mathbf R^m)'_\beta,\mathcal D(\mathbf R^m)}=\sum_{\alpha\in\mathbf N^m:\lvert\alpha\rvert\le N}\langle R_{H_Z}^*(T_\alpha),\partial_x^\alpha\phi\rangle_{\mathcal D(\mathbf R^m)'_\beta,\mathcal D(\mathbf R^m)}. \tag{5.3.2.4}
 $$
 
-(3) For any $\varphi\in\mathcal D(\mathbf R^m)$ of the form $\varphi=\psi_1\otimes\psi_2$ with $\psi_1\in\mathcal D(\mathbf R^{\lvert Z\rvert})$ and $\psi_2\in\mathcal D(\mathbf R^{m-\lvert Z\rvert})$, the identity in (5.3.2.4) reads:
+(3) For any $\phi\in\mathcal D(\mathbf R^m)$ of the form $\phi=\psi_1\otimes\psi_2$ with $\psi_1\in\mathcal D(\mathbf R^{\lvert Z\rvert})$ and $\psi_2\in\mathcal D(\mathbf R^{m-\lvert Z\rvert})$, the identity in (5.3.2.4) reads:
 
 $$
-\langle T,\varphi\rangle_{\mathcal D(\mathbf R^m)',\mathcal D(\mathbf R^m)}=\sum_{\alpha\in\mathbf N^m:\lvert\alpha\rvert\le N}(\partial_{x_Z}^{\alpha_Z}\delta_0)(\psi_1)\cdot\langle\partial_{x_{Z^c}}^{\alpha_{Z^c}}T_\alpha,\psi_2\rangle_{\mathcal D(\mathbf R^{m-\lvert Z\rvert})',\mathcal D(\mathbf R^{m-\lvert Z\rvert})}. \tag{5.3.2.5}
+\langle T,\phi\rangle_{\mathcal D(\mathbf R^m)'_\beta,\mathcal D(\mathbf R^m)}=\sum_{\alpha\in\mathbf N^m:\lvert\alpha\rvert\le N}(\partial_{x_Z}^{\alpha_Z}\delta_0)(\psi_1)\cdot\langle\partial_{x_{Z^c}}^{\alpha_{Z^c}}T_\alpha,\psi_2\rangle_{\mathcal D(\mathbf R^{m-\lvert Z\rvert})'_\beta,\mathcal D(\mathbf R^{m-\lvert Z\rvert})}. \tag{5.3.2.5}
 $$
 
-(4) For $T_\alpha\in\mathcal D(\mathbf R^{m-\lvert Z\rvert})'$ the distributions of order $N-\lvert\alpha\rvert$ from (1), we have:
+(4) For $T_\alpha\in\mathcal D(\mathbf R^{m-\lvert Z\rvert})'_\beta$ the distributions of order $N-\lvert\alpha\rvert$ from (1), we have:
 
 $$
 T=\sum_{\alpha\in\mathbf N^m:\lvert\alpha\rvert\le N}(\partial_{x_Z}^{\alpha_Z}\delta_0)\otimes(\partial_{x_{Z^c}}^{\alpha_{Z^c}}T_\alpha). \tag{5.3.2.6}
 $$
 
-(5) $T$ is tempered and so are the $T_\alpha$ from (5.3.2.6) and their derivatives, and (5.3.2.6) holds in $\mathcal S(\mathbf R^m)'$.
+(5) $T$ is tempered and so are the $T_\alpha$ from (5.3.2.6) and their derivatives, and (5.3.2.6) holds in $\mathcal S(\mathbf R^m)'_\beta$.
 
 Proof. (1) : The definition of $R_{H_Z}$ makes sense on $C^\infty(\mathbf R^m)$. The restriction to $H_Z$ of a smooth function on $\mathbf R^m$ is indeed smooth on $H_Z$, since $H_Z$ is a global smooth complete intersection in $\mathbf R^m$ defined as the vanishing locus of the coordinates $x_k:\mathbf R^m\to\mathbf R$ for $k\in Z$, and formation of the derivatives $\partial_{x_k}^{\alpha_k}$ for $k\in Z$ commutes with $R_{H_Z}$ on each $f\in C^\infty(\mathbf R^m)$.
 
@@ -1204,39 +1204,39 @@ which implies that $R_{H_Z}(\mathcal S(\mathbf R^m))\subset\mathcal S(\mathbf R^
 
 **246** · **CHAPTER 5. SPACES OF ADELIC $\theta$-FUNCTIONS AND IDELIC Z-FUNCTIONS**
 
-If $\varphi\in\mathcal D(\mathbf R^m)$ is supported on the compact subset $K\subset\mathbf R^m$, then $R_{H_Z}(\varphi)$ is smooth and it is supported on the compact subset $K_Z$ obtained as the compact image of $K$ under the continuous projection $\mathbf R^m\to H_Z$. In particular, $R_{H_Z}(\mathcal D(\mathbf R^m))\subset\mathcal D(\mathbf R^{m-\lvert Z\rvert})$.
+If $\phi\in\mathcal D(\mathbf R^m)$ is supported on the compact subset $K\subset\mathbf R^m$, then $R_{H_Z}(\phi)$ is smooth and it is supported on the compact subset $K_Z$ obtained as the compact image of $K$ under the continuous projection $\mathbf R^m\to H_Z$. In particular, $R_{H_Z}(\mathcal D(\mathbf R^m))\subset\mathcal D(\mathbf R^{m-\lvert Z\rvert})$.
 
-The same estimate in (5.3.2.7) applied to $\gamma=0$ and to $f=\varphi$ supported on $K$, implies that $R_{H_Z}$ is continuous as an operator $\mathcal D(\mathbf R^m)\to\mathcal D(\mathbf R^{m-\lvert Z\rvert})$.
+The same estimate in (5.3.2.7) applied to $\gamma=0$ and to $f=\phi$ supported on $K$, implies that $R_{H_Z}$ is continuous as an operator $\mathcal D(\mathbf R^m)\to\mathcal D(\mathbf R^{m-\lvert Z\rvert})$.
 
 (2) : This is [Hörm, Ch.II,§2.3,Thm.2.3.5,p.47].
 
-(3) and (4) : If $\varphi=\psi_1\otimes\psi_2$ with $\psi_1\in\mathcal D(\mathbf R^{\lvert Z\rvert})$ and $\psi_2\in\mathcal D(\mathbf R^{m-\lvert Z\rvert})$, then we have:
+(3) and (4) : If $\phi=\psi_1\otimes\psi_2$ with $\psi_1\in\mathcal D(\mathbf R^{\lvert Z\rvert})$ and $\psi_2\in\mathcal D(\mathbf R^{m-\lvert Z\rvert})$, then we have:
 
 $$
-\langle R_{H_Z}^*(T_\alpha),\partial_x^\alpha\varphi\rangle_{\mathcal D(\mathbf R^m)',\mathcal D(\mathbf R^m)}=\langle T_\alpha,R_{H_Z}(\partial_x^\alpha\varphi)\rangle_{\mathcal D(\mathbf R^m)',\mathcal D(\mathbf R^m)} \tag{5.3.2.8}
-$$
-
-$$
-=\langle T_\alpha,\delta_0(\partial_{x_Z}^{\alpha_Z}(\varphi_1))\cdot\partial_{x_{Z^c}}^{\alpha_{Z^c}}\psi_2\rangle_{\mathcal D(\mathbf R^{m-\lvert Z\rvert})',\mathcal D(\mathbf R^{m-\lvert Z\rvert})} \tag{5.3.2.9}
+\langle R'_{H_Z}(T_\alpha),\partial_x^\alpha\phi\rangle_{\mathcal D(\mathbf R^m)'_\beta,\mathcal D(\mathbf R^m)}=\langle T_\alpha,R_{H_Z}(\partial_x^\alpha\phi)\rangle_{\mathcal D(\mathbf R^m)'_\beta,\mathcal D(\mathbf R^m)} \tag{5.3.2.8}
 $$
 
 $$
-=\delta_0(\partial_{x_Z}^{\alpha_Z}(\varphi_1))\cdot\langle T_\alpha,\partial_{x_{Z^c}}^{\alpha_{Z^c}}\psi_2\rangle_{\mathcal D(\mathbf R^{m-\lvert Z\rvert})',\mathcal D(\mathbf R^{m-\lvert Z\rvert})} \tag{5.3.2.10}
+=\langle T_\alpha,\delta_0(\partial_{x_Z}^{\alpha_Z}(\varphi_1))\cdot\partial_{x_{Z^c}}^{\alpha_{Z^c}}\psi_2\rangle_{\mathcal D(\mathbf R^{m-\lvert Z\rvert})'_\beta,\mathcal D(\mathbf R^{m-\lvert Z\rvert})} \tag{5.3.2.9}
+$$
+
+$$
+=\delta_0(\partial_{x_Z}^{\alpha_Z}(\varphi_1))\cdot\langle T_\alpha,\partial_{x_{Z^c}}^{\alpha_{Z^c}}\psi_2\rangle_{\mathcal D(\mathbf R^{m-\lvert Z\rvert})'_\beta,\mathcal D(\mathbf R^{m-\lvert Z\rvert})} \tag{5.3.2.10}
 $$
 
 and hence, upon combining (5.3.2.8) with (5.3.2.4), we deduce that both (5.3.2.5) and (5.3.2.6) hold, since $\mathcal D(\mathbf R^{\lvert Z\rvert})\otimes\mathcal D(\mathbf R^{m-\lvert Z\rvert})\subset\mathcal D(\mathbf R^m)$ is sequentially dense by [Tre, Part III,Ch.39,Thm.39.2,p.406], hence dense.
 
-(5) : Compactly supported distributions are tempered, and the continuous injective operator $\mathcal D(\mathbf R^m)\hookrightarrow\mathcal S(\mathbf R^m)$ is compatible with the dualities $\langle\mathcal D(\mathbf R^m),\mathcal D(\mathbf R^m)'\rangle$ and $\langle\mathcal S(\mathbf R^m),\mathcal S(\mathbf R^m)'\rangle$ (i.e. its adjoint $R_{H_Z}^*$ is strongly continuous, by [NB, Thm.8.11.3(d)]). It follows that (5.3.2.6) holds in $\mathcal S(\mathbf R^m)'$. $\square$
+(5) : Compactly supported distributions are tempered, and the continuous injective operator $\mathcal D(\mathbf R^m)\hookrightarrow\mathcal S(\mathbf R^m)$ is compatible with the dualities $\langle\mathcal D(\mathbf R^m),\mathcal D(\mathbf R^m)'_\beta\rangle$ and $\langle\mathcal S(\mathbf R^m),\mathcal S(\mathbf R^m)'_\beta\rangle$ (i.e. its adjoint $R_{H_Z}$ is strongly continuous, by [NB, Thm.8.11.3(d)]). It follows that (5.3.2.6) holds in $\mathcal S(\mathbf R^m)'_\beta$. $\square$
 
 Remark 5.3.2.4. Note that $\mathcal D(\mathbf R^{\lvert Z\rvert})\otimes\mathcal D(\mathbf R^{m-\lvert Z\rvert})$ is indeed mapped onto a sequentially dense linear subspace of $\mathcal D(\mathbf R^m)$ under the canonical linear operator $\mathcal D(\mathbf R^{\lvert Z\rvert})\otimes\mathcal D(\mathbf R^{m-\lvert Z\rvert})\to\mathcal D(\mathbf R^m)$, by [Tre, Part III,Ch.39,Thm.39.2,p.406], but such operator only induces a linear topological isomorphism from the inductive tensor product of $\mathcal D(\mathbf R^{\lvert Z\rvert})$ and $\mathcal D(\mathbf R^{m-\lvert Z\rvert})$ onto $\mathcal D(\mathbf R^m)$, and not from their projective tensor product (nor injective, being this latter linearly and topologically isomorphic to the projective tensor product, as $\mathcal D(\mathbf R^{\lvert Z\rvert})$ is nuclear).
 
-Theorem 5.3.2.5. Let $T\in\mathcal S(\mathbf C)'$ be supported at $0\in\mathbf C$. Then there exists an integer $N\ge 0$, complex numbers $c_{k,k'}$ with $(k,k')\in\mathbf N^2$ such that $k+k'\le N$, such that, as elements of $\mathcal S(\mathbf C)'$, we have:
+Theorem 5.3.2.5. Let $T\in\mathcal S(\mathbf C)'_\beta$ be supported at $0\in\mathbf C$. Then there exists an integer $N\ge 0$, complex numbers $c_{k,k'}$ with $(k,k')\in\mathbf N^2$ such that $k+k'\le N$, such that, as elements of $\mathcal S(\mathbf C)'_\beta$, we have:
 
 $$
 T=\sum_{\alpha\in\mathbf N^2,\lvert\alpha\rvert\le N}c_{k,k'}\partial_z^k\partial_{\bar z}^{k'}\delta_0. \tag{5.3.2.11}
 $$
 
-(1) Let $\mathcal S_{00}(\mathbf C)$ be the closed subspace defined as $\bigcap_{(k,k')\in\mathbf N^2}\ker(\partial_z^k\partial_{\bar z}^{k'}\delta_0)$. The orthogonal in $\mathcal S(\mathbf C)'$ of $\mathcal S_{00}(\mathbf C)$ with respect to the duality $\langle\mathcal S(\mathbf C),\mathcal S(\mathbf C)'\rangle$ is a linear subspace of $\mathcal S(\mathbf C)'$ linearly isomorphic to the continuous dual of the quotient $\mathcal S(\mathbf C)/\mathcal S_{00}(\mathbf C)$, and, topologized with the strong topology on the continuous dual of the quotient, it is linearly and topologically isomorphic to the $\mathbf C$-linear space underlying the polynomial algebra $\mathbf C[X,Y]$ equipped with the finest locally convex topology, equivalently the topology induced by the family of seminorms $\{p_N\}_{N\ge 0}$ with:
+(1) Let $\mathcal S_{00}(\mathbf C)$ be the closed subspace defined as $\bigcap_{(k,k')\in\mathbf N^2}\ker(\partial_z^k\partial_{\bar z}^{k'}\delta_0)$. The orthogonal in $\mathcal S(\mathbf C)'_\beta$ of $\mathcal S_{00}(\mathbf C)$ with respect to the duality $\langle\mathcal S(\mathbf C),\mathcal S(\mathbf C)'_\beta\rangle$ is a linear subspace of $\mathcal S(\mathbf C)'_\beta$ linearly isomorphic to the continuous dual of the quotient $\mathcal S(\mathbf C)/\mathcal S_{00}(\mathbf C)$, and, topologized with the strong topology on the continuous dual of the quotient, it is linearly and topologically isomorphic to the $\mathbf C$-linear space underlying the polynomial algebra $\mathbf C[X,Y]$ equipped with the finest locally convex topology, equivalently the topology induced by the family of seminorms $\{p_N\}_{N\ge 0}$ with:
 
 $$
 p_N(\sum_{(k,k')\in\mathbf N^2,k+k'\le N}c_{k,k'}X^kY^{k'}):=\sup_{(k,k')\in\mathbf N^2,k+k'\le N}\lvert c_{k,k'}\rvert \tag{5.3.2.12}
@@ -1324,15 +1324,15 @@ as elements of $\mathcal S(\mathbf R^2)'_\beta$.
 
 Upon evaluating on the identity in (5.3.2.17) the linear topological isomorphism $\mathcal S(\mathbf R^2)'_\beta\simeq\mathcal S(\mathbf C)'_\beta$ induced by $(x,y)\mapsto z:=x+iy$, we obtain (5.3.2.11).
 
-(1) : Let $T\in\mathcal S(\mathbf C)'_\beta$ be a tempered distribution such that $T(\mathcal S_{00}(\mathbf C))=0$, i.e. an element of $\mathcal S_{00}(\mathbf C)^\circ\subset\mathcal S(\mathbf C)'_\beta$. Let $z\in\mathbf C$, $z\ne 0$. For any open neighborhood $U\subset\mathbf C$ of $z$ such that $0\notin U$, we let $\phi\in\mathcal D(\mathbf C)$ be supported within $U$.
+(1) : Let $T\in\mathcal S(\mathbf C)'_\beta$ be a tempered distribution such that $T(\mathcal S_{00}(\mathbf C))=0$, i.e. an element of $\mathcal S_{00}(\mathbf C)^\perp\subset\mathcal S(\mathbf C)'_\beta$. Let $z\in\mathbf C$, $z\ne 0$. For any open neighborhood $U\subset\mathbf C$ of $z$ such that $0\notin U$, we let $\phi\in\mathcal D(\mathbf C)$ be supported within $U$.
 
-Then $\phi\in\mathcal S_{00}(\mathbf C)$, and hence $T(\phi)=0$. It follows that $T$ is supported at $0$, and hence of the form as in (5.3.2.11). Conversely, every tempered distribution of the form as in (5.3.2.11) is an element of $\mathcal S_{00}(\mathbf C)^\circ$.
+Then $\phi\in\mathcal S_{00}(\mathbf C)$, and hence $T(\phi)=0$. It follows that $T$ is supported at $0$, and hence of the form as in (5.3.2.11). Conversely, every tempered distribution of the form as in (5.3.2.11) is an element of $\mathcal S_{00}(\mathbf C)^\perp$.
 
-This shows that indeed the assignment $X^kY^{k'}\mapsto\frac{1}{k!(k')!}\partial_z^k\partial_{\bar z}^{k'}\delta_0$ is a linear isomorphism $\mathbf C[X,Y]\to\mathcal S_{00}(\mathbf C)^\circ$, and the degree $N$ of a monomial matches the order of the resulting tempered distribution supported at $0\in\mathbf C$.
+This shows that indeed the assignment $X^kY^{k'}\mapsto\frac{1}{k!(k')!}\partial_z^k\partial_{\bar z}^{k'}\delta_0$ is a linear isomorphism $\mathbf C[X,Y]\to\mathcal S_{00}(\mathbf C)^\perp$, and the degree $N$ of a monomial matches the order of the resulting tempered distribution supported at $0\in\mathbf C$.
 
-The linear operator $\mathbf C[X,Y]\to\mathcal S_{00}(\mathbf C)^\circ$ is continuous, upon endowing the source with the finest locally convex topology, hence a continuous bijection.
+The linear operator $\mathbf C[X,Y]\to\mathcal S_{00}(\mathbf C)^\perp$ is continuous, upon endowing the source with the finest locally convex topology, hence a continuous bijection.
 
-The source is a strict LF-space, and the target is the strong dual of the nuclear Fréchet space $\mathcal S(\mathbf C)/\mathcal S_{00}(\mathbf C)$ (we refer the reader to [NB, Thm.8.12.1(a)] for the linear isomorphism between $\mathcal S(\mathbf C)/\mathcal S_{00}(\mathbf C)$ and $\mathcal S_{00}(\mathbf C)^\circ$).
+The source is a strict LF-space, and the target is the strong dual of the nuclear Fréchet space $\mathcal S(\mathbf C)/\mathcal S_{00}(\mathbf C)$ (we refer the reader to [NB, Thm.8.12.1(a)] for the linear isomorphism between $\mathcal S(\mathbf C)/\mathcal S_{00}(\mathbf C)$ and $\mathcal S_{00}(\mathbf C)^\perp$).
 
 We call $F:=\mathcal S(\mathbf C)/\mathcal S_{00}(\mathbf C)$ the quotient Fréchet space.
 
@@ -1346,11 +1346,11 @@ The same argument as for the rest of (1) from Theorem 5.3.2.3(1), resting on the
 
 The continuous operator $\mathbf C[X,Y]\to F'_\beta$ is therefore a linear topological isomorphism by [Gro-f, Ch.4,§5,Thm.2(1),p.148] (see also [SN, §2,Cor.3,p.8]).
 
-It follows that the composition of the linear topological isomorphisms $\mathbf C[X,Y]\to F'_\beta\simeq\mathcal S_{00}(\mathbf C)^\circ$, which is the linear operator $\mathbf C[X,Y]\to\mathcal S_{00}(\mathbf C)^\circ$, is indeed a linear topological isomorphism with respect to the stated topologies.
+It follows that the composition of the linear topological isomorphisms $\mathbf C[X,Y]\to F'_\beta\simeq\mathcal S_{00}(\mathbf C)^\perp$, which is the linear operator $\mathbf C[X,Y]\to\mathcal S_{00}(\mathbf C)^\perp$, is indeed a linear topological isomorphism with respect to the stated topologies.
 
 We further refer the reader to Lemma 4.2.1.3 for the equivalence between the strong topology on the continuous dual of $\mathcal S(\mathbf C)/\mathcal S_{00}(\mathbf C)$, and the subspace topology inherited from the strong topology on $\mathcal S(\mathbf C)'$.
 
-(2) : We topologize $\mathcal S_{00}(\mathbf C)^\circ$ with the strong topology on the continuous dual of the quotient. The adjoint of the linear topological isomorphism $\mathbf C[X,Y]\to\mathcal S_{00}(\mathbf C)^\circ$ is the linear operator sending $f\in\mathcal S(\mathbf C)$ to its Taylor expansion at $z=0$ as a formal power series, i.e. $\sum_{(k,k')\in\mathbf N^2,k+k'\le N}\frac{\partial_z^k\partial_{\bar z}^{k'}f(0)}{k!(k')!}X^kY^{k'}$. This assignment is well-defined modulo $\mathcal S_{00}(\mathbf C)$, since the coefficients $\partial_z^k\partial_{\bar z}^{k'}f(0)$ all vanish for every $f\in\mathcal S_{00}(\mathbf C)$, and hence it indeed induces a linear operator $\mathcal S(\mathbf C)/\mathcal S_{00}(\mathbf C)\to\mathbf C[[X,Y]]$.
+(2) : We topologize $\mathcal S_{00}(\mathbf C)^\perp$ with the strong topology on the continuous dual of the quotient. The adjoint of the linear topological isomorphism $\mathbf C[X,Y]\to\mathcal S_{00}(\mathbf C)^\perp$ is the linear operator sending $f\in\mathcal S(\mathbf C)$ to its Taylor expansion at $z=0$ as a formal power series, i.e. $\sum_{(k,k')\in\mathbf N^2,k+k'\le N}\frac{\partial_z^k\partial_{\bar z}^{k'}f(0)}{k!(k')!}X^kY^{k'}$. This assignment is well-defined modulo $\mathcal S_{00}(\mathbf C)$, since the coefficients $\partial_z^k\partial_{\bar z}^{k'}f(0)$ all vanish for every $f\in\mathcal S_{00}(\mathbf C)$, and hence it indeed induces a linear operator $\mathcal S(\mathbf C)/\mathcal S_{00}(\mathbf C)\to\mathbf C[[X,Y]]$.
 
 To show that it is a linear topological isomorphism with respect to the topology induced on $\mathbf C[[X,Y]]$ by the countable family of seminorms defined in (5.3.2.13), by [NB, Thm.8.13.5] it is enough to show that this is a Hausdorff locally convex topology such that $(\mathbf C[[X,Y]])'_\beta$ is linearly and topologically isomorphic to $\mathbf C[X,Y]$ equipped with the finest locally convex topology. This follows from [Tre, Part II,Ch.22,Thm.22.1(b),p.228]. $\square$
 
@@ -1745,7 +1745,7 @@ $$
 
 By the functional equation from [CF, Ch.XV,Thm.2.4.1] and the polynomial growth of $\rho_v(c)$ for $v$ Archimedean (see the proof of Theorem 3.3.1.5), the inequalities in (5.3.3.21) and (5.3.3.22) combined with Asymptotic Residue Theorem (see Theorem B.3.2.1) implies the sequential continuity of $L_r(\cdot,(s,\omega))$, respectively $L_c(\cdot,(s,\omega))$, as linear operators on $\mathcal S_{00}(\mathbf R)$, respectively $\mathcal S_{00}(\mathbf C)$, valued in $A\mathcal{S}(\mathbf C)\widehat\otimes_\pi\mathcal S(\widehat{\{\pm 1\}})$, respectively $A\mathcal{S}(\mathbf C)\widehat\otimes_\pi\mathcal S(\widehat{\mathrm U(1)})$, and being these Fréchet spaces, both $L_r(\cdot,(s,\omega))$ and $L_c(\cdot,(s,\omega))$ are continuous (this is so because Fréchet spaces are sequential).
 
-The linear operators $L_r(\cdot,(s,\omega))$ and $L_c(\cdot,(s,\omega))$ are the compositions of the linear inclusions $\mathcal S_{00}(\mathbf R)\hookrightarrow\mathcal S_I(\mathbf R^\times)$ and $\mathcal S_{00}(\mathbf C)\hookrightarrow\mathcal S_I(\mathbf C^\times)$, followed by the Mellin transform (see Proposition D.3.2.5), which is a linear topological isomorphism $\mathcal S_I(G)\to A\mathcal{S}(\mathbf C)\widehat\otimes_\pi\mathcal S(\widehat{G^1})$ by Theorem D.3.3.7, for $I=(-\infty,+\infty)$ and $G$ an $\mathbf R_{>0}$-modulated Hausdorff locally compact abelian group, and hence both linear inclusions $\mathcal S_{00}(\mathbf R)\hookrightarrow\mathcal S_I(\mathbf R^\times)$ and $\mathcal S_{00}(\mathbf C)\hookrightarrow\mathcal S_I(\mathbf C^\times)$ are continuous.
+The linear operators $L_r(\cdot,(s,\omega))$ and $L_c(\cdot,(s,\omega))$ are the compositions of the linear inclusions $\mathcal S_{00}(\mathbf R)\hookrightarrow\mathcal S_I(\mathbf R^\times)$ and $\mathcal S_{00}(\mathbf C)\hookrightarrow\mathcal S_I(\mathbf C^\times)$, followed by the Mellin transform (see Proposition D.3.2.5), which is a linear topological isomorphism $\mathcal S_I(G)\to A\mathcal{S}(\mathbf C)\widehat\otimes_\pi\mathcal S(G^1)$ by Theorem D.3.3.7, for $I=(-\infty,+\infty)$ and $G$ an $\mathbf R_{>0}$-modulated Hausdorff locally compact abelian group, and hence both linear inclusions $\mathcal S_{00}(\mathbf R)\hookrightarrow\mathcal S_I(\mathbf R^\times)$ and $\mathcal S_{00}(\mathbf C)\hookrightarrow\mathcal S_I(\mathbf C^\times)$ are continuous.
 
 To establish the surjectivity assertions in (2), we use Proposition 5.3.3.2, which gives that $\mathcal S_I(\mathbf R^\times)$ and $\mathcal S_I(\mathbf C^\times)$ are stable under ordinary smooth, respectively holomorphic and anti-holomorphic, derivation of any order, and that this operation is continuous in each case respectively.
 
@@ -1753,23 +1753,23 @@ To establish the surjectivity assertions in (2), we use Proposition 5.3.3.2, whi
 
 **5.3. WEIL'S PRINCIPAL VALUE OPERATORS** · **257**
 
-We let $\varphi\in\mathcal S_I(\mathbf R^\times)$. We need to show that the extension by zero of $\varphi$ to $\mathbf R$ is smooth at $0\in\mathbf R$. This will prove that such extension by zero is Schwartz over $\mathbf R$ (the reader may compare this step in the argument, with the proof of Lemma B.2.1.4, where boundedness and convergence to zero of $\partial_x^m\varphi$ as $|x|\to 0+$ is obtained by direct calculation).
+We let $\phi\in\mathcal S_I(\mathbf R^\times)$. We need to show that the extension by zero of $\phi$ to $\mathbf R$ is smooth at $0\in\mathbf R$. This will prove that such extension by zero is Schwartz over $\mathbf R$ (the reader may compare this step in the argument, with the proof of Lemma B.2.1.4, where boundedness and convergence to zero of $\partial_x^m\phi$ as $|x|\to 0^+$ is obtained by direct calculation).
 
-We know that, for every integer $m\ge 0$, $\partial_x^m\varphi$ is continuous on $\mathbf R^\times$ and tends to $0$ as $|x|\to 0+$. We have yet to show that the derivative of $\varphi$ exists at $0\in\mathbf R$ and agrees with the limit value of $\partial_x^m\varphi$ (which is zero).
+We know that, for every integer $m\ge 0$, $\partial_x^m\phi$ is continuous on $\mathbf R^\times$ and tends to $0$ as $|x|\to 0$. We have yet to show that the derivative of $\phi$ exists at $0\in\mathbf R$ and agrees with the limit value of $\partial_x^m\phi$ (which is zero).
 
 This is seen by observing that we have, over $(-A,A)$:
 
 $$
-\left|\frac{\varphi(x)}{x}\right|\le\frac{1}{2A}\int_{-A}^{A}|(\partial_x\varphi)(y)|\,\mathrm{d}y\le C\frac{1}{2A}\int_{-A}^{A}|y|^M\,\mathrm{d}y \tag{5.3.3.23}
+\left|\frac{\phi(x)}{x}\right|\le\frac{1}{2A}\int_{-A}^{A}|(\partial_x\phi)(y)|\,\mathrm{d}y\le C\frac{1}{2A}\int_{-A}^{A}|y|^M\,\mathrm{d}y \tag{5.3.3.23}
 $$
 
-for some integer $M>1$ and a real number $C>0$, which gives the desired result, as $A\to 0+$. To argue that we have $|\partial_x\varphi(y)|\le C|y|^M$ for $y\in(-A,A)$, we used boudedness of $M_x$ and continuity of $\partial_x$ on $\mathcal S_I(\mathbf R^\times)$, to deduce that $\partial_x\varphi$ is of the form $x^Mu$ for some $u\in\mathcal S_I(\mathbf R^\times)$, and hence $x^Mu$ tends to $0$ as $|x|\to 0+$, giving boundedness of $u$ over $(-A,A)$ by some $C>0$, and the bound $|\partial_x\varphi(y)|\le C|y|^M$ over $(-A,-\varepsilon)\cup(\varepsilon,A)$, propagated to $(-A,A)$ by continuity.
+for some integer $M>1$ and a real number $C>0$, which gives the desired result, as $A\to 0^+$. To argue that we have $|\partial_x\phi(y)|\le C|y|^M$ for $y\in(-A,A)$, we used boudedness of $M_x$ and continuity of $\partial_x$ on $\mathcal S_I(\mathbf R^\times)$, to deduce that $\partial_x\phi$ is of the form $x^Mu$ for some $u\in\mathcal S_I(\mathbf R^\times)$, and hence $x^Mu$ tends to $0$ as $|x|\to 0^+$, giving boundedness of $u$ over $(-A,A)$ by some $C>0$, and the bound $|\partial_x\phi(y)|\le C|y|^M$ over $(-A,-\varepsilon)\cup(\varepsilon,A)$, propagated to $(-A,A)$ by continuity.
 
 The middle improper integral in (5.3.3.23) therefore converges and the inequalities in (5.3.3.23) hold.
 
-Upon replacing $\varphi$ with $\partial_x^m\varphi$ for any $m\ge 0$, which is possible by Proposition 5.3.3.2, we deduce that the derivative of the extension by zero of $\varphi$ to $\mathbf R$ exists at $0$ and vanishes, therefore showing that such extension by zero is smooth and Schwartz. This shows surjectivity of the restriction operator $\mathcal S_{00}(\mathbf R)\hookrightarrow\mathcal S_I(\mathbf R^\times)$.
+Upon replacing $\phi$ with $\partial_x^m\phi$ for any $m\ge 0$, which is possible by Proposition 5.3.3.2, we deduce that the derivative of the extension by zero of $\phi$ to $\mathbf R$ exists at $0$ and vanishes, therefore showing that such extension by zero is smooth and Schwartz. This shows surjectivity of the restriction operator $\mathcal S_{00}(\mathbf R)\hookrightarrow\mathcal S_I(\mathbf R^\times)$.
 
-A similar argument shows that the restriction operator $\mathcal S_{00}(\mathbf C)\hookrightarrow\mathcal S_I(\mathbf C^\times)$, where the middle integral in (5.3.3.23) is replaces with the line integral from the origin to an arbitrary point $z$ along an arbitrary smooth rectifiable curve $\gamma:[0,1]\to\mathbf C$. This proves that the directional derivative along $\dot\gamma$ of the extension by zero of $\varphi$ exists at $z=0$ and vanishes there, proving smoothness at $z=0$.
+A similar argument shows that the restriction operator $\mathcal S_{00}(\mathbf C)\hookrightarrow\mathcal S_I(\mathbf C^\times)$, where the middle integral in (5.3.3.23) is replaces with the line integral from the origin to an arbitrary point $z$ along an arbitrary smooth rectifiable curve $\gamma:[0,1]\to\mathbf C$. This proves that the directional derivative along $\gamma'$ of the extension by zero of $\phi$ exists at $z=0$ and vanishes there, proving smoothness at $z=0$.
 
 To conclude the proof of (3), we observe that, since we have shown that the linear restriction operator $\mathcal S_{00}(\mathbf R^p\times\mathbf C^q)\hookrightarrow\mathcal S_{I^{p+q}}((\mathbf R^\times)^p\times(\mathbf C^\times)^q)$ is a linear topological isomorphism, since continuous quasi-characters of $(\mathbf R^\times)^p\times(\mathbf C^\times)^q$ are of the form $\bigotimes_{1\le k\le p}c_k\otimes\bigotimes_{1\le m\le q}c'_m$, for $c_k$ a continuous quasi-character of $\mathbf R^\times$ for each $1\le k\le p$, and $c'_m$ a continuous quasi-character of $\mathbf C^\times$ for $1\le m\le q$, then, using the linear topological isomorphisms $\mathcal S_{00}(\mathbf R)^{\widehat\otimes^p_\pi}\widehat\otimes_\pi\mathcal S_{00}(\mathbf C)^{\widehat\otimes^q_\pi}\to\mathcal S_{00}(\mathbf R^p\times\mathbf C^q)$ and $\mathcal S_I(\mathbf R^\times)^{\widehat\otimes^p_\pi}\widehat\otimes_\pi\mathcal S_I(\mathbf C^\times)^{\widehat\otimes^q_\pi}\to\mathcal S_{I^{p+q}}((\mathbf R^\times)^p\times(\mathbf C^\times)^q)$, it is enough to treat the cases $(p,q)=(1,0)$, $(0,1)$, in order to show that pointwise multiplication by continuous quasi-characters of $(\mathbf R^\times)^p\times(\mathbf C^\times)^q$ on $\mathcal S_{00}(\mathbf R^p\times\mathbf C^q)$ is valued in $\mathcal S_{00}(\mathbf R^p\times\mathbf C^q)$, continuous and (hence) continuously invertible.
 
@@ -1914,7 +1914,7 @@ DEFINITION 5.3.4.1. *For $F$ a number field and $S$ a finite set of places of $F
 *We define the following linear subspace of $\mathcal S(\mathbf A_{F,S})$:*
 
 $$
-\mathcal S_{00}(\mathbf A_{F,S}):=\mathcal S_{00}(\mathbf A_{F,S_\infty})\widehat\otimes_\pi\bigotimes_{v\in S_f}\mathcal S(F_v^\times)\subset\mathcal S(\mathbf A_{F,S}). \tag{5.3.4.1}
+\mathcal S_{00}(\mathbf A_{F,S}):=\mathcal S_{00}(\mathbf A_{F,S_\infty})\otimes_\pi\bigotimes_{v\in S_f}\mathcal S(F_v^\times)\subset\mathcal S(\mathbf A_{F,S}). \tag{5.3.4.1}
 $$
 
 *We refer to $\mathcal S_{00}(\mathbf A_{F,S})$ as the subspace of polar-free Schwartz-Bruhat functions on $\mathbf A_{F,S}$.*
@@ -1979,14 +1979,14 @@ LEMMA 5.3.4.2. *Let $F$ be a number field, $S$ a finite set of places of $F$ con
 
 $\square$
 
-*LEMMA 5.3.4.3. Let $I:=(-\infty,+\infty)=\mathbf R$, and let $\varphi\in\mathcal S_I(\mathbf R_{>0})$ be a Schwartz-Bruhat function with $I$-exponential decay.*
+*LEMMA 5.3.4.3. Let $I:=(-\infty,+\infty)=\mathbf R$, and let $\phi\in\mathcal S_I(\mathbf R_{>0})$ be a Schwartz-Bruhat function with $I$-exponential decay.*
 
 *Let $F$ be a number field, $S$ a finite set of places of $F$ containing all the Archimedean places.*
 
 *There exists $f\in\mathcal S_{00}(\mathbf A_{F,S})$ such that:*
 
 $$
-\Phi_{F,S,1}(f)=\varphi. \tag{5.3.4.2}
+\Phi_{F,S,1}(f)=\phi. \tag{5.3.4.2}
 $$
 
 *PROOF. We choose a continuous homomorphic section $\tau$ to the $S$-idelic norm.*
@@ -1994,13 +1994,13 @@ $$
 *The canonical linear map:*
 
 $$
-\mathcal S(\mathbf A_{F,S}):=\mathcal S_{00}(\mathbf A_{F,S_\infty})\widehat\otimes_\pi\bigotimes_{v\in S_f}\mathcal S(F_v^\times)\to\mathcal S_I(\mathbf R^\times)^{\widehat\otimes^{r_1}_\pi}\widehat\otimes_\pi\mathcal S_I(\mathbf C^\times)^{\widehat\otimes^{r_2}_\pi}\widehat\otimes_\pi\bigotimes_{v\in S_f}\mathcal S(F_v^\times) \tag{5.3.4.3}
+\mathcal S(\mathbf A_{F,S}):=\mathcal S_{00}(\mathbf A_{F,S_\infty})\otimes_\pi\bigotimes_{v\in S_f}\mathcal S(F_v^\times)\to\mathcal S_I(\mathbf R^\times)^{\widehat\otimes^{r_1}_\pi}\widehat\otimes_\pi\mathcal S_I(\mathbf C^\times)^{\widehat\otimes^{r_2}_\pi}\otimes_\pi\bigotimes_{v\in S_f}\mathcal S(F_v^\times) \tag{5.3.4.3}
 $$
 
 *defined as the unique extension by continuity of the tensor product of the linear topological isomorphism*
 
 $$
-\mathcal S_{00}(\mathbf A_{F,S_\infty})\to\mathcal S_{00}(\mathbf R^{r_1}\times\mathbf C^{r_2})\to\mathcal S_I((\mathbf R^\times)^{r_1})^{\widehat\otimes^{r_1}_\pi}\widehat\otimes_\pi\mathcal S_I((\mathbf C^\times)^{r_2})^{\widehat\otimes^{r_2}_\pi} \tag{5.3.4.4}
+\mathcal S_{00}(\mathbf A_{F,S_\infty})\to\mathcal S_{00}(\mathbf R^{r_1}\times\mathbf C^{r_2})\to\mathcal S_I((\mathbf R^\times)^{r_1})\widehat\otimes_\pi\mathcal S_I((\mathbf C^\times)^{r_2}) \tag{5.3.4.4}
 $$
 
 *provided by Lemma 5.3.3.3(3) and (2), with the identity operator on $\bigotimes_{v\in S_f}\mathcal S(F_v^\times)$, is itself a linear topological isomorphism, since the tensor factors are nuclear, and [Jar, Part III,Ch.16,§16.2,Cor.3,p.348] applies.*
@@ -2014,7 +2014,7 @@ $$
 *By Lemma D.2.2.2(1), we further have a linear topological isomorphism:*
 
 $$
-\mathcal S_I((\mathbf R^\times)^{r_1})^{\widehat\otimes^{r_1}_\pi}\widehat\otimes_\pi\mathcal S_I((\mathbf C^\times)^{r_2})^{\widehat\otimes^{r_2}_\pi}\to\mathcal S(\{\pm 1\})^{\widehat\otimes^{r_1}_\pi}\widehat\otimes_\pi\mathcal S(\mathrm U(1))^{\widehat\otimes^{r_2}_\pi}\widehat\otimes_\pi\mathcal S_I(\mathbf R_{>0})^{\widehat\otimes^{r_1+r_2}_\pi} \tag{5.3.4.5}
+\mathcal S_I((\mathbf R^\times)^{r_1})\widehat\otimes_\pi\mathcal S_I((\mathbf C^\times)^{r_2})\to\mathcal S(\{\pm 1\})^{\widehat\otimes^{r_1}_\pi}\widehat\otimes_\pi\mathcal S(\mathrm U(1))^{\widehat\otimes^{r_2}_\pi}\widehat\otimes_\pi\mathcal S_I(\mathbf R_{>0})^{\widehat\otimes^{r_1+r_2}_\pi} \tag{5.3.4.5}
 $$
 
 *and the tensor product with the identity operator on $\bigotimes_{v\in S_f}\mathcal S(F_v^\times)$ is a linear topological isomorphism:*
@@ -2041,7 +2041,7 @@ $$
 
 *(1) $\Phi_{\log}$ is the operator sending $\psi\in\mathcal S_I(\mathbf R_{>0})^{\widehat\otimes^{r_1+r_2}_\pi}$ to $\sum_{\xi\in\mathcal O_F^\times/\mu_F}\phi((|\xi_\infty x_\infty|_v)_{v\in S_\infty})$ where $\mu_F$ is the cyclic subgroup of $\mathcal O_F^\times$ of the roots of unity contained in $F$. The subscript $y_\infty$ denotes the projection of $y\in\mathrm{GL}_1(\mathbf A_{F,S})$ onto $\mathrm{GL}_1(\mathbf A_{F,S_\infty})$.*
 
-*(2) All the the other operators $\Phi_G$ are $\delta_1$ (i.e. the Fourier transform, in the sense of the Fourier transform on the Schwartz-Bruhat space $\mathcal S(G)$ of a Hausdorff locally compact abelian group $G$, of the evaluation-at-the-neutral-element continuous functional $\delta_1\in\mathcal S(G)'_\beta$, a tempered distribution; see §D.1).*
+*(2) All the the other operators $\Phi_G$ are $\widehat{\delta}_1$ (i.e. the Fourier transform, in the sense of the Fourier transform on the Schwartz-Bruhat space $\mathcal S(G)$ of a Hausdorff locally compact abelian group $G$, of the evaluation-at-the-neutral-element continuous functional $\delta_1\in\mathcal S(G)'_\beta$, a tempered distribution; see §D.1).*
 
 *The identification of the operators $\Phi_{F,S,1}$ and of the operator from (5.3.4.8) is up to a linear topological automorphism of $\mathcal S_{00}(\mathbf A_{F,S})$ only, which is the following one: we choose $\{g_1,\dots,g_{N_S}\}$ are representatives in $\mathrm{GL}_1(\mathbf A_{F,S})^1$ of the $N_S$ ideal classes in $\mathrm{Pic}(\mathcal O_F)$ that are trivialized in $\mathrm{Pic}(\mathcal O_{F,S})$, and for $f\in\mathcal S_{00}(\mathbf A_{F,S})$ of the form $f_\infty\otimes\bigotimes_{v\in S_f}f_v$, with $f_v\in\mathcal S(F_v^\times)$ for each finite place $v\in S$, we have:*
 
@@ -2075,7 +2075,7 @@ $$
 
 *We now observe that $\Phi_{\log}$ can therefore further be written on $\mathcal D(\mathbf R^{r_1+r_2-1})\otimes\mathcal S_I(\mathbf R_{>0})\subset\mathcal S_I(\mathbf R_{>0})^{\widehat\otimes^{r_1+r_2}_\pi}$ (the containment being intended up to linear topological automorphism on the source) as $F_{\mathbf R^{r_1+r_2-1}}\otimes\mathrm{Id}$.*
 
-*We then choose $\varphi_0$ in $\mathcal D(\{\pm 1\})\simeq\mathbf C^2$ such that $\Phi_{\{\pm 1\}}(\varphi_0)=1$, $\varphi_1$ in $\mathcal D(\mathrm U(1))$ such that $\Phi_{\mathrm U(1)}(\varphi_1)=1$, $\varphi_v\in\mathcal D(\mathcal O_{F_v}^\times)$ such that $\Phi_{\mathcal O_{F_v}^\times}(f_v)=1$, and $\varphi_{\log}\in\mathcal D(\mathbf R^{r_1+r_2-1})$ such that $\Phi_{r_1+r_2-1}(\varphi_{\log})=1$. We therefore have that $\varphi_{\log}\otimes\varphi$ is mapped by an equivariant linear topological isomorphism to an element $\psi\in\mathcal S_I(\mathbf R_{>0})^{\widehat\otimes^{r_1+r_2}_\pi}$, such that $\Phi_{\log}(\psi)=\varphi$, where $\varphi\in\mathcal S_I(\mathbf R_{>0})$ is our original Schwartz-Bruhat function on $\mathbf R_{>0}$ with exponential decay.*
+*We then choose $\varphi_0$ in $\mathcal D(\{\pm 1\})\simeq\mathbf C^2$ such that $\Phi_{\{\pm 1\}}(\varphi_0)=1$, $\varphi_1$ in $\mathcal D(\mathrm U(1))$ such that $\Phi_{\mathrm U(1)}(\varphi_1)=1$, $\varphi_v\in\mathcal D(\mathcal O_{F_v}^\times)$ such that $\Phi_{\mathcal O_{F_v}^\times}(f_v)=1$, and $\varphi_{\log}\in\mathcal D(\mathbf R^{r_1+r_2-1})$ such that $\Phi_{r_1+r_2-1}(\varphi_{\log})=1$. We therefore have that $\varphi_{\log}\otimes\phi$ is mapped by an equivariant linear topological isomorphism to an element $\psi\in\mathcal S_I(\mathbf R_{>0})^{\widehat\otimes^{r_1+r_2}_\pi}$, such that $\Phi_{\log}(\psi)=\phi$, where $\phi\in\mathcal S_I(\mathbf R_{>0})$ is our original Schwartz-Bruhat function on $\mathbf R_{>0}$ with exponential decay.*
 
 *In the former cases, $\varphi_0$, $\varphi_1$ and $\varphi_v$ for each $v\in S_f$ exist by compactness of each group, respectively, and in the latter case, $\varphi_{\log}$ exists because $\mathcal O_F^\times/\mu_F$ acts discretely, properly and freely, with co-compact quotient, on $\mathbf R^{r_1+r_2-1}\simeq\{x\in\mathbf R^{r_1+r_2}_{>0}:\prod_{1\le k\le r_1}|x|_{r,k}\cdot\prod_{1\le k\le r_2}|x|_{c,k}=1\}$.*
 
@@ -2089,7 +2089,7 @@ $$
 
 *and element of $\mathcal S(\{\pm 1\})^{\widehat\otimes^{r_1}_\pi}\widehat\otimes_\pi\mathcal S(\mathrm U(1))^{\widehat\otimes^{r_2}_\pi}\widehat\otimes_\pi\bigotimes_{v\in S_f}\mathcal S(\mathcal O_{F_v}^\times)\widehat\otimes_\pi\mathcal S_I(\mathbf R_{>0})^{\widehat\otimes^{r_1+r_2-1}_\pi}\widehat\otimes\bigotimes_{v\in S_f}\mathcal S(\pi_v^{\mathbf Z})\widehat\otimes_\pi\mathcal S_I(\mathbf R_{>0})$.*
 
-*The element from (5.3.4.11) corresponds under the linear topological isomorphism from (5.3.4.6) to a unique Schwartz-Bruhat function $f\in\mathcal S_{00}(\mathbf A_{F,S})$ such that $\Phi_{F,S,1}(f)=\varphi$.*
+*The element from (5.3.4.11) corresponds under the linear topological isomorphism from (5.3.4.6) to a unique Schwartz-Bruhat function $f\in\mathcal S_{00}(\mathbf A_{F,S})$ such that $\Phi_{F,S,1}(f)=\phi$.*
 
 $\square$
 
@@ -2217,7 +2217,7 @@ where $\rho_{S,\tau}(s)$ is the meromorphic function on the complex $s$-plane ob
 
 Remark 5.4.1.2. We note that, in describing the continuous left-translation action of $J_{F,S}$ on the target of $U_{S,\tau,\omega}$, it is understood that $J_{F,S}$ acts through the isomorphism $J_{F,S} \to \mathbf R_{>0} \times J^1_{F,S}$ induced by the choice of $\tau$.
 
-We could choose a holomorphic parametrization $\{\chi|\cdot|^s_{F,S}, (\chi, s) \in \widehat{J^1_{F,S}} \times \mathbf C\}$ for the Riemann surface $\Omega(J_{F,S})$, where $\widehat{J^1_{F,S}}$ is a choice of lift to $J_{F,S}$ for each continuous character $\omega$ of $J^1_{F,S}$, equivalently a choice of base point for each connected component of $\Omega(J_{F,S})$, and upon calling $x_0(\chi) \in \mathbf R$ the unique real number such that $\chi(\tau(t)) = t^{ix_0(\chi)}$ as smooth functions on $\mathbf R_{>0}$, for each $\chi \in \widehat{J^1_{F,S}}$, then the composition of $U_{S,\tau,\omega}$ with the vertical translation on the complex half $s$-plane $\mathbf C_{>0}$ by $ix_0(\chi)$, and on the complex half $s$-plane $\mathbf C_{<1}$ by $-ix_0(\chi)$, is the operator sending $\Phi_{F,S,\chi|_{J^1_{F,S}}}(f)$ to $(Z_S(f, \chi|\cdot|^s_{F,S}), Z_S(\hat f, \bar\chi|\cdot|^{1-s}_{F,S}))$.
+We could choose a holomorphic parametrization $\{\chi|\cdot|^s_{F,S}, (\chi, s) \in \widetilde{J^1_{F,S}} \times \mathbf C\}$ for the Riemann surface $\Omega(J_{F,S})$, where $\widetilde{J^1_{F,S}}$ is a choice of lift to $J_{F,S}$ for each continuous character $\omega$ of $J^1_{F,S}$, equivalently a choice of base point for each connected component of $\Omega(J_{F,S})$, and upon calling $x_0(\chi) \in \mathbf R$ the unique real number such that $\chi(\tau(t)) = t^{ix_0(\chi)}$ as smooth functions on $\mathbf R_{>0}$, for each $\chi \in \widetilde{J^1_{F,S}}$, then the composition of $U_{S,\tau,\omega}$ with the vertical translation on the complex half $s$-plane $\mathbf C_{>0}$ by $ix_0(\chi)$, and on the complex half $s$-plane $\mathbf C_{<1}$ by $-ix_0(\chi)$, is the operator sending $\Phi_{F,S,\chi|_{J^1_{F,S}}}(f)$ to $(Z_S(f, \chi|\cdot|^s_{F,S}), Z_S(\hat f, \bar\chi|\cdot|^{1-s}_{F,S}))$.
 
 The action of $g \in J_{F,S}$ described on $A\mathcal S(\mathbf C_{>0}) \times A\mathcal S(\mathbf C_{<1})$ in the statement of the Proposition, then matches the multiplication action by the pair of entire functions $(\chi(g)|g|^s_{F,S}, \bar\chi(g)|g|^{1-s}_{F,S})$.
 
@@ -2237,7 +2237,7 @@ $$
 
 for all $g \in J_{F,S}$ such that $|g|_{F,S} > T_N$, and for all $u \in B$.
 
-For every real number $a > 0$, the singularity of the function $t \mapsto t^a$ is $(\frac{dt}{t})$-integrable over $(0, T_N)$, and by (2.4.3.5) from Corollary 2.4.3.2 and the uniformity properties of the implied constant in (2.4.3.5) and of the constant $T_\epsilon$, for $\epsilon = a$, then by Dominated Convergence we deduce that we have:
+For every real number $a > 0$, the singularity of the function $t \mapsto t^a$ is $(\frac{dt}{t})$-integrable over $(0, T_N)$, and by (2.4.3.5) from Corollary 2.4.3.2 and the uniformity properties of the implied constant in (2.4.3.5) and of the constant $T_\varepsilon$, for $\varepsilon = a$, then by Dominated Convergence we deduce that we have:
 
 $$
 \lim_{m\to+\infty} \int_{(0,T_N)} t^a \int_{J^1_{F,S}} |\Phi_{F,S,\omega}(f_m)(\tau(t)g_0) - \Phi_{F,S,\omega}(f)(\tau(t)g_0)|^p\, \mathrm{d}\overline{\mu}_{S,1}(g_0)\, \frac{\mathrm{d}t}{t} = 0 \tag{5.4.1.5}
@@ -2285,7 +2285,7 @@ Proof. By Proposition 5.3.4.4, indeed $U_{S,\tau,\omega}$ is valued in $V_{F,S,\
 
 We now prove this surjectivity assertion.
 
-Let $(\phi, \psi) \in W_{F,S,\omega}$ be an arbitrary element, and denote by $\tilde\phi(s)$ the unique analytic continuation of $\phi$ to a meromorphic function on the complex $s$-plane, whose existence is ensured by $\phi$ being holomorphic over $\mathbf C_{>0}$, $\psi$ being holomorphic over $\mathbf C_{<1}$, and the functional equation $\phi(s) = \rho_{S,\tau}(s)\psi(s)$ over $\mathbf C_{(0,1)}$, with $\rho_{S,\tau}$ meromorphic over $\mathbf C$ and satisfying $\rho_{S,\tau}(\sigma + it) = O(|t|^{\sigma-1/2})$ for $\sigma \in (0, 1)$ and as $|t| \to +\infty$ (see Theorem 3.3.1.5(3) applied to $k = 0$), uniformly for $\sigma \in [\epsilon, A)$ for any $0 < \epsilon < A$, from which it follows that $\rho_{S,\tau}(s)\psi(s) \in A\mathcal S(\mathbf C_{(0,1)})$.
+Let $(\phi, \psi) \in W_{F,S,\omega}$ be an arbitrary element, and denote by $\tilde\phi(s)$ the unique analytic continuation of $\phi$ to a meromorphic function on the complex $s$-plane, whose existence is ensured by $\phi$ being holomorphic over $\mathbf C_{>0}$, $\psi$ being holomorphic over $\mathbf C_{<1}$, and the functional equation $\phi(s) = \rho_{S,\tau}(s)\psi(s)$ over $\mathbf C_{(0,1)}$, with $\rho_{S,\tau}$ meromorphic over $\mathbf C$ and satisfying $\rho_{S,\tau}(\sigma + it) = O(|t|^{\sigma-1/2})$ for $\sigma \in (0, 1)$ and as $|t| \to +\infty$ (see Theorem 3.3.1.5(3) applied to $k = 0$), uniformly for $\sigma \in [\varepsilon, A)$ for any $0 < \varepsilon < A$, from which it follows that $\rho_{S,\tau}(s)\psi(s) \in A\mathcal S(\mathbf C_{(0,1)})$.
 
 The poles of $\tilde\phi$ are therefore located at the poles of $\rho_{S,\tau}$ and their order of pole is bounded above by the order of pole of each of the corresponding poles of $\rho_{S,\tau}$, respectively.
 
@@ -2487,7 +2487,7 @@ Let $f \in \mathrm{PV}_{S,S_f}(\mathcal S(\mathbf A_{F,S}))$ be such that $\Phi_
 Since all the poles that $Z_S(f, c)$ can have on the connected component $\Omega(J_{F,S})(\omega)$ are contained in the countable union:
 
 $$
-\bigcup_{1\le k\le r_1} \psi^{-1}_{v_k}(\mathcal{U}^{\le n_{v_k}}_{v_k}) \cup \bigcup_{1\le k\le r_2} \psi^{-1}_{w_k}(\mathcal{U}^{\le p_{v_k}}_{w_k})
+\bigcup_{(\underline n,p)}\left\{\bigcup_{1\le k\le r_1} \psi^{-1}_{v_k}(\mathcal{U}^{\le n_{v_k}}_{v_k}) \cup \bigcup_{1\le k\le r_2} \psi^{-1}_{w_k}(\mathcal{U}^{\le p_{v_k}}_{w_k})\right\}
 $$
 
 we deduce that $Z_S(f, c)$ is entire over the connected component $\Omega(J_{F,S})(\omega)$.
@@ -2947,13 +2947,13 @@ $$
 |-|g|^{-1}_F\hat f(0)+f(0)|\leq C_N|g|^N_F
 $$
 
-for all $g\in C_F$ as $|g|_F\to 0+$. This forces $\hat f(0)=0$, and hence also $f(0)=0$. Therefore, if $f\in\mathcal S(\mathbf A_F)$ is arbitrary and $f_0\in\ker(\Phi_F)$, $\delta_0$ and $\hat\delta_0$ satisfy $\delta_0(f)=\delta_0(f+f_0)$ and $\hat\delta_0(f)=\hat\delta_0(f+f_0)$.
+for all $g\in C_F$ as $|g|_F\to 0^+$. This forces $\hat f(0)=0$, and hence also $f(0)=0$. Therefore, if $f\in\mathcal S(\mathbf A_F)$ is arbitrary and $f_0\in\ker(\Phi_F)$, $\delta_0$ and $\hat\delta_0$ satisfy $\delta_0(f)=\delta_0(f+f_0)$ and $\hat\delta_0(f)=\hat\delta_0(f+f_0)$.
 
 **5.5.3. Third Structure Theorem.** The Third Structure Theorem (Theorem 5.5.3.2) places Weil’s eigendistributions into their natural place to work organically, obtaining a precise result on the structure of the locally convex spaces of co-invariants of $\mathcal S(\mathbf A_F)$ and $\mathcal S(\mathbf A_{F,S})$ under the action of $\mathrm{GL}_1(\mathbf A_F)$ and its subgroups, respectively $\mathrm{GL}_1(\mathbf A_{F,S})$ and its subgroups.
 
 The following Proposition provides a local converse to Theorem 5.5.1.2(1) (i.e. local at a single place $v$ of the number field $F$), and builds towards Theorem 5.5.3.2.
 
-Proposition 5.5.3.1. Let $F$ be a number field, $v$ a place of $F$, $\omega\in\widehat{F^\times_v}$ a unitary character. Then $\mathcal S(F_v)'_\beta$ is linearly and topologically generated by the functionals $\{\Delta'_v(c),c\in\Omega(F^\times_v)\}$, and the closed subspace of $\mathcal S(F_v)'_\beta$ of the $\omega$-homogeneous tempered distributions is linearly and topologically generated by the functionals $\{\Delta'_v(c),c\in\Omega(F^\times_v)(\omega)\}$.
+Proposition 5.5.3.1. Let $F$ be a number field, $v$ a place of $F$, $\omega\in\Omega(F^\times_v)$ a unitary character. Then $\mathcal S(F_v)'_\beta$ is linearly and topologically generated by the functionals $\{\Delta'_v(c),c\in\Omega(F^\times_v)\}$, and the closed subspace of $\mathcal S(F_v)'_\beta$ of the $\omega$-homogeneous tempered distributions is linearly and topologically generated by the functionals $\{\Delta'_v(c),c\in\Omega(F^\times_v)(\omega)\}$.
 
 Proof. We show that $\{\Delta'_v(c),c\in\Omega(F^\times_v)\}$ separates the points of $\mathcal S(F_v)$. Indeed, let $f\in\mathcal S(F_v)$ and assume $\Delta'_v(c)(f)$ for every $c\in\Omega(F^\times_v)$. Then $Z_v(f,c)=\Delta'_v(c)(f)L_v(c)=0$ as a meromorphic function over $\Omega(F^\times_v)$. In particular, $f$ vanishes identically over $F^\times_v$, and hence over $F_v$ by continuity. We now call $E$ the linear subspace of $\mathcal S(F_v)'_\beta$ generated by $\{\Delta'_v(c),c\in\Omega(F^\times_v)\}$. Since $\{\Delta'_v(c),c\in\Omega(F^\times_v)\}$ separates the points of $\mathcal S(F_v)$, then by [NB, Thm.7.7.3] $E$ is dense with respect to the $\sigma(\mathcal S(F_v)'_\beta,\mathcal S(F_v))$-topology on $\mathcal S(F_v)'$, which is the strong topology by [NB, Thm.11.3.6] since $\mathcal S(F_v)'_\beta$ is barrelled, as $\mathcal S(F_v)$ is Montel, and hence $\sigma(\mathcal S(F_v)'_\beta,\mathcal S(F_v))=\sigma(\mathcal S(F_v)'_\beta,(\mathcal S(F_v)'_\beta)')$ since $\mathcal S(F_v)$ is reflexive (recall that the bi-dual of a Hausdorff locally convex space is defined to be the dual of the strong dual; see [Jar, Part II,Ch.11,§11.2]).
 

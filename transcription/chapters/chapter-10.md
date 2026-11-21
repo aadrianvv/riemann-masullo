@@ -433,7 +433,7 @@ $$
 \chi|\cdot|^z_F,\quad z\in\mathbf C. \tag{10.2.1.4}
 $$
 
-We will be denoting by $\widehat{C^1_F}\subset\widehat{C_F}$ the chosen set of base-points for the connected components of $\Omega(C_F)$.
+We will be denoting by $\widetilde{C^1_F}\subset\widehat{C_F}$ the chosen set of base-points for the connected components of $\Omega(C_F)$.
 
 We will be writing $\sum'_{\omega\in\widehat{C^1_F}}$ to denote the sum of $\mathbf C$-valued functions depending on $\chi$ (such as countable sums of $M(\varphi)(\chi|\cdot|^{it}_F)$ for $t\in\mathbf R$ varying over a suitable discrete subset, for $\varphi\in\mathcal D(C_F)$ fixed, and interpreting the value of the sum as a function of $\chi$), to mean the sum indexed by the choices $\{\chi\in\widehat{C_F}\}$ lifting each point $\omega\in\widehat{C^1_F}$, choices which we fixed at the outset when parametrizing $\Omega(C_F)$ as $\chi|\cdot|^z_F$, $z\in\mathbf C$.
 
@@ -536,13 +536,13 @@ Since the strong topology on $(\mathscr H^s_{F,a}(\omega))'_\beta$ is finer than
 
 It remains to show that the $\{D^m_t\}$ linearly generate a strongly dense subspace of $(\mathscr H^s_{F,a}(\omega))'_\beta$, and their bi-orthogonal set, which exists by Theorem 6.3.2.1(3) and is the image of a countable subset of $\mathscr H_F(\omega)$, is dense in $\mathscr H^s_{F,a}(\omega)$.
 
-By Lemma 9.3.2.1, there exists, for each $\chi\in\widehat{C_F}$ chosen as in the fixed holomorphic parametrization of $\Omega(C_F)$ as in Notation 10.2.1.1, a countable subset $B=\{\phi_{m,\omega}\}_{(m,\omega)\in\mathbf N\times\widehat{C^1_F}}\subset\mathcal S(C_F)$ of Schwartz-Bruhat functions satisfying the following properties:
+By Lemma 9.3.2.1, there exists, for each $\chi\in\widehat{C_F}$ chosen as in the fixed holomorphic parametrization of $\Omega(C_F)$ as in Notation 10.2.1.1, a countable subset $B=\{\varphi_{m,\omega}\}_{(m,\omega)\in\mathbf N\times\widehat{C^1_F}}\subset\mathcal S(C_F)$ of Schwartz-Bruhat functions satisfying the following properties:
 
 (1) $A(B)$ is norm-bounded by $2$ in $W^{s,2}(C_F)$.
 
-(2) For each $(m,\omega)\in\mathbf N\times\widehat{C^1_F}$, $\phi_{m,\omega}$ is $\omega$-homogeneous.
+(2) For each $(m,\omega)\in\mathbf N\times\widehat{C^1_F}$, $\varphi_{m,\omega}$ is $\omega$-homogeneous.
 
-(3) For each integer $m\ge 0$, the Fourier transform of $\phi_{m,\omega}\in B$ is supported over the compact subset of $\widehat{C_F}$ of characters of the form $\chi|\cdot|^{ix}_F$ for $x\in[-m,m]$.
+(3) For each integer $m\ge 0$, the Fourier transform of $\varphi_{m,\omega}\in B$ is supported over the compact subset of $\widehat{C_F}$ of characters of the form $\chi|\cdot|^{ix}_F$ for $x\in[-m,m]$.
 
 (4) The closure of $A(B)$ with respect to the strong operator topology on $\mathscr{L}(W^{s,2}(C_F))$ contains the identity.
 
@@ -562,7 +562,7 @@ $$
 P_{\chi,m}:W^{s,2}(C_F)(\chi|_{C^1_F})\to W^{s,2}(C_F)(\chi|_{C^1_F}) \tag{10.2.1.10}
 $$
 
-the continuous linear operator $A(\phi_{m,\chi|_{C^1_F}})$.
+the continuous linear operator $A(\varphi_{m,\chi|_{C^1_F}})$.
 
 $P_{\chi,m}$ has range contained within the closed subspace of $W^{s,2}(C_F)(\chi|_{C^1_F})$ of those elements whose Fourier transform (pre-composed with the continuous homomorphic
 
@@ -570,13 +570,13 @@ $P_{\chi,m}$ has range contained within the closed subspace of $W^{s,2}(C_F)(\ch
 
 **10.2. SPECTRAL MARKUSHEVICH BASES** · **443**
 
-section $\tau$ to the idelic norm) is compactly supported over the interval $[-m,m]$, because it is isomorphic under the Fourier transform on $W^{s,2}(C_F)(\chi|_{C^1_F})$ (which is indeed defined by Proposition 9.1.2.6) to the multiplication operator by the Fourier transform of $\phi_{m,\chi|_{C^1_F}}$.
+section $\tau$ to the idelic norm) is compactly supported over the interval $[-m,m]$, because it is isomorphic under the Fourier transform on $W^{s,2}(C_F)(\chi|_{C^1_F})$ (which is indeed defined by Proposition 9.1.2.6) to the multiplication operator by the Fourier transform of $\varphi_{m,\chi|_{C^1_F}}$.
 
 We call $Q_{\chi,m}$ the orthogonal projector on $W^{s,2}(C_F)(\chi|_{C^1_F})$ onto such closed subspace, and $\overline{Q}_{\chi,m}$ the orthogonal projector on $\mathscr H^s_{F,a}(\chi|_{C^1_F})$ onto the closure of the linear image of such closed subspace under the quotient $W^{s,2}(C_F)(\chi|_{C^1_F})\to\mathscr H^s_{F,a}(\chi|_{C^1_F})$, a closed subspace of $\mathscr H^s_{F,a}(\chi|_{C^1_F})$.
 
-Since $P_{\chi,m}\to\mathrm{Id}$ in $\mathscr{B}\mathrm{SOT}(W^{s,2}(C_F)(\chi|_{C^1_F}))$, as $m\to+\infty$, by Lemma 9.3.2.1, the same holds for $Q_{\chi,m}$ as $m\to+\infty$, and therefore $Q_{\chi,m}\to\mathrm{Id}$ in $\mathscr{B}\mathrm{SOT}(\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F}))$.
+Since $P_{\chi,m}\to\mathrm{Id}$ in $\mathscr{B}_{\mathrm{SOT}}(W^{s,2}(C_F)(\chi|_{C^1_F}))$, as $m\to+\infty$, by Lemma 9.3.2.1, the same holds for $Q_{\chi,m}$ as $m\to+\infty$, and therefore $Q_{\chi,m}\to\mathrm{Id}$ in $\mathscr{B}_{\mathrm{SOT}}(\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F}))$.
 
-The same therefore holds for the sequence of continuous adjoints $\overline{Q}'_{\chi,m}$ in $(\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F}))'_\beta$, as $m\to+\infty$, in $\mathscr{B}\mathrm{SOT}((\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F}))'_\beta)$.
+The same therefore holds for the sequence of continuous adjoints $\overline{Q}'_{\chi,m}$ in $(\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F}))'_\beta$, as $m\to+\infty$, in $\mathscr{B}_{\mathrm{SOT}}((\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F}))'_\beta)$.
 
 The range of $Q'_{\chi,m}$ in $(\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F}))'_\beta$ is finite dimensional and is linearly generated by the functionals $\{D^k_t\}$ as $t\in[-m,m]$ and $0\le k\le N_s(\rho_{\chi,t})-1$. It follows that the range of $\overline{Q}_{\chi,m}$ in $\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F})$ is also finite dimensional and linearly generated by the bi-orthogonal set of the finite set of functionals $\{D^k_t\}$ as $t\in[-m,m]$ and $0\le k\le N_s(\rho_{\chi,t})-1$. This proves both denseness conditions for the set of continuous functionals $\{D^k_t\}$ as $0\le k\le N_s(\rho_{\chi,t})-1$ and $t\in\mathbf R$ varying over the ordinates of the zeros of $L(s,\chi)$ on the $a$-line, in $(\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F}))'_\beta$, and for its bi-orthogonal set in $\mathscr H^s_{F,a}(C_F)(\chi|_{C^1_F})$. $\square$
 
@@ -720,7 +720,7 @@ Notation 10.2.2.1. Throughout, we fix a choice of holomorphic parametrization fo
 
 This amounts to choosing, for every $\omega\in\widehat{C^1_F}$, a continuous unitary base-point $\chi\in\widehat{C_F}$, and parametrize every point of $\Omega(C_F)(\omega)$ as $\chi|\cdot|^z_F$ for a unique $z\in\mathbf C$.
 
-We will be denoting by $\widehat{C^1_F}\subset\widehat{C_F}$ the chosen set of unitary base-points for the connected components of $\Omega(C_F)$.
+We will be denoting by $\widetilde{C^1_F}\subset\widehat{C_F}$ the chosen set of unitary base-points for the connected components of $\Omega(C_F)$.
 
 We will be writing $\sum'_{\omega\in\widehat{C^1_F}}$ to denote the sum of $\mathbf C$-valued functions depending on $\chi$ (such as countable sums of $M(\varphi)(\chi|\cdot|^{it}_F)$ for $t\in\mathbf R$ varying over a suitable discrete subset, for $\varphi\in\mathcal D(C_F)$ fixed, and interpreting the value of the sum as a function of $\chi$), to mean the sum indexed by the choices $\{\chi\in\widehat{C_F}\}$ lifting each point $\omega\in\widehat{C^1_F}$, choices which we fixed at the outset when parametrizing $\Omega(C_F)$ as $\chi|\cdot|^z_F$, $z\in\mathbf C$.
 
@@ -1144,35 +1144,35 @@ $$
 
 10.3.  SPECTRAL NUCLEARITY                                  453
 
-which is the Fourier transform $\widehat{\varphi}$ of $\varphi$ as a function over $\widehat{C}_F$, composed with the isomorphism of Hausdorff locally compact abelian groups $\mathbf{R}\times\widehat{C}_F^1\simeq\widehat{C}_F$ induced by $\tau$.
+which is the Fourier transform $\widehat{\varphi}$ of $\varphi$ as a function over $\widehat{C_F}$, composed with the isomorphism of Hausdorff locally compact abelian groups $\mathbf{R}\times\widehat{C_F^1}\simeq\widehat{C_F}$ induced by $\tau$.
 
-Let $\widehat{\bar\mu}_1$ be the Plancherel measure of $\bar\mu_1$, and $\widehat{\bar\mu}$ the Plancherel measure of $\bar\mu$ on $\widehat{C}_F$. Then under such isomorphism, the Haar measure $\lambda\otimes\widehat{\bar\mu}_1$ matches $\widehat{\bar\mu}$, $\lambda$ being the Lebesgue measure on $\mathbf{R}$, normalized so as to give the unit interval $[0,1]$ volume 1.
+Let $\widehat{\bar\mu}_1$ be the Plancherel measure of $\bar\mu_1$, and $\widehat{\bar\mu}$ the Plancherel measure of $\bar\mu$ on $\widehat{C_F}$. Then under such isomorphism, the Haar measure $\lambda\otimes\widehat{\bar\mu}_1$ matches $\widehat{\bar\mu}$, $\lambda$ being the Lebesgue measure on $\mathbf{R}$, normalized so as to give the unit interval $[0,1]$ volume 1.
 
-Since $\varphi\in\mathcal{D}(C_F)\subset\mathcal{S}(C_F)$, the Fourier transform $\widehat{\varphi}$ is Schwartz-Bruhat over $\widehat{C}_F$, hence in particular absolutely integrable, and so:
+Since $\varphi\in\mathcal{D}(C_F)\subset\mathcal{S}(C_F)$, the Fourier transform $\widehat{\varphi}$ is Schwartz-Bruhat over $\widehat{C_F}$, hence in particular absolutely integrable, and so:
 
 (10.3.1.26)
 
-$$\sum_{(\omega,t)\in\widehat{C}_F^1\times\{\tau\in\mathbf{R}:L(a+i\tau,\chi)=0\}}|\Phi(\tau,\omega)|$$
+$$\sum_{(\omega,t)\in\widehat{C_F^1}\times\{\tau\in\mathbf{R}:L(a+i\tau,\chi)=0\}}|\Phi(\tau,\omega)|$$
 
-is convergent, because it is comparable to the integral $\int_{\mathbf{R}_{>0}}\int_{\widehat{C}_F^1}|\Phi(x,\omega)|\,\mathrm{d}(\lambda\otimes\widehat{\bar\mu}_1)(x,\omega)$.
+is convergent, because it is comparable to the integral $\int_{\mathbf{R}_{>0}}\int_{\widehat{C_F^1}}|\Phi(x,\omega)|\,\mathrm{d}(\lambda\otimes\widehat{\bar\mu}_1)(x,\omega)$.
 
-We further observe that the assignment, for each $\omega\in\widehat{C}_F^1$, of the sequence $\{\Phi(\tau,\omega):\tau\in\mathbf{R},\,L(a+i\tau,\chi)=0\}$, upon choosing any numbering of the imaginary parts of the zeros of $L(s,\chi)$ on the vertical line $\mathrm{Re}(s)=a$, is a sequence of rapid decay. In particular, if $\varphi$ is $\bar\omega$-homogeneous, then $\widehat{\varphi}$ is supported over $\mathbf{R}\times\{\omega\}$.
+We further observe that the assignment, for each $\omega\in\widehat{C_F^1}$, of the sequence $\{\Phi(\tau,\omega):\tau\in\mathbf{R},\,L(a+i\tau,\chi)=0\}$, upon choosing any numbering of the imaginary parts of the zeros of $L(s,\chi)$ on the vertical line $\mathrm{Re}(s)=a$, is a sequence of rapid decay. In particular, if $\varphi$ is $\bar\omega$-homogeneous, then $\widehat{\varphi}$ is supported over $\mathbf{R}\times\{\omega\}$.
 
 The formulas for the trace of $A(\varphi)$ provided in (10.3.1.3) and (10.3.1.5) follow from [Lit-II, §4,Cor.2,p.61] applied to $A(\varphi)\circ P_{B_K}$ for each finite subset $K\subset\mathbf{N}\times\mathbf{N}$ (the trace of $A(\varphi)\circ P_{B_K}$ is computed by the expression in (10.3.1.3) since $\{\eta_{\chi,t,m}\}$, with the chosen enumeration, is a Schauder basis within the range of $P_{B_K}$, since this is a finite dimensional $\mathbf{C}$-linear subspace of $\mathscr{H}^s_{F,a}$, and hence the nuclear trace of $A(\varphi)\circ P_{B_K}$ equals its matrix trace) for then using Proposition C.3.6.5 and continuity of the trace functional (see Lemma C.3.4.4) and the convergence $P_{B_K}\to\mathrm{1}$ with respect to the strong operator topology, as $K$ tends to cover $\mathbf{N}\times\mathbf{N}$, upon computing the point-spectrum (i.e. the subset of the complex plane of those complex numbers $\lambda$ that are eigenvalues of $A(\varphi)$) of $A(\varphi)$ to be exactly given by the countable set
 
-$$\{\Phi(\tau,\omega):(\tau,\omega)\in\mathbf{R}\times\widehat{C}_F^1,\,L(a+i\tau,\chi)=0\}\subset\mathbf{C}$$
+$$\{\Phi(\tau,\omega):(\tau,\omega)\in\mathbf{R}\times\widehat{C_F^1},\,L(a+i\tau,\chi)=0\}\subset\mathbf{C}$$
 
-each $\Phi(\tau,\omega)$ counted with multiplicity $N_s(\rho_{\chi,\tau})$, which follows from the calculation of the triangular matrix in (10.3.1.17), and hence the spectrum of $A(\varphi)\circ P_{B_K}$ to be given by the subset of $\{\Phi(\tau,\omega):(\tau,\omega)\in\mathbf{R}\times\widehat{C}_F^1,\,L(a+i\tau,\chi)=0\}$ of those values $\Phi(\tau,\omega)$ for $\omega=\chi_k|_{\widehat{C}_F^1}$ with $k$ varying in the image of $K$ under the first projection $\mathbf{N}\times\mathbf{N}\to\mathbf{N}$, and $\tau$ varying over the real numbers $t_{k,j}$ for all $(k,j)\in K$. □
+each $\Phi(\tau,\omega)$ counted with multiplicity $N_s(\rho_{\chi,\tau})$, which follows from the calculation of the triangular matrix in (10.3.1.17), and hence the spectrum of $A(\varphi)\circ P_{B_K}$ to be given by the subset of $\{\Phi(\tau,\omega):(\tau,\omega)\in\mathbf{R}\times\widehat{C_F^1},\,L(a+i\tau,\chi)=0\}$ of those values $\Phi(\tau,\omega)$ for $\omega=\chi_k|_{C_F^1}$ with $k$ varying in the image of $K$ under the first projection $\mathbf{N}\times\mathbf{N}\to\mathbf{N}$, and $\tau$ varying over the real numbers $t_{k,j}$ for all $(k,j)\in K$. □
 
 **10.3.2.  Spectral nuclearity: the general case of compact intervals $I=[-\alpha,\alpha]$.** The following generalizes Theorem 10.3.1.1 to the case $I=[-\alpha,\alpha]$ with $\alpha\ge 0$ a real number.
 
-Theorem 10.3.2.1 (Spectral Nuclearity - II). *Let $F$ be a number field. Let $a,s\in\mathbf{R}$ be real numbers, with $s>1$. We choose a subset $\widehat{C}_F^1\subset\widehat{C}_F$ of representatives for the countable group of continuous characters $\widehat{C}_F^1$, equivalently, a holomorphic parametrization for the Riemann surface $\Omega(C_F)$ of the form*
+Theorem 10.3.2.1 (Spectral Nuclearity - II). *Let $F$ be a number field. Let $a,s\in\mathbf{R}$ be real numbers, with $s>1$. We choose a subset $\widetilde{C_F^1}\subset\widehat{C_F}$ of representatives for the countable group of continuous characters $\widehat{C_F^1}$, equivalently, a holomorphic parametrization for the Riemann surface $\Omega(C_F)$ of the form*
 
-$$\chi|\cdot|^z_F,\quad(\chi,z)\in\widehat{C}_F^1\times\mathbf{C}$$
+$$\chi|\cdot|^z_F,\quad(\chi,z)\in\widetilde{C_F^1}\times\mathbf{C}$$
 
 *as in* (10.2.1.4) *and Notation 10.2.1.1.*
 
-*All characters $\chi\in\widehat{C}_F$ occurring below, are assumed to vary over the chosen subset $\widehat{C}_F^1$, i.e. they are assumed to vary over the chosen unitary base-points of the connected components of $\Omega(C_F)$.*
+*All characters $\chi\in\widehat{C_F}$ occurring below, are assumed to vary over the chosen subset $\widetilde{C_F^1}$, i.e. they are assumed to vary over the chosen unitary base-points of the connected components of $\Omega(C_F)$.*
 
 *Let $\varphi\in\mathcal{D}(C_F)$ be a test function.*
 
@@ -1198,7 +1198,7 @@ $$A:\mathcal{D}(C_F)\to\mathscr{L}_\beta(\mathscr{H}^s_{F,a,I})$$
 
 (10.3.2.3)
 
-$$\mathrm{Trace}\,A(\varphi)=\sum_{\chi\in\widehat{C}_F^1}\ \sum_{t\in\mathbf{R},\,b\in[-\alpha,\alpha]:\,L(a+b+it,\chi)=0}N_{I,s}(\rho_{\chi,t,b})\int_{C_F}\varphi(g)\chi|g|_F^{b+it}\,\mathrm{d}\bar\mu(g)$$
+$$\mathrm{Trace}\,A(\varphi)=\sum_{\chi\in\widetilde{C_F^1}}\ \sum_{t\in\mathbf{R},\,b\in[-\alpha,\alpha]:\,L(a+b+it,\chi)=0}N_{I,s}(\rho_{\chi,t,b})\int_{C_F}\varphi(g)\chi|g|_F^{b+it}\,\mathrm{d}\bar\mu(g)$$
 
 *where $N_{I,s}$ is the counting function:*
 
@@ -1208,13 +1208,13 @@ $$N_{I,s}(\rho_{\chi,t,b})=\min\left\{N(\rho_{\chi,t,b}),\left[\frac{s-1}{2}+1\r
 
 *where $[x]$ is the largest integer $N\ge 0$ satisfying $N\le x$.*
 
-(3) *If $\varphi$ is homogeneous of weight $\bar\omega\in\widehat{C}_F^1$ under the continuous left-translation action of $C_F$ on $\mathcal{D}(C_F)$, then $A(\varphi)$ is valued in the linear subspace $\mathscr{S}(\mathscr{H}^s_{F,a,I}(\omega))$ of strongly nuclear operators on the isotype $\mathscr{H}^s_{F,a,I}(\omega)$, and its trace is:*
+(3) *If $\varphi$ is homogeneous of weight $\bar\omega\in\widehat{C_F^1}$ under the continuous left-translation action of $C_F$ on $\mathcal{D}(C_F)$, then $A(\varphi)$ is valued in the linear subspace $\mathscr{S}(\mathscr{H}^s_{F,a,I}(\omega))$ of strongly nuclear operators on the isotype $\mathscr{H}^s_{F,a,I}(\omega)$, and its trace is:*
 
 (10.3.2.5)
 
 $$\mathrm{Trace}\,A(\varphi)=\sum_{t\in\mathbf{R},\,b\in[-\alpha,\alpha]:\,L(a+b+it,\chi)=0}N_{I,s}(\rho_{\chi,t,b})\int_{C_F}\varphi(g)\chi|g|_F^{b+it}\,\mathrm{d}\bar\mu(g)$$
 
-*for $\chi\in\widehat{C}_F^1$ the unique element of $\widehat{C}_F^1$ such that $\chi|_{\widehat{C}_F^1}=\omega$, i.e. where $\chi$ is the base-point of $\Omega(C_F)(\omega)$ for the chosen holomorphic parametrization of $\Omega(C_F)$ from* (10.2.1.4).
+*for $\chi\in\widetilde{C_F^1}$ the unique element of $\widetilde{C_F^1}$ such that $\chi|_{C_F^1}=\omega$, i.e. where $\chi$ is the base-point of $\Omega(C_F)(\omega)$ for the chosen holomorphic parametrization of $\Omega(C_F)$ from* (10.2.1.4).
 
 Proof. *The argument for Theorem 10.3.2.1 follows the same method as in the proof of Theorem 10.3.1.1 upon replacing $N_s(\rho)$ defined in (10.3.1.4) with the truncated multiplicity function $N_{I,s}(\rho)$ defined in (10.2.2.5) and (10.2.2.6), noting that $N_{I,s}$, contrary to $N_s$, is unbounded if $\alpha>0$. In this case, we need to refine the estimate on:*
 
@@ -1240,7 +1240,7 @@ $$\sum_{k\ge 0}\sum_{j\ge 0}\left(\sum_{0\le i\le N_{I,s}(\rho_{\chi_k,t_{k,j},b
 
 **10.4. TRACE FORMULA: SPECTRAL SIDE** · **455**
 
-We note that we have, for each $\chi \in \widehat{C_F}$ and upon choosing a continuous homomorphic section $\tau$ to the idelic norm:
+We note that we have, for each $\chi \in \widetilde{C_F}$ and upon choosing a continuous homomorphic section $\tau$ to the idelic norm:
 
 $$
 |M(\varphi)^{(i)}(z)| \le \int_{\mathbf{R}_{>0}} \int_{C^1_F} |(t\partial_t)^N(\varphi(\tau(t)g)\log(t)^i)t^{\mathrm{Re}(z)}| \,\mathrm{d}\overline{\mu}(g)\,\frac{\mathrm{d}t}{t} \tag{10.3.2.8}
@@ -1346,7 +1346,7 @@ We now introduce truncated versions of $P^{\mathrm{geom}}_a$, respectively $P^{\
 
 We refer the reader to Definition 9.3.3.1 and Definition 9.3.3.3 for the definition of $(\Lambda,\varepsilon)$-cutoffs and smooth $(\Lambda,\varepsilon)$-cutoff, which we will be specializing hereafter to the $\mathbf{R}_{>0}$-modulated group $C_F$, whose module is the idelic norm $|\cdot|_F$.
 
-Definition 10.4.1.3 (Spectral and geometric truncations - projection after convolution). Let $F$ be a number field. Let $I=[-\alpha,\alpha]$ be a compact non-empty interval, with $\alpha\ge 0$ a real number. Let $a,s,\Lambda,\varepsilon$ be real numbers, with $s\ge 0$ and $\Lambda,\varepsilon>0$. Assume $0<1/\Lambda+\varepsilon<\Lambda-\varepsilon$. Let $\rho:C_F\to\mathbf{C}$ be a $(\Lambda,\varepsilon)$-cutoff. Let $\phi\in\mathcal{D}(C_F)$ be a test function.
+Definition 10.4.1.3 (Spectral and geometric truncations - projection after convolution). Let $F$ be a number field. Let $I=[-\alpha,\alpha]$ be a compact non-empty interval, with $\alpha\ge 0$ a real number. Let $a,s,\Lambda,\varepsilon$ be real numbers, with $s\ge 0$ and $\Lambda,\varepsilon>0$. Assume $0<1/\Lambda+\varepsilon<\Lambda-\varepsilon$. Let $\rho:C_F\to\mathbf{C}$ be a $(\Lambda,\varepsilon)$-cutoff. Let $\varphi\in\mathcal{D}(C_F)$ be a test function.
 
 (1) We define the Geometric Truncation Operator to be the composition:
 
@@ -1414,7 +1414,7 @@ We do have $P^{\mathrm{spec}}_a\circ A(\varphi)\circ P^{\mathrm{geom}}_a=0$, whi
 
 We define truncations again, but in a different order:
 
-Definition 10.4.1.5 (Spectral and geometric truncations - convolution after projection). Let $F$ be a number field. Let $I=[-\alpha,\alpha]$ be a compact non-empty interval, with $\alpha\ge 0$ a real number. Let $a,s,\Lambda,\varepsilon$ be real numbers, with $s\ge 0$ and $\Lambda,\varepsilon>0$. Assume $0<1/\Lambda+\varepsilon<\Lambda-\varepsilon$. Let $\rho:C_F\to\mathbf{C}$ be a $(\Lambda,\varepsilon)$-cutoff. Let $\phi\in\mathcal{D}(C_F)$ be a test function.
+Definition 10.4.1.5 (Spectral and geometric truncations - convolution after projection). Let $F$ be a number field. Let $I=[-\alpha,\alpha]$ be a compact non-empty interval, with $\alpha\ge 0$ a real number. Let $a,s,\Lambda,\varepsilon$ be real numbers, with $s\ge 0$ and $\Lambda,\varepsilon>0$. Assume $0<1/\Lambda+\varepsilon<\Lambda-\varepsilon$. Let $\rho:C_F\to\mathbf{C}$ be a $(\Lambda,\varepsilon)$-cutoff. Let $\varphi\in\mathcal{D}(C_F)$ be a test function.
 
 (1) We define the Geometric Restriction Operator of level $\rho$:
 
@@ -1462,7 +1462,7 @@ To study $P^{\mathrm{spec}}_{\rho,a}\circ A(\varphi)$, we first prove that it is
 
 Theorem 10.4.2.1. Let $F$ be a number field, $a,s$ real numbers, $s\ge 0$. Let $I=[-\alpha,\alpha]$ be a compact non-empty interval, with $\alpha\ge 0$ a real number. Let $\Lambda,\varepsilon>0$ be real numbers such that $0<1/\Lambda+\varepsilon<\Lambda-\varepsilon$. Let $\rho$ be a $(\Lambda,\varepsilon)$-cutoff.
 
-Then for any $\phi\in\mathcal{D}(C_F)$, the operator $P^{\mathrm{spec}}_a\circ A(\varphi)$, and the operators $P^{\mathrm{geom}}_{\rho,a}\circ A(\varphi)$ from (10.4.1.7) and $P^{\mathrm{spec}}_{\rho,a}\circ A(\varphi)$ from (10.4.1.9) are nuclear.
+Then for any $\varphi\in\mathcal{D}(C_F)$, the operator $P^{\mathrm{spec}}_a\circ A(\varphi)$, and the operators $P^{\mathrm{geom}}_{\rho,a}\circ A(\varphi)$ from (10.4.1.7) and $P^{\mathrm{spec}}_{\rho,a}\circ A(\varphi)$ from (10.4.1.9) are nuclear.
 
 Their traces satisfy the identity:
 
@@ -1622,7 +1622,7 @@ $\square$
 
 Lemma 10.4.2.5. Let $E$ be a Banach space, $E_0\subset E$ a closed subspace. Let $||\cdot||_E$ be a norm on $E$ generating the Banach space topology on $E$.
 
-Assume $E/E_0$, endowed with the quotient topology, admits a normalized Schauder, respectively Markushevich, basis $\{x_m\}_{m\ge 0}$. Let $\{\phi_m\}_{m\ge 0}$ be its bi-orthogonal sequence.
+Assume $E/E_0$, endowed with the quotient topology, admits a normalized Schauder, respectively Markushevich, basis $\{x_m\}_{m\ge 0}$. Let $\{\varphi_m\}_{m\ge 0}$ be its bi-orthogonal sequence.
 
 Let $r,r'>0$ be real numbers such that, upon denoting by $||\cdot||_{E/E_0}$ the induced norm on the quotient $E/E_0$, we have:
 
@@ -1632,14 +1632,14 @@ $$
 
 Let $F\subset E$ be a linear subspace such that $F_0:=F\cap E_0$ is dense in $E_0$ with respect to the normed topology inherited from $E$. Assume $\{x_m\}_{m\ge 0}\subset F/F_0$.
 
-We denote by $\tilde\phi_m$ the image of $\phi_m$ under $(E/E_0)'_{\beta}\to E'_{\beta}$, i.e. the composition of $\phi_m$ with the quotient $E\to E/E_0$.
+We denote by $\tilde\varphi_m$ the image of $\varphi_m$ under $(E/E_0)'_{\beta}\to E'_{\beta}$, i.e. the composition of $\varphi_m$ with the quotient $E\to E/E_0$.
 
 There exists a subset $\{u_m\}_{m\ge 0}\subset F$ satisfying the following properties:
 
 (1) For every pair of integers $m,n\ge 0$, we have:
 
 $$
-\tilde\phi_m(u_n)=\delta_{m,n}. \tag{10.4.2.17}
+\tilde\varphi_m(u_n)=\delta_{m,n}. \tag{10.4.2.17}
 $$
 
 (2) There exists a number $\varepsilon>0$, with $r>\varepsilon$, such that $\{u_m\}_{m\ge 0}\subset E$ satisfies:
@@ -1656,7 +1656,7 @@ There exists a sequence $\{\delta_m\}$ of small enough positive real numbers suc
 
 **462** · **CHAPTER 10. TRACE FORMULA: SPECTRAL SIDE**
 
-Terminology 10.4.2.1. Let $E$ be a Banach space, $E_0\subset E$ a closed subspace, and assume $\{x_m\}_{m\ge 0}\subset E/E_0$ is a normalized Schauder, respectively Markushevich, basis, with bi-orthogonal sequence $\{\phi_m\}_{m\ge 0}$. Assume $F\subset E$ is a linear subspace such that $F\cap E_0$ is dense in $E_0$, and the linear image of $F$ in $E/E_0$ is dense.
+Terminology 10.4.2.1. Let $E$ be a Banach space, $E_0\subset E$ a closed subspace, and assume $\{x_m\}_{m\ge 0}\subset E/E_0$ is a normalized Schauder, respectively Markushevich, basis, with bi-orthogonal sequence $\{\varphi_m\}_{m\ge 0}$. Assume $F\subset E$ is a linear subspace such that $F\cap E_0$ is dense in $E_0$, and the linear image of $F$ in $E/E_0$ is dense.
 
 We will be referring to the sequence $\{u_m\}_{m\ge 0}$ satisfying (1) and (2) from Lemma 10.4.2.5, whose existence is provided by the Lemma, as an $\varepsilon$-lift of $\{x_m\}_{m\ge 0}$.
 
@@ -1664,9 +1664,9 @@ Proof of Lemma 10.4.2.5. We discuss the case of a Schauder basis.$^7$
 
 For each integer $m\ge 0$, we let $u_m\in E$ be a choice of element such that its image under the linear quotient operator $E\to E/E_0$ is $x_m$.
 
-Since $E\to E/E_0$ is open, the linear image of $\{\phi_m\}_{m\ge 0}$ in $E'_{\beta}$ under the continuous linear operator $(E/E_0)'_{\beta}\to E'_{\beta}$ is a Schauder basis in its closure, since $(E/E_0)'_{\beta}\to E'_{\beta}$ is a linear topological embedding by [NB, Thm.8.13.2] (since by [NB, Thm.8.13.2], the range of $(E/E_0)'_{\beta}\to E'_{\beta}$ is weakly closed, hence strongly closed).
+Since $E\to E/E_0$ is open, the linear image of $\{\varphi_m\}_{m\ge 0}$ in $E'_{\beta}$ under the continuous linear operator $(E/E_0)'_{\beta}\to E'_{\beta}$ is a Schauder basis in its closure, since $(E/E_0)'_{\beta}\to E'_{\beta}$ is a linear topological embedding by [NB, Thm.8.13.2] (since by [NB, Thm.8.13.2], the range of $(E/E_0)'_{\beta}\to E'_{\beta}$ is weakly closed, hence strongly closed).
 
-For any $u\in E_0$, we have $\tilde\phi_k(u+u_m)=\tilde\phi_k(u_m)$, and hence $\tilde\phi_k(u_m)=\phi_k(x_m)=\delta_{m,n}$.
+For any $u\in E_0$, we have $\tilde\varphi_k(u+u_m)=\tilde\varphi_k(u_m)$, and hence $\tilde\varphi_k(u_m)=\varphi_k(x_m)=\delta_{m,n}$.
 
 The quotient topology on $E/E_0$ is induced, by [NB, Thm.5.11.2], by the norm
 
@@ -1696,7 +1696,7 @@ $$r-\varepsilon/2\le\big|\,||u+u_m||_E-||u-u'||_E\,\big|\le||u'+u_m||_E\le||u+u_
 
 Since $r$ does not depend on $m\ge 0$, we may choose $\varepsilon>0$ small enough so as to have $r-\varepsilon/2\ge r-\varepsilon>0$.
 
-We now let $V\subset E$ be the closure of the linear span of $\{u_m\}_{m\ge 0}$. It follows that $\{\tilde\phi_m\}_{m\ge 0}$ is a sequence in $H'$ such that $\tilde\phi_m(u_n)=\delta_{m,n}$, which proves that $\{u_m\}_{m\ge 0}$ is a Schauder basis in $V$ by [Jar, Part II, Ch.14, §14.2, Prop.3, p.292], since it its topologically free [Jar, Part II, Ch.14, §14.1, Prop.1, p.290].
+We now let $V\subset E$ be the closure of the linear span of $\{u_m\}_{m\ge 0}$. It follows that $\{\tilde\varphi_m\}_{m\ge 0}$ is a sequence in $H'$ such that $\tilde\varphi_m(u_n)=\delta_{m,n}$, which proves that $\{u_m\}_{m\ge 0}$ is a Schauder basis in $V$ by [Jar, Part II, Ch.14, §14.2, Prop.3, p.292], since it its topologically free [Jar, Part II, Ch.14, §14.1, Prop.1, p.290].
 
 For any sequence $\{y_m\}_{m\ge 0}$, the sequence $\{u_m+y_m\}_{m\ge 0}$ is also contained in $F$ and satisfies (1). For $\{y_m\}_{m\ge 0}$ satisfying $||y_m||_E<\delta_m$ for $\delta_m>0$ small enough, we have $||u_m+y_m||_E\in[r-\varepsilon,r'+\varepsilon]$.
 

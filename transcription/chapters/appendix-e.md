@@ -1299,7 +1299,7 @@ $$
 
 that $\operatorname{coeq}(p_1,p_2)$ receives from $X$.
 
-The space $Y$ further receives a unique map $\varphi$ from $\operatorname{coeq}(p_1,p_1)$ such that the submersive map from (E.2.2.10) satisfies
+The space $Y$ further receives a unique map $\phi$ from $\operatorname{coeq}(p_1,p_1)$ such that the submersive map from (E.2.2.10) satisfies
 
 $$
 q\circ f'=f
@@ -1544,7 +1544,7 @@ We prove (3). As $f'$ is an immersion, $f$ is injective by part (1). Let $Z$ be 
 
 ```latex
 \begin{tikzcd}
-Z_T := Z \times_{f \circ h,Y,g} T \arrow[r, dashed, "h'"] \arrow[d, "g''"'] \arrow[rr, "k", bend left] & X_T \arrow[d, "g'"] \arrow[r, "f'"] & T \arrow[d, "g"] \\
+Z_T := Z \times_{f \circ h,Y,g} T \arrow[r, dashed, "h'"] \arrow[d, "g''"'] \arrow[rr, "k", bend left] & X_T \arrow[d, "g'"] \arrow[r, "f'"] & Y \arrow[d, "g"] \\
 Z \arrow[r, "h"'] & X \arrow[r, "f"'] & Y
 \end{tikzcd}
 ```
@@ -1811,7 +1811,7 @@ $$
 
 ```latex
 \begin{tikzcd}
-Z \arrow[r] \arrow[d, "i"'] & \{*\} \coprod Z \arrow[r, "a"] \arrow[d, "i"] & \{*\} \arrow[d, "x"] \\
+Z \arrow[r] \arrow[d, "i"'] & \{*\} \coprod Z \arrow[r, "a"] \arrow[d, "i"] & \{*\} \arrow[d] \\
 X \arrow[r] \arrow[rr, "q"', bend right] & \{*\} \coprod X \arrow[r, "b"'] & (X/Z)_*
 \end{tikzcd}
 ```
@@ -2104,11 +2104,11 @@ $$\mathcal{C}_{\le\nu}:=\bigsqcup_{J_1,J_2\in\mathrm{Set}_{\le\nu}}\{(J_1,J_2)\}
 
 via the injective class function:
 
-$$\varphi\subset\mathrm{Cat}'_{\le\nu}\times\bigsqcup_{J_1,J_2\in\mathrm{Set}_{\le\nu}}\{(J_1,J_2)\}\times\mathrm{Map}(J_1,J_2)\times\mathrm{Map}(J_1\times_{s,J_2,t}J_1,J_1)\times\mathrm{Map}(J_2,J_1)$$
+$$\phi\subset\mathrm{Cat}'_{\le\nu}\times\bigsqcup_{J_1,J_2\in\mathrm{Set}_{\le\nu}}\{(J_1,J_2)\}\times\mathrm{Map}(J_1,J_2)\times\mathrm{Map}(J_1\times_{s,J_2,t}J_1,J_1)\times\mathrm{Map}(J_2,J_1)$$
 
 defined as
 
-$$\varphi:=\{((J_1,J_2,s,t,c,e),(I_1,I_2,s',t',c',e'))\in\mathrm{Cat}'_{\le\nu}\times \mathcal{C}_{\le\nu}\mid (J_1,J_2,s,t,c,e)=(I_1,I_2,s',t',c',e')\},$$
+$$\phi:=\{((J_1,J_2,s,t,c,e),(I_1,I_2,s',t',c',e'))\in\mathrm{Cat}'_{\le\nu}\times \mathcal{C}_{\le\nu}\mid (J_1,J_2,s,t,c,e)=(I_1,I_2,s',t',c',e')\},$$
 
 the equality $(J_1,J_2,s,t,c,e)=(I_1,I_2,s',t',c',e')$ being defined within $\mathbf{C}_{\le\nu}$. As $\mathcal{C}_{\le\nu}$ is a set, so is $\mathrm{Cat}'_{\le\nu}$ by the Axiom Schema of Replacement.
 
@@ -2120,7 +2120,7 @@ We have $P_1(s,t,c,e)$ from (E.3.1.2) because we have $P_1(s',t',c',e')$, and li
 
 **E.3. SMALL COMPACTLY GENERATED WEAKLY HAUSDORFF SPACES** · **871**
 
-to be the category whose objects are the elements of $J_2$ and such that for any $(i,j)\in J_2\times J_2$ we have $\mathrm{Map}(i,j):=s^{-1}(i)\cap t^{-1}(j)$. There is a functor $u:\mathrm{Cat}(J_1,J_2,s,t,c,e)\to J$ defined as $u(i):=f(i)$, and $u(\varphi:i\to j):=g(\varphi)$. The functor u is a bijection on sets of objects, and it is fully faithful by design of g. It is therefore an isomorphism of categories. We finally define the class function:
+to be the category whose objects are the elements of $J_2$ and such that for any $(i,j)\in J_2\times J_2$ we have $\mathrm{Map}(i,j):=s^{-1}(i)\cap t^{-1}(j)$. There is a functor $u:\mathrm{Cat}(J_1,J_2,s,t,c,e)\to J$ defined as $u(i):=f(i)$, and $u(\phi:i\to j):=g(\phi)$. The functor u is a bijection on sets of objects, and it is fully faithful by design of g. It is therefore an isomorphism of categories. We finally define the class function:
 
 $$\psi\subset\mathrm{Cat}'_{\le\nu}\times\mathbf{Cat}_{\le\nu}$$
 
@@ -2134,23 +2134,23 @@ We further recall the following well-known structural result on compact Hausdorf
 
 Lemma E.3.1.5. *Let K be a compact Hausdorff space, and $\kappa$ a cardinal satisfying $\mathrm{size}(K)\le\kappa$ (see Definition E.3.1.1). There exists a closed immersion*
 
-$$\varphi:K\to\prod_{\kappa}[0,1],$$
+$$\phi:K\to\prod_{\kappa}[0,1],$$
 
 *the product being endowed with the product topology.*
 
 Proof. We call $i:[0,1]\to\mathbf C$ the closed immersion of the unit interval in $\mathbf R$. Then $i^*:\mathrm{C}(K,[0,1])\to \mathrm{C}(K)$, defined as $i^*(f):=i\circ f$ for any $f\in \mathrm{C}(K,[0,1])$, is injective, and hence $|\mathrm{C}(K,[0,1])|\le\kappa$. We will now construct a closed immersion:
 
-$$\varphi:K\to[0,1]^{\kappa},$$
+$$\phi:K\to[0,1]^{\kappa},$$
 
 where we define $[0,1]^{\kappa}$ to be $\prod_{\alpha_{\kappa}}[0,1]$ endowed with the product topology (whose $\alpha_{\kappa}$ is the least ordinal with cardinality $\kappa$). We define
 
-$$\varphi_K:K\to\prod_{a\in \mathrm{C}(K,[0,1])}[0,1]$$
+$$\phi_K:K\to\prod_{a\in \mathrm{C}(K,[0,1])}[0,1]$$
 
-by $\varphi_K(x):=(a(x))_{a\in \mathrm{C}(K,[0,1])}$. The set-function $\varphi_K$ is continuous. As $|\mathrm{C}(K,[0,1])|\le\kappa$, we may call $\lambda$ the cardinality of $\mathrm{C}(K,[0,1])$ with $\lambda\le\kappa$, and select (by the Axiom of Choice) a bijection $j:\mathrm{C}(K,[0,1])\to\alpha_{\lambda}$. We may therefore define $J:=\{x\in\alpha_{\kappa}\mid x>y,\text{ for all }y\in\alpha_{\lambda}\}$, and we have $\alpha_{\kappa}=\alpha_{\lambda}\sqcup J$. We define
+by $\phi_K(x):=(a(x))_{a\in \mathrm{C}(K,[0,1])}$. The set-function $\phi_K$ is continuous. As $|\mathrm{C}(K,[0,1])|\le\kappa$, we may call $\lambda$ the cardinality of $\mathrm{C}(K,[0,1])$ with $\lambda\le\kappa$, and select (by the Axiom of Choice) a bijection $j:\mathrm{C}(K,[0,1])\to\alpha_{\lambda}$. We may therefore define $J:=\{x\in\alpha_{\kappa}\mid x>y,\text{ for all }y\in\alpha_{\lambda}\}$, and we have $\alpha_{\kappa}=\alpha_{\lambda}\sqcup J$. We define
 
 $$i_K:\prod_{a\in \mathrm{C}(K,[0,1])}[0,1]\to[0,1]^{\kappa}$$
 
-by $i_K((x_a)_{a\in \mathrm{C}(K,[0,1])}):=(x_c)_{c\in\alpha_{\kappa}}$ where $x_c=x_a$ in $[0,1]$ for c of the form $c=j(a)$ (where such a is unique by injectivity of j), and $x_c=0$ otherwise. The map $i_K$ is continuous, and we may therefore define $\varphi:K\to[0,1]^{\kappa}$ as $\varphi:=i_K\circ\varphi_K$. The set-function $\varphi$ is therefore continuous. It is also injective by Urysohn’s Lemma, as K is compact Hausdorff (hence normal). Since K is compact and $[0,1]^{\kappa}$ is Hausdorff, $\varphi$ is a closed immersion. $\square$
+by $i_K((x_a)_{a\in \mathrm{C}(K,[0,1])}):=(x_c)_{c\in\alpha_{\kappa}}$ where $x_c=x_a$ in $[0,1]$ for c of the form $c=j(a)$ (where such a is unique by injectivity of j), and $x_c=0$ otherwise. The map $i_K$ is continuous, and we may therefore define $\phi:K\to[0,1]^{\kappa}$ as $\phi:=i_K\circ\phi_K$. The set-function $\phi$ is therefore continuous. It is also injective by Urysohn’s Lemma, as K is compact Hausdorff (hence normal). Since K is compact and $[0,1]^{\kappa}$ is Hausdorff, $\phi$ is a closed immersion. $\square$
 
 We now construct, for any fixed cardinal $\kappa$, a set of representatives of all compact Hausdorff spaces of size at most $\kappa$ up to homeomorphism.
 
@@ -2170,7 +2170,7 @@ and the algebra of continuous complex-valued functions on each compact Hausdorff
 
 $$|\mathrm{C}(K)|\le\kappa.$$
 
-We define $\mathcal C_{\kappa}$ to be the set of all closed subsets of $[0,1]^{\kappa}$, so all elements of $\mathcal C_{\kappa}$ are compact Hausdorff. We may therefore define $\mathrm{CH}_{\le\kappa}:=\mathcal C_{\kappa}\cap\mathcal K_{\le\kappa}$, the intersection being formed within the class of all compact Hausdorff spaces. For any compact Hausdorff space K such that $\mathrm{size}(K)\le\kappa$, by Lemma E.3.1.5 there exists a closed immersion $\varphi:K\to[0,1]^{\kappa}$, and hence an element $K'$ in $\mathrm{CH}_{\le\kappa}$ and a homeomorphism $f:K'\to K$, defined as the inverse of the homeomorphism induced by $\varphi$ from K onto the image $K':=\varphi(K)$. $\square$
+We define $\mathcal C_{\kappa}$ to be the set of all closed subsets of $[0,1]^{\kappa}$, so all elements of $\mathcal C_{\kappa}$ are compact Hausdorff. We may therefore define $\mathrm{CH}_{\le\kappa}:=\mathcal C_{\kappa}\cap\mathcal K_{\le\kappa}$, the intersection being formed within the class of all compact Hausdorff spaces. For any compact Hausdorff space K such that $\mathrm{size}(K)\le\kappa$, by Lemma E.3.1.5 there exists a closed immersion $\phi:K\to[0,1]^{\kappa}$, and hence an element $K'$ in $\mathrm{CH}_{\le\kappa}$ and a homeomorphism $f:K'\to K$, defined as the inverse of the homeomorphism induced by $\phi$ from K onto the image $K':=\phi(K)$. $\square$
 
 We can now use Lemma E.3.1.2 and Lemma E.3.1.6 alongside Proposition E.2.1.13 to construct, for each fixed cardinal $\kappa$, a set of compactly generated and weakly Hausdorff spaces such that every object of CGWH of size at most $\kappa$ is homeomorphic to an object of such a set. This construction will be used as a crutch to build a small subcategory of CGWH stable under enough categorical operations to enable us to make some intrinsic constructions of interest, and that will serve as underlying category for our sought-for “topological site”. The following Lemma is an analog of [SP, Tag 000I].
 
@@ -2300,7 +2300,7 @@ The set of compact Hausdorff subspaces of X has cardinality at most the cardinal
 
 $$\prod_{i\in I}\Sigma_i$$
 
-where $\Sigma_i$ is the set of compact Hausdorff subspaces of $K_i$. Indeed, upon writing $\Sigma_X$ for the set of compact Hausdorff subspaces of X, the set-function $\varphi:\Sigma_X\to\prod_{i\in I}\Sigma_i$ assigned by $\varphi(K):=(K\cap K_i)_{i\in I}$ is injective, and hence $|\Sigma_X|\le|\prod_{i\in I}\Sigma_i|$. Since each $K_i$ is itself compact Hausdorff, so $|\Sigma_i|\le\mathrm{size}(K_i)$ for every $i\in I$,
+where $\Sigma_i$ is the set of compact Hausdorff subspaces of $K_i$. Indeed, upon writing $\Sigma_X$ for the set of compact Hausdorff subspaces of X, the set-function $\phi:\Sigma_X\to\prod_{i\in I}\Sigma_i$ assigned by $\phi(K):=(K\cap K_i)_{i\in I}$ is injective, and hence $|\Sigma_X|\le|\prod_{i\in I}\Sigma_i|$. Since each $K_i$ is itself compact Hausdorff, so $|\Sigma_i|\le\mathrm{size}(K_i)$ for every $i\in I$,
 
 $$|\Sigma_X|\le(\sup_{i\in I}\mathrm{size}(K_i))^{|I|}.$$
 
@@ -3154,7 +3154,7 @@ where $t_{a}$ is the morphism $F(a) \to F'(a)$ in $B$ induced by the natural tra
 
 ```latex
 \begin{tikzcd}[row sep=large, column sep=large]
-F(a) \arrow[r, "t_{a}"] \arrow[d, "F(f)"'] & F'(a) \arrow[d, "F'(f)"] \\
+F(a) \arrow[r, "t_{a}"] \arrow[d, "F(f)"'] & F'(a) \arrow[d, "F(f)"] \\
 F(a') \arrow[r, "t_{a'}"'] & F'(a')
 \end{tikzcd}
 ```
@@ -3824,6 +3824,7 @@ The bifunctors $c_{A,B,C}$ and the functor $u_A$ are assumed to satisfy the foll
 (1) (Unit Axiom) The following diagram is commutative:
 
 (E.5.2.1)
+
 ```latex
 \begin{tikzcd}
 \mathbf{1}\times\mathbf{Hom}_{\mathcal{C}}(A,B) \arrow[d, "(u_A,\mathbf{id})"] & \mathbf{Hom}_{\mathcal{C}}(A,B) \arrow[r] \arrow[d, equal] \arrow[l] & \mathbf{Hom}_{\mathcal{C}}(A,B)\times\mathbf{1} \arrow[d, "(\mathbf{id},u_A)"] \\
@@ -3836,6 +3837,7 @@ where the top horizontal arrows are equivalences of categories, and where $\math
 (2) (Associativity of Compositions Axiom) The following diagram is commutative:
 
 (E.5.2.2)
+
 ```latex
 \begin{tikzcd}
 \mathbf{Hom}_{\mathcal{C}}(A,B)\times\mathbf{Hom}_{\mathcal{C}}(B,C)\times\mathbf{Hom}_{\mathcal{C}}(C,D) \arrow[r, "(\mathbf{id},c_{B,C,D})"] \arrow[d, "(c_{A,B,C},\mathbf{id})"] & \mathbf{Hom}_{\mathcal{C}}(A,B)\times\mathbf{Hom}_{\mathcal{C}}(B,D) \arrow[d, "c_{A,B,D}"] \\
@@ -3920,6 +3922,7 @@ We now introduce terminology to define what it means for a diagram to commute in
 DEFINITION E.5.2.4. Let $A,B,C,D\in\mathrm{Ob}(\mathcal{C})$ be objects, and $f:A\to B$, $g:B\to C$, $h:A\to D$, $k:D\to C$, 1-morphisms. We consider the following (possibly non-commutative) diagram:
 
 (E.5.2.3)
+
 ```latex
 \begin{tikzcd}
 A \arrow[r, "f"] \arrow[d, "h"'] & B \arrow[d, "g"] \\
@@ -4056,6 +4059,7 @@ $$
 (3) For all triples of objects $A,B,C\in\mathrm{Ob}(\mathcal{C})$, a 2-isomorphism $\gamma_{A,B,C}$ in $\mathbf{Cat}$ making the following diagram 2-commutative:
 
 (E.5.3.1)
+
 ```latex
 \begin{tikzcd}
 \mathbf{Hom}_{\mathcal{C}}(A,B)\times\mathbf{Hom}_{\mathcal{C}}(B,C) \arrow[r, "c_{A,B,C}"] \arrow[d, "{(F_{A,B},F_{B,C})}"'] & \mathbf{Hom}_{\mathcal{C}}(A,C) \arrow[d, "F_{A,C}"] \\
@@ -4066,6 +4070,7 @@ $$
 (4) For every object $A\in\mathrm{Ob}(\mathcal{C})$, a natural isomorphism between the two functors defined as the compositions in the diagram (E.5.3.3) below from the upper leftmost vertex to the lower rightmost vertex, between the categories $\mathbf{1}\rightrightarrows\mathbf{Hom}_{\mathcal{C}}(F(A),F(A))$:
 
 (E.5.3.2)
+
 ```latex
 \begin{tikzcd}
 \mathbf{1} \arrow[r, "u_A"] \arrow[d, equal] & \mathbf{Hom}_{\mathcal{C}}(A,A) \arrow[d, "F_{A,A}"] \\
@@ -4082,6 +4087,7 @@ The datum $(F,F_{\bullet,\bullet},\gamma_{\bullet,\bullet,\bullet},\delta_{\bull
 (1) (Unit Axiom) For every 1-morphism $f:A\to B$, the following diagrams commute:
 
 (E.5.3.3)
+
 ```latex
 \begin{tikzcd}
 F_{A,B}(f)\circ\mathbf{1}_{F(A)} \arrow[r, Rightarrow, "\mathbf{1}_{F_{A,B}(f)}\star(\delta_A)_*"] \arrow[d, Rightarrow, "\mathbf{1}_{F_{A,B}(f)}"] & F_{A,B}(f)\circ F_{A,A}(\mathbf{1}_A) \arrow[d, Rightarrow, "\gamma_{A,A,B}(\mathbf{1}_A,f)"] \\
@@ -4092,6 +4098,7 @@ F_{A,B}(f) \arrow[r, Rightarrow, "\mathbf{1}_{F_{A,B}(f)}"'] & F_{A,B}(f\circ\ma
 where $(\delta_A)_*$ denotes the 2-morphism $\mathbf{1}_A\Rightarrow F_{A,A}(\mathbf{1}_A)$ induced by $\delta_A$, and
 
 (E.5.3.4)
+
 ```latex
 \begin{tikzcd}
 \mathbf{1}_{F(B)}\circ F_{A,B}(f) \arrow[r, Rightarrow, "(\delta_B)_*\star F_{A,A}(f)"] \arrow[d, Rightarrow, "\mathbf{1}_{F_{A,B}(f)}"] & F_{B,B}(\mathbf{1}_B)\circ F_{A,B}(f) \arrow[d, Rightarrow, "\gamma_{A,B,B}(f,\mathbf{1}_B)"] \\
@@ -4104,6 +4111,7 @@ where $(\delta_B)_*$ denotes the 2-morphism $\mathbf{1}_B\Rightarrow F_{B,B}(\ma
 (2) (Associativity of Compositions) For all triples of 1-morphisms $f:A\to B$, $g:B\to C$, $h:C\to D$ in $\mathcal{C}$, the following diagram commutes:
 
 (E.5.3.5)
+
 ```latex
 \begin{tikzcd}
 F_{C,D}(h)\circ F_{B,C}(g)\circ F_{A,B}(f) \arrow[r, Rightarrow, "\mathbf{1}_{F_{C,D}(h)}\star\gamma_{A,B,C}(f,g)"] \arrow[d, Rightarrow, "\gamma_{B,C,D}(g,h)\star\mathbf{1}_{F_{A,B}(f)}"] & F_{C,D}(h)\circ F_{A,C}(g\circ f) \arrow[d, Rightarrow, "\gamma_{A,C,D}(g\circ f,h)"] \\
@@ -4416,7 +4424,7 @@ CONSTRUCTION E.5.5.1. We define the class $\mathrm{Diagrams}(f, g)$, whose eleme
 ```latex
 \begin{tikzcd}
 D \arrow[r, "a"] \arrow[d, "b"'] & B \arrow[d, "f"] \\
-C \arrow[r, "\overline{g}"'] & A
+C \arrow[r, "g"'] \arrow[ur, Leftrightarrow, "\phi"'] & A
 \end{tikzcd}
 ```
 
@@ -4430,8 +4438,8 @@ NOTATION E.5.5.1. We note that in Definition E.5.2.4, we denoted the 2-isomorphi
 
 ```latex
 \begin{tikzcd}
-D \arrow[r, "a"] \arrow[d, "b"'] & B \arrow[d, "f"] \\
-C \arrow[r, "\overline{g}"'] & A
+D \arrow[r, "a"] \arrow[d, "b"'] & B \arrow[d, "f"] \arrow[dl, Rightarrow, "\phi"] \\
+C \arrow[r, "g"'] & A
 \end{tikzcd}
 ```
 
@@ -4639,7 +4647,7 @@ The above Definition E.5.6.2 in particular means that a 2-fibre product of $f, g
 ```latex
 \begin{tikzcd}
 P \arrow[r, "b"] \arrow[d, "a"'] & C \arrow[d, "g"] \\
-B \arrow[r, "f"'] & A
+B \arrow[r, "f"'] \arrow[ur, Leftrightarrow, "\phi"'] & A
 \end{tikzcd}
 ```
 
@@ -5364,7 +5372,7 @@ For the canonical map $x : \underline{X} \to \mathcal{X} := [X/\mathcal{G}]$, $\
 ```latex
 \begin{tikzcd}
 \mathcal{I}_{x:\underline{T} \to \mathcal{X}} \arrow[r] \arrow[d] & \mathcal{I}_{\mathcal{X}} \arrow[d, "\iota"] \\
-\underline{T} \arrow[r, "\overline{x}"'] & \mathcal{X}
+\underline{T} \arrow[r, "x"'] & \mathcal{X}
 \end{tikzcd}
 ```
 
@@ -5379,7 +5387,7 @@ $$
 ```latex
 \begin{tikzcd}
 \mathcal{I}_{x:\underline{T} \to \mathcal{X}}(T') \arrow[r] \arrow[d] & \mathcal{I}_{\mathcal{X}}(T') \arrow[d, "\iota"] \\
-h_{T}(T') \arrow[r, "\overline{x}"'] & \mathcal{X}(T')
+h_{T}(T') \arrow[r, "x"'] & \mathcal{X}(T')
 \end{tikzcd}
 ```
 

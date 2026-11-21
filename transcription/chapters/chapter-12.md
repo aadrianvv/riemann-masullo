@@ -372,7 +372,7 @@ Recall that any Radon measure on such $X$ is regular (see [Fol, Thm.7.8]).
 
 We will be abbreviating $L^p(X,\mu)$ for $L^p(X,\mathcal A,\mu)$, for every real number $p\ge 1$.
 
-Under these assumptions, for any element $\varphi\in L^p(X,\mu)$, there exists a Borel measurable function $\varphi_0:X\to\mathbf C$ such that $\varphi=\varphi_0$ away from a subset $N$ of $X$ such that $\mu(N)=0$.
+Under these assumptions, for any element $\phi\in L^p(X,\mu)$, there exists a Borel measurable function $\phi_0:X\to\mathbf C$ such that $\phi=\phi_0$ away from a subset $N$ of $X$ such that $\mu(N)=0$.
 
 Any element in $L^p(X,\mu)$ is, recall, an equivalence class of Lebesgue measurable functions on $X$, the equivalence relation being equality away from $\mu$-null subsets of $X$.
 
@@ -527,7 +527,7 @@ In this case, if $X$ is second countable, so is $X/G$.
 We assume two Radon measures given, one, $\mu_X$, on $X$, another, a choice of Haar measure $\mu_G$ on $G$. We assume $\mu_X$ is $G$-invariant, and denote by $\bar\mu$ the unique Radon measure on $X/G$ induced by these choices, so that the following integral formula holds:
 
 $$
-\int_X\varphi(x)\,\mathrm{d}\mu_X(x)=\int_{X/G}\left(\int_G\varphi(\theta(g,x))\,\mathrm{d}\mu_G(g)\right)\mathrm{d}\bar\mu(\pi(x)). \tag{12.2.1.11}
+\int_X\phi(x)\,\mathrm{d}\mu_X(x)=\int_{X/G}\left(\int_G\phi(\theta(g,x))\,\mathrm{d}\mu_G(g)\right)\mathrm{d}\bar\mu(\pi(x)). \tag{12.2.1.11}
 $$
 
 In the special case $X$ is itself a Hausdorff locally compact abelian group, and $G$ is a closed subgroup, with $\theta$ the action by continuous left-translation, the existence and uniqueness of $\bar\mu$, upon choosing $\mu_X$ to be a Haar measure on $X$, is by Theorem D.1.2.1. For the general case, we refer the reader to [Bou-II, Ch.VII,§2,n.2,Prop.4,INT VII.31].
@@ -894,7 +894,7 @@ Moreover, we have, for every $x\in G$:
 
 $$
 \int_H u_0(h^{-1}x)\,\mathrm{d}\mu_H(h)
-=\int_{H/H_0}\bigotimes_{k\ge 1}\varepsilon_k((h')^{-1}\overline{x})\int_{H^0}u_1(h^{-1}x)\,\mathrm{d}\mu_{H_0}(h)\,\mathrm{d}\mu_{H/H_0}(h')
+=\int_{H/H_0}\bigotimes_{k\ge 1}\varepsilon_k((h')^{-1}\overline{x})\int_{H_0}u_1(h^{-1}x)\,\mathrm{d}\mu_{H_0}(h)\,\mathrm{d}\mu_{H/H_0}(h')
 \tag{12.2.2.31}
 $$
 

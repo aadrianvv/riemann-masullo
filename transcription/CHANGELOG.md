@@ -6,7 +6,7 @@ fonts, glyph baselines, drawn rules, text layer) or by comparing with the page i
 corrects the paper itself: printed errors are kept verbatim. Errors in the paper (and in the Lean
 formalization) are recorded in `ERRATA.md`; this file only records errors in the transcription.
 
-559 of 940 pages changed. Totals are approximate where many small edits were made by script.
+585 of 940 pages changed in total (sections 1–6: first audit round, 559 pages; section 7: second round). Totals are approximate where many small edits were made by script.
 
 ## 1. Text placement and content
 
@@ -79,3 +79,43 @@ does not have were removed or replaced by the printed accent (hat or tilde) on p
 - Arrows corrected: direction (pp. 201, 441, 486, 769), missing equality (pp. 441, 486), diagonal
   2-cell (p. 695), ∐ for ∏ (pp. 20, 390–393), 𝒮_E (p. 375), labels (pp. 709, 795, 891, 926).
 - The four contour figures (pp. 596, 602, 605, 798) are replaced by a placeholder listing their labels.
+
+## 7. Second audit round
+
+Checks that the first round did not have, each run on every page against the PDF. 156 more pages
+changed (585 of 940 in total since the first version).
+
+- **Accents.** The kind of every accent in the PDF (hat, tilde, check, from the CMEX/MSBM/CMR
+  glyphs) was compared with the transcription page by page, and every mismatch was checked on the
+  page image (≈ 60 corrections):
+  - the paper writes the *chosen set of representatives* with a tilde (G̃¹, C̃¹_F, J̃¹_{F,S},
+    C̃_F) and the dual with a hat; about 25 tildes had been written as hats (pp. 135, 193, 203–207,
+    266, 350, 440, 445, 453–455, 819);
+  - accent glyphs that had been misread as letters: `{}^{b}\!\otimes` for ⊗̂ (pp. 198, 205, 207),
+    `e\phi`, `e_a`, `e\mathrm{H}`, `\mathfrak{F}_{G^1}` for tildes (pp. 329, 611, 735, 736, 819);
+  - hats that the print does not have (pp. 63, 181, 190, 256, 259, 261–262, 281, 290, 368,
+    403–404, 416, 771, 791, 796) and hats it has that were missing (pp. 192, 226, 262, 349, 351, 749);
+  - `\dot\gamma` for γ′ (p. 257).
+- **Letters on the baseline written as subscripts, and the reverse.** `A_{\mathcal S}` for
+  A𝒮 (≈ 100, pp. 304–409); vertical strips `\mathbf C(a,b)` for `\mathbf C_{(a,b)}`
+  (pp. 321–330); `0+` for `0^+` (pp. 257–318, 608); `K(\gamma_1)`, `c(\rho,m)`, `F(g,x)`,
+  `M(1/\Lambda,+\infty)`, `\mathcal S\mathrm{SE}`, `\mathscr B\mathrm{SOT}`, `\chi|J^1_{F,S}`,
+  `\widetilde{E(U)}`, `C(1,\dots)` for the subscripted or superscripted forms (pp. 79, 219, 321–325,
+  363, 367, 443, 475, 494–495, 593–594, 686); `Z_H`, `t^{s_c(\tau(t))}`, `3^p`, `F^\times g`
+  for the printed `ZH`, `t^s c(\tau(t))`, `3p`, `F\times g` (pp. 327, 331, 477, 567, 624).
+- **φ and ϕ, ε and ϵ.** The paper uses both shapes of phi (`\phi` ≈ 2,270 times, `\varphi`
+  ≈ 1,670 times); 345 had the wrong one (55 pages, mostly Ch. 4, 9, 11 and App. B); 46 `\epsilon`
+  for `\varepsilon`.
+- **Strong duals and orthogonals** (pp. 240–249, 487): `\mathcal S(\mathbf R)'` for
+  `\mathcal S(\mathbf R)'_\beta` (≈ 50) and `^\circ` or `'` for `^\perp` (≈ 20).
+- **Formulas that differed from the print** (found from the glyphs that did not align): (B.7.2.14)
+  had been rewritten rather than transcribed (p. 651); a missing `\sum_{m\ge 1}` in (B.7.2.6)
+  (p. 650); a missing outer union in p. 272; the Tor map on p. 293; (7.3.2.5) and the
+  O^×_{F,Σ_F−S′} subscripts (pp. 324, 351–355); a sentence on p. 353; p. 350
+  (`H_{0,cont}(F^×,…)`); p. 816; `\mathrm{PV}_{S_0}` (p. 339); `\mathrm{HS}_{\Lambda_0}` (p. 488);
+  `+\\infty` (p. 114).
+- **Diagrams**, all 83 compared again with the page image at 200 dpi: a wrong node (p. 858: the
+  print has Y), labels that the print does not have or has differently (pp. 769, 863, 891, 910,
+  928), and the 2-cells φ that had been left out of the diagrams on pp. 910 and 913.
+- **Random sample.** 45 tagged equations drawn at random after these corrections: 43 exact; the
+  two wrong ones ((5.3.2.8) p. 246, (12.2.2.31) p. 513) are corrected.

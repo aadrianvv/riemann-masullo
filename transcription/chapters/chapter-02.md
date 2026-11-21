@@ -234,7 +234,7 @@ The topological vector space $\mathcal S(G)$ is Hausdorff for general $G$ (see T
 
 As a special case, for $G=\mathbf R$ the classical Schwartz space $\mathcal S(\mathbf R)$ is recovered, and it is complete, nuclear and Montel, with strong dual $\mathcal S(\mathbf R)'_\beta$ sharing the same properties. Throughout this work, we will be referring to $\mathcal S(G)$ as the *Schwartz-Bruhat space* of $G$, and to its topology as the *Schwartz-Bruhat topology*.
 
-**2.1.2. Local Schwartz-Bruhat functions.** The main cases of Hausdorff locally compact abelian groups $G$ of interest to this work are $G=\mathbf A_F$ for a number field $F$, $G=\mathbf A_{F,S}$ for $S$ a finite set of places of $F$ containing the Archimedean places, $G=C_F=\mathrm{GL}_1(\mathbf A_F)/F^\times$, the idele class group of $F$, and its $S$-local subgroup $C_{F,S}=(\mathrm{GL}_1(\mathbf A_{F,S})\times\prod_{v\notin S}\mathcal O_{F_v}^\times)/\mathcal O_{F,S}^\times$, and $G=J_{F,S}=\mathrm{GL}_1(\mathbf A_{F,S})/\widehat{\mathcal O}_{F,S}^\times$, the quotient of $C_{F,S}$ by $1\times\prod_{v\notin S}\mathcal O_{F_v}^\times$.
+**2.1.2. Local Schwartz-Bruhat functions.** The main cases of Hausdorff locally compact abelian groups $G$ of interest to this work are $G=\mathbf A_F$ for a number field $F$, $G=\mathbf A_{F,S}$ for $S$ a finite set of places of $F$ containing the Archimedean places, $G=C_F=\mathrm{GL}_1(\mathbf A_F)/F^\times$, the idele class group of $F$, and its $S$-local subgroup $C_{F,S}=(\mathrm{GL}_1(\mathbf A_{F,S})\times\prod_{v\notin S}\mathcal O_{F_v}^\times)/\mathcal O_{F,S}^\times$, and $G=J_{F,S}=\mathrm{GL}_1(\mathbf A_{F,S})/\mathcal O_{F,S}^\times$, the quotient of $C_{F,S}$ by $1\times\prod_{v\notin S}\mathcal O_{F_v}^\times$.
 
 We will require, later in Chapter 3, the Hausdorff locally convex topological $\mathbf C$-vector spaces of Schwartz-Bruhat functions on the idele class group $C_F$, and the $S$-idele class group $C_{F,S}$, along with its quotient $J_{F,S}$. These will be introduced, and their properties reworked, when the need arises.
 
@@ -1010,7 +1010,7 @@ $$
 
 **2.2. GLOBAL ADELIC $\theta$-FUNCTIONS** · **79**
 
-and observe that for every finite place $v$ of $F$, the $v$-adic absolute value of any $\xi\in F(g,x)$ satisfies
+and observe that for every finite place $v$ of $F$, the $v$-adic absolute value of any $\xi\in F_{(g,x)}$ satisfies
 
 $$
 0\le\lvert\xi\rvert_v\le\max\{\lvert x\rvert_v,C_v\lvert g_v\rvert_v^{-1}\}\le\max\{1,C_v\lvert g_v\rvert_v^{-1}\} \tag{2.2.2.6}
@@ -1057,7 +1057,7 @@ a finite set.
 Upon renaming $S\cup\bigcup_{(g,x)\in Z}S_g=S\cup\bigcup_{g\in Z_0}S_g$ as $S$, again a finite set of finite places of $F$, we may and do assume that we have, calling
 
 $$
-F_Z:=\bigcup_{(g,x)\in Z}F(g,x)=\{\xi\in F:f(g(\xi+x))\ne 0\text{ for some }(g,x)\in Z\}\subset F \tag{2.2.2.10}
+F_Z:=\bigcup_{(g,x)\in Z}F_{(g,x)}=\{\xi\in F:f(g(\xi+x))\ne 0\text{ for some }(g,x)\in Z\}\subset F \tag{2.2.2.10}
 $$
 
 that for every $\xi\in F_Z$, the following conditions hold:
@@ -3067,7 +3067,7 @@ for all $t\in\mathbf{R}_{>0}$.
 
 By Proposition 2.3.2.2, we have $(t\partial_t\phi)(t)=\Phi_{F,S,\omega}(\partial_{\gamma_\tau}f)(\tau(t))$, for $\gamma_\tau:\mathbf{R}_{>0}\to\mathrm{GL}_1(\mathbf{A}_{F,S})$ the continuous 1-parameter subgroup induced by $\tau$.
 
-Both integrals in (2.4.3.4) are finite, since, by Proposition 2.3.1.4(2), both $(t\partial_t\phi)$ and $\phi$ are $O_N(t^{-N})$ for every integer $N\ge 1$ as $t\to+\\infty$, and the singularity of $\phi(t)t^{\varepsilon-1}$ as $t\to 0^+$ and of $(t\partial_t)\phi(t)t^{\varepsilon-1}$ as $t\to 0^+$, is $\mathrm{d}t$-integrable over $(0,A]$ for every $A>0$, for all $\varepsilon>0$, by Theorem 2.4.2.1.
+Both integrals in (2.4.3.4) are finite, since, by Proposition 2.3.1.4(2), both $(t\partial_t\phi)$ and $\phi$ are $O_N(t^{-N})$ for every integer $N\ge 1$ as $t\to+\infty$, and the singularity of $\phi(t)t^{\varepsilon-1}$ as $t\to 0^+$ and of $(t\partial_t)\phi(t)t^{\varepsilon-1}$ as $t\to 0^+$, is $\mathrm{d}t$-integrable over $(0,A]$ for every $A>0$, for all $\varepsilon>0$, by Theorem 2.4.2.1.
 
 We deduce from (2.4.3.4) that we have:
 

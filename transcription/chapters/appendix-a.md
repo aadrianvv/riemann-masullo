@@ -1744,7 +1744,7 @@ $$
 By combining (A.5.1.9) and (A.5.1.8) we obtain:
 
 $$
-\|Mf\|^p_{L^p(\mathbf{R},\mathrm{d}x)} \le 2 \cdot 3p \int_0^{+\infty} \int_{|f(x)| > y/2} y^{p-2} |f(x)|\,\mathrm{d}x\,\mathrm{d}y = 2^p \cdot 3^p \int_0^{+\infty} \int_{|f(x)| > y} y^{p-2} |f(x)|\,\mathrm{d}x\,\mathrm{d}y \tag{A.5.1.10}
+\|Mf\|^p_{L^p(\mathbf{R},\mathrm{d}x)} \le 2 \cdot 3p \int_0^{+\infty} \int_{|f(x)| > y/2} y^{p-2} |f(x)|\,\mathrm{d}x\,\mathrm{d}y = 2^p \cdot 3p \int_0^{+\infty} \int_{|f(x)| > y} y^{p-2} |f(x)|\,\mathrm{d}x\,\mathrm{d}y \tag{A.5.1.10}
 $$
 
 and Fubini's Theorem (along with the equality $\int_0^a y^{p-1}\,\mathrm{d}y/y = a^{p-1}/(p-1)$) gives

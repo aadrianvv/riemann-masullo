@@ -23,7 +23,7 @@ p299 script: Ψ_∞ in PDF, md has sup | athbf A_{F,S_\infty})$, $\Psi^\infty_{F
 p300 script: χ^S in PDF, md has sub | mathbf A_{F,S_\infty})^1}\chi_S(g)f(g_f^
 p300 script: χ^S in PDF, md has sub | athbf A_{F,S_\infty})^1}\chi_{S,\infty}(
 p300 script: χ^∞ in PDF, md has sub | hbf A_{F,S_\infty})^1}\chi_{S,\infty}(g_
-p302 script: Ψ_∞ in PDF, md has sup | y}\to 0+$, we have:  $$ |\Psi^\infty_{F,
+p302 script: Ψ_∞ in PDF, md has sup | }\to 0^+$, we have:  $$ |\Psi^\infty_{F,
 p302 script: Ψ_∞ in PDF, md has sup | F,S_\infty}$ imply that $\Psi^\infty_{F,
 p329 script: t^s in PDF, md has sub | frac{\mathrm{d}t}{t}\right)|_{s=\rho} = 
 p329 script: t^= in PDF, md has sub | rac{\mathrm{d}t}{t}\right)|_{s=\rho} = \

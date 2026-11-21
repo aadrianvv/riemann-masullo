@@ -37,7 +37,7 @@ for $\Lambda > 0$ a fixed real number, we may let the non-Archimedean “compone
 **11.1.1. General convergence criteria.** We will be using this to construct operators from the truncations$^2$
 
 $$
-M(1/\Lambda,+\infty) W^{s,2}_a \mathrm{H}_{0,\mathrm{cont}}(F^\times,\mathcal S_0(\mathbf A_F))
+M_{(1/\Lambda,+\infty)} W^{s,2}_a \mathrm{H}_{0,\mathrm{cont}}(F^\times,\mathcal S_0(\mathbf A_F))
 $$
 
 to truncated subspaces of the $S$-local spaces:
@@ -144,7 +144,7 @@ Being $U_0$ arbitrary, as an open subset of $\mathrm{GL}_1(\mathbf A_F)$ with co
 
 By Dominated Convergence, applied to the sequence $\{\varphi_m f\}_{m\ge 0} \subset L^1(F^\times g,\mu_g)$, dominated by $\xi g \mapsto |f(\xi g)|$, we deduce that $\Phi_m \to \Phi_F(f)$ pointwise over $Z$, and hence $\Phi_F(f)$ is Borel-measurable over $Z$ (endowed with the subspace topology inherited from $\mathrm{GL}_1(\mathbf A_F)$, and hence the induced $\sigma$-algebra of Borel sets) by Lemma 11.1.1.1 (see also [Ru-2, p.15, Corollaries, (a)]). Since $Z$ is a Borel set of $\mathrm{GL}_1(\mathbf A_F)$, the extension by zero of $\Phi_F(f)$ to a complex-valued function on $\mathrm{GL}_1(\mathbf A_F)$ is also Borel-measurable.
 
-(2) : Since $|\Phi_F(f_k)| \le J_F(\alpha)$ over $Z$ by (11.1.1.11), we have $\Phi_F(f) \in L^r(Z,\eta|_Z)$ by assumption (1). By (11.1.1.11) and Dominated Convergence, applied, for every $g \in Z$, to $\{f_k\}_{k\ge 0} \subset L^1(F^\times g,\mu_g)$, the limit of the sequence $\{\Phi_F(f_k)\}_{k\ge 0}$ in the $L^r(F^\times g,\mu_g)$-norm topology, is $\Phi_F(f)$.
+(2) : Since $|\Phi_F(f_k)| \le J_F(\alpha)$ over $Z$ by (11.1.1.11), we have $\Phi_F(f) \in L^r(Z,\eta|_Z)$ by assumption (1). By (11.1.1.11) and Dominated Convergence, applied, for every $g \in Z$, to $\{f_k\}_{k\ge 0} \subset L^1(F^\times g,\mu_g)$, the limit of the sequence $\{\Phi_F(f_k)\}_{k\ge 0}$ in the $L^r(F\times g,\mu_g)$-norm topology, is $\Phi_F(f)$.
 
 This means that $\Phi_F(f_k) \to \Phi_F(f)$ pointwise over $Z$.
 
@@ -344,12 +344,12 @@ $$
 is induced by the seminorm:
 
 $$
-\|\varphi\|_{s,2,\rho} := \left( \int_{C^{\ge 1/\Lambda}_F} |\varphi(g)|^2 (1+|\log|g|_F|^2)^{s/2}\,\mathrm{d}\bar\mu(g) \right)^{1/2}. \tag{11.1.2.9}
+\|\phi\|_{s,2,\rho} := \left( \int_{C^{\ge 1/\Lambda}_F} |\phi(g)|^2 (1+|\log|g|_F|^2)^{s/2}\,\mathrm{d}\bar\mu(g) \right)^{1/2}. \tag{11.1.2.9}
 $$
 
 To see this, it is enough to observe that since the topology on $W^{s,2}_0 \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ is induced by the $\|\cdot\|_{s,2}$-norm on $W^{s,2}(C_F)(\chi|_{C^1_F})$, then the pull-back of the norm $\|\cdot\|_{s,2}$ along $M_\rho$ from (11.1.2.8) is a seminorm $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$, which generates a locally convex topology whose separated completion is closed and dense within $M_\rho W^{s,2}_0 \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$, and hence agrees with it.
 
-Such pull-back seminorm is computed as: $\varphi \mapsto \|\rho\cdot\varphi\|_{s,2} = \left( \int_{C_F} |\rho(g)\varphi(g)|^2 (1+|\log|g|_F|^2)^{s/2}\,\mathrm{d}\bar\mu(g) \right)^{1/2}$ which gives the formula for $\|\cdot\|_{s,2,\rho}$ in (11.1.2.9), since the indicator function $\rho$ of $C^{>1/\Lambda}_F$, respectively of $C^{(1/\Lambda,\Lambda)}_F$, is its own square.
+Such pull-back seminorm is computed as: $\phi \mapsto \|\rho\cdot\phi\|_{s,2} = \left( \int_{C_F} |\rho(g)\phi(g)|^2 (1+|\log|g|_F|^2)^{s/2}\,\mathrm{d}\bar\mu(g) \right)^{1/2}$ which gives the formula for $\|\cdot\|_{s,2,\rho}$ in (11.1.2.9), since the indicator function $\rho$ of $C^{>1/\Lambda}_F$, respectively of $C^{(1/\Lambda,\Lambda)}_F$, is its own square.
 
 Since $\{g \in C_F : |g|_F = 1/\Lambda,\Lambda\}$ has $\bar\mu$-measure zero, indeed the formula in (11.1.2.9) for $\|\cdot\|_{s,2,\rho}$ computes the pull-back of $\|\cdot\|_{s,2}$ on $W^{s,2}_0 \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ along $M_\rho$ from (11.1.2.8).
 
@@ -407,7 +407,7 @@ $$
 
 as closed subspaces of $W^{s,2}(C_F)(\chi|_{C^1_F})$. Formation of the common such closed subspace therefore does not depend on the choice of cofinal sequence in $I_S$, but only on $I_S$ itself.
 
-(2) :$^4$ We now prove that the inclusion in (11.1.2.5) is strict. By Theorem 11.2.0.2, the strong dual of the orthogonal in $W^{s,2}_0 \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ of $W^{s,2}_0 \mathrm{PV}_{S_{i'}} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ is non-trivial, the Theorem exhibiting a Schauder basis (given by the functionals $\eta_{\epsilon_p}$ as $\epsilon_p$ varies over the zeros of $(1-q^{-s-it_v}_v)^{-1}$ for $v \in S_{i'}$ of residue characteristic $p$), and since $S_i \subset S_{i'}$ is a strict inclusion, as $i,i'$ are distinct elements of $I_S$, and there exists a prime number $p$ divided by a place in $S_{i'}$ and by no place in $S_i$, the functionals $\eta_{\epsilon_p}$ separate the points of $W^{s,2}_0 \mathrm{PV}_{S_{i'}} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ from the points of $W^{s,2}_0 \mathrm{PV}_{S_i} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$.
+(2) :$^4$ We now prove that the inclusion in (11.1.2.5) is strict. By Theorem 11.2.0.2, the strong dual of the orthogonal in $W^{s,2}_0 \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ of $W^{s,2}_0 \mathrm{PV}_{S_{i'}} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ is non-trivial, the Theorem exhibiting a Schauder basis (given by the functionals $\eta_{\varepsilon_p}$ as $\varepsilon_p$ varies over the zeros of $(1-q^{-s-it_v}_v)^{-1}$ for $v \in S_{i'}$ of residue characteristic $p$), and since $S_i \subset S_{i'}$ is a strict inclusion, as $i,i'$ are distinct elements of $I_S$, and there exists a prime number $p$ divided by a place in $S_{i'}$ and by no place in $S_i$, the functionals $\eta_{\varepsilon_p}$ separate the points of $W^{s,2}_0 \mathrm{PV}_{S_{i'}} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ from the points of $W^{s,2}_0 \mathrm{PV}_{S_i} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$.
 
 All such functionals exist and provide elements of the Schauder bases from Theorem 11.2.0.2, because $s \ge 2\,[F:\mathbf Q]$.
 
@@ -676,17 +676,17 @@ In particular, as per Proposition 11.2.0.4 combined with Theorem 11.2.0.2, any e
 
 $\square$
 
-**11.2.1. Paley-Wiener Levels.** Let $F$ be a number field, $\chi \in \widehat{C_F}$ a continuous character. Let $\phi \in \mathcal D(C_F)$ be a test function.
+**11.2.1. Paley-Wiener Levels.** Let $F$ be a number field, $\chi \in \widehat{C_F}$ a continuous character. Let $\varphi \in \mathcal D(C_F)$ be a test function.
 
-In this subsection we analyze a class of large closed subspaces of $W^{s,2}_a \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$, within which the trace of $P^{\mathrm{geom}}_a \circ A(\phi)$ is concentrated, i.e. the trace
+In this subsection we analyze a class of large closed subspaces of $W^{s,2}_a \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$, within which the trace of $P^{\mathrm{geom}}_a \circ A(\varphi)$ is concentrated, i.e. the trace
 
 $$
-\mathrm{Trace}\,(P^{\mathrm{geom}}_{\rho,a} \circ A(\phi))
+\mathrm{Trace}\,(P^{\mathrm{geom}}_{\rho,a} \circ A(\varphi))
 $$
 
 for $\rho$ a $(\Lambda,\varepsilon)$-cutoff, is mostly concentrated, as $\Lambda \to +\infty$ in the regime $\varepsilon\Lambda = o(1)$.
 
-The main result of this subsection, Theorem 11.2.1.2, indeed shows that the restriction of the nuclear operator $P^{\mathrm{geom}}_{\rho,a} \circ A(\phi)$ to such growing family of closed subspaces of $W^{s,2}_a \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$, tends to $P^{\mathrm{geom}}_{\rho,a} \circ A(\phi)$ in the sense of nuclear operators, therefore reducing the calculation of the trace of $P^{\mathrm{geom}}_{\rho,a} \circ A(\phi)$ to the trace of each of the restrictions of $P^{\mathrm{geom}}_{\rho,a} \circ A(\phi)$. The calculation will, in turn, be possible upon further assuming $a = 1/2$ and $s \ge 2[F:\mathbf Q]$, showing which is the subject of the remainder of this Chapter and the next.
+The main result of this subsection, Theorem 11.2.1.2, indeed shows that the restriction of the nuclear operator $P^{\mathrm{geom}}_{\rho,a} \circ A(\varphi)$ to such growing family of closed subspaces of $W^{s,2}_a \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$, tends to $P^{\mathrm{geom}}_{\rho,a} \circ A(\varphi)$ in the sense of nuclear operators, therefore reducing the calculation of the trace of $P^{\mathrm{geom}}_{\rho,a} \circ A(\varphi)$ to the trace of each of the restrictions of $P^{\mathrm{geom}}_{\rho,a} \circ A(\varphi)$. The calculation will, in turn, be possible upon further assuming $a = 1/2$ and $s \ge 2[F:\mathbf Q]$, showing which is the subject of the remainder of this Chapter and the next.
 
 Definition 11.2.1.1 (Absolute Paley-Wiener Levels). Let $F$ be a number field, $\chi \in \widehat{C_F}$ a continuous character. Let $S_\chi$ be the finite set of finite places of $F$ at which $\chi$ is ramified. Let $S$ be a finite set of places of $F$ containing all the Archimedean places. Assume $S_\chi \subset S$ and $\mathrm{Pic}(\mathcal O_{F,S}) = 1$.
 
@@ -722,13 +722,13 @@ $$
 P^{\mathrm{PW}}_{S,\Lambda_0,a} : W^{s,2}(C_F)(\chi|_{C^1_F}) \to W^{s,2}_a \mathrm{PW}_{S,X,0}(\chi_{S'}|_{J^1_{F,S'}}, \mathcal S(\mathbf A_{F,S'})) \tag{11.2.1.3}
 $$
 
-to be the orthogonal projector onto the closed subspace $W^{s,2}_a \mathrm H_{\mathrm{S}\Lambda_0}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F)) \subset W^{s,2}(C_F)(\chi|_{C^1_F})$.
+to be the orthogonal projector onto the closed subspace $W^{s,2}_a \mathrm{HS}_{\Lambda_0}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F)) \subset W^{s,2}(C_F)(\chi|_{C^1_F})$.
 
 We refer to $P^{\mathrm{PW}}_{\Lambda_0,a}$ as the Paley-Wiener truncation at time $\Lambda_0$.
 
-(3) For any test function $\phi \in \mathcal D(C_F)$ supported over $C^{\ge 1}_F$, we refer to $P^{\mathrm{geom}}_a \circ A(\phi) \circ P^{\mathrm{PW}}_{S,\Lambda_0,a}$ as the absolute Paley-Wiener condensation of $P^{\mathrm{geom}}_a \circ A(\phi)$ at time $\Lambda_0$.
+(3) For any test function $\varphi \in \mathcal D(C_F)$ supported over $C^{\ge 1}_F$, we refer to $P^{\mathrm{geom}}_a \circ A(\varphi) \circ P^{\mathrm{PW}}_{S,\Lambda_0,a}$ as the absolute Paley-Wiener condensation of $P^{\mathrm{geom}}_a \circ A(\varphi)$ at time $\Lambda_0$.
 
-Theorem 11.2.1.2 (Absolute Paley-Wiener Condensation of the Geometric Trace - strong convergence). Let $F$ be a number field, $\chi \in \widehat{C_F}$ a continuous character. Let $\phi \in \mathcal D(C_F)$ be a test function. Assume $\phi$ is supported over $C^{\ge 1}_F$. Let $\Lambda_0 > 0$ be a real number. Let $s, a$ be real numbers, $s \ge 0$.
+Theorem 11.2.1.2 (Absolute Paley-Wiener Condensation of the Geometric Trace - strong convergence). Let $F$ be a number field, $\chi \in \widehat{C_F}$ a continuous character. Let $\varphi \in \mathcal D(C_F)$ be a test function. Assume $\varphi$ is supported over $C^{\ge 1}_F$. Let $\Lambda_0 > 0$ be a real number. Let $s, a$ be real numbers, $s \ge 0$.
 
 We choose a finite set $S$ of places of $F$ containing all the Archimedean places and all the finitely many finite places at which $\chi$ is ramified. We assume $S$ is so large so as to have $\mathrm{Pic}(\mathcal O_{F,S}) = 1$.
 
@@ -739,13 +739,13 @@ Then:
 (2) For every $(\Lambda,\varepsilon)$-cutoff $\rho$, we have:
 
 $$
-P^{\mathrm{geom}}_{\rho,a} \circ A(\phi) \circ P^{\mathrm{PW}}_{S,\Lambda_0,a} \to P^{\mathrm{geom}}_{\rho,a} \circ A(\phi) \tag{11.2.1.4}
+P^{\mathrm{geom}}_{\rho,a} \circ A(\varphi) \circ P^{\mathrm{PW}}_{S,\Lambda_0,a} \to P^{\mathrm{geom}}_{\rho,a} \circ A(\varphi) \tag{11.2.1.4}
 $$
 
 in the sense of nuclear operators on $W^{s,2}(C_F)(\chi|_{C^1_F})$. In particular, we have:
 
 $$
-\lim_{\Lambda_0 \to +\infty} \mathrm{Trace}\,(P^{\mathrm{geom}}_{\rho,a} \circ A(\phi) \circ P^{\mathrm{PW}}_{S,\Lambda_0,a}) = \mathrm{Trace}\,(P^{\mathrm{geom}}_{\rho,a} \circ A(\phi)). \tag{11.2.1.5}
+\lim_{\Lambda_0 \to +\infty} \mathrm{Trace}\,(P^{\mathrm{geom}}_{\rho,a} \circ A(\varphi) \circ P^{\mathrm{PW}}_{S,\Lambda_0,a}) = \mathrm{Trace}\,(P^{\mathrm{geom}}_{\rho,a} \circ A(\varphi)). \tag{11.2.1.5}
 $$
 
 Proof. (1) : By Proposition 7.3.2.2(1) and Corollary C.3.5.5(1), we indeed have $P^{\mathrm{PW}}_{\Lambda_0,a} \to P^{\mathrm{geom}}_a$ with respect to the strong operator topology, since the directed union of the $W^{s,2}_a \mathrm{PW}_{S,X,0}(\chi_{S'}|_{J^1_{F,S'}}, \mathcal S(\mathbf A_{F,S'}))$ in $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ is sequentially dense, being $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ sequentially dense in $W^{s,2}_a \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$, and being $\mathrm{PW}_{S,X,0}(\chi_{S'}|_{J^1_{F,S'}}, \mathcal S(\mathbf A_{F,S'}))$ sequentially dense in $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ by Proposition 7.3.2.2(1).
@@ -794,11 +794,11 @@ to be the orthogonal projector onto the closed subspace $W^{s,2}_a \mathrm{PW}^{
 
 We refer to $Q^{\mathrm{PW}}_{S,\Lambda_1,a}$ as the invariant Paley-Wiener truncation at time $\Lambda_1$.
 
-(3) For any test function $\phi \in \mathcal D(C_F)$ supported over $C^{\ge 1}_F$, we refer to $P^{\mathrm{geom}}_a \circ A(\phi) \circ Q^{\mathrm{PW}}_{S,\Lambda_1,a}$ as the invariant Paley-Wiener condensation of $P^{\mathrm{geom}}_a \circ A(\phi)$ at time $\Lambda_1$.
+(3) For any test function $\varphi \in \mathcal D(C_F)$ supported over $C^{\ge 1}_F$, we refer to $P^{\mathrm{geom}}_a \circ A(\varphi) \circ Q^{\mathrm{PW}}_{S,\Lambda_1,a}$ as the invariant Paley-Wiener condensation of $P^{\mathrm{geom}}_a \circ A(\varphi)$ at time $\Lambda_1$.
 
 The following is an analog of Theorem 11.2.1.2:
 
-Theorem 11.2.1.4 (Invariant Paley-Wiener Condensation of the Geometric Trace - strong convergence). Let $F$ be a number field, $\chi \in \widehat{C_F}$ a continuous character. Let $\phi \in \mathcal D(C_F)$ be a test function. Assume $\phi$ is supported over $C^{\ge 1}_F$. Let $\Lambda_1 > 0$ be a real number. Let $s, a$ be real numbers, $s \ge 0$.
+Theorem 11.2.1.4 (Invariant Paley-Wiener Condensation of the Geometric Trace - strong convergence). Let $F$ be a number field, $\chi \in \widehat{C_F}$ a continuous character. Let $\varphi \in \mathcal D(C_F)$ be a test function. Assume $\varphi$ is supported over $C^{\ge 1}_F$. Let $\Lambda_1 > 0$ be a real number. Let $s, a$ be real numbers, $s \ge 0$.
 
 We choose a finite set $S$ of places of $F$ containing all the Archimedean places and all the finitely many finite places at which $\chi$ is ramified. We assume $S$ is so large so as to have $\mathrm{Pic}(\mathcal O_{F,S}) = 1$.
 
@@ -809,13 +809,13 @@ Then:
 (2) For every $(\Lambda,\varepsilon)$-cutoff $\rho$, we have:
 
 $$
-P^{\mathrm{geom}}_{\rho,a} \circ A(\phi) \circ Q^{\mathrm{PW}}_{S,\Lambda_1,a} \to P^{\mathrm{geom}}_{\rho,a} \circ A(\phi) \tag{11.2.1.9}
+P^{\mathrm{geom}}_{\rho,a} \circ A(\varphi) \circ Q^{\mathrm{PW}}_{S,\Lambda_1,a} \to P^{\mathrm{geom}}_{\rho,a} \circ A(\varphi) \tag{11.2.1.9}
 $$
 
 in the sense of nuclear operators on $W^{s,2}(C_F)(\chi|_{C^1_F})$. In particular, we have:
 
 $$
-\lim_{\Lambda_1 \to +\infty} \mathrm{Trace}\,(P^{\mathrm{geom}}_{\rho,a} \circ A(\phi) \circ Q^{\mathrm{PW}}_{S,\Lambda_1,a}) = \mathrm{Trace}\,(P^{\mathrm{geom}}_{\rho,a} \circ A(\phi)). \tag{11.2.1.10}
+\lim_{\Lambda_1 \to +\infty} \mathrm{Trace}\,(P^{\mathrm{geom}}_{\rho,a} \circ A(\varphi) \circ Q^{\mathrm{PW}}_{S,\Lambda_1,a}) = \mathrm{Trace}\,(P^{\mathrm{geom}}_{\rho,a} \circ A(\varphi)). \tag{11.2.1.10}
 $$
 
 Proof. Since, by (7.3.2.20) from Proposition 7.3.2.4(4), we have $P^{\mathrm{PW}}_{S,\Lambda_1,a} \le Q^{\mathrm{PW}}_{S,\Lambda_1^{|S|},a}$, both assertions follow from Theorem 11.2.1.2.
@@ -824,9 +824,9 @@ $\square$
 
 **11.2.2. Orbital Markushevich Bases on the Paley-Wiener Levels.** Let $F$ be a number field, $\chi \in \widehat{C_F}$ a continuous character. Let $p$ a prime number, and $S_p$ the finite set of all finite places of $F$ whose residue characteristic is $p$. Assume that $\chi$ is unramified at every place of $F$ contained in $S_p$.
 
-We let $\phi \in \mathcal D(C_F)$ be a test function.
+We let $\varphi \in \mathcal D(C_F)$ be a test function.
 
-We discuss here an analog of Theorem 10.3.1.1 for the operator induced by $A(\phi)$ on $W^{s,2}_a \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ for $a = 0$, on the subquotients:
+We discuss here an analog of Theorem 10.3.1.1 for the operator induced by $A(\varphi)$ on $W^{s,2}_a \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ for $a = 0$, on the subquotients:
 
 $$
 \mathscr{E}^s_{0,S_p}(\chi|_{C^1_F}) := W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))/\mathrm{PV}_{S_p} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))
@@ -834,7 +834,7 @@ $$
 
 for $S_p$ the finite set of finite places of $F$ comprising all the finite places $v$ dividing the fixed prime number $p$.
 
-Recall that $A(\phi)$ is the regularized action by continuous left-translation of $C_F$ on $W^{s,2}_a \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ defined in Definition 9.3.1.1, i.e. the action of the test function $\phi$ by convolution, and $\mathrm{PV}_{S_p}$ is Weil's Principal Value Operator (see §5.3.1, and specifically Definition 5.3.1.2 and Definition 5.3.1.4).
+Recall that $A(\varphi)$ is the regularized action by continuous left-translation of $C_F$ on $W^{s,2}_a \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ defined in Definition 9.3.1.1, i.e. the action of the test function $\varphi$ by convolution, and $\mathrm{PV}_{S_p}$ is Weil's Principal Value Operator (see §5.3.1, and specifically Definition 5.3.1.2 and Definition 5.3.1.4).
 
 The continuous convolution $\mathcal D(C_F)$-module structure on $W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ is inherited by the closed subspace $\mathrm{PV}_{S_p} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$, which was, recall, defined in (11.2.0.3) in light of closedness of the range of the continuous linear operator $\mathrm{PV}_{S_p}$ on $W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ from (11.2.0.2).
 
@@ -868,10 +868,10 @@ $$
 
 is valued in the Banach space of nuclear operators $S_1(\mathscr{E}^s_{0,S_p}(\chi|_{C^1_F}))$ on $\mathscr{E}^s_{0,S_p}(\chi|_{C^1_F})$, and is continuous with respect to the Hausdorff locally convex topology on the source, and the trace-norm topology on the target.
 
-In particular, composition with the trace functional on $S_1(\mathscr{E}^s_{0,S_p}(\chi|_{C^1_F}))$ is a distribution on $C_F$, whose value at $\phi \in \mathcal D(C_F)$ is:
+In particular, composition with the trace functional on $S_1(\mathscr{E}^s_{0,S_p}(\chi|_{C^1_F}))$ is a distribution on $C_F$, whose value at $\varphi \in \mathcal D(C_F)$ is:
 
 $$
-\mathrm{Trace}_{s,p}\, A(\phi) = \sum_{\varepsilon_p} N_s(\varepsilon_p) \int_{C_F} \phi(g)\chi(g)|g|^{\varepsilon_p}_F\,\mathrm{d}\bar\mu(g) \tag{11.2.2.4}
+\mathrm{Trace}_{s,p}\, A(\varphi) = \sum_{\varepsilon_p} N_s(\varepsilon_p) \int_{C_F} \varphi(g)\chi(g)|g|^{\varepsilon_p}_F\,\mathrm{d}\bar\mu(g) \tag{11.2.2.4}
 $$
 
 where $N_s$ is the counting function defined in (11.2.0.6), i.e.
@@ -882,7 +882,7 @@ $$
 
 where $[x]$ is the largest integer $N \ge 0$ satisfying $N \le x$, and $\varepsilon_p$ varies over the zeros of the entire function $\prod_{v \in S_p} L_v(\chi|\cdot|^s_F)^{-1}$, where $L_v(\chi|\cdot|^s_F)$ is the local Euler factor at $v$ of the Hecke $L$-function $L(s,\chi)$.
 
-Proof. Since $W^{s,2}(C_F)$ and $W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ are reflexive Banach spaces, being Hilbert spaces, then by [Tre, p.484] $A(\phi)$ is nuclear if and only if its adjoint $A(\phi)'$, a continuous linear endomorphism of $(\mathscr{E}^s_{0,S_p})'_\beta$, is nuclear. Its trace-norm is computed by $||A(\phi)||_{\mathrm{Tr}} = ||A(\phi)'||_{\mathrm{Tr}}$.
+Proof. Since $W^{s,2}(C_F)$ and $W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ are reflexive Banach spaces, being Hilbert spaces, then by [Tre, p.484] $A(\varphi)$ is nuclear if and only if its adjoint $A(\varphi)'$, a continuous linear endomorphism of $(\mathscr{E}^s_{0,S_p})'_\beta$, is nuclear. Its trace-norm is computed by $||A(\varphi)||_{\mathrm{Tr}} = ||A(\varphi)'||_{\mathrm{Tr}}$.
 
 We choose an enumeration for the elements:
 
@@ -914,7 +914,7 @@ $$
 = \chi(g)|g|^{\varepsilon_p}_F \sum_{0 \le k \le m} \binom{m}{k} (\log|g|_F)^k \eta_{\chi,\varepsilon_p,m-k}(h) \tag{11.2.2.10}
 $$
 
-Upon integrating over $g \in C_F$ the test function $\phi \in \mathcal D(C_F)$, we obtain a single linear endomorphism of $W_{\varepsilon_p} := \bigoplus_{0 \le m \le N_s(\varepsilon_p)-1} \mathbf C \eta_{\chi,\varepsilon_p,m}$ whose matrix with respect to the basis $\{\eta_{\chi,\varepsilon_p,m}\}$ is triangular, and of the same form of the transpose of (10.3.1.17) from the proof of Theorem 10.3.1.1(1).
+Upon integrating over $g \in C_F$ the test function $\varphi \in \mathcal D(C_F)$, we obtain a single linear endomorphism of $W_{\varepsilon_p} := \bigoplus_{0 \le m \le N_s(\varepsilon_p)-1} \mathbf C \eta_{\chi,\varepsilon_p,m}$ whose matrix with respect to the basis $\{\eta_{\chi,\varepsilon_p,m}\}$ is triangular, and of the same form of the transpose of (10.3.1.17) from the proof of Theorem 10.3.1.1(1).
 
 ## PDF page 491
 
@@ -923,13 +923,13 @@ Upon integrating over $g \in C_F$ the test function $\phi \in \mathcal D(C_F)$, 
 Its trace is:
 
 $$
-N_s(\varepsilon_p)\int_{C_F}\chi(g)\phi(g)\lvert g\rvert^{\varepsilon_p}_F\,\mathrm{d}\bar\mu(g). \tag{11.2.2.11}
+N_s(\varepsilon_p)\int_{C_F}\chi(g)\varphi(g)\lvert g\rvert^{\varepsilon_p}_F\,\mathrm{d}\bar\mu(g). \tag{11.2.2.11}
 $$
 
 The series:
 
 $$
-A(\phi)'=\sum_{(\varepsilon_p,m)}\langle A(\phi)'\eta_{\chi,\varepsilon_p,m},\cdot\rangle_{s,2}\psi_{\chi,\varepsilon_p,m} \tag{11.2.2.12}
+A(\varphi)'=\sum_{(\varepsilon_p,m)}\langle A(\varphi)'\eta_{\chi,\varepsilon_p,m},\cdot\rangle_{s,2}\psi_{\chi,\varepsilon_p,m} \tag{11.2.2.12}
 $$
 
 converges in $S_p(\mathscr{E}^s_{0,S_p}(\chi|_{C^1_F})'_\beta)$ for every real number $p\ge 1$ by the same argument as in the proof of Theorem 10.3.1.1(1), leading to the expression in (11.2.2.4) by continuity of the trace functional on $S_1(\mathscr{E}^s_{0,S_p}(\chi|_{C^1_F}))$, combined with the calculation of the value in (11.2.2.11) for the trace of the finite rank partial sums of the series (11.2.2.12). $\square$
@@ -940,19 +940,19 @@ $$
 s\ge 2[F:\mathbf Q]. \tag{11.2.2.13}
 $$
 
-Let $p$ be a prime number such that $\chi$ is unramified at every finite place of $F$ whose residue characteristic is $p$. We observe that $\mathrm{Trace}_{s,p}\,A(\phi)$, computed in Theorem 11.2.2.1, is independent of $s$ (so long as $s$ satisfies (11.2.2.13)). Indeed, $N_s(\varepsilon_p)=N(\varepsilon_p)$ for all such $s$, since $N(\varepsilon_p)\le [F:\mathbf Q]$ for all primes $p$.
+Let $p$ be a prime number such that $\chi$ is unramified at every finite place of $F$ whose residue characteristic is $p$. We observe that $\mathrm{Trace}_{s,p}\,A(\varphi)$, computed in Theorem 11.2.2.1, is independent of $s$ (so long as $s$ satisfies (11.2.2.13)). Indeed, $N_s(\varepsilon_p)=N(\varepsilon_p)$ for all such $s$, since $N(\varepsilon_p)\le [F:\mathbf Q]$ for all primes $p$.
 
 **11.3. Orbital Kernels and Orbital Traces**
 
 **11.3.1. Calculation of the Orbital Kernels by global to $S$-local degeneration on the orbital basis elements.**
 
-**11.3.1.1. Divisorial stratification of the ideles.** The next step now is to split $k_{\mathrm{geom},I,\phi}(x,y)$ into an infinite sum of pieces indexed by the places of $F$:
+**11.3.1.1. Divisorial stratification of the ideles.** The next step now is to split $k_{\mathrm{geom},I,\varphi}(x,y)$ into an infinite sum of pieces indexed by the places of $F$:
 
 $$
-k_{\mathrm{geom},I,\phi}(x,y)=k_{S,\phi}(x,y)+\sum_{p\nmid S}k_{p,\phi}(x,y)
+k_{\mathrm{geom},I,\varphi}(x,y)=k_{S,\varphi}(x,y)+\sum_{p\nmid S}k_{p,\varphi}(x,y)
 $$
 
-and let the pieces $k_{p,\phi}(x,y)$ act on certain subspaces of $W^{b,2}_I(\lvert\cdot\rvert^{1/2}_F \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal{S}_0(\mathbf A_F)))$ to understand them.
+and let the pieces $k_{p,\varphi}(x,y)$ act on certain subspaces of $W^{b,2}_I(\lvert\cdot\rvert^{1/2}_F \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal{S}_0(\mathbf A_F)))$ to understand them.
 
 This subsection is aimed at conveying the main ideas on how to accomplish this, i.e. how to split the geometric kernel.
 
@@ -1120,20 +1120,20 @@ $$
 
 carries a Schauder basis that is analogous to the exponential system from the toy example (see Example 1.8.1.1)!
 
-(1) Using the indicator functions $\alpha_k$, $k\ge 0$ of the strata of the divisorial filtration on the global ideles, we chop the kernel function $k_{\mathrm{geom},I,\phi}$ along the strata of the primary divisorial filtration on $\mathrm{GL}_1(\mathbf A_F)$. Consider the successive differences
+(1) Using the indicator functions $\alpha_k$, $k\ge 0$ of the strata of the divisorial filtration on the global ideles, we chop the kernel function $k_{\mathrm{geom},I,\varphi}$ along the strata of the primary divisorial filtration on $\mathrm{GL}_1(\mathbf A_F)$. Consider the successive differences
 
 $$
-k_{p_k}(x,y):=(\alpha_{k+1}-\alpha_k)k_{\mathrm{geom},I,\phi}(x,y) \tag{11.3.1.4}
+k_{p_k}(x,y):=(\alpha_{k+1}-\alpha_k)k_{\mathrm{geom},I,\varphi}(x,y) \tag{11.3.1.4}
 $$
 
-(this will be what we called $k_{p_k,\phi}(x,y)$) and write them down explicitly by letting them act on (lifts of the) Schauder basis elements on the subquotients (11.3.1.3), upon incorporating the effect of multiplication by $\lvert\cdot\rvert^{1/2}_F$ (here I am omitting several items. The subquotients used to this effect incorporate a support condition on the Fourier transform of the comprising global Schwartz-Bruhat functions $f$. They carry such Schauder bases because they are all realized as copies of twisted forms of the exponential system itself, and we can always arrange such support condition to hold (by compactness of the quotients $C_F/\pi_v^{\mathbf Z}$ for each $v\nmid S$, in a nutshell). The version of the subquotients from (11.3.1.3) incorporating such support condition is termed Paley-Wiener Levels in the paper. The support condition aims at making multiplication by $\lvert\cdot\rvert^a_F$ for any $a>0$, continuous on the closure of the subspace generated by the Schwartz-Bruhat functions $f$ satisfying such support condition on their Fourier transform. We are going to omit all of this from this overview. These elements are not difficult, and they are quite natural: they only make for a very long story).
+(this will be what we called $k_{p_k,\varphi}(x,y)$) and write them down explicitly by letting them act on (lifts of the) Schauder basis elements on the subquotients (11.3.1.3), upon incorporating the effect of multiplication by $\lvert\cdot\rvert^{1/2}_F$ (here I am omitting several items. The subquotients used to this effect incorporate a support condition on the Fourier transform of the comprising global Schwartz-Bruhat functions $f$. They carry such Schauder bases because they are all realized as copies of twisted forms of the exponential system itself, and we can always arrange such support condition to hold (by compactness of the quotients $C_F/\pi_v^{\mathbf Z}$ for each $v\nmid S$, in a nutshell). The version of the subquotients from (11.3.1.3) incorporating such support condition is termed Paley-Wiener Levels in the paper. The support condition aims at making multiplication by $\lvert\cdot\rvert^a_F$ for any $a>0$, continuous on the closure of the subspace generated by the Schwartz-Bruhat functions $f$ satisfying such support condition on their Fourier transform. We are going to omit all of this from this overview. These elements are not difficult, and they are quite natural: they only make for a very long story).
 
-(2) Smoothen the “partial kernels” $k_{p_k,\phi}$ along the diagonal (using a version of the Hardy-Littlewood Maximal Theorem) and compute their own mass along the diagonal, by using their explicit form as a limit of finite rank operators, obtained by using the basis.
+(2) Smoothen the “partial kernels” $k_{p_k,\varphi}$ along the diagonal (using a version of the Hardy-Littlewood Maximal Theorem) and compute their own mass along the diagonal, by using their explicit form as a limit of finite rank operators, obtained by using the basis.
 
 The answer we get is:
 
 $$
-\sum_{\varepsilon_p}N(\chi\lvert\cdot\rvert^{\varepsilon_p}_F)\int_{C_F}\phi(g)\chi(g)\lvert g\rvert^{\varepsilon_p-1/2}_F\,\mathrm{d}\bar\mu(g)
+\sum_{\varepsilon_p}N(\chi\lvert\cdot\rvert^{\varepsilon_p}_F)\int_{C_F}\varphi(g)\chi(g)\lvert g\rvert^{\varepsilon_p-1/2}_F\,\mathrm{d}\bar\mu(g)
 $$
 
 where the sum is over the complex numbers $\varepsilon_p$ such that $\chi\lvert\cdot\rvert^{\varepsilon_p}_F$ is a zero of the entire function $\prod_{v\in S_p}L_v^{-1}$ (we call $N(\chi\lvert\cdot\rvert^{\varepsilon_p}_F)$ its multiplicity) with $\chi\lvert\cdot\rvert^{\varepsilon_p}_F$ contained in the connected component $\Omega(C_F)(\chi|_{C^1_F})$.
@@ -1141,36 +1141,36 @@ where the sum is over the complex numbers $\varepsilon_p$ such that $\chi\lvert\
 Once again (as in the toy example) the Poisson Summation Formula also gives us that such trace equals:
 
 $$
-\sum_{v\in S_p}\frac{\log(q_v)}{\mu_v(\mathcal O_{F_v}^\times)}\sum_{k\in\mathbf Z}\phi(\pi_v^k)
+\sum_{v\in S_p}\frac{\log(q_v)}{\mu_v(\mathcal O_{F_v}^\times)}\sum_{k\in\mathbf Z}\varphi(\pi_v^k)
 $$
 
-and so if $\phi$ is supported strictly over $C(1,\lvert\pi_v^{-1}\rvert_v)_F$ then this gives zero!
+and so if $\varphi$ is supported strictly over $C_F^{(1,\lvert\pi_v^{-1}\rvert_v)}$ then this gives zero!
 
-If $\phi$ is fixed and compactly supported over $(1,+\infty)$, then outside of finitely many places $v$, indeed $\phi$ will be supported on $C(1,\lvert\pi_v^{-1}\rvert_v)_F$ because $\lvert\pi_v^{-1}\rvert_v=q_v$ grows to $+\infty$ as the residue characteristic
+If $\varphi$ is fixed and compactly supported over $(1,+\infty)$, then outside of finitely many places $v$, indeed $\varphi$ will be supported on $C_F^{(1,\lvert\pi_v^{-1}\rvert_v)}$ because $\lvert\pi_v^{-1}\rvert_v=q_v$ grows to $+\infty$ as the residue characteristic
 
 ## PDF page 495
 
 **11.3. ORBITAL KERNELS AND ORBITAL TRACES** · **495**
 
-of $p$ grows, and so for all but finitely many $v$, the compact support of $\phi$ will be contained in the relatively compact regions $C(1,\lvert\pi_v^{-1}\rvert_v)_F$.
+of $p$ grows, and so for all but finitely many $v$, the compact support of $\varphi$ will be contained in the relatively compact regions $C_F^{(1,\lvert\pi_v^{-1}\rvert_v)}$.
 
-In other words, for all but finitely many finite places $v$ of $F$, the “partial kernels” $k_{p,\phi}$ contribute zero to the mass of the geometric kernel.
+In other words, for all but finitely many finite places $v$ of $F$, the “partial kernels” $k_{p,\varphi}$ contribute zero to the mass of the geometric kernel.
 
 **11.3.2. Calculation of the Orbital Traces.**
 
-THEOREM 11.3.2.1 (Orbital Traces on the Paley-Wiener Levels). *Let $F$ be a number field, $\chi\in\widehat{C_F}$ a continuous character. Let $\phi\in\mathcal D(C_F)$ be a test function. Let $S$ be a finite set of places of $F$ containing all the Archimedean places, all the places at which $F$ is ramified over $\mathbf Q$, all the places at which $\chi$ is ramified, and such that $\phi$ is invariant under the continuous left-translation action of the image in $C_F$ of the closed subgroup $\prod_{v\nmid S}\mathcal O_{F_v}^\times\subset\mathrm{GL}_1(\mathbf A_F)$. Assume $\mathrm{Pic}(\mathcal O_{F,S})=1$. Let $a=1/2$, $s>1$ a real number, $I=[-\alpha,\alpha]$ a compact interval, with $\alpha\ge 0$ a real number. Assume $\phi$ is supported over $C^{>1}_F$. Let $\tau:\mathbf R_{>0}\to\mathrm{GL}_1(\mathbf A_F)$ be a choice of continuous homomorphic section to the idelic norm. Then:*
+THEOREM 11.3.2.1 (Orbital Traces on the Paley-Wiener Levels). *Let $F$ be a number field, $\chi\in\widehat{C_F}$ a continuous character. Let $\varphi\in\mathcal D(C_F)$ be a test function. Let $S$ be a finite set of places of $F$ containing all the Archimedean places, all the places at which $F$ is ramified over $\mathbf Q$, all the places at which $\chi$ is ramified, and such that $\varphi$ is invariant under the continuous left-translation action of the image in $C_F$ of the closed subgroup $\prod_{v\nmid S}\mathcal O_{F_v}^\times\subset\mathrm{GL}_1(\mathbf A_F)$. Assume $\mathrm{Pic}(\mathcal O_{F,S})=1$. Let $a=1/2$, $s>1$ a real number, $I=[-\alpha,\alpha]$ a compact interval, with $\alpha\ge 0$ a real number. Assume $\varphi$ is supported over $C^{>1}_F$. Let $\tau:\mathbf R_{>0}\to\mathrm{GL}_1(\mathbf A_F)$ be a choice of continuous homomorphic section to the idelic norm. Then:*
 
 $$
-\sum_{\xi\in F^\times}\int_{g\in E^1_F}((\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\phi})(\tau(t),\xi g\tau(t))\,\mathrm{d}\mu_1(g)\,\frac{\mathrm{d}t}{t}=\frac{\log(q_v)}{\mu_v(\mathcal O_{F_v}^\times)}\sum_{k\in\mathbf Z}\phi(\pi_v^k) \tag{11.3.2.1}
+\sum_{\xi\in F^\times}\int_{g\in E^1_F}((\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\varphi})(\tau(t),\xi g\tau(t))\,\mathrm{d}\mu_1(g)\,\frac{\mathrm{d}t}{t}=\frac{\log(q_v)}{\mu_v(\mathcal O_{F_v}^\times)}\sum_{k\in\mathbf Z}\varphi(\pi_v^k) \tag{11.3.2.1}
 $$
 
-*where the $\Delta$-subscript denotes the indented kernel of $k_{\mathrm{geom},a,I,s,\phi}$ along the piece-wise constant indentation given by the function:*
+*where the $\Delta$-subscript denotes the indented kernel of $k_{\mathrm{geom},a,I,s,\varphi}$ along the piece-wise constant indentation given by the function:*
 
 $$
 u_0(x,y):=\sum_{\xi\in F^\times}\int_{g\in E^1_F}1_{\tau(\mathbf R_{>0})}(\xi gx)\otimes 1_{\tau(\mathbf R_{>0})}(\xi gy). \tag{11.3.2.2}
 $$
 
-*Proof. We observe that $k^\Delta_{\mathrm{geom},a,I,s,\phi}(\tau(t),\xi g\tau(t))$ vanishes unless $\xi\in F^\times$ maps to a uniformizer in $F_v^\times$ for some $v\in P_{k+1}-P_k$. We denote the set of such $\xi$’s as $\Xi_k$. In particular, the subset $\{\xi g\tau(t),\,t\in\mathbf R_{>0},\,g\in E^1_F,\,\xi\in\Xi_k\}$ satisfies:*
+*Proof. We observe that $k^\Delta_{\mathrm{geom},a,I,s,\varphi}(\tau(t),\xi g\tau(t))$ vanishes unless $\xi\in F^\times$ maps to a uniformizer in $F_v^\times$ for some $v\in P_{k+1}-P_k$. We denote the set of such $\xi$’s as $\Xi_k$. In particular, the subset $\{\xi g\tau(t),\,t\in\mathbf R_{>0},\,g\in E^1_F,\,\xi\in\Xi_k\}$ satisfies:*
 
 $$
 \{\xi g\tau(t),\,t\in\mathbf R_{>0},\,g\in E^1_F,\,\xi\in\Xi_k\}\subset\mathrm{GL}_1(\mathbf A_{F,S'})\times\prod_{v\nmid S'}\mathcal O_{F_v}^\times
@@ -1178,17 +1178,17 @@ $$
 
 *for $S'$ large enough containing $S$ and $P_{k+1}-P_k$.*
 
-*We call $\beta_{S'}$ the indicator function of $\mathrm{GL}_1(\mathbf A_{F,S'})\times\prod_{v\nmid S'}\mathcal O_{F_v}^\times$ within $\mathrm{GL}_1(\mathbf A_F)$. Multiplication of $(\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\phi}$ by the indicator function $\alpha_{k_1}$ (as a function of the second named variable) for $k_1\ge k_0$ for a suitable large enough integer $k_0\ge 0$ such that the support of $\alpha_{k_1}$ contains $\mathrm{GL}_1(\mathbf A_{F,S'})\times\prod_{v\nmid S'}\mathcal O_{F_v}^\times$, preserves the value of the left side of (11.3.2.1). We let $\rho$ be a smooth $(\varepsilon,\Lambda)$-cutoff and multiply $(\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\phi}$ by $\rho$ as a function of the first named variable.*
+*We call $\beta_{S'}$ the indicator function of $\mathrm{GL}_1(\mathbf A_{F,S'})\times\prod_{v\nmid S'}\mathcal O_{F_v}^\times$ within $\mathrm{GL}_1(\mathbf A_F)$. Multiplication of $(\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\varphi}$ by the indicator function $\alpha_{k_1}$ (as a function of the second named variable) for $k_1\ge k_0$ for a suitable large enough integer $k_0\ge 0$ such that the support of $\alpha_{k_1}$ contains $\mathrm{GL}_1(\mathbf A_{F,S'})\times\prod_{v\nmid S'}\mathcal O_{F_v}^\times$, preserves the value of the left side of (11.3.2.1). We let $\rho$ be a smooth $(\varepsilon,\Lambda)$-cutoff and multiply $(\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\varphi}$ by $\rho$ as a function of the first named variable.*
 
 *Then the process of multiplication by $\alpha_{k_1}$ in the second named variable converges within $W^s_I(C_F)$ by Theorem 11.1.2.1, and by Proposition 12.2.2.2 the value:*
 
 $$
-\sum_{\xi\in F^\times}\int_{g\in E^1_F}\rho(\tau(t))((\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\phi})(\tau(t),\xi g\tau(t))\alpha_{k_1}(\xi g\tau(t))\,\mathrm{d}\mu_1(g)\,\frac{\mathrm{d}t}{t} \tag{11.3.2.3}
+\sum_{\xi\in F^\times}\int_{g\in E^1_F}\rho(\tau(t))((\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\varphi})(\tau(t),\xi g\tau(t))\alpha_{k_1}(\xi g\tau(t))\,\mathrm{d}\mu_1(g)\,\frac{\mathrm{d}t}{t} \tag{11.3.2.3}
 $$
 
-*equals the value of the trace of the nuclear operator on $W^s_I(C_F)$ which is the unique continuous extension that the kernel $\rho(\tau(t))((\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\phi})(\tau(t),\xi g\tau(t))\alpha_{k_1}(\xi g\tau(t))$ induces, by defining a continuous integral operator $\mathcal{S}(\mathbf A_F)\to W^s_I(C_F)$ valued in the range of $M_\rho$.*
+*equals the value of the trace of the nuclear operator on $W^s_I(C_F)$ which is the unique continuous extension that the kernel $\rho(\tau(t))((\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\varphi})(\tau(t),\xi g\tau(t))\alpha_{k_1}(\xi g\tau(t))$ induces, by defining a continuous integral operator $\mathcal{S}(\mathbf A_F)\to W^s_I(C_F)$ valued in the range of $M_\rho$.*
 
-*As $k_1\to+\infty$ the effect of this latter on the arbitrary Schwartz-Bruhat function matches the effect of convolution on the resulting $S'$-local Schwartz-Bruhat function, by invariance under of $\prod_{v\nmid S}\mathcal O_{F_v}^\times$ of $\phi$, and with $S'$ determined by $k$ as in the foregoing, so that the indicator function of $\mathrm{GL}_1(\mathbf A_{F,S'})\times\prod_{v\nmid S'}\mathcal O_{F_v}^\times$ is the
+*As $k_1\to+\infty$ the effect of this latter on the arbitrary Schwartz-Bruhat function matches the effect of convolution on the resulting $S'$-local Schwartz-Bruhat function, by invariance under of $\prod_{v\nmid S}\mathcal O_{F_v}^\times$ of $\varphi$, and with $S'$ determined by $k$ as in the foregoing, so that the indicator function of $\mathrm{GL}_1(\mathbf A_{F,S'})\times\prod_{v\nmid S'}\mathcal O_{F_v}^\times$ is the
 
 ## PDF page 496
 
@@ -1201,13 +1201,13 @@ The images under $\Phi_{F,\chi|_{C^1_F}}$ of such Schwartz-Bruhat functions comp
 This gives us its trace, and hence the value of:
 
 $$
-\sum_{\xi\in F^\times}\int_{g\in E^1_F}\rho(\tau(t))((\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\phi})(\tau(t),\xi g\tau(t))\beta_{S'}(\xi g\tau(t))1_{g\in\mathrm{GL}_1(\mathbf A_{F,S'})>\lambda'}(\xi g\tau(t))\,\mathrm{d}\mu_1(g)\,\frac{\mathrm{d}t}{t} \tag{11.3.2.4}
+\sum_{\xi\in F^\times}\int_{g\in E^1_F}\rho(\tau(t))((\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\varphi})(\tau(t),\xi g\tau(t))\beta_{S'}(\xi g\tau(t))1_{g\in\mathrm{GL}_1(\mathbf A_{F,S'})>\lambda'}(\xi g\tau(t))\,\mathrm{d}\mu_1(g)\,\frac{\mathrm{d}t}{t} \tag{11.3.2.4}
 $$
 
 which, as $\lambda'$ is large enough and for $\Lambda\to+\infty$ in the regime $\varepsilon\Lambda=o(1)$, attains the limit value:
 
 $$
-\sum_{\varepsilon_p}N(\chi\lvert\cdot\rvert^{\varepsilon_p}_F)\int_{C_F}\phi(g)\chi(g)\lvert g\rvert^{\varepsilon_p-1/2}_F\,\mathrm{d}\bar\mu(g) \tag{11.3.2.5}
+\sum_{\varepsilon_p}N(\chi\lvert\cdot\rvert^{\varepsilon_p}_F)\int_{C_F}\varphi(g)\chi(g)\lvert g\rvert^{\varepsilon_p-1/2}_F\,\mathrm{d}\bar\mu(g) \tag{11.3.2.5}
 $$
 
 which is the right side of (7.4.2.1) from Theorem 7.4.2.1. The Theorem follows from the Poisson Summation Formula (see Proposition B.4.1.2). $\square$
