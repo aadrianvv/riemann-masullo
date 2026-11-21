@@ -38,7 +38,7 @@ The main goals of this Chapter are as follows:
 
 58  CHAPTER 2. ADELIC $\theta$-FUNCTIONS
 
-| Printed entry | Page |
+| | |
 |---|---:|
 | 2.1. Schwartz-Bruhat functions | 59 |
 | 2.1.1. Schwartz-Bruhat functions | 59 |

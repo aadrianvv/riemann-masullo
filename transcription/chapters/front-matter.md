@@ -9,7 +9,7 @@ Alessandro Maria Masullo
 
 **Contents**
 
-| Printed entry | Page |
+| | |
 |---|---:|
 | Index of Symbols | 9 |
 | Chapter 1. Introduction | 11 |
@@ -52,7 +52,7 @@ Alessandro Maria Masullo
 
 4  CHAPTER 0. CONTENTS
 
-| Printed entry | Page |
+| | |
 |---|---:|
 | 6.1. Structure Theorem IV: local within global | 287 |
 | 6.2. Structure Theorem V: isotypic exhaustiveness | 295 |
@@ -100,7 +100,7 @@ Alessandro Maria Masullo
 
 5
 
-| Printed entry | Page |
+| | |
 |---|---:|
 | 14.3. The higher rank case | 536 |
 | Appendix A. Preparations from Algebraic Number Theory | 537 |

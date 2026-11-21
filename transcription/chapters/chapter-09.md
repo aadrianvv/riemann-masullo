@@ -420,7 +420,7 @@ $$
 
 is finite. This is the case if and only if $s-2m>1$, which reads $m<\frac{s-1}{2}$. $\square$
 
-PROPOSITION 9.1.2.6. *Let $G$ be an $\mathbf{R}_{>0}$-modulated group, with module $\lvert\cdot\rvert_G$. Let $\mu_G$ be a choice of Haar measure on $G$.* [continues on p. 403]
+PROPOSITION 9.1.2.6. *Let $G$ be an $\mathbf{R}_{>0}$-modulated group, with module $\lvert\cdot\rvert_G$. Let $\mu_G$ be a choice of Haar measure on $G$.*
 
 ## PDF page 403
 
@@ -1396,7 +1396,7 @@ for $\phi_1,\phi_2 \in \mathrm{HS}^s(\mathbf{C}_I)$ and $u_1,u_2 \in L^2(\wideha
 \end{tikzcd}
 ```
 
-[page continues beyond 418]
+
 
 ## PDF page 419
 

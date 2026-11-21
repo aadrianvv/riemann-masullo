@@ -8,7 +8,7 @@ In this Appendix we collect some results from analytic number theory and cover t
 
 We review classical facts on the growth of “finite” Hecke $L$-functions (i.e., without $\Gamma$-factors) over vertical strips, classical zero-free regions$^1$ for Hecke $L$-functions, and convergence of partial Euler products over the 1-line (i.e. the vertical line $\{\mathrm{Re}(s)=1\}$). We also discuss Weil’s own idelic formulation of the Explicit Formulas, incorporating Connes’ observations on the local Fourier transform in relation to Weil’s principal values.
 
-| Printed entry | Page |
+| | |
 |---|---:|
 | B.1. Convexity bound on $L_f(s,\chi)$ | 588 |
 | B.1.1. Growth order of $L_f(s,\chi)$ over the critical strip | 588 |
@@ -47,7 +47,7 @@ We review classical facts on the growth of “finite” Hecke $L$-functions (i.e
 
 588  CHAPTER B. PREPARATIONS FROM ANALYTIC NUMBER THEORY
 
-| Printed entry | Page |
+| | |
 |---|---:|
 | B.4.4.3. Calculation of Weil’s Principal Values. | 622 |
 | B.4.4.4. Reformulation of Weil’s Explicit Formulas | 623 |
