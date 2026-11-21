@@ -246,6 +246,12 @@ class AutoMerge(unittest.TestCase):
         self.api.main_files = ["RiemannMasullo/AppB/Sec2.lean", "ERRATA.md", "README.md"]
         self.assertEqual(self.drain(), {7: "merged"})
 
+    def test_main_changed_the_progress_template(self):
+        self.api.pull_request(7, {LEAN: (OLD, NEW)})
+        self.api.main_files = ["scripts/progress/template.html"]
+        self.assertEqual(self.drain(), {7: "merged"})
+        self.assertFalse(self.api.did("POST", r"actions/runs/\d+/rerun"))
+
     def test_two_pull_requests_for_one_file_are_not_merged_on_one_check(self):
         self.api.pull_request(7, {LEAN: (OLD, NEW)})
         self.api.pull_request(8, {LEAN: (OLD, OLD.replace("sorry", "exact True.intro"))})
