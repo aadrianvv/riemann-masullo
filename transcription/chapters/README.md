@@ -1,30 +1,29 @@
 # Read the manuscript by chapter
 
-Each file preserves the physical PDF page markers. Blank boundary pages belong to the preceding file.
-Files use the merged transcription plus explicitly approved page corrections. A partly reviewed file is not a final fidelity claim.
+Each file keeps the physical PDF page markers (`## PDF page N`). Blank boundary pages belong to the preceding file.
 
-**Review snapshot:** 940 of 940 physical pages reviewed, including 11 verified blanks.
+Every page of every file has been machine-checked against the PDF with `../tools/check.py` (page markers, prose, math glyphs, delimiters, footnotes, tags, bars) and every diagram has been compared with the page image; see [`../README.md`](../README.md#status) for exactly what that covers and what it does not. "Pages corrected" counts the pages changed by the corrections listed in [`../CHANGELOG.md`](../CHANGELOG.md).
 
-| Part | PDF pages | Review |
-|---|---:|---|
-| [Front matter](front-matter.md) | 1–10 | Reviewed |
-| [Chapter 1. Introduction](chapter-01.md) | 11–56 | Reviewed |
-| [Chapter 2. Adelic θ-functions](chapter-02.md) | 57–116 | Reviewed |
-| [Chapter 3. Idelic Zeta Functions](chapter-03.md) | 117–154 | Reviewed |
-| [Chapter 4. Periodic Schauder Bases on modulated groups](chapter-04.md) | 155–220 | Reviewed |
-| [Chapter 5. Spaces of adelic θ-functions and Idelic Z-functions](chapter-05.md) | 221–286 | Reviewed |
-| [Chapter 6. Local-Global structures](chapter-06.md) | 287–310 | Reviewed |
-| [Chapter 7. Schauder Bases of Idelic Zeta functions](chapter-07.md) | 311–380 | Reviewed |
-| [Chapter 8. Periodic Orbits and Fixed Points](chapter-08.md) | 381–394 | Reviewed |
-| [Chapter 9. Hardy-Sobolev topologies](chapter-09.md) | 395–432 | Reviewed |
-| [Chapter 10. Trace formula: Spectral Side](chapter-10.md) | 433–474 | Reviewed |
-| [Chapter 11. The Shell Structure](chapter-11.md) | 475–496 | Reviewed |
-| [Chapter 12. Trace formula: Geometric Side](chapter-12.md) | 497–520 | Reviewed |
-| [Chapter 13. Zeros of Hecke L-functions](chapter-13.md) | 521–522 | Reviewed |
-| [Chapter 14. Complements](chapter-14.md) | 523–536 | Reviewed |
-| [Appendix A. Preparations from Algebraic Number Theory](appendix-a.md) | 537–586 | Reviewed |
-| [Appendix B. Preparations from Analytic Number Theory](appendix-b.md) | 587–654 | Reviewed |
-| [Appendix C. Preparations on locally convex topological vector spaces](appendix-c.md) | 655–742 | Reviewed |
-| [Appendix D. Schwartz-Bruhat functions](appendix-d.md) | 743–822 | Reviewed |
-| [Appendix E. Topological stacks](appendix-e.md) | 823–932 | Reviewed |
-| [Bibliography](bibliography.md) | 933–940 | Reviewed |
+| Part | PDF pages | Pages corrected |
+|---|---:|---:|
+| [Front matter](front-matter.md) | 1–10 | 5 of 10 |
+| [Chapter 1. Introduction](chapter-01.md) | 11–56 | 22 of 46 |
+| [Chapter 2. Adelic θ-functions](chapter-02.md) | 57–116 | 16 of 60 |
+| [Chapter 3. Idelic Zeta Functions](chapter-03.md) | 117–154 | 7 of 38 |
+| [Chapter 4. Periodic Schauder Bases on modulated groups](chapter-04.md) | 155–220 | 41 of 66 |
+| [Chapter 5. Spaces of adelic θ-functions and Idelic Z-functions](chapter-05.md) | 221–286 | 45 of 66 |
+| [Chapter 6. Local-Global structures](chapter-06.md) | 287–310 | 15 of 24 |
+| [Chapter 7. Schauder Bases of Idelic Zeta functions](chapter-07.md) | 311–380 | 56 of 70 |
+| [Chapter 8. Periodic Orbits and Fixed Points](chapter-08.md) | 381–394 | 9 of 14 |
+| [Chapter 9. Hardy-Sobolev topologies](chapter-09.md) | 395–432 | 37 of 38 |
+| [Chapter 10. Trace formula: Spectral Side](chapter-10.md) | 433–474 | 36 of 42 |
+| [Chapter 11. The Shell Structure](chapter-11.md) | 475–496 | 20 of 22 |
+| [Chapter 12. Trace formula: Geometric Side](chapter-12.md) | 497–520 | 17 of 24 |
+| [Chapter 13. Zeros of Hecke L-functions](chapter-13.md) | 521–522 | 0 of 2 |
+| [Chapter 14. Complements](chapter-14.md) | 523–536 | 4 of 14 |
+| [Appendix A. Preparations from Algebraic Number Theory](appendix-a.md) | 537–586 | 28 of 50 |
+| [Appendix B. Preparations from Analytic Number Theory](appendix-b.md) | 587–654 | 56 of 68 |
+| [Appendix C. Preparations on locally convex topological vector spaces](appendix-c.md) | 655–742 | 36 of 88 |
+| [Appendix D. Schwartz-Bruhat functions](appendix-d.md) | 743–822 | 54 of 80 |
+| [Appendix E. Topological stacks](appendix-e.md) | 823–932 | 55 of 110 |
+| [Bibliography](bibliography.md) | 933–940 | 0 of 8 |
