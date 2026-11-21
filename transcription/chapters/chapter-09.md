@@ -540,21 +540,14 @@ where the target is the $b$-line Hardy-Sobolev space.
 
 (3) The closure $\mathrm{HS}^{2N,2}_b(\mathbf C,(1/a,+\infty))$ of $M(\mathcal S_\mathrm{E}(\mathbf R_{>0},(1/a,+\infty)))$ in $\mathrm{HS}^2_b(\mathbf C)$ satisfies the following property: there exists a commutative diagram of continuous linear operators with linearly short exact rows:
 
-$$
-0 \tag{9.2.1.6}
-$$
+(9.2.1.6)
 
-$$
-0 \longrightarrow M_{[1/a,1]}W^{2N,2}_b(\mathbf R_{>0}) \xrightarrow{\quad} M_{\rho_{a,+}}W^{2N,2}_b(\mathbf R_{>0}) \xrightarrow{\quad} M_{\rho_{1,+}}W^{2N,2}_b(\mathbf R_{>0}) \longrightarrow 0
-$$
-
-$$
-\downarrow{\scriptstyle M}\qquad\qquad\qquad \downarrow{\scriptstyle M}\qquad\qquad\qquad \downarrow{\scriptstyle M}
-$$
-
-$$
-0 \longrightarrow \mathrm{PW}^{2N,2}_b(\mathbf C,a) \longrightarrow \mathrm{HS}^{2N,2}_b(\mathbf C,(1/a,+\infty)) \longrightarrow H^{2N,2}(\mathbf C_{<b}) \longrightarrow 0
-$$
+```latex
+\begin{tikzcd}
+0 \arrow[r] & M_{[1/a,1]}W^{2N,2}_b(\mathbf R_{>0}) \arrow[r] \arrow[d, "M"'] & M_{\rho_{a,+}}W^{2N,2}_b(\mathbf R_{>0}) \arrow[r] \arrow[d, "M"'] & M_{\rho_{1,+}}W^{2N,2}_b(\mathbf R_{>0}) \arrow[r] \arrow[d, "M"] & 0 \\
+0 \arrow[r] & \mathrm{PW}^{2N,2}_b(\mathbf C,a) \arrow[r] & \mathrm{HS}^{2N,2}_b(\mathbf C,(1/a,+\infty)) \arrow[r] & H^{2N,2}(\mathbf C_{<b}) \arrow[r] & 0
+\end{tikzcd}
+```
 
 where $M_{[1/a,1]}$ is the multiplication by $\mathrm{1}_{[1/a,1]}$ operator, the leftmost operators in (9.2.1.6) are continuous, with closed range, the rightmost are surjective and open, the vertical arrows are isometric isomorphisms induced by the Mellin transform, and where:
 
@@ -750,21 +743,14 @@ for $u_1,u_2\in L^2(G^1,\mu_1)$ and $\phi_1,\phi_2\in\mathrm{HS}^{2N,2}_b(\mathb
 
 (3) The closure of $M(\mathcal S_\mathrm{E}(G,(1/a,+\infty)))$ in $L^2(G^1,\mu_1)\,\widehat{\otimes}_\sigma\mathrm{HS}^{2N,2}_b(\mathbf C)$ satisfies the following property. There exists a commutative diagram of continuous linear operators with linearly short exact rows:
 
-$$
-0 \tag{9.2.1.22}
-$$
+(9.2.1.22)
 
-$$
-0 \longrightarrow M_{[1/a,1]}W^{2N,2}_b(G) \xrightarrow{\quad} M_{\rho_{a,+}}W^{2N,2}_b(G) \xrightarrow{\quad} M_{\rho_{1,+}}W^{2N,2}_b(G) \longrightarrow 0
-$$
-
-$$
-\downarrow{\scriptstyle M}\qquad\qquad\qquad \downarrow{\scriptstyle M}\qquad\qquad\qquad \downarrow{\scriptstyle M}
-$$
-
-$$
-0 \longrightarrow L^2(G^1,\mu_1)\,\widehat{\otimes}_\sigma\mathrm{PW}^{N,2}_b(\mathbf C,a) \longrightarrow L^2(G^1,\mu_1)\,\widehat{\otimes}_\pi\mathrm{HS}^{2N,2}_b(\mathbf C,(1/a,+\infty)) \longrightarrow L^2(G^1,\mu_1)\,\widehat{\otimes}_\sigma H^{N,2}(\mathbf C_{<b}) \longrightarrow 0
-$$
+```latex
+\begin{tikzcd}
+0 \arrow[r] & M_{[1/a,1]}W^{2N,2}_b(G) \arrow[r] \arrow[d, "M"'] & M_{\rho_{a,+}}W^{2N,2}_b(G) \arrow[r] \arrow[d, "M"'] & M_{\rho_{1,+}}W^{2N,2}_b(G) \arrow[r] \arrow[d, "M"] & 0 \\
+0 \arrow[r] & L^2(G^1,\mu_1)\,\widehat{\otimes}_\sigma\mathrm{PW}^{N,2}_b(\mathbf C,a) \arrow[r] & L^2(G^1,\mu_1)\,\widehat{\otimes}_\pi\mathrm{HS}^{2N,2}_b(\mathbf C,(1/a,+\infty)) \arrow[r] & L^2(G^1,\mu_1)\,\widehat{\otimes}_\sigma H^{N,2}(\mathbf C_{<b}) \arrow[r] & 0
+\end{tikzcd}
+```
 
 where $M_{[1/a,1]}$ is the multiplication by $\mathrm{1}_{[1/a,1]}$ operator, the leftmost operators in (9.2.1.22) are continuous, with closed range, the rightmost are surjective and open, the vertical arrows are isometric isomorphisms induced by the Mellin transform.
 
@@ -1177,13 +1163,14 @@ obtained as the closed range of the idempotent multiplication operator $M_{\rho_
 
 (2) The closure $\mathrm{HS}^s(\mathbf{C}_I, (1/a,+\infty))$ of $M(\mathcal{S}_J(\mathbf{R}_{>0}, (1/a,+\infty)))$ in the Hardy-Sobolev space $\mathrm{HS}^s(\mathbf{C}_I)$ satisfies the following property: there exists a commutative diagram of continuous linear operators with linearly short exact rows:
 
-$$
-\tag{9.2.2.27}
+(9.2.2.27)
+
+```latex
 \begin{tikzcd}
 0 \arrow[r] & M_{[1/a,1]}W^s_I(\mathbf{R}_{>0}) \arrow[r] \arrow[d, "M"] & M_{\rho_{a,+}}W^s_I(\mathbf{R}_{>0}) \arrow[r] \arrow[d, "M"] & M_{\rho_{1,+}}W^s_I(\mathbf{R}_{>0}) \arrow[r] \arrow[d, "M"] & 0 \\
 0 \arrow[r] & \mathrm{PW}^s(\mathbf{C}_I,a) \arrow[r] & \mathrm{HS}^s(\mathbf{C}_I,(1/a,+\infty)) \arrow[r] & \mathrm{HS}^s(\mathbf{C}_{I'}) \arrow[r] & 0
 \end{tikzcd}
-$$
+```
 
 where $M_{[1/a,1]}$ is the multiplication by $\mathrm{1}_{[1/a,1]}$ operator, the leftmost operators in (9.2.2.27) are continuous, with closed range, the rightmost are surjective and open, the vertical arrows are linear topological isomorphisms induced by the Mellin transform, and where:
 
@@ -1400,13 +1387,14 @@ for $\phi_1,\phi_2 \in \mathrm{HS}^s(\mathbf{C}_I)$ and $u_1,u_2 \in L^2(\wideha
 
 (3) The closure of $M(\mathcal{S}_I(G,(1/a,+\infty)))$ in $\mathrm{HS}^s(\mathbf{C}_I)\,\widehat{\otimes}_\sigma L^2(\widehat{G^1},\widehat{\mu}_1)$ satisfies the following property. There exists a commutative diagram of continuous linear operators with linearly short exact rows:
 
-$$
-\tag{9.2.2.47}
+(9.2.2.47)
+
+```latex
 \begin{tikzcd}
 0 \arrow[r] & M_{[1/a,1]}W^s_I(G) \arrow[r] \arrow[d, "M"] & M_{\rho_{a,+}}W^s_I(G) \arrow[r] \arrow[d, "M"] & M_{\rho_{1,+}}W^s_I(G) \arrow[r] \arrow[d, "M"] & 0 \\
 0 \arrow[r] & \mathrm{PW}^s(\mathbf{C}_I,a)\,\widehat{\otimes}_\sigma L^2(\widehat{G^1},\widehat{\mu}_1) \arrow[r] & \mathrm{HS}^s(\mathbf{C}_I,(1/a,+\infty))\,\widehat{\otimes}_\sigma L^2(\widehat{G^1},\widehat{\mu}_1) \arrow[r] & \mathrm{HS}^s(\mathbf{C}_I)\,\widehat{\otimes}_\sigma L^2(\widehat{G^1},\widehat{\mu}_1) \arrow[r] & 0
 \end{tikzcd}
-$$
+```
 
 [page continues beyond 418]
 
@@ -1752,9 +1740,9 @@ Lemma 9.3.2.5. Let $G$ be a second-countable $\mathbf{R}_{>0}$-modulated group. 
 
 **426** · **CHAPTER 9. HARDY-SOBOLEV TOPOLOGIES**
 
-Let $\phi \in \mathcal{S}\mathrm{E}(G)$. Assume that all the zeros of $M(\phi)(\chi\lvert\cdot\rvert^z_G)$ are contained in the interior of the vertical strip $\mathbf{C}I$. Then the quotient of $\mathcal{S}\mathrm{E}(G)$ by the convolution ideal $\phi \ast \mathcal{S}\mathrm{E}(G)$ admits an absolute Schauder basis whose set of coefficient functionals is given by the point-evaluation functionals at the zeros of $M(\phi)(\chi\lvert\cdot\rvert^z_G)$ and their derivatives, i.e. $\delta^{(k)}_{\rho}$ as $\rho$ varies over the zeros of $M(\phi)(\chi\lvert\cdot\rvert^z_G)$ and $0 \le k \le N(\rho)-1$, with $N(\rho)$ the multiplicity of $\rho$.
+Let $\phi \in \mathcal{S}_{\mathrm{E}}(G)$. Assume that all the zeros of $M(\phi)(\chi\lvert\cdot\rvert^z_G)$ are contained in the interior of the vertical strip $\mathbf{C}I$. Then the quotient of $\mathcal{S}_{\mathrm{E}}(G)$ by the convolution ideal $\phi \ast \mathcal{S}_{\mathrm{E}}(G)$ admits an absolute Schauder basis whose set of coefficient functionals is given by the point-evaluation functionals at the zeros of $M(\phi)(\chi\lvert\cdot\rvert^z_G)$ and their derivatives, i.e. $\delta^{(k)}_{\rho}$ as $\rho$ varies over the zeros of $M(\phi)(\chi\lvert\cdot\rvert^z_G)$ and $0 \le k \le N(\rho)-1$, with $N(\rho)$ the multiplicity of $\rho$.
 
-Proof. The exponential decay condition defining $\mathcal{S}\mathrm{E}(G)$ implies the convergence axiom defining Schauder bases, using Lemma 9.3.2.4 and Theorem D.3.3.13, combined with the description of the topology on $\mathcal{S}\mathrm{E}(\mathbf{R}_{>0})$ provided by Lemma D.3.1.2. By Theorem 4.1.2.6(1) and (3), indeed the Schauder basis is absolute.$^6$ $\square$
+Proof. The exponential decay condition defining $\mathcal{S}_{\mathrm{E}}(G)$ implies the convergence axiom defining Schauder bases, using Lemma 9.3.2.4 and Theorem D.3.3.13, combined with the description of the topology on $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0})$ provided by Lemma D.3.1.2. By Theorem 4.1.2.6(1) and (3), indeed the Schauder basis is absolute.$^6$ $\square$
 
 THEOREM 9.3.2.6 (Approximate units in $\mathscr{L}_{\sigma}(W^s_I(G))$). Let $G$ be a second-countable $\mathbf{R}_{>0}$-modulated group. Let $I \subset \mathbf{R}$ be a closed interval with non-empty interior, $s \ge 0$ a real number. For $T > 0$ a real number, we define the closed subspace:
 
@@ -1766,7 +1754,7 @@ The orthogonal projectors $P_T$ onto each $W^s_I(G)_{\le T}$ form a net of ortho
 
 Proof. Using the basis projectors provided by Lemma 9.3.2.5 we see that $\bigcup_{T>0} W^s_I(G)_{\le T}$ is dense in $W^s_I(G)$, which implies that the net of orthogonal projectors $\{P_T\}_{T>0}$ indeed converges strongly to the identity, since $W^s_I(G)_{\le T} \subset W^s_I(G)_{\le T'}$ for every pair of real numbers $0 < T < T'$. $\square$
 
-9.3.3. Trace of the regular representation on $W^s_I(G)$. Let $G$ be an $\mathbf{R}_{>0}$-modulated Hausdorff locally compact abelian group, with module $\lvert\cdot\rvert_G$. Let $\mu_G$ be a choice of Haar measure on $G$. Let $I \subset \mathbf{R}$ be a non-empty closed interval, $s \ge 0$ a real number. The continuous left-translation action $\rho_G$ of on $\mathcal{S}\mathrm{E}(G)$ extends by continuity to $W^s_I(G)$. We refer to this continuous representation of $G$ as the regular representation of $G$ on $W^s_I(G)$.
+9.3.3. Trace of the regular representation on $W^s_I(G)$. Let $G$ be an $\mathbf{R}_{>0}$-modulated Hausdorff locally compact abelian group, with module $\lvert\cdot\rvert_G$. Let $\mu_G$ be a choice of Haar measure on $G$. Let $I \subset \mathbf{R}$ be a non-empty closed interval, $s \ge 0$ a real number. The continuous left-translation action $\rho_G$ of on $\mathcal{S}_{\mathrm{E}}(G)$ extends by continuity to $W^s_I(G)$. We refer to this continuous representation of $G$ as the regular representation of $G$ on $W^s_I(G)$.
 
 9.3.3.1. Cutoffs. The purpose of this subsection is to introduce truncation operators, to be reprised later. We let $\varphi: G \to \mathbf{C}$ be a bounded function, whose support is compact. The operator
 

@@ -567,17 +567,15 @@ PERIODIC ORBITS AND FIXED POINTS
 
 and its suquotients $\mathscr{E}_{S,S_{\infty}}(\chi_{S}|J^{1}_{F,S})$ and $\mathscr{E}_{S,S_{p}}(\chi_{S}|J^{1}_{F,S})$ according to the following symbolism:
 
-$$(8.4.0.6)$$
+(8.4.0.6)
 
-$$
-\begin{array}{ccccc}
-\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}_{00}(\mathbf{A}_{F,S})) & \longrightarrow & \mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}(\mathbf{A}_{F,S})) & \longrightarrow & \mathscr{E}_{S,S_{\infty}}(\chi_{S}|J^{1}_{F,S}) \times \prod^{\prime}_{p:S_{p}\subset S} \mathscr{E}_{S,S_{p}}(\chi_{S}|J^{1}_{F,S}) \\
-\downarrow & & \downarrow & & \downarrow \\
-[D_{S,1}/\mathrm{GL}_{1}(\mathbf{A}_{F,S})^{1}] & \xrightarrow[j]{} & [D_{F,S}/\mathrm{GL}_{1}(\mathbf{A}_{F,S})^{1}] & \xleftarrow[i]{} & \sqcup^{\prime}_{v \in S} [D_{S,v}/\mathrm{GL}_{1}(\mathbf{A}_{F,S})^{1}] \\
-\simeq\!\downarrow & & & & \downarrow\!\simeq \\
-\underline{J_{F,S}/J^{1}_{F,S}} & & & & \left(\sqcup_{v \in S_{\infty}} BU_{v}\right) \sqcup \left(\sqcup_{p:S_{p}\subset S} \sqcup^{\prime}_{v \in S_{p}} [\mathbf{R}_{>0}/F^{\times}_{v}]\right) \\
-\end{array}
-$$
+```latex
+\begin{tikzcd}
+\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}_{00}(\mathbf{A}_{F,S})) \arrow[r] \arrow[d] & \mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}(\mathbf{A}_{F,S})) \arrow[r] \arrow[d] & \mathscr{E}_{S,S_{\infty}}(\chi_{S}|_{J^{1}_{F,S}}) \times \prod^{\prime}_{p:S_{p}\subset S} \mathscr{E}_{S,S_{p}}(\chi_{S}|_{J^{1}_{F,S}}) \arrow[d] \\
+[D_{S,1}/\mathrm{GL}_{1}(\mathbf{A}_{F,S})^{1}] \arrow[r, "j"'] \arrow[d, "\simeq"'] & [D_{F,S}/\mathrm{GL}_{1}(\mathbf{A}_{F,S})^{1}] & \coprod^{\prime}_{v \in S} [D_{S,v}/\mathrm{GL}_{1}(\mathbf{A}_{F,S})^{1}] \arrow[d, "\simeq"] \arrow[l, "i"] \\
+\underline{J_{F,S}/J^{1}_{F,S}} &  & \left(\coprod_{v \in S_{\infty}} BU_{v}\right) \coprod \left(\coprod_{p:S_{p}\subset S} \coprod^{\prime}_{v \in S_{p}} [\mathbf{R}_{>0}/F^{\times}_{v}]\right)
+\end{tikzcd}
+```
 
 The top row in (8.4.0.6) is a short exact sequence (on the left and in the middle), both linearly and
 topologically. This is the content of Proposition 5.3.4.4 and Proposition 5.3.4.5.
@@ -593,15 +591,14 @@ coarse spaces are, respectively, a loop $\mathbf{R}_{>0}/N(\mathfrak{p}_{v})\mat
 We now look into the effect of the $S$-idelic Mellin transform $L_{S}$ (see (5.1.1.2)) on the diagram in (8.4.0.6).
 It turns it into the following divisor exact sequence:
 
-$$(8.4.0.7)$$
+(8.4.0.7)
 
-$$
-\begin{array}{ccccc}
-L_{S}\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}_{00}(\mathbf{A}_{F,S})) & \longrightarrow & L_{S}\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}(\mathbf{A}_{F,S})) & \longrightarrow & L_{S}\mathscr{E}_{S,S_{\infty}}(\chi_{S}|J^{1}_{F,S}) \times \prod^{\prime}_{p:S_{p}\subset S} L_{S}\mathscr{E}_{S,S_{p}}(\chi_{S}|J^{1}_{F,S}) \\
-\downarrow & & \downarrow & & \downarrow \\
-\Omega(J_{F,S})(\chi_{S}|J^{1}_{F,S}) & \xrightarrow[j]{} & X_{S}(\chi_{S}|J^{1}_{F,S}) & \xleftarrow[i]{} & \mathcal{U}_{S_{\infty}} \sqcup (\sqcup^{\prime}_{p:S_{p}\subset S} \mathcal{U}_{S_{p}}) \\
-\end{array}
-$$
+```latex
+\begin{tikzcd}
+L_{S}\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}_{00}(\mathbf{A}_{F,S})) \arrow[r] \arrow[d] & L_{S}\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}(\mathbf{A}_{F,S})) \arrow[r] \arrow[d] & L_{S}\mathscr{E}_{S,S_{\infty}}(\chi_{S}|_{J^{1}_{F,S}}) \times \prod^{\prime}_{p:S_{p}\subset S} L_{S}\mathscr{E}_{S,S_{p}}(\chi_{S}|_{J^{1}_{F,S}}) \arrow[d] \\
+\Omega(J_{F,S})(\chi_{S}|_{J^{1}_{F,S}}) \arrow[r, "j"'] & X_{S}(\chi_{S}|_{J^{1}_{F,S}}) & \mathcal{U}_{S_{\infty}} \coprod (\coprod^{\prime}_{p:S_{p}\subset S} \mathcal{U}_{S_{p}}) \arrow[l, "i"]
+\end{tikzcd}
+```
 
 where $\Omega(J_{F,S})(\chi_{S}|J^{1}_{F,S})$ is the connected component parametrized by $\chi_{S}|J^{1}_{F,S}$ of the Riemann surface $\Omega(J_{F,S})$ of
 $S$-idelic quasi-characters, $X_{S}(\chi_{S}|J^{1}_{F,S})$ is a topological completion whose boundary is the divisor $\mathcal{U}_{S_{\infty}} \sqcup (\sqcup^{\prime}_{p:S_{p}\subset S} \mathcal{U}_{S_{p}})$,
@@ -627,32 +624,29 @@ transform, coalesce together into the global ones, to give the following global 
 ORBITAL TRACES
 391
 
-$$(8.4.0.8)$$
+(8.4.0.8)
 
-$$
-\begin{array}{ccccc}
-\mathrm{H}_{0,\mathrm{cont}}(\chi|C^{1}_{F}, \mathcal{S}_{00}(\mathbf{A}_{F})) & \longrightarrow & \mathrm{H}_{0,\mathrm{cont}}(\chi|C^{1}_{F}, \mathcal{S}(\mathbf{A}_{F})) & \longrightarrow & \mathscr{E}_{S_{\infty}}(\chi|C^{1}_{F}) \times \prod^{\prime}_{p} \mathscr{E}_{S_{p}}(\chi|C^{1}_{F}) \\
-\downarrow & & \downarrow & & \downarrow \\
-[D_{F,1}/\mathrm{GL}_{1}(\mathbf{A}_{F})^{1}] & \xrightarrow[j]{} & [D_{F}/\mathrm{GL}_{1}(\mathbf{A}_{F})^{1}] & \xleftarrow[i]{} & \sqcup^{\prime}_{v \in \Sigma_{F}} [D_{F,v}/\mathrm{GL}_{1}(\mathbf{A}_{F})^{1}] \\
-\simeq\!\downarrow & & & & \downarrow\!\simeq \\
-\underline{C_{F}/C^{1}_{F}} & & & & \left(\sqcup_{v \in S_{\infty}} BU_{v}\right) \sqcup \left(\sqcup_{p} \sqcup^{\prime}_{v \in S_{p}} [\mathbf{R}_{>0}/F^{\times}_{v}]\right) \\
-\end{array}
-$$
+```latex
+\begin{tikzcd}
+\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^{1}_{F}}, \mathcal{S}_{00}(\mathbf{A}_{F})) \arrow[r] \arrow[d] & \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^{1}_{F}}, \mathcal{S}(\mathbf{A}_{F})) \arrow[r] \arrow[d] & \mathscr{E}_{S_{\infty}}(\chi|_{C^{1}_{F}}) \times \prod^{\prime}_{p} \mathscr{E}_{S_{p}}(\chi|_{C^{1}_{F}}) \arrow[d] \\
+[D_{F,1}/\mathrm{GL}_{1}(\mathbf{A}_{F})^{1}] \arrow[r, "j"'] \arrow[d, "\simeq"'] & [D_{F}/\mathrm{GL}_{1}(\mathbf{A}_{F})^{1}] & \coprod^{\prime}_{v \in \Sigma_{F}} [D_{F,v}/\mathrm{GL}_{1}(\mathbf{A}_{F})^{1}] \arrow[d, "\simeq"] \arrow[l, "i"] \\
+\underline{C_{F}/C^{1}_{F}} &  & \left(\coprod_{v \in S_{\infty}} BU_{v}\right) \coprod \left(\coprod_{p} \coprod^{\prime}_{v \in S_{p}} [\mathbf{R}_{>0}/F^{\times}_{v}]\right)
+\end{tikzcd}
+```
 
 where now the coproduct $\sqcup_{p} \sqcup_{v \in S_{p}} [\mathbf{R}_{>0}/F^{\times}_{v}]$ is indexed by all prime numbers, and its coarse space is a
 countable disjoint union of loops $\sqcup_{p} \sqcup_{v \in S_{p}} \mathbf{R}_{>0}/N(\mathfrak{p}_{v})\mathbf{Z}$ organized according to splitting patterns.
 
 The global idelic Mellin transform turns the diagram in (8.4.0.8) into the following:
 
-$$(8.4.0.9)$$
+(8.4.0.9)
 
-$$
-\begin{array}{ccccc}
-L\mathrm{H}_{0,\mathrm{cont}}(\chi|C^{1}_{F}, \mathcal{S}_{00}(\mathbf{A}_{F})) & \longrightarrow & L\mathrm{H}_{0,\mathrm{cont}}(\chi|C^{1}_{F}, \mathcal{S}(\mathbf{A}_{F})) & \longrightarrow & L\mathscr{E}_{S_{\infty}}(\chi|C^{1}_{F}) \times \prod^{\prime}_{p} L\mathscr{E}_{S_{p}}(\chi|C^{1}_{F}) \\
-\downarrow & & \downarrow & & \downarrow \\
-\Omega(C_{F})(\chi|C^{1}_{F}) & \xrightarrow[j]{} & X(\chi|C^{1}_{F}) & \xleftarrow[i]{} & \mathcal{U}_{S_{\infty}} \sqcup (\sqcup^{\prime}_{p} \mathcal{U}_{S_{p}}) \\
-\end{array}
-$$
+```latex
+\begin{tikzcd}
+L\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^{1}_{F}}, \mathcal{S}_{00}(\mathbf{A}_{F})) \arrow[r] \arrow[d] & L\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^{1}_{F}}, \mathcal{S}(\mathbf{A}_{F})) \arrow[r] \arrow[d] & L\mathscr{E}_{S_{\infty}}(\chi|_{C^{1}_{F}}) \times \prod^{\prime}_{p} L\mathscr{E}_{S_{p}}(\chi|_{C^{1}_{F}}) \arrow[d] \\
+\Omega(C_{F})(\chi|_{C^{1}_{F}}) \arrow[r, "j"'] & X(\chi|_{C^{1}_{F}}) & \mathcal{U}_{S_{\infty}} \coprod (\coprod^{\prime}_{p} \mathcal{U}_{S_{p}}) \arrow[l, "i"]
+\end{tikzcd}
+```
 
 where $X(\chi|C^{1}_{F})$ is a completion of the connected component $\Omega(C_{F})(\chi|C^{1}_{F})$ with boundary divisor $\mathcal{U}_{S_{\infty}} \sqcup (\sqcup_{p} \mathcal{U}_{S_{p}})$.
 
@@ -693,7 +687,7 @@ CHAPTER 8.
 PERIODIC ORBITS AND FIXED POINTS
 
 by identifying $\Phi_{F,S}(\mathcal{S}_{00}(\mathbf{A}_{F,S}))$, equipped with the quotient topology inherited from $\mathcal{S}_{00}(\mathbf{A}_{F,S})$, with a copy
-of the regular representation of $J_{F,S}$ on $\mathcal{S}\mathrm{E}(J_{F,S})$.
+of the regular representation of $J_{F,S}$ on $\mathcal{S}_{\mathrm{E}}(J_{F,S})$.
 
 We now assume $\varphi$ is supported over the closed semigroup $J^{\ge 1}_{F,S}$ of $S$-idele classes of $S$-idelic norm at least
 $1$.
@@ -772,19 +766,16 @@ $v \in S_{\infty}$, with infinite order, is constant with value zero.
 
 We may therefore complete the diagram in (8.4.0.6) into the following:
 
-$$(8.4.0.14)$$
+(8.4.0.14)
 
-$$
-\begin{array}{ccccc}
-0 & \longrightarrow & \mathrm{PW}_{S,X}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}, \mathcal{S}(\mathbf{A}_{F,S^{\prime}})) & \longrightarrow & \mathscr{E}_{S^{\prime},S_{\infty}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}) \times \prod^{\prime}_{p:S_{p}\subset S^{\prime}} \mathscr{E}^{\mathrm{ABS}}_{S^{\prime},S_{p},X}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}) \\
-\downarrow & & \downarrow & & \downarrow \\
-\mathrm{H}_{0,\mathrm{cont}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}, \mathcal{S}_{00}(\mathbf{A}_{F,S^{\prime}})) & \longrightarrow & \mathrm{H}_{0,\mathrm{cont}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}, \mathcal{S}(\mathbf{A}_{F,S^{\prime}})) & \longrightarrow & \mathscr{E}_{S^{\prime},S_{\infty}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}) \times \prod^{\prime}_{p:S_{p}\subset S^{\prime}} \mathscr{E}_{S^{\prime},S_{p}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}) \\
-\downarrow & & \downarrow & & \downarrow \\
-[D_{S^{\prime},1}/\mathrm{GL}_{1}(\mathbf{A}_{F,S^{\prime}})^{1}] & \xrightarrow[j]{} & [D_{F,S^{\prime}}/\mathrm{GL}_{1}(\mathbf{A}_{F,S^{\prime}})^{1}] & \xleftarrow[i]{} & \sqcup^{\prime}_{v \in S^{\prime}} [D_{S^{\prime},v}/\mathrm{GL}_{1}(\mathbf{A}_{F,S^{\prime}})^{1}] \\
-\simeq\!\downarrow & & & & \downarrow\!\simeq \\
-\underline{J_{F,S^{\prime}}/J^{1}_{F,S^{\prime}}} & & & & \left(\sqcup_{v \in S_{\infty}} BU_{v}\right) \sqcup \left(\sqcup_{p:S_{p}\subset S^{\prime}} \sqcup^{\prime}_{v \in S_{p}} [\mathbf{R}_{>0}/F^{\times}_{v}]\right) \\
-\end{array}
-$$
+```latex
+\begin{tikzcd}
+0 \arrow[r] \arrow[d] & \mathrm{PW}_{S,X}(\chi_{S^{\prime}}|_{J^{1}_{F,S^{\prime}}}, \mathcal{S}(\mathbf{A}_{F,S^{\prime}})) \arrow[r] \arrow[d] & \mathscr{E}_{S^{\prime},S_{\infty}}(\chi_{S^{\prime}}|_{J^{1}_{F,S^{\prime}}}) \times \prod^{\prime}_{p:S_{p}\subset S^{\prime}} \mathscr{E}^{\mathrm{ABS}}_{S^{\prime},S_{p},X}(\chi_{S^{\prime}}|_{J^{1}_{F,S^{\prime}}}) \arrow[d] \\
+\mathrm{H}_{0,\mathrm{cont}}(\chi_{S^{\prime}}|_{J^{1}_{F,S^{\prime}}}, \mathcal{S}_{00}(\mathbf{A}_{F,S^{\prime}})) \arrow[r] \arrow[d] & \mathrm{H}_{0,\mathrm{cont}}(\chi_{S^{\prime}}|_{J^{1}_{F,S^{\prime}}}, \mathcal{S}(\mathbf{A}_{F,S^{\prime}})) \arrow[r] \arrow[d] & \mathscr{E}_{S^{\prime},S_{\infty}}(\chi_{S^{\prime}}|_{J^{1}_{F,S^{\prime}}}) \times \prod^{\prime}_{p:S_{p}\subset S^{\prime}} \mathscr{E}_{S^{\prime},S_{p}}(\chi_{S^{\prime}}|_{J^{1}_{F,S^{\prime}}}) \arrow[d] \\
+[D_{S^{\prime},1}/\mathrm{GL}_{1}(\mathbf{A}_{F,S^{\prime}})^{1}] \arrow[r, "j"'] \arrow[d, "\simeq"'] & [D_{F,S^{\prime}}/\mathrm{GL}_{1}(\mathbf{A}_{F,S^{\prime}})^{1}] & \coprod^{\prime}_{v \in S^{\prime}} [D_{S^{\prime},v}/\mathrm{GL}_{1}(\mathbf{A}_{F,S^{\prime}})^{1}] \arrow[d, "\simeq"] \arrow[l, "i"] \\
+\underline{J_{F,S^{\prime}}/J^{1}_{F,S^{\prime}}} &  & \left(\coprod_{v \in S_{\infty}} BU_{v}\right) \coprod \left(\coprod_{p:S_{p}\subset S^{\prime}} \coprod^{\prime}_{v \in S_{p}} [\mathbf{R}_{>0}/F^{\times}_{v}]\right)
+\end{tikzcd}
+```
 
 for all large enough $X > 0$.
 
@@ -833,7 +824,7 @@ The Paley-Wiener levels approximate the orbital subquotients from within, fillin
 and they inhert the full Orbital Schauder bases on the primary Orbital quotients.
 
 At the global level, the topologically short exact sequence:
-$$0 \to \mathrm{H}_{0,\mathrm{cont}}(\chi|C^{1}_{F}, \mathcal{S}_{0}(\mathbf{A}_{F})) \to \mathcal{S}\mathrm{E}(C_{F})(\chi|C^{1}_{F}) \to \mathscr{H}_{F}(\chi|C^{1}_{F}) \to 0$$
+$$0 \to \mathrm{H}_{0,\mathrm{cont}}(\chi|C^{1}_{F}, \mathcal{S}_{0}(\mathbf{A}_{F})) \to \mathcal{S}_{\mathrm{E}}(C_{F})(\chi|C^{1}_{F}) \to \mathscr{H}_{F}(\chi|C^{1}_{F}) \to 0$$
 leads to computing the trace of $A(\varphi)$ by computing the trace of operators induced by the continuous
 left-translation action of $C_{F}$ on the spectral subquotient $\mathscr{H}_{F}(\chi|C^{1}_{F})$ (see Theorem 7.4.1.1).
 

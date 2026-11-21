@@ -1754,13 +1754,14 @@ $$
 the continuous surjective linear operator $u\mapsto\Phi_{G,\chi}(u)(x):=\int_{G^1}\chi(g)u(gx)\,\mathrm{d}\mu_1(g)$, where, recall, $\mathcal{S}_I(G)(\chi|_{G^1})$ is the quotient of $\mathcal{S}_I(G)$ by the kernel of $\Phi_{G,\chi}$, and $\Phi_{G,\chi}$ is continuous surjective and open, making the quotient Hausdorff and complete since so is $\mathcal{S}_I(G)$, and linearly and topologically isomorphic to $\mathrm{H}^0(\chi|_{G^1},\mathcal{S}_I(G))$, the closed subspace of $\mathcal{S}_I(G)$ of the $\chi|_{G^1}$-homogeneous $I$-exponentially decaying Schwartz-Bruhat functions; see Proposition D.3.3.12 (where $\Phi_{G,\chi}$ is linearly and topologically isomorphic, under multiplication by $\mu_1(G^1)$, to $\Phi^I_{G,\omega}$, for $\omega=\chi|_{G^1}$).
 We consider the following commutative diagram:
 
-$$
-\begin{array}{ccc}
-\mathcal{S}_I(G) & \xrightarrow{M(\cdot)(\chi\lvert\cdot\rvert_G^s)} & A\mathcal{S}(\mathbf{C}_I) \\
-\Phi_{G,\chi}\downarrow & & \downarrow T_{-ix_0} \\
-\mathcal{S}_I(G)(\chi|_{G^1}) & \xrightarrow[M_{\mathbf{R}_{>0}}\circ\tau]{} & A\mathcal{S}(\mathbf{C}_I)
-\end{array} \tag{4.4.1.3}
-$$
+(4.4.1.3)
+
+```latex
+\begin{tikzcd}
+\mathcal{S}_I(G) \arrow[r, "M(\cdot)(\chi\lvert\cdot\rvert_G^s)"] \arrow[d, "\Phi_{G,\chi}"'] & A\mathcal{S}(\mathbf{C}_I) \arrow[d, "T_{-ix_0}"] \\
+\mathcal{S}_I(G)(\chi|_{G^1}) \arrow[r, "M_{\mathbf{R}_{>0}}\circ\tau"'] & A\mathcal{S}(\mathbf{C}_I)
+\end{tikzcd}
+```
 
 where $M$ is the Mellin transform on $\mathcal{S}_I(G)$, hence assigned by:
 
@@ -2148,13 +2149,14 @@ We note that, since $G$ is abelian, we have the canonical identification of homo
 
 $G/k$ is now an elementary $\mathbf{R}_{>0}$-modulated abelian Lie group, with $G^1_0$ an elementary compact abelian Lie group, and the resulting operator $\Phi_{\gamma,0} : \mathcal{S}_{\mathrm{E}}(G/k) \to \mathcal{S}(G/(\gamma^{\mathbf{Z}} \cdot k))$ defined by averaging an element of $\mathcal{S}_{\mathrm{E}}(G/k)$ over the action of $\gamma^{\mathbf{Z}}$, is indeed valued in $\mathcal{S}(G/(\gamma^{\mathbf{Z}} \cdot k))$, which is seen upon repeating the argument from the foregoing, and promotes the following to a commutative diagram of linear operators:
 
-$$
-\tag{4.5.1.5}
+(4.5.1.5)
+
+```latex
 \begin{tikzcd}
 \mathcal{S}_{\mathrm{E}}(G/k) \arrow[r] \arrow[d, "\Phi_{\gamma,0}"] & \mathcal{S}_{\mathrm{E}}(G) \arrow[d, "\Phi_{\gamma}"] \\
 \mathcal{S}(G/(\gamma^{\mathbf{Z}} \cdot k)) \arrow[r] & \mathcal{S}_{\mathrm{E}}(G/\gamma^{\mathbf{Z}})
 \end{tikzcd}
-$$
+```
 
 where the horizontal arrows, sending functions on $G/k$, respectively $G/(\gamma^{\mathbf{Z}} \cdot k)$, to $k$-invariant functions on $G$, respectively $G/\gamma^{\mathbf{Z}}$ (in the latter case, $G/\gamma^{\mathbf{Z}}$ is identified with $\gamma^{\mathbf{Z}}\backslash G$ and the continuous action of $k$ is by right-translation on the left cosets) are continuous.
 
@@ -2197,13 +2199,14 @@ as functions of $x \in G$, invariant under the action of $\gamma^{\mathbf{Z}}$.
 
 The following diagram of linear operators:
 
-$$
-\tag{4.5.1.7}
+(4.5.1.7)
+
+```latex
 \begin{tikzcd}
-\mathrm{H}^0(\chi|_{G^1}, \mathcal{S}_{\mathrm{E}}(G)) \subset \mathcal{S}_{\mathrm{E}}(G) \arrow[r, "\Phi_{\gamma}"] & \mathcal{S}(G/\gamma^{\mathbf{Z}}) \arrow[d, "\Psi_{\chi}"] \\
-\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) \arrow[u, "\Phi_{\chi|_{G^1}}"] \arrow[r, "\Psi_{\gamma}"] & \mathcal{S}(G/\gamma^{\mathbf{Z}})
+\mathrm{H}^0(\chi|_{G^1}, \mathcal{S}_{\mathrm{E}}(G)) \subset \mathcal{S}_{\mathrm{E}}(G) \arrow[r, "\Phi_{\gamma}"] \arrow[d, "\Phi_{\chi|_{G^1}}"'] & \mathcal{S}(G/\gamma^{\mathbf{Z}}) \arrow[d, "\Psi_{\chi}"] \\
+\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) \arrow[r, "\Psi_{\gamma}"'] & \mathcal{S}(G/\gamma^{\mathbf{Z}})
 \end{tikzcd}
-$$
+```
 
 is commutative, where $\Phi_{\chi|_{G^1}}$ is the operator:
 
@@ -2489,13 +2492,14 @@ $$
 
 *making the following diagram of continuous linear operators:*
 
-$$
-\tag{4.5.3.2}
+(4.5.3.2)
+
+```latex
 \begin{tikzcd}
 \mathcal{S}_I(G) \arrow[r, "\Phi_{\gamma}"] \arrow[d] & \mathcal{S}(G/\gamma^{\mathbf{Z}}) \arrow[d, equal] \\
-\mathcal{S}(G) \arrow[r, "\Phi_{\gamma^{\mathbf{Z}}}"] & \mathcal{S}(G/\gamma^{\mathbf{Z}})
+\mathcal{S}(G) \arrow[r, "\Phi_{\gamma^{\mathbf{Z}}}"'] & \mathcal{S}(G/\gamma^{\mathbf{Z}})
 \end{tikzcd}
-$$
+```
 
 *where $\mathcal{S}_I(G) \to \mathcal{S}(G)$ is the canonical continuous injective linear operator, and the bottom horizontal arrow is the continuous surjective open linear operator from (D.1.7.2) of Theorem D.1.7.1 applied to $k = \gamma^{\mathbf{Z}}$.*
 
@@ -2875,15 +2879,15 @@ To see that this system indeed has a solution, we observe that the system is tri
 
 We choose $N = 2$ and discuss this special case first. In particular, we have $S = (\gamma_1,\gamma_2)$. We consider the following diagram whose top and middle rows are short linearly-exact sequences:
 
-$$
-\begin{array}{ccc}
-P_{\gamma_1}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_{(\gamma_1,\gamma_2)}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) & \longrightarrow & \mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_{(\gamma_1,\gamma_2)}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) & \longrightarrow & \mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_{\gamma_1}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) \\
-{\scriptstyle P_{\gamma_1}^{-1}}\downarrow & & \parallel & & \parallel \\
-\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_{\gamma_2}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) & \xrightarrow{P_{\gamma_1}} & \mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_{(\gamma_1,\gamma_2)}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) & \longrightarrow & \mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_{\gamma_1}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) \\
-{\scriptstyle \Phi_{\chi,\gamma_2}}\downarrow & & & & \downarrow{\scriptstyle \Phi_{\chi,\gamma_1}} \\
-\mathcal{S}_{\chi}(G/\gamma_2^{\mathbf{Z}}) & & & & \mathcal{S}_{\chi}(G/\gamma_1^{\mathbf{Z}})
-\end{array} \tag{4.6.1.22}
-$$
+(4.6.1.22)
+
+```latex
+\begin{tikzcd}
+P_{\gamma_1}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_{(\gamma_1,\gamma_2)}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) \arrow[r] \arrow[d, "P_{\gamma_1}^{-1}"'] & \mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_{(\gamma_1,\gamma_2)}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) \arrow[r] \arrow[d, equal] & \mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_{\gamma_1}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) \arrow[d, equal] \\
+\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_{\gamma_2}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) \arrow[r, "P_{\gamma_1}"] \arrow[d, "\Phi_{\chi,\gamma_2}"'] & \mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_{(\gamma_1,\gamma_2)}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) \arrow[r] & \mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_{\gamma_1}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) \arrow[d, "\Phi_{\chi,\gamma_1}"] \\
+\mathcal{S}_{\chi}(G/\gamma_2^{\mathbf{Z}}) &  & \mathcal{S}_{\chi}(G/\gamma_1^{\mathbf{Z}})
+\end{tikzcd}
+```
 
 We note that in fact the top and middle rows are topologically exact: the leftmost spaces are closed subspaces under the respective linear inclusions, and $P_{\gamma_1}^{-1}$ denotes the inverse linear topological isomorphism $Q$ from (4.6.1.7) provided by Lemma 4.6.1.3.
 
@@ -3027,13 +3031,14 @@ We now discuss the case of general $N \ge 1$. We define $S_1 := (\gamma_2,\dots,
 
 The following diagram of continuous linear maps:
 
-$$
-\begin{array}{ccc}
-P_{\gamma_1}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_S\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) & \longrightarrow & \mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_S\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) & \longrightarrow & \mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_{\gamma_1}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) \\
-{\scriptstyle P_{\gamma_1}^{-1}}\downarrow & & \parallel & & \parallel \\
-\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_{S_1}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) & \xrightarrow{P_{\gamma_1}} & \mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_S\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) & \longrightarrow & \mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_{\gamma_1}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})
-\end{array} \tag{4.6.1.28}
-$$
+(4.6.1.28)
+
+```latex
+\begin{tikzcd}
+P_{\gamma_1}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_S\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) \arrow[r] \arrow[d, "P_{\gamma_1}^{-1}"'] & \mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_S\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) \arrow[r] \arrow[d, equal] & \mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_{\gamma_1}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) \arrow[d, equal] \\
+\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_{S_1}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) \arrow[r, "P_{\gamma_1}"] & \mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_S\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) \arrow[r] & \mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_{\gamma_1}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})
+\end{tikzcd}
+```
 
 has topologically exact rows, and $P_{\gamma_1}^{-1}$ is the inverse of the linear topological isomorphism $Q$ from (4.6.1.7) provided by Lemma 4.6.1.3 (up to relabelling the elements of $S$).
 
@@ -3111,13 +3116,14 @@ $$
 
 PROOF. The following diagram:
 
-$$
-\tag{4.6.2.3}
+(4.6.2.3)
+
+```latex
 \begin{tikzcd}
 P_{\gamma_1}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_S\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) \arrow[r] \arrow[d, "P_{\gamma_1}^{-1}"] & \mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_S\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) \arrow[r] \arrow[d, equal] & \mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_{\gamma_1}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) \arrow[d, equal] \\
 \mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_{S_1}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) \arrow[r, "P_{\gamma_1}"] & \mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_S\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1}) \arrow[r] & \mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})/P_{\gamma_1}\mathcal{S}_{\mathrm{E}}(G)(\chi|_{G^1})
 \end{tikzcd}
-$$
+```
 
 of continuous linear operators, with topologically exact rows and where $P_{\gamma_1}^{-1}$ is the inverse of the linear topological isomorphism $Q$ from (4.6.1.7) provided by Lemma 4.6.1.3 (up to relabelling the elements of $S$) enables the following inductive argument.
 
@@ -3183,14 +3189,15 @@ Recall from Situation 4.6.1.1 that the notation $(\gamma_2,\dots,\gamma_N)$ mean
 
 The following commutative diagram of continuous linear operators:
 
-$$
-\tag{4.6.3.2}
+(4.6.3.2)
+
+```latex
 \begin{tikzcd}
 P_{\gamma_1}\mathcal{S}_{\mathrm{E}}(G)/P_S\mathcal{S}_{\mathrm{E}}(G) \arrow[r] \arrow[d] & \mathcal{S}_{\mathrm{E}}(G)/P_S\mathcal{S}_{\mathrm{E}}(G) \arrow[r] \arrow[d] & \mathcal{S}_{\mathrm{E}}(G)/P_{\gamma_1}\mathcal{S}_{\mathrm{E}}(G) \arrow[d] \\
 P_{\gamma_1}\mathcal{S}_I(G)/P_S\mathcal{S}_I(G) \arrow[r] \arrow[d] & \mathcal{S}_I(G)/P_S\mathcal{S}_{\mathrm{E}}(G) \arrow[r] \arrow[d] & \mathcal{S}_I(G)/P_{\gamma_1}\mathcal{S}_I(G) \arrow[d] \\
 P_{\gamma_1}\mathcal{S}(G)/P_S\mathcal{S}(G) \arrow[r] & \mathcal{S}(G)/P_S\mathcal{S}(G) \arrow[r] & \mathcal{S}(G)/P_{\gamma_1}\mathcal{S}(G)
 \end{tikzcd}
-$$
+```
 
 is induced by the continuous linear inclusions $\mathcal{S}_{\mathrm{E}}(G)\to\mathcal{S}_I(G)\to\mathcal{S}(G)$ and by the linear topological embeddings $P_{\gamma_1}\mathcal{S}_{\mathrm{E}}(G)\subset\mathcal{S}_{\mathrm{E}}(G)$, $P_{\gamma_1}\mathcal{S}_I(G)\subset\mathcal{S}_I(G)$, and $P_{\gamma_1}\mathcal{S}(G)\subset\mathcal{S}(G)$.
 

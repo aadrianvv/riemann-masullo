@@ -270,13 +270,14 @@ $$
 
 *(1) Fourier transform $\mathcal{F}$ on $\mathrm{H}_{0,\mathrm{cont}}(F^\times,\mathcal{S}_0(\mathbf{A}_F))$ defined in (5.2.4.3), induces a unique continuous linear automorphism $\mathcal{F}$ of $W_{a,I}^s\,\mathrm{H}_{0,\mathrm{cont}}(F^\times,\mathcal{S}_0(\mathbf{A}_F))$ making the following diagram of continuous linear operators:*
 
-$$
-\tag{10.1.2.2}
+(10.1.2.2)
+
+```latex
 \begin{tikzcd}
 \mathrm{H}_{0,\mathrm{cont}}(F^\times,\mathcal{S}_0(\mathbf{A}_F)) \arrow[r, "E_{a,I}"] \arrow[d, "\mathcal{F}"] & W_{a,I}^s\,\mathrm{H}_{0,\mathrm{cont}}(F^\times,\mathcal{S}_0(\mathbf{A}_F)) \arrow[d, "\mathcal{F}"] \\
 \mathrm{H}_{0,\mathrm{cont}}(F^\times,\mathcal{S}_0(\mathbf{A}_F)) \arrow[r, "E_{a,I}"'] & W_{a,I}^s\,\mathrm{H}_{0,\mathrm{cont}}(F^\times,\mathcal{S}_0(\mathbf{A}_F))
 \end{tikzcd}
-$$
+```
 
 *commute, where $E_{a,I}$ is the operator sending $\phi\in\mathrm{H}_{0,\mathrm{cont}}(F^\times,\mathcal{S}_0(\mathbf{A}_F))$ to the continuous function*
 
@@ -308,13 +309,14 @@ $$
 
 from which we deduce that $J$ completes the following diagram of continuous linear operators:
 
-$$
-\tag{10.1.2.5}
+(10.1.2.5)
+
+```latex
 \begin{tikzcd}
 \mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S_0(\mathbf A_F)) \arrow[r, "E_{1-a,I}"] \arrow[d, "\mathcal F"'] & W^s_{a,I}\mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S_0(\mathbf A_F)) \arrow[d, "J"] \\
 \mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S_0(\mathbf A_F)) \arrow[r, "E_{a,I}"'] & W^s_{1-a,I}\mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S_0(\mathbf A_F))
 \end{tikzcd}
-$$
+```
 
 rendering it commutative.
 
@@ -366,14 +368,14 @@ $$
 where $\mathscr H^s_{F,a}(\chi|_{C^1_F})$ is the normed completion of $\mathscr H_{F,a}(\chi|_{C^1_F})$ in Sobolev degree $s\ge 0$, where $\mathscr H_{F,a}(\chi|_{C^1_F})$ is defined as the quotient nuclear Fréchet space:
 
 $$
-\mathscr H_{F,a}(\chi|_{C^1_F}):=\mathcal{S}\mathrm{E}(C_F)(\chi|_{C^1_F})/|\cdot|^a_F\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))
+\mathscr H_{F,a}(\chi|_{C^1_F}):=\mathcal{S}_{\mathrm{E}}(C_F)(\chi|_{C^1_F})/|\cdot|^a_F\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))
 $$
 
-where multiplication by the quasi-character $|\cdot|^a_F$, a linear topological automorphism on $\mathcal{S}\mathrm{E}(C_F)$ and $\mathcal{S}\mathrm{E}(C_F)(\chi|_{C^1_F})$, is isomorphic to a horizontal translation by $a$ to the left on the Mellin transforms of the elements of $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$.
+where multiplication by the quasi-character $|\cdot|^a_F$, a linear topological automorphism on $\mathcal{S}_{\mathrm{E}}(C_F)$ and $\mathcal{S}_{\mathrm{E}}(C_F)(\chi|_{C^1_F})$, is isomorphic to a horizontal translation by $a$ to the left on the Mellin transforms of the elements of $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$.
 
 We further refer the reader to (7.1.4.7) for the case $a=0$.
 
-Equivalently, by the Open Mapping Theorem, the quotient of the normed completion $W^{s,2}(C_F)(\chi|_{C^1_F})$ of $\mathcal{S}\mathrm{E}(C_F)(\chi|_{C^1_F})$ by the closure of $|\cdot|^a_F\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$.
+Equivalently, by the Open Mapping Theorem, the quotient of the normed completion $W^{s,2}(C_F)(\chi|_{C^1_F})$ of $\mathcal{S}_{\mathrm{E}}(C_F)(\chi|_{C^1_F})$ by the closure of $|\cdot|^a_F\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$.
 
 We will be computing the nuclear traces of nuclear operators induced on the rightmost Hilbert space $\mathscr H^s_{F,a}(\chi|_{C^1_F})$, given by the operators $A(\varphi)$ from (9.3.1.2), for any $\varphi\in\mathcal D(C_F)$.
 
@@ -469,25 +471,26 @@ Proof of Theorem 10.2.1.1. Let $\omega\in\widehat{C^1_F}$ be a unitary character
 
 The following diagram:
 
-$$
-\tag{10.2.1.7}
-\begin{tikzcd}
-\mathrm H_{0,\mathrm{cont}}(\omega,\mathcal S_0(\mathbf A_F)) \arrow[d] & \times & \mathcal{S}\mathrm{E}(C_F)(\omega)'_\beta \arrow[d] \arrow[r] & \mathbf C \\
-W^{s,2}_a\mathrm H_{0,\mathrm{cont}}(\omega,\mathcal S_0(\mathbf A_F)) & \times & W^{-s,2}(C_F)(\omega) \arrow[r] & \mathbf C
-\end{tikzcd}
-$$
+(10.2.1.7)
 
-is commutative, where the top horizontal arrow is the duality pairing $\langle\cdot,\cdot\rangle_{\mathcal{S}\mathrm{E}(C_F)(\omega),\mathcal{S}\mathrm{E}(C_F)(\omega)'_\beta}$, noting that by Theorem 6.3.2.1, $\mathrm H_{0,\mathrm{cont}}(\omega,\mathcal S_0(\mathbf A_F))$ is closed as a subspace of $\mathcal{S}\mathrm{E}(C_F)(\omega)$, where $\mathcal{S}\mathrm{E}(C_F)(\omega)$ is the $\mathbf C$-linear subspace of the space $\mathcal S(\mathbf R_{>0})$ of Schwartz-Bruhat functions on $\mathbf R_{>0}$ with exponential decay (see Definition D.3.3.1, Lemma D.3.2.7 and Theorem D.3.3.7. Its topology is equivalent to the Hausdorff locally convex topology induced by transport of structure under pull-back along a choice of continuous homomorphic section $\tau$ to the idelic norm, by the countable family of seminorms:
+```latex
+\begin{tikzcd}
+\mathrm H_{0,\mathrm{cont}}(\omega,\mathcal S_0(\mathbf A_F)) \arrow[d] & \times & \mathcal{S}_{\mathrm{E}}(C_F)(\omega)'_\beta \arrow[r] & \mathbf C \arrow[d, equal] \\
+W^{s,2}_a\mathrm H_{0,\mathrm{cont}}(\omega,\mathcal S_0(\mathbf A_F)) & \times & W^{-s,2}(C_F)(\omega) \arrow[u] \arrow[r] & \mathbf C
+\end{tikzcd}
+```
+
+is commutative, where the top horizontal arrow is the duality pairing $\langle\cdot,\cdot\rangle_{\mathcal{S}_{\mathrm{E}}(C_F)(\omega),\mathcal{S}_{\mathrm{E}}(C_F)(\omega)'_\beta}$, noting that by Theorem 6.3.2.1, $\mathrm H_{0,\mathrm{cont}}(\omega,\mathcal S_0(\mathbf A_F))$ is closed as a subspace of $\mathcal{S}_{\mathrm{E}}(C_F)(\omega)$, where $\mathcal{S}_{\mathrm{E}}(C_F)(\omega)$ is the $\mathbf C$-linear subspace of the space $\mathcal S(\mathbf R_{>0})$ of Schwartz-Bruhat functions on $\mathbf R_{>0}$ with exponential decay (see Definition D.3.3.1, Lemma D.3.2.7 and Theorem D.3.3.7. Its topology is equivalent to the Hausdorff locally convex topology induced by transport of structure under pull-back along a choice of continuous homomorphic section $\tau$ to the idelic norm, by the countable family of seminorms:
 
 $$
 p_{m,n}(f):=\sup_{t\in\mathbf R_{>0}}|e^{-m|\log(t)|}(t\partial_t)^nf(t)|,\quad (m,n)\in\mathbf N^2
 $$
 
-on $\mathcal{S}\mathrm{E}(\mathbf R_{>0})$).
+on $\mathcal{S}_{\mathrm{E}}(\mathbf R_{>0})$).
 
 The bottom horizontal arrow in (10.2.1.7) is the duality pairing $\langle\cdot,\cdot\rangle_{s,2}:W^{s,2}(C_F)\times W^{-s,2}(C_F)\to\mathbf C$ from (10.2.1.3).
 
-The leftmost vertical arrow is the completion map, and the arrow $W^{-s,2}(C_F)(\omega)\to \mathcal{S}\mathrm{E}(C_F)(\omega)'_\beta$ is the continuous linear operator induced as the continuous adjoint of the completion map $\mathcal S(C_F)(\omega)\to W^{s,2}(C_F)(\omega)$.
+The leftmost vertical arrow is the completion map, and the arrow $W^{-s,2}(C_F)(\omega)\to \mathcal{S}_{\mathrm{E}}(C_F)(\omega)'_\beta$ is the continuous linear operator induced as the continuous adjoint of the completion map $\mathcal S(C_F)(\omega)\to W^{s,2}(C_F)(\omega)$.
 
 As a consequence of commutativity of (10.2.1.7), we obtain a continuous linear map:
 
@@ -495,9 +498,9 @@ $$
 (\mathscr H^s_{F,a}(\omega))'_\beta\to\mathrm H_{0,\mathrm{cont}}(\omega,\mathcal S_0(\mathbf A_F))^\perp \tag{10.2.1.8}
 $$
 
-where the orthogonal $\mathrm H_{0,\mathrm{cont}}(\omega,\mathcal S_0(\mathbf A_F))^\perp$ within $\mathcal{S}\mathrm{E}(C_F)(\omega)'_\beta$ is being formed with respect to the duality $\langle \mathcal{S}\mathrm{E}(C_F)(\omega),\mathcal{S}\mathrm{E}(C_F)(\omega)'_\beta\rangle$.
+where the orthogonal $\mathrm H_{0,\mathrm{cont}}(\omega,\mathcal S_0(\mathbf A_F))^\perp$ within $\mathcal{S}_{\mathrm{E}}(C_F)(\omega)'_\beta$ is being formed with respect to the duality $\langle \mathcal{S}_{\mathrm{E}}(C_F)(\omega),\mathcal{S}_{\mathrm{E}}(C_F)(\omega)'_\beta\rangle$.
 
-Since $\mathcal{S}\mathrm{E}(C_F)(\omega)$ is linearly and topologically isomorphic to $A\mathcal S(\mathbf C)$ under the Mellin transform $\phi\mapsto M(\phi)(s):=\int_{\mathbf R_{>0}}\phi(t)t^s\frac{dt}{t}$ pre-composed with the linear topological isomorphism induced by pull-back under a fixed choice of continuous homomorphic section $\tau$ to the idelic norm, and $M$ restricts to $L$ from (5.1.1.4) on $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ up to a vertical translation on the complex $s$-plane (We further refer the reader to Discussion 4.4.1.1. For $\chi\in\widehat{C_F}$ chosen according to our choice of holomorphic parametrization of $\Omega(C_F)$, and for any $f\in\mathcal S_0(\mathbf A_F)$, we have, for $x_0\in\mathbf R$ the unique real number such that $\chi(\tau(t))=t^{ix_0}$ as smooth functions on $\mathbf R_{>0}$:
+Since $\mathcal{S}_{\mathrm{E}}(C_F)(\omega)$ is linearly and topologically isomorphic to $A\mathcal S(\mathbf C)$ under the Mellin transform $\phi\mapsto M(\phi)(s):=\int_{\mathbf R_{>0}}\phi(t)t^s\frac{dt}{t}$ pre-composed with the linear topological isomorphism induced by pull-back under a fixed choice of continuous homomorphic section $\tau$ to the idelic norm, and $M$ restricts to $L$ from (5.1.1.4) on $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ up to a vertical translation on the complex $s$-plane (We further refer the reader to Discussion 4.4.1.1. For $\chi\in\widehat{C_F}$ chosen according to our choice of holomorphic parametrization of $\Omega(C_F)$, and for any $f\in\mathcal S_0(\mathbf A_F)$, we have, for $x_0\in\mathbf R$ the unique real number such that $\chi(\tau(t))=t^{ix_0}$ as smooth functions on $\mathbf R_{>0}$:
 
 $$
 M(\Phi_{F,\chi|_{C^1_F}}(f)(\tau(t)))(s+ix_0)=Z(f,\chi|\cdot|^s_F)
@@ -527,9 +530,9 @@ $$
 
 so long as $0\le m\le N_s(\rho_{\chi,t})-1$ (by Proposition 9.1.2.5).
 
-Since both $\mathrm H_{0,\mathrm{cont}}(\omega,\mathcal S_0(\mathbf A_F))$ and $\mathcal{S}\mathrm{E}(C_F)(\omega)$ have dense image in $W^{s,2}_a\mathrm H_{0,\mathrm{cont}}(\omega,\mathcal S_0(\mathbf A_F))$, respectively $W^{s,2}(C_F)(\omega)$, then the induced continuous linear operator from (10.2.1.8) is injective.
+Since both $\mathrm H_{0,\mathrm{cont}}(\omega,\mathcal S_0(\mathbf A_F))$ and $\mathcal{S}_{\mathrm{E}}(C_F)(\omega)$ have dense image in $W^{s,2}_a\mathrm H_{0,\mathrm{cont}}(\omega,\mathcal S_0(\mathbf A_F))$, respectively $W^{s,2}(C_F)(\omega)$, then the induced continuous linear operator from (10.2.1.8) is injective.
 
-Since the strong topology on $(\mathscr H^s_{F,a}(\omega))'_\beta$ is finer than the strong topology on the continuous dual of the nuclear Fréchet space $\mathscr H_F(\omega)=\mathcal{S}\mathrm{E}(C_F)(\omega)/\mathrm H_{0,\mathrm{cont}}(\omega,\mathcal S_0(\mathbf A_F))$ from Theorem 7.1.4.2, then, since the countable set of continuous functionals $U(\delta^{(m)}_\rho)$ on such quotient is topologically free by Theorem 6.3.2.1(3), so is the countable set of continuous functionals $\{D^m_t\}$ from (10.2.1.9) on $\mathscr H^s_{F,a}(\omega)$.
+Since the strong topology on $(\mathscr H^s_{F,a}(\omega))'_\beta$ is finer than the strong topology on the continuous dual of the nuclear Fréchet space $\mathscr H_F(\omega)=\mathcal{S}_{\mathrm{E}}(C_F)(\omega)/\mathrm H_{0,\mathrm{cont}}(\omega,\mathcal S_0(\mathbf A_F))$ from Theorem 7.1.4.2, then, since the countable set of continuous functionals $U(\delta^{(m)}_\rho)$ on such quotient is topologically free by Theorem 6.3.2.1(3), so is the countable set of continuous functionals $\{D^m_t\}$ from (10.2.1.9) on $\mathscr H^s_{F,a}(\omega)$.
 
 It remains to show that the $\{D^m_t\}$ linearly generate a strongly dense subspace of $(\mathscr H^s_{F,a}(\omega))'_\beta$, and their bi-orthogonal set, which exists by Theorem 6.3.2.1(3) and is the image of a countable subset of $\mathscr H_F(\omega)$, is dense in $\mathscr H^s_{F,a}(\omega)$.
 
@@ -670,10 +673,10 @@ $$
 where $\mathscr H^s_{F,a,I}(\chi|_{C^1_F})$ is the normed completion of $\mathscr H_{F,a,I}(\chi|_{C^1_F})$ in Sobolev degree $s\ge 0$, with $I$ a compact non-empty interval $I=[-\alpha,\alpha]$ for a real number $\alpha\ge 0$, with $\mathscr H_{F,a}(\chi|_{C^1_F})$ defined as the quotient nuclear Fréchet space:
 
 $$
-\mathscr H_{F,a}(\chi|_{C^1_F}):=\mathcal{S}\mathrm{E}(C_F)(\chi|_{C^1_F})/|\cdot|^a_F\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))
+\mathscr H_{F,a}(\chi|_{C^1_F}):=\mathcal{S}_{\mathrm{E}}(C_F)(\chi|_{C^1_F})/|\cdot|^a_F\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))
 $$
 
-where multiplication by the quasi-character $|\cdot|^a_F$, a linear topological automorphism on $\mathcal{S}\mathrm{E}(C_F)$ and $\mathcal{S}\mathrm{E}(C_F)(\chi|_{C^1_F})$, is isomorphic to a horizontal translation by $a$ to the left on the Mellin transforms of the elements of $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$, and $\mathscr H^s_{F,a,I}(\chi|_{C^1_F})$ is the quotient Hilbert space, equivalently (by the Open Mapping Theorem) the completion of $\mathscr H^s_{F,a}(\chi|_{C^1_F})$ with respect to the normed topology induced by the quotient $||\cdot||_{I,s}$-norm.
+where multiplication by the quasi-character $|\cdot|^a_F$, a linear topological automorphism on $\mathcal{S}_{\mathrm{E}}(C_F)$ and $\mathcal{S}_{\mathrm{E}}(C_F)(\chi|_{C^1_F})$, is isomorphic to a horizontal translation by $a$ to the left on the Mellin transforms of the elements of $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$, and $\mathscr H^s_{F,a,I}(\chi|_{C^1_F})$ is the quotient Hilbert space, equivalently (by the Open Mapping Theorem) the completion of $\mathscr H^s_{F,a}(\chi|_{C^1_F})$ with respect to the normed topology induced by the quotient $||\cdot||_{I,s}$-norm.
 
 We will be computing the nuclear traces of nuclear operators induced on the rightmost Hilbert space $\mathscr H^s_{F,a,I}(\chi|_{C^1_F})$, given by the operators $A(\varphi)$ from (9.3.1.2), for any $\varphi\in\mathcal D(C_F)$ and $I=[-\alpha,\alpha]$.
 
@@ -1766,7 +1769,7 @@ $$
 \int_{C_F\times C_F}\left|\int_{C_F}\varphi(g)\,\tilde\psi_{\chi,t,b,m}(g^{-1}x)\,\mathrm{d}\overline{\mu}(g)\,\eta_{\chi,t,b,m}(y)\right|^2 w_{I,s}(x)w_{I,s}(y)^{-1}\,\mathrm{d}(\overline{\mu}\otimes\overline{\mu})(x,y). \tag{10.4.2.26}
 $$
 
-We note that we can arrange the $\tilde\psi_{\chi,t,b,m}$ to be in $\mathcal{S}\mathrm{E}(C_F)$, by Lemma 10.4.2.5.
+We note that we can arrange the $\tilde\psi_{\chi,t,b,m}$ to be in $\mathcal{S}_{\mathrm{E}}(C_F)$, by Lemma 10.4.2.5.
 
 We now estimate the integral in (10.4.2.26). We have that the integral in (10.4.2.26) equals:
 
@@ -1833,14 +1836,15 @@ where $L(s,\chi)=L(\chi|\cdot|^s_F)$ is the Hecke $L$-function, and $\delta_{\ch
 
 The completion map $\mathcal S_{\mathrm E}(C_F)(\chi|_{C^1_F})\to W^{s,2}(C_F)(\chi|_{C^1_F})$ fits into a commutative diagram of continuous linear operators:
 
-$$
-\tag{10.4.3.2}
+(10.4.3.2)
+
+```latex
 \begin{tikzcd}
 0 \arrow[r] & W_{\chi} \arrow[r] \arrow[d, "L^{-1}"] & A\mathcal S(\mathbf C) \arrow[r] \arrow[d, "M^{-1}"] & K_{\chi}:=A\mathcal S(\mathbf C)/W_{\chi} \arrow[r] \arrow[d, "M^{-1}"] & 0 \\
 0 \arrow[r] & \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \arrow[r] \arrow[d] & \mathcal S_{\mathrm E}(C_F)(\chi|_{C^1_F}) \arrow[r] \arrow[d] & \check K_{\chi} \arrow[r] \arrow[d] & 0 \\
 0 \arrow[r] & W^{s,2}_a\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \arrow[r] & W^{s,2}(C_F)(\chi|_{C^1_F}) \arrow[r] & \mathscr{H}^s_{F,a}(\chi|_{C^1_F}) \arrow[r] & 0
 \end{tikzcd}
-$$
+```
 
 for:
 

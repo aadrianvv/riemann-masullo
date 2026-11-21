@@ -1467,13 +1467,14 @@ We note that by Example E.1.2.16, part (6) of the Lemma does not hold if we drop
 
 Obviously immersions, closed immersions, open immersions, and submersions are stable under finite compositions. Being an injective, respectively surjective, continuous map is local on the target, and being an immersion is also local on the target. Closed, respectively open, immersions are also local on the target because closed, respectively open maps are. Submersiveness is also local on the target. We are now to check that immersions, closed immersions, open immersions and submersive maps are stable under arbitrary base change in the category $\mathbf{CGWH}$. To this end, we consider the following cartesian diagram in $\mathbf{CGWH}$:
 
-$$
-\tag{E.2.3.1}
+(E.2.3.1)
+
+```latex
 \begin{tikzcd}
 X_T := X \times_{f,Y,g} T \arrow[r, "f_T"] \arrow[d, "p"'] & T \arrow[d, "g"] \\
 X \arrow[r, "f"'] & Y
 \end{tikzcd}
-$$
+```
 
 where we assume that $f$ is an immersion. We let $P$ be an arbitrary compactly generated weakly Hausdorff space, with $h : P \to X_T$ an arbitrary set-function such that $f_T \circ h$ is continuous. It follows that $g \circ f_T \circ h = f \circ p \circ h$ is
 
@@ -1491,13 +1492,14 @@ As a subspace of $T$, $g^{-1}(f(X))$ is closed, respectively open when $f$ is a 
 
 We now prove that submersive maps are stable under arbitrary base-change. To this end, we consider the cartesian diagram from (E.2.3.1), where $f$ is now assumed to be a submersive map. By Lemma E.1.2.17, combined with part (1) of Lemma E.2.2.5, asserting that products in $\mathbf{CGWH}$ can be computed in $\mathbf{CG}$, the map $(f, \mathrm{id}) : X \times T \to Y \times T$ is also a submersive map. Moreover, the following diagram in $\mathbf{CGWH}$ is also cartesian:
 
-$$
-\tag{E.2.3.3}
+(E.2.3.3)
+
+```latex
 \begin{tikzcd}
 X_T := X \times_{f,Y,g} T \arrow[r, "{(f,\mathrm{id})_T = f_T}"] \arrow[d, "p'"'] & T \arrow[d, "{(g,\mathrm{id})}"] \\
 X \times T \arrow[r, "{(f,\mathrm{id})}"'] & Y \times T
 \end{tikzcd}
-$$
+```
 
 and $(g, \mathrm{id})$ is a closed immersion by Lemma E.2.3.4, as it is a continuous section to the second projection $Y \times T \to T$. Upon renaming in (E.2.3.3) the maps $(g, \mathrm{id})$ as $g$, $(f, \mathrm{id})$ as $f$, $p'$ as $p$, we turn (E.2.3.3) into (E.2.3.1) and are reduced to the case $g$ is a closed immersion. Then $p^{-1}(f^{-1}(g(T)))$ is closed in $X_T$, hence it belongs to $\mathbf{CGWH}$ and categorically it coincides with $X_T$, so then $X_T \to T$ is the restriction of the submersive $f : X \to Y$ over a closed subset $T \subset Y$. Hence, $X_T \to T$ is a submersion as desired. $\square$
 
@@ -1505,13 +1507,14 @@ In a similar vein, we can descend some of the properties of continuous maps in $
 
 **Lemma E.2.3.7.** *Let $X, Y, T$ be compactly generated weakly Hausdorff spaces, $f : X \to Y$ and $g : T \to Y$ two continuous maps. We consider the following cartesian diagram in $\mathbf{CGWH}$:*
 
-$$
-\tag{E.2.3.4}
+(E.2.3.4)
+
+```latex
 \begin{tikzcd}
 X_T := X \times_{f,Y,g} T \arrow[r, "f'"] \arrow[d, "g'"'] & T \arrow[d, "g"] \\
 X \arrow[r, "f"'] & Y
 \end{tikzcd}
-$$
+```
 
 *Assume that $g$ is submersive.*
 
@@ -1537,13 +1540,14 @@ $z, z' \in X_T$ such that $f'(z) = f'(z') = t$, and $g'(z) = x$, $g'(z') = x'$. 
 
 We prove (3). As $f'$ is an immersion, $f$ is injective by part (1). Let $Z$ be an arbitrary compactly generated weakly Hausdorff space, and $h : Z \to X$ a set-function such that $f \circ h$ is continuous. We consider the following diagram:
 
-$$
-\tag{E.2.3.5}
+(E.2.3.5)
+
+```latex
 \begin{tikzcd}
 Z_T := Z \times_{f \circ h,Y,g} T \arrow[r, dashed, "h'"] \arrow[d, "g''"'] \arrow[rr, "k", bend left] & X_T \arrow[d, "g'"] \arrow[r, "f'"] & T \arrow[d, "g"] \\
 Z \arrow[r, "h"'] & X \arrow[r, "f"'] & Y
 \end{tikzcd}
-$$
+```
 
 where the two solid squares are cartesian. By part (6) of Lemma E.2.3.6, $g''$ is submersive. Let $h'$ be the set-function obtained as the set-theoretic base change of $h$ along $g'$. We have $f' \circ h' = k$, which is continuous. As $f'$ is an immersion by assumption, $h'$ is continuous. It follows that $h \circ g'' = g' \circ h'$ is continuous. Since $g''$ is submersive, $h$ is continuous and so by Lemma E.2.3.3 we see $f$ is an immersion.
 
@@ -1589,12 +1593,12 @@ We now approach a result concerning the computability in $\mathbf{Spaces}$ of ce
 
 **Lemma E.2.3.9.** *Let $f : X \to Y$, $g : Z \to Y$ be morphisms in $\mathbf{CGWH}$. Upon denoting by $f' : X' \to Y'$ and $g' : Z' \to Y'$ the associated continuous maps in $\mathbf{Spaces}$, we consider the following cartesian diagram in $\mathbf{Spaces}$:*
 
-$$
+```latex
 \begin{tikzcd}
 X'_{Z'} := X' \times^0_{f',Y',g'} Z' \arrow[r, "f'_{Z'}"] \arrow[d, "p"'] & Z' \arrow[d, "g'"] \\
 X' \arrow[r, "f'"'] & Y'
 \end{tikzcd}
-$$
+```
 
 *If $f'_{Z'}$ is a closed immersion (such as when $f'$ is) then $X'_{Z'}$ is compactly generated weakly Hausdorff, and it computes the fibre product $X \times_{f,Y,g} Z$ of $f$ and $g$ in $\mathbf{CGWH}$.*
 
@@ -1604,12 +1608,12 @@ We now prove the promised result on push-outs:
 
 **Lemma E.2.3.10.** *Let $X, Z, P$ be compactly generated weakly Hausdorff spaces. Let $Y$ be the push-out in $\mathbf{CGWH}$ of $X, Z$ along two continuous maps $p : P \to Z$ and $q : P \to X$ from $P$ making the diagram*
 
-$$
+```latex
 \begin{tikzcd}
 P \arrow[r, "p"] \arrow[d, "q"'] & Z \arrow[d, "g"] \\
 X \arrow[r, "f"'] & Y
 \end{tikzcd}
-$$
+```
 
 *commute in $\mathbf{CGWH}$ and assume the map $p$ is a closed immersion. Then $f$ is a closed immersion and the push-out in $\mathbf{CGWH}$ can be computed in $\mathbf{Spaces}$. Moreover:*
 
@@ -1805,12 +1809,12 @@ $$
 
 *Proof.* The following diagram is useful to consult during the proof that follows (with $i : \{*\} \coprod Z \to \{*\} \coprod X$ the natural closed immersion):
 
-$$
+```latex
 \begin{tikzcd}
 Z \arrow[r] \arrow[d, "i"'] & \{*\} \coprod Z \arrow[r, "a"] \arrow[d, "i"] & \{*\} \arrow[d, "x"] \\
 X \arrow[r] \arrow[rr, "q"', bend right] & \{*\} \coprod X \arrow[r, "b"'] & (X/Z)_*
 \end{tikzcd}
-$$
+```
 
 By Lemma E.2.3.10(1), the push-out defining $(X/Z)_*$ can be computed in $\mathbf{Spaces}$. This gives the first assertion in (2), which we shall now use to prove the assertion in (1). The map $b : \{*\} \coprod X \to (X/Z)_*$ induced in the quotient by $a$ is submersive since Lemma E.2.3.10 ensures $(X/Z)_*$ is a topological quotient of $(\{*\} \coprod X) \coprod \{*\}$.
 
@@ -3165,7 +3169,7 @@ where $t_{a}$ is the morphism $F(a) \to F'(a)$ in $B$ induced by the natural tra
 
 ```latex
 \begin{tikzcd}[row sep=large, column sep=large]
-F(a) \arrow[r, "t_{a}"] \arrow[d, "F(f)"'] & F'(a) \arrow[d, "F(f)"] \\
+F(a) \arrow[r, "t_{a}"] \arrow[d, "F(f)"'] & F'(a) \arrow[d, "F'(f)"] \\
 F(a') \arrow[r, "t_{a'}"'] & F'(a')
 \end{tikzcd}
 ```
@@ -3835,26 +3839,24 @@ The bifunctors $c_{A,B,C}$ and the functor $u_A$ are assumed to satisfy the foll
 (1) (Unit Axiom) The following diagram is commutative:
 
 (E.5.2.1)
-$$
-\begin{array}{ccccc}
-\mathbf{1}\times\mathbf{Hom}_{\mathcal{C}}(A,B) & \xleftarrow{} & \mathbf{Hom}_{\mathcal{C}}(A,B) & \xrightarrow{} & \mathbf{Hom}_{\mathcal{C}}(A,B)\times\mathbf{1}\\
-\downarrow\scriptstyle{(u_A,\mathbf{id})} & & \parallel & & \downarrow\scriptstyle{(\mathbf{id},u_A)}\\
-\mathbf{Hom}_{\mathcal{C}}(A,A)\times\mathbf{Hom}_{\mathcal{C}}(A,B) & \xrightarrow[c_{A,A,B}]{} & \mathbf{Hom}_{\mathcal{C}}(A,B) & \xleftarrow[c_{A,B,B}]{} & \mathbf{Hom}_{\mathcal{C}}(A,B)\times\mathbf{Hom}_{\mathcal{C}}(B,B)
-\end{array}
-$$
+```latex
+\begin{tikzcd}
+\mathbf{1}\times\mathbf{Hom}_{\mathcal{C}}(A,B) \arrow[d, "(u_A,\mathbf{id})"] & \mathbf{Hom}_{\mathcal{C}}(A,B) \arrow[r] \arrow[d, equal] \arrow[l] & \mathbf{Hom}_{\mathcal{C}}(A,B)\times\mathbf{1} \arrow[d, "(\mathbf{id},u_A)"] \\
+\mathbf{Hom}_{\mathcal{C}}(A,A)\times\mathbf{Hom}_{\mathcal{C}}(A,B) \arrow[r, "c_{A,A,B}"'] & \mathbf{Hom}_{\mathcal{C}}(A,B) & \mathbf{Hom}_{\mathcal{C}}(A,B)\times\mathbf{Hom}_{\mathcal{C}}(B,B) \arrow[l, "c_{A,B,B}"]
+\end{tikzcd}
+```
 
 where the top horizontal arrows are equivalences of categories, and where $\mathbf{id}$ denotes, within (E.5.2.1), the identity functor.
 
 (2) (Associativity of Compositions Axiom) The following diagram is commutative:
 
 (E.5.2.2)
-$$
-\begin{array}{ccc}
-\mathbf{Hom}_{\mathcal{C}}(A,B)\times\mathbf{Hom}_{\mathcal{C}}(B,C)\times\mathbf{Hom}_{\mathcal{C}}(C,D) & \xrightarrow{(\mathbf{id},c_{B,C,D})} & \mathbf{Hom}_{\mathcal{C}}(A,B)\times\mathbf{Hom}_{\mathcal{C}}(B,D)\\
-\downarrow\scriptstyle{(c_{A,B,C},\mathbf{id})} & & \downarrow\scriptstyle{c_{A,B,D}}\\
-\mathbf{Hom}_{\mathcal{C}}(A,C)\times\mathbf{Hom}_{\mathcal{C}}(C,D) & \xrightarrow[c_{A,C,D}]{} & \mathbf{Hom}_{\mathcal{C}}(A,D)
-\end{array}
-$$
+```latex
+\begin{tikzcd}
+\mathbf{Hom}_{\mathcal{C}}(A,B)\times\mathbf{Hom}_{\mathcal{C}}(B,C)\times\mathbf{Hom}_{\mathcal{C}}(C,D) \arrow[r, "(\mathbf{id},c_{B,C,D})"] \arrow[d, "(c_{A,B,C},\mathbf{id})"] & \mathbf{Hom}_{\mathcal{C}}(A,B)\times\mathbf{Hom}_{\mathcal{C}}(B,D) \arrow[d, "c_{A,B,D}"] \\
+\mathbf{Hom}_{\mathcal{C}}(A,C)\times\mathbf{Hom}_{\mathcal{C}}(C,D) \arrow[r, "c_{A,C,D}"'] & \mathbf{Hom}_{\mathcal{C}}(A,D)
+\end{tikzcd}
+```
 
 where $\mathbf{id}$ denotes, within (E.5.2.2), the identity functor. We say a 2-category is *small* if the class $\mathrm{Ob}(\mathcal{C})$ is a set.
 
@@ -3933,19 +3935,21 @@ We now introduce terminology to define what it means for a diagram to commute in
 DEFINITION E.5.2.4. Let $A,B,C,D\in\mathrm{Ob}(\mathcal{C})$ be objects, and $f:A\to B$, $g:B\to C$, $h:A\to D$, $k:D\to C$, 1-morphisms. We consider the following (possibly non-commutative) diagram:
 
 (E.5.2.3)
-$$
-\begin{array}{ccc}
-A & \xrightarrow{f} & B\\
-\downarrow\scriptstyle{h} & & \downarrow\scriptstyle{g}\\
-D & \xrightarrow[k]{} & C
-\end{array}
-$$
+```latex
+\begin{tikzcd}
+A \arrow[r, "f"] \arrow[d, "h"'] & B \arrow[d, "g"] \\
+D \arrow[r, "k"'] & C
+\end{tikzcd}
+```
 
 (1) For objects $A,B\in\mathrm{Ob}(\mathcal{C})$, 1-morphisms $f,f':A\Rightarrow B$, and a 2-morphism $\alpha:f\Rightarrow f'$, we write:
 
-$$
-A \xrightarrow[f']{f} B \quad \Downarrow\alpha
-$$
+```latex
+\begin{tikzcd}
+A \arrow[r, bend left, "f"{name=U}] \arrow[r, bend right, "f'"'{name=L}] & B
+\arrow[from=U, to=L, Rightarrow, "\alpha"]
+\end{tikzcd}
+```
 
 to denote the cumulative datum of $((A,B),(f,f'),\alpha)$.
 
@@ -3955,13 +3959,12 @@ to denote the cumulative datum of $((A,B),(f,f'),\alpha)$.
 
 (4) We say (E.5.2.3) is 2-*commutative* if and only if it is oriented by a 2-morphism $\alpha:g\circ f\Rightarrow k\circ h$, and $\alpha$ is an isomorphism. We write
 
-$$
-\begin{array}{ccc}
-A & \xrightarrow{f} & B\\
-\downarrow\scriptstyle{h} & \Downarrow\scriptstyle{\alpha} & \downarrow\scriptstyle{g}\\
-D & \xrightarrow[k]{} & C
-\end{array}
-$$
+```latex
+\begin{tikzcd}
+A \arrow[r, "f"] \arrow[d, "h"'] & B \arrow[d, "g"] \arrow[dl, Rightarrow, "\alpha"] \\
+D \arrow[r, "k"'] & C
+\end{tikzcd}
+```
 
 Thus, 2-commutative diagrams are oriented diagrams whose orientation is a 2-isomorphism.
 
@@ -4068,24 +4071,22 @@ $$
 (3) For all triples of objects $A,B,C\in\mathrm{Ob}(\mathcal{C})$, a 2-isomorphism $\gamma_{A,B,C}$ in $\mathbf{Cat}$ making the following diagram 2-commutative:
 
 (E.5.3.1)
-$$
-\begin{array}{ccc}
-\mathbf{Hom}_{\mathcal{C}}(A,B)\times\mathbf{Hom}_{\mathcal{C}}(B,C) & \xrightarrow{c_{A,B,C}} & \mathbf{Hom}_{\mathcal{C}}(A,C)\\
-\downarrow\scriptstyle{(F_{A,B},F_{B,C})} & \overset{\gamma_{A,B,C}}{\Longrightarrow} & \downarrow\scriptstyle{F_{A,C}}\\
-\mathbf{Hom}_{\mathcal{C}}(F(A),F(B))\times\mathbf{Hom}_{\mathcal{C}}(F(B),F(C)) & \xrightarrow[c_{F(A),F(B),F(C)}]{} & \mathbf{Hom}_{\mathcal{C}}(F(A),F(C))
-\end{array}
-$$
+```latex
+\begin{tikzcd}
+\mathbf{Hom}_{\mathcal{C}}(A,B)\times\mathbf{Hom}_{\mathcal{C}}(B,C) \arrow[r, "c_{A,B,C}"] \arrow[d, "{(F_{A,B},F_{B,C})}"'] & \mathbf{Hom}_{\mathcal{C}}(A,C) \arrow[d, "F_{A,C}"] \\
+\mathbf{Hom}_{\mathcal{C}}(F(A),F(B))\times\mathbf{Hom}_{\mathcal{C}}(F(B),F(C)) \arrow[r, "c_{F(A),F(B),F(C)}"'] \arrow[ur, Rightarrow, "\gamma_{A,B,C}"] & \mathbf{Hom}_{\mathcal{C}}(F(A),F(C))
+\end{tikzcd}
+```
 
 (4) For every object $A\in\mathrm{Ob}(\mathcal{C})$, a natural isomorphism between the two functors defined as the compositions in the diagram (E.5.3.3) below from the upper leftmost vertex to the lower rightmost vertex, between the categories $\mathbf{1}\rightrightarrows\mathbf{Hom}_{\mathcal{C}}(F(A),F(A))$:
 
 (E.5.3.2)
-$$
-\begin{array}{ccc}
-\mathbf{1} & \xrightarrow{u_A} & \mathbf{Hom}_{\mathcal{C}}(A,A)\\
-\parallel & \overset{\delta_A}{\Longrightarrow} & \downarrow\scriptstyle{F_{A,A}}\\
-\mathbf{1} & \xrightarrow[u_{F(A)}]{} & \mathbf{Hom}_{\mathcal{C}}(F(A),F(A))
-\end{array}
-$$
+```latex
+\begin{tikzcd}
+\mathbf{1} \arrow[r, "u_A"] \arrow[d, equal] & \mathbf{Hom}_{\mathcal{C}}(A,A) \arrow[d, "F_{A,A}"] \\
+\mathbf{1} \arrow[r, "u_{F(A)}"'] \arrow[ur, Rightarrow, "\delta_A"] & \mathbf{Hom}_{\mathcal{C}}(F(A),F(A))
+\end{tikzcd}
+```
 
 The datum $(F,F_{\bullet,\bullet},\gamma_{\bullet,\bullet,\bullet},\delta_{\bullet})$ is assumed to satisfy the following properties:
 
@@ -4096,37 +4097,34 @@ The datum $(F,F_{\bullet,\bullet},\gamma_{\bullet,\bullet,\bullet},\delta_{\bull
 (1) (Unit Axiom) For every 1-morphism $f:A\to B$, the following diagrams commute:
 
 (E.5.3.3)
-$$
-\begin{array}{ccc}
-F_{A,B}(f)\circ\mathbf{1}_{F(A)} & \xRightarrow{\mathbf{1}_{F_{A,B}(f)}\star(\delta_A)_*} & F_{A,B}(f)\circ F_{A,A}(\mathbf{1}_A)\\
-\Downarrow\scriptstyle{\mathbf{1}_{F_{A,B}(f)}} & & \Downarrow\scriptstyle{\gamma_{A,A,B}(\mathbf{1}_A,f)}\\
-F_{A,B}(f) & \xRightarrow[\mathbf{1}_{F_{A,B}(f)}]{} & F_{A,B}(f\circ\mathbf{1}_A)
-\end{array}
-$$
+```latex
+\begin{tikzcd}
+F_{A,B}(f)\circ\mathbf{1}_{F(A)} \arrow[r, Rightarrow, "\mathbf{1}_{F_{A,B}(f)}\star(\delta_A)_*"] \arrow[d, Rightarrow, "\mathbf{1}_{F_{A,B}(f)}"] & F_{A,B}(f)\circ F_{A,A}(\mathbf{1}_A) \arrow[d, Rightarrow, "\gamma_{A,A,B}(\mathbf{1}_A,f)"] \\
+F_{A,B}(f) \arrow[r, Rightarrow, "\mathbf{1}_{F_{A,B}(f)}"'] & F_{A,B}(f\circ\mathbf{1}_A)
+\end{tikzcd}
+```
 
 where $(\delta_A)_*$ denotes the 2-morphism $\mathbf{1}_A\Rightarrow F_{A,A}(\mathbf{1}_A)$ induced by $\delta_A$, and
 
 (E.5.3.4)
-$$
-\begin{array}{ccc}
-\mathbf{1}_{F(B)}\circ F_{A,B}(f) & \xRightarrow{(\delta_B)_*\star F_{A,A}(f)} & F_{B,B}(\mathbf{1}_B)\circ F_{A,B}(f)\\
-\Downarrow\scriptstyle{\mathbf{1}_{F_{A,B}(f)}} & & \Downarrow\scriptstyle{\gamma_{A,B,B}(f,\mathbf{1}_B)}\\
-F_{A,B}(f) & \xRightarrow[\mathbf{1}_{F_{A,B}(f)}]{} & F_{A,B}(\mathbf{1}_B\circ f)
-\end{array}
-$$
+```latex
+\begin{tikzcd}
+\mathbf{1}_{F(B)}\circ F_{A,B}(f) \arrow[r, Rightarrow, "(\delta_B)_*\star F_{A,A}(f)"] \arrow[d, Rightarrow, "\mathbf{1}_{F_{A,B}(f)}"] & F_{B,B}(\mathbf{1}_B)\circ F_{A,B}(f) \arrow[d, Rightarrow, "\gamma_{A,B,B}(f,\mathbf{1}_B)"] \\
+F_{A,B}(f) \arrow[r, Rightarrow, "\mathbf{1}_{F_{A,B}(f)}"'] & F_{A,B}(\mathbf{1}_B\circ f)
+\end{tikzcd}
+```
 
 where $(\delta_B)_*$ denotes the 2-morphism $\mathbf{1}_B\Rightarrow F_{B,B}(\mathbf{1}_B)$ induced by $\delta_B$.
 
 (2) (Associativity of Compositions) For all triples of 1-morphisms $f:A\to B$, $g:B\to C$, $h:C\to D$ in $\mathcal{C}$, the following diagram commutes:
 
 (E.5.3.5)
-$$
-\begin{array}{ccc}
-F_{C,D}(h)\circ F_{B,C}(g)\circ F_{A,B}(f) & \xRightarrow{\mathbf{1}_{F_{C,D}(h)}\star\gamma_{A,B,C}(f,g)} & F_{C,D}(h)\circ F_{A,C}(g\circ f)\\
-\Downarrow\scriptstyle{\gamma_{B,C,D}(g,h)\star\mathbf{1}_{F_{A,B}(f)}} & & \Downarrow\scriptstyle{\gamma_{A,C,D}(g\circ f,h)}\\
-F_{B,D}(h\circ g)\circ F_{A,B}(f) & \xRightarrow[\gamma_{A,B,D}(f,h\circ g)]{} & F_{A,D}(h\circ g\circ f)
-\end{array}
-$$
+```latex
+\begin{tikzcd}
+F_{C,D}(h)\circ F_{B,C}(g)\circ F_{A,B}(f) \arrow[r, Rightarrow, "\mathbf{1}_{F_{C,D}(h)}\star\gamma_{A,B,C}(f,g)"] \arrow[d, Rightarrow, "\gamma_{B,C,D}(g,h)\star\mathbf{1}_{F_{A,B}(f)}"] & F_{C,D}(h)\circ F_{A,C}(g\circ f) \arrow[d, Rightarrow, "\gamma_{A,C,D}(g\circ f,h)"] \\
+F_{B,D}(h\circ g)\circ F_{A,B}(f) \arrow[r, Rightarrow, "\gamma_{A,B,D}(f,h\circ g)"'] & F_{A,D}(h\circ g\circ f)
+\end{tikzcd}
+```
 
 We denote by $F:\mathcal{C}\to\mathcal{C}'$ the datum $(F,F_{\bullet,\bullet},\gamma_{\bullet,\bullet,\bullet},\delta_{\bullet})$, and call $(\gamma_{\bullet,\bullet,\bullet},\delta_{\bullet})$ the *coherence constraint* of $F$.
 
@@ -4428,14 +4426,14 @@ E.5.5.1. *Construction of the 2-category of 2-commutative diagrams.* We fix a 2-
 
 CONSTRUCTION E.5.5.1. We define the class $\mathrm{Diagrams}(f, g)$, whose elements are 4-tuples $(D, a, b, \alpha)$ where $D \in \mathrm{Ob}(\mathcal{C})$, $a : D \to B$ and $b : D \to C$ are 1-morphisms, and $\phi : f \circ a \Rightarrow g \circ b$ is a 2-isomorphism. We represent the elements of $\mathrm{Diagrams}(f, g)$ pictorially as (not necessarily commutative) diagrams:
 
-$$
-\begin{array}{ccc}
-D & \xrightarrow{a} & B \\
-{\scriptstyle b}\downarrow & \phi & \downarrow{\scriptstyle f} \\
-C & \xrightarrow[\overline{g}]{} & A
-\end{array}
-\tag{E.5.5.1}
-$$
+(E.5.5.1)
+
+```latex
+\begin{tikzcd}
+D \arrow[r, "a"] \arrow[d, "b"'] & B \arrow[d, "f"] \\
+C \arrow[r, "\overline{g}"'] & A
+\end{tikzcd}
+```
 
 We note that $\mathrm{Diagrams}(f, g)$ is a class, since it is contained in the union of the sets:
 
@@ -4445,13 +4443,12 @@ indexed by the elements $D$ of the class $\mathrm{Ob}(\mathcal{C})$. In particul
 
 NOTATION E.5.5.1. We note that in Definition E.5.2.4, we denoted the 2-isomorphism rendering a diagram 2-commutative in the 2-category $\mathcal{C}$ as follows:
 
-$$
-\begin{array}{ccc}
-D & \xrightarrow{a} & B \\
-{\scriptstyle b}\downarrow & \phi & \downarrow{\scriptstyle f} \\
-C & \xrightarrow[\overline{g}]{} & A
-\end{array}
-$$
+```latex
+\begin{tikzcd}
+D \arrow[r, "a"] \arrow[d, "b"'] & B \arrow[d, "f"] \\
+C \arrow[r, "\overline{g}"'] & A
+\end{tikzcd}
+```
 
 It is our preference to favor a more symmetric notation, in light of the definition of 1-morphisms between 2-commutative diagrams, to be discussed below, in order to avoid conveying the incorrect impression of a choice being made of a preferred order between the morphisms $f \circ a$ and $g \circ b$.
 
@@ -4481,66 +4478,68 @@ We compose morphisms of $\mathbf{Hom}((D', c, d, \psi), (D, a, b, \phi))$ by com
 
 NOTATION E.5.5.2. We depict the objects of $\mathbf{Hom}((D', c, d, \psi), (D, a, b, \phi))$ pictorially as follows:
 
-$$
-D' \xrightarrow{k} D,\quad D' \xrightarrow{c} B,\quad D' \xrightarrow[d]{} C,\quad
-\begin{array}{ccc}
-D & \xrightarrow{a} & B \\
-{\scriptstyle b}\downarrow & \phi & \downarrow{\scriptstyle f} \\
-C & \xrightarrow[\overline{g}]{} & A
-\end{array}
+(E.5.5.3)
+
+```latex
+\begin{tikzcd}
+D' \arrow[dr, "k"] \arrow[drr, bend left, "c"] \arrow[ddr, bend right, "d"'] & & \\
+& D \arrow[r, "a"] \arrow[d, "b"'] & B \arrow[d, "f"] \\
+& C \arrow[r, "g"'] \arrow[ur, Rightarrow, "\phi"'] & A
+\end{tikzcd}
 \qquad
-\begin{array}{ccc}
-D' & \xrightarrow{c} & B \\
-& \Downarrow{\scriptstyle \alpha} & \\
-D' & \xrightarrow[a\circ k]{} & B
-\end{array}
+\begin{tikzcd}
+D' \arrow[r, bend left, "c"{name=U}] \arrow[r, bend right, "a\circ k"'{name=L}] & B
+\arrow[from=U, to=L, Rightarrow, "\alpha"]
+\end{tikzcd}
 \qquad
-\begin{array}{ccc}
-D' & \xrightarrow{d} & C \\
-& \Downarrow{\scriptstyle \beta} & \\
-D' & \xrightarrow[b\circ k]{} & C
-\end{array}
-\tag{E.5.5.3}
-$$
+\begin{tikzcd}
+D' \arrow[r, bend left, "d"{name=U}] \arrow[r, bend right, "b\circ k"'{name=L}] & C
+\arrow[from=U, to=L, Rightarrow, "\beta"]
+\end{tikzcd}
+```
 
 where condition (E.5.5.2) encodes commutativity of the following diagram of 2-(iso)morphisms in $\mathcal{C}$:
 
-$$
-\begin{array}{ccc}
-f\circ c & \xRightarrow{{\mathbf 1}_{f}\star\alpha} & f\circ a\circ k \\
-{\scriptstyle \psi}\Downarrow & & \Downarrow{\scriptstyle \phi\star{\mathbf 1}_{k}} \\
-g\circ d & \xRightarrow{{\mathbf 1}_{g}\star\beta} & g\circ b\circ k
-\end{array}
-\tag{E.5.5.4}
-$$
+(E.5.5.4)
+
+```latex
+\begin{tikzcd}
+f\circ c \arrow[r, Rightarrow, "{\mathbf 1}_{f}\star\alpha"] \arrow[d, Rightarrow, "\psi"'] & f\circ a\circ k \arrow[d, Rightarrow, "\phi\star{\mathbf 1}_{k}"] \\
+g\circ d \arrow[r, Rightarrow, "{\mathbf 1}_{g}\star\beta"] & g\circ b\circ k
+\end{tikzcd}
+```
 
 We depict the morphisms of $\mathbf{Hom}((D', c, d, \psi), (D, a, b, \phi))$ as follows:
 
-$$
-D' \xrightarrow{k} D,\quad D' \xrightarrow[k']{} D,\quad \Downarrow\gamma,\quad D' \xrightarrow{c} B,\quad D' \xrightarrow[d]{} C,\quad
-\begin{array}{ccc}
-D & \xrightarrow{a} & B \\
-{\scriptstyle b}\downarrow & & \downarrow{\scriptstyle f} \\
-C & \xrightarrow[g]{} & A
-\end{array}
+(E.5.5.5)
+
+```latex
+\begin{tikzcd}
+& & B \arrow[dr, "f"] & \\
+D' \arrow[urr, bend left, "c"] \arrow[r, bend left, "k"{name=U}] \arrow[r, bend right, "k'"'{name=L}] \arrow[drr, bend right, "d"'] & D \arrow[ur, "a"] \arrow[dr, "b"'] & & A \\
+& & C \arrow[ur, "g"'] &
+\arrow[from=U, to=L, Rightarrow, "\gamma"]
+\end{tikzcd}
 \qquad
-\begin{array}{ccc}
-c & \xRightarrow{\underline{\alpha}} & a\circ k \\
-{\scriptstyle \alpha'}\searrow & & \downarrow{\scriptstyle {\mathbf 1}_{a}\star\gamma} \\
-& & a\circ k'
-\end{array}
+\begin{tikzcd}
+c \arrow[r, Rightarrow, "\alpha"] \arrow[dr, Rightarrow, "\alpha'"'] & a\circ k \arrow[d, Rightarrow, "\mathbf 1_a\star\gamma"] \\
+& a\circ k'
+\end{tikzcd}
 \qquad
-\begin{array}{ccc}
-d & & \\
-{\scriptstyle \beta}\Downarrow & {\scriptstyle \beta'}\searrow & \\
-b\circ k & \xRightarrow{{\mathbf 1}_{b}\star\gamma} & b\circ k'
-\end{array}
-\tag{E.5.5.5}
-$$
+\begin{tikzcd}
+d \arrow[d, Rightarrow, "\beta"'] \arrow[dr, Rightarrow, "\beta'"] & \\
+b\circ k \arrow[r, Rightarrow, "\mathbf 1_b\star\gamma"'] & b\circ k'
+\end{tikzcd}
+```
 
 Succintly, we write:
 
-$$(D', c, d, \psi) \xrightarrow[(k', \alpha', \beta')]{(k, \alpha, \beta)} (D, a, b, \phi) \text{ with } \Downarrow \gamma$$
+```latex
+\begin{tikzcd}
+(D', c, d, \psi) \arrow[r, bend left, "{(k,\alpha,\beta)}"{name=U}] \arrow[r, bend right, "{(k',\alpha',\beta')}"'{name=L}] & (D, a, b, \phi)
+\arrow[from=U, to=L, Rightarrow, "\gamma"]
+\end{tikzcd}
+```
 
 LEMMA E.5.5.3. *Let $(D, a, b, \phi)$, $(D', c, d, \psi)$ be two 2-commutative diagrams, and $k, k', k''$ be three morphisms $(D', c, d, \psi) \to (D, a, b, \phi)$ of 2-commutative diagrams. Given $\gamma : k \Rightarrow k'$ and $\gamma' : k' \Rightarrow k''$ be two morphisms in $\mathbf{Hom}((D', c, d, \psi), (D, a, b, \phi))$, the assignment:*
 
@@ -4568,7 +4567,15 @@ $$c((k', \alpha', \beta'), (k, \alpha, \beta)) := (k \circ k', (\alpha' \star \m
 
 and given morphisms
 
-$$(D'', r, s, \lambda) \xrightarrow[(k_{2}, \alpha_{2}, \beta_{2})]{(k', \alpha', \beta')} (D', c, d, \psi) \xrightarrow[(k_{1}, \alpha_{1}, \beta_{1})]{(k, \alpha, \beta)} (D, a, b, \phi) \text{ with } \Downarrow \gamma_{2}, \Downarrow \gamma_{1} \tag{E.5.5.7}$$
+(E.5.5.7)
+
+```latex
+\begin{tikzcd}[column sep=large]
+(D'', r, s, \lambda) \arrow[r, bend left, "{(k',\alpha',\beta')}"{name=U1}] \arrow[r, bend right, "{(k_2,\alpha_2,\beta_2)}"'{name=L1}] & (D', c, d, \psi) \arrow[r, bend left, "{(k,\alpha,\beta)}"{name=U2}] \arrow[r, bend right, "{(k_1,\alpha_1,\beta_1)}"'{name=L2}] & (D, a, b, \phi)
+\arrow[from=U1, to=L1, Rightarrow, "\gamma_2"]
+\arrow[from=U2, to=L2, Rightarrow, "\gamma_1"]
+\end{tikzcd}
+```
 
 we define
 
@@ -4576,7 +4583,14 @@ $$c(\gamma_{2}, \gamma_{1}) := \gamma_{1} \star \gamma_{2} \tag{E.5.5.8}$$
 
 where $\gamma_{1} \star \gamma_{2}$ is the morphism making the following joined diagram 2-commute
 
-$$(D, a, b, \phi) \xrightarrow[c((k_{1}, \alpha_{1}, \beta_{1}), (k_{2}, \alpha_{2}, \beta_{2}))]{c((k, \alpha, \beta), (k', \alpha', \beta'))} (D'', r, s, \lambda) \text{ with } \Downarrow \gamma_{2} \star \gamma_{1} \tag{E.5.5.9}$$
+(E.5.5.9)
+
+```latex
+\begin{tikzcd}[column sep=huge]
+(D, a, b, \phi) \arrow[r, bend left, "{c((k,\alpha,\beta),(k',\alpha',\beta'))}"{name=U}] \arrow[r, bend right, "{c((k_1,\alpha_1,\beta_1),(k_2,\alpha_2,\beta_2))}"'{name=L}] & (D'', r, s, \lambda)
+\arrow[from=U, to=L, Rightarrow, "\gamma_2\star\gamma_1"]
+\end{tikzcd}
+```
 
 LEMMA E.5.5.4. *Let $\mathcal{C}$ be a 2-category, and $A, B, C$ objects of $\mathcal{C}$, with 1-morphisms $f : B \to A$, $g : C \to A$. The datum of:*
 
@@ -4594,14 +4608,14 @@ $$\mathbf{Hom}((D', c, d, \psi), (D, a, b, \phi))$$
 
 PROOF. We have to check that indeed $c((k', \alpha', \beta'), (k, \alpha, \beta))$ is an object of $\mathbf{Hom}((D'', r, s, \lambda), (D, a, b, \phi))$. To see this, we are to check that the following diagram of 2-morphisms in $\mathcal{C}$:
 
-$$
-\begin{array}{ccccc}
-f\circ r & \xRightarrow{{\mathbf 1}_{f}\star\alpha'} & f\circ c\circ k' & \xRightarrow{{\mathbf 1}_{f}\star\alpha\star{\mathbf 1}_{k'}} & f\circ a\circ(k\circ k') \\
-{\scriptstyle \lambda}\Downarrow & & \Downarrow{\scriptstyle \psi\star{\mathbf 1}_{k'}} & & \Downarrow{\scriptstyle \phi\star{\mathbf 1}_{k\circ k'}=\phi\star{\mathbf 1}_{k}\star{\mathbf 1}_{k'}} \\
-g\circ s & \xRightarrow{{\mathbf 1}_{g}\star\beta'} & g\circ d\circ k' & \xRightarrow{{\mathbf 1}_{g}\star\beta\star{\mathbf 1}_{k'}} & g\circ b\circ(k\circ k')
-\end{array}
-\tag{E.5.5.10}
-$$
+(E.5.5.10)
+
+```latex
+\begin{tikzcd}
+f\circ r \arrow[r, Rightarrow, "{\mathbf 1}_{f}\star\alpha'"] \arrow[d, Rightarrow, "\lambda"'] & f\circ c\circ k' \arrow[r, Rightarrow, "{\mathbf 1}_{f}\star\alpha\star{\mathbf 1}_{k'}"] \arrow[d, Rightarrow, "\psi\star{\mathbf 1}_{k'}"] & f\circ a\circ(k\circ k') \arrow[d, Rightarrow, "\phi\star{\mathbf 1}_{k\circ k'}=\phi\star{\mathbf 1}_{k}\star{\mathbf 1}_{k'}"] \\
+g\circ s \arrow[r, Rightarrow, "{\mathbf 1}_{g}\star\beta'"] & g\circ d\circ k' \arrow[r, Rightarrow, "{\mathbf 1}_{g}\star\beta\star{\mathbf 1}_{k'}"] & g\circ b\circ(k\circ k')
+\end{tikzcd}
+```
 
 is commutative. This is in turn checked using Axiom (2) from Definition E.5.2.1 on associativity of horizontal compositions, to deduce commutativity of the rightmost square, alongside the identity $\mathbf{1}_{k \circ k'} = \mathbf{1}_{k} \star \mathbf{1}_{k'}$, and,
 
@@ -4637,13 +4651,12 @@ DEFINITION E.5.6.2. Let $\mathcal{C}$ be a 2-category, $A, B, C \in \mathrm{Ob}(
 
 The above Definition E.5.6.2 in particular means that a 2-fibre product of $f, g$ is the datum of an object $P$ of $\mathcal{C}$, equipped with 1-morphisms $a : P \to B$, $b : P \to C$ and a 2-isomorphism $\phi : f \circ a \Rightarrow g \circ b$ making the following diagram 2-commute:
 
-$$
-\begin{array}{ccc}
-P & \xrightarrow{b} & C \\
-{\scriptstyle a}\downarrow & \phi & \downarrow{\scriptstyle g} \\
-B & \xrightarrow[f]{} & A
-\end{array}
-$$
+```latex
+\begin{tikzcd}
+P \arrow[r, "b"] \arrow[d, "a"'] & C \arrow[d, "g"] \\
+B \arrow[r, "f"'] & A
+\end{tikzcd}
+```
 
 such that every other object of $\mathbf{Diagrams}(f, g)$ has a 1-morphism to $(P, a, b, \phi)$, and for any two 1-morphisms $p = (k, \alpha, \beta) : (D, a', b', \phi') \to (P, a, b, \phi)$ and $q = (k', \alpha', \beta') : (D'', a'', b'', \phi'') \to (P, a, b, \phi)$, there exists a unique 2-isomorphism $\gamma : p \Rightarrow q$ in $\mathbf{Diagrams}(f, g)$, i.e. a unique 2-isomorphism:
 
@@ -5163,13 +5176,12 @@ The general construction for fibered categories is in [SP, Tag 04Z2], and we ref
 
 (2) Morphisms $(x, f) \to (y, g)$ are given by morphisms $\phi : x \to y$ in $\mathcal{X}$ making the following diagram commute:
 
-$$
-\begin{array}{ccc}
-x & \xrightarrow{\phi} & y \\
-{\scriptstyle f}\downarrow & & \downarrow{\scriptstyle g} \\
-x & \xrightarrow[\phi]{} & y
-\end{array}
-$$
+```latex
+\begin{tikzcd}
+x \arrow[r, "\phi"] \arrow[d, "f"'] & y \arrow[d, "g"] \\
+x \arrow[r, "\phi"'] & y
+\end{tikzcd}
+```
 
 The category $\mathcal{I}_{\mathcal{X}}$ is equipped with a functor $q : \mathcal{I}_{\mathcal{X}} \to \mathbf{CGWH}_{\alpha}$ defined on objects as $(x, f) \mapsto p(x)$.
 
@@ -5265,13 +5277,12 @@ $$
 
 For $T$ in $\mathbf{CGWH}_{\alpha}$, a $T$-object in the inertia fibred category $\mathcal{I}_{[X/\mathcal{G}]_{\mathrm{prestack}}}$ is the datum of an object $x$ in the fibre category over $T$ and an automorphism $g$ of $x$. We may interpret $x$ as a morphism $x : T \to X$, and $g$ as a morphism $g : T \to \mathcal{G}$, such that $s \circ g = t \circ g = x$. This means that $g$ factors through $I_{[\mathcal{G} \Rightarrow X]}$. A morphism in the inertia fibred category $(x, g) \to (y, h)$ over the space $T$ is the datum of a morphism $r : T \to \mathcal{G}$ such that $s \circ r = x$ and $t \circ r = y$, and the diagram:
 
-$$
-\begin{array}{ccc}
-x & \xrightarrow{r} & y \\
-{\scriptstyle g}\downarrow & & \downarrow{\scriptstyle h} \\
-x & \xrightarrow[\overline{r}]{} & y
-\end{array}
-$$
+```latex
+\begin{tikzcd}
+x \arrow[r, "r"] \arrow[d, "g"'] & y \arrow[d, "h"] \\
+x \arrow[r, "r"'] & y
+\end{tikzcd}
+```
 
 commutes. This is by [SP, Tag 034H], and means the identity:
 
@@ -5365,13 +5376,12 @@ For the canonical map $x : \underline{X} \to \mathcal{X} := [X/\mathcal{G}]$, $\
 
 **Lemma E.6.3.11.** *Let $(X, \mathcal{G}, s, t, c, e, i)$ be a topological groupoid and $\mathcal{X} = [X/\mathcal{G}]$ its quotient stack. Let $T$ be an object of $\mathbf{CGWH}_{\alpha}$. Then for any $T$-point $x : \underline{T} \to \mathcal{X}$ of $\mathcal{X}$, we have a cartesian diagram:*
 
-$$
-\begin{array}{ccc}
-\mathcal{I}_{x:\underline{T} \to \mathcal{X}} & \longrightarrow & \mathcal{I}_{\mathcal{X}} \\
-\downarrow & & \downarrow{\scriptstyle \iota} \\
-\underline{T} & \xrightarrow[\overline{x}]{} & \mathcal{X}
-\end{array}
-$$
+```latex
+\begin{tikzcd}
+\mathcal{I}_{x:\underline{T} \to \mathcal{X}} \arrow[r] \arrow[d] & \mathcal{I}_{\mathcal{X}} \arrow[d, "\iota"] \\
+\underline{T} \arrow[r, "\overline{x}"'] & \mathcal{X}
+\end{tikzcd}
+```
 
 *Proof.* We let $T' \to T$ be a morphism of spaces, and consider the induced diagram of maps of topological groupoids
 
@@ -5379,14 +5389,14 @@ $$
 \mathcal{I}_{x:\underline{T} \to \mathcal{X}}(T') \to \mathcal{I}_{\mathcal{X}}(T')
 $$
 
-$$
-\begin{array}{ccc}
-\mathcal{I}_{x:\underline{T} \to \mathcal{X}}(T') & \longrightarrow & \mathcal{I}_{\mathcal{X}}(T') \\
-\downarrow & & \downarrow{\scriptstyle \iota} \\
-h_{T}(T') & \xrightarrow[\overline{x}]{} & \mathcal{X}(T')
-\end{array}
-\tag{E.6.3.1}
-$$
+(E.6.3.1)
+
+```latex
+\begin{tikzcd}
+\mathcal{I}_{x:\underline{T} \to \mathcal{X}}(T') \arrow[r] \arrow[d] & \mathcal{I}_{\mathcal{X}}(T') \arrow[d, "\iota"] \\
+h_{T}(T') \arrow[r, "\overline{x}"'] & \mathcal{X}(T')
+\end{tikzcd}
+```
 
 where $\mathcal{X}(T')$ is short-hand notation for the topological groupoid of morphisms $\underline{T}' \to \mathcal{X}$ and the maps in (E.6.3.1) are defined as follows. The bottom horizontal map is the map sending $f \in h_T(T')$ to the composition $f^*x = x \circ f : \underline{T}' \to \underline{T} \to \mathcal{X}$, an object of the groupoid $\mathcal{X}(T')$. The left vertical map is $(f, \phi) \mapsto f$, and the top horizontal map is
 
@@ -5568,13 +5578,12 @@ $$
 
 *Proof.* The idea is to form the $2$-fiber product:
 
-$$
-\begin{array}{ccc}
-\mathcal{X} := [X/\mathcal{G}]\times_{[X'/\mathcal{G}']}\underline{X}' & \longrightarrow & \underline{X}' \\
-\downarrow & & \downarrow \\
-{[X/\mathcal{G}]} & \longrightarrow & [X'/\mathcal{G}']
-\end{array}
-$$
+```latex
+\begin{tikzcd}
+\mathcal{X} := [X/\mathcal{G}]\times_{[X'/\mathcal{G}']}\underline{X}' \arrow[r] \arrow[d] & \underline{X}' \arrow[d] \\
+{[X/\mathcal{G}]} \arrow[r] & [X'/\mathcal{G}']
+\end{tikzcd}
+```
 
 and observe that there exists an induced epimorphism:
 

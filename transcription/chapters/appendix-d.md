@@ -1364,13 +1364,12 @@ $$
 *This map $\sigma$ is an $\mathbf{R}$-linear isomorphism, upon endowing the target with the pointwise $\mathbf{R}$-linear structure. The following diagram:*
 
 (D.1.6.15)
-$$
-\begin{array}{ccc}
-\mathcal{L}(G) & \xrightarrow{\Psi} & \mathrm{Hom}_{\mathrm{cont}}(\widehat{G},\widehat{\mathbf{R}})\\
-{\scriptstyle a\mapsto\partial_a}\downarrow & & \downarrow{\scriptstyle \simeq}\\
-\mathrm{Diff}^1_r(G) & \xrightarrow[\overline{\sigma}]{} & \mathrm{Hom}_{\mathrm{cont}}(\widehat{G},\mathbf{R})
-\end{array}
-$$
+```latex
+\begin{tikzcd}
+\mathcal{L}(G) \arrow[r, "\Psi"] \arrow[d, "a\mapsto\partial_a"'] & \mathrm{Hom}_{\mathrm{cont}}(\widehat{G},\widehat{\mathbf{R}}) \\
+\mathrm{Diff}^1_r(G) \arrow[r, "\overline{\sigma}"'] & \mathrm{Hom}_{\mathrm{cont}}(\widehat{G},\mathbf{R}) \arrow[u, "\simeq"']
+\end{tikzcd}
+```
 
 *commutes, where the rightmost vertical arrow is induced by the isomorphism $\mathbf{R}\simeq\widehat{\mathbf{R}}$ defined by $t\mapsto e^{2\pi it(\cdot)}$.*
 
@@ -2581,23 +2580,25 @@ $$
 
 and for $\alpha^*\omega:=\omega\circ\alpha^{-1}$ $^{9}$ there exist unique continuous linear maps $T_{\omega}$, $\overline{T}_{\omega}$ making the diagrams
 
-$$
-\tag{D.2.2.8}
+(D.2.2.8)
+
+```latex
 \begin{tikzcd}
 \mathcal S(G) \arrow[r] \arrow[d, "T"] & \mathcal S(G)(\omega) \arrow[r, "\Phi_{G,\omega}", "\simeq"'] \arrow[d, "T_{\omega}"] & \mathrm H^0(\omega,\mathcal S(G)) \arrow[d, "T"] \\
-\mathcal S(G) \arrow[r] & \mathcal S(G)(\alpha^*\omega) \arrow[r, "\Phi_{G,\alpha^*\omega}", "\simeq"'] & \mathrm H^0(\alpha^*\omega,\mathcal S(G))
+\mathcal S(G) \arrow[r] & \mathcal S(G)(\alpha^*\omega) \arrow[r, "\simeq", "\Phi_{G,\alpha^*\omega}"'] & \mathrm H^0(\alpha^*\omega,\mathcal S(G))
 \end{tikzcd}
-$$
+```
 
 and
 
-$$
-\tag{D.2.2.9}
+(D.2.2.9)
+
+```latex
 \begin{tikzcd}
 E \arrow[r] \arrow[d, "\overline{T}"] & E(\omega) \arrow[r, "\Phi^E_{G,\omega}", "\simeq"'] \arrow[d, "\overline{T}_{\omega}"] & \mathrm H^0(\omega,E) \arrow[d, "\overline{T}"] \\
-E \arrow[r] & E(\alpha^*\omega) \arrow[r, "\Phi^E_{G,\alpha^*\omega}", "\simeq"'] & \mathrm H^0(\alpha^*\omega,E)
+E \arrow[r] & E(\alpha^*\omega) \arrow[r, "\simeq", "\Phi^E_{G,\alpha^*\omega}"'] & \mathrm H^0(\alpha^*\omega,E)
 \end{tikzcd}
-$$
+```
 
 commute. The operator $\overline{T}_{\omega}$ is the unique extension by continuity of $T_{\omega}$.
 
@@ -2709,17 +2710,7 @@ $$
 
 where the right side of (D.3.1.2) is finite for $T\ne\mathrm{Im}(z)$.
 
-$$
-c+iT \qquad c'+iT
-$$
-
-$$
-0 \qquad c \qquad c'
-$$
-
-$$
-c-iT \qquad c'-iT
-$$
+*[Figure not reproduced; see the PDF, p. 798. Labels in the figure: $c+iT$, $c'+iT$, $0$, $c$, $c'$, $c-iT$, $c'-iT$.]*
 
 FIGURE 1. A counterclockwise rectangular contour, with $c=a+\varepsilon$, $c'=b-\varepsilon$
 
@@ -3099,18 +3090,14 @@ $$
 
 *compatible with the left-translation action of $G^1\times\mathbf{R}_{>0}$ on the source through the first and second projection and on the tensor factors, and of $G$ on the target,$^{15}$ and promoting the following diagram:*
 
-$$
-\mathcal{S}(k,G^1)\,\overline{\otimes}\,\mathcal{S}_I(\mathbf{R}_{>0})\longrightarrow \mathcal{S}_I(k,G)
-\tag{D.3.3.4}
-$$
+(D.3.3.4)
 
-$$
-\downarrow\hspace{6em}\downarrow
-$$
-
-$$
-\mathcal{S}(G^1)\,\overline{\otimes}\,\mathcal{S}_I(\mathbf{R}_{>0})\longrightarrow \mathcal{S}_I(G)
-$$
+```latex
+\begin{tikzcd}
+\mathcal{S}(k,G^1)\,\overline{\otimes}\,\mathcal{S}_I(\mathbf{R}_{>0}) \arrow[r] \arrow[d] & \mathcal{S}_I(k,G) \arrow[d] \\
+\mathcal{S}(G^1)\,\overline{\otimes}\,\mathcal{S}_I(\mathbf{R}_{>0}) \arrow[r] & \mathcal{S}_I(G)
+\end{tikzcd}
+```
 
 *to a commutative diagram of continuous linear maps whose horizontal arrows are linear topological isomorphisms.*
 
@@ -3327,13 +3314,14 @@ $$
 
 to the space of $\omega$-isotypic vectors in $\mathcal{S}_I(G)$ making the following diagram of continuous linear maps commute
 
-$$
-\begin{CD}
-\mathcal{S}_I(G) @>{\prod_{a\in I}T_a}>> \prod_{a\in I}\mathcal{S}(G) \\
-@V{\Phi^I_{G,\omega}}VV @V{\prod_{a\in I}\Phi_{G,\omega}}VV \\
-\mathrm{H}^0(\omega,\mathcal{S}_I(G)) @>{\prod_{a\in I}T_a}>> \prod_{a\in I}\mathrm{H}^0(\omega,\mathcal{S}(G))
-\end{CD} \tag{D.3.3.10}
-$$
+(D.3.3.10)
+
+```latex
+\begin{tikzcd}
+\mathcal{S}_I(G) \arrow[r, "\prod_{a\in I}T_a"]\arrow[d, "\Phi^I_{G,\omega}"'] & \prod_{a\in I}\mathcal{S}(G)\arrow[d, "\prod_{a\in I}\Phi_{G,\omega}"'] \\
+\mathrm{H}^0(\omega,\mathcal{S}_I(G)) \arrow[r, "\prod_{a\in I}T_a"] & \prod_{a\in I}\mathrm{H}^0(\omega,\mathcal{S}(G))
+\end{tikzcd}
+```
 
 where $\Phi_{G,\omega} : \mathcal{S}(G)\to\mathrm{H}^0(\omega,\mathcal{S}(G))$ is the projector from (D.2.1.1). Moreover $\Phi^I_{G,\omega}$ is a continuous projector (so surjective) and open.
 

@@ -754,13 +754,14 @@ $$
 
 *If $\omega$ is unramified outside $S$, the following diagram of continuous linear operators between Hausdorff locally convex topological vector spaces:*
 
-$$
-\tag{5.2.3.15}
+(5.2.3.15)
+
+```latex
 \begin{tikzcd}
 \mathrm H_{0,\mathrm{cont}}(\mathcal O_{F,S}^\times,\mathcal S(\mathbf A_{F,S})) \arrow[r, "\bar\pi_S"] \arrow[d, "P_{F,S,\omega_S}"] & \mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S(\mathbf A_F)) \arrow[d, "P_{F,\omega}"] \\
 \mathrm H_{0,\mathrm{cont}}(\omega_S,\mathcal S(\mathbf A_{F,S})) \arrow[r, "\bar\pi_S"] & \mathrm H_{0,\mathrm{cont}}(\omega,\mathcal S(\mathbf A_F))
 \end{tikzcd}
-$$
+```
 
 *commutes, where $\omega_S$ is the continuous character obtained from $\omega$ by restriction to $C^1_{F,S}$, descended to the quotient $J^1_{F,S}$.*
 
@@ -867,13 +868,14 @@ $$
 
 *satisfying $\mathcal F_S^2=\mathrm{id}$, making the following diagram of continuous linear operators between Hausdorff locally convex topological vector spaces:*
 
-$$
-\tag{5.2.4.2}
+(5.2.4.2)
+
+```latex
 \begin{tikzcd}
 \mathcal S(\mathbf A_{F,S}) \arrow[r, "\mathcal F_S"] \arrow[d, "\Phi_{F,S}"] & \mathcal S(\mathbf A_{F,S}) \arrow[d, "\Phi_{F,S}"] \\
 \mathrm H_{0,\mathrm{cont}}(\mathcal O_{F,S}^\times,\mathcal S(\mathbf A_{F,S})) \arrow[r, "\mathcal F_S"] & \mathrm H_{0,\mathrm{cont}}(\mathcal O_{F,S}^\times,\mathcal S(\mathbf A_{F,S}))
 \end{tikzcd}
-$$
+```
 
 *commute, compatibly with enlargement of $S$ and passage to $\omega_S$-isotypes (exchanging the $\omega_S$ and the $\bar\omega_S$-isotypes), for any continuous character $\omega\in\widehat{C^1_F}$.*
 
@@ -885,13 +887,14 @@ $$
 
 *satisfying $\mathcal F^2=\mathrm{id}$, making the following diagram of continuous linear operators between Hausdorff locally convex topological vector spaces:*
 
-$$
-\tag{5.2.4.4}
+(5.2.4.4)
+
+```latex
 \begin{tikzcd}
 \mathrm H_{0,\mathrm{cont}}(\mathcal O_{F,S}^\times,\mathcal S(\mathbf A_{F,S})) \arrow[r, "\bar\pi_S"] \arrow[d, "\mathcal F_S"] & \mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S(\mathbf A_F)) \arrow[d, "\mathcal F"] \\
 \mathrm H_{0,\mathrm{cont}}(\mathcal O_{F,S}^\times,\mathcal S(\mathbf A_{F,S})) \arrow[r, "\bar\pi_S"'] & \mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S(\mathbf A_F))
 \end{tikzcd}
-$$
+```
 
 *commute, compatibly with enlargement of $S$ and passage to $\omega$- and $\omega_S$-isotypes, for any continuous character $\omega\in\widehat{C^1_F}$.*
 
@@ -1591,13 +1594,14 @@ We further refer the reader to the argument for Theorem D.3.3.7(3).
 
 The following diagram of continuous linear operators:
 
-$$
-\tag{5.3.3.15}
+(5.3.3.15)
+
+```latex
 \begin{tikzcd}
 \mathcal{S}(\{\pm 1\})^{\widehat{\otimes}_{\pi}^{p}} \widehat{\otimes}_{\pi} \mathcal{S}(\mathrm{U}(1))^{\widehat{\otimes}_{\pi}^{q}} \widehat{\otimes}_{\pi} \mathcal{S}_{I}(\mathbf{R}_{>0})^{\widehat{\otimes}_{\pi}^{p+q}} \arrow[r] \arrow[d] & \mathcal{S}_{I}(\mathbf{R}^{\times})^{\widehat{\otimes}_{\pi}^{p}} \widehat{\otimes}_{\pi} \mathcal{S}_{I}(\mathbf{C}^{\times})^{\widehat{\otimes}_{\pi}^{q}} \arrow[d] \\
 \mathcal{S}(\{\pm 1\}^{p} \times \mathrm{U}(1)^{q}) \,\widehat{\otimes}_{\pi}\, \mathcal{S}_{I^{p+q}}(\mathbf{R}_{>0}^{p+q}) \arrow[r] & \mathcal{S}_{I^{p+q}}((\mathbf{R}^{\times})^{p} \times (\mathbf{C}^{\times})^{q})
 \end{tikzcd}
-$$
+```
 
 commutes, and we have shown that the bottom horizontal arrow is a linear topological isomorphism.
 
@@ -1657,13 +1661,14 @@ By [Tre, Part III,Ch.39,Thm.39.2,p.409], $\mathcal{D}(\mathbf{R}_{>0}) \otimes \
 
 (3) : The following diagram of linear operators is commutative:
 
-$$
-\tag{5.3.3.18}
+(5.3.3.18)
+
+```latex
 \begin{tikzcd}
 \mathcal{S}_{00}(\mathbf{R})^{\otimes_{\pi}^{p}} \otimes_{\pi} \mathcal{S}_{00}(\mathbf{C})^{\otimes_{\pi}^{q}} \arrow[r] \arrow[d] & \mathcal{S}_{00}(\mathbf{R}^{p} \times \mathbf{C}^{q}) \arrow[d] \\
 \mathcal{S}_{I}(\mathbf{R}^{\times})^{\widehat{\otimes}_{\pi}^{p}} \widehat{\otimes}_{\pi} \mathcal{S}_{I}(\mathbf{C}^{\times})^{\widehat{\otimes}_{\pi}^{q}} \arrow[r] & \mathcal{S}_{I^{p+q}}((\mathbf{R}^{\times})^{p} \times (\mathbf{C}^{\times})^{q})
 \end{tikzcd}
-$$
+```
 
 and all the tensor factors are nuclear Fréchet spaces.
 
@@ -2392,13 +2397,14 @@ for any choice of uniformizing element $\pi_v$ at $v \in S_f$.
 
 The operator $\widetilde{\mathrm{PV}}_{S,S_f}$ therefore promotes the following diagram of continuous linear operators:
 
-$$
-\text{(5.4.1.12)}\quad \begin{array}{ccc}
-\mathrm H_{0,\mathrm{cont}}(\omega, \mathcal S(\mathbf A_{F,S})) & \xrightarrow{U_S} & W_{F,S,\omega} \\
-\downarrow{\scriptstyle \mathrm{PV}_{S,S_f}} & & \downarrow{\scriptstyle \widetilde{\mathrm{PV}}_{S,S_f}} \\
-\mathrm H_{0,\mathrm{cont}}(\omega, \mathcal S(\mathbf A_{F,S})) & \xrightarrow{U_S} & W_{F,S,\omega}
-\end{array}
-$$
+(5.4.1.12)
+
+```latex
+\begin{tikzcd}
+\mathrm H_{0,\mathrm{cont}}(\omega, \mathcal S(\mathbf A_{F,S})) \arrow[r, "U_S"] \arrow[d, "\mathrm{PV}_{S,S_f}"] & W_{F,S,\omega} \arrow[d, "\widetilde{\mathrm{PV}}_{S,S_f}"] \\
+\mathrm H_{0,\mathrm{cont}}(\omega, \mathcal S(\mathbf A_{F,S})) \arrow[r, "U_S"] & W_{F,S,\omega}
+\end{tikzcd}
+```
 
 to a commutative diagram whose vertical arrows are linear topological embeddings with closed range. Note that $\widetilde{\mathrm{PV}}_{S,S_f}$ acts by multiplication by an entire function with holomorphic derivatives that are bounded on vertical strips of bounded width, and hence the range of $\widetilde{\mathrm{PV}}_{S,S_f}$ is sequentially closed since functions in this class are bounded multipliers on $A\mathcal S(\mathbf C_I)$ for any connected open interval $I \subset \mathbf R$, by [Sch-a, Ch.VII,§5,p.243].
 
@@ -2536,15 +2542,15 @@ By Köthe's Open Mapping Theorem (see [Gro-f, Ch.4,§5,Thm.2(1),p.148], and [SN,
 
 We have proved that $\mathrm{PV}_{S,S_f}\mathrm H_{0,\mathrm{cont}}(\omega, \mathcal S(\mathbf A_{F,S}))$ and $\widetilde{\mathrm{PV}}_{S,S_f}(W_{F,S,\omega})$ fit into the following commutative diagram of continuous linear operators:
 
-$$
-\text{(5.4.1.21)}\quad \begin{array}{ccc}
-\mathrm H_{0,\mathrm{cont}}(\omega, \mathcal S_{00}(\mathbf A_{F,S})) & \xrightarrow{U_S} & V_{F,S,\omega} \\
-\downarrow & & \downarrow \\
-\mathrm{PV}_{S,S_f}\mathrm H_{0,\mathrm{cont}}(\omega, \mathcal S(\mathbf A_{F,S})) & \xrightarrow{U_S} & \widetilde{\mathrm{PV}}_{S,S_f}(W_{F,S,\omega}) \\
-\downarrow & & \downarrow \\
-H & \xrightarrow[\bar U_S]{} & \tilde H
-\end{array}
-$$
+(5.4.1.21)
+
+```latex
+\begin{tikzcd}
+\mathrm H_{0,\mathrm{cont}}(\omega, \mathcal S_{00}(\mathbf A_{F,S})) \arrow[r, "U_S"] \arrow[d] & V_{F,S,\omega} \arrow[d] \\
+\mathrm{PV}_{S,S_f}\mathrm H_{0,\mathrm{cont}}(\omega, \mathcal S(\mathbf A_{F,S})) \arrow[r, "U_S"] \arrow[d] & \widetilde{\mathrm{PV}}_{S,S_f}(W_{F,S,\omega}) \arrow[d] \\
+H \arrow[r, "\bar U_S"'] & \tilde H
+\end{tikzcd}
+```
 
 The vertical columns in (5.4.1.21) are exact in the strict sense (i.e. the topmost Hausdorff locally convex topological $\mathbf C$-vector spaces are closed in the middle spaces, respectively, and the bottom vertical arrows are surjective quotient linear operators).
 
@@ -2672,13 +2678,14 @@ Theorem 5.4.2.2 (S-local Čech sequences). Let $F$ be a number field, $S$ a fini
 
 *The following diagram of continuous linear operators:*
 
-$$
-\text{(5.4.2.6)}\quad \begin{array}{ccccc}
-\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}}, \mathcal S(\mathbf A_{F,S})) & \xrightarrow{(\mathrm{Id},\mathcal F_S)} & \mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}}) \times \mathcal S_I(J_{F,S})(\bar\chi|_{J^1_{F,S}}) & \xrightarrow{\mathrm{pr}_1-\widetilde{\mathrm{pr}}_2} & \mathcal S_{I\cap(1-I)}(\mathbf R_{>0}) \\
-\| & & \downarrow{\scriptstyle (M_{I,\tau},M_{I,\tau})} & & \downarrow{\scriptstyle T_{ix_0}\circ M_{I\cap(1-I)}} \\
-\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}}, \mathcal S(\mathbf A_{F,S})) & \xrightarrow{(L_S,L_S\circ\mathcal F_S)} & A\mathcal S(\mathbf C_{>0}) \times A\mathcal S(\mathbf C_{>0}) & \xrightarrow{\mathrm{pr}_1-\widetilde{J}\circ\mathrm{pr}_2} & A\mathcal S(\mathbf C_{I\cap(1-I)})
-\end{array}
-$$
+(5.4.2.6)
+
+```latex
+\begin{tikzcd}
+\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}}, \mathcal S(\mathbf A_{F,S})) \arrow[r, "(\mathrm{Id},\mathcal F_S)"] \arrow[d, equal] & \mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}}) \times \mathcal S_I(J_{F,S})(\bar\chi|_{J^1_{F,S}}) \arrow[r, "\mathrm{pr}_1-\widetilde{\mathrm{pr}}_2"] \arrow[d, "(M_{I,\tau},M_{I,\tau})"] & \mathcal S_{I\cap(1-I)}(\mathbf R_{>0}) \arrow[d, "T_{ix_0}\circ M_{I\cap(1-I)}"] \\
+\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}}, \mathcal S(\mathbf A_{F,S})) \arrow[r, "(L_S,L_S\circ\mathcal F_S)"] & A\mathcal S(\mathbf C_{>0}) \times A\mathcal S(\mathbf C_{>0}) \arrow[r, "\mathrm{pr}_1-\widetilde{J}\circ\mathrm{pr}_2"] & A\mathcal S(\mathbf C_{I\cap(1-I)})
+\end{tikzcd}
+```
 
 *for:*
 

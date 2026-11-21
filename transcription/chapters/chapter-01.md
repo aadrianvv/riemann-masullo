@@ -556,11 +556,11 @@ and its suquotients $\mathscr{E}_{S,S_\infty}(\chi_S|_{J^1_{F,S}})$ and $\mathsc
 [D_{S,1}/\mathrm{GL}_1(\mathbf{A}_{F,S})^1]
   \arrow[r,"j" below] \arrow[d,"\simeq" left]
 & [D_{F,S}/\mathrm{GL}_1(\mathbf{A}_{F,S})^1]
-& \prod'_{v\in S}[D_{S,v}/\mathrm{GL}_1(\mathbf{A}_{F,S})^1]
+& \coprod'_{v\in S}[D_{S,v}/\mathrm{GL}_1(\mathbf{A}_{F,S})^1]
   \arrow[l,"i" below] \arrow[d,"\simeq" right]
 \\
 \underline{J_{F,S}/J^1_{F,S}}
-&& \Bigl(\prod_{v\in S_\infty}BU_v\Bigr)\prod\Bigl(\prod_{p:S_p\subset S}\prod'_{v\in S_p}[\mathbf{R}_{>0}/F_v^\times]\Bigr)
+&& \Bigl(\coprod_{v\in S_\infty}BU_v\Bigr)\coprod\Bigl(\coprod_{p:S_p\subset S}\coprod'_{v\in S_p}[\mathbf{R}_{>0}/F_v^\times]\Bigr)
 \end{tikzcd}
 ```
 

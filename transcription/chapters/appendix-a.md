@@ -586,13 +586,14 @@ defined as $s_{\mathbf{Q}}(t) := \theta(t,1,1)$, is a canonical continuous secti
 
 Lemma A.2.2.2. Let $F$ be a number field. The norm homomorphism renders the following diagram of continuous homomorphisms of Hausdorff locally compact abelian groups
 
-$$
-\begin{CD}
-\mathrm{GL}_1(\mathbf{A}_F) @>{|\cdot|_F}>> \mathbf{R}_{>0} \\
-@V{N_{F/\mathbf{Q}}}VV @VV{=}V \\
-\mathrm{GL}_1(\mathbf{A}_{\mathbf{Q}}) @>{|\cdot|_{\mathbf{Q}}}>> \mathbf{R}_{>0}
-\end{CD} \tag{A.2.2.5}
-$$
+(A.2.2.5)
+
+```latex
+\begin{tikzcd}
+\mathrm{GL}_1(\mathbf{A}_F) \arrow[r, "|\cdot|_F"]\arrow[d, "N_{F/\mathbf{Q}}"'] & \mathbf{R}_{>0} \arrow[d, equal] \\
+\mathrm{GL}_1(\mathbf{A}_{\mathbf{Q}}) \arrow[r, "|\cdot|_{\mathbf{Q}}"] & \mathbf{R}_{>0}
+\end{tikzcd}
+```
 
 commutative, the rightmost vertical arrow being the identity.
 

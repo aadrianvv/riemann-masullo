@@ -1625,13 +1625,12 @@ $$
 
 To explain the intuition behind this lemma before we carry out the proof (which uses an argument adapted from [Me1, §4, Cor. 4.7]), we give a commutative diagram summarizing some of the information (with $T$ injective):
 
-$$
-\begin{array}{ccc}
-E_1 & \xrightarrow{T} & E_2 \\
-{\scriptstyle A_1}\downarrow & \swarrow_{\scriptstyle A_0} & \downarrow{\scriptstyle A} \\
-E_1 & \xrightarrow[T]{} & E_2
-\end{array}
-$$
+```latex
+\begin{tikzcd}
+E_1 \arrow[r, "T"] \arrow[d, "A_1"'] & E_2 \arrow[d, "A"] \arrow[dl, "A_0" description] \\
+E_1 \arrow[r, "T"'] & E_2
+\end{tikzcd}
+```
 
 Proof. Assume first that $A$ is of finite rank, so $A(E_2)$ is topologically complemented in $E_2$ by [Scha, Ch. II, Cor. 2 to 4.2]. There exist finitely many elements $\{x_1,\ldots,x_N\}\subset A(E_2)\subset T(E_1)\subset E_2$, continuous $\{\varphi_1,\ldots,\varphi_N\}\subset E'_2$, and complex numbers $\lambda_1,\ldots,\lambda_N\in\mathbf C$, such that
 
@@ -2436,14 +2435,14 @@ LEMMA C.4.1.1. *Let $E,E_1,E_2$ be Hausdorff locally convex topological $\mathbf
 
 (2) *For any continuous $\mathbf C$-linear operator $T:E_1\to E_2$, the algebraic dual map $T^*:E_2^*\to E_1^*$ restricts to a $\mathbf C$-linear map $T':E_2'\to E_1'$ and this is continuous with respect to the $\sigma(E_2',E_2)$-topology on the source and the $\sigma(E_1',E_1)$-topology on the target. Moreover, the algebraic dual $(T')^*:(E_1')^*\to(E_2')^*$ of the topological dual $T'$ is continuous with respect to $\sigma((E_1')^*,E_1')$ and $\sigma((E_2')^*,E_2')$, and the following diagram*
 
-$$
-\begin{array}{ccc}
-E_1&\xrightarrow{\ T\ }&E_2\\
-\scriptstyle{\iota_{E_1}}\downarrow&&\downarrow\scriptstyle{\iota_{E_2}}\\
-(E_1')^*&\xrightarrow[(T')^*]{ }&(E_2')^*
-\end{array}
-\tag{C.4.1.2}
-$$
+(C.4.1.2)
+
+```latex
+\begin{tikzcd}
+E_1 \arrow[r, "T"] \arrow[d, "\iota_{E_1}"'] & E_2 \arrow[d, "\iota_{E_2}"] \\
+(E_1')^* \arrow[r, "(T')^*"'] & (E_2')^*
+\end{tikzcd}
+```
 
 *commutes.*
 

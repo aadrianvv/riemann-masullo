@@ -393,7 +393,7 @@ Definition B.2.1.1 (Schwartz-Bruhat functions on $\mathbf{R}_{>0}$ with (semi-)e
 
 (1) *forward semi-exponential decay* if $\phi$ and its derivatives decay faster than any positive power of $t^{-1}$ as $t\to+\infty$. We denote by $\mathcal{S}\mathrm{SE}(\mathbf{R}_{>0})$ the space of $\phi$'s with foward semi-exponential decay. Likewise say $\phi$ has *backward semi-exponential decay* if $\phi$ and its derivatives decay faster than any positive power of $t$ as $t\to 0^+$. We denote by $\check{\mathcal{S}}\mathrm{SE}(\mathbf{R}_{>0})$ the space of $\phi$'s with backward semi-exponential decay.
 
-(2) *exponential decay* if $\phi$ and its derivatives decay faster than any positive power $e^{-|\log(t)|}$, as $|\log(t)|\to+\infty$. We denote by $\mathcal{S}\mathrm{E}(\mathbf{R}_{>0})$ the $\mathbf{C}$-linear space of Schwartz-Bruhat functions of exponential decay.
+(2) *exponential decay* if $\phi$ and its derivatives decay faster than any positive power $e^{-|\log(t)|}$, as $|\log(t)|\to+\infty$. We denote by $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0})$ the $\mathbf{C}$-linear space of Schwartz-Bruhat functions of exponential decay.
 
 Remark B.2.1.2. The role of applying $\partial_t$ in the preceding definition can be replaced by applying $t\partial_t$; the latter has the merit of being invariant and negating under inversion on $t$. It is elementary to check that membership in $\mathcal{S}\mathrm{SE}(\mathbf{R}_{>0})$ is equivalent to the requirement $t^a\phi\in\mathcal{S}(\mathbf{R}_{>0})$ for all $a\ge 0$, and via the exponential isomorphism $\mathbf{R}\simeq\mathbf{R}_{>0}$ this corresponds to functions $f\in\mathcal{S}(\mathbf{R})$ such that $f^{(j)}\in O(e^{-x})$ as $x\to+\infty$ for all $j\ge 0$.
 
@@ -407,15 +407,15 @@ $$
 \check{\phi}(t):=\phi(1/t) \tag{B.2.1.1}
 $$
 
-*for $t\in\mathbf{R}_{>0}$ (so $\phi\in \mathcal{S}\mathrm{E}(\mathbf{R})$ if and only if $\check{\phi}\in \mathcal{S}\mathrm{E}(\mathbf{R})$),*
+*for $t\in\mathbf{R}_{>0}$ (so $\phi\in \mathcal{S}_{\mathrm{E}}(\mathbf{R})$ if and only if $\check{\phi}\in \mathcal{S}_{\mathrm{E}}(\mathbf{R})$),*
 
 *(1) If $\phi\in\check{\mathcal{S}}\mathrm{SE}(\mathbf{R}_{>0})$ then the extension of $\phi$ to $\mathbf{R}$ by zero for $t\in(-\infty,0]$ is Schwartz over $\mathbf{R}$.*
 
-*(2) The involution $\phi\mapsto\check{\phi}$ is a linear topological automorphism of $\mathcal{S}(\mathbf{R}_{>0})$ respecting the linear subspace $\mathcal{S}\mathrm{E}(\mathbf{R}_{>0})$, and identifying $\mathcal{S}\mathrm{SE}(\mathbf{R}_{>0})$ with $\check{\mathcal{S}}\mathrm{SE}(\mathbf{R}_{>0})$.*
+*(2) The involution $\phi\mapsto\check{\phi}$ is a linear topological automorphism of $\mathcal{S}(\mathbf{R}_{>0})$ respecting the linear subspace $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0})$, and identifying $\mathcal{S}\mathrm{SE}(\mathbf{R}_{>0})$ with $\check{\mathcal{S}}\mathrm{SE}(\mathbf{R}_{>0})$.*
 
-*(3) The extension by zero of any function in $\mathcal{S}\mathrm{E}(\mathbf{R}_{>0})$ to the real line is Schwartz.*
+*(3) The extension by zero of any function in $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0})$ to the real line is Schwartz.*
 
-*(4) The operator $t\partial_t$ on $\mathcal{S}(\mathbf{R}_{>0})$ preserves $\mathcal{S}\mathrm{SE}(\mathbf{R}_{>0})$, $\check{\mathcal{S}}\mathrm{SE}(\mathbf{R}_{>0})$, and $\mathcal{S}\mathrm{E}(\mathbf{R}_{>0})$.*
+*(4) The operator $t\partial_t$ on $\mathcal{S}(\mathbf{R}_{>0})$ preserves $\mathcal{S}\mathrm{SE}(\mathbf{R}_{>0})$, $\check{\mathcal{S}}\mathrm{SE}(\mathbf{R}_{>0})$, and $\mathcal{S}_{\mathrm{E}}(\mathbf{R}_{>0})$.*
 
 Proof. (1) : We need to check smoothness at $t=0$ of $\partial_t^N\phi$ for every integer $N\ge 0$. We know that $\partial_t^N\phi$ exists and is smooth over $\mathbf{R}^\times$. It is therefore enough to check that it is continuous at $t=0$: that says $\partial_t^N\phi\to 0$ as $t\to 0^+$ for each $N$. For $t=e^x$ we have $\partial_t=e^{-x}\partial_x$, so we are given that $f(x):=\phi(e^x)\in\mathcal{S}(\mathbf{R})$ and its derivatives all have decay more rapid than $e^{-M|x|}$ as $x\to-\infty$ for each $M>0$ and we want to show
 
@@ -575,17 +575,7 @@ $$
 
 *Then $M(\phi)(s)$ admits a meromorphic function over $\mathbf{C}_{(A,b)}$ with a pole at $s=-\alpha$ of order $m_\alpha$.*
 
-$$
-A+\varepsilon+iT \qquad \beta+iT
-$$
-
-$$
-A+\varepsilon \qquad 0 \qquad \beta
-$$
-
-$$
-A+\varepsilon-iT' \qquad \beta-iT'
-$$
+*[Figure not reproduced; see the PDF, p. 596. Labels in the figure: $A+\varepsilon+iT$, $\beta+iT$, $A+\varepsilon$, $0$, $\beta$, $A+\varepsilon-iT'$, $\beta-iT'$.]*
 
 FIGURE 1. A contour with upward vertical sides in $\sigma=A+\varepsilon<0$ and $\sigma=\beta>1$
 
@@ -951,17 +941,7 @@ $$
 \int_{a+\varepsilon}^{b-\varepsilon}|\Phi(\sigma+iT)|\,\mathrm{d}\sigma\le C_{M,\varepsilon}\int_{a+\varepsilon}^{b-\varepsilon}\frac{1}{|T|^M}\,\mathrm{d}\sigma\le C_{M,\varepsilon}(b-a)|T|^{-M}. \tag{B.2.2.9}
 $$
 
-$$
-a+\varepsilon+iT \qquad b-\varepsilon+iT
-$$
-
-$$
-a+\varepsilon \qquad b-\varepsilon
-$$
-
-$$
-a+\varepsilon-iT \qquad b-\varepsilon-iT
-$$
+*[Figure not reproduced; see the PDF, p. 602. Labels in the figure: $a+\varepsilon+iT$, $b-\varepsilon+iT$, $a+\varepsilon$, $b-\varepsilon$, $a+\varepsilon-iT$, $b-\varepsilon-iT$.]*
 
 FIGURE 2. A contour $\Gamma_T$ with counterclockwise orientation (it may or may not enclose $0$)
 
@@ -1101,13 +1081,7 @@ $\square$
 
 B.3.2.1. *Residues over asymptotic contours.* Consider a vertical strip $\mathbf{C}_{(a,b)}$ with real $a<b$, a meromorphic function $f:\mathbf{C}_{(a,b)}\to\mathbf{C}$ with slow growth near its poles, and a holomorphic function $\Phi$ on $\mathbf{C}_{(a-\varepsilon,b+\varepsilon)}$ that is uniformly Schwartz.
 
-$$
-\begin{array}{ccc}
-a+\varepsilon_1+iT & \longleftarrow & b-\varepsilon_2+iT \\
-a+\varepsilon_1\;\downarrow & & \uparrow\;b-\varepsilon_2 \\
-a+\varepsilon_1-iT & \longrightarrow & b-\varepsilon_2-iT
-\end{array}
-$$
+*[Figure not reproduced; see the PDF, p. 605. Labels in the figure: $a+\varepsilon_1+iT$, $b-\varepsilon_2+iT$, $a+\varepsilon_1$, $b-\varepsilon_2$, $a+\varepsilon_1-iT$, $b-\varepsilon_2-iT$.]*
 
 FIGURE 3. A contour $\Gamma_{T,\varepsilon_1,\varepsilon_2}$ with counterclockwise orientation (it may or may not enclose 0)
 
