@@ -776,8 +776,6 @@ This means $\Pi_S\to\mathrm{id}$ uniformly on the bounded subsets of $\mathcal{S
 
 Let $F$ be a number field. In this section we will be defining and studying the linear map associating to a Schwartz-Bruhat function $f : \mathbf{A}_F\to\mathbf{C}$ its restriction to $\mathrm{GL}_1(\mathbf{A}_F)$ averaged over the continuous translation action by the discrete subgroup $F^\times$. We will show that such averages are themselves continuous as functions on the idele class group $C_F$ of $F$, and decaying rapidly at infinity in a precise sense that can be controlled using the idelic norm.
 
----
-
 ## PDF page 75
 
 2.2.  GLOBAL ADELIC $\theta$-FUNCTIONS    75
