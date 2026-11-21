@@ -55,6 +55,15 @@ if sandboxed bash -c 'scripts/lint.sh && lake build && scripts/signatures.sh >.a
 else
   echo "lint or build: FAIL"; tail -n 20 .agent/build.txt; exit 1
 fi
-"$main/scripts/signatures.sh" --compare "$wt/.agent/base.txt" "$wt/.agent/head.txt" &&
+status=0
+if "$main/scripts/signatures.sh" --compare "$wt/.agent/base.txt" "$wt/.agent/head.txt"; then
   echo "statements: none of $(wc -l <.agent/base.txt) existing declarations changed"
-"$main/scripts/signatures.sh" --sorry-in-defs "$wt/.agent/head.txt" && echo "definitions: none contains sorry"
+else
+  status=1
+fi
+if "$main/scripts/signatures.sh" --sorry-in-defs "$wt/.agent/head.txt"; then
+  echo "definitions: none contains sorry"
+else
+  status=1
+fi
+exit "$status"
