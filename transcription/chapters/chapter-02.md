@@ -72,7 +72,7 @@ The main goals of this Chapter are as follows:
 | 2.4. Asymptotic behavior as $\lvert g\rvert_{F,S}\to 0^+$ by lattice point-counting | 106 |
 | 2.4.1. Warm-up: the case of the rational number field | 106 |
 | 2.4.2. The general case | 110 |
-| 2.4.3. Order of growth as $\lvert g\rvert_{F,S}\to0^+$ | 112 |
+| 2.4.3. Order of growth as $\lvert g\rvert_{F,S}\to 0^+$ | 112 |
 
 ## PDF page 59
 
@@ -183,7 +183,7 @@ We denote by $\mathcal S(\mathbf R^m)$ the $\mathbf C$-vector space of all smoot
 **REMARK 2.1.1.5.** There are several families of explicit seminorms on $\mathcal S(\mathbf R^m)$ generating the same locally convex topology. For instance, $p_{\alpha,\beta}:\mathcal S(\mathbf R^m)\to\mathbf R_{\ge 0}$, for each $\alpha,\beta\in\mathbf N^m$, given by $p_{\alpha,\beta}(f):=\sup_{x\in\mathbf R^m}|x^\alpha D^\beta_x f(x)|$. Another important such family is
 
 $$
-p_{\alpha,\beta,r}:=\|x^\alpha D^\beta_x f(x)\|_{L^r(\mathbf R^m,dx)}
+p_{\alpha,\beta,r}:=\|x^\alpha D^\beta_x f(x)\|_{L^r(\mathbf R^m,\mathrm{d}x)}
 $$
 
 for $r\ge 1$ a fixed choice of real number. Other such families generating an equivalent topology on $\mathcal S(\mathbf R^m)$ are given by the same assignments, upon replacing $x^\alpha$ with $u(x)$ as $u$ varies over all polynomial functions on $\mathbf R^m$ with complex coefficients. We refer the reader to [KG, Part I,Ch.III,(3)].
@@ -438,7 +438,7 @@ $$
 
 **CHAPTER 2. ADELIC $\theta$-FUNCTIONS** · **68**
 
-where $f_\infty\in\mathcal S(\mathbf R)$ and, for each prime number $p$, $f_p$ is the indicator function of a subset of the form $a+p^N\mathbf Z_p$ for $N\in\mathbf Z$ and $a\in\mathbf Q_p$, and $f_p=\mathbf 1_{\mathbf Z_p}$ for all but finitely many primes.
+where $f_\infty\in\mathcal S(\mathbf R)$ and, for each prime number $p$, $f_p$ is the indicator function of a subset of the form $a+p^N\mathbf Z_p$ for $N\in\mathbf Z$ and $a\in\mathbf Q_p$, and $f_p=\mathrm{1}_{\mathbf Z_p}$ for all but finitely many primes.
 
 In fact, the linear isomorphism from (2.1.3.1) can be promoted to a topological one, by topologizing the algebraic tensor product as the *inductive* topological tensor product: it is the finest locally convex topology promoting the canonical bi-linear map $\mathcal S(\mathbf R)\times\mathcal S(\mathbf A^f_{\mathbf Q})\to\mathcal S(\mathbf R)\otimes_\iota\mathcal S(\mathbf A^f_{\mathbf Q})$ to a separately continuous bi-linear map. We will be proving this in Proposition 2.1.3.2 below. In particular, $\mathcal S(\mathbf R)\otimes_\iota\mathcal S(\mathbf A^f_{\mathbf Q})$ is thereby complete, this completeness ultimately stems from expressing that topological tensor product as a strict countable inductive limit of Fréchet spaces (such as a product of finitely many copies of $\mathcal S(\mathbf R)$), which is complete by [Scha, Ch.II,6.6,p.59].
 
@@ -519,20 +519,20 @@ The induced $\mathbf C$-linear operators between inductive tensor products
 (2.1.3.3)
 
 $$
-\alpha_{S,m}:\mathcal S(\mathbf A_{F,S_\infty})\otimes_\iota V_m\to\mathcal S(\mathbf A_{F,S_\infty})\otimes_\iota V_{m+1}
+\alpha_{\mathcal{S},m}:\mathcal S(\mathbf A_{F,S_\infty})\otimes_\iota V_m\to\mathcal S(\mathbf A_{F,S_\infty})\otimes_\iota V_{m+1}
 $$
 
 are injective, since $\mathcal S(\mathbf A_{F,S_\infty})$ is a $\mathbf C$-linear space and the $\mathbf C$-linear spaces underlying the tensor products are algebraic tensor products, and continuous by [Jar, Part III,Ch.15,§15.2,Prop.1].
 
-Each $\mathcal S(\mathbf A_{F,S_\infty})\otimes_\iota V_m$ is Hausdorff and complete since $\mathcal S(\mathbf A_{F,S_\infty})$ is by Proposition 2.1.1.6, and $V_m$ is finite dimensional. Moreover, each $\alpha_{S,m}$ is a topological embedding by [Bou-GT, Ch.I,§3.5,Prop.9], since it admits
+Each $\mathcal S(\mathbf A_{F,S_\infty})\otimes_\iota V_m$ is Hausdorff and complete since $\mathcal S(\mathbf A_{F,S_\infty})$ is by Proposition 2.1.1.6, and $V_m$ is finite dimensional. Moreover, each $\alpha_{\mathcal{S},m}$ is a topological embedding by [Bou-GT, Ch.I,§3.5,Prop.9], since it admits
 
 ## PDF page 70
 
 **CHAPTER 2. ADELIC $\theta$-FUNCTIONS** · **70**
 
-a continuous section $s_m:\mathcal S(\mathbf A_{F,S_\infty})\otimes_\iota V_{m+1}\to\mathcal S(\mathbf A_{F,S_\infty})\otimes_\iota V_m$ induced by any choice of $\mathbf C$-linear section to the injective $\mathbf C$-linear map $\alpha_m$. Alternatively, since $\alpha_m(V_m)$ is complemented in $V_{m+1}$, $\alpha_{S,m}$ splits linearly and topologically by [Jar, Part III,Ch.15,§15.2,Prop.3(b)].
+a continuous section $s_m:\mathcal S(\mathbf A_{F,S_\infty})\otimes_\iota V_{m+1}\to\mathcal S(\mathbf A_{F,S_\infty})\otimes_\iota V_m$ induced by any choice of $\mathbf C$-linear section to the injective $\mathbf C$-linear map $\alpha_m$. Alternatively, since $\alpha_m(V_m)$ is complemented in $V_{m+1}$, $\alpha_{\mathcal{S},m}$ splits linearly and topologically by [Jar, Part III,Ch.15,§15.2,Prop.3(b)].
 
-As such, the sequence $\{\mathcal S(\mathbf A_{F,S_\infty})\otimes_\iota V_m,\alpha_{S,m}\}_{m\ge 0}$ is strict in the sense of [Jar, Part I,Ch.4,§4.6], and the locally convex inductive limit topology on $\varinjlim_{m\ge 0}(\mathcal S(\mathbf A_{F,S_\infty})\otimes_\pi V_m)$ is Hausdorff by [Jar, Ch.4,§4.6,Thm.1] and complete by [Jar, Ch.4,§4.6,Thm.4].
+As such, the sequence $\{\mathcal S(\mathbf A_{F,S_\infty})\otimes_\iota V_m,\alpha_{\mathcal{S},m}\}_{m\ge 0}$ is strict in the sense of [Jar, Part I,Ch.4,§4.6], and the locally convex inductive limit topology on $\varinjlim_{m\ge 0}(\mathcal S(\mathbf A_{F,S_\infty})\otimes_\pi V_m)$ is Hausdorff by [Jar, Ch.4,§4.6,Thm.1] and complete by [Jar, Ch.4,§4.6,Thm.4].
 
 The injective continuous linear operators $\mathcal S(\mathbf A_{F,S_\infty})\otimes_\iota V_m\to\mathcal S(\mathbf A_{F,S_\infty})\otimes_\iota\mathcal S(\mathbf A^f_F)$ are topological embeddings, since the continuous linear map $V_m\to\mathcal S(\mathbf A^f_F)$ splits linearly by Proposition C.2.5.1(3), and hence so does $\mathcal S(\mathbf A_{F,S_\infty})\otimes_\iota V_m\to\mathcal S(\mathbf A_{F,S_\infty})\otimes_\iota\mathcal S(\mathbf A^f_F)$ by [Jar, Part III,Ch.15,§15.2,Prop.3(b)].
 
@@ -556,7 +556,7 @@ induced by [Jar, Part III,§16.1,Prop.3] is a linear topological isomorphism sin
 
 In light of Remark 2.1.3.3, the inductive tensor topology on $\mathcal S(\mathbf A_{F,S_\infty})\otimes\mathcal S(\mathbf A^f_F)$ is strictly finer than the injective and projective topologies, while the latter two are the same.
 
-**Remark 2.1.3.5.** We note that Schwartz-Bruhat functions of the form $f=\bigotimes_v f_v$, with $f_v\in\mathcal S(F_v)$ for *every* place $v$ of $F$, and $f_v=\mathbf 1_{\mathcal O_{F_v}}$ for all but finitely many finite places of $F$, linearly generate a dense (and even sequentially dense) linear subspace of $\mathcal S(\mathbf A_F)$ (for instance, from [Tre, Thm.51.6,(51.3)]).
+**Remark 2.1.3.5.** We note that Schwartz-Bruhat functions of the form $f=\bigotimes_v f_v$, with $f_v\in\mathcal S(F_v)$ for *every* place $v$ of $F$, and $f_v=\mathrm{1}_{\mathcal O_{F_v}}$ for all but finitely many finite places of $F$, linearly generate a dense (and even sequentially dense) linear subspace of $\mathcal S(\mathbf A_F)$ (for instance, from [Tre, Thm.51.6,(51.3)]).
 
 They are linear generators of $\mathcal S(\mathbf A_F)$ only for $F$ having a single Archimedean place: $\mathbf Q$ and imaginary quadratic fields.
 
@@ -597,7 +597,7 @@ $$
 (5) *The canonical linear map:*
 
 $$
-\pi : \operatorname*{colim}_{S\subset\Sigma_F} \mathcal{S}(\mathbf{A}_{F,S}) \to \mathcal{S}(\mathbf{A}_F) \tag{2.1.4.4}
+\pi : \operatorname*{\mathrm{colim}}_{S\subset\Sigma_F} \mathcal{S}(\mathbf{A}_{F,S}) \to \mathcal{S}(\mathbf{A}_F) \tag{2.1.4.4}
 $$
 
 *induced by the maps:*
@@ -1770,10 +1770,10 @@ $$
 *so it belongs to $\mathcal{S}(\mathbf{A}_F)$. Explicitly, its value at any $x\in\mathbf{A}_F$ is equal to*
 
 $$
-\int_{\mathbf{A}_F} f(y)\overline{\psi}(xy)\left\{ -\alpha_\gamma+2\pi i\overline{\Lambda(\gamma'(1)xy)}\right\} d\nu(y). \tag{2.2.4.30}
+\int_{\mathbf{A}_F} f(y)\overline{\psi}(xy)\left\{ -\alpha_\gamma+2\pi i\overline{\Lambda(\gamma'(1)xy)}\right\} \mathrm{d}\nu(y). \tag{2.2.4.30}
 $$
 
-REMARK 2.2.4.6. The mode of convergence of the limit in (2.2.4.28) is uniform on bounded subsets in $\mathcal{S}(\mathbf{A}_F)$, i.e. it converges in $\mathcal{L}_\beta(\mathcal{S}(\mathbf{A}_F))$. This is due to the fact that $\mathcal{S}(\mathbf{A}_F)$ is barrelled and complete, hence quasi-complete. Indeed, as $t$ varies over a compact neighborhood of $1$, the proof of (3) shows that
+REMARK 2.2.4.6. The mode of convergence of the limit in (2.2.4.28) is uniform on bounded subsets in $\mathcal{S}(\mathbf{A}_F)$, i.e. it converges in $\mathscr{L}_\beta(\mathcal{S}(\mathbf{A}_F))$. This is due to the fact that $\mathcal{S}(\mathbf{A}_F)$ is barrelled and complete, hence quasi-complete. Indeed, as $t$ varies over a compact neighborhood of $1$, the proof of (3) shows that
 
 $$
 \frac{1}{t-1}\left\{ \lvert\gamma(t)\rvert_F^{-1}\gamma(t)^*\widehat{f}-\widehat{f}\right\}
@@ -1822,7 +1822,7 @@ for $f_v\in\mathcal{S}(F_v)$ with $f_v = 1_{K_v}$ for $K_v\subset F_v$ a compact
 By [RV, Prop.5.6(iii)], we have
 
 $$
-\widehat{(\partial_\gamma f)}(x) = \int_{\mathbf{A}_F}(\partial_\gamma f)(y)\overline{\psi(xy)}d\nu(y) = \left(\int_{\mathbf{A}_{F,S_\infty}}(\partial_{\gamma_\infty}f_\infty)(y_\infty)\prod_{v\in S_\infty}\overline{\psi_v(x_vy_v)}d\nu_\infty(y_\infty)\right)\prod_{v\in\Sigma_{F,f}}\int_{F_v}f_v(x_v)\overline{\psi_v(x_vy_v)}d\nu_v(y_v) \tag{2.2.4.32}
+\widehat{(\partial_\gamma f)}(x) = \int_{\mathbf{A}_F}(\partial_\gamma f)(y)\overline{\psi(xy)}\mathrm{d}\nu(y) = \left(\int_{\mathbf{A}_{F,S_\infty}}(\partial_{\gamma_\infty}f_\infty)(y_\infty)\prod_{v\in S_\infty}\overline{\psi_v(x_vy_v)}\mathrm{d}\nu_\infty(y_\infty)\right)\prod_{v\in\Sigma_{F,f}}\int_{F_v}f_v(x_v)\overline{\psi_v(x_vy_v)}\mathrm{d}\nu_v(y_v) \tag{2.2.4.32}
 $$
 
 for $\psi:\mathbf{A}_F\to\mathrm{U}(1)$ the standard additive character (see [RV, Ch.7,§7.1,p.253]), where $\nu$ is the additive global Tamagawa measure on $\mathbf{A}_F$ from Definition A.3.1.1, $\psi_v:F_v\to\mathrm{U}(1)$ is the standard additive character
@@ -1836,7 +1836,7 @@ for $\psi:\mathbf{A}_F\to\mathrm{U}(1)$ the standard additive character (see [RV
 We analyze the integral:
 
 $$
-\int_{\mathbf{A}_{F,S_\infty}}(\partial_{\gamma_\infty}f_\infty)(y_\infty)\prod_{v\in S_\infty}\overline{\psi_v(x_vy_v)}d\nu_\infty(y_\infty) \tag{2.2.4.33}
+\int_{\mathbf{A}_{F,S_\infty}}(\partial_{\gamma_\infty}f_\infty)(y_\infty)\prod_{v\in S_\infty}\overline{\psi_v(x_vy_v)}\mathrm{d}\nu_\infty(y_\infty) \tag{2.2.4.33}
 $$
 
 Let $[a,b]\subset\mathbf{R}_{>0}$ an arbitrary compact interval such that $1\in(a,b)$. We define $K := \gamma_\infty([a,b])\cdot\mathrm{supp}(f_\infty)\subset\mathbf{A}_{F,S_\infty}$. Since $\mathrm{supp}(f_\infty)$ is compact, so is $K$ as a subset of $\mathbf{A}_{F,S_\infty}$.
@@ -1850,13 +1850,13 @@ $$
 for $y_\infty\in\mathrm{supp}(f_\infty)$ and $t\in[a,b]$ varying over a sequence tending to $1$ (which exists as a consequence of smoothness of $f_\infty$ over $\mathbf{A}_{F,S_\infty}$ and Hadamard's Lemma), we may write the integral in (2.2.4.33) as the following limit with $t$ varying through a sequence:
 
 $$
-\lim_{t\to 1}\frac{1}{t-1}\left\{ \int_{\mathbf{A}_{F,S_\infty}}f_\infty(\gamma_\infty(t)y_\infty)\prod_{v\in S_\infty}\overline{\psi_v(x_vy_v)}d\nu_\infty(y_\infty)-\int_{\mathbf{A}_{F,S_\infty}}f_\infty(y_\infty)\prod_{v\in S_\infty}\overline{\psi_v(x_vy_v)}d\nu_\infty(y_\infty)\right\}. \tag{2.2.4.34}
+\lim_{t\to 1}\frac{1}{t-1}\left\{ \int_{\mathbf{A}_{F,S_\infty}}f_\infty(\gamma_\infty(t)y_\infty)\prod_{v\in S_\infty}\overline{\psi_v(x_vy_v)}\mathrm{d}\nu_\infty(y_\infty)-\int_{\mathbf{A}_{F,S_\infty}}f_\infty(y_\infty)\prod_{v\in S_\infty}\overline{\psi_v(x_vy_v)}\mathrm{d}\nu_\infty(y_\infty)\right\}. \tag{2.2.4.34}
 $$
 
 Upon defining $\psi_\infty:\mathbf{A}_{F,S_\infty}\to\mathrm{U}(1)$ as $\psi_\infty := \prod_{v\in S_\infty}\psi_v$, this limit is the same as
 
 $$
-\lim_{t\to 1}\frac{1}{t-1}\left\{ \lvert\gamma_\infty(t)\rvert_\infty^{-1}\int_{\mathbf{A}_{F,S_\infty}}f_\infty(y_\infty)\prod_{v\in S_\infty}\overline{\psi_\infty(x_\infty\gamma_\infty(t)^{-1}y_\infty)}d\nu_\infty(y_\infty)-\int_{\mathbf{A}_{F,S_\infty}}f_\infty(y_\infty)\prod_{v\in S_\infty}\overline{\psi_v(x_vy_v)}d\nu_\infty(y_\infty)\right\}. \tag{2.2.4.35}
+\lim_{t\to 1}\frac{1}{t-1}\left\{ \lvert\gamma_\infty(t)\rvert_\infty^{-1}\int_{\mathbf{A}_{F,S_\infty}}f_\infty(y_\infty)\prod_{v\in S_\infty}\overline{\psi_\infty(x_\infty\gamma_\infty(t)^{-1}y_\infty)}\mathrm{d}\nu_\infty(y_\infty)-\int_{\mathbf{A}_{F,S_\infty}}f_\infty(y_\infty)\prod_{v\in S_\infty}\overline{\psi_v(x_vy_v)}\mathrm{d}\nu_\infty(y_\infty)\right\}. \tag{2.2.4.35}
 $$
 
 By Lemma 2.2.4.1, we have $\lvert\gamma_\infty(t)\rvert_\infty = \lvert\gamma(t)\rvert_F$ for every $t\in\mathbf{R}_{>0}$, where $\lvert\cdot\rvert_\infty = \prod_{v\in S_\infty}\lvert\cdot\rvert_v$.
@@ -1884,7 +1884,7 @@ The expression in (2.2.4.28) is not well-suited to analyzing sequential continui
 Since
 
 $$
-\frac{\lvert\gamma(t)\rvert_F^{-1}\widehat{f}(\gamma(t)^{-1}x)-\widehat{f}(x)}{t-1} = \int_{\mathbf{A}_F}f(y)\left\{ \frac{\lvert\gamma(t)\rvert_F^{-1}\overline{\psi(\gamma(t)^{-1}xy)}-\overline{\psi(xy)}}{t-1}\right\} d\nu(y) \tag{2.2.4.37}
+\frac{\lvert\gamma(t)\rvert_F^{-1}\widehat{f}(\gamma(t)^{-1}x)-\widehat{f}(x)}{t-1} = \int_{\mathbf{A}_F}f(y)\left\{ \frac{\lvert\gamma(t)\rvert_F^{-1}\overline{\psi(\gamma(t)^{-1}xy)}-\overline{\psi(xy)}}{t-1}\right\} \mathrm{d}\nu(y) \tag{2.2.4.37}
 $$
 
 ## PDF page 94
@@ -1924,7 +1924,7 @@ where $\phi(t) := \psi(\gamma(t^{-1})xy)-\psi(xy) = e^{2\pi i\Lambda(\gamma(t^{-
 We have
 
 $$
-\frac{\phi(t)-\phi(1)}{t-1} = \frac{1}{t-1}\int_1^t\phi'(u)\,du = \int_0^1\phi'(1+u(t-1))\,du.
+\frac{\phi(t)-\phi(1)}{t-1} = \frac{1}{t-1}\int_1^t\phi'(u)\,\mathrm{d}u = \int_0^1\phi'(1+u(t-1))\,\mathrm{d}u.
 $$
 
 We compute (for $v\neq 0$)
@@ -1950,13 +1950,13 @@ where the constant $C'$ is $4C\max_{v\in[1/2,3/2]}\lVert\gamma'(v^{-1})\rVert$.
 It follows that the function from (2.2.4.38) is bounded above by $u(x,y) := 2\pi C'\lVert x\rVert\lVert y\rVert$, and so by Dominated Convergence (since $f\in\mathcal{S}(\mathbf{A}_F)$) applied to the integral in (2.2.4.37), we deduce that we can exchange the order of formation of the limit as $t\to 1$ and of the integral, to obtain
 
 $$
-\lim_{t\to 1}\int_{\mathbf{A}_F}f(y)\left\{ \frac{\lvert\gamma(t)\rvert_F^{-1}\overline{\psi(\gamma(t)^{-1}xy)}-\overline{\psi(xy)}}{t-1}\right\} d\nu(y) = \int_{\mathbf{A}_F}f(y)\lim_{t\to 1}\left\{ \frac{\lvert\gamma(t)\rvert_F^{-1}\overline{\psi(\gamma(t)^{-1}xy)}-\overline{\psi(xy)}}{t-1}\right\} d\nu(y).
+\lim_{t\to 1}\int_{\mathbf{A}_F}f(y)\left\{ \frac{\lvert\gamma(t)\rvert_F^{-1}\overline{\psi(\gamma(t)^{-1}xy)}-\overline{\psi(xy)}}{t-1}\right\} \mathrm{d}\nu(y) = \int_{\mathbf{A}_F}f(y)\lim_{t\to 1}\left\{ \frac{\lvert\gamma(t)\rvert_F^{-1}\overline{\psi(\gamma(t)^{-1}xy)}-\overline{\psi(xy)}}{t-1}\right\} \mathrm{d}\nu(y).
 $$
 
 The right side is finite and it equals
 
 $$
-\int_{\mathbf{A}_F}f(y)\overline{\psi}(xy)\left\{ -\alpha_\gamma+2\pi i\overline{\Lambda(\gamma'(1)xy)}\right\} d\nu(y),
+\int_{\mathbf{A}_F}f(y)\overline{\psi}(xy)\left\{ -\alpha_\gamma+2\pi i\overline{\Lambda(\gamma'(1)xy)}\right\} \mathrm{d}\nu(y),
 $$
 
 (where $\alpha_\gamma$ is the unique real number such that $\lvert\gamma(t)\rvert_F = t^{\alpha_\gamma}$ for all $t\in\mathbf{R}_{>0}$) which is visibly sequentially continuous in $f$.
@@ -1995,7 +1995,7 @@ $$
 by
 
 $$
-\Phi_{F,\omega}(f)(g):=\int_{C_F^1}\Phi_F(f)(hg)\omega(h)\,d\overline{\mu}_1(h) \tag{2.2.5.2}
+\Phi_{F,\omega}(f)(g):=\int_{C_F^1}\Phi_F(f)(hg)\omega(h)\,\mathrm{d}\overline{\mu}_1(h) \tag{2.2.5.2}
 $$
 
 for $f\in\mathcal{S}(\mathbf{A}_F)$ and $g\in C_F$. We refer to $\Phi_{F,\omega}(f)$ as the $\omega$-homogeneous global adelic $\theta$-function of $f$.
@@ -2008,13 +2008,13 @@ continuity is part of Lemma 2.2.5.2(2).
 valued in continuous functions on $C_F$, $\omega$-homogeneous under the left-translation action of $C_F^1$ on $C(C_F)$.
 
 LEMMA 2.2.5.2. *Let $f\in\mathcal{S}(\mathbf{A}_F)$ be a Schwartz-Bruhat function, and $\omega\in\widehat{C_F^1}$ a continuous character.*
-*Then, upon denoting $\widetilde{\omega}:\mathrm{GL}_1(\mathbf{A}_F)^1\to U(1)$ the composition of $\omega$ with the continuous quotient homomorphism*
+*Then, upon denoting $\widetilde{\omega}:\mathrm{GL}_1(\mathbf{A}_F)^1\to \mathrm{U}(1)$ the composition of $\omega$ with the continuous quotient homomorphism*
 $\mathrm{GL}_1(\mathbf{A}_F)^1\to C_F^1$:
 
 (1) *The integral*
 
 $$
-\int_{\mathrm{GL}_1(\mathbf{A}_F)^1}f(hg)\widetilde{\omega}(h)\,d\mu_1(h) \tag{2.2.5.3}
+\int_{\mathrm{GL}_1(\mathbf{A}_F)^1}f(hg)\widetilde{\omega}(h)\,\mathrm{d}\mu_1(h) \tag{2.2.5.3}
 $$
 
 *is absolutely convergent and its formation is continuous as a function of $g\in\mathrm{GL}_1(\mathbf{A}_F)$. The resulting*
@@ -2023,7 +2023,7 @@ $$
 (2) *We have, as functions of $g\in\mathrm{GL}_1(\mathbf{A}_F)$:*
 
 $$
-\Phi_{F,\omega}(f)(g)=\int_{\mathrm{GL}_1(\mathbf{A}_F)^1}f(hg)\widetilde{\omega}(h)\,d\mu_1(h). \tag{2.2.5.4}
+\Phi_{F,\omega}(f)(g)=\int_{\mathrm{GL}_1(\mathbf{A}_F)^1}f(hg)\widetilde{\omega}(h)\,\mathrm{d}\mu_1(h). \tag{2.2.5.4}
 $$
 
 *In particular, $\Phi_{F,\omega}(f)$ is a continuous function on $C_F$.*
@@ -2057,7 +2057,7 @@ Since the measurable function $\sum_{\xi\in F^{\times}}\lvert f(\xi g')\rvert$ o
 series in the right side of (2.2.5.5) convergent uniformly on the compact subsets of $\mathrm{GL}_1(\mathbf{A}_{F,S_\infty})$, the integral
 
 $$
-\int_{C_F^1}\sum_{\xi\in F^{\times}}\lvert f(\xi g')\rvert\,d\overline{\mu}_1(g) \tag{2.2.5.7}
+\int_{C_F^1}\sum_{\xi\in F^{\times}}\lvert f(\xi g')\rvert\,\mathrm{d}\overline{\mu}_1(g) \tag{2.2.5.7}
 $$
 
 where $\overline{\mu}_1$ is the unique Haar measure on $C_F^1$ prescribed by Theorem D.1.2.1 by the choices of the counting
@@ -2067,7 +2067,7 @@ under the canonical isomorphism of abelian topological groups $C_F^1\simeq\mathr
 The integral in (2.2.5.7) equals
 
 $$
-\int_{E_F^1}\sum_{\xi\in F^{\times}}\lvert f(\xi g')\rvert\,d\mu_1(g') \tag{2.2.5.8}
+\int_{E_F^1}\sum_{\xi\in F^{\times}}\lvert f(\xi g')\rvert\,\mathrm{d}\mu_1(g') \tag{2.2.5.8}
 $$
 
 by Proposition D.1.2.4 (see also [Bou-II, INT VII.52,§3,Thm.4(c)], applied to $n=1$, since the action of $F^{\times}$
@@ -2097,9 +2097,9 @@ of $h_0$, and $\widetilde{h}$ of $h\in C_F^1$, and any fixed choice $\chi\in\wid
 
 $$
 \begin{aligned}
-\Phi_{F,\omega}(f)(\widetilde{h}_0^{-1}g)&=\int_{\mathrm{GL}_1(\mathbf{A}_F)^1}f(\widetilde{h}_0^{-1}\widetilde{h}g)\chi(\widetilde{h})\,d\mu_1(\widetilde{h})\\
-&=\chi(\widetilde{h}_0)\int_{\mathrm{GL}_1(\mathbf{A}_F)^1}f(\widetilde{h}g)\chi(\widetilde{h})\,d\mu_1(\widetilde{h})\\
-&=\omega(h_0)\int_{C_F^1}\Phi_F(f)(hg)\omega(h)\,d\overline{\mu}_1(h)\\
+\Phi_{F,\omega}(f)(\widetilde{h}_0^{-1}g)&=\int_{\mathrm{GL}_1(\mathbf{A}_F)^1}f(\widetilde{h}_0^{-1}\widetilde{h}g)\chi(\widetilde{h})\,\mathrm{d}\mu_1(\widetilde{h})\\
+&=\chi(\widetilde{h}_0)\int_{\mathrm{GL}_1(\mathbf{A}_F)^1}f(\widetilde{h}g)\chi(\widetilde{h})\,\mathrm{d}\mu_1(\widetilde{h})\\
+&=\omega(h_0)\int_{C_F^1}\Phi_F(f)(hg)\omega(h)\,\mathrm{d}\overline{\mu}_1(h)\\
 &=\omega(h_0)\Phi_{F,\omega}(f)(g)
 \end{aligned}
 $$
@@ -2203,13 +2203,13 @@ on $g$) for all $t\in[a,b]$, $t\ne 1$. This will justify the use of Dominated Co
 We have the inequality
 
 $$
-\left\lvert\frac{\Phi_F(\gamma(t^{-1})gh)\omega(h)-\Phi_F(gh)\omega(h)}{t-1}\right\rvert\le\sup_{t_0\in[a,b]}\left\lvert\frac{d}{dt}\Phi_F(\gamma(t^{-1})gh)\right\rvert_{t=t_0} \tag{2.2.5.14}
+\left\lvert\frac{\Phi_F(\gamma(t^{-1})gh)\omega(h)-\Phi_F(gh)\omega(h)}{t-1}\right\rvert\le\sup_{t_0\in[a,b]}\left\lvert\frac{\mathrm{d}}{\mathrm{d}t}\Phi_F(\gamma(t^{-1})gh)\right\rvert_{t=t_0} \tag{2.2.5.14}
 $$
 
 with
 
 $$
-\frac{d}{dt}\Phi_F(\gamma(t^{-1})gh)|_{t=t_0}=\frac{1}{t_0}\partial_\gamma\Phi_F(f)(\gamma(t_0^{-1})gh)=\frac{1}{t_0}\Phi_F(\partial_\gamma(f))(\gamma(t_0^{-1})gh) \tag{2.2.5.15}
+\frac{\mathrm{d}}{\mathrm{d}t}\Phi_F(\gamma(t^{-1})gh)|_{t=t_0}=\frac{1}{t_0}\partial_\gamma\Phi_F(f)(\gamma(t_0^{-1})gh)=\frac{1}{t_0}\Phi_F(\partial_\gamma(f))(\gamma(t_0^{-1})gh) \tag{2.2.5.15}
 $$
 
 by Lemma 2.2.4.3. That same lemma gives that $\Phi_F(\partial_\gamma f)$ is continuous over $C_F$. It follows that as $(t_0,h)$
@@ -2315,7 +2315,7 @@ $$
 
 with $f_{k,v}\in\mathcal{S}(F_v)$ for each $v\in S_f$ and $f_{k,\infty}\in\mathcal{S}(\mathbf{A}_{F,S_{\infty}})$ for each $1\le k\le m$, and complex numbers $c_1,\ldots,c_m$, such that $f=\sum_{1\le k\le m}c_kf_k$.
 
-If (1) and (2) hold for each $f_k$, then they hold for $f$ (with different constants $C_N$). We may rename any of the $f_k$ as $f$ and reduce to the case $f=f_{\infty}\otimes\bigotimes_{v\in S_f}f_v$ for $f_{\infty}\in\mathcal{S}(\mathbf{A}_{F,S_{\infty}})$ and $f_v\in\mathcal{S}(F_v)$ for each $v\in S_f$. Without loss of generality, we may assume $f_v=\mathbf{1}_{K_v}$ for each $v\in S_f$, with $K_v$ a compact open subset of $F_v$.
+If (1) and (2) hold for each $f_k$, then they hold for $f$ (with different constants $C_N$). We may rename any of the $f_k$ as $f$ and reduce to the case $f=f_{\infty}\otimes\bigotimes_{v\in S_f}f_v$ for $f_{\infty}\in\mathcal{S}(\mathbf{A}_{F,S_{\infty}})$ and $f_v\in\mathcal{S}(F_v)$ for each $v\in S_f$. Without loss of generality, we may assume $f_v=\mathrm{1}_{K_v}$ for each $v\in S_f$, with $K_v$ a compact open subset of $F_v$.
 
 We choose a continuous homomorphic section $\tau:\mathbf{R}_{>0}\to\mathrm{GL}_1(\mathbf{A}_{F,S})$ to the $S$-idelic norm.
 
@@ -2459,7 +2459,7 @@ In particular, the same ball $B_0\subset\mathbf{A}_{F,S_\infty}$ qualifies to gi
 
 We have now shown that (2.3.1.3) holds for each $f$ of the special form $f_\infty\prod_{w\in S_f}f_w$ with $f_\infty\in\mathcal{B}_\infty$ and $f_w\in\mathcal{B}_w$ for each $w\in S_f$, with $C_N$ and $T_N$ existing and depending only on $\mathcal{B}_\infty$ and $\bigotimes_{w\in S_f}\mathcal{B}_w$.
 
-By linearity of $\Phi_{F,S}$ and the design of the convex circled hull (see [Jar, Part I,Ch.6,§6.1,p.102] for $r=1$; see also [NB, Thm.4.2.11]), the estimate in (2.3.1.3) propagates with the same $C_N$ and $T_N$ to the elements of $\mathrm{cch}(\mathcal{B}_\infty\otimes\bigotimes_{w\in S_f}\mathcal{B}_w)$, and hence to all the elements of the bounded subset $\mathcal{B}$. We rename $C_N$ as $C_{B,N}$, and $T_N$ as $T_{B,N}$, and these constants satisfy the requirements of (3).
+By linearity of $\Phi_{F,S}$ and the design of the convex circled hull (see [Jar, Part I,Ch.6,§6.1,p.102] for $r=1$; see also [NB, Thm.4.2.11]), the estimate in (2.3.1.3) propagates with the same $C_N$ and $T_N$ to the elements of $\mathrm{cch}(\mathcal{B}_\infty\otimes\bigotimes_{w\in S_f}\mathcal{B}_w)$, and hence to all the elements of the bounded subset $\mathcal{B}$. We rename $C_N$ as $C_{\mathcal{B},N}$, and $T_N$ as $T_{\mathcal{B},N}$, and these constants satisfy the requirements of (3).
 
 (4) : The estimate in (2.3.1.4) holds for any $g\in\mathrm{GL}_1(\mathbf{A}_{F,S})$, and hence, upon choosing a continuous homomorphic section $\tau$ to the $S$-idelic norm, it holds on $\tau(\mathbf{R}_{>0})\cdot E^1_{F,S}$, where $E^1_{F,S}$ is the $S$-idelic fundamental domain from (A.2.4.4), for the continuous left-translation action of the $S$-units $\mathcal{O}_{F,S}^{\times}$ on $\mathrm{GL}_1(\mathbf{A}_{F,S})^1$.
 

@@ -67,7 +67,7 @@ Definition 12.1.1.1. Let $G$ be a Hausdorff locally compact abelian group. Assum
 Let $\phi\in L^1_{\mathrm{loc}}(G,\mu_G)$ be a locally $\mu_G$-integrable complex-valued function on $G$. We define the smoothening of $\phi$ to be the function defined as:
 
 $$
-\widetilde{\phi}(x) := \lim_{k\to +\infty}\frac{1}{\mu_G(U_k)}\int_{xU_k}\phi(y)\,d\mu_G(y) \tag{12.1.1.1}
+\widetilde{\phi}(x) := \lim_{k\to +\infty}\frac{1}{\mu_G(U_k)}\int_{xU_k}\phi(y)\,\mathrm{d}\mu_G(y) \tag{12.1.1.1}
 $$
 
 at each point $x\in G$ at which the limit in (12.1.1.1) exists and is finite, and zero elsewhere.
@@ -100,23 +100,23 @@ Theorem 12.1.1.2. Let $G$ be a Hausdorff locally compact abelian group. Assume $
 
 Let $\lambda$ be a Radon measure on $G$ such that there exists a locally $\mu_G$-integrable function $f\colon G\to\mathbf R_{\ge 0}$ satisfying $\lambda = f\mu_G$ as Radon measures on $G$. Assume $f$ is continuous and nowhere vanishing on $G$.
 
-Let $T\in L_\beta(L^2(G,\lambda))$ be a nuclear operator, and $k\in L^2(G\times G,\lambda\otimes\lambda)$ a choice of representative for the Hilbert-Schmidt kernel of $T$.
+Let $T\in \mathscr{L}_\beta(L^2(G,\lambda))$ be a nuclear operator, and $k\in L^2(G\times G,\lambda\otimes\lambda)$ a choice of representative for the Hilbert-Schmidt kernel of $T$.
 
 Then, $\mu_G$-almost all points $(x,x)\in G\times G$ are regular for $k$.
 
 (1) The function $\widetilde{k}(x,y)$ is a representative for the Hilbert-Schmidt kernel of $T$, and it is defined at $\mu_G$-almost all points of the diagonal in $G\times G$. The function $\widetilde{k}(x,x)$ of $x\in G$ is absolutely $\lambda$-integrable. We have:
 
 $$
-\int_G \widetilde{k}(x,x)\,d\lambda(x) = \mathrm{Trace}(T). \tag{12.1.1.2}
+\int_G \widetilde{k}(x,x)\,\mathrm{d}\lambda(x) = \mathrm{Trace}(T). \tag{12.1.1.2}
 $$
 
 (2) Let $\rho\in C_c(G)$, and $M_\rho$ the corresponding multiplication operator on $L^2(G,\lambda)$. The smoothening of $\rho(x)k(x,y)$ is $\rho(x)\widetilde{k}(x,y)$, and both functions are representatives for the Hilbert-Schmidt kernel of the operator $M_\rho\circ T$ on $L^2(G,\lambda)$. If $\rho\in L^\infty(G,\lambda)$, then the function $\rho(x)\widetilde{k}(x,y)$ is a representative for the Hilbert-Schmidt kernel of the operator $M_\rho\circ T$, and we have:
 
 $$
-\int_G \rho(x)\widetilde{k}(x,x)\,d\lambda(x) = \mathrm{Trace}(M_\rho\circ T). \tag{12.1.1.3}
+\int_G \rho(x)\widetilde{k}(x,x)\,\mathrm{d}\lambda(x) = \mathrm{Trace}(M_\rho\circ T). \tag{12.1.1.3}
 $$
 
-(3) For each integer $m\ge 0$, let $T_m\in L_\beta(L^2(G,\lambda))$ be a finite rank operator, such that the sequence $\{T_m\}_{m\ge 0}$ converges in $S_p(L^2(G,\lambda))$ for $p = 1,2$, to $T$. Let $k_m\in L^2(G\times G,\lambda\otimes\lambda)$ be a choice of representative for the Hilbert-Schmidt kernel of $T_m$.
+(3) For each integer $m\ge 0$, let $T_m\in \mathscr{L}_\beta(L^2(G,\lambda))$ be a finite rank operator, such that the sequence $\{T_m\}_{m\ge 0}$ converges in $S_p(L^2(G,\lambda))$ for $p = 1,2$, to $T$. Let $k_m\in L^2(G\times G,\lambda\otimes\lambda)$ be a choice of representative for the Hilbert-Schmidt kernel of $T_m$.
 
 Then $k_m\to k$ and $\widetilde{k}_m\to\widetilde{k}$ in $L^2(G\times G,\lambda\otimes\lambda)$, and $\widetilde{k}_m(x,x)\to\widetilde{k}(x,x)$ weakly in $L^1(G,\lambda)$.
 
@@ -129,7 +129,7 @@ $$
 where $\lambda^\vee$ is the Radon measure $(1/f)\mu_G$, defined by:
 
 $$
-\langle\phi,\psi\rangle_\lambda := \int_G \phi(x)\psi(x)\,d\mu_G(x). \tag{12.1.1.5}
+\langle\phi,\psi\rangle_\lambda := \int_G \phi(x)\psi(x)\,\mathrm{d}\mu_G(x). \tag{12.1.1.5}
 $$
 
 We define:
@@ -138,7 +138,7 @@ $$
 k_N(x,y) := \sum_{0\le m\le N}\frac{(T'\theta_m)(y)}{f(y)}\phi_m(x) \tag{12.1.1.6}
 $$
 
-where $T'\in L_\beta(L^2(G,\lambda^\vee))$ is the adjoint of $T$ with respect to the duality $\langle L^2(G,\lambda),L^2(G,\lambda^\vee)\rangle_\lambda$.
+where $T'\in \mathscr{L}_\beta(L^2(G,\lambda^\vee))$ is the adjoint of $T$ with respect to the duality $\langle L^2(G,\lambda),L^2(G,\lambda^\vee)\rangle_\lambda$.
 
 Then $k_N\to k$ and $\widetilde{k}_N\to\widetilde{k}$ in $L^2(G\times G,\lambda\otimes\lambda)$, and $\widetilde{k}_N(x,x)\to\widetilde{k}(x,x)$ weakly in $L^1(G,\lambda)$.
 
@@ -189,7 +189,7 @@ $$
 Indeed, for any $\phi\in L^2(G,\mu_G)$, we have:
 
 $$
-\int_G k'(x,y)\phi(y)\,d\mu_G(y) = f(x)^{1/2}\int_G k(x,y)f(y)^{1/2}\phi(y)\,d\mu_G(y) = f(x)^{1/2}\int_G k(x,y)f(y)^{-1/2}\phi(y)\,d\lambda(y) \tag{12.1.1.11}
+\int_G k'(x,y)\phi(y)\,\mathrm{d}\mu_G(y) = f(x)^{1/2}\int_G k(x,y)f(y)^{1/2}\phi(y)\,\mathrm{d}\mu_G(y) = f(x)^{1/2}\int_G k(x,y)f(y)^{-1/2}\phi(y)\,\mathrm{d}\lambda(y) \tag{12.1.1.11}
 $$
 
 for $\mu_G$-almost all $x\in G$, and the rightmost side of (12.1.1.11) reads $J_f(TJ_f^{-1}(\phi))$.
@@ -212,32 +212,32 @@ using the strong $(2,2)$ inequality from (A.5.3.18)), the argument for (1) is no
 
 (2) : We first assume $\rho\in C_c(G)$. Since $\rho(x)k(x,y)$ is a representative function for the Hilbert-Schmidt kernel of $M_\rho\circ T$ on $L^2(G,\lambda)$, and $\widetilde{k}(x,y)$ equals $k(x,y)$ on $(\mu_G\otimes\mu_G)$-almost every point, we have $k(x,y) = \widetilde{k}(x,y)$ also $(\lambda\otimes\lambda)$-almost everywhere, since $\lambda$ and $\mu_G$ have the same null sets (indeed, both $\lambda$ and $\mu_G$ are $\sigma$-finite Radon measures on $G$ since $G$ is second countable, and $f$ is the Radon-Nikodym derivative of $\lambda$ with respect to $\mu_G$. Since it is nowhere vanishing, $\lambda$ and $\mu_G$ are equivalent: a subset $A\subset G$ is $\mu_G$-measurable if and only if it is $\lambda$-measurable, and $\mu_G(A) = \int_A f(x)\,\mu_G(x) = 0$ if and only if $1_A(x)f(x) = 0$ for $\mu_G$-almost all $x\in A$, which forces $\mu_G(A) = 0$).
 
-It follows that we have $\rho(x)\int_G \widetilde{k}(x,y)\phi(y)\,d\lambda(y) = \rho(x)\int_G k(x,y)\phi(y)\,d\lambda(y) = (M_\rho\circ T\phi)(x)$ for $\lambda$-almost all $x\in G$, which shows that $\rho(x)\widetilde{k}(x,y)$ is another representative function for the Hilbert-Schmidt kernel of $M_\rho\circ T$. We write $k_\rho(x,y) := \rho(x)k(x,y)$, and compute $\widetilde{k}_\rho(x,y)$. Upon showing that we have, for $\mu_G$-almost all $x\in G$, $\widetilde{k}_\rho(x,x) = \rho(x)\widetilde{k}(x,x)$, then the same identity holds for $\lambda$-almost all $x\in G$, and then (12.1.1.3) follows from (12.1.1.2) of (1).
+It follows that we have $\rho(x)\int_G \widetilde{k}(x,y)\phi(y)\,\mathrm{d}\lambda(y) = \rho(x)\int_G k(x,y)\phi(y)\,\mathrm{d}\lambda(y) = (M_\rho\circ T\phi)(x)$ for $\lambda$-almost all $x\in G$, which shows that $\rho(x)\widetilde{k}(x,y)$ is another representative function for the Hilbert-Schmidt kernel of $M_\rho\circ T$. We write $k_\rho(x,y) := \rho(x)k(x,y)$, and compute $\widetilde{k}_\rho(x,y)$. Upon showing that we have, for $\mu_G$-almost all $x\in G$, $\widetilde{k}_\rho(x,x) = \rho(x)\widetilde{k}(x,x)$, then the same identity holds for $\lambda$-almost all $x\in G$, and then (12.1.1.3) follows from (12.1.1.2) of (1).
 
 We have, for $(\mu_G\otimes\mu_G)$-almost every $(x,y)\in G\times G$ (in fact, for any regular point $(x,y)\in G\times G$ for $k$):
 
 $$
-\widetilde{k}_\rho(x,y) = \lim_{k\to +\infty}\frac{1}{\mu_G(U_k)^2}\int_{xU_k\times yU_k}\rho(x')k(x',y')\,d(\mu_G\otimes\mu_G)(x',y') = \rho(x)\widetilde{k}(x,y) \tag{12.1.1.13}
+\widetilde{k}_\rho(x,y) = \lim_{k\to +\infty}\frac{1}{\mu_G(U_k)^2}\int_{xU_k\times yU_k}\rho(x')k(x',y')\,\mathrm{d}(\mu_G\otimes\mu_G)(x',y') = \rho(x)\widetilde{k}(x,y) \tag{12.1.1.13}
 $$
 
-using Lemma A.5.2.5(1) to deduce that $\{U_k\times U_k\}_{k\ge 0}$ is a $D'$-sequence for $G\times G$. Indeed, by Corollary A.5.4.3, the limit in (12.1.1.13) exists and is finite exactly at the points at which the limit of the sequence $\{\mu_G(U_k)^{-2}\int_{xU_k\times yU_k}k(x',y')\,d(\mu_G\otimes\mu_G)(x',y')\}_{k\ge 0}$ does, and its value is $\rho(x)\widetilde{k}(x,y)$.
+using Lemma A.5.2.5(1) to deduce that $\{U_k\times U_k\}_{k\ge 0}$ is a $D'$-sequence for $G\times G$. Indeed, by Corollary A.5.4.3, the limit in (12.1.1.13) exists and is finite exactly at the points at which the limit of the sequence $\{\mu_G(U_k)^{-2}\int_{xU_k\times yU_k}k(x',y')\,\mathrm{d}(\mu_G\otimes\mu_G)(x',y')\}_{k\ge 0}$ does, and its value is $\rho(x)\widetilde{k}(x,y)$.
 
-Let $\rho\in L^\infty(G,\lambda)$ be arbitrary, and by [Fol, Thm.2.10(b)], we choose a sequence $\{\rho_m\}_{m\ge 0}\subset A(G)$, the $\mathbf C$-algebra of simple functions on $G$ with complex coefficients, such that $\rho_m\to\rho$ in $L^\infty(G,\lambda)$. Then $M_{\rho_m}\to M_\rho$ with respect to the strong operator topology on $L(L^2(G,\lambda))$ (in fact, with respect to the operator-norm topology, by [Cnw-a, Ch.II, §1, Thm.1.5, p.28]), and hence $M_{\rho_m}\circ T\to M_\rho\circ T$ in $S_p(L^2(G,\lambda))$ for $p = 1,2$ by Lemma C.3.4.4.
+Let $\rho\in L^\infty(G,\lambda)$ be arbitrary, and by [Fol, Thm.2.10(b)], we choose a sequence $\{\rho_m\}_{m\ge 0}\subset A(G)$, the $\mathbf C$-algebra of simple functions on $G$ with complex coefficients, such that $\rho_m\to\rho$ in $L^\infty(G,\lambda)$. Then $M_{\rho_m}\to M_\rho$ with respect to the strong operator topology on $\mathscr{L}(L^2(G,\lambda))$ (in fact, with respect to the operator-norm topology, by [Cnw-a, Ch.II, §1, Thm.1.5, p.28]), and hence $M_{\rho_m}\circ T\to M_\rho\circ T$ in $S_p(L^2(G,\lambda))$ for $p = 1,2$ by Lemma C.3.4.4.
 
-We may therefore assume $\rho = 1_E$ for $E$ a $\lambda$-measurable subset of $G$. We now let $\{K_n\}_{n\ge 0}$ be an exhaustion by compact subsets of $G$, and call $E_n := E\cap K_n$. Then $1_{E_n}\to 1_E$ pointwise $\lambda$-almost everywhere, and hence so does $1_{E_n}(x)\widetilde{k}(x,x)$. It follows that $M_{1_{E_n}}\to M_{1_E}$ as $n\to +\infty$ with respect to the strong operator topology on $L(L^2(G,\lambda))$, and by Lemma C.3.4.4 we have $M_{1_{E_n}}\circ T\to M_{1_E}\circ T$ in $S_p(L^2(G,\lambda))$ for $p = 1,2$.
+We may therefore assume $\rho = 1_E$ for $E$ a $\lambda$-measurable subset of $G$. We now let $\{K_n\}_{n\ge 0}$ be an exhaustion by compact subsets of $G$, and call $E_n := E\cap K_n$. Then $1_{E_n}\to 1_E$ pointwise $\lambda$-almost everywhere, and hence so does $1_{E_n}(x)\widetilde{k}(x,x)$. It follows that $M_{1_{E_n}}\to M_{1_E}$ as $n\to +\infty$ with respect to the strong operator topology on $\mathscr{L}(L^2(G,\lambda))$, and by Lemma C.3.4.4 we have $M_{1_{E_n}}\circ T\to M_{1_E}\circ T$ in $S_p(L^2(G,\lambda))$ for $p = 1,2$.
 
 By Dominated Convergence, we may assume $\rho = 1_{E_n}$, the indicator function of a $\lambda$-measurable subset of $G$ of finite $\lambda$-measure. There now exists a sequence $\{\rho_m\}_{m\ge 0}\subset C_c(G)$ such that $\rho_m$ is real valued, nonnegative and bounded above by $1$ for every integer $m\ge 0$, and $\rho_m\to\rho$ pointwise $\lambda$-almost everywhere, and in fact in $L^p(G,\lambda)$ for every (finite) $p\ge 1$.
 
 By the foregoing, we have:
 
 $$
-\int_G \rho_m(x)\widetilde{k}(x,x)\,d\lambda(x) = \mathrm{Trace}(M_{\rho_m}\circ T) \tag{12.1.1.14}
+\int_G \rho_m(x)\widetilde{k}(x,x)\,\mathrm{d}\lambda(x) = \mathrm{Trace}(M_{\rho_m}\circ T) \tag{12.1.1.14}
 $$
 
 for every integer $m\ge 0$, and since $\widetilde{k}$ is $\lambda$-absolutely integrable over $G$, we have:
 
 $$
-\int_G \rho_m(x)\widetilde{k}(x,x)\,d\lambda(x)\to\int_G \rho(x)\widetilde{k}(x,x)\,d\lambda(x) \tag{12.1.1.15}
+\int_G \rho_m(x)\widetilde{k}(x,x)\,\mathrm{d}\lambda(x)\to\int_G \rho(x)\widetilde{k}(x,x)\,\mathrm{d}\lambda(x) \tag{12.1.1.15}
 $$
 
 as $m\to +\infty$, by Dominated Convergence.
@@ -250,12 +250,12 @@ We deduce that (12.1.1.3) holds.
 
 (3) : Since $S_2(L^2(G,\lambda))$ is isometrically isomorphic to $L^2(G\times G,\lambda\otimes\lambda)$, the isometry sending $T_m$ to the class of $k_m$ and $T$ to the class of $k$, we deduce that $T_m\to T$ implies (and is implied by) $k_m\to k$ in $L^2(G\times G,\lambda\otimes\lambda)$, and since, $(\lambda\otimes\lambda)$-almost everywhere on $G\times G$, we have $k_m = \widetilde{k}_m$ and $k = \widetilde{k}$, we deduce that we have $\widetilde{k}_m\to\widetilde{k}$ in $L^2(G\times G,\lambda\otimes\lambda)$.
 
-We let $\rho\in L^\infty(G,\lambda)$ be a $\lambda$-essentially bounded, equivalently $\mu_G$-essentially bounded, measurable complex valued function on $G$, and $M_\rho\in L_\beta(L^2(G,\lambda))$ the resulting multiplication operator.
+We let $\rho\in L^\infty(G,\lambda)$ be a $\lambda$-essentially bounded, equivalently $\mu_G$-essentially bounded, measurable complex valued function on $G$, and $M_\rho\in \mathscr{L}_\beta(L^2(G,\lambda))$ the resulting multiplication operator.
 
 By Lemma C.3.4.4, $M_\rho\circ T_m\to M_\rho\circ T$ in $S_p(L^2(G,\lambda))$ for $p = 1,2$, and by (2), we deduce from (12.1.1.3) that we have, as $m\to +\infty$:
 
 $$
-\int_G \rho(x)\widetilde{k}_m(x,x)\,d\lambda(x) = \mathrm{Trace}(M_\rho\circ T_m)\to\mathrm{Trace}(M_\rho\circ T) = \int_G \rho(x)\widetilde{k}(x,x)\,d\lambda(x). \tag{12.1.1.16}
+\int_G \rho(x)\widetilde{k}_m(x,x)\,\mathrm{d}\lambda(x) = \mathrm{Trace}(M_\rho\circ T_m)\to\mathrm{Trace}(M_\rho\circ T) = \int_G \rho(x)\widetilde{k}(x,x)\,\mathrm{d}\lambda(x). \tag{12.1.1.16}
 $$
 
 This means that $\widetilde{k}_m(x,x)\to\widetilde{k}(x,x)$ weakly in $L^1(G,\lambda)$.
@@ -269,24 +269,24 @@ $$
 and observe that we have, upon defining $T_N := P_N\circ T$:
 
 $$
-T_N(\phi)(x) = \int_G k_N(x,y)\phi(y)\,d\lambda(y) \tag{12.1.1.18}
+T_N(\phi)(x) = \int_G k_N(x,y)\phi(y)\,\mathrm{d}\lambda(y) \tag{12.1.1.18}
 $$
 
 for $\lambda$-almost all $x\in G$. Indeed, we have:
 
 $$
-T_N(\phi)(x) = \sum_{0\le m\le N}\langle\theta_m,T\phi\rangle_\lambda\,\phi_m(x) = \sum_{0\le m\le N}\langle T'\theta_m,\phi\rangle_\lambda\,\phi_m = \sum_{0\le m\le N}\int_G (T'\theta_m)(y)\phi(y)\,d\lambda(y)\,\phi_m(x) \tag{12.1.1.19}
+T_N(\phi)(x) = \sum_{0\le m\le N}\langle\theta_m,T\phi\rangle_\lambda\,\phi_m(x) = \sum_{0\le m\le N}\langle T'\theta_m,\phi\rangle_\lambda\,\phi_m = \sum_{0\le m\le N}\int_G (T'\theta_m)(y)\phi(y)\,\mathrm{d}\lambda(y)\,\phi_m(x) \tag{12.1.1.19}
 $$
 
 for $\lambda$-almost all $x\in G$. We deduce that (12.1.1.18) holds.
 
-Since $\{\phi_m\}_{m\ge 0}$ is a simple, normalized Schauder basis, then $\{P_N\}_{N\ge 0}\subset L_\beta(L^2(G,\lambda))$ is a bounded subset, and $P_N\to\mathrm{Id}$ with respect to the strong operator topology. By Proposition C.3.6.5, $T_N\to T$ in $S_p(L^2(G,\lambda))$ for $p = 1,2$. (4) therefore follows from (3).
+Since $\{\phi_m\}_{m\ge 0}$ is a simple, normalized Schauder basis, then $\{P_N\}_{N\ge 0}\subset \mathscr{L}_\beta(L^2(G,\lambda))$ is a bounded subset, and $P_N\to\mathrm{Id}$ with respect to the strong operator topology. By Proposition C.3.6.5, $T_N\to T$ in $S_p(L^2(G,\lambda))$ for $p = 1,2$. (4) therefore follows from (3).
 
 $\square$
 
-By Theorem A.5.4.1, $\widetilde{\phi}$ agrees with $\phi$ on a $\mu_G$-measurable subset $L_\phi$ of $G$ whose complement is $\mu_G$-negligible. $L_\phi$ is termed the Lebesgue set of $\phi$ (see Remark A.5.4.2). By Theorem A.5.4.1(2), the subset of $G$ of the points of continuity of $\phi$ (i.e. those points $x\in G$ such that there exists a neighborhood $V\subset G$ of $x$ in $G$ such that $\phi|_V$ is continuous) is included in $L_\phi$.
+By Theorem A.5.4.1, $\widetilde{\phi}$ agrees with $\phi$ on a $\mu_G$-measurable subset $\mathcal{L}_\phi$ of $G$ whose complement is $\mu_G$-negligible. $\mathcal{L}_\phi$ is termed the Lebesgue set of $\phi$ (see Remark A.5.4.2). By Theorem A.5.4.1(2), the subset of $G$ of the points of continuity of $\phi$ (i.e. those points $x\in G$ such that there exists a neighborhood $V\subset G$ of $x$ in $G$ such that $\phi|_V$ is continuous) is included in $\mathcal{L}_\phi$.
 
-The set of points of $G$ at which the limit in (12.1.1.1) defining the smoothening of a locally $\mu_G$-integrable function $\phi$ exists, may be larger than the Lebesgue set $L_\phi$. We will be applying the smoothening construction to representative functions of the Hilbert-Schmidt kernel of a nuclear operator on an $L^2$-space of $G$, and while the Lebesgue set of such function may not contain the diagonal of $G\times G$ (which is a null set with respect to the product measure $\mu_G\otimes\mu_G$), the smoothening may still be defined over the diagonal, and it is under the assumptions of Theorem A.5.4.1.
+The set of points of $G$ at which the limit in (12.1.1.1) defining the smoothening of a locally $\mu_G$-integrable function $\phi$ exists, may be larger than the Lebesgue set $\mathcal{L}_\phi$. We will be applying the smoothening construction to representative functions of the Hilbert-Schmidt kernel of a nuclear operator on an $L^2$-space of $G$, and while the Lebesgue set of such function may not contain the diagonal of $G\times G$ (which is a null set with respect to the product measure $\mu_G\otimes\mu_G$), the smoothening may still be defined over the diagonal, and it is under the assumptions of Theorem A.5.4.1.
 
 Theorem 12.1.1.3 (Localization along the global diagonal). Let $F$ be a number field, $a,s,\Lambda$ real numbers, $s\ge 3$ and $a,\Lambda,\varepsilon > 0$. Assume $0 < 1/\Lambda+\varepsilon < \Lambda-\varepsilon$. Let $\varphi\in\mathcal D(C_F)$ be a test function.
 
@@ -295,7 +295,7 @@ Theorem 12.1.1.3 (Localization along the global diagonal). Let $F$ be a number f
 (2) Let $\rho\in\mathcal D(C_F)$ be a $(\Lambda,\varepsilon)$-cutoff. We have:
 
 $$
-\mathrm{Trace}\,(P^{\mathrm{geom}}_{\rho,a}\circ A(\varphi)) = \int_{C_F}\rho(x)\widetilde{k}^{\mathrm{geom}}_{\varphi,a,s}(x,x)\,d\overline{\mu}(x) \tag{12.1.1.20}
+\mathrm{Trace}\,(P^{\mathrm{geom}}_{\rho,a}\circ A(\varphi)) = \int_{C_F}\rho(x)\widetilde{k}^{\mathrm{geom}}_{\varphi,a,s}(x,x)\,\mathrm{d}\overline{\mu}(x) \tag{12.1.1.20}
 $$
 
 ## PDF page 503
@@ -305,13 +305,13 @@ $$
 and:
 
 $$
-\mathrm{Trace}\,(P^{\mathrm{spec}}_a\circ A(\varphi)) = \int_{C_F}\widetilde{k}^{\mathrm{spec}}_{\varphi,a,s}(x,x)\,d\overline{\mu}(x). \tag{12.1.1.21}
+\mathrm{Trace}\,(P^{\mathrm{spec}}_a\circ A(\varphi)) = \int_{C_F}\widetilde{k}^{\mathrm{spec}}_{\varphi,a,s}(x,x)\,\mathrm{d}\overline{\mu}(x). \tag{12.1.1.21}
 $$
 
 (3) Assume $\varphi(1) = 0$. Then $\widetilde{k}^{\mathrm{geom}}_{\varphi,a,s}(x,x)$ is absolutely $\overline{\mu}$-integrable over $C_F$, and we have:
 
 $$
-\lim_{\Lambda\to +\infty,\varepsilon\Lambda = o(1)}\mathrm{Trace}\,(P^{\mathrm{geom}}_{\rho,a}\circ A(\varphi)) = \int_{C_F}\widetilde{k}^{\mathrm{geom}}_{\varphi,a,s}(x,x)\,d\overline{\mu}(x). \tag{12.1.1.22}
+\lim_{\Lambda\to +\infty,\varepsilon\Lambda = o(1)}\mathrm{Trace}\,(P^{\mathrm{geom}}_{\rho,a}\circ A(\varphi)) = \int_{C_F}\widetilde{k}^{\mathrm{geom}}_{\varphi,a,s}(x,x)\,\mathrm{d}\overline{\mu}(x). \tag{12.1.1.22}
 $$
 
 Proof. (1) : By Theorem 12.1.1.2, Theorem 10.4.3.4 and Theorem 10.4.2.1, $\overline{\mu}$-almost all points of the diagonal in $C_F\times C_F$ is a regular point for $k^{\mathrm{spec}}_{\varphi,a,s}$. Since $\varphi(xy^{-1})$ is continuous over $C_F\times C_F$, by Theorem A.5.4.1(2) every point of $C_F\times C_F$ is a regular point, and hence $\overline{\mu}$-almost all points of the diagonal in $C_F\times C_F$ is regular for $k^{\mathrm{geom}}_{\varphi,a,s} = \varphi(xy^{-1})-k^{\mathrm{spec}}_{\varphi,a,s}$.
@@ -333,7 +333,7 @@ and by Theorem 10.4.3.1(4), the rightmost side of (12.1.1.23) is absolutely $\ov
 Since $\rho\to 1$ as $\Lambda\to +\infty$ in the regime $\varepsilon\Lambda = o(1)$, as continuous uniformly bounded (by $1$) functions on $C_F$, then $\rho(x)\,\widetilde{k}^{\mathrm{geom}}_{\varphi,a,s}(x,x)\to\widetilde{k}^{\mathrm{geom}}_{\varphi,a,s}(x,x)$ pointwise $\overline{\mu}$-almost everywhere over $C_F$. Since $|\rho(x)\,\widetilde{k}^{\mathrm{geom}}_{\varphi,a,s}(x,x)|\le |\widetilde{k}^{\mathrm{geom}}_{\varphi,a,s}(x,x)|$ for $\overline{\mu}$-almost all $x\in C_F$, by Dominated Convergence we deduce that we have:
 
 $$
-\lim_{\Lambda\to +\infty,\varepsilon\Lambda = o(1)}\int_{C_F}\rho(x)\widetilde{k}^{\mathrm{geom}}_{\varphi,a,s}(x,x)\,d\overline{\mu}(x) = \int_{C_F}\widetilde{k}^{\mathrm{geom}}_{\varphi,a,s}(x,x)\,d\overline{\mu}(x). \tag{12.1.1.24}
+\lim_{\Lambda\to +\infty,\varepsilon\Lambda = o(1)}\int_{C_F}\rho(x)\widetilde{k}^{\mathrm{geom}}_{\varphi,a,s}(x,x)\,\mathrm{d}\overline{\mu}(x) = \int_{C_F}\widetilde{k}^{\mathrm{geom}}_{\varphi,a,s}(x,x)\,\mathrm{d}\overline{\mu}(x). \tag{12.1.1.24}
 $$
 
 By (10.4.3.32) and Theorem 12.1.1.2(1), the leftmost side of (12.1.1.24) equals $\lim_{\Lambda\to +\infty,\varepsilon\Lambda = o(1)}\mathrm{Trace}\,(P^{\mathrm{geom}}_{\rho,a}\circ A(\varphi))$ and so (10.4.3.31) holds.
@@ -376,7 +376,7 @@ Under these assumptions, for any element $\varphi\in L^p(X,\mu)$, there exists a
 
 Any element in $L^p(X,\mu)$ is, recall, an equivalence class of Lebesgue measurable functions on $X$, the equivalence relation being equality away from $\mu$-null subsets of $X$.
 
-In light of [Fol, Prop.7.9], $L^p(X,\mu)$ is also obtained as the norm-completion of $C_c(X)$ with respect to the seminormed topology induced by the $L^p$-seminorm (in fact a norm) on $C_c(X)$, i.e. $||f||_p:=\left(\int_X|f(x)|^p\,d\mu(x)\right)^{1/p}$.
+In light of [Fol, Prop.7.9], $L^p(X,\mu)$ is also obtained as the norm-completion of $C_c(X)$ with respect to the seminormed topology induced by the $L^p$-seminorm (in fact a norm) on $C_c(X)$, i.e. $||f||_p:=\left(\int_X|f(x)|^p\,\mathrm{d}\mu(x)\right)^{1/p}$.
 
 Both perspectives on the elements of $L^p(X,\mu)$ will be used below.
 
@@ -407,7 +407,7 @@ LEMMA 12.2.1.1. *Let $G$ be a second countable Hausdorff locally compact abelian
 *(3) For all $x\in G$, the integral:*
 
 $$
-\int_H u_0(h^{-1}x)\,d\mu_H(h) \tag{12.2.1.2}
+\int_H u_0(h^{-1}x)\,\mathrm{d}\mu_H(h) \tag{12.2.1.2}
 $$
 
 *converges, and upon denoting $u^H_0$ its value function on $G$, we have that $u^H_0$ is continuous on $G$, invariant under the continuous left-translation action by $H$ on $G$, and identically $1$ as a function on $G/H$.*
@@ -415,28 +415,28 @@ $$
 *For every continuous function $u\in C(G/H)$, we have that for all $x\in G$, the integral*
 
 $$
-\int_H (u_0\cdot (u\circ\pi))(h^{-1}x)\,d\mu_H(h) \tag{12.2.1.3}
+\int_H (u_0\cdot (u\circ\pi))(h^{-1}x)\,\mathrm{d}\mu_H(h) \tag{12.2.1.3}
 $$
 
 *converges, and its value is $u(\pi(x))$.*
 
-PROOF. (1) : Since $G$ is second countable and $H\subset G$ is closed, $\pi$ is open and $G/H$ is Hausdorff locally compact, and hence second countable. As such, it is paracompact. We choose a locally finite countable open cover $\{U_k\}_{k=0}^\infty$ of $G/H$, and consider the induced open cover $\{\pi^{-1}U_k\}_{k=0}^\infty$ on $G$, also locally finite. We choose a partition of unity $\{\varphi_k\}_{k=0}^\infty$ on $G/H$ subordinate to $\{U_k\}_{k=0}^\infty$, calling $S_k\subset U_k$ the compact support of $\varphi_k$ for each integer $k\ge 0$.
+PROOF. (1) : Since $G$ is second countable and $H\subset G$ is closed, $\pi$ is open and $G/H$ is Hausdorff locally compact, and hence second countable. As such, it is paracompact. We choose a locally finite countable open cover $\{U_k\}_{k\ge 0}$ of $G/H$, and consider the induced open cover $\{\pi^{-1}U_k\}_{k\ge 0}$ on $G$, also locally finite. We choose a partition of unity $\{\rho_k\}_{k\ge 0}$ on $G/H$ subordinate to $\{U_k\}_{k\ge 0}$, calling $S_k\subset U_k$ the compact support of $\rho_k$ for each integer $k\ge 0$.
 
-For each integer $k\ge 0$, there exists, by [DE, Lemma 1.5.1], a continuous compactly supported function $\tilde\varphi_k$ on $G$ whose support $\tilde S_k$ satisfies $\tilde S_k\subset \pi^{-1}(U_k)$, and $S_k\subset \pi(\tilde S_k)$ (this last containment follows from the proof of [DE, Lemma 1.5.1]).
+For each integer $k\ge 0$, there exists, by [DE, Lemma 1.5.1], a continuous compactly supported function $\rho'_k$ on $G$ whose support $S'_k$ satisfies $S'_k\subset \pi^{-1}(U_k)$, and $S_k\subset \pi(S'_k)$ (this last containment follows from the proof of [DE, Lemma 1.5.1]).
 
-The sum $f:=\sum_{k=0}^\infty\tilde\varphi_k$ converges pointwise on $G$ to a continuous real-valued nonnegative function that is not identically zero on any orbit of the continuous left-translation action of $H$ on $G$. Indeed, since $\{U_k\}_{k=0}^\infty$ is locally finite, for each $x\in G$ there exists an open neighborhood $U_x$ of $x$ in $G$ that intersects non-trivially at most a finite number of the $U_k$'s, say $U_{k_1},\ldots,U_{k_N}$, and hence for every $y\in U_x$ we have $\tilde\varphi_k(y)\ne 0$ only if $k\in\{k_1,\ldots,k_N\}$. Over $U_x$, the sum defining $f$ is therefore finite.
+The sum $f:=\sum_{k\ge 0}\rho'_k$ converges pointwise on $G$ to a continuous real-valued nonnegative function that is not identically zero on any orbit of the continuous left-translation action of $H$ on $G$. Indeed, since $\{U_k\}_{k\ge 0}$ is locally finite, for each $x\in G$ there exists an open neighborhood $U_x$ of $x$ in $G$ that intersects non-trivially at most a finite number of the $U_k$'s, say $U_{k_1},\ldots,U_{k_N}$, and hence for every $y\in U_x$ we have $\rho'_k(x)\ne 0$ only if $k\in\{k_1,\ldots,k_N\}$. Over $U_x$, the sum defining $f$ is therefore finite.
 
 We consider $f^H$ the function on $G$ defined, for each $x\in G$, by the integral:
 
 $$
-f^H(x):=\int_H f(h^{-1}x)\,d\mu_H(h). \tag{12.2.1.4}
+f^H(x):=\int_H f(h^{-1}x)\,\mathrm{d}\mu_H(h). \tag{12.2.1.4}
 $$
 
-Let $K_0$ be an arbitrary compact subset of $G$. The intersection of the support $K$ of $f$ with $\pi^{-1}(\pi(K_0))$ is contained in $K\cap\bigcup_{i=1}^N \pi^{-1}(\pi(\tilde S_{k_i}))$ where $k_1,\ldots,k_N$ are the finitely many integers such that the compact subset $\pi(K_0)$ of $G/H$ intersects $\pi(\tilde S_k)$ non-trivially. Indeed, there exist only finitely many such integers, for $\pi(K_0)$ intersects $U_k$, and hence $p(\tilde S_k)\subset U_k$, non-trivially for at most finitely many integers $k$.
+Let $K_0$ be an arbitrary compact subset of $G$. The intersection of the support $K$ of $f$ with $\pi^{-1}(\pi(K_0))$ is contained in $K\cap\bigcup_{1\le i\le N} \pi^{-1}(\pi(S'_{k_i}))$ where $k_1,\ldots,k_N$ are the finitely many integers such that the compact subset $\pi(K_0)$ of $G/H$ intersects $\pi(S'_k)$ non-trivially. Indeed, there exist only finitely many such integers, for $\pi(K_0)$ intersects $U_k$, and hence $\pi(S'_k)\subset U_k$, non-trivially for at most finitely many integers $k$.
 
-Since $K\cap\bigcup_{i=1}^N \pi^{-1}(\pi(\tilde S_{k_i}))\subset\bigcup_{i=1}^N\tilde S_{k_i}$, a compact subset, we deduce that the intersection of the support of $f$ with $\pi^{-1}(\pi(K_0))$ is compact, for the arbitrary compact subset $K_0\subset G$. The assumptions of [Bou-II, Ch.VII,§2,n.1,Prop.1(a),(b),INT VII.27] (applied to $\varphi=1$) are therefore satisfied by $f$, and the integral defining $f^H$ converges to a continuous function on $G$, invariant under the continuous left-translation action by $H$.
+Since $K\cap\bigcup_{1\le i\le N} \pi^{-1}(\pi(S'_{k_i}))\subset\bigcup_{1\le i\le N}S'_{k_i}$, a compact subset, we deduce that the intersection of the support of $f$ with $\pi^{-1}(\pi(K_0))$ is compact, for the arbitrary compact subset $K_0\subset G$. The assumptions of [Bou-II, Ch.VII,§2,n.1,Prop.1(a),(b),INT VII.27] (applied to $\chi=1$) are therefore satisfied by $f$, and the integral defining $f^H$ converges to a continuous function on $G$, invariant under the continuous left-translation action by $H$.
 
-We define $u_0:=f/f^H$. The function $u_0$ satisfies (1), (2) and (3). Since, for any $u\in C(G/H)$, the continuous function $u\circ\pi$ is invariant under the continuous left-translation action of $H$ on $G$, then the integral in (12.2.1.4) indeed converges to a continuous function on $G$ by [Bou-II, Ch.VII,§2,n.1,Prop.1(a),(b),INT VII.27] (applied for $\varphi=1$), and its value is $u(\pi(x))\int_H u_0(h^{-1}x)\,d\mu_H(h)=u(\pi(x))$.
+We define $u_0:=f/f^H$. The function $u_0$ satisfies (1), (2) and (3). Since, for any $u\in C(G/H)$, the continuous function $u\circ\pi$ is invariant under the continuous left-translation action of $H$ on $G$, then the integral in (12.2.1.4) indeed converges to a continuous function on $G$ by [Bou-II, Ch.VII,§2,n.1,Prop.1(a),(b),INT VII.27] (applied for $\chi=1$), and its value is $u(\pi(x))\int_H u_0(h^{-1}x)\,\mathrm{d}\mu_H(h)=u(\pi(x))$.
 
 We further refer the reader to the proof of [Bou-II, Ch.VII,§2,n.4,Corollary,INT VII.38]. $\square$
 
@@ -452,7 +452,7 @@ $$
 
 **506** · **CHAPTER 12. TRACE FORMULA: GEOMETRIC SIDE**
 
-the linear operator sending $u\in C_c(G)$ to $\Phi_H(u)(x):=\int_H u(h^{-1}x)\,d\mu_H(h)$, a continuous function of $x\in G$, invariant under the continuous left-translation action by $H$ on $G$, inducing a unique continuous function denoted again by $\Phi_H(u)$ on $G/H$, whose support is, therefore, compact (being contained in the image under $\pi$ of $\pi^{-1}(\pi(K))$, for $K$ the support of $u$, and such image is $\pi(K)$, compact).
+the linear operator sending $u\in C_c(G)$ to $\Phi_H(u)(x):=\int_H u(h^{-1}x)\,\mathrm{d}\mu_H(h)$, a continuous function of $x\in G$, invariant under the continuous left-translation action by $H$ on $G$, inducing a unique continuous function denoted again by $\Phi_H(u)$ on $G/H$, whose support is, therefore, compact (being contained in the image under $\pi$ of $\pi^{-1}(\pi(K))$, for $K$ the support of $u$, and such image is $\pi(K)$, compact).
 
 COROLLARY 12.2.1.2. *Let $G$ be a second countable Hausdorff locally compact abelian group, $H\subset G$ a closed subgroup, $\mu_H$ a choice of Haar measure on $H$. We denote by $\pi:G\to G/H$ the continuous quotient homomorphism.*
 
@@ -461,7 +461,7 @@ COROLLARY 12.2.1.2. *Let $G$ be a second countable Hausdorff locally compact abe
 *(1) There exists a unique positive measure $\lambda'$ on $G$ satisfying the following normalization condition:*
 
 $$
-\int_{G/H}\Phi_H(u)(x)\,d\lambda(x)=\int_G u(g)\,d\lambda'(g) \tag{12.2.1.6}
+\int_{G/H}\Phi_H(u)(x)\,\mathrm{d}\lambda(x)=\int_G u(g)\,\mathrm{d}\lambda'(g) \tag{12.2.1.6}
 $$
 
 *for all $u\in C_c(G)$. $\lambda'$ is $H$-invariant.*
@@ -480,13 +480,13 @@ $$
 
 *for a choice of function $u_0$ as provided by Lemma 12.2.1.1, is an isometric right-inverse $\Psi_{u_0}:L^1(G/H,\lambda)\to L^1(G,\lambda')$ to $\Phi_H$.*
 
-PROOF. (1) : This is [Bou-II, Ch.VII,§2,n.2,Prop.4,INT VII.31], applied to $X=G$, $\lambda'=\lambda^\sharp$, in which case the measure $\lambda'$ is indeed $H$-invariant. [Bou-II, Ch.VII,§2,n.2,Prop.4,INT VII.31] provides a measure $\lambda'$, i.e. a continuous linear form on $C_c(G)$, where $C_c(G)$ is equipped with the locally convex inductive limit topology induced by the inclusions $C(G,K)\hookrightarrow C_c(G)$, as $K\subset G$ ranges over all non-empty compact subsets, and $C(G,K)$ is the linear subspace of continuous functions on $G$ compactly supported within $K$, endowed with the topology of uniform convergence.
+PROOF. (1) : This is [Bou-II, Ch.VII,§2,n.2,Prop.4,INT VII.31], applied to $X=G$, $\lambda'=\lambda^\sharp$, in which case the measure $\lambda'$ is indeed $H$-invariant. [Bou-II, Ch.VII,§2,n.2,Prop.4,INT VII.31] provides a measure $\lambda'$, i.e. a continuous linear form on $C_c(G)$, where $C_c(G)$ is equipped with the locally convex inductive limit topology induced by the inclusions $C(G,K)\subset C_c(G)$, as $K\subset G$ ranges over all non-empty compact subsets, and $C(G,K)$ is the linear subspace of continuous functions on $G$ compactly supported within $K$, endowed with the topology of uniform convergence.
 
 $\lambda'$ is a positive functional on $C_c(G)$ (i.e. forgetting its continuity), and by [Fol, Prop.7.1] its positivity and linearity only imply its continuity on $C_c(G)$ with respect to its locally convex inductive limit topology, by [Bou-I, Ch.III,§1,n.3,(4),INT III.7] (see also [Bou-I, Ch.III,§1,n.5,Thm.1,INT III.12]). By [Fol, Thm.7.2], $\lambda'$ corresponds to a unique Radon measure on $G$ in the sense of classical measure theory (see [Fol, Ch.1,§1.3] and [Fol, Ch.7]), which we again denote by $\lambda'$.
 
 By [Bou-I, Ch.III,§1,n.8,INT III.16], it is enough to show that there exists a real number $M\ge 0$ such that for any $u\in C_c(G)$, we have $|\lambda'(u)|\le M||u||_u$.
 
-(2) : If $u\in C_c(G)$, then so is $|u|$, and since $|\Phi_H(u)|=\Phi_H(|u|)$ as continuous functions on $G/H$, we deduce from (12.2.1.6) that $\Phi_H$ is continuous with respect to the normed topology on $C_c(G)$ induced by the $L^1(G,\lambda')$-norm on the source, and the normed topology on $C_c(G/H)$ induced by the $L^1(G/H,\lambda)$-norm on the target. This provides the continuous extension of $\Phi_H$ in (12.2.1.7).
+(2) : If $u\in C_c(G)$, then so is $|u|$, and since $|\Phi_H(u)|\le\Phi_H(|u|)$ as continuous functions on $G/H$, we deduce from (12.2.1.6) that $\Phi_H$ is continuous with respect to the normed topology on $C_c(G)$ induced by the $L^1(G,\lambda')$-norm on the source, and the normed topology on $C_c(G/H)$ induced by the $L^1(G/H,\lambda)$-norm on the target. This provides the continuous extension of $\Phi_H$ in (12.2.1.7).
 
 The assignment of $\Psi_{u_0}$ on compactly supported continuous functions on $G/H$ is isometric with respect to the $L^1$-norm topologies on source and target by (12.2.1.6) and Lemma 12.2.1.1. It therefore extends by continuity to an isometric embedding $L^1(G/H,\lambda)\hookrightarrow L^1(G,\lambda')$, since $C_c(G/H)\subset L^1(G/H,\lambda)$ is norm-dense by [Fol, Prop.7.9]. The right-inverse condition holds because it holds on compactly supported continuous functions by Lemma 12.2.1.1. $\square$
 
@@ -517,7 +517,7 @@ By [Bou-GT, Ch.III,§4,n.2,Prop.3,p.253], the quotient space $X/G$ is Hausdorff.
 If the action $\theta$ of $G$ on $X$ is, in addition, free, then, by [Bou-GT, Ch.III,§4,n.4,Corollary,p.257] to [Bou-GT, Ch.III,§4,n.4,Prop.8,256], the quotient map:
 
 $$
-p:X\to X/G \tag{12.2.1.10}
+\pi:X\to X/G \tag{12.2.1.10}
 $$
 
 is open.
@@ -527,7 +527,7 @@ In this case, if $X$ is second countable, so is $X/G$.
 We assume two Radon measures given, one, $\mu_X$, on $X$, another, a choice of Haar measure $\mu_G$ on $G$. We assume $\mu_X$ is $G$-invariant, and denote by $\bar\mu$ the unique Radon measure on $X/G$ induced by these choices, so that the following integral formula holds:
 
 $$
-\int_X\varphi(x)\,d\mu_X(x)=\int_{X/G}\left(\int_G\varphi(\theta(g,x))\,d\mu_G(g)\right)d\bar\mu(\pi(x)). \tag{12.2.1.11}
+\int_X\varphi(x)\,\mathrm{d}\mu_X(x)=\int_{X/G}\left(\int_G\varphi(\theta(g,x))\,\mathrm{d}\mu_G(g)\right)\mathrm{d}\bar\mu(\pi(x)). \tag{12.2.1.11}
 $$
 
 In the special case $X$ is itself a Hausdorff locally compact abelian group, and $G$ is a closed subgroup, with $\theta$ the action by continuous left-translation, the existence and uniqueness of $\bar\mu$, upon choosing $\mu_X$ to be a Haar measure on $X$, is by Theorem D.1.2.1. For the general case, we refer the reader to [Bou-II, Ch.VII,§2,n.2,Prop.4,INT VII.31].
@@ -566,9 +566,9 @@ Let $\lambda$ be a positive Radon measure on $G/H$, and $\lambda'$ the unique po
 
 We denote by $\pi:G\to G/H$ the continuous quotient homomorphism. Assume there exists a fundamental domain $D$ for the continuous left-translation action by $H$ on $G$.
 
-Assume that $\{U_k\}_{k=0}^\infty$ is a $D'$-sequence for $G$ such that $U_k\subset D$, and $U_k$ is a relatively compact open symmetric unit-neighborhood for all integers $k\ge 0$. Then, upon defining $\bar U_k:=\pi(U_k)$ for each integer $k\ge 0$, $\{\bar U_k\}_{k=0}^\infty$ is a $D'$-sequence for $G/H$.
+Assume that $\{U_k\}_{k\ge 0}$ is a $D'$-sequence for $G$ such that $U_k\subset D$, and $U_k$ is a relatively compact open symmetric unit-neighborhood for all integers $k\ge 0$. Then, upon defining $\bar U_k:=\pi(U_k)$ for each integer $k\ge 0$, $\{\bar U_k\}_{k\ge 0}$ is a $D'$-sequence for $G/H$.
 
-We define smoothenings over $G\times G$ and $G/H\times G/H$ using the $D'$-sequences $\{U_k\times U_k\}_{k=0}^\infty$ for $G\times G$ and $\{\bar U_k\times\bar U_k\}_{k=0}^\infty$ for $G/H\times G/H$.
+We define smoothenings over $G\times G$ and $G/H\times G/H$ using the $D'$-sequences $\{U_k\times U_k\}_{k\ge 0}$ for $G\times G$ and $\{\bar U_k\times\bar U_k\}_{k\ge 0}$ for $G/H\times G/H$.
 
 Let $\lambda$ be a positive Radon measure on $G/H$, and $\lambda'$ the unique positive Radon measure on $G$ provided by Corollary 12.2.1.2(1).
 
@@ -581,7 +581,7 @@ PROPOSITION 12.2.2.2. *Let $G$ be a second countable Hausdorff locally compact a
 *(1) The integral:*
 
 $$
-\int_H u_0(h^{-1}x)u_0(h^{-1}y)\,d\mu_H(h) \tag{12.2.2.1}
+\int_H u_0(h^{-1}x)u_0(h^{-1}y)\,\mathrm{d}\mu_H(h) \tag{12.2.2.1}
 $$
 
 *converges pointwise everywhere on $G\times G$. The limit function $u^\Delta_0(x,y)$ is defined everywhere, continuous on $G\times G$, real-valued and nonnegative, and invariant under the continuous diagonal action of $H$ on $G\times G$.*
@@ -597,31 +597,31 @@ $$
 *If $\mu_{G/H}$-almost every point $(x,x)\in G/H\times G/H$ is regular for $u$, then $\tilde u(x,x)$ is $\mu_{G/H}$-measurable, defined $\mu_{G/H}$-almost everywhere. If it is absolutely $\mu_{G/H}$-integrable as a function on $G/H$, then the functions $\Psi^\Delta_{u_0}(\tilde u)(h^{-1}x,x)$ and $\Psi^\Delta_{u_0}(\tilde u)(x,h^{-1}x)$, defined for all $h\in H$, $\mu_G$-almost all $x\in G$, and $(\mu_H\otimes\mu_G)$-measurable as functions of $(x,h)\in G\times H$, satisfy the following condition: the following two-fold integrals*
 
 $$
-\int_D\int_H\Psi^\Delta_{u_0}(\tilde u)(h^{-1}x,x)\,d\mu_H(h)\,d\mu_G(x),\quad \int_H\int_D\Psi^\Delta_{u_0}(\tilde u)(h^{-1}x,x)\,d\mu_G(x)\,d\mu_H(h) \tag{12.2.2.3}
+\int_D\int_H\Psi^\Delta_{u_0}(\tilde u)(h^{-1}x,x)\,\mathrm{d}\mu_H(h)\,\mathrm{d}\mu_G(x),\quad \int_H\int_D\Psi^\Delta_{u_0}(\tilde u)(h^{-1}x,x)\,\mathrm{d}\mu_G(x)\,\mathrm{d}\mu_H(h) \tag{12.2.2.3}
 $$
 
 *are both absolutely convergent, and the following identities hold:*
 
 $$
-\int_{G/H}\tilde u(x,x)\,d\mu_{G/H}(x)=\int_D\int_H\Psi^\Delta_{u_0}(\tilde u)(h^{-1}x,x)\,d\mu_H(h)\,d\mu_G(x) \tag{12.2.2.4}
+\int_{G/H}\tilde u(x,x)\,\mathrm{d}\mu_{G/H}(x)=\int_D\int_H\Psi^\Delta_{u_0}(\tilde u)(h^{-1}x,x)\,\mathrm{d}\mu_H(h)\,\mathrm{d}\mu_G(x) \tag{12.2.2.4}
 $$
 
 $$
-=\int_H\int_D\Psi^\Delta_{u_0}(\tilde u)(h^{-1}x,x)\,d\mu_G(x)\,d\mu_H(h) \tag{12.2.2.5}
+=\int_H\int_D\Psi^\Delta_{u_0}(\tilde u)(h^{-1}x,x)\,\mathrm{d}\mu_G(x)\,\mathrm{d}\mu_H(h) \tag{12.2.2.5}
 $$
 
 $$
-=\int_H\int_D\Psi^\Delta_{u_0}(\tilde u)(x,h^{-1}x)\,d\mu_G(x)\,d\mu_H(h) \tag{12.2.2.6}
+=\int_H\int_D\Psi^\Delta_{u_0}(\tilde u)(x,h^{-1}x)\,\mathrm{d}\mu_G(x)\,\mathrm{d}\mu_H(h) \tag{12.2.2.6}
 $$
 
 $$
-=\int_D\int_H\Psi^\Delta_{u_0}(\tilde u)(x,h^{-1}x)\,d\mu_H(h)\,d\mu_G(x). \tag{12.2.2.7}
+=\int_D\int_H\Psi^\Delta_{u_0}(\tilde u)(x,h^{-1}x)\,\mathrm{d}\mu_H(h)\,\mathrm{d}\mu_G(x). \tag{12.2.2.7}
 $$
 
 *(3) Let $\rho\in C_c(G/H\times G/H)$. Then:*
 
 $$
-\Psi^\Delta_{u_0}(\varphi\cdot u)(x,y)=(\varphi\circ (\pi\times\pi))\cdot\Psi^\Delta_{u_0}(u)(x,y) \tag{12.2.2.8}
+\Psi^\Delta_{u_0}(\varphi\cdot u)(x,y)=(\rho\circ (\pi\times\pi))\cdot\Psi^\Delta_{u_0}(u)(x,y) \tag{12.2.2.8}
 $$
 
 *for $(\mu_G\otimes\mu_G)$-almost every $(x,y)\in G\times G$.*
@@ -633,30 +633,30 @@ $$
 *(4) We have, for $(\mu_G\otimes\mu_G)$-almost all $(x,y)\in G\times G$:*
 
 $$
-\Psi^\Delta_{u_0}(\tilde u)(x,y)=\lim_{k\to +\infty}\frac{1}{\mu_G(U_k)^2}\int_{xU_k\times yU_k}\Psi^\Delta_{u_0}(u)(y_1,y_2)\,d(\mu_G\otimes\mu_G)(y_1,y_2). \tag{12.2.2.9}
+\Psi^\Delta_{u_0}(\tilde u)(x,y)=\lim_{k\to +\infty}\frac{1}{\mu_G(U_k)^2}\int_{xU_k\times yU_k}\Psi^\Delta_{u_0}(u)(y_1,y_2)\,\mathrm{d}(\mu_G\otimes\mu_G)(y_1,y_2). \tag{12.2.2.9}
 $$
 
-*The point $(x,y)\in G\times G$ is regular for $\Psi^\Delta_{u_0}(u)$ if and only if $(p(x),p(y))\in G/H\times G/H$ is regular for $u$.*
+*The point $(x,y)\in G\times G$ is regular for $\Psi^\Delta_{u_0}(u)$ if and only if $(\pi(x),\pi(y))\in G/H\times G/H$ is regular for $u$.*
 
 REMARK 12.2.2.3. For a complex-valued function $f:X\to\mathbf C$ on a Hausdorff locally compact second countable topological space $X$, and a Radon measure $\mu$ on $X$, Lebesgue measurability for $f$ (upon endowing $X$ with the completion of the Borel $\sigma$-algebra, i.e. with the $\sigma$-algebra of $\mu^*$-measurable sets, promoting $\mu$ to a complete measure; see [Fol, Thm.1.11] and [Bou-I, Ch.IV,§5,n.1,Cor.1,INT IV.60]) and $\mu$-measurability in the sense of [Bou-I, Ch.IV,§5,n.1,Def.2,INT IV.60], are equivalent concepts. $\mu$-measurability of a map $f:X\to T$ for $T$ a Hausdorff locally compact topological space, is defined in [Bou-I, Ch.IV,§5,n.1,Def.1,INT IV.59], and will be used only for $f$ continuous, surjective and open, in which case it holds by [Bou-I, Ch.IV,§5,n.2,Cor.4,INT IV.62].
 
 PROOF. (1) : Since $u_0$ is an $H$-indentation on $G$, then, upon calling $S$ the support of $u_0$ in $G$, for any compact subset $K\subset G$ we have, by Lemma 12.2.1.1(2), that the intersection $S\cap \pi^{-1}(\pi(K))$ is compact.
 
-The function $u_1(x,y):=u_0(x)u_0(y)$ on $G\times G$ is real valued, nonnegative, and continuous. Moreover, its support is contained in $S\times S\subset G\times G$. Let $K$ be a compact subset of $G\times G$. There exists a compact subset $K^*\subset G$ such that $K\subset K^*\times K^*$. Indeed, we define $K_1$, respectively $K_2$, to be the image of $K$ in $G$ under the first projection, respectively the second projection. Then $K\subset K_1\times K_2$, and upon defining $K^*:=K_1\cup K_2$, we have $K\subset K^*\times K^*$.
+The function $u_1(x,y):=u_0(x)u_0(y)$ on $G\times G$ is real valued, nonnegative, and continuous. Moreover, its support is contained in $S\times S\subset G\times G$. Let $K$ be a compact subset of $G\times G$. There exists a compact subset $K'\subset G$ such that $K\subset K'\times K'$. Indeed, we define $K_1$, respectively $K_2$, to be the image of $K$ in $G$ under the first projection, respectively the second projection. Then $K\subset K_1\times K_2$, and upon defining $K':=K_1\cup K_2$, we have $K\subset K'\times K'$.
 
 The intersection:
 
 $$
-(S\times S)\cap\{(x,y)\in G\times G:(hx,hy)\in K\text{ for some }h\in H\}=(S\times S)\cap\bigcup_{h\in H}(h,h)\cdot K \tag{12.2.2.10}
+(S\times S)\cap\{(x,y)\in G\times G:(hx,hy)\in K\text{ for some }h\in H\}=(S\times S)\cap\bigcup_{h\in H}(h,h).K \tag{12.2.2.10}
 $$
 
 is therefore compact, since the rightmost side in (12.2.2.10) is contained within:
 
 $$
-(S\times S)\cap(\pi^{-1}(\pi(K^*))\times \pi^{-1}(\pi(K^*)))\subset (S\cap \pi^{-1}(\pi(K^*)))\times (S\cap \pi^{-1}(\pi(K^*))) \tag{12.2.2.11}
+(S\times S)\cap(\pi^{-1}(\pi(K'))\times \pi^{-1}(\pi(K')))\subset (S\cap \pi^{-1}(\pi(K')))\times (S\cap \pi^{-1}(\pi(K'))) \tag{12.2.2.11}
 $$
 
-and since $S\cap p^{-1}(p(K^*))$ is compact, so is the intersection in (12.2.2.10).
+and since $S\cap \pi^{-1}(\pi(K'))$ is compact, so is the intersection in (12.2.2.10).
 
 The integral in (12.2.2.1) therefore converges by [Bou-II, Ch.VII,§2,n.1,Prop.1(a),INT VII.27] for every $(x,y)\in G\times G$, defining the function $u^\Delta_0(x,y)$ everywhere over $G\times G$. By [Bou-II, Ch.VII,§2,n.1,Prop.1(b),INT VII.27], $u^\Delta_0$ is continuous over $G\times G$ and invariant under the continuous diagonal action of $H$ on $G\times G$. It is real valued and nonnegative, since $u_0$ is.
 
@@ -664,9 +664,9 @@ The integral in (12.2.2.1) therefore converges by [Bou-II, Ch.VII,§2,n.1,Prop.1
 
 By [Bou-II, Ch.VII,§2,n.3,Prop.6(a),INT VII.33], the pre-image under $\pi\times\pi$ of a $(\mu_{G/H}\otimes\mu_{G/H})$-negligible subset is $(\mu_G\otimes\mu_G)$-negligible, and hence $u\circ (\pi\times\pi)$ is defined $(\mu_G\otimes\mu_G)$-almost everywhere.
 
-By the same token, since $\tilde u(x,x)$ is $\mu_{G/H}$-measurable as a function of $x\in G/H$, which is the case by Theorem A.5.4.1(2), being $\{A_{\bar U_k\times\bar U_k}(u)(x,x)\}_{k=0}^\infty$ a sequence of (uniformly) continuous functions on $G/H\times G/H$ by Theorem A.5.4.1(1), then $u(\pi(x),\pi(x))$ is $\mu_G$-measurable as a function on $G$.
+By the same token, since $\tilde u(x,x)$ is $\mu_{G/H}$-measurable as a function of $x\in G/H$, which is the case by Theorem A.5.4.1(2), being $\{A_{\bar U_k\times\bar U_k}(u)(x,x)\}_{k\ge 0}$ a sequence of (uniformly) continuous functions on $G/H\times G/H$ by Theorem A.5.4.1(1), then $u(\pi(x),\pi(x))$ is $\mu_G$-measurable as a function on $G$.
 
-Indeed, since $G$ is Hausdorff and $H\subset G$ is a closed subgroup, the diagonal maps $\delta_G:G\to G\times G$ and $\delta_{G/H}:G/H\to G/H\times G/H$ are homeomorphisms onto their closed images, and since $\tilde u(x,x)=\tilde u\circ d_{G/H}$ is $\mu_{G/H}$-measurable on $G/H$, its pre-composition with $\pi:G\to G/H$ is $\mu_G$-measurable on $G$ by [Bou-II, Ch.VII,§2,n.3,Prop.6(b),INT VII.34].
+Indeed, since $G$ is Hausdorff and $H\subset G$ is a closed subgroup, the diagonal maps $\delta_G:G\to G\times G$ and $\delta_{G/H}:G/H\to G/H\times G/H$ are homeomorphisms onto their closed images, and since $\tilde u(x,x)=\tilde u\circ \delta_{G/H}$ is $\mu_{G/H}$-measurable on $G/H$, its pre-composition with $\pi:G\to G/H$ is $\mu_G$-measurable on $G$ by [Bou-II, Ch.VII,§2,n.3,Prop.6(b),INT VII.34].
 
 Pre-composition of $\tilde u\circ \delta_{G/H}\circ \pi$ with $\delta_G^{-1}$ gives, set-theoretically at every point $(x^*,x^*)\in G\times G$ such that $(\pi(x^*),\pi(x^*))$ is a point of definition of $\tilde u$, i.e. a regular point for $u$ on $G/H\times G/H$, $\tilde u\circ (\pi\times\pi)$, and this latter function is $(\delta_G)_*\mu_G$-measurable since $\delta_G$ is a homeomorphism onto its image. Note that the function
 
@@ -687,43 +687,43 @@ We now prove that (12.2.2.3) holds.
 We have:
 
 $$
-\int_D\int_H\Psi^\Delta_{u_0}(\tilde u)(h^{-1}x,x)\,d\mu_H(h)\,d\mu_G(x)=\int_D\int_H u^\Delta_0(h^{-1}x,x)\cdot\tilde u(\pi(x),\pi(x))\,d\mu_H(h)\,d\mu_G(x) \tag{12.2.2.12}
+\int_D\int_H\Psi^\Delta_{u_0}(\tilde u)(h^{-1}x,x)\,\mathrm{d}\mu_H(h)\,\mathrm{d}\mu_G(x)=\int_D\int_H u^\Delta_0(h^{-1}x,x)\cdot\tilde u(\pi(x),\pi(x))\,\mathrm{d}\mu_H(h)\,\mathrm{d}\mu_G(x) \tag{12.2.2.12}
 $$
 
 $$
-=\int_D\int_{h\in H}\int_{h^*\in H}u_0(h^{-1}(h^*)^{-1}x)u_0((h^*)^{-1}x)\tilde u(\pi(x),\pi(x))\,d\mu_H(h^*)\,d\mu_H(h)\,d\mu_G(x) \tag{12.2.2.13}
+=\int_D\int_{h\in H}\int_{h^*\in H}u_0(h^{-1}(h^*)^{-1}x)u_0((h^*)^{-1}x)\tilde u(\pi(x),\pi(x))\,\mathrm{d}\mu_H(h^*)\,\mathrm{d}\mu_H(h)\,\mathrm{d}\mu_G(x) \tag{12.2.2.13}
 $$
 
 $$
-=\int_D\int_{(h,h^*)\in H\times H}u_0(h^{-1}(h^*)^{-1}x)u_0((h^*)^{-1}x)\tilde u(\pi(x),\pi(x))\,d\mu_{H\times H}(h,h^*)\,d\mu_G(x) \tag{12.2.2.14}
+=\int_D\int_{(h,h^*)\in H\times H}u_0(h^{-1}(h^*)^{-1}x)u_0((h^*)^{-1}x)\tilde u(\pi(x),\pi(x))\,\mathrm{d}\mu_{H\times H}(h,h^*)\,\mathrm{d}\mu_G(x) \tag{12.2.2.14}
 $$
 
-where $\mu_{H\times H}:=\mu_H\otimes\mu_H$ (note that we are choosing $\mu_{H\times H}$ to be $\mu_H\otimes\mu_H$, likewise as we are choosing $\mu_G\otimes\mu_G$ to be the Haar measure on $G\times G$, so as to also have $\mu_{G/H}\otimes\mu_{G/H}$ as the Haar measure on $G/H\times G/H$ uniquely determined as per Theorem D.1.2.1. We require the latter two be the Haar measures on $G\times G$, respectively $G/H\times G/H$, so as to use the $D'$-sequences $\{\bar U_k\times\bar U_k\}_{k=0}^\infty$, respectively $\{U_k\times U_k\}_{k=0}^\infty$, to define smoothenings of locally $(\mu_{G/H}\otimes\mu_{G/H})$-integrable functions on $G/H\times G/H$, respectively locally $(\mu_G\otimes\mu_G)$-integrable functions on $G\times G$).
+where $\mu_{H\times H}:=\mu_H\otimes\mu_H$ (note that we are choosing $\mu_{H\times H}$ to be $\mu_H\otimes\mu_H$, likewise as we are choosing $\mu_G\otimes\mu_G$ to be the Haar measure on $G\times G$, so as to also have $\mu_{G/H}\otimes\mu_{G/H}$ as the Haar measure on $G/H\times G/H$ uniquely determined as per Theorem D.1.2.1. We require the latter two be the Haar measures on $G\times G$, respectively $G/H\times G/H$, so as to use the $D'$-sequences $\{\bar U_k\times\bar U_k\}_{k\ge 0}$, respectively $\{U_k\times U_k\}_{k\ge 0}$, to define smoothenings of locally $(\mu_{G/H}\otimes\mu_{G/H})$-integrable functions on $G/H\times G/H$, respectively locally $(\mu_G\otimes\mu_G)$-integrable functions on $G\times G$).
 
 The innermost integral in (12.2.2.14) reads:
 
 $$
-\tilde u(\pi(x),\pi(x))\int_{(h,h^*)\in H\times H}u_0(h^{-1}(h^*)^{-1}x)u_0((h^*)^{-1}x)\,d\mu_{H\times H}(h,h^*) \tag{12.2.2.15}
+\tilde u(\pi(x),\pi(x))\int_{(h,h^*)\in H\times H}u_0(h^{-1}(h^*)^{-1}x)u_0((h^*)^{-1}x)\,\mathrm{d}\mu_{H\times H}(h,h^*) \tag{12.2.2.15}
 $$
 
 which turns, under the "shearing" change of variables $(h,h^*)\mapsto (h(h^*)^{-1},h^*)$, into:
 
 $$
-\tilde u(\pi(x),\pi(x))\int_{(h,h^*)\in H\times H}u_0(h^{-1}x)u_0((h^*)^{-1}x)\,d\mu_{H\times H}(h(h^*)^{-1},h^*)=\tilde u(\pi(x),\pi(x)) \tag{12.2.2.16}
+\tilde u(\pi(x),\pi(x))\int_{(h,h^*)\in H\times H}u_0(h^{-1}x)u_0((h^*)^{-1}x)\,\mathrm{d}\mu_{H\times H}(h(h^*)^{-1},h^*)=\tilde u(\pi(x),\pi(x)) \tag{12.2.2.16}
 $$
 
-where we are using $H$-invariance of the Haar measure $\mu_H$, and the identity $\int_H u_0(h^{-1}x)\,d\mu_H(h)=1$, which holds since $u_0$ is an $H$-indentation on $G$ (see Lemma 12.2.1.1(3)). The identity in (12.2.2.16) holds for any $x\in G$ at which $\tilde u(\pi(x),\pi(x))$ is defined, since $u_0$ is continuous. It follows that it holds $\mu_G$-almost everywhere on $G$.
+where we are using $H$-invariance of the Haar measure $\mu_H$, and the identity $\int_H u_0(h^{-1}x)\,\mathrm{d}\mu_H(h)=1$, which holds since $u_0$ is an $H$-indentation on $G$ (see Lemma 12.2.1.1(3)). The identity in (12.2.2.16) holds for any $x\in G$ at which $\tilde u(\pi(x),\pi(x))$ is defined, since $u_0$ is continuous. It follows that it holds $\mu_G$-almost everywhere on $G$.
 
 We therefore deduce that the last integral in (12.2.2.14) equals:
 
 $$
-\int_D\tilde u(\pi(x),\pi(x))\,d\mu_G(x). \tag{12.2.2.17}
+\int_D\tilde u(\pi(x),\pi(x))\,\mathrm{d}\mu_G(x). \tag{12.2.2.17}
 $$
 
-By [Bou-II, Ch.VII,§2,n.3,Prop.5(c),INT VII.33], the integral in (12.2.2.17) equals $\int_{G/H}\tilde u(x,x)\,d\mu_{G/H}(x)$. Indeed, we call, using the notation of loc.cit., $f:=1_D(x)\cdot |\tilde u(\pi(x),\pi(x))|$, and observe that since $D$ is a fundamental domain, $f^\flat=|\tilde u|$, and formula [Bou-II, Ch.VII,§2,n.3,Prop.5(c),(12),INT VII.33] (which applies by [Bou-II, Ch.VII,§2,n.3,Prop.5(d),(12),INT VII.33]) implies that the following identity:
+By [Bou-II, Ch.VII,§2,n.3,Prop.5(c),INT VII.33], the integral in (12.2.2.17) equals $\int_{G/H}\tilde u(x,x)\,\mathrm{d}\mu_{G/H}(x)$. Indeed, we call, using the notation of loc.cit., $\mathbf{f}:=1_D(x)\cdot |\tilde u(\pi(x),\pi(x))|$, and observe that since $D$ is a fundamental domain, $\mathbf{f}^\flat=|\tilde u|$, and formula [Bou-II, Ch.VII,§2,n.3,Prop.5(c),(12),INT VII.33] (which applies by [Bou-II, Ch.VII,§2,n.3,Prop.5(d),(12),INT VII.33]) implies that the following identity:
 
 $$
-\int_D\tilde u(\pi(x),\pi(x))\,d\mu_G(x)=\int_{G/H}\tilde u(x,x)\,d\mu_{G/H}(x) \tag{12.2.2.18}
+\int_D\tilde u(\pi(x),\pi(x))\,\mathrm{d}\mu_G(x)=\int_{G/H}\tilde u(x,x)\,\mathrm{d}\mu_{G/H}(x) \tag{12.2.2.18}
 $$
 
 ## PDF page 511
@@ -743,47 +743,47 @@ since $u_0$, and hence both $u_0\otimes u_0$ and $u^\Delta_0$, are real-valued a
 By the first identity in (12.2.2.4), we deduce that we have:
 
 $$
-\int_{G/H}|\tilde u(x,x)|\,d\mu_{G/H}(x)=\int_D\int_H\Psi^\Delta_{u_0}(|\tilde u|)(h^{-1}x,x)\,d\mu_H(h)\,d\mu_G(x)=\int_D\int_H|\Psi^\Delta_{u_0}(\tilde u)(h^{-1}x,x)|\,d\mu_H(h)\,d\mu_G(x) \tag{12.2.2.20}
+\int_{G/H}|\tilde u(x,x)|\,\mathrm{d}\mu_{G/H}(x)=\int_D\int_H\Psi^\Delta_{u_0}(|\tilde u|)(h^{-1}x,x)\,\mathrm{d}\mu_H(h)\,\mathrm{d}\mu_G(x)=\int_D\int_H|\Psi^\Delta_{u_0}(\tilde u)(h^{-1}x,x)|\,\mathrm{d}\mu_H(h)\,\mathrm{d}\mu_G(x) \tag{12.2.2.20}
 $$
 
 and hence the function $\Psi^\Delta_{u_0}(\tilde u)(h^{-1}x,x)$ of $(x,h)\in D\times H$ is $\mu_H\otimes\mu_G$ absolutely integrable over $D\times H$ by Tonelli's Theorem (see [Fol, Thm.2.37(a)]) applied to $f:=|\Psi^\Delta_{u_0}(\tilde u)(h^{-1}x,x)|$. By [Fol, Thm.7.27], which applies since $G$ is second countable, and hence so are $D$ and $H$, and $\mu_G$ and $\mu_H$ are Radon measures, hence $\sigma$-finite, we deduce that the identity:
 
 $$
-\int_D\int_H\Psi^\Delta_{u_0}(\tilde u)(h^{-1}x,x)\,d\mu_H(h)\,d\mu_G(x)=\int_H\int_D\Psi^\Delta_{u_0}(\tilde u)(h^{-1}x,x)\,d\mu_G(x)\,d\mu_H(h) \tag{12.2.2.21}
+\int_D\int_H\Psi^\Delta_{u_0}(\tilde u)(h^{-1}x,x)\,\mathrm{d}\mu_H(h)\,\mathrm{d}\mu_G(x)=\int_H\int_D\Psi^\Delta_{u_0}(\tilde u)(h^{-1}x,x)\,\mathrm{d}\mu_G(x)\,\mathrm{d}\mu_H(h) \tag{12.2.2.21}
 $$
 
 holds.
 
 By invariance of $u^\Delta_0$ with respect to the diagonal action of $H$ on $G\times G$, we deduce that we have $\Psi^\Delta_{u_0}(\tilde u)(h^{-1}x,x)=\Psi^\Delta_{u_0}(\tilde u)(x,h^{-1}x)$ for all $h\in H$ and $\mu_G$-almost all $x\in G$, and hence the remaining identities in (12.2.2.4) follow from (12.2.2.21).
 
-(3) : Let $\rho\in C_c(G/H\times G/H)$. Then $\rho\circ (\pi\times\pi)$ is a continuous function on $G\times G$, invariant under the continuous left-translation action of $H\times H$ on $G\times G$. For $u:G/H\times G/H\to\mathbf C$ a $(\mu_{G/H}\otimes\mu_{G/H})$-measurable and locally $(\mu_{G/H}\otimes\mu_{G/H})$-integrable function, $\varphi\cdot u$ is also $(\mu_{G/H}\otimes\mu_{G/H})$-measurable and locally $(\mu_{G/H}\otimes\mu_{G/H})$-integrable function. We have:
+(3) : Let $\rho\in C_c(G/H\times G/H)$. Then $\rho\circ (\pi\times\pi)$ is a continuous function on $G\times G$, invariant under the continuous left-translation action of $H\times H$ on $G\times G$. For $u:G/H\times G/H\to\mathbf C$ a $(\mu_{G/H}\otimes\mu_{G/H})$-measurable and locally $(\mu_{G/H}\otimes\mu_{G/H})$-integrable function, $\rho\cdot u$ is also $(\mu_{G/H}\otimes\mu_{G/H})$-measurable and locally $(\mu_{G/H}\otimes\mu_{G/H})$-integrable function. We have:
 
-$$\Psi^\Delta_{u_0}(\rho\cdot u)=u^\Delta_0\cdot ((\rho\cdot u)\circ (p\times p))=(\rho\circ (\pi\times\pi))\cdot\Psi^\Delta_{u_0}(u)$$
+$$\Psi^\Delta_{u_0}(\rho\cdot u)=u^\Delta_0\cdot ((\rho\cdot u)\circ (\pi\times \pi))=(\rho\circ (\pi\times\pi))\cdot\Psi^\Delta_{u_0}(u)$$
 
-$(\mu_G\otimes\mu_G)$-almost everywhere.
+$(\mu_G\times\mu_G)$-almost everywhere.
 
 (4) : Since $u^\Delta_0$ is continuous, then for all $(x,y)\in G\times G$ which is regular for $u\circ (\pi\times\pi)$ (see Corollary A.5.4.3):
 
 $$
-\lim_{k\to +\infty}\frac{1}{\mu_G(U_k)^2}\int_{xU_k\times yU_k}u^\Delta_0(y_1,y_2)\cdot (u(\pi(y_1),\pi(y_2)))\,d(\mu_G\otimes\mu_G)(y_1,y_2) \tag{12.2.2.22}
+\lim_{k\to +\infty}\frac{1}{\mu_G(U_k)^2}\int_{xU_k\times yU_k}u^\Delta_0(y_1,y_2)\cdot (u(\pi(y_1),\pi(y_2)))\,\mathrm{d}(\mu_G\otimes\mu_G)(y_1,y_2) \tag{12.2.2.22}
 $$
 
 exists and is finite, and by Corollary A.5.4.3 we have that the value of the limit in (12.2.2.22) is:
 
 $$
-u^\Delta_0(x,y)\lim_{k\to +\infty}\frac{1}{\mu_G(U_k)^2}\int_{xU_k\times yU_k}u(\pi(y_1),\pi(y_2))\,d(\mu_G\otimes\mu_G)(y_1,y_2) \tag{12.2.2.23}
+u^\Delta_0(x,y)\lim_{k\to +\infty}\frac{1}{\mu_G(U_k)^2}\int_{xU_k\times yU_k}u(\pi(y_1),\pi(y_2))\,\mathrm{d}(\mu_G\otimes\mu_G)(y_1,y_2) \tag{12.2.2.23}
 $$
 
 and the integral in (12.2.2.23) reads:
 
 $$
-\int_{xU_k\times yU_k}u(\pi(y_1),\pi(y_2))\,d(\mu_G\otimes\mu_G)(y_1,y_2)=\int_{\pi(x)\bar U_k\times \pi(y)\bar U_k}u(\pi(y_1),\pi(y_2))\,d(\mu_{G/H}\otimes\mu_{G/H})(p(y_1),p(y_2)) \tag{12.2.2.24}
+\int_{xU_k\times yU_k}u(\pi(y_1),\pi(y_2))\,\mathrm{d}(\mu_G\otimes\mu_G)(y_1,y_2)=\int_{\pi(x)\bar U_k\times \pi(y)\bar U_k}u(\pi(y_1),\pi(y_2))\,\mathrm{d}(\mu_{G/H}\otimes\mu_{G/H})(\pi(y_1),\pi(y_2)) \tag{12.2.2.24}
 $$
 
 and since $U_k\subset D$ for every $k\ge 0$ by assumption, another application of [Bou-II, Ch.VII,§2,n.3,Prop.5(c),(12),INT VII.33] gives $\mu_G(U_k)=\mu_{G/H}(\bar U_k)$, and hence:
 
 $$
-\lim_{k\to +\infty}\frac{1}{\mu_G(U_k)^2}\int_{xU_k\times yU_k}u(\pi(y_1),\pi(y_2))\,d(\mu_G\otimes\mu_G)(y_1,y_2)=\tilde u(\pi(x),\pi(y)). \tag{12.2.2.25}
+\lim_{k\to +\infty}\frac{1}{\mu_G(U_k)^2}\int_{xU_k\times yU_k}u(\pi(y_1),\pi(y_2))\,\mathrm{d}(\mu_G\otimes\mu_G)(y_1,y_2)=\tilde u(\pi(x),\pi(y)). \tag{12.2.2.25}
 $$
 
 ## PDF page 512
@@ -798,7 +798,7 @@ PROPOSITION 12.2.2.4. *Let $G$ be a second countable Hausdorff locally compact a
 
 *Assume that $G,H$ satisfy the conditions in Situation 12.2.2.1.*
 
-*Let $G_k\subset G$ be an exhaustive $\mathbf N$-indexed filtration of $G$ by open subgroups (i.e. $G_k\subset G$ is an open, hence closed, subgroup, such that $G_k\subset G_{k+1}$ for every integer $k\ge 0$, and satisfying $\bigcup_{k=0}^\infty G_k=G$).*
+*Let $G_k\subset G$ be an exhaustive $\mathbf N$-indexed filtration of $G$ by open subgroups (i.e. $G_k\subset G$ is an open, hence closed, subgroup, such that $G_k\subset G_{k+1}$ for every integer $k\ge 0$, and satisfying $\bigcup_{k\ge 0} G_k=G$).*
 
 *For each integer $k\ge 0$, we define $H_k:=H\cap G_k$ the induced filtration on $H$.*
 
@@ -825,7 +825,7 @@ $$
 *we have:*
 
 $$
-\lim_{k\to +\infty}\int_D\int_H u_k(x,h^{-1}x)\,d\mu_H(h)\,d\mu_G(x)=0. \tag{12.2.2.27}
+\lim_{k\to +\infty}\int_D\int_H u_k(x,h^{-1}x)\,\mathrm{d}\mu_H(h)\,\mathrm{d}\mu_G(x)=0. \tag{12.2.2.27}
 $$
 
 PROOF. Note that since $G_k\subset G$ is an open subgroup, it is closed by [DE, Lemma 1.1.7(c)]. In particular, $G/G_k$, and hence $G_{k+1}/G_k$, is a discrete group with respect to the quotient topology.
@@ -876,13 +876,13 @@ $\bigcup_{m\ge k}\{\xi_k,\ldots,\xi_{m+k}\}$ is a $\mathbf{Z}$-basis for $G/G_k$
 
 Let $u_1:G_0\to\mathbf{C}$ be an $H_0$-indentation on $G_0$.
 
-We denote by $\varepsilon_k$ the function on $\xi_k^{\mathbf{Z}}$ defined to be 1 on $\xi_k^0$ and zero elsewhere, we define $u_0:=u_1\otimes\bigotimes_{k\ge1}\varepsilon_k$.
+We denote by $\varepsilon_k$ the function on $\xi_k^{\mathbf{Z}}$ defined to be 1 on $\xi_k^0$ and zero elsewhere, we define $u_0:=u_1\otimes\bigotimes_{k\ge 1}\varepsilon_k$.
 
 $u_0$ is a complex-valued function on $G$, continuous, since it is the tensor product of a continuous function on $G_0$
-and a continuous function on $\prod_{k\ge1}\xi_k^{\mathbf{Z}}$, pulled back to $G$ along the isomorphism of Hausdorff locally compact
-abelian groups $G\cong G_0\times\prod_{k\ge1}\xi_k^{\mathbf{Z}}$.
+and a continuous function on $\prod_{k\ge 1}\xi_k^{\mathbf{Z}}$, pulled back to $G$ along the isomorphism of Hausdorff locally compact
+abelian groups $G\simeq G_0\times\prod_{k\ge 1}\xi_k^{\mathbf{Z}}$.
 
-$G_0$ as an open subgroup of $G$ is isomorphic to $G_0\times1$ under such isomorphism, and hence $u_0$ is realized as
+$G_0$ as an open subgroup of $G$ is isomorphic to $G_0\times 1$ under such isomorphism, and hence $u_0$ is realized as
 the extension by zero of $u_1$ to $G$.
 
 $u_0$ is real-valued and nonnegative, since $u_1$ is. Let $K\subset G$ be an arbitrary compact subset. Then, upon
@@ -894,37 +894,37 @@ Moreover, we have, for every $x\in G$:
 
 $$
 \int_H u_0(h^{-1}x)\,\mathrm{d}\mu_H(h)
-=\int_{H/H_0}\bigotimes_{k\ge1}\varepsilon_k((h')^{-1}\overline{x})\int_{H^0}u_1(h^{-1}x)\,\mathrm{d}\mu_{H_0}(h)\,\mathrm{d}\mu_{H/H_0}(h')
+=\int_{H/H_0}\bigotimes_{k\ge 1}\varepsilon_k((h')^{-1}\overline{x})\int_{H^0}u_1(h^{-1}x)\,\mathrm{d}\mu_{H_0}(h)\,\mathrm{d}\mu_{H/H_0}(h')
 \tag{12.2.2.31}
 $$
 
 where $\overline{x}$ is the image of $x$ in $G/G_0$. We have:
 
 $$
-\int_{H/H_0}\bigotimes_{k\ge1}\varepsilon_k((h')^{-1}\overline{x})\,\mathrm{d}\mu_{H/H_0}(h')=1,
+\int_{H/H_0}\bigotimes_{k\ge 1}\varepsilon_k((h')^{-1}\overline{x})\,\mathrm{d}\mu_{H/H_0}(h')=1,
 \qquad
 \int_{H_0}u_1(h^{-1}x)\,\mathrm{d}\mu_{H_0}(h)=1
 $$
 
 and hence the integral in (12.2.2.31) equals 1.
 
-The function $u_0$ is therefore an $H$-indentation on $G$, and by its design the function $\alpha_k\cdot u_0$ is an $H_k$-indentation on $G_k$ for every integer $k\ge0$.
+The function $u_0$ is therefore an $H$-indentation on $G$, and by its design the function $\alpha_k\cdot u_0$ is an $H_k$-indentation on $G_k$ for every integer $k\ge 0$.
 
 The function $f(x,h):=\Psi^{\Delta}_{u_0}(\widetilde{u})(x,h^{-1}x)$ of $(x,h)\in D\times H$ is absolutely $(\mu_G\otimes\mu_H)$-integrable by Proposition
 12.2.2.2(2).
 
-We observe that $f(x,h)\beta_k(h^{-1}x)=f(x,h)\cdot1_{S_k(x)}(h)$ for $S_k(x)\subset H$ the subset, for each $x\in D$, of those
-$h\in H$ such that $h^{-1}x\in G-G_k$, then we deduce that $f_k(x,h):=f(x,h)\cdot1_{S_k(x)}(h)$ tends to zero pointwise
+We observe that $f(x,h)\beta_k(h^{-1}x)=f(x,h)\cdot 1_{S_k(x)}(h)$ for $S_k(x)\subset H$ the subset, for each $x\in D$, of those
+$h\in H$ such that $h^{-1}x\in G-G_k$, then we deduce that $f_k(x,h):=f(x,h)\cdot 1_{S_k(x)}(h)$ tends to zero pointwise
 $(\mu_G\otimes\mu_H)$-almost everywhere on $D\times H$.
 
 Indeed, for each fixed $x\in D$ and $h\in H$, the point $h^{-1}x$ is contained in at most finitely many of the
-subsets $G-G_k$, since $\bigcup_{k\ge0}G_k=G$ and $G_k\subset G_{k+1}$. Indeed, there exists $k\ge0$ large enough such that
+subsets $G-G_k$, since $\bigcup_{k\ge 0}G_k=G$ and $G_k\subset G_{k+1}$. Indeed, there exists $k\ge 0$ large enough such that
 $h^{-1}x\in G_k$, in which case $h^{-1}x$ is contained in $G_m$ for every integer $m\ge k$, and hence $h^{-1}x\notin G-G_m$ for
 every $m\ge k$, i.e. $1_{S_m(x)}(h)=0$ for all $m\ge k$. This shows that $f_m(x,h)=0$ for all $m\ge k$, where $k$ depends
-on the point $(x,h)$, i.e. $f_k\to0$ pointwise on $D\times H$, and hence pointwise $(\mu_G\otimes\mu_H)$-almost everywhere on
+on the point $(x,h)$, i.e. $f_k\to 0$ pointwise on $D\times H$, and hence pointwise $(\mu_G\otimes\mu_H)$-almost everywhere on
 $D\times H$.
 
-Since $|f_k|\le|f|$ for every integer $k\ge0$, then, by Dominated Convergence, (12.2.2.26) holds. $\square$
+Since $|f_k|\le|f|$ for every integer $k\ge 0$, then, by Dominated Convergence, (12.2.2.26) holds. $\square$
 
 ## PDF page 514
 
@@ -1093,10 +1093,10 @@ We rename $\delta_{y=g^{-1}x}$ as $\delta(y-g^{-1}x)$ to ease the notation, and 
 The integral from (12.4.1.5) is a continuous function $\mathbf{A}_{F,S}\to\mathcal{S}(\mathbf{A}_{F,S})'_{\beta}$, and in fact an element of $\mathcal{S}(\mathbf{A}_{F,S},\mathcal{S}(\mathbf{A}_{F,S})'_{\beta})$, which is in turn linearly and topologically isomorphic, by Theorem C.2.4.19, to
 
 $$
-\mathcal{S}(\mathbf{A}_{F,S})\widehat{\otimes}_{\pi}\mathcal{S}(\mathbf{A}_{F,S})'_{\beta}\simeq\mathcal{L}_{\beta}(\mathcal{S}(\mathbf{A}_{F,S})). \tag{12.4.1.6}
+\mathcal{S}(\mathbf{A}_{F,S})\widehat{\otimes}_{\pi}\mathcal{S}(\mathbf{A}_{F,S})'_{\beta}\simeq\mathscr{L}_{\beta}(\mathcal{S}(\mathbf{A}_{F,S})). \tag{12.4.1.6}
 $$
 
-Under the composition linear topological isomorphism $\mathcal{S}(\mathbf{A}_{F,S},\mathcal{S}(\mathbf{A}_{F,S})'_{\beta})\simeq\mathcal{L}_{\beta}(\mathcal{S}(\mathbf{A}_{F,S}))$, $K$ is sent to a continuous linear endomorphism, which we now compute. We have, for any $f\in\mathcal{S}(\mathbf{A}_{F,S})$:
+Under the composition linear topological isomorphism $\mathcal{S}(\mathbf{A}_{F,S},\mathcal{S}(\mathbf{A}_{F,S})'_{\beta})\simeq\mathscr{L}_{\beta}(\mathcal{S}(\mathbf{A}_{F,S}))$, $K$ is sent to a continuous linear endomorphism, which we now compute. We have, for any $f\in\mathcal{S}(\mathbf{A}_{F,S})$:
 
 $$
 (Kf)(x)=\int_{\mathrm{GL}_1(\mathbf{A}_{F,S})}|g|^{-1/2}_{F,S}\widetilde{\varphi}(g)\langle f,\delta(y-g^{-1}x)\rangle_{\mathcal{S}(\mathbf{A}_{F,S}),\mathcal{S}(\mathbf{A}_{F,S})'}\,\mathrm{d}\mu_S(g)=\int_{\mathrm{GL}_1(\mathbf{A}_{F,S})}|g|^{-1/2}_{F,S}\widetilde{\varphi}(g)f(g^{-1}x)\,\mathrm{d}\mu_S(g). \tag{12.4.1.7}

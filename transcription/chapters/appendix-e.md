@@ -50,7 +50,7 @@ E.5.4. Comparing $\mathbf{Cat}^*$ and $\mathbf{Cat}$ — 907
 
 E.5.5. 2-category of 2-commutative diagrams — 910
 
-E.5.6. 2-final objects in $\mathrm{Diagrams}(f, g)$ — 913
+E.5.6. 2-final objects in $\mathbf{Diagrams}(f, g)$ — 913
 
 E.5.7. 2-fibre products and 1-fibre products — 914
 
@@ -146,17 +146,17 @@ convenient categories of spaces and for the identification of their desired prop
 
 The concept of “$k$-space”, where the letter $k$ is understood to refer to the german word “kompakt”, predates Brown’s thesis and the very idea of a convenient category. It appears to go back to Princeton lectures by Hurewicz from the late 1940’s, and was first introduced in the literature in [Ga, Definition, p. 303]. It can be found in Kelley’s book on general topology (see [Ke, Ch. 7, p. 130]) from 1955. It was after [Br1] and particularly in [Br2] that the importance of $k$-spaces, in their definition from [Ke, Ch. 7, p. 130] was observed. We refer the reader to [Br2], where the author advertised the category of $k$-spaces as a possible candidate for a convenient category, before an axiomatization of “convenience” was made in the literature (see [Br2], and [Vogt] for discussions of convenient categories and their properties). The reader is further referred to [nLab1, §6] for further historical information on the inception and development of these themes.
 
-The defining properties of a convenient category $\mathscr{C}$ of topological spaces are usually assumed to be:
+The defining properties of a convenient category $\mathcal{C}$ of topological spaces are usually assumed to be:
 
-(1) $\mathscr{C}$ is a subcategory of $\mathbf{Spaces}$ that is full and replete (i.e., any object of $\mathbf{Spaces}$ isomorphic to an object of $\mathscr{C}$ is an object of $\mathscr{C}$),
+(1) $\mathcal{C}$ is a subcategory of $\mathbf{Spaces}$ that is full and replete (i.e., any object of $\mathbf{Spaces}$ isomorphic to an object of $\mathcal{C}$ is an object of $\mathcal{C}$),
 
-(2) $\mathscr{C}$ contains all CW complexes and most examples of spaces of practical interest (see the beginning of [Ste, §1]),
+(2) $\mathcal{C}$ contains all CW complexes and most examples of spaces of practical interest (see the beginning of [Ste, §1]),
 
-(3) $\mathscr{C}$ is closed under small limits and colimits (see [Vogt, §2, Thm. 2.1]),
+(3) $\mathcal{C}$ is closed under small limits and colimits (see [Vogt, §2, Thm. 2.1]),
 
-(4) for every object $X$ in $\mathscr{C}$, closed subspaces of $X$ are objects in $\mathscr{C}$ (see [Vogt, §2, Axiom 1]); it is sometimes required that open subspaces also satisfy this property (see [Vogt, §2, Axiom 1$^*$]).
+(4) for every object $X$ in $\mathcal{C}$, closed subspaces of $X$ are objects in $\mathcal{C}$ (see [Vogt, §2, Axiom 1]); it is sometimes required that open subspaces also satisfy this property (see [Vogt, §2, Axiom 1$^*$]).
 
-(5) $\mathscr{C}$ is cartesian closed (see [Vogt, §2, Axiom 2] for axioms in this direction, and [Br3, §1] on the exponential law; see also [Ste, §1, (1),(2)]) with respect to its cartesian monoidal structure (see [MacL, Ch. VII, §7-8]).
+(5) $\mathcal{C}$ is cartesian closed (see [Vogt, §2, Axiom 2] for axioms in this direction, and [Br3, §1] on the exponential law; see also [Ste, §1, (1),(2)]) with respect to its cartesian monoidal structure (see [MacL, Ch. VII, §7-8]).
 
 The reader is especially referred to [ELS], particularly to [ELS, §3, §5], and to [ELS, Thm. 5.15], where a comprehensive treatment of convenient categories, their stability with respect to internal exponentiation, and their general construction, alongside a uniform proof of cartesian closedness, is given. We further refer the reader to [nLab1, Def. 2.1] and the discussion in [nLab1, §2] for an overview around the concept of “convenient category” of topological spaces.
 
@@ -342,7 +342,7 @@ By assumption on $U$, $q^{-1}(U)$ is open and hence (E.1.1.5) forces $U_\sigma =
 
 Now that $q$ is submersive, a function $f : X \to Y$ is continuous if and only if $f \circ q$ is continuous. This assertion is in turn equivalent to $f \circ g_\sigma : K_\sigma \to Y$ being continuous for all $\sigma \in S'_X$ by the universal property of topological co-products. Hence, also (1) implies (3), and similarly (4) implies (3).
 
-Next we show (1) implies (2). We now write $\mathscr{C}$ for the class of all compact Hausdorff spaces, and we define the class function $\phi : S'_X \to \mathscr{C}$ by $\phi(\sigma) = K_\sigma$. This is a class function (see [Kunen, Ch. I, §6]) since it is a binary relation on $S'_X \times \mathscr{C}$ such that $(\sigma, K) = (\sigma, K')$ implies $K = K'$. By the Axiom of Replacement (see [Jech, Part I, §1, (1.7)] and [Kunen, Ch. I, §6, Axiom 6]) the image of $\phi$ is a set, which we denote $S_X$. By design of $S'_X$, for every $K \in S_X$ there exists a continuous map $g_K : K \to X$ such that a set-function $f : X \to Y$ is continuous if and only if $f \circ g_K$ is continuous for all $K \in S_X$. In particular, for any set-function $f : X \to Y$, $f$ is continuous if and only if $f \circ g$ is continuous for all $K \in S_X$ and all continuous maps $g : K \to X$. The set $S_X$ therefore satisfies the requirements of part (2) of the Lemma.
+Next we show (1) implies (2). We now write $\mathscr{C}$ for the class of all compact Hausdorff spaces, and we define the class function $\phi : S'_X \to \mathscr{C}$ by $\phi(\sigma) = K_\sigma$. This is a class function (see [Kunen, Ch. I, §6]) since it is a binary relation on $S'_X \times \mathcal{C}$ such that $(\sigma, K) = (\sigma, K')$ implies $K = K'$. By the Axiom of Replacement (see [Jech, Part I, §1, (1.7)] and [Kunen, Ch. I, §6, Axiom 6]) the image of $\phi$ is a set, which we denote $S_X$. By design of $S'_X$, for every $K \in S_X$ there exists a continuous map $g_K : K \to X$ such that a set-function $f : X \to Y$ is continuous if and only if $f \circ g_K$ is continuous for all $K \in S_X$. In particular, for any set-function $f : X \to Y$, $f$ is continuous if and only if $f \circ g$ is continuous for all $K \in S_X$ and all continuous maps $g : K \to X$. The set $S_X$ therefore satisfies the requirements of part (2) of the Lemma.
 
 ## PDF page 832
 
@@ -484,19 +484,19 @@ A reference pinpointing the general structures underlying cartesian closedness o
 
 **Definition E.1.2.6.** Let $X$ and $Y$ be compactly generated spaces.
 
-(1) For any compact Hausdorff space $K$, continuous map $g : K \to X$, and open subspace $U \subset Y$, let $N(g,K,U)$ denote the subset of $C(X,Y)$ consisting of continuous maps $f : X \to Y$ such that $(f \circ g)(K) \subseteq U$:
+(1) For any compact Hausdorff space $K$, continuous map $g : K \to X$, and open subspace $U \subset Y$, let $N(g,K,U)$ denote the subset of $\mathrm{C}(X,Y)$ consisting of continuous maps $f : X \to Y$ such that $(f \circ g)(K) \subseteq U$:
 
 $$
-N(g,K,U) = C(X,Y) \times_{g^*,C(K,Y),j_*} C(K,U) \tag{E.1.2.4}
+N(g,K,U) = \mathrm{C}(X,Y) \times_{g^*,\mathrm{C}(K,Y),j_*} \mathrm{C}(K,U) \tag{E.1.2.4}
 $$
 
-where $g^*: C(X,Y) \to C(K,Y)$ is $f \mapsto f \circ g$ and $j_*: C(K,U) \to C(K,Y)$ is $f \mapsto j \circ f$ for $j : U \to Y$ the open immersion. (Note that $N(g,\emptyset,\emptyset) = C(X,Y)$ for the unique $j : \emptyset \to X$.)
+where $g^*: \mathrm{C}(X,Y) \to \mathrm{C}(K,Y)$ is $f \mapsto f \circ g$ and $j_*: \mathrm{C}(K,U) \to \mathrm{C}(K,Y)$ is $f \mapsto j \circ f$ for $j : U \to Y$ the open immersion. (Note that $N(g,\emptyset,\emptyset) = \mathrm{C}(X,Y)$ for the unique $j : \emptyset \to X$.)
 
-We denote by $\mathcal{B}$ the set of subsets $N \subset C(X,Y)$ of the form $N = N(g,K,U)$ for some compact Hausdorff space $K$, continuous map $g : K \to X$, and open subspace $U \subset Y$.
+We denote by $\mathcal{B}$ the set of subsets $N \subset \mathrm{C}(X,Y)$ of the form $N = N(g,K,U)$ for some compact Hausdorff space $K$, continuous map $g : K \to X$, and open subspace $U \subset Y$.
 
-(2) The *compact-open topology* on $C(X,Y)$ is the unique topology on $C(X,Y)$ admitting $\mathcal{B}$ as a sub-base (see [SP, Tag 08ZI] and [SP, Tag 08ZJ], as well as [Du, Ch. III, Thm. 3.1] and the discussion after [Ke, Ch. 1, Thm. 12, p. 48]). In other words, finite intersection among members of $\mathcal{B}$ are a base for the topology. We call the sub-base $\mathcal{B}$ the *standard sub-base* for the compact-open topology on $C(X,Y)$. (In Lemma E.1.2.8 we give a set-theoretic consistency check, showing that the compact-open topology can be defined using a set of triples $(g,K,U)$ rather than just a class.)
+(2) The *compact-open topology* on $\mathrm{C}(X,Y)$ is the unique topology on $\mathrm{C}(X,Y)$ admitting $\mathcal{B}$ as a sub-base (see [SP, Tag 08ZI] and [SP, Tag 08ZJ], as well as [Du, Ch. III, Thm. 3.1] and the discussion after [Ke, Ch. 1, Thm. 12, p. 48]). In other words, finite intersection among members of $\mathcal{B}$ are a base for the topology. We call the sub-base $\mathcal{B}$ the *standard sub-base* for the compact-open topology on $\mathrm{C}(X,Y)$. (In Lemma E.1.2.8 we give a set-theoretic consistency check, showing that the compact-open topology can be defined using a set of triples $(g,K,U)$ rather than just a class.)
 
-**Remark E.1.2.7.** We note that the compact-open topology referred to above is not the usual notion of topology on function spaces under the same name. Indeed, for topological spaces $X$ and $Y$, one usually defines the compact-open topology on $C(X,Y)$ as the topology having as sub-base the collection of subsets $N(g,K,U)$ for $g : K \to X$ an immersion of a compact space $K$. Throughout this appendix, the terminology “compact-open topology” will solely be referring to the topology introduced in Definition E.1.2.6(2), generating a finer topology. The topology defined in Definition E.1.2.6 is a topology on $C(X,Y)$, for compactly generated $X$ and $Y$, such that $k(C(X,Y))$ defines an internal mapping functor promoting $\mathbf{CG}$ to a closed monoidal category with respect to the cartesian monoidal structure (we refer the reader to [MacL, Ch. VII] for background on cartesian monoidal categories, and to [MacL, Ch. III, §1, Prop. 5] for the construction of a canonical monoidal structure
+**Remark E.1.2.7.** We note that the compact-open topology referred to above is not the usual notion of topology on function spaces under the same name. Indeed, for topological spaces $X$ and $Y$, one usually defines the compact-open topology on $\mathrm{C}(X,Y)$ as the topology having as sub-base the collection of subsets $N(g,K,U)$ for $g : K \to X$ an immersion of a compact space $K$. Throughout this appendix, the terminology “compact-open topology” will solely be referring to the topology introduced in Definition E.1.2.6(2), generating a finer topology. The topology defined in Definition E.1.2.6 is a topology on $\mathrm{C}(X,Y)$, for compactly generated $X$ and $Y$, such that $k(\mathrm{C}(X,Y))$ defines an internal mapping functor promoting $\mathbf{CG}$ to a closed monoidal category with respect to the cartesian monoidal structure (we refer the reader to [MacL, Ch. VII] for background on cartesian monoidal categories, and to [MacL, Ch. III, §1, Prop. 5] for the construction of a canonical monoidal structure
 
 ## PDF page 836
 
@@ -504,17 +504,17 @@ We denote by $\mathcal{B}$ the set of subsets $N \subset C(X,Y)$ of the form $N 
 
 on categories with finite products and a final object). Proving this fact is the purpose of the next results (see Lemma E.1.2.12 and Proposition E.1.2.13).
 
-The reader may wonder whether the $k$-topology on the compact-open topology on $C(X,Y)$ is the only topology promoting the set-valued bifunctor of continuous maps between compactly generated spaces to an internal Hom-functor promoting $\mathbf{CG}$ to a cartesian closed monoidal category. We refer the reader to [ELS, §5] for a discussion pertaining uniqueness aspects of the $k$-topology associated to the compact-open topology being considered (see especially [ELS, §5, Thm. 5.15]). We follow [LGL, §5] throughout the discussion on function spaces of compactly generated spaces, and later on compactly generated spaces incorporating a separation condition (see Proposition E.2.2.10).
+The reader may wonder whether the $k$-topology on the compact-open topology on $\mathrm{C}(X,Y)$ is the only topology promoting the set-valued bifunctor of continuous maps between compactly generated spaces to an internal Hom-functor promoting $\mathbf{CG}$ to a cartesian closed monoidal category. We refer the reader to [ELS, §5] for a discussion pertaining uniqueness aspects of the $k$-topology associated to the compact-open topology being considered (see especially [ELS, §5, Thm. 5.15]). We follow [LGL, §5] throughout the discussion on function spaces of compactly generated spaces, and later on compactly generated spaces incorporating a separation condition (see Proposition E.2.2.10).
 
-**Lemma E.1.2.8.** *Let $X$ and $Y$ be compactly generated spaces. There exists a set $S_{X,Y}$, and for any $\sigma \in S_{X,Y}$ a triple $(g_\sigma,K_\sigma,U_\sigma)$ with $K_\sigma$ a compact Hausdorff space, $g_\sigma : K_\sigma \to X$ a continuous map, and $U_\sigma \subset Y$ an open subspace such that the coarsest topology on $C(X,Y)$ with the property that every element of the set*
+**Lemma E.1.2.8.** *Let $X$ and $Y$ be compactly generated spaces. There exists a set $S_{X,Y}$, and for any $\sigma \in S_{X,Y}$ a triple $(g_\sigma,K_\sigma,U_\sigma)$ with $K_\sigma$ a compact Hausdorff space, $g_\sigma : K_\sigma \to X$ a continuous map, and $U_\sigma \subset Y$ an open subspace such that the coarsest topology on $\mathrm{C}(X,Y)$ with the property that every element of the set*
 
 $$
 \{N(g_\sigma,K_\sigma,U_\sigma), \sigma \in S_{X,Y}\} \tag{E.1.2.5}
 $$
 
-*is open in $C(X,Y)$ is the compact-open topology on $C(X,Y)$.*
+*is open in $\mathrm{C}(X,Y)$ is the compact-open topology on $\mathrm{C}(X,Y)$.*
 
-*Proof.* We fix a subset $N \subset C(X,Y)$ of the form $N = N(g,K,U)$ as in (E.1.2.4) for a compact Hausdorff space $K$, a continuous map $g : K \to X$, an open subspace $U \subset Y$. We call $\mathscr{C}_N$ the class of those triples $(g,K,U)$ such that $K$ is a compact Hausdorff space, $g : K \to X$ is a continuous map, and $U \subset Y$ is an open subspace satisfying
+*Proof.* We fix a subset $N \subset \mathrm{C}(X,Y)$ of the form $N = N(g,K,U)$ as in (E.1.2.4) for a compact Hausdorff space $K$, a continuous map $g : K \to X$, an open subspace $U \subset Y$. We call $\mathscr{C}_N$ the class of those triples $(g,K,U)$ such that $K$ is a compact Hausdorff space, $g : K \to X$ is a continuous map, and $U \subset Y$ is an open subspace satisfying
 
 $$
 N(g,K,U) = N.
@@ -526,7 +526,7 @@ $$
 \alpha_N := \inf\{\alpha \mid \mathscr{C}_N \cap V_\alpha \ne \emptyset\}, \quad \alpha := \sup\{\alpha_N \mid N \in \mathcal{B}\} \tag{E.1.2.6}
 $$
 
-we have $\mathscr{C}_N \cap V_\alpha \ne \emptyset$ for every $N \in \mathcal{B}$, where $\mathcal{B}$ is the standard sub-base for the compact-open topology on $C(X,Y)$ (see Definition E.1.2.6(2)). We note that the ordinals $\alpha_N$ and $\alpha$ from (E.1.2.6) indeed exist, as the infimum and supremum are defined over *sets* of ordinals. We call $S_N := \mathscr{C}_N \cap V_\alpha$, a set. We further call $S_{X,Y}$ the set:
+we have $\mathcal{C}_N \cap V_\alpha \ne \emptyset$ for every $N \in \mathcal{B}$, where $\mathcal{B}$ is the standard sub-base for the compact-open topology on $\mathrm{C}(X,Y)$ (see Definition E.1.2.6(2)). We note that the ordinals $\alpha_N$ and $\alpha$ from (E.1.2.6) indeed exist, as the infimum and supremum are defined over *sets* of ordinals. We call $S_N := \mathcal{C}_N \cap V_\alpha$, a set. We further call $S_{X,Y}$ the set:
 
 $$
 S_{X,Y} := \bigcup_{N \in \mathcal{B}} S_N.
@@ -534,18 +534,18 @@ $$
 
 By design of $\alpha$, for every $N \in \mathcal{B}$ there exists $(g,K,U) \in S_{X,Y}$ such that $N = N(g,K,U)$. $\square$
 
-**Construction E.1.2.9.** We let $X, Y$ be compactly generated spaces, and endow the set $C(X,Y)$ with the compact-open topology of Definition E.1.2.6. Define:
+**Construction E.1.2.9.** We let $X, Y$ be compactly generated spaces, and endow the set $\mathrm{C}(X,Y)$ with the compact-open topology of Definition E.1.2.6. Define:
 
 $$
-\mathscr{Cont}_k(X,Y) := k(C(X,Y)).
+\mathscr{C}ont_k(X,Y) := k(\mathrm{C}(X,Y)).
 $$
 
-We now check that $\mathscr{Cont}_k$ is bifunctorial on $\mathbf{CG}$ (in analogy with [LGL, §5, Thm. 5.5], see especially the discussion after [LGL, §5, Lemma 5.2], [MacL, Ch. VIII, Thm. 3], [Str, Lemma 2.10] and [Rezk, Prop. 8.2]).
+We now check that $\mathscr{C}ont_k$ is bifunctorial on $\mathbf{CG}$ (in analogy with [LGL, §5, Thm. 5.5], see especially the discussion after [LGL, §5, Lemma 5.2], [MacL, Ch. VIII, Thm. 3], [Str, Lemma 2.10] and [Rezk, Prop. 8.2]).
 
 **Lemma E.1.2.10.** *Let $X, Y$ be compactly generated spaces. Then formation of:*
 
 $$
-\mathscr{Cont}_k(X,Y)
+\mathscr{C}ont_k(X,Y)
 $$
 
 *is contravariantly functorial in $\mathbf{CG}$ with respect to $X$, and covariantly functorial in $\mathbf{CG}$ with respect to $Y$.*
@@ -553,14 +553,14 @@ $$
 *Proof.* For $f : Y \to Y'$ a continuous map in $\mathbf{CG}$, $U \subset Y'$ an open subspace with $j' : U \to Y'$ the open immersion, $K$ a compact Hausdorff space, and $a : K \to X$ a continuous map, we claim
 
 $$
-f_* : C(X,Y) \to C(X,Y'), \quad g \rightsquigarrow \phi_f(g) := f \circ g \tag{E.1.2.7}
+f_* : \mathrm{C}(X,Y) \to \mathrm{C}(X,Y'), \quad g \rightsquigarrow \phi_f(g) := f \circ g \tag{E.1.2.7}
 $$
 
 ## PDF page 837
 
 **E.1. COMPACTLY GENERATED SPACES** · **837**
 
-is continuous. Clearly it is enough to check that the pre-image under $f_*$ of every element of the standard sub-base for the compact-open topology on $C(X,Y')$ is an element of the standard sub-base for the compact-open topology on $C(X,Y)$. By design of $N(a,K,U)$, we have
+is continuous. Clearly it is enough to check that the pre-image under $f_*$ of every element of the standard sub-base for the compact-open topology on $\mathrm{C}(X,Y')$ is an element of the standard sub-base for the compact-open topology on $\mathrm{C}(X,Y)$. By design of $N(a,K,U)$, we have
 
 $$
 (f_*)^{-1}(N(a,K,U)) = N(a,K,f^{-1}(U)). \tag{E.1.2.8}
@@ -569,28 +569,28 @@ $$
 Applying $k$ then gives a continuous map
 
 $$
-\mathscr{Cont}_k(X,Y) \to \mathscr{Cont}_k(X,Y')
+\mathscr{C}ont_k(X,Y) \to \mathscr{C}ont_k(X,Y')
 $$
 
-This proves that $\mathscr{Cont}_k(X,Y)$ is covariantly functorial with respect to $Y$.
+This proves that $\mathscr{C}ont_k(X,Y)$ is covariantly functorial with respect to $Y$.
 
-Now for $f : X' \to X$ be a continuous map in $\mathbf{CG}$, $K$ a compact Hausdorff space, $a : K \to X'$ a continuous map, and $U \subset Y$ an open subspace, let $f^* : C(X,Y) \to C(X',Y)$ be $g \mapsto g \circ f$. By a similar token as in the foregoing we have
+Now for $f : X' \to X$ be a continuous map in $\mathbf{CG}$, $K$ a compact Hausdorff space, $a : K \to X'$ a continuous map, and $U \subset Y$ an open subspace, let $f^* : \mathrm{C}(X,Y) \to \mathrm{C}(X',Y)$ be $g \mapsto g \circ f$. By a similar token as in the foregoing we have
 
 $$(f^*)^{-1}(N(a,K,U)) = N(f \circ a,K,U),$$
 
 giving continuity of $f^*$ with respect to the compact-open topology on source and target. Applying $k$ to $f^*$ gives
 
-$$f^* : \mathscr{Cont}_k(X,Y) \to \mathscr{Cont}_k(X',Y)$$
+$$f^* : \mathscr{C}ont_k(X,Y) \to \mathscr{C}ont_k(X',Y)$$
 
-as a continuous map. This proves that $\mathscr{Cont}_k(X,Y)$ is contravariantly functorial with respect to $X$. $\square$
+as a continuous map. This proves that $\mathscr{C}ont_k(X,Y)$ is contravariantly functorial with respect to $X$. $\square$
 
-The conclusion of Lemma E.1.2.10 is that $\mathscr{Cont}_k$ is a bifunctor:
+The conclusion of Lemma E.1.2.10 is that $\mathscr{C}ont_k$ is a bifunctor:
 
 $$
-\mathscr{Cont}_k : \mathbf{CG}^{\mathrm{opp}} \times \mathbf{CG} \to \mathbf{CG}.
+\mathscr{C}ont_k : \mathbf{CG}^{\mathrm{opp}} \times \mathbf{CG} \to \mathbf{CG}.
 $$
 
-Our aim is to now prove that $\mathscr{Cont}_k$ is compatible with the internal product in $\mathbf{CG}$, and, specifically, satisfies a natural Hom-$\otimes$ adjunction, analogously to [MacL, Ch. VII, §8, (2)] and [Ste, Thm. 5.6], and as proved in [LGL, Thm. 5.5], [Str, Prop. 2.20], and [Rezk, Prop. 8.8]. We provide an argument here as well for the sake of completeness, and to further highlight relations among the various approaches within the literature. We will mostly rely upon [LGL, §5], [Str, §2] and [Rezk, §8].
+Our aim is to now prove that $\mathscr{C}ont_k$ is compatible with the internal product in $\mathbf{CG}$, and, specifically, satisfies a natural Hom-$\otimes$ adjunction, analogously to [MacL, Ch. VII, §8, (2)] and [Ste, Thm. 5.6], and as proved in [LGL, Thm. 5.5], [Str, Prop. 2.20], and [Rezk, Prop. 8.8]. We provide an argument here as well for the sake of completeness, and to further highlight relations among the various approaches within the literature. We will mostly rely upon [LGL, §5], [Str, §2] and [Rezk, §8].
 
 **Remark E.1.2.11.** We highlight here how the approaches to compactly generated function spaces in the above sources relate to one another. Throughout this work, we proceed as in [LGL, §5], and, specifically, we define the compact-open topology on function spaces in the sense of Definition E.1.2.6, following [LGL, §5, p. 160]. This is the approach adopted in [Str, §2] as well. We caution the reader that the topology defined on function spaces in [Rezk, §8, 8.1] is not generally equivalent to the compact-open topology as defined in [LGL, §5, p. 160] and [Str, Def. 2.8], and throughout this appendix. It is in fact finer (see [Rezk, Lemma 8.4]). However, applying $k$ removes this discrepancy: by [ELS, Thm. 5.15], the compactly generated function spaces associated to either topology are the same. Equivalently, the functor $k(\cdot)$ identifies the topology defined in [Rezk, §8, 8.1] on function spaces with the $k$-topology on the compact-open topology defined in [LGL, §5, p. 160], [Str, Def. 2.8], and this appendix.
 
@@ -598,15 +598,15 @@ We have the following:
 
 **Lemma E.1.2.12.** *Let $X, Y, Z$ be compactly generated spaces. The natural set-map*
 
-$$\theta_{X,Y,Z} : \mathscr{Cont}_k(X \times Y,Z) \to \mathscr{Cont}_k(X,\mathscr{Cont}_k(Y,Z))$$
+$$\theta_{X,Y,Z} : \mathscr{C}ont_k(X \times Y,Z) \to \mathscr{C}ont_k(X,\mathscr{C}ont_k(Y,Z))$$
 
 *defined by $f \mapsto (x \mapsto f(x,\cdot))$ is a homeomorphism. In particular,*
 
-$$\theta^{-1}_{\mathscr{Cont}_k(X,Y),X,Y}(\mathrm{id})$$
+$$\theta^{-1}_{\mathscr{C}ont_k(X,Y),X,Y}(\mathrm{id})$$
 
 *is the evaluation map*
 
-$$\mathscr{Cont}_k(X,Y)^{\mathrm{set}} \times X^{\mathrm{set}} \to Y^{\mathrm{set}}$$
+$$\mathscr{C}ont_k(X,Y)^{\mathrm{set}} \times X^{\mathrm{set}} \to Y^{\mathrm{set}}$$
 
 *sending a pair $(f,x)$ to $f(x)$.*
 
@@ -631,7 +631,7 @@ natural with respect to $X, Y$ and $Z$. Explicitly, $\psi(f)(x,y) = f(x)(y)$.
 We check that
 
 $$
-\psi(C(X,C(Y,Z)) \subset C(X \times Y,Z) \tag{E.1.2.11}
+\psi(\mathrm{C}(X,\mathrm{C}(Y,Z)) \subset \mathrm{C}(X \times Y,Z) \tag{E.1.2.11}
 $$
 
 as subsets of $\mathrm{Map}(X^{\mathrm{set}} \times Y^{\mathrm{set}},Z^{\mathrm{set}})$. To this end, define the set-function
@@ -644,22 +644,22 @@ by
 
 $$f \mapsto \eta(f) := (f,\mathrm{id}_Y).$$
 
-If $f \in C(X,C(Y,Z))$, where continuity of $f$ is with respect to the intrinsic topology on $X$ and the compact-open topology on $C(Y,Z)$ then $f$ factors uniquely through $k(C(Y,Z)) \to C(Y,Z)$ since $X$ is in $\mathbf{CG}$, so $\eta(f)$ is continuous as a map
+If $f \in \mathrm{C}(X,\mathrm{C}(Y,Z))$, where continuity of $f$ is with respect to the intrinsic topology on $X$ and the compact-open topology on $\mathrm{C}(Y,Z)$ then $f$ factors uniquely through $k(\mathrm{C}(Y,Z)) \to \mathrm{C}(Y,Z)$ since $X$ is in $\mathbf{CG}$, so $\eta(f)$ is continuous as a map
 
-$$X \times Y \to k(C(Y,Z)) \times Y = k(C(Y,Z) \times_0 Y)$$
+$$X \times Y \to k(\mathrm{C}(Y,Z)) \times Y = k(\mathrm{C}(Y,Z) \times_0 Y)$$
 
-by functoriality of the $k$-topology. As $\psi$ from (E.1.2.10) is by definition $\psi = \mathrm{ev} \circ \eta$, with $\mathrm{ev}$ the evaluation set-function from (E.1.2.9), to prove the containment in (E.1.2.11) it is enough to check that the restriction of $\mathrm{ev}$ to the set-theoretic product $C(Y,Z) \times Y^{\mathrm{set}}$ is continuous with respect to the topology of $k(C(Y,Z) \times_0 Y)$ and the intrinsic topology on $Z$.
+by functoriality of the $k$-topology. As $\psi$ from (E.1.2.10) is by definition $\psi = \mathrm{ev} \circ \eta$, with $\mathrm{ev}$ the evaluation set-function from (E.1.2.9), to prove the containment in (E.1.2.11) it is enough to check that the restriction of $\mathrm{ev}$ to the set-theoretic product $\mathrm{C}(Y,Z) \times Y^{\mathrm{set}}$ is continuous with respect to the topology of $k(\mathrm{C}(Y,Z) \times_0 Y)$ and the intrinsic topology on $Z$.
 
-We therefore let $U \subset Z$ be an open subspace, $K$ a compact Hausdorff space, and $a : K \to k(C(Y,Z) \times_0 Y)$ a continuous map. It is enough to check that $(\mathrm{ev} \circ a)^{-1}(U)$ is open in $K$. We define the continuous composition
+We therefore let $U \subset Z$ be an open subspace, $K$ a compact Hausdorff space, and $a : K \to k(\mathrm{C}(Y,Z) \times_0 Y)$ a continuous map. It is enough to check that $(\mathrm{ev} \circ a)^{-1}(U)$ is open in $K$. We define the continuous composition
 
 $$
-a_1 : K \xrightarrow{a} k(C(Y,Z) \times_0 Y) \xrightarrow{\mathrm{id}} C(Y,Z) \times_0 Y \xrightarrow{\mathrm{pr}_1} C(Y,Z) \tag{E.1.2.13}
+a_1 : K \xrightarrow{a} k(\mathrm{C}(Y,Z) \times_0 Y) \xrightarrow{\mathrm{id}} \mathrm{C}(Y,Z) \times_0 Y \xrightarrow{\mathrm{pr}_1} \mathrm{C}(Y,Z) \tag{E.1.2.13}
 $$
 
 We further define the continuous composition
 
 $$
-a_2 : K \xrightarrow{a} k(C(Y,Z) \times_0 Y) \xrightarrow{\mathrm{id}} C(Y,Z) \times_0 Y \xrightarrow{\mathrm{pr}_2} Y \tag{E.1.2.14}
+a_2 : K \xrightarrow{a} k(\mathrm{C}(Y,Z) \times_0 Y) \xrightarrow{\mathrm{id}} \mathrm{C}(Y,Z) \times_0 Y \xrightarrow{\mathrm{pr}_2} Y \tag{E.1.2.14}
 $$
 
 We have:
@@ -675,10 +675,10 @@ $$
 Let $t_0$ be an element in $a^{-1}(\mathrm{ev}^{-1}(U)) \subset K$. The map $a_1(t_0) : Y \to Z$ is continuous, and upon composing it with $a_2 : K \to Y$ we obtain a continuous map $g := a_1(t_0) \circ a_2 : K \to Z$. As $g^{-1}(U)$ is open in $K$ and contains $t_0$, and $K$ is compact Hausdorff, there exists open $V \subset g^{-1}(U)$ containing $t_0$ and having compact closure $K' := \overline{V}$ in $K$. It follows that
 
 $$
-a_1(t_0) \in N(a_2,K',U) \subset C(Y,Z). \tag{E.1.2.16}
+a_1(t_0) \in N(a_2,K',U) \subset \mathrm{C}(Y,Z). \tag{E.1.2.16}
 $$
 
-Since $a_1 : K \to C(Y,Z)$ is continuous with respect to the compact-open topology on $C(Y,Z)$ and the topology on $K$, the subset $a_1^{-1}(N(a_2,K',U))$ is open in $K$. We claim that
+Since $a_1 : K \to \mathrm{C}(Y,Z)$ is continuous with respect to the compact-open topology on $\mathrm{C}(Y,Z)$ and the topology on $K$, the subset $a_1^{-1}(N(a_2,K',U))$ is open in $K$. We claim that
 
 $$
 a_1^{-1}(N(a_2,K',U)) \cap K' \subset (\mathrm{ev} \circ a)^{-1}(U). \tag{E.1.2.17}
@@ -697,7 +697,7 @@ by (E.1.2.15). This proves the containment claimed in (E.1.2.17).
 We have found the open neighborhood $a_1^{-1}(N(a_2,K',U)) \cap V$ of $t_0$ in $K$ contained in $(\mathrm{ev} \circ a)^{-1}(U)$. Indeed, $t_0$ is contained in $V$ by design of $V$ and is contained in $a_1^{-1}(N(a_2,K',U))$ by (E.1.2.16). As $t_0$ is an arbitrary element of $(\mathrm{ev} \circ a)^{-1}(U)$, we deduce that $(\mathrm{ev} \circ a)^{-1}(U)$ is open as desired. We have shown $\psi$ defines a visibly injective set-function:
 
 $$
-\psi_{X,Y,Z} : C(X,C(Y,Z)) \to C(X \times Y,Z). \tag{E.1.2.18}
+\psi_{X,Y,Z} : \mathrm{C}(X,\mathrm{C}(Y,Z)) \to \mathrm{C}(X \times Y,Z). \tag{E.1.2.18}
 $$
 
 To show that $\psi_{X,Y,Z}$ is surjective, we build a continuous inverse as follows. We define the set-function
@@ -724,35 +724,35 @@ $$
 
 It is clear that $\psi \circ \psi' = \mathrm{id}$ on $\mathrm{Map}(X^{\mathrm{set}} \times Y^{\mathrm{set}},Z^{\mathrm{set}})$ and $\psi' \circ \psi = \mathrm{id}$ on $\mathrm{Map}(X^{\mathrm{set}},\mathrm{Map}(Y^{\mathrm{set}},Z^{\mathrm{set}}))$. To check that $\psi_{X,Y,Z}$ is surjective, it is enough to check the containment
 
-$$\psi'(C(X \times Y,Z)) \subset C(X,C(Y,Z))$$
+$$\psi'(\mathrm{C}(X \times Y,Z)) \subset \mathrm{C}(X,\mathrm{C}(Y,Z))$$
 
 as subsets of $\mathrm{Map}(X^{\mathrm{set}},\mathrm{Map}(Y^{\mathrm{set}},Z^{\mathrm{set}}))$.
 
-In other words, we must check that for any $h : X \times Y \to Z$ continuous with respect to the compactly generated topologies on $X \times Y$ and $Z$, the set-function $\psi'(h) : X^{\mathrm{set}} \to \mathrm{Map}(Y^{\mathrm{set}},Z^{\mathrm{set}})$ takes values in $C(Y,Z)$ and $\psi'(h)$ is continuous with respect to the compactly generated topology on $X$ and the compact-open topology on $C(Y,Z)$.
+In other words, we must check that for any $h : X \times Y \to Z$ continuous with respect to the compactly generated topologies on $X \times Y$ and $Z$, the set-function $\psi'(h) : X^{\mathrm{set}} \to \mathrm{Map}(Y^{\mathrm{set}},Z^{\mathrm{set}})$ takes values in $\mathrm{C}(Y,Z)$ and $\psi'(h)$ is continuous with respect to the compactly generated topology on $X$ and the compact-open topology on $\mathrm{C}(Y,Z)$.
 
-For any $x \in X$, $\psi'(h)(x) = h(x,\cdot) = h \circ i_x$ as a set-function $Y \to Z$ for the visibly continuous $x$-insertion map $i_x : Y \to X \times_0 Y$. Since $Y$ is compactly generated, $i_x$ is also continuous as a map $Y \to X \times Y$ by Lemma E.1.2.1(1). Since $h$ is itself a continuous map $X \times Y \to Z$, the composition $h \circ i_x : Y \to Z$ is continuous, and hence $\psi'(h)(x) \in C(Y,Z)$. We now check $\psi'(h) : X \to C(Y,Z)$ is continuous upon endowing $X$ with its intrinsic compactly generated topology and $C(Y,Z)$ with the compact-open topology. By Lemma E.1.2.10, $h_*$ is continuous as a map
+For any $x \in X$, $\psi'(h)(x) = h(x,\cdot) = h \circ i_x$ as a set-function $Y \to Z$ for the visibly continuous $x$-insertion map $i_x : Y \to X \times_0 Y$. Since $Y$ is compactly generated, $i_x$ is also continuous as a map $Y \to X \times Y$ by Lemma E.1.2.1(1). Since $h$ is itself a continuous map $X \times Y \to Z$, the composition $h \circ i_x : Y \to Z$ is continuous, and hence $\psi'(h)(x) \in \mathrm{C}(Y,Z)$. We now check $\psi'(h) : X \to \mathrm{C}(Y,Z)$ is continuous upon endowing $X$ with its intrinsic compactly generated topology and $\mathrm{C}(Y,Z)$ with the compact-open topology. By Lemma E.1.2.10, $h_*$ is continuous as a map
 
-$$k(C(Y,X \times Y)) \to k(C(Y,Z)).$$
+$$k(\mathrm{C}(Y,X \times Y)) \to k(\mathrm{C}(Y,Z)).$$
 
 Upon writing
 
 $$
-W_1 := k(C(Y,X \times Y)), \quad W_2 := k(C(Y,Z)) \tag{E.1.2.22}
+W_1 := k(\mathrm{C}(Y,X \times Y)), \quad W_2 := k(\mathrm{C}(Y,Z)) \tag{E.1.2.22}
 $$
 
 we similarly get
 
 $$
-h_{**} : C(X,W_1) \to C(X,W_2) \tag{E.1.2.23}
+h_{**} : \mathrm{C}(X,W_1) \to \mathrm{C}(X,W_2) \tag{E.1.2.23}
 $$
 
-induced by (E.1.2.21) with this map $h_{**}$ also continuous. Provided that $i : X^{\mathrm{set}} \to \mathrm{Map}(Y^{\mathrm{set}},X^{\mathrm{set}} \times Y^{\mathrm{set}})$ is valued in $C(Y,X \times Y)$ and continuous with respect to the intrinsic topology on $X$ and the compact-open topology on $C(Y,X \times Y)$, $i$ is also continuous with respect to the intrinsic compactly generated topology on $X$ and the $k$-topology $W_1$ associated to the compact-open topology on $C(Y,X \times Y)$. Then $\psi'(h) = h_{**}(i)$ is continuous as desired. It is therefore enough to check that $i : X^{\mathrm{set}} \to \mathrm{Map}(Y^{\mathrm{set}},X^{\mathrm{set}} \times Y^{\mathrm{set}})$ is valued in $C(Y,X \times Y)$ and continuous with respect to the compactly generated topology on $X$ and the compact-open topology on $C(Y,X \times Y)$.
+induced by (E.1.2.21) with this map $h_{**}$ also continuous. Provided that $i : X^{\mathrm{set}} \to \mathrm{Map}(Y^{\mathrm{set}},X^{\mathrm{set}} \times Y^{\mathrm{set}})$ is valued in $\mathrm{C}(Y,X \times Y)$ and continuous with respect to the intrinsic topology on $X$ and the compact-open topology on $\mathrm{C}(Y,X \times Y)$, $i$ is also continuous with respect to the intrinsic compactly generated topology on $X$ and the $k$-topology $W_1$ associated to the compact-open topology on $\mathrm{C}(Y,X \times Y)$. Then $\psi'(h) = h_{**}(i)$ is continuous as desired. It is therefore enough to check that $i : X^{\mathrm{set}} \to \mathrm{Map}(Y^{\mathrm{set}},X^{\mathrm{set}} \times Y^{\mathrm{set}})$ is valued in $\mathrm{C}(Y,X \times Y)$ and continuous with respect to the compactly generated topology on $X$ and the compact-open topology on $\mathrm{C}(Y,X \times Y)$.
 
 ## PDF page 840
 
 **840** · **CHAPTER E. TOPOLOGICAL STACKS**
 
-The containment $i(X) \subset C(Y,X \times Y)$ is a consequence of continuity of $i_x$ for every $x \in X$ as discussed above. We now prove that $i : X \to C(Y,X \times Y)$ is itself continuous. To this end, we let $K$ be a compact Hausdorff space, $a : K \to Y$ a continuous map, and $U \subset X \times Y$ an open subspace, and check that $i^{-1}(N(a,K,U))$ is open in $X$. Since $X$ is compactly generated, it is enough to show that for any compact Hausdorff space $K'$ and continuous map $b : K' \to X$, $b^{-1}(i^{-1}(N(a,K,U)))$ is open in $K'$. We have:
+The containment $i(X) \subset \mathrm{C}(Y,X \times Y)$ is a consequence of continuity of $i_x$ for every $x \in X$ as discussed above. We now prove that $i : X \to \mathrm{C}(Y,X \times Y)$ is itself continuous. To this end, we let $K$ be a compact Hausdorff space, $a : K \to Y$ a continuous map, and $U \subset X \times Y$ an open subspace, and check that $i^{-1}(N(a,K,U))$ is open in $X$. Since $X$ is compactly generated, it is enough to show that for any compact Hausdorff space $K'$ and continuous map $b : K' \to X$, $b^{-1}(i^{-1}(N(a,K,U)))$ is open in $K'$. We have:
 
 $$
 b^{-1}(i^{-1}(N(a,K,U))) = \{t \in K' \mid b(t) \in i^{-1}(N(a,K,U))\} = \{t \in K' \mid \{t\} \times K \subset (b,a)^{-1}(U)\}. \tag{E.1.2.24}
@@ -763,36 +763,36 @@ Since $(b,a) : K' \times K \to X \times Y$ is continuous, $W := (b,a)^{-1}(U)$ i
 We have built the desired set-theoretic bijection
 
 $$
-\psi_{X,Y,Z} : \mathscr{Cont}_k(X,\mathscr{Cont}_k(Y,Z)) \to \mathscr{Cont}_k(X \times Y,Z) \tag{E.1.2.25}
+\psi_{X,Y,Z} : \mathscr{C}ont_k(X,\mathscr{C}ont_k(Y,Z)) \to \mathscr{C}ont_k(X \times Y,Z) \tag{E.1.2.25}
 $$
 
 between objects in $\mathbf{CG}$ and it remains to show this bijection or its inverse
 
-$$\psi'_{X,Y,Z} : \mathscr{Cont}_k(X \times Y,Z) \to \mathscr{Cont}_k(X,\mathscr{Cont}_k(Y,Z))$$
+$$\psi'_{X,Y,Z} : \mathscr{C}ont_k(X \times Y,Z) \to \mathscr{C}ont_k(X,\mathscr{C}ont_k(Y,Z))$$
 
-is a homeomorphism. It suffices to show this inverse map is continuous, since then applying $C(T,\cdot)$ makes sense for any compactly generated $T$ and yields the set-map $\psi'_{T \times X,Y,Z}$ that we know a bijection (so by Yoneda's Lemma, the map $\psi'_{X,Y,Z}$ in $\mathbf{CG}$ is an isomorphism).
+is a homeomorphism. It suffices to show this inverse map is continuous, since then applying $\mathrm{C}(T,\cdot)$ makes sense for any compactly generated $T$ and yields the set-map $\psi'_{T \times X,Y,Z}$ that we know a bijection (so by Yoneda's Lemma, the map $\psi'_{X,Y,Z}$ in $\mathbf{CG}$ is an isomorphism).
 
 We proved in the discussion after (E.1.2.10) that the evaluation morphism from (E.1.2.9) induces a continuous map
 
 $$
-\mathrm{ev}_{Y,Z} : \mathscr{Cont}_k(Y,Z) \times Y \to Z. \tag{E.1.2.26}
+\mathrm{ev}_{Y,Z} : \mathscr{C}ont_k(Y,Z) \times Y \to Z. \tag{E.1.2.26}
 $$
 
-for $Y, Z$ compactly generated. Retaining the notation from (E.1.2.22), for a continuous $h : X \times Y \to Z$ we have a continuous map $h_{**} : \mathscr{Cont}_k(X,W_1) \to \mathscr{Cont}_k(X,W_2)$ from (E.1.2.23) and for $W'_1 := \mathscr{Cont}_k(X,W_1)$ and $W'_2 := \mathscr{Cont}_k(X,W_2) = \mathscr{Cont}_k(X,\mathscr{Cont}_k(Y,Z))$ and can write $\psi'(h) = \mathrm{ev}_{W'_1,W'_2}(h_{**},i)$ exhibiting the point $\psi'(h) \in W'_2$ as a continuous function of $h_{**}$ (since $i \in \mathscr{Cont}_k(X,\mathscr{Cont}_k(Y,X \times Y)) = W'_1$).
+for $Y, Z$ compactly generated. Retaining the notation from (E.1.2.22), for a continuous $h : X \times Y \to Z$ we have a continuous map $h_{**} : \mathscr{C}ont_k(X,W_1) \to \mathscr{C}ont_k(X,W_2)$ from (E.1.2.23) and for $W'_1 := \mathscr{C}ont_k(X,W_1)$ and $W'_2 := \mathscr{C}ont_k(X,W_2) = \mathscr{C}ont_k(X,\mathscr{C}ont_k(Y,Z))$ and can write $\psi'(h) = \mathrm{ev}_{W'_1,W'_2}(h_{**},i)$ exhibiting the point $\psi'(h) \in W'_2$ as a continuous function of $h_{**}$ (since $i \in \mathscr{C}ont_k(X,\mathscr{C}ont_k(Y,X \times Y)) = W'_1$).
 
 More precisely, $\psi'_{X,Y,Z}$ is the composition of three set-maps
 
 $$
-\mathscr{Cont}_k(X \times Y,Z) \to \mathscr{Cont}_k(W_1,W_2) \to \mathscr{Cont}_k(W'_1,W'_2) \to W'_2 = \mathscr{Cont}_k(X,\mathscr{Cont}_k(Y,Z)) \tag{E.1.2.27}
+\mathscr{C}ont_k(X \times Y,Z) \to \mathscr{C}ont_k(W_1,W_2) \to \mathscr{C}ont_k(W'_1,W'_2) \to W'_2 = \mathscr{C}ont_k(X,\mathscr{C}ont_k(Y,Z)) \tag{E.1.2.27}
 $$
 
-where the first two steps are respectively $h \mapsto \mathscr{Cont}_k(Y,h) = h_*$ and $f \mapsto \mathscr{Cont}_k(X,f)$ and the last step is the continuous $\mathrm{ev}_{W'_1,W'_2}(\cdot,i)$ (with $i \in W'_1$). Thus, for continuity of $\psi'_{X,Y,Z}$ it suffices to show for all compactly generated $X_1, X_2, X_2$ that
+where the first two steps are respectively $h \mapsto \mathscr{C}ont_k(Y,h) = h_*$ and $f \mapsto \mathscr{C}ont_k(X,f)$ and the last step is the continuous $\mathrm{ev}_{W'_1,W'_2}(\cdot,i)$ (with $i \in W'_1$). Thus, for continuity of $\psi'_{X,Y,Z}$ it suffices to show for all compactly generated $X_1, X_2, X_2$ that
 
 $$
-\mathscr{Cont}_k(X_2,X_3) \to \mathscr{Cont}_k(\mathscr{Cont}_k(X_1,X_2),\mathscr{Cont}_k(X_1,X_3)) \tag{E.1.2.28}
+\mathscr{C}ont_k(X_2,X_3) \to \mathscr{C}ont_k(\mathscr{C}ont_k(X_1,X_2),\mathscr{C}ont_k(X_1,X_3)) \tag{E.1.2.28}
 $$
 
-defined by $g \mapsto g_* := \mathscr{Cont}_k(X_1,g)$ makes sense (i.e., $g_*$ is continuous) and is continuous, since the first step in (E.1.2.27) is recovered by using $X_1 = Y$, $X_2 = X \times Y$, $X_3 = Z$ and the second step in (E.1.2.27) is recovered by using $X_1 = X$, $X_2 = W_1$, $X_3 = X_2$. For continuity of $g_*$, so (E.1.2.28) makes sense, by functoriality of $k(\cdot)$ it suffices to show $C(X_1,X_2) \to C(X_1,X_3)$ is continuous for the compact-open topologies; this holds because $g^{-1}_*(N(a,K,U)) = N(a,K,g^{-1}(U))$. $^3$ $\square$
+defined by $g \mapsto g_* := \mathscr{C}ont_k(X_1,g)$ makes sense (i.e., $g_*$ is continuous) and is continuous, since the first step in (E.1.2.27) is recovered by using $X_1 = Y$, $X_2 = X \times Y$, $X_3 = Z$ and the second step in (E.1.2.27) is recovered by using $X_1 = X$, $X_2 = W_1$, $X_3 = X_2$. For continuity of $g_*$, so (E.1.2.28) makes sense, by functoriality of $k(\cdot)$ it suffices to show $\mathrm{C}(X_1,X_2) \to \mathrm{C}(X_1,X_3)$ is continuous for the compact-open topologies; this holds because $g^{-1}_*(N(a,K,U)) = N(a,K,g^{-1}(U))$. $^3$ $\square$
 
 $^3$The continuity of (E.1.2.28) requires explanation, and was not justified before: all that was said was “a similar argument” to the continuity of $\psi'(h)$ in $h_{**}$ works, but that is too breezy.
 
@@ -805,7 +805,7 @@ We recall, as a consequence of [MacL, Ch. III, §1, Prop. 5], that the internal 
 **Proposition E.1.2.13.** *The bifunctor:*
 
 $$
-\mathscr{Cont}_k : \mathbf{CG}^{\mathrm{opp}} \times \mathbf{CG} \to \mathbf{CG}
+\mathscr{C}ont_k : \mathbf{CG}^{\mathrm{opp}} \times \mathbf{CG} \to \mathbf{CG}
 $$
 
 *endows the symmetric monoidal category $(\mathbf{CG}, \times, *)$ with the structure of a cartesian closed symmetric monoidal category enriched over itself.*
@@ -814,9 +814,9 @@ The Proposition is proved in [Str, Prop. 2.12], resting on [Str, Prop. 2.11] whi
 
 *Proof.* By Lemma E.1.2.12 there exists a natural homeomorphism
 
-$$\theta_{X,Y,Z} : \mathscr{Cont}_k(X \times Y,Z) \to \mathscr{Cont}_k(X,\mathscr{Cont}_k(Y,Z)).$$
+$$\theta_{X,Y,Z} : \mathscr{C}ont_k(X \times Y,Z) \to \mathscr{C}ont_k(X,\mathscr{C}ont_k(Y,Z)).$$
 
-By the very definition of closed monoidal category (see [MacL, Ch. VII, §1] and [EK, Ch. III]), the cartesian (symmetric) monoidal structure $(\times,*)$ uniquely determined on $\mathbf{CG}$ by [MacL, Ch. III, §1, Prop. 5] is therefore closed, the internal-Hom bifunctor being given by $\mathscr{Cont}_k(\cdot,\cdot)$. $\square$
+By the very definition of closed monoidal category (see [MacL, Ch. VII, §1] and [EK, Ch. III]), the cartesian (symmetric) monoidal structure $(\times,*)$ uniquely determined on $\mathbf{CG}$ by [MacL, Ch. III, §1, Prop. 5] is therefore closed, the internal-Hom bifunctor being given by $\mathscr{C}ont_k(\cdot,\cdot)$. $\square$
 
 As a direct application of Proposition E.1.2.13, we now prove that products in $\mathbf{CG}$ of submersive maps are submersive. We begin with a characterization of submersive maps in $\mathbf{CG}$, and further refer the reader to [LGL, §5, Lemma 5.7] and its proof:
 
@@ -964,11 +964,11 @@ As an application of Lemma E.1.2.27, we conclude this subsection by determining 
 
 **Lemma E.1.2.28.** *Let $X, Y$ be compactly generated spaces, $i : Z \to Y$ an immersion. Then the induced map*
 
-$$i_* : \mathscr{Cont}_k(X,Z) \to \mathscr{Cont}_k(X,Y)$$
+$$i_* : \mathscr{C}ont_k(X,Z) \to \mathscr{C}ont_k(X,Y)$$
 
 *is an immersion. If $i$ is a closed immersion then $i_*$ is a closed immersion.*
 
-*Proof.* Let $g : T \to \mathscr{Cont}_k(X,Z)$ be an arbitrary set-function from a compactly generated topological space $T$ such that $i_* \circ g$ is continuous. By Lemma E.1.2.12, the associated set-map $h : T \times X \to Y$ is continuous, and the associated set-map corresponding to $g$ satisfies $i \circ h' = h$. As $i$ is an immersion, $g$ is continuous. By Lemma E.1.2.27, we deduce that $i_*$ is an immersion.
+*Proof.* Let $g : T \to \mathscr{C}ont_k(X,Z)$ be an arbitrary set-function from a compactly generated topological space $T$ such that $i_* \circ g$ is continuous. By Lemma E.1.2.12, the associated set-map $h : T \times X \to Y$ is continuous, and the associated set-map corresponding to $g$ satisfies $i \circ h' = h$. As $i$ is an immersion, $g$ is continuous. By Lemma E.1.2.27, we deduce that $i_*$ is an immersion.
 
 ## PDF page 846
 
@@ -977,10 +977,10 @@ $$i_* : \mathscr{Cont}_k(X,Z) \to \mathscr{Cont}_k(X,Y)$$
 We now assume that $i$ is a closed immersion. We may assume $Z=i(Z)$. We now observe that in this case we have:
 
 $$
-\mathrm{Cont}_k(X,Z)=\bigcap_{x\in X}(\mathrm{Cont}_k(X,Y)-N(i_x,\{x\},Y-Z))
+\mathscr{C}ont_k(X,Z)=\bigcap_{x\in X}(\mathscr{C}ont_k(X,Y)-N(i_x,\{x\},Y-Z))
 $$
 
-with $i_x:\{x\}\to X$ the inclusion in $X$ of the point $x$, which is an infinite intersection of closed subspaces, hence closed in $\mathrm{Cont}_k(X,Y)$. As the image of $i_*$ is, therefore, closed, $i_*$ is a closed immersion. $\square$
+with $i_x:\{x\}\to X$ the inclusion in $X$ of the point $x$, which is an infinite intersection of closed subspaces, hence closed in $\mathscr{C}ont_k(X,Y)$. As the image of $i_*$ is, therefore, closed, $i_*$ is a closed immersion. $\square$
 
 E.2. Compactly generated weakly Hausdorff spaces
 
@@ -1198,20 +1198,20 @@ Our aim is to now collect results that show that the full subcategory CGWH of CG
 In this subsection, we study analogs for CGWH of the closure properties of CG. We begin by comparing the two categories. We consider the forgetful functor:
 
 $$
-u_{wh}:\mathrm{CGWH}\to\mathrm{CG}
+u_{\mathrm{wh}}:\mathbf{CGWH}\to\mathbf{CG}
 \tag{E.2.2.1}
 $$
 
 sending a compactly generated weakly Hausdorff topological space to itself as a compactly generated space, and sending continuous maps to continuous maps. We further define:
 
 $$
-u_{cgwh}:\mathrm{CGWH}\to\mathrm{Spaces}
+u_{\mathrm{cgwh}}:\mathbf{CGWH}\to\mathbf{Spaces}
 \tag{E.2.2.2}
 $$
 
-to be the forgetful functor sending a compactly generated weakly Hausdorff space to itself as an ordinary topological space, and sending continuous maps to continuous maps. Since $u_{cg}\circ u_{wh}=u_{cgwh}$, the notation being used should be un-ambiguous.
+to be the forgetful functor sending a compactly generated weakly Hausdorff space to itself as an ordinary topological space, and sending continuous maps to continuous maps. Since $u_{\mathrm{cg}}\circ u_{\mathrm{wh}}=u_{\mathrm{cgwh}}$, the notation being used should be un-ambiguous.
 
-We now discuss the existence of a left-adjoint $h:\mathrm{CG}\to\mathrm{CGWH}$ to the forgetful functor. In other words, $h(X)\in\mathrm{CGWH}$ is an initial object receiving a continuous map from $X\in\mathrm{CG}$. Its construction and properties are briefly recalled below. (We refer the reader to [Str, Prop. 2.22].)
+We now discuss the existence of a left-adjoint $h:\mathbf{CG}\to\mathbf{CGWH}$ to the forgetful functor. In other words, $h(X)\in\mathbf{CGWH}$ is an initial object receiving a continuous map from $X\in\mathbf{CG}$. Its construction and properties are briefly recalled below. (We refer the reader to [Str, Prop. 2.22].)
 
 Definition E.2.2.2. Let $X$ be a compactly generated space. We define:
 
@@ -1245,7 +1245,7 @@ Remark E.2.2.3. For $X$ a compactly generated space, since the equivalence relat
 We now check that formation of $R_X$ from (E.2.2.3) is natural in $X$, and therefore $h(X)$ defines a functor:
 
 $$
-h:\mathrm{CG}\to\mathrm{CGWH}.
+h:\mathbf{CG}\to\mathbf{CGWH}.
 \tag{E.2.2.6}
 $$
 
@@ -1253,7 +1253,7 @@ We begin by proving an analog of Lemma E.1.2.1; see [Str, Prop. 2.22] and [Str, 
 
 Lemma E.2.2.4. Let $X$ be a compactly generated space, and $\Sigma\subset 2^{X\times X}$ the set of all subspaces $R\subset X\times X$ such that:
 
-(a) $R^{set}$ is an equivalence relation on $X^{set}\times X^{set}$.
+(a) $R^{\mathrm{set}}$ is an equivalence relation on $X^{\mathrm{set}}\times X^{\mathrm{set}}$.
 
 (b) $R$ is closed in $X\times X$.
 
@@ -1264,15 +1264,15 @@ R_X:=\bigcap_{R\in\Sigma}R
 \tag{E.2.2.7}
 $$
 
-we have that $R^X_{set}$ is an equivalence relation on $X^{set}\times X^{set}$, and $R_X$ is closed in $X\times X$. Moreover:
+we have that $R^X_{set}$ is an equivalence relation on $X^{\mathrm{set}}\times X^{\mathrm{set}}$, and $R_X$ is closed in $X\times X$. Moreover:
 
 (1) formation of $h(X)$ is natural in $X$,
 
-(2) the functor $h:\mathrm{CG}\to\mathrm{CGWH}$ is left-adjoint to the forgetful functor $u_{wh}:\mathrm{CGWH}\to\mathrm{CG}$,
+(2) the functor $h:\mathbf{CG}\to\mathbf{CGWH}$ is left-adjoint to the forgetful functor $u_{\mathrm{wh}}:\mathbf{CGWH}\to\mathbf{CG}$,
 
 (3) the natural map $\varepsilon_X:X\to h(X)$ is an isomorphism when $X$ is also weakly Hausdorff,
 
-(4) applying $h$ to the natural map $Y\to u_{wh}(h(Y))$ for $Y\in\mathrm{CG}$ yields $\varepsilon_{h(Y)}$ and so is an isomorphism.
+(4) applying $h$ to the natural map $Y\to u_{\mathrm{wh}}(h(Y))$ for $Y\in\mathbf{CG}$ yields $\varepsilon_{h(Y)}$ and so is an isomorphism.
 
 Proof. We note that, as $X\times X$ is closed in itself, $\Sigma$ is non-empty. The set-theoretic intersection of equivalence relations on a set is an equivalence relation, so $R_X$ is a closed equivalence relation in $X\times X$. We now check part (1) and part (2).
 
@@ -1314,26 +1314,26 @@ In light of (E.2.2.11) and since the map $\psi$ from (E.2.2.9) satisfies $\psi\c
 
 which means that $f$ factors through $q_X$. We further observe that both $q$ and $\psi$ are unique: $q$ by universality of topological quotients and Lemma E.1.2.14, and $\psi$ by the universal property of co-equalizers and the definition of the map $f'$ of (E.2.2.10). We have shown that for any compactly generated spaces $X,Y$ with $Y$ weakly Hausdorff, and any continuous map $f:X\to Y$, $f$ factors uniquely through $q_X:X\to h(X)$ from (E.2.2.5). This proves functoriality of $h(\cdot)$ and part (2). Part (3) is clear from the universal property, and (4) is part of the formalism of adjunction. $\square$
 
-Lemma E.2.2.5. The category CGWH contains all small limits and all small colimits. Moreover, for any small category $I$ and diagram $P:I\to\mathrm{CGWH}$:
+Lemma E.2.2.5. The category CGWH contains all small limits and all small colimits. Moreover, for any small category $I$ and diagram $P:I\to\mathbf{CGWH}$:
 
-(1) $\lim_I P$ in CGWH is computed in CG, i.e. the forgetful functor $u_{wh}$ reflects and commutes with small limits.
+(1) $\lim_I P$ in CGWH is computed in CG, i.e. the forgetful functor $u_{\mathrm{wh}}$ reflects and commutes with small limits.
 
 (2) $\operatorname{colim}_I P$ in CGWH is computed as:
 
 $$
-\operatorname{colim}_I P=h(\operatorname{colim}_I u_{wh}\circ P)
+\operatorname{colim}_I P=h(\operatorname{colim}_I u_{\mathrm{wh}}\circ P)
 \tag{E.2.2.12}
 $$
 
-upon evaluating $h(\cdot)$ on the colimit of the small diagram $u_{wh}\circ P$ in CG.
+upon evaluating $h(\cdot)$ on the colimit of the small diagram $u_{\mathrm{wh}}\circ P$ in CG.
 
-Proof. Assertion (2) is immediate from $h$ being a left-adjoint to $u_{wh}$. For (1), we just have to show that the limit in CG of the diagram $u_{wh}\circ P$ is weakly Hausdorff. To see this, we use Lemma E.2.1.6. We observe that the diagonal subspace $\Delta\subset(\lim_I(u_{wh}\circ P))\times_0(\lim_I(u_{wh}\circ P))$, as a subspace of $\prod_{0\,i\in I}(u_{wh}\circ P)(i)$, is the intersection:
+Proof. Assertion (2) is immediate from $h$ being a left-adjoint to $u_{\mathrm{wh}}$. For (1), we just have to show that the limit in CG of the diagram $u_{\mathrm{wh}}\circ P$ is weakly Hausdorff. To see this, we use Lemma E.2.1.6. We observe that the diagonal subspace $\Delta\subset(\lim_I(u_{\mathrm{wh}}\circ P))\times_0(\lim_I(u_{\mathrm{wh}}\circ P))$, as a subspace of $\prod_{0\,i\in I}(u_{\mathrm{wh}}\circ P)(i)$, is the intersection:
 
 $$
 \bigcap_{i\in I}p_i^{-1}(\Delta_i)
 $$
 
-where $p_i:\lim_I(u_{wh}\circ P)\to (u_{wh}\circ P)(i)$ is the projection, and $\Delta_i\subset (u_{wh}\circ P)(i)\times_0 (u_{wh}\circ P)(i)$ is the diagonal subspace. This latter is $k$-closed by Lemma E.2.1.6(2), as $(u_{wh}\circ P)(i)$ is weakly Hausdorff. It follows that $p_i^{-1}(\Delta_i)$ is also $k$-closed within $\prod_{0\,i\in I}(u_{wh}\circ P)(i)$. The intersection $\Delta=\bigcap_{i\in I}p_i^{-1}(\Delta_i)$ is therefore also $k$-closed, and by Lemma E.2.1.6 we conclude. $\square$
+where $p_i:\lim_I(u_{\mathrm{wh}}\circ P)\to (u_{\mathrm{wh}}\circ P)(i)$ is the projection, and $\Delta_i\subset (u_{\mathrm{wh}}\circ P)(i)\times_0 (u_{\mathrm{wh}}\circ P)(i)$ is the diagonal subspace. This latter is $k$-closed by Lemma E.2.1.6(2), as $(u_{\mathrm{wh}}\circ P)(i)$ is weakly Hausdorff. It follows that $p_i^{-1}(\Delta_i)$ is also $k$-closed within $\prod_{0\,i\in I}(u_{\mathrm{wh}}\circ P)(i)$. The intersection $\Delta=\bigcap_{i\in I}p_i^{-1}(\Delta_i)$ is therefore also $k$-closed, and by Lemma E.2.1.6 we conclude. $\square$
 
 The following remark is the analog for CGWH of Remark E.1.2.3.
 
@@ -1343,11 +1343,11 @@ Remark E.2.2.6. On the construction and properties of $h(X)$, we observe:
 
 (2) small limits in CGWH can be computed in CG by Lemma E.2.2.5(1), and by Lemma E.1.2.2(1) their underlying set is the limit of the underlying sets of the objects within the diagram in CGWH,
 
-(3) if $P:I\to\mathrm{CGWH}$ is a diagram such that the limit of the induced diagram $u_{cg}\circ u_{wh}\circ P=u_{cgwh}\circ P$ in Spaces is compactly generated weakly Hausdorff then $\lim_I(u_{cg}\circ u_{wh}\circ P)=\lim_I(u_{cgwh}\circ P)$ computes $\lim_I P$ in CGWH,
+(3) if $P:I\to\mathbf{CGWH}$ is a diagram such that the limit of the induced diagram $u_{\mathrm{cg}}\circ u_{\mathrm{wh}}\circ P=u_{\mathrm{cgwh}}\circ P$ in Spaces is compactly generated weakly Hausdorff then $\lim_I(u_{\mathrm{cg}}\circ u_{\mathrm{wh}}\circ P)=\lim_I(u_{\mathrm{cgwh}}\circ P)$ computes $\lim_I P$ in CGWH,
 
 (4) contrary to the case of colimits in CG, the underlying set of a small colimit in CGWH is not the colimit of the underlying sets of the objects within the diagram in CGWH unless the colimit computed in CG is already weakly Hausdorff; see Example E.2.2.7 below.
 
-Example E.2.2.7. The following is an example of a small (filtered) colimit in CGWH of a small diagram $P:I\to\mathrm{CGWH}$, such that the set-theoretic colimit $\operatorname{colim}_{i\in I}P(i)^{set}$ is not the set underlying $\operatorname{colim}_I P$. We let $I:=\mathbf N_{>0}$ be the positive integers with their natural order, defining $\operatorname{Map}_I(i,j)$ to be the singleton set if $i\le j$, and the empty set otherwise. We define $P(i):=S^1$, the unit circle, and for any morphism $i\to j$ in $I$, we set $P(i\to j)$ to be the the map raising $z\in S^1$ to the $2^{j-i}$-th power. Then the colimit in Spaces of the resulting diagram of underlying topological spaces is not T1, even though each $P(i)$ is compact Hausdorff. In particular, the colimit $\operatorname{colim}_I P$ in CGWH will have as its underlying set a non-trivial quotient of the set-theoretic colimit of the underlying sets of the $P(i)$'s. The reader is referred to [Du, Appendix 2, Example 2, p. 422].
+Example E.2.2.7. The following is an example of a small (filtered) colimit in CGWH of a small diagram $P:I\to\mathbf{CGWH}$, such that the set-theoretic colimit $\operatorname{colim}_{i\in I}P(i)^{\mathrm{set}}$ is not the set underlying $\operatorname{colim}_I P$. We let $I:=\mathbf N_{>0}$ be the positive integers with their natural order, defining $\operatorname{Map}_I(i,j)$ to be the singleton set if $i\le j$, and the empty set otherwise. We define $P(i):=S^1$, the unit circle, and for any morphism $i\to j$ in $I$, we set $P(i\to j)$ to be the the map raising $z\in S^1$ to the $2^{j-i}$-th power. Then the colimit in Spaces of the resulting diagram of underlying topological spaces is not T1, even though each $P(i)$ is compact Hausdorff. In particular, the colimit $\operatorname{colim}_I P$ in CGWH will have as its underlying set a non-trivial quotient of the set-theoretic colimit of the underlying sets of the $P(i)$'s. The reader is referred to [Du, Appendix 2, Example 2, p. 422].
 
 ## PDF page 854
 
@@ -1357,35 +1357,35 @@ Remark E.2.2.8. In Definition E.1.2.4, we introduced notation to distinguish arb
 
 We have the following:
 
-Corollary E.2.2.9. Let $I$ be a small category, and $P:I\to\mathrm{CGWH}$ a diagram. Then:
+Corollary E.2.2.9. Let $I$ be a small category, and $P:I\to\mathbf{CGWH}$ a diagram. Then:
 
-(1) The product $\prod_I u_{wh}\circ P$ in CG computes the product $\prod_I P$ in CGWH.
+(1) The product $\prod_I u_{\mathrm{wh}}\circ P$ in CG computes the product $\prod_I P$ in CGWH.
 
-(2) The co-product $\coprod_I u_{cgwh}\circ P$ in Spaces computes the co-product $\coprod_I P$ in CGWH.
+(2) The co-product $\coprod_I u_{\mathrm{cgwh}}\circ P$ in Spaces computes the co-product $\coprod_I P$ in CGWH.
 
-Proof. Part (1) is a consequence of Lemma E.2.2.5(1). To see part (2), we observe that $\coprod_I u_{cgwh}\circ P$ in Spaces computes the co-product $\coprod_I u_{wh}\circ P$ in CG by Lemma E.1.2.2(2). We need to check that the compactly generated (Lemma E.1.2.2(2))
+Proof. Part (1) is a consequence of Lemma E.2.2.5(1). To see part (2), we observe that $\coprod_I u_{\mathrm{cgwh}}\circ P$ in Spaces computes the co-product $\coprod_I u_{\mathrm{wh}}\circ P$ in CG by Lemma E.1.2.2(2). We need to check that the compactly generated (Lemma E.1.2.2(2))
 
 $$
-X=\coprod_I u_{wh}\circ P
+X=\coprod_I u_{\mathrm{wh}}\circ P
 \tag{E.2.2.13}
 $$
 
-is weakly Hausdorff. This is clear from (2) $\Rightarrow$ (1) in Lemma E.2.1.6 for $X\in\mathrm{CG}$. $\square$
+is weakly Hausdorff. This is clear from (2) $\Rightarrow$ (1) in Lemma E.2.1.6 for $X\in\mathbf{CG}$. $\square$
 
-Notation E.2.2.1. When $X$ and $Y$ are compactly generated weakly Hausdorff spaces, we will, henceforth, denote by $\mathrm{Cont}(X,Y)$ the compactly generated function space $\mathrm{Cont}_k(X,Y)$.
+Notation E.2.2.1. When $X$ and $Y$ are compactly generated weakly Hausdorff spaces, we will, henceforth, denote by $\mathscr{C}ont(X,Y)$ the compactly generated function space $\mathscr{C}ont_k(X,Y)$.
 
 The above change in notation is justified by the following Lemma, for which we refer the reader to [Str, Prop.2.24].
 
-Proposition E.2.2.10. If $X$ and $Y$ are compactly generated topological spaces and $Y$ is weakly Hausdorff, then $\mathrm{Cont}_k(X,Y)$ is a compactly generated weakly Hausdorff topological space. The cartesian symmetric monoidal category $(\mathrm{CGWH},\times,*)$ inherits from the cartesian symmetric monoidal category $(\mathrm{CG},\times,*)$ the cartesian-closed monoidal category structure.
+Proposition E.2.2.10. If $X$ and $Y$ are compactly generated topological spaces and $Y$ is weakly Hausdorff, then $\mathscr{C}ont_k(X,Y)$ is a compactly generated weakly Hausdorff topological space. The cartesian symmetric monoidal category $(\mathbf{CGWH},\times,*)$ inherits from the cartesian symmetric monoidal category $(\mathbf{CG},\times,*)$ the cartesian-closed monoidal category structure.
 
-Proof. As $(\mathrm{CGWH},\times,*)$ is a full symmetric monoidal subcategory of $(\mathrm{CG},\times,*)$, the last assertion follows from the first. It is therefore enough to check that for $X$ and $Y$ compactly generated spaces, with $Y$ weakly Hausdorff, then the compactly generated function space $\mathrm{Cont}_k(X,Y)$ is weakly Hausdorff. We now let $W:=\mathrm{Cont}_k(X,Y)$, and for any $x\in X$ let $e_x:W\to Y$ be given by $e_x(f):=f(x)$. Since $e_x$ is obtained by $\mathrm{Cont}_k$-functoriality with respect to $\{x\}\to X$, $e_x$ is continuous. We now observe that as subspaces of $W\times_0 W$:
+Proof. As $(\mathbf{CGWH},\times,*)$ is a full symmetric monoidal subcategory of $(\mathbf{CG},\times,*)$, the last assertion follows from the first. It is therefore enough to check that for $X$ and $Y$ compactly generated spaces, with $Y$ weakly Hausdorff, then the compactly generated function space $\mathscr{C}ont_k(X,Y)$ is weakly Hausdorff. We now let $W:=\mathscr{C}ont_k(X,Y)$, and for any $x\in X$ let $e_x:W\to Y$ be given by $e_x(f):=f(x)$. Since $e_x$ is obtained by $\mathscr{C}ont_k$-functoriality with respect to $\{x\}\to X$, $e_x$ is continuous. We now observe that as subspaces of $W\times_0 W$:
 
 $$
 (e_x,e_x)^{-1}(\Delta_Y(Y))=\{(f,g)\in W\times W\mid f(x)=g(x)\}\subset W\times_0 W
 \tag{E.2.2.14}
 $$
 
-We claim $(e_x,e_x)^{-1}(\Delta_Y(Y))$ is $k$-closed. Since $Y$ is weakly Hausdorff, $\Delta_Y(Y)$ is $k$-closed in $Y\times_0 Y$ by Lemma E.2.1.6(2). By functoriality of the $k$-topology (Lemma E.1.2.1), $(e_x,e_x)^{-1}(\Delta_Y(Y))$ is also $k$-closed. It follows from (E.2.2.14) that $(e_x,e_x)^{-1}(\Delta_Y(Y))$ is closed in $W\times W$ for every $x\in X$, and hence $\bigcap_{x\in X}(e_x,e_x)^{-1}(\Delta_Y(Y))$ is also closed in $W\times W$, being an intersection of closed subspaces. We now observe that $\Delta_W(W)=\bigcap_{x\in X}(e_x,e_x)^{-1}(\Delta_Y(Y))$ so by Lemma E.2.1.6(2) we get $\mathrm{Cont}_k(X,Y)$ is weakly Hausdorff. $\square$
+We claim $(e_x,e_x)^{-1}(\Delta_Y(Y))$ is $k$-closed. Since $Y$ is weakly Hausdorff, $\Delta_Y(Y)$ is $k$-closed in $Y\times_0 Y$ by Lemma E.2.1.6(2). By functoriality of the $k$-topology (Lemma E.1.2.1), $(e_x,e_x)^{-1}(\Delta_Y(Y))$ is also $k$-closed. It follows from (E.2.2.14) that $(e_x,e_x)^{-1}(\Delta_Y(Y))$ is closed in $W\times W$ for every $x\in X$, and hence $\bigcap_{x\in X}(e_x,e_x)^{-1}(\Delta_Y(Y))$ is also closed in $W\times W$, being an intersection of closed subspaces. We now observe that $\Delta_W(W)=\bigcap_{x\in X}(e_x,e_x)^{-1}(\Delta_Y(Y))$ so by Lemma E.2.1.6(2) we get $\mathscr{C}ont_k(X,Y)$ is weakly Hausdorff. $\square$
 
 ## PDF page 855
 
@@ -1568,7 +1568,7 @@ $$
 where $\mathrm{coeq}_{\mathbf{CG}}(u_{\mathrm{wh}}(s), u_{\mathrm{wh}}(t))$ denotes the co-equalizer in $\mathbf{CG}$ of $u_{\mathrm{wh}}(s)$ and $u_{\mathrm{wh}}(t)$. For the canonical projection $p : X \to \mathrm{coeq}(s, t)$, the canonical projection $p' : u_{\mathrm{wh}}(X) \to \mathrm{coeq}_{\mathbf{CG}}(u_{\mathrm{wh}}(s), u_{\mathrm{wh}}(t))$, and the submersive map
 
 $$
-q : \mathrm{coeq}_{\mathbf{CG}}(u_{\mathrm{wh}}(s), u_{\mathrm{wh}}(t)) \to h(\mathrm{coeq}_{\mathbf{CG}}(u_{\mathrm{wh}}(s), u_{\mathrm{wh}}(t))) \tag{E.2.3.6}
+q : \mathrm{coe}q_{\mathbf{CG}}(u_{\mathrm{wh}}(s), u_{\mathrm{wh}}(t)) \to h(\mathrm{coeq}_{\mathbf{CG}}(u_{\mathrm{wh}}(s), u_{\mathrm{wh}}(t))) \tag{E.2.3.6}
 $$
 
 from (E.2.2.5), we have
@@ -1824,7 +1824,7 @@ We next prove the rest of (2). By Lemma E.2.3.10(2), we have the identification 
 
 We now prove Proposition E.2.3.15.
 
-*Proof of Proposition E.2.3.15.* We prove (1). Let $f : X \to Y$ be a monomorphism. Then $f_* : C(T, X) \to C(T, Y)$ is injective for all $T$ in $\mathbf{CGWH}$. Upon choosing $T = \{*\}$ a point, we have $C(T, X) = X^{\mathrm{set}}$ and $C(T, Y) = Y^{\mathrm{set}}$, so we deduce $f$ is injective. Conversely if $f$ is injective then $f_*$ is also injective, so (1) is proved. We prove (2). Let $f : X \to Y$ be a continuous map of compactly generated weakly Hausdorff spaces, $T$ a compactly generated weakly Hausdorff space, and $g, g' : Y \rightrightarrows T$ arbitrary continuous maps co-equalized by $f$. Then we have:
+*Proof of Proposition E.2.3.15.* We prove (1). Let $f : X \to Y$ be a monomorphism. Then $f_* : \mathrm{C}(T, X) \to \mathrm{C}(T, Y)$ is injective for all $T$ in $\mathbf{CGWH}$. Upon choosing $T = \{*\}$ a point, we have $\mathrm{C}(T, X) = X^{\mathrm{set}}$ and $\mathrm{C}(T, Y) = Y^{\mathrm{set}}$, so we deduce $f$ is injective. Conversely if $f$ is injective then $f_*$ is also injective, so (1) is proved. We prove (2). Let $f : X \to Y$ be a continuous map of compactly generated weakly Hausdorff spaces, $T$ a compactly generated weakly Hausdorff space, and $g, g' : Y \rightrightarrows T$ arbitrary continuous maps co-equalized by $f$. Then we have:
 
 $$
 \mathrm{eq}(g, g') := Y \times_{g,T,g'} Y = (g, g')^{-1}(\Delta_T(T)) \subset Y.
@@ -2004,7 +2004,7 @@ $$\lambda_1:=|\Sigma_X|.$$
 
 (2) We define:
 
-$$\lambda_2:=\sup\{|C(K,\mathbf C)|,K\in\Sigma_X\}$$
+$$\lambda_2:=\sup\{|\mathrm{C}(K,\mathbf C)|,K\in\Sigma_X\}$$
 
 the supremum of the cardinalities of all the $C^*$-algebras of complex-valued continuous functions on all compact Hausdorff subspaces of X.
 
@@ -2038,13 +2038,13 @@ The union WF of all the $V_{\alpha}$ as $\alpha$ varies across all limit ordinal
 
 Before moving forward, we establish two preparatory results. The following lemma assumes the Axiom of Choice.
 
-Lemma E.3.1.2. *Let $\kappa$ be a cardinal, and $\mathrm{Sets}_{\le\kappa}$ the class of all sets J whose cardinality satisfies $|J|\le\kappa$. Then there exists a sub-class $\mathrm{Sets}_{\le\kappa}\subset\mathrm{Sets}_{\le\kappa}$ such that:*
+Lemma E.3.1.2. *Let $\kappa$ be a cardinal, and $\mathbf{Sets}_{\le\kappa}$ the class of all sets J whose cardinality satisfies $|J|\le\kappa$. Then there exists a sub-class $\mathrm{Sets}_{\le\kappa}\subset\mathbf{Sets}_{\le\kappa}$ such that:*
 
 *(1) $\mathrm{Sets}_{\le\kappa}$ is a set.*
 
-*(2) For any $J\in\mathrm{Sets}_{\le\kappa}$ there exists $J'\in\mathrm{Sets}_{\le\kappa}$ and a bijective set-function $f:J'\to J$.*
+*(2) For any $J\in\mathbf{Sets}_{\le\kappa}$ there exists $J'\in\mathrm{Sets}_{\le\kappa}$ and a bijective set-function $f:J'\to J$.*
 
-Proof. Let $\lambda$ be a cardinal satisfying $\lambda\le\kappa$. By the Axiom of Choice, there exists an ordinal $\alpha$ such that $|\alpha|=\lambda$. We denote $\alpha_{\lambda}:=\inf\{\alpha\mid |\alpha|=\lambda\}$, the initial ordinal associated to $\lambda$. As $\alpha_{\lambda}\subset V_{\alpha_{\lambda}}$ and, for all cardinals $\lambda,\lambda'$ satisfying $\lambda\le\lambda'\le\kappa$, we have$^{16}$ $\alpha_{\lambda}\le\alpha_{\lambda'}\le\alpha_{\kappa}$, we deduce the containments $V_{\alpha_{\lambda}}\subset V_{\alpha_{\lambda'}}\subset V_{\alpha_{\kappa}}$ by [Kunen, Ch. III, Lemma 2.3]. We set $\mathrm{Sets}_{\le\kappa}:=V_{\alpha_{\kappa}+1}$. For any element J of $\mathrm{Sets}_{\le\kappa}$, there exists a least ordinal $\alpha_{|J|}$ with $|J|=|\alpha_{|J|}|$, and we have $\alpha_{|J|}\subset V_{\alpha_{|J|}}\subset V_{\alpha_{\kappa}}$, implying $\alpha_{|J|}\in V_{\alpha_{\kappa}+1}=\mathrm{Sets}_{\le\kappa}$. In other words, there exists an element $J'\in\mathrm{Sets}_{\le\kappa}$, itself a set, and a bijection $f:J'\to J$. $\square$
+Proof. Let $\lambda$ be a cardinal satisfying $\lambda\le\kappa$. By the Axiom of Choice, there exists an ordinal $\alpha$ such that $|\alpha|=\lambda$. We denote $\alpha_{\lambda}:=\inf\{\alpha\mid |\alpha|=\lambda\}$, the initial ordinal associated to $\lambda$. As $\alpha_{\lambda}\subset V_{\alpha_{\lambda}}$ and, for all cardinals $\lambda,\lambda'$ satisfying $\lambda\le\lambda'\le\kappa$, we have$^{16}$ $\alpha_{\lambda}\le\alpha_{\lambda'}\le\alpha_{\kappa}$, we deduce the containments $V_{\alpha_{\lambda}}\subset V_{\alpha_{\lambda'}}\subset V_{\alpha_{\kappa}}$ by [Kunen, Ch. III, Lemma 2.3]. We set $\mathrm{Sets}_{\le\kappa}:=V_{\alpha_{\kappa}+1}$. For any element J of $\mathbf{Sets}_{\le\kappa}$, there exists a least ordinal $\alpha_{|J|}$ with $|J|=|\alpha_{|J|}|$, and we have $\alpha_{|J|}\subset V_{\alpha_{|J|}}\subset V_{\alpha_{\kappa}}$, implying $\alpha_{|J|}\in V_{\alpha_{\kappa}+1}=\mathrm{Sets}_{\le\kappa}$. In other words, there exists an element $J'\in\mathrm{Sets}_{\le\kappa}$, itself a set, and a bijection $f:J'\to J$. $\square$
 
 Definition E.3.1.3. For a cardinal $\nu$, a $\nu$-small category is any small category I whose underlying set of objects satisfies $|I|\le\nu$ and for every pair of objects $i,i'\in I$ we have $|\mathrm{Map}_I(i,i')|\le\nu$.
 
@@ -2086,7 +2086,7 @@ $$
 P_4(s,t,c,e):c((e\circ t)(\cdot),\cdot)=c(\cdot,(e\circ s)(\cdot))=\mathrm{id}:J_1\to J_1. \tag{E.3.1.5}
 $$
 
-Let $C_{\le\nu}$ be the class of 6-tuples $(J_1,J_2,s,t,c,e)$ where $J_1,J_2$ are $\nu$-small sets, and $(s,t,c,e,i)$ are elements of the set:
+Let $\mathbf{C}_{\le\nu}$ be the class of 6-tuples $(J_1,J_2,s,t,c,e)$ where $J_1,J_2$ are $\nu$-small sets, and $(s,t,c,e,i)$ are elements of the set:
 
 $$(s,t,c,e,i)\in\mathrm{Map}(J_1,J_2)\times\mathrm{Map}(J_1\times_{s,J_2,t}J_1,J_1)\times\mathrm{Map}(J_2,J_1).$$
 
@@ -2096,7 +2096,7 @@ $$\{(J_1,J_2,s,t,c,e),J_1,J_2\in\mathrm{Sets}_{\le\nu},(s,t,c,e)\in(\mathrm{Map}
 
 The class $\mathrm{Cat}'_{\le\nu}$ is a set, as it is contained in the set:
 
-$$C_{\le\nu}:=\bigsqcup_{J_1,J_2\in\mathrm{Set}_{\le\nu}}\{(J_1,J_2)\}\times\mathrm{Map}(J_1,J_2)\times\mathrm{Map}(J_1\times_{s,J_2,t}J_1,J_1)\times\mathrm{Map}(J_2,J_1)$$
+$$\mathcal{C}_{\le\nu}:=\bigsqcup_{J_1,J_2\in\mathrm{Set}_{\le\nu}}\{(J_1,J_2)\}\times\mathrm{Map}(J_1,J_2)\times\mathrm{Map}(J_1\times_{s,J_2,t}J_1,J_1)\times\mathrm{Map}(J_2,J_1)$$
 
 via the injective class function:
 
@@ -2104,9 +2104,9 @@ $$\varphi\subset\mathrm{Cat}'_{\le\nu}\times\bigsqcup_{J_1,J_2\in\mathrm{Set}_{\
 
 defined as
 
-$$\varphi:=\{((J_1,J_2,s,t,c,e),(I_1,I_2,s',t',c',e'))\in\mathrm{Cat}'_{\le\nu}\times C_{\le\nu}\mid (J_1,J_2,s,t,c,e)=(I_1,I_2,s',t',c',e')\},$$
+$$\varphi:=\{((J_1,J_2,s,t,c,e),(I_1,I_2,s',t',c',e'))\in\mathrm{Cat}'_{\le\nu}\times \mathcal{C}_{\le\nu}\mid (J_1,J_2,s,t,c,e)=(I_1,I_2,s',t',c',e')\},$$
 
-the equality $(J_1,J_2,s,t,c,e)=(I_1,I_2,s',t',c',e')$ being defined within $C_{\le\nu}$. As $C_{\le\nu}$ is a set, so is $\mathrm{Cat}'_{\le\nu}$ by the Axiom Schema of Replacement.
+the equality $(J_1,J_2,s,t,c,e)=(I_1,I_2,s',t',c',e')$ being defined within $\mathbf{C}_{\le\nu}$. As $\mathcal{C}_{\le\nu}$ is a set, so is $\mathrm{Cat}'_{\le\nu}$ by the Axiom Schema of Replacement.
 
 Let J be a $\nu$-small category. By Lemma E.3.1.2, there exists $J_2\in\mathrm{Sets}_{\le\nu}$ together with a bijection $f:J_2\to J$. We now let $J':=\bigsqcup_{(i,j)\in J\times J}\mathrm{Map}_J(i,j)$. We define $s',t':=J'\rightrightarrows J$ on each $\mathrm{Map}_J(i,j)$ as $s'(a):=i$, $t'(a):=j$, alongside $e':J\to J'$ defined as $e(i):=\mathrm{id}_i\in J'$, and $c':J'\times_{s',J,t'}J'\to J'$ defined as $c'(a,b):=b\circ a$. As $|J'|\le\max\{|J\times J|,\sup_{(i,j)\in J\times J}|\mathrm{Map}_J(i,j)|\}$, and J is a $\nu$-small category with $\nu$ infinite, we have $|J'|\le\nu$. By Lemma E.3.1.2, there exists $J_1\in\mathrm{Sets}_{\le\nu}$ and a bijection $g:J_1\to J'$. We now define $s:=f^{-1}\circ s'\circ g$, $t:=f^{-1}\circ t'\circ g$, $c:=g^{-1}\circ c'\circ(g,g)$ and $e:=g^{-1}\circ e'\circ f$.
 
@@ -2118,13 +2118,13 @@ We have $P_1(s,t,c,e)$ from (E.3.1.2) because we have $P_1(s',t',c',e')$, and li
 
 to be the category whose objects are the elements of $J_2$ and such that for any $(i,j)\in J_2\times J_2$ we have $\mathrm{Map}(i,j):=s^{-1}(i)\cap t^{-1}(j)$. There is a functor $u:\mathrm{Cat}(J_1,J_2,s,t,c,e)\to J$ defined as $u(i):=f(i)$, and $u(\varphi:i\to j):=g(\varphi)$. The functor u is a bijection on sets of objects, and it is fully faithful by design of g. It is therefore an isomorphism of categories. We finally define the class function:
 
-$$\psi\subset\mathrm{Cat}'_{\le\nu}\times\mathrm{Cat}_{\le\nu}$$
+$$\psi\subset\mathrm{Cat}'_{\le\nu}\times\mathbf{Cat}_{\le\nu}$$
 
-where $\mathrm{Cat}_{\le\nu}$ is the class of $\nu$-small categories, assigned as follows:
+where $\mathbf{Cat}_{\le\nu}$ is the class of $\nu$-small categories, assigned as follows:
 
-$$\psi:=\{((J_1,J_2,s,t,c,e),J)\in\mathrm{Cat}'_{\le\nu}\times\mathrm{Cat}_{\le\nu}\mid\mathrm{Cat}(J_1,J_2,s,t,c,e)=J\}$$
+$$\psi:=\{((J_1,J_2,s,t,c,e),J)\in\mathrm{Cat}'_{\le\nu}\times\mathbf{Cat}_{\le\nu}\mid\mathrm{Cat}(J_1,J_2,s,t,c,e)=J\}$$
 
-where the equality $\mathrm{Cat}(J_1,J_2,s,t,c,e)=J$ is defined within $\mathrm{Cat}_{\le\nu}$. As $\mathrm{Cat}'_{\le\nu}$ is a set, by the Axiom Schema of Replacement so is the image of $\psi$. We define such image to be $\mathrm{Cat}_{\le\nu}$. The set $\mathrm{Cat}_{\le\nu}$ satisfies the requirements in the statement of the Lemma. $\square$
+where the equality $\mathrm{Cat}(J_1,J_2,s,t,c,e)=J$ is defined within $\mathbf{Cat}_{\le\nu}$. As $\mathrm{Cat}'_{\le\nu}$ is a set, by the Axiom Schema of Replacement so is the image of $\psi$. We define such image to be $\mathrm{Cat}_{\le\nu}$. The set $\mathrm{Cat}_{\le\nu}$ satisfies the requirements in the statement of the Lemma. $\square$
 
 We further recall the following well-known structural result on compact Hausdorff spaces:
 
@@ -2134,27 +2134,27 @@ $$\varphi:K\to\prod_{\kappa}[0,1],$$
 
 *the product being endowed with the product topology.*
 
-Proof. We call $i:[0,1]\to\mathbf C$ the closed immersion of the unit interval in $\mathbf R$. Then $i^*:C(K,[0,1])\to C(K)$, defined as $i^*(f):=i\circ f$ for any $f\in C(K,[0,1])$, is injective, and hence $|C(K,[0,1])|\le\kappa$. We will now construct a closed immersion:
+Proof. We call $i:[0,1]\to\mathbf C$ the closed immersion of the unit interval in $\mathbf R$. Then $i^*:\mathrm{C}(K,[0,1])\to \mathrm{C}(K)$, defined as $i^*(f):=i\circ f$ for any $f\in \mathrm{C}(K,[0,1])$, is injective, and hence $|\mathrm{C}(K,[0,1])|\le\kappa$. We will now construct a closed immersion:
 
 $$\varphi:K\to[0,1]^{\kappa},$$
 
 where we define $[0,1]^{\kappa}$ to be $\prod_{\alpha_{\kappa}}[0,1]$ endowed with the product topology (whose $\alpha_{\kappa}$ is the least ordinal with cardinality $\kappa$). We define
 
-$$\varphi_K:K\to\prod_{a\in C(K,[0,1])}[0,1]$$
+$$\varphi_K:K\to\prod_{a\in \mathrm{C}(K,[0,1])}[0,1]$$
 
-by $\varphi_K(x):=(a(x))_{a\in C(K,[0,1])}$. The set-function $\varphi_K$ is continuous. As $|C(K,[0,1])|\le\kappa$, we may call $\lambda$ the cardinality of $C(K,[0,1])$ with $\lambda\le\kappa$, and select (by the Axiom of Choice) a bijection $j:C(K,[0,1])\to\alpha_{\lambda}$. We may therefore define $J:=\{x\in\alpha_{\kappa}\mid x>y,\text{ for all }y\in\alpha_{\lambda}\}$, and we have $\alpha_{\kappa}=\alpha_{\lambda}\sqcup J$. We define
+by $\varphi_K(x):=(a(x))_{a\in \mathrm{C}(K,[0,1])}$. The set-function $\varphi_K$ is continuous. As $|\mathrm{C}(K,[0,1])|\le\kappa$, we may call $\lambda$ the cardinality of $\mathrm{C}(K,[0,1])$ with $\lambda\le\kappa$, and select (by the Axiom of Choice) a bijection $j:\mathrm{C}(K,[0,1])\to\alpha_{\lambda}$. We may therefore define $J:=\{x\in\alpha_{\kappa}\mid x>y,\text{ for all }y\in\alpha_{\lambda}\}$, and we have $\alpha_{\kappa}=\alpha_{\lambda}\sqcup J$. We define
 
-$$i_K:\prod_{a\in C(K,[0,1])}[0,1]\to[0,1]^{\kappa}$$
+$$i_K:\prod_{a\in \mathrm{C}(K,[0,1])}[0,1]\to[0,1]^{\kappa}$$
 
-by $i_K((x_a)_{a\in C(K,[0,1])}):=(x_c)_{c\in\alpha_{\kappa}}$ where $x_c=x_a$ in $[0,1]$ for c of the form $c=j(a)$ (where such a is unique by injectivity of j), and $x_c=0$ otherwise. The map $i_K$ is continuous, and we may therefore define $\varphi:K\to[0,1]^{\kappa}$ as $\varphi:=i_K\circ\varphi_K$. The set-function $\varphi$ is therefore continuous. It is also injective by Urysohn’s Lemma, as K is compact Hausdorff (hence normal). Since K is compact and $[0,1]^{\kappa}$ is Hausdorff, $\varphi$ is a closed immersion. $\square$
+by $i_K((x_a)_{a\in \mathrm{C}(K,[0,1])}):=(x_c)_{c\in\alpha_{\kappa}}$ where $x_c=x_a$ in $[0,1]$ for c of the form $c=j(a)$ (where such a is unique by injectivity of j), and $x_c=0$ otherwise. The map $i_K$ is continuous, and we may therefore define $\varphi:K\to[0,1]^{\kappa}$ as $\varphi:=i_K\circ\varphi_K$. The set-function $\varphi$ is therefore continuous. It is also injective by Urysohn’s Lemma, as K is compact Hausdorff (hence normal). Since K is compact and $[0,1]^{\kappa}$ is Hausdorff, $\varphi$ is a closed immersion. $\square$
 
 We now construct, for any fixed cardinal $\kappa$, a set of representatives of all compact Hausdorff spaces of size at most $\kappa$ up to homeomorphism.
 
-Lemma E.3.1.6. *Let $\kappa$ be a cardinal, and $\mathcal K_{\le\kappa}$ the class of all compact Hausdorff spaces K such that $\mathrm{size}(K)\le\kappa$. Then there exists a sub-class $\mathcal{CH}_{\le\kappa}\subset\mathcal K_{\le\kappa}$ such that:*
+Lemma E.3.1.6. *Let $\kappa$ be a cardinal, and $\mathcal K_{\le\kappa}$ the class of all compact Hausdorff spaces K such that $\mathrm{size}(K)\le\kappa$. Then there exists a sub-class $\mathrm{CH}_{\le\kappa}\subset\mathcal K_{\le\kappa}$ such that:*
 
-*(1) $\mathcal{CH}_{\le\kappa}$ is a set.*
+*(1) $\mathrm{CH}_{\le\kappa}$ is a set.*
 
-*(2) For any $K\in\mathcal K_{\le\kappa}$ there exists $K'\in\mathcal{CH}_{\le\kappa}$ and a homeomorphism $f:K'\to K$.*
+*(2) For any $K\in\mathcal K_{\le\kappa}$ there exists $K'\in\mathrm{CH}_{\le\kappa}$ and a homeomorphism $f:K'\to K$.*
 
 Proof. We note that, by design of $\mathrm{size}(\cdot)$ (see Definition E.3.1.1), for any fixed compact Hausdorff space K with $\mathrm{size}(K)\le\kappa$, the set of all compact Hausdorff subspaces of K has cardinality bounded above by $\kappa$,
 
@@ -2164,39 +2164,39 @@ Proof. We note that, by design of $\mathrm{size}(\cdot)$ (see Definition E.3.1.1
 
 and the algebra of continuous complex-valued functions on each compact Hausdorff subspace of K also has cardinality bounded above by $\kappa$. In particular,
 
-$$|C(K)|\le\kappa.$$
+$$|\mathrm{C}(K)|\le\kappa.$$
 
-We define $\mathcal C_{\kappa}$ to be the set of all closed subsets of $[0,1]^{\kappa}$, so all elements of $\mathcal C_{\kappa}$ are compact Hausdorff. We may therefore define $\mathcal{CH}_{\le\kappa}:=\mathcal C_{\kappa}\cap\mathcal K_{\le\kappa}$, the intersection being formed within the class of all compact Hausdorff spaces. For any compact Hausdorff space K such that $\mathrm{size}(K)\le\kappa$, by Lemma E.3.1.5 there exists a closed immersion $\varphi:K\to[0,1]^{\kappa}$, and hence an element $K'$ in $\mathcal{CH}_{\le\kappa}$ and a homeomorphism $f:K'\to K$, defined as the inverse of the homeomorphism induced by $\varphi$ from K onto the image $K':=\varphi(K)$. $\square$
+We define $\mathcal C_{\kappa}$ to be the set of all closed subsets of $[0,1]^{\kappa}$, so all elements of $\mathcal C_{\kappa}$ are compact Hausdorff. We may therefore define $\mathrm{CH}_{\le\kappa}:=\mathcal C_{\kappa}\cap\mathcal K_{\le\kappa}$, the intersection being formed within the class of all compact Hausdorff spaces. For any compact Hausdorff space K such that $\mathrm{size}(K)\le\kappa$, by Lemma E.3.1.5 there exists a closed immersion $\varphi:K\to[0,1]^{\kappa}$, and hence an element $K'$ in $\mathrm{CH}_{\le\kappa}$ and a homeomorphism $f:K'\to K$, defined as the inverse of the homeomorphism induced by $\varphi$ from K onto the image $K':=\varphi(K)$. $\square$
 
 We can now use Lemma E.3.1.2 and Lemma E.3.1.6 alongside Proposition E.2.1.13 to construct, for each fixed cardinal $\kappa$, a set of compactly generated and weakly Hausdorff spaces such that every object of CGWH of size at most $\kappa$ is homeomorphic to an object of such a set. This construction will be used as a crutch to build a small subcategory of CGWH stable under enough categorical operations to enable us to make some intrinsic constructions of interest, and that will serve as underlying category for our sought-for “topological site”. The following Lemma is an analog of [SP, Tag 000I].
 
 Lemma E.3.1.7. *For every cardinal $\kappa$, there exists a set S of compactly generated weakly Hausdorff topological spaces, such that for every compactly generated weakly Hausdorff topological space X with $\mathrm{size}(X)\le\kappa$, there exists an element $Y\in S$ and an isomorphism $Y\to X$ in CGWH.*
 
-Proof. We consider the set $S'$ defined as follows. For any $J\in\mathrm{Sets}_{\le\kappa}$, where $\mathrm{Sets}_{\le\kappa}$ is the set from Lemma E.3.1.2, we let f be a set-function $f:J\to\mathcal{CH}_{\le\kappa}$, where $\mathcal{CH}_{\le\kappa}$ is the set from Lemma E.3.1.6 above. We define $S'_{(J,f)}$ to be the set of all closed equivalence relations in the topological space $(\bigsqcup_J f(j))\times(\bigsqcup_J f(j))$ (product in CGWH, agreeing with the one in Spaces), and we further define:
+Proof. We consider the set $S'$ defined as follows. For any $J\in\mathrm{Sets}_{\le\kappa}$, where $\mathrm{Sets}_{\le\kappa}$ is the set from Lemma E.3.1.2, we let f be a set-function $f:J\to\mathrm{CH}_{\le\kappa}$, where $\mathrm{CH}_{\le\kappa}$ is the set from Lemma E.3.1.6 above. We define $S'_{(J,f)}$ to be the set of all closed equivalence relations in the topological space $(\bigsqcup_J f(j))\times(\bigsqcup_J f(j))$ (product in CGWH, agreeing with the one in Spaces), and we further define:
 
-$$S':=\bigsqcup_{J\in\mathrm{Sets}^{\le\kappa}}\bigsqcup_{f\in\mathrm{Map}(J,\mathcal{CH}_{\le\kappa})}S'_{(J,f)}$$
+$$S':=\bigsqcup_{J\in\mathrm{Sets}^{\le\kappa}}\bigsqcup_{f\in\mathrm{Map}(J,\mathrm{CH}_{\le\kappa})}S'_{(J,f)}$$
 
-itself a set. For any $s\in S'$, there exists $J\in\mathrm{Sets}_{\le\kappa}$ and $f\in\mathrm{Map}(J,\mathcal{CH}_{\le\kappa})$, and a closed equivalence relation $R\subset(\bigsqcup_J f(j))\times(\bigsqcup_J f(j))$, with $s=R$. We define $q(s):=(\bigsqcup_J f(j))/R$, a compactly generated and weakly Hausdorff space by Lemma E.2.1.11.
+itself a set. For any $s\in S'$, there exists $J\in\mathrm{Sets}_{\le\kappa}$ and $f\in\mathrm{Map}(J,\mathrm{CH}_{\le\kappa})$, and a closed equivalence relation $R\subset(\bigsqcup_J f(j))\times(\bigsqcup_J f(j))$, with $s=R$. We define $q(s):=(\bigsqcup_J f(j))/R$, a compactly generated and weakly Hausdorff space by Lemma E.2.1.11.
 
 We now define the class function
 
-$$F:=\{(s,X)\mid s\in S',X\in\mathrm{Ob}(\mathrm{CGWH}),q(s)=X\}$$
+$$F:=\{(s,X)\mid s\in S',X\in\mathrm{Ob}(\mathbf{CGWH}),q(s)=X\}$$
 
-where the formula $q(s)=X$ holds in the class $\mathrm{Ob}(\mathrm{CGWH})$. We call S the image of F. By the Axiom Schema of Replacement, S is a set. By Proposition E.2.1.13, any compactly generated and weakly Hausdorff topological space X with $\mathrm{size}(X)\le\kappa$ is a quotient of a coproduct of all compact Hausdorff subspaces of X indexed by a set J of cardinality at most $\kappa$ (the set of all compact Hausdorff subspaces of X). By Lemma E.3.1.6, such subspaces are each homeomorphic to a compact Hausdorff space which is an element of $\mathcal{CH}_{\le\kappa}$, and the index set is bijective to a set in $\mathrm{Sets}_{\le\kappa}$. The closed equivalence relation on the coproduct of all compact Hausdorff subspaces of X is therefore homeomorphic to an element of $S'$, and via the class function F there exists a compactly generated weakly Hausdorff space Y which is an element of S and a homeomorphism $Y\to X$. $\square$
+where the formula $q(s)=X$ holds in the class $\mathrm{Ob}(\mathbf{CGWH})$. We call S the image of F. By the Axiom Schema of Replacement, S is a set. By Proposition E.2.1.13, any compactly generated and weakly Hausdorff topological space X with $\mathrm{size}(X)\le\kappa$ is a quotient of a coproduct of all compact Hausdorff subspaces of X indexed by a set J of cardinality at most $\kappa$ (the set of all compact Hausdorff subspaces of X). By Lemma E.3.1.6, such subspaces are each homeomorphic to a compact Hausdorff space which is an element of $\mathrm{CH}_{\le\kappa}$, and the index set is bijective to a set in $\mathrm{Sets}_{\le\kappa}$. The closed equivalence relation on the coproduct of all compact Hausdorff subspaces of X is therefore homeomorphic to an element of $S'$, and via the class function F there exists a compactly generated weakly Hausdorff space Y which is an element of S and a homeomorphism $Y\to X$. $\square$
 
 E.3.2. $\alpha$-small compactly generated and weakly Hausdorff spaces. We assign the following:
 
 Definition E.3.2.1. Let $\alpha$ be an ordinal, and $\nu$ be a cardinal.
 
-(1) The category $\mathrm{CGWH}_{\alpha}$ has as its objects the compactly generated weakly Hausdorff topological spaces whose underlying sets are elements of $V_{\alpha}$, and its morphisms are continuous maps of topological spaces. We call $\alpha$-small the compactly generated and weakly Hausdorff spaces that are the objects of $\mathrm{CGWH}_{\alpha}$.
+(1) The category $\mathbf{CGWH}_{\alpha}$ has as its objects the compactly generated weakly Hausdorff topological spaces whose underlying sets are elements of $V_{\alpha}$, and its morphisms are continuous maps of topological spaces. We call $\alpha$-small the compactly generated and weakly Hausdorff spaces that are the objects of $\mathbf{CGWH}_{\alpha}$.
 
 ## PDF page 873
 
 **E.3. SMALL COMPACTLY GENERATED WEAKLY HAUSDORFF SPACES** · **873**
 
-(2) For C a category, I a $\nu$-small category, and $P:I\to C$ a diagram, we call P a $\nu$-small diagram and denote by $\lim_I P$ respectively $\mathrm{colim}_I P$ its $\nu$-small limit respectively $\nu$-small colimit if representable in C.
+(2) For C a category, I a $\nu$-small category, and $P:I\to \mathcal{C}$ a diagram, we call P a $\nu$-small diagram and denote by $\lim_I P$ respectively $\mathrm{colim}_I P$ its $\nu$-small limit respectively $\nu$-small colimit if representable in C.
 
-(3) We say that a category C contains all $\nu$-small limits respectively contains all $\nu$-small colimits (or that $\nu$-small limits, respectively $\nu$-small colimits, are representable in C) if and only if for any $\nu$-small diagram $P:I\to C$ the object $\lim_I P$ respectively $\mathrm{colim}_I P$ exists in C.
+(3) We say that a category C contains all $\nu$-small limits respectively contains all $\nu$-small colimits (or that $\nu$-small limits, respectively $\nu$-small colimits, are representable in C) if and only if for any $\nu$-small diagram $P:I\to \mathcal{C}$ the object $\lim_I P$ respectively $\mathrm{colim}_I P$ exists in C.
 
 Remark E.3.2.2. On Definition E.3.2.1, we make the following observation. Every topological space is homeomorphic to one whose underlying set is in the class WF. This is [Kunen, Lemma 2.14], and justifies the approach taken throughout to bound the size of the topological spaces in our sought-for small subcategory of the category CGWH of all compactly generated weakly Hausdorff topological spaces. We refer the reader to [Jech, Lemma 6.3] that establishes that every set is in some $V_{\alpha}$, as a consequence of the Axiom of Regularity in ZF$-$. In particular, this makes no use of the Axiom of Choice.
 
@@ -2208,7 +2208,7 @@ Lemma E.3.2.3. *Let $S_0$ be a set of compactly generated weakly Hausdorff topol
 
 *(2) For any $\alpha$-small space X and any compactly generated weakly Hausdorff topological space Y with $\mathrm{size}(Y)\le\mathrm{Bound}(\mathrm{size}(X))$ (see (E.3.1.1)) there exists an $\alpha$-small space $X'$ and a homeomorphism $X'\to Y$.*
 
-*(3) $\nu$-small limits and colimits are representable in $\mathrm{CGWH}_{\alpha}$ and the forgetful functor to CGWH preserves them.*
+*(3) $\nu$-small limits and colimits are representable in $\mathbf{CGWH}_{\alpha}$ and the forgetful functor to CGWH preserves them.*
 
 The following argument is an adaptation to the context of this work of the argument of [SP, Tag 000J], with minor adjustments and complements.
 
@@ -2216,13 +2216,13 @@ Proof. We define a function f on ordinals as follows. We set $f(0)=0$. Suppose $
 
 (1) $\max\{\alpha+1,f(\alpha)\}\le\beta$.
 
-(2) For any object T of $\mathrm{CGWH}_{f(\alpha)}$ and any compactly generated weakly Hausdorff X with $\mathrm{size}(X)\le\mathrm{Bound}(\mathrm{size}(T))$, there exists an object $T'$ of $\mathrm{CGWH}_{\beta}$ and a homeomorphism $T'\to X$.
+(2) For any object T of $\mathbf{CGWH}_{f(\alpha)}$ and any compactly generated weakly Hausdorff X with $\mathrm{size}(X)\le\mathrm{Bound}(\mathrm{size}(T))$, there exists an object $T'$ of $\mathbf{CGWH}_{\beta}$ and a homeomorphism $T'\to X$.
 
-(3) For any $\nu$-small index category I and any functor $F:I\to\mathrm{CGWH}_{f(\alpha)}$, $\lim_I F$ and $\mathrm{colim}_I F$ are isomorphic to objects of $\mathrm{CGWH}_{\beta}$.
+(3) For any $\nu$-small index category I and any functor $F:I\to\mathbf{CGWH}_{f(\alpha)}$, $\lim_I F$ and $\mathrm{colim}_I F$ are isomorphic to objects of $\mathbf{CGWH}_{\beta}$.
 
 We proceed in a very similar manner as in [SP, Tag 000J] to prove that $\beta$ indeed exists.
 
-We set $\kappa:=\sup_T\mathrm{Bound}(\mathrm{size}(T))$ where T varies across all objects of $\mathrm{CGWH}_{f(\alpha)}$, which is a small category by design. The cardinal $\kappa$ therefore exists. We apply Lemma E.3.1.7 to $\kappa$ to obtain the set S of that Lemma. We now repeat the argument at this stage of [SP, Tag 000J]. Up to isomorphism of small index categories, we may require that I in (3) is an element of the set of $\nu$-small categories $\mathrm{Cat}_{\le\nu}$ provided by Lemma E.3.1.4, so the pair $(I,F)$ in part (3) therefore varies over a set of pairs $(I,F)$ where I is an element of $\mathrm{Cat}_{\le\nu}$, and F is a functor $I\to\mathrm{CGWH}_{f(\alpha)}$. We may therefore find a set $S'$ such that for any pair $(I,F)$ as in (3) above, the limit and colimit are isomorphic to elements of $S'$. Upon choosing any $\beta$ such that $\beta\ge\max\{\alpha+1,f(\alpha)\}$ and $S\cup S'\subset V_{\beta}$, all the required axioms hold for $\beta$. Upon minimizing over such ordinals $\beta$, we see that $f(\alpha+1)$ is well-defined by transfinite recursion. One then extends f to limit ordinals by setting:
+We set $\kappa:=\sup_T\mathrm{Bound}(\mathrm{size}(T))$ where T varies across all objects of $\mathbf{CGWH}_{f(\alpha)}$, which is a small category by design. The cardinal $\kappa$ therefore exists. We apply Lemma E.3.1.7 to $\kappa$ to obtain the set S of that Lemma. We now repeat the argument at this stage of [SP, Tag 000J]. Up to isomorphism of small index categories, we may require that I in (3) is an element of the set of $\nu$-small categories $\mathrm{Cat}_{\le\nu}$ provided by Lemma E.3.1.4, so the pair $(I,F)$ in part (3) therefore varies over a set of pairs $(I,F)$ where I is an element of $\mathrm{Cat}_{\le\nu}$, and F is a functor $I\to\mathbf{CGWH}_{f(\alpha)}$. We may therefore find a set $S'$ such that for any pair $(I,F)$ as in (3) above, the limit and colimit are isomorphic to elements of $S'$. Upon choosing any $\beta$ such that $\beta\ge\max\{\alpha+1,f(\alpha)\}$ and $S\cup S'\subset V_{\beta}$, all the required axioms hold for $\beta$. Upon minimizing over such ordinals $\beta$, we see that $f(\alpha+1)$ is well-defined by transfinite recursion. One then extends f to limit ordinals by setting:
 
 $$f(\alpha):=\sup_{\beta<\alpha}f(\beta).$$
 
@@ -2244,19 +2244,19 @@ The set $\{f(\beta)\mid\beta<\gamma'\}\subset f(\gamma')$ is a cofinal subset, a
 
 $$V_{\alpha}=V_{f(\gamma')}=\bigcup_{\beta<\gamma'}V_{f(\beta)}.$$
 
-For any object T in $\mathrm{CGWH}_{\alpha}$, we call $\beta(T)$ the ordinal such that T is an object of $\mathrm{CGWH}_{f(\beta)}$, minimal with respect to this property. It follows $\beta(T)<\gamma'$. Since the objects of $\mathrm{CGWH}_{\beta(T)+1}$ are contained in $\mathrm{CGWH}_{f(\beta+1)}$ with $\beta+1<\gamma'$, so they are objects of $\mathrm{CGWH}_{\alpha}$, the second property is also seen to be satisfied.
+For any object T in $\mathbf{CGWH}_{\alpha}$, we call $\beta(T)$ the ordinal such that T is an object of $\mathbf{CGWH}_{f(\beta)}$, minimal with respect to this property. It follows $\beta(T)<\gamma'$. Since the objects of $\mathbf{CGWH}_{\beta(T)+1}$ are contained in $\mathbf{CGWH}_{f(\beta+1)}$ with $\beta+1<\gamma'$, so they are objects of $\mathbf{CGWH}_{\alpha}$, the second property is also seen to be satisfied.
 
-The last part of the argument is identical to the last paragraph in [SP, Tag 000J], with only notational changes; we repeat it here for the sake of completeness. Suppose that for a set J with $|J|\le\nu$, we have a J-indexed collection $\{S_j,j\in J\}$ of objects of $\mathrm{CGWH}_{\alpha}$. The function $\nu\to\gamma'$ given by $j\mapsto\beta(S_j)$ is such that its image is not a cofinal subset, since the cofinality of $\gamma'$ is greater than $\nu$. There therefore exists $\beta<\gamma'$ such that $\{S_j,j\in J\}\subset\mathrm{CGWH}_{f(\beta)}$, and so every functor $F:I\to\mathrm{CGWH}_{\alpha}$ as in part (3) of the Lemma factors through a subcategory $\mathrm{CGWH}_{f(\beta)}$ for some appropriate $\beta<\gamma'$ depending on I and F. The limit, respectively colimit, of the diagram $F:I\to\mathrm{CGWH}_{\alpha}$ is, by design of f, therefore isomorphic to an object of $\mathrm{CGWH}_{f(\beta+1)}$, which is in turn a subcategory of $\mathrm{CGWH}_{\alpha}$. $\square$
+The last part of the argument is identical to the last paragraph in [SP, Tag 000J], with only notational changes; we repeat it here for the sake of completeness. Suppose that for a set J with $|J|\le\nu$, we have a J-indexed collection $\{S_j,j\in J\}$ of objects of $\mathbf{CGWH}_{\alpha}$. The function $\nu\to\gamma'$ given by $j\mapsto\beta(S_j)$ is such that its image is not a cofinal subset, since the cofinality of $\gamma'$ is greater than $\nu$. There therefore exists $\beta<\gamma'$ such that $\{S_j,j\in J\}\subset\mathbf{CGWH}_{f(\beta)}$, and so every functor $F:I\to\mathbf{CGWH}_{\alpha}$ as in part (3) of the Lemma factors through a subcategory $\mathbf{CGWH}_{f(\beta)}$ for some appropriate $\beta<\gamma'$ depending on I and F. The limit, respectively colimit, of the diagram $F:I\to\mathbf{CGWH}_{\alpha}$ is, by design of f, therefore isomorphic to an object of $\mathbf{CGWH}_{f(\beta+1)}$, which is in turn a subcategory of $\mathbf{CGWH}_{\alpha}$. $\square$
 
 E.3.3. Size-bound criteria. We have the following Lemma, in analogy with [SP, Tag 000P].
 
 Lemma E.3.3.1. *Let X be a compact Hausdorff topological space. Then:*
 
-$$\mathrm{size}(X)\le\max\{\aleph_0,2^{|C(X)|}\}.$$
+$$\mathrm{size}(X)\le\max\{\aleph_0,2^{|\mathrm{C}(X)|}\}.$$
 
 *See Definition E.3.1.1 for the definition of $\mathrm{size}(\cdot)$ on CGWH.*
 
-Proof. The number of compact Hausdorff subspaces of X is at most $\max\{\aleph_0,2^{|C(X)|}\}$ because if $K\subset X$ is compact Hausdorff then by Urysohn’s Lemma K is the zero locus of an ideal $I\subset C(X)$ (namely, I is the ideal of f vanishing on X), and the number of such ideals is at most $2^{|C(X)|}$. $\square$
+Proof. The number of compact Hausdorff subspaces of X is at most $\max\{\aleph_0,2^{|\mathrm{C}(X)|}\}$ because if $K\subset X$ is compact Hausdorff then by Urysohn’s Lemma K is the zero locus of an ideal $I\subset \mathrm{C}(X)$ (namely, I is the ideal of f vanishing on X), and the number of such ideals is at most $2^{|C(X)|}$. $\square$
 
 Lemma E.3.3.2. *Let X be a compactly generated weakly Hausdorff topological space, and $\{K_i,i\in I\}$ a collection of compact Hausdorff subspaces of X such that:*
 
@@ -2278,19 +2278,19 @@ $$q:\bigsqcup_{i\in I}H_i\to K$$
 
 is surjective, the set-function
 
-$$C(K)\to\prod_{i\in I}C(H_i)$$
+$$\mathrm{C}(K)\to\prod_{i\in I}\mathrm{C}(H_i)$$
 
 is injective. We deduce the bound
 
-$$|C(K)|\le|\prod_{i\in I}C(H_i)|.$$
+$$|\mathrm{C}(K)|\le|\prod_{i\in I}\mathrm{C}(H_i)|.$$
 
-As $K_i$ is normal and $H_i\subset K_i$ is closed, Tietze’s Extension Theorem gives that $C(K_i)\to C(H_i)$ is surjective for every $i\in I$. We deduce the bound:
+As $K_i$ is normal and $H_i\subset K_i$ is closed, Tietze’s Extension Theorem gives that $\mathrm{C}(K_i)\to \mathrm{C}(H_i)$ is surjective for every $i\in I$. We deduce the bound:
 
-$$|\prod_{i\in I}C(H_i)|\le|\prod_{i\in I}C(K_i)|.$$
+$$|\prod_{i\in I}\mathrm{C}(H_i)|\le|\prod_{i\in I}\mathrm{C}(K_i)|.$$
 
-As $\sup_{i\in I}|C(K_i)|\le\sup_{i\in I}\mathrm{size}(K_i):=\lambda$, there exists an initial ordinal $\omega_{\lambda}$ for $\lambda$ and we further obtain the cardinal bound $|\prod_{i\in I}C(K_i)|\le|\prod_{i\in I}\omega_{\lambda}|=\lambda^{|I|}$. We deduce the cardinal bound:
+As $\sup_{i\in I}|\mathrm{C}(K_i)|\le\sup_{i\in I}\mathrm{size}(K_i):=\lambda$, there exists an initial ordinal $\omega_{\lambda}$ for $\lambda$ and we further obtain the cardinal bound $|\prod_{i\in I}\mathrm{C}(K_i)|\le|\prod_{i\in I}\omega_{\lambda}|=\lambda^{|I|}$. We deduce the cardinal bound:
 
-$$|C(K)|\le\lambda^{|I|}.$$
+$$|\mathrm{C}(K)|\le\lambda^{|I|}.$$
 
 The set of compact Hausdorff subspaces of X has cardinality at most the cardinality of the set
 
@@ -2302,7 +2302,7 @@ $$|\Sigma_X|\le(\sup_{i\in I}\mathrm{size}(K_i))^{|I|}.$$
 
 We may therefore assemble the bounds obtained to deduce that we have
 
-$$\mathrm{size}(X)=\max\{\aleph_0,|\Sigma_X|,\sup\{|C(K)|,K\in\Sigma_X\}\}\le\max\{\aleph_0,\lambda^{|I|}\}.$$
+$$\mathrm{size}(X)=\max\{\aleph_0,|\Sigma_X|,\sup\{|\mathrm{C}(K)|,K\in\Sigma_X\}\}\le\max\{\aleph_0,\lambda^{|I|}\}.$$
 
 $\square$
 
@@ -2330,31 +2330,31 @@ $$\mathrm{size}(X\times_{f,Y,g}Z)\le\max\{\aleph_0,\sup_{(j,m)\in J}(\mathrm{siz
 
 and by Lemma E.3.3.1 we further have
 
-$$\mathrm{size}(H_{ij}\times^0_{f,K_i,g}F_{im})\le\max\{\aleph_0,2^{|C(H_{ij}\times^0_{f,K_i,g}F_{im})|}\},$$
+$$\mathrm{size}(H_{ij}\times^0_{f,K_i,g}F_{im})\le\max\{\aleph_0,2^{|\mathrm{C}(H_{ij}\times^0_{f,K_i,g}F_{im})|}\},$$
 
 so
 
-$$\mathrm{size}(X\times_{f,Y,g}Z)\le\max\{\aleph_0,(\sup_{(j,m)\in J}\max\{\aleph_0,2^{|C(H_{ij}\times^0_{f,K_i,g}F_{im})|}\})^{|J|}\}$$
+$$\mathrm{size}(X\times_{f,Y,g}Z)\le\max\{\aleph_0,(\sup_{(j,m)\in J}\max\{\aleph_0,2^{|\mathrm{C}(H_{ij}\times^0_{f,K_i,g}F_{im})|}\})^{|J|}\}$$
 
 and hence
 
-$$\mathrm{size}(X\times_{f,Y,g}Z)\le\max\{\aleph_0,\aleph_0^{|J|},(\sup_{(j,m)\in J}2^{|C(H_{ij}\times^0_{f,K_i,g}F_{im})|})^{|J|}\}.$$
+$$\mathrm{size}(X\times_{f,Y,g}Z)\le\max\{\aleph_0,\aleph_0^{|J|},(\sup_{(j,m)\in J}2^{|\mathrm{C}(H_{ij}\times^0_{f,K_i,g}F_{im})|})^{|J|}\}.$$
 
 We now check that
 
-$$|C(H_{ij}\times^0_{f,K_i,g}F_{im})|=|C(H_{ij})\otimes_{C(K_i)}C(F_{im})|\le\max\{\aleph_0,|C(H_{ij})|,|C(F_{im})|\},$$
+$$|\mathrm{C}(H_{ij}\times^0_{f,K_i,g}F_{im})|=|\mathrm{C}(H_{ij})\otimes_{\mathrm{C}(K_i)}\mathrm{C}(F_{im})|\le\max\{\aleph_0,|\mathrm{C}(H_{ij})|,|\mathrm{C}(F_{im})|\},$$
 
-where the tensor product is an algebraic tensor product. The elements of the Banach algebra $C(H_{ij}\times^0_{f,K_i,g}F_{im})$ extend to $C(H_{ij}\times F_{im})$ by the Tietze Extension Theorem, and in the latter algebra everything is the limit of a sequence from $C(H_{ij})\otimes_{C(K_i)}C(F_{im})$ (density by Stone-Weierstrass), so
+where the tensor product is an algebraic tensor product. The elements of the Banach algebra $\mathrm{C}(H_{ij}\times^0_{f,K_i,g}F_{im})$ extend to $\mathrm{C}(H_{ij}\times F_{im})$ by the Tietze Extension Theorem, and in the latter algebra everything is the limit of a sequence from $\mathrm{C}(H_{ij})\otimes_{\mathrm{C}(K_i)}\mathrm{C}(F_{im})$ (density by Stone-Weierstrass), so
 
-$$|C(H_{ij})\otimes_{C(K_i)}C(F_{im})|\le|C(H_{ij})|\times|C(F_{im})|\times\aleph_0.$$
+$$|\mathrm{C}(H_{ij})\otimes_{\mathrm{C}(K_i)}\mathrm{C}(F_{im})|\le|\mathrm{C}(H_{ij})|\times|\mathrm{C}(F_{im})|\times\aleph_0.$$
 
-By [Kunen, Ch. I, Cor. 10.13] the right side is, in turn, $\max\{\aleph_0,|C(H_{ij})|,|C(F_{im})|\}$. As
+By [Kunen, Ch. I, Cor. 10.13] the right side is, in turn, $\max\{\aleph_0,|\mathrm{C}(H_{ij})|,|\mathrm{C}(F_{im})|\}$. As
 
-$$(\sup_{(j,m)\in J}\max\{\aleph_0,|C(H_{ij})|,|C(F_{im})|\})^{|J|}=\max\{\aleph_0^{|J|},(\sup_{(j,m)\in J}|C(H_{ij})|)^{|J|},(\sup_{(j,m)\in J}|C(F_{im})|)^{|J|}\}$$
+$$(\sup_{(j,m)\in J}\max\{\aleph_0,|\mathrm{C}(H_{ij})|,|\mathrm{C}(F_{im})|\})^{|J|}=\max\{\aleph_0^{|J|},(\sup_{(j,m)\in J}|\mathrm{C}(H_{ij})|)^{|J|},(\sup_{(j,m)\in J}|\mathrm{C}(F_{im})|)^{|J|}\}$$
 
 and
 
-$$(\sup_{(j,m)\in J}|C(H_{ij})|)^{|J|}\le(\mathrm{size}(X))^{|J|},(\sup_{(j,m)\in J}|C(F_{im})|)^{|J|}\le(\mathrm{size}(Z))^{|J|},$$
+$$(\sup_{(j,m)\in J}|\mathrm{C}(H_{ij})|)^{|J|}\le(\mathrm{size}(X))^{|J|},(\sup_{(j,m)\in J}|\mathrm{C}(F_{im})|)^{|J|}\le(\mathrm{size}(Z))^{|J|},$$
 
 upon assembling all the bounds so far obtained we have
 
@@ -2522,7 +2522,7 @@ We begin with the following construction:
 
 (e) $\mathbf{A}_\mathbf{Q}$ with the adelic topology.
 
-(f) $\mathbf{A}_\mathbf{Q}^\times$ with the idelic topology.
+(f) $\mathbf{A}_\mathbf{\mathbf{Q}}^\times$ with the idelic topology.
 
 (g) The closed subgroups of all of the above.
 
@@ -2746,7 +2746,7 @@ $$
 (b) As set-functions $R \to R$, we have the equality:
 
 $$
-c \circ (\mathrm{id}, i) = e \circ t, c \circ (i, \mathrm{id}) = e \circ s : R \to R \tag{E.4.1.6}
+c \circ (i\mathrm{d}, i) = e \circ t, c \circ (i, \mathrm{id}) = e \circ s : R \to R \tag{E.4.1.6}
 $$
 
 We call the set-functions $s, t, c, e, i$ the *structure morphisms* of the groupoid.
@@ -2830,7 +2830,7 @@ We define the category **Groupoids** whose objects are the class of all groupoid
 
 **Remark E.4.1.2.** On Definition E.4.1.1, we make the following observations:
 
-(1) We note that the datum of a groupoid in sets is equivalent to the datum of an (effective) small category (see Definition E.5.1.15) all of whose morphisms are isomorphisms. Indeed, given a groupoid in sets $(X, R, s, t, c, e, i)$, we may construct the category $\mathcal{C}_R$ whose set of objects is defined to be $\mathrm{Ob}(\mathcal{C}_R) := X$, and whose morphisms are defined as follows. For any pair of objects $x, y \in \mathrm{Ob}(\mathcal{C}_R)$, $\mathrm{Hom}_{\mathcal{C}_R}(x, y) := s^{-1}(x) \cap t^{-1}(y)$. The axioms from Definition E.4.1.1 ensure that the above assignment indeed is a (small) category. We will occasionally use this perspective, especially throughout the development and use of the desired theory of stacks in groupoids on a suitable site on topological spaces. For $g \in R$ with $s(g) = x$ and $t(g) = y$, we may write $g : x \to y$ to view $g$ as a morphism $x \to y$ in $\mathcal{C}_R$.
+(1) We note that the datum of a groupoid in sets is equivalent to the datum of an (effective) small category (see Definition E.5.1.15) all of whose morphisms are isomorphisms. Indeed, given a groupoid in sets $(X, R, s, t, c, e, i)$, we may construct the category $\mathcal{C}_R$ whose set of objects is defined to be $\mathrm{Ob}(\mathcal{C}_R) := X$, and whose morphisms are defined as follows. For any pair of objects $x, y \in \mathrm{Ob}(\mathcal{C}_R)$, $\mathrm{Hom}_{\mathcal{C}_R}(x, y) := s^{-1}(x) \cap t^{-1}(y)$. The axioms from Definition E.4.1.1 ensure that the above assignment indeed is a (small) category. We will occasionally use this perspective, especially throughout the development and use of the desired theory of stacks in groupoids on a suitable site on topological spaces. For $g \in \mathcal{R}$ with $s(g) = x$ and $t(g) = y$, we may write $g : x \to y$ to view $g$ as a morphism $x \to y$ in $\mathcal{C}_R$.
 
 (2) In (E.4.1.8) for the definition of morphisms of groupoids, concerning compatibility with the composition laws we note that by (E.4.1.9) on compatibility with source and target morphisms the set-function $(f_2, f_2) : R \times R \to R' \times R'$ restricted to $R \times_{s,X,t} R \subset R \times R$ factors through a set-function $R \times_{s,X,t} R \to R' \times_{s',X',t'} R'$; it is *this* set-function that is being referred to in Axiom (2) on compatibility with composition laws. We denote this set-function by $(f_2, f_2)$ again, as it is uniquely determined by $(f_2, f_2) : R \times R \to R' \times R'$, expecting no confusion to arise.
 
@@ -4819,7 +4819,7 @@ LEMMA E.5.7.16. *Let $\mathcal{D}$ be a small category. The 2-category $\mathbf{
 
 PROOF. To see this, it is enough to check that 1-fibre products in $\mathbf{Cat}$ are contained in the sub 2-category $\mathbf{Cat}/\mathcal{D}$. Equivalently, that given objects $(A, p_{A} : A \to \mathcal{D})$,$(B, p_{B} : B \to \mathcal{D})$, $(C, p_{C} : C \to \mathcal{D})$ of $\mathbf{Cat}/\mathcal{D}$, and 1-morphisms $f : B \to A$ and $g : C \to A$ in $\mathbf{Cat}/\mathcal{D}$, the 1-fibre product $B \times^{1}_{f, A, g} C$ formed in $\mathbf{Cat}$ is itself a category over $\mathcal{D}$. This is seen by defining $p : B \times^{1}_{f, A, g} C \to \mathcal{D}$ as the composition $p_{A} \circ f \circ p_{1} = p_{A} \circ g \circ p_{2}$, and then checking that the resulting object of $\mathbf{Cat}/\mathcal{D}$ indeed satisfies the universal property of fibre products in $\mathrm{Cat}(\mathbf{Cat}/\mathcal{D})$. We refer the reader to the proof of [$\mathbf{Ac}$, Ch.I,Lemma 1.2.3] for this verification. $\square$
 
-It is not always the case that 1-fibre products exist in $\mathbf{Fib}/\mathcal{D}$, the 2-category of all small categories fibered over the fixed small category $\mathcal{D}$. For a discussion on 1-fibre products in fibered categories we refer the reader to [$\mathbf{Ac}$, Ch.I,p.31-33], with emphasis on [$\mathbf{Ac}$, Ch. I, Examples 4, 5]. The obstruction to the existence of 1-fibre products of fibered categories is the fact that it is not generally true that, given 1-morphisms $f : B \to A$, $g : C \to A$, for all objects $U$ of $\mathcal{D}$ we have $(d^{*}x, d^{*}y) \in \mathrm{Ob}(B \times^{1}_{f, A, g} C)$ for all $(x, y) \in \mathrm{Ob}(B \times^{1}_{f, A, g} C)$ and $d : U' \to U$ a morphism in $\mathcal{D}$. This is also the only obstruction. We have the following definition, which is [$\mathbf{Ac}$, Ch. I, Def. 1.3.5]:
+It is not always the case that 1-fibre products exist in $\mathbf{Fib}/\mathcal{D}$, the 2-category of all small categories fibered over the fixed small category $\mathcal{D}$. For a discussion on 1-fibre products in fibered categories we refer the reader to [$\mathbf{Ac}$, Ch.I,p.31-33], with emphasis on [$\mathbf{Ac}$, Ch. I, Examples 4, 5]. The obstruction to the existence of 1-fibre products of fibered categories is the fact that it is not generally true that, given 1-morphisms $f : B \to A$, $g : C \to A$, for all objects $U$ of $\mathcal{D}$ we have $(d^{*}x, d^{*}y) \in \mathrm{Ob}(B \times^{1}_{f, A, g} C)$ for all $(x, y) \in \mathrm{Ob}(B \times^{1}_{f, A, g} C)$ and $d : U' \to U$ a morphism in $\mathcal{D}$. This is also the only obstruction. We have the following definition, which is [$A\mathbf{c}$, Ch. I, Def. 1.3.5]:
 
 DEFINITION E.5.7.17. Let $(A, p_{A})$,$(B, p_{B})$,$(C, p_{C})$ be three small categories fibered over $\mathcal{D}$, and $f : B \to A$, $g : C \to A$ be two 1-morphisms of small categories fibered over $\mathcal{D}$. The 1-fibre product in $\mathbf{Cat}/\mathcal{D}$,
 
@@ -4905,13 +4905,13 @@ We now assume the fixed small category $\mathcal{D}$ is endowed with the structu
 
 **920** · **CHAPTER E. TOPOLOGICAL STACKS**
 
-**Lemma E.5.7.25.** *Let $\mathcal{D}$ be a small category endowed with the structure of a site. Let $(A, p_A), (B, p_B), (C, p_C)$ be three small categories fibered in groupoids over $\mathcal{D}$, and $f : B \to A, g : C \to A$ two $1$-morphisms of categories fibered in groupoids over $\mathcal{D}$. If a $1$-fibre product exists for $(f, g)$ in $\mathbf{Groupoids}/\mathcal{D}$ then a $1$-fibre product of the $1$-morphisms $(f^a, g^a)$ of stacks in groupoids over $\mathcal{D}$ exists, and it is computed by the stack associated to the category $B \times^1_{f,A,g} C$ fibered in groupoids over $\mathcal{D}$, i.e., upon calling $\mathcal{X} := B^a, \mathcal{Y} := C^a, \mathcal{S} := A^a$, then:*
+**Lemma E.5.7.25.** *Let $\mathcal{D}$ be a small category endowed with the structure of a site. Let $(A, p_A), (B, p_B), (C, p_C)$ be three small categories fibered in groupoids over $\mathcal{D}$, and $f : B \to A, g : C \to A$ two $1$-morphisms of categories fibered in groupoids over $\mathcal{D}$. If a $1$-fibre product exists for $(f, g)$ in $\mathbf{Groupoids}/\mathcal{D}$ then a $1$-fibre product of the $1$-morphisms $(f^\mathrm{a}, g^\mathrm{a})$ of stacks in groupoids over $\mathcal{D}$ exists, and it is computed by the stack associated to the category $B \times^1_{f,A,g} C$ fibered in groupoids over $\mathcal{D}$, i.e., upon calling $\mathcal{X} := B^\mathrm{a}, \mathcal{Y} := C^\mathrm{a}, \mathcal{S} := A^\mathrm{a}$, then:*
 
 $$
-\mathcal{X} \times^1_{f^a,\mathcal{S},g^a} \mathcal{Y} = (B \times^1_{f,A,g} C)^a. \tag{E.5.7.8}
+\mathcal{X} \times^1_{f^\mathrm{a},\mathcal{S},g^\mathrm{a}} \mathcal{Y} = (B \times^1_{f,A,g} C)^\mathrm{a}. \tag{E.5.7.8}
 $$
 
-*Proof.* We refer the reader to [Ac, Ch.II,Thm.4] for the proof that the stackification pseudo-functor $(\cdot)^a : \mathbf{Groupoids}/\mathcal{D} \to \mathbf{Stacks}/\mathcal{D}$ preserves $1$-fibre products, if they exist. $\square$
+*Proof.* We refer the reader to [Ac, Ch.II,Thm.4] for the proof that the stackification pseudo-functor $(\cdot)^\mathrm{a} : \mathbf{Groupoids}/\mathcal{D} \to \mathbf{Stacks}/\mathcal{D}$ preserves $1$-fibre products, if they exist. $\square$
 
 We will be applying Lemma E.5.7.24 and Lemma E.5.7.25 to show$^{21}$ that the stackification of the split fibered category $\mathcal{S}_F$ for
 
@@ -4933,7 +4933,7 @@ We are now ready to introduce stacks over the site $\mathbf{CGWH}_{\alpha,\tau}$
 
 **E.6.1. Basic concepts.** We now give a $2$-categorical generalization of Construction E.5.7.23 of split fibered categories in sets and in groupoids.
 
-**Construction E.6.1.1.** We let $F : 2\text{-}\mathbf{Cat}(\mathbf{CGWH}_{\alpha,\tau}^{\mathrm{opp}}) \to \mathbf{Cat}$ be a (necessarily strict) pseudo-functor between $2$-categories (see Example E.5.2.7 for the construction $2\text{-}\mathbf{Cat}(\cdot)$, and Definition E.5.3.1 for the concept of a pseudo-functor between $2$-categories). We define the datum $\mathcal{S}_F$ of a class $\mathrm{Ob}(\mathcal{S}_F)$ defined as the class of all pairs $(U, x)$ with $U$ an object of $\mathbf{CGWH}_{\alpha,\tau}$, and $x$ an object of the groupoid $F(U)$. Since both the category $F(U)$ and the category $\mathbf{CGWH}_{\alpha}$ are small, the class $\mathrm{Ob}(\mathcal{S}_F)$ is, in fact, a set.
+**Construction E.6.1.1.** We let $F : 2\text{-}\mathrm{Cat}(\mathbf{CGWH}_{\alpha,\tau}^{\mathrm{opp}}) \to \mathbf{Cat}$ be a (necessarily strict) pseudo-functor between $2$-categories (see Example E.5.2.7 for the construction $2\text{-}\mathrm{Cat}(\cdot)$, and Definition E.5.3.1 for the concept of a pseudo-functor between $2$-categories). We define the datum $\mathcal{S}_F$ of a class $\mathrm{Ob}(\mathcal{S}_F)$ defined as the class of all pairs $(U, x)$ with $U$ an object of $\mathbf{CGWH}_{\alpha,\tau}$, and $x$ an object of the groupoid $F(U)$. Since both the category $F(U)$ and the category $\mathbf{CGWH}_{\alpha}$ are small, the class $\mathrm{Ob}(\mathcal{S}_F)$ is, in fact, a set.
 
 Given two pairs $(U, x)$, $(U', x')$, we define the set:
 
@@ -4968,7 +4968,7 @@ $$
 **Lemma E.6.1.2.** *Let:*
 
 $$
-F : 2\text{-}\mathbf{Cat}(\mathbf{CGWH}_{\alpha,\tau}^{\mathrm{opp}}) \to \mathbf{Cat}
+F : 2\text{-}\mathrm{Cat}(\mathbf{CGWH}_{\alpha,\tau}^{\mathrm{opp}}) \to \mathbf{Cat}
 $$
 
 *be a strict pseudo-functor between $2$-categories. The datum $\mathcal{S}_F$ is a small category, the assignment $p_F : \mathcal{S}_F \to \mathbf{CGWH}_{\alpha,\tau}$ is a functor, and the pair $(\mathcal{S}_F, p_F)$ is a fibered category. Moreover, if:*
@@ -4993,7 +4993,7 @@ and hence $(\mathcal{S}_F)_U = F(U)$. The Lemma therefore follows from [SP, Tag 
 
 **Remark E.6.1.3.** We make the following observations on the preceding lemma.
 
-(i) In part (1), the pseudo-functor $F$ “factoring through” the inclusion pseudo-functor $\mathbf{Groupoids} \to \mathbf{Cat}$ means that $F$ is the composition of a pseudo-functor $F' : 2\text{-}\mathbf{Cat}(\mathbf{CGWH}_{\alpha,\tau}^{\mathrm{opp}}) \to \mathbf{Groupoids}$ followed by the inclusion pseudo-functor $\mathbf{Groupoids} \to \mathbf{Cat}$. Likewise, in part (2), the pseudo-functor $F$ “factoring through” the inclusion pseudo-functor $\mathbf{Sets} \to \mathbf{Cat}$ means that $F$ is the composition of a pseudo-functor $F' : 2\text{-}\mathbf{Cat}(\mathbf{CGWH}_{\alpha,\tau}^{\mathrm{opp}}) \to \mathbf{Sets}$ followed by the inclusion pseudo-functor $\mathbf{Sets} \to \mathbf{Cat}$.
+(i) In part (1), the pseudo-functor $F$ “factoring through” the inclusion pseudo-functor $\mathbf{Groupoids} \to \mathbf{Cat}$ means that $F$ is the composition of a pseudo-functor $F' : 2\text{-}\mathrm{Cat}(\mathbf{CGWH}_{\alpha,\tau}^{\mathrm{opp}}) \to \mathbf{Groupoids}$ followed by the inclusion pseudo-functor $\mathbf{Groupoids} \to \mathbf{Cat}$. Likewise, in part (2), the pseudo-functor $F$ “factoring through” the inclusion pseudo-functor $\mathbf{Sets} \to \mathbf{Cat}$ means that $F$ is the composition of a pseudo-functor $F' : 2\text{-}\mathrm{Cat}(\mathbf{CGWH}_{\alpha,\tau}^{\mathrm{opp}}) \to \mathbf{Sets}$ followed by the inclusion pseudo-functor $\mathbf{Sets} \to \mathbf{Cat}$.
 
 (ii) The fibered category $(\mathcal{S}_F, p_F)$ constructed in Construction E.6.1.1 and Lemma E.6.1.2 is an example of a *split* fibered category. The general notion of split fibered category is rendered invariant under isomorphism of fibered categories by declaring (see [SP, Tag 02XW]) that split fibered categories are precisely those fibered categories over a fixed small category that are isomorphic in the $2$-category $\mathbf{Fib}/\mathcal{D}$ (see part (2) of Definition E.5.2.3) to a fibered category of the form $(\mathcal{S}_F, p_F)$. To assign this concept using equivalences in $\mathbf{Fib}/\mathcal{D}$ as opposed to isomorphisms would render it unimportant, insofar every fibered category is equivalent to a split one (see [SP, Tag 004A]).
 
@@ -5394,7 +5394,7 @@ $$
 (f, \phi) \mapsto ((f^*(x), f^*(x)), \phi) \in (\mathcal{X} \times_{\Delta, \mathcal{X} \times \mathcal{X}, \Delta} \mathcal{X})(T').
 $$
 
-The right vertical map $\iota$ sends an element $(a, \phi)$ of $\mathcal{I}_{\mathcal{X}}(T')$ (with $a \in \mathcal{X}(T')$ and $\phi \in \mathcal{G}(T')$ an automorphism of $a$ such that $\Delta_{\mathcal{X}}(a) = (s, t)(\phi)$ in $X \times X$) to $a \in \mathcal{X}(T')$ viewed as an object of $\mathcal{X}(T')$.
+The right vertical map $\iota$ sends an element $(a, \phi)$ of $\mathcal{I}_{\mathcal{X}}(T')$ (with $a \in X(T')$ and $\phi \in \mathcal{G}(T')$ an automorphism of $a$ such that $\Delta_{X}(a) = (s, t)(\phi)$ in $X \times X$) to $a \in X(T')$ viewed as an object of $\mathcal{X}(T')$.
 
 We have:
 
@@ -5407,7 +5407,7 @@ where $\mathcal{G}'$ refers to the notation from Lemma E.6.3.6. The groupoid-the
 **Remark E.6.3.12.** In the special case $T = X$ and $x$ is the quotient $\underline{X} \to [X/\mathcal{G}]$, $\mathcal{I}_{x:\underline{T} \to \mathcal{X}} = I_{[\mathcal{G} \Rightarrow X]}$ and for any point $y \in X$ the induced morphism $y : \underline{\{y\}} \to \underline{X} \to \mathcal{X}$ fits into the assertion of the Lemma with $T = \{y\}$ and gives:
 
 $$
-\mathcal{I}_{y:\underline{\{y\}} \to \mathcal{X}} = \{y\} \times_{y, X, \iota} \mathcal{I}_{\mathcal{X}} = \{y\} \times_{y, X} I_{[\mathcal{G} \Rightarrow X]} = I_y.
+\mathcal{I}_{y:\underline{\{y\}} \to \mathcal{X}} = \{y\} \times_{y, \mathcal{X}, \iota} \mathcal{I}_{\mathcal{X}} = \{y\} \times_{y, X} I_{[\mathcal{G} \Rightarrow X]} = I_y.
 $$
 
 In other words, the inertia stack interpolates the inertia groups of all points of $X$.
@@ -5596,7 +5596,7 @@ E.6.  STACKS ON CGWHα,τ                                              931
 
 Remark E.6.4.7. Standard Morita equivalences in **CGWH**$_{\alpha,\tau}$**-Grpd** satisfy the right-Ore conditions. The localization of the category of topological groupoids at the class of standard Morita equivalences is equivalent, as a 2-category, to the 2-category of stacks in topological groupoids $\mathcal{X} \to$ **CGWH**$_{\alpha,\tau}$ equipped with a representable epimorphism $\underline{X} \to \mathcal{X}$ from an object of **CGWH**$_{\alpha}$.
 
-Example E.6.4.8. For $X$ in **CGWH**$_{\alpha}$ equipped with a continuous action by a locally compact Hausdorff topological group $G$ and a closed subgroup $H \subset G$ whose action on $X$ is free,²⁴ the topological quotient $X/H$ belongs²⁵ to **CGWH**$_{\alpha}$ and is equipped with an evident continuous action by the topological group $G/H$. We then have²⁶
+Example E.6.4.8. For $X$ in **CGWH**$_{\alpha}$ equipped with a continuous action by a locally compact Hausdorff topological group $G$ and a closed subgroup $H \subset G$ whose action on $X$ is free,²⁴ the topological quotient $X/\mathbf{H}$ belongs²⁵ to **CGWH**$_{\alpha}$ and is equipped with an evident continuous action by the topological group $G/H$. We then have²⁶
 
 $$[X/G] = [(X/H)/(G/H)].$$
 

@@ -37,13 +37,13 @@ for $\Lambda > 0$ a fixed real number, we may let the non-Archimedean “compone
 **11.1.1. General convergence criteria.** We will be using this to construct operators from the truncations$^2$
 
 $$
-M(1/\Lambda,+\infty) W^{s,2}_0 H_{0,\mathrm{cont}}(F^\times,\mathcal S_0(\mathbf A_F))
+M(1/\Lambda,+\infty) W^{s,2}_a \mathrm{H}_{0,\mathrm{cont}}(F^\times,\mathcal S_0(\mathbf A_F))
 $$
 
 to truncated subspaces of the $S$-local spaces:
 
 $$
-W^{s,2}_0 H_{0,\mathrm{cont}}(\mathcal O_{F,S}^\times,\mathcal S(\mathbf A_{F,S})).
+W^{s,2}_a \mathrm{H}_{0,\mathrm{cont}}(\mathcal O_{F,S}^\times,\mathcal S(\mathbf A_{F,S})).
 $$
 
 The Geometric Schauder Bases will enable us to control the loss of information of this “degeneration process”.
@@ -115,7 +115,7 @@ Each function $f_k \in \mathcal S(\mathbf A_F)$ is continuous over $F^\times g$ 
 By Fatou’s Lemma (see [Fol, Thm.2.18]), we have
 
 $$
-\sum_{\xi \in F^\times} |f(\xi g)| = \int_{F^\times g} |f(h)|\,d\mu_g(h) \le \liminf_{k\to +\infty} \int_{F^\times g} |f_k(h)|\,d\mu_g(h). \tag{11.1.1.5}
+\sum_{\xi \in F^\times} |f(\xi g)| = \int_{F^\times g} |f(h)|\,\mathrm{d}\mu_g(h) \le \liminf_{k\to +\infty} \int_{F^\times g} |f_k(h)|\,\mathrm{d}\mu_g(h). \tag{11.1.1.5}
 $$
 
 By assumption (2), the rightmost side of (11.1.1.5) is bounded above by $J_F(\alpha)(g)$, which proves that the series in (11.1.1.3) is absolutely convergent pointwise over $Z$.
@@ -221,7 +221,7 @@ $$
 *Then, for every character $\omega \in \widehat{C^1_F}$, and each $g \in \mathrm{GL}_1(\mathbf A_F)$, the integral*
 
 $$
-\Phi_{F,\omega}(f)(g) := \int_{E^1_F} \sum_{\xi \in F^\times} f(\xi g h)\,\omega(gh)\,d\mu_1(h) \tag{11.1.1.12}
+\Phi_{F,\omega}(f)(g) := \int_{E^1_F} \sum_{\xi \in F^\times} f(\xi g h)\,\omega(gh)\,\mathrm{d}\mu_1(h) \tag{11.1.1.12}
 $$
 
 *is absolutely convergent, the limit $\lim_{k\to +\infty} \Phi_{F,\omega}(f_k)(g)$ exists, and we have, as functions over $C_F/C^1_F$*
@@ -235,7 +235,7 @@ $$
 *Proof.* We apply Proposition 11.1.1.2 to the choice $Z = T\cdot E^1_F$ and, for each $x \in T$, to $\eta := \delta_x \otimes \mu_1$. Since $|c(gh)| = |c(g)|$ for every $h \in E^1_F$ as per (11.1.1.12), since $E^1_F \subset \mathrm{GL}_1(\mathbf A_F)^1$, then the integral defining $\Phi_{F,\omega}(f)(g)$ in (11.1.1.12) is absolutely convergent by Proposition 11.1.1.2(2), since we have
 
 $$
-\int_{E^1_F} \sum_{\xi \in F^\times} f(\xi g h)\,c(gh)\,d\mu_1(h) = c(x) \int_{E^1_F} \sum_{\xi \in F^\times} f(\xi x g_0)\,c(g_0)\,d\mu_1(g_0) = c(x) \int_{T\cdot E^1_F} \Phi_F(f)(g')\,c(g'x^{-1})\,d(\delta_x\otimes\mu_1)(g') \tag{11.1.1.14}
+\int_{E^1_F} \sum_{\xi \in F^\times} f(\xi g h)\,c(gh)\,\mathrm{d}\mu_1(h) = c(x) \int_{E^1_F} \sum_{\xi \in F^\times} f(\xi x g_0)\,c(g_0)\,\mathrm{d}\mu_1(g_0) = c(x) \int_{T\cdot E^1_F} \Phi_F(f)(g')\,c(g'x^{-1})\,\mathrm{d}(\delta_x\otimes\mu_1)(g') \tag{11.1.1.14}
 $$
 
 writing $g = xg_0$ for unique $x \in T$ and $g_0 \in \mathrm{GL}_1(\mathbf A_F)$, for then renaming $g_0h$ as $g_0$ by $\mathrm{GL}_1(\mathbf A_F)^1$-invariance of $\mu_1$. We may assume $g_0$ is in $E^1_F$, since $\mathrm{GL}_1(\mathbf A_F)^1 = \bigcup_{\xi \in F^\times} \xi E^1_F$ by Proposition A.2.3.10, the union being disjoint.
@@ -245,10 +245,10 @@ Since $|c(g'x^{-1})| = 1$, Proposition 11.1.1.2(2) implies that $\Phi_F(f) \in L
 Since we have, by Proposition D.1.2.4 [Bou-II, INT VII.52, §3, Thm.4(c)]
 
 $$
-\Phi_{F,\omega}(f_k)(g) = \int_{E^1_F} \Phi_F(f_k)(gh)\,\omega(gh)\,d\mu_1(h)
+\Phi_{F,\omega}(f_k)(g) = \int_{E^1_F} \Phi_F(f_k)(gh)\,\omega(gh)\,\mathrm{d}\mu_1(h)
 $$
 
-as $E^1_F$ is a fundamental domain for the continuous action of $F^\times$ by left translation on $\mathrm{GL}_1(\mathbf A_F)^1$, we have $\Phi_{F,\omega}(f)(x) - \Phi_{F,\omega}(f_k)(x) = \omega(x) \int_{E^1_F} (\Phi_F(f_k)(g') - \Phi_F(f)(g'))\,\omega(g'x^{-1})\,d(\delta_x\otimes\mu_1)(g')$ and hence
+as $E^1_F$ is a fundamental domain for the continuous action of $F^\times$ by left translation on $\mathrm{GL}_1(\mathbf A_F)^1$, we have $\Phi_{F,\omega}(f)(x) - \Phi_{F,\omega}(f_k)(x) = \omega(x) \int_{E^1_F} (\Phi_F(f_k)(g') - \Phi_F(f)(g'))\,\omega(g'x^{-1})\,\mathrm{d}(\delta_x\otimes\mu_1)(g')$ and hence
 
 $$
 \|\Phi_{F,\omega}(f) - \Phi_{F,\omega}(f_k)\|_{L^1(T_{v_0},\delta_x)} \le |c(x)|\,\|\Phi_F(f) - \Phi_F(f_k)\|_{L^1(T\cdot E^1_F,(\delta_x\otimes\mu_1))} \tag{11.1.1.15}
@@ -285,17 +285,17 @@ $$
 *We define, for every $i \in I_S$ and for $\rho \in \{\rho_{\Lambda,+},\rho_\Lambda\}$:*
 
 $$
-W^{s,2}_{0,\rho} P_{S_i} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \tag{11.1.2.3}
+W^{s,2}_{0,\rho} P_{S_i} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \tag{11.1.2.3}
 $$
 
-*to be the closure in $W^{s,2}(C_F)(\chi|_{C^1_F})$ of $M_\rho P_{S_i} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset W^{s,2}(C_F)(\chi|_{C^1_F})$.*
+*to be the closure in $W^{s,2}(C_F)(\chi|_{C^1_F})$ of $M_\rho P_{S_i} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset W^{s,2}(C_F)(\chi|_{C^1_F})$.*
 
 *Then:*
 
 *(1) The set-theoretic limit:*
 
 $$
-\lim_{k\ge 0} W^{s,2}_{0,\rho} P_{S_k} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset W^{s,2}(C_F)(\chi|_{C^1_F}) \tag{11.1.2.4}
+\lim_{k\ge 0} W^{s,2}_{0,\rho} P_{S_k} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset W^{s,2}(C_F)(\chi|_{C^1_F}) \tag{11.1.2.4}
 $$
 
 *for $\{S_k\}_{k\ge 0} \subset I_S$ a choice of cofinal sequence, exists, it is a closed linear subspace of $M_\rho W^{s,2}(C_F)(\chi|_{C^1_F})$, and it is independent of the choice of cofinal sequence in $I_S$.*
@@ -303,13 +303,13 @@ $$
 *(2) Let $i,i' \in I_S$ be distinct, with $S_i \subset S_{i'}$ and such that there exists a prime number $p$ such that no place $v \in S_i$ divides $p$, and at least one place in $S_{i'}$ does. Then we have the inclusions of closed linear subspaces:*
 
 $$
-W^{s,2}_0 P_{S_{i'}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset W^{s,2}_0 P_{S_i} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \tag{11.1.2.5}
+W^{s,2}_0 P_{S_{i'}} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset W^{s,2}_0 P_{S_i} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \tag{11.1.2.5}
 $$
 
 *and:*
 
 $$
-W^{s,2}_{0,\rho} P_{S_{i'}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset W^{s,2}_{0,\rho} P_{S_i} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)). \tag{11.1.2.6}
+W^{s,2}_{0,\rho} P_{S_{i'}} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset W^{s,2}_{0,\rho} P_{S_i} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)). \tag{11.1.2.6}
 $$
 
 *The inclusion in (11.1.2.5) is strict, and for any non-decreasing sequence $\{\Lambda_k\}_{k\ge 0} \subset \mathbf R_{>0}$ such that $\lim_{k\ge 0} \Lambda_k = +\infty$, there exists a subsequence $\{\Lambda_{k_m}\}_{m\ge 0}$ such that, for every integer $m \ge 0$ and for the choice $\Lambda = \Lambda_{k_m}$, the inclusion in (11.1.2.6) is strict.*
@@ -317,7 +317,7 @@ $$
 *(3) The closed subspace from (11.1.2.4) is the closure in $M_\rho W^{s,2}(C_F)(\chi|_{C^1_F})$ of the linear subspace generated by the functions of $g \in C_F$:*
 
 $$
-\rho(g) \sum_{\xi \in F^\times} (f \otimes \bigotimes_{v\notin S} 1_{\mathcal O_{F_v}^\times})(\xi g) \tag{11.1.2.7}
+\rho(g) \sum_{\xi \in F^\times} (f \otimes \prod_{v\notin S} 1_{\mathcal O_{F_v}^\times})(\xi g) \tag{11.1.2.7}
 $$
 
 *for $f \in \mathcal S(\mathbf A_{F,S}) \cap \ker(\delta_0) \cap \ker(\hat\delta_0)$.*
@@ -331,61 +331,61 @@ $^3$Return here.
 
 **11.1. THE SHELL STRUCTURE** · **481**
 
-*Proof.* (1) : By Proposition 11.2.0.1, each $\mathrm{PV}_{S_i}$ is continuous and with closed range as a linear endomorphism of $W^{s,2}_0 H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$.
+*Proof.* (1) : By Proposition 11.2.0.1, each $\mathrm{PV}_{S_i}$ is continuous and with closed range as a linear endomorphism of $W^{s,2}_0 \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$.
 
-In particular, the closure within $W^{s,2}_0 H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ of $\mathrm{PV}_{S'} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$, for any $S' \in I_S$, is exactly the closed subspace $\mathrm{PV}_{S'} W^{s,2}_0 H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$.
+In particular, the closure within $W^{s,2}_0 \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ of $\mathrm{PV}_{S'} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$, for any $S' \in I_S$, is exactly the closed subspace $\mathrm{PV}_{S'} W^{s,2}_0 \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$.
 
-The topology on $H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ induced by
+The topology on $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ induced by
 
 $$
-M_\rho : H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset W^{s,2}_0 H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset W^{s,2}(C_F)(\chi|_{C^1_F}) \to M_\rho W^{s,2}(C_F)(\chi|_{C^1_F}) \tag{11.1.2.8}
+M_\rho : \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset W^{s,2}_0 \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset W^{s,2}(C_F)(\chi|_{C^1_F}) \to M_\rho W^{s,2}(C_F)(\chi|_{C^1_F}) \tag{11.1.2.8}
 $$
 
 is induced by the seminorm:
 
 $$
-\|\varphi\|_{s,2,\rho} := \left( \int_{C^{\ge 1/\Lambda}_F} |\varphi(g)|^2 (1+|\log|g|_F|^2)^{s/2}\,d\bar\mu(g) \right)^{1/2}. \tag{11.1.2.9}
+\|\varphi\|_{s,2,\rho} := \left( \int_{C^{\ge 1/\Lambda}_F} |\varphi(g)|^2 (1+|\log|g|_F|^2)^{s/2}\,\mathrm{d}\bar\mu(g) \right)^{1/2}. \tag{11.1.2.9}
 $$
 
-To see this, it is enough to observe that since the topology on $W^{s,2}_0 H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ is induced by the $\|\cdot\|_{s,2}$-norm on $W^{s,2}(C_F)(\chi|_{C^1_F})$, then the pull-back of the norm $\|\cdot\|_{s,2}$ along $M_\rho$ from (11.1.2.8) is a seminorm $H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$, which generates a locally convex topology whose separated completion is closed and dense within $M_\rho W^{s,2}_0 H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$, and hence agrees with it.
+To see this, it is enough to observe that since the topology on $W^{s,2}_0 \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ is induced by the $\|\cdot\|_{s,2}$-norm on $W^{s,2}(C_F)(\chi|_{C^1_F})$, then the pull-back of the norm $\|\cdot\|_{s,2}$ along $M_\rho$ from (11.1.2.8) is a seminorm $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$, which generates a locally convex topology whose separated completion is closed and dense within $M_\rho W^{s,2}_0 \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$, and hence agrees with it.
 
-Such pull-back seminorm is computed as: $\varphi \mapsto \|\rho\cdot\varphi\|_{s,2} = \left( \int_{C_F} |\rho(g)\varphi(g)|^2 (1+|\log|g|_F|^2)^{s/2}\,d\bar\mu(g) \right)^{1/2}$ which gives the formula for $\|\cdot\|_{s,2,\rho}$ in (11.1.2.9), since the indicator function $\rho$ of $C^{>1/\Lambda}_F$, respectively of $C^{(1/\Lambda,\Lambda)}_F$, is its own square.
+Such pull-back seminorm is computed as: $\varphi \mapsto \|\rho\cdot\varphi\|_{s,2} = \left( \int_{C_F} |\rho(g)\varphi(g)|^2 (1+|\log|g|_F|^2)^{s/2}\,\mathrm{d}\bar\mu(g) \right)^{1/2}$ which gives the formula for $\|\cdot\|_{s,2,\rho}$ in (11.1.2.9), since the indicator function $\rho$ of $C^{>1/\Lambda}_F$, respectively of $C^{(1/\Lambda,\Lambda)}_F$, is its own square.
 
-Since $\{g \in C_F : |g|_F = 1/\Lambda,\Lambda\}$ has $\bar\mu$-measure zero, indeed the formula in (11.1.2.9) for $\|\cdot\|_{s,2,\rho}$ computes the pull-back of $\|\cdot\|_{s,2}$ on $W^{s,2}_0 H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ along $M_\rho$ from (11.1.2.8).
+Since $\{g \in C_F : |g|_F = 1/\Lambda,\Lambda\}$ has $\bar\mu$-measure zero, indeed the formula in (11.1.2.9) for $\|\cdot\|_{s,2,\rho}$ computes the pull-back of $\|\cdot\|_{s,2}$ on $W^{s,2}_0 \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ along $M_\rho$ from (11.1.2.8).
 
-Since $\|\cdot\|_{s,2,\rho}$ is a continuous seminorm on $W^{s,2}(C_F)(\chi|_{C^1_F})$, the seminormed topology induced by $\|\cdot\|_{s,2,\rho}$ on $H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ is coarser than the $\|\cdot\|_{s,2}$-norm topology.
+Since $\|\cdot\|_{s,2,\rho}$ is a continuous seminorm on $W^{s,2}(C_F)(\chi|_{C^1_F})$, the seminormed topology induced by $\|\cdot\|_{s,2,\rho}$ on $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ is coarser than the $\|\cdot\|_{s,2}$-norm topology.
 
 It follows that the following inclusion:
 
 $$
-M_\rho W^{s,2}_0 \mathrm{PV}_{S_i} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset W^{s,2}_{0,\rho} \mathrm{PV}_{S_i} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \tag{11.1.2.10}
+M_\rho W^{s,2}_0 \mathrm{PV}_{S_i} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset W^{s,2}_{0,\rho} \mathrm{PV}_{S_i} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \tag{11.1.2.10}
 $$
 
 holds.
 
-The left side in (11.1.2.10) (which, note, equals $M_\rho \mathrm{PV}_{S_i} W^{s,2}_0 H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ by continuity of $\mathrm{PV}_{S_i}$) contains $M_\rho P_{S_i} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ and it is already closed, since $M_\rho$ has closed range by [Cnw-a, Ch.II, §3, Prop.3.2(b), p.37], being an idempotent operator.
+The left side in (11.1.2.10) (which, note, equals $M_\rho \mathrm{PV}_{S_i} W^{s,2}_0 \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ by continuity of $\mathrm{PV}_{S_i}$) contains $M_\rho P_{S_i} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ and it is already closed, since $M_\rho$ has closed range by [Cnw-a, Ch.II, §3, Prop.3.2(b), p.37], being an idempotent operator.
 
 It follows that we have, as closed subspaces of $W^{s,2}(C_F)(\chi|_{C^1_F})$:
 
 $$
-M_\rho W^{s,2}_0 \mathrm{PV}_{S_i} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) = W^{s,2}_{0,\rho} \mathrm{PV}_{S_i} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)). \tag{11.1.2.11}
+M_\rho W^{s,2}_0 \mathrm{PV}_{S_i} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) = W^{s,2}_{0,\rho} \mathrm{PV}_{S_i} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)). \tag{11.1.2.11}
 $$
 
 We now observe that if $S_i \subset S_{i'}$ for $i,i' \in I_S$, then we have:
 
 $$
-W^{s,2}_{0,\rho} \mathrm{PV}_{S_{i'}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset W^{s,2}_{0,\rho} P_{S_i} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \tag{11.1.2.12}
+W^{s,2}_{0,\rho} \mathrm{PV}_{S_{i'}} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset W^{s,2}_{0,\rho} P_{S_i} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \tag{11.1.2.12}
 $$
 
-since $\mathrm{PV}_{S_{i'}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset \mathrm{PV}_{S_i} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$, this latter inclusion being a consequence of Theorem 6.3.2.2.
+since $\mathrm{PV}_{S_{i'}} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset \mathrm{PV}_{S_i} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$, this latter inclusion being a consequence of Theorem 6.3.2.2.
 
 We let $\{S_k\}_{k\ge 0} \subset I_S$ be any cofinal sequence. Then
 
 $$
-\bigcap_{k\ge 0} W^{s,2}_{0,\rho} \mathrm{PV}_{S_k} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \tag{11.1.2.13}
+\bigcap_{k\ge 0} W^{s,2}_{0,\rho} \mathrm{PV}_{S_k} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \tag{11.1.2.13}
 $$
 
-is a closed linear subspace of $W^{s,2}_0 H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$.
+is a closed linear subspace of $W^{s,2}_0 \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$.
 
 ## PDF page 482
 
@@ -396,40 +396,40 @@ For $\{S'_m\}_{m\ge 0}$ another cofinal sequence in $I_S$, we have, for every in
 In particular, by (11.1.2.12), the following inclusion holds:
 
 $$
-\bigcap_{m\ge 0} W^{s,2}_{0,\rho} \mathrm{PV}_{S'_m} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset \bigcap_{k\ge 0} W^{s,2}_{0,\rho} \mathrm{PV}_{S_k} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)). \tag{11.1.2.14}
+\bigcap_{m\ge 0} W^{s,2}_{0,\rho} \mathrm{PV}_{S'_m} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset \bigcap_{k\ge 0} W^{s,2}_{0,\rho} \mathrm{PV}_{S_k} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)). \tag{11.1.2.14}
 $$
 
 Upon exchanging the roles of $\{S_k\}_{k\ge 0}$ and $\{S'_m\}_{m\ge 0}$, we deduce that the reverse inclusion holds, and hence:
 
 $$
-\bigcap_{m\ge 0} W^{s,2}_{0,\rho} \mathrm{PV}_{S'_m} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) = \bigcap_{k\ge 0} W^{s,2}_{0,\rho} \mathrm{PV}_{S_k} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)). \tag{11.1.2.15}
+\bigcap_{m\ge 0} W^{s,2}_{0,\rho} \mathrm{PV}_{S'_m} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) = \bigcap_{k\ge 0} W^{s,2}_{0,\rho} \mathrm{PV}_{S_k} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)). \tag{11.1.2.15}
 $$
 
 as closed subspaces of $W^{s,2}(C_F)(\chi|_{C^1_F})$. Formation of the common such closed subspace therefore does not depend on the choice of cofinal sequence in $I_S$, but only on $I_S$ itself.
 
-(2) :$^4$ We now prove that the inclusion in (11.1.2.5) is strict. By Theorem 11.2.0.2, the strong dual of the orthogonal in $W^{s,2}_0 H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ of $W^{s,2}_0 \mathrm{PV}_{S_{i'}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ is non-trivial, the Theorem exhibiting a Schauder basis (given by the functionals $\eta_{\epsilon_p}$ as $\epsilon_p$ varies over the zeros of $(1-q^{-s-it_v}_v)^{-1}$ for $v \in S_{i'}$ of residue characteristic $p$), and since $S_i \subset S_{i'}$ is a strict inclusion, as $i,i'$ are distinct elements of $I_S$, and there exists a prime number $p$ divided by a place in $S_{i'}$ and by no place in $S_i$, the functionals $\eta_{\epsilon_p}$ separate the points of $W^{s,2}_0 \mathrm{PV}_{S_{i'}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ from the points of $W^{s,2}_0 \mathrm{PV}_{S_i} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$.
+(2) :$^4$ We now prove that the inclusion in (11.1.2.5) is strict. By Theorem 11.2.0.2, the strong dual of the orthogonal in $W^{s,2}_0 \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ of $W^{s,2}_0 \mathrm{PV}_{S_{i'}} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ is non-trivial, the Theorem exhibiting a Schauder basis (given by the functionals $\eta_{\epsilon_p}$ as $\epsilon_p$ varies over the zeros of $(1-q^{-s-it_v}_v)^{-1}$ for $v \in S_{i'}$ of residue characteristic $p$), and since $S_i \subset S_{i'}$ is a strict inclusion, as $i,i'$ are distinct elements of $I_S$, and there exists a prime number $p$ divided by a place in $S_{i'}$ and by no place in $S_i$, the functionals $\eta_{\epsilon_p}$ separate the points of $W^{s,2}_0 \mathrm{PV}_{S_{i'}} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ from the points of $W^{s,2}_0 \mathrm{PV}_{S_i} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$.
 
 All such functionals exist and provide elements of the Schauder bases from Theorem 11.2.0.2, because $s \ge 2\,[F:\mathbf Q]$.
 
 We now prove that for any non-decreasing sequence $\{\Lambda_k\}_{k\ge 0} \subset \mathbf R_{>0}$ such that $\lim_{k\to +\infty} \Lambda_k = +\infty$, there exists a subsequence $\{\Lambda_{k_m}\}_{m\ge 0}$ such that for each choice $\Lambda = \Lambda_{k_m}$, the inclusion in (11.1.2.6) is also strict. If not, then we have:
 
 $$
-W^{s,2}_{0,\Lambda_k,+} \mathrm{PV}_{S_{i'}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) = W^{s,2}_{0,\Lambda_k,+} \mathrm{PV}_{S_i} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \tag{11.1.2.16}
+W^{s,2}_{0,\Lambda_k,+} \mathrm{PV}_{S_{i'}} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) = W^{s,2}_{0,\Lambda_k,+} \mathrm{PV}_{S_i} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \tag{11.1.2.16}
 $$
 
 for every integer $k \ge 0$.$^5$
 
-Since $\lim_{k\to +\infty} \Lambda_k = +\infty$, the sequence of operators $\{M_{\rho_{\Lambda_k,+}}\}_{k\ge 0}$ on $W^{s,2}(C_F)(\chi|_{C^1_F})$ tends to the identity with respect to the strong operator topology on $B(W^{s,2}(C_F)(\chi|_{C^1_F}))$ by [Cnw-a, Ch.I, §2, Cor.2.11, p.11], forcing the inclusion in (11.1.2.5) to not be strict, a contradiction.
+Since $\lim_{k\to +\infty} \Lambda_k = +\infty$, the sequence of operators $\{M_{\rho_{\Lambda_k,+}}\}_{k\ge 0}$ on $W^{s,2}(C_F)(\chi|_{C^1_F})$ tends to the identity with respect to the strong operator topology on $\mathscr{B}(W^{s,2}(C_F)(\chi|_{C^1_F}))$ by [Cnw-a, Ch.I, §2, Cor.2.11, p.11], forcing the inclusion in (11.1.2.5) to not be strict, a contradiction.
 
 (3) : We will now be using Proposition 11.1.1.2. We choose $\tau$ a continuous homomorphic section to the idelic norm on $C_F$, and define $Z := \tau(\mathbf R_{>0})\cdot E^1_F$, with $E^1_F$ the idelic fundamental domain in $\mathrm{GL}_1(\mathbf A_F)^1$ for the discrete left translation action of $F^\times$ (see (A.2.3.14)).
 
 The subset $Z \subset \mathrm{GL}_1(\mathbf A_F)$ is Borel with non-empty interior, and its $F^\times$-translates cover $\mathrm{GL}_1(\mathbf A_F)$ by Theorem A.2.3.10.
 
-We choose $\eta := \mathbf 1_{(1/\Lambda,+\infty)}\cdot (1+|\log|\cdot|_F|^2)^{s/2}\,\mu$ as positive Radon measure on $\mathrm{GL}_1(\mathbf A_F)$, and choose $r = 2$ in the statement of Proposition 11.1.1.2.
+We choose $\eta := \mathrm{1}_{(1/\Lambda,+\infty)}\cdot (1+|\log|\cdot|_F|^2)^{s/2}\,\mu$ as positive Radon measure on $\mathrm{GL}_1(\mathbf A_F)$, and choose $r = 2$ in the statement of Proposition 11.1.1.2.
 
-We choose $f \in \mathcal S_0(\mathbf A_F)$ of the form $f = f_\infty \bigotimes_{v\in\Sigma_{F,f}} f_v$ for $f_\infty \in \mathcal S(\mathbf A_{F,S_\infty})$ and $f_v \in \mathcal S(F_v)$ for every $v \in \Sigma_{F,f}$, with $f_v = 1_{\mathcal O_{F_v}}$ for all but finitely many finite places $v$ of $F$ all contained in $S$. We assume that $f_S := f_\infty \otimes \bigotimes_{v\in S\cap\Sigma_{F,f}} f_v \in \mathcal S(\mathbf A_{F,S})$ satisfies $f_S(0) = \hat f_S(0) = 0$.
+We choose $f \in \mathcal S_0(\mathbf A_F)$ of the form $f = f_\infty \prod_{v\in\Sigma_{F,f}} f_v$ for $f_\infty \in \mathcal S(\mathbf A_{F,S_\infty})$ and $f_v \in \mathcal S(F_v)$ for every $v \in \Sigma_{F,f}$, with $f_v = 1_{\mathcal O_{F_v}}$ for all but finitely many finite places $v$ of $F$ all contained in $S$. We assume that $f_S := f_\infty \otimes \prod_{v\in S\cap\Sigma_{F,f}} f_v \in \mathcal S(\mathbf A_{F,S})$ satisfies $f_S(0) = \hat f_S(0) = 0$.
 
-Note that Schwartz-Bruhat functions of this form $\mathbf C$-linearly span a subspace $W$ within $\mathcal S_0(\mathbf A_F)$ which is linearly mapped onto a dense subspace in $H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ by our assumptions on $S$ and by the Fifth Structure Theorem (see Theorem 6.2.1.1).
+Note that Schwartz-Bruhat functions of this form $\mathbf C$-linearly span a subspace $W$ within $\mathcal S_0(\mathbf A_F)$ which is linearly mapped onto a dense subspace in $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ by our assumptions on $S$ and by the Fifth Structure Theorem (see Theorem 6.2.1.1).
 
 ---
 $^4$Return here.
@@ -484,7 +484,7 @@ $$
 for which we refer the reader to (10.2.1.3), where $\langle\cdot,\cdot\rangle_{s,2}$ is assigned by:
 
 $$
-\langle\phi, \psi\rangle_{s,2} := \int_{C_F} \phi(g)\psi(g)\,d\bar\mu(g).
+\langle\phi, \psi\rangle_{s,2} := \int_{C_F} \phi(g)\psi(g)\,\mathrm{d}\bar\mu(g).
 $$
 
 ↩Return here.
@@ -496,42 +496,42 @@ $$
 We recall that for a finite set of finite places $S_0$ of $F$, we defined the operator:
 
 $$
-PV_{S_0} : \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F)) \to \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F)) \tag{11.2.0.2}
+\mathrm{PV}_{S_0} : \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F)) \to \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F)) \tag{11.2.0.2}
 $$
 
 for which we refer the reader to (5.3.1.10).
 
-In Lemma 5.3.1.5, we proved that $PV_{S_0}$ is a linear topological embedding with closed range, and Theorem 6.3.2.2 describes its range.
+In Lemma 5.3.1.5, we proved that $\mathrm{PV}_{S_0}$ is a linear topological embedding with closed range, and Theorem 6.3.2.2 describes its range.
 
-Formation of $PV_{S_0}$ is continuous with respect to the Sobolev topologies induced by the norms $||\cdot||_{W^{s,2}_a}$ on $\mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$, and so $PV_{S_0}$ extends to a unique continuous linear endomorphism on $W^{s,2}_a \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ for every pair of real numbers $a, s$ with $s \ge 0$, and it remains a linear topological embedding with closed range, which is given by the norm-completion of $PV_{S_0} \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$.
+Formation of $\mathrm{PV}_{S_0}$ is continuous with respect to the Sobolev topologies induced by the norms $||\cdot||_{W^{s,2}_a}$ on $\mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$, and so $\mathrm{PV}_{S_0}$ extends to a unique continuous linear endomorphism on $W^{s,2}_a \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ for every pair of real numbers $a, s$ with $s \ge 0$, and it remains a linear topological embedding with closed range, which is given by the norm-completion of $\mathrm{PV}_{S_0} \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$.
 
 We will therefore write, with no potential for ambiguity:
 
 $$
-W^{s,2}_a PV_{S_0} \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F)) = PV_{S_0} W^{s,2}_a \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F)). \tag{11.2.0.3}
+W^{s,2}_a \mathrm{PV}_{S_0} \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F)) = \mathrm{PV}_{S_0} W^{s,2}_a \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F)). \tag{11.2.0.3}
 $$
 
-We collect these properties of the operators $PV_{S_0}$ into the following:
+We collect these properties of the operators $\mathrm{PV}_{S_0}$ into the following:
 
 Proposition 11.2.0.1. Let $F$ be a number field, $S_0$ a finite set of places of $F$. Let $s \ge 0$ be a real number. Then $\mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F)) \subset W^{s,2}_0(C_F)$ is dense.
 
-The operator $PV_{S_0}$ on $\mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ defined in (5.3.1.10) satisfies the following properties:
+The operator $\mathrm{PV}_{S_0}$ on $\mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ defined in (5.3.1.10) satisfies the following properties:
 
 (1) It is continuous with respect to the topology on $\mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ induced by the norm $||\cdot||_{W^{s,2}_0}$ from (10.1.1.5).
 
 (2) Assume $s \ge 2|S_0|$. Its extension by continuity to a linear map:
 
 $$
-PV_{S_0} : W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F)) \to W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F)) \tag{11.2.0.4}
+\mathrm{PV}_{S_0} : W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F)) \to W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F)) \tag{11.2.0.4}
 $$
 
 is continuous with closed range, and compatible with passage to $C^1_F$-isotypes.
 
-Proof. The continuous injective linear operator $\mathcal{SE}(C_F) \to W^{s,2}(C_F)$ is compatible with the duality $\langle \mathcal{SE}(C_F), \mathcal{SE}(C_F)'_\beta\rangle$ on the source, and the duality $\langle\cdot,\cdot\rangle_{s,2}$ on the target.
+Proof. The continuous injective linear operator $\mathcal{S}\mathrm{E}(C_F) \to W^{s,2}(C_F)$ is compatible with the duality $\langle \mathcal{S}\mathrm{E}(C_F), \mathcal{S}\mathrm{E}(C_F)'_\beta\rangle$ on the source, and the duality $\langle\cdot,\cdot\rangle_{s,2}$ on the target.
 
 By Theorem 10.2.1.1 applied with $a = 0$, and by [CF, Ch.VIII, §2, Thm.2, p.212], the orthogonal of the closure of $\mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ in $W^{s,2}(C_F)$ with respect to $\langle\cdot,\cdot\rangle_{s,2}$ is trivial. By [NB, Thm.8.9.2(b)], $\mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ is dense in $W^{s,2}(C_F)$ with respect to the weakened topology $\sigma(W^{s,2}(C_F), W^{-s,2}(C_F))$. By [Jar, Ch.8, §8.2, Prop.5, p.149], it is dense.
 
-(1) : Since $PV_{S_0}$ from (5.3.1.9) is the finite composition of the operators $P_v$ from (5.3.1.1), all continuous endomorphisms of $\mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ compatible with passage to $C^1_F$-isotypes, and with closed range by Lemma 5.3.1.5, we may and do assume $S_0 = \{v\}$, for a single finite place $v$ of $F$.
+(1) : Since $\mathrm{PV}_{S_0}$ from (5.3.1.9) is the finite composition of the operators $P_v$ from (5.3.1.1), all continuous endomorphisms of $\mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ compatible with passage to $C^1_F$-isotypes, and with closed range by Lemma 5.3.1.5, we may and do assume $S_0 = \{v\}$, for a single finite place $v$ of $F$.
 
 In this case and by (5.3.1.1), we have:
 
@@ -543,29 +543,29 @@ which is in turn the function on $C_F$ obtained from the global adelic Schwartz-
 
 It is therefore enough to show that the operator $f \mapsto \rho_F(\pi_v, f)$, with $\rho_F$ the continuous left-translation action of $\mathrm{GL}_1(\mathbf A_F)$ on $\mathcal S(\mathbf A_F)$, descends to a continuous endomorphism of $\mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$, compatible with passage to $C^1_F$-isotypes, and continuous with respect to the normed topology on $\mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ defined by the norm $||\cdot||_{W^{s,2}_a}$. Since $\pi_v^{\mathbf Z}$ acts on $\mathcal S(\mathbf A_F)$ through the continuous left-translation action of the closed subgroup $F^\times_v \subset \mathrm{GL}_1(\mathbf A_F)$ through the insertion continuous group homomorphism with closed range into the $v$-indexed “coordinate” of $\mathrm{GL}_1(\mathbf A_F)$, the assertions follow by continuity of the left-translation action of $\mathrm{GL}_1(\mathbf A_F)$ with respect to the topology induced by the norm $||\cdot||_{W^{s,2}_a}$.
 
-(2) : Since $PV_{S_0}$ is the finite composition of the continuous operators $P_v$ from (5.3.1.1), obtained as continuous extensions to $W^{s,2}_a \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ from (1), and since each $P_v$ is compatible with passage
+(2) : Since $\mathrm{PV}_{S_0}$ is the finite composition of the continuous operators $P_v$ from (5.3.1.1), obtained as continuous extensions to $W^{s,2}_a \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ from (1), and since each $P_v$ is compatible with passage
 
 ## PDF page 485
 
 **11.2. THE PIECES OF THE PUZZLE: PALEY-WIENER LEVELS AND ORBITAL MARKUSHEVICH BASES** · **485**
 
-to $C^1_F$-isotypes, then so is $PV_{S_0}$, and it is enough to check that each $P_v$ has closed range. This follows from continuity of the linear functionals:
+to $C^1_F$-isotypes, then so is $\mathrm{PV}_{S_0}$, and it is enough to check that each $P_v$ has closed range. This follows from continuity of the linear functionals:
 
 $$
-\phi \mapsto \int_{C_F} \phi(g)\chi(g)|g|^\varepsilon_F (\log|g|_F)^m\,d\bar\mu(g)
+\phi \mapsto \int_{C_F} \phi(g)\chi(g)|g|^\varepsilon_F (\log|g|_F)^m\,\mathrm{d}\bar\mu(g)
 $$
 
-for $0 \le m \le |S_0|-1$, as $\varepsilon$ ranges over the zeros of $\prod_{v \in S_0} L_v(\chi_v|\cdot|^s_v)^{-1}$. Indeed, the range of $PV_{S_0}$ is the intersection of their kernels. To see this, we use denseness of $\mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ in $W^{s,2}(C_F)$, which was shown in the foregoing, to replace $W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ with $W^{s,2}(C_F)$, and $PV_{S_0}$ with the finite composition of the operators $P_v : \phi \mapsto \phi(x) - \phi(\pi_v^{-1}x)$ for each $v \in S_0$, for then proceeding as in the proof of the same assertion for the functionals $D^m_t$ from (10.2.1.9) from the proof of Theorem 10.2.1.1, using the Approximation Principle from Theorem 9.3.2.1.
+for $0 \le m \le |S_0|-1$, as $\varepsilon$ ranges over the zeros of $\prod_{v \in S_0} L_v(\chi_v|\cdot|^s_v)^{-1}$. Indeed, the range of $\mathrm{PV}_{S_0}$ is the intersection of their kernels. To see this, we use denseness of $\mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ in $W^{s,2}(C_F)$, which was shown in the foregoing, to replace $W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ with $W^{s,2}(C_F)$, and $\mathrm{PV}_{S_0}$ with the finite composition of the operators $P_v : \phi \mapsto \phi(x) - \phi(\pi_v^{-1}x)$ for each $v \in S_0$, for then proceeding as in the proof of the same assertion for the functionals $D^m_t$ from (10.2.1.9) from the proof of Theorem 10.2.1.1, using the Approximation Principle from Theorem 9.3.2.1.
 
 $\square$
 
 We record here below a result that is analogous to Theorem 10.2.1.1, identifying a Markushevich basis for the orthogonal to
 
 $$
-PV_{S_0} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F)) \subset W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F)) = W^{s,2}(C_F)
+\mathrm{PV}_{S_0} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F)) \subset W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F)) = W^{s,2}(C_F)
 $$
 
-where $PV_{S_0} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ is the closed subspace defined in (11.2.0.3), and orthogonality is defined with respect to the duality pairing $\langle\cdot,\cdot\rangle_{s,2}$ from (9.1.1.11), whose definition we recalled in (10.2.1.3).
+where $\mathrm{PV}_{S_0} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ is the closed subspace defined in (11.2.0.3), and orthogonality is defined with respect to the duality pairing $\langle\cdot,\cdot\rangle_{s,2}$ from (9.1.1.11), whose definition we recalled in (10.2.1.3).
 
 Theorem 11.2.0.2 (Global Orbital Markushevich Bases on the 0-line). Let $F$ be a number field, $s \ge 0$ a real number. Let $S_0$ be a finite set of finite places of $F$, $\chi \in \widehat{C_F}$ a continuous character, unramified at all the places of $S_0$. The functions, for each rational prime $p$ such that some $v \in S_0$ has residue characteristic $p$:
 
@@ -586,14 +586,14 @@ $$
 are elements of $W^{-s,2}(C_F)(\chi|_{C^1_F})$. If $s \ge 2|S_0|$, then any enumeration is a Markushevich basis for the orthogonal
 
 $$
-PV_{S_0} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))^\perp
+\mathrm{PV}_{S_0} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))^\perp
 $$
 
 in $W^{-s,2}(C_F)$ with respect to the pairing $\langle\cdot,\cdot\rangle_{s,2}$ from (10.2.1.3), endowed with the subspace topology of the strong topology.
 
-Remark 11.2.0.3. We note that, in light of Lemma 4.2.1.3(2), there is no ambiguity as to how to topologize the orthogonal $PV_{S_0} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))^\perp$ in $W^{-s,2}(C_F)$ with respect to the pairing $\langle\cdot,\cdot\rangle_{s,2}$ from (10.2.1.3), since the subspace topology of the strong topology is equivalent to the strong topology on the continuous dual of the quotient $W^{s,2}(C_F)(\chi|_{C^1_F})/W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ endowed with the quotient topology.
+Remark 11.2.0.3. We note that, in light of Lemma 4.2.1.3(2), there is no ambiguity as to how to topologize the orthogonal $\mathrm{PV}_{S_0} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))^\perp$ in $W^{-s,2}(C_F)$ with respect to the pairing $\langle\cdot,\cdot\rangle_{s,2}$ from (10.2.1.3), since the subspace topology of the strong topology is equivalent to the strong topology on the continuous dual of the quotient $W^{s,2}(C_F)(\chi|_{C^1_F})/W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ endowed with the quotient topology.
 
-Terminology 11.2.0.1 (Orbital Markushevich Bases on the 0-line). We refer to the Markushevich Bases identified in Theorem 11.2.0.2 for $PV_{S_0} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))^\perp$ endowed with the subspace topology of the strong topology on $W^{s,2}(C_F)(\chi|_{C^1_F})'_\beta$, as the Orbital Markushevich Bases on the 0-line.
+Terminology 11.2.0.1 (Orbital Markushevich Bases on the 0-line). We refer to the Markushevich Bases identified in Theorem 11.2.0.2 for $\mathrm{PV}_{S_0} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))^\perp$ endowed with the subspace topology of the strong topology on $W^{s,2}(C_F)(\chi|_{C^1_F})'_\beta$, as the Orbital Markushevich Bases on the 0-line.
 
 ## PDF page 486
 
@@ -602,20 +602,20 @@ Terminology 11.2.0.1 (Orbital Markushevich Bases on the 0-line). We refer to the
 Proof. We write $\omega := \chi|_{C^1_F} \in \widehat{C^1_F}$. We choose a continuous homomorphic section $\tau$ to the idelic norm, and identify $C_F/C^1_F$ with $\mathbf R_{>0}$ as a Hausdorff locally compact abelian group by means of $|\cdot|_F$. The following diagram:
 
 $$
-PV_{S_0} \mathrm H_{0,\mathrm{cont}}(\omega, \mathcal S_0(\mathbf A_F)) \times \mathcal{SE}(\mathbf R_{>0})'_\beta / \mathbf C \tag{11.2.0.7}
+\mathrm{PV}_{S_0} \mathrm H_{0,\mathrm{cont}}(\omega, \mathcal S_0(\mathbf A_F)) \times \mathcal{S}\mathrm{E}(\mathbf R_{>0})'_\beta / \mathbf C \tag{11.2.0.7}
 $$
 
 $$
-W^{s,2}_a PV_{S_0} \mathrm H_{0,\mathrm{cont}}(\omega, \mathcal S_0(\mathbf A_F)) \times W^{-s,2}(C_F)(\omega) / \mathbf C
+W^{s,2}_a \mathrm{PV}_{S_0} \mathrm H_{0,\mathrm{cont}}(\omega, \mathcal S_0(\mathbf A_F)) \times W^{-s,2}(C_F)(\omega) / \mathbf C
 $$
 
-is commutative, where the top horizontal arrow is the duality pairing $\langle\cdot,\cdot\rangle_{\mathcal{SE}(\mathbf R_{>0}), \mathcal{SE}(\mathbf R_{>0})'_\beta}$, noting that by Theorem 6.3.2.2, $PV_{S_0} \mathrm H_{0,\mathrm{cont}}(\omega, \mathcal S_0(\mathbf A_F))$ is closed as a subspace of $\mathcal{SE}(C_F)(\omega)$.
+is commutative, where the top horizontal arrow is the duality pairing $\langle\cdot,\cdot\rangle_{\mathcal{S}\mathrm{E}(\mathbf R_{>0}), \mathcal{S}\mathrm{E}(\mathbf R_{>0})'_\beta}$, noting that by Theorem 6.3.2.2, $\mathrm{PV}_{S_0} \mathrm H_{0,\mathrm{cont}}(\omega, \mathcal S_0(\mathbf A_F))$ is closed as a subspace of $\mathcal{S}\mathrm{E}(C_F)(\omega)$.
 
 By commutativity of (11.2.0.7), the argument is formally analogous to the argument for Theorem 10.2.1.1, upon replacing Theorem 6.3.2.1 with Theorem 6.3.2.2 to deduce that the set of continuous functionals on $W^{s,2}(C_F)(\omega)$ represented under the isometry $T_s$ from (10.2.1.3) by the elements of $W^{-s,2}(C_F)(\omega)$ from (11.2.0.5) is topologically free, for then using the Bounded Approximation Principle of Lemma 9.3.2.1 as in the proof of Theorem 10.2.1.1 to deduce the required denseness properties for the linear subspaces linearly generated by the set of elements from (11.2.0.5) in $W^{-s,2}(C_F)(\omega)$, and its bi-orthogonal set in $W^{s,2}(C_F)(\omega)$.
 
 $\square$
 
-In analogy with Proposition 10.2.1.3 and Corollary 10.2.1.4, we record here the following properties of the Orbital Markushevich basis on the 0-line identified in Theorem 11.2.0.2, for the orthogonal $PV_{S_0} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))^\perp$ in $W^{-s,2}(C_F)$ with respect to the pairing $\langle\cdot,\cdot\rangle_{s,2}$ from (10.2.1.3).
+In analogy with Proposition 10.2.1.3 and Corollary 10.2.1.4, we record here the following properties of the Orbital Markushevich basis on the 0-line identified in Theorem 11.2.0.2, for the orthogonal $\mathrm{PV}_{S_0} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))^\perp$ in $W^{-s,2}(C_F)$ with respect to the pairing $\langle\cdot,\cdot\rangle_{s,2}$ from (10.2.1.3).
 
 We further refer the reader to Terminology 10.2.1.2 for the terminology on Markushevich bases in force throughout the remainder of this subsection.
 
@@ -638,7 +638,7 @@ In particular, the set of functions from (11.2.0.8) is not contained in the open
 Proof. If $s > 1$, then:
 
 $$
-||\eta_{\chi,\varepsilon,m}||_{-s,2} = \left(\int_{C_F} |\log|g|_F|^{2m} (1 + |\log|g|_F|^2)^{-s/2}\,d\bar\mu(g)\right)^{1/2}
+||\eta_{\chi,\varepsilon,m}||_{-s,2} = \left(\int_{C_F} |\log|g|_F|^{2m} (1 + |\log|g|_F|^2)^{-s/2}\,\mathrm{d}\bar\mu(g)\right)^{1/2}
 $$
 
 by Proposition 9.1.2.5, and so $||\eta_{\chi,\varepsilon,m}||_{-s,2}$ can only attain finitely many values, none of which is zero. There therefore exists a real number $C > 0$ such that $1/C$ is a strict lower bound for their minimum, and $C$ is a strict upper bound for their maximum.
@@ -664,14 +664,14 @@ $$
 as $\varepsilon$ ranges over the zeros of the entire function $\prod_{v \in S_0} L_v(\chi_v|\cdot|^s_v)^{-1} = \prod_{v\mid p, v \in S_0} (1 - q_v^{-s-it_v})$, with $0 \le m \le N(\varepsilon)-1$, where $N_s(\varepsilon)$ is the function defined in (11.2.0.6), is a normalized Markushevich basis for the orthogonal
 
 $$
-PV_{S_0} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))^\perp
+\mathrm{PV}_{S_0} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))^\perp
 $$
 
 in $W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))'_\beta = W^{s,2}(C_F)(\chi|_{C^1_F})'_\beta$, topologized with the subspace topology of the strong topology.
 
 Proof. There exists a real number $C > 0$ such that the set of functions $\{\eta_{\chi,\varepsilon,m}\}_{\varepsilon,m}$ is contained in the collar $B_C$ from (11.2.0.9) of Proposition 11.2.0.4.
 
-In particular, as per Proposition 11.2.0.4 combined with Theorem 11.2.0.2, any enumeration of $\{\eta_{\chi,\varepsilon,m}\}_{\varepsilon_p,m}$, a normalized Markushevich basis for $PV_{S_0} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))^\perp$, the orthogonal being formed with respect to the duality $\langle\cdot,\cdot\rangle_{s,2}$ from (10.2.1.3), and topologized with the subspace topology inherited from the norm topology on $W^{-s,2}(C_F)(\chi|_{C^1_F})$, which is equivalent to the strong topology on $W^{s,2}(C_F)(\chi|_{C^1_F})'_\beta$ under the isometry $T_s$ from (9.1.2.14).
+In particular, as per Proposition 11.2.0.4 combined with Theorem 11.2.0.2, any enumeration of $\{\eta_{\chi,\varepsilon,m}\}_{\varepsilon_p,m}$, a normalized Markushevich basis for $\mathrm{PV}_{S_0} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))^\perp$, the orthogonal being formed with respect to the duality $\langle\cdot,\cdot\rangle_{s,2}$ from (10.2.1.3), and topologized with the subspace topology inherited from the norm topology on $W^{-s,2}(C_F)(\chi|_{C^1_F})$, which is equivalent to the strong topology on $W^{s,2}(C_F)(\chi|_{C^1_F})'_\beta$ under the isometry $T_s$ from (9.1.2.14).
 
 $\square$
 
@@ -721,7 +721,7 @@ $$
 P^{\mathrm{PW}}_{S,\Lambda_0,a} : W^{s,2}(C_F)(\chi|_{C^1_F}) \to W^{s,2}_a \mathrm{PW}_{S,X,0}(\chi_{S'}|_{J^1_{F,S'}}, \mathcal S(\mathbf A_{F,S'})) \tag{11.2.1.3}
 $$
 
-to be the orthogonal projector onto the closed subspace $W^{s,2}_a \mathrm H_{S\Lambda_0}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F)) \subset W^{s,2}(C_F)(\chi|_{C^1_F})$.
+to be the orthogonal projector onto the closed subspace $W^{s,2}_a \mathrm H_{\mathrm{S}\Lambda_0}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F)) \subset W^{s,2}(C_F)(\chi|_{C^1_F})$.
 
 We refer to $P^{\mathrm{PW}}_{\Lambda_0,a}$ as the Paley-Wiener truncation at time $\Lambda_0$.
 
@@ -828,28 +828,28 @@ We let $\phi \in \mathcal D(C_F)$ be a test function.
 We discuss here an analog of Theorem 10.3.1.1 for the operator induced by $A(\phi)$ on $W^{s,2}_a \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ for $a = 0$, on the subquotients:
 
 $$
-\mathcal E^s_{0,S_p}(\chi|_{C^1_F}) := W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))/PV_{S_p} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))
+\mathscr{E}^s_{0,S_p}(\chi|_{C^1_F}) := W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))/\mathrm{PV}_{S_p} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))
 $$
 
 for $S_p$ the finite set of finite places of $F$ comprising all the finite places $v$ dividing the fixed prime number $p$.
 
-Recall that $A(\phi)$ is the regularized action by continuous left-translation of $C_F$ on $W^{s,2}_a \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ defined in Definition 9.3.1.1, i.e. the action of the test function $\phi$ by convolution, and $PV_{S_p}$ is Weil's Principal Value Operator (see §5.3.1, and specifically Definition 5.3.1.2 and Definition 5.3.1.4).
+Recall that $A(\phi)$ is the regularized action by continuous left-translation of $C_F$ on $W^{s,2}_a \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ defined in Definition 9.3.1.1, i.e. the action of the test function $\phi$ by convolution, and $\mathrm{PV}_{S_p}$ is Weil's Principal Value Operator (see §5.3.1, and specifically Definition 5.3.1.2 and Definition 5.3.1.4).
 
-The continuous convolution $\mathcal D(C_F)$-module structure on $W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ is inherited by the closed subspace $PV_{S_p} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$, which was, recall, defined in (11.2.0.3) in light of closedness of the range of the continuous linear operator $PV_{S_p}$ on $W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ from (11.2.0.2).
+The continuous convolution $\mathcal D(C_F)$-module structure on $W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ is inherited by the closed subspace $\mathrm{PV}_{S_p} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$, which was, recall, defined in (11.2.0.3) in light of closedness of the range of the continuous linear operator $\mathrm{PV}_{S_p}$ on $W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$ from (11.2.0.2).
 
 We define, for any real number $s \ge 0$:
 
 $$
-\mathcal E^s_{0,S_p}(\chi|_{C^1_F}) := W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))/PV_{S_p} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F)) \tag{11.2.2.1}
+\mathscr{E}^s_{0,S_p}(\chi|_{C^1_F}) := W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))/\mathrm{PV}_{S_p} W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F)) \tag{11.2.2.1}
 $$
 
-endowed with the quotient topology. $\mathcal E^s_{0,S_p}(\chi|_{C^1_F})$ is therefore a separable Hilbert space.
+endowed with the quotient topology. $\mathscr{E}^s_{0,S_p}(\chi|_{C^1_F})$ is therefore a separable Hilbert space.
 
 ## PDF page 490
 
 **490** · **CHAPTER 11. THE SHELL STRUCTURE**
 
-We further refer the reader to (7.4.0.2), observing that $\mathcal E^s_{0,S_p}(\chi|_{C^1_F})$ is the completion of $\mathcal E_{S_p}(\chi|_{C^1_F})$ with respect to the quotient of the normed topology on $W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$; see also Theorem 7.4.2.1.
+We further refer the reader to (7.4.0.2), observing that $\mathcal E^s_{0,S_p}(\chi|_{C^1_F})$ is the completion of $\mathscr{E}_{S_p}(\chi|_{C^1_F})$ with respect to the quotient of the normed topology on $W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))$; see also Theorem 7.4.2.1.
 
 Theorem 11.2.2.1 (Orbital Nuclearity on the 0-line). Let $F$ be a number field, $\chi \in \widehat{C_F}$ a continuous character. Let $s > 1$ be a real number. Assume:
 
@@ -862,15 +862,15 @@ Let $p$ be a prime number and let $S_p$ be the set of those finite places of $F$
 The $\mathcal D(C_F)$-module structure:
 
 $$
-A : \mathcal D(C_F) \to \mathcal L_\beta(\mathcal E^s_{0,S_p}(\chi|_{C^1_F})) \tag{11.2.2.3}
+A : \mathcal D(C_F) \to \mathscr{L}_\beta(\mathscr{E}^s_{0,S_p}(\chi|_{C^1_F})) \tag{11.2.2.3}
 $$
 
-is valued in the Banach space of nuclear operators $\mathcal S_1(\mathcal E^s_{0,S_p}(\chi|_{C^1_F}))$ on $\mathcal E^s_{0,S_p}(\chi|_{C^1_F})$, and is continuous with respect to the Hausdorff locally convex topology on the source, and the trace-norm topology on the target.
+is valued in the Banach space of nuclear operators $S_1(\mathscr{E}^s_{0,S_p}(\chi|_{C^1_F}))$ on $\mathscr{E}^s_{0,S_p}(\chi|_{C^1_F})$, and is continuous with respect to the Hausdorff locally convex topology on the source, and the trace-norm topology on the target.
 
-In particular, composition with the trace functional on $\mathcal S_1(\mathcal E^s_{0,S_p}(\chi|_{C^1_F}))$ is a distribution on $C_F$, whose value at $\phi \in \mathcal D(C_F)$ is:
+In particular, composition with the trace functional on $S_1(\mathscr{E}^s_{0,S_p}(\chi|_{C^1_F}))$ is a distribution on $C_F$, whose value at $\phi \in \mathcal D(C_F)$ is:
 
 $$
-\mathrm{Trace}_{s,p}\, A(\phi) = \sum_{\varepsilon_p} N_s(\varepsilon_p) \int_{C_F} \phi(g)\chi(g)|g|^{\varepsilon_p}_F\,d\bar\mu(g) \tag{11.2.2.4}
+\mathrm{Trace}_{s,p}\, A(\phi) = \sum_{\varepsilon_p} N_s(\varepsilon_p) \int_{C_F} \phi(g)\chi(g)|g|^{\varepsilon_p}_F\,\mathrm{d}\bar\mu(g) \tag{11.2.2.4}
 $$
 
 where $N_s$ is the counting function defined in (11.2.0.6), i.e.
@@ -881,15 +881,15 @@ $$
 
 where $[x]$ is the largest integer $N \ge 0$ satisfying $N \le x$, and $\varepsilon_p$ varies over the zeros of the entire function $\prod_{v \in S_p} L_v(\chi|\cdot|^s_F)^{-1}$, where $L_v(\chi|\cdot|^s_F)$ is the local Euler factor at $v$ of the Hecke $L$-function $L(s,\chi)$.
 
-Proof. Since $W^{s,2}(C_F)$ and $W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ are reflexive Banach spaces, being Hilbert spaces, then by [Tre, p.484] $A(\phi)$ is nuclear if and only if its adjoint $A(\phi)'$, a continuous linear endomorphism of $(\mathcal E^s_{0,S_p})'_\beta$, is nuclear. Its trace-norm is computed by $||A(\phi)||_{\mathrm{Tr}} = ||A(\phi)'||_{\mathrm{Tr}}$.
+Proof. Since $W^{s,2}(C_F)$ and $W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ are reflexive Banach spaces, being Hilbert spaces, then by [Tre, p.484] $A(\phi)$ is nuclear if and only if its adjoint $A(\phi)'$, a continuous linear endomorphism of $(\mathscr{E}^s_{0,S_p})'_\beta$, is nuclear. Its trace-norm is computed by $||A(\phi)||_{\mathrm{Tr}} = ||A(\phi)'||_{\mathrm{Tr}}$.
 
 We choose an enumeration for the elements:
 
 $$
-\mathcal B := \{\eta_{\chi,\varepsilon_p,m}\}_{(\varepsilon_p,m)} \subset \mathcal E^s_{0,S_p}(\chi|_{C^1_F})'_\beta
+B := \{\eta_{\chi,\varepsilon_p,m}\}_{(\varepsilon_p,m)} \subset \mathscr{E}^s_{0,S_p}(\chi|_{C^1_F})'_\beta
 $$
 
-which, by Theorem 11.2.0.2 is a Markushevich basis for $\mathcal E^s_{0,S_p}(\chi|_{C^1_F})'_\beta$. By Corollary 11.2.0.5, $\mathcal B \subset \mathcal E^s_{0,S_p}(\chi|_{C^1_F})'_\beta$ is bounded, and the bi-orthogonal set $\mathcal B' := \{\psi_{\chi,\varepsilon_p,m}\}_{(\varepsilon_p,m)}$ is also bounded.
+which, by Theorem 11.2.0.2 is a Markushevich basis for $\mathscr{E}^s_{0,S_p}(\chi|_{C^1_F})'_\beta$. By Corollary 11.2.0.5, $B \subset \mathscr{E}^s_{0,S_p}(\chi|_{C^1_F})'_\beta$ is bounded, and the bi-orthogonal set $B' := \{\psi_{\chi,\varepsilon_p,m}\}_{(\varepsilon_p,m)}$ is also bounded.
 
 We compute:
 
@@ -922,7 +922,7 @@ Upon integrating over $g \in C_F$ the test function $\phi \in \mathcal D(C_F)$, 
 Its trace is:
 
 $$
-N_s(\varepsilon_p)\int_{C_F}\chi(g)\phi(g)\lvert g\rvert^{\varepsilon_p}_F\,d\bar\mu(g). \tag{11.2.2.11}
+N_s(\varepsilon_p)\int_{C_F}\chi(g)\phi(g)\lvert g\rvert^{\varepsilon_p}_F\,\mathrm{d}\bar\mu(g). \tag{11.2.2.11}
 $$
 
 The series:
@@ -931,7 +931,7 @@ $$
 A(\phi)'=\sum_{(\varepsilon_p,m)}\langle A(\phi)'\eta_{\chi,\varepsilon_p,m},\cdot\rangle_{s,2}\psi_{\chi,\varepsilon_p,m} \tag{11.2.2.12}
 $$
 
-converges in $S_p(\mathcal E^s_{0,S_p}(\chi|_{C^1_F})'_\beta)$ for every real number $p\ge 1$ by the same argument as in the proof of Theorem 10.3.1.1(1), leading to the expression in (11.2.2.4) by continuity of the trace functional on $S_1(\mathcal E^s_{0,S_p}(\chi|_{C^1_F}))$, combined with the calculation of the value in (11.2.2.11) for the trace of the finite rank partial sums of the series (11.2.2.12). $\square$
+converges in $S_p(\mathscr{E}^s_{0,S_p}(\chi|_{C^1_F})'_\beta)$ for every real number $p\ge 1$ by the same argument as in the proof of Theorem 10.3.1.1(1), leading to the expression in (11.2.2.4) by continuity of the trace functional on $S_1(\mathscr{E}^s_{0,S_p}(\chi|_{C^1_F}))$, combined with the calculation of the value in (11.2.2.11) for the trace of the finite rank partial sums of the series (11.2.2.12). $\square$
 
 REMARK 11.2.2.2. Let $F$ be a number field, $\chi\in\widehat{C_F}$ a continuous character. Let $s>1$ be a real number. Assume:
 
@@ -951,13 +951,13 @@ $$
 k_{\mathrm{geom},I,\phi}(x,y)=k_{S,\phi}(x,y)+\sum_{p\nmid S}k_{p,\phi}(x,y)
 $$
 
-and let the pieces $k_{p,\phi}(x,y)$ act on certain subspaces of $W^{b,2}_I(\lvert\cdot\rvert^{1/2}_F H_{0,\mathrm{cont}}(\chi|_{C^1_F},S_0(\mathbf A_F)))$ to understand them.
+and let the pieces $k_{p,\phi}(x,y)$ act on certain subspaces of $W^{b,2}_I(\lvert\cdot\rvert^{1/2}_F \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal{S}_0(\mathbf A_F)))$ to understand them.
 
 This subsection is aimed at conveying the main ideas on how to accomplish this, i.e. how to split the geometric kernel.
 
 We start by identifying an interesting stratification of the global ideles $\mathrm{GL}_1(\mathbf A_F)$, which is found only on $\mathrm{GL}_1(\mathbf A_F)$ as opposed to its quotient $C_F$, since it is defined by leveraging crucially the restricted product nature of $\mathrm{GL}_1(\mathbf A_F)$.
 
-This stratification will adapt itself nicely to the structure of the Schwartz-Bruhat functions representing the global adelic $\theta$-functions in $H_{0,\mathrm{cont}}(\chi|_{C^1_F},S_0(\mathbf A_F))$.
+This stratification will adapt itself nicely to the structure of the Schwartz-Bruhat functions representing the global adelic $\theta$-functions in $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal{S}_0(\mathbf A_F))$.
 
 Recall that there exists a finite set of finite places $S$ of $F$ satisfying the following conditions:
 
@@ -983,7 +983,7 @@ $$
 f=f_S\otimes\bigotimes_{v\nmid S}1_{\mathcal O_{F_v}} \tag{11.3.1.1}
 $$
 
-for some $f_S\in S(\mathbf A_{F,S})$.
+for some $f_S\in \mathcal{S}(\mathbf A_{F,S})$.
 
 This is the last of the five Structure Theorems, proved at the end of Chapter 5 of this work.
 
@@ -1098,7 +1098,7 @@ We denote by $\mathrm{PV}_{P_k}$ the composition of the $\mathrm{PV}_v$ as $v$ v
 If we let $f$ (equivalently $f_S$) vary, we obtain that all the resulting global adelic $\theta$-functions restricted to the $k$th stratum are contained in
 
 $$
-\mathrm{PV}_{P_k}H_{0,\mathrm{cont}}(\chi|_{C^1_F},S_0(\mathbf A_F))
+\mathrm{PV}_{P_k}\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal{S}_0(\mathbf A_F))
 $$
 
 ## PDF page 494
@@ -1108,13 +1108,13 @@ $$
 and all the global adelic $\theta$-functions restricted to the $(k+1)$st stratum are contained in the yet smaller and closed subspace
 
 $$
-\mathrm{PV}_{S_{p_{k+1}}}\mathrm{PV}_{P_k}H_{0,\mathrm{cont}}(\chi|_{C^1_F},S_0(\mathbf A_F))=\mathrm{PV}_{P_{k+1}}H_{0,\mathrm{cont}}(\chi|_{C^1_F},S_0(\mathbf A_F)).
+\mathrm{PV}_{S_{p_{k+1}}}\mathrm{PV}_{P_k}\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal{S}_0(\mathbf A_F))=\mathrm{PV}_{P_{k+1}}\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal{S}_0(\mathbf A_F)).
 $$
 
 But now the subquotient:
 
 $$
-\mathrm{PV}_{P_k}H_{0,\mathrm{cont}}(\chi|_{C^1_F},S_0(\mathbf A_F))/\mathrm{PV}_{P_{k+1}}H_{0,\mathrm{cont}}(\chi|_{C^1_F},S_0(\mathbf A_F)) \tag{11.3.1.3}
+\mathrm{PV}_{P_k}\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal{S}_0(\mathbf A_F))/\mathrm{PV}_{P_{k+1}}\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal{S}_0(\mathbf A_F)) \tag{11.3.1.3}
 $$
 
 carries a Schauder basis that is analogous to the exponential system from the toy example (see Example 1.8.1.1)!
@@ -1132,7 +1132,7 @@ $$
 The answer we get is:
 
 $$
-\sum_{\varepsilon_p}N(\chi\lvert\cdot\rvert^{\varepsilon_p}_F)\int_{C_F}\phi(g)\chi(g)\lvert g\rvert^{\varepsilon_p-1/2}_F\,d\bar\mu(g)
+\sum_{\varepsilon_p}N(\chi\lvert\cdot\rvert^{\varepsilon_p}_F)\int_{C_F}\phi(g)\chi(g)\lvert g\rvert^{\varepsilon_p-1/2}_F\,\mathrm{d}\bar\mu(g)
 $$
 
 where the sum is over the complex numbers $\varepsilon_p$ such that $\chi\lvert\cdot\rvert^{\varepsilon_p}_F$ is a zero of the entire function $\prod_{v\in S_p}L_v^{-1}$ (we call $N(\chi\lvert\cdot\rvert^{\varepsilon_p}_F)$ its multiplicity) with $\chi\lvert\cdot\rvert^{\varepsilon_p}_F$ contained in the connected component $\Omega(C_F)(\chi|_{C^1_F})$.
@@ -1160,7 +1160,7 @@ In other words, for all but finitely many finite places $v$ of $F$, the “parti
 THEOREM 11.3.2.1 (Orbital Traces on the Paley-Wiener Levels). *Let $F$ be a number field, $\chi\in\widehat{C_F}$ a continuous character. Let $\phi\in\mathcal D(C_F)$ be a test function. Let $S$ be a finite set of places of $F$ containing all the Archimedean places, all the places at which $F$ is ramified over $\mathbf Q$, all the places at which $\chi$ is ramified, and such that $\phi$ is invariant under the continuous left-translation action of the image in $C_F$ of the closed subgroup $\prod_{v\nmid S}\mathcal O_{F_v}^\times\subset\mathrm{GL}_1(\mathbf A_F)$. Assume $\mathrm{Pic}(\mathcal O_{F,S})=1$. Let $a=1/2$, $s>1$ a real number, $I=[-\alpha,\alpha]$ a compact interval, with $\alpha\ge 0$ a real number. Assume $\phi$ is supported over $C^{>1}_F$. Let $\tau:\mathbf R_{>0}\to\mathrm{GL}_1(\mathbf A_F)$ be a choice of continuous homomorphic section to the idelic norm. Then:*
 
 $$
-\sum_{\xi\in F^\times}\int_{g\in E^1_F}((\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\phi})(\tau(t),\xi g\tau(t))\,d\mu_1(g)\,\frac{dt}{t}=\frac{\log(q_v)}{\mu_v(\mathcal O_{F_v}^\times)}\sum_{k\in\mathbf Z}\phi(\pi_v^k) \tag{11.3.2.1}
+\sum_{\xi\in F^\times}\int_{g\in E^1_F}((\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\phi})(\tau(t),\xi g\tau(t))\,\mathrm{d}\mu_1(g)\,\frac{\mathrm{d}t}{t}=\frac{\log(q_v)}{\mu_v(\mathcal O_{F_v}^\times)}\sum_{k\in\mathbf Z}\phi(\pi_v^k) \tag{11.3.2.1}
 $$
 
 *where the $\Delta$-subscript denotes the indented kernel of $k_{\mathrm{geom},a,I,s,\phi}$ along the piece-wise constant indentation given by the function:*
@@ -1182,10 +1182,10 @@ $$
 *Then the process of multiplication by $\alpha_{k_1}$ in the second named variable converges within $W^s_I(C_F)$ by Theorem 11.1.2.1, and by Proposition 12.2.2.2 the value:*
 
 $$
-\sum_{\xi\in F^\times}\int_{g\in E^1_F}\rho(\tau(t))((\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\phi})(\tau(t),\xi g\tau(t))\alpha_{k_1}(\xi g\tau(t))\,d\mu_1(g)\,\frac{dt}{t} \tag{11.3.2.3}
+\sum_{\xi\in F^\times}\int_{g\in E^1_F}\rho(\tau(t))((\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\phi})(\tau(t),\xi g\tau(t))\alpha_{k_1}(\xi g\tau(t))\,\mathrm{d}\mu_1(g)\,\frac{\mathrm{d}t}{t} \tag{11.3.2.3}
 $$
 
-*equals the value of the trace of the nuclear operator on $W^s_I(C_F)$ which is the unique continuous extension that the kernel $\rho(\tau(t))((\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\phi})(\tau(t),\xi g\tau(t))\alpha_{k_1}(\xi g\tau(t))$ induces, by defining a continuous integral operator $S(\mathbf A_F)\to W^s_I(C_F)$ valued in the range of $M_\rho$.*
+*equals the value of the trace of the nuclear operator on $W^s_I(C_F)$ which is the unique continuous extension that the kernel $\rho(\tau(t))((\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\phi})(\tau(t),\xi g\tau(t))\alpha_{k_1}(\xi g\tau(t))$ induces, by defining a continuous integral operator $\mathcal{S}(\mathbf A_F)\to W^s_I(C_F)$ valued in the range of $M_\rho$.*
 
 *As $k_1\to+\infty$ the effect of this latter on the arbitrary Schwartz-Bruhat function matches the effect of convolution on the resulting $S'$-local Schwartz-Bruhat function, by invariance under of $\prod_{v\nmid S}\mathcal O_{F_v}^\times$ of $\phi$, and with $S'$ determined by $k$ as in the foregoing, so that the indicator function of $\mathrm{GL}_1(\mathbf A_{F,S'})\times\prod_{v\nmid S'}\mathcal O_{F_v}^\times$ is the
 
@@ -1200,13 +1200,13 @@ The images under $\Phi_{F,\chi|_{C^1_F}}$ of such Schwartz-Bruhat functions comp
 This gives us its trace, and hence the value of:
 
 $$
-\sum_{\xi\in F^\times}\int_{g\in E^1_F}\rho(\tau(t))((\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\phi})(\tau(t),\xi g\tau(t))\beta_{S'}(\xi g\tau(t))1_{g\in\mathrm{GL}_1(\mathbf A_{F,S'})>\lambda'}(\xi g\tau(t))\,d\mu_1(g)\,\frac{dt}{t} \tag{11.3.2.4}
+\sum_{\xi\in F^\times}\int_{g\in E^1_F}\rho(\tau(t))((\alpha_{k+1}-\alpha_k)k^\Delta_{\mathrm{geom},a,I,s,\phi})(\tau(t),\xi g\tau(t))\beta_{S'}(\xi g\tau(t))1_{g\in\mathrm{GL}_1(\mathbf A_{F,S'})>\lambda'}(\xi g\tau(t))\,\mathrm{d}\mu_1(g)\,\frac{\mathrm{d}t}{t} \tag{11.3.2.4}
 $$
 
 which, as $\lambda'$ is large enough and for $\Lambda\to+\infty$ in the regime $\varepsilon\Lambda=o(1)$, attains the limit value:
 
 $$
-\sum_{\varepsilon_p}N(\chi\lvert\cdot\rvert^{\varepsilon_p}_F)\int_{C_F}\phi(g)\chi(g)\lvert g\rvert^{\varepsilon_p-1/2}_F\,d\bar\mu(g) \tag{11.3.2.5}
+\sum_{\varepsilon_p}N(\chi\lvert\cdot\rvert^{\varepsilon_p}_F)\int_{C_F}\phi(g)\chi(g)\lvert g\rvert^{\varepsilon_p-1/2}_F\,\mathrm{d}\bar\mu(g) \tag{11.3.2.5}
 $$
 
 which is the right side of (7.4.2.1) from Theorem 7.4.2.1. The Theorem follows from the Poisson Summation Formula (see Proposition B.4.1.2). $\square$

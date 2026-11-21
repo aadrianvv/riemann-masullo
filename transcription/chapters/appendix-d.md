@@ -753,7 +753,7 @@ $$
 
 under which $\phi$ from (D.1.3.18) for $\mathbf{R}^m \times \mathbf{T}^n$ is carried over$^2$ to the analogue for $\mathbf{R}^m \times \mathbf{Z}^n$. Thus, the denseness assertion is converted into the case of the group $G = \mathbf{R}^m \times \mathbf{Z}^n$, and so then reduces to $G = \mathbf{R}^m$ that is obvious.
 
-(3) : By Lemma D.1.3.5, $\mathcal{S}(G)$ is Hausdorff and complete. By (2), $\mathcal{S}(G)$ is isomorphic to the completed projective tensor product of $\mathcal{S}(\mathbf{R}^m)$, $\mathcal{S}(\mathbf{T}^n)$, $\mathfrak{s}_r = \mathcal{S}(\mathbf{Z}^r)$ and $\mathbf{C}^F$. Each is nuclear (see [Tre, Cor. to Thm. 51.5] for $\mathcal{S}(\mathbf{R}^m)$ and [Tre, Thms. 51.3, 51.5] for $\mathcal{S}(\mathbf{T}^n)$ and $\mathfrak{s}_r$), so $\mathcal{S}(G)$ is nuclear by [Scha, Ch. III, 7.5]. Since $\mathcal{S}(G)$ is a Fréchet space by Lemma D.1.3.5, its strong dual $\mathcal{S}(G)'_{\beta}$ is complete (as for any metrizable locally convex space) by [Scha, Ch. II, 8.1; Ch. IV, 6.1]. Likewise nuclearity of the strong dual is inherited from that of the Fréchet $\mathcal{S}(G)$ by [Tre, Prop. 50.6]. The Montel property for $\mathcal{S}(G)$ (in particular, reflexivity) holds as for all nuclear Fréchet spaces [Tre, Cor. 3 to Prop. 50.2], and the strong dual thereby inherits the Montel property (in particular, reflexivity) by [Scha, Ch. IV, 5.9]. Reflexive spaces are barrelled by [Scha, Ch. IV, p. 144], so $\mathcal{S}(G)$ and $\mathcal{S}(G)'_{\beta}$ are barrelled. $\square$
+(3) : By Lemma D.1.3.5, $\mathcal{S}(G)$ is Hausdorff and complete. By (2), $\mathcal{S}(G)$ is isomorphic to the completed projective tensor product of $\mathcal{S}(\mathbf{R}^m)$, $\mathcal{S}(\mathbf{T}^n)$, $\mathbf{s}_r = \mathcal{S}(\mathbf{Z}^r)$ and $\mathbf{C}^F$. Each is nuclear (see [Tre, Cor. to Thm. 51.5] for $\mathcal{S}(\mathbf{R}^m)$ and [Tre, Thms. 51.3, 51.5] for $\mathcal{S}(\mathbf{T}^n)$ and $\mathbf{s}_r$), so $\mathcal{S}(G)$ is nuclear by [Scha, Ch. III, 7.5]. Since $\mathcal{S}(G)$ is a Fréchet space by Lemma D.1.3.5, its strong dual $\mathcal{S}(G)'_{\beta}$ is complete (as for any metrizable locally convex space) by [Scha, Ch. II, 8.1; Ch. IV, 6.1]. Likewise nuclearity of the strong dual is inherited from that of the Fréchet $\mathcal{S}(G)$ by [Tre, Prop. 50.6]. The Montel property for $\mathcal{S}(G)$ (in particular, reflexivity) holds as for all nuclear Fréchet spaces [Tre, Cor. 3 to Prop. 50.2], and the strong dual thereby inherits the Montel property (in particular, reflexivity) by [Scha, Ch. IV, 5.9]. Reflexive spaces are barrelled by [Scha, Ch. IV, p. 144], so $\mathcal{S}(G)$ and $\mathcal{S}(G)'_{\beta}$ are barrelled. $\square$
 
 **D.1.4. Structure theory of Hausdorff locally compact abelian groups.** In this section, we recall the structure theory of Hausdorff locally compact abelian groups, in preparation for the definition of their Schwartz-Bruhat space of functions.
 
@@ -791,7 +791,7 @@ D.1.4.1. *Exhaustion by compactly generated open subgroups, approximation by abe
 
 (D.1.4.3)
 $$
-G = \operatorname*{colim}_{H \in \mathrm{CG}(G)} H
+G = \operatorname*{\mathrm{colim}}_{H \in \mathrm{CG}(G)} H
 $$
 
 where $\mathrm{CG}(G)$ is the set of all *open* compactly generated abelian subgroups of $G$, filtered under open inclusions. As a consequence of Theorem D.1.4.2 and Theorem D.1.4.3, combined with Pontryagin duality and (D.1.4.3) applied to $\widehat{G}$, we get:
@@ -872,7 +872,7 @@ that is the annihilator of the open compactly generated subgroup $\widehat{U_i}$
 We denote by $j$ the general element of the set $\mathrm{CG}(G)$ of open compactly generated subgroups of $G$, and write $G_j$ for the open compactly generated subgroup of $G$ that $j$ labels. For any $i \in \mathrm{CG}(\widehat{G})$, since
 
 $$
-\operatorname*{colim}_{j \in \mathrm{CG}(G)} G_j = G
+\operatorname*{\mathrm{colim}}_{j \in \mathrm{CG}(G)} G_j = G
 $$
 
 there exists a large enough (with respect to the partial ordering of $\mathrm{CG}(G)$ by upwards inclusion) $j_0 \in \mathrm{CG}(G)$ such that the inclusion homomorphism $K_i \to G$ factors through $G_j$ for all $j \ge j_0$. In other words, $K_i$ is a subgroup of $G_j$ for all $j \ge j_0$ in $\mathrm{CG}(G)$.
@@ -905,10 +905,10 @@ We therefore have, as Hausdorff locally compact abelian groups
 
 (D.1.4.13)
 $$
-\gamma : G \xrightarrow{\simeq} \lim_{i \in \mathrm{CG}(\widehat{G})} \operatorname*{colim}_{j \in J_i} A_{ij}
+\gamma : G \xrightarrow{\simeq} \lim_{i \in \mathrm{CG}(\widehat{G})} \operatorname*{\mathrm{colim}}_{j \in J_i} A_{ij}
 $$
 
-(with open inclusions as transition maps in the colimit) because $U_i = \operatorname*{colim}_{j \in J_i} A_{ij}$. The observation to make is as follows, as in [Wa, (1.3)]. For each $j \in \mathrm{CG}(G)$, we may form the set $I_j$ defined as
+(with open inclusions as transition maps in the colimit) because $U_i = \operatorname*{\mathrm{colim}}_{j \in J_i} A_{ij}$. The observation to make is as follows, as in [Wa, (1.3)]. For each $j \in \mathrm{CG}(G)$, we may form the set $I_j$ defined as
 
 (D.1.4.14)
 $$
@@ -932,7 +932,7 @@ $$
 
 (D.1.4.16)
 $$
-\delta : G \xrightarrow{\simeq} \operatorname*{colim}_{j \in \mathrm{CG}(G)} \lim_{i \in I_j} A_{ij}
+\delta : G \xrightarrow{\simeq} \operatorname*{\mathrm{colim}}_{j \in \mathrm{CG}(G)} \lim_{i \in I_j} A_{ij}
 $$
 
 *(with open inclusions as transition maps in the colimit).*
@@ -993,13 +993,13 @@ $$
 Assume $f$ is $H$-invariant. To show $\widehat{f} : \widehat{G} \to \mathbf{C}$ is supported in $H^{\perp}$, we pick $\chi \in \widehat{G}$ *not* lying inside $H^{\perp}$ and aim to show $\widehat{f}(\chi) = 0$. There certainly exists some $h_0 \in H$ such that $\chi(h_0) \ne 1$ (as $\chi \notin H^{\perp}$), so
 
 $$
-\widehat{f}(\chi) = \int_G f(g) \overline{\chi}(g) dg = \int_G f(gh_0) \overline{\chi}(gh_0) dg = \overline{\chi}(h_0) \widehat{f}(\chi)
+\widehat{f}(\chi) = \int_G f(g) \overline{\chi}(g) \mathrm{d}g = \int_G f(gh_0) \overline{\chi}(gh_0) \mathrm{d}g = \overline{\chi}(h_0) \widehat{f}(\chi)
 $$
 
 (the final equality uses the assumed $H$-invariance of $f$). This forces $\widehat{f}(\chi) = 0$ as desired. For the converse, if $\widehat{f}$ is supported on $H^{\perp}$ then to see $f$ is $H$-invariant we compute for $h \in H$ and $g \in G$ that $f(hg)$ is equal to
 
 $$
-\mathcal{F}_{\widehat{G}}(\widehat{f})(h^{-1}g^{-1}) = \int_{\widehat{G}} \widehat{f}(\chi) \chi(hg) d\mu_{\widehat{G}}(\chi) = \int_{H^{\perp}} \widehat{f}(\chi) \chi(hg) d\mu_{\widehat{G}}(\chi) = \int_{H^{\perp}} \widehat{f}(\chi) \chi(g) d\mu_{\widehat{G}}(\chi),
+\mathcal{F}_{\widehat{G}}(\widehat{f})(h^{-1}g^{-1}) = \int_{\widehat{G}} \widehat{f}(\chi) \chi(hg) \mathrm{d}\mu_{\widehat{G}}(\chi) = \int_{H^{\perp}} \widehat{f}(\chi) \chi(hg) \mathrm{d}\mu_{\widehat{G}}(\chi) = \int_{H^{\perp}} \widehat{f}(\chi) \chi(g) \mathrm{d}\mu_{\widehat{G}}(\chi),
 $$
 
 which is equal to $f(g)$ by Fourier inversion (since $\widehat{f}$ is supported on $H^{\perp}$). This is the $H$-invariance of $f$.
@@ -1070,7 +1070,7 @@ We conclude that the directed system of $\mathcal{S}(k, \Gamma)$'s is *strict* i
 
 (D.1.5.4)
 $$
-\mathcal{S}(G) = \operatorname*{colim}_{(k, \Gamma) \in \mathcal{F}} \mathcal{S}(k, \Gamma)
+\mathcal{S}(G) = \operatorname*{\mathrm{colim}}_{(k, \Gamma) \in \mathcal{F}} \mathcal{S}(k, \Gamma)
 $$
 
 whose injective transition maps are topological embeddings.
@@ -1300,7 +1300,7 @@ REMARK D.1.6.11. Definition D.1.6.10 is meaningful since continuous characters o
 
 EXAMPLE D.1.6.12. For $G=\mathbf{R}$ we have $\widehat{G}=\{\chi_t=e^{2\pi it(\cdot)}\}_{t\in\mathbf{R}}$, anjd for $D=c\,d/dx$ with $c\in\mathbf{C}$ we have $p(D)(\chi_t)=2\pi ict$. For $G=\mathbf{T}=\mathbf{R}/\mathbf{Z}$ we have $\widehat{G}=\{\chi_m:x\mapsto e^{2\pi imx}\}_{m\in\mathbf{Z}}$, and for $D=c\,d/dx$ with $c\in\mathbf{C}$ we have $p(D)(\chi_m)=2\pi icm$.
 
-More broadly, consider $G=\mathbf{R}^m\times\mathbf{T}^n\times\mathbf{Z}^r\times F$ with elements denoted $(x,z,a,b)$ and its dual $\widehat{G}=\mathbf{R}^m\times\mathbf{Z}^n\times\mathbf{T}^r\times\widehat{F}$ with elements denoted $(\widetilde{x},\widetilde{a},\widetilde{z},\widetilde{b})$. A general 1-parameter subgroup $\lambda:\mathbf{R}\to\widehat{G}$ has the form $t\mapsto(t\widetilde{c},0,t\widetilde{c}'\bmod\mathbf{Z}^r,0)$ for unique $\widetilde{c}\in\mathbf{R}^m$, $\widetilde{c}'\in\mathbf{R}^r$, and when $G$ is viewed as the dual of $\widehat{G}$ the character $\chi_{(x,z,a,b)}:\widehat{G}\to\mathrm{U}(1)$ associated to $(x,z,a,b)\in G$ is
+More broadly, consider $G=\mathbf{R}^m\times\mathbf{T}^n\times\mathbf{Z}^r\times F$ with elements denoted $(x,z,a,b)$ and its dual $\widehat{G}=\mathbf{R}^m\times\mathbf{Z}^r\times\mathbf{T}^r\times\widehat{F}$ with elements denoted $(\widetilde{x},\widetilde{a},\widetilde{z},\widetilde{b})$. A general 1-parameter subgroup $\lambda:\mathbf{R}\to\widehat{G}$ has the form $t\mapsto(t\widetilde{c},0,t\widetilde{c}'\bmod\mathbf{Z}^r,0)$ for unique $\widetilde{c}\in\mathbf{R}^m$, $\widetilde{c}'\in\mathbf{R}^r$, and when $G$ is viewed as the dual of $\widehat{G}$ the character $\chi_{(x,z,a,b)}:\widehat{G}\to\mathrm{U}(1)$ associated to $(x,z,a,b)\in G$ is
 
 $$
 (\widetilde{x},\widetilde{a},\widetilde{z},\widetilde{b})\mapsto e^{2\pi x\cdot\widetilde{x}}e^{2\pi iz\cdot\widetilde{a}}\,\widetilde{z}^a\,\widetilde{b}(b)
@@ -1458,7 +1458,7 @@ We use $\mu_k$ to define the continuous linear map $\pi_{(k,\Gamma)}:\mathcal{S}
 
 (D.1.6.20)
 $$
-\pi_{(k,\Gamma)}(f)(x):=\int_k f(gx)\,d\mu_k(g),\, x\in\Gamma
+\pi_{(k,\Gamma)}(f)(x):=\int_k f(gx)\,\mathrm{d}\mu_k(g),\, x\in\Gamma
 $$
 
 on each $f\in\mathcal{S}(G)$. To check that this output really lies in $\mathcal{S}(\Gamma/k)$ and that the linear map is continuous, the inductive limit process defining the topology of $\mathcal{S}(G)$ reduces us to checking:
@@ -1469,7 +1469,7 @@ $^3$There are a variety of things to clarify that I am sure are implicit later: 
 
 **772** · **CHAPTER D. SCHWARTZ-BRUHAT FUNCTIONS**
 
-LEMMA D.1.6.18. *If $A$ is an elementary abelian group and $k$ is a compact subgroup equipped with its volume-1 measure $\mu_k$ then for $f\in\mathcal{S}(A)$ the $k$-invariant function $x\mapsto\int_k f(xg)\,d\mu_k(g)$ lies in $\mathcal{S}(A/k)$. Moreover, this map $\pi:\mathcal{S}(A)\to\mathcal{S}(A/k)$ is continuous and surjective.*
+LEMMA D.1.6.18. *If $A$ is an elementary abelian group and $k$ is a compact subgroup equipped with its volume-1 measure $\mu_k$ then for $f\in\mathcal{S}(A)$ the $k$-invariant function $x\mapsto\int_k f(xg)\,\mathrm{d}\mu_k(g)$ lies in $\mathcal{S}(A/k)$. Moreover, this map $\pi:\mathcal{S}(A)\to\mathcal{S}(A/k)$ is continuous and surjective.*
 
 PROOF. Averaging over $k$ (say on continuous functions) is the composite of the analogous averaging over $k^0$ followed by averaging over $k/k^0$, so it suffices to separately treat the cases when $k$ is connected and when $k$ is finite.
 
@@ -1517,19 +1517,19 @@ for $(a',g)\in A'\times k=A$; note that the $f_n$’s and $F_n$’s are respecti
 Thus, for $x_0=(a'_0,g_0)\in A$ we have
 
 $$
-\int_k f(x_0g)\,d\mu_k(g)=\sum_{n\ge 1}\lambda_n f_n(a'_0)\int_k F_n(g_0g)\,d\mu_k(g)=\sum_{n\ge 1}\lambda_n f_n(a'_0)\int_k F_n\,d\mu_k.
+\int_k f(x_0g)\,\mathrm{d}\mu_k(g)=\sum_{n\ge 1}\lambda_n f_n(a'_0)\int_k F_n(g_0g)\,\mathrm{d}\mu_k(g)=\sum_{n\ge 1}\lambda_n f_n(a'_0)\int_k F_n\,\mathrm{d}\mu_k.
 $$
 
 In other words,
 
 $$
-\int_k f((a',g')g)\,d\mu_k(g)=\sum_{n\ge 1}\lambda_n f_n(a')\int_k F_n\,d\mu_k
+\int_k f((a',g')g)\,\mathrm{d}\mu_k(g)=\sum_{n\ge 1}\lambda_n f_n(a')\int_k F_n\,\mathrm{d}\mu_k
 $$
 
 for all $(a',g')\in A'\times k=A$. Since the $F_n$’s are uniformly bounded and $f_n\to 0$ in $\mathcal{S}(A')$, the series
 
 $$
-\sum_{n\ge 1}\lambda_n f_n\int_k F_n\,d\mu_k
+\sum_{n\ge 1}\lambda_n f_n\int_k F_n\,\mathrm{d}\mu_k
 $$
 
 has Cauchy partial sums in $\mathcal{S}(A')=\mathcal{S}(A/k)$ and so converges in $\mathcal{S}(A/k)$ by completeness. This proves $k$-averaging is valued in $\mathcal{S}(A/k)$ and agrees with the visibly continuous linear $\mathrm{id}\widehat{\otimes}_{\pi}\int_k:\mathcal{S}(A')\widehat{\otimes}_{\pi}\mathcal{S}(k)\to\mathcal{S}(A')$. $\square$
@@ -1538,7 +1538,7 @@ Since $\mu_k(k)=1$, it is clear that $\pi_{(k,\Gamma)}:\mathcal{S}(G)\to\mathcal
 
 (D.1.6.22)
 $$
-\pi_{(\Gamma^{\perp},k^{\perp})}(f)(x):=\int_{\Gamma^{\perp}}f(gx)\,d\mu_{\Gamma^{\perp}}(g),\, x\in k^{\perp}
+\pi_{(\Gamma^{\perp},k^{\perp})}(f)(x):=\int_{\Gamma^{\perp}}f(gx)\,\mathrm{d}\mu_{\Gamma^{\perp}}(g),\, x\in k^{\perp}
 $$
 
 on each $f\in\mathcal{S}(\widehat{G})$. That $\pi_{(\Gamma^{\perp},k^{\perp})}$ is also a projector amounts to checking $\mu_{\Gamma^{\perp}}(\Gamma^{\perp})=1$, but rather than carry out such a direct verification (which seems a bit complicated)$^4$ we get it immediately from the projector property for $\pi_{(k,\Gamma)}$ via Lemma D.1.6.19(2, 3) below, with that part (3) a consequence of the Poisson Summation Formula (see Theorem D.1.2.7 or [DE, Thm. 3.6.3]).
@@ -1565,7 +1565,7 @@ $$
 
 (D.1.6.25)
 $$
-\mathcal{F}_G\circ\pi_{(k,\Gamma)}(f)=\int_{k^{\perp}}\widehat{f}(\chi)\,\chi\,d\mu_{k^{\perp}}(\chi)
+\mathcal{F}_G\circ\pi_{(k,\Gamma)}(f)=\int_{k^{\perp}}\widehat{f}(\chi)\,\chi\,\mathrm{d}\mu_{k^{\perp}}(\chi)
 $$
 
 *where $\mu_{k^{\perp}}$ is the Plancherel measure on $k^{\perp}$ uniquely determined by $\mu_{\Gamma/k}$ and $\mu_G$. In particular, we have*
@@ -1589,10 +1589,10 @@ First we treat the special case $D=\partial_a$ for a 1-parameter subgroup $a:\ma
 
 $$
 \begin{aligned}
-\mathcal{F}_G(\partial_af)(\chi) &= \int_G\lim_{t\to 0}\frac{f(ga(t))-f(g)}{t}\overline{\chi(g)}\,d\mu_G(g)\\
-&= \lim_{t\to 0}\left\{\int_G\frac{f(ga(t)^{-1}a(t))}{t}\overline{\chi(ga(t)^{-1})}\,d\mu_G(ga(t)^{-1})-\int_G\frac{f(g)}{t}\overline{\chi}(g)\,d\mu_G(g)\right\}\\
-&= \lim_{t\to 0}\left\{\frac{\chi(a(t))}{t}\int_G f(g)\overline{\chi}(g)\,d\mu_G(g)-\frac{1}{t}\int_G f(g)\overline{\chi}(g)\,d\mu_G(g)\right\}\\
-&= \lim_{t\to 0}\left\{\frac{\chi(a(t))-1}{t}\right\}\int_G f(g)\overline{\chi(g)}\,d\mu_G(g)\\
+\mathcal{F}_G(\partial_af)(\chi) &= \int_G\lim_{t\to 0}\frac{f(ga(t))-f(g)}{t}\overline{\chi(g)}\,\mathrm{d}\mu_G(g)\\
+&= \lim_{t\to 0}\left\{\int_G\frac{f(ga(t)^{-1}a(t))}{t}\overline{\chi(ga(t)^{-1})}\,\mathrm{d}\mu_G(ga(t)^{-1})-\int_G\frac{f(g)}{t}\overline{\chi}(g)\,\mathrm{d}\mu_G(g)\right\}\\
+&= \lim_{t\to 0}\left\{\frac{\chi(a(t))}{t}\int_G f(g)\overline{\chi}(g)\,\mathrm{d}\mu_G(g)-\frac{1}{t}\int_G f(g)\overline{\chi}(g)\,\mathrm{d}\mu_G(g)\right\}\\
+&= \lim_{t\to 0}\left\{\frac{\chi(a(t))-1}{t}\right\}\int_G f(g)\overline{\chi(g)}\,\mathrm{d}\mu_G(g)\\
 &= p_{\partial_a}(\chi)\,\widehat{f}(\chi)
 \end{aligned}
 $$
@@ -1602,7 +1602,7 @@ where the exchange of the order of integration and formation of the limit is leg
 To see the $L^1$-convergence, we shall use the group-theoretic analogue of Hadamard’s Lemma:
 
 $$
-\frac{f(ga(t))-f(g)}{t}=\int_0^1(\partial_af)(ga(tu))\,du.
+\frac{f(ga(t))-f(g)}{t}=\int_0^1(\partial_af)(ga(tu))\,\mathrm{d}u.
 $$
 
 The right side as a function of $g$ for each $t\ne 0$ converges to $\partial_af$ in $L^1(G,\mu_G)$ as $t\to 0$, due to Fubini’s Theorem and the Dominated Convergence Theorem on $G\times[0,1]$ (as $(\partial_af)(ga(v))-(\partial_af)(g)\in L^1(G\times[0,1])$ by translation-invariance of $\mu_G$). As usual, really one works with arbitrary sequences $t_n\to 0$ to infer the conclusion for general $t\to 0$.
@@ -1612,7 +1612,7 @@ For general $D$, linearity reduces us to the special case that $D$ is a product 
 (2) : To check $\mathcal{F}_G(f)$ is Schwartz on $\widehat{G}$ for $f\in\mathcal{S}(G)$, the key point is to reduce to elementary abelian Lie groups. Pick a structural pair $(k,\Gamma)$ so that $f\in\mathcal{S}(k,\Gamma)$. The continuous $\widehat{f}$ is supported on $k^{\perp}$ and $\Gamma^{\perp}$-invariant by Lemma D.1.5.2(3). Strictly speaking, that result assumes $\widehat{f}\in L^1(\widehat{G})$ which we don’t yet know, but the required parts of the proof never use that hypothesis: $\widehat{f}$ is supported in $k^{\perp}$ because in the proof of Lemma D.1.5.2(3) the argument to show $\widehat{f}$ is supported in $H^{\perp}$ when $f$ is $H$-invariant for a closed subgroup $H\subset G$ only requires an $L^1$-condition on $f$ (in particular, pointwise Fourier inversion is not used). Likewise the $\Gamma^{\perp}$-invariance for $\widehat{f}$ can be shown by adapting a calculation from that earlier proof: if $\chi_0\in\Gamma^{\perp}$ then since $f$ is supported on the open subgroup $\Gamma$ we have
 
 $$
-\widehat{f}(\chi_0\chi)=\int_G f(g)\overline{\chi_0\chi}(g)\,d\mu_G(g)=\int_{\Gamma}f(\gamma)\overline{\chi_0\chi}(g)\,d\mu_G(\gamma)=\int_{\Gamma}f(\gamma)\overline{\chi}(g)\,d\mu_G(\gamma)
+\widehat{f}(\chi_0\chi)=\int_G f(g)\overline{\chi_0\chi}(g)\,\mathrm{d}\mu_G(g)=\int_{\Gamma}f(\gamma)\overline{\chi_0\chi}(g)\,\mathrm{d}\mu_G(\gamma)=\int_{\Gamma}f(\gamma)\overline{\chi}(g)\,\mathrm{d}\mu_G(\gamma)
 $$
 
 since $\chi_0(\gamma)=1$ (as $\chi_0\in\Gamma^{\perp}$). The calculation then runs in reverse to recover $\widehat{f}(\chi)$ as desired.
@@ -1687,16 +1687,16 @@ $$
 *defined in (D.1.2.7) by*
 
 $$
-\Phi_k(\phi)(x):=\int_k\phi(hx)\,d\mu_k(h)
+\Phi_k(\phi)(x):=\int_k\phi(hx)\,\mathrm{d}\mu_k(h)
 \tag{D.1.7.2}
 $$
 
 *for all $x\in G$ is valued in $\mathcal{S}(G/k)$. The induced linear operator $\Phi_k:\mathcal{S}(G)\to\mathcal{S}(G/k)$ satisfies the following properties:*
 
-*(1) The following identity holds for all $\phi\in\mathcal{S}(G)$, with $\widehat{\phi}$ the Fourier transform $\widehat{\phi}(\chi):=\int_G\phi(x)\overline{\chi}(x)\,d\mu_G(x)$, and for all $x\in G$:*
+*(1) The following identity holds for all $\phi\in\mathcal{S}(G)$, with $\widehat{\phi}$ the Fourier transform $\widehat{\phi}(\chi):=\int_G\phi(x)\overline{\chi}(x)\,\mathrm{d}\mu_G(x)$, and for all $x\in G$:*
 
 $$
-\Phi_k(\phi)(x)=\int_{k^{\perp}}\widehat{\phi}(\chi)\chi(x)\,d\mu_{k^{\perp}}(\chi)
+\Phi_k(\phi)(x)=\int_{k^{\perp}}\widehat{\phi}(\chi)\chi(x)\,\mathrm{d}\mu_{k^{\perp}}(\chi)
 \tag{D.1.7.3}
 $$
 
@@ -1721,7 +1721,7 @@ lands inside $\mathcal{S}(k\Gamma'/kk')$ and the resulting map $\mathcal{S}(\Gam
 It remains to prove (D.1.7.3). This is an application of Fourier inversion. Since $\Phi_k(\phi)$ and its Fourier transform are respectively Schwartz-Bruhat on $G/k$ and $\widehat{G/k}=k^{\perp}$, it satisfies Fourier inversion pointwise everywhere on $G/k$ by Lemma D.1.1.2(5). Since $\mu_{k^{\perp}}$ is the dual measure to $\mu_{G/k}$, for all $x\in G/k$ we have
 
 $$
-\Phi_k(\phi)(x)=\int_{k^{\perp}}\mathcal{F}_{G/k}(\Phi_k(\phi))(\chi)\chi(x)\,d\mu_{k^{\perp}}(x)
+\Phi_k(\phi)(x)=\int_{k^{\perp}}\mathcal{F}_{G/k}(\Phi_k(\phi))(\chi)\chi(x)\,\mathrm{d}\mu_{k^{\perp}}(x)
 $$
 
 where $\mathcal{F}_{G/k}$ is defined using integration against $\mu_{G/k}$. Thus, it suffices to show
@@ -1735,13 +1735,13 @@ for $\chi\in\widehat{G/k}=k^{\perp}$, where $\widehat{\phi}$ is defined using in
 By definition,
 
 $$
-\widehat{\phi}(\chi)=\int_G\phi(g)\overline{\chi}(g)\,d\mu_G(g)=\int_{G/k}\left(\int_k\phi(hg)\overline{\chi}(hg)\,d\mu_k(h)\right)d\mu_{G/k}(\overline{g}).
+\widehat{\phi}(\chi)=\int_G\phi(g)\overline{\chi}(g)\,\mathrm{d}\mu_G(g)=\int_{G/k}\left(\int_k\phi(hg)\overline{\chi}(hg)\,\mathrm{d}\mu_k(h)\right)\mathrm{d}\mu_{G/k}(\overline{g}).
 $$
 
 In the integrand, $\chi(hg)=\chi(g)$ since $\chi\in k^{\perp}$, so the inner integral becomes
 
 $$
-\int_k\phi(hg)\overline{\chi}(g)\,d\mu_k(h)=\Phi_k(\phi)(g)\overline{\chi}(g).
+\int_k\phi(hg)\overline{\chi}(g)\,\mathrm{d}\mu_k(h)=\Phi_k(\phi)(g)\overline{\chi}(g).
 $$
 
 This is what we needed.
@@ -2046,9 +2046,9 @@ $$
 
 D.1.10.1. Complements on the locally convex topology on Schwartz-Bruhat spaces. For convenient reference, we wish to record several families of seminorms that define the topology on $\mathcal{S}(G)$ for some classes of Hausdorff locally compact abelian groups $G$. To get started, the Hausdorff locally convex topology on $\mathcal{S}(\mathbf{R})$ (whose construction is reviewed in Definition 2.1.1.4 for $\mathbf{R}^m$ with any $m\ge 1$) is usually defined using sup-norms but it can also be defined by a family of seminorms involving the Fourier transform and $L^2$-norms:
 
-Proposition D.1.10.2. *Let $\mathcal{F}_{\mathbf{R}}:\mathcal{S}(\mathbf{R})\simeq\mathcal{S}(\mathbf{R})$ be the Fourier transform $\mathcal{F}_{\mathbf{R}}(f):x\mapsto\int_{\mathbf{R}}f(y)e^{-2\pi ixy}\,dy$, and for integers $m,n\ge 0$ let $\nu_{m,n}:\mathcal{S}(\mathbf{R})\to\mathbf{R}_{\ge 0}$ be the seminorm*
+Proposition D.1.10.2. *Let $\mathcal{F}_{\mathbf{R}}:\mathcal{S}(\mathbf{R})\simeq\mathcal{S}(\mathbf{R})$ be the Fourier transform $\mathcal{F}_{\mathbf{R}}(f):x\mapsto\int_{\mathbf{R}}f(y)e^{-2\pi ixy}\,\mathrm{d}y$, and for integers $m,n\ge 0$ let $\nu_{m,n}:\mathcal{S}(\mathbf{R})\to\mathbf{R}_{\ge 0}$ be the seminorm*
 $$
-\nu_{m,n}(\phi):=\lVert\partial_x^m\mathcal{F}_{\mathbf{R}}(\partial_t^n\phi(t))(x)\rVert_{L^2(\mathbf{R},dx)}.
+\nu_{m,n}(\phi):=\lVert\partial_x^m\mathcal{F}_{\mathbf{R}}(\partial_t^n\phi(t))(x)\rVert_{L^2(\mathbf{R},\mathrm{d}x)}.
 \tag{D.1.10.3}
 $$
 *The family of seminorms $\{\nu_{m,n}\}_{m,n\ge 0}$ defines the usual locally convex topology on $\mathcal{S}(\mathbf{R})$.*
@@ -2059,11 +2059,11 @@ Proof. The assertion on boundedness within $\mathcal{S}(\mathbf{R})$ follows fro
 
 By the usual identity for pulling a derivative operator out of a Fourier transform [Fol, Thm. 8.22(d)], for every $\phi\in\mathcal{S}(\mathbf{R})$ we have
 $$
-\nu_{m,n}(\phi)=(2\pi)^m\lVert x^m\partial_x^n\phi(x)\rVert_{L^2(\mathbf{R},dx)}.
+\nu_{m,n}(\phi)=(2\pi)^m\lVert x^m\partial_x^n\phi(x)\rVert_{L^2(\mathbf{R},\mathrm{d}x)}.
 $$
 Thus, for every integer $N\ge 1$ we have
 $$
-\nu_{m,n}(\phi)\le (2\pi)^m\lVert(1+|x|)^m\partial_x^n\phi(x)\rVert_{L^2(\mathbf{R},dx)}\le (2\pi)^m\left(\int_{\mathbf{R}}\frac{1}{(1+|x|)^{2N}}\,dx\right)^{1/2}\sup_{x\in\mathbf{R}}(1+|x|)^{m+N}|\partial_x^n\phi(x)|.
+\nu_{m,n}(\phi)\le (2\pi)^m\lVert(1+|x|)^m\partial_x^n\phi(x)\rVert_{L^2(\mathbf{R},\mathrm{d}x)}\le (2\pi)^m\left(\int_{\mathbf{R}}\frac{1}{(1+|x|)^{2N}}\,\mathrm{d}x\right)^{1/2}\sup_{x\in\mathbf{R}}(1+|x|)^{m+N}|\partial_x^n\phi(x)|.
 $$
 In particular, since the seminorms $\nu'_{m,n}(\phi):=\sup_{x\in\mathbf{R}}|(1+|x|)^m\partial_x^n\phi(x)|$ generate the topology of $\mathcal{S}(\mathbf{R})$, each seminorm $\nu_{m,n}$ is continuous on $\mathcal{S}(\mathbf{R})$ for each integer $m,n\ge 0$. Thus, the family of seminorms $\{\nu_{m,n}\}_{m,n\ge 0}$ induces on $\mathcal{S}(\mathbf{R})$ a topology that is coarser than the usual topology on $\mathcal{S}(\mathbf{R})$ (defined in Definition 2.1.1.4).
 
@@ -2077,11 +2077,11 @@ $$
 \tag{D.1.10.4}
 $$
 $$
-\le (2\pi)^m\int_{\mathbf{R}}|t^m\partial_t^n\phi(t)|\,dt\le (2\pi)^m\int_{\mathbf{R}}|(1+|t|)^m\partial_t^n\phi(t)|\,dt.
+\le (2\pi)^m\int_{\mathbf{R}}|t^m\partial_t^n\phi(t)|\,\mathrm{d}t\le (2\pi)^m\int_{\mathbf{R}}|(1+|t|)^m\partial_t^n\phi(t)|\,\mathrm{d}t.
 $$
 The final integral is equal to
 $$
-\int_{\mathbf{R}}\frac{(1+|t|)^{m+N}\partial_t^n\phi(t)}{(1+|t|)^N}\,dt\le\left(\int_{\mathbf{R}}\frac{1}{(1+|t|)^{2N}}\,dt\right)^{1/2}\lVert(1+|t|)^{m+N}\partial_t^n\phi\rVert_{L^2(\mathbf{R},dx)}
+\int_{\mathbf{R}}\frac{(1+|t|)^{m+N}\partial_t^n\phi(t)}{(1+|t|)^N}\,\mathrm{d}t\le\left(\int_{\mathbf{R}}\frac{1}{(1+|t|)^{2N}}\,\mathrm{d}t\right)^{1/2}\lVert(1+|t|)^{m+N}\partial_t^n\phi\rVert_{L^2(\mathbf{R},\mathrm{d}x)}
 \tag{D.1.10.5}
 $$
 $$
@@ -2089,7 +2089,7 @@ $$
 $$
 for
 $$
-C_N:=\left(\int_{\mathbf{R}}\frac{1}{(1+|t|)^{2N}}\,dt\right)^{1/2}.
+C_N:=\left(\int_{\mathbf{R}}\frac{1}{(1+|t|)^{2N}}\,\mathrm{d}t\right)^{1/2}.
 $$
 Thus, by using $N=1$ (or any fixed choice of $N\ge 1$) we see that the topology defined by the $\nu_{m,n}$'s is also finer than the usual topology on $\mathcal{S}(\mathbf{R})$, so the two topologies coincide. $\square$
 
@@ -2104,13 +2104,13 @@ for $\alpha,\beta\in\mathbf{N}^m$. It is clearly equivalent to use the slightly 
 
 (1) for $\alpha,\beta\in\mathbf{N}^m$,
 $$
-p'_{\alpha,\beta}(f):=\lVert x^{\alpha}\partial_x^{\beta}f(x)\rVert_{L^1(\mathbf{R}^m,dx)};
+p'_{\alpha,\beta}(f):=\lVert x^{\alpha}\partial_x^{\beta}f(x)\rVert_{L^1(\mathbf{R}^m,\mathrm{d}x)};
 \tag{D.1.10.7}
 $$
 
 (2) for $\alpha,\beta\in\mathbf{N}^m$ and fixed $1<p<\infty$,
 $$
-p''_{\alpha,\beta,p}(f):=\lVert x^{\alpha}\partial_x^{\beta}f(x)\rVert_{L^p(\mathbf{R}^m,dx)}
+p''_{\alpha,\beta,p}(f):=\lVert x^{\alpha}\partial_x^{\beta}f(x)\rVert_{L^p(\mathbf{R}^m,\mathrm{d}x)}
 \tag{D.1.10.8}
 $$
 (the proof of equality of topologies in [KG, Part I, Ch. IV, Thm. 29, pp. 72-4] treats $p=2$, but the same method adapts readily to any $1<p<\infty$).
@@ -2122,7 +2122,7 @@ p_{\beta}(f):=\sup_{z\in\mathbf{T}^n}|\partial_z^{\beta}f(z)|
 $$
 for $\beta\in\mathbf{N}^n$. The Sobolev Inequality allows this to be replaced with an $L^p$-counterpart for any $1\le p<\infty$. More precisely, for each such fixed $p$ we claim the family of seminorms
 $$
-p''_{\beta,p}(f):=\lVert\partial_z^{\beta}f(z)\rVert_{L^p(\mathbf{T}^n,dz)}
+p''_{\beta,p}(f):=\lVert\partial_z^{\beta}f(z)\rVert_{L^p(\mathbf{T}^n,\mathrm{d}z)}
 \tag{D.1.10.10}
 $$
 
@@ -2134,7 +2134,7 @@ for $\beta\in\mathbf{N}^n$ defines the same topology on $C^{\infty}(\mathbf{T}^n
 
 For the convenience of the reader, we review the standard argument. Since the volume-1 measure is being used on $\mathbf{T}^n$, clearly $p''_{\beta,p}\le p_{\beta}$. To go in reverse and bound each $p_{\beta}$ from above in terms of finitely many $p''_{\alpha,p}$'s for a fixed $1\le p<\infty$, it suffices to treat $p=1$ since Hölder's inequality on the compact $\mathbf{T}^n$ gives
 $$
-\lVert\phi\rVert_{L^1(\mathbf{T}^n,dz)}\le\lVert 1\rVert_{L^q(\mathbf{T}^n,dz)}\lVert f\rVert_{L^p(\mathbf{T}^n,dz)}=\lVert f\rVert_{L^p(\mathbf{T}^n,dz)}
+\lVert\phi\rVert_{L^1(\mathbf{T}^n,\mathrm{d}z)}\le\lVert 1\rVert_{L^q(\mathbf{T}^n,\mathrm{d}z)}\lVert f\rVert_{L^p(\mathbf{T}^n,\mathrm{d}z)}=\lVert f\rVert_{L^p(\mathbf{T}^n,\mathrm{d}z)}
 $$
 where $1/p+1/q=1$.
 
@@ -2147,17 +2147,17 @@ where the Sobolev norm $\lVert\cdot\rVert_s$ is defined by
 $$
 \lVert\phi\rVert_s^2:=\sum_{\xi\in\mathbf{Z}^n}(1+|\xi|^2)^s|\widehat{\phi}(\xi)|^2.
 $$
-Clearly $|\widehat{\phi}(0)|\le\lVert\phi\rVert_{L^1(\mathbf{T}^n,dz)}$. For each nonzero $\xi\in\mathbf{Z}^n$ and a fixed integer $N\ge 1$ (we will soon require $N\ge s+(n+1)/2$) and an index $j$ (depending on $\xi$) such that $\lVert\xi\rVert_{\sup}=|\xi_j|$ we have via integration by parts along the $j$th factor $\mathbf{T}$ of $\mathbf{T}^n$ that
+Clearly $|\widehat{\phi}(0)|\le\lVert\phi\rVert_{L^1(\mathbf{T}^n,\mathrm{d}z)}$. For each nonzero $\xi\in\mathbf{Z}^n$ and a fixed integer $N\ge 1$ (we will soon require $N\ge s+(n+1)/2$) and an index $j$ (depending on $\xi$) such that $\lVert\xi\rVert_{\sup}=|\xi_j|$ we have via integration by parts along the $j$th factor $\mathbf{T}$ of $\mathbf{T}^n$ that
 $$
 \widehat{\phi}(\xi)=\frac{1}{(2\pi i\xi_j)^N}\widehat{\partial_{z_j}^N\phi}(\xi).
 $$
 Since the Fourier coefficients are each bounded above by the $L^1$-norm, for a constant $C_n$ satisfying $|x|\le C_n|x|_{\sup}$ for all $x\in\mathbf{R}^n$ we have
 $$
-|\widehat{\phi}(\xi)|\le\left(\frac{C_n}{2\pi|\xi|}\right)^N\max_{|\beta|=N}\lVert\partial_z^{\beta}\phi\rVert_{L^1(\mathbf{T}^n,dz)}
+|\widehat{\phi}(\xi)|\le\left(\frac{C_n}{2\pi|\xi|}\right)^N\max_{|\beta|=N}\lVert\partial_z^{\beta}\phi\rVert_{L^1(\mathbf{T}^n,\mathrm{d}z)}
 $$
 (with the multi-index $\beta\in\mathbf{N}^n$ varying with degree $N$). Thus, requiring $N\ge s+(n+1)/2$, we have
 $$
-\lVert\phi\rVert_s^2\le\lVert\phi\rVert_{L^1(\mathbf{T}^n,dz)}^2+\left(\frac{C_n}{2\pi}\right)^{2N}\left(\sum_{\xi\in\mathbf{Z}^n-\{0\}}\frac{(1+|\xi|^2)^s}{|\xi|^{2N}}\right)\max_{|\beta|=N}\lVert\partial_z^{\beta}\phi\rVert_{L^1(\mathbf{T}^n,dz)}^2
+\lVert\phi\rVert_s^2\le\lVert\phi\rVert_{L^1(\mathbf{T}^n,\mathrm{d}z)}^2+\left(\frac{C_n}{2\pi}\right)^{2N}\left(\sum_{\xi\in\mathbf{Z}^n-\{0\}}\frac{(1+|\xi|^2)^s}{|\xi|^{2N}}\right)\max_{|\beta|=N}\lVert\partial_z^{\beta}\phi\rVert_{L^1(\mathbf{T}^n,\mathrm{d}z)}^2
 $$
 where the sum over $\xi\in\mathbf{Z}^n-\{0\}$ is finite since $2N-2s\ge n+1$. Feeding this into (D.1.10.11), controlling the $L^1$-norms of all degree-$N$ partials of $\phi\in C^{\infty}(\mathbf{T}^n)$ controls $\phi$ uniformly pointwise over $\mathbf{T}^n$ as desired.
 
@@ -2230,37 +2230,37 @@ $$
 
 **788** · **CHAPTER D. SCHWARTZ-BRUHAT FUNCTIONS**
 
-for each $(z,a,b)$ we view $x^{\gamma}a^{\delta}\partial_x^{\lambda}\partial_z^{\mu}f(x,z,a,b)$ as an element of $\mathcal{S}(\mathbf{R}^m)$ and apply Example D.1.10.3 to get a finite set of pairs of multi-indices $(\gamma',\lambda')$ and positive constants $C_{\gamma',\lambda'}$ depending only on $(\gamma,\lambda)$ so that
+for each $(z,a,b)$ we view $x^{\gamma}a^{\delta}\partial_x^{\lambda}\partial_z^{\mu}f(x,z,a,b)$ as an element of $\mathcal{S}(\mathbf{R}^m)$ and apply Example D.1.10.3 to get a finite set of pairs of multi-indices $(\gamma',\lambda')$ and positive constants $C_{\gamma',\delta'}$ depending only on $(\gamma,\lambda)$ so that
 $$
-\sup_{(x,z,a,b)}|x^{\gamma}a^{\delta}\partial_x^{\lambda}\partial_z^{\mu}f(x,z,a,b)|\le\sup_{(z,a,b)}\sum_{(\gamma',\lambda')}C_{\gamma',\lambda'}\left(\int_{\mathbf{R}^m}|x^{\gamma'}\partial_x^{\lambda'}a^{\delta}\partial_z^{\mu}f(x,z,a,b)|^q\,dx\right)^{1/q}
+\sup_{(x,z,a,b)}|x^{\gamma}a^{\delta}\partial_x^{\lambda}\partial_z^{\mu}f(x,z,a,b)|\le\sup_{(z,a,b)}\sum_{(\gamma',\lambda')}C_{\gamma',\lambda'}\left(\int_{\mathbf{R}^m}|x^{\gamma'}\partial_x^{\lambda'}a^{\delta}\partial_z^{\mu}f(x,z,a,b)|^q\,\mathrm{d}x\right)^{1/q}
 \tag{D.1.10.13}
 $$
 $$
-\le\sum_{(\gamma',\lambda')}C_{\gamma',\lambda'}\left(\int_{\mathbf{R}^m}\sup_{(z,a,b)}|\partial_z^{\mu}a^{\delta}x^{\gamma'}\partial_x^{\lambda'}f(x,z,a,b)|^q\,dx\right)^{1/q},
+\le\sum_{(\gamma',\lambda')}C_{\gamma',\lambda'}\left(\int_{\mathbf{R}^m}\sup_{(z,a,b)}|\partial_z^{\mu}a^{\delta}x^{\gamma'}\partial_x^{\lambda'}f(x,z,a,b)|^q\,\mathrm{d}x\right)^{1/q},
 $$
 where the sup inside the integral is a continuous function of $x\in\mathbf{R}^m$ since $z$ varies over the compact $\mathbf{T}^n$.
 
 Writing $\sup_{(z,a,b)}=\sup_{(a,b)}\sup_z$, we next apply Example D.1.10.4 to get a finite set of multi-indices $\mu'$ and positive constants $C_{\mu'}$ depending only on $\mu$ so that the integrand at the end of (D.1.10.13) satisfies
 $$
-\sup_{(z,a,b)}|\partial_z^{\mu}a^{\delta}x^{\gamma'}\partial_x^{\lambda'}f(x,z,a,b)|^q\le\sup_{(a,b)}\sum_{\mu'}C_{\mu'}\int_{\mathbf{T}^n}|\partial_z^{\mu'}a^{\delta}x^{\gamma'}\partial_x^{\lambda'}f(x,z,a,b)|^q\,dz
+\sup_{(z,a,b)}|\partial_z^{\mu}a^{\delta}x^{\gamma'}\partial_x^{\lambda'}f(x,z,a,b)|^q\le\sup_{(a,b)}\sum_{\mu'}C_{\mu'}\int_{\mathbf{T}^n}|\partial_z^{\mu'}a^{\delta}x^{\gamma'}\partial_x^{\lambda'}f(x,z,a,b)|^q\,\mathrm{d}z
 \tag{D.1.10.14}
 $$
 $$
-\le\sum_{\mu'}C_{\mu'}\int_{\mathbf{T}^n}\sup_{(a,b)}|a^{\delta}\partial_z^{\mu'}x^{\gamma'}\partial_x^{\lambda'}f(x,z,a,b)|^q\,dz.
+\le\sum_{\mu'}C_{\mu'}\int_{\mathbf{T}^n}\sup_{(a,b)}|a^{\delta}\partial_z^{\mu'}x^{\gamma'}\partial_x^{\lambda'}f(x,z,a,b)|^q\,\mathrm{d}z.
 $$
 Thus,
 $$
-\sup_{(x,z,a,b)}|x^{\gamma}a^{\delta}\partial_x^{\lambda}\partial_z^{\mu}f(x,z,a,b)|\le\sum_{(\gamma',\lambda')}C_{\gamma',\lambda'}\left(\sum_{\mu'}C_{\mu'}\int_{\mathbf{R}^m\times\mathbf{T}^n}\sup_{(a,b)}|a^{\delta}\partial_z^{\mu'}x^{\gamma'}\partial_x^{\lambda'}f(x,z,a,b)|^q\,dz\,dx\right)^{1/q}
+\sup_{(x,z,a,b)}|x^{\gamma}a^{\delta}\partial_x^{\lambda}\partial_z^{\mu}f(x,z,a,b)|\le\sum_{(\gamma',\lambda')}C_{\gamma',\lambda'}\left(\sum_{\mu'}C_{\mu'}\int_{\mathbf{R}^m\times\mathbf{T}^n}\sup_{(a,b)}|a^{\delta}\partial_z^{\mu'}x^{\gamma'}\partial_x^{\lambda'}f(x,z,a,b)|^q\,\mathrm{d}z\,\mathrm{d}x\right)^{1/q}
 $$
 (the inner supremum over the countably many pairs $(a,b)$ is measureable).
 
 Now by Example D.1.10.5, there is a finite set of multi-indices $\delta'$ and positive constants $C_{\delta'}$ depending only on $\delta$ so that
 $$
-\sup_{(a,b)}|a^{\delta}\partial_z^{\mu'}x^{\gamma'}\partial_x^{\lambda'}f(x,z,a,b)|^q\le\sup_b\sum_{\delta'}C_{\delta'}\int_{\mathbf{Z}^r}|a^{\delta'}\partial_z^{\mu'}x^{\gamma'}\partial_x^{\lambda'}f(x,z,a,b)|^q\,da
+\sup_{(a,b)}|a^{\delta}\partial_z^{\mu'}x^{\gamma'}\partial_x^{\lambda'}f(x,z,a,b)|^q\le\sup_b\sum_{\delta'}C_{\delta'}\int_{\mathbf{Z}^r}|a^{\delta'}\partial_z^{\mu'}x^{\gamma'}\partial_x^{\lambda'}f(x,z,a,b)|^q\,\mathrm{d}a
 $$
 (counting measure on $\mathbf{Z}^r$). Hence, the left side of (D.1.10.13) is bounded above by
 $$
-\sum_{(\gamma',\lambda')}C_{\gamma',\lambda'}\left(\sum_{(\mu',\delta')}C_{\mu'}C_{\delta'}\int_{\mathbf{R}^m\times\mathbf{T}^n\times\mathbf{Z}^r}\sup_{b\in F}|a^{\delta'}\partial_z^{\mu'}x^{\gamma'}\partial_x^{\lambda'}f(x,z,a,b)|^q\,da\,dz\,dx\right)^{1/q}.
+\sum_{(\gamma',\lambda')}C_{\gamma',\lambda'}\left(\sum_{(\mu',\delta')}C_{\mu'}C_{\delta'}\int_{\mathbf{R}^m\times\mathbf{T}^n\times\mathbf{Z}^r}\sup_{b\in F}|a^{\delta'}\partial_z^{\mu'}x^{\gamma'}\partial_x^{\lambda'}f(x,z,a,b)|^q\,\mathrm{d}a\,\mathrm{d}z\,\mathrm{d}x\right)^{1/q}.
 $$
 For any non-negative function $h$ on $F$ clearly $\sup_{b\in F}h(b)\le\sum_{b\in F}h(b)$, so we finally obtain
 $$
@@ -2340,7 +2340,7 @@ Proposition D.1.10.9 (Fundamental family of continuous seminorms on $\mathcal{S}
 
 *(1) for varying $r\in\mathbf{N}$, $m\in\mathbf{N}$, $\alpha\in\mathbf{N}^{r_1+2r_2-1}$, and a fixed real number $p\ge 1$, $\{\nu_{r,m,\alpha}^p\}$ defined on $\mathcal{S}(k,C_F)$ by*
 $$
-\nu_{r,m,\alpha}^p(f):=\left(\int_{\mathbf{R}_{>0}}\int_{C_F^1}|(t\partial_t)^m(\partial_{\gamma_1}^{\alpha_1}\cdots\partial_{\gamma_{r_1+2r_2-1}}^{\alpha_{r_1+2r_2-1}})(f)(\tau(t)g)(1+|\log(t)|^r)|^p\,d\mu_1(g)\,\frac{dt}{t}\right)^{1/p}.
+\nu_{r,m,\alpha}^p(f):=\left(\int_{\mathbf{R}_{>0}}\int_{C_F^1}|(t\partial_t)^m(\partial_{\gamma_1}^{\alpha_1}\cdots\partial_{\gamma_{r_1+2r_2-1}}^{\alpha_{r_1+2r_2-1}})(f)(\tau(t)g)(1+|\log(t)|^r)|^p\,\mathrm{d}\mu_1(g)\,\frac{\mathrm{d}t}{t}\right)^{1/p}.
 \tag{D.1.10.17}
 $$
 
@@ -2377,7 +2377,7 @@ induced by the choice $\tau$ of continuous homomorphic section to the idelic nor
 
 We can $k$ small enough so that $C_F^0/k$ has the same dimension as $\mathcal{L}(C_F^0)$ (as we may clearly do). Integrating $k$-invariant functions on $C_F$ and over $C_F/k$ differs only in a constant multiplier by a volume, so via Proposition D.1.10.6 we see that for each real number $p\ge 1$, as we vary $P\in\mathbf{R}[X]$, $m\in\mathbf{N}$, and $\alpha\in\mathbf{N}^{r_1+2r_2-1}$ the associated seminorms
 $$
-\nu_{P,m,\alpha}^p(f):=\left(\int_{\mathbf{R}_{>0}}\int_{C_F^1}|(t\partial_t)^m(\partial_{\gamma_1}^{\alpha_1}\cdots\partial_{\gamma_{r_1+2r_2-1}}^{\alpha_{r_1+2r_2-1}})(f)(\tau(t)g)|P(\log(t))||^p\,d\mu_1(g)\,\frac{dt}{t}\right)^{1/p}
+\nu_{P,m,\alpha}^p(f):=\left(\int_{\mathbf{R}_{>0}}\int_{C_F^1}|(t\partial_t)^m(\partial_{\gamma_1}^{\alpha_1}\cdots\partial_{\gamma_{r_1+2r_2-1}}^{\alpha_{r_1+2r_2-1}})(f)(\tau(t)g)|P(\log(t))||^p\,\mathrm{d}\mu_1(g)\,\frac{\mathrm{d}t}{t}\right)^{1/p}
 $$
 generate the Hausdorff locally convex topology on $\mathcal{S}(C_F)$. That the Schwartz-Bruhat topology on $\mathcal{S}(C_F)$ remains unaltered upon changing the seminorms $\nu_{r,m,\alpha}^p$ into the seminorms from (D.1.10.17), or those obtained upon replacing $(1+|\log(t)|^r)$ from (D.1.10.17) by $|\log(t)|^r$, is a consequence of the triangle inequality for $L^p$-norms. $\square$
 
@@ -2389,7 +2389,7 @@ Proposition D.1.10.10 (Fundamental family of continuous seminorms on $\mathcal{S
 
 *(1) for varying $r\in\mathbf{N}$, $m\in\mathbf{N}$, $\alpha\in\mathbf{N}^{r_1+2r_2-1}$, and a fixed real number $p\ge 1$, $\{\nu_{r,m,\alpha}^p\}$ on $\mathcal{S}(k,C_{F,S})$ defined by*
 $$
-\nu_{r,m,\alpha}^p(f):=\left(\int_{\mathbf{R}_{>0}}\int_{C_{F,S}^1}|(t\partial_t)^m(\partial_{\gamma_1}^{\alpha_1}\cdots\partial_{\gamma_{r_1+2r_2-1}}^{\alpha_{r_1+2r_2-1}})(f)(\tau(t)g)(1+|\log(t)|^r)|^p\,d\mu_{S,1}(g)\,\frac{dt}{t}\right)^{1/p}.
+\nu_{r,m,\alpha}^p(f):=\left(\int_{\mathbf{R}_{>0}}\int_{C_{F,S}^1}|(t\partial_t)^m(\partial_{\gamma_1}^{\alpha_1}\cdots\partial_{\gamma_{r_1+2r_2-1}}^{\alpha_{r_1+2r_2-1}})(f)(\tau(t)g)(1+|\log(t)|^r)|^p\,\mathrm{d}\mu_{S,1}(g)\,\frac{\mathrm{d}t}{t}\right)^{1/p}.
 \tag{D.1.10.20}
 $$
 
@@ -2432,13 +2432,13 @@ $$
 by
 
 $$
-\Phi_{G,\omega}(f)(h):=\frac{1}{\mu_1(G^1)}\int_{G^1}\overline{\omega}(g)f(g^{-1}h)\,d\mu_1(g) \tag{D.2.1.2}
+\Phi_{G,\omega}(f)(h):=\frac{1}{\mu_1(G^1)}\int_{G^1}\overline{\omega}(g)f(g^{-1}h)\,\mathrm{d}\mu_1(g) \tag{D.2.1.2}
 $$
 
 with $\mu_1$ a fixed choice of Haar measure on $G^1$. It is clear from the definition that the function $\Phi_{G,\omega}(f):G\to\mathbf C$ is $\omega$-homogenous, but it is not so obvious that this function on $G$ belongs to $\mathcal S(G)$; this is where Pettis integration enters. We use Lemma 4.3.3.1(1) applied to the compact group $G^1$ acting uniformly continuously on the complete locally convex topological vector space $E=\mathcal S(G)$ via $f\mapsto\overline{\omega}(g)\,g.f$ and the collection of continuous linear functionals $\varphi\in E'$ given by evaluation at points $h\in G$. That is, we have an $\mathcal S(G)$-valued Pettis integral
 
 $$
-\Phi_{G,\omega}(f)=\frac{1}{\mu_1(G^1)}\int_{G^1}\langle\overline{\omega}(g)g.f,\cdot\rangle_{E,E'}\,d\mu_{G^1}(g)\in E\subset (E')^*
+\Phi_{G,\omega}(f)=\frac{1}{\mu_1(G^1)}\int_{G^1}\langle\overline{\omega}(g)g.f,\cdot\rangle_{E,E'}\,\mathrm{d}\mu_{G^1}(g)\in E\subset (E')^*
 $$
 
 ## PDF page 793
@@ -2485,7 +2485,7 @@ $$
 
 as $\Lambda\to+\infty$.
 
-To see such a $\mu_{\Gamma}$ exists, we separately treat the cases $\Gamma=\mathbf R_{>0}$ and $\Gamma=t^{\mathbf Z}$ for some $t>1$. In the case $\Gamma=\mathbf R_{>0}$ we use $\mu_{\Gamma}=dt/t$ (in this case the $O(1)$-term in (D.2.1.5) vanishes). In the case $\Gamma=t^{\mathbf Z}$ with $t>1$, take $\mu_{\Gamma}$ to be counting measure multiplied by $\log(t)$; this satisfies (D.2.1.5) because the difference between $2\log(\Lambda)$ and
+To see such a $\mu_{\Gamma}$ exists, we separately treat the cases $\Gamma=\mathbf R_{>0}$ and $\Gamma=t^{\mathbf Z}$ for some $t>1$. In the case $\Gamma=\mathbf R_{>0}$ we use $\mu_{\Gamma}=\mathrm{d}t/t$ (in this case the $O(1)$-term in (D.2.1.5) vanishes). In the case $\Gamma=t^{\mathbf Z}$ with $t>1$, take $\mu_{\Gamma}$ to be counting measure multiplied by $\log(t)$; this satisfies (D.2.1.5) because the difference between $2\log(\Lambda)$ and
 
 $$
 \#\{m\in\mathbf Z:1/\Lambda\le t^m\le\Lambda\}\log(t)
@@ -2499,7 +2499,7 @@ REMARK D.2.1.4. In light of Remark D.2.1.3, we make the following observations o
 
 **794** · **CHAPTER D. SCHWARTZ-BRUHAT FUNCTIONS**
 
-subgroup $C^1_{F,S}$, and $\overline{\mu}_{S,1}$ on $J^1_{F,S}$, generally do *not* give $C^1_F$, $C^1_{F,S}$, and $J^1_{F,S}$ volume 1 and are therefore $\overline{\mu}$ and $\overline{\mu}_S$ not the “canonical” choices on $C_F$ and $J_{F,S}$ in the sense of $\mu_{\mathrm{can}}$ on a modulated group as discussed above. Since the pair of measures $\overline{\mu}$ on $C_F$ and $\overline{\mu}_1$ on $C^1_F$, as well as the pair $\overline{\mu}_S$ on $J_{F,S}$ and $\overline{\mu}_{S,1}$ on $J^1_{F,S}$, induces $dt/t$ on the idelic-norm image $\mathbf R_{>0}$, it follows that the canonical measure $\mu_{\mathrm{can}}$ on $C_F$ is
+subgroup $C^1_{F,S}$, and $\overline{\mu}_{S,1}$ on $J^1_{F,S}$, generally do *not* give $C^1_F$, $C^1_{F,S}$, and $J^1_{F,S}$ volume 1 and are therefore $\overline{\mu}$ and $\overline{\mu}_S$ not the “canonical” choices on $C_F$ and $J_{F,S}$ in the sense of $\mu_{\mathrm{can}}$ on a modulated group as discussed above. Since the pair of measures $\overline{\mu}$ on $C_F$ and $\overline{\mu}_1$ on $C^1_F$, as well as the pair $\overline{\mu}_S$ on $J_{F,S}$ and $\overline{\mu}_{S,1}$ on $J^1_{F,S}$, induces $\mathrm{d}t/t$ on the idelic-norm image $\mathbf R_{>0}$, it follows that the canonical measure $\mu_{\mathrm{can}}$ on $C_F$ is
 
 $$
 \mu_{\mathrm{can}}=\frac{1}{\overline{\mu}_1(C^1_F)}\overline{\mu} \tag{D.2.1.6}
@@ -2546,7 +2546,7 @@ $$
 *the continuous linear averaging map*
 
 $$
-\Phi^E_{G,\omega}(u):=\frac{1}{\mu_1(G^1)}\int_{G^1}\overline{\omega}(g)\rho_G(g,u)\,d\mu_1(g) \tag{D.2.2.4}
+\Phi^E_{G,\omega}(u):=\frac{1}{\mu_1(G^1)}\int_{G^1}\overline{\omega}(g)\rho_G(g,u)\,\mathrm{d}\mu_1(g) \tag{D.2.2.4}
 $$
 
 *provided by Lemma 4.3.3.1 (applied to the $G^1$-action on $E$ defined by $u\mapsto\overline{\omega}(g)\rho_G(g,u)$ for $g\in G^1$).*
@@ -2726,13 +2726,13 @@ FIGURE 1. A counterclockwise rectangular contour, with $c=a+\varepsilon$, $c'=b-
 By the Cauchy Integral Formula applied to the contour in Figure 1, we have
 
 $$
-\partial_s^k(s^N\phi)|_{s=z}=-\frac{k!}{2\pi i}\int_{a+\varepsilon-iT}^{a+\varepsilon+iT}f_z(s)\,ds+\frac{k!}{2\pi i}\int_{b-\varepsilon-iT}^{b-\varepsilon+iT}f_z(s)\,ds+\frac{k!}{2\pi i}\int_{b-\varepsilon-iT}^{a+\varepsilon-iT}f_z(s)\,ds-\frac{k!}{2\pi i}\int_{b-\varepsilon+iT}^{a+\varepsilon+iT}f_z(s)\,ds. \tag{D.3.1.3}
+\partial_s^k(s^N\phi)|_{s=z}=-\frac{k!}{2\pi i}\int_{a+\varepsilon-iT}^{a+\varepsilon+iT}f_z(s)\,\mathrm{d}s+\frac{k!}{2\pi i}\int_{b-\varepsilon-iT}^{b-\varepsilon+iT}f_z(s)\,\mathrm{d}s+\frac{k!}{2\pi i}\int_{b-\varepsilon-iT}^{a+\varepsilon-iT}f_z(s)\,\mathrm{d}s-\frac{k!}{2\pi i}\int_{b-\varepsilon+iT}^{a+\varepsilon+iT}f_z(s)\,\mathrm{d}s. \tag{D.3.1.3}
 $$
 
 In light of (D.3.1.2), we have:
 
 $$
-\frac{k!}{2\pi}\int_{a+\varepsilon-iT}^{b-\varepsilon-iT}|f_z(s)|\,|ds|+\frac{k!}{2\pi}\int_{a+\varepsilon+iT}^{b-\varepsilon+iT}|f_z(s)|\,|ds|\le A\left\{\frac{1}{|T-\mathrm{Im}(z)|^{k+1}}+\frac{1}{|-T-\mathrm{Im}(z)|^{k+1}}\right\} \tag{D.3.1.4}
+\frac{k!}{2\pi}\int_{a+\varepsilon-iT}^{b-\varepsilon-iT}|f_z(s)|\,|\mathrm{d}s|+\frac{k!}{2\pi}\int_{a+\varepsilon+iT}^{b-\varepsilon+iT}|f_z(s)|\,|\mathrm{d}s|\le A\left\{\frac{1}{|T-\mathrm{Im}(z)|^{k+1}}+\frac{1}{|-T-\mathrm{Im}(z)|^{k+1}}\right\} \tag{D.3.1.4}
 $$
 
 where
@@ -2744,11 +2744,11 @@ $$
 We deduce that for $k\ge 1$ we have
 
 $$
-|\partial_s^k(s^N\phi)||_{s=z}\le\frac{k!}{2\pi}\int_{-\infty}^{+\infty}\frac{|a+\varepsilon+it|^N|\phi(a+\varepsilon+it)|}{(|a+\varepsilon-\mathrm{Re}(z)|^2+|t-\mathrm{Im}(z)|^2)^{(k+1)/2}}\,dt \tag{D.3.1.5}
+|\partial_s^k(s^N\phi)||_{s=z}\le\frac{k!}{2\pi}\int_{-\infty}^{+\infty}\frac{|a+\varepsilon+it|^N|\phi(a+\varepsilon+it)|}{(|a+\varepsilon-\mathrm{Re}(z)|^2+|t-\mathrm{Im}(z)|^2)^{(k+1)/2}}\,\mathrm{d}t \tag{D.3.1.5}
 $$
 
 $$
-+\frac{k!}{2\pi}\int_{-\infty}^{+\infty}\frac{|b-\varepsilon+it|^N|\phi(b-\varepsilon+it)|}{(|b-\varepsilon-\mathrm{Re}(z)|^2+|t-\mathrm{Im}(z)|^2)^{(k+1)/2}}\,dt \tag{D.3.1.6}
++\frac{k!}{2\pi}\int_{-\infty}^{+\infty}\frac{|b-\varepsilon+it|^N|\phi(b-\varepsilon+it)|}{(|b-\varepsilon-\mathrm{Re}(z)|^2+|t-\mathrm{Im}(z)|^2)^{(k+1)/2}}\,\mathrm{d}t \tag{D.3.1.6}
 $$
 
 where the integrals converge since $s^N\phi(s)$ is bounded on vertical lines within $\mathbf C_I$ and $k+1>1$.
@@ -2780,22 +2780,22 @@ LEMMA D.3.1.2 (Uniform Schwartz topology and $L^p$-convergence on vertical lines
 *PROOF. We will treat the case $I=(0,+\infty)$ for the sake of clarity, the general case being established with the same method, with only notational differences. Let $a_{\bullet}:=\{a_m\}_{m\ge 0}\subset\mathbf Q_{>0}$ be a sequence of positive rational numbers such that $0$ is an accumulation point, and $\limsup_{m\ge 0}a_m=+\infty$. Consider the linear map*
 
 $$
-A_{a_{\bullet}}:\mathcal S(\mathbf C_{>0})\to\prod_{m\ge 0}\prod_{N\ge 0}L^p(\mathbf R,dx) \tag{D.3.1.7}
+A_{a_{\bullet}}:\mathcal S(\mathbf C_{>0})\to\prod_{m\ge 0}\prod_{N\ge 0}L^p(\mathbf R,\mathrm{d}x) \tag{D.3.1.7}
 $$
 
 *defined as $A_{a_{\bullet}}(\phi):=(s^N\phi(s)|_{\mathrm{Re}(s)=a_m})_{m,N\ge 0}$.*
 
-*The map $A_{a_{\bullet}}$ is injective since elements of $\mathcal S(\mathbf C_{>0})$ are holomorphic by definition . Let $\{\phi_k\}_{k\ge 0}\subset\mathcal S(\mathbf C_{>0})$ be a sequence, and assume that the sequence $\{A_{a_{\bullet}}(\phi_k)\}_{k\ge 0}$ converges, so $\{\phi_k|_{a_m+i\mathbf R}\}_{m\ge 0}$ converges to some $(\alpha_m)_{m\ge 0}\in\prod_{m\ge 0}L^p(\mathbf R,dx)$.*
+*The map $A_{a_{\bullet}}$ is injective since elements of $\mathcal S(\mathbf C_{>0})$ are holomorphic by definition . Let $\{\phi_k\}_{k\ge 0}\subset\mathcal S(\mathbf C_{>0})$ be a sequence, and assume that the sequence $\{A_{a_{\bullet}}(\phi_k)\}_{k\ge 0}$ converges, so $\{\phi_k|_{a_m+i\mathbf R}\}_{m\ge 0}$ converges to some $(\alpha_m)_{m\ge 0}\in\prod_{m\ge 0}L^p(\mathbf R,\mathrm{d}x)$.*
 
 *Let $0<A<B$ be arbitrary real numbers, and consider the vertical strip $\mathbf C_{(A,B)}$ of bounded width within $\mathbf C_{>0}$ for $\mathrm{Re}(s)\in(A,B)$. There exist integers $m_1,m_2$ such that $a_{m_1}<A<B<a_{m_2}$. Since each $\phi_k$ is holomorphic over the vertical strip $\mathbf C_{(a_{m_1},a_{m_2})}$ and is uniformly Schwartz, by Theorem B.2.2.4 we obtain*
 
 $$
-\phi_k(s)=-\frac{1}{2\pi i}\int_{a_{m_1}-i\infty}^{a_{m_1}+i\infty}\frac{\phi_k(z)}{z-s}\,dz+\frac{1}{2\pi i}\int_{a_{m_2}-i\infty}^{a_{m_2}+i\infty}\frac{\phi_k(z)}{z-s}\,dz \tag{D.3.1.8}
+\phi_k(s)=-\frac{1}{2\pi i}\int_{a_{m_1}-i\infty}^{a_{m_1}+i\infty}\frac{\phi_k(z)}{z-s}\,\mathrm{d}z+\frac{1}{2\pi i}\int_{a_{m_2}-i\infty}^{a_{m_2}+i\infty}\frac{\phi_k(z)}{z-s}\,\mathrm{d}z \tag{D.3.1.8}
 $$
 
 *for any $s\in\mathbf C_{(A,B)}$.*
 
-*Since $a_{m_1}<A$ and $a_{m_2}>B$, the function $(z-s)^{-1}$ for $z\in(a_{m_1}+i\mathbf R)\cup(a_{m_2}+i\mathbf R)$ and $s\in\mathbf C_{(A,B)}$ is uniformly bounded. Since $\{\phi_k|_{a_{m_j}+i\mathbf R}\}_{k\ge 0}$ converges in $L^p(\mathbf R,dx)$ for $j=1,2$, both integrals in (D.3.1.8) as*
+*Since $a_{m_1}<A$ and $a_{m_2}>B$, the function $(z-s)^{-1}$ for $z\in(a_{m_1}+i\mathbf R)\cup(a_{m_2}+i\mathbf R)$ and $s\in\mathbf C_{(A,B)}$ is uniformly bounded. Since $\{\phi_k|_{a_{m_j}+i\mathbf R}\}_{k\ge 0}$ converges in $L^p(\mathbf R,\mathrm{d}x)$ for $j=1,2$, both integrals in (D.3.1.8) as*
 
 ## PDF page 800
 
@@ -2804,7 +2804,7 @@ $$
 *sequences of functions of $s\in\mathbf C_{(A,B)}$ satisfy*
 
 $$
-\int_{a_{m_j}-i\infty}^{a_{m_j}+i\infty}\left|\frac{\phi_k(z)-\alpha_{m_j}(\mathrm{Im}(z))}{z-s}\right||dz|\le\left(\int_{\mathbf R}|\phi_k(a_{m_j}+ix)-\alpha_{m_j}(x)|^p\,dx\right)^{1/p}\left(\int_{\mathbf R}\left|\frac{1}{a_{m_j}+ix-s}\right|^q\,dx\right)^{1/q} \tag{D.3.1.9}
+\int_{a_{m_j}-i\infty}^{a_{m_j}+i\infty}\left|\frac{\phi_k(z)-\alpha_{m_j}(\mathrm{Im}(z))}{z-s}\right||\mathrm{d}z|\le\left(\int_{\mathbf R}|\phi_k(a_{m_j}+ix)-\alpha_{m_j}(x)|^p\,\mathrm{d}x\right)^{1/p}\left(\int_{\mathbf R}\left|\frac{1}{a_{m_j}+ix-s}\right|^q\,\mathrm{d}x\right)^{1/q} \tag{D.3.1.9}
 $$
 
 *for $j=1,2$ by Hölder’s Inequality, with $1/p+1/q=1$ (we have $q=p/(p-1)>1$).*
@@ -2812,13 +2812,13 @@ $$
 *The first of the two factors on the right side of (D.3.1.9) is arbitrarily small for $j=1,2$ as $k\to+\infty$ since $\phi_k\to\alpha_{m_j}$ on $a_{m_j}+i\mathbf R$ in the $L^p$-sense. The second factor on the right side, namely*
 
 $$
-\left(\int_{\mathbf R}\left|\frac{1}{a_{m_j}+ix-s}\right|^q\,dx\right)^{1/q}, \tag{D.3.1.10}
+\left(\int_{\mathbf R}\left|\frac{1}{a_{m_j}+ix-s}\right|^q\,\mathrm{d}x\right)^{1/q}, \tag{D.3.1.10}
 $$
 
 *is bounded above (upon writing $s=\sigma+i\tau$) by*
 
 $$
-\left(\int_{\mathbf R}\left(\frac{1}{|a_{m_j}-\sigma|^2+|x-\tau|^2}\right)^{q/2}\,dx\right)^{1/q}\le\left(\int_{\mathbf R}\frac{1}{(|a_{m_j}-A|^2+x^2)^{q/2}}\,dx\right)^{1/q}<\infty. \tag{D.3.1.11}
+\left(\int_{\mathbf R}\left(\frac{1}{|a_{m_j}-\sigma|^2+|x-\tau|^2}\right)^{q/2}\,\mathrm{d}x\right)^{1/q}\le\left(\int_{\mathbf R}\frac{1}{(|a_{m_j}-A|^2+x^2)^{q/2}}\,\mathrm{d}x\right)^{1/q}<\infty. \tag{D.3.1.11}
 $$
 
 *The final upper bound is a positive constant depending only on $a_{m_j}$, $A$, $B$ but not on $s\in\mathbf C_{(A,B)}$.*
@@ -2826,32 +2826,32 @@ $$
 *In particular, $\{\phi_k\}_{k\ge 0}$ as a sequence of holomorphic functions on the vertical strip $\mathbf C_{(A,B)}$ converges pointwise to some function $\phi(s)$, namely on the strip $a_{m_1}<\sigma<a_{m_2}$ we have*
 
 $$
-\phi(s)=-\frac{1}{2\pi i}\int_{a_{m_1}+i\mathbf R}\frac{\alpha_{m_1}(\mathrm{Im}(z))}{s-z}\,dz+\frac{1}{2\pi i}\int_{a_{m_2}+i\mathbf R}\frac{\alpha_{m_2}(\mathrm{Im}(z))}{s-z}\,dz
+\phi(s)=-\frac{1}{2\pi i}\int_{a_{m_1}+i\mathbf R}\frac{\alpha_{m_1}(\mathrm{Im}(z))}{s-z}\,\mathrm{d}z+\frac{1}{2\pi i}\int_{a_{m_2}+i\mathbf R}\frac{\alpha_{m_2}(\mathrm{Im}(z))}{s-z}\,\mathrm{d}z
 $$
 
 *where both integrals are oriented upward and are absolutely convergent by Hölder’s Inequality: the corresponding $L^1$-norms for $j=1,2$ are bounded above by*
 
 $$
-\frac{1}{2\pi}\left(\int_{\mathbf R}|\alpha_{m_j}(y)|^p\,dy\right)^{1/p}\left(\int_{a_{m_j}+i\mathbf R}\frac{|dz|}{|z-s|^q}\right)^{1/q}<\infty.
+\frac{1}{2\pi}\left(\int_{\mathbf R}|\alpha_{m_j}(y)|^p\,\mathrm{d}y\right)^{1/p}\left(\int_{a_{m_j}+i\mathbf R}\frac{|\mathrm{d}z|}{|z-s|^q}\right)^{1/q}<\infty.
 $$
 
 *The convergence to $\phi$ is uniform on $\mathbf C_{(A,B)}$, so $\phi$ holomorphic over the vertical strip $\mathbf C_{(A,B)}$.*
 
-*Since $(A,B)\subset\mathbf R_{>0}$ is arbitrary (here we use that $0$ is an accumulation point of $a_{\bullet}$ and $\limsup_{m\ge 0}a_m=+\infty$, so given any $(A,B)\subset\mathbf R_{>0}$ we can always find $a_{m_1}<A$ and $a_{m_2}>B$ belonging to $a_{\bullet}$), we see that the limit in $\prod_{m\ge 0}L^p(\mathbf R,dx)$ of the image under $A_{a_{\bullet}}$ from (D.3.1.7) of the sequence $\{\phi_k\}_{k\ge 0}\subset\mathcal S(\mathbf C_{>0})$, remains in $\mathcal O(\mathbf C_{>0})$; i.e., it is holomorphic over $\mathbf C_{>0}$.*
+*Since $(A,B)\subset\mathbf R_{>0}$ is arbitrary (here we use that $0$ is an accumulation point of $a_{\bullet}$ and $\limsup_{m\ge 0}a_m=+\infty$, so given any $(A,B)\subset\mathbf R_{>0}$ we can always find $a_{m_1}<A$ and $a_{m_2}>B$ belonging to $a_{\bullet}$), we see that the limit in $\prod_{m\ge 0}L^p(\mathbf R,\mathrm{d}x)$ of the image under $A_{a_{\bullet}}$ from (D.3.1.7) of the sequence $\{\phi_k\}_{k\ge 0}\subset\mathcal S(\mathbf C_{>0})$, remains in $\mathscr{O}(\mathbf C_{>0})$; i.e., it is holomorphic over $\mathbf C_{>0}$.*
 
 *Using (D.3.1.8) and adapting the preceding considerations with $s^N\phi_k$ in place of $\phi_k$ for each $N\ge 1$, the uniform Schwartz condition on the limit holomorphic function $\phi$ over the vertical strips within $\mathbf C_{>0}$ of bounded width is verified using the convergence of the sequence of integrals (for each integer $N\ge 1$) in*
 
 $$
-|s^N\phi_k(s)|\le\frac{1}{2\pi}\int_{\mathbf R}\left|\frac{(a_{m_1}+ix)^N\phi_k(a_{m_1}+ix)}{a_{m_1}+ix-s}\right|\,dx+\frac{1}{2\pi}\int_{\mathbf R}\left|\frac{(a_{m_2}+ix)^N\phi_k(a_{m_2}+ix)}{a_{m_2}+ix-s}\right|\,dx. \tag{D.3.1.12}
+|s^N\phi_k(s)|\le\frac{1}{2\pi}\int_{\mathbf R}\left|\frac{(a_{m_1}+ix)^N\phi_k(a_{m_1}+ix)}{a_{m_1}+ix-s}\right|\,\mathrm{d}x+\frac{1}{2\pi}\int_{\mathbf R}\left|\frac{(a_{m_2}+ix)^N\phi_k(a_{m_2}+ix)}{a_{m_2}+ix-s}\right|\,\mathrm{d}x. \tag{D.3.1.12}
 $$
 
-*We note that since each $s^N\phi$ is bounded over the vertical strips of bounded width in $\mathbf C_{>0}$ (staying away from the left edge), so is each $s^N(\partial_s^k\phi)$ for each integer $k\ge 0$, as a consequence of Lemma D.3.1.1. It follows that we have $\phi\in\mathcal S(\mathbf C_{>0})$. It follows that $A_{a_{\bullet}}$ has (sequentially) closed range in $\prod_{m\ge 0}\prod_{N\ge 0}L^p(\mathbf R,dx)$. Thus, $\mathcal S(\mathbf C_{>0})$ is a Fréchet space.*
+*We note that since each $s^N\phi$ is bounded over the vertical strips of bounded width in $\mathbf C_{>0}$ (staying away from the left edge), so is each $s^N(\partial_s^k\phi)$ for each integer $k\ge 0$, as a consequence of Lemma D.3.1.1. It follows that we have $\phi\in\mathcal S(\mathbf C_{>0})$. It follows that $A_{a_{\bullet}}$ has (sequentially) closed range in $\prod_{m\ge 0}\prod_{N\ge 0}L^p(\mathbf R,\mathrm{d}x)$. Thus, $\mathcal S(\mathbf C_{>0})$ is a Fréchet space.*
 
 *The preceding work (especially on the strip $a_{m_1}<\sigma<a_{m_2}$ with uniformity) shows that the topology on $\mathcal S(\mathbf C_I)$ agrees with $L^p$-convergence on every vertical line of $\mathbf C_I$. This in turn agrees with convergence in $\mathcal S(\mathbf R)$ on every such vertical line due to Example D.1.10.3, so it agrees with the topology defined via $A_{a_{\bullet}}$.*
 
 $\square$
 
-DEFINITION D.3.1.3 (Schwartz-Bergman spaces). Fix $1<p<\infty$ and $I\subset\mathbf R$ a non-empty open interval. We define the *Schwartz-Bergman space* $\mathcal{AS}(\mathbf C_I)$ to be the $\mathbf C$-linear space $\mathcal S(\mathbf C_I)$ of holomorphic functions on $\mathbf C_I$ that are Schwartz uniformly on the vertical strips of bounded width within $\mathbf C_I$, topologized with the
+DEFINITION D.3.1.3 (Schwartz-Bergman spaces). Fix $1<p<\infty$ and $I\subset\mathbf R$ a non-empty open interval. We define the *Schwartz-Bergman space* $A\mathcal{S}(\mathbf C_I)$ to be the $\mathbf C$-linear space $\mathcal S(\mathbf C_I)$ of holomorphic functions on $\mathbf C_I$ that are Schwartz uniformly on the vertical strips of bounded width within $\mathbf C_I$, topologized with the
 
 ## PDF page 801
 
@@ -2860,14 +2860,14 @@ DEFINITION D.3.1.3 (Schwartz-Bergman spaces). Fix $1<p<\infty$ and $I\subset\mat
 Hausdorff locally convex topology generated by the countable family of seminorms $\{p_{m,N}\}_{m,N\ge 0}$ defined as:
 
 $$
-p_{m,N}(\phi):=\lVert (a_m+ix)^N\phi(a_m+ix)\rVert_{L^p(\mathbf{R},dx)},\ m,N\ge 0
+p_{m,N}(\phi):=\lVert (a_m+ix)^N\phi(a_m+ix)\rVert_{L^p(\mathbf{R},\mathrm{d}x)},\ m,N\ge 0
 $$
 
 with $\{a_m\}_{m\ge 0}\subset I$ a choice of sequence of positive rational numbers as in Lemma D.3.1.2.
 
-REMARK D.3.1.4. Lemma D.3.1.2 shows that $\mathcal{A}\mathcal{S}(\mathbf{C}_I)$ is a separable Fréchet space, and its topology does not depend on the choice of $\{a_m\}_{m\ge 0}$, nor on the choice of $p>1$.
+REMARK D.3.1.4. Lemma D.3.1.2 shows that $A\mathcal{S}(\mathbf{C}_I)$ is a separable Fréchet space, and its topology does not depend on the choice of $\{a_m\}_{m\ge 0}$, nor on the choice of $p>1$.
 
-**D.3.2. Fourier-Mellin transform on $\mathcal{S}_I(\mathbf{R}_{>0})$.** We now relate the spaces of Schwartz-Bruhat functions $\mathcal{S}_E(\mathbf{R}_{>0})$, $\mathcal{S}_{SE}(\mathbf{R}_{>0})$ and $\check{\mathcal{S}}_{SE}(\mathbf{R}_{>0})$ with the Schwartz-Bergman spaces $\mathcal{A}\mathcal{S}(\mathbf{C}_I)$ for $I=\mathbf{R}$, $I=\mathbf{R}_{>0}$ and $I=(-\infty,0)$ by means of the Mellin transform. We begin with a definition.
+**D.3.2. Fourier-Mellin transform on $\mathcal{S}_I(\mathbf{R}_{>0})$.** We now relate the spaces of Schwartz-Bruhat functions $\mathcal{S}_\mathrm{E}(\mathbf{R}_{>0})$, $\mathcal{S}_{\mathrm{SE}}(\mathbf{R}_{>0})$ and $\check{\mathcal{S}}_{\mathrm{SE}}(\mathbf{R}_{>0})$ with the Schwartz-Bergman spaces $A\mathcal{S}(\mathbf{C}_I)$ for $I=\mathbf{R}$, $I=\mathbf{R}_{>0}$ and $I=(-\infty,0)$ by means of the Mellin transform. We begin with a definition.
 
 DEFINITION D.3.2.1 (Schwartz-Bruhat functions on $\mathbf{R}_{>0}$ with $I$-exponential decay). Let $I\subset\mathbf{R}$ be a non-empty interval. We define $\mathcal{S}_I(\mathbf{R}_{>0})\subset C^\infty(\mathbf{R}_{>0})$ to be the linear subspace of those smooth functions $\phi$ on $\mathbf{R}_{>0}$ satisfying the following condition: $t^a\phi(t)\in\mathcal{S}(\mathbf{R}_{>0})$ for all $a\in I$.
 
@@ -2898,11 +2898,11 @@ $$
 
 *is continuous.*
 
-(4) *If $I=[0,+\infty)$ then $\mathcal{S}_I(\mathbf{R}_{>0})=\mathcal{S}_{SE}(\mathbf{R}_{>0})$, as $\mathbf{C}$-linear subspaces of $\mathcal{S}(\mathbf{R}_{>0})$.*
+(4) *If $I=[0,+\infty)$ then $\mathcal{S}_I(\mathbf{R}_{>0})=\mathcal{S}_{\mathrm{SE}}(\mathbf{R}_{>0})$, as $\mathbf{C}$-linear subspaces of $\mathcal{S}(\mathbf{R}_{>0})$.*
 
-(5) *If $I=(-\infty,0]$ then $\mathcal{S}_I(\mathbf{R}_{>0})=\check{\mathcal{S}}_{SE}(\mathbf{R}_{>0})$, as $\mathbf{C}$-linear subspaces of $\mathcal{S}(\mathbf{R}_{>0})$.*
+(5) *If $I=(-\infty,0]$ then $\mathcal{S}_I(\mathbf{R}_{>0})=\check{\mathcal{S}}_{\mathrm{SE}}(\mathbf{R}_{>0})$, as $\mathbf{C}$-linear subspaces of $\mathcal{S}(\mathbf{R}_{>0})$.*
 
-(6) *If $I=\mathbf{R}$ then $\mathcal{S}_I(\mathbf{R}_{>0})=\mathcal{S}_E(\mathbf{R}_{>0})$ as $\mathbf{C}$-linear subspaces of $\mathcal{S}(\mathbf{R}_{>0})$.*
+(6) *If $I=\mathbf{R}$ then $\mathcal{S}_I(\mathbf{R}_{>0})=\mathcal{S}_\mathrm{E}(\mathbf{R}_{>0})$ as $\mathbf{C}$-linear subspaces of $\mathcal{S}(\mathbf{R}_{>0})$.*
 
 The implication “nuclear Fréchet $\Rightarrow$ Montel” noted in (1) is a special case of [Tre, Cor. 3 to Prop. 50.2] (since all Fréchet spaces are barrelled [Scha, Ch. II, Cor. to 7.1]).
 
@@ -2932,14 +2932,14 @@ REMARK D.3.2.4 (On nuclearity of $\mathcal{S}_I(\mathbf{R}_{>0})$). Let $I\subse
 
 D.3.2.2. *Fourier-Mellin transform on $\mathcal{S}_I(\mathbf{R}_{>0})$.*
 
-PROPOSITION D.3.2.5 (Fourier-Mellin transform on $\mathcal{S}_I(\mathbf{R}_{>0})$). *Let $I\subset\mathbf{R}$ be an open non-empty interval. The assignment $\phi\mapsto M(\phi)(s):=\int_{\mathbf{R}_{>0}}\phi(t)t^s\,\frac{dt}{t}$ is defined on $\mathcal{S}_I(\mathbf{R}_{>0})$ and valued in $\mathcal{A}\mathcal{S}(\mathbf{C}_I)$. It induces a linear topological isomorphism*
+PROPOSITION D.3.2.5 (Fourier-Mellin transform on $\mathcal{S}_I(\mathbf{R}_{>0})$). *Let $I\subset\mathbf{R}$ be an open non-empty interval. The assignment $\phi\mapsto M(\phi)(s):=\int_{\mathbf{R}_{>0}}\phi(t)t^s\,\frac{dt}{t}$ is defined on $\mathcal{S}_I(\mathbf{R}_{>0})$ and valued in $A\mathcal{S}(\mathbf{C}_I)$. It induces a linear topological isomorphism*
 
 $$
-M_I:\mathcal{S}_I(\mathbf{R}_{>0})\to\mathcal{A}\mathcal{S}(\mathbf{C}_I).
+M_I:\mathcal{S}_I(\mathbf{R}_{>0})\to A\mathcal{S}(\mathbf{C}_I).
 \tag{D.3.2.2}
 $$
 
-PROOF. By Proposition B.2.2.3(2), the visibly holomorphic $M(\phi)$ on $\mathbf{C}_I$ is Schwartz uniformly on every vertical strip $\mathbf{C}_J$ for every open bounded interval $J$ with $\overline{J}\subset I$. It follows that $M(\phi)$ is an element of $\mathcal{A}\mathcal{S}(\mathbf{C}_I)$. The resulting linear operator $M_I:\mathcal{S}_I(\mathbf{R}_{>0})\to\mathcal{A}\mathcal{S}(\mathbf{C}_I)$, $M_I$ as in (D.3.2.2) is injective by Fourier Inversion. To show it is surjective. pick $u\in\mathcal{A}\mathcal{S}(\mathbf{C}_I)$. By injectivity of $M_I$, without loss of generality we may assume that $I$ is bounded. Proposition B.2.1.8 implies that there exists a unique $\phi\in C_0^\infty(\mathbf{R}_{>0})$ such that $M(\phi)=u$ over $\mathbf{C}_I$. By Lemma D.3.1.1 combined with differentiation under the integral sign and the Identity Theorem,$^{13}$ $(\log(t))^mt^\sigma\phi\in C_0^\infty(\mathbf{R}_{>0})$ for every $\sigma\in I$ and for every integer $m\ge 0$. This forces $\phi\in\mathcal{S}_I(\mathbf{R}_{>0})$.
+PROOF. By Proposition B.2.2.3(2), the visibly holomorphic $M(\phi)$ on $\mathbf{C}_I$ is Schwartz uniformly on every vertical strip $\mathbf{C}_J$ for every open bounded interval $J$ with $\overline{J}\subset I$. It follows that $M(\phi)$ is an element of $A\mathcal{S}(\mathbf{C}_I)$. The resulting linear operator $M_I:\mathcal{S}_I(\mathbf{R}_{>0})\to A\mathcal{S}(\mathbf{C}_I)$, $M_I$ as in (D.3.2.2) is injective by Fourier Inversion. To show it is surjective. pick $u\in A\mathcal{S}(\mathbf{C}_I)$. By injectivity of $M_I$, without loss of generality we may assume that $I$ is bounded. Proposition B.2.1.8 implies that there exists a unique $\phi\in C_0^\infty(\mathbf{R}_{>0})$ such that $M(\phi)=u$ over $\mathbf{C}_I$. By Lemma D.3.1.1 combined with differentiation under the integral sign and the Identity Theorem,$^{13}$ $(\log(t))^mt^\sigma\phi\in C_0^\infty(\mathbf{R}_{>0})$ for every $\sigma\in I$ and for every integer $m\ge 0$. This forces $\phi\in\mathcal{S}_I(\mathbf{R}_{>0})$.
 
 The map $M_I$ is sequentially continuous by continuity of Fourier transform on $\mathcal{S}(\mathbf{R})$ since $M_I(\phi_m)|_{\sigma+i\mathbf{R}}\to M_I(\phi)|_{\sigma+i\mathbf{R}}$ as Schwartz functions on $\mathbf{R}$ for any sequence $\{\phi_m\}_{m\ge 0}\subset\mathcal{S}_I(\mathbf{R}_{>0})$ converging to $\phi$ and any
 
@@ -2951,57 +2951,57 @@ $^{13}$clarify how the Identity Theorem is being used, via “injectvity” of $
 
 **D.3. SCHWARTZ-BRUHAT FUNCTIONS WITH $I$-EXPONENTIAL DECAY** · **803**
 
-$\sigma\in (a,b)$, which implies convergence in $\mathcal{A}\mathcal{S}(\mathbf{C}_I)$ by design of the Hausdorff locally convex topology on $\mathcal{A}\mathcal{S}(\mathbf{C}_I)$ from Definition D.3.1.3. Since $\mathcal{S}(\mathbf{C}_I)$ is a Fréchet space, as is $\mathcal{S}_I(\mathbf{R}_{>0})$ by Lemma D.3.2.3(1), sequential continuity of $M_I$ implies it is continuous. Thus, by the Open Mapping Theorem for Fréchet spaces, the continuous bijection $M_I$ is a linear topological isomorphism. $\square$
+$\sigma\in (a,b)$, which implies convergence in $A\mathcal{S}(\mathbf{C}_I)$ by design of the Hausdorff locally convex topology on $A\mathcal{S}(\mathbf{C}_I)$ from Definition D.3.1.3. Since $\mathcal{S}(\mathbf{C}_I)$ is a Fréchet space, as is $\mathcal{S}_I(\mathbf{R}_{>0})$ by Lemma D.3.2.3(1), sequential continuity of $M_I$ implies it is continuous. Thus, by the Open Mapping Theorem for Fréchet spaces, the continuous bijection $M_I$ is a linear topological isomorphism. $\square$
 
 DEFINITION D.3.2.6 (Fourier-Mellin transform on $\mathcal{S}_I(\mathbf{R}_{>0})$). Let $I\subset\mathbf{R}$ be a non-empty open interval. We define the *Fourier-Mellin transform* on $\mathcal{S}_I(\mathbf{R}_{>0})$ to be the linear topological isomorphism $M_I$ from (D.3.2.2).
 
-D.3.2.3. *Fundamental families of continuous seminorms on $\mathcal{S}_E(\mathbf{R}_{>0})$.* Next we provide a countable family of seminorms on $\mathcal{S}_E(\mathbf{R}_{>0})$ that generate its Hausdorff locally convex topology from Lemma D.3.2.3(6) for $I=\mathbf{R}$ (as $\mathcal{S}_E(\mathbf{R}_{>0})=\mathcal{S}_I(\mathbf{R}_{>0})$ for $I=\mathbf{R}$).
+D.3.2.3. *Fundamental families of continuous seminorms on $\mathcal{S}_\mathrm{E}(\mathbf{R}_{>0})$.* Next we provide a countable family of seminorms on $\mathcal{S}_\mathrm{E}(\mathbf{R}_{>0})$ that generate its Hausdorff locally convex topology from Lemma D.3.2.3(6) for $I=\mathbf{R}$ (as $\mathcal{S}_\mathrm{E}(\mathbf{R}_{>0})=\mathcal{S}_I(\mathbf{R}_{>0})$ for $I=\mathbf{R}$).
 
-LEMMA D.3.2.7 (Countable fundamental families of seminorms on $\mathcal{S}_E(\mathbf{R}_{>0})$). *For $a\in\mathbf{R}_{>0}$, $b\in\mathbf{R}_{\ge 0}$, and $m\ge 0$ an integer, define $\lVert\cdot\rVert_{a,m}$ and $\lVert\cdot\rVert_{a,b,m}$ on $\mathcal{S}_E(\mathbf{R}_{>0})$ by*
+LEMMA D.3.2.7 (Countable fundamental families of seminorms on $\mathcal{S}_\mathrm{E}(\mathbf{R}_{>0})$). *For $a\in\mathbf{R}_{>0}$, $b\in\mathbf{R}_{\ge 0}$, and $m\ge 0$ an integer, define $\lVert\cdot\rVert_{a,m}$ and $\lVert\cdot\rVert_{a,b,m}$ on $\mathcal{S}_\mathrm{E}(\mathbf{R}_{>0})$ by*
 
 $$
-\lVert\phi\rVert_{a,m}:=\left(\int_{\mathbf{R}_{>0}}|(t\partial_t)^m\phi(t)|^2\max\{t,t^{-1}\}^{2a}\,\frac{dt}{t}\right)^{1/2}
+\lVert\phi\rVert_{a,m}:=\left(\int_{\mathbf{R}_{>0}}|(t\partial_t)^m\phi(t)|^2\max\{t,t^{-1}\}^{2a}\,\frac{\mathrm{d}t}{t}\right)^{1/2}
 \tag{D.3.2.3}
 $$
 
 *and*
 
 $$
-\lVert\phi\rVert_{a,b,m}:=\left(\int_{\mathbf{R}_{>0}}|(t\partial_t)^m\phi(t)|^2\max\{t,t^{-1}\}^{2a}|\log(t)|^{2b}\,\frac{dt}{t}\right)^{1/2}
+\lVert\phi\rVert_{a,b,m}:=\left(\int_{\mathbf{R}_{>0}}|(t\partial_t)^m\phi(t)|^2\max\{t,t^{-1}\}^{2a}|\log(t)|^{2b}\,\frac{\mathrm{d}t}{t}\right)^{1/2}
 \tag{D.3.2.4}
 $$
 
 *(note that $\lVert\cdot\rVert_{a,0,m}=\lVert\cdot\rVert_{a,m}$). Then*
 
-(1) *$\lVert\cdot\rVert_{a,m}$ and $\lVert\cdot\rVert_{a,b,m}$ are finite on $\mathcal{S}_E(\mathbf{R}_{>0})$ (hence seminorms) and continuous.*
+(1) *$\lVert\cdot\rVert_{a,m}$ and $\lVert\cdot\rVert_{a,b,m}$ are finite on $\mathcal{S}_\mathrm{E}(\mathbf{R}_{>0})$ (hence seminorms) and continuous.*
 
-(2) *The collection $\{\lVert\cdot\rVert_{a,m}\}$ as $a$ varies over a countable subset $\{a_k\}_{k\ge 0}$ of positive real numbers such that $\limsup_{k\ge 0}a_k=+\infty$ and $m\ge 0$ varies over all the nonnegative integers generates on $\mathcal{S}_E(\mathbf{R}_{>0})$ its Hausdorff locally convex topology.*
+(2) *The collection $\{\lVert\cdot\rVert_{a,m}\}$ as $a$ varies over a countable subset $\{a_k\}_{k\ge 0}$ of positive real numbers such that $\limsup_{k\ge 0}a_k=+\infty$ and $m\ge 0$ varies over all the nonnegative integers generates on $\mathcal{S}_\mathrm{E}(\mathbf{R}_{>0})$ its Hausdorff locally convex topology.*
 
-(3) *The collection $\{\lVert\cdot\rVert_{a,b,m}\}$ as $a$ varies over a countable subset $\{a_k\}_{k\ge 0}$ of positive real numbers such that $\limsup_{k\ge 0}a_k=+\infty$, $b\ge 0$ varies over the nonnegative integers, and $m\ge 0$ varies over the nonnegative integers generates on $\mathcal{S}_E(\mathbf{R}_{>0})$ its Hausdorff locally convex topology.*
+(3) *The collection $\{\lVert\cdot\rVert_{a,b,m}\}$ as $a$ varies over a countable subset $\{a_k\}_{k\ge 0}$ of positive real numbers such that $\limsup_{k\ge 0}a_k=+\infty$, $b\ge 0$ varies over the nonnegative integers, and $m\ge 0$ varies over the nonnegative integers generates on $\mathcal{S}_\mathrm{E}(\mathbf{R}_{>0})$ its Hausdorff locally convex topology.*
 
 PROOF. (1) : We have the inequalities:
 
 $$
-\lVert\phi\rVert_{a,m}\le\left(\int_{[1,+\infty)}|(t\partial_t)^m\phi(t)|^2t^{2a}\,\frac{dt}{t}\right)^{1/2}+\left(\int_{(0,1)}|(t\partial_t)^m\phi(t)|^2t^{-2a}\,\frac{dt}{t}\right)^{1/2}
+\lVert\phi\rVert_{a,m}\le\left(\int_{[1,+\infty)}|(t\partial_t)^m\phi(t)|^2t^{2a}\,\frac{\mathrm{d}t}{t}\right)^{1/2}+\left(\int_{(0,1)}|(t\partial_t)^m\phi(t)|^2t^{-2a}\,\frac{\mathrm{d}t}{t}\right)^{1/2}
 \tag{D.3.2.5}
 $$
 
 $$
-\le\left(\int_{\mathbf{R}_{>0}}|(t\partial_t)^m\phi(t)|^2t^{2a}\,\frac{dt}{t}\right)^{1/2}+\left(\int_{\mathbf{R}_{>0}}|(t\partial_t)^m\phi(t)|^2t^{-2a}\,\frac{dt}{t}\right)^{1/2}
+\le\left(\int_{\mathbf{R}_{>0}}|(t\partial_t)^m\phi(t)|^2t^{2a}\,\frac{\mathrm{d}t}{t}\right)^{1/2}+\left(\int_{\mathbf{R}_{>0}}|(t\partial_t)^m\phi(t)|^2t^{-2a}\,\frac{\mathrm{d}t}{t}\right)^{1/2}
 $$
 
 and
 
 $$
-\lVert\phi\rVert_{a,b,m}\le\left(\int_{[1,+\infty)}|(t\partial_t)^m\phi(t)|^2t^{2a}|\log(t)|^{2b}\,\frac{dt}{t}\right)^{1/2}+\left(\int_{(0,1)}|(t\partial_t)^m\phi(t)|^2t^{-2a}|\log(t)|^{2b}\,\frac{dt}{t}\right)^{1/2}
+\lVert\phi\rVert_{a,b,m}\le\left(\int_{[1,+\infty)}|(t\partial_t)^m\phi(t)|^2t^{2a}|\log(t)|^{2b}\,\frac{\mathrm{d}t}{t}\right)^{1/2}+\left(\int_{(0,1)}|(t\partial_t)^m\phi(t)|^2t^{-2a}|\log(t)|^{2b}\,\frac{\mathrm{d}t}{t}\right)^{1/2}
 \tag{D.3.2.6}
 $$
 
 $$
-\le\left(\int_{\mathbf{R}_{>0}}|(t\partial_t)^m\phi(t)|^2t^{2a}|\log(t)|^{2b}\,\frac{dt}{t}\right)^{1/2}+\left(\int_{\mathbf{R}_{>0}}|(t\partial_t)^m\phi(t)|^2t^{-2a}|\log(t)|^{2b}\,\frac{dt}{t}\right)^{1/2}.
+\le\left(\int_{\mathbf{R}_{>0}}|(t\partial_t)^m\phi(t)|^2t^{2a}|\log(t)|^{2b}\,\frac{\mathrm{d}t}{t}\right)^{1/2}+\left(\int_{\mathbf{R}_{>0}}|(t\partial_t)^m\phi(t)|^2t^{-2a}|\log(t)|^{2b}\,\frac{\mathrm{d}t}{t}\right)^{1/2}.
 $$
 
-This proves that the integrals defining $\lVert\cdot\rVert_{a,m}$ and $\lVert\cdot\rVert_{a,b,m}$ converge on any $\phi\in\mathcal{S}_E(\mathbf{R}_{>0})$, and that the resulting seminorms are continuous. In particular, the topology defined in (2) is coarser than the topology on $\mathcal{S}_E)\mathbf{R}_{>0})$. This completes the proof of (1).
+This proves that the integrals defining $\lVert\cdot\rVert_{a,m}$ and $\lVert\cdot\rVert_{a,b,m}$ converge on any $\phi\in\mathcal{S}_\mathrm{E}(\mathbf{R}_{>0})$, and that the resulting seminorms are continuous. In particular, the topology defined in (2) is coarser than the topology on $\mathcal{S}_\mathrm{E})\mathbf{R}_{>0})$. This completes the proof of (1).
 
 ## PDF page 804
 
@@ -3010,11 +3010,11 @@ This proves that the integrals defining $\lVert\cdot\rVert_{a,m}$ and $\lVert\cd
 Since $\lVert\cdot\rVert_{a,0,m}=\lVert\cdot\rVert_{a,m}$ and clearly (2) implies (3), it remains to prove (2). For each real number $c$ and each integer $m\ge 0$ we have
 
 $$
-\left(\int_{\mathbf{R}_{>0}}|(t\partial_t)^m\phi(t)|^2t^{2c}\,\frac{dt}{t}\right)^{1/2}\le\left(\int_{\mathbf{R}_{>0}}|(t\partial_t)^m\phi(t)|^2\max\{t,t^{-1}\}^{2|c|}\,\frac{dt}{t}\right)^{1/2}.
+\left(\int_{\mathbf{R}_{>0}}|(t\partial_t)^m\phi(t)|^2t^{2c}\,\frac{\mathrm{d}t}{t}\right)^{1/2}\le\left(\int_{\mathbf{R}_{>0}}|(t\partial_t)^m\phi(t)|^2\max\{t,t^{-1}\}^{2|c|}\,\frac{\mathrm{d}t}{t}\right)^{1/2}.
 \tag{D.3.2.7}
 $$
 
-By Lemma D.3.1.2 (with $p=2$), Remark D.3.1.4 and Proposition D.3.2.5, the topology generated by the $\lVert\cdot\rVert_{a,m}$'s as $a\in\mathbf{R}$ varies over a sequence of nonnegative real numbers $\{a_k\}_{k\ge 0}$ such that $\limsup_{k\ge 0}a_k=+\infty$ and $m$ varies over the nonnegative integers is finer than the topology on $\mathcal{S}_E(\mathbf{R}_{>0})$. $\square$
+By Lemma D.3.1.2 (with $p=2$), Remark D.3.1.4 and Proposition D.3.2.5, the topology generated by the $\lVert\cdot\rVert_{a,m}$'s as $a\in\mathbf{R}$ varies over a sequence of nonnegative real numbers $\{a_k\}_{k\ge 0}$ such that $\limsup_{k\ge 0}a_k=+\infty$ and $m$ varies over the nonnegative integers is finer than the topology on $\mathcal{S}_\mathrm{E}(\mathbf{R}_{>0})$. $\square$
 
 **D.3.3. Schwartz-Bruhat functions with $I$-exponential decay on $\mathbf{R}_{>0}$-modulated groups.** We let $(G,|\cdot|_G)$ be a modulated group and throughout this subsection we assume the module $|\cdot|_G:G\to\mathbf{R}_{>0}$ is surjective. We refer to such $(G,|\cdot|_G)$ as an *$\mathbf{R}_{>0}$-modulated group*. All examples of modulated groups arising throughout this work fulfill this assumption.
 
@@ -3024,11 +3024,11 @@ Thus, the condition that the subgroup $k^\perp\subset\widehat{G}$ is compactly g
 
 DEFINITION D.3.3.1 (Schwartz-Bruhat functions with $I$-exponential decay on $\mathbf{R}_{>0}$-modulated groups). Let $(G,|\cdot|_G)$ be an $\mathbf{R}_{>0}$-modulated group. Let $I\subset\mathbf{R}$ be a non-empty interval. We define $\mathcal{S}_I(G)$ to be the $\mathbf{C}$-vector space of those continuous functions $\phi$ on $G$ satisfying $|\cdot|_G^a\phi\in\mathcal{S}(G)$ for all $a\in I$. We refer to $\mathcal{S}_I(G)$ as the $\mathbf{C}$-vector space of *Schwartz-Bruhat functions on $G$ with $I$-exponential decay*. Similarly to Example D.3.2.2, $\mathcal{S}_I(G)$ has a left $G$-action via $(g.\phi)(x)=\phi(g^{-1}x)$.
 
-(1) For $I=[0,+\infty)$, we write $\mathcal{S}_{SE}(G):=\mathcal{S}_I(G)$ and refer to its elements as Schwartz-Bruhat functions on $G$ with *forward semi-exponential decay*.
+(1) For $I=[0,+\infty)$, we write $\mathcal{S}_{\mathrm{SE}}(G):=\mathcal{S}_I(G)$ and refer to its elements as Schwartz-Bruhat functions on $G$ with *forward semi-exponential decay*.
 
-(2) For $I=(-\infty,0]$, we write $\check{\mathcal{S}}_{SE}(G):=\mathcal{S}_I(G)$ and refer to its elements as Schwartz-Bruhat functions on $G$ with *backward semi-exponential decay*.
+(2) For $I=(-\infty,0]$, we write $\check{\mathcal{S}}_{\mathrm{SE}}(G):=\mathcal{S}_I(G)$ and refer to its elements as Schwartz-Bruhat functions on $G$ with *backward semi-exponential decay*.
 
-(3) For $I=\mathbf{R}$, we write $\mathcal{S}_E(G):=\mathcal{S}_I(G)$ and refer to its elements as Schwartz-Bruhat functions on $G$ with *exponential decay*.
+(3) For $I=\mathbf{R}$, we write $\mathcal{S}_\mathrm{E}(G):=\mathcal{S}_I(G)$ and refer to its elements as Schwartz-Bruhat functions on $G$ with *exponential decay*.
 
 For $G=\mathbf{R}_{>0}$ this definition of $\mathcal{S}_I(G)$ coincides with Definition D.3.2.1. In that special case, we saw in the proof of the Fréchet property for $\mathcal{S}_I(\mathbf{R}_{>0})$ in Lemma D.3.2.3(1) that membership in $\mathcal{S}_{[a,b]}(\mathbf{R}_{>0})$ amounts to membership in $\mathcal{S}_{\{a\}}(\mathbf{R}_{>0})$ and $\mathcal{S}_{\{b\}}(\mathbf{R}_{>0})$. The same holds in general:
 
@@ -3082,7 +3082,7 @@ $^{14}$Need to give reference for $\mathcal{S}(\mathbf{R})$ being separable.
 
 and then their countable strict inductive limit $\mathcal{S}_I(G)$, is both nuclear and complete [Scha, Ch. III, Cor. to 7.4; Ch. II, 5.3, 6.6].
 
-REMARK D.3.3.6. Let $G$ be an $\mathbf{R}_{>0}$-modulated group and $I\subset\mathbf{R}$ a non-empty interval. For every $a\in\mathbf{R}$, the linear operation $\phi\mapsto |\cdot|_G^a\cdot\phi$ carries each $\phi\in\mathcal{S}_I(G)$ to a smooth function on $G$ and so this operation takes value within $\mathcal{S}_{-a+I}(G)$. By design of the topology on $\mathcal{S}_I(G)$ and $\mathcal{S}_{-a+I}(G)$ from Definition D.3.3.1, this operator is a linear topological isomorphism $M_a:\mathcal{S}_I(G)\to\mathcal{S}_{-a+I}(G)$. In particular, $\mathcal{S}_E(G)$ is stable under multiplication by continuous quasi-characters of arbitrary exponent, and multiplication by any of them is a linear topological automorphism.
+REMARK D.3.3.6. Let $G$ be an $\mathbf{R}_{>0}$-modulated group and $I\subset\mathbf{R}$ a non-empty interval. For every $a\in\mathbf{R}$, the linear operation $\phi\mapsto |\cdot|_G^a\cdot\phi$ carries each $\phi\in\mathcal{S}_I(G)$ to a smooth function on $G$ and so this operation takes value within $\mathcal{S}_{-a+I}(G)$. By design of the topology on $\mathcal{S}_I(G)$ and $\mathcal{S}_{-a+I}(G)$ from Definition D.3.3.1, this operator is a linear topological isomorphism $M_a:\mathcal{S}_I(G)\to\mathcal{S}_{-a+I}(G)$. In particular, $\mathcal{S}_\mathrm{E}(G)$ is stable under multiplication by continuous quasi-characters of arbitrary exponent, and multiplication by any of them is a linear topological automorphism.
 
 D.3.3.1. *The main Structure Theorem on Schwartz-Bruhat functions with $I$-exponential decay.* The topological space of $\Omega(G)$ of continuous quasi-characters of any modulated group $(G,|\cdot|_G)$ is endowed with a natural structure of Riemann surface, namely the open subsets $\{|\cdot|_G^s\chi_0\}$ for $\chi_0\in\widehat{G^1}$ (these are the connected components) have the topology of either infinite cylinders (when the image of $|\cdot|_G$ is discrete) or $\mathbf{C}$ (in the $\mathbf{R}_{>0}$-modulated case). In the latter case, the connected components are the fibers of the continuous surjective restriction map $\Omega(G)\to\Omega(G^1)=\widehat{G^1}$.
 
@@ -3353,7 +3353,7 @@ D.3.3.2. Fourier-Melllin transform on $\mathcal{S}_I(G)$. We conclude this subse
 
 Theorem D.3.3.13 (Fourier-Mellin transform on $\mathcal{S}_I(G)$). Let $G$ be a second-countable $\mathbf{R}_{>0}$-modulated group. Let $I\subset\mathbf{R}$ be a non-empty open interval, and let $\mu$ be a choice of Haar measure on $G$.
 
-For $\phi\in\mathcal{S}_I(G)$, its Fourier-Mellin transform $M(\phi) : c\mapsto \int_G\phi(g)c(g)\,d\mu(g)$ for $c\in\Omega(G)$ is absolutely convergent on $\Omega(G)_I$ and is holomorphic in $c$, defining a linear map
+For $\phi\in\mathcal{S}_I(G)$, its Fourier-Mellin transform $M(\phi) : c\mapsto \int_G\phi(g)c(g)\,\mathrm{d}\mu(g)$ for $c\in\Omega(G)$ is absolutely convergent on $\Omega(G)_I$ and is holomorphic in $c$, defining a linear map
 
 $$
 M_I : \mathcal{S}_I(G)\to\mathscr{H}(\Omega(G)_I) \tag{D.3.3.11}
@@ -3364,10 +3364,10 @@ that is $G$-equivariant where we use the left-translation action of $G$ on sourc
 Under the linear topological isomorphism from (D.3.3.3), $M_I$ matches the linear topological isomorphism
 
 $$
-\check{F}_{G_1}\otimes M_I : \mathcal{S}(G^1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})\to\mathcal{S}(\widehat{G}^1)\otimes\mathcal{AS}(\mathbf{C}_I) \tag{D.3.3.12}
+\check{\mathcal{F}}_{G_1}\otimes M_I : \mathcal{S}(G^1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})\to\mathcal{S}(\widehat{G}^1)\otimes A\mathcal{S}(\mathbf{C}_I) \tag{D.3.3.12}
 $$
 
-where $F_{G_1}$ is the Fourier transform on $\mathcal{S}(G^1)$ and $\check{F}_{G^1}$ is the composition of $F_{G^1}$ with the inversion automorphism on $G^1$.
+where $\mathcal{F}_{G_1}$ is the Fourier transform on $\mathcal{S}(G^1)$ and $\check{\mathcal{F}}_{G^1}$ is the composition of $\mathcal{F}_{G^1}$ with the inversion automorphism on $G^1$.
 
 Proof. Pick a continuous section $\tau$ to $|\cdot|_G$ and use it to define a linear topological isomorphism $C^\infty(G^1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})=\mathcal{S}(G^1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})\simeq\mathcal{S}_I(G)$
 
@@ -3375,7 +3375,7 @@ Proof. Pick a continuous section $\tau$ to $|\cdot|_G$ and use it to define a li
 
 **D.3. SCHWARTZ-BRUHAT FUNCTIONS WITH I-EXPONENTIAL DECAY** · **813**
 
-from (D.3.3.3). We shall use this to show that $M(\phi)$ is absolutely convergent pointwise on $\Omega(G)_I$ and holomorphic on this open domain inside $\Omega(G)$. Scale the Haar measure on $G=G^1\times\mathbf{R}_{>0}$ to be $\mu_1\times(dt/t)$ where $\mu_1$ is the volume-$1$ Haar measure on $G^1$.
+from (D.3.3.3). We shall use this to show that $M(\phi)$ is absolutely convergent pointwise on $\Omega(G)_I$ and holomorphic on this open domain inside $\Omega(G)$. Scale the Haar measure on $G=G^1\times\mathbf{R}_{>0}$ to be $\mu_1\times(\mathrm{d}t/t)$ where $\mu_1$ is the volume-$1$ Haar measure on $G^1$.
 
 We may and do pick a compact subgroup $k\subset G^1$ such that $\phi\in\mathcal{S}_I(k,G)$, so $\phi$ arises from $C^\infty(G^1/k)\otimes\mathcal{S}_I(\mathbf{R}_{>0})=C^\infty(G^1/k)\widehat{\otimes}_\pi\mathcal{S}_I(\mathbf{R}_{>0})$ (topological isomorphism by (D.3.3.5)). By Grothendieck’s description of elements of completed projective tensor products as infinite series [Scha, Ch. III, 6.4], we have
 
@@ -3389,27 +3389,27 @@ $$
 |\phi(\tau(t)g^1)c(\tau(t)g^1)|\le\sum_{n\ge 1}B|\lambda_n||f_n(t)|t^a.
 $$
 
-We have arranged $\mu=\mu_1\times dt/t$ with $\mu_1(G^1)=1$, so for $a\in I$ we have
+We have arranged $\mu=\mu_1\times \mathrm{d}t/t$ with $\mu_1(G^1)=1$, so for $a\in I$ we have
 
 $$
-\sum_{n\ge 1}B|\lambda_n|\int_G|f_n(t)|t^a\,d\mu(g)=\sum_{n\ge 1}B|\lambda_n|\int_{\mathbf{R}_{>0}}|f_n(t)t^a|\,dt/t
+\sum_{n\ge 1}B|\lambda_n|\int_G|f_n(t)|t^a\,\mathrm{d}\mu(g)=\sum_{n\ge 1}B|\lambda_n|\int_{\mathbf{R}_{>0}}|f_n(t)t^a|\,\mathrm{d}t/t
 $$
 
-with $f_n(t)t^a\in\mathcal{S}(\mathbf{R}_{>0})$ a sequence of functions tending to $0$ in $\mathcal{S}(\mathbf{R}_{>0})$ because $f_n\to 0$ in $\mathcal{S}_I(\mathbf{R}_{>0})$ and $a\in I$. Provided the integrals $\int_{\mathbf{R}_{>0}}|f_n(t)t^a|\,dt/t$ are uniformly bounded, the convergence of $\sum_{n\ge 1}|\lambda_n|$ would then allow us to conclude by the Dominated Convergence Theorem that the integral defining $M(\phi)$ on $\Omega(G)_I$ is pointwise absolutely convergent. Thus, it suffices to show that if $\varphi_n$ is a sequence in $\mathcal{S}(\mathbf{R}_{>0})$ converging to $0$ then $\varphi_n\to 0$ in $L^1(\mathbf{R}_{>0})$. But this is immediate from the fact that the topology on $\mathcal{S}(\mathbf{R}_{>0})$ can be described using $L^1$-convergence in smooth functions and their higher derivatives (see (D.1.10.8) for $\mathbf{R}\simeq\mathbf{R}_{>0}$).
+with $f_n(t)t^a\in\mathcal{S}(\mathbf{R}_{>0})$ a sequence of functions tending to $0$ in $\mathcal{S}(\mathbf{R}_{>0})$ because $f_n\to 0$ in $\mathcal{S}_I(\mathbf{R}_{>0})$ and $a\in I$. Provided the integrals $\int_{\mathbf{R}_{>0}}|f_n(t)t^a|\,\mathrm{d}t/t$ are uniformly bounded, the convergence of $\sum_{n\ge 1}|\lambda_n|$ would then allow us to conclude by the Dominated Convergence Theorem that the integral defining $M(\phi)$ on $\Omega(G)_I$ is pointwise absolutely convergent. Thus, it suffices to show that if $\varphi_n$ is a sequence in $\mathcal{S}(\mathbf{R}_{>0})$ converging to $0$ then $\varphi_n\to 0$ in $L^1(\mathbf{R}_{>0})$. But this is immediate from the fact that the topology on $\mathcal{S}(\mathbf{R}_{>0})$ can be described using $L^1$-convergence in smooth functions and their higher derivatives (see (D.1.10.8) for $\mathbf{R}\simeq\mathbf{R}_{>0}$).
 
 The preceding method of proof of absolute convergence pointwise on $\Omega(G)_I$ also gives the pointwise equality
 
 $$
-M(\phi)(c)=\sum_{n\ge 1}\lambda_n\int_G h_n(g^1)f_n(\tau(t))c(\tau(t)g^1)\,d\mu(\tau(t)g^1) \tag{D.3.3.13}
+M(\phi)(c)=\sum_{n\ge 1}\lambda_n\int_G h_n(g^1)f_n(\tau(t))c(\tau(t)g^1)\,\mathrm{d}\mu(\tau(t)g^1) \tag{D.3.3.13}
 $$
 
 with uniform control on decay of the tail as $c$ varies in vertical strips $\Omega(G)_J$ for compact intervals $J\subset I$ since (i) the decay $t^a f_n\to 0$ in $\mathcal{S}(\mathbf{R}_{>0})$ for $a\in J$ is uniformly controlled as such $a$ varies (we only need to consider $a$ an endpoint of $J$), (ii) $\sum_{n\ge N}|\lambda_n|\to 0$ as $N\to\infty$. Thus, (D.3.3.13) converges uniformly on $\Omega(G)_J$ for compact $J\subset I$ (so uniformly on compact subsets of $\Omega(G)_I$), reducing the verification of holomorphicity to the special case $\phi=h\otimes f$ for $h\in C^\infty(G^1/k)$ and $f\in\mathcal{S}_I(\mathbf{R}_{>0})$. In such cases, with $c$ varying in the connected component of $\Omega(G)_I$ labelled by some $\omega\in\widehat{G}^1$ (i.e., $c|_{G^1}=\omega$) and using the unitary base point $\chi(\tau(t)g^1)=\omega(g^1)$ (so $c=\chi|\cdot|^s_G$) we have
 
 $$
-M(h\otimes f)(c)=\int_{G^1}h\omega\,d\mu_1\cdot\int_{\mathbf{R}_{>0}}f(t)t^s\,dt/t=(F_{G^1}(h))(1/\omega)(M_I(f))(s) \tag{D.3.3.14}
+M(h\otimes f)(c)=\int_{G^1}h\omega\,\mathrm{d}\mu_1\cdot\int_{\mathbf{R}_{>0}}f(t)t^s\,\mathrm{d}t/t=(\mathcal{F}_{G^1}(h))(1/\omega)(M_I(f))(s) \tag{D.3.3.14}
 $$
 
-where $M_I : \mathcal{S}_I(\mathbf{R})\simeq\mathcal{AS}(\mathbf{C}_I)\subset\mathscr{H}(\mathbf{C}_I)$ is as in (D.3.2.2) (the Fourier transform $F_{G^1}(h)$ is evaluated on $1/\omega=\bar\omega$ rather than $\omega$ due to the appearance of complex conjugation in Definition D.1.1.4 for the Fourier transform on locally compact abelian groups).
+where $M_I : \mathcal{S}_I(\mathbf{R})\simeq A\mathcal{S}(\mathbf{C}_I)\subset\mathscr{H}(\mathbf{C}_I)$ is as in (D.3.2.2) (the Fourier transform $\mathcal{F}_{G^1}(h)$ is evaluated on $1/\omega=\bar\omega$ rather than $\omega$ due to the appearance of complex conjugation in Definition D.1.1.4 for the Fourier transform on locally compact abelian groups).
 
 ## PDF page 814
 
@@ -3424,32 +3424,32 @@ $$
 we claim the holomorphic $M(\phi)$ is supported in the factors labeled by $k^\perp=\widehat{G^1/k}$, which is to say it arises from the subspace $\mathscr{H}(\Omega(G/k)_I)=\prod_{\omega\in\widehat{G^1/k}}\mathscr{H}(\Omega(G/k)_{I,\omega})$ embedded using $0$ along all factors not labeled by $\widehat{G^1/k}$ (note that $\Omega(G/k)_{I,\omega}=\Omega(G)_{I,\omega}$ when $\omega(k)=1$). This is a direct calculation: if $\omega|_k$ is non-trivial then for $c\in\Omega(G)_{I,\omega}$ the assumed $k$-invariance of $\phi$ implies
 
 $$
-M(\phi)(c)=\int_G\phi(g)c(g)\,d\mu(g)=\int_{G/k}\phi(g)c(g)\left(\int_k c(x)\,d\mu_k(x)\right)d\mu(g)
+M(\phi)(c)=\int_G\phi(g)c(g)\,\mathrm{d}\mu(g)=\int_{G/k}\phi(g)c(g)\left(\int_k c(x)\,\mathrm{d}\mu_k(x)\right)\mathrm{d}\mu(g)
 $$
 
-(with $g$ a representative of $g\in G/k$), and the inner integral over $k$ is $\int_k\omega\,d\mu_k=0$ since $\omega|_k$ is non-trivial. Thus, $M_I$ for $G$ is obtained as the direct limit of the corresponding Fourier-Mellin transforms for $G/k$ as $k$ varies through a countable cofinal decreasing sequence $\{k_m\}$ of compact subgroups $k\subset G^1$ with finitely generated orthogonal inside $\widehat{G}^1$. Topologically $\mathcal{S}_I(G)$ is the locally convex inductive limit of the spaces $\mathcal{S}_I(k_m,G)=\mathcal{S}_I(G/k_m)$, so by the good behavior of $\overline{\otimes}$ with respect to countable strict inductive limits (Proposition C.2.3.13(2)) we may and do now focus on each $G/k_m$ in place of $G$; i.e., we consider $G$ that is an elementary abelian Lie group (equivalently, the compact $G^1$ has compactly generated dual group).
+(with $g$ a representative of $g\in G/k$), and the inner integral over $k$ is $\int_k\omega\,\mathrm{d}\mu_k=0$ since $\omega|_k$ is non-trivial. Thus, $M_I$ for $G$ is obtained as the direct limit of the corresponding Fourier-Mellin transforms for $G/k$ as $k$ varies through a countable cofinal decreasing sequence $\{k_m\}$ of compact subgroups $k\subset G^1$ with finitely generated orthogonal inside $\widehat{G}^1$. Topologically $\mathcal{S}_I(G)$ is the locally convex inductive limit of the spaces $\mathcal{S}_I(k_m,G)=\mathcal{S}_I(G/k_m)$, so by the good behavior of $\overline{\otimes}$ with respect to countable strict inductive limits (Proposition C.2.3.13(2)) we may and do now focus on each $G/k_m$ in place of $G$; i.e., we consider $G$ that is an elementary abelian Lie group (equivalently, the compact $G^1$ has compactly generated dual group).
 
 The choice of $\tau$ identifies $\Omega(G)_I$ with $\widehat{G}^1\times\mathbf{C}_I$ for $\widehat{G}^1$ discrete, so $\mathscr{H}(\Omega(G)_I)=\prod_{\omega\in\widehat{G}^1}\mathscr{H}(\mathbf{C}_I)$. Equipping the $\omega$-component with the unitary base point $\chi(\tau(t)g^1)=\omega(g^1)$, (D.3.3.14) says that the restriction of the Fourier-Mellon transform to an elementary tensor $h\otimes f\in C^\infty(G^1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})\subset\mathcal{S}_I(G)$ is the tuple
 
 $$
-\prod_{\omega\in\widehat{G}^1}(\check{F}_{G^1}(h))(\omega)M_I(f)\in\prod_{\omega\in\widehat{G}^1}\mathcal{AS}(\mathbf{C}_I).
+\prod_{\omega\in\widehat{G}^1}(\check{\mathcal{F}}_{G^1}(h))(\omega)M_I(f)\in\prod_{\omega\in\widehat{G}^1}A\mathcal{S}(\mathbf{C}_I).
 $$
 
 For any (discrete) set $\Sigma$ and $\mathbf{C}$-vector space $V$, the natural map $\mathrm{Map}(\Sigma,\mathbf{C})\otimes V\to\prod_{\sigma\in\Sigma}V$ defined by $h\otimes v\mapsto (h(\sigma)v)$ is injective (via passage to the direct limit from the case of finite-dimensional $V$), so in particular we have
 
 $$
-\mathcal{S}(\widehat{G}^1)\otimes\mathcal{AS}(\mathbf{C}_I)\hookrightarrow\prod_{\omega\in\widehat{G}^1}\mathcal{AS}(\mathbf{C}_I)
+\mathcal{S}(\widehat{G}^1)\otimes A\mathcal{S}(\mathbf{C}_I)\hookrightarrow\prod_{\omega\in\widehat{G}^1}A\mathcal{S}(\mathbf{C}_I)
 $$
 
-and $\check{F}_{G^1}(h)\in\mathcal{S}(\widehat{G}^1)$.
+and $\check{\mathcal{F}}_{G^1}(h)\in\mathcal{S}(\widehat{G}^1)$.
 
 We have shown that the restriction of $M$ to the subspace $\mathcal{S}(G^1)\otimes\mathcal{S}(\mathbf{R}_{>0})\subset\mathcal{S}_I(G)$ is the composition of the algebraic isomorphism
 
 $$
-\check{F}_{G_1}\otimes M_I : \mathcal{S}(G^1)\otimes\mathcal{S}(\mathbf{R}_{>0})\simeq\mathcal{S}(\widehat{G}^1)\otimes\mathcal{AS}(\mathbf{C}_I)
+\check{\mathcal{F}}_{G_1}\otimes M_I : \mathcal{S}(G^1)\otimes\mathcal{S}(\mathbf{R}_{>0})\simeq\mathcal{S}(\widehat{G}^1)\otimes A\mathcal{S}(\mathbf{C}_I)
 $$
 
-followed by the injection of the latter into $\prod_{\omega\in\widehat{G}^1}\mathcal{AS}(\mathbf{C}_I)\subset\prod_{\omega\in\widehat{G}^1}\mathscr{H}(\mathbf{C}_I)=\mathscr{H}(\Omega(G)_I)$. Since the Fourier transform $\check{F}_{G^1} : \mathcal{S}(G^1)\to\mathcal{S}(\widehat{G}^1)$ is a linear topological isomorphism (Lemma D.1.6.19(2)) and likewise for $M_I : \mathcal{S}_I(\mathbf{R}_{>0})\simeq\mathcal{AS}(\mathbf{C}_I)$ by (D.3.2.2) It follows that $M$ restricts to a linear topological isomorphism $\mathcal{S}(G^1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})\simeq\mathcal{S}(\widehat{G}^1)\otimes\mathcal{AS}(\mathbf{C}_I)$
+followed by the injection of the latter into $\prod_{\omega\in\widehat{G}^1}A\mathcal{S}(\mathbf{C}_I)\subset\prod_{\omega\in\widehat{G}^1}\mathscr{H}(\mathbf{C}_I)=\mathscr{H}(\Omega(G)_I)$. Since the Fourier transform $\check{\mathcal{F}}_{G^1} : \mathcal{S}(G^1)\to\mathcal{S}(\widehat{G}^1)$ is a linear topological isomorphism (Lemma D.1.6.19(2)) and likewise for $M_I : \mathcal{S}_I(\mathbf{R}_{>0})\simeq A\mathcal{S}(\mathbf{C}_I)$ by (D.3.2.2) It follows that $M$ restricts to a linear topological isomorphism $\mathcal{S}(G^1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})\simeq\mathcal{S}(\widehat{G}^1)\otimes A\mathcal{S}(\mathbf{C}_I)$
 
 ## PDF page 815
 
@@ -3460,10 +3460,10 @@ where the two sides are given either the inductive or projective tensor product 
 We have shown via Grothendieck’s infinite series description of $\mathcal{S}(G^1)\widehat{\otimes}_\pi\mathcal{S}_I(\mathbf{R}_{>0})\simeq\mathcal{S}_I(G)$ that $M$ carries $\sum\lambda_n h_n\otimes f_n$ (for absolutely summable $\{\lambda_n\}$ and null sequences $h_n,f_n$) to the holomorphic function whose restriction to $\Omega(G)_{I,\omega}=\mathbf{C}_I$ is
 
 $$
-\sum_{n\ge 1}\lambda_n(\check{F}_{G^1}(h))(\omega)M_I(f_n).
+\sum_{n\ge 1}\lambda_n(\check{\mathcal{F}}_{G^1}(h))(\omega)M_I(f_n).
 $$
 
-Thus, it remains to show that for the complete Hausdorff locally convex topological vector space $V=\mathcal{AS}(\mathbf{C}_I)$ and the discrete finitely generated abelian group $\Gamma=\widehat{G}^1$, the unique continuous map
+Thus, it remains to show that for the complete Hausdorff locally convex topological vector space $V=A\mathcal{S}(\mathbf{C}_I)$ and the discrete finitely generated abelian group $\Gamma=\widehat{G}^1$, the unique continuous map
 
 $$
 \theta : \mathcal{S}(\Gamma)\widehat{\otimes}_\pi V\to\prod_{\gamma\in\Gamma}V
@@ -3474,7 +3474,7 @@ arising via completeness of the target [Scha, Ch. II, 5.3] and continuity of the
 The explicit description of $\theta$ on Grothendieck’s infinite series is immediate from continuity considerations, so the composite map
 
 $$
-\mathcal{S}_I(G)\simeq\mathcal{S}(G^1)\widehat{\otimes}_\pi\mathcal{S}_I(\mathbf{R}_{>0})\xrightarrow{\check{F}_{G_1}\widehat{\otimes}M_I}\mathcal{S}(\widehat{G}^1)\widehat{\otimes}_\pi\mathcal{AS}(\mathbf{C}_I)\xrightarrow{\theta}\prod_{\omega\in\widehat{G}^1}\mathscr{H}(\mathbf{C}_I)=\mathscr{H}(\Omega(G)_I)
+\mathcal{S}_I(G)\simeq\mathcal{S}(G^1)\widehat{\otimes}_\pi\mathcal{S}_I(\mathbf{R}_{>0})\xrightarrow{\check{\mathcal{F}}_{G_1}\widehat{\otimes}M_I}\mathcal{S}(\widehat{G}^1)\widehat{\otimes}_\pi A\mathcal{S}(\mathbf{C}_I)\xrightarrow{\theta}\prod_{\omega\in\widehat{G}^1}\mathscr{H}(\mathbf{C}_I)=\mathscr{H}(\Omega(G)_I)
 $$
 
 coincides with the Fourier-Mellin transform $M$. Hence, injectivity of $\theta$ is reduced to injectivity of $M$, and that in turn follows from combining injectivity of restriction of holomorphic functions to vertical lines in $\Omega(G)_I$ and injectivity of the Fourier transform on Schwartz functions. $\square$
@@ -3509,33 +3509,33 @@ $$
 p_D(c):=(Dc)(e) \tag{D.3.4.1}
 $$
 
-for $e\in G$ the neutral element (on $\widehat{G}\subset\Omega(G)$ this recovers the symbol $p(D)$ from Definition D.1.6.10). Fix a Haar measure $\mu$ on $G$ to define the Fourier-Mellin transform $M : \mathcal{S}_IG)\to\mathcal{S}_I(G)$ $M_I\to\mathscr{H}(\Omega(G)_I)$ by $M(\phi) : c\mapsto\int_G\phi(g)c(g)\,d\mu(g)$.
+for $e\in G$ the neutral element (on $\widehat{G}\subset\Omega(G)$ this recovers the symbol $p(D)$ from Definition D.1.6.10). Fix a Haar measure $\mu$ on $G$ to define the Fourier-Mellin transform $M : \mathcal{S}_IG)\to\mathcal{S}_I(G)$ $M_I\to\mathscr{H}(\Omega(G)_I)$ by $M(\phi) : c\mapsto\int_G\phi(g)c(g)\,\mathrm{d}\mu(g)$.
 
-For every bounded subset $B\subset\mathcal{S}_I(G)$ and a fixed choice of $\omega\in\widehat{G}^1$ there exist constants $C_{B,D,I}>0$ and $M_{\omega,B,D,I}>0$ such that
+For every bounded subset $\mathcal{B}\subset\mathcal{S}_I(G)$ and a fixed choice of $\omega\in\widehat{G}^1$ there exist constants $C_{\mathcal{B},D,I}>0$ and $M_{\omega,\mathcal{B},D,I}>0$ such that
 
 $$
-|M(\phi)(c)|\le\frac{C_{B,D,I}}{|p_D(c)|} \tag{D.3.4.2}
+|M(\phi)(c)|\le\frac{C_{\mathcal{B},D,I}}{|p_D(c)|} \tag{D.3.4.2}
 $$
 
-for all $\phi\in B$ and all $c\in\Omega(G)_{I,\omega}$ such that $|p_D(c)|\ge M_{\omega,B,D,I}$.
+for all $\phi\in \mathcal{B}$ and all $c\in\Omega(G)_{I,\omega}$ such that $|p_D(c)|\ge M_{\omega,\mathcal{B},D,I}$.
 
-Proof. We let $a_1,\dots,a_n : \mathbf{R}\to G$ be $1$-parameter subgroups that give a basis for $\mathfrak{L}(G)$ ($n\ge 1$ since $G$ is $\mathbf{R}_{>0}$-modulated), so $D=\sum b_J\partial^J_a$ as a sum over finitely many multi-indices $J=(j_1,\dots,j_n)$ with $b_J\in\mathbf{C}$ and $j_i\in\mathbf{N}$, where $\partial^J_a:=\partial^{j_1}_{a_1}\cdots\partial^{j_n}_{a_n}$. Suppose there are $N$ terms occurring in $D$, so for any $c\in\Omega(G)$ we have
+Proof. We let $a_1,\dots,a_n : \mathbf{R}\to G$ be $1$-parameter subgroups that give a basis for $\mathcal{L}(G)$ ($n\ge 1$ since $G$ is $\mathbf{R}_{>0}$-modulated), so $D=\sum b_J\partial^J_a$ as a sum over finitely many multi-indices $J=(j_1,\dots,j_n)$ with $b_J\in\mathbf{C}$ and $j_i\in\mathbf{N}$, where $\partial^J_a:=\partial^{j_1}_{a_1}\cdots\partial^{j_n}_{a_n}$. Suppose there are $N$ terms occurring in $D$, so for any $c\in\Omega(G)$ we have
 
 $$
 |p_D(c)|\le\sum|b_J||p_{\partial^J_a}(c)|\le N\max_J|b_J||p_{\partial^J_a}(c)|.
 $$
 
-Note that $N$ is independent of $c$, but the multi-index $J_c$ for which $|b_J||p_{\partial^J_a}(c)|$ is maximized may depend on $c$. If we can settle the case of the operators $\partial^J_a$, and let $C'_{B,D,I}$ be the maximum of the constants $|b_J|C_{B,\partial^J_a,I}$ and $M_{\omega,B,D,I}$ be the maximum of the constants $N|b_J|M_{\omega,B,\partial^J_a,I}$ then for any $\phi\in B$ and $c\in\Omega(G)_{I,\omega}$ with $|p_D(c)|\ge M_{\omega,B,D,I}$ we have
+Note that $N$ is independent of $c$, but the multi-index $J_c$ for which $|b_J||p_{\partial^J_a}(c)|$ is maximized may depend on $c$. If we can settle the case of the operators $\partial^J_a$, and let $C'_{\mathcal{B},D,I}$ be the maximum of the constants $|b_J|C_{\mathcal{B},\partial^J_a,I}$ and $M_{\omega,\mathcal{B},D,I}$ be the maximum of the constants $N|b_J|M_{\omega,\mathcal{B},\partial^J_a,I}$ then for any $\phi\in \mathcal{B}$ and $c\in\Omega(G)_{I,\omega}$ with $|p_D(c)|\ge M_{\omega,\mathcal{B},D,I}$ we have
 
 $$
-|M(\phi)(c)|\le\frac{C'_{B,D,I}}{\max|b_J||p_{\partial^J_a}(c)|}\le\frac{NC'_{B,D,I}}{|p_D(c)|}.
+|M(\phi)(c)|\le\frac{C'_{\mathcal{B},D,I}}{\max|b_J||p_{\partial^J_a}(c)|}\le\frac{NC'_{\mathcal{B},D,I}}{|p_D(c)|}.
 $$
 
-Thus, $C_{B,D,I}:=NC'_{B,D,I}$ and $M_{\omega,B,D,I}$ do the job for $D$.
+Thus, $C_{\mathcal{B},D,I}:=NC'_{\mathcal{B},D,I}$ and $M_{\omega,\mathcal{B},D,I}$ do the job for $D$.
 
-Now we may and do assume $D=\partial^{r_1}_{a_1}\cdots\partial^{r_n}_{a_n}$ for some exponents $r_i\in\mathbf{N}$. Next we reduce to the case that $G$ is an elementary abelian Lie group. By second-countability, there is a cofinal decreasing sequence $\{k_m\}$ of compact subgroups of $G$ with compactly generated orthogonal such that $\mathcal{S}_I(G)=\varinjlim_m\mathcal{S}_I(k_m,G)$ as a countable strict inductive limit, so $B\subset\mathcal{S}_I(k_{m_0},G)$ for some $m_0$ by [Scha, Ch. II, 6.5]. Increasing $m_0$ if necessary allows us to also arrange that $\omega(k_{m_0})=1$. In particular, for $k=k_{m_0}$ we see that every $\phi\in B$ is $k$-invariant and $\omega\in\widehat{(G/k)}^1$. Clearly also $D(\phi)$ is $k$-invariant since $D$ is an invariant differential operator, and $D(\phi)\in\mathcal{S}_I(G)$ by Remark D.3.4.1, so $D(\phi)\in\mathcal{S}_I(k,G)\simeq\mathcal{S}_I(G/k)$. The quotient $G/k$ is an elementary abelian Lie group and it is $\mathbf{R}_{>0}$-modulated because $k\subset G^1$.
+Now we may and do assume $D=\partial^{r_1}_{a_1}\cdots\partial^{r_n}_{a_n}$ for some exponents $r_i\in\mathbf{N}$. Next we reduce to the case that $G$ is an elementary abelian Lie group. By second-countability, there is a cofinal decreasing sequence $\{k_m\}$ of compact subgroups of $G$ with compactly generated orthogonal such that $\mathcal{S}_I(G)=\varinjlim_m\mathcal{S}_I(k_m,G)$ as a countable strict inductive limit, so $\mathcal{B}\subset\mathcal{S}_I(k_{m_0},G)$ for some $m_0$ by [Scha, Ch. II, 6.5]. Increasing $m_0$ if necessary allows us to also arrange that $\omega(k_{m_0})=1$. In particular, for $k=k_{m_0}$ we see that every $\phi\in \mathcal{B}$ is $k$-invariant and $\omega\in\widehat{(G/k)}^1$. Clearly also $D(\phi)$ is $k$-invariant since $D$ is an invariant differential operator, and $D(\phi)\in\mathcal{S}_I(G)$ by Remark D.3.4.1, so $D(\phi)\in\mathcal{S}_I(k,G)\simeq\mathcal{S}_I(G/k)$. The quotient $G/k$ is an elementary abelian Lie group and it is $\mathbf{R}_{>0}$-modulated because $k\subset G^1$.
 
-For any $1$-parameter subgroup $b : \mathbf{R}\to G$ with composite $1$-parameter subgroup $\bar b : \mathbf{R}\to G/k$, we have $(\partial_b\phi)(x)=\lim_{t\to 0}\frac{\phi(b(t)x)-\phi(x)}{t}=(\partial_{\bar b}\bar\phi)(x\bmod k)$ for $\bar\phi : G/k\to\mathbf{C}$ the corresponding element of $\mathcal{S}_I(G/k)$ (see Lemma D.1.5.4). Thus, $D(\phi)\in\mathcal{S}_I(k,G)$ corresponding to $\bar D(\bar\phi)\in\mathcal{S}_I(G/k)$ where $\bar D:=\partial^{r_1}_{\bar a_1}\cdots\partial^{r_n}_{\bar a_n}$ as an invariant differential operator on $C^\infty(G/k)$. (The $\bar a_i$’s may merely span $\mathfrak{L}(G/k)$ rather than be a basis for it, but that doesn’t matter because once we reduce to studying $D$ and $B\subset\mathcal{S}_I(G/k)$ we can go again through the reduction to a product among the first-order operators associated to a basis of $\mathfrak{L}(G/k)$.)
+For any $1$-parameter subgroup $b : \mathbf{R}\to G$ with composite $1$-parameter subgroup $\bar b : \mathbf{R}\to G/k$, we have $(\partial_b\phi)(x)=\lim_{t\to 0}\frac{\phi(b(t)x)-\phi(x)}{t}=(\partial_{\bar b}\bar\phi)(x\bmod k)$ for $\bar\phi : G/k\to\mathbf{C}$ the corresponding element of $\mathcal{S}_I(G/k)$ (see Lemma D.1.5.4). Thus, $D(\phi)\in\mathcal{S}_I(k,G)$ corresponding to $\bar D(\bar\phi)\in\mathcal{S}_I(G/k)$ where $\bar D:=\partial^{r_1}_{\bar a_1}\cdots\partial^{r_n}_{\bar a_n}$ as an invariant differential operator on $C^\infty(G/k)$. (The $\bar a_i$’s may merely span $\mathcal{L}(G/k)$ rather than be a basis for it, but that doesn’t matter because once we reduce to studying $D$ and $\mathcal{B}\subset\mathcal{S}_I(G/k)$ we can go again through the reduction to a product among the first-order operators associated to a basis of $\mathcal{L}(G/k)$.)
 
 By using Weil’s coset integration formula from Theorem D.1.2.1 exactly as in the passage to elementary abelian Lie groups in the proof of Theorem D.3.3.13, we see from the $k$-invariance of $\phi$ that $M(\phi)(c)=0$
 
@@ -3547,7 +3547,7 @@ except possibly when $c\in k^\perp=\widehat{G/k}$, and that if $c\in k^\perp$ th
 
 Since $G$ is $\mathbf{R}_{>0}$-modulated, any choice $\tau$ of continuous homomorphic section to the module $|\cdot|_G$ induces an isomorphism of Hausdorff locally compact abelian groups $G\simeq\mathbf{R}_{>0}\times G^1$, and hence the compact Hausdorff abelian group $G^1=\ker(|\cdot|_G)$ is an elementary abelian Lie group: $G^1\simeq\mathbf{T}^m\times F$ for an integer $m=n-1\ge 0$ and a finite abelian group $F$ (with $\mathbf{T}=\mathbf{R}/\mathbf{Z}$). We have $F=\pi_0(G)$ and the $1$-parameter subgroups of $G$ are all contained in the identity component, so by treating the restrictions of $\phi$ to each of the finitely many connected components of $G$ separately we may and do assume $G$ is connected: $G=\mathbf{R}_{>0}\times\mathbf{T}^m$.
 
-Now $\mathcal{S}_I(G)\simeq\mathcal{S}_I(\mathbf{R}_{>0})\otimes\mathcal{S}(\mathbf{T}^m)\simeq\mathcal{S}_I(\mathbf{R}_{>0})\widehat{\otimes}_\pi\mathcal{S}(\mathbf{T}^m)$ where both tensor factors are Fréchet spaces. Since $\mathcal{S}_I(G)$ is Montel (Theorem D.3.3.7), the closure of $B$ (which is also bounded [Scha, Ch. I, 5.1]) is compact. Thus, by [Tre, Cor. 2 to Thm. 45.2] there are compact subsets $K_1\subset\mathcal{S}_I(\mathbf{R}_{>0})$ and $K_2\subset\mathcal{S}(\mathbf{T}^m)$ such that $B$ is contained in the closure $\mathrm{cch}(K_1\otimes K_2)$ of the convex circled hull of the set of elementary tensors $f_1\otimes f_2$ for $f_1\in K_1$ and $f_2\in K_2$. If a constant $C_{B,D,I}$ can be found that works for all such elementary tensors then it also works for their circled hull as well as for all convex combinations from the circled hull, and then for the closure thereof. In other words, it suffices to treat the case $\phi=f_1\otimes f_2$. Writing $c=c_1\otimes\omega$ for $c_1\in\Omega(\mathbf{R}_{>0})_I$, we have $M(\phi)(c)=M(f_1)(c_1)M(f_2)(\omega)$ (for a choice of Haar measures on $\mathbf{R}_{>0}$ and $G^1$ whose product measure is the chosen one on $G$).
+Now $\mathcal{S}_I(G)\simeq\mathcal{S}_I(\mathbf{R}_{>0})\otimes\mathcal{S}(\mathbf{T}^m)\simeq\mathcal{S}_I(\mathbf{R}_{>0})\widehat{\otimes}_\pi\mathcal{S}(\mathbf{T}^m)$ where both tensor factors are Fréchet spaces. Since $\mathcal{S}_I(G)$ is Montel (Theorem D.3.3.7), the closure of $\mathcal{B}$ (which is also bounded [Scha, Ch. I, 5.1]) is compact. Thus, by [Tre, Cor. 2 to Thm. 45.2] there are compact subsets $K_1\subset\mathcal{S}_I(\mathbf{R}_{>0})$ and $K_2\subset\mathcal{S}(\mathbf{T}^m)$ such that $\mathcal{B}$ is contained in the closure $\mathrm{cch}(K_1\otimes K_2)$ of the convex circled hull of the set of elementary tensors $f_1\otimes f_2$ for $f_1\in K_1$ and $f_2\in K_2$. If a constant $C_{\mathcal{B},D,I}$ can be found that works for all such elementary tensors then it also works for their circled hull as well as for all convex combinations from the circled hull, and then for the closure thereof. In other words, it suffices to treat the case $\phi=f_1\otimes f_2$. Writing $c=c_1\otimes\omega$ for $c_1\in\Omega(\mathbf{R}_{>0})_I$, we have $M(\phi)(c)=M(f_1)(c_1)M(f_2)(\omega)$ (for a choice of Haar measures on $\mathbf{R}_{>0}$ and $G^1$ whose product measure is the chosen one on $G$).
 
 Writing $D=D_1\otimes D_2$ on $\mathcal{S}_I(G)=\mathcal{S}_I(\mathbf{R}_{>0})\otimes\mathcal{S}(G^1)$ (where $D_1=(t\partial_t)^{r_1}$ for some integer $r_1\ge 0$ and $D_2$ is a product of $r_2\ge 0$ operators $\partial_{z_j}$’s — with repetition allowed — among the $\partial_{z_j}$’s for $(z_1,\dots,z_m)$ the standard coordinates on $G^1=\mathbf{T}^m$), clearly
 
@@ -3560,10 +3560,10 @@ Since $p_{D_2}(\omega)$ is a fixed value (as $D$ and $\omega$ are fixed), keepin
 For $G=\mathbf{R}_{>0}$ we have $c(t)=t^s$ for $s\in\mathbf{C}_I$, so then $p_{(t\partial_t)^r}(c)=s^r$. Since $|s^r|/|\mathrm{Im}(s)|^r$ is uniformly bounded above on the region when $|\mathrm{Im}(s)|$ stays above a chosen $\delta>0$, requiring $|p_D(c)|\ge(\delta+\max(|a|,|b|))^r$ where $I=(a,b)$ ensures $|\mathrm{Im}(s)|\ge\delta$, Thus, we can use Proposition B.2.2.3(2) provided the constant there (which depends on $\phi$, as seen at the end of its proof) is bounded independently of $\phi$ varying in a compact subset $K\subset\mathcal{S}_I(\mathbf{R})$. By construction the constant there can be taken to be
 
 $$
-\|t^a(t\partial_t)^r(\phi)\|_{L^1(\mathbf{R}_{>0},dt/t)}+\|t^b(t\partial_t)^r(\phi)\|_{L^1(\mathbf{R}_{>0},dt/t)}
+\|t^a(t\partial_t)^r(\phi)\|_{L^1(\mathbf{R}_{>0},\mathrm{d}t/t)}+\|t^b(t\partial_t)^r(\phi)\|_{L^1(\mathbf{R}_{>0},\mathrm{dt}/t)}
 $$
 
-where $I=(a,b)$. This constant is bounded for $\phi$ varying through a compact subset of $\mathcal{S}_I(\mathbf{R}_{>0})$ because $\mathcal{S}_{[a,b]}(\mathbf{R}_{>0})\to\mathcal{S}(\mathbf{R}_{>0})\times\mathcal{S}(\mathbf{R}_{>0})$ via $\phi\mapsto(t^a\phi,t^b\phi)$ is a topological embedding and the seminorm $f\mapsto\|(t\partial_t)^r(f)\|_{L^1(\mathbf{R}_{>0},dt/t)}$ on $\mathcal{S}(\mathbf{R}_{>0})$ is among a collection of seminorms defining the topology on $\mathcal{S}(\mathbf{R}_{>0})$ (see (D.1.10.7) applied to $\mathbf{R}\simeq\mathbf{R}_{>0}$).
+where $I=(a,b)$. This constant is bounded for $\phi$ varying through a compact subset of $\mathcal{S}_I(\mathbf{R}_{>0})$ because $\mathcal{S}_{[a,b]}(\mathbf{R}_{>0})\to\mathcal{S}(\mathbf{R}_{>0})\times\mathcal{S}(\mathbf{R}_{>0})$ via $\phi\mapsto(t^a\phi,t^b\phi)$ is a topological embedding and the seminorm $f\mapsto\|(t\partial_t)^r(f)\|_{L^1(\mathbf{R}_{>0},\mathrm{d}t/t)}$ on $\mathcal{S}(\mathbf{R}_{>0})$ is among a collection of seminorms defining the topology on $\mathcal{S}(\mathbf{R}_{>0})$ (see (D.1.10.7) applied to $\mathbf{R}\simeq\mathbf{R}_{>0}$).
 
 ## PDF page 818
 
@@ -3572,14 +3572,14 @@ where $I=(a,b)$. This constant is bounded for $\phi$ varying through a compact s
 Now consider $G=\mathbf{T}=\mathbf{R}/\mathbf{Z}$ equipped with the volume-$1$ Haar measure. We have $\omega(z)=e^{2\pi imz}$ for some $m\in\mathbf{Z}$, so for $D=\partial^r_z$ we have $p_D(\omega)=(2\pi im)^r$. Thus, we may assume $m\ne 0$ and then integrating by parts $r$ times gives
 
 $$
-M(\phi)(z^m)=\int_0^1\phi(x)e^{2\pi imx}\,dx=-\frac{1}{2\pi im}\int_0^1(\partial_x\phi)(x)e^{2\pi imx}\,dx=\cdots=\left(\frac{-1}{2\pi im}\right)^r\int_0^1(\partial^r_x\phi)(x)e^{2\pi imx}\,dx
+M(\phi)(z^m)=\int_0^1\phi(x)e^{2\pi imx}\,\mathrm{d}x=-\frac{1}{2\pi im}\int_0^1(\partial_x\phi)(x)e^{2\pi imx}\,\mathrm{d}x=\cdots=\left(\frac{-1}{2\pi im}\right)^r\int_0^1(\partial^r_x\phi)(x)e^{2\pi imx}\,\mathrm{d}x
 $$
 
 since $\phi$ is $1$-periodic. We are then done using the constant $C_K=(2\pi|m|)^{-r}\sup_{\phi\in K}\|D\phi\|_{L^1(\mathbf{T})}$ provided this is finite (as $\phi$ varies through a compact subset $K\subset\mathcal{S}(\mathbf{T})$). The seminorm $\phi\mapsto\|D(\phi)\|_{L^1(\mathbf{T})}$ on $\mathcal{S}(\mathbf{T})$ is among a collection of seminorms defining the topology on $\mathcal{S}(\mathbf{T})$ as in (D.1.10.10) (with $p=1$ there), so it is bounded on compact subsets of $L^1(\mathbf{T})$. $\square$
 
 D.3.5. Poisson Summation Formula on $\mathbf{R}_{>0}$-modulated groups: isolated singularities. Let $G$ be a Hausdorff locally compact abelian group, $\mu_G$ a choice of Haar measure on $G$. The Poisson Summation Formula (see (D.1.2.8)) holds everywhere on $G$ — rather than only $\mu_G$-almost everywhere — in the presence of continuity hypotheses as in Theorem D.1.2.7(3). We now give a class of functions with finitely many isolated singularities and smooth everywhere else for which the Formula holds everywhere over $G$ upon redefining the function at singular points as the arithmetic mean of suitable “one-sided” limit values.
 
-Now let $(G,|\cdot|_G)$ be an $\mathbf{R}_{>0}$-modulated group equipped with the canonical Haar measure $\mu_G$ that is the unique one such that, upon denoting by $\mu_1$ the volume-$1$ Haar measure on $G^1$, the unique Haar measure obtained on $G/G^1\simeq\mathbf{R}_{>0}$ (the isomorphism being the module $|\cdot|_G$) as per Theorem D.1.2.1 is $dt/t$ on $\mathbf{R}_{>0}$.
+Now let $(G,|\cdot|_G)$ be an $\mathbf{R}_{>0}$-modulated group equipped with the canonical Haar measure $\mu_G$ that is the unique one such that, upon denoting by $\mu_1$ the volume-$1$ Haar measure on $G^1$, the unique Haar measure obtained on $G/G^1\simeq\mathbf{R}_{>0}$ (the isomorphism being the module $|\cdot|_G$) as per Theorem D.1.2.1 is $\mathrm{d}t/t$ on $\mathbf{R}_{>0}$.
 
 Proposition D.3.5.1 (Poisson Summation Formula - jump singularities on $\mathbf{R}_{>0}$-modulated groups). Let $G$ be an $\mathbf{R}_{>0}$-modulated group with module $|\cdot|_G$. Let $\mu_G$ be the canonical Haar measure on $G$. Let $\gamma\in G$ be an element satisfying $|\gamma|_G>1$. Let $\chi_0\in\widehat{G}$ be a continuous (unitary) character, and let $\tau : \mathbf{R}_{>0}\to G$ be a choice of continuous homomorphic section to the module $|\cdot|_G$.
 
@@ -3636,7 +3636,7 @@ Proof of Proposition D.3.5.1. We observe that for each $x\in G$, writing $x=\tau
 We define $\psi(x):=\chi_0(x)\phi(x)$, for $x\in G$; this is invariant under left-translation by $G^1$, so for $x\in G$ the value $\psi(x)$ only depends on $|x|_G$. Note that $\psi$ also satisfies (D.3.5.1) since $\chi_0$ is unitary. We have
 
 $$
-\widehat{\psi}(\chi)=\int_G\psi(y)\chi(y)\,d\mu_G(y)=\int_{\mathbf{R}_{>0}}\psi(\tau(t))\chi(\tau(t))\,\frac{dt}{t}=\int_{G^1}\chi(g)\,d\mu_1(g) \tag{D.3.5.5}
+\widehat{\psi}(\chi)=\int_G\psi(y)\chi(y)\,\mathrm{d}\mu_G(y)=\int_{\mathbf{R}_{>0}}\psi(\tau(t))\chi(\tau(t))\,\frac{\mathrm{d}t}{t}=\int_{G^1}\chi(g)\,\mathrm{d}\mu_1(g) \tag{D.3.5.5}
 $$
 
 and the rightmost side of (D.3.5.5) is nonzero only if $\chi|_{G^1}=1$. The identity in (D.3.5.3) therefore follows from Proposition B.4.1.2 applied to $\psi\circ\tau$ and (in the notation of the Proposition) $\chi=1$, $\theta=|\gamma|_G$ upon rewriting the hypotheses on $\phi$ in terms of $\psi$. $\square$

@@ -76,7 +76,7 @@ We refer the reader to [Tate, §1,pp.3,4], to Artin and Tate’s treatise on Cla
 
 We further refer the reader to Langlands’ notes on Artin $L$-functions (see [Langlands, Ch.20]), where Weil’s generalization of Artin $L$-functions is defined and their basic properties summarized.
 
-The construction of the Weil group $W_F$ is carried out in [AT, Ch.XV] and rests upon the formalism of (topological class formations). The group $W_{E/F}$ is a topological extension of $\mathrm{Gal}(E/F)$ by $C_E$, classified by a class $\alpha_{E/F}\in H^2(\mathrm{Gal}(E/F),C_E)$, which turns out to agree (granting the existence of a Weil group for the topological class formation [AT, Ch.XV,Def.3,p.175]) with the fundamental class of Class Field Theory, or can be defined to be such fundamental class, for then deducing the existence of a Weil group as a projective limit topological group of the extensions classified by $\alpha_{E/F}$, whose properties and functorialities follow from the cohomological formalism discussed in [AT, Ch.XIII,XIV].
+The construction of the Weil group $W_F$ is carried out in [AT, Ch.XV] and rests upon the formalism of (topological class formations). The group $W_{E/F}$ is a topological extension of $\mathrm{Gal}(E/F)$ by $C_E$, classified by a class $\alpha_{E/F}\in \mathrm{H}^2(\mathrm{Gal}(E/F),C_E)$, which turns out to agree (granting the existence of a Weil group for the topological class formation [AT, Ch.XV,Def.3,p.175]) with the fundamental class of Class Field Theory, or can be defined to be such fundamental class, for then deducing the existence of a Weil group as a projective limit topological group of the extensions classified by $\alpha_{E/F}$, whose properties and functorialities follow from the cohomological formalism discussed in [AT, Ch.XIII,XIV].
 
 We collect the most important facts about Weil groups throughout the Proposition below:
 
@@ -437,7 +437,7 @@ The integer $m_F(\chi)$ satisfies $m_F(\chi)\le [F:\mathbf Q]$ by Theorem 7.1.3.
 
 In fact, it likely is, since, proceeding heuristically by comparison with a form of Chebotarev (for which we refer the reader to [Moroz, Appendix 1,Thm.2,p.68] and [KleMo, Thm.4]), a reasonable expectation, under the assumption of the holomorphy of the Artin-Weil $L$-functions of non-trivial irreducible finite dimensional continuous complex representations of $W_{\mathbf Q}$, for the probability that a prime number $p$ below $x>0$ will be such that $m_p$ attains the maximum allowed value of $[F:\mathbf Q]$, is:
 $$
-\frac{\mu_{S_\infty,1}(U)}{[F:\mathbf Q]}\int_2^x\frac{dy}{\log(y)}
+\frac{\mu_{S_\infty,1}(U)}{[F:\mathbf Q]}\int_2^x\frac{\mathrm{d}y}{\log(y)}
 $$
 where $U\subset\mathrm{GL}_1(\mathbf A_{F,S_\infty})^1/\mathcal O_F^\times$ is the image in $\mathrm{GL}_1(\mathbf A_{F,S_\infty})^1/\mathcal O_F^\times$ of the maximal closed subset of $\mathrm{GL}_1(\mathbf A_{F,S_\infty})^1$ on which the restriction of $\chi$ to $\mathrm{GL}_1(\mathbf A_{F,S_\infty})^1$ is trivial, and $\mu_{S_\infty}$ is the multiplicative Tamagawa measure on $\mathrm{GL}_1(\mathbf A_{F,S_\infty})$, with $\mu_{S_\infty,1}$ the Haar measure on the closed subgroup $\mathrm{GL}_1(\mathbf A_{F,S_\infty})^1$ obtained by choosing a continuous homomorphic section to the $S_\infty$-idelic norm.
 

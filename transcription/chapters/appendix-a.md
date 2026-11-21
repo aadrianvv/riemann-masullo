@@ -46,7 +46,7 @@ A.2. Orbital structures on adeles and ideles 545
 
 A.2.1. Fundamental domain of the additive $F$-translation action on $\mathbf{A}_F$ 545
 
-A.2.1.1. The adelic fundamental domain $\mathcal{F}$. 545
+A.2.1.1. The adelic fundamental domain $F$. 545
 
 A.2.2. Continuous homomorphic sections to the idelic norm 546
 
@@ -691,13 +691,13 @@ of $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$.
 We define
 
 $$
-L : \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}}) \to \mathbf{R}^{S_{\infty}} \tag{A.2.3.3}
+\mathscr{L} : \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}}) \to \mathbf{R}^{S_{\infty}} \tag{A.2.3.3}
 $$
 
 as the map
 
 $$
-L(g_{\infty}) := (\log|g_v|_v)_{v\in S_{\infty}} : \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}}) \to \mathbf{R}^{S_{\infty}} \tag{A.2.3.4}
+\mathscr{L}(g_{\infty}) := (\log|g_v|_v)_{v\in S_{\infty}} : \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}}) \to \mathbf{R}^{S_{\infty}} \tag{A.2.3.4}
 $$
 
 which is a surjective continuous homomorphism of abelian topological groups. The following is elementary.
@@ -708,13 +708,13 @@ $$
 H_{\log} := \{(x_v)_{v\in S_{\infty}} \in \mathbf{R}^{S_{\infty}} : \sum_{v\in S_{\infty}} x_v = 0\} \subset \mathbf{R}^{S_{\infty}} \tag{A.2.3.5}
 $$
 
-the map $L$ from (A.2.3.3) satisfies the following conditions:
+the map $\mathscr{L}$ from (A.2.3.3) satisfies the following conditions:
 
-(1) $L$ is a continuous group homomorphism, and $L(\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1) \subset H_{\log}$.
+(1) $\mathscr{L}$ is a continuous group homomorphism, and $\mathscr{L}(\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1) \subset H_{\log}$.
 
-(2) $L$ is a smooth submersion whose kernel is isomorphic, as a Lie group, to the compact Lie group $(\pm 1)^{r_1} \times U(1)^{r_2}$.
+(2) $\mathscr{L}$ is a smooth submersion whose kernel is isomorphic, as a Lie group, to the compact Lie group $(\pm 1)^{r_1} \times \mathrm{U}(1)^{r_2}$.
 
-(3) $L$ is a proper smooth submersion.
+(3) $\mathscr{L}$ is a proper smooth submersion.
 
 Definition A.2.3.3. Let $F$ be a number field. We define the regulator homomorphism to be the restriction
 
@@ -722,7 +722,7 @@ $$
 \mathrm{Reg} : \mathcal{O}_F^{\times} \to H_{\log} \tag{A.2.3.6}
 $$
 
-of $L$ from (A.2.3.3) to $\mathcal{O}_F^{\times} \subset \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$.
+of $\mathscr{L}$ from (A.2.3.3) to $\mathcal{O}_F^{\times} \subset \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$.
 
 Lemma A.2.3.4. Let $F$ be a number field. The regulator homomorphism satisfies the following conditions:
 
@@ -745,13 +745,13 @@ $$
 a $\mathbf{Z}$-basis for the finite free $\mathbf{Z}$-module $\mathcal{O}_F^{\times}/\mu_F$, for any $g_{\infty} \in \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$ there exist unique real numbers $\{x_i\}_{1\le i\le r_1+r_2-1}$ such that
 
 $$
-L(g) = \sum_{i=1}^{r_1+r_2-1} x_i L(\varepsilon_i) \tag{A.2.3.8}
+\mathscr{L}(g) = \sum_{i=1}^{r_1+r_2-1} x_i \mathscr{L}(\varepsilon_i) \tag{A.2.3.8}
 $$
 
-and a fundamental domain for the left translation action of $L(\mathcal{O}_F^{\times})$ on $L(\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1) \simeq \mathbf{R}^{r_1+r_2-1}$ is given by the parallelotope
+and a fundamental domain for the left translation action of $\mathscr{L}(\mathcal{O}_F^{\times})$ on $\mathscr{L}(\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1) \simeq \mathbf{R}^{r_1+r_2-1}$ is given by the parallelotope
 
 $$
-P = \left(\sum_{i=1}^{r_1+r_2-1} x_i L(\varepsilon_i) : (x_i) \in Q\right) \tag{A.2.3.9}
+P = \left(\sum_{i=1}^{r_1+r_2-1} x_i \mathscr{L}(\varepsilon_i) : (x_i) \in Q\right) \tag{A.2.3.9}
 $$
 
 where $Q$ is the hypercube
@@ -781,7 +781,7 @@ such that their images represent each of the $h_F$ elements of $\mathrm{Pic}(\ma
 Definition A.2.3.6. Let $F$ be a number field, $v_0$ a choice of Archimedean place of $F$. We define
 
 $$
-E_0 := \{g \in L^{-1}(P) : \arg(\iota_{v_0}(g_{v_0})) \in [0,2\pi/w_F)\} \subset L^{-1}(P) \tag{A.2.3.13}
+E_0 := \{g \in \mathscr{L}^{-1}(P) : \arg(\iota_{v_0}(g_{v_0})) \in [0,2\pi/w_F)\} \subset \mathscr{L}^{-1}(P) \tag{A.2.3.13}
 $$
 
 and
@@ -824,7 +824,7 @@ $$
 \xi E_0 \cap E_0 = \emptyset \tag{A.2.3.17}
 $$
 
-where $\mathcal{O}_F^{\times}$ is diagonally embedded into $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$. Moreover, $L^{-1}(P) = \mu_F E_0$.
+where $\mathcal{O}_F^{\times}$ is diagonally embedded into $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$. Moreover, $\mathscr{L}^{-1}(P) = \mu_F E_0$.
 
 (3) Upon denoting by $\overline{E}_0$ the closure of $E_0 \subset \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$, for any compact subset $K \subset \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$ there exist at most finitely many elements $\xi \in \mathcal{O}_F^{\times}$ such that
 
@@ -842,9 +842,9 @@ $$
 
 which is the kernel of the continuous group homomorphism $|\cdot|_{\infty} := \prod_{v\in S_{\infty}} |\cdot|_v : \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}}) \to \mathbf{R}_{>0}$.
 
-Further recall that the continuous group homomorphism $L : \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}}) \to \mathbf{R}^{S_{\infty}}$ from (A.2.3.3) is a smooth and surjective.
+Further recall that the continuous group homomorphism $\mathscr{L} : \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}}) \to \mathbf{R}^{S_{\infty}}$ from (A.2.3.3) is a smooth and surjective.
 
-The parallelotope $P$ from (A.2.3.9) within the hyperplane $H_{\log}$ is relatively compact and has non-empty interior (see Lemma A.2.3.5(1)), so the pre-image $L^{-1}(P)$ also has non-empty interior within the pre-image $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1 = L^{-1}(H_{\log})$.
+The parallelotope $P$ from (A.2.3.9) within the hyperplane $H_{\log}$ is relatively compact and has non-empty interior (see Lemma A.2.3.5(1)), so the pre-image $\mathscr{L}^{-1}(P)$ also has non-empty interior within the pre-image $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1 = \mathscr{L}^{-1}(H_{\log})$.
 
 We now choose an enumeration of the finite set of Archimedean places of $F$:
 
@@ -856,10 +856,10 @@ where $v_0$ is a choice of Archimedean place made to define the closed subgroup 
 
 The choice of the ordering in (A.2.3.19), along with that of isomorphisms of topological fields $\iota_v : F_v \simeq \mathbf{R}$ if $v$ is real, $\iota_v : F_v \simeq \mathbf{C}$ if $v$ is complex (the same which, for $v = v_0$, were used in the definition of $s_{F,v_0}$ in Definition A.2.2.10) induces an isomorphism of $\mathbf{R}$-vector spaces $\mathbf{R}^{S_{\infty}} \simeq \mathbf{R}^{r_1+r_2}$ (upon choosing within each $F_v$ the $\mathbf{R}$-linear basis given by $1$ if $v$ is real, and $1$, $\iota_v^{-1}(i)$ if $v$ is complex).
 
-The subset $E_0 \subset L^{-1}(P)$ was defined by the condition $\arg(\iota_{v_0}(g_{v_0})) \in [0,2\pi/w_F)$ for $g \in L^{-1}(P)$ in (A.2.3.13) of Definition A.2.3.6. In other words, we have
+The subset $E_0 \subset \mathscr{L}^{-1}(P)$ was defined by the condition $\arg(\iota_{v_0}(g_{v_0})) \in [0,2\pi/w_F)$ for $g \in \mathscr{L}^{-1}(P)$ in (A.2.3.13) of Definition A.2.3.6. In other words, we have
 
 $$
-E_0 = L^{-1}(P) \cap \left(\iota_{v_0}^{-1}(\mathbf{R}_{>0}) \times \prod_{k=1}^{r_1+r_2-1} F_{v_k}^{\times}\right). \tag{A.2.3.20}
+E_0 = \mathscr{L}^{-1}(P) \cap \left(\iota_{v_0}^{-1}(\mathbf{R}_{>0}) \times \prod_{k=1}^{r_1+r_2-1} F_{v_k}^{\times}\right). \tag{A.2.3.20}
 $$
 
 If $v_0$ is complex, then $\arg(\iota_{v_0}(g_{v_0})) \in [0,2\pi/w_F)$ is equivalent to requiring that $\iota_{v_0}(g_{v_0})$ be a complex number within the sector
@@ -875,28 +875,28 @@ $$
 In other words, we have
 
 $$
-E_0 = L^{-1}(P) \cap \left(\iota_{v_0}^{-1}(\mathbf{R}_{>0} e^{i[0,2\pi/w_F)}) \times \prod_{k=1}^{r_1+r_2-1} F_{v_k}^{\times}\right). \tag{A.2.3.21}
+E_0 = \mathscr{L}^{-1}(P) \cap \left(\iota_{v_0}^{-1}(\mathbf{R}_{>0} e^{i[0,2\pi/w_F)}) \times \prod_{k=1}^{r_1+r_2-1} F_{v_k}^{\times}\right). \tag{A.2.3.21}
 $$
 
 (1): If $v_0$ is real, we define $U_0 := \iota_{v_0}^{-1}(\mathbf{R}_{>0}) \times \prod_{k=1}^{r_1+r_2-1} F_{v_k}^{\times}$. If $v_0$ is complex, we define $U_0 := \iota_{v_0}^{-1}(\mathbf{R}_{>0} e^{i(0,2\pi/w_F)}) \times \prod_{k=1}^{r_1+r_2-1} F_{v_k}^{\times}$. In either case, $U_0 \subset \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ is open and non-empty. It follows that $U_0 \cap \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$ is open in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$, and it is non-empty since it contains $g_{\infty} := (\iota_{v_0}^{-1}(\zeta a)\varepsilon, \prod_{k=1}^{r_1+r_2-1} \{a_k \varepsilon\})$ where $\zeta = 1$ if $v_0$ is real, and $\zeta \in e^{i(0,2\pi/w_F)}$ if $v_0$ is complex, with $a, a_k \in \mathbf{R}_{>0} - \{1\}$ chosen so as to have $a^{N_0} \prod_{k=1}^{r_1+r_2-1} a_k^{N_k} = 1$ where, for each $0 \le k \le r_1+r_2-1$, $N_k = 1$ if $v_k$ is real, and $N_k = 2$ if $v_k$ is complex, and with $\varepsilon \in \mathcal{O}_F^{\times}/\mu_F$.
 
-By Lemma A.2.3.5(2), we may and do choose $\varepsilon \in \mathcal{O}_F^{\times}/\mu_F$ so as to have $L(g_{\infty}) \in \mathrm{Int}(P)$, the interior of $P$ in $H_{\log}$.
+By Lemma A.2.3.5(2), we may and do choose $\varepsilon \in \mathcal{O}_F^{\times}/\mu_F$ so as to have $\mathscr{L}(g_{\infty}) \in \mathrm{Int}(P)$, the interior of $P$ in $H_{\log}$.
 
-By Lemma A.2.3.5(1), $P$ has non-empty interior $\mathrm{Int}(P)$ in $H_{\log}$. The pre-image $L^{-1}(\mathrm{Int}(P))$ is open and non-empty in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1 = L^{-1}(H_{\log})$ since $L$ maps $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$ surjectively and smoothly onto $H_{\log}$.
+By Lemma A.2.3.5(1), $P$ has non-empty interior $\mathrm{Int}(P)$ in $H_{\log}$. The pre-image $\mathscr{L}^{-1}(\mathrm{Int}(P))$ is open and non-empty in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1 = \mathscr{L}^{-1}(H_{\log})$ since $\mathscr{L}$ maps $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$ surjectively and smoothly onto $H_{\log}$.
 
-In light of (A.2.3.20) and (A.2.3.21), $L^{-1}(\mathrm{Int}(P)) \cap (U_0 \cap \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1)$ is contained in $E_0$, and it is open and non-empty in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$ by the foregoing since it contains $\zeta' g_{\infty}$ for some $\zeta' \in \mu_F$. It follows that $E_0$ has non-empty interior in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$.
+In light of (A.2.3.20) and (A.2.3.21), $\mathscr{L}^{-1}(\mathrm{Int}(P)) \cap (U_0 \cap \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1)$ is contained in $E_0$, and it is open and non-empty in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$ by the foregoing since it contains $\zeta' g_{\infty}$ for some $\zeta' \in \mu_F$. It follows that $E_0$ has non-empty interior in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$.
 
-By Lemma A.2.3.2(3), $L$ is a proper smooth submersion, and hence $L^{-1}(P)$ is relatively compact in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$. Since $E_0 \subset L^{-1}(P)$, then $E_0$ is also relatively compact in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$. As $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$ is closed in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$, $E_0$ is relatively compact in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$.
+By Lemma A.2.3.2(3), $\mathscr{L}$ is a proper smooth submersion, and hence $\mathscr{L}^{-1}(P)$ is relatively compact in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$. Since $E_0 \subset \mathscr{L}^{-1}(P)$, then $E_0$ is also relatively compact in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$. As $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$ is closed in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$, $E_0$ is relatively compact in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$.
 
-(2): Since $L(\mathcal{O}_F^{\times}) = \mathrm{Reg}(\mathcal{O}_F^{\times})$ tessellates $H_{\log} = L(\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1)$ by copies of $P$ by Lemma A.2.3.5(2), and since $\mathcal{O}_F^{\times} \to L(\mathcal{O}_F^{\times})$ is surjective with kernel $\mu_F \subset \mathcal{O}_F^{\times}$ by Lemma A.2.3.4(2), then $(\mathcal{O}_F^{\times}/\mu_F)L^{-1}(P) = \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$. Indeed, we have $L((\mathcal{O}_F^{\times}/\mu_F)L^{-1}(P)) = L(\mathcal{O}_F^{\times}/\mu_F)L(L^{-1}(P)) = L(\mathcal{O}_F^{\times})P = \mathrm{Reg}(\mathcal{O}_F^{\times})P = H_{\log}$ by Lemma A.2.3.5(2) and since $L^{-1}(P)$ is stable under the action of $\ker(L)$ (and hence of $\mu_F$), then $(\mathcal{O}_F^{\times}/\mu_F)L^{-1}(P)$ is stable under the action of $\mathcal{O}_F^{\times}\ker(L)$ and since $\mathcal{O}_F^{\times}\ker(L) = L^{-1}(L(\mathcal{O}_F^{\times}))$, then $(\mathcal{O}_F^{\times}/\mu_F)L^{-1}(P)$ contains $L^{-1}(L((\mathcal{O}_F^{\times}/\mu_F)L^{-1}(P))) = L^{-1}(H_{\log}) = \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$, and hence $(\mathcal{O}_F^{\times}/\mu_F)L^{-1}(P) = \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$.
+(2): Since $\mathscr{L}(\mathcal{O}_F^{\times}) = \mathrm{Reg}(\mathcal{O}_F^{\times})$ tessellates $H_{\log} = \mathscr{L}(\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1)$ by copies of $P$ by Lemma A.2.3.5(2), and since $\mathcal{O}_F^{\times} \to \mathscr{L}(\mathcal{O}_F^{\times})$ is surjective with kernel $\mu_F \subset \mathcal{O}_F^{\times}$ by Lemma A.2.3.4(2), then $(\mathcal{O}_F^{\times}/\mu_F)\mathscr{L}^{-1}(P) = \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$. Indeed, we have $\mathscr{L}((\mathcal{O}_F^{\times}/\mu_F)\mathscr{L}^{-1}(P)) = \mathscr{L}(\mathcal{O}_F^{\times}/\mu_F)\mathscr{L}(\mathscr{L}^{-1}(P)) = \mathscr{L}(\mathcal{O}_F^{\times})P = \mathrm{Reg}(\mathcal{O}_F^{\times})P = H_{\log}$ by Lemma A.2.3.5(2) and since $\mathscr{L}^{-1}(P)$ is stable under the action of $\ker(\mathscr{L})$ (and hence of $\mu_F$), then $(\mathcal{O}_F^{\times}/\mu_F)\mathscr{L}^{-1}(P)$ is stable under the action of $\mathcal{O}_F^{\times}\ker(\mathscr{L})$ and since $\mathcal{O}_F^{\times}\ker(\mathscr{L}) = \mathscr{L}^{-1}(\mathscr{L}(\mathcal{O}_F^{\times}))$, then $(\mathcal{O}_F^{\times}/\mu_F)\mathscr{L}^{-1}(P)$ contains $\mathscr{L}^{-1}(\mathscr{L}((\mathcal{O}_F^{\times}/\mu_F)\mathscr{L}^{-1}(P))) = \mathscr{L}^{-1}(H_{\log}) = \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$, and hence $(\mathcal{O}_F^{\times}/\mu_F)\mathscr{L}^{-1}(P) = \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$.
 
-Since $\mathcal{O}_F^{\times} \cap \ker(L) = \mu_F$, the union $(\mathcal{O}_F^{\times}/\mu_F)L^{-1}(P)$ is disjoint, i.e. the finite free abelian group $\mathcal{O}_F^{\times}/\mu_F$ tessellates $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$ by copies of $L^{-1}(P)$.
+Since $\mathcal{O}_F^{\times} \cap \ker(\mathscr{L}) = \mu_F$, the union $(\mathcal{O}_F^{\times}/\mu_F)\mathscr{L}^{-1}(P)$ is disjoint, i.e. the finite free abelian group $\mathcal{O}_F^{\times}/\mu_F$ tessellates $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$ by copies of $\mathscr{L}^{-1}(P)$.
 
-Since $\mu_F$ is cyclic of size $w_F$, it acts on $F_{v_0}^{\times}$ with fundamental domain $\iota_{v_0}^{-1}(\mathbf{R}_{>0})$ if $v_0$ is real (in which case $\mu_F = \{\pm 1\}$), and $\iota_{v_0}^{-1}(\mathbf{R}_{>0} e^{i[0,2\pi/w_F)})$ as fundamental domain, if $v_0$ is complex. It follows that we have $\mu_F E_0 = L^{-1}(P)$, the finite union being disjoint.
+Since $\mu_F$ is cyclic of size $w_F$, it acts on $F_{v_0}^{\times}$ with fundamental domain $\iota_{v_0}^{-1}(\mathbf{R}_{>0})$ if $v_0$ is real (in which case $\mu_F = \{\pm 1\}$), and $\iota_{v_0}^{-1}(\mathbf{R}_{>0} e^{i[0,2\pi/w_F)})$ as fundamental domain, if $v_0$ is complex. It follows that we have $\mu_F E_0 = \mathscr{L}^{-1}(P)$, the finite union being disjoint.
 
-We therefore have (since $\mu_F$ splits off as a direct factor of $\mathcal{O}_F^{\times}$, being $\mathcal{O}_F^{\times}$ a finitely generated abelian group with torsion group $\mu_F$) $\mathcal{O}_F^{\times} E_0 = (\mathcal{O}_F^{\times}/\mu_F)\mu_F E_0 = (\mathcal{O}_F^{\times}/\mu_F)L^{-1}(P) = \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$, the union being disjoint.
+We therefore have (since $\mu_F$ splits off as a direct factor of $\mathcal{O}_F^{\times}$, being $\mathcal{O}_F^{\times}$ a finitely generated abelian group with torsion group $\mu_F$) $\mathcal{O}_F^{\times} E_0 = (\mathcal{O}_F^{\times}/\mu_F)\mu_F E_0 = (\mathcal{O}_F^{\times}/\mu_F)\mathscr{L}^{-1}(P) = \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$, the union being disjoint.
 
-(3): In light of (1) and (2), it is enough to assume $K = \overline{E}_0$, and since $\mu_F$ is finite, it is enough to prove the same assertion with $L^{-1}(P)$ in place of $E_0$. This in turn reduces to the same assertion for $P \subset H_{\log}$ and its closure, and $\mathrm{Reg}(\mathcal{O}_F^{\times})$ acting on $H_{\log}$. Upon fixing a $\mathbf{Z}$-basis of units for the torsion-free quotient of $\mathcal{O}_F^{\times}$, this in turn reduces to the case of the standard full lattice $\mathbf{Z}^{r_1+r_2-1}$ acting on the Euclidean space $\mathbf{R}^{r_1+r_2-1}$, with $P$ replaced by $[0,1)^{r_1+r_2-1}$. $\square$
+(3): In light of (1) and (2), it is enough to assume $K = \overline{E}_0$, and since $\mu_F$ is finite, it is enough to prove the same assertion with $\mathscr{L}^{-1}(P)$ in place of $E_0$. This in turn reduces to the same assertion for $P \subset H_{\log}$ and its closure, and $\mathrm{Reg}(\mathcal{O}_F^{\times})$ acting on $H_{\log}$. Upon fixing a $\mathbf{Z}$-basis of units for the torsion-free quotient of $\mathcal{O}_F^{\times}$, this in turn reduces to the case of the standard full lattice $\mathbf{Z}^{r_1+r_2-1}$ acting on the Euclidean space $\mathbf{R}^{r_1+r_2-1}$, with $P$ replaced by $[0,1)^{r_1+r_2-1}$. $\square$
 
 ## PDF page 552
 
@@ -1030,7 +1030,7 @@ $$
 
 Proof. (1): This is a consequence of strong approximation for $\mathbf{A}_F$.
 
-(2): As in the proof of Lemma A.2.1.2(2), it is enough to check that, upon calling $\overline{D}_{F,\infty}$ the closure of $D_{F,\infty}$ from (A.2.1.1) in $\mathbf{A}_{F,S_{\infty}}$, for any compact subset $K \subset \mathbf{A}_{F,S_{\infty}}$ there exist at most finitely many elements $\xi \in \mathcal{O}_F$ such that $(\xi + \overline{D}_{F,\infty}) \cap K \ne \emptyset$. Upon fixing an $\mathbf{R}$-basis for $\mathbf{A}_{F,S_{\infty}} = F \otimes_{\mathbf{Q}} \mathbf{R}$ induced by an integral $\mathbf{Z}$-basis for $\mathcal{O}_F$, say $\{e_1,\dots,e_{[F:\mathbf{Q}]}\}$, the $\mathbf{R}$-linear isomorphism $\mathbf{A}_{F,S_{\infty}} \simeq \mathbf{R}^{[F:\mathbf{Q}]}$ induced by this choice of basis sends $\mathcal{O}_F \subset \mathbf{A}_{F,S_{\infty}}$ to $\mathbf{Z}^{[F:\mathbf{Q}]} = \bigoplus_{1\le i\le [F:\mathbf{Q}]} \mathbf{Z} e_i$. The subset $D_{F,\infty} \subset \mathbf{A}_{F,S_{\infty}}$ is sent homeomorphically onto $[0,1)^{[F:\mathbf{Q}]}$, and (2) follows. $\square$
+(2): As in the proof of Lemma A.2.1.2(2), it is enough to check that, upon calling $\overline{D}_{F,\infty}$ the closure of $D_{F,\infty}$ from (A.2.1.1) in $\mathbf{A}_{F,S_{\infty}}$, for any compact subset $K \subset \mathbf{A}_{F,S_{\infty}}$ there exist at most finitely many elements $\xi \in \mathcal{O}_F$ such that $(\xi + \overline{D}_{F,\infty}) \cap K \ne \emptyset$. Upon fixing an $\mathbf{R}$-basis for $\mathbf{A}_{F,S_{\infty}} = F \otimes_{\mathbf{Q}} \mathbf{R}$ induced by an integral $\mathbf{Z}$-basis for $\mathcal{O}_F$, say $\{e_1,\dots,e_{[F:\mathbf{Q}]}\}$, the $\mathbf{R}$-linear isomorphism $\mathbf{A}_{F,S_{\infty}} \simeq \mathbf{R}^{[F:\mathbf{Q}]}$ induced by this choice of basis sends $\mathcal{O}_F \subset \mathbf{A}_{F,S_{\infty}}$ to $\mathbf{Z}^{[F:\mathbf{Q}]} = \sum_{1\le i\le [F:\mathbf{Q}]} \mathbf{Z} e_i$. The subset $D_{F,\infty} \subset \mathbf{A}_{F,S_{\infty}}$ is sent homeomorphically onto $[0,1)^{[F:\mathbf{Q}]}$, and (2) follows. $\square$
 
 **A.2.4.2. Fundamental domain for the multiplicative $\mathcal{O}_{F,S}^{\times}$-action on $\mathrm{GL}_1(\mathbf{A}_{F,S})^1$.** We denote by $w_{F,S}$ the size of the finite torsion subgroup of $\mathcal{O}_{F,S}^{\times}$. We note that $w_{F,S} = w_F$, since the torsion subgroup of $\mathcal{O}_{F,S}^{\times}$ is $\mu_F$ itself, the finite cyclic group of roots of unity contained in $F$.
 
@@ -1045,13 +1045,13 @@ $$
 where $E_{S,0}$ is defined, upon choosing an Archimedean place $v_0$ of $F$, as:
 
 $$
-E_{S,0} := \{g \in L_S^{-1}(P_S) : \arg(\iota_{v_0}(g_{v_0})) \in [0,2\pi/w_F)\} \subset L_S^{-1}(P_S) \tag{A.2.4.5}
+E_{S,0} := \{g \in \mathscr{L}_S^{-1}(P_S) : \arg(\iota_{v_0}(g_{v_0})) \in [0,2\pi/w_F)\} \subset \mathscr{L}_S^{-1}(P_S) \tag{A.2.4.5}
 $$
 
-where $w_F$ is the size of the finite abelian group $\ker(L_S) \cap \mathcal{O}_{F,S}^{\times} = \mu_F$, and with:
+where $w_F$ is the size of the finite abelian group $\ker(\mathscr{L}_S) \cap \mathcal{O}_{F,S}^{\times} = \mu_F$, and with:
 
 $$
-L_S : \mathrm{GL}_1(\mathbf{A}_{F,S}) \to \mathbf{R}^S \tag{A.2.4.6}
+\mathscr{L}_S : \mathrm{GL}_1(\mathbf{A}_{F,S}) \to \mathbf{R}^S \tag{A.2.4.6}
 $$
 
 ## PDF page 555
@@ -1061,13 +1061,13 @@ $$
 defined as:
 
 $$
-\mathcal{L}_S(g) := (\log |g_v|_v)_{v\in S} \tag{A.2.4.7}
+\mathscr{L}_S(g) := (\log |g_v|_v)_{v\in S} \tag{A.2.4.7}
 $$
 
 and, upon choosing an integral basis $\{\varepsilon_1,\dots,\varepsilon_{|S|-1}\}$ for $\mathcal{O}_{F,S}^{\times}$, $P_S$ is the parallelotope in the hyperplane $H_S := \{x\in \mathbf{R}^S : \sum_{v\in S}x_v = 0\}$ of $\mathbf{R}^S$ defined as:
 
 $$
-P_S := \sum_{1\le i\le |S|-1}[0,1)\mathcal{L}_S(\varepsilon_i) \subset H_S. \tag{A.2.4.8}
+P_S := \sum_{1\le i\le |S|-1}[0,1)\mathscr{L}_S(\varepsilon_i) \subset H_S. \tag{A.2.4.8}
 $$
 
 We endow $E^1_{F,S}$ with the subspace topology. We refer to $E^1_{F,S}$ as the $S$-idelic *fundamental domain*.
@@ -1299,7 +1299,7 @@ and $x\in\mathbf{A}_{F,S}$ an arbitrary element, $\chi_x(y) := \psi_{S,\mathrm{s
 With respect to the duality pairing
 
 $$
-\langle\cdot,\cdot\rangle_S : \mathbf{A}_{F,S}\times\mathbf{A}_{F,S}\to U(1) \tag{A.3.1.10}
+\langle\cdot,\cdot\rangle_S : \mathbf{A}_{F,S}\times\mathbf{A}_{F,S}\to \mathrm{U}(1) \tag{A.3.1.10}
 $$
 
 assigned by $\langle x,y\rangle_S := \chi_x(y)$, the closed orthogonal $\Gamma^{\perp}$ of the closed discrete subgroup $\Gamma := \mathcal{O}_{F,S}\subset\mathbf{A}_{F,S}$ is $\mathcal{O}_{F,S}$ itself, under the stated assumptions on $S$. To see this, we proceed as follows.
@@ -1307,7 +1307,7 @@ assigned by $\langle x,y\rangle_S := \chi_x(y)$, the closed orthogonal $\Gamma^{
 Since $\Gamma$ is co-compact,$^2$ the isomorphism $\widehat{\mathbf{A}_{F,S}/\Gamma}\simeq\Gamma^{\perp}$ from Lemma D.1.4.6(2) yields $\Gamma^{\perp}$ is discrete. We have $\mathcal{O}_{F,S}\subset\Gamma^{\perp}$, and hence $\Gamma^{\perp}/\mathcal{O}_{F,S}$ is a discrete subgroup of $\mathbf{A}_{F,S}/\mathcal{O}_{F,S}$ that is compact, so it is a finite abelian group. We observe that we have a duality pairing analogous to $\langle\cdot,\cdot\rangle_S$ from (A.3.1.10):
 
 $$
-\langle\cdot,\cdot\rangle'_S : (\mathbf{A}_{F,S}\times\prod_{v\in\Sigma_F-S}\mathcal{O}_{F_v})\times(\mathbf{A}_{F,S}\times\bigoplus_{v\in\Sigma_F-S}F_v/\mathcal{O}_{F_v})\to U(1) \tag{A.3.1.11}
+\langle\cdot,\cdot\rangle'_S : (\mathbf{A}_{F,S}\times\prod_{v\in\Sigma_F-S}\mathcal{O}_{F_v})\times(\mathbf{A}_{F,S}\times\bigoplus_{v\in\Sigma_F-S}F_v/\mathcal{O}_{F_v})\to \mathrm{U}(1) \tag{A.3.1.11}
 $$
 
 defined as:
@@ -1350,7 +1350,7 @@ $$
 \bar{\mu}_1(C^1_F) = \frac{2^{r_1}(2\pi)^{r_2}h_FR_F}{|d_F|^{1/2}w_F}, \tag{A.3.2.1}
 $$
 
-fwhere $d_F\in\mathbf{Z}^+$ is the absolute discriminant of $F$ and $R_F := |\det(\mathcal{L}(\varepsilon_i))_{1\le i\le r_1+r_2-1}|$ is the regulator of $F$. We refer to $\mu$ as the *Tamagawa measure* on $\mathrm{GL}_1(\mathbf{A}_F)$, to $\bar{\mu}$ as the *Tamagawa measure* on $C_F$, and to $\bar{\mu}_1$ as the *Tamagawa measure* on $C^1_F$.
+fwhere $d_F\in\mathbf{Z}^+$ is the absolute discriminant of $F$ and $R_F := |\det(\mathscr{L}(\varepsilon_i))_{1\le i\le r_1+r_2-1}|$ is the regulator of $F$. We refer to $\mu$ as the *Tamagawa measure* on $\mathrm{GL}_1(\mathbf{A}_F)$, to $\bar{\mu}$ as the *Tamagawa measure* on $C_F$, and to $\bar{\mu}_1$ as the *Tamagawa measure* on $C^1_F$.
 
 Definition A.3.2.2. Let $F$ be a number field, $v\in\Sigma_F$ a place. Define a Haar measure on $F_v^{\times}$ as follows:
 
@@ -1644,7 +1644,7 @@ In this section we collect analogs of the Maximal Theorem on the Hardy-Littlewoo
 **A.5.1. Hardy-Littlewood Maximal Theorem on the real line.** We begin by recalling the elementary fact that for $f : \mathbf{R} \to \mathbf{R}$ a continuous function and every $x \in \mathbf{R}$, we have
 
 $$
-f(x) = \lim_{h \to 0^+} \frac{1}{2h} \int_{x-h}^{x+h} f(y)\,dy. \tag{A.5.1.1}
+f(x) = \lim_{h \to 0^+} \frac{1}{2h} \int_{x-h}^{x+h} f(y)\,\mathrm{d}y. \tag{A.5.1.1}
 $$
 
 For $f$ discontinuous but measurable and locally integrable over $\mathbf{R}$ with respect to the Lebesgue measure, the identity in (A.5.1.1) remains valid for almost all $x \in \mathbf{R}$. This is the content of the $1$-dimensional Differentiation Theorem of Lebesgue, for which we refer the reader to [Fol, Thm.3.18] and [Fol, Thm.3.21].
@@ -1656,7 +1656,7 @@ A key tool to proving such analog of the Differentiation Theorem is an analog fo
 For $f : \mathbf{R} \to \mathbf{C}$ a measurable and absolutely integrable function, we define:
 
 $$
-(Mf)(x) := \limsup_{r > 0} \frac{1}{2r} \int_{x-r}^{x+r} |f(y)|\,dy \tag{A.5.1.2}
+(Mf)(x) := \limsup_{r > 0} \frac{1}{2r} \int_{x-r}^{x+r} |f(y)|\,\mathrm{d}y \tag{A.5.1.2}
 $$
 
 and refer to it as the Hardy-Littlewood Maximal Function of $f$. We illustrate the Hardy-Littlewood Maximal Theorem in the special case of the $1$-dimensional Euclidean space only, to explain the techniques used in the proof. We will then show how to use it to deduce Lebesgue's Differentiation Theorem.
@@ -1665,21 +1665,21 @@ A.5.1.1. $1$-dimensional Hardy-Littlewood Maximal Theorem. In the $1$-dimensiona
 
 THEOREM A.5.1.1 (Hardy-Littlewood Maximal Theorem over $\mathbf{R}$). Let $f : \mathbf{R} \to \mathbf{C}$ be a measurable function.
 
-(1) If $f \in L^1_{\mathrm{loc}}(\mathbf{R},dx)$ is such that $f \log^+|f|) \in L^1_{\mathrm{loc}}(\mathbf{R},dx)$, with $\log^+(u) := \max\{\log(u),0\}$ for $u > 0$, then $Mf$ is measurable and finite almost everywhere.
+(1) If $f \in L^1_{\mathrm{loc}}(\mathbf{R},\mathrm{d}x)$ is such that $f \log^+|f|) \in L^1_{\mathrm{loc}}(\mathbf{R},\mathrm{d}x)$, with $\log^+(u) := \max\{\log(u),0\}$ for $u > 0$, then $Mf$ is measurable and finite almost everywhere.
 
-(2) If $f \in L^1(\mathbf{R},dx)$ then for any real number $\alpha > 0$, we have:
-
-$$
-|\{x \in \mathbf{R} : (Mf)(x) > \alpha\}| \le \frac{3}{\alpha} \|f\|_{L^1(\mathbf{R},dx)}. \tag{A.5.1.3}
-$$
-
-(3) For $p > 1$, if $f \in L^p(\mathbf{R},dx)$ then there exists a real number $C_p > 0$ independent of $f$ such that
+(2) If $f \in L^1(\mathbf{R},\mathrm{d}x)$ then for any real number $\alpha > 0$, we have:
 
 $$
-\|Mf\|^p_{L^p(\mathbf{R},dx)} \le \frac{2^p \cdot 3^p}{p-1} \|f\|^p_{L^p(\mathbf{R},dx)}. \tag{A.5.1.4}
+|\{x \in \mathbf{R} : (Mf)(x) > \alpha\}| \le \frac{3}{\alpha} \|f\|_{L^1(\mathbf{R},\mathrm{d}x)}. \tag{A.5.1.3}
 $$
 
-PROOF. (1) : We note that $Mf$ is measurable since the function of $x$ given by $\frac{1}{2r} \int_{x-r}^{x+r} |f(x)|\,dy$ is continuous for every $r > 0$. We let $r > 0$ be an arbitrary real number. Since $f \in L^1_{\mathrm{loc}}(\mathbf{R},dx)$, $f \cdot \mathbf{1}_{[-r,r]}$ is absolutely integrable over $\mathbf{R}$. Following the proof of [HR-2, Ch. XI, 44.50(d), p. 670], we choose an arbitrary
+(3) For $p > 1$, if $f \in L^p(\mathbf{R},\mathrm{d}x)$ then there exists a real number $C_p > 0$ independent of $f$ such that
+
+$$
+\|Mf\|^p_{L^p(\mathbf{R},\mathrm{d}x)} \le \frac{2^p \cdot 3^p}{p-1} \|f\|^p_{L^p(\mathbf{R},\mathrm{d}x)}. \tag{A.5.1.4}
+$$
+
+PROOF. (1) : We note that $Mf$ is measurable since the function of $x$ given by $\frac{1}{2r} \int_{x-r}^{x+r} |f(x)|\,\mathrm{d}y$ is continuous for every $r > 0$. We let $r > 0$ be an arbitrary real number. Since $f \in L^1_{\mathrm{loc}}(\mathbf{R},\mathrm{d}x)$, $f \cdot \mathrm{1}_{[-r,r]}$ is absolutely integrable over $\mathbf{R}$. Following the proof of [HR-2, Ch. XI, 44.50(d), p. 670], we choose an arbitrary
 
 ---
 $^4$Put in labels to refer to Chapters 10-11 instead
@@ -1691,15 +1691,15 @@ $^4$Put in labels to refer to Chapters 10-11 instead
 real number $0 < \delta < 1$ and have for some real number $C_0 > 0$ independent of $f$:
 
 $$
-\int_{[-r,r]} (Mf)(y)\,dy = \int_0^{+\infty} |[-r,r] \cap \{x \in \mathbf{R} : (Mf)(x) > y\}|\,dy \tag{A.5.1.5}
+\int_{[-r,r]} (Mf)(y)\,\mathrm{d}y = \int_0^{+\infty} |[-r,r] \cap \{x \in \mathbf{R} : (Mf)(x) > y\}|\,\mathrm{d}y \tag{A.5.1.5}
 $$
 
 $$
-= \int_0^{1/\delta} |[-r,r] \cap \{x \in \mathbf{R} : (Mf)(x) > y\}|\,dy + \int_{1/\delta}^{+\infty} |[-r,r] \cap \{x \in \mathbf{R} : (Mf)(x) > y\}|\,dy
+= \int_0^{1/\delta} |[-r,r] \cap \{x \in \mathbf{R} : (Mf)(x) > y\}|\,\mathrm{d}y + \int_{1/\delta}^{+\infty} |[-r,r] \cap \{x \in \mathbf{R} : (Mf)(x) > y\}|\,\mathrm{d}y
 $$
 
 $$
-\le \frac{2r}{\delta} + \int_{1/\delta}^{+\infty} \left\{ \frac{C_0}{(1-\delta)y} \int_{[-r,r]} |\{x \in \mathbf{R} : |f(x)| > \delta y\}| \cdot |f(x)|\,dx \right\} dy
+\le \frac{2r}{\delta} + \int_{1/\delta}^{+\infty} \left\{ \frac{C_0}{(1-\delta)y} \int_{[-r,r]} |\{x \in \mathbf{R} : |f(x)| > \delta y\}| \cdot |f(x)|\,\mathrm{d}x \right\} \mathrm{d}y
 $$
 
 where we used [HR-2, Ch. XI, 44.50(a.ii), p. 669] to obtain the last inequality.
@@ -1707,11 +1707,11 @@ where we used [HR-2, Ch. XI, 44.50(a.ii), p. 669] to obtain the last inequality.
 We now apply [Fol, Thm. 7.27] to the Lebesgue measure $\mu$ on $\mathbf{R}$, $\varphi(y) = \log(y)$, and $E = [-r,r]$, to obtain:
 
 $$
-\frac{C_0}{(1-\delta)} \int_{1/\delta}^{+\infty} \left( \int_{[-r,r]} |\{x \in \mathbf{R} : |f(x)| > \delta y\}| \cdot |f(x)|\,dx \right) \frac{dy}{y} = \frac{C_0}{(1-\delta)} \int_{x \in [-r,r]} |f(x)| \int_1^{+\infty} |\{y \in \mathbf{R} : |f(x)| > y\}| \frac{dy}{y}\,dx \tag{A.5.1.6}
+\frac{C_0}{(1-\delta)} \int_{1/\delta}^{+\infty} \left( \int_{[-r,r]} |\{x \in \mathbf{R} : |f(x)| > \delta y\}| \cdot |f(x)|\,\mathrm{d}x \right) \frac{\mathrm{d}y}{y} = \frac{C_0}{(1-\delta)} \int_{x \in [-r,r]} |f(x)| \int_1^{+\infty} |\{y \in \mathbf{R} : |f(x)| > y\}| \frac{\mathrm{d}y}{y}\,\mathrm{d}x \tag{A.5.1.6}
 $$
 
 $$
-= \frac{C_0}{(1-\delta)} \int_{x \in [-r,r]} |f(x)| \log^+|f(x)|\,dx \tag{A.5.1.7}
+= \frac{C_0}{(1-\delta)} \int_{x \in [-r,r]} |f(x)| \log^+|f(x)|\,\mathrm{d}x \tag{A.5.1.7}
 $$
 
 which gives the local integrability of $Mf$ over $\mathbf{R}$, and hence its finiteness almost everywhere.
@@ -1723,7 +1723,7 @@ which gives the local integrability of $Mf$ over $\mathbf{R}$, and hence its fin
 We note that $F_\delta$ is absolutely integrable for every $\delta > 0$, since, by [Fol, Thm. 6.17], we have:
 
 $$
-|\{x \in \mathbf{R} : |f(x)| > \delta/2\}| \le \frac{2^p}{\delta^p} \|f\|^p_{L^p(\mathbf{R},dx)}
+|\{x \in \mathbf{R} : |f(x)| > \delta/2\}| \le \frac{2^p}{\delta^p} \|f\|^p_{L^p(\mathbf{R},\mathrm{d}x)}
 $$
 
 for every $\delta > 0$, and hence $F_\delta(x)$ is nonzero only on a measurable subset of $\mathbf{R}$ of finite Lebesgue measure.
@@ -1731,25 +1731,25 @@ for every $\delta > 0$, and hence $F_\delta(x)$ is nonzero only on a measurable 
 We apply (2) to $F_\delta$ for each $\delta > 0$. By (2), we obtain:
 
 $$
-|\{x \in \mathbf{R} : (Mf)(x) > \delta\}| \le |\{x \in \mathbf{R} : (MF_\delta)(x) > \delta/2\}| \le \frac{2 \cdot 3}{\delta} \int_{\mathbf{R}} |F_\delta(x)|\,dx = \frac{2 \cdot 3}{\delta} \int_{|f(x)| > \delta/2} |f(x)|\,dx. \tag{A.5.1.8}
+|\{x \in \mathbf{R} : (Mf)(x) > \delta\}| \le |\{x \in \mathbf{R} : (MF_\delta)(x) > \delta/2\}| \le \frac{2 \cdot 3}{\delta} \int_{\mathbf{R}} |F_\delta(x)|\,\mathrm{d}x = \frac{2 \cdot 3}{\delta} \int_{|f(x)| > \delta/2} |f(x)|\,\mathrm{d}x. \tag{A.5.1.8}
 $$
 
 By Fubini's Theorem,
 
 $$
-\|Mf\|^p_{L^p(\mathbf{R},dx)} = \int_{\mathbf{R}} |(Mf)(x)|^p\,dx = p \int_0^{+\infty} y^{p-1} |\{x \in \mathbf{R} : (Mf)(x) > y\}|\,dy. \tag{A.5.1.9}
+\|Mf\|^p_{L^p(\mathbf{R},\mathrm{d}x)} = \int_{\mathbf{R}} |(Mf)(x)|^p\,\mathrm{d}x = p \int_0^{+\infty} y^{p-1} |\{x \in \mathbf{R} : (Mf)(x) > y\}|\,\mathrm{d}y. \tag{A.5.1.9}
 $$
 
 By combining (A.5.1.9) and (A.5.1.8) we obtain:
 
 $$
-\|Mf\|^p_{L^p(\mathbf{R},dx)} \le 2 \cdot 3p \int_0^{+\infty} \int_{|f(x)| > y/2} y^{p-2} |f(x)|\,dx\,dy = 2^p \cdot 3^p \int_0^{+\infty} \int_{|f(x)| > y} y^{p-2} |f(x)|\,dx\,dy \tag{A.5.1.10}
+\|Mf\|^p_{L^p(\mathbf{R},\mathrm{d}x)} \le 2 \cdot 3p \int_0^{+\infty} \int_{|f(x)| > y/2} y^{p-2} |f(x)|\,\mathrm{d}x\,\mathrm{d}y = 2^p \cdot 3^p \int_0^{+\infty} \int_{|f(x)| > y} y^{p-2} |f(x)|\,\mathrm{d}x\,\mathrm{d}y \tag{A.5.1.10}
 $$
 
-and Fubini's Theorem (along with the equality $\int_0^a y^{p-1}\,dy/y = a^{p-1}/(p-1)$) gives
+and Fubini's Theorem (along with the equality $\int_0^a y^{p-1}\,\mathrm{d}y/y = a^{p-1}/(p-1)$) gives
 
 $$
-\int_0^{+\infty} \int_{|f(x)| > y} y^{p-2} |f(x)|\,dx\,dy = \frac{1}{p-1} \int_{\mathbf{R}} |f(x)|^{p-1} |f(x)|\,dx = \frac{1}{p-1} \|f\|^p_{L^p(\mathbf{R},dx)}. \tag{A.5.1.11}
+\int_0^{+\infty} \int_{|f(x)| > y} y^{p-2} |f(x)|\,\mathrm{d}x\,\mathrm{d}y = \frac{1}{p-1} \int_{\mathbf{R}} |f(x)|^{p-1} |f(x)|\,\mathrm{d}x = \frac{1}{p-1} \|f\|^p_{L^p(\mathbf{R},\mathrm{d}x)}. \tag{A.5.1.11}
 $$
 
 Upon combining (A.5.1.11) and (A.5.1.10) we deduce that (A.5.1.4) holds. $\square$
@@ -1768,10 +1768,10 @@ The inequality in (A.5.1.3) is called weak $(1,1)$-type while (A.5.1.4) is calle
 
 A.5.1.2. $1$-dimensional Lebesgue Differentiation Theorem. Using the weak $(1,1)$-estimate from (A.5.1.3) for the Hardy-Littlewood maximal function, we can prove the following Theorem of Lebesgue:
 
-THEOREM A.5.1.3 (Lebesgue's Differentiation Theorem). Let $f \in L^1_{\mathrm{loc}}(\mathbf{R},dx)$ be a locally integrable function on $\mathbf{R}$. Then, for almost all $x \in \mathbf{R}$, the following identity:
+THEOREM A.5.1.3 (Lebesgue's Differentiation Theorem). Let $f \in L^1_{\mathrm{loc}}(\mathbf{R},\mathrm{d}x)$ be a locally integrable function on $\mathbf{R}$. Then, for almost all $x \in \mathbf{R}$, the following identity:
 
 $$
-f(x) = \lim_{r \to 0^+} \frac{1}{2r} \int_{x-r}^{x+r} f(y)\,dy \tag{A.5.1.12}
+f(x) = \lim_{r \to 0^+} \frac{1}{2r} \int_{x-r}^{x+r} f(y)\,\mathrm{d}y \tag{A.5.1.12}
 $$
 
 holds.
@@ -1779,22 +1779,22 @@ holds.
 PROOF. It is enough to treat the case of real-valued $f$. We define the local-at-$x$ "oscillation" of $f$, denoted $\omega_f(x)$, as follows. For every $x \in \mathbf{R}$, we define:
 
 $$
-\omega_f(x) := \left| \limsup_{r \to 0^+} \frac{1}{2r} \int_{x-r}^{x+r} f(y)\,dy - \liminf_{r \to 0^+} \frac{1}{2r} \int_{x-r}^{x+r} f(y)\,dy \right|. \tag{A.5.1.13}
+\omega_f(x) := \left| \limsup_{r \to 0^+} \frac{1}{2r} \int_{x-r}^{x+r} f(y)\,\mathrm{d}y - \liminf_{r \to 0^+} \frac{1}{2r} \int_{x-r}^{x+r} f(y)\,\mathrm{d}y \right|. \tag{A.5.1.13}
 $$
 
-We fix a real number $r_0 > 0$, large enough so as to have $x \in (-r_0,r_0)$, and consider $F_{r_0} := \mathbf{1}_{[-r_0,r_0]} \cdot f$.
+We fix a real number $r_0 > 0$, large enough so as to have $x \in (-r_0,r_0)$, and consider $F_{r_0} := \mathrm{1}_{[-r_0,r_0]} \cdot f$.
 
-By [Fol, Prop. 7.9], for every real number $\varepsilon > 0$, there exists a continuous compactly supported function $\varphi \in C_c(\mathbf{R})$ such that $\|F_{r_0} - \varphi\|_{L^1(\mathbf{R},dy)} < \varepsilon$. We call $g := F_{r_0} - \varphi$, and note that we have $\omega_{F_{r_0}}(y) = \omega_g(y)$, since $\omega_\varphi(y) = 0$ for every $y \in \mathbf{R}$ by continuity of $\varphi$.
+By [Fol, Prop. 7.9], for every real number $\varepsilon > 0$, there exists a continuous compactly supported function $\varphi \in C_c(\mathbf{R})$ such that $\|F_{r_0} - \varphi\|_{L^1(\mathbf{R},\mathrm{d}y)} < \varepsilon$. We call $g := F_{r_0} - \varphi$, and note that we have $\omega_{F_{r_0}}(y) = \omega_g(y)$, since $\omega_\varphi(y) = 0$ for every $y \in \mathbf{R}$ by continuity of $\varphi$.
 
 Since $\omega_g \le 2Mg$, by (A.5.1.3) from Theorem A.5.1.1(2) we have for every $\alpha > 0$ that
 
 $$
-|\{y \in \mathbf{R} : \omega_{F_{r_0}}(y) > \alpha\}| \le \frac{2 \cdot 3}{\alpha} \|g\|_{L^1(\mathbf{R},dy)} < \frac{2 \cdot 3\varepsilon}{\alpha} \tag{A.5.1.14}
+|\{y \in \mathbf{R} : \omega_{F_{r_0}}(y) > \alpha\}| \le \frac{2 \cdot 3}{\alpha} \|g\|_{L^1(\mathbf{R},\mathrm{d}y)} < \frac{2 \cdot 3\varepsilon}{\alpha} \tag{A.5.1.14}
 $$
 
-and $\varepsilon > 0$ being arbitrary, we deduce that $\{y \in \mathbf{R} : \omega_{F_{r_0}}(y) > \alpha\}$ has Lebesgue measure zero; i.e., $A_rF_{r_0}(x) := \frac{1}{2r} \int_{x-r}^{x+r} F_{r_0}(y)\,dy$ converges almost everywhere as $r \to 0^+$. To identify the limit it is enough to find a sequence of real numbers $0 < r < r_0$ on which it is possible to do so. We have $\|F_{r_0} - A_rF_{r_0}\|_{L^1(\mathbf{R},dy)} \to 0$,$^6$ and hence there exists such a sequence such that $(A_rF_{r_0})(x) \to F_{r_0}(x)$ for almost all $x \in (-r_0,r_0)$.
+and $\varepsilon > 0$ being arbitrary, we deduce that $\{y \in \mathbf{R} : \omega_{F_{r_0}}(y) > \alpha\}$ has Lebesgue measure zero; i.e., $A_rF_{r_0}(x) := \frac{1}{2r} \int_{x-r}^{x+r} F_{r_0}(y)\,\mathrm{d}y$ converges almost everywhere as $r \to 0^+$. To identify the limit it is enough to find a sequence of real numbers $0 < r < r_0$ on which it is possible to do so. We have $\|F_{r_0} - A_rF_{r_0}\|_{L^1(\mathbf{R},\mathrm{d}y)} \to 0$,$^6$ and hence there exists such a sequence such that $(A_rF_{r_0})(x) \to F_{r_0}(x)$ for almost all $x \in (-r_0,r_0)$.
 
-We let $x \in (-r_0,r_0)$ be such that $A_rF_{r_0}(x)$ converges as $r \to 0^+$. It follows that $\lim_{r \to 0^+} A_rF_{r_0}(x) = \lim_{r \to 0^+} \frac{1}{2r} \int_{x-r}^{x+r} f(y)\,dy$, since such limit equals the limit as $r > 0$ tends to zero while varying over the positive reals $r \in (0,r_1)$, with $r_1$ small enough so as to have $(x-r_1,x+r_1) \subset (-r_0,r_0)$.
+We let $x \in (-r_0,r_0)$ be such that $A_rF_{r_0}(x)$ converges as $r \to 0^+$. It follows that $\lim_{r \to 0^+} A_rF_{r_0}(x) = \lim_{r \to 0^+} \frac{1}{2r} \int_{x-r}^{x+r} f(y)\,\mathrm{d}y$, since such limit equals the limit as $r > 0$ tends to zero while varying over the positive reals $r \in (0,r_1)$, with $r_1$ small enough so as to have $(x-r_1,x+r_1) \subset (-r_0,r_0)$.
 
 We now let $N_k \subset (-k,k)$ be the null set of those points at which (A.5.1.12) does not hold. We have, for every integer $k \ge 1$, $N_k \subset N_{k+1}$, and hence $|\bigcup_{k \ge 1} N_k| = \lim_{k \to +\infty} |N_k| = 0$. We deduce that (A.5.1.12) holds almost everywhere over the real line. $\square$
 
@@ -1855,7 +1855,7 @@ PROPOSITION A.5.2.3. Let $G$ be a Hausdorff locally compact abelian group, $\mu_
 
 (2) Let $H \subset G$ be an open subgroup. Let $\{U_k\}_{k \ge 0}$ be a sequence of subsets of $H$. Then $\{U_k\}_{k \ge 0}$ is a $D$-sequence, respectively a $D'$-sequence, for $H$ if and only if it is so for $G$. It is open, respectively symmetric, for $H$ if and only if it is so for $G$.
 
-PROOF. (1) : By [DE, Thm. 4.1.6] and [DE, Prop. 4.1.5], $G$ admits a unit-neighborhood base comprised of compact open subgroups. We may assume such base to be countable. Indeed, for every countable unit-neighborhood base $\mathcal{B}$ of $e$ we may find for each $U \in \mathcal{B}$ an open, hence closed (hence compact open) subgroup $N_U \subset U$. The subset $\{N_U : U \in \mathcal{B}\}$ is a countable unit-neighborhood base comprised of compact open subgroups. We may extract a cofinal sequence $\{U_k\}_{k \ge 0}$ from it.
+PROOF. (1) : By [DE, Thm. 4.1.6] and [DE, Prop. 4.1.5], $G$ admits a unit-neighborhood base comprised of compact open subgroups. We may assume such base to be countable. Indeed, for every countable unit-neighborhood base $B$ of $e$ we may find for each $U \in B$ an open, hence closed (hence compact open) subgroup $N_U \subset U$. The subset $\{N_U : U \in B\}$ is a countable unit-neighborhood base comprised of compact open subgroups. We may extract a cofinal sequence $\{U_k\}_{k \ge 0}$ from it.
 
 Since $U_k$ is a subgroup for each integer $k \ge 0$, we have $U_k^{-1} = U_k$ and $U_k U_k^{-1} \subset U_k$. The sequence $\{U_k\}_{k \ge 0}$ is therefore an open symmetric $D$-sequence, with the choice $C = 1$.
 
@@ -1953,15 +1953,15 @@ $^9$what does "completely metrizable" mean?
 
 **A.5. IDELIC HARDY-LITTLEWOOD MAXIMAL THEOREM AND LEBESGUE DIFFERENTIATION** · **573**
 
-We now observe that by Lemma A.5.2.10, there exists a Borel subset $F \subset G$ such that $q|_F : F \to G/H$ is a continuous bijection and $F$ contains $E$. For every measurable subset $A \subset G/H$ with finite $\mu_{G/H}$-measure, the indicator function $f := \mathbf{1}_{q^{-1}(A) \cap F}$ of $q^{-1}(A) \cap F$ is $\mu_G$-integrable by [Bou-II, Ch. VII, §2, No. 3, Prop. 5(d), INT VII.33] applied to $X = G$, $\lambda^\sharp = \mu_G$, $\lambda = \mu_{G/H}$, and $\beta = \mu_H$. Indeed, we have
+We now observe that by Lemma A.5.2.10, there exists a Borel subset $F \subset G$ such that $q|_F : F \to G/H$ is a continuous bijection and $F$ contains $E$. For every measurable subset $A \subset G/H$ with finite $\mu_{G/H}$-measure, the indicator function $\mathbf{f} := \mathrm{1}_{q^{-1}(A) \cap F}$ of $q^{-1}(A) \cap F$ is $\mu_G$-integrable by [Bou-II, Ch. VII, §2, No. 3, Prop. 5(d), INT VII.33] applied to $X = G$, $\lambda^\sharp = \mu_G$, $\lambda = \mu_{G/H}$, and $\beta = \mu_H$. Indeed, we have
 
 $$
-\int_{G/H} \int_H \mathbf{1}_{q^{-1}(A) \cap F}(h^{-1}x)\,d\mu_H(h)\,d\mu_{G/H}(q(x)) = \int_{G/H} \mathbf{1}_A(\pi(x))\,d\mu_{G/H}(\pi(x)) = \mu_{G/H}(A). \tag{A.5.2.4}
+\int_{G/H} \int_H \mathrm{1}_{q^{-1}(A) \cap F}(h^{-1}x)\,\mathrm{d}\mu_H(h)\,\mathrm{d}\mu_{G/H}(q(x)) = \int_{G/H} \mathrm{1}_A(\pi(x))\,\mathrm{d}\mu_{G/H}(\pi(x)) = \mu_{G/H}(A). \tag{A.5.2.4}
 $$
 
-Here we are using discreteness of $H$ once more: not only through Lemma A.5.2.10, but also through the equality $\mu_H(\{h\}) = 1$. By (A.5.2.4) and Lemma D.1.2.3 we see that indeed $\mathbf{1}_{q^{-1}(A) \cap F}$ is $\mu_G$-integrable, and hence [Bou-II, Ch. VII, §2, No. 3, Prop.5(c), INT VII.33] applies.
+Here we are using discreteness of $H$ once more: not only through Lemma A.5.2.10, but also through the equality $\mu_H(\{h\}) = 1$. By (A.5.2.4) and Lemma D.1.2.3 we see that indeed $\mathrm{1}_{q^{-1}(A) \cap F}$ is $\mu_G$-integrable, and hence [Bou-II, Ch. VII, §2, No. 3, Prop.5(c), INT VII.33] applies.
 
-We have $f^\flat = \mathbf{1}_A$, in the notation from loc.cit., and so by [Bou-II, Ch. VII, §2, No. 3, Prop. 5(c),(12), INT VII.33] we have:
+We have $\mathbf{f}^\flat = \mathrm{1}_A$, in the notation from loc.cit., and so by [Bou-II, Ch. VII, §2, No. 3, Prop. 5(c),(12), INT VII.33] we have:
 
 $$
 \mu_G(q^{-1}(A) \cap F) = \mu_{G/H}(A). \tag{A.5.2.5}
@@ -2005,9 +2005,9 @@ REMARK A.5.2.11. We highlight that in [Klee, (2.4), p. 487] the terminology "cou
 
 A.5.2.2. The case of $S$-local and global groups of ideles and idele classes. We now return to the Hausdorff locally compact abelian groups of interest to this work. Let $F$ be a number field, and let $\tau : \mathbf{R}_{>0} \to \mathrm{GL}_1(\mathbf{A}_F)$ be a choice of continuous section to the idelic norm.
 
-We recall from (A.2.3.14) that we have $E^b_F \subset \mathrm{GL}_1(\mathbf{A}_F)^1$ a relatively compact subset with non-empty interior, which is a fundamental domain for the continuous left-translation action of the discrete subgroup $F^\times \subset \mathrm{GL}_1(\mathbf{A}_F)^1$ on $\mathrm{GL}_1(\mathbf{A}_F)^1$.
+We recall from (A.2.3.14) that we have $E^\mathrm{1}_F \subset \mathrm{GL}_1(\mathbf{A}_F)^1$ a relatively compact subset with non-empty interior, which is a fundamental domain for the continuous left-translation action of the discrete subgroup $F^\times \subset \mathrm{GL}_1(\mathbf{A}_F)^1$ on $\mathrm{GL}_1(\mathbf{A}_F)^1$.
 
-The construction of $E^b_F$ is, recall, as follows: for a fixed choice of Archimedean place $v_0$, and denoting by $\iota_{v_0}$ an isomorphism of topological fields from $F_{v_0}$ to either $\mathbf{R}$ (if $v_0$ is real) or $\mathbf{C}$ (if $v_0$ is complex):
+The construction of $E^\mathrm{1}_F$ is, recall, as follows: for a fixed choice of Archimedean place $v_0$, and denoting by $\iota_{v_0}$ an isomorphism of topological fields from $F_{v_0}$ to either $\mathbf{R}$ (if $v_0$ is real) or $\mathbf{C}$ (if $v_0$ is complex):
 
 $$
 E_0 := \{g \in \mathscr{L}^{-1}(P) : \arg(\iota_{v_0}(g_{v_0})) \in [0,2\pi/w_F)\} \subset \mathscr{L}^{-1}(P) \tag{A.5.2.7}
@@ -2030,12 +2030,12 @@ and $\mathscr{L}$ is the logarithm homomorphism $\mathscr{L}((u_v)_{v \in S_\inf
 We then define:
 
 $$
-E^b_F := \bigcup_{i=1}^{h_F} g_i(E_0 \times \widehat{\mathcal{O}}^\times_F) \subset \mathrm{GL}_1(\mathbf{A}_F)^1 \subset \mathrm{GL}_1(\mathbf{A}_F) \tag{A.5.2.10}
+E^\mathrm{1}_F := \bigcup_{i=1}^{h_F} g_i(E_0 \times \widehat{\mathcal{O}}^\times_F) \subset \mathrm{GL}_1(\mathbf{A}_F)^1 \subset \mathrm{GL}_1(\mathbf{A}_F) \tag{A.5.2.10}
 $$
 
 where $h_F$ is the class number of $F$ and $\{g_i\}_{1 \le i \le h_F}$ is a set of representatives in $\mathrm{GL}_1(\mathbf{A}_F)^1$ for the ideal classes in $\mathrm{Pic}(\mathcal{O}_F)$, with $g_1 = 1$; see (A.2.3.14).
 
-We now adjust the construction of $E^b_F$, to obtain another fundamental domain, enjoying additional symmetries. We define:
+We now adjust the construction of $E^\mathrm{1}_F$, to obtain another fundamental domain, enjoying additional symmetries. We define:
 
 $$
 P_1 := \left\{ \sum_{i=1}^{r_1+r_2-1} x_i \mathscr{L}(\varepsilon_i) : (x_i) \in Q_1 \right\} \tag{A.5.2.11}
@@ -2101,7 +2101,7 @@ LEMMA A.5.2.12. Let $F$ be a number field, $S$ a finite set of places of $F$ con
 
 PROOF. (1) : We will be showing that $B^1_F$ is a fundamental domain within $\mathrm{GL}_1(\mathbf{A}_{F,S_\infty} \times \widehat{\mathcal{O}}_F)^1$ for the continuous left-translation action of the global unit group $\mathcal{O}^\times_F$. To this end, we proceed as follows. The kernel of $\mathscr{L}_F := \mathscr{L} \times (\log|\cdot|_v)_{v \in \Sigma_{F,f}} : \mathrm{GL}_1(\mathbf{A}_{F,S_\infty} \times \widehat{\mathcal{O}}_F)^1 \to \mathbf{R}^{S_\infty}$ is the finite group of roots of unity $\mu_F \subset \mathcal{O}^\times_F$, while the image of $\mathscr{L}_F$ is the finite-dimensional Euclidean space $H = \{\sum_{v \mid \infty} x_v = 0\} \subset \mathbf{R}^{S_\infty}$. We know $\mathscr{L}_F(\mathcal{O}^\times_F/\mu_F)$ is a lattice in $H$, and $Q_1 \times \{0\} \simeq Q_1$ is a fundamental domain for the additive translation action of $\mathscr{L}_F(\mathcal{O}^\times_F/\mu_F) \simeq \mathscr{L}(\mathcal{O}^\times_F/\mu_F)$ on $H$.
 
-In order to prove that $B^1_F$ is a fundamental domain for the continuous left-translation action of $\mathcal{O}^\times_F$ on $\mathrm{GL}_1(\mathbf{A}_{F,S_\infty} \times \widehat{\mathcal{O}}_F)^1$, it remains to note that $e^{i[0,\pi/w_F) \cup i[2\pi-\pi/w_F,2\pi)}$ is a fundamental domain within $U(1)$ of the action of the finite cyclic group $\mu_F = e^{\frac{2\pi i\mathbf{Z}}{w_F}}$.
+In order to prove that $B^1_F$ is a fundamental domain for the continuous left-translation action of $\mathcal{O}^\times_F$ on $\mathrm{GL}_1(\mathbf{A}_{F,S_\infty} \times \widehat{\mathcal{O}}_F)^1$, it remains to note that $e^{i[0,\pi/w_F) \cup i[2\pi-\pi/w_F,2\pi)}$ is a fundamental domain within $\mathrm{U}(1)$ of the action of the finite cyclic group $\mu_F = e^{\frac{2\pi i\mathbf{Z}}{w_F}}$.
 
 We now let $\{g_1,\dots,g_{h_F}\}$ be representatives in $\mathrm{GL}_1(\mathbf{A}_F)^1$ for the $h_F$ ideal classes in $\mathrm{Pic}(\mathcal{O}_F)$, with $g_1 = 1$. By (A.2.3.24), the disjoint union $\bigcup_{1 \le i \le h_F} g_i B^1_F$ is a fundamental domain for the continuous left-translation action of $F^\times$ on $\mathrm{GL}_1(\mathbf{A}_F)^1$.
 
@@ -2408,7 +2408,7 @@ THEOREM A.5.3.6 (Hardy-Littlewood Local Maximal Theorem). *Let $G$ be a Hausdorf
 *Let $\{U_k\}_{k\ge 0}$ be a $D$-sequence such that $\overline{U}_0$ is compact. Let $f\in L^1_{\mathrm{loc}}(G,\mu_G)$, and define, for every $x\in G$:*
 
 $$
-(Mf)(x):=\limsup_{k\ge 0}\left\{\frac{1}{\mu_G(U_k)}\int_{xU_k}\lvert f(y)\rvert\,d\mu_G(y)\right\}. \tag{A.5.3.8}
+(Mf)(x):=\limsup_{k\ge 0}\left\{\frac{1}{\mu_G(U_k)}\int_{xU_k}\lvert f(y)\rvert\,\mathrm{d}\mu_G(y)\right\}. \tag{A.5.3.8}
 $$
 
 *Then $Mf$ is $\mu_G$-measurable, and if $f\log^+\lvert f\rvert\in L^1_{\mathrm{loc}}(G,\mu_G)$ then $Mf\in L^1_{\mathrm{loc}}(G,\mu_G)$, so $Mf$ is finite $\mu_G$-almost everywhere.*
@@ -2418,13 +2418,13 @@ $$
 *(1) for every $\mu_G$-measurable subset $B\subset G$ such that $B\cdot U_0$ is $\mu_G$-measurable$^{19}$ with finite $\mu_G$-measure, any real number $\alpha>0$, and any real number $\delta\in(0,1)$, we have*
 
 $$
-\mu_G(B\cap\{x\in G:(Mf)(x)>\alpha\})\le \frac{C}{(1-\delta)\alpha}\int_{(B\cdot U_0)\cap\{x\in G:(Mf)(x)>\delta\alpha\}}\lvert f(x)\rvert\,d\mu_G(x). \tag{A.5.3.9}
+\mu_G(B\cap\{x\in G:(Mf)(x)>\alpha\})\le \frac{C}{(1-\delta)\alpha}\int_{(B\cdot U_0)\cap\{x\in G:(Mf)(x)>\delta\alpha\}}\lvert f(x)\rvert\,\mathrm{d}\mu_G(x). \tag{A.5.3.9}
 $$
 
 *(2) For every real number $p>1$, we have:*
 
 $$
-\int_B\lvert (Mf)(x)\rvert^p\,d\mu_G(x)\le \frac{Cp^{p+1}}{(p-1)^p}\int_{B\cdot U_0}\lvert f(x)\rvert^p\,d\mu_G(x). \tag{A.5.3.10}
+\int_B\lvert (Mf)(x)\rvert^p\,\mathrm{d}\mu_G(x)\le \frac{Cp^{p+1}}{(p-1)^p}\int_{B\cdot U_0}\lvert f(x)\rvert^p\,\mathrm{d}\mu_G(x). \tag{A.5.3.10}
 $$
 
 PROOF. The proof is analogous to the proof of Theorem A.5.1.1. We will be following the proof of [HR-2, Ch. XI, Thm.44.50, p. 669].
@@ -2438,12 +2438,12 @@ We now prove that $Mf$ is finite $\mu_G$-almost everywhere.
 If $f\log^+\lvert f\rvert\in L^1_{\mathrm{loc}}(G,\mu_G)$ then for any compact subset $K\subset G$ we have, by [HR-2, Ch. XI, Thm.44.50, p. 669] (a consequence of Fubini's Theorem and [Fol, Thm.7.27]):
 
 $$
-\int_K\lvert (Mf)(x)\rvert\,d\mu_G(x)\le \frac{1}{2}\mu_G(K)+\frac{C}{2}\int_{K\cdot U_0}\lvert f(x)\rvert\log^+\lvert f\rvert\,d\mu_G(x) \tag{A.5.3.11}
+\int_K\lvert (Mf)(x)\rvert\,\mathrm{d}\mu_G(x)\le \frac{1}{2}\mu_G(K)+\frac{C}{2}\int_{K\cdot U_0}\lvert f(x)\rvert\log^+\lvert f\rvert\,\mathrm{d}\mu_G(x) \tag{A.5.3.11}
 $$
 
-which proves that for every compact subset $K\subset G$, $(Mf)\cdot\mathbf{1}_K$ is absolutely $\mu_G$-integrable. Since $G$ is second countable, this implies that $Mf\in L^1_{\mathrm{loc}}(G,\mu_G)$ holds. In particular, $Mf$ is finite locally $\mu_G$-almost everywhere, and hence (by Lemma A.5.3.3) $\mu_G$-almost everywhere.
+which proves that for every compact subset $K\subset G$, $(Mf)\cdot\mathrm{1}_K$ is absolutely $\mu_G$-integrable. Since $G$ is second countable, this implies that $Mf\in L^1_{\mathrm{loc}}(G,\mu_G)$ holds. In particular, $Mf$ is finite locally $\mu_G$-almost everywhere, and hence (by Lemma A.5.3.3) $\mu_G$-almost everywhere.
 
-(1) : We fix $\alpha>0$, and $\delta\in(0,1)$. Let $F_\delta:=\lvert f\rvert\cdot\mathbf{1}_{A_{f,\delta,\alpha}}$ where $\mathbf{1}_{A_{f,\delta,\alpha}}$ is the indicator function of the set:
+(1) : We fix $\alpha>0$, and $\delta\in(0,1)$. Let $F_\delta:=\lvert f\rvert\cdot\mathrm{1}_{A_{f,\delta,\alpha}}$ where $\mathrm{1}_{A_{f,\delta,\alpha}}$ is the indicator function of the set:
 
 $$
 A_{f,\delta,\alpha}:=\{x\in G:\lvert f(x)\rvert>\delta\alpha\}. \tag{A.5.3.12}
@@ -2479,11 +2479,11 @@ $$
 $$
 
 $$
-\le \frac{C}{(1-\delta)\alpha}\int_{(B\cap\{x\in G:(MF_\delta)(x)>(1-\delta)\alpha\})\cdot U_0}F_\delta(x)\,d\mu_G(x)
+\le \frac{C}{(1-\delta)\alpha}\int_{(B\cap\{x\in G:(MF_\delta)(x)>(1-\delta)\alpha\})\cdot U_0}F_\delta(x)\,\mathrm{d}\mu_G(x)
 $$
 
 $$
-\le \frac{C}{(1-\delta)\alpha}\int_{B\cdot U_0}F_\delta(x)\,d\mu_G(x).
+\le \frac{C}{(1-\delta)\alpha}\int_{B\cdot U_0}F_\delta(x)\,\mathrm{d}\mu_G(x).
 $$
 
 This proves (A.5.3.9). (2) : To prove that (A.5.3.10) holds, the argument is identical to that provided in the liminf analogue [HR-2, Ch. XI, Thm. 44.50(iii), p. 670], an application of Fubini's Theorem and [Fol, Thm. 7.27] by choosing $\delta=1-1/p$. $\square$
@@ -2495,7 +2495,7 @@ THEOREM A.5.3.7 (Hardy-Littlewood Global Maximal Theorem). *Let $G$ be a Hausdor
 *Let $\{U_k\}_{k\ge 0}$ be a $D'$-sequence such that $\overline{U}_0$ is compact. Let $f\in L^1_{\mathrm{loc}}(G,\mu_G)$, and define for every $x\in G$:*
 
 $$
-(Mf)(x):=\limsup_{k\ge 0}\left\{\frac{1}{\mu_G(U_k)}\int_{xU_k}\lvert f(y)\rvert\,d\mu_G(y)\right\}. \tag{A.5.3.16}
+(Mf)(x):=\limsup_{k\ge 0}\left\{\frac{1}{\mu_G(U_k)}\int_{xU_k}\lvert f(y)\rvert\,\mathrm{d}\mu_G(y)\right\}. \tag{A.5.3.16}
 $$
 
 *Then:*
@@ -2509,7 +2509,7 @@ $$
 *(2) For every real number $p>1$, if $f\in L^p(G,\mu_G)$ then $Mf\in L^p(G,\mu_G)$ also holds and we have:*
 
 $$
-\int_G\lvert (Mf)(x)\rvert^p\,d\mu_G(x)\le \frac{Cp^{p+1}}{(p-1)^p}\lVert f\rVert^p_{L^p(G,\mu_G)}. \tag{A.5.3.18}
+\int_G\lvert (Mf)(x)\rvert^p\,\mathrm{d}\mu_G(x)\le \frac{Cp^{p+1}}{(p-1)^p}\lVert f\rVert^p_{L^p(G,\mu_G)}. \tag{A.5.3.18}
 $$
 
 PROOF. By Theorem A.5.3.6 with $\delta=1/2$, (1) and (2) both follow from the Theorem and an application of Dominated Convergence, noting that we may choose $B$ to range over an exhaustion of $G$ by a sequence of compact subsets. $\square$
@@ -2521,7 +2521,7 @@ THEOREM A.5.4.1 (Lebesgue's Differentiation Theorem - Hausdorff Locally Compact 
 *(1) For each integer $k\ge 0$, the integral*
 
 $$
-A_{U_k}(f)(x):=\frac{1}{\mu_G(U_k)}\int_{xU_k}f(y)\,d\mu_G(y) \tag{A.5.4.1}
+A_{U_k}(f)(x):=\frac{1}{\mu_G(U_k)}\int_{xU_k}f(y)\,\mathrm{d}\mu_G(y) \tag{A.5.4.1}
 $$
 
 *is a uniformly continuous function of $x\in G$.*
@@ -2537,7 +2537,7 @@ $$
 *Then the complement of $\mathrm{Reg}_{\{U_k\}_{k\ge 0},f}$ is $\mu_G$-negligible, and the identity*
 
 $$
-f(x)=\lim_{k\to+\infty}\frac{1}{\mu_G(U_k)}\int_{xU_k}f(y)\,d\mu_G(y) \tag{A.5.4.2}
+f(x)=\lim_{k\to+\infty}\frac{1}{\mu_G(U_k)}\int_{xU_k}f(y)\,\mathrm{d}\mu_G(y) \tag{A.5.4.2}
 $$
 
 *holds at $\mu_G$-almost every $x\in\mathrm{Reg}_{\{U_k\}_{k\ge 0},f}$ and, in particular, $\mu_G$-almost everywhere.*
@@ -2551,20 +2551,20 @@ PROOF. (1) : Let $\varepsilon>0$ be an arbitrary real number.
 We analyze the following condition on $x,y\in G$:
 
 $$
-\left\lvert\int_{x_1U_k}f(y)\,d\mu_G(y)-\int_{x_2U_k}f(y)\,d\mu_G(y)\right\rvert<\varepsilon. \tag{A.5.4.3}
+\left\lvert\int_{x_1U_k}f(y)\,\mathrm{d}\mu_G(y)-\int_{x_2U_k}f(y)\,\mathrm{d}\mu_G(y)\right\rvert<\varepsilon. \tag{A.5.4.3}
 $$
 
 We have, by invariance of the Haar measure $\mu_G$:
 
 $$
-\int_{x_iU_k}f(y)\,d\mu_G(y)=\int_{U_k}f(x_iy)\,d\mu_G(y) \tag{A.5.4.4}
+\int_{x_iU_k}f(y)\,\mathrm{d}\mu_G(y)=\int_{U_k}f(x_iy)\,\mathrm{d}\mu_G(y) \tag{A.5.4.4}
 $$
 
 for $i=1,2$.
 
 Since $\mu_G$ is a Radon measure on $G$, the functional $\mu_G:L^1_{\mathrm{loc}}(G,\mu_G)\to\mathbf{C}$ is continuous with respect to the Hausdorff locally convex topology on $L^1_{\mathrm{loc}}(G,\mu_G)$ defined by the countable family of seminorms $\{\lVert\cdot\rVert_{L^1(K_m,\mu_G)}\}$ for $\{K_m\}_{m\ge 0}$ an exhaustion by compact subsets of $G$ (with each $K_m$ having non-empty interior).
 
-To see this, it is enough to show that the functional $\mu_G:L^1(K_m,\mu_G)\to\mathbf{C}$ defined by $\mu_G(\phi):=\int_{K_m}\phi(x)\,d\mu_G(x)$ is norm-continuous, which is indeed the case since we have:
+To see this, it is enough to show that the functional $\mu_G:L^1(K_m,\mu_G)\to\mathbf{C}$ defined by $\mu_G(\phi):=\int_{K_m}\phi(x)\,\mathrm{d}\mu_G(x)$ is norm-continuous, which is indeed the case since we have:
 
 $$
 \lvert\mu_G(\phi_1-\phi_2)\rvert\le\lVert\phi_1-\phi_2\rVert_{L^1(K_m,\mu_G)}. \tag{A.5.4.5}
@@ -2598,7 +2598,7 @@ $^{21}$Should make clearer to the reader why this Remark is being recorded here.
 $U_k$ has compact closure. It follows that we have:
 
 $$
-A_{U_k}(f)(x)=A_{U_k}(f\cdot\mathbf{1}_V)(x) \tag{A.5.4.7}
+A_{U_k}(f)(x)=A_{U_k}(f\cdot\mathrm{1}_V)(x) \tag{A.5.4.7}
 $$
 
 for every $k\ge k_0$.
@@ -2612,13 +2612,13 @@ $$
 We note that we are assuming $f$ is real-valued, and hence the right side in (A.5.4.8) makes sense. In light of (A.5.4.7), we have:
 
 $$
-\omega_f(x)=\omega_{f\cdot\mathbf{1}_V}(x). \tag{A.5.4.9}
+\omega_f(x)=\omega_{f\cdot\mathrm{1}_V}(x). \tag{A.5.4.9}
 $$
 
-Since $f\cdot\mathbf{1}_V\in L^1(G,\mu_G)$, all $\mu_G(E_j)$ are finite and for any $\varepsilon>0$ there exists $\varphi=\sum_{1\le j\le N}c_j\mathbf{1}_{E_j}$ for $\mu_G$-measurable subsets $E_j$ and $c_j\in\mathbf{R}$ such that $\lVert f\cdot\mathbf{1}_V-\varphi\rVert_{L^1(G,\mu_G)}<\varepsilon$. We define $F:=f\cdot\mathbf{1}_V-\varphi$, and note that we have$^{22}$
+Since $f\cdot\mathrm{1}_V\in L^1(G,\mu_G)$, all $\mu_G(E_j)$ are finite and for any $\varepsilon>0$ there exists $\varphi=\sum_{1\le j\le N}c_j\mathrm{1}_{E_j}$ for $\mu_G$-measurable subsets $E_j$ and $c_j\in\mathbf{R}$ such that $\lVert f\cdot\mathrm{1}_V-\varphi\rVert_{L^1(G,\mu_G)}<\varepsilon$. We define $F:=f\cdot\mathrm{1}_V-\varphi$, and note that we have$^{22}$
 
 $$
-\omega_{f\cdot\mathbf{1}_V}(x)\le\omega_F(x) \tag{A.5.4.10}
+\omega_{f\cdot\mathrm{1}_V}(x)\le\omega_F(x) \tag{A.5.4.10}
 $$
 
 for almost all $x$ so long as we show that we have $\omega_\varphi(x)=0$ for almost all $x\in G$. We will be granting this for the moment.
@@ -2626,7 +2626,7 @@ for almost all $x$ so long as we show that we have $\omega_\varphi(x)=0$ for alm
 We have:
 
 $$
-\omega_{f\cdot\mathbf{1}_V}(x)\le 2(MF)(x). \tag{A.5.4.11}
+\omega_{f\cdot\mathrm{1}_V}(x)\le 2(MF)(x). \tag{A.5.4.11}
 $$
 
 Now observe that by Theorem A.5.3.7(1) we have
@@ -2638,14 +2638,14 @@ $$
 and from (A.5.4.11) we deduce that we have:
 
 $$
-\mu_G(\{x\in G:\omega_{f\cdot\mathbf{1}_V}(x)>\alpha\})\le\frac{4C}{\alpha}\lVert F\rVert_{L^1(G,\mu_G)}<\frac{4C\varepsilon}{\alpha} \tag{A.5.4.13}
+\mu_G(\{x\in G:\omega_{f\cdot\mathrm{1}_V}(x)>\alpha\})\le\frac{4C}{\alpha}\lVert F\rVert_{L^1(G,\mu_G)}<\frac{4C\varepsilon}{\alpha} \tag{A.5.4.13}
 $$
 
-which implies (since $\varepsilon>0$ is arbitrary) that $\mu_G(\{x\in G:\omega_{f\cdot\mathbf{1}_V}(x)>\alpha\})=0$. Since this holds for every $\alpha>0$, we deduce that $\omega_{f\cdot\mathbf{1}_V}(x)=0$ for $\mu_G$-almost every $x\in G$.
+which implies (since $\varepsilon>0$ is arbitrary) that $\mu_G(\{x\in G:\omega_{f\cdot\mathrm{1}_V}(x)>\alpha\})=0$. Since this holds for every $\alpha>0$, we deduce that $\omega_{f\cdot\mathrm{1}_V}(x)=0$ for $\mu_G$-almost every $x\in G$.
 
 This implies that the sequence $A_{U_k}(f)(x)$ converges, for $\mu_G$-almost every $x\in V$, for $V$ any open subset in $G$ with $\overline{V}$ compact, and hence locally $\mu_G$-almost everywhere. Thus, it converges $\mu_G$-almost everywhere.
 
-We may therefore assume $f=\varphi$; i.e., $f$ is an integrable simple function whose coefficients are real. We want to show $\omega_f(x)=0$ for all $x$. By subadditivity and the identity $\omega_{cf}=\lvert c\rvert\omega_f$, it is enough to treat the case $f=\mathbf{1}_E$ for $E\subset G$ a $\mu_G$-measurable subset of finite $\mu_G$-measure. This amounts to showing that the sequence of nonnegative real numbers:
+We may therefore assume $f=\varphi$; i.e., $f$ is an integrable simple function whose coefficients are real. We want to show $\omega_f(x)=0$ for all $x$. By subadditivity and the identity $\omega_{cf}=\lvert c\rvert\omega_f$, it is enough to treat the case $f=\mathrm{1}_E$ for $E\subset G$ a $\mu_G$-measurable subset of finite $\mu_G$-measure. This amounts to showing that the sequence of nonnegative real numbers:
 
 $$
 \frac{\mu_G(xU_k\cap E)}{\mu_G(U_k)}
@@ -2673,10 +2673,10 @@ We now assume $x$ is in the boundary of $U$ in $G$. By outer regularity of $\mu_
 (3) : To prove that (A.5.4.2) holds for $\mu_G$-almost all $x\in G$, it is enough to assume$^{24}$ that $f$ is compactly supported, hence in $L^p(G,\mu_G)$ for every $p\ge 1$. We write:
 
 $$
-\frac{1}{\mu_G(U_k)}\int_{xU_k}f(y)\,d\mu_G(y)=\frac{1}{\mu_G(U_k)}\int_G f(y)\mathbf{1}_{U_k}(yx^{-1})\,d\mu_G(y)
+\frac{1}{\mu_G(U_k)}\int_{xU_k}f(y)\,\mathrm{d}\mu_G(y)=\frac{1}{\mu_G(U_k)}\int_G f(y)\mathrm{1}_{U_k}(yx^{-1})\,\mathrm{d}\mu_G(y)
 $$
 
-and upon defining $u_k(y):=\frac{1}{\mu_G(U_k)}\mathbf{1}_{U_k}(y^{-1})$, we have $A_{U_k}(f)=f\ast u_k$, for each integer $k\ge 0$.
+and upon defining $u_k(y):=\frac{1}{\mu_G(U_k)}\mathrm{1}_{U_k}(y^{-1})$, we have $A_{U_k}(f)=f\ast u_k$, for each integer $k\ge 0$.
 
 For any real number $q>1$, $\lVert u_k\rVert_{L^q(G,\mu_G)}=1$. By [Fol, Thm. 2.26] there exists a sequence $\{\varphi_m\}_{m\ge 0}$ of simple functions with complex coefficients such that $\lVert f-\varphi_m\rVert_{L^p(G,\mu_G)}\to 0$ as $m\to+\infty$. We have, for $\mu_G$-almost all $x\in G$ and for $p>1$ with $1/p+1/q=1$,$^{25}$ by [HR-1, Ch.V,§20,Thm.20.16,p.295] and Hölder's Inequality:
 
@@ -2686,14 +2686,14 @@ $$
 
 and since $\varphi_m\to f$ in $L^p(G,\mu_G)$, there exists a subsequence converging $\mu_G$-almost everywhere. Thus, the result for each $\varphi_m$ yields the same for $f$.
 
-We may therefore assume $f$ is a simple function with complex coefficients, and by linearity reduce to the case $f=\mathbf{1}_E$, which was checked throughout the proof of (2). $\square$
+We may therefore assume $f$ is a simple function with complex coefficients, and by linearity reduce to the case $f=\mathrm{1}_E$, which was checked throughout the proof of (2). $\square$
 
 We discuss the following consequence of Theorem A.5.4.1:
 
 COROLLARY A.5.4.3. *Let $G$ be a Hausdorff locally compact abelian group. Let $\mu_G$ be a choice of Haar measure on $G$. Assume $G$ is second countable. Let $\{U_k\}_{k\ge 0}$ be a $D'$-sequence for $G$. Let $f\in L^1_{\mathrm{loc}}(G,\mu_G)$. Let $\varphi\in C_c(G)$. Then the limit of the sequence:*
 
 $$
-A_{U_k}(\varphi\cdot f)(x):=\frac{1}{\mu_G(U_k)}\int_{xU_k}(\varphi\cdot f)(y)\,d\mu_G(y) \tag{A.5.4.14}
+A_{U_k}(\varphi\cdot f)(x):=\frac{1}{\mu_G(U_k)}\int_{xU_k}(\varphi\cdot f)(y)\,\mathrm{d}\mu_G(y) \tag{A.5.4.14}
 $$
 
 *exists at all the points $x\in G$ at which the limit of the sequence $\{A_{U_k}(f)(x)\}_{k\ge 0}$ exists. Its value is*
@@ -2707,7 +2707,7 @@ PROOF. Since $\{U_k\}_{k\ge 0}$ is a $D'$-sequence, there exists an integer $k_0
 We consider the sequence:
 
 $$
-\lvert A_{U_k}(\varphi\cdot f)(x)-\varphi(x)\cdot A_{U_k}(f)(x)\rvert\le\frac{1}{\mu_G(U_k)}\int_{xU_k}\lvert(\varphi(y)-\varphi(x))f(y)\rvert\,d\mu_G(y)\le\sup_{y\in xU_k}\lvert\varphi(y)-\varphi(x)\rvert\cdot\lVert f\rVert_{L^1(xU_k,\mu_G)} \tag{A.5.4.16}
+\lvert A_{U_k}(\varphi\cdot f)(x)-\varphi(x)\cdot A_{U_k}(f)(x)\rvert\le\frac{1}{\mu_G(U_k)}\int_{xU_k}\lvert(\varphi(y)-\varphi(x))f(y)\rvert\,\mathrm{d}\mu_G(y)\le\sup_{y\in xU_k}\lvert\varphi(y)-\varphi(x)\rvert\cdot\lVert f\rVert_{L^1(xU_k,\mu_G)} \tag{A.5.4.16}
 $$
 
 for all $k\ge k_0$.

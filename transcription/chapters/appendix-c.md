@@ -460,7 +460,7 @@ $$
 \sigma^{-1}((x_k)_{k\ge 0}):=(y_k)_{k\ge 0} \tag{C.1.5.4}
 $$
 
-where $y_k:=\sum_{0\le j\le k}x_j$ is the $k$th partial sum of the finite sum $\sum_{k\ge 0}x_k$. Indeed,
+where $y_k:=\sum_{0\le j\le k}x_k$ is the $k$th partial sum of the finite sum $\sum_{k\ge 0}x_k$. Indeed,
 
 $$
 \sigma(\sigma^{-1}((x_k)_{k\ge 0}))=(\sum_{0\le j\le k}x_j-\sum_{0\le j\le k-1}x_j)_{k\ge 0}=(x_k)_{k\ge 0}
@@ -1110,7 +1110,7 @@ $$
 
 *is a linear topological isomorphism.*
 
-*(2) If $I$ and $J$ are filtered sets, and $\{E_i\}_{i\in I}$ and $\{F_j\}_{j\in J}$ two directed families of Hausdorff locally convex topological $\mathbf C$-vector spaces. We define $E:=\varinjlim_{i\in I}E_i$ and $F:=\varinjlim_{j\in J}F_j$ endowed with their locally convex inductive limit topologies, which we assume are Hausdorff.$^{13}$*
+*(2) If $I$ and $J$ are filtered sets, and $\{E_i\}_{i\in I}$ and $\{F_i\}_{j\in J}$ two directed families of Hausdorff locally convex topological $\mathbf C$-vector spaces. We define $E:=\varinjlim_{i\in I}E_i$ and $F:=\varinjlim_{j\in J}F_j$ endowed with their locally convex inductive limit topologies, which we assume are Hausdorff.$^{13}$*
 
 *The canonical continuous linear map*
 
@@ -1908,26 +1908,26 @@ $$
 
 **C.3. NUCLEAR OPERATORS** · **701**
 
-But $\max_{F\in H_m}\min_{\phi\in F,\lVert\phi\rVert_H=1}\lVert A\phi\rVert_H^2=(\max_{F\in H_m}\min_{\phi\in F,\lVert\phi\rVert_H=1}\lVert A\phi\rVert_H)^2$, as the squaring map on $\mathbf R_{\ge0}$ is monotonically non-decreasing, so the outer terms in (C.3.5.4) coincide.
+But $\max_{F\in H_m}\min_{\phi\in F,\lVert\phi\rVert_H=1}\lVert A\phi\rVert_H^2=(\max_{F\in H_m}\min_{\phi\in F,\lVert\phi\rVert_H=1}\lVert A\phi\rVert_H)^2$, as the squaring map on $\mathbf R_{\ge 0}$ is monotonically non-decreasing, so the outer terms in (C.3.5.4) coincide.
 
 The remaining identity in (C.3.5.4) is proved in a similar manner, using the weak continuity of $f$ and the weak compactness of closed and bounded subsets of $H$, to replace the supremum with a maximum over the elements of $\phi\in F^\perp$ satisfying $\lVert\phi\rVert_H=1$. This settles (2) and (3).
 
-It remains to prove (1). We write $A=\sum_{m\ge1}\sigma_m(A)\langle\cdot,\phi_m\rangle_H\,\psi_m$ for orthonormal sets $\{\phi_m\}_{m\ge1},\{\psi_m\}_{m\ge1}$, which can be done by applying [Cnw-a, Ch. II, Cor. 5.4] to $|A|$ and using Polar Decomposition of $A$: the existence of $U\in\mathscr B(H)$ which is isometric on the range of $A$ and zero on its orthogonal, such that $A=U|A|$. Namely, upon defining $\{\phi_m\}_{m\ge1}$ to be an orthonormal basis for $\ker(|A|)^\perp$ in $H$, diagonalizing $|A|$ as per [Cnw-a, Ch. II, Cor.5.3(b)] with eigenvalues $\sigma_m(A)$ for each $m\ge1$ respectively, we then define $\psi_m:=U\phi_m$.
+It remains to prove (1). We write $A=\sum_{m\ge 1}\sigma_m(A)\langle\cdot,\phi_m\rangle_H\,\psi_m$ for orthonormal sets $\{\phi_m\}_{m\ge 1},\{\psi_m\}_{m\ge 1}$, which can be done by applying [Cnw-a, Ch. II, Cor. 5.4] to $|A|$ and using Polar Decomposition of $A$: the existence of $U\in\mathscr B(H)$ which is isometric on the range of $A$ and zero on its orthogonal, such that $A=U|A|$. Namely, upon defining $\{\phi_m\}_{m\ge 1}$ to be an orthonormal basis for $\ker(|A|)^\perp$ in $H$, diagonalizing $|A|$ as per [Cnw-a, Ch. II, Cor.5.3(b)] with eigenvalues $\sigma_m(A)$ for each $m\ge 1$ respectively, we then define $\psi_m:=U\phi_m$.
 
-Then we have $A^*=\sum_{m\ge1}\sigma_m(A)\langle\psi_m,\cdot\rangle_H\,\phi_m$. This implies that we have:
+Then we have $A^*=\sum_{m\ge 1}\sigma_m(A)\langle\psi_m,\cdot\rangle_H\,\phi_m$. This implies that we have:
 
 $$
-AA^*=\sum_{m\ge1}\sigma_m(A)^2\langle\cdot,\psi_m\rangle_H\,\psi_m
+AA^*=\sum_{m\ge 1}\sigma_m(A)^2\langle\cdot,\psi_m\rangle_H\,\psi_m
 \tag{C.3.5.10}
 $$
 
-and hence the singular values $\{\sigma_m(A^*)\}_{m\ge1}$ of $A^*$ being the nonnegative square roots of the eigenvalues of $AA^*$ are exactly the nonnegative real numbers $\sigma_m(A)$, for each $m\ge1$ and counted with multiplicity. $\square$
+and hence the singular values $\{\sigma_m(A^*)\}_{m\ge 1}$ of $A^*$ being the nonnegative square roots of the eigenvalues of $AA^*$ are exactly the nonnegative real numbers $\sigma_m(A)$, for each $m\ge 1$ and counted with multiplicity. $\square$
 
 LEMMA C.3.5.4 (Estimates on singular values). *Let $H$ be a Hilbert space. Let $A,B\in\mathscr B(H)$ be bounded endomorphisms of $H$. Assume that $A$ is compact. Then:*
 
 (1) *$AB$ and $BA$ are compact,*
 
-(2) *upon denoting by $\{\sigma_m(A)\}_{m\ge1},\{\sigma_m(B)\}_{m\ge1}$ and $\{\sigma_m(BA)\}_{m\ge1},\{\sigma_m(AB)\}_{m\ge1}$ the respective sequences of singular values ordered decreasingly, we have:*
+(2) *upon denoting by $\{\sigma_m(A)\}_{m\ge 1},\{\sigma_m(B)\}_{m\ge 1}$ and $\{\sigma_m(BA)\}_{m\ge 1},\{\sigma_m(AB)\}_{m\ge 1}$ the respective sequences of singular values ordered decreasingly, we have:*
 
 $$
 \sigma_m(AB)\le\sigma_m(A)\lVert B\rVert,\quad
@@ -1982,19 +1982,19 @@ PROOF. (1) : Each $P_iT$ is nuclear since it is of finite rank. We observe that 
 
 **702** · **CHAPTER C. PREPARATIONS ON LOCALLY CONVEX TOPOLOGICAL VECTOR SPACES**
 
-Upon calling $P_\Sigma:=\sum_{i\in\Sigma}P_i$, then $P_\Sigma$ is itself an orthogonal projector onto $\bigoplus_{i\in\Sigma}H_i$. In particular, it satisfies $\lVert P_\Sigma\rVert\le1$. By the same token, $\mathrm{Id}-P_\Sigma$ also satisfies $\lVert\mathrm{Id}-P_\Sigma\rVert\le1$, because $\mathrm{Id}-P_\Sigma$ is itself an orthogonal projector onto $(\oplus H_i)^\perp$.
+Upon calling $P_\Sigma:=\sum_{i\in\Sigma}P_i$, then $P_\Sigma$ is itself an orthogonal projector onto $\bigoplus_{i\in\Sigma}H_i$. In particular, it satisfies $\lVert P_\Sigma\rVert\le 1$. By the same token, $\mathrm{Id}-P_\Sigma$ also satisfies $\lVert\mathrm{Id}-P_\Sigma\rVert\le 1$, because $\mathrm{Id}-P_\Sigma$ is itself an orthogonal projector onto $(\oplus H_i)^\perp$.
 
-Since, $T$ and $P_iT$ are compact for every $i\in I$, we deduce that for every integer $m\ge1$, we have by (C.3.5.11) from Lemma C.3.5.4(2):
+Since, $T$ and $P_iT$ are compact for every $i\in I$, we deduce that for every integer $m\ge 1$, we have by (C.3.5.11) from Lemma C.3.5.4(2):
 
 $$
 0\le\sigma_m(T-P_\Sigma T)\le\lVert\mathrm{Id}-P_\Sigma\rVert\,\sigma_m(T)\le\sigma_m(T)
 $$
 
-and since $T$ is nuclear we have by [Cnw-c, Ch. 3, Thm. 18.11(b)] that the series $\sum_{m\ge1}\sigma_m(T)$ converges (absolutely, since each $\sigma_m(T)$ is nonnegative). By Dominated Convergence, we have:
+and since $T$ is nuclear we have by [Cnw-c, Ch. 3, Thm. 18.11(b)] that the series $\sum_{m\ge 1}\sigma_m(T)$ converges (absolutely, since each $\sigma_m(T)$ is nonnegative). By Dominated Convergence, we have:
 
 $$
-\lim_{k\to+\infty}\sum_{m\ge1}\sigma_m(T-P_{\Sigma_k}T)
-=\sum_{m\ge1}\lim_{k\to+\infty}\sigma_m(T-P_{\Sigma_k}T).
+\lim_{k\to+\infty}\sum_{m\ge 1}\sigma_m(T-P_{\Sigma_k}T)
+=\sum_{m\ge 1}\lim_{k\to+\infty}\sigma_m(T-P_{\Sigma_k}T).
 \tag{C.3.5.16}
 $$
 
@@ -2004,21 +2004,21 @@ By (C.3.5.16), we therefore have:
 
 $$
 \lim_{k\to+\infty}\lVert T-P_{\Sigma_k}T\rVert_{\mathrm{Tr}}
-=\sum_{m\ge1}\lim_{k\to+\infty}\sigma_m(T-P_{\Sigma_k}T)=0
+=\sum_{m\ge 1}\lim_{k\to+\infty}\sigma_m(T-P_{\Sigma_k}T)=0
 \tag{C.3.5.17}
 $$
 
-This says the sequence of nuclear operators $\{P_{\Sigma_k}T\}_{k\ge0}$ converges to $T$ with respect to the topology on $\mathrm N(H)$ induced by the trace-norm.
+This says the sequence of nuclear operators $\{P_{\Sigma_k}T\}_{k\ge 0}$ converges to $T$ with respect to the topology on $\mathrm N(H)$ induced by the trace-norm.
 
 (2) : The assertions follow from continuity of the trace functional on $\mathrm N(H)$ with respect to $\lVert\cdot\rVert_{\mathrm{Tr}}$, which follows from [Cnw-c, Ch. 3, Thm. 18.11(e)] (with $T=\mathrm{id}_H$). $\square$
 
-COROLLARY C.3.5.5 (SOT-exhaustive filtrations and nuclear convergence). *Let $H$ be a separable Hilbert space. Let $\{H_i\}_{i\ge1}$ be a countable set of closed linear subspaces such that for every $i'\ge i$ we have $H_i\subset H_{i'}$.*
+COROLLARY C.3.5.5 (SOT-exhaustive filtrations and nuclear convergence). *Let $H$ be a separable Hilbert space. Let $\{H_i\}_{i\ge 1}$ be a countable set of closed linear subspaces such that for every $i'\ge i$ we have $H_i\subset H_{i'}$.*
 
-*Let $T\in\mathrm N(H)$ be a nuclear operator, and $P_i:H\to H_i$ the orthogonal projector onto $H$. Assume $\bigcup_{i\ge1}H_i$ is dense in $H$. Then:*
+*Let $T\in\mathrm N(H)$ be a nuclear operator, and $P_i:H\to H_i$ the orthogonal projector onto $H$. Assume $\bigcup_{i\ge 1}H_i$ is dense in $H$. Then:*
 
 (1) *$P_i\to\mathrm{Id}$ with respect to the strong operator topology.*
 
-(2) *The sequences of nuclear operators $\{P_iT\}_{i\ge1}$ and $\{TP_i\}_{i\ge1}$ both converge to $T$ with respect to the topology induced by the trace-norm $\lVert\cdot\rVert_{\mathrm{Tr}}$ on $\mathrm N(H)$.*
+(2) *The sequences of nuclear operators $\{P_iT\}_{i\ge 1}$ and $\{TP_i\}_{i\ge 1}$ both converge to $T$ with respect to the topology induced by the trace-norm $\lVert\cdot\rVert_{\mathrm{Tr}}$ on $\mathrm N(H)$.*
 
 (3) *We have:*
 
@@ -2028,7 +2028,7 @@ $$
 \tag{C.3.5.18}
 $$
 
-PROOF. (1) : For any $\phi\in\bigcup_{i\ge1}H_i$, there exists $i_0\ge0$ large enough so as to have $\phi\in H_{i_0}$, and hence we have:
+PROOF. (1) : For any $\phi\in\bigcup_{i\ge 1}H_i$, there exists $i_0\ge 0$ large enough so as to have $\phi\in H_{i_0}$, and hence we have:
 
 $$
 \lim_{i\to+\infty}\lVert(\mathrm{Id}-P_i)\phi\rVert_H^2
@@ -2038,7 +2038,7 @@ $$
 
 since $(\mathrm{Id}-P_i)\phi$ is orthogonal to $H_{i_0}$ for every $i\ge i_0$.
 
-Let $\phi\in H$ be arbitrary, and fix a real number $\varepsilon>0$. Let $\phi_0\in\bigcup_{i\ge1}H_i$ be such that $\lVert\phi-\phi_0\rVert<\varepsilon$. There exists an integer $i_0\ge1$ large enough so as to have $\phi_0\in H_{i_0}$. We have:
+Let $\phi\in H$ be arbitrary, and fix a real number $\varepsilon>0$. Let $\phi_0\in\bigcup_{i\ge 1}H_i$ be such that $\lVert\phi-\phi_0\rVert<\varepsilon$. There exists an integer $i_0\ge 1$ large enough so as to have $\phi_0\in H_{i_0}$. We have:
 
 $$
 \lVert(\mathrm{Id}-P_i)(\phi-\phi_0)+(\mathrm{Id}-P_i)\phi_0\rVert_H
@@ -2046,7 +2046,7 @@ $$
 \tag{C.3.5.20}
 $$
 
-with $\lim_{i\to+\infty}\lVert(\mathrm{Id}-P_i)\phi_0\rVert_H=0$ and $\lVert(\mathrm{Id}-P_i)(\phi-\phi_0)\rVert_H\le\lVert\phi-\phi_0\rVert$ since $\lVert\mathrm{Id}-P_i\rVert\le1$, so
+with $\lim_{i\to+\infty}\lVert(\mathrm{Id}-P_i)\phi_0\rVert_H=0$ and $\lVert(\mathrm{Id}-P_i)(\phi-\phi_0)\rVert_H\le\lVert\phi-\phi_0\rVert$ since $\lVert\mathrm{Id}-P_i\rVert\le 1$, so
 
 $$
 \overline{\lim}_{i\to+\infty}\lVert(\mathrm{Id}-P_i)\phi\rVert_H<\varepsilon.
@@ -2190,7 +2190,7 @@ $$
 i.e. every Hilbert-Schmidt operator $T:L^2(X,\mu)\to L^2(Y,\nu)$ is obtained by integration against a kernel function $k\in L^2(X\times Y,\mu\otimes\nu)$:
 
 $$
-(T\phi)(y)=\int_X k(x,y)\phi(x)\,d\mu(x)
+(T\phi)(y)=\int_X k(x,y)\phi(x)\,\mathrm{d}\mu(x)
 \tag{C.3.6.6}
 $$
 
@@ -2342,7 +2342,7 @@ Corollary C.3.5.5 is obtained from Proposition C.3.6.5 upon choosing $B_k:=P_{i_
 A nuclear operator $A$ on $E:=L^2(X,\mu)$ is, in particular, Hilbert-Schmidt (see [Cnw-c, Prop.18.8(c)]); i.e., $A\in S_p(E)$ for $p=1,2$, and it therefore corresponds to a unique element of $E'\widehat\otimes_\sigma E$ (see Proposition C.3.6.4) which, since $E'\widehat\otimes_\sigma E$ is isometric to $L^2(X\times X,\mu\otimes\mu)$, corresponds to a unique $(\mu\otimes\mu)$-measurable function $k(x,y)\in L^2(X\times X,\mu\otimes\mu)$ such that the effect of $A$ on $\phi\in L^2(X,\mu)$ is by convolution, i.e. we have
 
 $$
-(A\phi)(x)=\int_X k(x,y)\phi(y)\,d\mu(y)
+(A\phi)(x)=\int_X k(x,y)\phi(y)\,\mathrm{d}\mu(y)
 $$
 
 as $\mu$-measurable and square $\mu$-integrable functions on $X$.
@@ -2368,7 +2368,7 @@ THEOREM C.3.7.1 (Trace formula for integral nuclear operators). *Let $X$ be a Ha
 (1) *the integral operator:*
 
 $$
-(T\phi)(x):=\int_X k(x,y)\phi(y)\,d\mu(y)
+(T\phi)(x):=\int_X k(x,y)\phi(y)\,\mathrm{d}\mu(y)
 \tag{C.3.7.1}
 $$
 
@@ -2379,7 +2379,7 @@ $$
 *(a) if $k(x,y)$ is continuous almost everywhere along the diagonal in $X\times X$ then it is absolutely integrable and*
 
 $$
-\mathrm{Trace}(T)=\int_X k(x,x)\,d\mu(x).
+\mathrm{Trace}(T)=\int_X k(x,x)\,\mathrm{d}\mu(x).
 \tag{C.3.7.2}
 $$
 
@@ -2475,18 +2475,18 @@ DEFINITION C.4.2.1. Let $X$ be a locally compact Hausdorff space and $\mu$ a Rad
 
 (1) $f$ is *weakly measurable* if and only if for every $\varphi\in E'$, the function $\varphi\circ f:X\to\mathbf C$ is $\mu$-measurable.
 
-(2) $f$ is *weakly $\mu$-integrable* if and only if it is weakly measurable and for every $\varphi\in E'$, $\varphi\circ f:X\to\mathbf C$ is $\mu$-integrable. For a weakly $\mu$-integrable function $f:X\to E$, we denote by $\int_X f\,d\mu$ the unique element of $(E')^*$ defined by
+(2) $f$ is *weakly $\mu$-integrable* if and only if it is weakly measurable and for every $\varphi\in E'$, $\varphi\circ f:X\to\mathbf C$ is $\mu$-integrable. For a weakly $\mu$-integrable function $f:X\to E$, we denote by $\int_X f\,\mathrm{d}\mu$ the unique element of $(E')^*$ defined by
 
 $$
-\left\langle\int_X f\,d\mu,\varphi\right\rangle_{(E')^*,E'}:=\int_X\langle f(x),\varphi\rangle_{E,E'}\,d\mu(x),\ \varphi\in E'.
+\left\langle\int_X f\,\mathrm{d}\mu,\varphi\right\rangle_{(E')^*,E'}:=\int_X\langle f(x),\varphi\rangle_{E,E'}\,\mathrm{d}\mu(x),\ \varphi\in E'.
 \tag{C.4.2.1}
 $$
 
-In other words, $\int_X f\,d\mu\in(E')^*$ is $\varphi\mapsto\int_X(\varphi\circ f)d\mu$ by definition.
+In other words, $\int_X f\,\mathrm{d}\mu\in(E')^*$ is $\varphi\mapsto\int_X(\varphi\circ f)\mathrm{d}\mu$ by definition.
 
-(3) $f$ is *$\mu$-integrable, or integrable in the sense of Pettis,* if and only if it is weakly $\mu$-integrable (so in particular weakly $\mu$-measureable) and the $\mathbf C$-linear form $\int_X f\,d\mu$ on $E'$ defined in (C.4.2.1) is in the image of the canonical $\mathbf C$-linear injection $\iota_E:E\to(E')^*$. We denote by $\int_X f\,d\mu$ again the unique element of $E$ that maps to the linear form on $E'$ from (C.4.2.1) under $\iota_E$, if any.
+(3) $f$ is *$\mu$-integrable, or integrable in the sense of Pettis,* if and only if it is weakly $\mu$-integrable (so in particular weakly $\mu$-measureable) and the $\mathbf C$-linear form $\int_X f\,\mathrm{d}\mu$ on $E'$ defined in (C.4.2.1) is in the image of the canonical $\mathbf C$-linear injection $\iota_E:E\to(E')^*$. We denote by $\int_X f\,\mathrm{d}\mu$ again the unique element of $E$ that maps to the linear form on $E'$ from (C.4.2.1) under $\iota_E$, if any.
 
-REMARK C.4.2.2. When $E$ is a Banach space, there is Bochner's theory of $E$-valued integration that can be developed in a style similar to scalar-valued integration, as is done for example in [Lang-d, Ch. VI]. Any $f:X\to E$ that is integrable in the sense of Bochner is also integrable in the sense of Pettis with the same value for $\int_X f d\mu\in E$, since the formation of the Bochner integral commutes with continuous linear mappings $E\to F$ (such as a continuous linear functional $E\to\mathbf C$).
+REMARK C.4.2.2. When $E$ is a Banach space, there is Bochner's theory of $E$-valued integration that can be developed in a style similar to scalar-valued integration, as is done for example in [Lang-d, Ch. VI]. Any $f:X\to E$ that is integrable in the sense of Bochner is also integrable in the sense of Pettis with the same value for $\int_X f \mathrm{d}\mu\in E$, since the formation of the Bochner integral commutes with continuous linear mappings $E\to F$ (such as a continuous linear functional $E\to\mathbf C$).
 
 The relation between the two theories is often not needed in this work because (as was noted §C.1.4) the Banach-valued theory is often not applicable due to infinite-dimensional nuclear spaces $E$ never being normable [Tre, Cor. 2 to Prop. 50.2]. Nonetheless, the Bochner integral often agrees with the integral in the
 
@@ -2503,7 +2503,7 @@ C.4.3.1. *Vector-valued Mean Value Theorems.* The following Lemma indicates one 
 LEMMA C.4.3.1 (Mean-Value Theorem). *Let $X$ be a locally compact Hausdorff space and $\mu$ a finite complex Radon measure on $X$. Let $E$ be a Hausdorff locally convex topological $\mathbf C$-vector space and $f:X\to E$ a weakly $\mu$-integrable continuous function. Then we have*
 
 $$
-\int_X f\,d\mu\in\lVert\mu\rVert\cdot\overline{\mathrm{cch}}(f(X))
+\int_X f\,\mathrm{d}\mu\in\lVert\mu\rVert\cdot\overline{\mathrm{cch}}(f(X))
 \tag{C.4.3.1}
 $$
 
@@ -2516,10 +2516,10 @@ We refer the reader to [Bou-I, Ch. VI ,§1, no. 2, p. VI.5, Prop. 5] for the spe
 PROOF. For any $\varphi\in E'$, we have
 
 $$
-\left\lvert\int_X\langle f(x),\varphi\rangle_{E,E'}\,d\mu(x)\right\rvert\in[0,\lvert\mu\rvert(X)]\cdot\overline{\lvert\langle f(X),\varphi\rangle_{E,E'}\rvert}\subset\mathbf R.
+\left\lvert\int_X\langle f(x),\varphi\rangle_{E,E'}\,\mathrm{d}\mu(x)\right\rvert\in[0,\lvert\mu\rvert(X)]\cdot\overline{\lvert\langle f(X),\varphi\rangle_{E,E'}\rvert}\subset\mathbf R.
 $$
 
-By design of $\sigma((E')^*,E')$ as an inverse-image topology (see the discussion at the bottom of [Bou-TVS, p. II.42]) from the product topology on $\prod_{\varphi\in E'}\mathbf C$ along the map $u\mapsto(\langle u,\varphi\rangle_{(E')^*,E'})_{\varphi\in E'}$, the average $\lVert\mu\rVert^{-1}\int_X f\,d\mu$ is contained in the bi-polar set $(f(X)^\circ)^\bullet$ of $f(X)$ (because on any $\varphi$ in the (absolute) polar $f(X)^\circ\subset E'$, the absolute value of $\lVert\mu\rVert^{-1}\int_X\langle f(x),\varphi\rangle_{E,E'}\,d\mu(x)$ is bounded above by 1), which by [DS, §2, Prop. 1, p. 64] is $\overline{\mathrm{cch}}(f(X))$ (the closure being formed with respect to the $\sigma((E')^*,E')$-topology, and the duality being $\langle E,E'\rangle$ for the formation of the polar $f(X)^\circ$ and being $\langle E',(E')^*\rangle$ for the formation of the second polar $(\cdot)^\bullet$). $\square$
+By design of $\sigma((E')^*,E')$ as an inverse-image topology (see the discussion at the bottom of [Bou-TVS, p. II.42]) from the product topology on $\prod_{\varphi\in E'}\mathbf C$ along the map $u\mapsto(\langle u,\varphi\rangle_{(E')^*,E'})_{\varphi\in E'}$, the average $\lVert\mu\rVert^{-1}\int_X f\,\mathrm{d}\mu$ is contained in the bi-polar set $(f(X)^\circ)^\bullet$ of $f(X)$ (because on any $\varphi$ in the (absolute) polar $f(X)^\circ\subset E'$, the absolute value of $\lVert\mu\rVert^{-1}\int_X\langle f(x),\varphi\rangle_{E,E'}\,\mathrm{d}\mu(x)$ is bounded above by 1), which by [DS, §2, Prop. 1, p. 64] is $\overline{\mathrm{cch}}(f(X))$ (the closure being formed with respect to the $\sigma((E')^*,E')$-topology, and the duality being $\langle E,E'\rangle$ for the formation of the polar $f(X)^\circ$ and being $\langle E',(E')^*\rangle$ for the formation of the second polar $(\cdot)^\bullet$). $\square$
 
 The following is an existence result for Radon measures on a compact Hausdorff topological space $X$ characterizing the closed convex hull of the set of values of a continuous vector-valued function:
 
@@ -2534,7 +2534,7 @@ $X$, $\mathscr M^1_+(X)$ the subset of the positive Radon measures on $X$ satisf
 (1) *We have, as subsets of $(E')^*$:*
 
 $$
-\left\{\int_X f(x)\,d\mu(x),\mu\in\mathscr M^1_+(X)\right\}=\overline{\mathrm{Ch}}(f(X))
+\left\{\int_X f(x)\,\mathrm{d}\mu(x),\mu\in\mathscr M^1_+(X)\right\}=\overline{\mathrm{Ch}}(f(X))
 \tag{C.4.3.2}
 $$
 
@@ -2544,15 +2544,15 @@ $$
 
 PROOF. (1) : This is [Voigt, Prop. 14.4] since we work over $\mathbf C$ ([Bou-I, Ch. III, §3, Prop. 5] is over $\mathbf R$).
 
-(2) : Let $A$ be the convex circled hull of the subset of $(E')^*$ given by the values $\int_X f(x)\,d\mu(x)$ as $\mu$ varies over the complex Radon measures on $X$ with *finite support* satisfying $\lVert\mu\rVert\le 1$. Then by definition $A=\mathrm{cch}(f(X))$. By Lemma C.4.3.1, the convex circled superset
+(2) : Let $A$ be the convex circled hull of the subset of $(E')^*$ given by the values $\int_X f(x)\,\mathrm{d}\mu(x)$ as $\mu$ varies over the complex Radon measures on $X$ with *finite support* satisfying $\lVert\mu\rVert\le 1$. Then by definition $A=\mathrm{cch}(f(X))$. By Lemma C.4.3.1, the convex circled superset
 
 $$
-B:=\left\{\int_X f(x)\,d\mu(x),\mu\in\mathscr M^{\le 1}(X)\right\}\subset(E')^*
+B:=\left\{\int_X f(x)\,\mathrm{d}\mu(x),\mu\in\mathscr M^{\le 1}(X)\right\}\subset(E')^*
 $$
 
-of the values $\int_X f(x)\,d\mu(x)$ as $\mu$ varies over $\mathscr M^{\le 1}(X)$, which contains $A$, is contained in the $\sigma((E')^*,E')$-closure of $\mathrm{cch}(f(X))$. This proves that the $\sigma((E')^*,E')$-closure of the set $B$ is $\overline{\mathrm{cch}}(f(X))$. It remains to show that $B$ is itself $\sigma((E')^*,E')$-compact, in which case it is $\sigma((E')^*,E')$-closed and hence equals $\overline{\mathrm{cch}}(f(X))$.
+of the values $\int_X f(x)\,\mathrm{d}\mu(x)$ as $\mu$ varies over $\mathscr M^{\le 1}(X)$, which contains $A$, is contained in the $\sigma((E')^*,E')$-closure of $\mathrm{cch}(f(X))$. This proves that the $\sigma((E')^*,E')$-closure of the set $B$ is $\overline{\mathrm{cch}}(f(X))$. It remains to show that $B$ is itself $\sigma((E')^*,E')$-compact, in which case it is $\sigma((E')^*,E')$-closed and hence equals $\overline{\mathrm{cch}}(f(X))$.
 
-The assignment $\mu\mapsto\int_X f(x)\,d\mu(x)$ on $\mu\in\mathscr M(X)$ is continuous with respect to the $\sigma(\mathscr M(X),C(X))$-topology on each bounded subset of $\mathscr M(X)_\sigma$ (such as the compact subset $\mathscr M^{\le 1}(X)$) and the $\sigma((E')^*,E')$-topology on $(E')^*$. (Note that formation of $\int_X f(x)\,d\mu(x)$ is not generally continuous with respect to $\mu\in\mathscr M(X)$ using the $\sigma(\mathscr M(X),C(X))$-topology; it is continuous on the convex cone of positive measures, and on all $\sigma(\mathscr M(X),C(X))$-bounded subsets by [Bou-I, Ch. III, §4, No. 4, Corollary, p. III.40], which is what we are using here.) But $\mathscr M^{\le 1}(X)$ is compact with respect to the $\sigma(\mathscr M(X),C(X))$-topology, and hence so is $B$ with respect to the $\sigma((E')^*,E')$-topology. $\square$
+The assignment $\mu\mapsto\int_X f(x)\,\mathrm{d}\mu(x)$ on $\mu\in\mathscr M(X)$ is continuous with respect to the $\sigma(\mathscr M(X),C(X))$-topology on each bounded subset of $\mathscr M(X)_\sigma$ (such as the compact subset $\mathscr M^{\le 1}(X)$) and the $\sigma((E')^*,E')$-topology on $(E')^*$. (Note that formation of $\int_X f(x)\,\mathrm{d}\mu(x)$ is not generally continuous with respect to $\mu\in\mathscr M(X)$ using the $\sigma(\mathscr M(X),C(X))$-topology; it is continuous on the convex cone of positive measures, and on all $\sigma(\mathscr M(X),C(X))$-bounded subsets by [Bou-I, Ch. III, §4, No. 4, Corollary, p. III.40], which is what we are using here.) But $\mathscr M^{\le 1}(X)$ is compact with respect to the $\sigma(\mathscr M(X),C(X))$-topology, and hence so is $B$ with respect to the $\sigma((E')^*,E')$-topology. $\square$
 
 REMARK C.4.3.3. In the proof of Theorem C.4.3.2, we used properties of the $\sigma(\mathscr M(X),C(X))$-topology for $X$ a compact Hausdorff topological space.
 
@@ -2560,7 +2560,7 @@ Vague continuity on the cone of positive Radon measures can be thought of as a g
 
 We are going to be routinely making two assumptions on $E$ throughout our work, aside from $E$ being locally convex: that $E$ be Hausdorff, and *quasi-complete*. In our situations of interest, these will always be satisfied. This and Lemma C.4.3.1 provide an integrability criterion for continuous compactly supported functions (see Theorem C.4.3.5 below).
 
-A priori, the linear form $\int_X f\,d\mu$ is only contained in the weak completion $(E')^*$ of $E$ (see the start of Lemma C.4.3.1). For the purposes of this work, there will be two avenues to decide when a weakly integrable function $f:X\to E$ is integrable (in the sense of Definition C.4.2.1(3)). Quasi-completeness of $E$ is one of them. The definition of quasi-completeness is that every *bounded* closed subset of $E$ is complete. (Here we are using boundedness in the sense of locally convex topological vector spaces.) This is equivalent to saying that every *bounded* Cauchy net in $E$ converges in $E$. It is therefore also referred to as *bounded completeness*. We refer the reader to [Scha, Ch. I, 5.6; Ch. II, Cor. to 4.3] for some properties of quasi-complete Hausdorff locally convex topological vector spaces.
+A priori, the linear form $\int_X f\,\mathrm{d}\mu$ is only contained in the weak completion $(E')^*$ of $E$ (see the start of Lemma C.4.3.1). For the purposes of this work, there will be two avenues to decide when a weakly integrable function $f:X\to E$ is integrable (in the sense of Definition C.4.2.1(3)). Quasi-completeness of $E$ is one of them. The definition of quasi-completeness is that every *bounded* closed subset of $E$ is complete. (Here we are using boundedness in the sense of locally convex topological vector spaces.) This is equivalent to saying that every *bounded* Cauchy net in $E$ converges in $E$. It is therefore also referred to as *bounded completeness*. We refer the reader to [Scha, Ch. I, 5.6; Ch. II, Cor. to 4.3] for some properties of quasi-complete Hausdorff locally convex topological vector spaces.
 
 REMARK C.4.3.4 (Cautionary remark on boundedness and net-convergence). For the purposes of checking convergence or continuity in a Hausdorff topological vector space with nets, we are allowed to test such
 
@@ -2590,15 +2590,15 @@ This is [Gro-a, Lemme 2], where the assumptions of the Lemma are met because con
 
 **714** · **CHAPTER C. PREPARATIONS ON LOCALLY CONVEX TOPOLOGICAL VECTOR SPACES**
 
-Proof. For closed $Z\subset X$ with $\mathrm{supp}(f)\subset Z$, we have $\int_Z f\,d\mu=\int_X f\,d\mu$ in $E'$ by the respective definitions of these functionals. By Lemma C.4.3.1 applied to $\mathrm{supp}(f)$, we have
+Proof. For closed $Z\subset X$ with $\mathrm{supp}(f)\subset Z$, we have $\int_Z f\,\mathrm{d}\mu=\int_X f\,\mathrm{d}\mu$ in $E'$ by the respective definitions of these functionals. By Lemma C.4.3.1 applied to $\mathrm{supp}(f)$, we have
 
 $$
-\int_X f\,d\mu\in\mu(\mathrm{supp}(f))\cdot\overline{\mathrm{cch}}(f(X)) \tag{C.4.3.3}
+\int_X f\,\mathrm{d}\mu\in\mu(\mathrm{supp}(f))\cdot\overline{\mathrm{cch}}(f(X)) \tag{C.4.3.3}
 $$
 
-where $\overline{\mathrm{cch}}f(X)$ is the closure of the convex circled hull (also called the absolutely convex hull) of the image of $f$, formed within the weak completion $(E')^*$ of $E$. But $\mathrm{supp}(f)$ is compact, so $f(X)$ is also compact, and the quasi-completeness of $E$ then ensures such closure is contained in $E$ by Lemma C.4.1.2(1). There therefore exists an element of $E$ representing the integral $\int_X f\,d\mu$. $\square$
+where $\overline{\mathrm{cch}}f(X)$ is the closure of the convex circled hull (also called the absolutely convex hull) of the image of $f$, formed within the weak completion $(E')^*$ of $E$. But $\mathrm{supp}(f)$ is compact, so $f(X)$ is also compact, and the quasi-completeness of $E$ then ensures such closure is contained in $E$ by Lemma C.4.1.2(1). There therefore exists an element of $E$ representing the integral $\int_X f\,\mathrm{d}\mu$. $\square$
 
-Remark C.4.3.6. We refer the reader to [Bou-I, §3.3, Prop. 7, p. III.37] for another criterion for the linear form $\varphi\mapsto\int_X\langle f(x),\varphi\rangle\,d\mu(x)$ (an element of $(E')^*$) to be contained in $E$.
+Remark C.4.3.6. We refer the reader to [Bou-I, §3.3, Prop. 7, p. III.37] for another criterion for the linear form $\varphi\mapsto\int_X\langle f(x),\varphi\rangle\,\mathrm{d}\mu(x)$ (an element of $(E')^*$) to be contained in $E$.
 
 In our case, $X$ will either be a closed positively oriented simple parametric curve within the complex plane, equipped with its own finite complex Radon measure induced by the parametrization, or a compact subset of a locally compact Hausdorff abelian topological group equipped with a normalized Haar measure, or a fibral Radon measure in a product factorization of a Haar measure induced by fibering such group over another locally compact Hausdorff abelian topological group.
 
@@ -2609,7 +2609,7 @@ Lemma C.4.3.7. *Let $X$ be a locally compact Hausdorff space, and $\mu$ a finite
 Proof. Let $B'$ be the strong dual of $B$ (this is the usual dual Banach space). By [DU, Ch. II, §3, Lemma 1], applied to $E=X$ in the notation of *loc.cit.*, there exists $\lambda\in B''$ such that
 
 $$
-\langle\lambda,\varphi\rangle_{B'',B'}=\int_X\langle f(x),\varphi\rangle_{B,B'}\,d\mu(x) \tag{C.4.3.4}
+\langle\lambda,\varphi\rangle_{B'',B'}=\int_X\langle f(x),\varphi\rangle_{B,B'}\,\mathrm{d}\mu(x) \tag{C.4.3.4}
 $$
 
 for every $\varphi\in B'$ (i.e., the right side is continuous in $\varphi\in B'$). Since $B$ is reflexive by hypothesis, $\iota_B:B\to (B')^*$ maps $B$ onto (and in fact topologically isomorphically) $B''$ and hence there exists $b\in B$ such that $\iota_B(b)=\lambda$. It follows that $f$ is $\mu$-integrable. $\square$
@@ -2619,18 +2619,18 @@ Before discussing a consequence of Lemma C.4.3.7, we require the following two p
 Lemma C.4.3.8. *Let $T:E_1\to E_2$ be a continuous linear map between Hausdorff locally convex complex vector spaces, and $(X,\mu)$ a locally compact Hausdorff topological space with $\mu$ a finite complex Radon measure. Let $f:X\to E_1$ be a weakly $\mu$-integrable function. Then*
 
 $$
-\int_X (T\circ f)\,d\mu=(T')^*\left(\int_X f\,d\mu\right) \tag{C.4.3.5}
+\int_X (T\circ f)\,\mathrm{d}\mu=(T')^*\left(\int_X f\,\mathrm{d}\mu\right) \tag{C.4.3.5}
 $$
 
 *as elements of $(E_2')^*$. If $f$ is $\mu$-integrable then so is $T\circ f$, and then*
 
 $$
-\int_X (T\circ f)\,d\mu=T\left(\int_X f\,d\mu\right) \tag{C.4.3.6}
+\int_X (T\circ f)\,\mathrm{d}\mu=T\left(\int_X f\,\mathrm{d}\mu\right) \tag{C.4.3.6}
 $$
 
 *as elements of $E_2$.*
 
-Note that the integrals in (C.4.3.5) are simply the algebraic linear forms $\varphi\mapsto\int_X\langle f(x),\varphi\rangle_{E_1,E_1'}\,d\mu(x)$ on $E_1'$ and $\varphi\mapsto\int_X\langle T(f(x)),\varphi\rangle_{E_2,E_2'}\,d\mu(x)$ on $E_2'$, i.e. elements of $(E_1')^*$ and $(E_2')^*$ only, respectively. The Lemma is then a diagram chase for (C.4.3.5) with (C.4.1.2) then yielding (C.4.3.6).
+Note that the integrals in (C.4.3.5) are simply the algebraic linear forms $\varphi\mapsto\int_X\langle f(x),\varphi\rangle_{E_1,E_1'}\,\mathrm{d}\mu(x)$ on $E_1'$ and $\varphi\mapsto\int_X\langle T(f(x)),\varphi\rangle_{E_2,E_2'}\,\mathrm{d}\mu(x)$ on $E_2'$, i.e. elements of $(E_1')^*$ and $(E_2')^*$ only, respectively. The Lemma is then a diagram chase for (C.4.3.5) with (C.4.1.2) then yielding (C.4.3.6).
 
 ## PDF page 715
 
@@ -2639,37 +2639,37 @@ Note that the integrals in (C.4.3.5) are simply the algebraic linear forms $\var
 Proof. We let $\varphi\in E_2'$ be arbitrary, and compute
 
 $$
-\left\langle\int_X (T\circ f)\,d\mu,\varphi\right\rangle_{(E_2')^*,E_2'}=\int_X\langle T(f(x)),\varphi\rangle_{E_2,E_2'}\,d\mu(x) \tag{C.4.3.7}
+\left\langle\int_X (T\circ f)\,\mathrm{d}\mu,\varphi\right\rangle_{(E_2')^*,E_2'}=\int_X\langle T(f(x)),\varphi\rangle_{E_2,E_2'}\,\mathrm{d}\mu(x) \tag{C.4.3.7}
 $$
 
 Since $T$ is continuous, then by [Bou-TVS, Ch. II, §6.4, Prop. 5] we have $\langle T(f(x)),\varphi\rangle_{E_2,E_2'}=\langle f(x),T'(\varphi)\rangle_{E_1,E_1'}$ for every $x\in X$ and $\varphi\in E_2'$, and so the right side of (C.4.3.7) equals
 
 $$
-\int_X\langle f(x),T'(\varphi)\rangle_{E_1,E_1'}\,d\mu(x)=\left\langle\int_X f\,d\mu,T'(\varphi)\right\rangle_{(E_1')^*,E_1'} \tag{C.4.3.8}
+\int_X\langle f(x),T'(\varphi)\rangle_{E_1,E_1'}\,\mathrm{d}\mu(x)=\left\langle\int_X f\,\mathrm{d}\mu,T'(\varphi)\right\rangle_{(E_1')^*,E_1'} \tag{C.4.3.8}
 $$
 
 We now observe that since $T'$ is continuous as an operator $E_2'\to E_1'$ with respect to the $\sigma(E_2',E_2)$-topology on the source and the $\sigma(E_1',E_1)$-topology on the target, then it is also continuous with respect to the $\sigma(E_2',(E_2')^*)$-topology on the source and the $\sigma(E_1',(E_1')^*)$-topology on the target by [Bou-TVS, Ch. II, §6.2, Cor. 2], because $E_k\subset (E_k')^*$ for $k=1,2$, since $E_1,E_2$ are Hausdorff. By [Bou-TVS, Ch. II, §6.4, Prop. 5], $(T')^*$ exists and is continuous and the right side of (C.4.3.8) further equals
 
 $$
-\left\langle (T')^*\left(\int_X f\,d\mu\right),\varphi\right\rangle_{(E_1')^*,E_1'}
+\left\langle (T')^*\left(\int_X f\,\mathrm{d}\mu\right),\varphi\right\rangle_{(E_1')^*,E_1'}
 $$
 
-This proves the identity in (C.4.3.5), being $\varphi\in E_2'$ arbitrary. Compatibility of $\iota_{E_k}:E_k\to (E_k')^*$ for $k=1,2$ with $T$ and $(T')^*$, provided by Lemma C.4.1.1, gives that if $f$ is $\mu$-integrable, i.e. $\int_X f\,d\mu$ is in the image of $\iota_{E_1}$, then $\int_X (T\circ f)\,d\mu$ is in the image of $\iota_{E_2}$, and so $T\circ f$ is also $\mu$-integrable, and (C.4.3.6) holds in $E_2$ by injectivity of $\iota_{E_2}$. $\square$
+This proves the identity in (C.4.3.5), being $\varphi\in E_2'$ arbitrary. Compatibility of $\iota_{E_k}:E_k\to (E_k')^*$ for $k=1,2$ with $T$ and $(T')^*$, provided by Lemma C.4.1.1, gives that if $f$ is $\mu$-integrable, i.e. $\int_X f\,\mathrm{d}\mu$ is in the image of $\iota_{E_1}$, then $\int_X (T\circ f)\,\mathrm{d}\mu$ is in the image of $\iota_{E_2}$, and so $T\circ f$ is also $\mu$-integrable, and (C.4.3.6) holds in $E_2$ by injectivity of $\iota_{E_2}$. $\square$
 
 Lemma C.4.3.9. *Let $E$ be a Hausdorff locally convex topological $\mathbf C$-vector space, and $(X,\mu)$ a locally compact Hausdorff topological space with $\mu$ a finite complex Radon measure. Let $f:X\to E$ be a $\mu$-integrable function. For every continuous seminorm $\nu$ on $E$ such that $x\mapsto\nu(f(x))$ is $\mu$-measurable, we have*
 
 $$
-\nu\left(\int_X f\,d\mu\right)\le\int_X\nu(f(x))\,d\mu(x). \tag{C.4.3.9}
+\nu\left(\int_X f\,\mathrm{d}\mu\right)\le\int_X\nu(f(x))\,\mathrm{d}\mu(x). \tag{C.4.3.9}
 $$
 
 *A variant is given in [Bou-I, Ch. VI, §1, no. 2, Prop. 6].*
 
 Remark C.4.3.10. The measurability assumption on $\nu(f(x))$ as a function of $x\in X$ ensures that the right side of (C.4.3.9) makes sense as a Lebesgue integral. The integral on the right side of (C.4.3.9) may still be infinite.
 
-Proof. For every $u\in E$, there exists $\varphi\in E'$ such that $\varphi(u)=\nu(u)$ and for all $w\in E$ we have $|\varphi(w)|\le\nu(w)$. This is a consequence of the Hahn-Banach Theorem. Upon choosing $u:=\int_X f\,d\mu$ and $w=f(x)$ for any $x\in X$, we obtain
+Proof. For every $u\in E$, there exists $\varphi\in E'$ such that $\varphi(u)=\nu(u)$ and for all $w\in E$ we have $|\varphi(w)|\le\nu(w)$. This is a consequence of the Hahn-Banach Theorem. Upon choosing $u:=\int_X f\,\mathrm{d}\mu$ and $w=f(x)$ for any $x\in X$, we obtain
 
 $$
-\left|\int_X\langle f(x),\varphi\rangle_{E,E'}\,d\mu(x)\right|\le\int_X|\langle f(x),\varphi\rangle_{E,E'}|\,d\mu(x)\le\int_X\nu(f(x))\,d\mu(x) \tag{C.4.3.10}
+\left|\int_X\langle f(x),\varphi\rangle_{E,E'}\,\mathrm{d}\mu(x)\right|\le\int_X|\langle f(x),\varphi\rangle_{E,E'}|\,\mathrm{d}\mu(x)\le\int_X\nu(f(x))\,\mathrm{d}\mu(x) \tag{C.4.3.10}
 $$
 
 where the left side is $|\varphi(u)|=\nu(u)$. $\square$
@@ -2683,7 +2683,7 @@ Lemma C.4.3.11. *Let $E$ be a complex Hilbert space, and $\mathscr B(E)$ the vec
 *Then for every $u\in E$, the function $x\mapsto f(x)(u)$ is $\mu$-integrable, and the assignment*
 
 $$
-u\mapsto\int_X f(u)\,d\mu \tag{C.4.3.11}
+u\mapsto\int_X f(u)\,\mathrm{d}\mu \tag{C.4.3.11}
 $$
 
 ## PDF page 716
@@ -2701,29 +2701,29 @@ $$
 By assumption, the function $x\mapsto\|f(x)\|$ is $\mu$-measurable. Since $x\mapsto f(x)(u)$ is weakly measurable, the integral of $\langle f(x)(u),\varphi\rangle_{E,E'}$ over $X$ is meaningful to contemplate. We integrate the outermost sides of (C.4.3.12) over $X$ and obtain
 
 $$
-\int_X|\langle f(x)(u),\varphi\rangle_{E,E'}|\,d\mu(x)\le\|\varphi\|_{E'}\|u\|_E\int_X\|f(x)\|\,d\mu(x). \tag{C.4.3.13}
+\int_X|\langle f(x)(u),\varphi\rangle_{E,E'}|\,\mathrm{d}\mu(x)\le\|\varphi\|_{E'}\|u\|_E\int_X\|f(x)\|\,\mathrm{d}\mu(x). \tag{C.4.3.13}
 $$
 
 Since $x\mapsto\|f(x)\|$ is $\mu$-integrable, we deduce from (C.4.3.13) that for every $u\in E$, $x\mapsto f(x)(u)$ is weakly $\mu$-integrable. Since $E$ is a Hilbert space, it is reflexive. Lemma C.4.3.7 therefore applies and gives that $x\mapsto f(x)(u)$ is $\mu$-integrable for every $u\in E$. The topology on $E$ is normed, and by Lemma C.4.3.9 applied with $\nu=\|\cdot\|_E$, we have
 
 $$
-\left\|\int_X f(u)\,d\mu\right\|_E\le\int_X\|f(u)\|_E\,d\mu\le\|u\|_E\int_X\|f(x)\|\,d\mu(x) \tag{C.4.3.14}
+\left\|\int_X f(u)\,\mathrm{d}\mu\right\|_E\le\int_X\|f(u)\|_E\,\mathrm{d}\mu\le\|u\|_E\int_X\|f(x)\|\,\mathrm{d}\mu(x) \tag{C.4.3.14}
 $$
 
-showing boundedness of the linear endomorphism $u\mapsto\int_X f(u)\,d\mu$ of $E$. $\square$
+showing boundedness of the linear endomorphism $u\mapsto\int_X f(u)\,\mathrm{d}\mu$ of $E$. $\square$
 
 C.4.3.3. *Continuity criterion.* For $X$ a locally compact Hausdorff space and $E$ a Hausdorff locally convex topological $\mathbf C$-vector space, a net $\{f_i\}_{i\in I}$ of continuous functions on $X$ valued in $E$ converges to $f:X\to E$ uniformly on compact subsets, or *locally uniformly*, if for every compact subset $K\subset X$, the net $\{f_i|_K\}_{i\in I}$ converges to $f|_K$ uniformly. In turn, by this we mean that for every continuous seminorm $\nu$ on $E$, $\lim_{i\in I}\sup_{x\in K}\nu(f_i-f)=0$. In other words, the terminology for uniform and locally uniform convergence of nets of continuous scalar-valued functions retains the same meaning for continuous $E$-valued functions. Such convergence can be equivalently tested on a generating family of continuous seminorms on $E$.
 
 Lemma C.4.3.12. *Let $E$ be a Hausdorff locally convex topological $\mathbf C$-vector space, and $(X,\mu)$ a locally compact Hausdorff topological space with $\mu$ a finite complex Radon measure. Let $I$ be a directed set, and $\{f_i\}_{i\in I}$ a net of continuous, $\mu$-integrable functions $f_i:X\to E$ converging uniformly to the continuous $\mu$-integrable function $f:X\to E$. Then*
 
 $$
-\lim_{i\in I}\int_X f_i\,d\mu=\int_X f\,d\mu. \tag{C.4.3.15}
+\lim_{i\in I}\int_X f_i\,\mathrm{d}\mu=\int_X f\,\mathrm{d}\mu. \tag{C.4.3.15}
 $$
 
-Proof. We call $e_i:=\int_X f_i\,d\mu$ (all elements of $E$ by Theorem C.4.3.5). Let $\nu:E\to\mathbf R_{\ge 0}$ be an arbitrary continuous seminorm on $E$. By Lemma C.4.3.9, we have
+Proof. We call $e_i:=\int_X f_i\,\mathrm{d}\mu$ (all elements of $E$ by Theorem C.4.3.5). Let $\nu:E\to\mathbf R_{\ge 0}$ be an arbitrary continuous seminorm on $E$. By Lemma C.4.3.9, we have
 
 $$
-\nu\left(\int_X (f_i-f)\,d\mu\right)\le\int_X\nu(f_i-f)(x)\,d\mu(x) \tag{C.4.3.16}
+\nu\left(\int_X (f_i-f)\,\mathrm{d}\mu\right)\le\int_X\nu(f_i-f)(x)\,\mathrm{d}\mu(x) \tag{C.4.3.16}
 $$
 
 for every $i\in I$. Since $\mu$ is finite Radon and the convergence of $\{f_i\}_{i\in I}$ is uniform, the right side of (C.4.3.16) is bounded above by $|\mu(X)|\sup_{x\in X}\nu(f_i-f)$ and so it tends to zero. $\square$
@@ -2742,16 +2742,16 @@ Lemma C.4.4.1. *Let $E$ be a Hausdorff locally convex topological $\mathbf C$-ve
 
 *(2) the function $f(\cdot,y)$ is $\mu$-integrable for every $y\in Y$.*
 
-*Then $x\mapsto\int_Y f(x,y)\,d\nu(y)\in E$ and $y\mapsto\int_X f(x,y)\,d\mu(x)\in E$ are weakly $\mu$-integrable on $X$ and weakly $\nu$-integrable on $Y$ respectively and as elements of $(E')^*$ we have the identity*
+*Then $x\mapsto\int_Y f(x,y)\,\mathrm{d}\nu(y)\in E$ and $y\mapsto\int_X f(x,y)\,\mathrm{d}\mu(x)\in E$ are weakly $\mu$-integrable on $X$ and weakly $\nu$-integrable on $Y$ respectively and as elements of $(E')^*$ we have the identity*
 
 $$
-\int_{X\times Y} f\,d(\nu\otimes\mu)=\int_Y\left(\int_X f(x,y)\,d\mu(x)\right)d\nu(y)=\int_X\left(\int_Y f(x,y)\,d\nu(y)\right)d\mu(x). \tag{C.4.4.1}
+\int_{X\times Y} f\,\mathrm{d}(\nu\otimes\mu)=\int_Y\left(\int_X f(x,y)\,\mathrm{d}\mu(x)\right)\mathrm{d}\nu(y)=\int_X\left(\int_Y f(x,y)\,\mathrm{d}\nu(y)\right)\mathrm{d}\mu(x). \tag{C.4.4.1}
 $$
 
 Proof. By definition, for every $\varphi\in E'$ we have
 
 $$
-\varphi\left(\int_X f\,d(\mu\otimes\nu)\right)=\int_X (\varphi\circ f)\,d(\mu\otimes\nu)=\int_X\langle f(x,y),\varphi\rangle_{E,E'}\,d(\mu\otimes\nu) \tag{C.4.4.2}
+\varphi\left(\int_X f\,\mathrm{d}(\mu\otimes\nu)\right)=\int_X (\varphi\circ f)\,\mathrm{d}(\mu\otimes\nu)=\int_X\langle f(x,y),\varphi\rangle_{E,E'}\,\mathrm{d}(\mu\otimes\nu) \tag{C.4.4.2}
 $$
 
 Since $f$ is weakly $(\mu\otimes\nu)$-integrable by assumption, then by the $\mathbf C$-valued Fubini theorem we have the following conclusions:
@@ -2760,23 +2760,23 @@ Since $f$ is weakly $(\mu\otimes\nu)$-integrable by assumption, then by the $\ma
 
 (2) $x\mapsto\langle f(x,y),\varphi\rangle_{E,E'}$ is $\mu$-integrable for almost all $y\in Y$,
 
-(3) the functions $x\mapsto\int_Y\langle f(x,y),\varphi\rangle_{E,E'}\,d\nu(y)$ and $y\mapsto\int_X\langle f(x,y),\varphi\rangle_{E,E'}\,d\mu(x)$, defined almost everywhere on $X$, respectively $Y$, are integrable,
+(3) the functions $x\mapsto\int_Y\langle f(x,y),\varphi\rangle_{E,E'}\,\mathrm{d}\nu(y)$ and $y\mapsto\int_X\langle f(x,y),\varphi\rangle_{E,E'}\,\mathrm{d}\mu(x)$, defined almost everywhere on $X$, respectively $Y$, are integrable,
 
 (4) we have the identity
 
 $$
-\int_{X\times Y}\langle f(x,y),\varphi\rangle_{E,E'}\,d(\mu\otimes\nu)(x,y)=\int_Y\left(\int_X\langle f(x,y),\varphi\rangle_{E,E'}\,d\mu(x)\right)d\nu(y)=\int_X\left(\int_Y\langle f(x,y),\varphi\rangle_{E,E'}\,d\nu(y)\right)d\mu(x). \tag{C.4.4.3}
+\int_{X\times Y}\langle f(x,y),\varphi\rangle_{E,E'}\,\mathrm{d}(\mu\otimes\nu)(x,y)=\int_Y\left(\int_X\langle f(x,y),\varphi\rangle_{E,E'}\,\mathrm{d}\mu(x)\right)\mathrm{d}\nu(y)=\int_X\left(\int_Y\langle f(x,y),\varphi\rangle_{E,E'}\,\mathrm{d}\nu(y)\right)\mathrm{d}\mu(x). \tag{C.4.4.3}
 $$
 
-By hypothesis the functions $f(x,\cdot)$ and $f(\cdot,y)$ are integrable for *all* $x\in X$, respectively *all* $y\in Y$. The assignments $\varphi\mapsto\int_X\langle f(x,y),\varphi\rangle_{E,E'}\,d\mu(x)$ and $\varphi\mapsto\int_Y\langle f(x,y),\varphi\rangle_{E,E'}\,d\nu(y)$ are therefore elements of $E$, as opposed to merely elements of $(E')^*$, denoted $\int_X f(\cdot,y)\,d\mu$ and $\int_Y f(x,\cdot)\,d\nu$, and they are so for all $y\in Y$, and all $x\in X$, respectively. Each is weakly $\nu$-, respectively weakly $\mu$-integrable by (3) above. The integrals
+By hypothesis the functions $f(x,\cdot)$ and $f(\cdot,y)$ are integrable for *all* $x\in X$, respectively *all* $y\in Y$. The assignments $\varphi\mapsto\int_X\langle f(x,y),\varphi\rangle_{E,E'}\,\mathrm{d}\mu(x)$ and $\varphi\mapsto\int_Y\langle f(x,y),\varphi\rangle_{E,E'}\,\mathrm{d}\nu(y)$ are therefore elements of $E$, as opposed to merely elements of $(E')^*$, denoted $\int_X f(\cdot,y)\,\mathrm{d}\mu$ and $\int_Y f(x,\cdot)\,\mathrm{d}\nu$, and they are so for all $y\in Y$, and all $x\in X$, respectively. Each is weakly $\nu$-, respectively weakly $\mu$-integrable by (3) above. The integrals
 
 $$
-\int_Y\left(\int_X f(x,y)\,d\mu(x)\right)d\nu(y),\quad\int_X\left(\int_Y f(x,y)\,d\nu(y)\right)d\mu(x). \tag{C.4.4.4}
+\int_Y\left(\int_X f(x,y)\,\mathrm{d}\mu(x)\right)\mathrm{d}\nu(y),\quad\int_X\left(\int_Y f(x,y)\,\mathrm{d}\nu(y)\right)\mathrm{d}\mu(x). \tag{C.4.4.4}
 $$
 
 are therefore both elements of $(E')^*$, and by (C.4.4.3) they equal the left side of (C.4.4.1) as elements of $(E')^*$. $\square$
 
-Remark C.4.4.2. Upon assuming that $f$ in Lemma C.4.4.1 is continuous and compactly supported and $E$ is quasi-complete, the result of the Lemma relates to the Remark in [Bou-I, Ch. III, §4, p. III.43]. Indeed, the image $f(X\times Y)$ in $E$, endowed with the subspace topology, agrees with $f(\mathrm{supp}(f))$ and is therefore compact by continuity of $f$. Its closed convex circled hull is therefore also compact, since $E$ is quasi-complete (see [Scha, Ch. II, Cor. to 4.3]). In particular, that closed convex circled hull is complete and convex. By [Bou-I, Ch. III, §3, Prop. 7], the integral $\int_{X\times Y} f\,d(\mu\otimes\nu)$ a priori only an element of $(E')^*$ is therefore contained in $E$ (as is also provided by Theorem C.4.3.5). Similarly $\int_Y f(\cdot,y)\,d\nu(y)$ and $\int_X f(x,\cdot)\,d\mu(x)$ are $\mu$-integrable and $\nu$-integrable respectively.
+Remark C.4.4.2. Upon assuming that $f$ in Lemma C.4.4.1 is continuous and compactly supported and $E$ is quasi-complete, the result of the Lemma relates to the Remark in [Bou-I, Ch. III, §4, p. III.43]. Indeed, the image $f(X\times Y)$ in $E$, endowed with the subspace topology, agrees with $f(\mathrm{supp}(f))$ and is therefore compact by continuity of $f$. Its closed convex circled hull is therefore also compact, since $E$ is quasi-complete (see [Scha, Ch. II, Cor. to 4.3]). In particular, that closed convex circled hull is complete and convex. By [Bou-I, Ch. III, §3, Prop. 7], the integral $\int_{X\times Y} f\,\mathrm{d}(\mu\otimes\nu)$ a priori only an element of $(E')^*$ is therefore contained in $E$ (as is also provided by Theorem C.4.3.5). Similarly $\int_Y f(\cdot,y)\,\mathrm{d}\nu(y)$ and $\int_X f(x,\cdot)\,\mathrm{d}\mu(x)$ are $\mu$-integrable and $\nu$-integrable respectively.
 
 ---
 
@@ -2788,24 +2788,24 @@ ${}^{20}$Completeness of measures has been added in to ensure $\mu\otimes\nu$ is
 
 By the Remark in [Bou-I, Ch. III, §4, p. III.43] and [Bou-I, Ch. III, Lemma 2], the functions $f(x,\cdot)$ and $f(\cdot,y)$ are elements of $\widetilde{\mathscr K}(Y,E)$, respectively $\widetilde{\mathscr K}(X,E)$, in the notation of *loc.cit.* (see [Bou-I, Ch. III, §3, p. III.32]), and these are continuous $E$-valued functions on $Y$, respectively $X$, such that their composition with every $\varphi\in E'$ is compactly supported as a scalar-valued function.
 
-Since $\langle f(x,y),\varphi\rangle_{E,E'}$ is a continuous scalar-valued integrable function on $X\times Y$, [Bou-I, Ch. III, §4, Lemma 2] applies and implies that both $y\mapsto\int_X\langle f(x,y),\varphi\rangle_{E,E'}\,d\mu(x)$ and $x\mapsto\int_Y\langle f(x,y),\varphi\rangle_{E,E'}\,d\nu(y)$ are continuous compactly supported functions on $Y$, respectively $X$, for every $\varphi\in E'$. By (C.4.3.3) and by compactness of the support of the above functions, the integrals in (C.4.4.1) are contained in $E$ by Theorem C.4.3.5, being $E$ quasi-complete. However, the integrals $\int_X f(x,\cdot)\,d\nu$ and $\int_X f(\cdot,y)\,d\mu$ are a priori only elements $(E')^*$. Lemma C.4.4.1, instead, *assumes* that they are elements in $E\subset (E')^*$.
+Since $\langle f(x,y),\varphi\rangle_{E,E'}$ is a continuous scalar-valued integrable function on $X\times Y$, [Bou-I, Ch. III, §4, Lemma 2] applies and implies that both $y\mapsto\int_X\langle f(x,y),\varphi\rangle_{E,E'}\,\mathrm{d}\mu(x)$ and $x\mapsto\int_Y\langle f(x,y),\varphi\rangle_{E,E'}\,\mathrm{d}\nu(y)$ are continuous compactly supported functions on $Y$, respectively $X$, for every $\varphi\in E'$. By (C.4.3.3) and by compactness of the support of the above functions, the integrals in (C.4.4.1) are contained in $E$ by Theorem C.4.3.5, being $E$ quasi-complete. However, the integrals $\int_X f(x,\cdot)\,\mathrm{d}\nu$ and $\int_X f(\cdot,y)\,\mathrm{d}\mu$ are a priori only elements $(E')^*$. Lemma C.4.4.1, instead, *assumes* that they are elements in $E\subset (E')^*$.
 
 We recall here the following important result on the Haar integral, for which we refer the reader to [DE, Thm. 1.5.3] beyond the abelian case. The scope is to formulate and prove a form of it for integrals in the sense of Pettis.
 
 Theorem C.4.4.3. *Let $G$ be a locally compact Hausdorff abelian group, $H\subset G$ a closed subgroup. There exists a Haar measure $\nu$ on the quotient $G/H$ uniquely determined by a choice of Haar measure $\mu_G$ on $G$ and $\mu_H$ on $H$ and such that for every $f\in C_c(G)$, we have*
 
 $$
-\int_G f(g)\,d\mu_G(g)=\int_{G/H}\int_H f(xh)\,d\mu_H(h)\,d\nu(x). \tag{C.4.4.5}
+\int_G f(g)\,\mathrm{d}\mu_G(g)=\int_{G/H}\int_H f(xh)\,\mathrm{d}\mu_H(h)\,\mathrm{d}\nu(x). \tag{C.4.4.5}
 $$
 
-*Moreover, for every $f\in L^1(G,\mu_G)$, then the assignment $x\mapsto\int_H f(xh)\,d\mu_H(h)$ defines $\mu_G$-almost everywhere on $G$ a function that is $\nu$-measurable and absolutely $\nu$-integrable on $G/H$, and (C.4.4.5) holds for $f$.*
+*Moreover, for every $f\in L^1(G,\mu_G)$, then the assignment $x\mapsto\int_H f(xh)\,\mathrm{d}\mu_H(h)$ defines $\mu_G$-almost everywhere on $G$ a function that is $\nu$-measurable and absolutely $\nu$-integrable on $G/H$, and (C.4.4.5) holds for $f$.*
 
 As an additional result, to check that a $\mu_G$-measurable function $f:G\to\mathbf C$ is (absolutely) $\mu_G$-integrable it is enough to check that the iterated integral in the right side of (C.4.4.5) for $|f|$ converges. This is [DE, Cor. 1.5.4]:
 
 Lemma C.4.4.4. *Let $G$ be a locally compact Hausdorff abelian group, $H\subset G$ a closed subgroup, and $\mu_G$ and $\mu_H$ Haar measures on $G$ and $H$ respectively. Let $\nu$ be the unique Haar measure on the quotient $G/H$ provided by Theorem C.4.4.3. Let $f:G\to\mathbf C$ be a measurable function. Then if*
 
 $$
-\int_{G/H}\int_H |f(xh)|\,d\mu_H(h)\,d\nu(x) \tag{C.4.4.6}
+\int_{G/H}\int_H |f(xh)|\,\mathrm{d}\mu_H(h)\,\mathrm{d}\nu(x) \tag{C.4.4.6}
 $$
 
 *converges, $f$ is absolutely $\mu_G$-integrable over $G$, and (C.4.4.5) holds.*
@@ -2817,7 +2817,7 @@ Lemma C.4.4.5. *Let $E$ be a Hausdorff locally convex topological $\mathbf C$-ve
 *(1) the function $F:G\to E$ defined by*
 
 $$
-F(x):=\int_H f(xh)\,d\mu_H(h),\quad x\in G \tag{C.4.4.7}
+F(x):=\int_H f(xh)\,\mathrm{d}\mu_H(h),\quad x\in G \tag{C.4.4.7}
 $$
 
 *factors through a unique weakly $\nu$-integrable function on $f^H:G/H\to E$.*
@@ -2833,7 +2833,7 @@ ${}^{21}$Does this result require Haar measures to be complete?
 *(2) The function $f^H$ is weakly $\nu$-integrable and we have the identity*
 
 $$
-\int_G f\,d\mu_G=\int_{G/H} f^H(xH)\,d\nu(xH) \tag{C.4.4.8}
+\int_G f\,\mathrm{d}\mu_G=\int_{G/H} f^H(xH)\,\mathrm{d}\nu(xH) \tag{C.4.4.8}
 $$
 
 *as elements of $(E')^*$.*
@@ -2841,19 +2841,19 @@ $$
 Proof. (1) : Since the function $h\mapsto f(hx)$ on $H$ is $\mu_H$-integrable for every $x\in G$, then the integral
 
 $$
-F(x):=\int_H f(xh)\,d\mu_H(h) \tag{C.4.4.9}
+F(x):=\int_H f(xh)\,\mathrm{d}\mu_H(h) \tag{C.4.4.9}
 $$
 
 is contained in $E$ for every $x\in G$, instead of merely in $(E')^*$. Let $x_0h'$ be the arbitrary element of the left $H$-coset $x_0H\subset G$. Then we have, for every $\varphi\in E'$
 
 $$
-\langle F(x_0h'),\varphi\rangle_{E,E'}=\langle F(x_0h'),\varphi\rangle_{(E')^*,E'}=\int_H\langle f(x_0h'h),\varphi\rangle_{E,E'}\,d\mu_H(h) \tag{C.4.4.10}
+\langle F(x_0h'),\varphi\rangle_{E,E'}=\langle F(x_0h'),\varphi\rangle_{(E')^*,E'}=\int_H\langle f(x_0h'h),\varphi\rangle_{E,E'}\,\mathrm{d}\mu_H(h) \tag{C.4.4.10}
 $$
 
 where we have tacitly identified $\iota_E(F(x_0h'))$ with $F(x_0h')$. Upon calling $h'':=h'h$, the right side of (C.4.4.10) turns into
 
 $$
-\int_H\langle f(x_0h''),\varphi\rangle_{E,E'}\,d\mu_H((h')^{-1}h'')=\int_H\langle f(x_0h),\varphi\rangle_{E,E'}\,d\mu_H(h)=\langle F(x_0),\varphi\rangle_{(E')^*,E'}=\langle F(x_0),\varphi\rangle_{E,E'} \tag{C.4.4.11}
+\int_H\langle f(x_0h''),\varphi\rangle_{E,E'}\,\mathrm{d}\mu_H((h')^{-1}h'')=\int_H\langle f(x_0h),\varphi\rangle_{E,E'}\,\mathrm{d}\mu_H(h)=\langle F(x_0),\varphi\rangle_{(E')^*,E'}=\langle F(x_0),\varphi\rangle_{E,E'} \tag{C.4.4.11}
 $$
 
 by left-invariance of the Haar measure $\mu_H$ on $H$. We deduce the identity $\langle F(x_0),\varphi\rangle_{E,E'}=\langle F(x_0h'),\varphi\rangle_{E,E'}$, valid for every $\varphi\in E'$. Since $E$ is Hausdorff, by the Hahn-Banach Theorem we deduce $F(x_0h')=F(x_0)$. Thus, $F$ is constant on left $H$-cosets and hence descends uniquely to a function $f^H:G/H\to E$, defined as $f^H(xH):=F(x)$. By Theorem C.4.4.3 applied to the function $\langle f,\varphi\rangle_{E,E'}\in L^1(G,\mu_G)$, we have that the function $\langle f^H((\cdot)H),\varphi\rangle_{E,E'}$ is $\nu$-integrable on $G/H$ for every $\varphi\in E'$.
@@ -2861,10 +2861,10 @@ by left-invariance of the Haar measure $\mu_H$ on $H$. We deduce the identity $\
 (2) : For every $\varphi\in E'$, we have by Lemma C.4.4.4 that $\langle f(x),\varphi\rangle_{E,E'}$ is $\mu_G$-integrable for every $\varphi\in E'$, and by Theorem C.4.4.3
 
 $$
-\int_G\langle f(x),\varphi\rangle_{E,E'}\,d\mu_G(x)=\int_{G/H}\langle f^H(xH),\varphi\rangle_{E,E'}\,d\nu(xH). \tag{C.4.4.12}
+\int_G\langle f(x),\varphi\rangle_{E,E'}\,\mathrm{d}\mu_G(x)=\int_{G/H}\langle f^H(xH),\varphi\rangle_{E,E'}\,\mathrm{d}\nu(xH). \tag{C.4.4.12}
 $$
 
-This defines both $\int_G f\,d\mu_G$ and $\int_{G/H} f^H\,d\nu$ as elements of $(E')^*$, and as such they are equal. $\square$
+This defines both $\int_G f\,\mathrm{d}\mu_G$ and $\int_{G/H} f^H\,\mathrm{d}\nu$ as elements of $(E')^*$, and as such they are equal. $\square$
 
 We have now discussed all the required preparations on integration of functions defined on locally compact Hausdorff Radon spaces, and valued in Hausdorff locally convex topological $\mathbf C$-vector spaces.
 
@@ -2892,13 +2892,13 @@ $$
 
 which promotes $C_b(X)$ to a complex Banach space. We call the norm-topology on $C_b(X)$ the topology of *uniform convergence.*
 
-Within $C_b(X)$ we further find the $\mathbf C$-vector subspace $C_c(X)$ of continuous complex-valued compactly supported functions. This is, algebraically, the filtered colimit of the $\mathbf C$-linear subspaces $C(X,K)$ of continuous functions on $X$ whose support is contained within the compact subset $K\subset X$. We denote by $\mathscr K_X$ the set of all compact subsets of $X$. An inclusion of compact subsets $K'\subset K$ induces a $\mathbf C$-linear extension-by-zero operator
+Within $C_b(X)$ we further find the $\mathbf C$-vector subspace $C_c(X)$ of continuous complex-valued compactly supported functions. This is, algebraically, the filtered colimit of the $\mathbf C$-linear subspaces $C(X,K)$ of continuous functions on $X$ whose support is contained within the compact subset $K\subset X$. We denote by $\mathcal{K}_X$ the set of all compact subsets of $X$. An inclusion of compact subsets $K'\subset K$ induces a $\mathbf C$-linear extension-by-zero operator
 
 $$
 C(X,K')\to C(X,K)
 $$
 
-realizing $C_c(X)$ as $C_c(X)=\operatorname*{colim}_{K\in\mathscr K_X}C(X,K)$ as a $\mathbf C$-linear subspace of $C_b(X)$. The uniform norm on $C_b(X)$ endows each $C(X,K)$ with the structure of a complete normed space, since it is a closed subspace of $C(K)$, this latter equipped with the topology of uniform convergence.
+realizing $C_c(X)$ as $C_c(X)=\operatorname*{\mathrm{colim}}_{K\in\mathcal{K}_X}C(X,K)$ as a $\mathbf C$-linear subspace of $C_b(X)$. The uniform norm on $C_b(X)$ endows each $C(X,K)$ with the structure of a complete normed space, since it is a closed subspace of $C(K)$, this latter equipped with the topology of uniform convergence.
 
 We may endow $C_c(X)$ with two topologies: one is the topology of uniform convergence inherited from $C_b(X)$. This is a Hausdorff norm-topology and as such locally convex. We note that the subspace $C_c(X)\subset C_b(X)$ equipped with the topology of uniform convergence is not complete. Its completion is denoted $C_0(X)$, and it is the subspace of $C_b(X)$ of those bounded continuous functions that vanish at $\infty$.
 
@@ -2912,13 +2912,13 @@ $$
 q_{K,\nu}(f):=\sup_{x\in K}\nu(f(x)) \tag{C.5.1.2}
 $$
 
-as $\nu$ varies over the set $S(E)$ of all continuous seminorms on $E$ ($\nu\circ f$ is continuous on $K$, hence bounded) and $K$ varies over the set $\mathscr K_X$ of all compact subsets of $X$.
+as $\nu$ varies over the set $S(E)$ of all continuous seminorms on $E$ ($\nu\circ f$ is continuous on $K$, hence bounded) and $K$ varies over the set $\mathcal{K}_X$ of all compact subsets of $X$.
 
 ## PDF page 721
 
 **C.5. MEROMORPHIC FUNCTIONS VALUED IN A QUASI-COMPLETE LOCALLY CONVEX TVS** · **721**
 
-The family $\{q_{K,\nu}\}_{(K,\nu)\in\mathscr K_X\times S(E)}$ is separating because if $q_{K,\nu}(f)=0$ for all $(K,\nu)\in\mathscr K_X\times S(E)$ then $f(x)=0$ for all $x\in K$ and all $K\in\mathscr K_X$, and hence $f=0$. In particular, endowed with this topology, $C(X,E)$ is Hausdorff. We refer to this locally convex topology on $C(X,E)$ as the topology of *uniform convergence on compact subsets.*
+The family $\{q_{K,\nu}\}_{(K,\nu)\in\mathcal{K}_X\times S(E)}$ is separating because if $q_{K,\nu}(f)=0$ for all $(K,\nu)\in\mathcal{K}_X\times S(E)$ then $f(x)=0$ for all $x\in K$ and all $K\in\mathcal{K}_X$, and hence $f=0$. In particular, endowed with this topology, $C(X,E)$ is Hausdorff. We refer to this locally convex topology on $C(X,E)$ as the topology of *uniform convergence on compact subsets.*
 
 C.5.1.1. *Properties of the spaces of continuous compactly supported $E$-valued functions.* The following is [Bou-I, Ch. III, §1.1, Def. 1].
 
@@ -3212,7 +3212,7 @@ $$
 exists as an element of $(E')^*$, and not merely as an element of $(((E')^*)')^*$. It evaluates to
 
 $$
-\int_0^h\mathrm{D}_{\gamma(t)}\langle f,\varphi\rangle_{E,E'}(\gamma'(t))\,\mathrm{d}t=\int_0^h\frac{\mathrm{d}}{\mathrm{d}t}(\langle f,\varphi\rangle_{E,E'}\circ\gamma)\,\mathrm{d}t=\langle f(\xi_2),\varphi\rangle_{E,E'}-\langle f(\xi_1),\varphi\rangle_{E,E'}
+\int_0^h\mathrm{D}_{\gamma(t)}\langle f,\varphi\rangle_{E,E'}(\gamma'(t))\,\mathrm{d}t=\int_0^h\frac{\mathrm{d}}{\mathrm{d}\mathrm{t}}(\langle f,\varphi\rangle_{E,E'}\circ\gamma)\,\mathrm{d}t=\langle f(\xi_2),\varphi\rangle_{E,E'}-\langle f(\xi_1),\varphi\rangle_{E,E'}
 $$
 
 since $\langle f,\varphi\rangle_{E,E'}$ is differentiable over $\Omega$ as a $\mathbf C$-valued function. As elements of $(E')^*$, we therefore have
@@ -3467,22 +3467,22 @@ In the Lemma below, we denote by $\mathrm{d}t$ the Lebesgue measure on the real 
 
 (2) $E$ is quasi-complete.
 
-Then the $E$-valued derivative $(f \circ \gamma)'(t) = (Df)(\gamma(t), \gamma'(t))$ is continuous on $[a, b]$ and integrable, and we have
+Then the $E$-valued derivative $(f \circ \gamma)'(t) = (\mathrm{D}f)(\gamma(t), \gamma'(t))$ is continuous on $[a, b]$ and integrable, and we have
 
 $$
-\int_{[a,b]} (Df)(\gamma(t), \gamma'(t))\, dt = f(\gamma(b)) - f(\gamma(a)). \tag{C.5.1.37}
+\int_{[a,b]} (\mathrm{D}f)(\gamma(t), \gamma'(t))\, \mathrm{d}t = f(\gamma(b)) - f(\gamma(a)). \tag{C.5.1.37}
 $$
 
 **Remark C.5.1.20.** Recall that “integrable” in the statement of Lemma C.5.1.19 refers to integrability in the sense of Pettis, defined in Definition C.4.2.1.
 
-*Proof.* Since $f$ is differentiable over an open neighborhood of $\gamma([a, b])$ within $\Omega$, then function $(\xi_1, \xi_2) \mapsto (D_{\xi_1}f)(\xi_2)$ is continuous as a function $\Omega \times k^d \to E$, with respect to the product topology on the source and the initial topology on $E$. Since the function $t \mapsto (\gamma(t), \gamma'(t))$ is also continuous as a function $(a_0, b_0) \to \Omega \times k^d$, as $\gamma : (a_0, b_0) \to \Omega$ is differentiable, it follows that the composition $(D_{\gamma(t)}f)(\gamma'(t))$ is continuous over $(a_0, b_0)$. We now note that since $f$ is differentiable in an open neighborhood of $\gamma([a, b])$, it is weakly differentiable over an open neighborhood of $\gamma([a, b])$ within $\Omega$, and hence by (C.5.1.14) from Lemma C.5.1.12 and pointwise over $\Omega \times k^d$ we have
+*Proof.* Since $f$ is differentiable over an open neighborhood of $\gamma([a, b])$ within $\Omega$, then function $(\xi_1, \xi_2) \mapsto (\mathrm{D}_{\xi_1}f)(\xi_2)$ is continuous as a function $\Omega \times k^d \to E$, with respect to the product topology on the source and the initial topology on $E$. Since the function $t \mapsto (\gamma(t), \gamma'(t))$ is also continuous as a function $(a_0, b_0) \to \Omega \times k^d$, as $\gamma : (a_0, b_0) \to \Omega$ is differentiable, it follows that the composition $(\mathrm{D}_{\gamma(t)}f)(\gamma'(t))$ is continuous over $(a_0, b_0)$. We now note that since $f$ is differentiable in an open neighborhood of $\gamma([a, b])$, it is weakly differentiable over an open neighborhood of $\gamma([a, b])$ within $\Omega$, and hence by (C.5.1.14) from Lemma C.5.1.12 and pointwise over $\Omega \times k^d$ we have
 
-$$(Df)(\xi_1, \xi_2) = (D_{\xi_1}f)(\xi_2)$$
+$$(\mathrm{D}f)(\xi_1, \xi_2) = (\mathrm{D}_{\xi_1}f)(\xi_2)$$
 
-as elements of $(E')^*$, and by differentiability both sides are in fact elements of $E$. It follows that, as $Df$ is continuous over an open neighborhood of $\gamma([a, b])$ and hence $(Df)(\gamma(t), \gamma'(t))$ is continuous over $[a, b]$, that, being $E$ quasi-complete, Lemma C.4.3.5 applies and it gives that $(Df)(\gamma(t), \gamma'(t))$ is integrable over $[a, b]$. We now compute its integral: for the arbitrary $\varphi \in E'$, we have
+as elements of $(E')^*$, and by differentiability both sides are in fact elements of $E$. It follows that, as $\mathrm{D}f$ is continuous over an open neighborhood of $\gamma([a, b])$ and hence $(\mathrm{D}f)(\gamma(t), \gamma'(t))$ is continuous over $[a, b]$, that, being $E$ quasi-complete, Lemma C.4.3.5 applies and it gives that $(\mathrm{D}f)(\gamma(t), \gamma'(t))$ is integrable over $[a, b]$. We now compute its integral: for the arbitrary $\varphi \in E'$, we have
 
 $$
-\left\langle \int_{[a,b]} (Df)(\gamma(t), \gamma'(t))\, dt, \varphi \right\rangle_{E,E'} = \int_{[a,b]} \langle (Df)(\gamma(t), \gamma'(t)) \rangle_{E,E'}\, dt = \int_{[a,b]} D_{\gamma(t)}\langle f(\gamma(t)), \varphi \rangle_{E,E'}(\gamma'(t))\, dt = \int_a^b \frac{d}{dt}(\langle f \circ \gamma, \varphi \rangle)\, dt = \langle f(\gamma(b)), \varphi \rangle_{E,E'} - \langle f(\gamma(a)), \varphi \rangle_{E,E'}
+\left\langle \int_{[a,b]} (\mathrm{D}f)(\gamma(t), \gamma'(t))\, \mathrm{d}t, \varphi \right\rangle_{E,E'} = \int_{[a,b]} \langle (\mathrm{D}f)(\gamma(t), \gamma'(t)) \rangle_{E,E'}\, \mathrm{d}t = \int_{[a,b]} \mathrm{D}_{\gamma(t)}\langle f(\gamma(t)), \varphi \rangle_{E,E'}(\gamma'(t))\, \mathrm{d}t = \int_a^b \frac{\mathrm{d}}{\mathrm{d}t}(\langle f \circ \gamma, \varphi \rangle)\, \mathrm{d}t = \langle f(\gamma(b)), \varphi \rangle_{E,E'} - \langle f(\gamma(a)), \varphi \rangle_{E,E'}
 $$
 
 by the Fundamental Theorem of Calculus. Since the space $E'$ separates the points of $E$, (C.5.1.37) holds. $\square$
@@ -3497,9 +3497,9 @@ by the Fundamental Theorem of Calculus. Since the space $E'$ separates the point
 
 (1) $f$ is continuously differentiable over $\Omega$.
 
-(2) $f$ is weakly differentiable, the weak differential $Df : \Omega \times k^d \to (E')^*$ is valued in $E$ and continuous with respect to the product topology on the source and the initial topology on the target $E$.
+(2) $f$ is weakly differentiable, the weak differential $\mathrm{D}f : \Omega \times k^d \to (E')^*$ is valued in $E$ and continuous with respect to the product topology on the source and the initial topology on the target $E$.
 
-(3) $f$ is weakly differentiable in the $e_i$-direction for each $1 \le i \le d$, and each of the directional derivatives $D_i f$ is valued in $E$ and continuous with respect to the Euclidean topology on $\Omega$ and the initial topology on $E$.
+(3) $f$ is weakly differentiable in the $e_i$-direction for each $1 \le i \le d$, and each of the directional derivatives $\mathrm{D}_i f$ is valued in $E$ and continuous with respect to the Euclidean topology on $\Omega$ and the initial topology on $E$.
 
 (4) $f$ is Gateaux-differentiable within $(E')^*$, and the limit
 
@@ -3509,15 +3509,15 @@ $$
 
 (with $W \subset k$ the subset $W := \{h \in k : h \ne 0, \xi_1 + h\xi_2 \in \Omega\}$) is, as a function of $(\xi_1, \xi_2) \in \Omega \times k^d$, valued in $E$ and continuous with respect to the product topology on the source and the given topology on $E$.
 
-*Proof.* If (1) holds then $f$ is weakly differentiable by Lemma C.5.1.12((2) $\Rightarrow$ (1)) and the weak differential $Df$ agrees with the differential in (1), which implies the continuity assertion on $Df$ as a function $\Omega \times k^d \to E$. Thus, (1) implies (2).
+*Proof.* If (1) holds then $f$ is weakly differentiable by Lemma C.5.1.12((2) $\Rightarrow$ (1)) and the weak differential $\mathrm{D}f$ agrees with the differential in (1), which implies the continuity assertion on $\mathrm{D}f$ as a function $\Omega \times k^d \to E$. Thus, (1) implies (2).
 
-If (2) holds then $f$ is weakly differentiable in the $e_i$-direction by Lemma C.5.1.15, and by (C.5.1.14) each $D_i f$ is valued in $E$ and continuous with respect to the Euclidean topology on $\Omega$ and the initial topology on $E$. This implies that (3) holds.
+If (2) holds then $f$ is weakly differentiable in the $e_i$-direction by Lemma C.5.1.15, and by (C.5.1.14) each $\mathrm{D}_i f$ is valued in $E$ and continuous with respect to the Euclidean topology on $\Omega$ and the initial topology on $E$. This implies that (3) holds.
 
-If (3) holds, then since $Df = \sum_{1 \le i \le d} c_i D_i f$, for $c_i \in (k^d)^*$ the $i$-th coordinate projection linear form, i.e. for each $(\xi_1, \xi_2) \in \Omega \times k^d$ we have:
+If (3) holds, then since $\mathrm{D}f = \sum_{1 \le i \le d} c_i \mathrm{D}_i f$, for $c_i \in (k^d)^*$ the $i$-th coordinate projection linear form, i.e. for each $(\xi_1, \xi_2) \in \Omega \times k^d$ we have:
 
-$$Df(\xi_1, \xi_2) = \sum_{1 \le i \le d} c_i(\xi_2) D_i f(\xi_1)$$
+$$\mathrm{D}f(\xi_1, \xi_2) = \sum_{1 \le i \le d} c_i(\xi_2) \mathrm{D}_i f(\xi_1)$$
 
-and each $c_i$ is continuous, we deduce from (3) that $Df$ is valued in $E$ and continuous with respect to the product topology on $\Omega \times k^d$ and the given topology on $E$. We deduce that $f$ is weakly continuously differentiable and by Lemma C.5.1.13(2) is continuously differentiable over $\Omega$, so (1) holds.
+and each $c_i$ is continuous, we deduce from (3) that $\mathrm{D}f$ is valued in $E$ and continuous with respect to the product topology on $\Omega \times k^d$ and the given topology on $E$. We deduce that $f$ is weakly continuously differentiable and by Lemma C.5.1.13(2) is continuously differentiable over $\Omega$, so (1) holds.
 
 If (4) holds then by Lemma C.5.1.16(3) so does (1). If (1) holds then by Lemma C.5.1.13(2) we get (4). $\square$
 
@@ -3567,7 +3567,7 @@ Since $f$ is continuous on $\Omega - \{\xi_0\}$, so is $G$.
 
 By assumption (2), for any $\varphi \in E'$ the function $\langle G, \varphi \rangle_{E,E'} : U \to \mathbf{C}$ is
 
-$$\int_0^1 \langle f, \varphi \rangle'_{E,E'}(\xi_2 + t(\xi_1 - \xi_2))\, dt,$$
+$$\int_0^1 \langle f, \varphi \rangle'_{E,E'}(\xi_2 + t(\xi_1 - \xi_2))\, \mathrm{d}t,$$
 
 which is a continuous function over $\Omega \times \Omega$ since the function $\langle f, \varphi \rangle_{E,E'}$ has a continuously differentiable extension across $\xi_0$.
 
@@ -3595,13 +3595,13 @@ If $m \ge 1$, we say that $f$ is continuously differentiable $m$ times if and on
 
 (1) $f$ is weakly differentiable in the $e_i$-direction for $1 \le i \le d$.
 
-(2) For every $1 \le i \le d$, the directional derivatives $D_i f$ is valued in $E$ and continuous with respect to the Euclidean topology on $\Omega$ and the initial topology on $E$.
+(2) For every $1 \le i \le d$, the directional derivatives $\mathrm{D}_i f$ is valued in $E$ and continuous with respect to the Euclidean topology on $\Omega$ and the initial topology on $E$.
 
 ## PDF page 734
 
 **734** · **CHAPTER C. PREPARATIONS ON LOCALLY CONVEX TOPOLOGICAL VECTOR SPACES**
 
-(3) For every $1 \le i \le d$, the directional derivatives $D_i f$ is continuously differentiable $m - 1$ times.
+(3) For every $1 \le i \le d$, the directional derivatives $\mathrm{D}_i f$ is continuously differentiable $m - 1$ times.
 
 We say $f$ is infinitely differentiable, or smooth, if and only if for every integer $m \ge 0$, $f$ is continuously differentiable $m$ times.
 
@@ -3616,20 +3616,20 @@ The following result is due to Grothendieck, and it is recorded in [Sch-b, Appen
 We now assume $m > 1$ and proceed by induction on $m$. We consider the function, for each $(\xi_1, \xi_2) \in \Omega \times k^d$:
 
 $$
-F(h) := \frac{f(\xi_1 + h \xi_2) - f(\xi_1)}{h} = \int_0^1 (Df)(\xi_1 + th\xi_2, \xi_2)\, dt \tag{C.5.1.44}
+F(h) := \frac{f(\xi_1 + h \xi_2) - f(\xi_1)}{h} = \int_0^1 (\mathrm{D}f)(\xi_1 + th\xi_2, \xi_2)\, \mathrm{d}t \tag{C.5.1.44}
 $$
 
-(as a Pettis intgeral with weakly continuously differentiable integrant valued in $E$, with $F(0) = (Df)(\xi_1, \xi_2) \in (E')^*$) defined on $h \in k - \{0\}$ such that $\xi_1 + h \xi_2 \in \Omega$. This set of elements $W \subset k$ is open since $\Omega \subset k^d$ is open.
+(as a Pettis intgeral with weakly continuously differentiable integrant valued in $E$, with $F(0) = (\mathrm{D}f)(\xi_1, \xi_2) \in (E')^*$) defined on $h \in k - \{0\}$ such that $\xi_1 + h \xi_2 \in \Omega$. This set of elements $W \subset k$ is open since $\Omega \subset k^d$ is open.
 
 For $\varphi \in E'$,
 
-$$\langle F, \varphi \rangle(h) = \int_0^1 D(\langle f, \varphi \rangle)(\xi_1 + th\xi_2, \xi_2)\, dt$$
+$$\langle F, \varphi \rangle(h) = \int_0^1 \mathrm{D}(\langle f, \varphi \rangle)(\xi_1 + th\xi_2, \xi_2)\, \mathrm{d}t$$
 
 with integrand that is $C^1$ in $(t, h)$ since $\langle f, \varphi \rangle$ is $C^2$, so $\langle F, \varphi \rangle$ is $C^1$ in $h$ near $0$. Thus, Lemma C.5.1.22 applies to $F$, giving a continuous extension across $h = 0$ valued in $E$.
 
-We claim $f$ satisfies the assumptions of Lemma C.5.1.16(3) with (C.5.1.32) equal to $(Df)(\xi_1, \xi_2)$. Indeed, formation of the directional derivative $(\partial_{\xi_1}f)(\xi_2)$ is, for each fixed $\xi_2 \in k^d$, continuous as an $E$-valued function of $\xi_1$ with respect to the given topology on $E$ by Lemma C.5.1.13(1) applied to $\xi_1 \mapsto (\partial_{\xi_1}f)(\xi_2)$. Then Lemma C.5.1.16(3) applies to give $f$ is $C^1$ with values in $E$.
+We claim $f$ satisfies the assumptions of Lemma C.5.1.16(3) with (C.5.1.32) equal to $(\mathrm{D}f)(\xi_1, \xi_2)$. Indeed, formation of the directional derivative $(\partial_{\xi_1}f)(\xi_2)$ is, for each fixed $\xi_2 \in k^d$, continuous as an $E$-valued function of $\xi_1$ with respect to the given topology on $E$ by Lemma C.5.1.13(1) applied to $\xi_1 \mapsto (\partial_{\xi_1}f)(\xi_2)$. Then Lemma C.5.1.16(3) applies to give $f$ is $C^1$ with values in $E$.
 
-We have shown that for each integer $1 \le i \le d$, $D_i f$ is valued in $E$ and continuous with respect to the Euclidean topology on $\Omega$ and the initial topology on $E$. Note that for each integer $1 \le i \le d$, the function $D_i f$ is $E$-valued, continuous, and weakly continuously differentiable $m - 1$ times. By inductive hypothesis, it is continuously differentiable $m - 2$ times. We have therefore shown that $f$ is continuously differentiable $m - 1$ times. $\square$
+We have shown that for each integer $1 \le i \le d$, $\mathrm{D}_i f$ is valued in $E$ and continuous with respect to the Euclidean topology on $\Omega$ and the initial topology on $E$. Note that for each integer $1 \le i \le d$, the function $\mathrm{D}_i f$ is $E$-valued, continuous, and weakly continuously differentiable $m - 1$ times. By inductive hypothesis, it is continuously differentiable $m - 2$ times. We have therefore shown that $f$ is continuously differentiable $m - 1$ times. $\square$
 
 **Corollary C.5.1.25 (On the agreement of the concepts of $E$-valued smoothness).** Let $E$ be a Hausdorff locally convex topological $\mathbf{C}$-vector space. Let $d \ge 1$ be an integer, $k$ either one of the two Archimedean topological field $k = \mathbf{R}, \mathbf{C}$, endowed with their Euclidean topology. Let $\Omega \subset k^d$ be an open subset, $f : \Omega \to E$ a function. Assume $E$ is quasi-complete. Then, the following conditions are equivalent:
 
@@ -3651,7 +3651,7 @@ For the purposes of this work, $E$ will always be quasi-complete. Thus, there wi
 
 **C.5.1.5. Spaces of smooth vector-valued functions.** In this subsection we record a few facts about spaces of smooth vector-valued functions with values in a Hausdorff locally convex quasi-complete topological $\mathbf{C}$-vector space $E$.
 
-Recall that we write $\mathbf{T}$ for the 1-dimensional compact real torus $\mathbf{R}/\mathbf{Z}$, which is smoothly isomorphic to $U(1)$ under the exponential function $t \mapsto \exp(2\pi i t)$.
+Recall that we write $\mathbf{T}$ for the 1-dimensional compact real torus $\mathbf{R}/\mathbf{Z}$, which is smoothly isomorphic to $\mathrm{U}(1)$ under the exponential function $t \mapsto \exp(2\pi i t)$.
 
 **Definition C.5.1.26 (Vector-valued smooth function spaces).** Let $E$ be a Hausdorff locally convex topological $\mathbf{C}$-vector space, $d \ge 0$ an integer. Assume $E$ is quasi-complete. We define:
 
@@ -3659,22 +3659,22 @@ Recall that we write $\mathbf{T}$ for the 1-dimensional compact real torus $\mat
 
 We topologize $\mathcal{S}(\mathbf{T}^d, E)$ with the unique Hausdorff topological vector space structure for which a net $\{f_i\}_{i \in I} \subset \mathcal{S}(\mathbf{T}^d, E)$ converges to $0$ in $\mathcal{S}(\mathbf{T}^d, E)$ if and only if for every $\varphi \in E'$, the net of smooth complex-valued functions $\{\langle f_i, \varphi \rangle_{E,E'}\}_{i \in I}$ converges to $0$ with respect to the topology of uniform convergence over $\mathbf{T}^d$, uniformly as $\varphi$ varies over each equicontinuous subset of $E'$.
 
-(2) $\mathcal{S}(\mathbf{R}^d, E)$ to be the linear subspace of those $f \in C^\infty(\mathbf{R}^d, E)$ such that for any complex-valued polynomial function $p$ on $\mathbf{R}^d$, and every integral multi-index $\alpha \in \mathbf{N}^d$, $p \cdot D^\alpha f$ takes values in a bounded subset of $E$, where $D^\alpha := \prod_{1 \le i \le d} D_i^{\alpha_i}$ (the boundedness can be checked weakly, by [Scha, Ch. IV, 3.3]).
+(2) $\mathcal{S}(\mathbf{R}^d, E)$ to be the linear subspace of those $f \in C^\infty(\mathbf{R}^d, E)$ such that for any complex-valued polynomial function $p$ on $\mathbf{R}^d$, and every integral multi-index $\alpha \in \mathbf{N}^d$, $p \cdot \mathrm{D}^\alpha f$ takes values in a bounded subset of $E$, where $\mathrm{D}^\alpha := \prod_{1 \le i \le d} \mathrm{D}_i^{\alpha_i}$ (the boundedness can be checked weakly, by [Scha, Ch. IV, 3.3]).
 
 We topologize $\mathcal{S}(\mathbf{R}^d, E)$ with the unique Hausdorff topological vector space structure for which a net $\{f_i\}_{i \in I} \subset \mathcal{S}(\mathbf{R}^d, E)$ converges to $0$ in $\mathcal{S}(\mathbf{R}^d, E)$ if and only if for every $\varphi \in E'$, the net of smooth complex-valued functions $\{\langle f_i, \varphi \rangle_{E,E'}\}_{i \in I}$ converges to $0$ with respect to the topology of uniform convergence over $\mathbf{R}^d$, uniformly as $\varphi$ varies over each equicontinuous subset of $E'$.
 
-**Remark C.5.1.27.** Definition C.5.1.26 makes sense for an arbitrary Hausdorff locally convex topological $\mathbf{C}$-vector space $E$ (no quasi-completeness hypothesis) by defining smooth $E$-valued functions as those that are weakly infinitely differentiable and by defining the two respective function spaces $\mathcal{S}(\mathbf{T}^d, E)$ and $\mathcal{S}(\mathbf{R}^d, E)$ as the linear subspaces of $C^\infty(\mathbf{R}^n, E)$ of those smooth $E$-valued functions $f : \mathbf{R}^d \to E$ such that for any $\varphi \in E'$, the complex-valued smooth function $\langle f, \varphi \rangle_{E,E'}$ is $\mathbf{Z}^d$-invariant over $\mathbf{R}^d$, respectively Schwartz over $\mathbf{R}^d$. This latter way to define $\mathcal{S}(\mathbf{T}^d, E)$ and $\mathcal{S}(\mathbf{R}^d, E)$ is denoted in [Sch-b, §1, p. 102] by $e\mathcal{H}^d(E)$ for $\mathcal{H}$ either $\mathcal{S}(\mathbf{T}^d)$ or $\mathcal{S}(\mathbf{R}^d)$. By [Sch-b, Prop. 8, p. 104], for $E$ quasi-complete this definition and Definition C.5.1.26 are equivalent; see also Corollary C.5.1.25, and [Sch-b, Prop. 4, p. 97].
+**Remark C.5.1.27.** Definition C.5.1.26 makes sense for an arbitrary Hausdorff locally convex topological $\mathbf{C}$-vector space $E$ (no quasi-completeness hypothesis) by defining smooth $E$-valued functions as those that are weakly infinitely differentiable and by defining the two respective function spaces $\mathcal{S}(\mathbf{T}^d, E)$ and $\mathcal{S}(\mathbf{R}^d, E)$ as the linear subspaces of $C^\infty(\mathbf{R}^n, E)$ of those smooth $E$-valued functions $f : \mathbf{R}^d \to E$ such that for any $\varphi \in E'$, the complex-valued smooth function $\langle f, \varphi \rangle_{E,E'}$ is $\mathbf{Z}^d$-invariant over $\mathbf{R}^d$, respectively Schwartz over $\mathbf{R}^d$. This latter way to define $\mathcal{S}(\mathbf{T}^d, E)$ and $\mathcal{S}(\mathbf{R}^d, E)$ is denoted in [Sch-b, §1, p. 102] by $e\mathrm{H}^d(E)$ for $\mathrm{H}$ either $\mathcal{S}(\mathbf{T}^d)$ or $\mathcal{S}(\mathbf{R}^d)$. By [Sch-b, Prop. 8, p. 104], for $E$ quasi-complete this definition and Definition C.5.1.26 are equivalent; see also Corollary C.5.1.25, and [Sch-b, Prop. 4, p. 97].
 
 **Remark C.5.1.28 (Fundamental families of seminorms for $\mathcal{S}(\mathbf{T}^d, E)$ and $\mathcal{S}(\mathbf{R}^d, E)$).** In light of Lemma C.2.2.2, the topology thus defined on $\mathcal{S}(\mathbf{T}^d, E)$, respectively $\mathcal{S}(\mathbf{R}^d, E)$, is locally convex: for $\{q_i\}_{i \in I}$ a fundamental family of continuous seminorms for $E$, a fundamental family of seminorms for $\mathcal{S}(\mathbf{T}^d, E)$ is assigned on each $f \in \mathcal{S}(\mathbf{T}^d, E)$ by
 
 $$
-\sup_{x \in \mathbf{T}^d} q_i(D^\alpha f), \quad i \in I, \, \alpha \in \mathbf{N}^d \tag{C.5.1.45}
+\sup_{x \in \mathbf{T}^d} q_i(\mathrm{D}^\alpha f), \quad i \in I, \, \alpha \in \mathbf{N}^d \tag{C.5.1.45}
 $$
 
 and for $\mathcal{S}(\mathbf{R}^d, E)$ is assigned on each $f \in \mathcal{S}(\mathbf{R}^d, E)$ by
 
 $$
-\sup_{x \in \mathbf{R}^d} q_i(p \cdot D^\alpha f), \quad i \in I \tag{C.5.1.46}
+\sup_{x \in \mathbf{R}^d} q_i(p \cdot \mathrm{D}^\alpha f), \quad i \in I \tag{C.5.1.46}
 $$
 
 ## PDF page 736
@@ -3683,7 +3683,7 @@ $$
 
 as $p$ varies over all complex-valued polynomial functions on $\mathbf{R}^d$, equivalently over all monomial functions over $\mathbf{R}^d$, and $\alpha \in \mathbf{N}^d$ is an arbitrary multi-index.
 
-**Remark C.5.1.29.** Definition C.5.1.26 makes sense for the arbitrary Hausdorff locally convex topological $\mathbf{C}$-vector space $E$, by defining smooth $E$-valued functions as being those that are weakly infinitely differentiable, and by defining each of the two function spaces $\mathcal{S}(\mathbf{T}^d, E)$ and $\mathcal{S}(\mathbf{R}^d, E)$ as being the linear subspaces of $C^\infty(\mathbf{R}^n, E)$ of those smooth $E$-valued functions $f : \mathbf{R}^d \to E$ such that for any $\varphi \in E'$, the complex-valued smooth function $\langle f, \varphi \rangle_{E,E'}$ is $\mathbf{Z}^d$-invariant over $\mathbf{R}^d$, respectively Schwartz over $\mathbf{R}^d$. This latter way to define $\mathcal{S}(\mathbf{T}^d, E)$ and $\mathcal{S}(\mathbf{R}^d, E)$ is denoted in [Sch-b, §1, p. 102] by $e\mathcal{H}^d(E)$ for $\mathcal{H}$ either $\mathcal{S}(\mathbf{T}^d)$ or $\mathcal{S}(\mathbf{R}^d)$. By [Sch-b, Prop. 8, p. 104], for $E$ quasi-complete this definition and Definition C.5.1.26 are equivalent; see also Corollary C.5.1.25, and [Sch-b, Prop. 4, p. 97].
+**Remark C.5.1.29.** Definition C.5.1.26 makes sense for the arbitrary Hausdorff locally convex topological $\mathbf{C}$-vector space $E$, by defining smooth $E$-valued functions as being those that are weakly infinitely differentiable, and by defining each of the two function spaces $\mathcal{S}(\mathbf{T}^d, E)$ and $\mathcal{S}(\mathbf{R}^d, E)$ as being the linear subspaces of $C^\infty(\mathbf{R}^n, E)$ of those smooth $E$-valued functions $f : \mathbf{R}^d \to E$ such that for any $\varphi \in E'$, the complex-valued smooth function $\langle f, \varphi \rangle_{E,E'}$ is $\mathbf{Z}^d$-invariant over $\mathbf{R}^d$, respectively Schwartz over $\mathbf{R}^d$. This latter way to define $\mathcal{S}(\mathbf{T}^d, E)$ and $\mathcal{S}(\mathbf{R}^d, E)$ is denoted in [Sch-b, §1, p. 102] by $e\mathrm{H}^d(E)$ for $\mathrm{H}$ either $\mathcal{S}(\mathbf{T}^d)$ or $\mathcal{S}(\mathbf{R}^d)$. By [Sch-b, Prop. 8, p. 104], for $E$ quasi-complete this definition and Definition C.5.1.26 are equivalent; see also Corollary C.5.1.25, and [Sch-b, Prop. 4, p. 97].
 
 Most of the following properties of $\mathcal{S}(\mathbf{R}^d, E)$ are due to Schwartz, and we further refer the reader to [Sch-b, §1, p. 93].
 
@@ -3707,7 +3707,7 @@ $$
 \mathcal{S}(X \times Y) \to \mathcal{S}(X, \mathcal{S}(Y)). \tag{C.5.1.48}
 $$
 
-*Proof.* (1) and (2): Let $\{f_i\}_{i \in I} \subset \mathcal{S}(\mathbf{R}^d, E)$ be a bounded Cauchy net. Since $\mathcal{S}(\mathbf{R}^d)$ is complete, it converges weakly; i.e., with respect to the $\sigma(\mathcal{S}(\mathbf{R}^d, E), \mathcal{S}(\mathbf{R}^d, E)')$-topology on $\mathcal{S}(\mathbf{R}^d, E)$. Since it is bounded by assumption, for each $x \in \mathbf{R}^d$ Remark C.5.1.28 gives that $\{f_i(x)\}_{i \in I}$ is a bounded Cauchy net in $E$, which therefore converges for each $x \in \mathbf{R}^d$ since $E$ is quasi-complete. We denote by $f : \mathbf{R}^d \to E$ the limit function. For any $\varphi \in E'$, $\langle f, \varphi \rangle_{E,E'}$ is the pointwise limit of $\langle f_i, \varphi \rangle$, yet $\langle f_i, \varphi \rangle$ is Cauchy in the complete $\mathcal{S}(\mathbf{R}^d)$ and so has a limit in $\mathcal{S}(\mathbf{R}^d)$. Hence, $\langle f, \varphi \rangle$ is that limit, so it is Schwartz. By Corollary C.5.1.25, $f$ is smooth as an $E$-valued function. For any polynomial function $p$ on $\mathbf{R}^d$ and every multi-index $\alpha \in \mathbf{N}^d$, $p \cdot D^\alpha f$ takes values in a weakly bounded subset of $E$ since each $\langle f, \varphi \rangle$ is Schwartz, so $p \cdot D^\alpha f$ takes values in a bounded subset of $E$ by [Scha, Ch. IV, 3.3]. We deduce that $f \in \mathcal{S}(\mathbf{R}^d, E)$. It remains to show that $f_i \to f$ in $\mathcal{S}(\mathbf{R}^d, E)$. If $\varphi \in E'$ varies over an arbitrary equicontinuous subset $A$ of $E'$ then by equicontinuity we have $\langle f_i, \varphi \rangle_{E,E'} \to \langle f, \varphi \rangle_{E,E'}$ uniformly with respect to $\varphi \in A$. We deduce that $f_i \to f$ in $\mathcal{S}(\mathbf{R}^d, E)$, by definition of the locally convex topology on $\mathcal{S}(\mathbf{R}^d, E)$.
+*Proof.* (1) and (2): Let $\{f_i\}_{i \in I} \subset \mathcal{S}(\mathbf{R}^d, E)$ be a bounded Cauchy net. Since $\mathcal{S}(\mathbf{R}^d)$ is complete, it converges weakly; i.e., with respect to the $\sigma(\mathcal{S}(\mathbf{R}^d, E), \mathcal{S}(\mathbf{R}^d, E)')$-topology on $\mathcal{S}(\mathbf{R}^d, E)$. Since it is bounded by assumption, for each $x \in \mathbf{R}^d$ Remark C.5.1.28 gives that $\{f_i(x)\}_{i \in I}$ is a bounded Cauchy net in $E$, which therefore converges for each $x \in \mathbf{R}^d$ since $E$ is quasi-complete. We denote by $f : \mathbf{R}^d \to E$ the limit function. For any $\varphi \in E'$, $\langle f, \varphi \rangle_{E,E'}$ is the pointwise limit of $\langle f_i, \varphi \rangle$, yet $\langle f_i, \varphi \rangle$ is Cauchy in the complete $\mathcal{S}(\mathbf{R}^d)$ and so has a limit in $\mathcal{S}(\mathbf{R}^d)$. Hence, $\langle f, \varphi \rangle$ is that limit, so it is Schwartz. By Corollary C.5.1.25, $f$ is smooth as an $E$-valued function. For any polynomial function $p$ on $\mathbf{R}^d$ and every multi-index $\alpha \in \mathbf{N}^d$, $p \cdot \mathrm{D}^\alpha f$ takes values in a weakly bounded subset of $E$ since each $\langle f, \varphi \rangle$ is Schwartz, so $p \cdot \mathrm{D}^\alpha f$ takes values in a bounded subset of $E$ by [Scha, Ch. IV, 3.3]. We deduce that $f \in \mathcal{S}(\mathbf{R}^d, E)$. It remains to show that $f_i \to f$ in $\mathcal{S}(\mathbf{R}^d, E)$. If $\varphi \in E'$ varies over an arbitrary equicontinuous subset $A$ of $E'$ then by equicontinuity we have $\langle f_i, \varphi \rangle_{E,E'} \to \langle f, \varphi \rangle_{E,E'}$ uniformly with respect to $\varphi \in A$. We deduce that $f_i \to f$ in $\mathcal{S}(\mathbf{R}^d, E)$, by definition of the locally convex topology on $\mathcal{S}(\mathbf{R}^d, E)$.
 
 The same argument works if $\{f_i\}_{i \in I}$ is an arbitrary (not necessarily bounded) Cauchy net in $\mathcal{S}(\mathbf{R}^d, E)$ and $E$ is complete rather than just quasi-complete.
 
@@ -3721,7 +3721,7 @@ The case of $\mathcal{S}(\mathbf{T}^d, E)$ is seen by means of the same argument
 
 (4): Using the formula
 
-$$\frac{f(x + he_j, y) - f(x, y)}{h} = \int_0^1 (\partial_j f)(x + the_j, y)\, dt$$
+$$\frac{f(x + he_j, y) - f(x, y)}{h} = \int_0^1 (\partial_j f)(x + the_j, y)\, \mathrm{d}t$$
 
 one readily checks that (C.5.1.47) makes sense (i.e., $[f] : x \mapsto f(x, \cdot)$ as a map $X \to C^\infty(Y)$ satisfies $\partial_j[f] = [\partial_j f]$ and so is $C^\infty$) and is bijective. The linear map from (C.5.1.48) is continuous, by standard properties of formation of suprema of the absolute value of a continuous complex-valued function on the product and the continuity of the inverse. Surjectivity follows by similar calculations via bijectivity of (C.5.1.47) and the bijection between the seminorm formulas on both sides. $\square$
 
@@ -3770,7 +3770,7 @@ The following is immediate from complex analysis:
 (2) The function $f$ is weakly continuous in the sense of Definition C.5.2.1(1), and for any closed positively oriented simple curve $\Gamma \subset \Omega$ whose interior is contained within $\Omega$ we have
 
 $$
-\int_\Gamma f(\xi)\, d\xi = 0 \tag{C.5.2.2}
+\int_\Gamma f(\xi)\, \mathrm{d}\xi = 0 \tag{C.5.2.2}
 $$
 
 as elements of $(E')^*$.
@@ -3778,7 +3778,7 @@ as elements of $(E')^*$.
 (3) $f$ is weakly continuous, and for any closed positively oriented simple curve $\Gamma \subset \Omega$ whose interior is contained within $\Omega$, and for any $\xi_0 \in \Omega$ enclosed in the interior of the contour $\Gamma$, we have
 
 $$
-f(\xi_0) = \frac{1}{2\pi i} \int_\Gamma \frac{f(\xi)}{\xi - \xi_0}\, d\xi \tag{C.5.2.3}
+f(\xi_0) = \frac{1}{2\pi i} \int_\Gamma \frac{f(\xi)}{\xi - \xi_0}\, \mathrm{d}\xi \tag{C.5.2.3}
 $$
 
 as elements of $(E')^*$.
@@ -3796,7 +3796,7 @@ If we assume that $E$ is quasi-complete, then the Theorem can be strengthen into
 (3) $f$ is complex-differentiable $k$ times for every integer $k \ge 1$, in which case for any closed positively oriented simple curve $\Gamma \subset \Omega$ whose interior is contained within $\Omega$, and for any $\xi_0 \in \Omega$ enclosed in the interior of the contour $\Gamma$, we have
 
 $$
-f^{(k)}(\xi_0) = \frac{k!}{2\pi i} \int_\Gamma \frac{f(\xi)}{(\xi - \xi_0)^{k+1}}\, d\xi \tag{C.5.2.4}
+f^{(k)}(\xi_0) = \frac{k!}{2\pi i} \int_\Gamma \frac{f(\xi)}{(\xi - \xi_0)^{k+1}}\, \mathrm{d}\xi \tag{C.5.2.4}
 $$
 
 as elements of $(E')^*$ (the left side belongs to $E$).
@@ -3820,10 +3820,10 @@ In particular, if $f$ is weakly holomorphic then it is holomorphic.
 (1) is the first part of [Gro-a, Thm.1]. Note that a priori, the derivative $f^{(k)}$ in (1) and (2) is defined as an element of $(E')^*$ by the rule
 
 $$
-\langle f^{(k)}(\xi), \varphi \rangle_{E,E'} = \frac{d^k}{d\xi^k} \langle f(\xi), \varphi \rangle_{E,E'} \tag{C.5.2.6}
+\langle f^{(k)}(\xi), \varphi \rangle_{E,E'} = \frac{\mathrm{d}^k}{\mathrm{d}\xi^k} \langle f(\xi), \varphi \rangle_{E,E'} \tag{C.5.2.6}
 $$
 
-where the right side is defined and continuous in $\xi$ for all $k \ge 1$, since $f$ is weakly holomorphic. The use of quasi-completeness in the proof of Theorem C.5.2.6 from [Gro-a, Thm.1] is in that it enables the reduction of the equivalence between parts (1) and (2), on one hand, and (3) on the other, to proving continuity of $f$ (rather than merely weak continuity). Indeed, upon showing that $f$ is continuous, Theorem C.4.3.5 applies since $\Gamma$ is compact and $d\xi$ is Radon, so the first two (equivalent) parts and the Cauchy Integral Formula imply that the $(E')^*$-valued integrals in (C.5.2.4) are contained in $E$ by quasi-completeness, so the equality with $f^{(k)}(\xi_0)$ as a weak derivative yields complex-differentiability of $f$. Continuity of $f$, however, has to be shown directly and without the aid of quasi-completeness, but rather by means of Lemma C.4.3.1. The argument for continuity is at the bottom of [Gro-a, p. 38].
+where the right side is defined and continuous in $\xi$ for all $k \ge 1$, since $f$ is weakly holomorphic. The use of quasi-completeness in the proof of Theorem C.5.2.6 from [Gro-a, Thm.1] is in that it enables the reduction of the equivalence between parts (1) and (2), on one hand, and (3) on the other, to proving continuity of $f$ (rather than merely weak continuity). Indeed, upon showing that $f$ is continuous, Theorem C.4.3.5 applies since $\Gamma$ is compact and $\mathrm{d}\xi$ is Radon, so the first two (equivalent) parts and the Cauchy Integral Formula imply that the $(E')^*$-valued integrals in (C.5.2.4) are contained in $E$ by quasi-completeness, so the equality with $f^{(k)}(\xi_0)$ as a weak derivative yields complex-differentiability of $f$. Continuity of $f$, however, has to be shown directly and without the aid of quasi-completeness, but rather by means of Lemma C.4.3.1. The argument for continuity is at the bottom of [Gro-a, p. 38].
 
 (2) The argument at the bottom of [Gro-a, p. 38] shows that weak holomorphy implies continuity in the presence of quasi-completeness.
 
@@ -3851,7 +3851,7 @@ We define:
 
 (2) $\xi_0 \in \Omega$ to be a pole of $f$ if $\operatorname{ord}_{\xi_0}(f) \le -1$, in which case we say $\xi_0$ is a pole of order $-\operatorname{ord}_{\xi_0}(f)$.
 
-We define $\mathcal{M}(\Omega, E)$ the complex vector space of meromorphic $E$-valued functions on $\Omega$.
+We define $\mathscr{M}(\Omega, E)$ the complex vector space of meromorphic $E$-valued functions on $\Omega$.
 
 We check the following, as an application of Theorem C.5.2.4
 
@@ -3864,7 +3864,7 @@ We check the following, as an application of Theorem C.5.2.4
 $\Gamma$, we have
 
 $$
-a_k(\xi_0, f) = \frac{1}{2\pi i} \int_\Gamma \frac{f(\xi)}{(\xi - \xi_0)^{k+1}}\, d\xi \tag{C.5.3.3}
+a_k(\xi_0, f) = \frac{1}{2\pi i} \int_\Gamma \frac{f(\xi)}{(\xi - \xi_0)^{k+1}}\, \mathrm{d}\xi \tag{C.5.3.3}
 $$
 
 for every $k \in \mathbf{Z}$, the identity being as elements of $E$.
@@ -3881,7 +3881,7 @@ $$\frac{f(\xi)}{(\xi - \xi_0)^{k+1}} = \frac{(\xi - \xi_0)^N f(\xi)}{(\xi - \xi_
 
 we’re reduced to the settled holomorphic case. $\square$
 
-**C.5.3.1. Vector-valued residues.** We construct the following operators on $\mathcal{M}(\Omega, E)$:
+**C.5.3.1. Vector-valued residues.** We construct the following operators on $\mathscr{M}(\Omega, E)$:
 
 $$
 \operatorname{Res}_\xi(f) := a_{-1}(\xi, f), \quad \xi \in \Omega. \tag{C.5.3.5}
@@ -3892,7 +3892,7 @@ $$
 (1) For every $\xi \in \Omega$, the map
 
 $$
-\operatorname{Res}_\xi : \mathcal{M}(\Omega, E) \to E \tag{C.5.3.6}
+\operatorname{Res}_\xi : \mathscr{M}(\Omega, E) \to E \tag{C.5.3.6}
 $$
 
 assigned by the rule $f \mapsto \operatorname{Res}_\xi(f)$ as in (C.5.3.5) is $\mathbf{C}$-linear.
@@ -3900,18 +3900,18 @@ assigned by the rule $f \mapsto \operatorname{Res}_\xi(f)$ as in (C.5.3.5) is $\
 (2) For every $\xi_0 \in \Omega$, we have the identity
 
 $$
-\operatorname{Res}_{\xi_0}(f) = \frac{1}{2\pi i} \int_\Gamma f(\xi)\, d\xi \tag{C.5.3.7}
+\operatorname{Res}_{\xi_0}(f) = \frac{1}{2\pi i} \int_\Gamma f(\xi)\, \mathrm{d}\xi \tag{C.5.3.7}
 $$
 
-as $\mathbf{C}$-linear maps $\mathcal{M}(\Omega, E) \to E$ for every closed positively oriented simple curve contained within $\Omega$ and enclosing no further pole other than possibly $\xi_0$, neither in its interior nor on $\Gamma$ itself.
+as $\mathbf{C}$-linear maps $\mathscr{M}(\Omega, E) \to E$ for every closed positively oriented simple curve contained within $\Omega$ and enclosing no further pole other than possibly $\xi_0$, neither in its interior nor on $\Gamma$ itself.
 
 (3) If $\xi_0$ is a pole of $f$ of order $k \ge 1$ then
 
 $$
-\operatorname{Res}_{\xi_0}(f) = \lim_{\xi \to \xi_0} \frac{1}{(k-1)!} \frac{d^{k-1}}{d\xi^{k-1}} ((\xi - \xi_0)^{k-1} f(\xi)) \tag{C.5.3.8}
+\operatorname{Res}_{\xi_0}(f) = \lim_{\xi \to \xi_0} \frac{1}{(k-1)!} \frac{\mathrm{d}^{k-1}}{\mathrm{d}\xi^{k-1}} ((\xi - \xi_0)^{k-1} f(\xi)) \tag{C.5.3.8}
 $$
 
-as $\mathbf{C}$-linear operators $\mathcal{M}(\Omega, E) \to E$.
+as $\mathbf{C}$-linear operators $\mathscr{M}(\Omega, E) \to E$.
 
 (4) Let $E_1, E_2$ be two Hausdorff quasi-complete complex topological vector spaces, and $T : E_1 \to E_2$ a continuous $\mathbf{C}$-linear operator. Then
 
@@ -3919,9 +3919,9 @@ $$
 \operatorname{Res}_\xi(T \circ (\cdot)) = T \circ \operatorname{Res}_\xi \tag{C.5.3.9}
 $$
 
-as $\mathbf{C}$-linear operators $\mathcal{M}(\Omega, E_2) \to E_2$, for every $\xi \in \Omega$.
+as $\mathbf{C}$-linear operators $\mathscr{M}(\Omega, E_2) \to E_2$, for every $\xi \in \Omega$.
 
-*Proof.* Assertions (1) and (3) are clear. For (4), use Lemma C.4.3.8 applied to $X = \Gamma$, $\mu = d\xi$. $\square$
+*Proof.* Assertions (1) and (3) are clear. For (4), use Lemma C.4.3.8 applied to $X = \Gamma$, $\mu = \mathrm{d}\xi$. $\square$
 
 **C.5.4. Vector-valued Residue Theorem.** We recall that by a cycle $\Gamma$ on $\Omega$, we mean a formal sum with integer coefficients of positively oriented closed simple curves contained within $\Omega$. The following is therefore the analog of Cauchy’s Residue Theorem, for $E$-valued holomorphic functions on $\Omega$.
 
@@ -3932,10 +3932,10 @@ as $\mathbf{C}$-linear operators $\mathcal{M}(\Omega, E_2) \to E_2$, for every $
 **Theorem C.5.4.1 (Residue Theorem for vector-valued meromorphic functions).** Let $E$ be a Hausdorff quasi-complete locally convex complex topological vector space, $\Omega \subset \mathbf{C}$ a domain. Let $f$ be a meromorphic $E$-valued function on $\Omega$. Let $\Gamma \subset \Omega$ be a cycle which is homologous to zero and does not contain any poles of $f$. Then
 
 $$
-\frac{1}{2\pi i} \int_\Gamma f(\xi)\, d\xi = \sum_{\xi_0 \in D} n(\Gamma, \xi_0) \operatorname{Res}_{\xi_0}(f) \tag{C.5.4.1}
+\frac{1}{2\pi i} \int_\Gamma f(\xi)\, \mathrm{d}\xi = \sum_{\xi_0 \in D} n(\Gamma, \xi_0) \operatorname{Res}_{\xi_0}(f) \tag{C.5.4.1}
 $$
 
-as $\mathbf{C}$-linear operators $\mathcal{M}(\Omega, E) \to E$, where $n(\Gamma, \xi_0)$ is the winding number of $\Gamma$ around $\xi_0 \in D$.
+as $\mathbf{C}$-linear operators $\mathscr{M}(\Omega, E) \to E$, where $n(\Gamma, \xi_0)$ is the winding number of $\Gamma$ around $\xi_0 \in D$.
 
 *Proof.* By pairing both sides of (C.5.4.1) against a general $\varphi \in E'$, we reduce to the classical case with $E = \mathbf{C}$. $\square$
 
@@ -3963,7 +3963,7 @@ Then $f_1$ and $f_2$ agree as holomorphic functions on $\Omega - (D_1 \cup D_2)$
 
 For a Hausdorff quasi-complete locally convex topological $\mathbf{C}$-vector space $E$, the complex vector spaces
 
-$$\mathcal{H}(\Omega, E), \, \mathcal{M}(\Omega, E)$$
+$$\mathscr{H}(\Omega, E), \, \mathscr{M}(\Omega, E)$$
 
 can be topologized (the former with the topology of locally uniform convergence, the latter with a certain locally convex inductive limit topology) and are well-behaved. Their respective Hausdorff locally convex
 
@@ -3971,4 +3971,4 @@ can be topologized (the former with the topology of locally uniform convergence,
 
 **742** · **CHAPTER C. PREPARATIONS ON LOCALLY CONVEX TOPOLOGICAL VECTOR SPACES**
 
-topologies are themselves quasi-complete, and promote the residue operators to continuous linear maps. They have been studied, for example, in [Jor-a, BJM], in analogy with [GE] on the case of $\mathcal{M}(\Omega, E)$ for $E = \mathbf{C}$. We will not require a study of the complex vector spaces $\mathcal{H}(\Omega, E)$ and $\mathcal{M}(\Omega, E)$ for quasi-complete $E$: rather, we will be studying, throughout Appendix D and the main text, smaller linear subspaces of holomorphic and meromorphic vector-valued functions satisfying decay conditions uniformly over vertical strips of bounded width, topologized with stronger topologies of uniform convergence over vertical strips of bounded width.
+topologies are themselves quasi-complete, and promote the residue operators to continuous linear maps. They have been studied, for example, in [Jor-a, BJM], in analogy with [GE] on the case of $\mathscr{M}(\Omega, E)$ for $E = \mathbf{C}$. We will not require a study of the complex vector spaces $\mathscr{H}(\Omega, E)$ and $\mathscr{M}(\Omega, E)$ for quasi-complete $E$: rather, we will be studying, throughout Appendix D and the main text, smaller linear subspaces of holomorphic and meromorphic vector-valued functions satisfying decay conditions uniformly over vertical strips of bounded width, topologized with stronger topologies of uniform convergence over vertical strips of bounded width.

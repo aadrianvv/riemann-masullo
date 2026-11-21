@@ -86,7 +86,7 @@ $$
 
 As a consequence of the Structure Theorems, $\mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S(\mathbf A_F))$ is a strict LF-space. We refer to $\mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S(\mathbf A_F))$ as the *space of global $\theta$-functions*.
 
-• If $f(0)=\widehat f(0)=0$, then $\Phi_F(f)$ is an exponentially decaying Schwartz-Bruhat function on $C_F$, i.e. for any integer $N\ge1$, $\lvert\Phi_F(f)(g)\rvert\ll e^{-N\lvert\log\lvert g\rvert_F\rvert}$ as $\lvert\log\lvert g\rvert_F\rvert\to+\infty$.
+• If $f(0)=\widehat f(0)=0$, then $\Phi_F(f)$ is an exponentially decaying Schwartz-Bruhat function on $C_F$, i.e. for any integer $N\ge 1$, $\lvert\Phi_F(f)(g)\rvert\ll e^{-N\lvert\log\lvert g\rvert_F\rvert}$ as $\lvert\log\lvert g\rvert_F\rvert\to+\infty$.
 
 • We denote by $\mathrm H_{0,\mathrm{cont}}(\chi_S|_{J_{F,S}^1},\mathcal S(\mathbf A_{F,S}))$ and $\mathrm H_{0,\mathrm{cont}}(\chi|_{C_F^1},\mathcal S(\mathbf A_F))$ the isotypes of the spaces of $\theta$-functions. These are nuclear Fréchet spaces. All equipped with a continuous left-translation action of $J_{F,S}$, respectively $C_F$, and hence a convolution action by the elements of $\mathcal D(J_{F,S})$, respectively $\mathcal D(C_F)$.
 
@@ -109,13 +109,13 @@ The solution amounts to the following:
 **1.2.1. Fundamental Divisor Exact Sequence.** Consider the following situation initially envisioned by Connes, but, contrary to what Connes does (who works, instead, with $L^2$-completions throughout) working with the Hausdorff locally convex topological $\mathbf C$-vector spaces:
 
 $$
-0\to\lvert\cdot\rvert_F^{1/2}\mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S_0(\mathbf A_F))\to\mathcal S_{\mathrm E}(C_F)\to\mathscr H_F\to0
+0\to\lvert\cdot\rvert_F^{1/2}\mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S_0(\mathbf A_F))\to\mathcal S_{\mathrm E}(C_F)\to\mathscr H_F\to 0
 $$
 
 and each of their $C_F^1$-isotypes, i.e.
 
 $$
-0\to\lvert\cdot\rvert_F^{1/2}\mathrm H_{0,\mathrm{cont}}(\chi|_{C_F^1},\mathcal S_0(\mathbf A_F))\to\mathcal S_{\mathrm E}(C_F)(\chi|_{C_F^1})\to\mathscr H_F(\chi|_{C_F^1})\to0
+0\to\lvert\cdot\rvert_F^{1/2}\mathrm H_{0,\mathrm{cont}}(\chi|_{C_F^1},\mathcal S_0(\mathbf A_F))\to\mathcal S_{\mathrm E}(C_F)(\chi|_{C_F^1})\to\mathscr H_F(\chi|_{C_F^1})\to 0
 $$
 
 these latter being nuclear Fréchet spaces.
@@ -123,7 +123,7 @@ these latter being nuclear Fréchet spaces.
 The Mellin transform turns the second exact sequence into (forgetting about the uniformly Schwartz condition defining Schwartz-Bergman spaces):
 
 $$
-0\to L(s+1/2,\chi)((s+1/2)(s-1/2))^\delta\mathcal O(\mathbf C)\cap A\mathcal S(\mathbf C)\to A\mathcal S(\mathbf C)\to\prod_{z:L(z,\chi)=0}\mathbf C^{N(z)}\to0
+0\to L(s+1/2,\chi)((s+1/2)(s-1/2))^\delta\mathcal O(\mathbf C)\cap A\mathcal S(\mathbf C)\to A\mathcal S(\mathbf C)\to\prod_{z:L(z,\chi)=0}\mathbf C^{N(z)}\to 0
 $$
 
 where $N(\rho)$ is the multiplicity of $\rho$ as a zero of $L(s,\chi)$. Here $\delta=0$ if $\chi|_{C_F^1}\neq1$, and $\delta=1$ otherwise. This connection to the $L$-function requires all the Structure Theorems, and use of known analytic properties of the $L$-function (convexity bound, existence of a sequence of horizontal segments across the critical strip on which the reciprocal of $L_f(s,\chi)$ is defined and grows at most polynomially in the absolute ordinate).
@@ -131,7 +131,7 @@ where $N(\rho)$ is the multiplicity of $\rho$ as a zero of $L(s,\chi)$. Here $\d
 This is the reason why I called this the “divisor exact sequence”: it mirrors the global sections of
 
 $$
-0\to\mathscr O_X(-D)\to\mathscr O_X\to\mathscr O_D\to0
+0\to\mathscr O_X(-D)\to\mathscr O_X\to\mathscr O_D\to 0
 $$
 
 for the Stein space $X=\mathbf C$, and $D=\operatorname{div}(L(s+1/2,\chi)((s+1/2)(s-1/2))^\delta)$.
@@ -143,7 +143,7 @@ Considering these spaces systematically is already new. Only Meyer did so to som
 (1) Take a Hardy-Sobolev completion of all spaces in the above linearly and topologically exact sequence of isotypes, to get:
 
 $$
-0\to W_I^{s,2}(\lvert\cdot\rvert_F^{1/2}\mathrm H_{0,\mathrm{cont}}(\chi|_{C_F^1},\mathcal S_0(\mathbf A_F)))\to W_I^{s,2}(C_F)(\chi|_{C_F^1})\to W_I^{s,2}\mathscr H_F(\chi|_{C_F^1})\to0
+0\to W_I^{s,2}(\lvert\cdot\rvert_F^{1/2}\mathrm H_{0,\mathrm{cont}}(\chi|_{C_F^1},\mathcal S_0(\mathbf A_F)))\to W_I^{s,2}(C_F)(\chi|_{C_F^1})\to W_I^{s,2}\mathscr H_F(\chi|_{C_F^1})\to 0
 $$
 
 where each space is now a Hilbert space.
@@ -356,7 +356,7 @@ $$
 \delta_{z_m}:\phi\mapsto\frac{1}{\log(\gamma)}\int_{\mathbf R_{>0}/\gamma^{\mathbf Z}}\phi(t)e^{-\frac{2\pi im\log(t)}{\log(\gamma)}}\,\mathrm d\bar\mu(t)
 $$
 
-where $\bar\mu$ is the Haar measure induced on $\mathbf R_{>0}/\gamma^{\mathbf Z}$ by the Haar measure $dt/t$ on $\mathbf R_{>0}$ and the counting measure on $\gamma^{\mathbf Z}$.
+where $\bar\mu$ is the Haar measure induced on $\mathbf R_{>0}/\gamma^{\mathbf Z}$ by the Haar measure $\mathrm{d}t/t$ on $\mathbf R_{>0}$ and the counting measure on $\gamma^{\mathbf Z}$.
 
 We now recall that the averaging operator defined on $\mathcal S_{\mathrm E}(\mathbf R_{>0})$ by:
 
@@ -367,13 +367,13 @@ $$
 identifies $\mathcal S(\mathbf R_{>0}/\gamma^{\mathbf Z})$ with the quotient $\mathcal S_{\mathrm E}(\mathbf R_{>0})/\ker(\Phi_\gamma)$, i.e.
 
 $$
-0\to\ker(\Phi_\gamma)\to\mathcal S_{\mathrm E}(\mathbf R_{>0})\to\mathcal S(\mathbf R_{>0}/\gamma^{\mathbf Z})\to0
+0\to\ker(\Phi_\gamma)\to\mathcal S_{\mathrm E}(\mathbf R_{>0})\to\mathcal S(\mathbf R_{>0}/\gamma^{\mathbf Z})\to 0
 $$
 
 is linearly and topologically exact. The Mellin transform $M:\phi\mapsto\int_{\mathbf R_{>0}}\phi(t)t^s\frac{dt}{t}$ now identifies the above sequence with
 
 $$
-0\to(1-\gamma^{-s})A\mathcal S(\mathbf C)\to A\mathcal S(\mathbf C)\to A\mathcal S(\mathbf C)/(1-\gamma^{-s})A\mathcal S(\mathbf C)\to0
+0\to(1-\gamma^{-s})A\mathcal S(\mathbf C)\to A\mathcal S(\mathbf C)\to A\mathcal S(\mathbf C)/(1-\gamma^{-s})A\mathcal S(\mathbf C)\to 0
 $$
 
 therefore characterizing $\ker(\Phi_\gamma)$ in terms of the image of the Mellin transform in the Schwartz-Bergman space $A\mathcal S(\mathbf C)$. The left term in the exact sequence above is reminiscent of a reciprocal Euler factor at a non-Archimedean place.
@@ -684,9 +684,9 @@ We call a sequence of Borel subsets $U_k\subset G$ that axiomatize properties sa
 
 Say $D$ is a fundamental domain for the $H$-action on $G$.
 
-Assume that $\{U_k\}_{k\ge0}$ is a $D'$-sequence for $G$ such that $U_k\subset D$, and $U_k$ is a relatively compact open symmetric unit-neighborhood for all integers $k\ge0$. Then, upon defining $\overline{U}_k:=\pi(U_k)$ for each integer $k\ge0$, $\{\overline{U}_k\}_{k\ge0}$ is a $D'$-sequence for $G/H$.
+Assume that $\{U_k\}_{k\ge 0}$ is a $D'$-sequence for $G$ such that $U_k\subset D$, and $U_k$ is a relatively compact open symmetric unit-neighborhood for all integers $k\ge 0$. Then, upon defining $\overline{U}_k:=\pi(U_k)$ for each integer $k\ge 0$, $\{\overline{U}_k\}_{k\ge 0}$ is a $D'$-sequence for $G/H$.
 
-We define smoothenings over $G\times G$ and $G/H\times G/H$ using the $D'$-sequences $\{U_k\times U_k\}_{k\ge0}$ for $G\times G$ and $\{\overline{U}_k\times\overline{U}_k\}_{k\ge0}$ for $G/H\times G/H$. Namely, for $u:G\to\mathbf{C}$ a locally $\mu_G$-integrable function on $G$, we define
+We define smoothenings over $G\times G$ and $G/H\times G/H$ using the $D'$-sequences $\{U_k\times U_k\}_{k\ge 0}$ for $G\times G$ and $\{\overline{U}_k\times\overline{U}_k\}_{k\ge 0}$ for $G/H\times G/H$. Namely, for $u:G\to\mathbf{C}$ a locally $\mu_G$-integrable function on $G$, we define
 
 $$
 \widetilde{u}(x):=\lim_{k\to+\infty}\frac{1}{\mu_G(U_k)}\int_{xU_k}u(y)\,\mathrm{d}\mu_G(y)
@@ -707,7 +707,7 @@ Let now $u_0$ be a continuous $H$-indentation on $G$. Then $u_0\otimes u_0\in C(
 (1) The integral:
 
 $$
-\int_H u_0(h^{-1}x)u_0(h^{-1}y)\,d\mu_H(h) \tag{1.3.1.3}
+\int_H u_0(h^{-1}x)u_0(h^{-1}y)\,\mathrm{d}\mu_H(h) \tag{1.3.1.3}
 $$
 
 converges pointwise everywhere on $G\times G$. The limit function $u_0^\Delta(x,y)$ is defined everywhere, continuous on $G\times G$, real-valued and nonnegative, and invariant under the continuous diagonal action of $H$ on $G\times G$.
@@ -721,26 +721,26 @@ $$
 is valued in measurable complex-valued functions over $G\times G$. If $\mu_{G/H}$-almost every point $(x,x)\in G/H\times G/H$ is regular for $u$, then $\widetilde u(x,x)$ is $\mu_{G/H}$-measurable, defined $\mu_{G/H}$-almost everywhere. If it is absolutely $\mu_{G/H}$-integrable as a function on $G/H$, then the functions $\Psi^\Delta_{u_0}(\widetilde u)(h^{-1}x,x)$ and $\Psi^\Delta_{u_0}(\widetilde u)(x,h^{-1}x)$, defined for all $h\in H$, $\mu_G$-almost all $x\in G$, and $(\mu_H\otimes\mu_G)$-measurable as functions of $(x,h)\in G\times H$, satisfy the following condition: the following two-fold integrals
 
 $$
-\int_D\int_H\Psi^\Delta_{u_0}(\widetilde u)(h^{-1}x,x)\,d\mu_H(h)\,d\mu_G(x),\qquad
-\int_H\int_D\Psi^\Delta_{u_0}(\widetilde u)(h^{-1}x,x)\,d\mu_G(x)\,d\mu_H(h) \tag{1.3.1.5}
+\int_D\int_H\Psi^\Delta_{u_0}(\widetilde u)(h^{-1}x,x)\,\mathrm{d}\mu_H(h)\,\mathrm{d}\mu_G(x),\qquad
+\int_H\int_D\Psi^\Delta_{u_0}(\widetilde u)(h^{-1}x,x)\,\mathrm{d}\mu_G(x)\,\mathrm{d}\mu_H(h) \tag{1.3.1.5}
 $$
 
 are both absolutely convergent, and the following identities hold:
 
 $$
-\int_{G/H}\widetilde u(x,x)\,d\mu_{G/H}(x)=\int_D\int_H\Psi^\Delta_{u_0}(\widetilde u)(h^{-1}x,x)\,d\mu_H(h)\,d\mu_G(x) \tag{1.3.1.6}
+\int_{G/H}\widetilde u(x,x)\,\mathrm{d}\mu_{G/H}(x)=\int_D\int_H\Psi^\Delta_{u_0}(\widetilde u)(h^{-1}x,x)\,\mathrm{d}\mu_H(h)\,\mathrm{d}\mu_G(x) \tag{1.3.1.6}
 $$
 
 $$
-=\int_H\int_D\Psi^\Delta_{u_0}(\widetilde u)(h^{-1}x,x)\,d\mu_G(x)\,d\mu_H(h) \tag{1.3.1.7}
+=\int_H\int_D\Psi^\Delta_{u_0}(\widetilde u)(h^{-1}x,x)\,\mathrm{d}\mu_G(x)\,\mathrm{d}\mu_H(h) \tag{1.3.1.7}
 $$
 
 $$
-=\int_H\int_D\Psi^\Delta_{u_0}(\widetilde u)(x,h^{-1}x)\,d\mu_G(x)\,d\mu_H(h) \tag{1.3.1.8}
+=\int_H\int_D\Psi^\Delta_{u_0}(\widetilde u)(x,h^{-1}x)\,\mathrm{d}\mu_G(x)\,\mathrm{d}\mu_H(h) \tag{1.3.1.8}
 $$
 
 $$
-=\int_D\int_H\Psi^\Delta_{u_0}(\widetilde u)(x,h^{-1}x)\,d\mu_H(h)\,d\mu_G(x). \tag{1.3.1.9}
+=\int_D\int_H\Psi^\Delta_{u_0}(\widetilde u)(x,h^{-1}x)\,\mathrm{d}\mu_H(h)\,\mathrm{d}\mu_G(x). \tag{1.3.1.9}
 $$
 
 (3) Let $\rho\in C_c(G/H\times G/H)$. Then:
@@ -754,12 +754,12 @@ for $(\mu_G\otimes\mu_G)$-almost every $(x,y)\in G\times G$.
 (4) We have, for $(\mu_G\otimes\mu_G)$-almost all $(x,y)\in G\times G$:
 
 $$
-\Psi^\Delta_{u_0}(\widetilde u)(x,y)=\lim_{k\to+\infty}\frac{1}{\mu_G(U_k)^2}\int_{xU_k\times yU_k}\Psi^\Delta_{u_0}(u)(y_1,y_2)\,d(\mu_G\otimes\mu_G)(y_1,y_2). \tag{1.3.1.11}
+\Psi^\Delta_{u_0}(\widetilde u)(x,y)=\lim_{k\to+\infty}\frac{1}{\mu_G(U_k)^2}\int_{xU_k\times yU_k}\Psi^\Delta_{u_0}(u)(y_1,y_2)\,\mathrm{d}(\mu_G\otimes\mu_G)(y_1,y_2). \tag{1.3.1.11}
 $$
 
 The point $(x,y)\in G\times G$ is regular for $\Psi^\Delta_{u_0}(u)$ if and only if $(\pi(x),\pi(y))\in G/H\times G/H$ is regular for $u$.
 
-Point (2) teaches us how to compute $\int_{G/H}\widetilde u(x,x)\,d\mu_{G/H}(x)$ in terms of integration over $D$, integration over $H$, and the values of the smoothening of
+Point (2) teaches us how to compute $\int_{G/H}\widetilde u(x,x)\,\mathrm{d}\mu_{G/H}(x)$ in terms of integration over $D$, integration over $H$, and the values of the smoothening of
 
 $$
 \Psi^\Delta_{u_0}(u)(x,y)
@@ -806,7 +806,7 @@ $$
 - *We compute its diagonal mass using the lifted kernel on skewered diagonals in $\mathrm{GL}_1(\mathbf A_F)\times\mathrm{GL}_1(\mathbf A_F)$.* The new kernel function $K_{\mathrm{geom},I,\varphi}(x,y)$ on $\mathrm{GL}_1(\mathbf A_F)\times\mathrm{GL}_1(\mathbf A_F)$ is invariant under the diagonal action of $F^\times$, and so the formulas in (12.2.2.4) all hold. We use the last one:
 
 $$
-\int_{C_F}\widetilde{k}_{\mathrm{geom},I,\varphi}(x,x)\,d\bar\mu(x)=\int_D\sum_{\xi\in F^\times}\widetilde{K}_{\mathrm{geom},I,\varphi}(x,\xi x)\,d\mu(x) \tag{1.3.1.12}
+\int_{C_F}\widetilde{k}_{\mathrm{geom},I,\varphi}(x,x)\,\mathrm{d}\bar\mu(x)=\int_D\sum_{\xi\in F^\times}\widetilde{K}_{\mathrm{geom},I,\varphi}(x,\xi x)\,\mathrm{d}\mu(x) \tag{1.3.1.12}
 $$
 
 where the superscripts $\widetilde{(\cdot)}$ refer to the smoothenings, computed using the chosen $D'$-sequence within $\mathrm{GL}_1(\mathbf A_F)$, and its image in $C_F$. These masses do not depend on any such choice, nor do they depend on $\widetilde{\varphi}$ and the indentation $u_0$.
@@ -856,7 +856,7 @@ The stratification of the global ideles $\mathrm{GL}_1(\mathbf A_F)$ that we are
 The guiding principle is simple: since $\mathcal O_{F_v}^\times\subset F_v^\times$ is compact and open, hence so it is in $F_v$, and we have
 
 $$
-1_{\mathcal O_{F_v}^\times}\cdot1_{\mathcal O_{F_v}}=1_{\mathcal O_{F_v}^\times}
+1_{\mathcal O_{F_v}^\times}\cdot 1_{\mathcal O_{F_v}}=1_{\mathcal O_{F_v}^\times}
 $$
 
 as Schwartz-Bruhat functions on $F_v$. Under the local Mellin transform, $Z_v(1_{\mathcal O_{F_v}^\times},c)$ and $Z_v(1_{\mathcal O_{F_v}},c)$ are related by “Weil’s Identity”:
@@ -874,7 +874,7 @@ Note also that the infinite product of the volumes $\mu_v(\mathcal O_{F_v}^\time
 We define
 
 $$
-\rho_v:=\bigotimes_{w\in S}1_{F_w}\otimes\bigotimes_{w\notin S,w\ne v}1_{F_v}\otimes1_{\mathcal O_{F_v}^\times}.
+\rho_v:=\bigotimes_{w\in S}1_{F_w}\otimes\bigotimes_{w\notin S,w\ne v}1_{F_v}\otimes 1_{\mathcal O_{F_v}^\times}.
 $$
 
 This is a smooth function on $\mathrm{GL}_1(\mathbf A_F)$ (since $\mathcal O_{F_v}^\times\subset F_v$ is a compact open subset).
@@ -885,7 +885,7 @@ $$
 \rho_T:=\prod_{v\in T}\rho_v. \tag{1.3.2.2}
 $$
 
-For any increasing chain of finite subsets $T_k$ of finite places of $F$, as $k\ge0$ varies over the nonnegative integers, and such that $T_{k+1}-T_k$ contains only one place, then the functions $\{\rho_{T_k}\}_{k\ge0}$ define on $\mathrm{GL}_1(\mathbf A_F)$ a stratification by open and closed subsets, which we call the *divisorial stratification*.
+For any increasing chain of finite subsets $T_k$ of finite places of $F$, as $k\ge 0$ varies over the nonnegative integers, and such that $T_{k+1}-T_k$ contains only one place, then the functions $\{\rho_{T_k}\}_{k\ge 0}$ define on $\mathrm{GL}_1(\mathbf A_F)$ a stratification by open and closed subsets, which we call the *divisorial stratification*.
 
 ## PDF page 26
 
@@ -903,13 +903,13 @@ $$
 \mathrm{GL}_1(\mathbf A_F)_{T_k}-\mathrm{GL}_1(\mathbf A_F)_{T_{k+1}}=\{g\in\mathrm{GL}_1(\mathbf A_F):g_v\in\mathcal O_{F_v}^\times\text{ for all }v\in T_k,\ g_v\in\bigcup_{m\in\mathbf Z,m\ne0}\pi_v^m\mathcal O_{F_v}^\times\text{ for }v\in T_{k+1}-T_k\}.
 $$
 
-At last, we will term the *primary divisorial stratification* the stratification $\{\mathrm{GL}_1(\mathbf A_F)_{P_k}\}_{k\ge0}$ of the global ideles $\mathrm{GL}_1(\mathbf A_F)$ where we assume:
+At last, we will term the *primary divisorial stratification* the stratification $\{\mathrm{GL}_1(\mathbf A_F)_{P_k}\}_{k\ge 0}$ of the global ideles $\mathrm{GL}_1(\mathbf A_F)$ where we assume:
 
 (1) $S$ is saturated.
 
 (2) Each finite set of finite places $P_k$ is saturated, and obtained as a union of finitely many of the $T_m$’s.
 
-(3) $\{P_k\}_{k\ge0}$ is the finest (under the refinement partial ordering) among such stratifications.
+(3) $\{P_k\}_{k\ge 0}$ is the finest (under the refinement partial ordering) among such stratifications.
 
 More directly, we define $P_k$ to be the pre-image under the map $\lvert\operatorname{Spec}(\mathcal O_F)\rvert\to\lvert\operatorname{Spec}(\mathbf Z)\rvert$ of the subset $T_k$, and therefore the stratum $\mathrm{GL}_1(\mathbf A_F)_{P_k}$ is the pre-image under the norm map $\mathrm{GL}_1(\mathbf A_F)\to\mathrm{GL}_1(\mathbf A_{\mathbf Q})$ of the $k$th divisorial stratum on $\mathrm{GL}_1(\mathbf A_{\mathbf Q})$. Explicitly, we have
 
@@ -919,7 +919,7 @@ $$
 
 where $T_k$ denotes, here, the finite set of the first $k$ rational primes. In other words, $\mathrm{GL}_1(\mathbf A_F)_{P_k}$ is the pre-image of the $k$th stratum $\mathrm{GL}_1(\mathbf A_{\mathbf Q})_{T_k}$ of the divisorial stratification on $\mathrm{GL}_1(\mathbf A_{\mathbf Q})$ under the norm map $\mathrm{GL}_1(\mathbf A_F)\to\mathrm{GL}_1(\mathbf A_{\mathbf Q})$.
 
-The complement to each stratum of $\{\mathrm{GL}_1(\mathbf A_F)_{P_k}\}_{k\ge0}$ into the next is of the following form:
+The complement to each stratum of $\{\mathrm{GL}_1(\mathbf A_F)_{P_k}\}_{k\ge 0}$ into the next is of the following form:
 
 $$
 \mathrm{GL}_1(\mathbf A_F)_{P_k}-\mathrm{GL}_1(\mathbf A_F)_{P_{k+1}}=\bigcup_{Q\subset P_{k+1}-P_k}\{g\in\mathrm{GL}_1(\mathbf A_F):g_v\in\mathcal O_{F_v}^\times\text{ for all }v\in P_k,\ g_v\in\bigcup_{m\in\mathbf Z,m\ne0}\pi_v^m\mathcal O_{F_v}^\times\text{ for }v\in Q\}
@@ -1018,9 +1018,9 @@ Putting everything together, we obtain the Trace Formula, valid on all $\varphi\
 
 $$
 \begin{aligned}
-&\sum_{v\in S_\infty,\ v\ \mathrm{real}}\frac12\int_{F_v^\times}'\frac{\varphi(g_v)|g|_v^{1/2}}{|1-g_v|}\,d\mu_v(g_v)
-+\sum_{v\in S_\infty,\ v\ \mathrm{complex}}\frac{1}{2\pi}\int_{F_v^\times}'\frac{\varphi(g_v)|g|_v^{1/2}}{|1-g_v|}\,d\mu_v(g_v)\\
-&\qquad+\sum_{v\in\Sigma_{F,f}}\frac{\log(q_v)}{\mu_v(\mathcal O_{F_v}^\times)}\int_{F_v^\times}'\frac{\varphi(g_v)|g|_v^{1/2}}{|1-g_v|_v}\,d\mu_v(g_v)\\
+&\sum_{v\in S_\infty,\ v\ \mathrm{real}}\frac12\int_{F_v^\times}'\frac{\varphi(g_v)|g|_v^{1/2}}{|1-g_v|}\,\mathrm{d}\mu_v(g_v)
++\sum_{v\in S_\infty,\ v\ \mathrm{complex}}\frac{1}{2\pi}\int_{F_v^\times}'\frac{\varphi(g_v)|g|_v^{1/2}}{|1-g_v|}\,\mathrm{d}\mu_v(g_v)\\
+&\qquad+\sum_{v\in\Sigma_{F,f}}\frac{\log(q_v)}{\mu_v(\mathcal O_{F_v}^\times)}\int_{F_v^\times}'\frac{\varphi(g_v)|g|_v^{1/2}}{|1-g_v|_v}\,\mathrm{d}\mu_v(g_v)\\
 &\qquad=M(\varphi)(|\cdot|_F^{1/2})+M(\varphi)(|\cdot|_F^{-1/2})-\sum_{\rho,I}N(\rho)M(\varphi)\left(c_\rho|\cdot|_F^{-1/2}\right)
 \end{aligned}
 $$
@@ -1028,7 +1028,7 @@ $$
 where $q_v:=|\pi_v|_v^{-1}$, for $v\in\Sigma_{F,f}$ and $\pi_v$ any choice of uniformizer at $v$ of the non-Archimedean local field $F_v$, and
 
 $$
-M(\varphi)(c):=\int_{C_F}\varphi(g)c(g)\,d\bar\mu(g)
+M(\varphi)(c):=\int_{C_F}\varphi(g)c(g)\,\mathrm{d}\bar\mu(g)
 $$
 
 is the Mellin transform of the test function $\varphi$, and $c_\rho\in\Omega(C_F)$ varies over the zeros of the Hecke $L$-function $c\mapsto L(c)$ contained in the interior of the relative vertical strip
@@ -1049,10 +1049,10 @@ The assumptions on the test function are as follows:
 
 $$
 \begin{aligned}
-&\sum_{v\in S_\infty,\ v\ \mathrm{real}}\frac12\int_{\mathbf R_{>0}}\sum_{u\in\{\pm1\}}\frac{\chi_v(tu)\varphi(tu)|t|^{1/2}}{|1-t|}\frac{dt}{t}
-+\sum_{v\in S_\infty,\ v\ \mathrm{complex}}\frac{1}{2\pi}\int_{\mathbf R_{>0}}\int_{\mathbf T}\frac{\chi_v(te^{i\theta})\varphi(te^{i\theta})|t|^{1/2}}{|1-te^{i\theta}|}\,2\,d\theta\otimes\frac{dt}{t}\\
-&\qquad+\sum_{v\in\Sigma_{F,f}}\log(q_v)\sum_{m\ge1}\left(\frac{\chi(\pi_v^m)}{q_v^{m/2}}\varphi(q_v^m)+\frac{\overline{\chi}(\pi_v^m)}{q_v^{m/2}}\varphi(q_v^{-m})\right)\\
-&\qquad=M(\varphi)(|\cdot|_F^{1/2})+M(\varphi)(|\cdot|_F^{-1/2})-\sum_{\rho,I}N(\rho)\int_{C_F}\chi(g)\varphi(g)|g|_F^{\rho-1/2}\,d\bar\mu(g)
+&\sum_{v\in S_\infty,\ v\ \mathrm{real}}\frac12\int_{\mathbf R_{>0}}\sum_{u\in\{\pm1\}}\frac{\chi_v(tu)\varphi(tu)|t|^{1/2}}{|1-t|}\frac{\mathrm{d}t}{t}
++\sum_{v\in S_\infty,\ v\ \mathrm{complex}}\frac{1}{2\pi}\int_{\mathbf R_{>0}}\int_{\mathbf T}\frac{\chi_v(te^{i\theta})\varphi(te^{i\theta})|t|^{1/2}}{|1-te^{i\theta}|}\,2\,\mathrm{d}\theta\otimes\frac{\mathrm{d}t}{t}\\
+&\qquad+\sum_{v\in\Sigma_{F,f}}\log(q_v)\sum_{m\ge 1}\left(\frac{\chi(\pi_v^m)}{q_v^{m/2}}\varphi(q_v^m)+\frac{\overline{\chi}(\pi_v^m)}{q_v^{m/2}}\varphi(q_v^{-m})\right)\\
+&\qquad=M(\varphi)(|\cdot|_F^{1/2})+M(\varphi)(|\cdot|_F^{-1/2})-\sum_{\rho,I}N(\rho)\int_{C_F}\chi(g)\varphi(g)|g|_F^{\rho-1/2}\,\mathrm{d}\bar\mu(g)
 \end{aligned}
 $$
 
@@ -1078,7 +1078,7 @@ $$
 
 **1.4. PUTTING EVERYTHING TOGETHER: TRACE FORMULA AND CONSEQUENCES** · **29**
 
-tends to $\varphi_z(t)$ pointwise (for $t\ne1$) as $\varepsilon\to0$ and $h\to1_{(1,+\infty)}$ pointwise, as $h$ (which will be an explicit collection of bump functions) remains valued in $[0,1]$ and below $1_{(1,+\infty)}$, converging pointwise monotonically.
+tends to $\varphi_z(t)$ pointwise (for $t\ne1$) as $\varepsilon\to 0$ and $h\to 1_{(1,+\infty)}$ pointwise, as $h$ (which will be an explicit collection of bump functions) remains valued in $[0,1]$ and below $1_{(1,+\infty)}$, converging pointwise monotonically.
 
 **1.4.3. Montel’s Theorem.** Fix a compact subset $K\subset\mathbf C_{>\sup(I)}$ with non-empty interior intersecting with non-empty interior the half-plane $\mathbf C_{>1}$.
 
@@ -1087,8 +1087,8 @@ Write $\varphi=\chi\cdot(\varphi_{h,\varepsilon,z}\circ|\cdot|_F)$; note the dep
 The integrals
 
 $$
-\sum_{v\in S_\infty,\ v\ \mathrm{real}}\frac12\int_{\mathbf R_{>0}}\sum_{u\in\{\pm1\}}\frac{\chi_v(tu)\varphi(tu)|t|^{1/2}}{|1-t|}\frac{dt}{t},\quad
-\sum_{v\in S_\infty,\ v\ \mathrm{complex}}\frac{1}{2\pi}\int_{\mathbf R_{>0}}\int_{\mathbf T}\frac{\chi_v(te^{i\theta})\varphi(te^{i\theta})|t|^{1/2}}{|1-te^{i\theta}|}\,2\,d\theta\otimes\frac{dt}{t}
+\sum_{v\in S_\infty,\ v\ \mathrm{real}}\frac12\int_{\mathbf R_{>0}}\sum_{u\in\{\pm1\}}\frac{\chi_v(tu)\varphi(tu)|t|^{1/2}}{|1-t|}\frac{\mathrm{d}t}{t},\quad
+\sum_{v\in S_\infty,\ v\ \mathrm{complex}}\frac{1}{2\pi}\int_{\mathbf R_{>0}}\int_{\mathbf T}\frac{\chi_v(te^{i\theta})\varphi(te^{i\theta})|t|^{1/2}}{|1-te^{i\theta}|}\,2\,\mathrm{d}\theta\otimes\frac{\mathrm{d}t}{t}
 $$
 
 are bounded above by a common constant $A>0$ independent of $z\in K$ and independent of the specific $\varphi$.
@@ -1098,16 +1098,16 @@ The boundedness follows from simple estimates and from the explicit form of the 
 By Montel’s Theorem from complex analysis, we can extract a sequence of $\varepsilon,h$ such that over such sequence, the convergence of the integrals in
 
 $$
-\sum_{v\in S_\infty,\ v\ \mathrm{real}}\frac12\int_{\mathbf R_{>0}}\sum_{u\in\{\pm1\}}\frac{\chi_v(tu)\varphi(tu)|t|^{1/2}}{|1-t|}\frac{dt}{t},\quad
-\sum_{v\in S_\infty,\ v\ \mathrm{complex}}\frac{1}{2\pi}\int_{\mathbf R_{>0}}\int_{\mathbf T}\frac{\chi_v(te^{i\theta})\varphi(te^{i\theta})|t|^{1/2}}{|1-te^{i\theta}|}\,2\,d\theta\otimes\frac{dt}{t}
+\sum_{v\in S_\infty,\ v\ \mathrm{real}}\frac12\int_{\mathbf R_{>0}}\sum_{u\in\{\pm1\}}\frac{\chi_v(tu)\varphi(tu)|t|^{1/2}}{|1-t|}\frac{\mathrm{d}t}{t},\quad
+\sum_{v\in S_\infty,\ v\ \mathrm{complex}}\frac{1}{2\pi}\int_{\mathbf R_{>0}}\int_{\mathbf T}\frac{\chi_v(te^{i\theta})\varphi(te^{i\theta})|t|^{1/2}}{|1-te^{i\theta}|}\,2\,\mathrm{d}\theta\otimes\frac{\mathrm{d}t}{t}
 $$
 
 is uniform for $z$ in any compact disc contained within the interior of $K$. Since each is a holomorphic function of $z\in K$, so is the limit.
 
-A similar reasoning leads to the limit as $\varepsilon\to0$ and $h\to1_{(1,+\infty)}$ of the convergent sums
+A similar reasoning leads to the limit as $\varepsilon\to 0$ and $h\to 1_{(1,+\infty)}$ of the convergent sums
 
 $$
-\sum_{\rho,I}N(\rho)\int_{C_F}\chi(g)\varphi_{h,\varepsilon,z}(g)|g|_F^{\rho-1/2}\,d\bar\mu(g)
+\sum_{\rho,I}N(\rho)\int_{C_F}\chi(g)\varphi_{h,\varepsilon,z}(g)|g|_F^{\rho-1/2}\,\mathrm{d}\bar\mu(g)
 $$
 
 to be holomorphic as a function of $z$ varying over the interior of $K$ intersected with the complement of $\mathbf C_I$ (recall that the sum is only over those zeros $\rho$ of $L(s,\chi)$ such that $\rho-1/2\in\mathbf C_I$, after parametrizing $\Omega(C_F)(\chi)$ as $\chi|\cdot|_F^s$).
@@ -1117,7 +1117,7 @@ to be holomorphic as a function of $z$ varying over the interior of $K$ intersec
 The sum
 
 $$
-\sum_{v\in\Sigma_{F,f}}\log(q_v)\sum_{m\ge1}\left(\frac{\chi(\pi_v^m)}{q_v^{m/2}}\varphi(q_v^m)+\frac{\overline{\chi}(\pi_v^m)}{q_v^{m/2}}\varphi(q_v^{-m})\right)
+\sum_{v\in\Sigma_{F,f}}\log(q_v)\sum_{m\ge 1}\left(\frac{\chi(\pi_v^m)}{q_v^{m/2}}\varphi(q_v^m)+\frac{\overline{\chi}(\pi_v^m)}{q_v^{m/2}}\varphi(q_v^{-m})\right)
 $$
 
 therefore tends, uniformly over the compact subsets of $\mathbf C_{>1}$, to
@@ -1412,15 +1412,15 @@ $$
 \|f\|_{a,b}:=\left(\int_G\lvert f(g)\rvert\max\{\lvert g\rvert_G^{2a},\lvert g\rvert_G^{-2a}\}(1+\lvert\log\lvert g\rvert_G\rvert^2)^{b/2}\,\mathrm d\mu_G(g)\right)^{1/2} \tag{1.7.2.2}
 $$
 
-for $a>0$ and $b\ge0$ with $G=C_F$ the idele class group of the number field $F$, $\lvert\cdot\rvert_G=\lvert\cdot\rvert_F$ the idelic norm (these norms are studied briefly in the paper through the lens of the Mellin transform for $\mathbf R_{>0}$-modulated groups; i.e., Hausdorff locally compact abelian groups $G$ equipped with a proper surjective continuous homomorphism $\lvert\cdot\rvert_G:G\to\mathbf R_{>0}$).
+for $a>0$ and $b\ge 0$ with $G=C_F$ the idele class group of the number field $F$, $\lvert\cdot\rvert_G=\lvert\cdot\rvert_F$ the idelic norm (these norms are studied briefly in the paper through the lens of the Mellin transform for $\mathbf R_{>0}$-modulated groups; i.e., Hausdorff locally compact abelian groups $G$ equipped with a proper surjective continuous homomorphism $\lvert\cdot\rvert_G:G\to\mathbf R_{>0}$).
 
-I feel I need to repeat this: the choice of normed topologies $\|\cdot\|_{a,b}$ on these function spaces with $a>0$ and $b\ge0$ (I called them Hardy-Sobolev norms; the analogy is close enough, and the Mellin transform turns their completions into spaces of holomorphic functions on the vertical strip $\mathbf C_{(-a,a)}=\{\lvert\sigma\rvert<a\}$ with edge conditions of continuity and differentiability up to order $\lvert b-1\rvert/2$) is made by the goal of finding normed topologies **such that the resulting completions contain all the barely necessary ingredients (i.e. the bare minimum) to perform the calculation of the Geometric Side of the Trace Formula (mostly, that certain collections of functionals be continuous and of a specific form, on certain closed subspaces derived from Schauder bases at the level of the locally convex spaces that sit densely in such normed completions).** In particular, **the zeros play no role in choosing the normed topologies** to which I am alluding.
+I feel I need to repeat this: the choice of normed topologies $\|\cdot\|_{a,b}$ on these function spaces with $a>0$ and $b\ge 0$ (I called them Hardy-Sobolev norms; the analogy is close enough, and the Mellin transform turns their completions into spaces of holomorphic functions on the vertical strip $\mathbf C_{(-a,a)}=\{\lvert\sigma\rvert<a\}$ with edge conditions of continuity and differentiability up to order $\lvert b-1\rvert/2$) is made by the goal of finding normed topologies **such that the resulting completions contain all the barely necessary ingredients (i.e. the bare minimum) to perform the calculation of the Geometric Side of the Trace Formula (mostly, that certain collections of functionals be continuous and of a specific form, on certain closed subspaces derived from Schauder bases at the level of the locally convex spaces that sit densely in such normed completions).** In particular, **the zeros play no role in choosing the normed topologies** to which I am alluding.
 
 The entire paper itself is about the Geometric Side of the Trace Formula only. It is about spelling out all the ingredients for the Geometric Side at the locally convex level first (the first seven chapters of the paper) and then passing them through the lens of coarser normed topologies. Only at the very end, once the calculation of the Geometric Side of the Trace Formula is performed by working intrinsically within the $\|\cdot\|_{a,b}$-completions and closures, we observe that, **therefore**, we can keep going and compute the Spectral Side too while remaining within the $\|\cdot\|_{a,b}$-completion. The normed topology of the environment now prevents some zeros from expressing themselves because their point-evaluation functionals and derivatives of those will not be continuous with respect to the $\|\cdot\|_{a,b}$-normed topology, depending on whether such functionals are supported on $\mathbf C_{(-a,a)}$, on the edges of $\mathbf C_{(-a,a)}$ (in which case they are not counted with their full multiplicity; only multiplicity up to the smallest integer less than or equal to $\lvert b-1\rvert/2$), or outside $\mathbf C_{[-a,a]}$ altogether.
 
 The takeaway is a collection of analogs of the Explicit Formulas of Weil in which the side involving the places of $F$ (finite and Archimedean) and the poles (the Geometric Side) is identical to that from the Explicit Formulas, and the side involving the zeros (the Spectral Side) is not.
 
-The degenerate case $a=0$ does not lead to a Trace Formula anymore, but it does appear to lead to some information on the multiplicities of the zeros as outlined in the next section (so long as we choose $b\ge2m_\chi$, where $m_\chi$ is the supremum over all prime numbers $p$ of the highest pole-order of the poles of the product of all the local Euler factors at the finite places of residue characteristic $p$; in particular, $b\ge2[F:\mathbf Q]$ qualifies). As Brian mentioned over the phone, conclusions on multiplicities cannot be obtained through the trace formula. In the next section, however, I do mention that from the extremal case $a=0$ and $b\ge2m_\chi$, we can extrapolate conclusions on the multiplicities at least in the form of expectations (which I had yet to discuss with Brian, and only briefly touched upon them with him about a year ago). These have yet to be fully worked out in writing, and are reserved for
+The degenerate case $a=0$ does not lead to a Trace Formula anymore, but it does appear to lead to some information on the multiplicities of the zeros as outlined in the next section (so long as we choose $b\ge 2m_\chi$, where $m_\chi$ is the supremum over all prime numbers $p$ of the highest pole-order of the poles of the product of all the local Euler factors at the finite places of residue characteristic $p$; in particular, $b\ge 2[F:\mathbf Q]$ qualifies). As Brian mentioned over the phone, conclusions on multiplicities cannot be obtained through the trace formula. In the next section, however, I do mention that from the extremal case $a=0$ and $b\ge 2m_\chi$, we can extrapolate conclusions on the multiplicities at least in the form of expectations (which I had yet to discuss with Brian, and only briefly touched upon them with him about a year ago). These have yet to be fully worked out in writing, and are reserved for
 
 ## PDF page 37
 
@@ -1432,7 +1432,7 @@ sequel work (it takes time, it is unnecessary right now, and it is not a low-han
 
 **This will not be a part of my paper, and it is reserved for a sequel.** I worked out enough of it for myself to arrive at the conclusions below, aiming to get to conclusions that I could test against the existing literature. What follows therefore constitutes an example taken from a class of sanity checks that I put the methods through. Once again, allow me to be as clear as I can be: **I have not fully worked out all details for this part, but only enough to arrive at a conclusion in the form of expectations, so that I could test it against the literature. I can sketch what I have in mind for this, in person.** The takeaways are as follows:
 
-• For $a=0$, no trace formula can be proved for any $b\ge0$ (see (1.8.2.2) for this notation). The obstruction is already contained in Theorem 1.7.1.1, as we now explain.
+• For $a=0$, no trace formula can be proved for any $b\ge 0$ (see (1.8.2.2) for this notation). The obstruction is already contained in Theorem 1.7.1.1, as we now explain.
 
 Let $F$ be a number field, $\chi\in\widehat{C_F}$ a continuous (unitary) character. We define, for each prime number $p$:
 
@@ -1440,7 +1440,7 @@ $$
 m_{p,\chi} \tag{1.7.3.1}
 $$
 
-to be the maximum of the pole-orders ($\ge0$) of
+to be the maximum of the pole-orders ($\ge 0$) of
 
 $$
 \prod_{v\in S_p}L_v(\chi_v\lvert\cdot\rvert_v^s)
@@ -1462,7 +1462,7 @@ $$
 
 grows unboundedly at at most one point of the connected component of the Riemann surface of idelic quasi-characters parametrized as $\chi\lvert\cdot\rvert_F^s$. Using the theory of Néron models of abelian varieties over $F$ we can construct examples of algebraic Hecke characters $\chi_0$ for which indeed such an “infinitely repeated pole” exists. As it happens, in such examples the central zero of $L(s,\chi_0\lvert\cdot\rvert_F^{-w/2})$, for $w$ the weight of $\chi_0$, has multiplicity strictly exceeding $[F:\mathbf Q]$.
 
-• If a trace formula was provable for $a=0$ and $b\ge2m_\chi$ then it would also lead to a bound on the multiplicities of *all* zeros: their multiplicities would turn out to be bounded above by $m_\chi$. In light of the previous bullet point, this is false by means of examples. In particular, we must expect to find an obstruction to the method of trace calculation!
+• If a trace formula was provable for $a=0$ and $b\ge 2m_\chi$ then it would also lead to a bound on the multiplicities of *all* zeros: their multiplicities would turn out to be bounded above by $m_\chi$. In light of the previous bullet point, this is false by means of examples. In particular, we must expect to find an obstruction to the method of trace calculation!
 
 And indeed, we find it: the infinitely repeated pole to the finite Euler products turns out to be the obstruction. How, I will explain face to face. In other words, the fact that the trace formula cannot be proved in this extremal version of the methods is itself a sanity check.
 
@@ -1472,7 +1472,7 @@ And indeed, we find it: the infinitely repeated pole to the finite Euler product
 
 38  CHAPTER 1.  INTRODUCTION
 
-Although a full trace formula cannot be proved in the extremal situation $a=0$ (not even if $b\ge2m_\chi$, or $b\ge2[F:\mathbf Q]$), the *method* of trace calculation still allows one to squeeze out some information.
+Although a full trace formula cannot be proved in the extremal situation $a=0$ (not even if $b\ge 2m_\chi$, or $b\ge 2[F:\mathbf Q]$), the *method* of trace calculation still allows one to squeeze out some information.
 
 The outcome that profiles itself is the following:
 
@@ -1484,7 +1484,7 @@ EXPECTATION 1.7.1 (On the multiplicities of the zeros). *Let $F$ be a number fie
 
 I looked into this extremal case of the methods precisely with the aim of challenging them. The outcome is:
 
-– We expect an obstruction to the trace formula for $a=0$ and any $b\ge0$, even for $b\ge2m_\chi$ or $b\ge2[F:\mathbf Q]$, due to central zeros with high multiplicities (examples using CM abelian varieties through theory of Néron models. Numerical examples usually conditional on BSD), and we find one.
+– We expect an obstruction to the trace formula for $a=0$ and any $b\ge 0$, even for $b\ge 2m_\chi$ or $b\ge 2[F:\mathbf Q]$, due to central zeros with high multiplicities (examples using CM abelian varieties through theory of Néron models. Numerical examples usually conditional on BSD), and we find one.
 
 – Nonetheless, we are led to expectations on the multiplicities (the tentative argument will be outlined verbally to you face to face). I do not know that Expectation 1.7.1 was ever formulated before.
 
@@ -1563,10 +1563,10 @@ $$
 The dual basis is the set of functionals given by integration against the conjugate exponential function, i.e. calling $z_m:=\frac{2\pi im}{\log(\gamma)}\in i\mathbf R$:
 
 $$
-\delta_{z_m}:\phi\mapsto\frac{1}{\log(\gamma)}\int_{\mathbf R_{>0}/\gamma^{\mathbf Z}}\phi(t)e^{-\frac{2\pi im\log(t)}{\log(\gamma)}}\,d\bar\mu(t)
+\delta_{z_m}:\phi\mapsto\frac{1}{\log(\gamma)}\int_{\mathbf R_{>0}/\gamma^{\mathbf Z}}\phi(t)e^{-\frac{2\pi im\log(t)}{\log(\gamma)}}\,\mathrm{d}\bar\mu(t)
 $$
 
-where $\bar\mu$ is the Haar measure induced on $\mathbf R_{>0}/\gamma^{\mathbf Z}$ by the Haar measure $dt/t$ on $\mathbf R_{>0}$ and the counting measure on $\gamma^{\mathbf Z}$.
+where $\bar\mu$ is the Haar measure induced on $\mathbf R_{>0}/\gamma^{\mathbf Z}$ by the Haar measure $\mathrm{d}t/t$ on $\mathbf R_{>0}$ and the counting measure on $\gamma^{\mathbf Z}$.
 
 We now recall that the periodization operator defined on $\mathcal S_{\mathrm E}(\mathbf R_{>0})$ by
 
@@ -1706,7 +1706,7 @@ $$
 
 As a consequence of the Structure Theorems, $\mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S(\mathbf A_F))$ is itself a strict LF-space. We refer to $\mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S(\mathbf A_F))$ as the *space of global $\theta$-functions*.
 
-• If $f(0)=\widehat f(0)=0$, then $\Phi_F(f)$ is an exponentially decaying Schwartz-Bruhat function on $C_F$, i.e. for any integer $N\ge1$, $\lvert\Phi_F(f)(g)\rvert\ll e^{-N\lvert\log\lvert g\rvert_F\rvert}$ as $\lvert\log\lvert g\rvert_F\rvert\to+\infty$. We denote the closed subspace $\ker(\delta_0)\cap\ker(\widehat\delta_0)$ by $\mathcal S_0(\mathbf A_F)$, i.e. the closed subspace of those global adelic Schwartz-Bruhat functions $f$ such that $f(0)=\widehat f(0)=0$. We denote by $\mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S_0(\mathbf A_F))$ its image in $\mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S(\mathbf A_F))$ (itself a closed subspace, because both $\delta_0$ and its adelic Fourier transform are $F^\times$-invariant.
+• If $f(0)=\widehat f(0)=0$, then $\Phi_F(f)$ is an exponentially decaying Schwartz-Bruhat function on $C_F$, i.e. for any integer $N\ge 1$, $\lvert\Phi_F(f)(g)\rvert\ll e^{-N\lvert\log\lvert g\rvert_F\rvert}$ as $\lvert\log\lvert g\rvert_F\rvert\to+\infty$. We denote the closed subspace $\ker(\delta_0)\cap\ker(\widehat\delta_0)$ by $\mathcal S_0(\mathbf A_F)$, i.e. the closed subspace of those global adelic Schwartz-Bruhat functions $f$ such that $f(0)=\widehat f(0)=0$. We denote by $\mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S_0(\mathbf A_F))$ its image in $\mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S(\mathbf A_F))$ (itself a closed subspace, because both $\delta_0$ and its adelic Fourier transform are $F^\times$-invariant.
 
 • We denote by $\mathrm H_{0,\mathrm{cont}}(\chi_S|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))$ and $\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S(\mathbf A_F))$ the isotypes of the spaces of $\theta$-functions. These are nuclear Fréchet spaces. All equipped with a continuous left-translation action of $J_{F,S}$, respectively $C_F$, and hence a convolution action by the elements of $\mathcal D(J_{F,S})$, respectively $\mathcal D(C_F)$.
 
@@ -1756,7 +1756,7 @@ We refer to $W^{b,2}_I(G)$ as the *Hardy-Sobolev space* of $G$ with base $I$.
 
 If $I=\{0\}$, then $W^{b,2}_I(G)$ is referred to as the Sobolev space $W^{b,2}(G)$ of Sobolev degree $b$ in the paper (in this special case, i.e. for $a=0$, indeed the Hilbert spaces $W^{b,2}(G)$ appeared, for $G=C_F$ the idele class group of a number field $F$, in Connes’ paper from 1998, and specifically in [Co, ]. They are, in the end, never used in what he was proposing. In fact, on [Co, ] Connes declares his intent of devoting much of this paper to the task of getting rid of the Sobolev weight $(1+\lvert\log\lvert g\rvert_F\rvert^2)^{b/2}$, $b$ denoted $\delta$ therein). The extremal case $a=0$ is never used in my paper, with the sole exception of outlining at the end of the paper the sanity check involving the multiplicities of the zeros, which I have mentioned earlier in §4 of this letter.
 
-Assume $b\ge0$ is an even integer for simplicity. Then the topology on $W^{b,2}_I(G)$ is also generated by the finitely many semi-norms:
+Assume $b\ge 0$ is an even integer for simplicity. Then the topology on $W^{b,2}_I(G)$ is also generated by the finitely many semi-norms:
 
 $$
 \lVert\phi\rVert_{\alpha,k}:=\lVert\partial_z^k M(\phi)(z)\rVert_{L^2(\alpha+i\mathbf R,\mathrm dx)},\ \alpha=-a,a \tag{1.8.2.3}
@@ -1781,13 +1781,13 @@ We outline some of the main ingredients behind the Trace Formula that is the mai
 1.8.3.1.  *Fundamental Divisor Exact Sequence.* Consider the following situation, initially envisioned by Connes, but, contrary to what Connes does (who works, instead, with $L^2$-completions throughout) working with the Hausdorff locally convex topological $\mathbf C$-vector spaces:
 
 $$
-0\to\lvert\cdot\rvert_F^{1/2}\mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S_0(\mathbf A_F))\to\mathcal S_{\mathrm E}(C_F)\to\mathscr H_F\to0
+0\to\lvert\cdot\rvert_F^{1/2}\mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S_0(\mathbf A_F))\to\mathcal S_{\mathrm E}(C_F)\to\mathscr H_F\to 0
 $$
 
 and each of their $C^1_F$-isotypes, i.e.
 
 $$
-0\to\lvert\cdot\rvert_F^{1/2}\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))\to\mathcal S_{\mathrm E}(C_F)(\chi|_{C^1_F})\to\mathscr H_F(\chi|_{C^1_F})\to0 \tag{1.8.3.1}
+0\to\lvert\cdot\rvert_F^{1/2}\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))\to\mathcal S_{\mathrm E}(C_F)(\chi|_{C^1_F})\to\mathscr H_F(\chi|_{C^1_F})\to 0 \tag{1.8.3.1}
 $$
 
 these latter being nuclear Fréchet spaces.
@@ -1799,7 +1799,7 @@ We parametrize the Riemann surface $\Omega$ of all idelic quasi-characters as $\
 The Mellin transform turns the second exact sequence into:
 
 $$
-0\to L(s+1/2,\chi)((s+1/2)(s-1/2))^\delta\mathcal O(\mathbf C)\cap A\mathcal S(\mathbf C)\to A\mathcal S(\mathbf C)\to V_{\chi|_{C^1_F}}\to0 \tag{1.8.3.2}
+0\to L(s+1/2,\chi)((s+1/2)(s-1/2))^\delta\mathcal O(\mathbf C)\cap A\mathcal S(\mathbf C)\to A\mathcal S(\mathbf C)\to V_{\chi|_{C^1_F}}\to 0 \tag{1.8.3.2}
 $$
 
 where $N(\rho)$ is the multiplicity of $\rho$ as a zero of $L(s,\chi)$. Here $\delta=0$ if $\chi|_{C^1_F}\ne1$, and $\delta=1$ otherwise.
@@ -1811,7 +1811,7 @@ This connection to the $L$-function requires all the Structure Theorems, and use
 The sequence (1.8.3.2) is the reason why I titled this subsection the “divisor exact sequence”: (1.8.3.2) mirrors the global sections of
 
 $$
-0\to\mathscr O_X(-D)\to\mathscr O_X\to\mathscr O_D\to0
+0\to\mathscr O_X(-D)\to\mathscr O_X\to\mathscr O_D\to 0
 $$
 
 for the Stein space $X=\mathbf C$, and $D=\mathrm{div}(L(s+1/2,\chi)((s+1/2)(s-1/2))^\delta)$.
@@ -1831,14 +1831,14 @@ We will briefly return to these points later. Ultimately, we will be doing the f
 (1) Call $I:=[-a,a]$. Take a Hardy-Sobolev completion of all spaces in the above linearly and topologically exact sequence of isotypes (7.2.0.1), to get:
 
 $$
-0\to W^{b,2}_I(\lvert\cdot\rvert_F^{1/2}\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)))\to W^{b,2}_I(C_F)(\chi|_{C^1_F})\to W^{b,2}_I\mathscr H_F(\chi|_{C^1_F})\to0
+0\to W^{b,2}_I(\lvert\cdot\rvert_F^{1/2}\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)))\to W^{b,2}_I(C_F)(\chi|_{C^1_F})\to W^{b,2}_I\mathscr H_F(\chi|_{C^1_F})\to 0
 $$
 
 where each space is now a Hilbert space.
 
 (2) Now tame the continuous left-translation action of $C_F$ on all such function spaces, into a convolution action by an arbitrary, fixed, test function $\varphi\in\mathcal D(C_F)$.
 
-We are going to assume that $\varphi$ is supported “strictly over $C^{>1}_F$” (this will be because certain closed subspaces of $W^{b,2}_I(C_F)$ on which we will let the convolution kernel act, will only be stable under the action of the semigroup $C^{\ge1}_F$ as opposed to $C_F$, and so this choice of support on $\varphi$ lets $C_F$ act only through its sub-semigroup $C^{\ge1}_F$, as required), i.e. over $C^{>1+\varepsilon}_F$ for some small enough $\varepsilon>0$.
+We are going to assume that $\varphi$ is supported “strictly over $C^{>1}_F$” (this will be because certain closed subspaces of $W^{b,2}_I(C_F)$ on which we will let the convolution kernel act, will only be stable under the action of the semigroup $C^{\ge 1}_F$ as opposed to $C_F$, and so this choice of support on $\varphi$ lets $C_F$ act only through its sub-semigroup $C^{\ge 1}_F$, as required), i.e. over $C^{>1+\varepsilon}_F$ for some small enough $\varepsilon>0$.
 
 (3) To fix ideas we choose $b=0$ (which, for the purposes of my paper, is sufficient anyway). The rightmost space gives the spectral side of the trace formula, which reads
 
@@ -2249,7 +2249,7 @@ The assumptions on the test function are as follows:
 $$
 \begin{aligned}
 &\sum_{v\in S_\infty,\ v\ \mathrm{real}}\frac12\int_{\mathbf R_{>0}}\sum_{u\in\{\pm1\}}\frac{\chi_v(tu)\varphi(tu)\lvert t\rvert^{1/2}}{\lvert1-t\rvert}\frac{\mathrm{d}t}{t}+\sum_{v\in S_\infty,\ v\ \mathrm{complex}}\frac1{2\pi}\int_{\mathbf R_{>0}}\int_{\mathbf T}\frac{\chi_v(te^{i\theta})\varphi(te^{i\theta})\lvert t\rvert^{1/2}}{\lvert1-te^{i\theta}\rvert}\,2\,\mathrm{d}\theta\otimes\frac{\mathrm{d}t}{t}\\
-&\qquad+\sum_{v\in\Sigma_{F,f}}\log(q_v)\sum_{m\ge1}\left(\frac{\chi(\pi_v^m)}{q_v^{m/2}}\varphi(q_v^m)+\frac{\overline{\chi}(\pi_v^m)}{q_v^{m/2}}\varphi(q_v^{-m})\right)\\
+&\qquad+\sum_{v\in\Sigma_{F,f}}\log(q_v)\sum_{m\ge 1}\left(\frac{\chi(\pi_v^m)}{q_v^{m/2}}\varphi(q_v^m)+\frac{\overline{\chi}(\pi_v^m)}{q_v^{m/2}}\varphi(q_v^{-m})\right)\\
 &\qquad=M(\varphi)(\lvert\cdot\rvert_F^{1/2})+M(\varphi)(\lvert\cdot\rvert_F^{-1/2})-\sum_{\rho,I}N(\rho)\int_{C_F}\chi(g)\varphi(g)\lvert g\rvert_F^{\rho-1/2}\,\mathrm{d}\bar\mu(g)
 \end{aligned}
 $$
@@ -2276,7 +2276,7 @@ $$
 \varphi_{h,\varepsilon,z}(t):=h(t)(\rho_\varepsilon\ast\varphi_z)
 $$
 
-tends to $\varphi_z(t)$ point-wise (for $t\neq1$) as $\varepsilon\to0$ and $h\to1_{(1,+\infty)}$ pointwise, as $h$ (which will be an explicit collection of bump functions) remains valued in $[0,1]$ and below $1_{(1,+\infty)}$, converging point-wise monotonically.
+tends to $\varphi_z(t)$ point-wise (for $t\neq1$) as $\varepsilon\to 0$ and $h\to 1_{(1,+\infty)}$ pointwise, as $h$ (which will be an explicit collection of bump functions) remains valued in $[0,1]$ and below $1_{(1,+\infty)}$, converging point-wise monotonically.
 
 **1.8.4.3. Montel’s Theorem.** Fix a compact subset $K\subset\mathbf C_{>\sup(I)}$ with nonempty interior intersecting with nonempty interior the half-plane $\mathbf C_{>1}$.
 
@@ -2300,7 +2300,7 @@ $$
 
 is uniform for $z$ in any compact disc contained within the interior of $K$. Since each is a holomorphic function of $z\in K$, so is the limit.
 
-A similar reasoning leads to the limit as $\varepsilon\to0$ and $h\to1_{(1,+\infty)}$ of the convergent sums
+A similar reasoning leads to the limit as $\varepsilon\to 0$ and $h\to 1_{(1,+\infty)}$ of the convergent sums
 
 $$
 \sum_{\rho,I}N(\rho)\int_{C_F}\chi(g)\varphi_{h,\varepsilon,z}(g)\lvert g\rvert_F^{\rho-1/2}\,\mathrm{d}\bar\mu(g)
@@ -2313,7 +2313,7 @@ to be holomorphic as a function of $z$ varying over the interior of $K$ intersec
 The sum
 
 $$
-\sum_{v\in\Sigma_{F,f}}\log(q_v)\sum_{m\ge1}\left(\frac{\chi(\pi_v^m)}{q_v^{m/2}}\varphi(q_v^m)+\frac{\overline{\chi}(\pi_v^m)}{q_v^{m/2}}\varphi(q_v^{-m})\right)
+\sum_{v\in\Sigma_{F,f}}\log(q_v)\sum_{m\ge 1}\left(\frac{\chi(\pi_v^m)}{q_v^{m/2}}\varphi(q_v^m)+\frac{\overline{\chi}(\pi_v^m)}{q_v^{m/2}}\varphi(q_v^{-m})\right)
 $$
 
 therefore tends, uniformly over the compact subsets of $\mathbf C_{>1}$, to

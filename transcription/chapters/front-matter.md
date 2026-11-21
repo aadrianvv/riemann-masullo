@@ -178,7 +178,7 @@ We reserve the letter $v$ to denote the arbitrary place of $F$, and write $F_v$ 
 
 If $v$ is Archimedean, then $F_v$ is, up to isomorphism of topological fields, either the field $\mathbf R$ of real numbers or the field $\mathbf C$ of complex numbers. We call $v$ “real” or “complex”, accordingly.
 
-For $v$ a finite place of $F$, we denote by $\mathcal O_{F_v}$ the subset defined by the condition $\{x\in F_v:\lvert x\rvert_v\le1\}$, i.e. the unit ball within the metric space $F_v$. We denote by $\mathcal O_{F_v}^{\times}$ the “unit circle” within $F_v$, i.e. the subset defined by the condition $\{x\in F_v:\lvert x\rvert_v=1\}$. This is the unit group of $\mathcal O_{F_v}$.
+For $v$ a finite place of $F$, we denote by $\mathcal O_{F_v}$ the subset defined by the condition $\{x\in F_v:\lvert x\rvert_v\le 1\}$, i.e. the unit ball within the metric space $F_v$. We denote by $\mathcal O_{F_v}^{\times}$ the “unit circle” within $F_v$, i.e. the subset defined by the condition $\{x\in F_v:\lvert x\rvert_v=1\}$. This is the unit group of $\mathcal O_{F_v}$.
 
 We denote by $\mathbf A_F$ the adele ring of the number field $F$. We recall that $\mathbf A_F$ is the topological ring obtained as the restricted product
 

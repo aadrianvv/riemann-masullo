@@ -196,7 +196,7 @@ Throughout the rest of this section we will be making examples: we will describe
 
 3.1.2.1. *Local quasi-characters.* We begin with the case of a finite place $v$ of $F$. Let $F_v$ be the resulting non-Archimedean local field. The normalized absolute value $|\cdot|_v$ on $F_v^{\times}$ promotes $G=F_v^{\times}$ to a discretely modulated group whose discrete value group is $q_v^{\mathbf{Z}}\subset\mathbf{R}_{>0}$, for $q_v:=|\pi_v|_v^{-1}$ for any choice of uniformizer $\pi_v$ at $v$. The kernel (which we denoted by $G^1$ for general modulated groups) of $|\cdot|_v$ is the group of units $\mathcal{O}_{F_v}^{\times}$ of the complete discrete valuation ring $\mathcal{O}_{F_v}$. This is a compact open subgroup of $F_v^{\times}$.
 
-If $v$ is Archimedean, then $F_v^{\times,1}$ is $\mu_2$ if $v$ is real, and $U(1)$ if $v$ is complex. In both cases, $\Gamma_v$ is isomorphic under $|\cdot|_v$ to $\mathbf{R}_{>0}$ as a Hausdorff locally compact abelian group.
+If $v$ is Archimedean, then $F_v^{\times,1}$ is $\mu_2$ if $v$ is real, and $\mathrm{U}(1)$ if $v$ is complex. In both cases, $\Gamma_v$ is isomorphic under $|\cdot|_v$ to $\mathbf{R}_{>0}$ as a Hausdorff locally compact abelian group.
 
 In a manner similar to what was done for $\Omega(G)$ in §3.1.1, any choice of continuous homomorphic section to $|\cdot|_v$ and any choice of continuous quasi-character of $q_v^{\mathbf{Z}}$ induces a bi-holomorphism
 
@@ -1456,7 +1456,7 @@ $$
 
 Recall that $Z_S(f,c)$ is the $S$-idelic Zeta function of the Schwartz-Bruhat function $f\in\mathcal{S}(\mathbf{A}_{F,S})$, which we defined in Definition 5.1.1.1 and studied throughout §5.1.1.
 
-PROOF. To see this, we observe that the first factor integral defining $\widetilde{Z}_{S_{\infty}}(f_{\infty},c_{\infty})$ from (3.4.1.2) is absolutely convergent, because, upon calling $B$ a compact neighborhood of $0\in\mathbf{A}_{F,S_{\infty}}\simeq\prod_{v\in S_{\infty}}F_v$ of the form $\prod_{v\in S_{\infty}}Z_v$, for $B_v\subset F_v$ a compact neighborhood of zero in $F_v$, then the integral over $B\cap\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ of $f_{\infty}c_{\infty}\prod_{v\in S_{\infty}}\lvert\cdot\rvert_v^{-1}$ with respect to the Lebesgue measure on the Euclidean space $\mathbf{A}_{F,S_{\infty}}$ is absolutely convergent so long as $\sigma(c_v)>0$ for every Archimedean place $v$ of $F$, since such convergence is ensured by the convergence of $\int_{B_v}\lvert\cdot\rvert_v^{\sigma(c_v)-1}\,dx_v$ for $\sigma(c_v)>0$ and by boundedness over $B$ of $f_{\infty}$. Since $\sigma(c)>0$, then $\sigma(c_v)>0$ for every Archimedean place $v$ of $F$, and so the desired convergence holds, locally uniformly with respect to $c_v$ for each such $v$.
+PROOF. To see this, we observe that the first factor integral defining $\widetilde{Z}_{S_{\infty}}(f_{\infty},c_{\infty})$ from (3.4.1.2) is absolutely convergent, because, upon calling $B$ a compact neighborhood of $0\in\mathbf{A}_{F,S_{\infty}}\simeq\prod_{v\in S_{\infty}}F_v$ of the form $\prod_{v\in S_{\infty}}Z_v$, for $B_v\subset F_v$ a compact neighborhood of zero in $F_v$, then the integral over $B\cap\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ of $f_{\infty}c_{\infty}\prod_{v\in S_{\infty}}\lvert\cdot\rvert_v^{-1}$ with respect to the Lebesgue measure on the Euclidean space $\mathbf{A}_{F,S_{\infty}}$ is absolutely convergent so long as $\sigma(c_v)>0$ for every Archimedean place $v$ of $F$, since such convergence is ensured by the convergence of $\int_{B_v}\lvert\cdot\rvert_v^{\sigma(c_v)-1}\,\mathrm{d}x_v$ for $\sigma(c_v)>0$ and by boundedness over $B$ of $f_{\infty}$. Since $\sigma(c)>0$, then $\sigma(c_v)>0$ for every Archimedean place $v$ of $F$, and so the desired convergence holds, locally uniformly with respect to $c_v$ for each such $v$.
 
 The Schwartz condition on $f_{\infty}$ then implies the absolute convergence of the integral over the complement of $B$ in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$. Both convergent integrals converge locally uniformly over $\Omega(C_F)_{>0}$ as functions of $c$ through $c_{\infty}=\bigotimes_{v\in S_{\infty}}c_v$.
 
@@ -1541,17 +1541,17 @@ $$
 For any Schwartz-Bruhat function $f \in \mathcal{S}(\mathbf{A}_F)$, as a function of $c \in L_A$ the Lebesgue integral
 
 $$
-\int_{GL_1(\mathbf{A}_F)} f(g)c(g)\,d\mu(g) \tag{3.4.2.1}
+\int_{\mathrm{GL}_1(\mathbf{A}_F)} f(g)c(g)\,\mathrm{d}\mu(g) \tag{3.4.2.1}
 $$
 
 is finite and varies continuously in such $c$. As a function of $c$, it equals the restriction of $Z(f, c)$ to $L_A$.
 
-Proof. The complex measure $c\mu$ on $GL_1(\mathbf{A}_F)$ is Radon, and formation of the integral in (3.4.2.1) is $\mathbf{C}$-linear with respect to $f \in \mathcal{S}(\mathbf{A}_F)$. By Proposition 2.1.3.2(3), it is therefore sufficient to prove the assertions of the Proposition in the special case $f$ is of the form $f = f_\infty \otimes \bigotimes_{v \in \Sigma_{F,f}} f_v$, with $f_\infty \in \mathcal{S}(\mathbf{A}_{F,S_\infty})$ and $f_v \in \mathcal{S}(F_v)$ for every finite place $v$ of $F$, and with $f_v = 1_{\mathcal{O}_{F_v}}$ for all but finitely many finite places of $F$.
+Proof. The complex measure $c\mu$ on $\mathrm{GL}_1(\mathbf{A}_F)$ is Radon, and formation of the integral in (3.4.2.1) is $\mathbf{C}$-linear with respect to $f \in \mathcal{S}(\mathbf{A}_F)$. By Proposition 2.1.3.2(3), it is therefore sufficient to prove the assertions of the Proposition in the special case $f$ is of the form $f = f_\infty \otimes \bigotimes_{v \in \Sigma_{F,f}} f_v$, with $f_\infty \in \mathcal{S}(\mathbf{A}_{F,S_\infty})$ and $f_v \in \mathcal{S}(F_v)$ for every finite place $v$ of $F$, and with $f_v = 1_{\mathcal{O}_{F_v}}$ for all but finitely many finite places of $F$.
 
 By [RV, Ch.5, §5.1, Prop.5.6(i), p.186], the integral from (3.4.2.1) equals the possibly divergent product:
 
 $$
-\int_{GL_1(\mathbf{A}_{F,S_\infty})} f_\infty(g_\infty)c_\infty(g_\infty)\,d\mu_\infty(g_\infty) \prod_{v \in \Sigma_{F,f}} \int_{F_v^\times} f_v(g_v)c_v(g_v)\,d\mu_v(g_v). \tag{3.4.2.2}
+\int_{\mathrm{GL}_1(\mathbf{A}_{F,S_\infty})} f_\infty(g_\infty)c_\infty(g_\infty)\,\mathrm{d}\mu_\infty(g_\infty) \prod_{v \in \Sigma_{F,f}} \int_{F_v^\times} f_v(g_v)c_v(g_v)\,\mathrm{d}\mu_v(g_v). \tag{3.4.2.2}
 $$
 
 We prove that product in (3.4.2.2) converges, for any $A > 0$, pointwise over $L_A$ and uniformly over its compact subsets. If so, then its limit function is therefore continuous over $L_A$, and hence the same holds for the integral from (3.4.2.1).
@@ -1578,7 +1578,7 @@ This is indeed the case by Corollary B.7.2.5 (a consequence of Perron’s Formul
 
 of the estimates from Theorem 2.2.5.4 on the decay properties of the functions $\Phi_F(f)(g)$ over $C_F$ as $|g|_F \to 0^+$ and as $|g|_F \to +\infty$, for $f$ a Schwartz-Bruhat function on $\mathbf{A}_F$.
 
-The Theorem below was already established in Theorem 2.2.5.4. The proof we provide has one important advantage though. It gives a concrete interpretation to the constants $C_N$ that appear in the estimates stated in Theorem 2.2.5.4, revealing why they can be maximized over bounded subsets in $\mathcal{S}(\mathbf{A}_F)$. The existence of maxima comes down to $\mathcal{S}(\mathbf{A}_F)$ satisfying the Heine-Borel property. Already through the proof of the existence of uniform versions of the constants $C_N$ from Theorem 2.2.5.4 (uniform as $f$ varies over a fixed bounded subset $B \subset \mathcal{S}(\mathbf{A}_F)$) the Heine-Borel property was used to the same effect: maximizing certain auxiliary continuous functions (seminorms) arising in the process of building the uniform constants $C_{B,N}$ from parts (5) and (6) of Theorem 2.2.5.4.
+The Theorem below was already established in Theorem 2.2.5.4. The proof we provide has one important advantage though. It gives a concrete interpretation to the constants $C_N$ that appear in the estimates stated in Theorem 2.2.5.4, revealing why they can be maximized over bounded subsets in $\mathcal{S}(\mathbf{A}_F)$. The existence of maxima comes down to $\mathcal{S}(\mathbf{A}_F)$ satisfying the Heine-Borel property. Already through the proof of the existence of uniform versions of the constants $C_N$ from Theorem 2.2.5.4 (uniform as $f$ varies over a fixed bounded subset $\mathcal{B} \subset \mathcal{S}(\mathbf{A}_F)$) the Heine-Borel property was used to the same effect: maximizing certain auxiliary continuous functions (seminorms) arising in the process of building the uniform constants $C_{\mathcal{B},N}$ from parts (5) and (6) of Theorem 2.2.5.4.
 
 The idelic Mellin transform in the proof below reveals the nature of those constants, and why they can be rendered uniform on bounded subsets of $\mathcal{S}(\mathbf{A}_F)$.
 
@@ -1612,9 +1612,9 @@ $$
 
 if $\omega = 1$, and identically zero otherwise.
 
-Moreover, the constants $C_N$ from (3.4.2.3) and (3.4.2.4) can be made to be uniform with respect to $f$ varying over a fixed arbitrary bounded subset $B \subset \mathcal{S}(\mathbf{A}_F)$.
+Moreover, the constants $C_N$ from (3.4.2.3) and (3.4.2.4) can be made to be uniform with respect to $f$ varying over a fixed arbitrary bounded subset $\mathcal{B} \subset \mathcal{S}(\mathbf{A}_F)$.
 
-Remark 3.4.2.3 (On the nature of the uniform constants $C_{B,N}$ from Theorem 2.2.5.4). The main points of the argument that follows, are two. Let $f \in \mathcal{S}(\mathbf{A}_F)$ be of the form $\pi_S(f_S)$ for some $f_S \in \mathcal{S}(\mathbf{A}_{F,S})$. Recall that $\pi_S : \mathcal{S}(\mathbf{A}_{F,S}) \to \mathcal{S}(\mathbf{A}_F)$ is the transition operator from (2.1.4.5) defined by sending $f_S$ to $f_S \otimes 1_K$ with $K = \prod_{v \notin S} \mathcal{O}_{F_v}$.
+Remark 3.4.2.3 (On the nature of the uniform constants $C_{\mathcal{B},N}$ from Theorem 2.2.5.4). The main points of the argument that follows, are two. Let $f \in \mathcal{S}(\mathbf{A}_F)$ be of the form $\pi_S(f_S)$ for some $f_S \in \mathcal{S}(\mathbf{A}_{F,S})$. Recall that $\pi_S : \mathcal{S}(\mathbf{A}_{F,S}) \to \mathcal{S}(\mathbf{A}_F)$ is the transition operator from (2.1.4.5) defined by sending $f_S$ to $f_S \otimes 1_K$ with $K = \prod_{v \notin S} \mathcal{O}_{F_v}$.
 
 • Use Weil’s Identity in the unramified case (i.e. (3.4.1.6) from Theorem 3.4.1.1) to deduce properties of $Z(f, \chi|\cdot|^s_F)$ from properties of $Z_S(f_S, \chi_S|\cdot|^s_{F,S})$ combined with well known properties of the finite Hecke $L$-function itself $L_f(s, \chi)$ (these are shown in Appendix B). We know much about the growth properties of $L_f(s, \chi)$ uniformly on vertical strips of bounded width of the complex $s$-plane, and $\pi_S$ is turned into multiplication by $L_f(s, \chi)$ with finitely many Euler factors “removed” (all the Archimedean Euler factors, and all the $S$-indexed non-Archimedean Euler factors too). We refer the reader to §B.1 and specifically to Proposition B.1.1.3.
 
@@ -1624,9 +1624,9 @@ Remark 3.4.2.3 (On the nature of the uniform constants $C_{B,N}$ from Theorem 2.
 
 **3.4. EIGENDISTRIBUTIONS AND WEIL’S IDENTITY** · **147**
 
-The second point illustrates to the reader why one can indeed successfully make those constants uniform on bounded subsets of $\mathcal{S}(\mathbf{A}_F)$. This, we already did in Theorem 2.2.5.4 obtaining the constant $C_{B,N}$, through direct arguments via geometry of numbers.
+The second point illustrates to the reader why one can indeed successfully make those constants uniform on bounded subsets of $\mathcal{S}(\mathbf{A}_F)$. This, we already did in Theorem 2.2.5.4 obtaining the constant $C_{\mathcal{B},N}$, through direct arguments via geometry of numbers.
 
-Therein, we used the following important fact about $\mathcal{S}(\mathbf{A}_F)$: it satisfies the Heine-Borel property, i.e. closed bounded subsets are compact. It is a Montel space by Lemma 2.1.3.2, and hence it satisfies this property, just as the Schwartz space of any Euclidean space (in the special case of Euclidean spaces, this is a consequence of Ascoli-Arzelà). We used the Heine-Borel property to maximize certain continuous functions on bounded subsets in $\mathcal{S}(\mathbf{A}_F)$ on our way to build the uniform constants $C_{B,N}$. Upon exhibiting such constants $C_N$ in the statement of Theorem 2.2.5.4 as $L^1$-norms of $Z(f, c)$ on vertical lines of $\Omega(C_F)_{>1}$, then the fact that one can render them uniform on bounded subsets is not only reproved, but explained: such $L^1$-norms induce continuous seminorms on $\mathcal{S}(\mathbf{A}_F)$ and by the Heine-Borel property they attain maxima on bounded subsets.
+Therein, we used the following important fact about $\mathcal{S}(\mathbf{A}_F)$: it satisfies the Heine-Borel property, i.e. closed bounded subsets are compact. It is a Montel space by Lemma 2.1.3.2, and hence it satisfies this property, just as the Schwartz space of any Euclidean space (in the special case of Euclidean spaces, this is a consequence of Ascoli-Arzelà). We used the Heine-Borel property to maximize certain continuous functions on bounded subsets in $\mathcal{S}(\mathbf{A}_F)$ on our way to build the uniform constants $C_{\mathcal{B},N}$. Upon exhibiting such constants $C_N$ in the statement of Theorem 2.2.5.4 as $L^1$-norms of $Z(f, c)$ on vertical lines of $\Omega(C_F)_{>1}$, then the fact that one can render them uniform on bounded subsets is not only reproved, but explained: such $L^1$-norms induce continuous seminorms on $\mathcal{S}(\mathbf{A}_F)$ and by the Heine-Borel property they attain maxima on bounded subsets.
 
 We write, for $c \in \Omega(C_F)$ unramified outside a finite set $S$ of places of $F$ containing all the Archimedean places, $c_S$ the unique quasi-character of $J_{F,S}$ obtained from $c$ by restricting it to $C_{F,S}$ and descending it by $\widehat{\mathcal{O}}^\times_{\Sigma_F-S}$-invariance (where $\widehat{\mathcal{O}}^\times_{\Sigma_F-S} = \prod_{v \notin S} \mathcal{O}^\times_{F_v}$).
 
@@ -1635,7 +1635,7 @@ Proof of Theorem 3.4.2.2. By Theorem 3.2.2.1, $Z(f, c)$ has at most two poles, a
 We now restrict $Z(f, c)$ to $\Omega(C_F)(1)$, the connected component of the trivial character, and obtain by Theorem 3.2.2.1(3), upon parametrizing $\Omega(C_F)(1)$ by $s \mapsto |\cdot|^s_F$ and choosing a continuous homomorphic section $\tau$ to the idelic norm $|\cdot|_F$:
 
 $$
-Z(f, |\cdot|^s_F) = \int_{\mathbf{R}_{>0}} \Phi_{F,\omega=1}(f)(\tau(t)) t^s \,\frac{dt}{t} = M(\Phi_{F,\omega=1}(f)\circ\tau)(s)
+Z(f, |\cdot|^s_F) = \int_{\mathbf{R}_{>0}} \Phi_{F,\omega=1}(f)(\tau(t)) t^s \,\frac{\mathrm{d}t}{t} = M(\Phi_{F,\omega=1}(f)\circ\tau)(s)
 $$
 
 adhering to the notation $M(\phi)(s) := \int_{\mathbf{R}_{>0}} \phi(t) t^s \,\frac{dt}{t}$ for the Mellin transform (see (B.2.1.2)).
@@ -1664,7 +1664,7 @@ The idea now is to show that, in light of the identity from (3.4.2.7), $Z(f, |\c
 
 We now apply the Asymptotic Residue Theorem (see Theorem B.3.2.1) to the meromorphic function $Z(f, |\cdot|^s_F)t^{-s} = M(\Phi_{F,\omega=1}(f)\circ\tau)(s)t^{-s}$ of $s \in \mathbf{C} - \{0, 1\}$.
 
-In order to apply the Asymptotic Residue Theorem over a vertical strip of bounded width $C_I$, for $I \subset \mathbf{R}$ a connected open non-empty interval, it is sufficient to show the following (compare with the statement of Theorem B.3.2.1). We must show that $Z(f, |\cdot|^s_F)$ can be written as a product $\Phi(s)u(s)$ over a slightly larger open vertical strip $C_J$ of bounded width containing $C_I$, with $\Phi$ holomorphic over $C_J$ and $u$ meromorphic on $C_J$ with slow growth near its poles (for this concept, the reader is referred to Definition B.3.1.1). The function $\Phi$ must further satisfy the assumption that $\Phi$ is Schwartz uniformly on any open vertical strip of bounded width contained within $C_J$.
+In order to apply the Asymptotic Residue Theorem over a vertical strip of bounded width $\mathbf{C}_I$, for $I \subset \mathbf{R}$ a connected open non-empty interval, it is sufficient to show the following (compare with the statement of Theorem B.3.2.1). We must show that $Z(f, |\cdot|^s_F)$ can be written as a product $\Phi(s)u(s)$ over a slightly larger open vertical strip $\mathbf{C}_J$ of bounded width containing $\mathbf{C}_I$, with $\Phi$ holomorphic over $\mathbf{C}_J$ and $u$ meromorphic on $\mathbf{C}_J$ with slow growth near its poles (for this concept, the reader is referred to Definition B.3.1.1). The function $\Phi$ must further satisfy the assumption that $\Phi$ is Schwartz uniformly on any open vertical strip of bounded width contained within $\mathbf{C}_J$.
 
 Indeed, $\prod_{v \in S_f} (1 - q_v^{-s})$ is bounded uniformly on vertical strips of bounded width, together with all of its derivatives, and its zeros resolve the singularities of $Z_S(f_S, |\cdot|^s_{F,S})$ located on the imaginary line of the complex $s$-plane, with the sole possible exception of a single point, i.e. $s = 0$. The meromorphic function $\zeta_F(s)$ grows polynomially uniformly over the vertical strips of bounded width of the complex $s$-plane (see Proposition B.1.1.3), and it has simple poles at $s = 0$ and $s = 1$. The functions $\tilde{Z}_v(1_{K_v}, |\cdot|^s_v)$ are, for each $v \in S_f$, entire (by (3.4.1.3) combined with the local functional equation, see [CF, Ch.XV, Thm.2.4.1]] and [CF, Ch.XV, §2.5]]) and bounded uniformly on vertical strips (by vertical periodicity) together with all of their derivatives.
 
