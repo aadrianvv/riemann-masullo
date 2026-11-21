@@ -38,7 +38,7 @@ python3 transcription/tools/check.py --list   # any flag not already reviewed
 
 Corrections made since the first version are listed in [`CHANGELOG.md`](CHANGELOG.md).
 Errors found in the transcription go to `CHANGELOG.md` and the tracking issue — **never** to
-`ERRATA.md`, which records errors in the paper itself.
+`ERRATA.md`, which records errors in the paper and in the Lean formalization.
 
 ## Conventions
 

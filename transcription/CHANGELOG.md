@@ -3,8 +3,8 @@
 Corrections to `chapters/*.md` after the first version (commits `bcd3f26`, `4de5bc7`). Every
 correction was made against the pinned PDF: either mechanically from the PDF's own data (glyph
 fonts, glyph baselines, drawn rules, text layer) or by comparing with the page image. Nothing here
-corrects the paper itself: printed errors are kept verbatim. Errors in the paper are recorded in
-`ERRATA.md`; this file only records errors in the transcription.
+corrects the paper itself: printed errors are kept verbatim. Errors in the paper (and in the Lean
+formalization) are recorded in `ERRATA.md`; this file only records errors in the transcription.
 
 559 of 940 pages changed. Totals are approximate where many small edits were made by script.
 
