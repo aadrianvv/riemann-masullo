@@ -4,7 +4,7 @@
 Usage (from the repository root):
     pip install pymupdf            # PDF glyph/font extraction
     python3 transcription/tools/check.py            # summary
-    python3 transcription/tools/check.py --list     # every remaining flag, per page
+    python3 transcription/tools/check.py --list     # every flag not already in reviewed_flags.txt
 
 Checks, all page-by-page against the PDF:
   pages      every PDF page appears exactly once, in order
@@ -122,6 +122,17 @@ def main():
     print(f'math glyphs aligned 1:1 with the transcription: {tot_eq}/{tot} ({100*tot_eq/max(1,tot):.1f}%)')
     for k in ('pages', 'delimiters', 'footnotes', 'tags', 'alphabet', 'script', 'substitution'):
         print(f'{k:13s} {problems[k]}')
-    if listing: print('\n'.join(detail))
+    base_path = os.path.join(HERE, 'reviewed_flags.txt')
+    reviewed = set()
+    if os.path.exists(base_path):
+        reviewed = {l.rstrip('\n') for l in open(base_path, encoding='utf-8') if l.strip() and not l.startswith('#')}
+    new = [x for x in detail if x not in reviewed]
+    print(f'flags not in reviewed_flags.txt (i.e. new): {len(new)}')
+    if '--write-baseline' in sys.argv:
+        with open(base_path, 'w', encoding='utf-8') as f:
+            f.write('# Flags raised by check.py that were each compared with the page image and found to be\n'
+                    '# false positives (reading order of limits/fractions, labels on arrows, text inside \\text{}).\n')
+            f.write('\n'.join(detail) + '\n')
+    if listing: print('\n'.join(new if reviewed else detail))
 if __name__ == '__main__':
     main()
