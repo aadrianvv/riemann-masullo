@@ -125,7 +125,7 @@ changed (585 of 940 in total since the first version).
 Every one of the 940 pages was read against its page image (200 dpi, with 300–400 dpi crops of
 small print) by AI reviewers: Claude on all pages and, independently, Gemini on 485 of them (420
 pages were read by both, and their corrections were merged and compared). ≈ 1,030 corrections on
-354 pages (659 of 940 pages changed in total since the first version). Each correction was checked
+354 pages (663 of 940 pages changed in total since the first version, including the spot check below). Each correction was checked
 against the PDF glyphs where they align (258 improved the alignment; the 16 that lowered it were
 looked at on the image; 3 edits contradicted by the PDF fonts were reverted), word changes in prose against the PDF text layer,
 and a random sample by eye. All the checks in the README were run again afterwards.
@@ -152,3 +152,11 @@ and a random sample by eye. All the checks in the README were run again afterwar
 - **Citations and footnotes** (≈ 80): doubled opening brackets `[[` (pp. 195–207), bold citation
   keys, and footnote markers written as HTML `<sup>` instead of the `$^{1}$` convention.
 - **Diagrams**: a 2-cell drawn as ⇔ in the print (p. 911) and arrows in Appendix E.
+- **Empty-set sign.** The paper uses both empty-set signs (round `\varnothing` from the AMS font, 44 times;
+  `\emptyset`, 4 times). 22 `\emptyset` for `\varnothing` on 15 pages, and the reverse on p. 832;
+  now matched by font on every page.
+- **Spot check.** 15 pages drawn at random (pp. 7, 81, 90, 172, 182, 186, 193, 296, 354, 365, 367,
+  379, 552, 636, 824) were then read again against the image: no formula was wrong. Fixed on them:
+  four displayed formulas that had been run into the text (pp. 365, 367, 379, 552), the italic
+  of Proposition B.6.1.1 running on into the next paragraph (p. 636), and italics and punctuation
+  on pp. 354, 824.

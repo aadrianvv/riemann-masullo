@@ -25,6 +25,7 @@ the physical PDF page markers kept (`## PDF page N`; printed page number = PDF p
 | Accents | every hat, tilde and check glyph of the PDF | same kind and same count on every page |
 | φ/ϕ, ε/ϵ | every aligned glyph | the printed shape (the paper uses both phis) |
 | ⇒ and ⇉ | every double-arrow glyph of the PDF (the text layer reports both as ⇒; the font tells them apart) | 136 `\Rightarrow` and 131 `\rightrightarrows`, same count on every page |
+| ∅ shapes | every empty-set glyph of the PDF, by font | `\varnothing` and `\emptyset` as printed, same count on every page |
 | Commutative diagrams | all 83 diagrams on 60 pages | compared with the page image at 200 dpi |
 | Page-by-page visual review | all 940 pages | every page read against its image at 200–300 dpi by AI reviewers (Claude, and Gemini on 485 pages; 420 pages read by both); ≈ 1,030 corrections on 354 pages, then all the checks above run again |
 | Random sample | 45 tagged equations drawn at random (before the visual review) | 43 exact, 2 wrong (now corrected): read this as a residual error rate of a few percent per equation (95% interval roughly 1–15%) |

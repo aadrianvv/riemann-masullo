@@ -538,7 +538,7 @@ $$
 \bigcup_{g\in G}\theta(g,D)=X, \tag{12.2.1.12}
 $$
 
-$$D\cap\theta(g,D)=\emptyset$$
+$$D\cap\theta(g,D)=\varnothing$$
 
 the last condition being assumed to hold for every $g\in G$ with $g\ne 1$. Assume that for every $g\in G$, with $g\ne 1$, the intersection:
 

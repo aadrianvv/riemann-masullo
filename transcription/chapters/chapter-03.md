@@ -1566,7 +1566,7 @@ $$
 S' \mapsto \prod_{v \in S'} L_v(\chi_v|\cdot|^s_v)
 $$
 
-for the Hecke $L$-function $L(s, \chi)$, as $S'$ varies over all finite sets of finite places of $F$ such that $S' \cap S = \emptyset$, converges pointwise to $L_f(s, \chi) \prod_{v \in S_0} L_v(\chi_v|\cdot|^s_v)^{-1}$ over $1+i\mathbf{R}$ if $\chi|_{C^1_F} \ne 1$ (uniformly on its compact subsets), and $1 + i(\mathbf{R} - (-A - x_0, A - x_0))$ if $\chi = |\cdot|^{ix_0}_F$ (uniformly on its compact subsets).
+for the Hecke $L$-function $L(s, \chi)$, as $S'$ varies over all finite sets of finite places of $F$ such that $S' \cap S = \varnothing$, converges pointwise to $L_f(s, \chi) \prod_{v \in S_0} L_v(\chi_v|\cdot|^s_v)^{-1}$ over $1+i\mathbf{R}$ if $\chi|_{C^1_F} \ne 1$ (uniformly on its compact subsets), and $1 + i(\mathbf{R} - (-A - x_0, A - x_0))$ if $\chi = |\cdot|^{ix_0}_F$ (uniformly on its compact subsets).
 
 This is indeed the case by Corollary B.7.2.5 (a consequence of Perron’s Formula; see also [T2, Ch.III, §3.15, p.66] for the special case $F = \mathbf{Q}$ and $\chi = 1$). $\square$
 

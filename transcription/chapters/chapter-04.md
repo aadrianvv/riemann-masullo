@@ -624,7 +624,7 @@ Since $\{t_m\}_{m\ge 0}$ is arbitrary, this shows that $\Phi_\gamma(f)$ is smoot
 
 We now let $u\in\mathcal{D}(\mathbf{R}_{>0})$ be a smooth function, compactly supported within an open neighborhood with compact closure of $[\gamma^N,\gamma^{N+1}]$ for a choice of integer $N\ge 0$ large enough so as to have $\gamma^N>3$.
 
-We assume $u$ is real-valued, nonnegative, and $u=1$ on $[\gamma^N,\gamma^{N+1}]$ and $u=0$ away from $[\gamma^N-\varepsilon,\gamma^{N+1}+\varepsilon]$ for a choice of $\varepsilon>0$ so small so as to arrange $[\gamma^N-\varepsilon,\gamma^{N+1}+\varepsilon]\cap(0,2)=\emptyset$.
+We assume $u$ is real-valued, nonnegative, and $u=1$ on $[\gamma^N,\gamma^{N+1}]$ and $u=0$ away from $[\gamma^N-\varepsilon,\gamma^{N+1}+\varepsilon]$ for a choice of $\varepsilon>0$ so small so as to arrange $[\gamma^N-\varepsilon,\gamma^{N+1}+\varepsilon]\cap(0,2)=\varnothing$.
 
 We call $u_0:=\Phi_\gamma(u)$ as a smooth function of $t\in\mathbf{R}_{>0}$, and define, for each $\phi\in\mathcal{D}(\mathbf{R}_{>0}/\gamma^{\mathbf{Z}})$, $\phi_u:=(\phi\circ\pi)\cdot(u/u_0)$, for $\pi:\mathbf{R}_{>0}\to\mathbf{R}_{>0}/\gamma^{\mathbf{Z}}$ the quotient homomorphism.
 

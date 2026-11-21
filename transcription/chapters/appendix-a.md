@@ -486,7 +486,7 @@ In this section, we examine adelic and idelic quotients explicitly, constructing
 
 While the topics are covered in detail within the literature (for which our main references will be [**RV**, Ch. 5, §5.1], [**CF**, Ch. XV, §4.1, §4.3]), we will be highlighting certain structural, measure-theoretic and topological properties of these domains, to be used later throughout this work.
 
-**A.2.1. Fundamental domain of the additive $F$-translation action on $\mathbf{A}_F$.** In light of Lemma A.1.2.1, the diagonal image of $F$ in $\mathbf{A}_F$ is discrete and co-compact. We recall how to construct a fundamental domain for the action by additive translation of $F$ on $\mathbf{A}_F$, i.e. a relatively compact subset $D \subset \mathbf{A}_F$ with non-empty interior, such that $F + D = \mathbf{A}_F$, and $(\xi + D) \cap D = \emptyset$ for every $\xi \in F^{\times}$.
+**A.2.1. Fundamental domain of the additive $F$-translation action on $\mathbf{A}_F$.** In light of Lemma A.1.2.1, the diagonal image of $F$ in $\mathbf{A}_F$ is discrete and co-compact. We recall how to construct a fundamental domain for the action by additive translation of $F$ on $\mathbf{A}_F$, i.e. a relatively compact subset $D \subset \mathbf{A}_F$ with non-empty interior, such that $F + D = \mathbf{A}_F$, and $(\xi + D) \cap D = \varnothing$ for every $\xi \in F^{\times}$.
 
 **A.2.1.1. The adelic fundamental domain $F$.** In this subsection we describe the compact Hausdorff quotient $\mathbf{A}_F/F$ by means of a fundamental domain within $\mathbf{A}_F$ of the continuous left-translation action by $F$.
 
@@ -517,7 +517,7 @@ where the right side of (A.2.1.3) is the union within $\mathbf{A}_F$ of the addi
 (2) Upon denoting by $\overline{D}_F$ the closure of $D_F$ in $\mathbf{A}_F$, then for any compact subset $K \subset \mathbf{A}_F$, there exist at most finitely many elements $\xi \in F$ such that
 
 $$
-(\xi + \overline{D}_F) \cap K \ne \emptyset. \tag{A.2.1.4}
+(\xi + \overline{D}_F) \cap K \ne \varnothing. \tag{A.2.1.4}
 $$
 
 We illustrate the example $F = \mathbf{Q}$.
@@ -671,7 +671,7 @@ defined as $\theta_{F,s}(t,g_0) := s(t)g_0$, is an isomorphism of Hausdorff loca
 
 **548** · **CHAPTER A. PREPARATIONS FROM ALGEBRAIC NUMBER THEORY**
 
-**A.2.3. Fundamental domain of the multiplicative $F^{\times}$-translation action on $\mathrm{GL}_1(\mathbf{A}_F)^1$.** In this subsection we describe a fundamental domain for the continuous left translation action of $F^{\times}$ on $\mathrm{GL}_1(\mathbf{A}_F)^1$, i.e. a relatively compact subset $E \subset \mathrm{GL}_1(\mathbf{A}_F)^1$ with non-empty interior, such that $F^{\times}E = \mathrm{GL}_1(\mathbf{A}_F)^1$, and $\xi E \cap E = \emptyset$ for every $\xi \in F^{\times} - \{1\}$.
+**A.2.3. Fundamental domain of the multiplicative $F^{\times}$-translation action on $\mathrm{GL}_1(\mathbf{A}_F)^1$.** In this subsection we describe a fundamental domain for the continuous left translation action of $F^{\times}$ on $\mathrm{GL}_1(\mathbf{A}_F)^1$, i.e. a relatively compact subset $E \subset \mathrm{GL}_1(\mathbf{A}_F)^1$ with non-empty interior, such that $F^{\times}E = \mathrm{GL}_1(\mathbf{A}_F)^1$, and $\xi E \cap E = \varnothing$ for every $\xi \in F^{\times} - \{1\}$.
 
 **A.2.3.1. The logarithm homomorphism.** In this subsection we recall the structure of the orbit space of $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ under the action of the unit group $\mathcal{O}_F^{\times}$.
 
@@ -768,7 +768,7 @@ Lemma A.2.3.5. Let $F$ be a hyperplane. The subset $P \subset H_{\log}$ satisfie
 (2) $\mathrm{Reg}(\mathcal{O}_F^{\times})P = H_{\log}$, and for every $\xi \in \mathrm{Reg}(\mathcal{O}_F^{\times})$, $\xi \ne 0$, we have
 
 $$
-(\xi + P) \cap P = \emptyset. \tag{A.2.3.11}
+(\xi + P) \cap P = \varnothing. \tag{A.2.3.11}
 $$
 
 The natural map $\mathrm{GL}_1(\mathbf{A}_F) \to \mathrm{Pic}(\mathcal{O}_F)$ sends $\mathrm{GL}_1(\mathbf{A}_F)^1$ onto $\mathrm{Pic}(\mathcal{O}_F)$, so there exist ideles
@@ -822,7 +822,7 @@ Lemma A.2.3.8. The subset $E_0 \subset \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^
 (2) $\mathcal{O}_F^{\times} E_0 = \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$, and for every $\xi \in \mathcal{O}_F^{\times}$, $\xi \ne 1$, we have
 
 $$
-\xi E_0 \cap E_0 = \emptyset \tag{A.2.3.17}
+\xi E_0 \cap E_0 = \varnothing \tag{A.2.3.17}
 $$
 
 where $\mathcal{O}_F^{\times}$ is diagonally embedded into $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$. Moreover, $\mathscr{L}^{-1}(P) = \mu_F E_0$.
@@ -830,7 +830,7 @@ where $\mathcal{O}_F^{\times}$ is diagonally embedded into $\mathrm{GL}_1(\mathb
 (3) Upon denoting by $\overline{E}_0$ the closure of $E_0 \subset \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$, for any compact subset $K \subset \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$ there exist at most finitely many elements $\xi \in \mathcal{O}_F^{\times}$ such that
 
 $$
-\xi \overline{E}_0 \cap \overline{E}_0 \ne \emptyset. \tag{A.2.3.18}
+\xi \overline{E}_0 \cap \overline{E}_0 \ne \varnothing. \tag{A.2.3.18}
 $$
 
 Due to lack of a reference for a proof in standard books, we give a proof below although the result is very classical.
@@ -940,13 +940,13 @@ $$
 and for every $\xi \in F^{\times}$, $\xi \ne 1$, we have
 
 $$
-\xi E_F^1 \cap E_F^1 = \emptyset. \tag{A.2.3.26}
+\xi E_F^1 \cap E_F^1 = \varnothing. \tag{A.2.3.26}
 $$
 
 (3) Upon denoting by $\overline{E}_F^1 \subset \mathrm{GL}_1(\mathbf{A}_F)^1$ the closure of $E_F^1$, for any compact subset $K \subset \mathrm{GL}_1(\mathbf{A}_F)^1$, there exist at most finitely many elements $\xi \in F^{\times}$ such that:
 
 $$
-\xi \overline{E}_F^1 \cap K \ne \emptyset. \tag{A.2.3.27}
+\xi \overline{E}_F^1 \cap K \ne \varnothing. \tag{A.2.3.27}
 $$
 
 Proof. (1): The subset $E_F^1 \subset \mathrm{GL}_1(\mathbf{A}_F)^1$ was defined upon choosing $g_1 = 1, g_2,\dots,g_{h_F} \in \mathrm{GL}_1(\mathbf{A}_F)^1$ lifting the $h_F$ elements of $\mathrm{Pic}(\mathcal{O}_F)$ and defining $E_F^1 := (E_0 \times \widehat{\mathcal{O}}_F^{\times}) \cup g_2(E_0 \times \widehat{\mathcal{O}}_F^{\times}) \cup \cdots \cup g_{h_F}(E_0 \times \widehat{\mathcal{O}}_F^{\times})$. By compactness and openness of $\widehat{\mathcal{O}}_F^{\times}$ in $\mathrm{GL}_1(\mathbf{A}_F^f)$, $E_F^1$ is relatively compact, and its interior in $\mathrm{GL}_1(\mathbf{A}_F)^1$ is non-empty since $E_0$ has non-empty interior in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$ by Lemma A.2.3.8(1).
@@ -957,9 +957,15 @@ $$
 1 \to F^{\times}(\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1 \times \widehat{\mathcal{O}}_F^{\times}) \to \mathrm{GL}_1(\mathbf{A}_F)^1 \to \mathrm{Pic}(\mathcal{O}_F) \to 1 \tag{A.2.3.28}
 $$
 
-and hence to see that (A.2.3.25) holds and the union is disjoint, it is enough to check that we have $F^{\times}(E_0 \times \widehat{\mathcal{O}}_F^{\times}) = F^{\times}(\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}}) \times \widehat{\mathcal{O}}_F^{\times})$ within $\mathrm{GL}_1(\mathbf{A}_F)^1$, which follows from $\mathcal{O}_F^{\times} E_0 = \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$, which is given by Lemma A.2.3.8(2). The disjointness condition for non-trivial $F^{\times}$-translates in (A.2.3.26) follows from (A.2.3.17) of Lemma A.2.3.8(2) upon observing that $\xi(\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1 \times \widehat{\mathcal{O}}_F^{\times}) \cap (\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1 \times \widehat{\mathcal{O}}_F^{\times}) = \emptyset$ within $\mathrm{GL}_1(\mathbf{A}_F)^1$ if $\xi$ is not a global unit.
+and hence to see that (A.2.3.25) holds and the union is disjoint, it is enough to check that we have
 
-(3): In light of (1) and (2), it is enough to treat the case $K = \overline{E}_F^1$. Since $\mathrm{Pic}(\mathcal{O}_F)$ is finite by Theorem A.1.4.3(3), it is enough to prove, in light of (A.2.3.16), that, upon denoting by $\overline{E}_0$ the closure of $E_0 \subset \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$, there exist at most finitely many elements $\xi \in \mathcal{O}_F^{\times}$ such that $\xi \overline{E}_0 \cap \overline{E}_0 \ne \emptyset$. This is Lemma A.2.3.8(3). $\square$
+$$
+F^{\times}(E_0 \times \widehat{\mathcal{O}}_F^{\times}) = F^{\times}(\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}}) \times \widehat{\mathcal{O}}_F^{\times})
+$$
+
+within $\mathrm{GL}_1(\mathbf{A}_F)^1$, which follows from $\mathcal{O}_F^{\times} E_0 = \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$, which is given by Lemma A.2.3.8(2). The disjointness condition for non-trivial $F^{\times}$-translates in (A.2.3.26) follows from (A.2.3.17) of Lemma A.2.3.8(2) upon observing that $\xi(\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1 \times \widehat{\mathcal{O}}_F^{\times}) \cap (\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1 \times \widehat{\mathcal{O}}_F^{\times}) = \varnothing$ within $\mathrm{GL}_1(\mathbf{A}_F)^1$ if $\xi$ is not a global unit.
+
+(3): In light of (1) and (2), it is enough to treat the case $K = \overline{E}_F^1$. Since $\mathrm{Pic}(\mathcal{O}_F)$ is finite by Theorem A.1.4.3(3), it is enough to prove, in light of (A.2.3.16), that, upon denoting by $\overline{E}_0$ the closure of $E_0 \subset \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$, there exist at most finitely many elements $\xi \in \mathcal{O}_F^{\times}$ such that $\xi \overline{E}_0 \cap \overline{E}_0 \ne \varnothing$. This is Lemma A.2.3.8(3). $\square$
 
 ## PDF page 553
 
@@ -985,7 +991,7 @@ Lemma A.2.3.13. We fix an Archimedean place $v_0$ of $F$, and let $T_{v_0} \subs
 
 (1) The subset $K_{v_0} \cdot \overline{E}_0 \subset \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ is compact. If $K_{v_0}$ has non-empty interior in $T_{v_0,\infty}$, then so does $K_{v_0} \cdot \overline{E}_0$ in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$.
 
-(2) We have $(K_{v_0} \cdot \overline{E}_0) \cap (\bigcup_{v\in S_{\infty}} H_v) = \emptyset$.
+(2) We have $(K_{v_0} \cdot \overline{E}_0) \cap (\bigcup_{v\in S_{\infty}} H_v) = \varnothing$.
 
 (3) If $K_{v_0}$ has non-empty interior in $T_{v_0,\infty}$, then so does $K_{v_0} \cdot \overline{E}_0$ in $\mathbf{A}_{F,S_{\infty}}$.
 
@@ -1026,12 +1032,12 @@ where the right side of (A.2.4.2) is the union within $\mathbf{A}_{F,S}$ of the 
 (2) Upon denoting by $\overline{D}_{F,S}$ the closure of $D_{F,S}$ in $\mathbf{A}_{F,S}$, then for any compact subset $K \subset \mathbf{A}_{F,S}$, there exist at most finitely many elements $\xi \in \mathcal{O}_{F,S}$ such that
 
 $$
-(\xi + \overline{D}_{F,S}) \cap K \ne \emptyset. \tag{A.2.4.3}
+(\xi + \overline{D}_{F,S}) \cap K \ne \varnothing. \tag{A.2.4.3}
 $$
 
 Proof. (1): This is a consequence of strong approximation for $\mathbf{A}_F$.
 
-(2): As in the proof of Lemma A.2.1.2(2), it is enough to check that, upon calling $\overline{D}_{F,\infty}$ the closure of $D_{F,\infty}$ from (A.2.1.1) in $\mathbf{A}_{F,S_{\infty}}$, for any compact subset $K \subset \mathbf{A}_{F,S_{\infty}}$ there exist at most finitely many elements $\xi \in \mathcal{O}_F$ such that $(\xi + \overline{D}_{F,\infty}) \cap K \ne \emptyset$. Upon fixing an $\mathbf{R}$-basis for $\mathbf{A}_{F,S_{\infty}} = F \otimes_{\mathbf{Q}} \mathbf{R}$ induced by an integral $\mathbf{Z}$-basis for $\mathcal{O}_F$, say $\{e_1,\dots,e_{[F:\mathbf{Q}]}\}$, the $\mathbf{R}$-linear isomorphism $\mathbf{A}_{F,S_{\infty}} \simeq \mathbf{R}^{[F:\mathbf{Q}]}$ induced by this choice of basis sends $\mathcal{O}_F \subset \mathbf{A}_{F,S_{\infty}}$ to $\mathbf{Z}^{[F:\mathbf{Q}]} = \sum_{1\le i\le [F:\mathbf{Q}]} \mathbf{Z} e_i$. The subset $D_{F,\infty} \subset \mathbf{A}_{F,S_{\infty}}$ is sent homeomorphically onto $[0,1)^{[F:\mathbf{Q}]}$, and (2) follows. $\square$
+(2): As in the proof of Lemma A.2.1.2(2), it is enough to check that, upon calling $\overline{D}_{F,\infty}$ the closure of $D_{F,\infty}$ from (A.2.1.1) in $\mathbf{A}_{F,S_{\infty}}$, for any compact subset $K \subset \mathbf{A}_{F,S_{\infty}}$ there exist at most finitely many elements $\xi \in \mathcal{O}_F$ such that $(\xi + \overline{D}_{F,\infty}) \cap K \ne \varnothing$. Upon fixing an $\mathbf{R}$-basis for $\mathbf{A}_{F,S_{\infty}} = F \otimes_{\mathbf{Q}} \mathbf{R}$ induced by an integral $\mathbf{Z}$-basis for $\mathcal{O}_F$, say $\{e_1,\dots,e_{[F:\mathbf{Q}]}\}$, the $\mathbf{R}$-linear isomorphism $\mathbf{A}_{F,S_{\infty}} \simeq \mathbf{R}^{[F:\mathbf{Q}]}$ induced by this choice of basis sends $\mathcal{O}_F \subset \mathbf{A}_{F,S_{\infty}}$ to $\mathbf{Z}^{[F:\mathbf{Q}]} = \sum_{1\le i\le [F:\mathbf{Q}]} \mathbf{Z} e_i$. The subset $D_{F,\infty} \subset \mathbf{A}_{F,S_{\infty}}$ is sent homeomorphically onto $[0,1)^{[F:\mathbf{Q}]}$, and (2) follows. $\square$
 
 **A.2.4.2. Fundamental domain for the multiplicative $\mathcal{O}_{F,S}^{\times}$-action on $\mathrm{GL}_1(\mathbf{A}_{F,S})^1$.** We denote by $w_{F,S}$ the size of the finite torsion subgroup of $\mathcal{O}_{F,S}^{\times}$. We note that $w_{F,S} = w_F$, since the torsion subgroup of $\mathcal{O}_{F,S}^{\times}$ is $\mu_F$ itself, the finite cyclic group of roots of unity contained in $F$.
 
@@ -1925,7 +1931,7 @@ By [Bog, Vol. 2, Ch. 6, Thm. 6.9.7, p. 38] applied to $Y = X/H$, which is Hausdo
 
 It follows that we have $q(\bigcup_{m \ge 0} B_m) = X/H$, since $\bigcup_{m \ge 0} q(K_m) = X/H$. Since $H$ is countable, the set of the $B_m$'s and all of their $H$-translates is comprised of Borel subsets $B \subset X$ such that $q|_B : B \to X/H$ is injective, and such that $X$ is covered by their union. We define $\mathcal{B}$ to be the set of all the $H$-translates of the $B_m$'s, and of $E$. Clearly $\mathcal{B}$ is countable.
 
-We enumerate the elements $\{U_k\}_{k \ge 1} = \mathcal{B}$ setting $U_0 := E$ and $U_{-1} := \emptyset$. We define $U'_0 := U_0$ and, for each integer $k \ge 1$:
+We enumerate the elements $\{U_k\}_{k \ge 1} = \mathcal{B}$ setting $U_0 := E$ and $U_{-1} := \varnothing$. We define $U'_0 := U_0$ and, for each integer $k \ge 1$:
 
 $$
 U'_k := U_k \cap (X - (\bigcup_{0 \le i \le k-1} H \cdot U_i)) \tag{A.5.2.3}
@@ -1935,7 +1941,7 @@ and set $F := \bigcup_{k \ge 0} U'_k$. Then $F$ contains $E$, and it is a Borel 
 
 We have $q(F) = X/H$. Indeed, each $U_k$ is contained in the union $\bigcup_{k \ge 0} H \cdot U'_k$, and hence $q(U_k)$ is contained in $q(\bigcup_{k \ge 0} U'_k) = q(F)$ for every integer $k \ge 0$. Since $\bigcup_{k \ge 0} U_k = X$, we deduce $q(F) = X/H$.
 
-For any $h \in H$, $h \ne 1$, we have $h \cdot F \cap F = \emptyset$. Indeed, $(h \cdot U'_k) \cap U'_{k'}$ is non-empty only if $k = k'$, in which case, since $q|_{U_k}$ is injective, we must have $h = 1$: if $x \in U'_k$ is such that $y := h \cdot x \in U'_k$, then $q(x) = q(y)$, which forces $y = x$ and hence $h = 1$. Since $U'_k$ and $U'_{k'}$ are disjoint for all pairs of integers $(k,k')$ with $k \ne k'$, we deduce that we have $h \cdot F \cap F = \emptyset$ for all $h \in H$ with $h \ne 1$. It follows that the continuous $q|_F : F \to X/H$ is a bijection. $\square$
+For any $h \in H$, $h \ne 1$, we have $h \cdot F \cap F = \varnothing$. Indeed, $(h \cdot U'_k) \cap U'_{k'}$ is non-empty only if $k = k'$, in which case, since $q|_{U_k}$ is injective, we must have $h = 1$: if $x \in U'_k$ is such that $y := h \cdot x \in U'_k$, then $q(x) = q(y)$, which forces $y = x$ and hence $h = 1$. Since $U'_k$ and $U'_{k'}$ are disjoint for all pairs of integers $(k,k')$ with $k \ne k'$, we deduce that we have $h \cdot F \cap F = \varnothing$ for all $h \in H$ with $h \ne 1$. It follows that the continuous $q|_F : F \to X/H$ is a bijection. $\square$
 
 Proof of Proposition A.5.2.6. We note that since $q$ is continuous, for any Borel subset $B \subset G/H$ clearly $q^{-1}(B)$ is a Borel subset of $G$.
 
@@ -2328,7 +2334,7 @@ $$
 \mu_G(B \cap \{x \in G : (M\nu)(x) > \alpha\}) \le \frac{C}{\alpha} \nu((B \cap \{x \in G : (M\nu)(x) > \alpha\}) \cdot U_0) \tag{A.5.3.3}
 $$
 
-and equality holds if and only if $B \cap \{x \in G : (M\nu)(x) > \alpha\} = \emptyset$.
+and equality holds if and only if $B \cap \{x \in G : (M\nu)(x) > \alpha\} = \varnothing$.
 
 ---
 $^{14}$Should address why $B \cdot U_0$ is automatically measurable; maybe for this we need sufficiently small or somehow nice $U_0$?

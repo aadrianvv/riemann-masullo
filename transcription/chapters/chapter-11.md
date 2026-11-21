@@ -269,7 +269,7 @@ For $F$ a number field, $\chi \in \widehat{C_F}$ a continuous character, $S$ a f
 We define the countable set:
 
 $$
-I_S := \{S' \subset \Sigma_F : S' \text{ is finite, } S \cap S' = \emptyset\} \tag{11.1.2.1}
+I_S := \{S' \subset \Sigma_F : S' \text{ is finite, } S \cap S' = \varnothing\} \tag{11.1.2.1}
 $$
 
 partially ordered by inclusion. We denote by $i$ the arbitrary element of $I_S$, and write $S_i$ for the finite set of places of $F$ corresponding to $i \in I_S$.
@@ -1013,7 +1013,7 @@ $$
 
 This is a smooth function on $\mathrm{GL}_1(\mathbf A_F)$ (since $\mathcal O_{F_v}^\times\subset F_v$ is a compact open subset).
 
-We define, for any finite subset $T$ of finite places of $F$ such that $S\cap T=\emptyset$:
+We define, for any finite subset $T$ of finite places of $F$ such that $S\cap T=\varnothing$:
 
 $$
 \rho_T:=\prod_{v\in T}\rho_v. \tag{11.3.1.2}

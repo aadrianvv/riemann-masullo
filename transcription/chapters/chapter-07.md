@@ -2094,7 +2094,7 @@ $$
 
 and hence $\mathrm{PW}_{S,X,0}(\chi_{S'}|_{J^1_{F,S'}}, \mathcal S(\mathbf A_{F,S'}))$ is a continuous sub-representation of the abelian semigroup $J^{\ge 1}_{F,S'}$, upon endowing $\mathrm{PW}_{S,X,0}(\chi_{S'}|_{J^1_{F,S'}}, \mathcal S(\mathbf A_{F,S'}))$ with the subspace topology inherited from $\mathrm H_{0,\mathrm{cont}}(\chi_{S'}|_{J^1_{F,S'}}, \mathcal S(\mathbf A_{F,S'}))$.
 
-The same argument also applies to show the same assertion for $\mathrm{PW}_{S,X}(\chi_{S'}|_{J^1_{F,S'}}, \mathcal S(\mathbf A_{F,S'}))$. $\square$
+The same argument also applies to show the same assertion for $\mathrm{PW}_{S,X}(\chi_{S'}|_{J^1_{F,S'}}, \mathcal S(\mathbf A_{F,S'}))$ $\square$
 
 The reason why we termed the closed subspaces
 
@@ -2102,7 +2102,7 @@ $$
 \mathrm{PW}_{S,X}(\chi_{S'}|_{J^1_{F,S'}}, \mathcal S(\mathbf A_{F,S'})) \subset \mathrm H_{0,\mathrm{cont}}(\chi_{S'}|_{J^1_{F,S'}}, \mathcal S(\mathbf A_{F,S'}))
 $$
 
-and its closed codimension-2 subspace $\mathrm{PW}_{S,X,0}(\chi_{S'}|_{J^1_{F,S'}}, \mathcal S(\mathbf A_{F,S'}))$, *absolute Paley-Wiener Levels*, is that the defining constraint on the Fourier transform of the elements of $\mathrm{PW}_{S,X,0}(\chi_{S'}|_{J^1_{F,S'}}, \mathcal S(\mathbf A_{F,S'})) \subset \mathrm H_{0,\mathrm{cont}}(\chi_{S'}|_{J^1_{F,S'}}, \mathcal S(\mathbf A_{F,S'}))$ is assigned by requiring that the $S$-local tensor factor of the arbitrary representative
+and its closed codimension-2 subspace $\mathrm{PW}_{S,X,0}(\chi_{S'}|_{J^1_{F,S'}}, \mathcal S(\mathbf A_{F,S'}))$, *absolute* Paley-Wiener Levels, is that the defining constraint on the Fourier transform of the elements of $\mathrm{PW}_{S,X,0}(\chi_{S'}|_{J^1_{F,S'}}, \mathcal S(\mathbf A_{F,S'})) \subset \mathrm H_{0,\mathrm{cont}}(\chi_{S'}|_{J^1_{F,S'}}, \mathcal S(\mathbf A_{F,S'}))$ is assigned by requiring that the $S$-local tensor factor of the arbitrary representative
 
 $$
 \Phi_{F,S',\chi_{S'}|_{J^1_{F,S'}}}(f_S\otimes\rho_{S_0})
@@ -2741,7 +2741,13 @@ $$
 M_{(\underline{n},\underline{p})}:=\bigotimes_{v\in S_{\infty,r}}M_{x^{2n_v}_v}\otimes\bigotimes_{v\in S_{\infty,c}}M_{z^{p_v}_v\bar z^{p_v}_v}:\mathcal S(\mathbf A_{F,S_\infty})\to\mathcal S(\mathbf A_{F,S_\infty}). \tag{7.3.4.9}
 $$
 
-We further define $M^S_{(\underline{n},\underline{p})}:=M_{(\underline{n},\underline{p})}\otimes\bigotimes_{v\in S_f-S_\chi}1_{\mathcal O^\times_{F_v}}\otimes\bigotimes_{v\in S_\chi}\omega^{-1}_v1_{\mathcal O^\times_{F_v}}:\mathcal S(\mathbf A_{F,S_\infty})\to\mathcal S(\mathbf A_{F,S_\infty})\otimes\bigotimes_{v\in S_f}\mathcal S(F^\times_v)$ and, upon calling $f_\infty:=\bigotimes_{v\in S_\infty}f_v$ for $f_v\in\mathcal S(F_v)$ the above choice of “self-dual” Schwartz-Bruhat function, the Schwartz-Bruhat functions on $\mathbf A_{F,S}$ obtained as $M^S_{(\underline{n}',\underline{p}')}(f_\infty)$ for each $(\underline{n}',\underline{p}')\le (\underline{n},\underline{p})$, satisfy the desired spanning properties (see Proposition 5.3.3.4).
+We further define
+
+$$
+M^S_{(\underline{n},\underline{p})}:=M_{(\underline{n},\underline{p})}\otimes\bigotimes_{v\in S_f-S_\chi}1_{\mathcal O^\times_{F_v}}\otimes\bigotimes_{v\in S_\chi}\omega^{-1}_v1_{\mathcal O^\times_{F_v}}:\mathcal S(\mathbf A_{F,S_\infty})\to\mathcal S(\mathbf A_{F,S_\infty})\otimes\bigotimes_{v\in S_f}\mathcal S(F^\times_v)
+$$
+
+and, upon calling $f_\infty:=\bigotimes_{v\in S_\infty}f_v$ for $f_v\in\mathcal S(F_v)$ the above choice of “self-dual” Schwartz-Bruhat function, the Schwartz-Bruhat functions on $\mathbf A_{F,S}$ obtained as $M^S_{(\underline{n}',\underline{p}')}(f_\infty)$ for each $(\underline{n}',\underline{p}')\le (\underline{n},\underline{p})$, satisfy the desired spanning properties (see Proposition 5.3.3.4).
 
 ## PDF page 366
 
@@ -2801,7 +2807,13 @@ The nuclear trace of $A_{\mathrm{spec},a,\chi,N}(\varphi)$ therefore agrees with
 
 Theorem 7.4.2.1 (Strong Topologies and Nuclearity - II). Let $F$ be a number field, $\chi \in \widehat{C_F}$ a continuous character. Let $p$ be a prime number.
 
-(1) The linear subspace $\mathrm{PV}_{S_p} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_0(\mathbf A_F)) \subset \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_0(\mathbf A_F))$ is a closed $\mathcal D(C_F)$-submodule.
+(1) The linear subspace
+
+$$
+\mathrm{PV}_{S_p} \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_0(\mathbf A_F)) \subset \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_0(\mathbf A_F))
+$$
+
+is a closed $\mathcal D(C_F)$-submodule.
 
 (2) For each $\varphi \in \mathcal D(C_F)$, upon denoting by $A_{\mathrm{geom},p,\chi}(\varphi)$ the operator induced on $\mathscr{E}_{S_p}$ by $A(\varphi)$ on $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_0(\mathbf A_F))$, then $A_{\mathrm{geom},p,\chi}(\varphi)$ is strongly nuclear:
 
@@ -3331,7 +3343,11 @@ Under these assumptions, $\overline{\pi}_S$ is a linear topological isomorphism 
 
 In particular, they are Köthe Sequence Spaces.
 
-The strong dual of the subquotient in (7.5.0.15) is in turn therefore linearly and topologically isomorphic to a quotient by a closed subspace of a closed subspace of a finite locally convex direct sum of copies of $\mathcal S\left(\frac{2\pi i}{\log(q)}\mathbf Z\right)\simeq\mathcal S(\mathbf Z)$.
+The strong dual of the subquotient in (7.5.0.15) is in turn therefore linearly and topologically isomorphic to a quotient by a closed subspace of a closed subspace of a finite locally convex direct sum of copies of
+
+$$
+\mathcal S\left(\frac{2\pi i}{\log(q)}\mathbf Z\right)\simeq\mathcal S(\mathbf Z).
+$$
 
 We will be collecting the following Corollary, which is a strong form of the non-vanishing of the Hecke $L$-function $L(s,\chi)$ on the $1$-line. By solving the a Second Cousin Problem for the pair of entire functions $(\Lambda(s,\chi),(1-\chi(\mathfrak p_v)q_v^{-s}))$, we know from the non-vanishing of $L(s,\chi)$ (see [CF, Ch.VIII,Thm.2,p.212]) that there exist entire functions $u,v\in\mathscr{O}(\mathbf C)$ such that:
 

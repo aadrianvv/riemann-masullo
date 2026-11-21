@@ -100,9 +100,9 @@ Terminology E.0.0.1. We call:
 
 (6) A *locally compact* space is a topological space such that every point has a fundamental system of compact neighborhoods.
 
-Our main references for general topology throughout this appendix are [Du], [Bou-GT], [Ke], and [SP]. In particular, we refer to [Bou-GT, Ch. I, §1, §5], [Du, Ch. III], and [SP, Tags 004O, 0405] for background material on point-set topology, to [Bou-GT, Ch. I, §8], [Du, Ch. VII, §1-3], and [SP, Tag 08ZD] for background material on separation axioms, [Bou-GT, Ch. I, §9], [Du, Ch. X, §1,6,9], [Ke, Ch. 5], and [SP, Tags 0059, 08ZQ] for background material around compactness, and [Du, Ch. XII, §1-3], and [Ke, Ch. 7] for background material on function spaces. We will further refer to [SP, Tag 005M] on proper maps, and [SP, Tags 08ZW, 0908] on profinite spaces and Stone-Čech compactifications.
+Our main references for general topology throughout this appendix are [Du], [Bou-GT], [Ke], and [SP]. In particular, we refer to [Bou-GT, Ch. I ,§1, §5], [Du, Ch. III], and [SP, Tags 004O, 0405] for background material on point-set topology, to [Bou-GT, Ch. I, §8], [Du, Ch. VII, §1-3], and [SP, Tag 08ZD] for background material on separation axioms, [Bou-GT, Ch. I, §9], [Du, Ch. X, §1,6,9], [Ke, Ch. 5], and [SP, Tags 0059, 08ZQ] for background material around compactness, and [Du, Ch. XII, §1-3], and [Ke, Ch. 7] for background material on function spaces. We will further refer to [SP, Tag 005M] on proper maps, and [SP, Tags 08ZW, 0908] on profinite spaces and Stone-Čech compactifications.
 
-We caution the reader about diverging terminologies within the above sources. Specifically, our use of the word compact follows [Du, Ke] but not [Bou-GT, SP], where the same adjective is replaced by quasi-compact. We further caution the reader that several sources within the literature that will be occasionally referred to throughout this work use the word *compact* to mean *compact and Hausdorff* (see, for example, [LGL, Rezk, Ste]). Throughout this work, we shall always clarify when a separation assumption is being made.
+We caution the reader about diverging terminologies within the above sources. Specifically, our use of the word *compact* follows [Du, Ke] but not [Bou-GT, SP], where the same adjective is replaced by *quasi-compact*. We further caution the reader that several sources within the literature that will be occasionally referred to throughout this work use the word *compact* to mean *compact and Hausdorff* (see, for example, [LGL, Rezk, Ste]). Throughout this work, we shall always clarify when a separation assumption is being made.
 
 We further settle on the following:
 
@@ -370,7 +370,7 @@ Remark E.1.1.8. On the construction of $k(X)$ from Definition E.1.1.1 we observe
 
 The following example exhibits compact generation as a non-vacuous condition on topological spaces.
 
-Example E.1.1.9. Let $X$ be an uncountable set equipped with the co-countable topology (i.e., the open subsets are $\varnothing$ and complements of countable subsets, so the closed subsets are $X$ and the countable subsets). We claim $X$ is not compactly generated. Indeed, we claim that $k(X)$ is discrete.
+Example E.1.1.9. Let $X$ be an uncountable set equipped with the co-countable topology (i.e., the open subsets are $\emptyset$ and complements of countable subsets, so the closed subsets are $X$ and the countable subsets). We claim $X$ is not compactly generated. Indeed, we claim that $k(X)$ is discrete.
 
 To see this, let $Z$ be any subset of $X$ and $K$ any compact Hausdorff space, with $g : K \to X$ an arbitrary continuous map, so $g(K)$ is a compact subspace of $X$ and inherits the co-countable topology from $X$. It is therefore finite discrete, and $Z \cap g(K)$ is open in $g(K)$. As such, its pre-image in $K$, which agrees with $g^{-1}(Z)$, is also open. This proves that any subset of $X$ is $k$-open in $X$, and hence $k(X)$ is discrete.
 
@@ -2028,7 +2028,7 @@ The discussion in the present section is aimed at constructing a small subcatego
 
 For any ordinal $\alpha$, we construct the set $V_{\alpha}$ as follows, proceeding recursively. We define:
 
-$$V_0:=\emptyset,\quad V_{\alpha+1}:=2^{V_{\alpha}},$$
+$$V_0:=\varnothing,\quad V_{\alpha+1}:=2^{V_{\alpha}},$$
 
 with, recall, $2^{V_{\alpha}}$ denoting the power-set of $V_{\alpha}$, and for a limit ordinal $\alpha$ we further set:
 
