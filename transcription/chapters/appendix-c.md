@@ -1110,7 +1110,7 @@ $$
 
 *is a linear topological isomorphism.*
 
-*(2) If $I$ and $J$ are filtered sets, and $\{E_i\}_{i\in I}$ and $\{F_i\}_{j\in J}$ two directed families of Hausdorff locally convex topological $\mathbf C$-vector spaces. We define $E:=\varinjlim_{i\in I}E_i$ and $F:=\varinjlim_{j\in J}F_j$ endowed with their locally convex inductive limit topologies, which we assume are Hausdorff.$^{13}$*
+*(2) If $I$ and $J$ are filtered sets, and $\{E_i\}_{i\in I}$ and $\{F_i\}_{i\in J}$ two directed families of Hausdorff locally convex topological $\mathbf C$-vector spaces. We define $E:=\varinjlim_{i\in I}E_i$ and $F:=\varinjlim_{j\in J}F_j$ endowed with their locally convex inductive limit topologies, which we assume are Hausdorff.$^{13}$*
 
 *The canonical continuous linear map*
 

@@ -448,7 +448,7 @@ $$
 H_{S,S_{p}} := \bigcup_{v\in S_{p}} \{x \in\mathbf{A}_{F,S} : x_{v} = 0, x_{w} \neq 0 \text{ for all } w \in S-\{v\}\} \subset \mathbf{A}_{F,S} \tag{8.3.0.2}
 $$
 
-if $\mathscr{E} = \mathscr{E}_{S,S_{p}}(\chi_{S}|J^{1}_{F,S})$. The topological quotient stack:
+if $\mathscr{E} = \mathscr{E}_{S,S_{p}}(\chi_{S}|_{J^{1}_{F,S}})$. The topological quotient stack:
 
 $$
 [H_{S,S_{p}}/\mathrm{GL}_{1}(\mathbf{A}_{F,S})^{1}] \tag{8.3.0.3}
@@ -474,7 +474,7 @@ $$
 H_{S,S_{\infty}}:= \bigcup_{v\in S_{\infty}} \{x \in\mathbf{A}_{F,S} : x_{v} = 0, x_{w} \neq 0 \text{ for all } w \in S-\{v\}\} \subset \mathbf{A}_{F,S} \tag{8.3.0.6}
 $$
 
-if $\mathscr{E} = \mathscr{E}_{S,S_{\infty}}(\chi_{S}|J^{1}_{F,S})$. The topological quotient stack:
+if $\mathscr{E} = \mathscr{E}_{S,S_{\infty}}(\chi_{S}|_{J^{1}_{F,S}})$. The topological quotient stack:
 
 $$
 [H_{S,S_{\infty}}/\mathrm{GL}_{1}(\mathbf{A}_{F,S})^{1}] \tag{8.3.0.7}
@@ -488,7 +488,7 @@ $$
 
 where $U_{v} \subset F_{v}^{\times}$ is the compact subgroup $\ker(|\cdot|_{v})$, and $BU_{v}$ is its topological classifying stack. Its coarse space is the disjoint union of $r_{1} + r_{2}$ points, one per each Archimedean place of $F$.
 
-Proof. (1) : By Theorem 8.1.0.1(1), the continuous functionals in $\mathscr{E}_{S,S_{p}}(\chi_{S}|J^{1}_{F,S})^{\prime}_{\beta}$ map under the continuous adjoint to the quotient map $\mathcal{S}(\mathbf{A}_{F,S}) \hookrightarrow \mathscr{E}_{S,S_{p}}(\chi_{S}|J^{1}_{F,S})$ to the image of a unique continuous functional on $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}_{p}(\mathbf{A}_{F,S}))$, where $\mathcal{S}_{p}(\mathbf{A}_{F,S}) \subset \mathcal{S}(\mathbf{A}_{F,S})$ is the closed subspace defined in (8.1.0.4). This means that, for each such $T$ and for every $f \in \mathcal{S}(\mathbf{A}_{F,S})$, there exists $f_{1} \in \mathrm{PV}_{S,S_{p}}\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}(\mathbf{A}_{F,S}))$ such that $f -f_{1} \in \mathcal{S}_{p}(\mathbf{A}_{F,S})$, and $T(f -f_{1}) = T(f)$.
+Proof. (1) : By Theorem 8.1.0.1(1), the continuous functionals in $\mathscr{E}_{S,S_{p}}(\chi_{S}|_{J^{1}_{F,S}})^{\prime}_{\beta}$ map under the continuous adjoint to the quotient map $\mathcal{S}(\mathbf{A}_{F,S}) \hookrightarrow \mathscr{E}_{S,S_{p}}(\chi_{S}|_{J^{1}_{F,S}})$ to the image of a unique continuous functional on $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}_{p}(\mathbf{A}_{F,S}))$, where $\mathcal{S}_{p}(\mathbf{A}_{F,S}) \subset \mathcal{S}(\mathbf{A}_{F,S})$ is the closed subspace defined in (8.1.0.4). This means that, for each such $T$ and for every $f \in \mathcal{S}(\mathbf{A}_{F,S})$, there exists $f_{1} \in \mathrm{PV}_{S,S_{p}}\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}(\mathbf{A}_{F,S}))$ such that $f -f_{1} \in \mathcal{S}_{p}(\mathbf{A}_{F,S})$, and $T(f -f_{1}) = T(f)$.
 
 The elements of $\mathcal{S}_{p}(\mathbf{A}_{F,S})$ are supported on $H_{S,S_{p}}$. The remaining assertions in (1) follow from Proposition 8.2.0.4 and the observation that we have, as topological subspaces of $\mathbf{A}_{F,S}$:
 
@@ -498,7 +498,7 @@ $$
 
 where $D_{S,v}$ was defined in (8.2.0.6) from Definition 8.2.0.1(2).
 
-(2) : The continuous dual of $\mathscr{E}_{S,S_{\infty}}(\chi_{S}|J^{1}_{F,S})$ is comprised of continuous functionals on $\mathrm{PV}_{S,S_f} \mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}(\mathbf{A}_{F,S}))$ that vanish on $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}_{00}(\mathbf{A}_{F,S}))$.
+(2) : The continuous dual of $\mathscr{E}_{S,S_{\infty}}(\chi_{S}|_{J^{1}_{F,S}})$ is comprised of continuous functionals on $\mathrm{PV}_{S,S_f} \mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}(\mathbf{A}_{F,S}))$ that vanish on $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}_{00}(\mathbf{A}_{F,S}))$.
 
 The elements of $\mathrm{PV}_{S,S_f} \mathcal{S}(\mathbf{A}_{F,S})$ are supported over $H_{S,S_{\infty}}$. The remaining assertions of (2) follow from Proposition 8.2.0.5, upon observing that we have, as topological subspaces of $\mathbf{A}_{F,S}$:
 
@@ -557,7 +557,7 @@ to the finite place $v$ of $F$.
 
 A consequence of Theorem 8.3.0.1 and hence of Theorem 8.1.0.1, is that we may organize the nuclear
 Fréchet space
-$$\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}(\mathbf{A}_{F,S}))$$
+$$\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}(\mathbf{A}_{F,S}))$$
 
 ## PDF page 390
 
@@ -565,7 +565,7 @@ $$\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}(\mathbf{A}_{F,S
 CHAPTER 8.
 PERIODIC ORBITS AND FIXED POINTS
 
-and its suquotients $\mathscr{E}_{S,S_{\infty}}(\chi_{S}|J^{1}_{F,S})$ and $\mathscr{E}_{S,S_{p}}(\chi_{S}|J^{1}_{F,S})$ according to the following symbolism:
+and its suquotients $\mathscr{E}_{S,S_{\infty}}(\chi_{S}|_{J^{1}_{F,S}})$ and $\mathscr{E}_{S,S_{p}}(\chi_{S}|_{J^{1}_{F,S}})$ according to the following symbolism:
 
 (8.4.0.6)
 
@@ -583,7 +583,7 @@ topologically. This is the content of Proposition 5.3.4.4 and Proposition 5.3.4.
 The row below it, indicates which loci of the quotient stack $[D_{F,S}/\mathrm{GL}_{1}(\mathbf{A}_{F,S})^{1}]$ each nuclear Fréchet
 space is supported on.
 
-The Orbital quotients $\mathscr{E}_{S,S_{\infty}}(\chi_{S}|J^{1}_{F,S})$, respectivey $\mathscr{E}_{S,S_{p}}(\chi_{S}|J^{1}_{F,S})$ (where we omit mentioning the continuous
+The Orbital quotients $\mathscr{E}_{S,S_{\infty}}(\chi_{S}|_{J^{1}_{F,S}})$, respectivey $\mathscr{E}_{S,S_{p}}(\chi_{S}|_{J^{1}_{F,S}})$ (where we omit mentioning the continuous
 character $\chi_{S}$, identifying the $\chi_{S}$-isotype of each such subquotient), are thought of as being supported over the
 fat points $BU_{v}$ for each Archimedean place $v \in S_{\infty}$, respectively over the periodic orbits $[\mathbf{R}_{>0}/F^{\times}_{v}]$ (whose
 coarse spaces are, respectively, a loop $\mathbf{R}_{>0}/N(\mathfrak{p}_{v})\mathbf{Z}$, for each finite place $v \in S$.
@@ -600,12 +600,12 @@ L_{S}\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}_{00}(\mat
 \end{tikzcd}
 ```
 
-where $\Omega(J_{F,S})(\chi_{S}|J^{1}_{F,S})$ is the connected component parametrized by $\chi_{S}|J^{1}_{F,S}$ of the Riemann surface $\Omega(J_{F,S})$ of
-$S$-idelic quasi-characters, $X_{S}(\chi_{S}|J^{1}_{F,S})$ is a topological completion whose boundary is the divisor $\mathcal{U}_{S_{\infty}} \sqcup (\sqcup^{\prime}_{p:S_{p}\subset S} \mathcal{U}_{S_{p}})$,
+where $\Omega(J_{F,S})(\chi_{S}|_{J^{1}_{F,S}})$ is the connected component parametrized by $\chi_{S}|_{J^{1}_{F,S}}$ of the Riemann surface $\Omega(J_{F,S})$ of
+$S$-idelic quasi-characters, $X_{S}(\chi_{S}|_{J^{1}_{F,S}})$ is a topological completion whose boundary is the divisor $\mathcal{U}_{S_{\infty}} \sqcup (\sqcup^{\prime}_{p:S_{p}\subset S} \mathcal{U}_{S_{p}})$,
 where each divisor $\mathcal{U}_{S_{\infty}}$, respectively $\mathcal{U}_{S_{p}}$, is defined in (5.3.4.13) from Proposition 5.3.4.5, respectively (7.2.2.1).
 
 The Second Structure Theorem (see Theorem 5.4.1.1), provides an explicit description of the nuclear
-Fréchet spaces in the top row of (8.4.0.7) in terms of spaces of meromorphic functions on $\Omega(J_{F,S})(\chi_{S}|J^{1}_{F,S})$,
+Fréchet spaces in the top row of (8.4.0.7) in terms of spaces of meromorphic functions on $\Omega(J_{F,S})(\chi_{S}|_{J^{1}_{F,S}})$,
 Schwartz uniformly on the vertical strips of bounded width of the complex $s$-plane not containint $i\mathbf{R}$ in their
 interior, and satisfying the $S$-local functional equation from (3.3.1.2) of Theorem 3.3.1.1.
 
@@ -613,8 +613,8 @@ The product of the principal part continuous functionals factors through the top
 (8.4.0.7).
 
 The $S$-local function spaces and their supporting geometric objects, whether it be the quotient stacks
-$[D_{F,S}/\mathrm{GL}_{1}(\mathbf{A}_{F,S})^{1}]$ on the backward side of the Mellin transform, or the extended topological space $X_{S}(\chi_{S}|J^{1}_{F,S})$,
-its open sub-domain $\Omega(J_{F,S})(\chi_{S}|J^{1}_{F,S})$ and complementary boundary divisor, on the forward side of the Mellin
+$[D_{F,S}/\mathrm{GL}_{1}(\mathbf{A}_{F,S})^{1}]$ on the backward side of the Mellin transform, or the extended topological space $X_{S}(\chi_{S}|_{J^{1}_{F,S}})$,
+its open sub-domain $\Omega(J_{F,S})(\chi_{S}|_{J^{1}_{F,S}})$ and complementary boundary divisor, on the forward side of the Mellin
 transform, coalesce together into the global ones, to give the following global analogs of the diagrams in
 (8.4.0.6) and (8.4.0.7):
 
@@ -648,15 +648,15 @@ L\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^{1}_{F}}, \mathcal{S}_{00}(\mathbf{A}_{F}
 \end{tikzcd}
 ```
 
-where $X(\chi|C^{1}_{F})$ is a completion of the connected component $\Omega(C_{F})(\chi|C^{1}_{F})$ with boundary divisor $\mathcal{U}_{S_{\infty}} \sqcup (\sqcup_{p} \mathcal{U}_{S_{p}})$.
+where $X(\chi|_{C^{1}_{F}})$ is a completion of the connected component $\Omega(C_{F})(\chi|_{C^{1}_{F}})$ with boundary divisor $\mathcal{U}_{S_{\infty}} \sqcup (\sqcup_{p} \mathcal{U}_{S_{p}})$.
 
 In all four diagrams (8.4.0.6), (8.4.0.7), (8.4.0.8) and (8.4.0.9), the notation $\sqcup^{\prime}$ denotes the coproduct
 over only those places at which $\chi_{S}$, respectively $\chi$, is unramified.
 
-Remark 8.4.0.1. The topological spaces $X_{S}(\chi_{S}|J^{1}_{F,S})$ and $X(\chi|C^{1}_{F})$ can be assembled together into families
+Remark 8.4.0.1. The topological spaces $X_{S}(\chi_{S}|_{J^{1}_{F,S}})$ and $X(\chi|_{C^{1}_{F}})$ can be assembled together into families
 parametrized by the discrete character groups $\widehat{J}^{1}_{F,S}$, respectively $\widehat{C}^{1}_{F}$:
 $$p_{S} : \mathcal{X}_{S} \to \widehat{J}^{1}_{F,S}, \quad p : \mathcal{X} \to \widehat{C}^{1}_{F}.$$
-The boundaries of $X_{S}(\chi_{S}|J^{1}_{F,S})$ and $X(\chi|C^{1}_{F})$ also relativize over $\widehat{J}^{1}_{F,S}$, respectively $\widehat{C}^{1}_{F}$.
+The boundaries of $X_{S}(\chi_{S}|_{J^{1}_{F,S}})$ and $X(\chi|_{C^{1}_{F}})$ also relativize over $\widehat{J}^{1}_{F,S}$, respectively $\widehat{C}^{1}_{F}$.
 
 The vertical arrows in (8.4.0.6), (8.4.0.7), (8.4.0.8), respectively (8.4.0.9), are not morphisms, but rather
 merely refer to the intuition, guided by Theorem 8.1.0.1 and Theorem 7.3.4.1(4), that each nuclear Fréchet space
@@ -664,8 +664,8 @@ in the top row of each diagram respectively, should be thought of as a Fréchet 
 quotient stack in the bottom row, respectively topological space/divisor.
 
 The idelic Mellin transform, both $S$-local and global, sets up a correspondence between closed substacks of
-the quotient stacks $[D_{F,S}/\mathrm{GL}_{1}(\mathbf{A}_{F,S})^{1}]$, respectively boundary divisors of $X_{S}(\chi_{S}|J^{1}_{F,S})$, and $[D_{F}/\mathrm{GL}_{1}(\mathbf{A}_{F})^{1}]$,
-respectively boundary divisors of $X(\chi|C^{1}_{F})$.
+the quotient stacks $[D_{F,S}/\mathrm{GL}_{1}(\mathbf{A}_{F,S})^{1}]$, respectively boundary divisors of $X_{S}(\chi_{S}|_{J^{1}_{F,S}})$, and $[D_{F}/\mathrm{GL}_{1}(\mathbf{A}_{F})^{1}]$,
+respectively boundary divisors of $X(\chi|_{C^{1}_{F}})$.
 
 We now refocus on the $S$-local Fréchet spaces in the diagram from (8.4.0.6).
 
@@ -677,7 +677,7 @@ We denote by $E$ any of the three Fréchet spaces in the top row of (8.4.0.6).
 For each $\varphi \in \mathcal{D}(J_{F,S})$:
 $$A(\varphi) : E \to E$$
 defined as $u \mapsto A(\varphi)(u) := \int_{J_{F,S}} \varphi(g) u(g^{-1}x) \, \mathrm{d}\overline{\mu}_{S}(g)$ is a continuous linear endomorphism, which, on $E =$
-$\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}_{00}(\mathbf{A}_{F,S}))$, admits an integral kernel, namely
+$\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}_{00}(\mathbf{A}_{F,S}))$, admits an integral kernel, namely
 $$\varphi(xy^{-1}) : J_{F,S} \times J_{F,S} \to \mathbf{C}$$
 
 ## PDF page 392
@@ -692,24 +692,24 @@ of the regular representation of $J_{F,S}$ on $\mathcal{S}_{\mathrm{E}}(J_{F,S})
 We now assume $\varphi$ is supported over the closed semigroup $J^{\ge 1}_{F,S}$ of $S$-idele classes of $S$-idelic norm at least
 $1$.
 
-Then $\varphi(1) = 0$ by smoothness of $\varphi$, and hence the kernel of $A(\varphi)$ on $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}_{00}(\mathbf{A}_{F,S}))$ vanishes
+Then $\varphi(1) = 0$ by smoothness of $\varphi$, and hence the kernel of $A(\varphi)$ on $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}_{00}(\mathbf{A}_{F,S}))$ vanishes
 along the diagonal.
 
 We will now proceed with a discussion aimed at fostering intuition for certain constructions and arguments
 to be carried out in Chapter 6 and Chapter 7.
 
-While $A(\varphi)$ is not a nuclear operator on $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}_{00}(\mathbf{A}_{F,S}))$, nor on $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}(\mathbf{A}_{F,S}))$, it is
-so on most of the Orbital subquotients, namely, it is so on $\mathscr{E}_{S,S_{p}}(\chi_{S}|J^{1}_{F,S})$ for every prime $p$ such that $S_{p} \subset S$,
+While $A(\varphi)$ is not a nuclear operator on $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}_{00}(\mathbf{A}_{F,S}))$, nor on $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}(\mathbf{A}_{F,S}))$, it is
+so on most of the Orbital subquotients, namely, it is so on $\mathscr{E}_{S,S_{p}}(\chi_{S}|_{J^{1}_{F,S}})$ for every prime $p$ such that $S_{p} \subset S$,
 by Theorem 7.4.2.1.
 
-It also has a convergent matrix trace on $\mathscr{E}_{S,S_{\infty}}(\chi_{S}|J^{1}_{F,S})$ (this is where we use the assumption on the
+It also has a convergent matrix trace on $\mathscr{E}_{S,S_{\infty}}(\chi_{S}|_{J^{1}_{F,S}})$ (this is where we use the assumption on the
 support on $\varphi$, through Theorem 7.4.3.2).
 
-While not nuclear, it has a trace even on $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}_{00}(\mathbf{A}_{F,S}))$, which is zero by the above observation
-on the integral kernel of $A(\varphi)$ on $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}_{00}(\mathbf{A}_{F,S}))$.
+While not nuclear, it has a trace even on $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}_{00}(\mathbf{A}_{F,S}))$, which is zero by the above observation
+on the integral kernel of $A(\varphi)$ on $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}_{00}(\mathbf{A}_{F,S}))$.
 
 The effect the continuous left-translation action of $J^{\ge 1}_{F,S}$ is, in a way, “small” and controlled along the
-diagonal over $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}_{00}(\mathbf{A}_{F,S}))$, and mostly concentrated over the orbital subquotients, on each of
+diagonal over $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}_{00}(\mathbf{A}_{F,S}))$, and mostly concentrated over the orbital subquotients, on each of
 which its trace is computable explicitly, for each test function $\varphi \in \mathcal{D}(J_{F,S})$ supported over $J^{\ge 1}_{F,S}$.
 
 We note that the quotient stacks $BU_{v} \simeq [D_{S,v}/F^{\times}_{v}]$, for each Archimedean place $v \in S$, are now promoted
@@ -722,7 +722,7 @@ The quotient stacks $[D_{S,v}/F^{\times}_{v}] \simeq [\mathbf{R}_{>0}/F^{\times}
 to periodic orbits: namely, on the level of coarse spaces, the continuous left-translation action by $J^{\ge 1}_{F,S}$ preserves
 them.
 
-The trace of $A(\varphi)$ on $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}(\mathbf{A}_{F,S}))$ will be defined and computed rigorously only in Chapter 7.
+The trace of $A(\varphi)$ on $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}(\mathbf{A}_{F,S}))$ will be defined and computed rigorously only in Chapter 7.
 
 We can proceed heuristically and combine the calculations performed in Theorem 7.4.2.1 and Theorem
 7.4.3.2, to infer that its value will be:
@@ -750,7 +750,7 @@ We further refer the reader to [Den, Thm.1.7(4)], where Deninger formulated expe
 theoretic interpretation to Weil’s Explicit Formulas for Hecke $L$-functions could be taking the form presented,
 so far only heuristically, in (8.4.0.10).
 
-We have so far learned that the continuous left-translation action of $J_{F,S}$ on $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}(\mathbf{A}_{F,S}))$ is,
+We have so far learned that the continuous left-translation action of $J_{F,S}$ on $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}(\mathbf{A}_{F,S}))$ is,
 when restricted to an action of the closed semigroup $J^{\ge 1}_{F,S}$, traceable, in a sense to be made rigorous within the
 next two Chapters, and the Orbital Schauder bases identified throughout this Chapter enable us to compute
 the trace explicitly.
@@ -758,8 +758,8 @@ the trace explicitly.
 We now explain how the Paley-Wiener levels fit into this scenario.
 
 It is a consequence of the classical Paley-Wiener Theorem, that the intersection of
-$$\mathrm{PW}_{S,X}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}, \mathcal{S}(\mathbf{A}_{F,S^{\prime}}))$$
-with $S^{\prime} = S \cup S_{0}$ for some saturated finite set of finite places $S_{0}$ of $F$, with $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}_{00}(\mathbf{A}_{F,S}))$, is
+$$\mathrm{PW}_{S,X}(\chi_{S^{\prime}}|_{J^{1}_{F,S^{\prime}}}, \mathcal{S}(\mathbf{A}_{F,S^{\prime}}))$$
+with $S^{\prime} = S \cup S_{0}$ for some saturated finite set of finite places $S_{0}$ of $F$, with $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}_{00}(\mathbf{A}_{F,S}))$, is
 trivial for all large enough $X > 0$. This is so, because the only Schwartz-Bruhat function $f \in \mathcal{S}(\mathbf{A}_{F,S_{\infty}})$ whose
 $S_{\infty}$-adelic Fourier transform is compactly supported, and that vanishes at any of the hyperplanes $\{x_{v} = 0\}$,
 $v \in S_{\infty}$, with infinite order, is constant with value zero.
@@ -780,17 +780,17 @@ We may therefore complete the diagram in (8.4.0.6) into the following:
 for all large enough $X > 0$.
 
 The content of Theorem 7.3.3.4 is that the Orbital subquotients
-$$\mathscr{E}^{\mathrm{ABS}}_{S^{\prime},S_{p},X}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}})$$
-inherit the Orbital Schauder bases from $\mathscr{E}_{S^{\prime},S_{p}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}})$ for all $X > 0$ large enough, and the directed union
-of the $\mathrm{PW}_{S,X}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}, \mathcal{S}(\mathbf{A}_{F,S^{\prime}}))$ is sequentially dense within $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}, \mathcal{S}(\mathbf{A}_{F,S^{\prime}}))$.
+$$\mathscr{E}^{\mathrm{ABS}}_{S^{\prime},S_{p},X}(\chi_{S^{\prime}}|_{J^{1}_{F,S^{\prime}}})$$
+inherit the Orbital Schauder bases from $\mathscr{E}_{S^{\prime},S_{p}}(\chi_{S^{\prime}}|_{J^{1}_{F,S^{\prime}}})$ for all $X > 0$ large enough, and the directed union
+of the $\mathrm{PW}_{S,X}(\chi_{S^{\prime}}|_{J^{1}_{F,S^{\prime}}}, \mathcal{S}(\mathbf{A}_{F,S^{\prime}}))$ is sequentially dense within $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S^{\prime}}|_{J^{1}_{F,S^{\prime}}}, \mathcal{S}(\mathbf{A}_{F,S^{\prime}}))$.
 
 This means that the Paley-Wiener levels retain knowledge of the trace of $A(\varphi)$ asymptotically as $X \to +\infty$,
-missing exactly the closed subspace $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}, \mathcal{S}_{00}(\mathbf{A}_{F,S^{\prime}}))$ which is the main cause of the non-nuclearity
-of $A(\varphi)$ on $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}, \mathcal{S}(\mathbf{A}_{F,S^{\prime}}))$.
+missing exactly the closed subspace $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S^{\prime}}|_{J^{1}_{F,S^{\prime}}}, \mathcal{S}_{00}(\mathbf{A}_{F,S^{\prime}}))$ which is the main cause of the non-nuclearity
+of $A(\varphi)$ on $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S^{\prime}}|_{J^{1}_{F,S^{\prime}}}, \mathcal{S}(\mathbf{A}_{F,S^{\prime}}))$.
 
 We are going to use the Paley-Wiener levels, in their invariant form (see Definition 7.3.2.3), in the next
 two Chapters, to define and compute the trace of $A(\varphi)$ rigorously, doing so with respect to coarser normed
-topologies on the ambient $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}, \mathcal{S}_{00}(\mathbf{A}_{F,S^{\prime}}))$, than its intrinsic nuclear Fréchet space topology.
+topologies on the ambient $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S^{\prime}}|_{J^{1}_{F,S^{\prime}}}, \mathcal{S}_{00}(\mathbf{A}_{F,S^{\prime}}))$, than its intrinsic nuclear Fréchet space topology.
 
 A choice of test function $\varphi \in \mathcal{D}(C_{F})$, which we again assume supported over the closed semigroup $C^{\ge 1}_{F}$,
 induces a test function $\varphi_{S} \in \mathcal{D}(J_{F,S})$ for all large enough $S$. Indeed, for $S$ any finite set of places of $F$
@@ -806,8 +806,8 @@ PERIODIC ORBITS AND FIXED POINTS
 In particular, $\varphi$ is invariant under the compact subgroup given by the image in $C_{F}$ of $\widehat{\mathcal{O}}^{\times}_{\Sigma_{F}-S^{\prime}} \subset \mathrm{GL}_{1}(\mathbf{A}_{F})$
 for all large enough $S^{\prime}$. Upon replacing $S^{\prime}$ with a larger set $S^{\prime}$ if necessary, so as to have that $\chi$ is unramified
 outside $S^{\prime}$ and $\mathrm{Pic}(\mathcal{O}_{F,S^{\prime}}) = 1$, we may descend $\varphi$ to a unique $\varphi_{S^{\prime}} \in \mathcal{D}(J_{F,S^{\prime}})$ and $A(\varphi_{S^{\prime}})$ acts on
-$$\mathrm{H}_{0,\mathrm{cont}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}, \mathcal{S}(\mathbf{A}_{F,S^{\prime}}))$$
-compatibly with the action of $A(\varphi)$ on the global $\mathrm{H}_{0,\mathrm{cont}}(\chi|C^{1}_{F}, \mathcal{S}(\mathbf{A}_{F}))$ under the transition operator $\overline{\pi}_{S^{\prime}}$,
+$$\mathrm{H}_{0,\mathrm{cont}}(\chi_{S^{\prime}}|_{J^{1}_{F,S^{\prime}}}, \mathcal{S}(\mathbf{A}_{F,S^{\prime}}))$$
+compatibly with the action of $A(\varphi)$ on the global $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^{1}_{F}}, \mathcal{S}(\mathbf{A}_{F}))$ under the transition operator $\overline{\pi}_{S^{\prime}}$,
 which, under the above conditions on $S^{\prime}$, is a linear topological isomorphism.
 
 We conclude this Chapter by observing that as $S$ grows to encompass all places of $F$, the trace of $A(\varphi_{S})$
@@ -815,18 +815,18 @@ stabilizes in finite time, i.e. for all large enough finite sets of finite place
 places, the trace of $A(\varphi_{S^{\prime}})$ remains constant with respect to $S^{\prime}$. The largeness of $S^{\prime}$ depends on the character
 $\chi$ and on the support of the test function $\varphi \in \mathcal{D}(C_{F})$.
 
-We are led to eyeball the following situation: the continuous operator $A(\varphi)$ on $\mathrm{H}_{0,\mathrm{cont}}(\chi|C^{1}_{F}, \mathcal{S}(\mathbf{A}_{F}))$ is
+We are led to eyeball the following situation: the continuous operator $A(\varphi)$ on $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^{1}_{F}}, \mathcal{S}(\mathbf{A}_{F}))$ is
 traceable. Its trace will be defined rigorously in the next two Chapters, for then to be computed in Chapter 7.
-Its trace is concentrated at the $S$-local level, on the orbital subquotients of $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}(\mathbf{A}_{F,S}))$, for
+Its trace is concentrated at the $S$-local level, on the orbital subquotients of $\mathrm{H}_{0,\mathrm{cont}}(\chi_{S}|_{J^{1}_{F,S}}, \mathcal{S}(\mathbf{A}_{F,S}))$, for
 $S$ large enough.
 
 The Paley-Wiener levels approximate the orbital subquotients from within, filling them in asymptotically,
 and they inhert the full Orbital Schauder bases on the primary Orbital quotients.
 
 At the global level, the topologically short exact sequence:
-$$0 \to \mathrm{H}_{0,\mathrm{cont}}(\chi|C^{1}_{F}, \mathcal{S}_{0}(\mathbf{A}_{F})) \to \mathcal{S}_{\mathrm{E}}(C_{F})(\chi|C^{1}_{F}) \to \mathscr{H}_{F}(\chi|C^{1}_{F}) \to 0$$
+$$0 \to \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^{1}_{F}}, \mathcal{S}_{0}(\mathbf{A}_{F})) \to \mathcal{S}_{\mathrm{E}}(C_{F})(\chi|_{C^{1}_{F}}) \to \mathscr{H}_{F}(\chi|_{C^{1}_{F}}) \to 0$$
 leads to computing the trace of $A(\varphi)$ by computing the trace of operators induced by the continuous
-left-translation action of $C_{F}$ on the spectral subquotient $\mathscr{H}_{F}(\chi|C^{1}_{F})$ (see Theorem 7.4.1.1).
+left-translation action of $C_{F}$ on the spectral subquotient $\mathscr{H}_{F}(\chi|_{C^{1}_{F}})$ (see Theorem 7.4.1.1).
 
 This is a first look into the elements that enter the trace calculation in Chapter 7. The idea is to perform
 it not within the nuclear Fréchet spaces from above, but rather within normed completions, whose topology is
@@ -837,7 +837,7 @@ what puts constraints on the zeros that are allowed to contribute to the spectra
 only some of the point-evaluation functionals from (7.1.4.6) of Theorem 7.1.4.2, will remain continuous with
 respect to coarser normed topologies, and only those, will be contributing to the spectral side.
 
-It turns out that the coarsest possible normed completion of $\mathrm{H}_{0,\mathrm{cont}}(\chi|C^{1}_{F}, \mathcal{S}_{0}(\mathbf{A}_{F}))$ which enables the
+It turns out that the coarsest possible normed completion of $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^{1}_{F}}, \mathcal{S}_{0}(\mathbf{A}_{F}))$ which enables the
 trace calculation, is a Sobolev completion of degree $2[F:\mathbf{Q}]$. We will be studying these Sobolev completions
 in the next Chapter.
 

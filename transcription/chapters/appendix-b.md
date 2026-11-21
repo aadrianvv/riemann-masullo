@@ -3330,7 +3330,7 @@ depends only on the one in assumption (1) on $a_N$.
 The same reasoning applies to the range $x/2\le m<N$, by writing $m=N-r$ where $1\le r\le N-x/2$. We therefore have
 
 $$
-\log\frac{N-1/2}{\overline{m}} = \log\left(1+\frac{N-r-(N-1/2)}{N-r}\right) \ge \log\left(1+\frac{r-1/2}{N-r}\right) \ge \frac12\cdot\frac{r-1/2}{N-r}\ge \frac12\cdot\frac{r-1/2}{2N}\ge \frac{r}{3x}.
+\log\left(\frac{x}{m}\right) \ge \log\left(\frac{N-1/2}{N-r}\right) = \log\left(1+\frac{r-1/2}{N-r}\right) \ge \frac12\left(\frac{r-1/2}{N-r}\right) \ge \frac12\,\frac{r}{N} \ge \frac13\,\frac{r}{x}.
 $$
 
 The part of the sum $\sum_{m\ge 1}|a_m|/(m^{\sigma+c}|\log(x/m)|)$ indexed by the integers $m$ in that range is therefore
@@ -3516,7 +3516,7 @@ $$
 for constants $M$ and $M'$ depending on $t_0$ and $\alpha$. Thus, we just need to verify $\log(\log x)/x^{A/\log(\log x)}\to 0$ as $x\to+\infty$ for any $A>0$. For $y=\log(x)\to+\infty$, this is
 
 $$
-\frac{\log y}{e^{Ay/\log(y)}} \le \frac{\log(y)}{e^{Ay^{1-\varepsilon}}}
+\frac{logy}{e^{Ay/\log(y)}} \le \frac{\log(y)}{e^{Ay^{1-\varepsilon}}} \to 0
 $$
 
 for any $\varepsilon>0$. This gives the desired decay on $f_x(s)$.
@@ -3524,13 +3524,13 @@ for any $\varepsilon>0$. This gives the desired decay on $f_x(s)$.
 We may write
 
 $$
--\frac{\zeta'_F(s-it_0)}{\zeta_F(s-it_0)} + \frac{x^{1+it_0-s}}{1+it_0-s} = -\frac{\zeta'_F(s-it_0)}{\zeta_F(s-it_0)} + \frac{1}{1+it_0-s} + \frac{1}{1+it_0-s} - \frac{x^{1+it_0-s}}{1+it_0-s} \tag{B.7.1.16}
+\frac{\zeta'_F(s-it_0)}{\zeta_F(s-it_0)} - \frac{x^{1+it_0-s}}{1+it_0-s} = \frac{\zeta'_F(s-it_0)}{\zeta_F(s-it_0)} - \frac{1}{1+it_0-s} + \frac{1}{1+it_0-s} - \frac{x^{1+it_0-s}}{1+it_0-s} \tag{B.7.1.16}
 $$
 
 and observe that both functions
 
 $$
--\frac{\zeta'_F(s-it_0)}{\zeta_F(s-it_0)} + \frac{1}{1+it_0-s},\quad \frac{1}{1+it_0-s} - \frac{x^{1+it_0-s}}{1+it_0-s}
+\frac{\zeta'_F(s-it_0)}{\zeta_F(s-it_0)} - \frac{1}{1+it_0-s},\quad \frac{1}{1+it_0-s} - \frac{x^{1+it_0-s}}{1+it_0-s}
 $$
 
 extend by continuity across the singularity $s=1+it_0$ to analytic functions over $1+i\mathbf{R}$. Upon letting $s$ tend to $1+it_0$ in (B.7.1.8) we obtain$^{30}$ (B.7.1.9) using L'Hôpital's rule. The implied constant in (B.7.1.9) is absolute and amounts to the sum of $\|f_x(s)\|_u$ from (B.7.1.8) and the limit as $s\to 1+it_0$ over $1+i\mathbf{R}$ of the leftmost function in (B.7.1.16).
@@ -3734,7 +3734,7 @@ converge absolutely and uniformly over $1+i\mathbf{R}$.
 From (B.7.2.16) and Theorem B.7.2.1, we deduce that the partial sums in (B.7.2.15) converge in the desired manner because for $x<X$ we have
 
 $$
-G_X(s)-G_x(s) = \sum_{x\le N(\mathfrak{p}^m)<X}\frac{\chi(\mathfrak{p})}{N(\mathfrak{p})^s} - \sum_{x\le N(\mathfrak{p}^m)<X}\frac{\chi(\mathfrak{p})}{N(\mathfrak{p})^s}
+G_X(s)-G_x(s) = \sum_{N(\mathfrak{p}^m)\ge x}\frac{\chi(\mathfrak{p})}{N(\mathfrak{p})^s} - \sum_{N(\mathfrak{p}^m)\ge X}\frac{\chi(\mathfrak{p})}{N(\mathfrak{p})^s}
 $$
 
 with each sum defined as in Remark B.7.2.2. $\square$

@@ -990,9 +990,9 @@ to be the unique continuous linear operator uniquely determined by the following
 
 (1) $\mathrm{PV}_v(\mathcal S(F_v)(\omega))\subset\mathcal S(F_v)(\omega)$.
 
-(2) $\mathrm{PV}_v$ induces the identity operator on $\mathcal S(F_v)(\omega)$ if $\chi$ is non-trivial.
+(2) $\mathrm{PV}_v$ induces the identity operator on $\mathcal S(F_v)(\omega)$ if $\omega$ is non-trivial.
 
-(3) $\mathrm{PV}_v=P_v$ on $\mathcal S(F_v)(\omega)$ if $\chi$ is trivial.
+(3) $\mathrm{PV}_v=P_v$ on $\mathcal S(F_v)(\omega)$ if $\omega$ is trivial.
 
 We refer to $\mathrm{PV}_v$ as Weil’s Principal Value operator on $\mathcal S(F_v)$.
 
@@ -1192,7 +1192,7 @@ $$
 
 Proof. (1) : The definition of $R_{H_Z}$ makes sense on $C^\infty(\mathbf R^m)$. The restriction to $H_Z$ of a smooth function on $\mathbf R^m$ is indeed smooth on $H_Z$, since $H_Z$ is a global smooth complete intersection in $\mathbf R^m$ defined as the vanishing locus of the coordinates $x_k:\mathbf R^m\to\mathbf R$ for $k\in Z$, and formation of the derivatives $\partial_{x_k}^{\alpha_k}$ for $k\in Z$ commutes with $R_{H_Z}$ on each $f\in C^\infty(\mathbf R^m)$.
 
-For $\gamma,\beta'\in\mathbf N^{m-\lvert Z\rvert}$, we define $\alpha:=(0,\gamma)\in\mathbf N^m$ and $\beta:=(0,\gamma')$, with $0$ denoting the origin in $\mathbf N^{\lvert Z\rvert}$. Then we have:
+For $\gamma,\gamma'\in\mathbf N^{m-\lvert Z\rvert}$, we define $\alpha:=(0,\gamma)\in\mathbf N^m$ and $\beta:=(0,\gamma')$, with $0$ denoting the origin in $\mathbf N^{\lvert Z\rvert}$. Then we have:
 
 $$
 \sup_{x\in H_Z}\lvert x_{Z^c}^{\beta}\partial_{x_{Z^c}}^{\beta'}f(x_Z,0)\rvert\le\sup_{x\in\mathbf R^m}\lvert x^\alpha\partial^\alpha f(x)\rvert \tag{5.3.2.7}
@@ -1760,7 +1760,7 @@ We know that, for every integer $m\ge 0$, $\partial_x^m\varphi$ is continuous on
 This is seen by observing that we have, over $(-A,A)$:
 
 $$
-\left|\frac{\varphi(x)}{x}\right|=\frac{1}{2A}\int_{-A}^{A}|(\partial_x\varphi)(y)|\,\mathrm{d}y\le C\frac{1}{2A}\int_{-A}^{A}|y|^M\,\mathrm{d}y \tag{5.3.3.23}
+\left|\frac{\varphi(x)}{x}\right|\le\frac{1}{2A}\int_{-A}^{A}|(\partial_x\varphi)(y)|\,\mathrm{d}y\le C\frac{1}{2A}\int_{-A}^{A}|y|^M\,\mathrm{d}y \tag{5.3.3.23}
 $$
 
 for some integer $M>1$ and a real number $C>0$, which gives the desired result, as $A\to 0+$. To argue that we have $|\partial_x\varphi(y)|\le C|y|^M$ for $y\in(-A,A)$, we used boudedness of $M_x$ and continuity of $\partial_x$ on $\mathcal S_I(\mathbf R^\times)$, to deduce that $\partial_x\varphi$ is of the form $x^Mu$ for some $u\in\mathcal S_I(\mathbf R^\times)$, and hence $x^Mu$ tends to $0$ as $|x|\to 0+$, giving boundedness of $u$ over $(-A,A)$ by some $C>0$, and the bound $|\partial_x\varphi(y)|\le C|y|^M$ over $(-A,-\varepsilon)\cup(\varepsilon,A)$, propagated to $(-A,A)$ by continuity.
@@ -2046,12 +2046,12 @@ $$
 *The identification of the operators $\Phi_{F,S,1}$ and of the operator from (5.3.4.8) is up to a linear topological automorphism of $\mathcal S_{00}(\mathbf A_{F,S})$ only, which is the following one: we choose $\{g_1,\dots,g_{N_S}\}$ are representatives in $\mathrm{GL}_1(\mathbf A_{F,S})^1$ of the $N_S$ ideal classes in $\mathrm{Pic}(\mathcal O_F)$ that are trivialized in $\mathrm{Pic}(\mathcal O_{F,S})$, and for $f\in\mathcal S_{00}(\mathbf A_{F,S})$ of the form $f_\infty\otimes\bigotimes_{v\in S_f}f_v$, with $f_v\in\mathcal S(F_v^\times)$ for each finite place $v\in S$, we have:*
 
 $$
-\Phi_{F,S,1}(f)(x)=\sum_{1\le i\le N_S}\int_{g\in E_{S_\infty,0}}\sum_{\xi\in\mathcal O_F^\times}f_\infty(\xi(g_i)_\infty gx_\infty)\,\mathrm{d}\mu_{S_\infty,1}(g)\cdot\sum_{\bar\varphi\in\mathcal O_{F,S}^\times/\mathcal O_F^\times}\prod_{v\in S_f}\int_{g_v\in\mathcal O_{F_v}^\times}\sum_{m_v\in\mathbf Z}f_v(\bar\varphi g_v(g_i)_vx_v)\,\mathrm{d}\mu_v(g_v) \tag{5.3.4.9}
+\Phi_{F,S,1}(f)(x)=\sum_{1\le i\le N_S}\int_{g\in E_{S_\infty,0}}\sum_{\xi\in\mathcal O_F^\times}f_\infty(\xi(g_i)_\infty gx_\infty)\,\mathrm{d}\mu_{S_\infty,1}(g)\cdot\sum_{\xi'\in\mathcal O_{F,S}^\times/\mathcal O_F^\times}\prod_{v\in S_f}\int_{g_v\in\mathcal O_{F_v}^\times}\sum_{m_v\in\mathbf Z}f_v(\xi' g_v(g_i)_vx_v)\,\mathrm{d}\mu_v(g_v) \tag{5.3.4.9}
 $$
 
 *writing $x\in\mathbf A_{F,S}$ as $(x_\infty,(x_v)_{v\in S_f})$, where $E_{S_\infty,0}$ is the fundamental domain from (A.2.4.5) for the continuous left translation action of $\mathcal O_F^\times$ on $\mathrm{GL}_1(\mathbf A_{F,S_\infty})^1$.*
 
-*Since $(\prod_{v\in S_f}\mathcal O_{F_v}^\times)\times(\mathcal O_{F,S}^\times/\mathcal O_F^\times)$ has finite index $h_F$ in $\prod_{v\in S_f}F_v^\times$, we may choose the $g_i$'s so as to be of the form $(1,(g_{i,v})_{v\in S_f})$, i.e. each of their projections to $\mathrm{GL}_1(\mathbf A_{F,S_\infty})$ is $1$.*
+*Since $(\prod_{v\in S_f}\mathcal O_{F_v}^\times)\cdot(\mathcal O_{F,S}^\times/\mathcal O_F^\times)$ has finite index $h_F$ in $\prod_{v\in S_f}F_v^\times$, we may choose the $g_i$'s so as to be of the form $(1,(g_{i,v})_{v\in S_f})$, i.e. each of their projections to $\mathrm{GL}_1(\mathbf A_{F,S_\infty})$ is $1$.*
 
 *Upon making this choice, the value, for each $x\in\mathrm{GL}_1(\mathbf A_{F,S})$, of the integral:*
 

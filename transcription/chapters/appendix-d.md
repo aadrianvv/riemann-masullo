@@ -2715,7 +2715,7 @@ FIGURE 1. A counterclockwise rectangular contour, with $c=a+\varepsilon$, $c'=b-
 By the Cauchy Integral Formula applied to the contour in Figure 1, we have
 
 $$
-\partial_s^k(s^N\phi)|_{s=z}=-\frac{k!}{2\pi i}\int_{a+\varepsilon-iT}^{a+\varepsilon+iT}f_z(s)\,\mathrm{d}s+\frac{k!}{2\pi i}\int_{b-\varepsilon-iT}^{b-\varepsilon+iT}f_z(s)\,\mathrm{d}s+\frac{k!}{2\pi i}\int_{b-\varepsilon-iT}^{a+\varepsilon-iT}f_z(s)\,\mathrm{d}s-\frac{k!}{2\pi i}\int_{b-\varepsilon+iT}^{a+\varepsilon+iT}f_z(s)\,\mathrm{d}s. \tag{D.3.1.3}
+\partial_s^k(s^N\phi)|_{s=z}=-\frac{k!}{2\pi i}\int_{a+\varepsilon-iT}^{a+\varepsilon+iT}f_z(s)\,\mathrm{d}s+\frac{k!}{2\pi i}\int_{b-\varepsilon-iT}^{b-\varepsilon+iT}f_z(s)\,\mathrm{d}s+\frac{k!}{2\pi i}\int_{a+\varepsilon-iT}^{b-\varepsilon-iT}f_z(s)\,\mathrm{d}s-\frac{k!}{2\pi i}\int_{a+\varepsilon+iT}^{b-\varepsilon+iT}f_z(s)\,\mathrm{d}s. \tag{D.3.1.3}
 $$
 
 In light of (D.3.1.2), we have:
@@ -3328,7 +3328,7 @@ Terminology D.3.3.1 (Passage to $G^1$-isotypes). We will refer to the linear map
 Proof of Proposition D.3.3.12. Let $\rho_G$ denoted the continuous left-translation action of $G$ on $\mathcal{S}(G)$: $(\rho_G(g))(f) : x\mapsto f(g^{-1}x)$ for $x\in G$. Upon denoting by $\mathcal{S}_a$ the Hausdorff locally convex topological $\mathbf{C}$-vector space $\mathcal{S}(G)$ equipped with the continuous action $|\cdot|^a_G\cdot\rho_G$, the induced continuous action of $G$ on the product $\prod_{a\in I}\mathcal{S}_a$ preserves the range of the linear injection $\prod_{a\in I}T_a$ that is a topological (even closed) embedding by design of the Hausdorff locally convex topology on $\mathcal{S}_I(G)$ because
 
 $$
-|g|^a_G(\rho_G(g))(|\cdot|^a_G f(\cdot))(x)=|g|^a_G|g^{-1}x|^a_G f(g^{-1}x)=|x|^a_G f(g^{-1}x).
+|g|^a_G(\rho_G(g))(|x|^a f(x))=|g|^a_G|g^{-1}x|^a_G f(g^{-1}x)=|x|^a_G f(g^{-1}x).
 $$
 
 Thus, $(g.f)(x)=f(g^{-1}x)$ preserves $\mathcal{S}_I(G)\subset\prod_{a\in I}\mathcal{S}_a$ and establishes the desired continuity for that $G$-action on $\mathcal{S}_I(G)$.
@@ -3703,6 +3703,6 @@ $$
 
 **D.3. SCHWARTZ-BRUHAT FUNCTIONS WITH I-EXPONENTIAL DECAY** · **821**
 
-where $C_k:=\max_{1\le k-r,r\ne k}\sup_{x\in\mathbf{R}}|\partial^{k-r}\psi|$ and the right side in (D.3.6.4) tends to zero as $m\to+\infty$, proving that $\phi_m\to\phi$ in $\mathcal{S}_I(\mathbf{R})$. $\square$
+where $C_k:=\max_{1\le k\le r,r\ne k}\sup_{x\in\mathbf{R}}|\partial^{k-r}\psi|$ and the right side in (D.3.6.4) tends to zero as $m\to+\infty$, proving that $\phi_m\to\phi$ in $\mathcal{S}_I(\mathbf{R})$. $\square$
 
 ## PDF page 822

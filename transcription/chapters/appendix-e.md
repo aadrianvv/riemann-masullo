@@ -2526,7 +2526,7 @@ We begin with the following construction:
 
 (e) $\mathbf{A}_\mathbf{Q}$ with the adelic topology.
 
-(f) $\mathbf{A}_\mathbf{\mathbf{Q}}^\times$ with the idelic topology.
+(f) $\mathbf{A}_{\mathbf{Q}}^\times$ with the idelic topology.
 
 (g) The closed subgroups of all of the above.
 
@@ -2696,10 +2696,7 @@ satisfying the following axioms:
 
 (a) the diagrams
 
-$$
-R \times_{s,X,t} R \xrightarrow{c} R \tag{E.4.1.1}
-$$
-
+(E.4.1.1)
 
 ```latex
 \begin{tikzcd}[row sep=large, column sep=large]
@@ -2765,10 +2762,7 @@ compatible with the structure morphisms of $(X, R, s, t, c, e, i)$ and $(X', R',
 
 (1) (Compatibility with source and target)
 
-$$
-R \to R', \quad X \to X' \tag{E.4.1.8}
-$$
-
+(E.4.1.8)
 
 ```latex
 \begin{tikzcd}[row sep=large, column sep=large]
@@ -2784,10 +2778,7 @@ X \arrow[r] & X'
 
 (2) (Compatibility with the composition laws)
 
-$$
-R \times_{s,X,t} R \xrightarrow{(f_2,f_2)} R' \times_{s',X',t'} R' \tag{E.4.1.9}
-$$
-
+(E.4.1.9)
 
 ```latex
 \begin{tikzcd}[row sep=large, column sep=large]
@@ -2798,10 +2789,7 @@ R \arrow[r,"f_2" below] & R'
 
 (3) (Compatibility with units)
 
-$$
-X \xrightarrow{f_1} X' \tag{E.4.1.10}
-$$
-
+(E.4.1.10)
 
 ```latex
 \begin{tikzcd}[row sep=large, column sep=large]
@@ -2812,10 +2800,7 @@ R \arrow[r,"f_2" below] & R'
 
 (4) (Compatibility with inversions)
 
-$$
-R \xrightarrow{f_2} R' \tag{E.4.1.11}
-$$
-
+(E.4.1.11)
 
 ```latex
 \begin{tikzcd}[row sep=large, column sep=large]
@@ -4190,23 +4175,23 @@ $^{20}$This is not a sentence; what is it meant to be saying? Rewrite as an actu
 
 **906** · **CHAPTER E. TOPOLOGICAL STACKS**
 
-REMARK E.5.3.5. We let $\mathcal{J}$ be a locally small category, and now describe the pseudo-functors from $2\text{-}\mathrm{Cat}(\mathcal{J})$, where $2\text{-}\mathrm{Cat}(\mathcal{J})$ is the 2-category associated to $\mathcal{J}$ constructed in Construction E.5.2.7, to a fixed 2-category $\mathcal{C}$. In the special case when $\mathcal{C}$ is small, the description we shall obtain will match the definition of *weak 2-functor* from part (2) of [SP, Tag 003N], up to a discrepancy concerning the coherence constraint, and specifically the transformation $\gamma_{\bullet,\bullet,\bullet}$. In our conventions, which follow closely those in [GR, Ch. 2], $\gamma_{\bullet,\bullet,\bullet}$ is the inverse of the analogous transformation $\alpha$ from [SP, Tag 003N].
+REMARK E.5.3.5. We let $\mathcal{I}$ be a locally small category, and now describe the pseudo-functors from $2\text{-}\mathrm{Cat}(\mathcal{I})$, where $2\text{-}\mathrm{Cat}(\mathcal{I})$ is the 2-category associated to $\mathcal{I}$ constructed in Construction E.5.2.7, to a fixed 2-category $\mathcal{C}$. In the special case when $\mathcal{C}$ is small, the description we shall obtain will match the definition of *weak 2-functor* from part (2) of [SP, Tag 003N], up to a discrepancy concerning the coherence constraint, and specifically the transformation $\gamma_{\bullet,\bullet,\bullet}$. In our conventions, which follow closely those in [GR, Ch. 2], $\gamma_{\bullet,\bullet,\bullet}$ is the inverse of the analogous transformation $\alpha$ from [SP, Tag 003N].
 
-A pseudo-functor $2\text{-}\mathrm{Cat}(\mathcal{J})\to\mathcal{C}$ in the sense of Definition E.5.3.1 is the datum of:
+A pseudo-functor $2\text{-}\mathrm{Cat}(\mathcal{I})\to\mathcal{C}$ in the sense of Definition E.5.3.1 is the datum of:
 
-(1) a class function $F:\mathrm{Ob}(\mathcal{J})\to\mathrm{Ob}(\mathcal{C})$.
+(1) a class function $F:\mathrm{Ob}(\mathcal{I})\to\mathrm{Ob}(\mathcal{C})$.
 
-(2) For each morphism $f:x\to y$ in $\mathcal{J}$, a 1-morphism $F(f):F(x)\to F(y)$ in $\mathcal{C}$.
+(2) For each morphism $f:x\to y$ in $\mathcal{I}$, a 1-morphism $F(f):F(x)\to F(y)$ in $\mathcal{C}$.
 
-(3) For every object $x\in\mathcal{J}$, a 2-morphism $\delta_x:F(\mathbf{1}_x)\Rightarrow\mathbf{1}_{F(x)}$ in $\mathcal{C}$.
+(3) For every object $x\in\mathcal{I}$, a 2-morphism $\delta_x:F(\mathbf{1}_x)\Rightarrow\mathbf{1}_{F(x)}$ in $\mathcal{C}$.
 
 (4) For every pair of morphisms $f:x\to y$, $g:y\to z$, a 2-morphism $\gamma_{f,g}:F(g)\circ F(f)\Rightarrow F(g\circ f)$ in $\mathcal{C}$.
 
 The above data is then required to satisfy the Unit Axiom and the Associativity of Compositions Axiom as per Definition E.5.3.1, which in this special case take the following form:
 
-(1) $\gamma_{f,g}$ and $\delta_x$ are 2-isomorphisms for all $x\in\mathrm{Ob}(\mathcal{J})$ and all morphisms $f,g$ in $\mathcal{J}$.
+(1) $\gamma_{f,g}$ and $\delta_x$ are 2-isomorphisms for all $x\in\mathrm{Ob}(\mathcal{I})$ and all morphisms $f,g$ in $\mathcal{I}$.
 
-(2) (Unit Axiom) For any morphism $f:x\to y$ in $\mathcal{J}$, we have:
+(2) (Unit Axiom) For any morphism $f:x\to y$ in $\mathcal{I}$, we have:
 
 $$
 \mathbf{1}_{F(f)}\star\delta_x = \gamma_{f,\mathbf{1}_x}
@@ -4218,7 +4203,7 @@ $$
 \delta_y\star\mathbf{1}_{F(f)} = \gamma_{\mathbf{1}_y,f}.
 $$
 
-(3) (Associativity of Compositions Axiom) For any triple of morphisms $f:x\to y$, $g:y\to z$, $h:z\to w$ in $\mathcal{J}$, we have:
+(3) (Associativity of Compositions Axiom) For any triple of morphisms $f:x\to y$, $g:y\to z$, $h:z\to w$ in $\mathcal{I}$, we have:
 
 $$
 \gamma_{f,h\circ g}\odot(\gamma_{g,h}\star\mathbf{1}_{F(f)}) = \gamma_{g\circ f,h}\odot(\mathbf{1}_{F(h)}\star\gamma_{f,g}).
