@@ -1253,7 +1253,7 @@ We begin by proving an analog of Lemma E.1.2.1; see [Str, Prop. 2.22] and [Str, 
 
 Lemma E.2.2.4. Let $X$ be a compactly generated space, and $\Sigma\subset 2^{X\times X}$ the set of all subspaces $R\subset X\times X$ such that:
 
-(a) $R_{set}$ is an equivalence relation on $X_{set}\times X_{set}$.
+(a) $R^{set}$ is an equivalence relation on $X^{set}\times X^{set}$.
 
 (b) $R$ is closed in $X\times X$.
 
@@ -1264,7 +1264,7 @@ R_X:=\bigcap_{R\in\Sigma}R
 \tag{E.2.2.7}
 $$
 
-we have that $R^X_{set}$ is an equivalence relation on $X_{set}\times X_{set}$, and $R_X$ is closed in $X\times X$. Moreover:
+we have that $R^X_{set}$ is an equivalence relation on $X^{set}\times X^{set}$, and $R_X$ is closed in $X\times X$. Moreover:
 
 (1) formation of $h(X)$ is natural in $X$,
 
@@ -1347,7 +1347,7 @@ Remark E.2.2.6. On the construction and properties of $h(X)$, we observe:
 
 (4) contrary to the case of colimits in CG, the underlying set of a small colimit in CGWH is not the colimit of the underlying sets of the objects within the diagram in CGWH unless the colimit computed in CG is already weakly Hausdorff; see Example E.2.2.7 below.
 
-Example E.2.2.7. The following is an example of a small (filtered) colimit in CGWH of a small diagram $P:I\to\mathrm{CGWH}$, such that the set-theoretic colimit $\operatorname{colim}_{i\in I}P(i)_{set}$ is not the set underlying $\operatorname{colim}_I P$. We let $I:=\mathbf N_{>0}$ be the positive integers with their natural order, defining $\operatorname{Map}_I(i,j)$ to be the singleton set if $i\le j$, and the empty set otherwise. We define $P(i):=S^1$, the unit circle, and for any morphism $i\to j$ in $I$, we set $P(i\to j)$ to be the the map raising $z\in S^1$ to the $2^{j-i}$-th power. Then the colimit in Spaces of the resulting diagram of underlying topological spaces is not T1, even though each $P(i)$ is compact Hausdorff. In particular, the colimit $\operatorname{colim}_I P$ in CGWH will have as its underlying set a non-trivial quotient of the set-theoretic colimit of the underlying sets of the $P(i)$'s. The reader is referred to [Du, Appendix 2, Example 2, p. 422].
+Example E.2.2.7. The following is an example of a small (filtered) colimit in CGWH of a small diagram $P:I\to\mathrm{CGWH}$, such that the set-theoretic colimit $\operatorname{colim}_{i\in I}P(i)^{set}$ is not the set underlying $\operatorname{colim}_I P$. We let $I:=\mathbf N_{>0}$ be the positive integers with their natural order, defining $\operatorname{Map}_I(i,j)$ to be the singleton set if $i\le j$, and the empty set otherwise. We define $P(i):=S^1$, the unit circle, and for any morphism $i\to j$ in $I$, we set $P(i\to j)$ to be the the map raising $z\in S^1$ to the $2^{j-i}$-th power. Then the colimit in Spaces of the resulting diagram of underlying topological spaces is not T1, even though each $P(i)$ is compact Hausdorff. In particular, the colimit $\operatorname{colim}_I P$ in CGWH will have as its underlying set a non-trivial quotient of the set-theoretic colimit of the underlying sets of the $P(i)$'s. The reader is referred to [Du, Appendix 2, Example 2, p. 422].
 
 ## PDF page 854
 
@@ -2038,13 +2038,13 @@ The union WF of all the $V_{\alpha}$ as $\alpha$ varies across all limit ordinal
 
 Before moving forward, we establish two preparatory results. The following lemma assumes the Axiom of Choice.
 
-Lemma E.3.1.2. *Let $\kappa$ be a cardinal, and $\mathrm{Sets}_{\le\kappa}$ the class of all sets J whose cardinality satisfies $|J|\le\kappa$. Then there exists a sub-class $\mathrm{Sets}^{\le\kappa}\subset\mathrm{Sets}_{\le\kappa}$ such that:*
+Lemma E.3.1.2. *Let $\kappa$ be a cardinal, and $\mathrm{Sets}_{\le\kappa}$ the class of all sets J whose cardinality satisfies $|J|\le\kappa$. Then there exists a sub-class $\mathrm{Sets}_{\le\kappa}\subset\mathrm{Sets}_{\le\kappa}$ such that:*
 
-*(1) $\mathrm{Sets}^{\le\kappa}$ is a set.*
+*(1) $\mathrm{Sets}_{\le\kappa}$ is a set.*
 
-*(2) For any $J\in\mathrm{Sets}_{\le\kappa}$ there exists $J'\in\mathrm{Sets}^{\le\kappa}$ and a bijective set-function $f:J'\to J$.*
+*(2) For any $J\in\mathrm{Sets}_{\le\kappa}$ there exists $J'\in\mathrm{Sets}_{\le\kappa}$ and a bijective set-function $f:J'\to J$.*
 
-Proof. Let $\lambda$ be a cardinal satisfying $\lambda\le\kappa$. By the Axiom of Choice, there exists an ordinal $\alpha$ such that $|\alpha|=\lambda$. We denote $\alpha_{\lambda}:=\inf\{\alpha\mid |\alpha|=\lambda\}$, the initial ordinal associated to $\lambda$. As $\alpha_{\lambda}\subset V_{\alpha_{\lambda}}$ and, for all cardinals $\lambda,\lambda'$ satisfying $\lambda\le\lambda'\le\kappa$, we have$^{16}$ $\alpha_{\lambda}\le\alpha_{\lambda'}\le\alpha_{\kappa}$, we deduce the containments $V_{\alpha_{\lambda}}\subset V_{\alpha_{\lambda'}}\subset V_{\alpha_{\kappa}}$ by [Kunen, Ch. III, Lemma 2.3]. We set $\mathrm{Sets}^{\le\kappa}:=V_{\alpha_{\kappa}+1}$. For any element J of $\mathrm{Sets}_{\le\kappa}$, there exists a least ordinal $\alpha_{|J|}$ with $|J|=|\alpha_{|J|}|$, and we have $\alpha_{|J|}\subset V_{\alpha_{|J|}}\subset V_{\alpha_{\kappa}}$, implying $\alpha_{|J|}\in V_{\alpha_{\kappa}+1}=\mathrm{Sets}^{\le\kappa}$. In other words, there exists an element $J'\in\mathrm{Sets}^{\le\kappa}$, itself a set, and a bijection $f:J'\to J$. $\square$
+Proof. Let $\lambda$ be a cardinal satisfying $\lambda\le\kappa$. By the Axiom of Choice, there exists an ordinal $\alpha$ such that $|\alpha|=\lambda$. We denote $\alpha_{\lambda}:=\inf\{\alpha\mid |\alpha|=\lambda\}$, the initial ordinal associated to $\lambda$. As $\alpha_{\lambda}\subset V_{\alpha_{\lambda}}$ and, for all cardinals $\lambda,\lambda'$ satisfying $\lambda\le\lambda'\le\kappa$, we have$^{16}$ $\alpha_{\lambda}\le\alpha_{\lambda'}\le\alpha_{\kappa}$, we deduce the containments $V_{\alpha_{\lambda}}\subset V_{\alpha_{\lambda'}}\subset V_{\alpha_{\kappa}}$ by [Kunen, Ch. III, Lemma 2.3]. We set $\mathrm{Sets}_{\le\kappa}:=V_{\alpha_{\kappa}+1}$. For any element J of $\mathrm{Sets}_{\le\kappa}$, there exists a least ordinal $\alpha_{|J|}$ with $|J|=|\alpha_{|J|}|$, and we have $\alpha_{|J|}\subset V_{\alpha_{|J|}}\subset V_{\alpha_{\kappa}}$, implying $\alpha_{|J|}\in V_{\alpha_{\kappa}+1}=\mathrm{Sets}_{\le\kappa}$. In other words, there exists an element $J'\in\mathrm{Sets}_{\le\kappa}$, itself a set, and a bijection $f:J'\to J$. $\square$
 
 Definition E.3.1.3. For a cardinal $\nu$, a $\nu$-small category is any small category I whose underlying set of objects satisfies $|I|\le\nu$ and for every pair of objects $i,i'\in I$ we have $|\mathrm{Map}_I(i,i')|\le\nu$.
 
@@ -2060,11 +2060,11 @@ $^{17}$The terminology “index category” is often used but never defined/desc
 
 **870** · **CHAPTER E. TOPOLOGICAL STACKS**
 
-Lemma E.3.1.4. *Let $\nu$ be an infinite cardinal. There exists a set $\mathrm{Cat}^{\le\nu}$ whose elements are $\nu$-small index categories, and such that for every $\nu$-small index category there exist an element $J'\in\mathrm{Cat}^{\le\nu}$ and an isomorphism of categories $f:J'\to J$.*
+Lemma E.3.1.4. *Let $\nu$ be an infinite cardinal. There exists a set $\mathrm{Cat}_{\le\nu}$ whose elements are $\nu$-small index categories, and such that for every $\nu$-small index category there exist an element $J'\in\mathrm{Cat}_{\le\nu}$ and an isomorphism of categories $f:J'\to J$.*
 
 We note that the lemma provides an isomorphism between $\nu$-small categories, and not merely an equivalence of categories.
 
-Proof. We let $\mathrm{Sets}^{\le\nu}$ be the set provided by Lemma E.3.1.2. For sets $J_1,J_2$ and maps $s,t:J_1\rightrightarrows J_2$, $c:J_1\times_{s,J_2,t}J_1$, and $e:J_2\to J_1$, we define the formulas $P_i(s,t,c,e)$ for $i=1,2,3,4$ as
+Proof. We let $\mathrm{Sets}_{\le\nu}$ be the set provided by Lemma E.3.1.2. For sets $J_1,J_2$ and maps $s,t:J_1\rightrightarrows J_2$, $c:J_1\times_{s,J_2,t}J_1$, and $e:J_2\to J_1$, we define the formulas $P_i(s,t,c,e)$ for $i=1,2,3,4$ as
 
 $$
 P_1(s,t,c,e):s\circ e=t\circ e=\mathrm{id}:J_2\to J_2, \tag{E.3.1.2}
@@ -2086,29 +2086,29 @@ $$
 P_4(s,t,c,e):c((e\circ t)(\cdot),\cdot)=c(\cdot,(e\circ s)(\cdot))=\mathrm{id}:J_1\to J_1. \tag{E.3.1.5}
 $$
 
-Let $C^{\le\nu}$ be the class of 6-tuples $(J_1,J_2,s,t,c,e)$ where $J_1,J_2$ are $\nu$-small sets, and $(s,t,c,e,i)$ are elements of the set:
+Let $C_{\le\nu}$ be the class of 6-tuples $(J_1,J_2,s,t,c,e)$ where $J_1,J_2$ are $\nu$-small sets, and $(s,t,c,e,i)$ are elements of the set:
 
 $$(s,t,c,e,i)\in\mathrm{Map}(J_1,J_2)\times\mathrm{Map}(J_1\times_{s,J_2,t}J_1,J_1)\times\mathrm{Map}(J_2,J_1).$$
 
 We define the class $\mathrm{Cat}'_{\le\nu}$:
 
-$$\{(J_1,J_2,s,t,c,e),J_1,J_2\in\mathrm{Sets}^{\le\nu},(s,t,c,e)\in(\mathrm{Map}(J_1,J_2),\mathrm{Map}(J_1\times_{s,J_2,t}J_1,J_1),\mathrm{Map}(J_2,J_1)),\wedge^4_{i=1}P_i(s,t,c,e)\}.$$
+$$\{(J_1,J_2,s,t,c,e),J_1,J_2\in\mathrm{Sets}_{\le\nu},(s,t,c,e)\in(\mathrm{Map}(J_1,J_2),\mathrm{Map}(J_1\times_{s,J_2,t}J_1,J_1),\mathrm{Map}(J_2,J_1)),\wedge^4_{i=1}P_i(s,t,c,e)\}.$$
 
 The class $\mathrm{Cat}'_{\le\nu}$ is a set, as it is contained in the set:
 
-$$C^{\le\nu}:=\bigsqcup_{J_1,J_2\in\mathrm{Set}^{\le\nu}}\{(J_1,J_2)\}\times\mathrm{Map}(J_1,J_2)\times\mathrm{Map}(J_1\times_{s,J_2,t}J_1,J_1)\times\mathrm{Map}(J_2,J_1)$$
+$$C_{\le\nu}:=\bigsqcup_{J_1,J_2\in\mathrm{Set}_{\le\nu}}\{(J_1,J_2)\}\times\mathrm{Map}(J_1,J_2)\times\mathrm{Map}(J_1\times_{s,J_2,t}J_1,J_1)\times\mathrm{Map}(J_2,J_1)$$
 
 via the injective class function:
 
-$$\varphi\subset\mathrm{Cat}'_{\le\nu}\times\bigsqcup_{J_1,J_2\in\mathrm{Set}^{\le\nu}}\{(J_1,J_2)\}\times\mathrm{Map}(J_1,J_2)\times\mathrm{Map}(J_1\times_{s,J_2,t}J_1,J_1)\times\mathrm{Map}(J_2,J_1)$$
+$$\varphi\subset\mathrm{Cat}'_{\le\nu}\times\bigsqcup_{J_1,J_2\in\mathrm{Set}_{\le\nu}}\{(J_1,J_2)\}\times\mathrm{Map}(J_1,J_2)\times\mathrm{Map}(J_1\times_{s,J_2,t}J_1,J_1)\times\mathrm{Map}(J_2,J_1)$$
 
 defined as
 
-$$\varphi:=\{((J_1,J_2,s,t,c,e),(I_1,I_2,s',t',c',e'))\in\mathrm{Cat}'_{\le\nu}\times C^{\le\nu}\mid (J_1,J_2,s,t,c,e)=(I_1,I_2,s',t',c',e')\},$$
+$$\varphi:=\{((J_1,J_2,s,t,c,e),(I_1,I_2,s',t',c',e'))\in\mathrm{Cat}'_{\le\nu}\times C_{\le\nu}\mid (J_1,J_2,s,t,c,e)=(I_1,I_2,s',t',c',e')\},$$
 
-the equality $(J_1,J_2,s,t,c,e)=(I_1,I_2,s',t',c',e')$ being defined within $C^{\le\nu}$. As $C^{\le\nu}$ is a set, so is $\mathrm{Cat}'_{\le\nu}$ by the Axiom Schema of Replacement.
+the equality $(J_1,J_2,s,t,c,e)=(I_1,I_2,s',t',c',e')$ being defined within $C_{\le\nu}$. As $C_{\le\nu}$ is a set, so is $\mathrm{Cat}'_{\le\nu}$ by the Axiom Schema of Replacement.
 
-Let J be a $\nu$-small category. By Lemma E.3.1.2, there exists $J_2\in\mathrm{Sets}^{\le\nu}$ together with a bijection $f:J_2\to J$. We now let $J':=\bigsqcup_{(i,j)\in J\times J}\mathrm{Map}_J(i,j)$. We define $s',t':=J'\rightrightarrows J$ on each $\mathrm{Map}_J(i,j)$ as $s'(a):=i$, $t'(a):=j$, alongside $e':J\to J'$ defined as $e(i):=\mathrm{id}_i\in J'$, and $c':J'\times_{s',J,t'}J'\to J'$ defined as $c'(a,b):=b\circ a$. As $|J'|\le\max\{|J\times J|,\sup_{(i,j)\in J\times J}|\mathrm{Map}_J(i,j)|\}$, and J is a $\nu$-small category with $\nu$ infinite, we have $|J'|\le\nu$. By Lemma E.3.1.2, there exists $J_1\in\mathrm{Sets}^{\le\nu}$ and a bijection $g:J_1\to J'$. We now define $s:=f^{-1}\circ s'\circ g$, $t:=f^{-1}\circ t'\circ g$, $c:=g^{-1}\circ c'\circ(g,g)$ and $e:=g^{-1}\circ e'\circ f$.
+Let J be a $\nu$-small category. By Lemma E.3.1.2, there exists $J_2\in\mathrm{Sets}_{\le\nu}$ together with a bijection $f:J_2\to J$. We now let $J':=\bigsqcup_{(i,j)\in J\times J}\mathrm{Map}_J(i,j)$. We define $s',t':=J'\rightrightarrows J$ on each $\mathrm{Map}_J(i,j)$ as $s'(a):=i$, $t'(a):=j$, alongside $e':J\to J'$ defined as $e(i):=\mathrm{id}_i\in J'$, and $c':J'\times_{s',J,t'}J'\to J'$ defined as $c'(a,b):=b\circ a$. As $|J'|\le\max\{|J\times J|,\sup_{(i,j)\in J\times J}|\mathrm{Map}_J(i,j)|\}$, and J is a $\nu$-small category with $\nu$ infinite, we have $|J'|\le\nu$. By Lemma E.3.1.2, there exists $J_1\in\mathrm{Sets}_{\le\nu}$ and a bijection $g:J_1\to J'$. We now define $s:=f^{-1}\circ s'\circ g$, $t:=f^{-1}\circ t'\circ g$, $c:=g^{-1}\circ c'\circ(g,g)$ and $e:=g^{-1}\circ e'\circ f$.
 
 We have $P_1(s,t,c,e)$ from (E.3.1.2) because we have $P_1(s',t',c',e')$, and likewise $P_2(s,t,c,e)$ from (E.3.1.3), $P_3(s,t,c,e)$ from (E.3.1.4) and $P_4(s,t,c,e)$ from (E.3.1.5) because we have $P_i(s',t',c',e')$ for $i=2,3,4$. It follows that $(J_1,J_2,s,t,c,e)$ is an element of $\mathrm{Cat}'_{\le\nu}$. Moreover, we define the category $\mathrm{Cat}(J_1,J_2,s,t,c,e)$
 
@@ -2124,7 +2124,7 @@ where $\mathrm{Cat}_{\le\nu}$ is the class of $\nu$-small categories, assigned a
 
 $$\psi:=\{((J_1,J_2,s,t,c,e),J)\in\mathrm{Cat}'_{\le\nu}\times\mathrm{Cat}_{\le\nu}\mid\mathrm{Cat}(J_1,J_2,s,t,c,e)=J\}$$
 
-where the equality $\mathrm{Cat}(J_1,J_2,s,t,c,e)=J$ is defined within $\mathrm{Cat}_{\le\nu}$. As $\mathrm{Cat}'_{\le\nu}$ is a set, by the Axiom Schema of Replacement so is the image of $\psi$. We define such image to be $\mathrm{Cat}^{\le\nu}$. The set $\mathrm{Cat}^{\le\nu}$ satisfies the requirements in the statement of the Lemma. $\square$
+where the equality $\mathrm{Cat}(J_1,J_2,s,t,c,e)=J$ is defined within $\mathrm{Cat}_{\le\nu}$. As $\mathrm{Cat}'_{\le\nu}$ is a set, by the Axiom Schema of Replacement so is the image of $\psi$. We define such image to be $\mathrm{Cat}_{\le\nu}$. The set $\mathrm{Cat}_{\le\nu}$ satisfies the requirements in the statement of the Lemma. $\square$
 
 We further recall the following well-known structural result on compact Hausdorff spaces:
 
@@ -2150,11 +2150,11 @@ by $i_K((x_a)_{a\in C(K,[0,1])}):=(x_c)_{c\in\alpha_{\kappa}}$ where $x_c=x_a$ i
 
 We now construct, for any fixed cardinal $\kappa$, a set of representatives of all compact Hausdorff spaces of size at most $\kappa$ up to homeomorphism.
 
-Lemma E.3.1.6. *Let $\kappa$ be a cardinal, and $\mathcal K_{\le\kappa}$ the class of all compact Hausdorff spaces K such that $\mathrm{size}(K)\le\kappa$. Then there exists a sub-class $\mathcal{CH}^{\le\kappa}\subset\mathcal K_{\le\kappa}$ such that:*
+Lemma E.3.1.6. *Let $\kappa$ be a cardinal, and $\mathcal K_{\le\kappa}$ the class of all compact Hausdorff spaces K such that $\mathrm{size}(K)\le\kappa$. Then there exists a sub-class $\mathcal{CH}_{\le\kappa}\subset\mathcal K_{\le\kappa}$ such that:*
 
-*(1) $\mathcal{CH}^{\le\kappa}$ is a set.*
+*(1) $\mathcal{CH}_{\le\kappa}$ is a set.*
 
-*(2) For any $K\in\mathcal K_{\le\kappa}$ there exists $K'\in\mathcal{CH}^{\le\kappa}$ and a homeomorphism $f:K'\to K$.*
+*(2) For any $K\in\mathcal K_{\le\kappa}$ there exists $K'\in\mathcal{CH}_{\le\kappa}$ and a homeomorphism $f:K'\to K$.*
 
 Proof. We note that, by design of $\mathrm{size}(\cdot)$ (see Definition E.3.1.1), for any fixed compact Hausdorff space K with $\mathrm{size}(K)\le\kappa$, the set of all compact Hausdorff subspaces of K has cardinality bounded above by $\kappa$,
 
@@ -2166,23 +2166,23 @@ and the algebra of continuous complex-valued functions on each compact Hausdorff
 
 $$|C(K)|\le\kappa.$$
 
-We define $\mathcal C_{\kappa}$ to be the set of all closed subsets of $[0,1]^{\kappa}$, so all elements of $\mathcal C_{\kappa}$ are compact Hausdorff. We may therefore define $\mathcal{CH}^{\le\kappa}:=\mathcal C_{\kappa}\cap\mathcal K_{\le\kappa}$, the intersection being formed within the class of all compact Hausdorff spaces. For any compact Hausdorff space K such that $\mathrm{size}(K)\le\kappa$, by Lemma E.3.1.5 there exists a closed immersion $\varphi:K\to[0,1]^{\kappa}$, and hence an element $K'$ in $\mathcal{CH}^{\le\kappa}$ and a homeomorphism $f:K'\to K$, defined as the inverse of the homeomorphism induced by $\varphi$ from K onto the image $K':=\varphi(K)$. $\square$
+We define $\mathcal C_{\kappa}$ to be the set of all closed subsets of $[0,1]^{\kappa}$, so all elements of $\mathcal C_{\kappa}$ are compact Hausdorff. We may therefore define $\mathcal{CH}_{\le\kappa}:=\mathcal C_{\kappa}\cap\mathcal K_{\le\kappa}$, the intersection being formed within the class of all compact Hausdorff spaces. For any compact Hausdorff space K such that $\mathrm{size}(K)\le\kappa$, by Lemma E.3.1.5 there exists a closed immersion $\varphi:K\to[0,1]^{\kappa}$, and hence an element $K'$ in $\mathcal{CH}_{\le\kappa}$ and a homeomorphism $f:K'\to K$, defined as the inverse of the homeomorphism induced by $\varphi$ from K onto the image $K':=\varphi(K)$. $\square$
 
 We can now use Lemma E.3.1.2 and Lemma E.3.1.6 alongside Proposition E.2.1.13 to construct, for each fixed cardinal $\kappa$, a set of compactly generated and weakly Hausdorff spaces such that every object of CGWH of size at most $\kappa$ is homeomorphic to an object of such a set. This construction will be used as a crutch to build a small subcategory of CGWH stable under enough categorical operations to enable us to make some intrinsic constructions of interest, and that will serve as underlying category for our sought-for “topological site”. The following Lemma is an analog of [SP, Tag 000I].
 
 Lemma E.3.1.7. *For every cardinal $\kappa$, there exists a set S of compactly generated weakly Hausdorff topological spaces, such that for every compactly generated weakly Hausdorff topological space X with $\mathrm{size}(X)\le\kappa$, there exists an element $Y\in S$ and an isomorphism $Y\to X$ in CGWH.*
 
-Proof. We consider the set $S'$ defined as follows. For any $J\in\mathrm{Sets}^{\le\kappa}$, where $\mathrm{Sets}^{\le\kappa}$ is the set from Lemma E.3.1.2, we let f be a set-function $f:J\to\mathcal{CH}^{\le\kappa}$, where $\mathcal{CH}^{\le\kappa}$ is the set from Lemma E.3.1.6 above. We define $S'_{(J,f)}$ to be the set of all closed equivalence relations in the topological space $(\bigsqcup_J f(j))\times(\bigsqcup_J f(j))$ (product in CGWH, agreeing with the one in Spaces), and we further define:
+Proof. We consider the set $S'$ defined as follows. For any $J\in\mathrm{Sets}_{\le\kappa}$, where $\mathrm{Sets}_{\le\kappa}$ is the set from Lemma E.3.1.2, we let f be a set-function $f:J\to\mathcal{CH}_{\le\kappa}$, where $\mathcal{CH}_{\le\kappa}$ is the set from Lemma E.3.1.6 above. We define $S'_{(J,f)}$ to be the set of all closed equivalence relations in the topological space $(\bigsqcup_J f(j))\times(\bigsqcup_J f(j))$ (product in CGWH, agreeing with the one in Spaces), and we further define:
 
-$$S':=\bigsqcup_{J\in\mathrm{Sets}^{\le\kappa}}\bigsqcup_{f\in\mathrm{Map}(J,\mathcal{CH}^{\le\kappa})}S'_{(J,f)}$$
+$$S':=\bigsqcup_{J\in\mathrm{Sets}^{\le\kappa}}\bigsqcup_{f\in\mathrm{Map}(J,\mathcal{CH}_{\le\kappa})}S'_{(J,f)}$$
 
-itself a set. For any $s\in S'$, there exists $J\in\mathrm{Sets}^{\le\kappa}$ and $f\in\mathrm{Map}(J,\mathcal{CH}^{\le\kappa})$, and a closed equivalence relation $R\subset(\bigsqcup_J f(j))\times(\bigsqcup_J f(j))$, with $s=R$. We define $q(s):=(\bigsqcup_J f(j))/R$, a compactly generated and weakly Hausdorff space by Lemma E.2.1.11.
+itself a set. For any $s\in S'$, there exists $J\in\mathrm{Sets}_{\le\kappa}$ and $f\in\mathrm{Map}(J,\mathcal{CH}_{\le\kappa})$, and a closed equivalence relation $R\subset(\bigsqcup_J f(j))\times(\bigsqcup_J f(j))$, with $s=R$. We define $q(s):=(\bigsqcup_J f(j))/R$, a compactly generated and weakly Hausdorff space by Lemma E.2.1.11.
 
 We now define the class function
 
 $$F:=\{(s,X)\mid s\in S',X\in\mathrm{Ob}(\mathrm{CGWH}),q(s)=X\}$$
 
-where the formula $q(s)=X$ holds in the class $\mathrm{Ob}(\mathrm{CGWH})$. We call S the image of F. By the Axiom Schema of Replacement, S is a set. By Proposition E.2.1.13, any compactly generated and weakly Hausdorff topological space X with $\mathrm{size}(X)\le\kappa$ is a quotient of a coproduct of all compact Hausdorff subspaces of X indexed by a set J of cardinality at most $\kappa$ (the set of all compact Hausdorff subspaces of X). By Lemma E.3.1.6, such subspaces are each homeomorphic to a compact Hausdorff space which is an element of $\mathcal{CH}^{\le\kappa}$, and the index set is bijective to a set in $\mathrm{Sets}^{\le\kappa}$. The closed equivalence relation on the coproduct of all compact Hausdorff subspaces of X is therefore homeomorphic to an element of $S'$, and via the class function F there exists a compactly generated weakly Hausdorff space Y which is an element of S and a homeomorphism $Y\to X$. $\square$
+where the formula $q(s)=X$ holds in the class $\mathrm{Ob}(\mathrm{CGWH})$. We call S the image of F. By the Axiom Schema of Replacement, S is a set. By Proposition E.2.1.13, any compactly generated and weakly Hausdorff topological space X with $\mathrm{size}(X)\le\kappa$ is a quotient of a coproduct of all compact Hausdorff subspaces of X indexed by a set J of cardinality at most $\kappa$ (the set of all compact Hausdorff subspaces of X). By Lemma E.3.1.6, such subspaces are each homeomorphic to a compact Hausdorff space which is an element of $\mathcal{CH}_{\le\kappa}$, and the index set is bijective to a set in $\mathrm{Sets}_{\le\kappa}$. The closed equivalence relation on the coproduct of all compact Hausdorff subspaces of X is therefore homeomorphic to an element of $S'$, and via the class function F there exists a compactly generated weakly Hausdorff space Y which is an element of S and a homeomorphism $Y\to X$. $\square$
 
 E.3.2. $\alpha$-small compactly generated and weakly Hausdorff spaces. We assign the following:
 
@@ -2222,7 +2222,7 @@ Proof. We define a function f on ordinals as follows. We set $f(0)=0$. Suppose $
 
 We proceed in a very similar manner as in [SP, Tag 000J] to prove that $\beta$ indeed exists.
 
-We set $\kappa:=\sup_T\mathrm{Bound}(\mathrm{size}(T))$ where T varies across all objects of $\mathrm{CGWH}_{f(\alpha)}$, which is a small category by design. The cardinal $\kappa$ therefore exists. We apply Lemma E.3.1.7 to $\kappa$ to obtain the set S of that Lemma. We now repeat the argument at this stage of [SP, Tag 000J]. Up to isomorphism of small index categories, we may require that I in (3) is an element of the set of $\nu$-small categories $\mathrm{Cat}^{\le\nu}$ provided by Lemma E.3.1.4, so the pair $(I,F)$ in part (3) therefore varies over a set of pairs $(I,F)$ where I is an element of $\mathrm{Cat}^{\le\nu}$, and F is a functor $I\to\mathrm{CGWH}_{f(\alpha)}$. We may therefore find a set $S'$ such that for any pair $(I,F)$ as in (3) above, the limit and colimit are isomorphic to elements of $S'$. Upon choosing any $\beta$ such that $\beta\ge\max\{\alpha+1,f(\alpha)\}$ and $S\cup S'\subset V_{\beta}$, all the required axioms hold for $\beta$. Upon minimizing over such ordinals $\beta$, we see that $f(\alpha+1)$ is well-defined by transfinite recursion. One then extends f to limit ordinals by setting:
+We set $\kappa:=\sup_T\mathrm{Bound}(\mathrm{size}(T))$ where T varies across all objects of $\mathrm{CGWH}_{f(\alpha)}$, which is a small category by design. The cardinal $\kappa$ therefore exists. We apply Lemma E.3.1.7 to $\kappa$ to obtain the set S of that Lemma. We now repeat the argument at this stage of [SP, Tag 000J]. Up to isomorphism of small index categories, we may require that I in (3) is an element of the set of $\nu$-small categories $\mathrm{Cat}_{\le\nu}$ provided by Lemma E.3.1.4, so the pair $(I,F)$ in part (3) therefore varies over a set of pairs $(I,F)$ where I is an element of $\mathrm{Cat}_{\le\nu}$, and F is a functor $I\to\mathrm{CGWH}_{f(\alpha)}$. We may therefore find a set $S'$ such that for any pair $(I,F)$ as in (3) above, the limit and colimit are isomorphic to elements of $S'$. Upon choosing any $\beta$ such that $\beta\ge\max\{\alpha+1,f(\alpha)\}$ and $S\cup S'\subset V_{\beta}$, all the required axioms hold for $\beta$. Upon minimizing over such ordinals $\beta$, we see that $f(\alpha+1)$ is well-defined by transfinite recursion. One then extends f to limit ordinals by setting:
 
 $$f(\alpha):=\sup_{\beta<\alpha}f(\beta).$$
 

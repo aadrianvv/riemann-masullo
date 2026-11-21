@@ -116,7 +116,7 @@ $$
 \int_G \rho(x)\widetilde{k}(x,x)\,d\lambda(x) = \mathrm{Trace}(M_\rho\circ T). \tag{12.1.1.3}
 $$
 
-(3) For each integer $m\ge 0$, let $T_m\in L_\beta(L^2(G,\lambda))$ be a finite rank operator, such that the sequence $\{T_m\}_{m\ge 0}$ converges in $S^p(L^2(G,\lambda))$ for $p = 1,2$, to $T$. Let $k_m\in L^2(G\times G,\lambda\otimes\lambda)$ be a choice of representative for the Hilbert-Schmidt kernel of $T_m$.
+(3) For each integer $m\ge 0$, let $T_m\in L_\beta(L^2(G,\lambda))$ be a finite rank operator, such that the sequence $\{T_m\}_{m\ge 0}$ converges in $S_p(L^2(G,\lambda))$ for $p = 1,2$, to $T$. Let $k_m\in L^2(G\times G,\lambda\otimes\lambda)$ be a choice of representative for the Hilbert-Schmidt kernel of $T_m$.
 
 Then $k_m\to k$ and $\widetilde{k}_m\to\widetilde{k}$ in $L^2(G\times G,\lambda\otimes\lambda)$, and $\widetilde{k}_m(x,x)\to\widetilde{k}(x,x)$ weakly in $L^1(G,\lambda)$.
 
@@ -152,7 +152,7 @@ $D'$-sequence $\{U_k\times U_k\}_{k\ge 0}$ is $\mathbf C$-linear, we may rename 
 
 By [Cnw-a, Ch.II, §5, Cor.5.4, p.47], we have $T = \sum_{m\ge 0}\sigma_m(T)\langle\phi_m,\cdot\rangle_{L^2(G,\lambda)}\phi_m$, the convergence being with respect to the strong operator topology (see also Theorem C.3.6.1 applied to $E = F = L^2(G,\lambda)$), where the singular values of $T$ are listed decreasingly and counted with multiplicity.
 
-Upon calling $P_m$ the orthogonal projector onto $\ker(T-\sigma_m(T)\mathrm{Id})$, then we may write $T = \sum_{m\ge 0}\sigma_m(T)P_m$, where the singular values of $T$ are now listed decreasingly and counted once for each integer $m\ge 0$. Each $P_m$ is self-adjoint by [Cnw-a, Ch.II, §2, Prop.2.12, p.33] and [Cnw-a, Ch.II, §3, Prop.3.3, p.37], and hence by Proposition C.3.6.5 (see also Corollary C.3.5.5), $P_mTP_m\to T$ in $S^p(L^2(G,\lambda))$ for $p = 1,2$.
+Upon calling $P_m$ the orthogonal projector onto $\ker(T-\sigma_m(T)\mathrm{Id})$, then we may write $T = \sum_{m\ge 0}\sigma_m(T)P_m$, where the singular values of $T$ are now listed decreasingly and counted once for each integer $m\ge 0$. Each $P_m$ is self-adjoint by [Cnw-a, Ch.II, §2, Prop.2.12, p.33] and [Cnw-a, Ch.II, §3, Prop.3.3, p.37], and hence by Proposition C.3.6.5 (see also Corollary C.3.5.5), $P_mTP_m\to T$ in $S_p(L^2(G,\lambda))$ for $p = 1,2$.
 
 The Hilbert-Schmidt kernel of $P_mTP_m$ is represented by the function
 
@@ -162,7 +162,7 @@ $$
 
 where $N_m = \dim(\ker(T-\sigma_m(T)\mathrm{Id}))$ and $\{\phi_{m,r}\}_{1\le r\le N_m}$ is an orthonormal basis for $\ker(T-\sigma_m(T)\mathrm{Id})$.
 
-Since $S^2(L^2(G,\lambda))$ is isometrically isomorphic to $L^2(G\times G,\lambda\otimes\lambda)$, and $P_mTP_m$ is sent to the class of $k_m(x,y)$ under such isometry, we deduce that the sequence of finite sums $\sum_{0\le m\le N}k_m(x,y)$ converges in $L^2(G\times G,\lambda\otimes\lambda)$.
+Since $S_2(L^2(G,\lambda))$ is isometrically isomorphic to $L^2(G\times G,\lambda\otimes\lambda)$, and $P_mTP_m$ is sent to the class of $k_m(x,y)$ under such isometry, we deduce that the sequence of finite sums $\sum_{0\le m\le N}k_m(x,y)$ converges in $L^2(G\times G,\lambda\otimes\lambda)$.
 
 We write:
 
@@ -222,9 +222,9 @@ $$
 
 using Lemma A.5.2.5(1) to deduce that $\{U_k\times U_k\}_{k\ge 0}$ is a $D'$-sequence for $G\times G$. Indeed, by Corollary A.5.4.3, the limit in (12.1.1.13) exists and is finite exactly at the points at which the limit of the sequence $\{\mu_G(U_k)^{-2}\int_{xU_k\times yU_k}k(x',y')\,d(\mu_G\otimes\mu_G)(x',y')\}_{k\ge 0}$ does, and its value is $\rho(x)\widetilde{k}(x,y)$.
 
-Let $\rho\in L^\infty(G,\lambda)$ be arbitrary, and by [Fol, Thm.2.10(b)], we choose a sequence $\{\rho_m\}_{m\ge 0}\subset A(G)$, the $\mathbf C$-algebra of simple functions on $G$ with complex coefficients, such that $\rho_m\to\rho$ in $L^\infty(G,\lambda)$. Then $M_{\rho_m}\to M_\rho$ with respect to the strong operator topology on $L(L^2(G,\lambda))$ (in fact, with respect to the operator-norm topology, by [Cnw-a, Ch.II, §1, Thm.1.5, p.28]), and hence $M_{\rho_m}\circ T\to M_\rho\circ T$ in $S^p(L^2(G,\lambda))$ for $p = 1,2$ by Lemma C.3.4.4.
+Let $\rho\in L^\infty(G,\lambda)$ be arbitrary, and by [Fol, Thm.2.10(b)], we choose a sequence $\{\rho_m\}_{m\ge 0}\subset A(G)$, the $\mathbf C$-algebra of simple functions on $G$ with complex coefficients, such that $\rho_m\to\rho$ in $L^\infty(G,\lambda)$. Then $M_{\rho_m}\to M_\rho$ with respect to the strong operator topology on $L(L^2(G,\lambda))$ (in fact, with respect to the operator-norm topology, by [Cnw-a, Ch.II, §1, Thm.1.5, p.28]), and hence $M_{\rho_m}\circ T\to M_\rho\circ T$ in $S_p(L^2(G,\lambda))$ for $p = 1,2$ by Lemma C.3.4.4.
 
-We may therefore assume $\rho = 1_E$ for $E$ a $\lambda$-measurable subset of $G$. We now let $\{K_n\}_{n\ge 0}$ be an exhaustion by compact subsets of $G$, and call $E_n := E\cap K_n$. Then $1_{E_n}\to 1_E$ pointwise $\lambda$-almost everywhere, and hence so does $1_{E_n}(x)\widetilde{k}(x,x)$. It follows that $M_{1_{E_n}}\to M_{1_E}$ as $n\to +\infty$ with respect to the strong operator topology on $L(L^2(G,\lambda))$, and by Lemma C.3.4.4 we have $M_{1_{E_n}}\circ T\to M_{1_E}\circ T$ in $S^p(L^2(G,\lambda))$ for $p = 1,2$.
+We may therefore assume $\rho = 1_E$ for $E$ a $\lambda$-measurable subset of $G$. We now let $\{K_n\}_{n\ge 0}$ be an exhaustion by compact subsets of $G$, and call $E_n := E\cap K_n$. Then $1_{E_n}\to 1_E$ pointwise $\lambda$-almost everywhere, and hence so does $1_{E_n}(x)\widetilde{k}(x,x)$. It follows that $M_{1_{E_n}}\to M_{1_E}$ as $n\to +\infty$ with respect to the strong operator topology on $L(L^2(G,\lambda))$, and by Lemma C.3.4.4 we have $M_{1_{E_n}}\circ T\to M_{1_E}\circ T$ in $S_p(L^2(G,\lambda))$ for $p = 1,2$.
 
 By Dominated Convergence, we may assume $\rho = 1_{E_n}$, the indicator function of a $\lambda$-measurable subset of $G$ of finite $\lambda$-measure. There now exists a sequence $\{\rho_m\}_{m\ge 0}\subset C_c(G)$ such that $\rho_m$ is real valued, nonnegative and bounded above by $1$ for every integer $m\ge 0$, and $\rho_m\to\rho$ pointwise $\lambda$-almost everywhere, and in fact in $L^p(G,\lambda)$ for every (finite) $p\ge 1$.
 
@@ -248,11 +248,11 @@ We deduce that (12.1.1.3) holds.
 
 **502** · **CHAPTER 12. TRACE FORMULA: GEOMETRIC SIDE**
 
-(3) : Since $S^2(L^2(G,\lambda))$ is isometrically isomorphic to $L^2(G\times G,\lambda\otimes\lambda)$, the isometry sending $T_m$ to the class of $k_m$ and $T$ to the class of $k$, we deduce that $T_m\to T$ implies (and is implied by) $k_m\to k$ in $L^2(G\times G,\lambda\otimes\lambda)$, and since, $(\lambda\otimes\lambda)$-almost everywhere on $G\times G$, we have $k_m = \widetilde{k}_m$ and $k = \widetilde{k}$, we deduce that we have $\widetilde{k}_m\to\widetilde{k}$ in $L^2(G\times G,\lambda\otimes\lambda)$.
+(3) : Since $S_2(L^2(G,\lambda))$ is isometrically isomorphic to $L^2(G\times G,\lambda\otimes\lambda)$, the isometry sending $T_m$ to the class of $k_m$ and $T$ to the class of $k$, we deduce that $T_m\to T$ implies (and is implied by) $k_m\to k$ in $L^2(G\times G,\lambda\otimes\lambda)$, and since, $(\lambda\otimes\lambda)$-almost everywhere on $G\times G$, we have $k_m = \widetilde{k}_m$ and $k = \widetilde{k}$, we deduce that we have $\widetilde{k}_m\to\widetilde{k}$ in $L^2(G\times G,\lambda\otimes\lambda)$.
 
 We let $\rho\in L^\infty(G,\lambda)$ be a $\lambda$-essentially bounded, equivalently $\mu_G$-essentially bounded, measurable complex valued function on $G$, and $M_\rho\in L_\beta(L^2(G,\lambda))$ the resulting multiplication operator.
 
-By Lemma C.3.4.4, $M_\rho\circ T_m\to M_\rho\circ T$ in $S^p(L^2(G,\lambda))$ for $p = 1,2$, and by (2), we deduce from (12.1.1.3) that we have, as $m\to +\infty$:
+By Lemma C.3.4.4, $M_\rho\circ T_m\to M_\rho\circ T$ in $S_p(L^2(G,\lambda))$ for $p = 1,2$, and by (2), we deduce from (12.1.1.3) that we have, as $m\to +\infty$:
 
 $$
 \int_G \rho(x)\widetilde{k}_m(x,x)\,d\lambda(x) = \mathrm{Trace}(M_\rho\circ T_m)\to\mathrm{Trace}(M_\rho\circ T) = \int_G \rho(x)\widetilde{k}(x,x)\,d\lambda(x). \tag{12.1.1.16}
@@ -280,7 +280,7 @@ $$
 
 for $\lambda$-almost all $x\in G$. We deduce that (12.1.1.18) holds.
 
-Since $\{\phi_m\}_{m\ge 0}$ is a simple, normalized Schauder basis, then $\{P_N\}_{N\ge 0}\subset L_\beta(L^2(G,\lambda))$ is a bounded subset, and $P_N\to\mathrm{Id}$ with respect to the strong operator topology. By Proposition C.3.6.5, $T_N\to T$ in $S^p(L^2(G,\lambda))$ for $p = 1,2$. (4) therefore follows from (3).
+Since $\{\phi_m\}_{m\ge 0}$ is a simple, normalized Schauder basis, then $\{P_N\}_{N\ge 0}\subset L_\beta(L^2(G,\lambda))$ is a bounded subset, and $P_N\to\mathrm{Id}$ with respect to the strong operator topology. By Proposition C.3.6.5, $T_N\to T$ in $S_p(L^2(G,\lambda))$ for $p = 1,2$. (4) therefore follows from (3).
 
 $\square$
 
@@ -894,7 +894,7 @@ Moreover, we have, for every $x\in G$:
 
 $$
 \int_H u_0(h^{-1}x)\,\mathrm{d}\mu_H(h)
-=\int_{H/H_0}\bigotimes_{k\ge1}\varepsilon_k((h')^{-1}\overline{x})\int_{H_0}u_1(h^{-1}x)\,\mathrm{d}\mu_{H_0}(h)\,\mathrm{d}\mu_{H/H_0}(h')
+=\int_{H/H_0}\bigotimes_{k\ge1}\varepsilon_k((h')^{-1}\overline{x})\int_{H^0}u_1(h^{-1}x)\,\mathrm{d}\mu_{H_0}(h)\,\mathrm{d}\mu_{H/H_0}(h')
 \tag{12.2.2.31}
 $$
 

@@ -322,10 +322,10 @@ rendering it commutative.
 
 (2) : If $a=1/2$, then the definition $\mathcal F:=J$, indeed provides a continuous linear automorphism on $W^s_{a,I}\mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S_0(\mathbf A_F))$ making the diagram in (10.1.2.2) commute, so long as $I=-I$, which holds since $I=[-\alpha,\alpha]$ for a real number $\alpha\ge 0$. $\square$
 
-We refer the reader to Proposition 5.4.2.1 and the discussion preceding the Proposition, for a discussion on the extension by continuity of the $S$-local Fourier transform on $\mathrm H_{0,\mathrm{cont}}(\mathcal O_{F,S}^\times,\mathcal S(\mathbf A_{F,S}))$, to the $L_2$-completion
+We refer the reader to Proposition 5.4.2.1 and the discussion preceding the Proposition, for a discussion on the extension by continuity of the $S$-local Fourier transform on $\mathrm H_{0,\mathrm{cont}}(\mathcal O_{F,S}^\times,\mathcal S(\mathbf A_{F,S}))$, to the $L^2$-completion
 
 $$
-L_2\mathrm H_{0,\mathrm{cont}}(\mathcal O_{F,S}^\times,\mathcal S(\mathbf A_{F,S}))=W^0_{\{1/2\}}\mathrm H_{0,\mathrm{cont}}(\mathcal O_{F,S}^\times,\mathcal S(\mathbf A_{F,S})) \tag{10.1.2.6}
+L^2\mathrm H_{0,\mathrm{cont}}(\mathcal O_{F,S}^\times,\mathcal S(\mathbf A_{F,S}))=W^0_{\{1/2\}}\mathrm H_{0,\mathrm{cont}}(\mathcal O_{F,S}^\times,\mathcal S(\mathbf A_{F,S})) \tag{10.1.2.6}
 $$
 
 (the equal sign denoting the surjective isometry sending the element $\phi$ to $|\cdot|^{1/2}_{F,S}\phi$) ultimately a consequence of the fact (see Theorem 3.3.1.5(2)) that $\rho_S(c)$ from (3.3.1.3) is, when restricted to the relative vertical line $\sigma(c)=1/2$, valued in $\mathrm U(1)$.
@@ -334,9 +334,9 @@ $$
 
 We recall that for a complete Hausdorff locally convex topological $\mathbf C$-vector space $E$ with a Schauder basis $\{x_m\}_{m\ge 0}$, and $\{f_m\}_{m\ge 0}$ the bi-orthogonal sequence in $E'$, then if $E$ is semi-reflexive, $\{f_m\}_{m\ge 0}$ is also a Schauder basis (see [Jar, Part II,Ch.14,§14.5,Thm.1(a),p.302]), and the datum $\{(x_m,f_m)\}_{m\ge 0}$ is a Markushevich basis.
 
-Being a Schauder basis is an unstable property with respect to coarsening of the Hausdorff locally convex topology. The reader may consider the example of the exponential system on $\mathcal S(\mathbf T)=C^\infty(\mathbf T)$, with $\mathbf T:=\mathbf R/\mathbf Z$ the circle group, which is an absolute Schauder basis with respect to the topology of uniform convergence on functions and their derivatives of arbitrary order, but is not a Schauder basis on $L_1(\mathbf T):=L_1(\mathbf T,\mu)$, $\mu$ being the volume-1 Haar measure on $\mathbf T$.
+Being a Schauder basis is an unstable property with respect to coarsening of the Hausdorff locally convex topology. The reader may consider the example of the exponential system on $\mathcal S(\mathbf T)=C^\infty(\mathbf T)$, with $\mathbf T:=\mathbf R/\mathbf Z$ the circle group, which is an absolute Schauder basis with respect to the topology of uniform convergence on functions and their derivatives of arbitrary order, but is not a Schauder basis on $L^1(\mathbf T):=L^1(\mathbf T,\mu)$, $\mu$ being the volume-1 Haar measure on $\mathbf T$.
 
-It is, however, a Markushevich basis. The property that is lost under coarsening of the Hausdorff locally convex topology from $\mathcal S(\mathbf T)$ to $L_1(\mathbf T)$ is that of the simple convergence of the finite rank basis projections.
+It is, however, a Markushevich basis. The property that is lost under coarsening of the Hausdorff locally convex topology from $\mathcal S(\mathbf T)$ to $L^1(\mathbf T)$ is that of the simple convergence of the finite rank basis projections.
 
 We let $F$ be a number field, $S$ a finite set of places of $F$ containing all the Archimedean places. Let $\chi$ be a continuous character of $C_F$, respectively of $J_{F,S}$.
 

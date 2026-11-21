@@ -465,10 +465,10 @@ $$
 PROOF. We show each collection of seminorms in turn defines the topology on $\mathcal{S}(G)$. First we consider $\mathcal{P}_1$. For every $q \in \mathcal{P}_1$, we have $q = \|\cdot\|_{\mathcal{P}_1,(j,j',\alpha,\beta)}$ for some integers $j, j' \ge 0$ and $\alpha \in \mathbf{N}^m$, $\beta \in \mathbf{N}^n$. For every $f \in \mathcal{S}(G)$, in terms of the seminorms in (D.1.3.7) we have:
 
 $$
-q(f) \le \|f\|_{(0,\alpha,\beta,0)} + C_{j'}^{r} \sum_{i'=1}^{m} \|f\|_{(0,\alpha,\beta,\gamma_{i'}(j'))} + C_{j}^{m} \sum_{i=1}^{m} \|f\|_{(\alpha_i(j),\alpha,\beta,0)} + C_{j'}^{r} C_{j}^{m} \sum_{1 \le i,i' \le m} \|f\|_{(\alpha_i(j),\alpha,\beta,\gamma_{i'}(j'))} \tag{D.1.3.11}
+q(f) \le \|f\|_{(0,\alpha,\beta,0)} + C^{j'}_{r} \sum_{i'=1}^{m} \|f\|_{(0,\alpha,\beta,\gamma_{i'}(j'))} + C^{j}_{m} \sum_{i=1}^{m} \|f\|_{(\alpha_i(j),\alpha,\beta,0)} + C^{j'}_{r} C^{j}_{m} \sum_{1 \le i,i' \le m} \|f\|_{(\alpha_i(j),\alpha,\beta,\gamma_{i'}(j'))} \tag{D.1.3.11}
 $$
 
-where $C_m > 0$ is a constant for which $|x| \le C_m \max_i |x_i|$ for all $x \in \mathbf{R}^m$ and $C_r$ is likewise for $\mathbf{R}^r$, and $\alpha_i(j) = j e_i \in \mathbf{N}^m$, $\gamma_{i'}(j') = j' e'_{i'} \in \mathbf{N}^r$ (so $|x|^j \le C_j^{m} \sum_i |x^{\alpha_i(j)}|$, $|a|^{j'} \le C_{j'}^{r} \sum_{i'} |a^{\gamma_{i'}(j')}|$).
+where $C_m > 0$ is a constant for which $|x| \le C_m \max_i |x_i|$ for all $x \in \mathbf{R}^m$ and $C_r$ is likewise for $\mathbf{R}^r$, and $\alpha_i(j) = j e_i \in \mathbf{N}^m$, $\gamma_{i'}(j') = j' e'_{i'} \in \mathbf{N}^r$ (so $|x|^j \le C_j^{m} \sum_i |x^{\alpha_i(j)}|$, $|a|^{j'} \le C^{j'}_{r} \sum_{i'} |a^{\gamma_{i'}(j')}|$).
 
 On the other hand, for every $\eta, \theta \in \mathbf{N}^m$ and $\gamma \in \mathbf{N}^r$, there exist real numbers $C_{\eta,m}, A_{\gamma,r} > 0$ such that $|x^\eta| \le C_{\eta,m} \cdot (1 + |x|^{|\eta|})$ and $|a^\gamma| \le A_{\gamma,r} \cdot (1 + |a|^{|\gamma|})$, showing that we also have
 
@@ -2641,7 +2641,7 @@ $$
 
 *(iii) For any continuous character $\chi\in\widehat{G}$, the continuous linear operator $M_{\chi}:\mathcal S(G)\to\mathcal S(G)$ defined as multiplication by the smooth function $\chi:G\to\mathbf C$ is also continuous with respect to the subspace topology on $\mathcal S(G)$ induced by $i$ from $E$.*
 
-*Letting $\chi:G=G^1\times\Gamma\to\mathbf C^{\times}$ be defined by $\chi(g_1\tau(\gamma))=\overline{\omega}(g_1)$, the composite injective continuous linear map $\mathcal S(\Gamma)\xrightarrow{\tau}\mathcal S(G)\xrightarrow{i}E$ gives $\mathcal S(\Gamma)$ a (necessarily coarser Hausdorff locally convex) subspace topology whose completion maps isomorphically via $M_{\chi}$ onto the Hausdorff quotient $E(\omega)$ of $E$.*
+*Letting $\chi:G=G^1\times\Gamma\to\mathbf C^{\times}$ be defined by $\chi(g^1\tau(\gamma))=\overline{\omega}(g^1)$, the composite injective continuous linear map $\mathcal S(\Gamma)\xrightarrow{\tau}\mathcal S(G)\xrightarrow{i}E$ gives $\mathcal S(\Gamma)$ a (necessarily coarser Hausdorff locally convex) subspace topology whose completion maps isomorphically via $M_{\chi}$ onto the Hausdorff quotient $E(\omega)$ of $E$.*
 
 *The meaning of the final assertion is that under the linear topological automorphism $M_{\chi}$ of $\mathcal S(G)$ equipped with the subspace topology from $E$, the natural map $M_{\chi}(\mathcal S(\Gamma))\to E(\omega)$ identifies the target with the completion of the source.*
 
@@ -2659,7 +2659,7 @@ $\square$
 
 D.2.2.1. A kernel Theorem for $\mathbf R_{>0}$-modulated groups. Lemma D.2.2.2 takes the following form for $G$ any modulated group such that the module $|\cdot|_G$ is surjective; i.e., for which $\Gamma=\mathbf R_{>0}$. (Examples of interest include $G=C_F,C_{F,S},J_{F,S}$.) We refer to these modulated groups as $\mathbf R_{>0}$-modulated.
 
-COROLLARY D.2.2.3.$^{11}$ *Let $G$ be a second-countable $\mathbf R_{>0}$-modulated group; i.e., $\Gamma=\mathbf R_{>0}$. Fix a choice of $\omega\in\widehat{G^1}$ and a continuous homomorphic section $\tau$ to $|\cdot|_G$, and let $\chi:G=G^1\times\Gamma\to\mathbf C^{\times}$ be the character $\chi(g_1\tau(\gamma))=\overline{\omega}(g_1)$. Let $M_{\chi}:\mathcal S(G)\simeq\mathcal S(G)$ be multiplication by $\chi$.*
+COROLLARY D.2.2.3.$^{11}$ *Let $G$ be a second-countable $\mathbf R_{>0}$-modulated group; i.e., $\Gamma=\mathbf R_{>0}$. Fix a choice of $\omega\in\widehat{G^1}$ and a continuous homomorphic section $\tau$ to $|\cdot|_G$, and let $\chi:G=G^1\times\Gamma\to\mathbf C^{\times}$ be the character $\chi(g^1\tau(\gamma))=\overline{\omega}(g^1)$. Let $M_{\chi}:\mathcal S(G)\simeq\mathcal S(G)$ be multiplication by $\chi$.*
 
 *(1) The natural continuous linear map $\mathcal S(\mathbf R_{>0})\simeq M_{\chi}(\mathcal S(\Gamma))\to\mathcal S(G)(\omega)$ is a topological isomorphism;*
 
@@ -3337,7 +3337,7 @@ $$
 
 where $\Phi_{G,\omega} : \mathcal{S}(G)\to\mathrm{H}^0(\omega,\mathcal{S}(G))$ is the projector from (D.2.1.1). Moreover $\Phi^I_{G,\omega}$ is a continuous projector (so surjective) and open.
 
-Terminology D.3.3.1 (Passage to $G_1$-isotypes). We will refer to the linear map $\Phi^I_{G,\omega} : \mathcal{S}_I(G)\to \mathrm{H}^0(\omega,\mathcal{S}_I(G))$ as the passage to the $\omega$-isotype operator.
+Terminology D.3.3.1 (Passage to $G^1$-isotypes). We will refer to the linear map $\Phi^I_{G,\omega} : \mathcal{S}_I(G)\to \mathrm{H}^0(\omega,\mathcal{S}_I(G))$ as the passage to the $\omega$-isotype operator.
 
 Proof of Proposition D.3.3.12. Let $\rho_G$ denoted the continuous left-translation action of $G$ on $\mathcal{S}(G)$: $(\rho_G(g))(f) : x\mapsto f(g^{-1}x)$ for $x\in G$. Upon denoting by $\mathcal{S}_a$ the Hausdorff locally convex topological $\mathbf{C}$-vector space $\mathcal{S}(G)$ equipped with the continuous action $|\cdot|^a_G\cdot\rho_G$, the induced continuous action of $G$ on the product $\prod_{a\in I}\mathcal{S}_a$ preserves the range of the linear injection $\prod_{a\in I}T_a$ that is a topological (even closed) embedding by design of the Hausdorff locally convex topology on $\mathcal{S}_I(G)$ because
 
@@ -3347,7 +3347,7 @@ $$
 
 Thus, $(g.f)(x)=f(g^{-1}x)$ preserves $\mathcal{S}_I(G)\subset\prod_{a\in I}\mathcal{S}_a$ and establishes the desired continuity for that $G$-action on $\mathcal{S}_I(G)$.
 
-Since $|\cdot|_G$ is trivial on $G_1$, a direct calculation shows $\Phi_{G,\omega}(|\cdot|^a_G f)=|\cdot|^a_G\Phi_{G,\omega}(f)$, so if $f\in\mathcal{S}_I(G)$ then $\Phi_{G,\omega}(f) : G\to\mathbf{C}$ belongs to $\mathcal{S}_I(G)$ and is certainly $\omega$-isotypic. The injectivity of the horizontal maps in (D.3.3.10) shows that this is the unique $\Phi^I_{G,\omega}$ and that it is a continuous projector. Any continuous projector of a topological space onto a subspace is a quotient mapping (since the inclusion of the subspace is a continuous section), so in the topological group setting it is open. $\square$
+Since $|\cdot|_G$ is trivial on $G^1$, a direct calculation shows $\Phi_{G,\omega}(|\cdot|^a_G f)=|\cdot|^a_G\Phi_{G,\omega}(f)$, so if $f\in\mathcal{S}_I(G)$ then $\Phi_{G,\omega}(f) : G\to\mathbf{C}$ belongs to $\mathcal{S}_I(G)$ and is certainly $\omega$-isotypic. The injectivity of the horizontal maps in (D.3.3.10) shows that this is the unique $\Phi^I_{G,\omega}$ and that it is a continuous projector. Any continuous projector of a topological space onto a subspace is a quotient mapping (since the inclusion of the subspace is a continuous section), so in the topological group setting it is open. $\square$
 
 D.3.3.2. Fourier-Melllin transform on $\mathcal{S}_I(G)$. We conclude this subsection on the structure of $\mathcal{S}_I(G)$ for second-countable $\mathbf{R}_{>0}$-modulated groups $G$ with the following result on the Fourier-Mellin transform in analogy with, and generalizing, Proposition D.3.2.5 that treats the case $G=\mathbf{R}_{>0}$.
 
@@ -3364,32 +3364,32 @@ that is $G$-equivariant where we use the left-translation action of $G$ on sourc
 Under the linear topological isomorphism from (D.3.3.3), $M_I$ matches the linear topological isomorphism
 
 $$
-\check{F}_{G_1}\otimes M_I : \mathcal{S}(G_1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})\to\mathcal{S}(\widehat{G}_1)\otimes\mathcal{AS}(\mathbf{C}_I) \tag{D.3.3.12}
+\check{F}_{G_1}\otimes M_I : \mathcal{S}(G^1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})\to\mathcal{S}(\widehat{G}^1)\otimes\mathcal{AS}(\mathbf{C}_I) \tag{D.3.3.12}
 $$
 
-where $F_{G_1}$ is the Fourier transform on $\mathcal{S}(G_1)$ and $\check{F}_{G_1}$ is the composition of $F_{G_1}$ with the inversion automorphism on $G_1$.
+where $F_{G_1}$ is the Fourier transform on $\mathcal{S}(G^1)$ and $\check{F}_{G^1}$ is the composition of $F_{G^1}$ with the inversion automorphism on $G^1$.
 
-Proof. Pick a continuous section $\tau$ to $|\cdot|_G$ and use it to define a linear topological isomorphism $C^\infty(G_1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})=\mathcal{S}(G_1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})\simeq\mathcal{S}_I(G)$
+Proof. Pick a continuous section $\tau$ to $|\cdot|_G$ and use it to define a linear topological isomorphism $C^\infty(G^1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})=\mathcal{S}(G^1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})\simeq\mathcal{S}_I(G)$
 
 ## PDF page 813
 
 **D.3. SCHWARTZ-BRUHAT FUNCTIONS WITH I-EXPONENTIAL DECAY** · **813**
 
-from (D.3.3.3). We shall use this to show that $M(\phi)$ is absolutely convergent pointwise on $\Omega(G)_I$ and holomorphic on this open domain inside $\Omega(G)$. Scale the Haar measure on $G=G_1\times\mathbf{R}_{>0}$ to be $\mu_1\times(dt/t)$ where $\mu_1$ is the volume-$1$ Haar measure on $G_1$.
+from (D.3.3.3). We shall use this to show that $M(\phi)$ is absolutely convergent pointwise on $\Omega(G)_I$ and holomorphic on this open domain inside $\Omega(G)$. Scale the Haar measure on $G=G^1\times\mathbf{R}_{>0}$ to be $\mu_1\times(dt/t)$ where $\mu_1$ is the volume-$1$ Haar measure on $G^1$.
 
-We may and do pick a compact subgroup $k\subset G_1$ such that $\phi\in\mathcal{S}_I(k,G)$, so $\phi$ arises from $C^\infty(G_1/k)\otimes\mathcal{S}_I(\mathbf{R}_{>0})=C^\infty(G_1/k)\widehat{\otimes}_\pi\mathcal{S}_I(\mathbf{R}_{>0})$ (topological isomorphism by (D.3.3.5)). By Grothendieck’s description of elements of completed projective tensor products as infinite series [Scha, Ch. III, 6.4], we have
+We may and do pick a compact subgroup $k\subset G^1$ such that $\phi\in\mathcal{S}_I(k,G)$, so $\phi$ arises from $C^\infty(G^1/k)\otimes\mathcal{S}_I(\mathbf{R}_{>0})=C^\infty(G^1/k)\widehat{\otimes}_\pi\mathcal{S}_I(\mathbf{R}_{>0})$ (topological isomorphism by (D.3.3.5)). By Grothendieck’s description of elements of completed projective tensor products as infinite series [Scha, Ch. III, 6.4], we have
 
 $$
 \phi=\sum_{n\ge 1}\lambda_n h_n\otimes f_n
 $$
 
-for an absolutely summable sequence $\{\lambda_n\}$ in $\mathbf{C}$ and sequences $\{h_n\}\subset C^\infty(G_1/k)$ and $\{f_n\}\subset\mathcal{S}_I(\mathbf{R}_{>0})$ that converge to $0$ in the respective locally convex topologies (all such infinite series converge in the completed projective tensor product). Pointwise on $G$ we have $\phi(\tau(t)g_1)=\sum_{n\ge 1}\lambda_n h_n(g_1)f_n(t)$, an absolutely convergent sum since $h_n$ and $f_n$ certainly converge to $0$ pointwise. Since $h_n\to 0$ uniformly on $G_1$ (as the sup-norm on $C^\infty(G_1/k)$ is among the seminorms defining the topology), so $|h_n|\le B$ for all $n$ and some $B>0$, for $c\in\Omega(G)_I$ with $\mathrm{Re}(c)=a\in I$ we have
+for an absolutely summable sequence $\{\lambda_n\}$ in $\mathbf{C}$ and sequences $\{h_n\}\subset C^\infty(G^1/k)$ and $\{f_n\}\subset\mathcal{S}_I(\mathbf{R}_{>0})$ that converge to $0$ in the respective locally convex topologies (all such infinite series converge in the completed projective tensor product). Pointwise on $G$ we have $\phi(\tau(t)g^1)=\sum_{n\ge 1}\lambda_n h_n(g^1)f_n(t)$, an absolutely convergent sum since $h_n$ and $f_n$ certainly converge to $0$ pointwise. Since $h_n\to 0$ uniformly on $G^1$ (as the sup-norm on $C^\infty(G^1/k)$ is among the seminorms defining the topology), so $|h_n|\le B$ for all $n$ and some $B>0$, for $c\in\Omega(G)_I$ with $\mathrm{Re}(c)=a\in I$ we have
 
 $$
-|\phi(\tau(t)g_1)c(\tau(t)g_1)|\le\sum_{n\ge 1}B|\lambda_n||f_n(t)|t^a.
+|\phi(\tau(t)g^1)c(\tau(t)g^1)|\le\sum_{n\ge 1}B|\lambda_n||f_n(t)|t^a.
 $$
 
-We have arranged $\mu=\mu_1\times dt/t$ with $\mu_1(G_1)=1$, so for $a\in I$ we have
+We have arranged $\mu=\mu_1\times dt/t$ with $\mu_1(G^1)=1$, so for $a\in I$ we have
 
 $$
 \sum_{n\ge 1}B|\lambda_n|\int_G|f_n(t)|t^a\,d\mu(g)=\sum_{n\ge 1}B|\lambda_n|\int_{\mathbf{R}_{>0}}|f_n(t)t^a|\,dt/t
@@ -3400,70 +3400,70 @@ with $f_n(t)t^a\in\mathcal{S}(\mathbf{R}_{>0})$ a sequence of functions tending 
 The preceding method of proof of absolute convergence pointwise on $\Omega(G)_I$ also gives the pointwise equality
 
 $$
-M(\phi)(c)=\sum_{n\ge 1}\lambda_n\int_G h_n(g_1)f_n(\tau(t))c(\tau(t)g_1)\,d\mu(\tau(t)g_1) \tag{D.3.3.13}
+M(\phi)(c)=\sum_{n\ge 1}\lambda_n\int_G h_n(g^1)f_n(\tau(t))c(\tau(t)g^1)\,d\mu(\tau(t)g^1) \tag{D.3.3.13}
 $$
 
-with uniform control on decay of the tail as $c$ varies in vertical strips $\Omega(G)_J$ for compact intervals $J\subset I$ since (i) the decay $t^a f_n\to 0$ in $\mathcal{S}(\mathbf{R}_{>0})$ for $a\in J$ is uniformly controlled as such $a$ varies (we only need to consider $a$ an endpoint of $J$), (ii) $\sum_{n\ge N}|\lambda_n|\to 0$ as $N\to\infty$. Thus, (D.3.3.13) converges uniformly on $\Omega(G)_J$ for compact $J\subset I$ (so uniformly on compact subsets of $\Omega(G)_I$), reducing the verification of holomorphicity to the special case $\phi=h\otimes f$ for $h\in C^\infty(G_1/k)$ and $f\in\mathcal{S}_I(\mathbf{R}_{>0})$. In such cases, with $c$ varying in the connected component of $\Omega(G)_I$ labelled by some $\omega\in\widehat{G}_1$ (i.e., $c|_{G_1}=\omega$) and using the unitary base point $\chi(\tau(t)g_1)=\omega(g_1)$ (so $c=\chi|\cdot|^s_G$) we have
+with uniform control on decay of the tail as $c$ varies in vertical strips $\Omega(G)_J$ for compact intervals $J\subset I$ since (i) the decay $t^a f_n\to 0$ in $\mathcal{S}(\mathbf{R}_{>0})$ for $a\in J$ is uniformly controlled as such $a$ varies (we only need to consider $a$ an endpoint of $J$), (ii) $\sum_{n\ge N}|\lambda_n|\to 0$ as $N\to\infty$. Thus, (D.3.3.13) converges uniformly on $\Omega(G)_J$ for compact $J\subset I$ (so uniformly on compact subsets of $\Omega(G)_I$), reducing the verification of holomorphicity to the special case $\phi=h\otimes f$ for $h\in C^\infty(G^1/k)$ and $f\in\mathcal{S}_I(\mathbf{R}_{>0})$. In such cases, with $c$ varying in the connected component of $\Omega(G)_I$ labelled by some $\omega\in\widehat{G}^1$ (i.e., $c|_{G^1}=\omega$) and using the unitary base point $\chi(\tau(t)g^1)=\omega(g^1)$ (so $c=\chi|\cdot|^s_G$) we have
 
 $$
-M(h\otimes f)(c)=\int_{G_1}h\omega\,d\mu_1\cdot\int_{\mathbf{R}_{>0}}f(t)t^s\,dt/t=(F_{G_1}(h))(1/\omega)(M_I(f))(s) \tag{D.3.3.14}
+M(h\otimes f)(c)=\int_{G^1}h\omega\,d\mu_1\cdot\int_{\mathbf{R}_{>0}}f(t)t^s\,dt/t=(F_{G^1}(h))(1/\omega)(M_I(f))(s) \tag{D.3.3.14}
 $$
 
-where $M_I : \mathcal{S}_I(\mathbf{R})\simeq\mathcal{AS}(\mathbf{C}_I)\subset\mathscr{H}(\mathbf{C}_I)$ is as in (D.3.2.2) (the Fourier transform $F_{G_1}(h)$ is evaluated on $1/\omega=\bar\omega$ rather than $\omega$ due to the appearance of complex conjugation in Definition D.1.1.4 for the Fourier transform on locally compact abelian groups).
+where $M_I : \mathcal{S}_I(\mathbf{R})\simeq\mathcal{AS}(\mathbf{C}_I)\subset\mathscr{H}(\mathbf{C}_I)$ is as in (D.3.2.2) (the Fourier transform $F_{G^1}(h)$ is evaluated on $1/\omega=\bar\omega$ rather than $\omega$ due to the appearance of complex conjugation in Definition D.1.1.4 for the Fourier transform on locally compact abelian groups).
 
 ## PDF page 814
 
 **814** · **CHAPTER D. SCHWARTZ-BRUHAT FUNCTIONS**
 
-With the convergence and holomorphicity aspects of $M(\phi)$ established, if $\phi$ is $k$-invariant for a compact subgroup $k\subset G_1$ (with finitely generated orthogonal in $\widehat{G}_1$) then we claim the restriction of $M(\phi)$ to the connected component $\Omega(G)_{I,\omega}$ over $\omega\in\widehat{G}_1$ vanishes except possibly when $\omega(k)=1$ (i.e., $\omega\in k^\perp$). In other words, under the product decomposition
+With the convergence and holomorphicity aspects of $M(\phi)$ established, if $\phi$ is $k$-invariant for a compact subgroup $k\subset G^1$ (with finitely generated orthogonal in $\widehat{G}^1$) then we claim the restriction of $M(\phi)$ to the connected component $\Omega(G)_{I,\omega}$ over $\omega\in\widehat{G}^1$ vanishes except possibly when $\omega(k)=1$ (i.e., $\omega\in k^\perp$). In other words, under the product decomposition
 
 $$
 \mathscr{H}(\Omega(G)_I)=\prod_{\omega\in\widehat{G}}\mathscr{H}(\Omega(G)_{I,\omega})
 $$
 
-we claim the holomorphic $M(\phi)$ is supported in the factors labeled by $k^\perp=\widehat{G_1/k}$, which is to say it arises from the subspace $\mathscr{H}(\Omega(G/k)_I)=\prod_{\omega\in\widehat{G_1/k}}\mathscr{H}(\Omega(G/k)_{I,\omega})$ embedded using $0$ along all factors not labeled by $\widehat{G_1/k}$ (note that $\Omega(G/k)_{I,\omega}=\Omega(G)_{I,\omega}$ when $\omega(k)=1$). This is a direct calculation: if $\omega|_k$ is non-trivial then for $c\in\Omega(G)_{I,\omega}$ the assumed $k$-invariance of $\phi$ implies
+we claim the holomorphic $M(\phi)$ is supported in the factors labeled by $k^\perp=\widehat{G^1/k}$, which is to say it arises from the subspace $\mathscr{H}(\Omega(G/k)_I)=\prod_{\omega\in\widehat{G^1/k}}\mathscr{H}(\Omega(G/k)_{I,\omega})$ embedded using $0$ along all factors not labeled by $\widehat{G^1/k}$ (note that $\Omega(G/k)_{I,\omega}=\Omega(G)_{I,\omega}$ when $\omega(k)=1$). This is a direct calculation: if $\omega|_k$ is non-trivial then for $c\in\Omega(G)_{I,\omega}$ the assumed $k$-invariance of $\phi$ implies
 
 $$
 M(\phi)(c)=\int_G\phi(g)c(g)\,d\mu(g)=\int_{G/k}\phi(g)c(g)\left(\int_k c(x)\,d\mu_k(x)\right)d\mu(g)
 $$
 
-(with $g$ a representative of $g\in G/k$), and the inner integral over $k$ is $\int_k\omega\,d\mu_k=0$ since $\omega|_k$ is non-trivial. Thus, $M_I$ for $G$ is obtained as the direct limit of the corresponding Fourier-Mellin transforms for $G/k$ as $k$ varies through a countable cofinal decreasing sequence $\{k_m\}$ of compact subgroups $k\subset G_1$ with finitely generated orthogonal inside $\widehat{G}_1$. Topologically $\mathcal{S}_I(G)$ is the locally convex inductive limit of the spaces $\mathcal{S}_I(k_m,G)=\mathcal{S}_I(G/k_m)$, so by the good behavior of $\overline{\otimes}$ with respect to countable strict inductive limits (Proposition C.2.3.13(2)) we may and do now focus on each $G/k_m$ in place of $G$; i.e., we consider $G$ that is an elementary abelian Lie group (equivalently, the compact $G_1$ has compactly generated dual group).
+(with $g$ a representative of $g\in G/k$), and the inner integral over $k$ is $\int_k\omega\,d\mu_k=0$ since $\omega|_k$ is non-trivial. Thus, $M_I$ for $G$ is obtained as the direct limit of the corresponding Fourier-Mellin transforms for $G/k$ as $k$ varies through a countable cofinal decreasing sequence $\{k_m\}$ of compact subgroups $k\subset G^1$ with finitely generated orthogonal inside $\widehat{G}^1$. Topologically $\mathcal{S}_I(G)$ is the locally convex inductive limit of the spaces $\mathcal{S}_I(k_m,G)=\mathcal{S}_I(G/k_m)$, so by the good behavior of $\overline{\otimes}$ with respect to countable strict inductive limits (Proposition C.2.3.13(2)) we may and do now focus on each $G/k_m$ in place of $G$; i.e., we consider $G$ that is an elementary abelian Lie group (equivalently, the compact $G^1$ has compactly generated dual group).
 
-The choice of $\tau$ identifies $\Omega(G)_I$ with $\widehat{G}_1\times\mathbf{C}_I$ for $\widehat{G}_1$ discrete, so $\mathscr{H}(\Omega(G)_I)=\prod_{\omega\in\widehat{G}_1}\mathscr{H}(\mathbf{C}_I)$. Equipping the $\omega$-component with the unitary base point $\chi(\tau(t)g_1)=\omega(g_1)$, (D.3.3.14) says that the restriction of the Fourier-Mellon transform to an elementary tensor $h\otimes f\in C^\infty(G_1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})\subset\mathcal{S}_I(G)$ is the tuple
+The choice of $\tau$ identifies $\Omega(G)_I$ with $\widehat{G}^1\times\mathbf{C}_I$ for $\widehat{G}^1$ discrete, so $\mathscr{H}(\Omega(G)_I)=\prod_{\omega\in\widehat{G}^1}\mathscr{H}(\mathbf{C}_I)$. Equipping the $\omega$-component with the unitary base point $\chi(\tau(t)g^1)=\omega(g^1)$, (D.3.3.14) says that the restriction of the Fourier-Mellon transform to an elementary tensor $h\otimes f\in C^\infty(G^1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})\subset\mathcal{S}_I(G)$ is the tuple
 
 $$
-\prod_{\omega\in\widehat{G}_1}(\check{F}_{G_1}(h))(\omega)M_I(f)\in\prod_{\omega\in\widehat{G}_1}\mathcal{AS}(\mathbf{C}_I).
+\prod_{\omega\in\widehat{G}^1}(\check{F}_{G^1}(h))(\omega)M_I(f)\in\prod_{\omega\in\widehat{G}^1}\mathcal{AS}(\mathbf{C}_I).
 $$
 
 For any (discrete) set $\Sigma$ and $\mathbf{C}$-vector space $V$, the natural map $\mathrm{Map}(\Sigma,\mathbf{C})\otimes V\to\prod_{\sigma\in\Sigma}V$ defined by $h\otimes v\mapsto (h(\sigma)v)$ is injective (via passage to the direct limit from the case of finite-dimensional $V$), so in particular we have
 
 $$
-\mathcal{S}(\widehat{G}_1)\otimes\mathcal{AS}(\mathbf{C}_I)\hookrightarrow\prod_{\omega\in\widehat{G}_1}\mathcal{AS}(\mathbf{C}_I)
+\mathcal{S}(\widehat{G}^1)\otimes\mathcal{AS}(\mathbf{C}_I)\hookrightarrow\prod_{\omega\in\widehat{G}^1}\mathcal{AS}(\mathbf{C}_I)
 $$
 
-and $\check{F}_{G_1}(h)\in\mathcal{S}(\widehat{G}_1)$.
+and $\check{F}_{G^1}(h)\in\mathcal{S}(\widehat{G}^1)$.
 
-We have shown that the restriction of $M$ to the subspace $\mathcal{S}(G_1)\otimes\mathcal{S}(\mathbf{R}_{>0})\subset\mathcal{S}_I(G)$ is the composition of the algebraic isomorphism
+We have shown that the restriction of $M$ to the subspace $\mathcal{S}(G^1)\otimes\mathcal{S}(\mathbf{R}_{>0})\subset\mathcal{S}_I(G)$ is the composition of the algebraic isomorphism
 
 $$
-\check{F}_{G_1}\otimes M_I : \mathcal{S}(G_1)\otimes\mathcal{S}(\mathbf{R}_{>0})\simeq\mathcal{S}(\widehat{G}_1)\otimes\mathcal{AS}(\mathbf{C}_I)
+\check{F}_{G_1}\otimes M_I : \mathcal{S}(G^1)\otimes\mathcal{S}(\mathbf{R}_{>0})\simeq\mathcal{S}(\widehat{G}^1)\otimes\mathcal{AS}(\mathbf{C}_I)
 $$
 
-followed by the injection of the latter into $\prod_{\omega\in\widehat{G}_1}\mathcal{AS}(\mathbf{C}_I)\subset\prod_{\omega\in\widehat{G}_1}\mathscr{H}(\mathbf{C}_I)=\mathscr{H}(\Omega(G)_I)$. Since the Fourier transform $\check{F}_{G_1} : \mathcal{S}(G_1)\to\mathcal{S}(\widehat{G}_1)$ is a linear topological isomorphism (Lemma D.1.6.19(2)) and likewise for $M_I : \mathcal{S}_I(\mathbf{R}_{>0})\simeq\mathcal{AS}(\mathbf{C}_I)$ by (D.3.2.2) It follows that $M$ restricts to a linear topological isomorphism $\mathcal{S}(G_1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})\simeq\mathcal{S}(\widehat{G}_1)\otimes\mathcal{AS}(\mathbf{C}_I)$
+followed by the injection of the latter into $\prod_{\omega\in\widehat{G}^1}\mathcal{AS}(\mathbf{C}_I)\subset\prod_{\omega\in\widehat{G}^1}\mathscr{H}(\mathbf{C}_I)=\mathscr{H}(\Omega(G)_I)$. Since the Fourier transform $\check{F}_{G^1} : \mathcal{S}(G^1)\to\mathcal{S}(\widehat{G}^1)$ is a linear topological isomorphism (Lemma D.1.6.19(2)) and likewise for $M_I : \mathcal{S}_I(\mathbf{R}_{>0})\simeq\mathcal{AS}(\mathbf{C}_I)$ by (D.3.2.2) It follows that $M$ restricts to a linear topological isomorphism $\mathcal{S}(G^1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})\simeq\mathcal{S}(\widehat{G}^1)\otimes\mathcal{AS}(\mathbf{C}_I)$
 
 ## PDF page 815
 
 **D.3. SCHWARTZ-BRUHAT FUNCTIONS WITH I-EXPONENTIAL DECAY** · **815**
 
-where the two sides are given either the inductive or projective tensor product topologies, both of which coincide due to Corollary C.2.3.12 since the tensor factors are Fréchet (recall $G_1$ is now an elementary abelian Lie group).
+where the two sides are given either the inductive or projective tensor product topologies, both of which coincide due to Corollary C.2.3.12 since the tensor factors are Fréchet (recall $G^1$ is now an elementary abelian Lie group).
 
-We have shown via Grothendieck’s infinite series description of $\mathcal{S}(G_1)\widehat{\otimes}_\pi\mathcal{S}_I(\mathbf{R}_{>0})\simeq\mathcal{S}_I(G)$ that $M$ carries $\sum\lambda_n h_n\otimes f_n$ (for absolutely summable $\{\lambda_n\}$ and null sequences $h_n,f_n$) to the holomorphic function whose restriction to $\Omega(G)_{I,\omega}=\mathbf{C}_I$ is
+We have shown via Grothendieck’s infinite series description of $\mathcal{S}(G^1)\widehat{\otimes}_\pi\mathcal{S}_I(\mathbf{R}_{>0})\simeq\mathcal{S}_I(G)$ that $M$ carries $\sum\lambda_n h_n\otimes f_n$ (for absolutely summable $\{\lambda_n\}$ and null sequences $h_n,f_n$) to the holomorphic function whose restriction to $\Omega(G)_{I,\omega}=\mathbf{C}_I$ is
 
 $$
-\sum_{n\ge 1}\lambda_n(\check{F}_{G_1}(h))(\omega)M_I(f_n).
+\sum_{n\ge 1}\lambda_n(\check{F}_{G^1}(h))(\omega)M_I(f_n).
 $$
 
-Thus, it remains to show that for the complete Hausdorff locally convex topological vector space $V=\mathcal{AS}(\mathbf{C}_I)$ and the discrete finitely generated abelian group $\Gamma=\widehat{G}_1$, the unique continuous map
+Thus, it remains to show that for the complete Hausdorff locally convex topological vector space $V=\mathcal{AS}(\mathbf{C}_I)$ and the discrete finitely generated abelian group $\Gamma=\widehat{G}^1$, the unique continuous map
 
 $$
 \theta : \mathcal{S}(\Gamma)\widehat{\otimes}_\pi V\to\prod_{\gamma\in\Gamma}V
@@ -3474,7 +3474,7 @@ arising via completeness of the target [Scha, Ch. II, 5.3] and continuity of the
 The explicit description of $\theta$ on Grothendieck’s infinite series is immediate from continuity considerations, so the composite map
 
 $$
-\mathcal{S}_I(G)\simeq\mathcal{S}(G_1)\widehat{\otimes}_\pi\mathcal{S}_I(\mathbf{R}_{>0})\xrightarrow{\check{F}_{G_1}\widehat{\otimes}M_I}\mathcal{S}(\widehat{G}_1)\widehat{\otimes}_\pi\mathcal{AS}(\mathbf{C}_I)\xrightarrow{\theta}\prod_{\omega\in\widehat{G}_1}\mathscr{H}(\mathbf{C}_I)=\mathscr{H}(\Omega(G)_I)
+\mathcal{S}_I(G)\simeq\mathcal{S}(G^1)\widehat{\otimes}_\pi\mathcal{S}_I(\mathbf{R}_{>0})\xrightarrow{\check{F}_{G_1}\widehat{\otimes}M_I}\mathcal{S}(\widehat{G}^1)\widehat{\otimes}_\pi\mathcal{AS}(\mathbf{C}_I)\xrightarrow{\theta}\prod_{\omega\in\widehat{G}^1}\mathscr{H}(\mathbf{C}_I)=\mathscr{H}(\Omega(G)_I)
 $$
 
 coincides with the Fourier-Mellin transform $M$. Hence, injectivity of $\theta$ is reduced to injectivity of $M$, and that in turn follows from combining injectivity of restriction of holomorphic functions to vertical lines in $\Omega(G)_I$ and injectivity of the Fourier transform on Schwartz functions. $\square$
@@ -3487,7 +3487,7 @@ $$
 \Omega(G)_I:=\{c\in\Omega(G) : \sigma(c)\in I\}
 $$
 
-where $\sigma : \Omega(G)\to\mathbf{R}$ is the exponent function, associating to a continuous quasi-character $c\in\Omega(G)$ the unique real number $\sigma(c)$ such that $c=\chi|\cdot|^{\sigma(c)+it}_G$ for a, equivalently any, choice $\chi\in\widehat{G}$ of continuous (unitary) character such that $\chi|_{G_1}=c|_{G_1}$, and $t\in\mathbf{R}$ the real number uniquely determined by $\chi$ such that $c=\chi|\cdot|^{\sigma(c)+it}_G$.
+where $\sigma : \Omega(G)\to\mathbf{R}$ is the exponent function, associating to a continuous quasi-character $c\in\Omega(G)$ the unique real number $\sigma(c)$ such that $c=\chi|\cdot|^{\sigma(c)+it}_G$ for a, equivalently any, choice $\chi\in\widehat{G}$ of continuous (unitary) character such that $\chi|_{G^1}=c|_{G^1}$, and $t\in\mathbf{R}$ the real number uniquely determined by $\chi$ such that $c=\chi|\cdot|^{\sigma(c)+it}_G$.
 
 Upon changing the choice of $\chi$, the real number $t\in\mathbf{R}$ changes accordingly, but $\sigma(c)$ does not change, and it is therefore uniquely associated to $c$. The function $\sigma : \Omega(G)\to\mathbf{R}$ is continuous and surjective. The next result is a generalization of Proposition B.2.2.3(2), but first we need to record a useful observation:
 
@@ -3511,7 +3511,7 @@ $$
 
 for $e\in G$ the neutral element (on $\widehat{G}\subset\Omega(G)$ this recovers the symbol $p(D)$ from Definition D.1.6.10). Fix a Haar measure $\mu$ on $G$ to define the Fourier-Mellin transform $M : \mathcal{S}_IG)\to\mathcal{S}_I(G)$ $M_I\to\mathscr{H}(\Omega(G)_I)$ by $M(\phi) : c\mapsto\int_G\phi(g)c(g)\,d\mu(g)$.
 
-For every bounded subset $B\subset\mathcal{S}_I(G)$ and a fixed choice of $\omega\in\widehat{G}_1$ there exist constants $C_{B,D,I}>0$ and $M_{\omega,B,D,I}>0$ such that
+For every bounded subset $B\subset\mathcal{S}_I(G)$ and a fixed choice of $\omega\in\widehat{G}^1$ there exist constants $C_{B,D,I}>0$ and $M_{\omega,B,D,I}>0$ such that
 
 $$
 |M(\phi)(c)|\le\frac{C_{B,D,I}}{|p_D(c)|} \tag{D.3.4.2}
@@ -3533,7 +3533,7 @@ $$
 
 Thus, $C_{B,D,I}:=NC'_{B,D,I}$ and $M_{\omega,B,D,I}$ do the job for $D$.
 
-Now we may and do assume $D=\partial^{r_1}_{a_1}\cdots\partial^{r_n}_{a_n}$ for some exponents $r_i\in\mathbf{N}$. Next we reduce to the case that $G$ is an elementary abelian Lie group. By second-countability, there is a cofinal decreasing sequence $\{k_m\}$ of compact subgroups of $G$ with compactly generated orthogonal such that $\mathcal{S}_I(G)=\varinjlim_m\mathcal{S}_I(k_m,G)$ as a countable strict inductive limit, so $B\subset\mathcal{S}_I(k_{m_0},G)$ for some $m_0$ by [Scha, Ch. II, 6.5]. Increasing $m_0$ if necessary allows us to also arrange that $\omega(k_{m_0})=1$. In particular, for $k=k_{m_0}$ we see that every $\phi\in B$ is $k$-invariant and $\omega\in\widehat{(G/k)}_1$. Clearly also $D(\phi)$ is $k$-invariant since $D$ is an invariant differential operator, and $D(\phi)\in\mathcal{S}_I(G)$ by Remark D.3.4.1, so $D(\phi)\in\mathcal{S}_I(k,G)\simeq\mathcal{S}_I(G/k)$. The quotient $G/k$ is an elementary abelian Lie group and it is $\mathbf{R}_{>0}$-modulated because $k\subset G_1$.
+Now we may and do assume $D=\partial^{r_1}_{a_1}\cdots\partial^{r_n}_{a_n}$ for some exponents $r_i\in\mathbf{N}$. Next we reduce to the case that $G$ is an elementary abelian Lie group. By second-countability, there is a cofinal decreasing sequence $\{k_m\}$ of compact subgroups of $G$ with compactly generated orthogonal such that $\mathcal{S}_I(G)=\varinjlim_m\mathcal{S}_I(k_m,G)$ as a countable strict inductive limit, so $B\subset\mathcal{S}_I(k_{m_0},G)$ for some $m_0$ by [Scha, Ch. II, 6.5]. Increasing $m_0$ if necessary allows us to also arrange that $\omega(k_{m_0})=1$. In particular, for $k=k_{m_0}$ we see that every $\phi\in B$ is $k$-invariant and $\omega\in\widehat{(G/k)}^1$. Clearly also $D(\phi)$ is $k$-invariant since $D$ is an invariant differential operator, and $D(\phi)\in\mathcal{S}_I(G)$ by Remark D.3.4.1, so $D(\phi)\in\mathcal{S}_I(k,G)\simeq\mathcal{S}_I(G/k)$. The quotient $G/k$ is an elementary abelian Lie group and it is $\mathbf{R}_{>0}$-modulated because $k\subset G^1$.
 
 For any $1$-parameter subgroup $b : \mathbf{R}\to G$ with composite $1$-parameter subgroup $\bar b : \mathbf{R}\to G/k$, we have $(\partial_b\phi)(x)=\lim_{t\to 0}\frac{\phi(b(t)x)-\phi(x)}{t}=(\partial_{\bar b}\bar\phi)(x\bmod k)$ for $\bar\phi : G/k\to\mathbf{C}$ the corresponding element of $\mathcal{S}_I(G/k)$ (see Lemma D.1.5.4). Thus, $D(\phi)\in\mathcal{S}_I(k,G)$ corresponding to $\bar D(\bar\phi)\in\mathcal{S}_I(G/k)$ where $\bar D:=\partial^{r_1}_{\bar a_1}\cdots\partial^{r_n}_{\bar a_n}$ as an invariant differential operator on $C^\infty(G/k)$. (The $\bar a_i$’s may merely span $\mathfrak{L}(G/k)$ rather than be a basis for it, but that doesn’t matter because once we reduce to studying $D$ and $B\subset\mathcal{S}_I(G/k)$ we can go again through the reduction to a product among the first-order operators associated to a basis of $\mathfrak{L}(G/k)$.)
 
@@ -3545,17 +3545,17 @@ By using Weil’s coset integration formula from Theorem D.1.2.1 exactly as in t
 
 except possibly when $c\in k^\perp=\widehat{G/k}$, and that if $c\in k^\perp$ then $M(\phi)(c)=M(\bar\phi)(\bar c)$ where $\bar c\in\Omega(G/k)$ corresponds to $c$ and the Fourier-Mellin transform on $G/k$ is defined using the Haar measure associated to the initial choice of $\mu$ on $G$ (used to define $M$ for $G$) and the volume-$1$ Haar measure on $k$. Since it is also clear from the definitions that $p_D(c)=p_{\bar D}(\bar c)$, we may rename $G/k$ as $G$ to reduce to the case that $G$ is an elementary abelian Lie group.
 
-Since $G$ is $\mathbf{R}_{>0}$-modulated, any choice $\tau$ of continuous homomorphic section to the module $|\cdot|_G$ induces an isomorphism of Hausdorff locally compact abelian groups $G\simeq\mathbf{R}_{>0}\times G_1$, and hence the compact Hausdorff abelian group $G_1=\ker(|\cdot|_G)$ is an elementary abelian Lie group: $G_1\simeq\mathbf{T}^m\times F$ for an integer $m=n-1\ge 0$ and a finite abelian group $F$ (with $\mathbf{T}=\mathbf{R}/\mathbf{Z}$). We have $F=\pi_0(G)$ and the $1$-parameter subgroups of $G$ are all contained in the identity component, so by treating the restrictions of $\phi$ to each of the finitely many connected components of $G$ separately we may and do assume $G$ is connected: $G=\mathbf{R}_{>0}\times\mathbf{T}^m$.
+Since $G$ is $\mathbf{R}_{>0}$-modulated, any choice $\tau$ of continuous homomorphic section to the module $|\cdot|_G$ induces an isomorphism of Hausdorff locally compact abelian groups $G\simeq\mathbf{R}_{>0}\times G^1$, and hence the compact Hausdorff abelian group $G^1=\ker(|\cdot|_G)$ is an elementary abelian Lie group: $G^1\simeq\mathbf{T}^m\times F$ for an integer $m=n-1\ge 0$ and a finite abelian group $F$ (with $\mathbf{T}=\mathbf{R}/\mathbf{Z}$). We have $F=\pi_0(G)$ and the $1$-parameter subgroups of $G$ are all contained in the identity component, so by treating the restrictions of $\phi$ to each of the finitely many connected components of $G$ separately we may and do assume $G$ is connected: $G=\mathbf{R}_{>0}\times\mathbf{T}^m$.
 
-Now $\mathcal{S}_I(G)\simeq\mathcal{S}_I(\mathbf{R}_{>0})\otimes\mathcal{S}(\mathbf{T}^m)\simeq\mathcal{S}_I(\mathbf{R}_{>0})\widehat{\otimes}_\pi\mathcal{S}(\mathbf{T}^m)$ where both tensor factors are Fréchet spaces. Since $\mathcal{S}_I(G)$ is Montel (Theorem D.3.3.7), the closure of $B$ (which is also bounded [Scha, Ch. I, 5.1]) is compact. Thus, by [Tre, Cor. 2 to Thm. 45.2] there are compact subsets $K_1\subset\mathcal{S}_I(\mathbf{R}_{>0})$ and $K_2\subset\mathcal{S}(\mathbf{T}^m)$ such that $B$ is contained in the closure $\mathrm{cch}(K_1\otimes K_2)$ of the convex circled hull of the set of elementary tensors $f_1\otimes f_2$ for $f_1\in K_1$ and $f_2\in K_2$. If a constant $C_{B,D,I}$ can be found that works for all such elementary tensors then it also works for their circled hull as well as for all convex combinations from the circled hull, and then for the closure thereof. In other words, it suffices to treat the case $\phi=f_1\otimes f_2$. Writing $c=c_1\otimes\omega$ for $c_1\in\Omega(\mathbf{R}_{>0})_I$, we have $M(\phi)(c)=M(f_1)(c_1)M(f_2)(\omega)$ (for a choice of Haar measures on $\mathbf{R}_{>0}$ and $G_1$ whose product measure is the chosen one on $G$).
+Now $\mathcal{S}_I(G)\simeq\mathcal{S}_I(\mathbf{R}_{>0})\otimes\mathcal{S}(\mathbf{T}^m)\simeq\mathcal{S}_I(\mathbf{R}_{>0})\widehat{\otimes}_\pi\mathcal{S}(\mathbf{T}^m)$ where both tensor factors are Fréchet spaces. Since $\mathcal{S}_I(G)$ is Montel (Theorem D.3.3.7), the closure of $B$ (which is also bounded [Scha, Ch. I, 5.1]) is compact. Thus, by [Tre, Cor. 2 to Thm. 45.2] there are compact subsets $K_1\subset\mathcal{S}_I(\mathbf{R}_{>0})$ and $K_2\subset\mathcal{S}(\mathbf{T}^m)$ such that $B$ is contained in the closure $\mathrm{cch}(K_1\otimes K_2)$ of the convex circled hull of the set of elementary tensors $f_1\otimes f_2$ for $f_1\in K_1$ and $f_2\in K_2$. If a constant $C_{B,D,I}$ can be found that works for all such elementary tensors then it also works for their circled hull as well as for all convex combinations from the circled hull, and then for the closure thereof. In other words, it suffices to treat the case $\phi=f_1\otimes f_2$. Writing $c=c_1\otimes\omega$ for $c_1\in\Omega(\mathbf{R}_{>0})_I$, we have $M(\phi)(c)=M(f_1)(c_1)M(f_2)(\omega)$ (for a choice of Haar measures on $\mathbf{R}_{>0}$ and $G^1$ whose product measure is the chosen one on $G$).
 
-Writing $D=D_1\otimes D_2$ on $\mathcal{S}_I(G)=\mathcal{S}_I(\mathbf{R}_{>0})\otimes\mathcal{S}(G_1)$ (where $D_1=(t\partial_t)^{r_1}$ for some integer $r_1\ge 0$ and $D_2$ is a product of $r_2\ge 0$ operators $\partial_{z_j}$’s — with repetition allowed — among the $\partial_{z_j}$’s for $(z_1,\dots,z_m)$ the standard coordinates on $G_1=\mathbf{T}^m$), clearly
+Writing $D=D_1\otimes D_2$ on $\mathcal{S}_I(G)=\mathcal{S}_I(\mathbf{R}_{>0})\otimes\mathcal{S}(G^1)$ (where $D_1=(t\partial_t)^{r_1}$ for some integer $r_1\ge 0$ and $D_2$ is a product of $r_2\ge 0$ operators $\partial_{z_j}$’s — with repetition allowed — among the $\partial_{z_j}$’s for $(z_1,\dots,z_m)$ the standard coordinates on $G^1=\mathbf{T}^m$), clearly
 
 $$
 p_D(c)=p_{D_1}(c_1)p_{D_2}(\omega).
 $$
 
-Since $p_{D_2}(\omega)$ is a fixed value (as $D$ and $\omega$ are fixed), keeping $|p_D(c)|$ above a positive constant $M$ ensures $|p_{D_1}(c_1)|\ge M/|p_{D_2}(\omega)|$ as we vary such $c=c_1\otimes\omega$. In this way we see it suffices to separately treat the case $G=\mathbf{R}_{>0}$ and an analogous result for the compact $G_1=\mathbf{T}^m$: for any compact subset $K\subset\mathcal{S}(G_1)$ and the differential operator $D=\partial^{r_1}_{z_1}\cdots\partial^{r_m}_{z_m}$ on $G_1=\mathbf{T}^m$, if $p_D(\omega)\ne 0$ then there is a constant $C_K>0$ such that $|M(\phi)(\omega)|\le C_K$ for all $\phi\in K$. Since $\mathcal{S}(\mathbf{T}^m)\simeq\mathcal{S}(\mathbf{T}^{m-1})\widehat{\otimes}_\pi\mathcal{S}(\mathbf{T})$, if $m>1$ then we can go through an analogous argument to pass to the separate cases of $\mathbf{T}^{m-1}$ and $\mathbf{T}$. In other words, it suffices to treat the case $G=\mathbf{R}_{>0}$ and the analogous result as stated above for $G=\mathbf{T}=\mathbf{R}/\mathbf{Z}$. For $G=\mathbf{R}_{>0}$ we may assume $D=(t\partial_t)^r$ for some $r\ge 1$ and for $G=\mathbf{T}$ we may assume $D=\partial^r_z$ for some $r\ge 1$.
+Since $p_{D_2}(\omega)$ is a fixed value (as $D$ and $\omega$ are fixed), keeping $|p_D(c)|$ above a positive constant $M$ ensures $|p_{D_1}(c_1)|\ge M/|p_{D_2}(\omega)|$ as we vary such $c=c_1\otimes\omega$. In this way we see it suffices to separately treat the case $G=\mathbf{R}_{>0}$ and an analogous result for the compact $G^1=\mathbf{T}^m$: for any compact subset $K\subset\mathcal{S}(G^1)$ and the differential operator $D=\partial^{r_1}_{z_1}\cdots\partial^{r_m}_{z_m}$ on $G^1=\mathbf{T}^m$, if $p_D(\omega)\ne 0$ then there is a constant $C_K>0$ such that $|M(\phi)(\omega)|\le C_K$ for all $\phi\in K$. Since $\mathcal{S}(\mathbf{T}^m)\simeq\mathcal{S}(\mathbf{T}^{m-1})\widehat{\otimes}_\pi\mathcal{S}(\mathbf{T})$, if $m>1$ then we can go through an analogous argument to pass to the separate cases of $\mathbf{T}^{m-1}$ and $\mathbf{T}$. In other words, it suffices to treat the case $G=\mathbf{R}_{>0}$ and the analogous result as stated above for $G=\mathbf{T}=\mathbf{R}/\mathbf{Z}$. For $G=\mathbf{R}_{>0}$ we may assume $D=(t\partial_t)^r$ for some $r\ge 1$ and for $G=\mathbf{T}$ we may assume $D=\partial^r_z$ for some $r\ge 1$.
 
 For $G=\mathbf{R}_{>0}$ we have $c(t)=t^s$ for $s\in\mathbf{C}_I$, so then $p_{(t\partial_t)^r}(c)=s^r$. Since $|s^r|/|\mathrm{Im}(s)|^r$ is uniformly bounded above on the region when $|\mathrm{Im}(s)|$ stays above a chosen $\delta>0$, requiring $|p_D(c)|\ge(\delta+\max(|a|,|b|))^r$ where $I=(a,b)$ ensures $|\mathrm{Im}(s)|\ge\delta$, Thus, we can use Proposition B.2.2.3(2) provided the constant there (which depends on $\phi$, as seen at the end of its proof) is bounded independently of $\phi$ varying in a compact subset $K\subset\mathcal{S}_I(\mathbf{R})$. By construction the constant there can be taken to be
 
@@ -3572,14 +3572,14 @@ where $I=(a,b)$. This constant is bounded for $\phi$ varying through a compact s
 Now consider $G=\mathbf{T}=\mathbf{R}/\mathbf{Z}$ equipped with the volume-$1$ Haar measure. We have $\omega(z)=e^{2\pi imz}$ for some $m\in\mathbf{Z}$, so for $D=\partial^r_z$ we have $p_D(\omega)=(2\pi im)^r$. Thus, we may assume $m\ne 0$ and then integrating by parts $r$ times gives
 
 $$
-M(\phi)(z_m)=\int_0^1\phi(x)e^{2\pi imx}\,dx=-\frac{1}{2\pi im}\int_0^1(\partial_x\phi)(x)e^{2\pi imx}\,dx=\cdots=\left(\frac{-1}{2\pi im}\right)^r\int_0^1(\partial^r_x\phi)(x)e^{2\pi imx}\,dx
+M(\phi)(z^m)=\int_0^1\phi(x)e^{2\pi imx}\,dx=-\frac{1}{2\pi im}\int_0^1(\partial_x\phi)(x)e^{2\pi imx}\,dx=\cdots=\left(\frac{-1}{2\pi im}\right)^r\int_0^1(\partial^r_x\phi)(x)e^{2\pi imx}\,dx
 $$
 
 since $\phi$ is $1$-periodic. We are then done using the constant $C_K=(2\pi|m|)^{-r}\sup_{\phi\in K}\|D\phi\|_{L^1(\mathbf{T})}$ provided this is finite (as $\phi$ varies through a compact subset $K\subset\mathcal{S}(\mathbf{T})$). The seminorm $\phi\mapsto\|D(\phi)\|_{L^1(\mathbf{T})}$ on $\mathcal{S}(\mathbf{T})$ is among a collection of seminorms defining the topology on $\mathcal{S}(\mathbf{T})$ as in (D.1.10.10) (with $p=1$ there), so it is bounded on compact subsets of $L^1(\mathbf{T})$. $\square$
 
 D.3.5. Poisson Summation Formula on $\mathbf{R}_{>0}$-modulated groups: isolated singularities. Let $G$ be a Hausdorff locally compact abelian group, $\mu_G$ a choice of Haar measure on $G$. The Poisson Summation Formula (see (D.1.2.8)) holds everywhere on $G$ — rather than only $\mu_G$-almost everywhere — in the presence of continuity hypotheses as in Theorem D.1.2.7(3). We now give a class of functions with finitely many isolated singularities and smooth everywhere else for which the Formula holds everywhere over $G$ upon redefining the function at singular points as the arithmetic mean of suitable “one-sided” limit values.
 
-Now let $(G,|\cdot|_G)$ be an $\mathbf{R}_{>0}$-modulated group equipped with the canonical Haar measure $\mu_G$ that is the unique one such that, upon denoting by $\mu_1$ the volume-$1$ Haar measure on $G_1$, the unique Haar measure obtained on $G/G_1\simeq\mathbf{R}_{>0}$ (the isomorphism being the module $|\cdot|_G$) as per Theorem D.1.2.1 is $dt/t$ on $\mathbf{R}_{>0}$.
+Now let $(G,|\cdot|_G)$ be an $\mathbf{R}_{>0}$-modulated group equipped with the canonical Haar measure $\mu_G$ that is the unique one such that, upon denoting by $\mu_1$ the volume-$1$ Haar measure on $G^1$, the unique Haar measure obtained on $G/G^1\simeq\mathbf{R}_{>0}$ (the isomorphism being the module $|\cdot|_G$) as per Theorem D.1.2.1 is $dt/t$ on $\mathbf{R}_{>0}$.
 
 Proposition D.3.5.1 (Poisson Summation Formula - jump singularities on $\mathbf{R}_{>0}$-modulated groups). Let $G$ be an $\mathbf{R}_{>0}$-modulated group with module $|\cdot|_G$. Let $\mu_G$ be the canonical Haar measure on $G$. Let $\gamma\in G$ be an element satisfying $|\gamma|_G>1$. Let $\chi_0\in\widehat{G}$ be a continuous (unitary) character, and let $\tau : \mathbf{R}_{>0}\to G$ be a choice of continuous homomorphic section to the module $|\cdot|_G$.
 
@@ -3593,9 +3593,9 @@ $$
 
 for all $g\in G$ with $|\log|g|_G|>T$,
 
-(2) for every $g\in G_1$, the continuous function $\phi(\tau(t)g)$ of $t\in\mathbf{R}_{>0}$ is smooth away from finitely many points $\{t_1,\dots,t_m\}\subset\mathbf{R}_{>0}$ and admits one-sided limits at each of them for each $g\in G_1$, and the derivatives $(t\partial_t)^k\phi(\tau(t)g)$ are continuous functions of $(t,g)\in(\mathbf{R}_{>0}-\{t_1,\dots,t_m\})\times G_1$ for each integer $k\ge 0$,
+(2) for every $g\in G^1$, the continuous function $\phi(\tau(t)g)$ of $t\in\mathbf{R}_{>0}$ is smooth away from finitely many points $\{t_1,\dots,t_m\}\subset\mathbf{R}_{>0}$ and admits one-sided limits at each of them for each $g\in G^1$, and the derivatives $(t\partial_t)^k\phi(\tau(t)g)$ are continuous functions of $(t,g)\in(\mathbf{R}_{>0}-\{t_1,\dots,t_m\})\times G^1$ for each integer $k\ge 0$,
 
-(3) $\phi$ is $\chi_0|_{G_1}$-homogeneous with respect to the left-translation action by $G_1$.
+(3) $\phi$ is $\chi_0|_{G^1}$-homogeneous with respect to the left-translation action by $G^1$.
 
 Then upon redefining $\phi$ on the finitely many fibres of $|\cdot|_G$ over $\{t_1,\dots,t_m\}$ to be
 
@@ -3603,7 +3603,7 @@ $$
 \phi(\tau(t_k)g):=\frac{\lim_{t\to t_k^+}\phi(\tau(t)g)+\lim_{t\to t_k^-}\phi(\tau(t)g)}{2} \tag{D.3.5.2}
 $$
 
-for $1\le k\le m$ and for all $g\in G_1$, the following identity holds for all $x\in G$:
+for $1\le k\le m$ and for all $g\in G^1$, the following identity holds for all $x\in G$:
 
 $$
 \sum_{n\in\mathbf{Z}}\chi_0(\gamma^n x)\phi(\gamma^n x)=\frac{1}{\log|\gamma|_G}\sum_{m\in\mathbf{Z}}\widehat{\phi}\left(\chi_0|\cdot|^{-\frac{2\pi im}{\log|\gamma|_G}+it_0}_G\right)|x|^{\frac{2\pi im}{\log|\gamma|_G}}_G \tag{D.3.5.3}
@@ -3617,13 +3617,13 @@ Remark D.3.5.2. We recall that for $G$ an $\mathbf{R}_{>0}$-modulated group and 
 
 **D.3. SCHWARTZ-BRUHAT FUNCTIONS WITH I-EXPONENTIAL DECAY** · **819**
 
-with $s\in\mathbf{C}$ and $\chi$ varying over a choice $\mathfrak{F}_{G_1}$ of continuous (unitary) characters each lifting each point of the discrete set $\widehat{G}_1$, the continuous characters of $G$ that are trivial on the discrete closed subgroup $\gamma^{\mathbf{Z}}$ are all parametrized as
+with $s\in\mathbf{C}$ and $\chi$ varying over a choice $\mathfrak{F}_{G^1}$ of continuous (unitary) characters each lifting each point of the discrete set $\widehat{G}^1$, the continuous characters of $G$ that are trivial on the discrete closed subgroup $\gamma^{\mathbf{Z}}$ are all parametrized as
 
 $$
 \chi|\cdot|^{\frac{2\pi im}{\log|\gamma|_G}-it(\chi)}_G
 $$
 
-as $\chi$ varies over $\mathfrak{F}_{G_1}$ and $m\in\mathbf{Z}$, with $t(\chi)$ the unique real number contained in $[0,2\pi/\log|\gamma|_G)$ satisfying:
+as $\chi$ varies over $\mathfrak{F}_{G^1}$ and $m\in\mathbf{Z}$, with $t(\chi)$ the unique real number contained in $[0,2\pi/\log|\gamma|_G)$ satisfying:
 
 $$
 e^{it(\chi)\log|\gamma|_G}=\chi(\gamma). \tag{D.3.5.4}
@@ -3631,15 +3631,15 @@ $$
 
 In particular, $\chi':=\chi|\cdot|^{-it(\chi)}_G$ satisfies $\chi'(\gamma)=1$, and hence $\chi'$ is trivial on $\gamma^{\mathbf{Z}}$.
 
-Proof of Proposition D.3.5.1. We observe that for each $x\in G$, writing $x=\tau(t)g$ for unique $(t,g)\in\mathbf{R}_{>0}\times G_1$, both sides of (D.3.5.3) are independent of $g\in G_1$ (this uses hypothesis (3) for independence of $g$ on the left side of (D.3.5.3)).
+Proof of Proposition D.3.5.1. We observe that for each $x\in G$, writing $x=\tau(t)g$ for unique $(t,g)\in\mathbf{R}_{>0}\times G^1$, both sides of (D.3.5.3) are independent of $g\in G^1$ (this uses hypothesis (3) for independence of $g$ on the left side of (D.3.5.3)).
 
-We define $\psi(x):=\chi_0(x)\phi(x)$, for $x\in G$; this is invariant under left-translation by $G_1$, so for $x\in G$ the value $\psi(x)$ only depends on $|x|_G$. Note that $\psi$ also satisfies (D.3.5.1) since $\chi_0$ is unitary. We have
+We define $\psi(x):=\chi_0(x)\phi(x)$, for $x\in G$; this is invariant under left-translation by $G^1$, so for $x\in G$ the value $\psi(x)$ only depends on $|x|_G$. Note that $\psi$ also satisfies (D.3.5.1) since $\chi_0$ is unitary. We have
 
 $$
-\widehat{\psi}(\chi)=\int_G\psi(y)\chi(y)\,d\mu_G(y)=\int_{\mathbf{R}_{>0}}\psi(\tau(t))\chi(\tau(t))\,\frac{dt}{t}=\int_{G_1}\chi(g)\,d\mu_1(g) \tag{D.3.5.5}
+\widehat{\psi}(\chi)=\int_G\psi(y)\chi(y)\,d\mu_G(y)=\int_{\mathbf{R}_{>0}}\psi(\tau(t))\chi(\tau(t))\,\frac{dt}{t}=\int_{G^1}\chi(g)\,d\mu_1(g) \tag{D.3.5.5}
 $$
 
-and the rightmost side of (D.3.5.5) is nonzero only if $\chi|_{G_1}=1$. The identity in (D.3.5.3) therefore follows from Proposition B.4.1.2 applied to $\psi\circ\tau$ and (in the notation of the Proposition) $\chi=1$, $\theta=|\gamma|_G$ upon rewriting the hypotheses on $\phi$ in terms of $\psi$. $\square$
+and the rightmost side of (D.3.5.5) is nonzero only if $\chi|_{G^1}=1$. The identity in (D.3.5.3) therefore follows from Proposition B.4.1.2 applied to $\psi\circ\tau$ and (in the notation of the Proposition) $\chi=1$, $\theta=|\gamma|_G$ upon rewriting the hypotheses on $\phi$ in terms of $\psi$. $\square$
 
 D.3.6. Approximation by smooth compactly supported functions. The following approximation result will be useful for us:
 
@@ -3651,13 +3651,13 @@ Proof. Each $\phi\in\mathcal{D}(G)$ certainly satisfies $|\cdot|^a_G\phi\in\math
 
 For every $a\in\mathbf{R}$, multiplication by the smooth function $|\cdot|^a_G$ is continuous and continuously invertible on $\mathcal{D}(G)$. Thus, the composition of $T_a : \mathcal{S}_I(G)\to\mathcal{S}(G)$ with the injective linear inclusion $\mathcal{D}(G)\subset\mathcal{S}_I(G)$ is continuous for every $a\in\mathbf{R}$. By design of the projective topology on $\mathcal{S}_I(G)$, the inclusion $j_G : \mathcal{D}(G)\to\mathcal{S}_I(G)$ is therefore continuous.
 
-Upon choosing a continuous homomorphic section $\tau$ to $|\cdot|_G$, by Theorem D.3.3.7(1) (which uses second-countability of $G$) we have a linear topological isomorphism $\mathcal{S}_I(G)\simeq\mathcal{S}(G_1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})=\mathcal{D}(G_1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})$ (the final equality using that $G_1$ is compact). We similarly have a linear topological isomorphism $\mathcal{D}(G)\simeq\mathcal{D}(G_1)\otimes\mathcal{D}(\mathbf{R}_{>0})$ by [Bru, §5, Thm.3(a), p. 55]. The continuous inclusion $\mathcal{D}(G)\to\mathcal{S}_I(G)$ is thereby identified with the natural continuous map
+Upon choosing a continuous homomorphic section $\tau$ to $|\cdot|_G$, by Theorem D.3.3.7(1) (which uses second-countability of $G$) we have a linear topological isomorphism $\mathcal{S}_I(G)\simeq\mathcal{S}(G^1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})=\mathcal{D}(G^1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})$ (the final equality using that $G^1$ is compact). We similarly have a linear topological isomorphism $\mathcal{D}(G)\simeq\mathcal{D}(G^1)\otimes\mathcal{D}(\mathbf{R}_{>0})$ by [Bru, §5, Thm.3(a), p. 55]. The continuous inclusion $\mathcal{D}(G)\to\mathcal{S}_I(G)$ is thereby identified with the natural continuous map
 
 $$
-\mathrm{id}_{\mathcal{D}(G_1)}\otimes j_{\mathbf{R}_{>0}} : \mathcal{D}(G_1)\otimes\mathcal{D}(\mathbf{R}_{>0})\to\mathcal{D}(G_1)\otimes\mathcal{S}_I(\mathbf{R}_{>0}) \tag{D.3.6.1}
+\mathrm{id}_{\mathcal{D}(G^1)}\otimes j_{\mathbf{R}_{>0}} : \mathcal{D}(G^1)\otimes\mathcal{D}(\mathbf{R}_{>0})\to\mathcal{D}(G^1)\otimes\mathcal{S}_I(\mathbf{R}_{>0}) \tag{D.3.6.1}
 $$
 
-since by continuity it suffices to check on the dense subspace $\mathcal{D}(G_1)\otimes\mathcal{D}(\mathbf{R}_{>0})$ (and so by linearity it suffices to check on elementary tensors).
+since by continuity it suffices to check on the dense subspace $\mathcal{D}(G^1)\otimes\mathcal{D}(\mathbf{R}_{>0})$ (and so by linearity it suffices to check on elementary tensors).
 
 To prove (D.3.6.1) has dense image, we claim it suffices to treat the case $G=\mathbf{R}_{>0}$. In other words, if the map between second tensor factors in (D.3.6.1) has dense image then we claim the map (D.3.6.1) has dense image. By the Hahn-Banach Theorem, it suffices to show that the induced map between continuous linear
 
@@ -3668,12 +3668,12 @@ To prove (D.3.6.1) has dense image, we claim it suffices to treat the case $G=\m
 duals is injective. The continuous dual is insensitive to passage to completion, so it is the same as showing that the natural map
 
 $$
-\mathrm{id}_{\mathcal{D}(G_1)}\otimes j_{\mathbf{R}_{>0}} : \mathcal{D}(G_1)\otimes_\iota\mathcal{D}(\mathbf{R}_{>0})\to\mathcal{D}(G_1)\otimes_\iota\mathcal{S}_I(\mathbf{R}_{>0})
+\mathrm{id}_{\mathcal{D}(G^1)}\otimes j_{\mathbf{R}_{>0}} : \mathcal{D}(G^1)\otimes_\iota\mathcal{D}(\mathbf{R}_{>0})\to\mathcal{D}(G^1)\otimes_\iota\mathcal{S}_I(\mathbf{R}_{>0})
 $$
 
 induces an injection between continuous linear duals.
 
-The continuous linear dual of an inductive tensor product $E\otimes_\iota F$ (for Hausdorff locally convex $E$ and $F$) is the space of “separately continuous” bilinear forms $B : E\times F\to\mathbf{C}$ (i.e., $B(x,\cdot) : F\to\mathbf{C}$ and $B(\cdot,y) : E\to\mathbf{C}$ are continuous for all $x\in E$ and $y\in F$). In other words, if $B : \mathcal{D}(G_1)\times\mathcal{S}_I(\mathbf{R}_{>0})\to\mathbf{C}$ is a separately continuous bilinear map that vanishes on $\mathcal{D}(G_1)\times\mathcal{D}(\mathbf{R}_{>0})$ then we want to show $B=0$ if $\mathcal{D}(\mathbf{R}_{>0})$ is dense in $\mathcal{S}_I(\mathbf{R}_{>0})$. But such vanishing for $B$ is immediate from such density due to continuity of $B$ in the second variable for each fixed entry in the first variable.
+The continuous linear dual of an inductive tensor product $E\otimes_\iota F$ (for Hausdorff locally convex $E$ and $F$) is the space of “separately continuous” bilinear forms $B : E\times F\to\mathbf{C}$ (i.e., $B(x,\cdot) : F\to\mathbf{C}$ and $B(\cdot,y) : E\to\mathbf{C}$ are continuous for all $x\in E$ and $y\in F$). In other words, if $B : \mathcal{D}(G^1)\times\mathcal{S}_I(\mathbf{R}_{>0})\to\mathbf{C}$ is a separately continuous bilinear map that vanishes on $\mathcal{D}(G^1)\times\mathcal{D}(\mathbf{R}_{>0})$ then we want to show $B=0$ if $\mathcal{D}(\mathbf{R}_{>0})$ is dense in $\mathcal{S}_I(\mathbf{R}_{>0})$. But such vanishing for $B$ is immediate from such density due to continuity of $B$ in the second variable for each fixed entry in the first variable.
 
 We are reduced to the case $G=\mathbf{R}_{>0}$: proving $\mathcal{D}(\mathbf{R}_{>0})$ is dense in $\mathcal{S}_I(\mathbf{R}_{>0})$. By the definition of the topology, density can be checked by working with each $\mathcal{S}_J(\mathbf{R}_{>0})$ for each $J$ in an increasing sequence of compact intervals exhausting $I$. Thus, we can assume $I$ is compact and hence bounded. Since multiplication by $|\cdot|^a_{\mathbf{R}}$ for any real number $a\in\mathbf{R}$ is continuous and continuously invertible on $\mathcal{D}(\mathbf{R}_{>0})$, we can use such multiplication to move the bounded $I$ arbitrarily far to the right. Thus, we may and do assume $I\subset(0,+\infty)$.
 

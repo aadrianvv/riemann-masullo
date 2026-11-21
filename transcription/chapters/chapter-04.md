@@ -3078,7 +3078,7 @@ and the operator $\Phi_{\gamma}$ from (4.2.1.1) identifies the right side in (4.
 The pre-image under $P_{\gamma}^{-1}$ from (4.6.1.30) and the image of the dual basis under its continuous adjoint, involves renormalizing the basis elements by the nonzero complex number $\log(\gamma)$ and its reciprocal. Indeed, $P_{\gamma}^{-1}$ sends $\phi\in (1-\gamma^{-s})\mathcal{A}\mathcal{S}(\mathbf{C})$ to the unique analytic continuation of $\frac{\phi(s)}{1-\gamma^{-s}}$, an element of $\mathcal{A}\mathcal{S}(\mathbf{C})$, and point-evaluation at any $z_m:=\frac{2\pi im}{\log(\gamma)}$ gives, in terms of $\phi$:
 
 $$
-\delta_{z_m}\left(\frac{\phi(s)}{1-\gamma^{-s}}\right)=\frac{\phi'(z_m)}{\log(\gamma)\gamma^{-z_m}}=\frac{\phi'(z_m)}{\log(\gamma)}
+\delta_{z^m}\left(\frac{\phi(s)}{1-\gamma^{-s}}\right)=\frac{\phi'(z_m)}{\log(\gamma)\gamma^{-z_m}}=\frac{\phi'(z_m)}{\log(\gamma)}
 $$
 
 which is the image of the dual basis element $a_m(\cdot)$ from (4.2.1.4) of Lemma 4.2.1.2 under the composition of $\Phi_{\gamma}'$ and $(P_{\gamma}^{-1})'$.

@@ -571,7 +571,7 @@ $$(8.4.0.6)$$
 
 $$
 \begin{array}{ccccc}
-H_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}^{00}(\mathbf{A}_{F,S})) & \longrightarrow & H_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}(\mathbf{A}_{F,S})) & \longrightarrow & E_{S,S_{\infty}}(\chi_{S}|J^{1}_{F,S}) \times \prod^{\prime}_{p:S_{p}\subset S} E_{S,S_{p}}(\chi_{S}|J^{1}_{F,S}) \\
+H_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}_{00}(\mathbf{A}_{F,S})) & \longrightarrow & H_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}(\mathbf{A}_{F,S})) & \longrightarrow & E_{S,S_{\infty}}(\chi_{S}|J^{1}_{F,S}) \times \prod^{\prime}_{p:S_{p}\subset S} E_{S,S_{p}}(\chi_{S}|J^{1}_{F,S}) \\
 \downarrow & & \downarrow & & \downarrow \\
 [D_{S,1}/\mathrm{GL}_{1}(\mathbf{A}_{F,S})^{1}] & \xrightarrow[j]{} & [D_{F,S}/\mathrm{GL}_{1}(\mathbf{A}_{F,S})^{1}] & \xleftarrow[i]{} & \sqcup^{\prime}_{v \in S} [D_{S,v}/\mathrm{GL}_{1}(\mathbf{A}_{F,S})^{1}] \\
 \simeq\!\downarrow & & & & \downarrow\!\simeq \\
@@ -597,7 +597,7 @@ $$(8.4.0.7)$$
 
 $$
 \begin{array}{ccccc}
-L_{S}H_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}^{00}(\mathbf{A}_{F,S})) & \longrightarrow & L_{S}H_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}(\mathbf{A}_{F,S})) & \longrightarrow & L_{S}E_{S,S_{\infty}}(\chi_{S}|J^{1}_{F,S}) \times \prod^{\prime}_{p:S_{p}\subset S} L_{S}E_{S,S_{p}}(\chi_{S}|J^{1}_{F,S}) \\
+L_{S}H_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}_{00}(\mathbf{A}_{F,S})) & \longrightarrow & L_{S}H_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}(\mathbf{A}_{F,S})) & \longrightarrow & L_{S}E_{S,S_{\infty}}(\chi_{S}|J^{1}_{F,S}) \times \prod^{\prime}_{p:S_{p}\subset S} L_{S}E_{S,S_{p}}(\chi_{S}|J^{1}_{F,S}) \\
 \downarrow & & \downarrow & & \downarrow \\
 \Omega(J_{F,S})(\chi_{S}|J^{1}_{F,S}) & \xrightarrow[j]{} & X_{S}(\chi_{S}|J^{1}_{F,S}) & \xleftarrow[i]{} & U_{S_{\infty}} \sqcup (\sqcup^{\prime}_{p:S_{p}\subset S} U_{S_{p}}) \\
 \end{array}
@@ -631,7 +631,7 @@ $$(8.4.0.8)$$
 
 $$
 \begin{array}{ccccc}
-H_{0,\mathrm{cont}}(\chi|C^{1}_{F}, \mathcal{S}^{00}(\mathbf{A}_{F})) & \longrightarrow & H_{0,\mathrm{cont}}(\chi|C^{1}_{F}, \mathcal{S}(\mathbf{A}_{F})) & \longrightarrow & E_{S_{\infty}}(\chi|C^{1}_{F}) \times \prod^{\prime}_{p} E_{S_{p}}(\chi|C^{1}_{F}) \\
+H_{0,\mathrm{cont}}(\chi|C^{1}_{F}, \mathcal{S}_{00}(\mathbf{A}_{F})) & \longrightarrow & H_{0,\mathrm{cont}}(\chi|C^{1}_{F}, \mathcal{S}(\mathbf{A}_{F})) & \longrightarrow & E_{S_{\infty}}(\chi|C^{1}_{F}) \times \prod^{\prime}_{p} E_{S_{p}}(\chi|C^{1}_{F}) \\
 \downarrow & & \downarrow & & \downarrow \\
 [D_{F,1}/\mathrm{GL}_{1}(\mathbf{A}_{F})^{1}] & \xrightarrow[j]{} & [D_{F}/\mathrm{GL}_{1}(\mathbf{A}_{F})^{1}] & \xleftarrow[i]{} & \sqcup^{\prime}_{v \in \Sigma_{F}} [D_{F,v}/\mathrm{GL}_{1}(\mathbf{A}_{F})^{1}] \\
 \simeq\!\downarrow & & & & \downarrow\!\simeq \\
@@ -648,7 +648,7 @@ $$(8.4.0.9)$$
 
 $$
 \begin{array}{ccccc}
-LH_{0,\mathrm{cont}}(\chi|C^{1}_{F}, \mathcal{S}^{00}(\mathbf{A}_{F})) & \longrightarrow & LH_{0,\mathrm{cont}}(\chi|C^{1}_{F}, \mathcal{S}(\mathbf{A}_{F})) & \longrightarrow & LE_{S_{\infty}}(\chi|C^{1}_{F}) \times \prod^{\prime}_{p} LE_{S_{p}}(\chi|C^{1}_{F}) \\
+LH_{0,\mathrm{cont}}(\chi|C^{1}_{F}, \mathcal{S}_{00}(\mathbf{A}_{F})) & \longrightarrow & LH_{0,\mathrm{cont}}(\chi|C^{1}_{F}, \mathcal{S}(\mathbf{A}_{F})) & \longrightarrow & LE_{S_{\infty}}(\chi|C^{1}_{F}) \times \prod^{\prime}_{p} LE_{S_{p}}(\chi|C^{1}_{F}) \\
 \downarrow & & \downarrow & & \downarrow \\
 \Omega(C_{F})(\chi|C^{1}_{F}) & \xrightarrow[j]{} & X(\chi|C^{1}_{F}) & \xleftarrow[i]{} & U_{S_{\infty}} \sqcup (\sqcup^{\prime}_{p} U_{S_{p}}) \\
 \end{array}
@@ -683,7 +683,7 @@ We denote by $E$ any of the three Fréchet spaces in the top row of (8.4.0.6).
 For each $\varphi \in \mathcal{D}(J_{F,S})$:
 $$A(\varphi) : E \to E$$
 defined as $u \mapsto A(\varphi)(u) := \int_{J_{F,S}} \varphi(g) u(g^{-1}x) \, d\mu_{S}(g)$ is a continuous linear endomorphism, which, on $E =$
-$H_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}^{00}(\mathbf{A}_{F,S}))$, admits an integral kernel, namely
+$H_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}_{00}(\mathbf{A}_{F,S}))$, admits an integral kernel, namely
 $$\varphi(xy^{-1}) : J_{F,S} \times J_{F,S} \to \mathbf{C}$$
 
 ## PDF page 392
@@ -692,30 +692,30 @@ $$\varphi(xy^{-1}) : J_{F,S} \times J_{F,S} \to \mathbf{C}$$
 CHAPTER 8.
 PERIODIC ORBITS AND FIXED POINTS
 
-by identifying $\Phi_{F,S}(\mathcal{S}^{00}(\mathbf{A}_{F,S}))$, equipped with the quotient topology inherited from $\mathcal{S}^{00}(\mathbf{A}_{F,S})$, with a copy
+by identifying $\Phi_{F,S}(\mathcal{S}_{00}(\mathbf{A}_{F,S}))$, equipped with the quotient topology inherited from $\mathcal{S}_{00}(\mathbf{A}_{F,S})$, with a copy
 of the regular representation of $J_{F,S}$ on $\mathcal{SE}(J_{F,S})$.
 
 We now assume $\varphi$ is supported over the closed semigroup $J^{\ge 1}_{F,S}$ of $S$-idele classes of $S$-idelic norm at least
 $1$.
 
-Then $\varphi(1) = 0$ by smoothness of $\varphi$, and hence the kernel of $A(\varphi)$ on $H_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}^{00}(\mathbf{A}_{F,S}))$ vanishes
+Then $\varphi(1) = 0$ by smoothness of $\varphi$, and hence the kernel of $A(\varphi)$ on $H_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}_{00}(\mathbf{A}_{F,S}))$ vanishes
 along the diagonal.
 
 We will now proceed with a discussion aimed at fostering intuition for certain constructions and arguments
 to be carried out in Chapter 6 and Chapter 7.
 
-While $A(\varphi)$ is not a nuclear operator on $H_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}^{00}(\mathbf{A}_{F,S}))$, nor on $H_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}(\mathbf{A}_{F,S}))$, it is
+While $A(\varphi)$ is not a nuclear operator on $H_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}_{00}(\mathbf{A}_{F,S}))$, nor on $H_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}(\mathbf{A}_{F,S}))$, it is
 so on most of the Orbital subquotients, namely, it is so on $E_{S,S_{p}}(\chi_{S}|J^{1}_{F,S})$ for every prime $p$ such that $S_{p} \subset S$,
 by Theorem 7.4.2.1.
 
 It also has a convergent matrix trace on $E_{S,S_{\infty}}(\chi_{S}|J^{1}_{F,S})$ (this is where we use the assumption on the
 support on $\varphi$, through Theorem 7.4.3.2).
 
-While not nuclear, it has a trace even on $H_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}^{00}(\mathbf{A}_{F,S}))$, which is zero by the above observation
-on the integral kernel of $A(\varphi)$ on $H_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}^{00}(\mathbf{A}_{F,S}))$.
+While not nuclear, it has a trace even on $H_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}_{00}(\mathbf{A}_{F,S}))$, which is zero by the above observation
+on the integral kernel of $A(\varphi)$ on $H_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}_{00}(\mathbf{A}_{F,S}))$.
 
 The effect the continuous left-translation action of $J^{\ge 1}_{F,S}$ is, in a way, “small” and controlled along the
-diagonal over $H_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}^{00}(\mathbf{A}_{F,S}))$, and mostly concentrated over the orbital subquotients, on each of
+diagonal over $H_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}_{00}(\mathbf{A}_{F,S}))$, and mostly concentrated over the orbital subquotients, on each of
 which its trace is computable explicitly, for each test function $\varphi \in \mathcal{D}(J_{F,S})$ supported over $J^{\ge 1}_{F,S}$.
 
 We note that the quotient stacks $BU_{v} \simeq [D_{S,v}/F^{\times}_{v}]$, for each Archimedean place $v \in S$, are now promoted
@@ -765,7 +765,7 @@ We now explain how the Paley-Wiener levels fit into this scenario.
 
 It is a consequence of the classical Paley-Wiener Theorem, that the intersection of
 $$PW_{S,X}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}, \mathcal{S}(\mathbf{A}_{F,S^{\prime}}))$$
-with $S^{\prime} = S \cup S_{0}$ for some saturated finite set of finite places $S_{0}$ of $F$, with $H_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}^{00}(\mathbf{A}_{F,S}))$, is
+with $S^{\prime} = S \cup S_{0}$ for some saturated finite set of finite places $S_{0}$ of $F$, with $H_{0,\mathrm{cont}}(\chi_{S}|J^{1}_{F,S}, \mathcal{S}_{00}(\mathbf{A}_{F,S}))$, is
 trivial for all large enough $X > 0$. This is so, because the only Schwartz-Bruhat function $f \in \mathcal{S}(\mathbf{A}_{F,S_{\infty}})$ whose
 $S_{\infty}$-adelic Fourier transform is compactly supported, and that vanishes at any of the hyperplanes $\{x_{v} = 0\}$,
 $v \in S_{\infty}$, with infinite order, is constant with value zero.
@@ -778,7 +778,7 @@ $$
 \begin{array}{ccccc}
 0 & \longrightarrow & PW_{S,X}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}, \mathcal{S}(\mathbf{A}_{F,S^{\prime}})) & \longrightarrow & E_{S^{\prime},S_{\infty}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}) \times \prod^{\prime}_{p:S_{p}\subset S^{\prime}} E^{\mathrm{ABS}}_{S^{\prime},S_{p},X}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}) \\
 \downarrow & & \downarrow & & \downarrow \\
-H_{0,\mathrm{cont}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}, \mathcal{S}^{00}(\mathbf{A}_{F,S^{\prime}})) & \longrightarrow & H_{0,\mathrm{cont}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}, \mathcal{S}(\mathbf{A}_{F,S^{\prime}})) & \longrightarrow & E_{S^{\prime},S_{\infty}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}) \times \prod^{\prime}_{p:S_{p}\subset S^{\prime}} E_{S^{\prime},S_{p}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}) \\
+H_{0,\mathrm{cont}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}, \mathcal{S}_{00}(\mathbf{A}_{F,S^{\prime}})) & \longrightarrow & H_{0,\mathrm{cont}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}, \mathcal{S}(\mathbf{A}_{F,S^{\prime}})) & \longrightarrow & E_{S^{\prime},S_{\infty}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}) \times \prod^{\prime}_{p:S_{p}\subset S^{\prime}} E_{S^{\prime},S_{p}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}) \\
 \downarrow & & \downarrow & & \downarrow \\
 [D_{S^{\prime},1}/\mathrm{GL}_{1}(\mathbf{A}_{F,S^{\prime}})^{1}] & \xrightarrow[j]{} & [D_{F,S^{\prime}}/\mathrm{GL}_{1}(\mathbf{A}_{F,S^{\prime}})^{1}] & \xleftarrow[i]{} & \sqcup^{\prime}_{v \in S^{\prime}} [D_{S^{\prime},v}/\mathrm{GL}_{1}(\mathbf{A}_{F,S^{\prime}})^{1}] \\
 \simeq\!\downarrow & & & & \downarrow\!\simeq \\
@@ -794,12 +794,12 @@ inherit the Orbital Schauder bases from $E_{S^{\prime},S_{p}}(\chi_{S^{\prime}}|
 of the $PW_{S,X}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}, \mathcal{S}(\mathbf{A}_{F,S^{\prime}}))$ is sequentially dense within $H_{0,\mathrm{cont}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}, \mathcal{S}(\mathbf{A}_{F,S^{\prime}}))$.
 
 This means that the Paley-Wiener levels retain knowledge of the trace of $A(\varphi)$ asymptotically as $X \to +\infty$,
-missing exactly the closed subspace $H_{0,\mathrm{cont}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}, \mathcal{S}^{00}(\mathbf{A}_{F,S^{\prime}}))$ which is the main cause of the non-nuclearity
+missing exactly the closed subspace $H_{0,\mathrm{cont}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}, \mathcal{S}_{00}(\mathbf{A}_{F,S^{\prime}}))$ which is the main cause of the non-nuclearity
 of $A(\varphi)$ on $H_{0,\mathrm{cont}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}, \mathcal{S}(\mathbf{A}_{F,S^{\prime}}))$.
 
 We are going to use the Paley-Wiener levels, in their invariant form (see Definition 7.3.2.3), in the next
 two Chapters, to define and compute the trace of $A(\varphi)$ rigorously, doing so with respect to coarser normed
-topologies on the ambient $H_{0,\mathrm{cont}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}, \mathcal{S}^{00}(\mathbf{A}_{F,S^{\prime}}))$, than its intrinsic nuclear Fréchet space topology.
+topologies on the ambient $H_{0,\mathrm{cont}}(\chi_{S^{\prime}}|J^{1}_{F,S^{\prime}}, \mathcal{S}_{00}(\mathbf{A}_{F,S^{\prime}}))$, than its intrinsic nuclear Fréchet space topology.
 
 A choice of test function $\varphi \in \mathcal{D}(C_{F})$, which we again assume supported over the closed semigroup $C^{\ge 1}_{F}$,
 induces a test function $\varphi_{S} \in \mathcal{D}(J_{F,S})$ for all large enough $S$. Indeed, for $S$ any finite set of places of $F$

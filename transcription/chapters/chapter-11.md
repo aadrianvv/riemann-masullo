@@ -331,9 +331,9 @@ $^3$Return here.
 
 **11.1. THE SHELL STRUCTURE** · **481**
 
-*Proof.* (1) : By Proposition 11.2.0.1, each $P_{V^{S_i}}$ is continuous and with closed range as a linear endomorphism of $W^{s,2}_0 H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$.
+*Proof.* (1) : By Proposition 11.2.0.1, each $\mathrm{PV}_{S_i}$ is continuous and with closed range as a linear endomorphism of $W^{s,2}_0 H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$.
 
-In particular, the closure within $W^{s,2}_0 H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ of $P_{V^{S'}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$, for any $S' \in I_S$, is exactly the closed subspace $P_{V^{S'}} W^{s,2}_0 H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$.
+In particular, the closure within $W^{s,2}_0 H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ of $\mathrm{PV}_{S'} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$, for any $S' \in I_S$, is exactly the closed subspace $\mathrm{PV}_{S'} W^{s,2}_0 H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$.
 
 The topology on $H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ induced by
 
@@ -358,31 +358,31 @@ Since $\|\cdot\|_{s,2,\rho}$ is a continuous seminorm on $W^{s,2}(C_F)(\chi|_{C^
 It follows that the following inclusion:
 
 $$
-M_\rho W^{s,2}_0 P_{V^{S_i}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset W^{s,2}_{0,\rho} P_{V^{S_i}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \tag{11.1.2.10}
+M_\rho W^{s,2}_0 \mathrm{PV}_{S_i} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset W^{s,2}_{0,\rho} \mathrm{PV}_{S_i} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \tag{11.1.2.10}
 $$
 
 holds.
 
-The left side in (11.1.2.10) (which, note, equals $M_\rho P_{V^{S_i}} W^{s,2}_0 H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ by continuity of $P_{V^{S_i}}$) contains $M_\rho P_{S_i} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ and it is already closed, since $M_\rho$ has closed range by [Cnw-a, Ch.II, §3, Prop.3.2(b), p.37], being an idempotent operator.
+The left side in (11.1.2.10) (which, note, equals $M_\rho \mathrm{PV}_{S_i} W^{s,2}_0 H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ by continuity of $\mathrm{PV}_{S_i}$) contains $M_\rho P_{S_i} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ and it is already closed, since $M_\rho$ has closed range by [Cnw-a, Ch.II, §3, Prop.3.2(b), p.37], being an idempotent operator.
 
 It follows that we have, as closed subspaces of $W^{s,2}(C_F)(\chi|_{C^1_F})$:
 
 $$
-M_\rho W^{s,2}_0 P_{V^{S_i}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) = W^{s,2}_{0,\rho} P_{V^{S_i}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)). \tag{11.1.2.11}
+M_\rho W^{s,2}_0 \mathrm{PV}_{S_i} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) = W^{s,2}_{0,\rho} \mathrm{PV}_{S_i} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)). \tag{11.1.2.11}
 $$
 
 We now observe that if $S_i \subset S_{i'}$ for $i,i' \in I_S$, then we have:
 
 $$
-W^{s,2}_{0,\rho} P_{V^{S_{i'}}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset W^{s,2}_{0,\rho} P_{S_i} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \tag{11.1.2.12}
+W^{s,2}_{0,\rho} \mathrm{PV}_{S_{i'}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset W^{s,2}_{0,\rho} P_{S_i} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \tag{11.1.2.12}
 $$
 
-since $P_{V^{S_{i'}}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset P_{V^{S_i}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$, this latter inclusion being a consequence of Theorem 6.3.2.2.
+since $\mathrm{PV}_{S_{i'}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset \mathrm{PV}_{S_i} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$, this latter inclusion being a consequence of Theorem 6.3.2.2.
 
 We let $\{S_k\}_{k\ge 0} \subset I_S$ be any cofinal sequence. Then
 
 $$
-\bigcap_{k\ge 0} W^{s,2}_{0,\rho} P_{V^{S_k}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \tag{11.1.2.13}
+\bigcap_{k\ge 0} W^{s,2}_{0,\rho} \mathrm{PV}_{S_k} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \tag{11.1.2.13}
 $$
 
 is a closed linear subspace of $W^{s,2}_0 H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$.
@@ -396,25 +396,25 @@ For $\{S'_m\}_{m\ge 0}$ another cofinal sequence in $I_S$, we have, for every in
 In particular, by (11.1.2.12), the following inclusion holds:
 
 $$
-\bigcap_{m\ge 0} W^{s,2}_{0,\rho} P_{V^{S'_m}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset \bigcap_{k\ge 0} W^{s,2}_{0,\rho} P_{V^{S_k}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)). \tag{11.1.2.14}
+\bigcap_{m\ge 0} W^{s,2}_{0,\rho} \mathrm{PV}_{S'_m} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \subset \bigcap_{k\ge 0} W^{s,2}_{0,\rho} \mathrm{PV}_{S_k} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)). \tag{11.1.2.14}
 $$
 
 Upon exchanging the roles of $\{S_k\}_{k\ge 0}$ and $\{S'_m\}_{m\ge 0}$, we deduce that the reverse inclusion holds, and hence:
 
 $$
-\bigcap_{m\ge 0} W^{s,2}_{0,\rho} P_{V^{S'_m}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) = \bigcap_{k\ge 0} W^{s,2}_{0,\rho} P_{V^{S_k}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)). \tag{11.1.2.15}
+\bigcap_{m\ge 0} W^{s,2}_{0,\rho} \mathrm{PV}_{S'_m} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) = \bigcap_{k\ge 0} W^{s,2}_{0,\rho} \mathrm{PV}_{S_k} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)). \tag{11.1.2.15}
 $$
 
 as closed subspaces of $W^{s,2}(C_F)(\chi|_{C^1_F})$. Formation of the common such closed subspace therefore does not depend on the choice of cofinal sequence in $I_S$, but only on $I_S$ itself.
 
-(2) :$^4$ We now prove that the inclusion in (11.1.2.5) is strict. By Theorem 11.2.0.2, the strong dual of the orthogonal in $W^{s,2}_0 H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ of $W^{s,2}_0 P_{V^{S_{i'}}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ is non-trivial, the Theorem exhibiting a Schauder basis (given by the functionals $\eta_{\epsilon_p}$ as $\epsilon_p$ varies over the zeros of $(1-q^{-s-it_v}_v)^{-1}$ for $v \in S_{i'}$ of residue characteristic $p$), and since $S_i \subset S_{i'}$ is a strict inclusion, as $i,i'$ are distinct elements of $I_S$, and there exists a prime number $p$ divided by a place in $S_{i'}$ and by no place in $S_i$, the functionals $\eta_{\epsilon_p}$ separate the points of $W^{s,2}_0 P_{V^{S_{i'}}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ from the points of $W^{s,2}_0 P_{V^{S_i}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$.
+(2) :$^4$ We now prove that the inclusion in (11.1.2.5) is strict. By Theorem 11.2.0.2, the strong dual of the orthogonal in $W^{s,2}_0 H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ of $W^{s,2}_0 \mathrm{PV}_{S_{i'}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ is non-trivial, the Theorem exhibiting a Schauder basis (given by the functionals $\eta_{\epsilon_p}$ as $\epsilon_p$ varies over the zeros of $(1-q^{-s-it_v}_v)^{-1}$ for $v \in S_{i'}$ of residue characteristic $p$), and since $S_i \subset S_{i'}$ is a strict inclusion, as $i,i'$ are distinct elements of $I_S$, and there exists a prime number $p$ divided by a place in $S_{i'}$ and by no place in $S_i$, the functionals $\eta_{\epsilon_p}$ separate the points of $W^{s,2}_0 \mathrm{PV}_{S_{i'}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ from the points of $W^{s,2}_0 \mathrm{PV}_{S_i} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$.
 
 All such functionals exist and provide elements of the Schauder bases from Theorem 11.2.0.2, because $s \ge 2\,[F:\mathbf Q]$.
 
 We now prove that for any non-decreasing sequence $\{\Lambda_k\}_{k\ge 0} \subset \mathbf R_{>0}$ such that $\lim_{k\to +\infty} \Lambda_k = +\infty$, there exists a subsequence $\{\Lambda_{k_m}\}_{m\ge 0}$ such that for each choice $\Lambda = \Lambda_{k_m}$, the inclusion in (11.1.2.6) is also strict. If not, then we have:
 
 $$
-W^{s,2}_{0,\Lambda_k,+} P_{V^{S_{i'}}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) = W^{s,2}_{0,\Lambda_k,+} P_{V^{S_i}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \tag{11.1.2.16}
+W^{s,2}_{0,\Lambda_k,+} \mathrm{PV}_{S_{i'}} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) = W^{s,2}_{0,\Lambda_k,+} \mathrm{PV}_{S_i} H_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F)) \tag{11.1.2.16}
 $$
 
 for every integer $k \ge 0$.$^5$
@@ -555,7 +555,7 @@ $$
 \phi \mapsto \int_{C_F} \phi(g)\chi(g)|g|^\varepsilon_F (\log|g|_F)^m\,d\bar\mu(g)
 $$
 
-for $0 \le m \le |S_0|-1$, as $\varepsilon$ ranges over the zeros of $\prod_{v \in S_0} L_v(\chi_v|\cdot|^s_v)^{-1}$. Indeed, the range of $PV_{S_0}$ is the intersection of their kernels. To see this, we use denseness of $\mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ in $W^{s,2}(C_F)$, which was shown in the foregoing, to replace $W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ with $W^{s,2}(C_F)$, and $PV_{S_0}$ with the finite composition of the operators $P_v : \phi \mapsto \phi(x) - \phi(\pi_v^{-1}x)$ for each $v \in S_0$, for then proceeding as in the proof of the same assertion for the functionals $D^t_m$ from (10.2.1.9) from the proof of Theorem 10.2.1.1, using the Approximation Principle from Theorem 9.3.2.1.
+for $0 \le m \le |S_0|-1$, as $\varepsilon$ ranges over the zeros of $\prod_{v \in S_0} L_v(\chi_v|\cdot|^s_v)^{-1}$. Indeed, the range of $PV_{S_0}$ is the intersection of their kernels. To see this, we use denseness of $\mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ in $W^{s,2}(C_F)$, which was shown in the foregoing, to replace $W^{s,2}_0 \mathrm H_{0,\mathrm{cont}}(F^\times, \mathcal S_0(\mathbf A_F))$ with $W^{s,2}(C_F)$, and $PV_{S_0}$ with the finite composition of the operators $P_v : \phi \mapsto \phi(x) - \phi(\pi_v^{-1}x)$ for each $v \in S_0$, for then proceeding as in the proof of the same assertion for the functionals $D^m_t$ from (10.2.1.9) from the proof of Theorem 10.2.1.1, using the Approximation Principle from Theorem 9.3.2.1.
 
 $\square$
 

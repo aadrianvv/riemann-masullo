@@ -309,7 +309,7 @@ To see this, we use Theorem 5.5.3.2 to see that if $f\in\ker(\prod_{v\in S'-S}\P
 Let $R\to R'$ be a flat ring map, $M$ an $R$-module, $M'$ an $R'$-module. We refer to the Grothendieck spectral sequence (applied to the composition of the right-exact functor $M'\otimes_{R'}(\cdot)$ on $R'$-modules, and the exact functor $R'\otimes_R(\cdot)$ from $R$-modules to $R'$-modules, to which [Gro-d, Théorème.2.4.1] applies to the opposites of the categories of $R$-modules and $R'$-modules, since, by $R$-flatness of $R'$, we have $\mathrm{Tor}^{R'}_m(R'\otimes_R P,\cdot)=0$ for every projective $R$-module $P$ and every integer $m\ge 1$):
 
 $$
-E^{p,q}_2:=\mathrm{Tor}^{R'}_p(\mathrm{Tor}^R_q(M,R'),M')\Rightarrow\mathrm{Tor}^R_{p+q}(M,M')
+E^2_{p,q}:=\mathrm{Tor}^{R'}_p(\mathrm{Tor}^R_q(M,R'),M')\Rightarrow\mathrm{Tor}^R_{p+q}(M,M')
 $$
 
 as the change-of-rings spectral sequence for Tor-functors.
@@ -343,16 +343,16 @@ $$
 By Lemma 6.1.2.4(3) combined with Corollary 2.1.4.2, the linear isomorphism $N_{S,S'}$ induces a linear isomorphism, which we also denote $N_{S,S'}$:
 
 $$
-N_{S,S'}:\mathrm H^0(\widehat{\mathcal O}_{F,S'-S}^\times,\mathcal S(\mathbf A_{F,S'}))\to\mathrm H^0(\widehat{\mathcal O}_{F,S'-S}^\times,\mathcal S(\mathbf A_{F,S'})). \tag{6.1.2.19}
+N_{S,S'}:\mathrm H_0(\widehat{\mathcal O}_{F,S'-S}^\times,\mathcal S(\mathbf A_{F,S'}))\to\mathrm H^0(\widehat{\mathcal O}_{F,S'-S}^\times,\mathcal S(\mathbf A_{F,S'})). \tag{6.1.2.19}
 $$
 
 Indeed, the linear topological isomorphism from (6.1.2.16) of Lemma 6.1.2.4 induces a linear isomorphism:
 
 $$
-\mathcal S(\mathbf A_{F,S})\otimes\mathrm H^0(\widehat{\mathcal O}_{F,S'-S}^\times,\mathcal S(\prod_{v\in S'-S}F_v))\to\mathcal S(\mathbf A_{F,S})\otimes\mathrm H^0(\widehat{\mathcal O}_{F,S'-S}^\times,\mathcal S(\prod_{v\in S'-S}F_v)) \tag{6.1.2.20}
+\mathcal S(\mathbf A_{F,S})\otimes\mathrm H_0(\widehat{\mathcal O}_{F,S'-S}^\times,\mathcal S(\prod_{v\in S'-S}F_v))\to\mathcal S(\mathbf A_{F,S})\otimes\mathrm H^0(\widehat{\mathcal O}_{F,S'-S}^\times,\mathcal S(\prod_{v\in S'-S}F_v)) \tag{6.1.2.20}
 $$
 
-where the source is linearly isomorphic to $\mathrm H^0(\widehat{\mathcal O}_{F,S'-S}^\times,\mathcal S(\mathbf A_{F,S})\otimes\mathcal S(\prod_{v\in S'-S}F_v))$ since formation of tensor products commutes with formation of quotients on $\mathbf C$-linear spaces.
+where the source is linearly isomorphic to $\mathrm H_0(\widehat{\mathcal O}_{F,S'-S}^\times,\mathcal S(\mathbf A_{F,S})\otimes\mathcal S(\prod_{v\in S'-S}F_v))$ since formation of tensor products commutes with formation of quotients on $\mathbf C$-linear spaces.
 
 We have, upon calling $G:=\widehat{\mathcal O}_{F,S'-S}^\times$, $M_1:=\mathcal S(\mathbf A_{F,S})$, $M_2:=\mathcal S(\prod_{v\in S'-S}F_v)$ as a $\mathbf C[G]$-module, the short-exact sequence:
 
@@ -598,7 +598,7 @@ $$
 *for each $v\in S_f$, by:*
 
 $$
-\Psi^\infty_{F,S,\chi_S}(f)(x):=\sum_{1\le k\le h_F}\int_{\mathrm{GL}_1(\mathbf A_{F,S_\infty})^1}f(g_{k,\infty}^{-1}g^{-1}x)\chi_{S,\infty}(g_{k,\infty}g)\,\mathrm d\mu_{S_\infty,1}(g) \tag{6.2.2.3}
+\Psi^\infty_{F,S,\chi_S}(f)(x):=\sum_{1\le k\le h_F}\int_{\mathrm{GL}^1(\mathbf A_{F,S_\infty})^1}f(g_{k,\infty}^{-1}g^{-1}x)\chi_{S,\infty}(g_{k,\infty}g)\,\mathrm d\mu_{S_\infty,1}(g) \tag{6.2.2.3}
 $$
 
 ## PDF page 299
@@ -688,7 +688,7 @@ We write $g_k=g_{k,\infty}\cdot g_{k,f}$, with $g_{k,\infty}$ the projection of 
 We now use the special form of $f=f_\infty\otimes\bigotimes_{v\in S_f}1_{K_v}$, and rewrite (6.2.2.7) as:
 
 $$
-\int_{\prod_{v\in S_f}F^\times_v}\chi_{S,f}(g_f)\bigotimes_{v\in S_f}1_{K_v}(g_v^{-1}x_v)\,\mathrm d(\bigotimes_{v\in S_f}\mu_v(g_v))\cdot\sum_{1\le k\le h_F}\int_{\mathrm{GL}_1(\mathbf A_{F,S_\infty})^1}\chi_{S,\infty}(g_\infty g_{k,\infty})f_\infty(g_\infty^{-1}g_{k,\infty}^{-1}x)\,\mathrm d\mu_{S_\infty,1}(g_\infty) \tag{6.2.2.9}
+\int_{\prod_{v\in S_f}F^\times_v}\chi_{S,f}(g_f)\bigotimes_{v\in S_f}1_{K_v}(g_v^{-1}x_v)\,\mathrm d(\bigotimes_{v\in S_f}\mu_v(g_v))\cdot\sum_{1\le k\le h_F}\int_{\mathrm{GL}^1(\mathbf A_{F,S_\infty})^1}\chi_{S,\infty}(g_\infty g_{k,\infty})f_\infty(g_\infty^{-1}g_{k,\infty}^{-1}x)\,\mathrm d\mu_{S_\infty,1}(g_\infty) \tag{6.2.2.9}
 $$
 
 where $g_f=(g_v)_{v\in S_f}$ (noting that for any $g\in\mathrm{GL}_1(\mathbf A_{F,S})^1$, the image of $g=(g_v)_{v\in S}$, where the $v$-indexed coordinates are obtained by viewing $g$ as an element of $\mathrm{GL}_1(\mathbf A_{F,S})$, into the quotient $\mathrm{GL}_1(\mathbf A_{F,S})^1/\mathrm{GL}_1(\mathbf A_{F,S_\infty})^1$ is sent to $(g_v)_{v\in S_f}$ by the isomorphism from (6.2.2.6)), and $g_f=(\xi_{S-S_\infty})_f\cdot g_{f,1}\cdot g_{k,f}$. We further note that $\bigcup_{1\le k\le h_F}(\mathcal O^\times_{F,S}/\mathcal O^\times_F)_f\cdot\prod_{v\in S_f}\mathcal O^\times_{F_v}\cdot g_{k,f}=\prod_{v\in S_f}F^\times_v$.

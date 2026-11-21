@@ -966,7 +966,7 @@ and hence to see that (A.2.3.25) holds and the union is disjoint, it is enough t
 
 **A.2.3.6. Fundamental domain $E_F$ for the $F^{\times}$-action on $\mathrm{GL}_1(\mathbf{A}_F)$.**
 
-Lemma A.2.3.11. Let $F$ be a number field. Let $s_{\infty}$ be any continuous homomorphic section to the continuous homomorphism $|\cdot|_{\infty} : \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}}) \to \mathbf{R}_{>0}$. Then $\mathbf{R}_{>0} \times \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1 \to \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ defined by $(t,g_1) \mapsto s_{\infty}(t)g_1$ is an isomorphism of Lie groups.
+Lemma A.2.3.11. Let $F$ be a number field. Let $s_{\infty}$ be any continuous homomorphic section to the continuous homomorphism $|\cdot|_{\infty} : \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}}) \to \mathbf{R}_{>0}$. Then $\mathbf{R}_{>0} \times \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1 \to \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ defined by $(t,g^1) \mapsto s_{\infty}(t)g^1$ is an isomorphism of Lie groups.
 
 The following is immediate from Proposition A.2.3.10(2).
 
