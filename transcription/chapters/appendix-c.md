@@ -1290,9 +1290,7 @@ $$
 
 We will be discussing the integral in the sense of Pettis in §C.4. We record the proof of Lemma C.2.4.6 below for ease of access, referring to the relevant results in §C.4 on vector-valued integration.
 
-Proof. Using weak topologies, the natural linear map $\iota_E:E_\sigma\to (E')^*_\sigma$ is continuous. Since closure agrees with weak closure for convex subsets of any Hausdorff locally convex topological vector space [Scha, Ch. IV, 3.1], it follows that the $\sigma((E')^*,E')$-closure of the convex hull of $\iota_E(K)$ contains the image under $\iota_E$ of the closed convex hull of $K$ in $E$.
-
----
+Proof. Using weak topologies, the natural linear map $\iota_E:E_\sigma\to (E')^*_\sigma$ is continuous. Since closure agrees with weak closure for convex subsets of any Hausdorff locally convex topological vector space [Scha,
 
 $^{15}$How do we get a contradiction? Can it be via [Tre, Cor. 1 or Cor. 3 to Prop. 50.2]?
 
@@ -1708,7 +1706,7 @@ Lemma C.3.3.1 (Properties of the strong-operator topology). *Let $H$ be a comple
 
 Proof. (1) : This is [Cnw-a, Ch. IX, Prop. 1.3(e)], where “bounded” is meant for the norm topology on $\mathscr{B}(H)$, which is the same as boundedness in $\mathscr{B}_{\mathrm{SOT}}(H)$ by [Scha, Ch. III, 3.4].
 
-(2) : The locally convex strong operator topology on $\mathscr{B}(H)$ is clearly Hausdorff. Let $\{T_i\}_{i\in I}$ be a bounded Cauchy net in $\mathscr{B}_{\mathrm{SOT}}(H)$, with $I$ a directed set. Since the evaluation maps $e_{\phi}:\mathscr{B}(H)\to H$ sending $T$ to $e_{\phi}:=T(\phi)$ for every $\phi\in H$ are continuous with respect to the strong operator topology, the net $\{T_i(\phi)\}_{i\in I}$ is Cauchy and hence it converges in $H$ since $H$ is complete. We call $T(\phi)$ the limit in $H$. By the Uniform Boundedness Principle [Scha, Ch. III, Cor. to 4.2], $\sup_{i\in I}\|T_i\|$ is finite. Thus, $T$ is a bounded linear operator on $H$ and $T_i$ converges to $T$ in the strong operator topology by design. This proves that every bounded Cauchy net of $\mathscr{B}_{\mathrm{SOT}}(H)$ converges in $\mathscr{B}_{\mathrm{SOT}}(H).
+(2) : The locally convex strong operator topology on $\mathscr{B}(H)$ is clearly Hausdorff. Let $\{T_i\}_{i\in I}$ be a bounded Cauchy net in $\mathscr{B}_{\mathrm{SOT}}(H)$, with $I$ a directed set. Since the evaluation maps $e_{\phi}:\mathscr{B}(H)\to H$ sending $T$ to $e_{\phi}:=T(\phi)$ for every $\phi\in H$ are continuous with respect to the strong operator topology, the net $\{T_i(\phi)\}_{i\in I}$ is Cauchy and hence it converges in $H$ since $H$ is complete. We call $T(\phi)$ the limit in $H$. By the Uniform Boundedness Principle [Scha, Ch. III, Cor. to 4.2], $\sup_{i\in I}\|T_i\|$ is finite. Thus, $T$ is a bounded linear operator on $H$ and $T_i$ converges to $T$ in the strong operator topology by design. This proves that every bounded Cauchy net of $\mathscr{B}_{\mathrm{SOT}}(H)$ converges in $\mathscr{B}_{\mathrm{SOT}}(H)$.
 
 $\square$
 
@@ -3224,7 +3222,7 @@ f(\xi_2)-f(\xi_1)=\int_{[0,h]}(\mathrm{D}f)(\gamma(t),\gamma'(t))\,\mathrm{d}t
 \tag{C.5.1.21}
 $$
 
-where, however, the left side of (C.5.1.21) is an element of $E$. Let $K\subset (E')^*$ be the closed convex circled hull of $F([0,h])$. By continuity of $F$ (with respect to the Euclidean topology on $[0,h]$ and the $\sigma((E')^*,E')$-topology on $(E')^*$), $F([0,h])$ is compact and hence so is $K$ since $(E')^*$ is complete (see [Scha, Ch. III, Cor. to 4.3]). In particular, it is bounded in $(E')^*$.
+where, however, the left side of (C.5.1.21) is an element of $E$. Let $K\subset (E')^*$ be the closed convex circled hull of $F([0,h])$. By continuity of $F$ (with respect to the Euclidean topology on $[0,h]$ and the $\sigma((E')^*,E')$-topology
 
 ## PDF page 727
 

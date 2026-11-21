@@ -76,7 +76,7 @@ $$
 
 THEOREM 6.1.2.1 (Fourth Structure Theorem). *Let $F$ be a number field, $S,S'$ finite sets of places of $F$ containing all Archimedean places such that $S\subset S'$. Assume $\mathrm{Pic}(\mathcal O_{F,S})=1$.*
 
-*(1) The range of the linear topological embedding $\bar\pi_{S,S'}$ from (5.2.1.1) is the closed subspace of elements of $\mathrm H_{0,\mathrm{cont}}(\mathcal O_{F,S'}^\times,\mathcal S(\mathbf A_{F,S'}))$ invariant under the action of the closed subgroup $\widehat{\mathcal O}_{F,S'-S}^\times$ of $\mathrm{GL}_1(\mathbf A_{F,S'})}.$*
+*(1) The range of the linear topological embedding $\bar\pi_{S,S'}$ from (5.2.1.1) is the closed subspace of elements of $\mathrm H_{0,\mathrm{cont}}(\mathcal O_{F,S'}^\times,\mathcal S(\mathbf A_{F,S'}))$ invariant under the action of the closed subgroup $\widehat{\mathcal O}_{F,S'-S}^\times$ of $\mathrm{GL}_1(\mathbf A_{F,S'})$.*
 
 *(2) The range of the linear topological embedding $\bar\pi_S$ induced by the linear topological isomorphism $\bar\pi$ from (5.2.1.2) is the closed subspace of elements of $\mathrm H_{0,\mathrm{cont}}(F^\times,\mathcal S(\mathbf A_F))$ invariant under the action of the closed subgroup $\widehat{\mathcal O}_{F,\Sigma_F-S}^\times$ of $\mathrm{GL}_1(\mathbf A_F)$.*
 

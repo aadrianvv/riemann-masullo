@@ -368,7 +368,7 @@ For $G=\mathbf{R}$, the seminorms $\lVert\cdot\rVert_{s,k,2}$ recovers the class
 
 **402** · **CHAPTER 9. HARDY-SOBOLEV TOPOLOGIES**
 
-LEMMA 9.1.2.4. *Let $G$ be an $\mathbf{R}_{>0}$-modulated group, with module $\lvert\cdot\rvert_G$. Let $\mu_G$ be a choice of Haar measure on $G. Let $s\ge 0$ be a real number. The function of $g\in G$:*
+LEMMA 9.1.2.4. *Let $G$ be an $\mathbf{R}_{>0}$-modulated group, with module $\lvert\cdot\rvert_G$. Let $\mu_G$ be a choice of Haar measure on $G$. Let $s\ge 0$ be a real number. The function of $g\in G$:*
 
 $$
 (1+\lvert\log\lvert g\rvert_G\rvert^2)^{-s/2} \tag{9.1.2.13}
@@ -388,13 +388,13 @@ $$
 
 and the rightmost integral converges if and only if $s>1$. $\square$
 
-PROPOSITION 9.1.2.5. *Let $G$ be an $\mathbf{R}_{>0}$-modulated group, with module $\lvert\cdot\rvert_G$. Let $\mu_G$ be a choice of Haar measure on $G. The linear topological isomorphism:*
+PROPOSITION 9.1.2.5. *Let $G$ be an $\mathbf{R}_{>0}$-modulated group, with module $\lvert\cdot\rvert_G$. Let $\mu_G$ be a choice of Haar measure on $G$. The linear topological isomorphism:*
 
 $$
 T_s:W^{s,2}(G)'_\beta\to W^{-s,2}(G) \tag{9.1.2.14}
 $$
 
-*is an isometry with respect to the dual norm on the source, and the norm $\lVert\cdot\rVert_{-s,2}$ from (9.1.2.3) on the target, equivariant with respect to the adjoint action of the continuous left-translation action $\rho_G$ of $G$ on $W^{s,2}(G)$, and the right-translation action of $G$ on $W^{-s,2}(G).*
+*is an isometry with respect to the dual norm on the source, and the norm $\lVert\cdot\rVert_{-s,2}$ from (9.1.2.3) on the target, equivariant with respect to the adjoint action of the continuous left-translation action $\rho_G$ of $G$ on $W^{s,2}(G)$, and the right-translation action of $G$ on $W^{-s,2}(G)$.*
 
 *Let $s>1$ be a real number. For $t\in\mathbf{R}$ and $m\ge 0$, the continuous function:*
 
@@ -420,7 +420,7 @@ $$
 
 is finite. This is the case if and only if $s-2m>1$, which reads $m<\frac{s-1}{2}$. $\square$
 
-PROPOSITION 9.1.2.6. *Let $G$ be an $\mathbf{R}_{>0}$-modulated group, with module $\lvert\cdot\rvert_G$. Let $\mu_G$ be a choice of Haar measure on $G.* [continues on p. 403]
+PROPOSITION 9.1.2.6. *Let $G$ be an $\mathbf{R}_{>0}$-modulated group, with module $\lvert\cdot\rvert_G$. Let $\mu_G$ be a choice of Haar measure on $G$.* [continues on p. 403]
 
 ## PDF page 403
 
@@ -1890,7 +1890,7 @@ and hence $M_{\rho}$ is valued in $W^{s,2}(G)$ and bounded. Each $M_{\rho}$ is a
 
 For $G$ an $\mathbf{R}_{>0}$-modulated group, and $\mu_G$ a choice of Haar measure on $G$, continuous homomorphic sections $\tau$ to the module $\lvert\cdot\rvert_G$ exist (see Remark D.2.1.2). We define $\mu_1$ to be the unique Haar measure on $G_1$ such that, under the isomorphism of Hausdorff locally compact abelian groups $G \simeq \mathbf{R}_{>0} \times G_1$ induced by one such choice of $\tau$, $\mu_G$ is pushed-forward to $dt/t \otimes \mu_1$.
 
-Theorem A.5.4.1, which is Lebesgue's Differentiation Theorem for Hausdorff locally compact abelian groups, and which rests on an analog of the Hardy-Littlewood Maximal Theorem (see Theorem A.5.3.6 and its global form, Theorem A.5.3.7) leads to the concept of "smoothening" of a locally integrable function on a Hausdorff locally compact abelian group at a point (see Terminology A.5.4.1). We refer the reader to §A.5.3, §A.5.4, and to [Bris-a, §3], where a generalization of the same instruments leads to trace formulas for nuclear integral operators on the $L^2$-space of a Hausdorff locally compact second-countable topological space equipped with a Radon measure; see also [Bris-a, §3.1,Thm.3.1], and the special case of subdomains of Euclidean spaces from [Bris-b, Thm.3.1].
+Theorem A.5.4.1, which is Lebesgue's Differentiation Theorem for Hausdorff locally compact abelian groups, and which rests on an analog of the Hardy-Littlewood Maximal Theorem (see Theorem A.5.3.6 and
 
 ## PDF page 429
 
@@ -1972,7 +1972,7 @@ When $\rho$ and $\varphi$ are smooth, see also [Tre, Part III,Ch.51,Cor.51.7], C
 
 As such, the given operator is Hilbert-Schmidt, and $K_{\varphi,\rho}$ is its Hilbert-Schmidt kernel. The function $K_{\varphi,\rho}$ is smooth over $G \times G$ away from a $(\mu_G \otimes \mu_G)$-negligible subset of the form $(\bigcup_{1 \le k \le N}\{g \in G : \lvert g\rvert = t_k\}) \times (\bigcup_{1 \le k \le N}\{g \in G : \lvert g\rvert = t_k\})$ for $\{t_1,\dots,t_N\} \subset \mathbf{R}_{>0}$ a finite subset, and it is $(\mu_G \otimes \mu_G)$-integrable. In particular, the diagonal in $G_x \times G_y$ is contained in the Lebesgue set of $K_{\varphi,\rho}$, up to a subset of $\mu_G$-measure zero (see Theorem A.5.4.1 and Remark A.5.4.2). Along the diagonal in $(G)_x \times (G)_y$, the smoothening $\tilde{K}_{\varphi,\rho}$ (in the sense of Theorem A.5.4.1 and [Bris-a, §3]; see also [Bris-a, §3.1,Thm.3.1]) vanishes $\mu_G$-almost everywhere. In fact, $K_{\varphi,\rho}$ is itself already defined $\mu_G$-almost everywhere along the diagonal at its points of continuity, a subset of the diagonal whose complement in the diagonal is $\mu_G$-negligible. Away from a $\mu_G$-negligible subset, $K_{\varphi,\rho}$ and $\tilde{K}_{\varphi,\rho}$ agree. The operator from (9.3.3.13) is therefore an integral Hilbert-Schmidt operator whose kernel has an absolutely integrable smoothening along the diagonal, whose mass vanishes.
 
-If both $\rho$ and $\varphi$ are smooth, then it is nuclear on $L^2(G)$ (because the kernel is smooth and compactly supported over $G \times G$, and hence an element of $\mathcal{S}(G) \hat{\boxtimes}_{\pi} \mathcal{S}(G)$ (in fact an element of the smaller $\mathcal{S}(G) \otimes \mathcal{S}(G)$, since $\varphi$ is contained in some $\mathcal{D}_K(G,k)$ for a compact subgroup $k \subset G$ with compactly generated orthogonal $k^{\perp}$, with $K \subset G$ a compact subset with non-empty interior, and $\mathcal{D}_K(G,k)$ is a Fréchet space), which therefore maps to $S_1(G) = L^2(G) \hat{\boxtimes}_{\pi} L^2(G)$ by [Jar, ]) and by Lemma C.3.7.1(2) its trace vanishes by Lemma C.3.7.1(1) (see also [Bris-a, Cor.3.2]).
+If both $\rho$ and $\varphi$ are smooth, then it is nuclear on $L^2(G)$ (because the kernel is smooth and compactly supported over $G \times G$, and hence an element of $\mathcal{S}(G) \hat{\boxtimes}_{\pi} \mathcal{S}(G)$ (in fact an element of the smaller $\mathcal{S}(G) \otimes \mathcal{S}(G)$, since $\varphi$ is contained in some $\mathcal{D}_K(G,k)$ for a compact subgroup $k \subset G$ with compactly generated orthogonal $k^{\perp}$, with $K \subset G$ a compact subset with non-empty interior, and $\mathcal{D}_K(G,k)$ is a Fréchet space), which therefore
 
 ## PDF page 431
 

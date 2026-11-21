@@ -90,11 +90,13 @@ for $c\in\Omega(C_F)_{>1}$, respectively $c\in\Omega(J_{F,S})_{>0}$, and Theorem
 
 The Theorems further provide equivalent ways to write $Z(f,c)$ and $Z_S(f,c)$ in terms of the $\theta$-function operators $\Phi_F$, $\Phi_{F,\omega}$, $\Phi_{F,S}$ and $\Phi_{F,S,\omega}$, where $\omega$ is the restriction of $c$ to $C^1_F$, respectively $J^1_{F,S}$.
 
-Namely, $Z(f,c)$ and $Z_S(f,c)$ are obtained as Mellin transforms over $C_F$, respectively $J_{F,S}$, of $\Phi_F(f)$, respectively $\Phi_{F,S}(f)$, up to a vertical translation on the complex $s$-plane uniquely determined by a choice of continuous character $\chi\in\widehat{C_F}$, respectively $\chi\in\widehat{J_{F,S}}$, extending to $C_F$, respectively $J_{F,S}$, the continuous character $\omega\in\widehat{C^1_F}$, respectively $\omega\in\widehat{J^1_{F,S}}$, and on a choice of continuous homomorphic section to the idelic, respectively $S$-idelic, norm.
+Namely, $Z(f,c)$ and $Z_S(f,c)$ are obtained as Mellin transforms over $C_F$, respectively $J_{F,S}$, of $\Phi_F(f)$, respectively $\Phi_{F,S}(f)$, up to a vertical translation on the complex $s$-plane uniquely determined by a choice of continuous character $\chi\in\widehat{C_F}$, respectively $\chi\in\widehat{J_{F,S}}$, extending to $C_F$, respectively $J_{F,S}$, the continuous
 
 ## PDF page 223
 
 **5.1. THE TOPOLOGICAL VECTOR SPACES OF ADELIC $\theta$-FUNCTIONS AND IDELIC $Z$-FUNCTIONS** · **223**
+
+character $\omega\in\widehat{C^1_F}$, respectively $\omega\in\widehat{J^1_{F,S}}$, and on a choice of continuous homomorphic section to the idelic, respectively $S$-idelic, norm.
 
 We now define linear spaces whose elements are adelic $\theta$-functions, both global and $S$-local, respectively, and their corresponding spaces of meromorphic functions, and topologize them using the Hausdorff locally convex topology of the Schwartz-Bruhat spaces $\mathcal{S}(\mathbf{A}_F)$, respectively $\mathcal{S}(\mathbf{A}_{F,S})$.
 
@@ -1355,7 +1357,7 @@ These are functions $f:G\to\mathbf C$ such that $\lvert\cdot\rvert_G^a f\in\math
 
 Example 5.3.3.1. Recall from Definition D.2.1.1 that a Hausdorff locally compact abelian group $G$ is modulated if it is equipped with a continuous proper homomorphism $\lvert\cdot\rvert_G:G\to\mathbf R_{>0}$ whose kernel $G_1$ is (therefore) a compact Hausdorff abelian subgroup. $G$ is $\mathbf R_{>0}$-modulated if $\lvert\cdot\rvert_G$ is surjective.
 
-To fix ideas, the reader may consider the case $G=\mathbf R_{>0}$, with $\lvert\cdot\rvert_G$ the identity homomorphism, in which case $f:G\to\mathbf C$ has $I$-exponential decay if and only if $t^a f(t)\in\mathcal S(\mathbf R_{>0})$. Upon performing the change of variables $t=e^x$, i.e. upon defining the module homomorphism $\lvert x\rvert_{\mathbf R}:=e^x$, then $\mathcal S_{\log(I)}(\mathbf R)$ is linearly and topologically isomorphic to $\mathcal S_I(\mathbf R_{>0})$ with the above module homomorphisms.
+To fix ideas, the reader may consider the case $G=\mathbf R_{>0}$, with $\lvert\cdot\rvert_G$ the identity homomorphism, in which case $f:G\to\mathbf C$ has $I$-exponential decay if and only if $t^a f(t)\in\mathcal S(\mathbf R_{>0})$. Upon performing the change of variables $t=e^x$, i.e. upon defining the module homomorphism $\lvert x\rvert_{\mathbf R}:=e^x$, then $\mathcal S_I(\mathbf R)$ is the $\mathbf C$-linear space of smooth functions $f:\mathbf R\to\mathbf C$ such that $e^{ax}f(x)$ decays faster than any positive power of $\lvert x\rvert^{-1}$ as $\lvert x\rvert\to+\infty$ for every $a\in I$, hence the lexicon “$I$-exponential decay”. $\mathcal S_{\log(I)}(\mathbf R)$ is linearly and topologically isomorphic to $\mathcal S_I(\mathbf R_{>0})$ with the above module homomorphisms.
 
 We refer the reader to Theorem D.3.3.7 for the properties of the Hausdorff locally convex topology on $\mathcal S_I(G)$.
 

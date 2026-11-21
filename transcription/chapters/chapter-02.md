@@ -590,7 +590,7 @@ $$
 \pi_{S,S'}(f) := f\otimes (\prod_{v\in S'_f-S_f} 1_{\mathcal{O}_{F_v}}) \tag{2.1.4.3}
 $$
 
-*is continuous, injective, and induces on $\mathcal{S}(\mathbf{A}_{F,S})$ its intrinsic Hausdorff locally convex topology as the pre-image of the Hausdorff locally convex topology on $\mathcal{S}(\mathbf{A}_{F,S'}).*
+*is continuous, injective, and induces on $\mathcal{S}(\mathbf{A}_{F,S})$ its intrinsic Hausdorff locally convex topology as the pre-image of the Hausdorff locally convex topology on $\mathcal{S}(\mathbf{A}_{F,S'})$.*
 
 (4) *The maps $\pi_{S,S'}$ from (2.1.4.2) are topological embeddings.*
 
@@ -2138,7 +2138,7 @@ THEOREM 2.2.5.4 (Estimates over the idele classes - II). *We let $f\in\mathcal{S
 
 (1) *$\Phi_{F,\omega}(f)$ is a continuous function on $C_F$, $\omega$-homogeneous under the left translation action by $C_F^1$.*
 
-(2) *It satisfies the following growth condition: for every integer $N\ge 0$, there exists a real number $C_N>0*
+(2) *It satisfies the following growth condition: for every integer $N\ge 0$, there exists a real number $C_N>0$*
 *depending on $N$ and $f$, such that for every $g\in C_F$, we have*
 
 $$
@@ -2647,7 +2647,7 @@ $$
 \lvert\phi(t)\rvert\le C \tag{2.4.1.2}
 $$
 
-*for all $t>0.*
+*for all $t>0$.*
 
 (2) *There exist real numbers $A,T>0$ such that $\lvert\phi(t)\rvert\le At^{-N}$ for all $t\ge T$.*
 

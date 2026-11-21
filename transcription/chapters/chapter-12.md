@@ -202,11 +202,13 @@ $$
 \sum_{1\le m\le N}\sigma_m(T)\sum_{1\le r\le N_m}|\phi_{m,r}(x)|^2 \tag{12.1.1.12}
 $$
 
-converges as $N\to +\infty$. Upon replacing the classical Hardy-Littlewood Maximal Theorem in $\mathbf R^n$ with Theorem A.5.3.7, using the Maximal function $M(\cdot)$ defined in (A.5.3.16), and applying the Theorem for $p = 2$ (i.e. using the strong $(2,2)$ inequality from (A.5.3.18)), the argument for (1) is now identical to that provided in [Bris-a, pp.1185-1186] for [Bris-a, Thm.3.1], using the Differentiation Theorem of Lebesgue in its form from Theorem A.5.4.1 so as to find the set $Y$ in loc.cit. with $\mu_G(G-Y) = 0$ to carry out the rest of the argument.
+converges as $N\to +\infty$. Upon replacing the classical Hardy-Littlewood Maximal Theorem in $\mathbf R^n$ with Theorem A.5.3.7, using the Maximal function $M(\cdot)$ defined in (A.5.3.16), and applying the Theorem for $p = 2$ (i.e.
 
 ## PDF page 501
 
 **12.1. SMOOTHENINGS ALONG THE DIAGONAL** · **501**
+
+using the strong $(2,2)$ inequality from (A.5.3.18)), the argument for (1) is now identical to that provided in [Bris-a, pp.1185-1186] for [Bris-a, Thm.3.1], using the Differentiation Theorem of Lebesgue in its form from Theorem A.5.4.1 so as to find the set $Y$ in loc.cit. with $\mu_G(G-Y) = 0$ to carry out the rest of the argument.
 
 (2) : We first assume $\rho\in C_c(G)$. Since $\rho(x)k(x,y)$ is a representative function for the Hilbert-Schmidt kernel of $M_\rho\circ T$ on $L^2(G,\lambda)$, and $\widetilde{k}(x,y)$ equals $k(x,y)$ on $(\mu_G\otimes\mu_G)$-almost every point, we have $k(x,y) = \widetilde{k}(x,y)$ also $(\lambda\otimes\lambda)$-almost everywhere, since $\lambda$ and $\mu_G$ have the same null sets (indeed, both $\lambda$ and $\mu_G$ are $\sigma$-finite Radon measures on $G$ since $G$ is second countable, and $f$ is the Radon-Nikodym derivative of $\lambda$ with respect to $\mu_G$. Since it is nowhere vanishing, $\lambda$ and $\mu_G$ are equivalent: a subset $A\subset G$ is $\mu_G$-measurable if and only if it is $\lambda$-measurable, and $\mu_G(A) = \int_A f(x)\,\mu_G(x) = 0$ if and only if $1_A(x)f(x) = 0$ for $\mu_G$-almost all $x\in A$, which forces $\mu_G(A) = 0$).
 

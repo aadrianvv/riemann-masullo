@@ -3430,7 +3430,7 @@ and we have $(s' \odot s) \star (t' \odot t) = (s' \star t') \odot (s \star t)$ 
 
 E.5.1.3. *Effective small categories.* We now revisit the category **Cat** under a different perspective, which will be of use throughout and will give us the opportunity to make examples. We begin with a definition:
 
-**Definition E.5.1.15.** Call $\mathbf{Cat}^{*}$ the category whose objects are 6-tuples $(X,A,s,t,c,e)$ as for groupoids in sets in Definition E.4.1.1 but without the inversion axioms (this is why we write “$A$” instead of “$R$”), and likewise for morphisms.[^18] A *functor* between objects in $\mathbf{Cat}^{*}$ is a map between such 6-tuples as in (E.4.1.7) but without the inversion aspect.
+**Definition E.5.1.15.** Call $\mathbf{Cat}^{*}$ the category whose objects are 6-tuples $(X,A,s,t,c,e)$ as for groupoids in sets in Definition E.4.1.1 but without the inversion axioms (this is why we write “$A$” instead of “$R$”), and likewise for morphisms.$^{18}$ A *functor* between objects in $\mathbf{Cat}^{*}$ is a map between such 6-tuples as in (E.4.1.7) but without the inversion aspect.
 
 Objects in $\mathbf{Cat}^{*}$ are called *effective small categories*. There is an evident analogy between $\mathbf{Cat}^{*}$ and the category **Cat** from §E.5.1.1. We define the analog of natural transformations of functors:
 
@@ -3440,7 +3440,7 @@ $$
 F := (f,g), F' := (f',g') : (X,A,s,t,c,e) \to (X',A',s',t',c',e')
 $$
 
-[^18]: Previously had not included compatibility with $e$’s, which was surely an oversight.
+$^{18}$Previously had not included compatibility with $e$’s, which was surely an oversight.
 
 ## PDF page 895
 
@@ -5303,7 +5303,7 @@ $$
 \mathcal{I}_{[X/\mathcal{G}]} \to [X/\mathcal{G}]
 $$
 
-is essentially surjective. If $(s, t) : \mathcal{G} \to X \times X$ is injective then the morphism $I_{[\mathcal{G} \Rightarrow X]} \to X$ given by the first projection in the construction of $I_{[\mathcal{G} \Rightarrow X]}$$^{22}$ is also injective, hence surjective by the existence of a section to $\iota$. This forces $\iota$ to be faithful. Moreover, it also forces $\mathcal{G}' \to \mathcal{G}$ to be an isomorphism, and therefore $\iota$ is fully faithful, hence an equivalence. $\square$
+is essentially surjective. If $(s, t) : \mathcal{G} \to X \times X$ is injective then the morphism $I_{[\mathcal{G} \Rightarrow X]} \to X$ given by the first projection in the construction of $I_{[\mathcal{G} \Rightarrow X]}$ $^{22}$ is also injective, hence surjective by the existence of a section to $\iota$. This forces $\iota$ to be faithful. Moreover, it also forces $\mathcal{G}' \to \mathcal{G}$ to be an isomorphism, and therefore $\iota$ is fully faithful, hence an equivalence. $\square$
 
 We further have the following representability criterion:$^{23}$
 

@@ -1042,7 +1042,7 @@ We claim that the collection of function spaces $\mathcal{S}(k, \Gamma)$ on $G$ 
 
 LEMMA D.1.5.4. *Pullback along the proper map $\Gamma_1/k_2 \twoheadrightarrow \Gamma_1/k_1$ carries $\mathcal{S}(\Gamma_1/k_1)$ to functions on the open subgroup $\Gamma_1/k_2 \subset \Gamma_2/k_2$ whose extension by $0$ to $\Gamma_2/k_2$ lies in $\mathcal{S}(\Gamma_2/k_2)$ (where each $\Gamma_i/k_i$ is an elementary abelian Lie group, so the open subgroup $\Gamma_1/k_2 \subset \Gamma_2/k_2$ is also an elementary abelian Lie group). The resulting inclusion $\mathcal{S}(\Gamma_1/k_1) \to \mathcal{S}(\Gamma_2/k_2)$ is a topological embedding (hence closed, by completeness of $\mathcal{S}(\Gamma_1/k_1)$).*
 
-PROOF. We just have to check that for an elementary abelian Lie group $A$, compact subgroup $k \subset A$, and open subgroup $A' \subset A:
+PROOF. We just have to check that for an elementary abelian Lie group $A$, compact subgroup $k \subset A$, and open subgroup $A' \subset A$:
 
 (i) pullback along $A \twoheadrightarrow A/k$ carries $\mathcal{S}(A/k)$ into $\mathcal{S}(A)$ via a topological embedding onto the subspace of $k$-invariant elements.
 
@@ -1218,7 +1218,7 @@ $$
 
 the limit being formed within $\mathbf{C}$ (we’ll soon see this limit always exists). We refer to $\partial_a$ as the *invariant differential operator* of $a$.
 
-We verify below that $g\mapsto(\partial_af)(g)$, for $f\in C^1(G)$, is defined for all $g$ and continuous over $G.
+We verify below that $g\mapsto(\partial_af)(g)$, for $f\in C^1(G)$, is defined for all $g$ and continuous over $G$.
 
 ## PDF page 767
 
@@ -1545,7 +1545,7 @@ on each $f\in\mathcal{S}(\widehat{G})$. That $\pi_{(\Gamma^{\perp},k^{\perp})}$ 
 
 LEMMA D.1.6.19 (Fourier transform and differential operators on Schwartz-Bruhat spacees). *Let $G$ be a Hausdorff locally compact abelian group, and $(k,\Gamma)$ a structural pair of $G$. Let $\mu_G$ be a fixed choice of Haar measure on $G$, and $\mu_{\widehat{G}}$ the Plancherel measure on $\widehat{G}$ determined by $\mu_G$.*
 
-(1) *For any invariant differential operator $D$ on $G,*
+(1) *For any invariant differential operator $D$ on $G$,*
 
 (D.1.6.23)
 $$
@@ -1821,7 +1821,7 @@ D.1.8.2. *Supports.* We recall that a tempered distribution $T$ on $G=\mathbf{T}
 
 The notion of *support* of a tempered distribution on $\mathbf{R}^m$ is defined by adapting the notion of support of distributions on $\mathbf{R}^m$ as in [Horm, Ch. II, §2.2, Def. 2.2.2]: it is the closed subset $K\subset\mathbf{R}^m$ whose complement is the union of those open $U\subset\mathbf{R}^m$ such that $\langle T,f\rangle_{\mathcal{S}(\mathbf{R}^m)',\mathcal{S}(\mathbf{R}^m)}=0$ for every Schwartz function $f$ on $\mathbf{R}^m$ supported over $U$.
 
-Definition D.1.8.2. Let $G$ be a Hausdorff locally compact abelian group. Let $T\in\mathcal{S}(G)'$ be a tempered distribution on $G.
+Definition D.1.8.2. Let $G$ be a Hausdorff locally compact abelian group. Let $T\in\mathcal{S}(G)'$ be a tempered distribution on $G$.
 
 (1) The *vanishing locus* of $T$ is defined to be the union of all open subsets $U\subset G$ such that $\langle T,f\rangle_{\mathcal{S}(G)',\mathcal{S}(G)}=0$ for every $f\in\mathcal{S}(G)$ supported in $U$.
 
@@ -2439,6 +2439,7 @@ with $\mu_1$ a fixed choice of Haar measure on $G^1$. It is clear from the defin
 
 $$
 \Phi_{G,\omega}(f)=\frac{1}{\mu_1(G^1)}\int_{G^1}\langle\overline{\omega}(g)g.f,\cdot\rangle_{E,E'}\,d\mu_{G^1}(g)\in E\subset (E')^*
+$$
 
 ## PDF page 793
 
@@ -2578,7 +2579,7 @@ $$
 \overline{T}\circ\rho_G(g,\cdot)=\rho_G(\alpha(g),\overline{T}(\cdot)) \tag{D.2.2.7}
 $$
 
-and for $\alpha^*\omega:=\omega\circ\alpha^{-1}$[^9] there exist unique continuous linear maps $T_{\omega}$, $\overline{T}_{\omega}$ making the diagrams
+and for $\alpha^*\omega:=\omega\circ\alpha^{-1}$ $^{9}$ there exist unique continuous linear maps $T_{\omega}$, $\overline{T}_{\omega}$ making the diagrams
 
 $$
 \tag{D.2.2.8}
@@ -2610,7 +2611,7 @@ $\square$
 
 In light of Lemma D.2.2.1, for $i:\mathcal S(G)\to E$ continuous linear with dense range and satisfying the assumptions of the Lemma, we will identify $E(\omega)$ and $\mathrm H^0(\omega,E)$ as the need arises, each equipped with their
 
-[^9]: Now composing with $\alpha^{-1}$, was composing with $\alpha$ before but seems need $\alpha^{-1}$: $T$ carries $\omega$-isotypic to $\omega\circ\alpha^{-1}$-isotypic.
+$^{9}$Now composing with $\alpha^{-1}$, was composing with $\alpha$ before but seems need $\alpha^{-1}$: $T$ carries $\omega$-isotypic to $\omega\circ\alpha^{-1}$-isotypic.
 
 ## PDF page 796
 
@@ -2650,7 +2651,7 @@ $$
 
 **D.3. SCHWARTZ-BRUHAT FUNCTIONS WITH $I$-EXPONENTIAL DECAY** · **797**
 
-Now we turn to the general case of (2). The assumed continuity of $M_{\chi}$ with respect to the topology on $\mathcal S(G)$ by $E$ under $i$ allows us to conclude by using Lemma D.2.2.1(4) with $T=M_{\chi}$[^10] provided that the Hausdorff quotient $E(\omega)$ of $E$ inherits completeness from $E$ and the continuous linear map $M_{\chi}(\mathcal S(\Gamma))\to E(\omega)$ is a topological embedding with dense image. Let us now verify these two properties.
+Now we turn to the general case of (2). The assumed continuity of $M_{\chi}$ with respect to the topology on $\mathcal S(G)$ by $E$ under $i$ allows us to conclude by using Lemma D.2.2.1(4) with $T=M_{\chi}$ $^{10}$ provided that the Hausdorff quotient $E(\omega)$ of $E$ inherits completeness from $E$ and the continuous linear map $M_{\chi}(\mathcal S(\Gamma))\to E(\omega)$ is a topological embedding with dense image. Let us now verify these two properties.
 
 The completeness of $E(\omega)$ holds because the natural map $\mathrm H^0(\omega,E)\to E(\omega)$ is a topological isomorphism (see (4.3.3.2)) and $\mathrm H^0(\omega,E)$ inherits completeness due to its closedness inside $E$. The map $M_{\chi}(\mathcal S(\Gamma))\to E(\omega)$ (where $\mathcal S(\Gamma)$ is given the subspace topology from $E$) is topologically identified with the map $\mathrm H^0(\omega,\mathcal S(G))\to\mathrm H^0(\omega,E)\simeq E(\omega)$ that is a topological embedding when $\mathcal S(G)$ is given the subspace topology from $E$. The image of this map is also dense because the map is linearly identified with $\mathcal S(G)(\omega)\to E(\omega)$ whose image is dense since $\mathcal S(G)$ is dense in $E$.
 
@@ -2658,7 +2659,7 @@ $\square$
 
 D.2.2.1. A kernel Theorem for $\mathbf R_{>0}$-modulated groups. Lemma D.2.2.2 takes the following form for $G$ any modulated group such that the module $|\cdot|_G$ is surjective; i.e., for which $\Gamma=\mathbf R_{>0}$. (Examples of interest include $G=C_F,C_{F,S},J_{F,S}$.) We refer to these modulated groups as $\mathbf R_{>0}$-modulated.
 
-COROLLARY D.2.2.3.[^11] *Let $G$ be a second-countable $\mathbf R_{>0}$-modulated group; i.e., $\Gamma=\mathbf R_{>0}$. Fix a choice of $\omega\in\widehat{G^1}$ and a continuous homomorphic section $\tau$ to $|\cdot|_G$, and let $\chi:G=G^1\times\Gamma\to\mathbf C^{\times}$ be the character $\chi(g_1\tau(\gamma))=\overline{\omega}(g_1)$. Let $M_{\chi}:\mathcal S(G)\simeq\mathcal S(G)$ be multiplication by $\chi$.*
+COROLLARY D.2.2.3.$^{11}$ *Let $G$ be a second-countable $\mathbf R_{>0}$-modulated group; i.e., $\Gamma=\mathbf R_{>0}$. Fix a choice of $\omega\in\widehat{G^1}$ and a continuous homomorphic section $\tau$ to $|\cdot|_G$, and let $\chi:G=G^1\times\Gamma\to\mathbf C^{\times}$ be the character $\chi(g_1\tau(\gamma))=\overline{\omega}(g_1)$. Let $M_{\chi}:\mathcal S(G)\simeq\mathcal S(G)$ be multiplication by $\chi$.*
 
 *(1) The natural continuous linear map $\mathcal S(\mathbf R_{>0})\simeq M_{\chi}(\mathcal S(\Gamma))\to\mathcal S(G)(\omega)$ is a topological isomorphism;*
 
@@ -2680,9 +2681,9 @@ LEMMA D.3.1.1. *Let $I\subset\mathbf R$ be a non-empty open bounded interval, an
 
 *PROOF. We write $I:=(a,b)$ for real numbers $a<b$. For any non-empty open interval $J\subset\mathbf R$ strictly contained within $I$, there exists $\varepsilon>0$ small enough such that $a+2\varepsilon<b-2\varepsilon$ and $J\subset[a+2\varepsilon,b-2\varepsilon]$. By hypothesis, $s^N\phi$ is bounded over $\mathbf C_{[a+\varepsilon,b-\varepsilon]}$. We fix a point $z\in\mathbf C_{(a+2\varepsilon,b-2\varepsilon)}$.*
 
-[^10]: No, that cited Lemma is not what we need since automorphisms $\alpha$ of $G$ are not relevant here; we are using a variant of the Lemma where $T$ intertwines the isotypic subspaces for two characters of $G^1$ without any automorphism of $G$ being relevant. For $\chi$ as just defined, $T(g.f)=\chi(g)\,g.(Tf)$, so $T$ carries $G^1$-invariants exactly onto $\mathrm H^0(\omega,\mathcal S(G)).
+$^{10}$No, that cited Lemma is not what we need since automorphisms $\alpha$ of $G$ are not relevant here; we are using a variant of the Lemma where $T$ intertwines the isotypic subspaces for two characters of $G^1$ without any automorphism of $G$ being relevant. For $\chi$ as just defined, $T(g.f)=\chi(g)\,g.(Tf)$, so $T$ carries $G^1$-invariants exactly onto $\mathrm H^0(\omega,\mathcal S(G))$.
 
-[^11]: This result is never cited anywhere, so why is it stated? The preceding result entirely subsumes it anyway.
+$^{11}$This result is never cited anywhere, so why is it stated? The preceding result entirely subsumes it anyway.
 
 ## PDF page 798
 
@@ -3073,6 +3074,8 @@ A general non-empty interval $I\subset\mathbf{R}$ is exhausted by countably many
 
 Since the transition maps $\mathcal{S}(k,G)\to\mathcal{S}(k',G)$ for $k'\subset k$ are topological embeddings, the same holds for $\mathcal{S}_I(k,G)\to\mathcal{S}_I(k',G)$. Thus, when $G$ is second-countable we see that the topology on $\mathcal{S}_I(G)$ is a countable strict inductive limit. Continuing to assume $G$ is second-countable, since each $\mathcal{S}_I(k,G)$ is topologized as a projective limit of copies of the Hausdorff locally convex space $\mathcal{S}(k,G)=\mathcal{S}(G/k)$ that is nuclear and complete (see Lemma D.1.3.7(3) applied to the elementary abelian Lie group $G/k$) it follows that each of the spaces $\mathcal{S}_I(k,G)$
 
+$^{14}$Need to give reference for $\mathcal{S}(\mathbf{R})$ being separable.
+
 ## PDF page 806
 
 **806** · **CHAPTER D. SCHWARTZ-BRUHAT FUNCTIONS**
@@ -3234,6 +3237,14 @@ $$
 
 Bounded subsets of arbitrary products of topological vector spaces are precisely subsets of products of bounded subsets of the factors [Scha, Ch. I, 5.5], so we are led to study boundedness inside $\mathcal{S}(G)$ more closely.
 
+$^{17}$Is this the same as what Grothendieck calls “strictly bornological”? Does it require a countability condition? Reference for various definitions?
+
+$^{18}$Why are the members of the direct limit construction actually complete? And why is the colimit process “countable” as required in the definition of an LF-space?
+
+$^{19}$Is the reader going to be told what “Banach disks” means?
+
+$^{20}$Why? And why is this last sentence being mentioned? Omit if not actually used: if the reader hasn’t been told what “ultrabornological” means and some relation with being bornological then this cannot be understood.
+
 ## PDF page 810
 
 **810** · **CHAPTER D. SCHWARTZ-BRUHAT FUNCTIONS**
@@ -3265,6 +3276,8 @@ Finally, assuming $I=[a,b]$ with $a<b$, we want to show the continuous diagonal 
 $$
 \mathcal{S}_I(G)\hookrightarrow\mathcal{S}_{\{a\}}(G)\times\mathcal{S}_{\{b\}}(G)\simeq\mathcal{S}(G)\times\mathcal{S}(G)
 $$
+
+$^{21}$No, this does not prove it since we have made *no contact* with $\mathcal{S}_I(k,G)$'s. Moreover, there has not been clear contact made between $\mathcal{S}_I(G)$ and $\mathcal{S}_I(\mathbf{R}_{>0})\,\widehat{\otimes}_\pi\,\mathcal{S}(G^1)$, which seems to be invoked here yet is what comes up in the *next* proof, risking an appearance of circularity. The “$\,\overline{\otimes}\,$” version (D.3.3.7) has not been proved either. Too many loose ends.
 
 ## PDF page 811
 
@@ -3307,18 +3320,6 @@ $$
 \Phi^I_{G,\omega}:\mathcal{S}_I(G)\to\mathrm{H}^0(\omega,\mathcal{S}_I(G))
 \tag{D.3.3.9}
 $$
-
-$^{21}$No, this does not prove it since we have made *no contact* with $\mathcal{S}_I(k,G)$'s. Moreover, there has not been clear contact made between $\mathcal{S}_I(G)$ and $\mathcal{S}_I(\mathbf{R}_{>0})\,\widehat{\otimes}_\pi\,\mathcal{S}(G^1)$, which seems to be invoked here yet is what comes up in the *next* proof, risking an appearance of circularity. The “$\,\overline{\otimes}\,$” version (D.3.3.7) has not been proved either. Too many loose ends.
-
-$^{17}$Is this the same as what Grothendieck calls “strictly bornological”? Does it require a countability condition? Reference for various definitions?
-
-$^{18}$Why are the members of the direct limit construction actually complete? And why is the colimit process “countable” as required in the definition of an LF-space?
-
-$^{19}$Is the reader going to be told what “Banach disks” means?
-
-$^{20}$Why? And why is this last sentence being mentioned? Omit if not actually used: if the reader hasn’t been told what “ultrabornological” means and some relation with being bornological then this cannot be understood.
-
-$^{14}$Need to give reference for $\mathcal{S}(\mathbf{R})$ being separable.
 
 ## PDF page 812
 
@@ -3610,7 +3611,7 @@ $$
 
 where $t_0\in[0,2\pi/\log|\gamma|_G)$ satisfies $\chi_0(\gamma)=|\gamma|^{it_0}_G$.
 
-Remark D.3.5.2. We recall t
+Remark D.3.5.2. We recall that for $G$ an $\mathbf{R}_{>0}$-modulated group and $\gamma\in G$ such that $|\gamma|_G>1$, upon choosing a holomorphic parametrization $\{\chi|\cdot|^s_G\}$ for the Riemann surface $\Omega(G)$ of continuous quasi-characters,
 
 ## PDF page 819
 

@@ -1404,7 +1404,7 @@ We will also be analyzing principal parts at the poles of the Archimedean local 
 
 **7.3.1. Orbital Schauder Bases.** The following Theorem describes the orthogonals of the closed subspaces $PV_{S,S_0}\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))$ as $S_0\subset S$ is a fixed subset of finite places.
 
-Situation 7.3.1.1 (Saturated sets of places). Let $F$ be a number field, $S$ be a finite set of places of $F$ containing all the Archimedean places. Let $S_0$ be an arbitrary finite set of places of $F.
+Situation 7.3.1.1 (Saturated sets of places). Let $F$ be a number field, $S$ be a finite set of places of $F$ containing all the Archimedean places. Let $S_0$ be an arbitrary finite set of places of $F$.
 
 (1) We will term $S_0$ saturated if and only if for every prime number $p$, if a place $v$ of $F$ whose residue characteristic is $p$ is contained in $S_0$, then all places of $F$ whose residue characteristic is $p$ are also contained in $S_0$.
 
@@ -3124,7 +3124,7 @@ The Mellin transform, both $S$-local and global, sets up a correspondence betwee
 
 The following Theorem, uses the existence of classical zero-free regions (through the non-vanishing and polynomial growth of the reciprocal of the finite Hecke $L$-function on the $1$-line; see Theorem B.6.1.6), together with the existence and properties of the $S$-local Orbital Schauder Bases provided by Theorem 7.3.1.6, as an input.
 
-Theorem 7.5.0.1 (Strong Co-Primality). *Let $F$ be a number field, $\chi\in \widehat{C_F}$ a continuous character. Let $S_0$ be a finite set of finite places of $F. The canonical continuous linear map:*
+Theorem 7.5.0.1 (Strong Co-Primality). *Let $F$ be a number field, $\chi\in \widehat{C_F}$ a continuous character. Let $S_0$ be a finite set of finite places of $F$. The canonical continuous linear map:*
 
 $$
 \mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F))/\mathrm{PV}_{S_0}\mathrm H_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal S_0(\mathbf A_F)) \to \mathcal{SE}(C_F)(\chi|_{C^1_F})/P_{S_0}\mathcal{SE}(C_F)(\chi|_{C^1_F}) \tag{7.5.0.1}
@@ -3383,7 +3383,7 @@ as entire functions over the complex $s$-plane.
 
 We have no way to tell anything about the growth behavior of $u,v$. Using the Schauder Bases identified throughout this Chapter, and as a consequence of Theorem 7.5.0.1, we have the following:
 
-Corollary 7.5.0.3 (Strong Co-Primality). *Let $F$ be a number field, $\chi\in \widehat{C_F}$ a continuous character. Let $S$ be a finite set of finite places of $F$ at which $\chi$ is unramified. We write, for each $v\in S$, $q_v:=N(\mathfrak p_v)$, with $\mathfrak p_v\subset\mathcal O_F$ the unique prime ideal corresponding to the finite place $v. Let $\tau$ be a choice of continuous homomorphic section to the idelic norm. For any entire function $\phi\in\mathcal{AS}(\mathbf C)$, there exist entire functions $u\in\mathcal O(\mathbf C)$ such that $\Lambda(s,\chi)\cdot u\in\mathcal{AS}(\mathbf C)$, and $v\in\mathcal{AS}(\mathbf C)$, such that:*
+Corollary 7.5.0.3 (Strong Co-Primality). *Let $F$ be a number field, $\chi\in \widehat{C_F}$ a continuous character. Let $S$ be a finite set of finite places of $F$ at which $\chi$ is unramified. We write, for each $v\in S$, $q_v:=N(\mathfrak p_v)$, with $\mathfrak p_v\subset\mathcal O_F$ the unique prime ideal corresponding to the finite place $v$. Let $\tau$ be a choice of continuous homomorphic section to the idelic norm. For any entire function $\phi\in\mathcal{AS}(\mathbf C)$, there exist entire functions $u\in\mathcal O(\mathbf C)$ such that $\Lambda(s,\chi)\cdot u\in\mathcal{AS}(\mathbf C)$, and $v\in\mathcal{AS}(\mathbf C)$, such that:*
 
 $$
 \Lambda(s,\chi)\cdot u(s)+\prod_{v\in S}(1-\chi(\mathfrak p_v)q_v^{-s})\cdot v(s)=\phi(s) \tag{7.5.0.17}

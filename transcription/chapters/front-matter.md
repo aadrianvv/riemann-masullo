@@ -208,7 +208,7 @@ For a Hausdorff locally compact abelian group, we denote by $\widehat G$ the Pon
 
 
 
-| Symbol | Printed text | Page |
+| | | |
 |---|---|---:|
 | $\mathcal O_{F,S}$ | $S$-integer ring of the number field $F$ for $S$ a finite set of places of $F$ containing all the Archimedean places | 6 |
 | $\Phi_F$ | global Adelic $\theta$-function operator | 6 |
@@ -217,7 +217,7 @@ For a Hausdorff locally compact abelian group, we denote by $\widehat G$ the Pon
 
 
 
-| Symbol | Printed text | Page |
+| | | |
 |---|---|---:|
 | $O_{F,S}^{\times}$ | group of $S$-units of the number field $F$ | 6 |
 | $Z$ | global Idelic Mellin transform | 6 |

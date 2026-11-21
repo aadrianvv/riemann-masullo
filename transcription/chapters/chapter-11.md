@@ -931,7 +931,7 @@ $$
 A(\phi)'=\sum_{(\varepsilon_p,m)}\langle A(\phi)'\eta_{\chi,\varepsilon_p,m},\cdot\rangle_{s,2}\psi_{\chi,\varepsilon_p,m} \tag{11.2.2.12}
 $$
 
-converges in $S_p(\mathcal E^s_{0,S_p}(\chi|_{C^1_F})'_\beta})$ for every real number $p\ge 1$ by the same argument as in the proof of Theorem 10.3.1.1(1), leading to the expression in (11.2.2.4) by continuity of the trace functional on $S_1(\mathcal E^s_{0,S_p}(\chi|_{C^1_F}))$, combined with the calculation of the value in (11.2.2.11) for the trace of the finite rank partial sums of the series (11.2.2.12). $\square$
+converges in $S_p(\mathcal E^s_{0,S_p}(\chi|_{C^1_F})'_\beta)$ for every real number $p\ge 1$ by the same argument as in the proof of Theorem 10.3.1.1(1), leading to the expression in (11.2.2.4) by continuity of the trace functional on $S_1(\mathcal E^s_{0,S_p}(\chi|_{C^1_F}))$, combined with the calculation of the value in (11.2.2.11) for the trace of the finite rank partial sums of the series (11.2.2.12). $\square$
 
 REMARK 11.2.2.2. Let $F$ be a number field, $\chi\in\widehat{C_F}$ a continuous character. Let $s>1$ be a real number. Assume:
 

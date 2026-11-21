@@ -433,7 +433,7 @@ $$
 
 We will be denoting by $\widehat{C^1_F}\subset\widehat{C_F}$ the chosen set of base-points for the connected components of $\Omega(C_F)$.
 
-We will be writing $\sideset{}{'}\sum_{\omega\in\widehat{C^1_F}}$ to denote the sum of $\mathbf C$-valued functions depending on $\chi$ (such as countable sums of $M(\varphi)(\chi|\cdot|^{it}_F)$ for $t\in\mathbf R$ varying over a suitable discrete subset, for $\varphi\in\mathcal D(C_F)$ fixed, and interpreting the value of the sum as a function of $\chi$), to mean the sum indexed by the choices $\{\chi\in\widehat{C_F}\}$ lifting each point $\omega\in\widehat{C^1_F}$, choices which we fixed at the outset when parametrizing $\Omega(C_F)$ as $\chi|\cdot|^z_F$, $z\in\mathbf C$.
+We will be writing $\sum'_{\omega\in\widehat{C^1_F}}$ to denote the sum of $\mathbf C$-valued functions depending on $\chi$ (such as countable sums of $M(\varphi)(\chi|\cdot|^{it}_F)$ for $t\in\mathbf R$ varying over a suitable discrete subset, for $\varphi\in\mathcal D(C_F)$ fixed, and interpreting the value of the sum as a function of $\chi$), to mean the sum indexed by the choices $\{\chi\in\widehat{C_F}\}$ lifting each point $\omega\in\widehat{C^1_F}$, choices which we fixed at the outset when parametrizing $\Omega(C_F)$ as $\chi|\cdot|^z_F$, $z\in\mathbf C$.
 
 Theorem 10.2.1.1 ($a$-line Spectral Markushevich Basis). Let $F$ be a number field, $s,a\in\mathbf R$ real numbers, $s>1$. The functions:
 
@@ -719,7 +719,7 @@ This amounts to choosing, for every $\omega\in\widehat{C^1_F}$, a continuous uni
 
 We will be denoting by $\widehat{C^1_F}\subset\widehat{C_F}$ the chosen set of unitary base-points for the connected components of $\Omega(C_F)$.
 
-We will be writing $\sideset{}{'}\sum_{\omega\in\widehat{C^1_F}}$ to denote the sum of $\mathbf C$-valued functions depending on $\chi$ (such as countable sums of $M(\varphi)(\chi|\cdot|^{it}_F)$ for $t\in\mathbf R$ varying over a suitable discrete subset, for $\varphi\in\mathcal D(C_F)$ fixed, and interpreting the value of the sum as a function of $\chi$), to mean the sum indexed by the choices $\{\chi\in\widehat{C_F}\}$ lifting each point $\omega\in\widehat{C^1_F}$, choices which we fixed at the outset when parametrizing $\Omega(C_F)$ as $\chi|\cdot|^z_F$, $z\in\mathbf C$.
+We will be writing $\sum'_{\omega\in\widehat{C^1_F}}$ to denote the sum of $\mathbf C$-valued functions depending on $\chi$ (such as countable sums of $M(\varphi)(\chi|\cdot|^{it}_F)$ for $t\in\mathbf R$ varying over a suitable discrete subset, for $\varphi\in\mathcal D(C_F)$ fixed, and interpreting the value of the sum as a function of $\chi$), to mean the sum indexed by the choices $\{\chi\in\widehat{C_F}\}$ lifting each point $\omega\in\widehat{C^1_F}$, choices which we fixed at the outset when parametrizing $\Omega(C_F)$ as $\chi|\cdot|^z_F$, $z\in\mathbf C$.
 
 ## PDF page 446
 
@@ -1645,7 +1645,7 @@ $$
 \{u_m\}_{m\ge 0}\subset\{u\in E:||u||_E\in[r-\varepsilon,r'+\varepsilon]\}. \tag{10.4.2.18}
 $$
 
-In particular, $\{u_m\}_{m\ge 0}$ is a bounded subset of $E$ contained in $F$, and a normalized Schauder basis in the closure of its linear span in $E.
+In particular, $\{u_m\}_{m\ge 0}$ is a bounded subset of $E$ contained in $F$, and a normalized Schauder basis in the closure of its linear span in $E$.
 
 There exists a sequence $\{\delta_m\}$ of small enough positive real numbers such that for any $\{y_m\}_{m\ge 0}\subset F_0$ satisfying $||y_m||_E<\delta_m$ for every integer $m\ge 0$, then $\{u_m+y_m\}_{m\ge 0}$ also satisfies (1) and (2), and the assignment $u_m\mapsto u_m+y_m$ uniquely extends to a linear topological isomorphism from the closure of the linear span of $\{u_m\}_{m\ge 0}$ in $E$, to the closure of the linear span of $\{u_m+y_m\}_{m\ge 0}$ in $E$.
 

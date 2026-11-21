@@ -2759,9 +2759,9 @@ with $S = (\gamma_1,\dots,\gamma_N)$ for $N \ge 1$ an integer, and, for each $1 
 
 We will be assuming that the logarithms of the real numbers $b_k$, for $1 \le k \le N$, $\mathbf{Q}$-linearly generate a 1-dimensional $\mathbf{Q}$-linear subspace of $\mathbf{R}$.
 
-THEOREM 4.6.1.5 (Sourcing Periodic Schauder Bases - V). *Let $G$ be an $\mathbf{R}_{>0}$-modulated group. Assume the conditions and choices from Situation 4.6.1.1 are in force. We denote by $S$ the finite set $S := (\gamma_1,\dots,\gamma_N)$. We define $b_k := \log(\lvert\gamma_k\rvert_G)$ for each $1 \le k \le N.*
+THEOREM 4.6.1.5 (Sourcing Periodic Schauder Bases - V). *Let $G$ be an $\mathbf{R}_{>0}$-modulated group. Assume the conditions and choices from Situation 4.6.1.1 are in force. We denote by $S$ the finite set $S := (\gamma_1,\dots,\gamma_N)$. We define $b_k := \log(\lvert\gamma_k\rvert_G)$ for each $1 \le k \le N$.*
 
-*Assume that there exists a real number $b \in \mathbf{R}_{>1}$ such that $\log(b_k) \in \mathbf{Q}\cdot\log(b)$ for every $1 \le k \le N.*
+*Assume that there exists a real number $b \in \mathbf{R}_{>1}$ such that $\log(b_k) \in \mathbf{Q}\cdot\log(b)$ for every $1 \le k \le N$.*
 
 *Let $\chi \in \widetilde{G^1}$ be a continuous character. We define the discrete subset:*
 
