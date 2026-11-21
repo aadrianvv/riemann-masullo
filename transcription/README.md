@@ -54,7 +54,11 @@ Errors found in the transcription go to `CHANGELOG.md` and the tracking issue �
 ## Conventions
 
 The text is verbatim: printed errors, placeholders, typos and unfinished passages are kept as
-printed (for example "logy" on p. 648). Typography is not reproduced. Mathematics is LaTeX:
+printed (for example "logy" on p. 648). Typography is mostly not reproduced, with two exceptions
+that carry meaning: a paragraph set in italic in the print (the statement of a theorem, lemma,
+proposition or corollary) is in `*…*`, and a paragraph set upright (a proof, a remark, a
+definition in this paper) is not; and a formula displayed on its own line in the print is a
+`$$` block. Mathematics is LaTeX:
 
 | Print | LaTeX | Notes |
 |---|---|---|
@@ -82,7 +86,8 @@ Recurring symbols, for orientation: `G^1` is the kernel of the module (superscri
   ````
 
   Nodes, arrows, directions, labels, `=`/`≃` marks, curved arrows and 2-cells follow the print.
-  Which side of its arrow a label sits on has not been checked on every diagram. Every block must
+  The side of its arrow that a label sits on follows the print where the PDF shows it (checked
+  by matching label positions in the PDF against the compiled diagram). Every block must
   compile with pdflatex and tikz-cd (`tools/diagrams.py`): brace a label that contains a comma
   (`"{(a,b)}"`) and wrap a cell that starts with `[` in braces (`{[X/G]}`). GitHub does not render
   `tikzcd`; read the source, compile it, or look at the PDF.
