@@ -5,6 +5,8 @@ public import RiemannMasullo.AppD_SchwartzBruhat.Sec3a
 public import Mathlib.Analysis.Distribution.ContDiffMapSupportedIn
 import Mathlib.Analysis.InnerProductSpace.ProdL2
 import Mathlib.Analysis.PSeries
+import Mathlib.Topology.Baire.CompleteMetrizable
+import RiemannMasullo.ForMathlib.Analysis.Distribution.SchwartzSpace.Complete
 import RiemannMasullo.ForMathlib.Analysis.Fourier.PoissonSummation
 
 /-!
@@ -138,7 +140,44 @@ theorem cyclicPeriodizationValue_spec :
       cyclicPeriodizationValue γ hγ f + cyclicPeriodizationValue γ hγ g) ∧
     (∀ (c : ℂ) f, cyclicPeriodizationValue γ hγ (c • f) = c • cyclicPeriodizationValue γ hγ f) ∧
     Continuous (Y := S) (fun f ↦ (⟨cyclicPeriodizationValue γ hγ f,
-      cyclicPeriodizationValue_mem γ hγ f⟩ : S)) := by sorry
+      cyclicPeriodizationValue_mem γ hγ f⟩ : S)) := by
+  have : CompleteSpace 𝓢(ℝ, ℂ) := completeSpace_schwartzMap
+  have : (uniformity 𝓢(ℝ, ℂ)).IsCountablyGenerated := by
+    rw [uniformity_eq_comap_nhds_zero 𝓢(ℝ, ℂ)]
+    infer_instance
+  have he (g : G) : ∃ L : 𝓢(ℝ, ℂ) →L[ℂ] ℂ, ∀ f, L f = cyclicPeriodizationValue γ hγ f g := by
+    let r := ((AddCircle.equivIco (1 : ℝ) 0) (g.2.1 0)).val
+    let t (k : ℤ) := Real.log γ * (r + k)
+    have ht (k : ℤ) : t k = Real.log γ * r + (k : ℝ) * Real.log γ := by dsimp [t]; ring
+    let ev (k : ℤ) := (BoundedContinuousFunction.evalCLM ℂ (t k)).comp
+      (SchwartzMap.toBoundedContinuousFunctionCLM ℂ ℝ ℂ)
+    let P (s : Finset ℤ) : 𝓢(ℝ, ℂ) →L[ℂ] ℂ := ∑ k ∈ s, ev k
+    have hlim : Filter.Tendsto (fun s f ↦ P s f) Filter.atTop
+        (𝓝 (fun f ↦ cyclicPeriodizationValue γ hγ f g)) := by
+      rw [tendsto_pi_nhds]
+      intro f
+      have hs : Summable fun k : ℤ ↦ f (t k) := by
+        simpa only [ht] using (cyclicPeriodizationValue_hasSum γ hγ f (Real.log γ * r)).summable
+      have hP (s : Finset ℤ) : P s f = ∑ k ∈ s, f (t k) := by
+        simp only [P, sum_apply]
+        rfl
+      simp_rw [hP]
+      exact hs.hasSum
+    exact ⟨continuousLinearMapOfTendsto P hlim, fun _ ↦ rfl⟩
+  choose L hL using he
+  have hadd (f g : 𝓢(ℝ, ℂ)) : cyclicPeriodizationValue γ hγ (f + g) =
+      cyclicPeriodizationValue γ hγ f + cyclicPeriodizationValue γ hγ g := by
+    funext x
+    simpa only [Pi.add_apply, ← hL] using (L x).map_add f g
+  have hsmul (c : ℂ) (f : 𝓢(ℝ, ℂ)) : cyclicPeriodizationValue γ hγ (c • f) =
+      c • cyclicPeriodizationValue γ hγ f := by
+    funext x
+    simpa only [Pi.smul_apply, ← hL] using (L x).map_smul c f
+  let A : 𝓢(ℝ, ℂ) →ₗ[ℂ] S :=
+    { toFun f := ⟨_, cyclicPeriodizationValue_mem γ hγ f⟩
+      map_add' f g := Subtype.ext (hadd f g)
+      map_smul' c f := Subtype.ext (hsmul c f) }
+  exact ⟨hadd, hsmul, continuous_toElementarySchwartz_of_eval A (fun g ↦ ⟨L g, hL g⟩)⟩
 
 /-- Paper: Remark 4.2.2.6, p. 173. The cyclic orbit sum is a continuous linear
 map from ordinary Schwartz profiles to smooth functions on the circle. -/
@@ -152,7 +191,8 @@ def cyclicSchwartzPeriodization : 𝓢(ℝ, ℂ) →L[ℂ] S where
 has the same absolutely convergent orbit sum on a logarithmic lift. -/
 theorem cyclicSchwartzPeriodization_hasSum (f : 𝓢(ℝ, ℂ)) (x : ℝ) :
     HasSum (fun k : ℤ ↦ f (x + (k : ℝ) * Real.log γ))
-      (cyclicSchwartzPeriodization γ hγ f (point ((x / Real.log γ : ℝ) : T))) := by sorry
+      (cyclicSchwartzPeriodization γ hγ f (point ((x / Real.log γ : ℝ) : T))) := by
+  exact cyclicPeriodizationValue_hasSum γ hγ f x
 
 /-- Paper: Definition 4.2.1.1, p. 162. Periodization of an exponentially
 decaying Schwartz function sums its translates by integer powers of γ.
@@ -191,7 +231,12 @@ axis is the power with exponent (2πim / log γ).
 Deviation: The argument x on the cover is the logarithm of the positive variable. -/
 theorem cyclicExponential_apply (γ : ℝ) (hγ : 1 < γ) (m : ℤ) (x : ℝ) :
     cyclicExponential m (point ((x / Real.log γ : ℝ) : T)) =
-      Complex.exp (phase[γ, m] * (x : ℂ)) := by sorry
+      Complex.exp (phase[γ, m] * (x : ℂ)) := by
+  change fourier m ((x / Real.log γ : ℝ) : T) = _
+  rw [fourier_coe_apply]
+  congr 1
+  push_cast
+  field_simp [ne_of_gt (Real.log_pos hγ)]
 
 /-- Paper: (4.2.1.4), p. 162. The normalized circle Fourier coefficient is
 linear and continuous for the smooth topology. -/
@@ -250,7 +295,10 @@ def cyclicFourierCoeff (m : ℤ) : StrongDual ℂ S where
 /-- Paper: Lemma 4.2.1.2, p. 162. A monomial has its own coefficient equal to
 one and every other coefficient zero. -/
 theorem cyclicFourierCoeff_exponential (m n : ℤ) :
-    cyclicFourierCoeff m (cyclicExponential n) = if m = n then 1 else 0 := by sorry
+    cyclicFourierCoeff m (cyclicExponential n) = if m = n then 1 else 0 := by
+  change fourierCoeff (fourier n : C(T, ℂ)) m = _
+  rw [fourierCoeff_fourier]
+  by_cases h : m = n <;> simp [h]
 
 /-- Paper: Lemma 4.2.1.2(1), p. 162. The circle exponentials form an absolute
 Schauder basis with the Fourier coefficient functionals.
@@ -361,7 +409,11 @@ variable (γ : ℝ) (hγ : 1 < γ)
 
 /-- Paper: Lemma 4.2.1.5(2), p. 165. The periodization of exponential profiles
 is continuous. Smoothness in part (1) is built into its elementary Schwartz target. -/
-theorem cyclicPeriodization_continuous : Continuous (cyclicPeriodization γ hγ) := by sorry
+theorem cyclicPeriodization_continuous : Continuous (cyclicPeriodization γ hγ) := by
+  let a : (univ : Set ℝ) := ⟨0, mem_univ _⟩
+  have h : Continuous (fun f : E ↦ logExponentialDecayTwist univ a f) :=
+    continuous_pi_iff.mp (positiveRealExponentialDecay_isEmbedding (univ : Set ℝ) univ_nonempty).continuous a
+  exact (cyclicSchwartzPeriodization γ hγ).continuous.comp h
 
 /-- Paper: Lemma 4.2.1.5(2), p. 165. Every smooth quotient function has an
 exponentially decaying lift under periodization. -/
@@ -581,19 +633,76 @@ theorem cyclicQuotient_surjOn_of_contains (K : Compacts ℝ) (n : ℤ) (hn : 1 �
     (ε : ℝ) (hε : 0 < ε) (hε1 : ε < 1)
     (hK : Icc (n * Real.log γ + Real.log (1 - ε))
       (n * Real.log γ + Real.log (γ + ε)) ⊆ (K : Set ℝ)) :
-    SurjOn (fun x : ℝ ↦ ((x / Real.log γ : ℝ) : T)) (K : Set ℝ) univ := by sorry
+    SurjOn (fun x : ℝ ↦ ((x / Real.log γ : ℝ) : T)) (K : Set ℝ) univ := by
+  intro z _
+  let L := Real.log γ
+  have hL : 0 < L := Real.log_pos hγ
+  let r := (AddCircle.equivIco (1 : ℝ) (n : ℝ)) z
+  have hr : (r : ℝ) ∈ Ico (n : ℝ) ((n : ℝ) + 1) := r.property
+  refine ⟨(r : ℝ) * L, hK ⟨?_, ?_⟩, ?_⟩
+  · have hlog := Real.log_nonpos (by linarith : 0 ≤ 1 - ε) (by linarith : 1 - ε ≤ 1)
+    exact (add_le_of_nonpos_right hlog).trans (mul_le_mul_of_nonneg_right hr.1 hL.le)
+  · have hlog : L ≤ Real.log (γ + ε) :=
+      Real.log_le_log (by linarith) (by linarith)
+    have hu := mul_le_mul_of_nonneg_right hr.2.le hL.le
+    rw [add_mul, one_mul] at hu
+    exact hu.trans (add_le_add (le_refl _) hlog)
+  · change (↑((r : ℝ) * L / L) : T) = z
+    rw [mul_div_cancel_right₀ _ hL.ne']
+    exact AddCircle.coe_equivIco
 
 /-- Paper: Lemma 4.2.2.4, p. 171. The test space with support in a given
 compact set is a closed subspace of the exponential decay space. -/
 theorem compactLogProfileInclusion_closed (K : Compacts ℝ)
     (hK : (interior (K : Set ℝ)).Nonempty) :
-    IsClosed (range (compactLogProfileInclusion K)) := by sorry
+    IsClosed (range (compactLogProfileInclusion K)) := by
+  clear hK
+  have he : range (compactLogProfileInclusion K) = ⋂ x : ↥((K : Set ℝ)ᶜ), {f : E | f.val x = 0} := by
+    ext f
+    rw [compactLogProfileInclusion_range, mem_iInter]
+    constructor
+    · intro h x
+      exact support_subset_iff'.mp ((subset_tsupport _).trans h) x x.property
+    · intro h
+      exact closure_minimal (support_subset_iff'.mpr fun x hx ↦ h ⟨x, hx⟩) K.isCompact.isClosed
+  rw [he]
+  apply isClosed_iInter
+  intro x
+  have hc : Continuous (fun f : E ↦ f.val x) := by
+    simpa only [Function.comp_def, SchwartzMap.toBoundedContinuousFunctionCLM_apply, unweightedLogProfile_apply] using
+      ((continuous_eval_const (F := BoundedContinuousFunction ℝ ℂ) (x : ℝ)).comp
+        ((SchwartzMap.toBoundedContinuousFunctionCLM ℂ ℝ ℂ).continuous.comp unweightedLogProfile.continuous))
+  exact isClosed_eq hc continuous_const
 
 /-- Paper: Lemma 4.2.2.4, p. 171. The test space's uniform derivative topology
 agrees with the topology inherited from the exponential decay space. -/
 theorem compactLogProfileInclusion_isEmbedding (K : Compacts ℝ)
     (hK : (interior (K : Set ℝ)).Nonempty) :
-    IsEmbedding (compactLogProfileInclusion K) := by sorry
+    IsEmbedding (compactLogProfileInclusion K) := by
+  clear hK
+  let P := compactLogProfileInclusion K
+  have hi : Injective P := by
+    intro f g he
+    exact ContDiffMapSupportedIn.ext fun x ↦ congrArg (fun F : E ↦ F.val x) he
+  let e := LinearEquiv.ofInjective P.toLinearMap hi
+  let U := unweightedLogProfile.comp P.range.subtypeL
+  have hfun (f : P.range) : (e.symm f : ℝ → ℂ) = (U f : ℝ → ℂ) := by
+    obtain ⟨g, rfl⟩ := e.surjective f
+    rw [e.symm_apply_apply]
+    exact funext fun x ↦ (unweightedLogProfile_apply (P g) x).symm
+  have hc : Continuous e.symm := by
+    apply (ContDiffMapSupportedIn.withSeminorms ℂ ℝ ℂ ⊤ K).continuous_of_continuous_comp e.symm.toLinearMap
+    intro n
+    let q := (SchwartzMap.seminorm ℂ 0 n).comp U.toLinearMap
+    apply Seminorm.continuous_of_le (q := q) (((schwartz_withSeminorms ℂ ℝ ℂ).continuous_seminorm (0,n)).comp U.continuous)
+    intro f
+    apply (ContDiffMapSupportedIn.seminorm_top_le_iff ℂ (apply_nonneg q f) n (e.symm f)).2
+    intro x _
+    rw [hfun]
+    exact (U f).norm_iteratedFDeriv_le_seminorm ℂ n x
+  let H : D[K] ≃L[ℂ] P.range :=
+    { e with continuous_toFun := P.rangeRestrict.continuous, continuous_invFun := hc }
+  exact IsEmbedding.subtypeVal.comp H.toHomeomorph.isEmbedding
 
 /-- Paper: Proposition 4.2.2.5(1), p. 173. The Mellin evaluation sequence
 is an absolute Schauder basis of the strong quotient dual. This dual is

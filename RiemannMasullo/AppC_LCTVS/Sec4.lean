@@ -288,7 +288,8 @@ def pettisIntegral (μ : PettisMeasure X) (f : X → E)
 represents the weak integral. -/
 theorem hasPettisIntegral_pettisIntegral (μ : PettisMeasure X) (f : X → E)
     (hf : PettisIntegrable μ f) :
-    HasPettisIntegral μ f (pettisIntegral μ f hf) := by sorry
+    HasPettisIntegral μ f (pettisIntegral μ f hf) :=
+  Classical.choose_spec hf
 
 /-- Paper: Definition C.4.2.1(3), p. 710. The representing vector is unique
 in a Hausdorff locally convex space. -/
@@ -296,13 +297,21 @@ theorem HasPettisIntegral.unique
     [IsTopologicalAddGroup E] [ContinuousSMul ℂ E] [PolynormableSpace ℂ E] [T2Space E]
     {μ : PettisMeasure X} {f : X → E} {a b : E}
     (ha : HasPettisIntegral μ f a) (hb : HasPettisIntegral μ f b) :
-    a = b := by sorry
+    a = b := by
+  obtain ⟨hf, ha⟩ := ha
+  obtain ⟨_, hb⟩ := hb
+  let := polynormableSpace_separatingDual ℂ E
+  refine (SeparatingDual.eq_iff_forall_dual_eq (R := ℂ)).2 fun φ ↦ ?_
+  have h := ha.trans hb.symm
+  exact congrArg (fun z : PettisWeakCompletion E ↦
+    (show Module.Dual ℂ (StrongDual ℂ E) from z) φ) h
 
 /-- Paper: Definition C.4.2.1(1), p. 710. For complex-valued functions on a
 positive measure space, weak measurability is scalar almost-everywhere measurability.
 Deviation: This is a sanity check for the definition. -/
 theorem pettisWeaklyMeasurable_complex_iff (μ : Measure X) (f : X → ℂ) :
-    PettisWeaklyMeasurable (.positive μ) f ↔ AEMeasurable f μ := by sorry
+    PettisWeaklyMeasurable (.positive μ) f ↔ AEMeasurable f μ :=
+  ⟨fun h ↦ h (ContinuousLinearMap.id ℂ ℂ), fun h φ ↦ φ.continuous.measurable.comp_aemeasurable h⟩
 
 /-- Paper: Definition C.4.2.1(2)–(3), p. 710. The weak and Pettis constructions
 specialize to scalar integrability and scalar integration for complex-valued functions.
@@ -310,13 +319,41 @@ Deviation: This is a sanity check for the definitions. -/
 theorem pettisIntegral_complex_iff (μ : PettisMeasure X) (f : X → ℂ) (a : ℂ) :
     (PettisWeaklyIntegrable μ f ↔ Integrable f μ.variation) ∧
       (PettisIntegrable μ f ↔ Integrable f μ.variation) ∧
-      (HasPettisIntegral μ f a ↔ Integrable f μ.variation ∧ a = μ.scalarIntegral f) := by sorry
+      (HasPettisIntegral μ f a ↔ Integrable f μ.variation ∧ a = μ.scalarIntegral f) := by
+  have hW : PettisWeaklyIntegrable μ f ↔ Integrable f μ.variation :=
+    ⟨fun h ↦ h (ContinuousLinearMap.id ℂ ℂ), fun h φ ↦ φ.integrable_comp h⟩
+  have hφ (φ : StrongDual ℂ ℂ) (z : ℂ) : φ z = φ 1 * z := by
+    have h := φ.map_smul z 1
+    simp only [smul_eq_mul, mul_one] at h
+    rw [h, mul_comm]
+  have hS (hf : PettisWeaklyIntegrable μ f) (φ : StrongDual ℂ ℂ) :
+      μ.scalarIntegral (fun x ↦ φ (f x)) = φ 1 * μ.scalarIntegral f := by
+    have e : (fun x ↦ φ (f x)) = fun x ↦ (φ 1 • ContinuousLinearMap.id ℂ ℂ) (f x) := by
+      funext x
+      rw [hφ φ (f x)]
+      simp
+    rw [e, pettisScalarIntegral_smul μ f hf]
+    rfl
+  have hP (b : ℂ) :
+      HasPettisIntegral μ f b ↔ Integrable f μ.variation ∧ b = μ.scalarIntegral f := by
+    constructor
+    · rintro ⟨hf, h⟩
+      exact ⟨hW.1 hf, congrArg (fun z : PettisWeakCompletion ℂ ↦
+        (show Module.Dual ℂ (StrongDual ℂ ℂ) from z) (ContinuousLinearMap.id ℂ ℂ)) h⟩
+    · rintro ⟨hi, rfl⟩
+      refine ⟨hW.2 hi, LinearMap.ext fun φ ↦ ?_⟩
+      change φ (μ.scalarIntegral f) = μ.scalarIntegral (fun x ↦ φ (f x))
+      rw [hS (hW.2 hi) φ, hφ φ]
+  exact ⟨hW, ⟨fun ⟨b, h⟩ ↦ ((hP b).1 h).1, fun hi ↦ ⟨_, (hP _).2 ⟨hi, rfl⟩⟩⟩, hP a⟩
 
 /-- Paper: Remark C.4.2.2, p. 710. The Bochner integral of an integrable
 Banach-space-valued function is also its Pettis integral. -/
 theorem Integrable.hasPettisIntegral {B : Type*} [NormedAddCommGroup B]
     [NormedSpace ℂ B] [CompleteSpace B] {μ : Measure X} {f : X → B}
-    (hf : Integrable f μ) : HasPettisIntegral (.positive μ) f (∫ x, f x ∂μ) := by sorry
+    (hf : Integrable f μ) : HasPettisIntegral (.positive μ) f (∫ x, f x ∂μ) := by
+  refine ⟨fun φ ↦ φ.integrable_comp hf, ?_⟩
+  refine LinearMap.ext fun φ ↦ ?_
+  exact (φ.integral_comp_comm hf).symm
 
 -- TODO(paper-gap): The converse in Remark C.4.2.2 (p. 711) fails even on
 -- discrete ℕ with finite measure and values in ℓ². See the issue report.

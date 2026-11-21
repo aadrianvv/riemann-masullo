@@ -7,6 +7,9 @@ public import Mathlib.MeasureTheory.Measure.Regular
 public import Mathlib.Topology.Algebra.Module.Complement
 public import Mathlib.Topology.ContinuousMap.Bounded.Normed
 import Mathlib.Analysis.Normed.Module.HahnBanach
+import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+import Mathlib.MeasureTheory.Integral.RieszMarkovKakutani.Real
+import Mathlib.MeasureTheory.Measure.Prokhorov
 
 /-!
 # Nuclear spaces and the finest locally convex topology
@@ -1104,12 +1107,64 @@ theorem exists_weakDual_not_quasiComplete :
     ∃ (E : Type) (_ : AddCommGroup E) (_ : Module ℂ E) (_ : TopologicalSpace E)
       (_ : PolynormableSpace ℂ E) (_ : T2Space E),
       letI := IsTopologicalAddGroup.rightUniformSpace (WeakDual ℂ E)
-      ¬ QuasiCompleteSpace ℂ (WeakDual ℂ E) := by sorry
+      ¬ QuasiCompleteSpace ℂ (WeakDual ℂ E) := by
+  classical
+  let E := ℕ →₀ ℂ
+  let coe : E →ₗ[ℂ] (ℕ → ℂ) := Finsupp.lcoeFun
+  let : TopologicalSpace E := TopologicalSpace.induced coe inferInstance
+  have hcoe : IsEmbedding coe := ⟨⟨rfl⟩, fun _ _ h ↦ Finsupp.ext (congrFun h)⟩
+  have : PolynormableSpace ℂ E := PolynormableSpace.induced coe
+  have : T2Space E := hcoe.t2Space
+  refine ⟨E, inferInstance, inferInstance, inferInstance, inferInstance, inferInstance, ?_⟩
+  let := IsTopologicalAddGroup.rightUniformSpace (WeakDual ℂ E)
+  let : IsUniformAddGroup (WeakDual ℂ E) := isUniformAddGroup_of_addCommGroup
+  intro hq
+  let coord (i : ℕ) : StrongDual ℂ E :=
+    ⟨(LinearMap.proj i).comp coe, (continuous_apply i).comp hcoe.continuous⟩
+  let partialSum (n : ℕ) : WeakDual ℂ E := StrongDual.toWeakDual (∑ i ∈ Finset.range n, coord i)
+  have hpartial (n : ℕ) (x : E) : partialSum n x = ∑ i ∈ Finset.range n, x i := by
+    change (∑ i ∈ Finset.range n, coord i) x = _
+    rw [sum_apply]
+    rfl
+  -- The partial sums stabilize pointwise because each vector has finite support.
+  let eval : WeakDual ℂ E →+ (E → ℂ) := ⟨⟨fun f x ↦ f x, rfl⟩, fun _ _ ↦ rfl⟩
+  have heval : IsUniformInducing eval := AddMonoidHom.isUniformInducing_of_isInducing ⟨rfl⟩
+  have hpoint (x : E) : Tendsto (fun n ↦ partialSum n x) atTop
+      (𝓝 (x.sum fun _ z ↦ z)) := by
+    obtain ⟨N, hN⟩ := x.support.exists_nat_subset_range
+    refine tendsto_atTop_of_eventually_const (i₀ := N) fun n hn ↦ ?_
+    rw [hpartial, Finsupp.sum]
+    exact (Finset.sum_subset (hN.trans (Finset.range_mono hn))
+      (fun i _ hi ↦ Finsupp.notMem_support_iff.mp hi)).symm
+  have hc : CauchySeq partialSum := heval.cauchy_map_iff.mp (by
+    rw [Filter.map_map]
+    exact (tendsto_pi_nhds.mpr hpoint).cauchySeq)
+  have hb := hc.totallyBounded_range.isVonNBounded ℂ
+  obtain ⟨l, -, hl⟩ := cauchySeq_tendsto_of_isComplete
+    (hq.quasiComplete hb.closure isClosed_closure) (fun n ↦ subset_closure (mem_range_self n)) hc
+  -- The unit vectors tend to zero in the product topology, while the putative limit takes value 1.
+  let e (n : ℕ) : E := Finsupp.single n 1
+  have he : Tendsto e atTop (𝓝 0) := by
+    apply hcoe.isInducing.tendsto_nhds_iff.mpr
+    apply tendsto_pi_nhds.mpr
+    intro i
+    refine tendsto_atTop_of_eventually_const (i₀ := i + 1) fun n hn ↦ ?_
+    change Finsupp.single n (1 : ℂ) i = 0
+    exact Finsupp.single_eq_of_ne (by omega)
+  have hle (n : ℕ) : l (e n) = 1 := by
+    calc
+      l (e n) = (e n).sum (fun _ z ↦ z) :=
+        tendsto_nhds_unique ((WeakDual.eval_continuous (e n)).tendsto l |>.comp hl)
+          (hpoint (e n))
+      _ = 1 := Finsupp.sum_single_index rfl
+  have hz : Tendsto (fun n ↦ l (e n)) atTop (𝓝 0) := by
+    simpa only [Function.comp_def, WeakDual.toStrongDual_apply, map_zero] using
+      (l.toStrongDual.continuous.tendsto (0 : E)).comp he
+  simp only [hle] at hz
+  exact one_ne_zero (tendsto_nhds_unique tendsto_const_nhds hz)
 
 -- TODO(paper-gap): Footnote 15 leaves the argument for the particular strong dual
 -- of a Fréchet space cited in Remark C.2.4.5 unfinished.
--- TODO(later): needs §C.4.1–C.4.2 for the Pettis integral in the weak completion
--- in Lemma C.2.4.6. The scalar identity in (C.2.4.4) is recorded below.
 
 /-- Paper: Lemma C.2.4.6, p. 687. A point in the closed convex hull of a compact
 set is represented on continuous functionals by a Radon probability measure on
@@ -1123,7 +1178,67 @@ theorem closedConvexHull_exists_radon_barycenter
     letI : MeasurableSpace K := borel K
     ∃ μ : Measure K, μ.Regular ∧ μ.InnerRegular ∧ μ univ = 1 ∧
       ∀ ℓ : StrongDual ℂ E,
-        Integrable (fun y : K ↦ ℓ y.val) μ ∧ ℓ x = ∫ y : K, ℓ y.val ∂μ := by sorry
+        Integrable (fun y : K ↦ ℓ y.val) μ ∧ ℓ x = ∫ y : K, ℓ y.val ∂μ := by
+  let : MeasurableSpace K := borel K
+  let : BorelSpace K := ⟨rfl⟩
+  let : CompactSpace K := isCompact_iff_compactSpace.mp hK
+  let f (ℓ : StrongDual ℂ E) : BoundedContinuousFunction K ℂ :=
+    BoundedContinuousFunction.mkOfCompact ⟨fun y ↦ ℓ y.val, ℓ.continuous.comp continuous_subtype_val⟩
+  let moments (p : ProbabilityMeasure K) (ℓ : StrongDual ℂ E) :=
+    ∫ y, f ℓ y ∂(p : Measure K)
+  have hmoments : Continuous moments := by
+    apply continuous_pi
+    intro ℓ
+    rw [continuous_iff_continuousAt]
+    intro p
+    exact (ProbabilityMeasure.tendsto_iff_forall_integral_rclike_tendsto ℂ).mp
+      (tendsto_id (x := 𝓝 p)) (f ℓ)
+  have hconvex : Convex ℝ (range moments) := by
+    rintro _ ⟨p, rfl⟩ _ ⟨q, rfl⟩ a b ha hb hab
+    let μ := ENNReal.ofReal a • (p : Measure K)
+    let ν := ENNReal.ofReal b • (q : Measure K)
+    let r : ProbabilityMeasure K := ⟨μ + ν, ⟨by
+      simp [μ, ν, ← ENNReal.ofReal_add ha hb, hab]⟩⟩
+    refine ⟨r, ?_⟩
+    funext ℓ
+    change ∫ y, f ℓ y ∂(μ + ν) = a • moments p ℓ + b • moments q ℓ
+    rw [integral_add_measure
+      (((f ℓ).integrable (μ := (p : Measure K))).smul_measure ENNReal.ofReal_ne_top)
+      (((f ℓ).integrable (μ := (q : Measure K))).smul_measure ENNReal.ofReal_ne_top)]
+    simp [moments, ENNReal.toReal_ofReal ha, ENNReal.toReal_ofReal hb]
+  let eval : E →ₗ[ℝ] (StrongDual ℂ E → ℂ) :=
+    { toFun := fun z ℓ ↦ ℓ z
+      map_add' := fun z w ↦ funext fun ℓ ↦ ℓ.map_add z w
+      map_smul' := fun c z ↦ funext fun ℓ ↦ (ℓ.restrictScalars ℝ).map_smul c z }
+  have heval : Continuous eval := continuous_pi fun ℓ ↦ ℓ.continuous
+  -- The set of points represented by probability measures is closed and convex.
+  have hclosed : IsClosed (eval ⁻¹' range moments) :=
+    (isCompact_range hmoments).isClosed.preimage heval
+  have hsubset : K ⊆ eval ⁻¹' range moments := by
+    intro y hy
+    refine ⟨⟨Measure.dirac ⟨y, hy⟩, Measure.dirac.isProbabilityMeasure⟩, ?_⟩
+    funext ℓ
+    exact integral_dirac (f ℓ) ⟨y, hy⟩
+  obtain ⟨p, hp⟩ :=
+    closure_minimal (convexHull_min hsubset (hconvex.linear_preimage eval)) hclosed hx
+  -- Take a regular representative with the same integrals on continuous functions.
+  obtain ⟨ν, hνreg, hνfin, hν⟩ := Measure.exists_regular_eq_of_compactSpace (p : Measure K)
+  refine ⟨ν, hνreg, inferInstance, ?_, fun ℓ ↦ ?_⟩
+  · apply (ENNReal.toReal_eq_one_iff _).mp
+    simpa [measureReal_def] using (hν (1 : BoundedContinuousFunction K ℝ)).symm
+  · have hpint := (f ℓ).integrable (μ := (p : Measure K))
+    have hνint := (f ℓ).integrable (μ := ν)
+    refine ⟨hνint, ?_⟩
+    calc
+      ℓ x = ∫ y, f ℓ y ∂(p : Measure K) := (congrFun hp ℓ).symm
+      _ = ∫ y, f ℓ y ∂ν := by
+        apply Complex.ext
+        · let g := BoundedContinuousFunction.mkOfCompact
+            ⟨fun y ↦ (f ℓ y).re, Complex.continuous_re.comp (f ℓ).continuous⟩
+          exact (integral_re hpint).symm.trans ((hν g).trans (integral_re hνint))
+        · let g := BoundedContinuousFunction.mkOfCompact
+            ⟨fun y ↦ (f ℓ y).im, Complex.continuous_im.comp (f ℓ).continuous⟩
+          exact (integral_im hpint).symm.trans ((hν g).trans (integral_im hνint))
 
 /-- Paper: Remark C.2.4.7, p. 688. For a compact set in a Banach space whose span is
 infinite-dimensional, the inverse to the point-evaluation embedding cannot extend
@@ -1134,7 +1249,37 @@ theorem not_exists_continuousLinear_extension_evalInverse
     let δ : K → WeakDual ℂ C(K, ℂ) := fun y ↦
       StrongDual.toWeakDual (ContinuousMap.evalCLM ℂ y)
     let V := Submodule.span ℂ (range δ)
-    ¬ ∃ T : V →L[ℂ] E, ∀ y : K, T ⟨δ y, Submodule.subset_span (mem_range_self y)⟩ = y.val := by sorry
+    ¬ ∃ T : V →L[ℂ] E, ∀ y : K, T ⟨δ y, Submodule.subset_span (mem_range_self y)⟩ = y.val := by
+  classical
+  intro δ V h
+  obtain ⟨T, hT⟩ := h
+  -- Continuity bounds the output norm by finitely many weak-dual evaluations.
+  let pairing := topDualPairing ℂ C(K, ℂ)
+  have hsub : IsInducing V.subtype := .subtypeVal
+  obtain ⟨s, c, -, hbound⟩ := Seminorm.bound_comp_of_isInducing
+    (p := (normSeminorm ℂ E).comp T.toLinearMap) T.continuous.norm
+    pairing.weakBilin_withSeminorms hsub
+  let a : V →ₗ[ℂ] (s → ℂ) :=
+    LinearMap.pi fun f : s ↦ (pairing.flip (f : C(K, ℂ))).comp V.subtype
+  have hker : a.ker ≤ T.toLinearMap.ker := by
+    intro φ hφ
+    have hsup : (s.sup pairing.toSeminormFamily) φ.val ≤ 0 := by
+      refine Seminorm.finset_sup_apply_le le_rfl fun f hf ↦ ?_
+      have hz : φ.val f = 0 := congrFun (LinearMap.mem_ker.mp hφ) ⟨f, hf⟩
+      change ‖φ.val f‖ ≤ 0
+      simp [hz]
+    have hnorm : ‖T φ‖ ≤ (c : ℝ) * (s.sup pairing.toSeminormFamily) φ.val := hbound φ
+    exact LinearMap.mem_ker.mpr (norm_le_zero_iff.mp
+      (hnorm.trans (mul_nonpos_of_nonneg_of_nonpos c.coe_nonneg hsup)))
+  have : FiniteDimensional ℂ (V ⧸ a.ker) :=
+    FiniteDimensional.of_injective a.quotKerEquivRange.toLinearMap a.quotKerEquivRange.injective
+  have : FiniteDimensional ℂ T.toLinearMap.range := by
+    rw [← Submodule.range_liftQ a.ker T.toLinearMap hker]
+    infer_instance
+  apply hKspan
+  refine Submodule.finiteDimensional_of_le (S₂ := T.toLinearMap.range) (Submodule.span_le.mpr ?_)
+  intro y hy
+  exact ⟨⟨δ ⟨y, hy⟩, Submodule.subset_span (mem_range_self _)⟩, hT ⟨y, hy⟩⟩
 
 section IntegralForms
 

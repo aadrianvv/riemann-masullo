@@ -477,12 +477,52 @@ theorem regularIsotypicIntegral_orthogonalProjection (ω : PontryaginDual K)
     (f : RegularL2 ν) :
     let S := actionIsotype ρ₁ ω
     let p := (ν₁.real univ)⁻¹ • regularIsotypicIntegral m hm ν ν₁ ω f
-    p ∈ S ∧ f - p ∈ Sᗮ := by sorry
+    p ∈ S ∧ f - p ∈ Sᗮ := by
+  have : CompactSpace K := isCompact_iff_compactSpace.mp
+    (hm.1.isCompact_preimage (isCompact_singleton (x := 1)))
+  let P := regularIsotypicIntegral m hm ν ν₁ ω
+  have hP := regularIsotypicIntegral_isPettisAverage m hm ν ν₁ ω
+  let c := ν₁.real univ
+  have hc : c ≠ 0 := (measureReal_univ_pos (μ := ν₁)).ne'
+  change ((c⁻¹ : ℝ) : ℂ) • P f ∈ actionIsotype ρ₁ ω ∧ f - ((c⁻¹ : ℝ) : ℂ) • P f ∈ (actionIsotype ρ₁ ω)ᗮ
+  have hmem : P f ∈ actionIsotype ρ₁ ω := by
+    letI : NormedSpace ℝ (RegularL2 ν) := NormedSpace.complexToReal
+    exact compactActionAverage_mem_isotype ν₁ ρ₁ ω P hP f
+  refine ⟨Submodule.smul_mem _ _ hmem, ?_⟩
+  rw [Submodule.mem_orthogonal]
+  intro u hu
+  have ht (k : K) : star (ω k : ℂ) * ⟪u, ρ₁ k f⟫_ℂ = ⟪u, f⟫_ℂ := by
+    have h := regularL2Action_inner ν (k : G) u f
+    change ⟪ρ₁ k u, ρ₁ k f⟫_ℂ = _ at h
+    rwa [((mem_actionIsotype ..).1 hu k), inner_smul_left] at h
+  have hav := compactActionAverage_dual_apply ν₁ ρ₁ ω P hP f (innerSL ℂ u)
+  change ⟪u, P f⟫_ℂ = ∫ k : K, star (ω k : ℂ) * ⟪u, ρ₁ k f⟫_ℂ ∂ν₁ at hav
+  simp only [ht, integral_const, Complex.real_smul] at hav
+  rw [inner_sub_right, inner_smul_right, hav, Complex.ofReal_inv]
+  change ⟪u, f⟫_ℂ - (c : ℂ)⁻¹ * ((c : ℂ) * ⟪u, f⟫_ℂ) = 0
+  rw [← mul_assoc, inv_mul_cancel₀ (Complex.ofReal_ne_zero.mpr hc), one_mul, sub_self]
 
 /-- Paper: Corollary 4.3.3.4, p. 184. Distinct isotypic subspaces of Haar L²
 are orthogonal. -/
 theorem regularL2_isotypes_orthogonal (ω χ : PontryaginDual K) (h : ω ≠ χ) :
-    ∀ f ∈ actionIsotype ρ₁ ω, ∀ g ∈ actionIsotype ρ₁ χ, ⟪f, g⟫_ℂ = 0 := by sorry
+    ∀ f ∈ actionIsotype ρ₁ ω, ∀ g ∈ actionIsotype ρ₁ χ, ⟪f, g⟫_ℂ = 0 := by
+  obtain ⟨k, hk⟩ : ∃ k : K, ω k ≠ χ k := by
+    by_contra! he
+    exact h (DFunLike.ext _ _ he)
+  intro f hf g hg
+  have hi := regularL2Action_inner ν (k : G) f g
+  change ⟪ρ₁ k f, ρ₁ k g⟫_ℂ = _ at hi
+  rw [((mem_actionIsotype ..).1 hf k), ((mem_actionIsotype ..).1 hg k),
+    inner_smul_left, inner_smul_right, ← mul_assoc] at hi
+  have hne : star (ω k : ℂ) * (χ k : ℂ) ≠ 1 := by
+    intro he
+    apply hk
+    apply Subtype.coe_injective
+    apply mul_left_cancel₀ (a := star (ω k : ℂ)) (by simp)
+    exact (show star (ω k : ℂ) * (ω k : ℂ) = 1 by simp [← Circle.coe_inv_eq_conj]).trans he.symm
+  change star (ω k : ℂ) * (χ k : ℂ) * ⟪f, g⟫_ℂ = ⟪f, g⟫_ℂ at hi
+  exact (mul_eq_zero.mp (show (star (ω k : ℂ) * (χ k : ℂ) - 1) * ⟪f, g⟫_ℂ = 0 by
+    rw [sub_mul, hi, one_mul, sub_self])).resolve_left (sub_ne_zero.mpr hne)
 
 end HilbertProjectors
 

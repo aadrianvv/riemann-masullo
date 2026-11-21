@@ -9,6 +9,7 @@ public import Mathlib.MeasureTheory.Group.Integral
 public import Mathlib.Algebra.MvPolynomial.Eval
 public import Mathlib.Topology.Algebra.PontryaginDual
 public import Mathlib.Topology.ContinuousMap.ZeroAtInfty
+import RiemannMasullo.ForMathlib.Analysis.LocallyConvex.SmoothFamily
 import RiemannMasullo.ForMathlib.Topology.Algebra.PontryaginDual.Separation
 import Mathlib.Topology.Algebra.IsUniformGroup.Basic
 import Mathlib.Topology.ContinuousMap.StoneWeierstrass
@@ -892,6 +893,49 @@ abbrev ElementarySchwartz (m n r : ℕ) (F : Type*) :=
 instance : CoeFun (ElementarySchwartz m n r F) (fun _ ↦ ElementaryLieGroup m n r F → ℂ) where
   coe f := (show elementarySchwartzSubmodule m n r F from f).val
 
+/-- A linear family of elementary Schwartz functions on a barrelled space is continuous
+if its point evaluations are continuous linear functionals. -/
+theorem continuous_toElementarySchwartz_of_eval
+    {U F : Type*} [AddCommGroup U] [Module ℂ U] [UniformSpace U]
+    [IsUniformAddGroup U] [ContinuousSMul ℂ U] [BarrelledSpace ℂ U]
+    {m n r : ℕ} (A : U →ₗ[ℂ] ElementarySchwartz m n r F)
+    (he : ∀ g, ∃ L : U →L[ℂ] ℂ, ∀ u, L u = A u g) : Continuous A := by
+  choose ev hev using he
+  refine (withGeneratingSeminorms_spec _ _).continuous_of_continuous_comp A fun i ↦ ?_
+  let p := (elementarySchwartzSeminorm i).comp A
+  apply p.continuous_of_lowerSemicontinuous
+  rw [lowerSemicontinuous_iff_isClosed_preimage]
+  intro R
+  by_cases hR : 0 ≤ R
+  · let X := EuclideanSpace ℝ (Fin m) × EuclideanSpace ℝ (Fin n)
+    let D (xt : X) (a : Fin r → ℤ) (b : F) (u : U) :=
+      elementaryPartial (A u).val i.2.1 i.2.2.1 xt a b
+    have hD (xt : X) (a : Fin r → ℤ) (b : F) : Continuous (D xt a b) := by
+      let V (x : X) := ev (elementaryCover x a b)
+      have hV (u : U) : ContDiff ℝ ∞ (fun x ↦ V x u) := by
+        simpa only [V, hev] using ((A u).property.1 a b)
+      have hdiff (k : ℕ) (v : Fin k → X) :
+          Continuous (fun u ↦ iteratedFDeriv ℝ k (fun x ↦ A u (elementaryCover x a b)) xt v) := by
+        obtain ⟨L, hL⟩ := exists_clm_iteratedFDeriv_apply V hV k xt v
+        simpa only [funext hL, V, hev] using L.continuous
+      exact hdiff _ _
+    let w (xt : X) (a : Fin r → ℤ) : ℂ :=
+      (∏ k, (xt.1 k : ℂ) ^ i.1 k) * (∏ k, (a k : ℂ) ^ i.2.2.2 k)
+    have hset : p ⁻¹' Iic R = ⋂ xt, ⋂ a, ⋂ b, {u | ‖w xt a * D xt a b u‖ ≤ R} := by
+      ext u
+      change (elementarySchwartzBound (A u).val i).toReal ≤ R ↔ _
+      rw [← ENNReal.ofReal_le_ofReal_iff hR, ENNReal.ofReal_toReal ((A u).property.2 i).ne]
+      simp only [elementarySchwartzBound, iSup_le_iff, mem_iInter, mem_ofPred_eq, X, w, D,
+        ENNReal.coe_nnreal_eq, coe_nnNorm, ENNReal.ofReal_le_ofReal_iff hR]
+    rw [hset]
+    exact isClosed_iInter fun xt ↦ isClosed_iInter fun a ↦ isClosed_iInter fun b ↦
+      isClosed_le (continuous_const.mul (hD xt a b)).norm continuous_const
+  · have hset : p ⁻¹' Iic R = ∅ := by
+      ext u
+      exact ⟨fun h ↦ (hR ((apply_nonneg p u).trans h)).elim, False.elim⟩
+    rw [hset]
+    exact isClosed_empty
+
 /-- Paper: Definition D.1.3.1, p. 750. At zero multi-indices the seminorm is the
 uniform norm of the underlying function. -/
 theorem elementarySchwartzSeminorm_zero (f : ElementarySchwartz m n r F) :
@@ -907,7 +951,21 @@ theorem elementarySchwartz_withSeminorms :
   exact withGeneratingSeminorms_spec _ _
 
 /-- Paper: Remark D.1.3.2, p. 750. The Schwartz topology is Hausdorff. -/
-theorem elementarySchwartz_t2 : T2Space (ElementarySchwartz m n r F) := by sorry
+theorem elementarySchwartz_t2 : T2Space (ElementarySchwartz m n r F) := by
+  let hp := withGeneratingSeminorms_spec (elementarySchwartzSubmodule m n r F) elementarySchwartzSeminorm
+  have : T1Space (ElementarySchwartz m n r F) := hp.T1_of_separating fun f hf ↦ by
+    let i : ElementarySchwartzIndex m n r := (0, 0, 0, 0)
+    refine ⟨i, fun hzero ↦ hf ?_⟩
+    apply Subtype.ext
+    funext g
+    have h : ‖f g‖ ≤ elementarySchwartzSeminorm i f := by
+      change (‖f.val g‖₊ : ENNReal).toReal ≤ (elementarySchwartzBound f.val i).toReal
+      apply ENNReal.toReal_mono (f.property.2 i).ne
+      rw [show i = (0, 0, 0, 0) from rfl, elementarySchwartzBound_zero]
+      exact le_iSup (fun x ↦ (‖f.val x‖₊ : ENNReal)) g
+    change f.val g = 0
+    exact norm_eq_zero.mp (le_antisymm (h.trans_eq hzero) (norm_nonneg _))
+  infer_instance
 
 /-- Paper: Lemma D.1.3.3, p. 750. Pullback by a topological group automorphism
 gives a linear topological automorphism of the elementary Schwartz space. -/
@@ -983,7 +1041,15 @@ def rapidDecaySequenceBound (j : ℕ) (s : (Fin r → ℤ) → ℂ) : ℝ≥0∞
 is the norm of the mass, for every weight. -/
 theorem rapidDecaySequenceBound_singleton_zero (j : ℕ) (c : ℂ) :
     rapidDecaySequenceBound (r := r) j (({0} : Set (Fin r → ℤ)).indicator (fun _ ↦ c)) =
-      (‖c‖₊ : ℝ≥0∞) := by sorry
+      (‖c‖₊ : ℝ≥0∞) := by
+  rw [rapidDecaySequenceBound, tsum_eq_single 0]
+  · have h0 : (WithLp.toLp 2 (fun i : Fin r ↦ (((0 : Fin r → ℤ) i : ℤ) : ℝ)) :
+        EuclideanSpace ℝ (Fin r)) = 0 := by
+      ext i; simp
+    rw [h0]
+    simp
+  · intro a ha
+    simp [Set.indicator_of_notMem (show a ∉ ({0} : Set (Fin r → ℤ)) from ha)]
 
 /-- Paper: Remark D.1.3.6, p. 752. The zero lattice sequence has finite weighted
 absolute sums of all orders. -/
@@ -992,18 +1058,44 @@ theorem rapidDecaySequenceSubmodule_zero_mem :
   intro j
   simp [rapidDecaySequenceBound]
 
+/-- The weighted absolute sum of a sum of sequences is at most the sum of the
+weighted absolute sums. -/
+theorem rapidDecaySequenceBound_add_le (j : ℕ) (s t : (Fin r → ℤ) → ℂ) :
+    rapidDecaySequenceBound j (s + t) ≤
+      rapidDecaySequenceBound j s + rapidDecaySequenceBound j t := by
+  unfold rapidDecaySequenceBound
+  rw [← tsum_add]
+  refine tsum_le_tsum fun a ↦ ?_
+  rw [← mul_add]
+  gcongr
+  simp only [Pi.add_apply]
+  exact_mod_cast nnNorm_add_le _ _
+
 /-- Paper: Remark D.1.3.6, p. 752. Rapidly decreasing lattice sequences are closed
 under addition. -/
 theorem rapidDecaySequenceSubmodule_add_mem {s t : (Fin r → ℤ) → ℂ}
     (hs : ∀ j, rapidDecaySequenceBound j s < ⊤)
     (ht : ∀ j, rapidDecaySequenceBound j t < ⊤) :
-    ∀ j, rapidDecaySequenceBound j (s + t) < ⊤ := by sorry
+    ∀ j, rapidDecaySequenceBound j (s + t) < ⊤ := fun j ↦
+  (rapidDecaySequenceBound_add_le j s t).trans_lt (ENNReal.add_lt_top.2 ⟨hs j, ht j⟩)
+
+/-- Scaling a sequence multiplies its weighted absolute sum by the norm of the scalar. -/
+theorem rapidDecaySequenceBound_smul (j : ℕ) (c : ℂ) (s : (Fin r → ℤ) → ℂ) :
+    rapidDecaySequenceBound j (c • s) = (‖c‖₊ : ℝ≥0∞) * rapidDecaySequenceBound j s := by
+  unfold rapidDecaySequenceBound
+  rw [← ENNReal.tsum_mul_left]
+  congr 1
+  ext a
+  simp only [Pi.smul_apply, smul_eq_mul, nnNorm_mul, ENNReal.coe_mul]
+  ring
 
 /-- Paper: Remark D.1.3.6, p. 752. Rapidly decreasing lattice sequences are closed
 under complex scalar multiplication. -/
 theorem rapidDecaySequenceSubmodule_smul_mem (c : ℂ) {s : (Fin r → ℤ) → ℂ}
     (hs : ∀ j, rapidDecaySequenceBound j s < ⊤) :
-    ∀ j, rapidDecaySequenceBound j (c • s) < ⊤ := by sorry
+    ∀ j, rapidDecaySequenceBound j (c • s) < ⊤ := fun j ↦ by
+  rw [rapidDecaySequenceBound_smul]
+  exact ENNReal.mul_lt_top ENNReal.coe_lt_top (hs j)
 
 /-- Paper: Remark D.1.3.6, p. 752. A rapidly decreasing lattice sequence
 has finite weighted absolute sums of all orders. -/
@@ -1017,7 +1109,13 @@ def rapidDecaySequenceSubmodule (r : ℕ) : Submodule ℂ ((Fin r → ℤ) → �
 belongs to the rapidly decreasing sequence space. -/
 theorem mem_rapidDecaySequenceSubmodule_of_finiteSupport (s : (Fin r → ℤ) → ℂ)
     (hs : (Function.support s).Finite) :
-    s ∈ rapidDecaySequenceSubmodule r := by sorry
+    s ∈ rapidDecaySequenceSubmodule r := by
+  intro j
+  rw [rapidDecaySequenceBound, tsum_eq_sum (s := hs.toFinset)]
+  · exact ENNReal.sum_lt_top.2 fun a _ ↦
+      ENNReal.mul_lt_top (ENNReal.pow_lt_top (by simp)) ENNReal.coe_lt_top
+  · intro a ha
+    simp [Function.notMem_support.1 (fun h ↦ ha (hs.mem_toFinset.2 h))]
 
 /-- Paper: (D.1.3.17), p. 752. Each weighted absolute sum vanishes on the zero sequence. -/
 theorem rapidDecaySequenceSeminorm_map_zero (j : ℕ) :
@@ -1028,20 +1126,26 @@ theorem rapidDecaySequenceSeminorm_map_zero (j : ℕ) :
 on rapidly decreasing lattice sequences. -/
 theorem rapidDecaySequenceSeminorm_add_le (j : ℕ) (s t : rapidDecaySequenceSubmodule r) :
     (rapidDecaySequenceBound j (s + t).val).toReal ≤
-      (rapidDecaySequenceBound j s.val).toReal + (rapidDecaySequenceBound j t.val).toReal :=
-  by sorry
+      (rapidDecaySequenceBound j s.val).toReal + (rapidDecaySequenceBound j t.val).toReal := by
+  have hs : rapidDecaySequenceBound j s.val < ⊤ := s.2 j
+  have ht : rapidDecaySequenceBound j t.val < ⊤ := t.2 j
+  rw [← ENNReal.toReal_add hs.ne ht.ne]
+  exact ENNReal.toReal_mono (ENNReal.add_lt_top.2 ⟨hs, ht⟩).ne
+    (rapidDecaySequenceBound_add_le j s.val t.val)
 
 /-- Paper: (D.1.3.17), p. 752. Scaling a rapidly decreasing lattice sequence
 multiplies its real-valued weighted absolute sum by the norm of the scalar. -/
 theorem rapidDecaySequenceSeminorm_smul (j : ℕ) (c : ℂ) (s : rapidDecaySequenceSubmodule r) :
     (rapidDecaySequenceBound j (c • s).val).toReal =
-      ‖c‖ * (rapidDecaySequenceBound j s.val).toReal := by sorry
+      ‖c‖ * (rapidDecaySequenceBound j s.val).toReal := by
+  rw [Submodule.coe_smul, rapidDecaySequenceBound_smul, ENNReal.toReal_mul]
+  simp
 
 /-- Paper: (D.1.3.17), p. 752. Each real-valued weighted absolute sum is invariant
 under negation on rapidly decreasing lattice sequences. -/
 theorem rapidDecaySequenceSeminorm_neg (j : ℕ) (s : rapidDecaySequenceSubmodule r) :
-    (rapidDecaySequenceBound j (-s).val).toReal = (rapidDecaySequenceBound j s.val).toReal :=
-  by sorry
+    (rapidDecaySequenceBound j (-s).val).toReal = (rapidDecaySequenceBound j s.val).toReal := by
+  simp [rapidDecaySequenceBound]
 
 /-- Paper: (D.1.3.17), p. 752. The finite weighted sums are seminorms on the
 space of rapidly decreasing sequences. -/
@@ -1063,7 +1167,10 @@ instance : CoeFun (RapidDecaySequence r) (fun _ ↦ (Fin r → ℤ) → ℂ) whe
 /-- Paper: (D.1.3.17), p. 752. On a rapidly decreasing sequence the seminorm
 of order zero is the unweighted absolute sum. -/
 theorem rapidDecaySequenceSeminorm_zero (s : RapidDecaySequence r) :
-    rapidDecaySequenceSeminorm 0 s = ∑' a, ‖s a‖ := by sorry
+    rapidDecaySequenceSeminorm 0 s = ∑' a, ‖s a‖ := by
+  change (rapidDecaySequenceBound 0 _).toReal = _
+  rw [rapidDecaySequenceBound, ENNReal.tsum_toReal_eq (fun a ↦ by simp)]
+  simp
 
 /-- Paper: Remark D.1.3.6, p. 753. The weighted sums generate the topology
 and give a Fréchet space. -/

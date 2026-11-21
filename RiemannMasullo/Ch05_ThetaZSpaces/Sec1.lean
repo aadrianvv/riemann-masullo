@@ -282,10 +282,16 @@ instance : TopologicalSpace (GlobalIdelicZSpace F) :=
   TopologicalSpace.coinduced (globalThetaMellin (F := F)).rangeRestrict inferInstance
 
 /-- Paper: Definition 5.1.1.1(4), p. 223.
+The Mellin transform as a linear map from the global theta space onto the global Z-space.
+Statements about the topology of the Z-space must go through this map: `GlobalIdelicZSpace F`
+unfolds to a range subtype, and a map whose codomain is written as that subtype is given the
+subspace topology of compact convergence, not the transported topology of the paper. -/
+def globalThetaToZ : GlobalAdelicThetaSpace F →ₗ[ℂ] GlobalIdelicZSpace F :=
+  (globalThetaMellin (F := F)).rangeRestrict
+
+/-- Paper: Definition 5.1.1.1(4), p. 223.
 The map from the global theta space onto its Z-space is a quotient map. -/
-theorem globalThetaMellin_range_isQuotientMap :
-    IsQuotientMap ((globalThetaMellin (F := F)).rangeRestrict :
-      GlobalAdelicThetaSpace F → GlobalIdelicZSpace F) := by sorry
+theorem globalThetaToZ_isQuotientMap : IsQuotientMap (globalThetaToZ (F := F)) := by sorry
 
 variable (F S) in
 /-- Paper: Definition 5.1.1.1(4), p. 223.
@@ -308,10 +314,15 @@ instance : TopologicalSpace (SLocalIdelicZSpace F S) :=
   TopologicalSpace.coinduced (sLocalThetaMellin (F := F) (S := S)).rangeRestrict inferInstance
 
 /-- Paper: Definition 5.1.1.1(4), p. 223.
+The Mellin transform as a linear map from the S-local theta space onto the S-local Z-space.
+As for `globalThetaToZ`, statements about the topology of the Z-space must go through this map. -/
+def sLocalThetaToZ : SLocalAdelicThetaSpace F S →ₗ[ℂ] SLocalIdelicZSpace F S :=
+  (sLocalThetaMellin (F := F) (S := S)).rangeRestrict
+
+/-- Paper: Definition 5.1.1.1(4), p. 223.
 The map from the S-local theta space onto its Z-space is a quotient map. -/
-theorem sLocalThetaMellin_range_isQuotientMap :
-    IsQuotientMap ((sLocalThetaMellin (F := F) (S := S)).rangeRestrict :
-      SLocalAdelicThetaSpace F S → SLocalIdelicZSpace F S) := by sorry
+theorem sLocalThetaToZ_isQuotientMap :
+    IsQuotientMap (sLocalThetaToZ (F := F) (S := S)) := by sorry
 
 /-- Paper: Remark 5.1.1.2, p. 223.
 The global theta quotient is locally convex. -/

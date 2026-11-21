@@ -1,6 +1,8 @@
 module
 
+import Mathlib.Analysis.Meromorphic.Divisor
 public import RiemannMasullo.AppB_AnalyticNT.Sec2
+import Mathlib.Analysis.Complex.CauchyIntegral
 public import Mathlib.MeasureTheory.Integral.CircleIntegral
 import Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
 import Mathlib.MeasureTheory.Integral.Asymptotics
@@ -374,7 +376,19 @@ def complexResidue (f : ℂ → ℂ) (ρ : ℂ) : ℂ :=
 `z - ρ` gives residue equal to the numerator at `ρ`.
 Deviation: Sanity check for the residue normalization at a simple pole. -/
 theorem complexResidue_div_sub {g : ℂ → ℂ} {ρ : ℂ} (hg : AnalyticAt ℂ g ρ) :
-    complexResidue (fun z ↦ g z / (z - ρ)) ρ = g ρ := by sorry
+    complexResidue (fun z ↦ g z / (z - ρ)) ρ = g ρ := by
+  obtain ⟨R, hR, hgR⟩ := hg.exists_ball_analyticOnNhd
+  refine (tendsto_const_nhds.congr' ?_).limUnder_eq
+  filter_upwards [Ioo_mem_nhdsGT hR] with r hr
+  have hsub : Metric.closedBall ρ r ⊆ Metric.ball ρ R := Metric.closedBall_subset_ball hr.2
+  have hint : circleIntegral (fun z ↦ g z / (z - ρ)) ρ r = twoPiI * g ρ := by
+    have h := Complex.circleIntegral_sub_inv_smul_of_differentiable_on_off_countable
+      (f := g) Set.countable_empty (Metric.mem_ball_self hr.1)
+      (fun z hz ↦ (hgR z (hsub hz)).continuousAt.continuousWithinAt)
+      (fun z hz ↦ (hgR z (hsub (Metric.ball_subset_closedBall hz.1))).differentiableAt)
+    simpa [div_eq_inv_mul] using h
+  rw [hint, mul_div_cancel_left₀]
+  simp [Real.pi_ne_zero, Complex.I_ne_zero]
 
 set_option quotPrecheck false in
 local notation "rectanglePoles" =>
@@ -386,7 +400,16 @@ are interior to the strip contains only finitely many poles.
 Deviation: Makes the finiteness implicit in the rectangle sum explicit. -/
 theorem finite_rectanglePoles {f : ℂ → ℂ} {a b σ₁ σ₂ t₁ t₂ : ℝ}
     (hf : MeromorphicOn f (openStrip a b)) (hσ₁ : a < σ₁) (hσ₂ : σ₂ < b) :
-    (rectanglePoles f σ₁ σ₂ t₁ t₂).Finite := by sorry
+    (rectanglePoles f σ₁ σ₂ t₁ t₂).Finite := by
+  let K := (Icc σ₁ σ₂) ×ℂ (Icc t₁ t₂)
+  have hK : IsCompact K := isCompact_Icc.reProdIm isCompact_Icc
+  have hmer : MeromorphicOn f K := fun z hz ↦ hf z ⟨hσ₁.trans_le hz.1.1, hz.1.2.trans_lt hσ₂⟩
+  apply ((MeromorphicOn.divisor f K).finiteSupport hK).subset
+  intro z hz
+  have hzK : z ∈ K := ⟨⟨hz.1.1.le, hz.1.2.le⟩, ⟨hz.2.1.1.le, hz.2.1.2.le⟩⟩
+  change (MeromorphicOn.divisor f K z) ≠ 0
+  rw [MeromorphicOn.divisor_apply hmer hzK, Ne, WithTop.untop₀_eq_zero]
+  exact not_or.mpr ⟨ne_of_lt hz.2.2, ne_top_of_lt (hz.2.2.trans_le le_top)⟩
 
 section AsymptoticResidue
 

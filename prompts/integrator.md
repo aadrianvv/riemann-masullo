@@ -37,9 +37,14 @@ A green build proves much less than it seems to: Lean checks proofs, not whether
 means what the paper means. Spend your attention accordingly.
 
 **Statement pull requests (digester).** This is where review matters most.
-- Compare every declaration with the paper page it cites, looking at the page image. For a
-  large pull request, give a fresh subagent only the Lean file and the page range and ask it to
-  list every discrepancy; do not show it the digester's description.
+- Have every statement pull request from the paper's own chapters reviewed before you merge it:
+  `scripts/review.sh <pull request> --model gpt-6.2-astra --effort xhigh` gives a reviewer agent
+  the files, the page images and the digester's report, and posts its review on the pull
+  request. Act on its must-fix findings yourself, or ask the digester for changes. These
+  reviews have found a wrong sign that made two main theorems false, a definition only zero
+  satisfied, and a topology picked by the wrong instance.
+- Before you log a paper error that rests on a missing bar, prime or absolute value, look at the
+  page image: the text extraction drops them.
 - Look for the failure modes listed in `prompts/digester.md`: changed hypotheses, quantifier
   order, junk values, vacuous statements, wrong coercions.
 - Check that each new definition has a sanity lemma and that no definition contains `sorry`.

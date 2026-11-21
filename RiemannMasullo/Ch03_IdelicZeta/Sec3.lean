@@ -59,7 +59,9 @@ def quasiCharacterNormTwist (m : G →* ℝ≥0ˣ) (hm : Continuous m)
 quasi-character by the module. -/
 theorem quasiCharacterNormTwist_one (m : G →* ℝ≥0ˣ) (hm : Continuous m)
     (c : QuasiCharacter G) (g : G) :
-    quasiCharacterNormTwist m hm c 1 g = c g * modℂ[m, g] := by sorry
+    quasiCharacterNormTwist m hm c 1 g = c g * modℂ[m, g] := by
+  change c g * (modℂ[m, g]) ^ (1 : ℂ) = _
+  rw [Complex.cpow_one]
 
 end Coordinates
 
@@ -123,7 +125,14 @@ theorem sLocalIdelicZetaIntegral_integrable (f : ℬ(Aₛ)) (c : Xₛ) (hc : c �
 is the test function times the S-idelic norm. -/
 theorem sLocalIdelicZetaIntegral_norm (f : ℬ(Aₛ)) :
     sLocalIdelicZetaIntegral f (chartₛ((1 : PontryaginDual Jₛ)) 1) =
-      ∫ g : Iₛ, f (Multiplicative.ofAdd g.val) * modℂ[sIdeleNorm F S, g] ∂μₛ := by sorry
+      ∫ g : Iₛ, f (Multiplicative.ofAdd g.val) * modℂ[sIdeleNorm F S, g] ∂μₛ := by
+  unfold sLocalIdelicZetaIntegral
+  congr 1
+  funext g
+  congr 1
+  change (((1 : PontryaginDual Jₛ) (classOf g) : Circle) : ℂ) *
+    (modℂ[mₛ, classOf g]) ^ (1 : ℂ) = _
+  rw [Complex.cpow_one, sIdeleQuotientNorm_mk, PontryaginDual.one_apply, Circle.coe_one, one_mul]
 
 /-- Paper: Theorem 3.3.1.1(1) and Remark 3.3.1.2, p. 129. Closed norm-band
 truncations of the zeta integral converge uniformly on compact subsets.
@@ -179,7 +188,9 @@ theorem IsLocalTateFactor.eq_div {m : Kˣ →* ℝ≥0ˣ} {hm : Continuous m} {�
     let c := quasiCharacterNormTwist m hm ((circleToComplex).comp χ) s
     let test := fun x ↦ f (Multiplicative.ofAdd x)
     let Zdual := localIdelicZetaIntegral μ (fourier test) (dualQuasiCharacter m hm c)
-    Zdual ≠ 0 → ρ c = localIdelicZetaIntegral μ test c / Zdual := by sorry
+    Zdual ≠ 0 → ρ c = localIdelicZetaIntegral μ test c / Zdual := by
+  intro c test Zdual hZ
+  rw [hρ.2 f χ s hs, mul_div_cancel_right₀ _ hZ]
 
 end LocalFactors
 
@@ -198,11 +209,15 @@ local notation "finiteFourier(" v ")" => tamagawaFourier (finiteLocalAdditiveTam
 
 /-- Paper: Equation (3.3.1.3), p. 129. The normalized archimedean module is continuous. -/
 theorem continuous_infiniteLocalModule (w : InfinitePlace F) :
-    Continuous (infiniteNorm(w)) := by sorry
+    Continuous (infiniteNorm(w)) := by
+  change Continuous (fun x : w.Completionˣ ↦
+    Units.map nnNormHom.toMonoidHom x ^ InfinitePlace.mult w)
+  exact (continuous_nnNorm.units_map _).pow _
 
 /-- Paper: Equation (3.3.1.3), p. 129. The normalized finite-place module is continuous. -/
 theorem continuous_finiteLocalModule (v : Primes) :
-    Continuous (finiteNorm(v)) := by sorry
+    Continuous (finiteNorm(v)) := by
+  exact continuous_nnNorm.units_map _
 
 /-- Paper: Equation (3.3.1.3), p. 129. Tate's local equation characterizes
 a unique archimedean factor in normal form. -/
@@ -233,14 +248,16 @@ Tate's equation for the specified Fourier transform. -/
 theorem infiniteLocalTateFactor_spec (w : InfinitePlace F) :
     IsLocalTateFactor (infiniteNorm(w)) (continuous_infiniteLocalModule w)
       (infiniteLocalMultiplicativeTamagawaMeasure F w) (infiniteFourier(w))
-      (infiniteLocalTateFactor w) := by sorry
+      (infiniteLocalTateFactor w) :=
+  (infiniteLocalTateFactor_existsUnique w).exists.choose_spec
 
 /-- Paper: Equation (3.3.2.11), p. 139. The finite-place factor satisfies
 Tate's equation for the specified Fourier transform. -/
 theorem finiteLocalTateFactor_spec (v : Primes) :
     IsLocalTateFactor (finiteNorm(v)) (continuous_finiteLocalModule v)
       (finiteLocalMultiplicativeTamagawaMeasure F v) (finiteFourier(v))
-      (finiteLocalTateFactor v) := by sorry
+      (finiteLocalTateFactor v) :=
+  (finiteLocalTateFactor_existsUnique v).exists.choose_spec
 
 local notation "eProd" => ContinuousMulEquiv.prodUnits
   (InfiniteAdeleRing F) ((v : S) → HeightOneSpectrum.adicCompletion F (Subtype.val v))
@@ -314,7 +331,8 @@ def sLocalRhoFactor (c : Xₛ) : ℂ :=
 factor is the archimedean product. -/
 theorem sLocalRhoFactor_archimedean (c : QuasiCharacter (SIdeleQuotient F ∅)) :
     sLocalRhoFactor c =
-      ∏ w : InfinitePlace F, infiniteLocalTateFactor w (sLocalInfiniteRestriction w c) := by sorry
+      ∏ w : InfinitePlace F, infiniteLocalTateFactor w (sLocalInfiniteRestriction w c) := by
+  rw [sLocalRhoFactor, Finset.univ_eq_attach, Finset.attach_empty, Finset.prod_empty, mul_one]
 
 /-- Paper: Theorem 3.3.1.1(1)(a), p. 129. The correcting factor is meromorphic
 in each norm-twist coordinate. -/
@@ -345,12 +363,14 @@ def sLocalIdelicZFunction (f : ℬ(Aₛ)) : Xₛ → ℂ :=
 /-- Paper: Theorem 3.3.1.1(1)(b), p. 129. On the half-plane of convergence,
 the continuation agrees with the defining integral. -/
 theorem sLocalIdelicZFunction_eq_integral (f : ℬ(Aₛ)) :
-    EqOn (sLocalIdelicZFunction f) (sLocalIdelicZetaIntegral f) positive := by sorry
+    EqOn (sLocalIdelicZFunction f) (sLocalIdelicZetaIntegral f) positive :=
+  (sLocalIdelicZetaIntegral_exists_continuation f).exists.choose_spec.2
 
 /-- Paper: Theorem 3.3.1.1(1)(b), p. 129. The S-local Z-function is
 meromorphic in normal form in each norm-twist coordinate. -/
 theorem sLocalIdelicZFunction_meromorphic (f : ℬ(Aₛ)) (χ : PontryaginDual Jₛ) :
-    MeromorphicNFOn (fun s ↦ sLocalIdelicZFunction f (chartₛ(χ) s)) univ := by sorry
+    MeromorphicNFOn (fun s ↦ sLocalIdelicZFunction f (chartₛ(χ) s)) univ :=
+  (sLocalIdelicZetaIntegral_exists_continuation f).exists.choose_spec.1 χ
 
 /-- Paper: Theorem 3.3.1.1(1)(b), p. 129. Every pole of the Z-function
 lies at a pole of the correcting factor and has at most its pole order. -/
@@ -376,7 +396,8 @@ local notation "μJ" => sLocalQuotientTamagawaMeasure F S
 /-- Paper: Theorem 3.3.1.1(2), p. 129. The quotient measure satisfies the
 Weil normalization for integrals against the product measure on the S-ideles. -/
 theorem sLocalQuotientTamagawaMeasure_isWeil :
-    IsWeilQuotientMeasure _ μₛ Measure.count μJ := by sorry
+    IsWeilQuotientMeasure _ μₛ Measure.count μJ :=
+  (sLocalQuotientTamagawaMeasure_existsUnique (F := F) (S := S)).exists.choose_spec
 
 /-- Paper: Equation (3.3.1.4), p. 129. The theta Mellin integral weights
 the S-local theta function by the quasi-character on the S-idele quotient. -/
@@ -429,7 +450,9 @@ local notation "μJ₁" => sLocalNormOneQuotientMeasure F S
 section pushes the product with dt/t to the quotient Tamagawa measure. -/
 theorem sLocalNormOneQuotientMeasure_normProduct :
     (μJ₁).IsHaarMeasure ∧ ∀ τ : ℝ≥0ˣ →ₜ* Iₛ, RightInverse τ (sIdeleNorm F S) →
-      ((μJ₁).prod positiveRealHaar).map (normProduct(τ)) = μJ := by sorry
+      ((μJ₁).prod positiveRealHaar).map (normProduct(τ)) = μJ :=
+  have h := (sLocalNormOneQuotientMeasure_existsUnique (F := F) (S := S)).exists.choose_spec
+  ⟨h.1, h.2.2⟩
 
 section Homogeneous
 

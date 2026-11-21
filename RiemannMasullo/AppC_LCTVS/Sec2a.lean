@@ -8,6 +8,7 @@ import Mathlib.Analysis.Normed.Module.Dual
 import Mathlib.Analysis.Normed.Operator.BanachSteinhaus
 import Mathlib.Analysis.Normed.Operator.Completeness
 import Mathlib.Topology.Algebra.Module.UniformConvergence
+import Mathlib.Topology.Baire.CompleteMetrizable
 import RiemannMasullo.ForMathlib.Analysis.LocallyConvex.BanachSteinhaus
 
 /-!
@@ -355,11 +356,53 @@ theorem uniformConvergenceCLM_bounded_of_pointwise [QuasiCompleteSpace ℂ E]
   have hf' : f ∈ range (fun f : H ↦ f.val) := ⟨⟨f, hf⟩, rfl⟩
   exact (mem_smul_set_iff_inv_smul_mem₀ hc₀ V (f x)).mp (hc (mem_image2_of_mem hf' hx))
 
+-- Retain the existing hypotheses. The argument works for any cover of a barrelled source.
+set_option linter.unusedSectionVars false in
+set_option linter.unusedVariables false in
 /-- Paper: Lemma C.2.1.7, p. 672. For a barrelled source and quasi-complete target, uniform
 convergence on a directed cover by bounded subsets gives a quasi-complete mapping space. -/
 theorem uniformConvergenceCLM_quasiComplete [BarrelledSpace ℂ E] [QuasiCompleteSpace ℂ F]
     (S : Set (Set E)) (hdir : DirectedOn (· ⊆ ·) S) (hcover : ⋃₀ S = univ)
-    (hb : ∀ T ∈ S, IsVonNBounded ℂ T) : QuasiCompleteSpace ℂ (E →Lᵤ[ℂ, S] F) := by sorry
+    (hb : ∀ T ∈ S, IsVonNBounded ℂ T) : QuasiCompleteSpace ℂ (E →Lᵤ[ℂ, S] F) := by
+  refine ⟨fun {A} hA hAc ↦ completeSpace_coe_iff_isComplete.mp ⟨fun {l} hl ↦ ?_⟩⟩
+  have := hl.1
+  let g : A → E →L[ℂ] F := fun a ↦ (UniformConvergenceCLM.ofFun (RingHom.id ℂ) F S).symm a.val
+  have hind := UniformConvergenceCLM.isUniformInducing_coeFn (RingHom.id ℂ) F S
+  have heval (x : E) : UniformContinuous (fun f : E →Lᵤ[ℂ, S] F ↦ f x) :=
+    (UniformOnFun.uniformContinuous_eval hcover x).comp hind.uniformContinuous
+  have hbounded (x : E) : IsVonNBounded ℂ (range fun a : A ↦ g a x) := by
+    let ev : (E →Lᵤ[ℂ, S] F) →L[ℂ] F :=
+      ⟨{ toFun := fun f ↦ f x
+         map_add' := fun _ _ ↦ rfl
+         map_smul' := fun _ _ ↦ rfl }, (heval x).continuous⟩
+    change IsVonNBounded ℂ (range (ev ∘ (Subtype.val : A → _)))
+    rw [range_comp, Subtype.range_coe]
+    exact hA.image ev
+  -- Quasi-completeness of the target gives a limit at each point.
+  have hlimit (x : E) : ∃ y, Tendsto (fun a : A ↦ g a x) l (𝓝 y) := by
+    let gx : A → F := fun a ↦ g a x
+    have hc : Cauchy (l.map gx) := hl.map ((heval x).comp uniformContinuous_subtype_val)
+    have hmem : l.map gx ≤ 𝓟 (closure (range gx)) := by
+      rw [le_principal_iff, mem_map]
+      exact Eventually.of_forall fun a ↦ subset_closure (mem_range_self a)
+    obtain ⟨y, _, hy⟩ := QuasiCompleteSpace.quasiComplete (hbounded x).closure isClosed_closure
+      _ hc hmem
+    exact ⟨y, hy⟩
+  choose f hf using hlimit
+  have hpoint : Tendsto (fun a x ↦ g a x) l (𝓝 f) := tendsto_pi_nhds.mpr hf
+  -- Banach–Steinhaus makes the pointwise limit continuous.
+  let G : E →L[ℂ] F := ⟨linearMapOfTendsto f (fun a ↦ (g a).toLinearMap) hpoint,
+    hpoint.continuous_of_equicontinuous (PolynormableSpace.banach_steinhaus hbounded).equicontinuous⟩
+  let G' := UniformConvergenceCLM.ofFun (RingHom.id ℂ) F S G
+  have hG : Tendsto (Subtype.val : A → E →Lᵤ[ℂ, S] F) l (𝓝 G') := by
+    apply (UniformConvergenceCLM.tendsto_iff_tendstoUniformlyOn _ _ S).mpr
+    intro T hT
+    have hc := hl.map (hind.uniformContinuous.comp uniformContinuous_subtype_val)
+    have hu : UniformCauchySeqOn (fun a x ↦ g a x) l T := fun U hU ↦
+      cauchy_map_iff'.mp hc (UniformOnFun.gen_mem_uniformity F S hT hU)
+    exact hu.tendstoUniformlyOn_of_tendsto fun x _ ↦ hf x
+  have hGA := hAc.mem_of_tendsto hG (Eventually.of_forall Subtype.property)
+  exact ⟨⟨G', hGA⟩, tendsto_subtype_rng.mpr hG⟩
 
 variable (H : Type*) [NormedAddCommGroup H] [InnerProductSpace ℂ H] [CompleteSpace H]
 
@@ -389,7 +432,16 @@ theorem hilbert_pointwiseOperators_quasiComplete : QuasiCompleteSpace ℂ (H →
 
 /-- Paper: Remark C.2.1.8, p. 672. Every complex Fréchet space is barrelled. -/
 theorem isFrechetTVS_barrelled {X : Type*} [AddCommGroup X] [Module ℂ X] [TopologicalSpace X]
-    (hX : IsFrechetTVS X) : BarrelledSpace ℂ X := by sorry
+    (hX : IsFrechetTVS X) : BarrelledSpace ℂ X := by
+  obtain ⟨hadd, hpoly, hmetric, hcomplete⟩ := hX
+  let : UniformSpace X := IsTopologicalAddGroup.rightUniformSpace X
+  have : IsUniformAddGroup X := isUniformAddGroup_of_addCommGroup
+  have : CompleteSpace X := hcomplete
+  have : (uniformity X).IsCountablyGenerated := by
+    rw [uniformity_eq_comap_nhds_zero X]
+    infer_instance
+  have : BaireSpace X := BaireSpace.of_completelyPseudoMetrizable
+  exact BaireSpace.instBarrelledSpace
 
 variable (A : Set (E →L[ℂ] F))
   (heq : EquicontinuousAt (fun f : A ↦ (f.val : E → F)) 0)
@@ -398,7 +450,19 @@ variable (A : Set (E →L[ℂ] F))
 zero-neighborhood that every map sends into the prescribed target zero-neighborhood. -/
 theorem equicontinuousAt_zero_iff_mapsTo :
     EquicontinuousAt (fun f : A ↦ (f.val : E → F)) 0 ↔
-      ∀ V ∈ 𝓝 (0 : F), ∃ U ∈ 𝓝 (0 : E), ∀ f ∈ A, MapsTo f U V := by sorry
+      ∀ V ∈ 𝓝 (0 : F), ∃ U ∈ 𝓝 (0 : E), ∀ f ∈ A, MapsTo f U V := by
+  have hb : (uniformity F).HasBasis (fun V : Set F ↦ V ∈ 𝓝 (0 : F))
+      (fun V ↦ (fun x : F × F ↦ x.2 - x.1) ⁻¹' V) := by
+    rw [uniformity_eq_comap_nhds_zero]
+    exact (𝓝 (0 : F)).basis_sets.comap _
+  rw [hb.equicontinuousAt_iff_right]
+  refine forall₂_congr fun V _ ↦ ?_
+  simp only [mem_preimage, map_zero, sub_zero, Filter.eventually_iff_exists_mem]
+  constructor
+  · rintro ⟨U, hU, h⟩
+    exact ⟨U, hU, fun f hf x hx ↦ h x hx ⟨f, hf⟩⟩
+  · rintro ⟨U, hU, h⟩
+    exact ⟨U, hU, fun x hx f ↦ h f f.2 hx⟩
 
 include heq in
 /-- Paper: Lemma C.2.1.9(1), p. 672. An equicontinuous set is bounded for uniform
@@ -472,7 +536,24 @@ theorem isPolarBornology_bounded : IsPolarBornology {T : Set E | IsVonNBounded �
 to the absolute polar of some member of a given zero-neighborhood basis. -/
 theorem continuous_iff_mem_polar_of_basis {ι : Type*} {p : ι → Prop} {U : ι → Set E}
     (hU : (𝓝 0).HasBasis p U) (l : Module.Dual ℂ E) :
-    Continuous l ↔ ∃ i, p i ∧ l ∈ (Module.Dual.eval ℂ E).polar (U i) := by sorry
+    Continuous l ↔ ∃ i, p i ∧ l ∈ (Module.Dual.eval ℂ E).polar (U i) := by
+  constructor
+  · intro hl
+    have h : l ⁻¹' Metric.closedBall 0 1 ∈ 𝓝 (0 : E) :=
+      hl.continuousAt.preimage_mem_nhds (by simpa using Metric.closedBall_mem_nhds (0 : ℂ) one_pos)
+    obtain ⟨i, hi, hsub⟩ := hU.mem_iff.1 h
+    refine ⟨i, hi, (LinearMap.polar_mem_iff _ _ _).2 fun x hx ↦ ?_⟩
+    simpa using hsub hx
+  · rintro ⟨i, hi, hl⟩
+    have hp : Continuous ((normSeminorm ℂ ℂ).comp l) := by
+      refine Seminorm.continuous' (r := 1) (Filter.mem_of_superset (hU.mem_of_mem hi) ?_)
+      intro x hx
+      simpa [Seminorm.mem_closedBall] using (LinearMap.polar_mem_iff _ _ _).1 hl x hx
+    refine continuous_of_continuousAt_zero l ?_
+    rw [ContinuousAt, map_zero, tendsto_zero_iff_norm_tendsto_zero]
+    have h := hp.tendsto 0
+    rw [map_zero] at h
+    exact h
 
 end Bornologies
 
@@ -561,7 +642,9 @@ def polarTopology (S : Set (Set F)) : TopologicalSpace E :=
 
 /-- Paper: §C.2.2.1, p. 673. Testing a pairing on finite subsets gives its weak topology. -/
 theorem polarTopology_finite_eq_weak :
-    polarTopology B {A | A.Finite} = WeakBilin.instTopologicalSpace B := by sorry
+    polarTopology B {A | A.Finite} = WeakBilin.instTopologicalSpace B := by
+  rw [polarTopology, (UniformOnFun.isEmbedding_toFun_finite F ℂ).eq_induced, induced_compose]
+  rfl
 
 /-- Paper: §C.2.2.2, p. 674. A topology on E is consistent with the pairing if its
 continuous linear functionals are exactly the evaluations against elements of F. -/
@@ -570,7 +653,16 @@ def IsConsistentWithDuality (t : TopologicalSpace E) : Prop :=
 
 /-- Paper: §C.2.2.2, p. 674. The weak topology of a separating pairing is consistent. -/
 theorem weakTopology_isConsistentWithDuality (hB : B.Nondegenerate) :
-    IsConsistentWithDuality B (WeakBilin.instTopologicalSpace B) := by sorry
+    IsConsistentWithDuality B (WeakBilin.instTopologicalSpace B) := by
+  intro l
+  constructor
+  · intro hl
+    obtain ⟨y, hy⟩ := LinearMap.dualEmbedding_surjective B
+      (⟨l, hl⟩ : StrongDual ℂ (WeakBilin B))
+    refine ⟨y, LinearMap.ext fun x ↦ ?_⟩
+    exact congrArg (fun φ : StrongDual ℂ (WeakBilin B) ↦ φ x) hy
+  · rintro ⟨y, rfl⟩
+    exact WeakBilin.eval_continuous B y
 
 /-- Paper: §C.2.2.2, p. 674. The Mackey topology on E is uniform convergence on the
 convex circled subsets of F which are compact for the opposite weak topology. -/

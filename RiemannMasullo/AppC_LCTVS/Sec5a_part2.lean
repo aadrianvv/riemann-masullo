@@ -5,6 +5,7 @@ public import Mathlib.Algebra.MvPolynomial.Eval
 public import Mathlib.Algebra.Ring.Periodic
 public import Mathlib.Analysis.Distribution.SchwartzSpace.Basic
 import Mathlib.Analysis.Calculus.Deriv.Add
+import Mathlib.Analysis.Calculus.Deriv.Mul
 
 /-!
 # Spaces of smooth vector-valued functions
@@ -99,23 +100,82 @@ def HasVectorSchwartzDecay (f : V → E) : Prop :=
     HasVectorMultiPartial α f g ∧
       IsVonNBounded ℂ (range fun x : V ↦ p.eval (fun i ↦ (x i : ℂ)) • g x)
 
+omit hAdd hSMul hSemi hT2 in
+/-- A chain of successive weak coordinate partials from zero to zero exists along every list of
+coordinates. -/
+private theorem hasPartials_zero :
+    ∀ l : List (Fin d), HasVectorMultiPartial.hasPartials (0 : V → E) 0 l
+  | [] => rfl
+  | i :: rest => by
+    refine ⟨0, fun φ x ↦ ?_, hasPartials_zero rest⟩
+    change HasDerivWithinAt _ (φ ((0 : V → E) x)) _ _
+    simpa only [Pi.zero_apply, map_zero] using hasDerivWithinAt_const (0 : ℝ) _ (0 : ℂ)
+
+omit hAdd hSMul hSemi hT2 in
+/-- Chains of successive weak coordinate partials add along a common list of coordinates. -/
+private theorem hasPartials_add (g₁ g₂ : V → E) :
+    ∀ (l : List (Fin d)) (h₁ h₂ : V → E), HasVectorMultiPartial.hasPartials g₁ h₁ l →
+      HasVectorMultiPartial.hasPartials g₂ h₂ l →
+        HasVectorMultiPartial.hasPartials (g₁ + g₂) (h₁ + h₂) l
+  | [], _, _, e₁, e₂ => by
+    change _ = _ at e₁ e₂
+    change _ = _
+    rw [e₁, e₂]
+  | i :: rest, _, _, ⟨h₁', d₁, r₁⟩, ⟨h₂', d₂, r₂⟩ => by
+    refine ⟨h₁' + h₂', fun φ x ↦ ?_, hasPartials_add g₁ g₂ rest _ _ r₁ r₂⟩
+    have e₁ : HasDerivWithinAt _ (φ (h₁' x)) _ _ := d₁ φ x
+    have e₂ : HasDerivWithinAt _ (φ (h₂' x)) _ _ := d₂ φ x
+    change HasDerivWithinAt _ (φ ((h₁' + h₂') x)) _ _
+    simpa only [Pi.add_apply, map_add, Pi.add_def] using e₁.add e₂
+
+omit hAdd hSMul hSemi hT2 in
+/-- Chains of successive weak coordinate partials scale along a common list of coordinates. -/
+private theorem hasPartials_smul (c : ℂ) (g : V → E) :
+    ∀ (l : List (Fin d)) (h : V → E), HasVectorMultiPartial.hasPartials g h l →
+      HasVectorMultiPartial.hasPartials (c • g) (c • h) l
+  | [], _, e => by
+    change _ = _ at e
+    change _ = _
+    rw [e]
+  | i :: rest, _, ⟨h', dh, r⟩ => by
+    refine ⟨c • h', fun φ x ↦ ?_, hasPartials_smul c g rest _ r⟩
+    have e : HasDerivWithinAt _ (φ (h' x)) _ _ := dh φ x
+    change HasDerivWithinAt _ (φ ((c • h') x)) _ _
+    simpa only [Pi.smul_apply, map_smul, Pi.smul_def] using HasDerivWithinAt.const_smul c e
+
 include hAdd hSMul in
 /-- Paper: Definition C.5.1.26(2), p. 735. The zero function satisfies the
 Schwartz bounds. -/
-theorem hasVectorSchwartzDecay_zero : HasVectorSchwartzDecay (0 : V → E) := by sorry
+theorem hasVectorSchwartzDecay_zero : HasVectorSchwartzDecay (0 : V → E) := by
+  intro α p
+  refine ⟨0, hasPartials_zero _, ?_⟩
+  refine (isVonNBounded_singleton (0 : E)).subset ?_
+  rintro _ ⟨x, rfl⟩
+  simp
 
 include hAdd hSMul in
 /-- Paper: Definition C.5.1.26(2), p. 735. The Schwartz bounds are stable
 under addition. -/
 theorem HasVectorSchwartzDecay.add {f g : V → E}
     (hf : HasVectorSchwartzDecay f) (hg : HasVectorSchwartzDecay g) :
-    HasVectorSchwartzDecay (f + g) := by sorry
+    HasVectorSchwartzDecay (f + g) := by
+  intro α p
+  obtain ⟨g₁, hg₁, b₁⟩ := hf α p
+  obtain ⟨g₂, hg₂, b₂⟩ := hg α p
+  refine ⟨g₁ + g₂, hasPartials_add g₁ g₂ _ f g hg₁ hg₂, (b₁.add b₂).subset ?_⟩
+  rintro _ ⟨x, rfl⟩
+  exact ⟨_, ⟨x, rfl⟩, _, ⟨x, rfl⟩, by simp [smul_add]⟩
 
 include hAdd hSMul in
 /-- Paper: Definition C.5.1.26(2), p. 735. The Schwartz bounds are stable
 under complex scalar multiplication. -/
 theorem HasVectorSchwartzDecay.smul {f : V → E} (c : ℂ) (hf : HasVectorSchwartzDecay f) :
-    HasVectorSchwartzDecay (c • f) := by sorry
+    HasVectorSchwartzDecay (c • f) := by
+  intro α p
+  obtain ⟨g, hg, b⟩ := hf α p
+  refine ⟨c • g, hasPartials_smul c g _ f hg, (b.image (c • ContinuousLinearMap.id ℂ E)).subset ?_⟩
+  rintro _ ⟨x, rfl⟩
+  exact ⟨_, ⟨x, rfl⟩, by simp⟩
 
 variable (d E) in
 /-- Paper: Definition C.5.1.26(2), p. 735. The vector-valued Schwartz space is the
@@ -162,7 +222,10 @@ include hT2 in
 /-- Paper: Definition C.5.1.26(1–2), p. 735. The uniform value topology is Hausdorff. -/
 theorem uniformValueTopology_t2Space {X : Type*} (S : Submodule ℂ (X → E)) :
     letI := uniformValueTopology S
-    T2Space S := by sorry
+    T2Space S := by
+  let := IsTopologicalAddGroup.rightUniformSpace E
+  let := uniformValueTopology S
+  exact IsEmbedding.t2Space ⟨⟨rfl⟩, fun f g h ↦ Subtype.ext (UniformFun.ofFun.injective h)⟩
 
 variable (d E) in
 /-- Paper: Remark C.5.1.27, p. 735. Each scalar evaluation of a weakly smooth

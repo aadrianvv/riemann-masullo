@@ -1,5 +1,7 @@
 module
 
+import Mathlib.Analysis.Calculus.ParametricIntegral
+import Mathlib.Analysis.SpecialFunctions.Pow.Deriv
 public import Mathlib.Analysis.Calculus.IteratedDeriv.Defs
 public import Mathlib.Analysis.Distribution.SchwartzSpace.Deriv
 public import Mathlib.Analysis.MellinTransform
@@ -273,12 +275,26 @@ theorem ForwardSemiExponentialDecay.deriv (f : 𝓢(ℝ, ℂ)) (hf : ForwardSemi
 /-- Paper: Lemma B.2.1.4(4), p. 593. Logarithmic differentiation preserves
 backward semi-exponential decay. -/
 theorem BackwardSemiExponentialDecay.deriv (f : 𝓢(ℝ, ℂ)) (hf : BackwardSemiExponentialDecay f) :
-    BackwardSemiExponentialDecay (SchwartzMap.derivCLM ℂ ℂ f) := by sorry
+    BackwardSemiExponentialDecay (SchwartzMap.derivCLM ℂ ℂ f) := by
+  intro j A hA
+  rw [show (⇑(SchwartzMap.derivCLM ℂ ℂ f) : ℝ → ℂ) = _root_.deriv f from
+    funext (SchwartzMap.derivCLM_apply ℂ f), ← iteratedDeriv_succ']
+  exact hf (j + 1) A hA
 
 /-- Paper: Lemma B.2.1.4(4), p. 593. Logarithmic differentiation preserves
 exponential decay. -/
 theorem ExponentialDecay.deriv (f : 𝓢(ℝ, ℂ)) (hf : ExponentialDecay f) :
     ExponentialDecay (SchwartzMap.derivCLM ℂ ℂ f) := by sorry
+
+private theorem fromLog_locallyIntegrable (f : 𝓢(ℝ, ℂ)) :
+    LocallyIntegrableOn (fromLog f) (Ioi 0) volume :=
+  (f.continuous.comp_continuousOn (Real.continuousOn_log.mono
+    (fun _ hx ↦ ne_of_gt hx))).locallyIntegrableOn measurableSet_Ioi
+
+private theorem isBigO_fromLog_atTop (f : 𝓢(ℝ, ℂ)) (hf : ForwardSemiExponentialDecay f)
+    {A : ℝ} (hA : 0 < A) : (fromLog f) =O[atTop] (fun t ↦ t ^ (-A)) :=
+  isBigO_comp_log_rpow_of_isBigO_exp (by simpa only [iteratedDeriv_zero] using hf 0 A hA)
+    Real.tendsto_log_atTop (eventually_gt_atTop 0)
 
 -- Equation (B.2.1.2) is Mathlib's `mellin`, with `MellinConvergent`
 -- for absolute convergence and `HasMellin` for a convergent integral with a specified value.
@@ -300,7 +316,15 @@ theorem mellinConvergent_of_forwardSemiExponentialDecay (s : ℂ) (hs : 0 < s.re
 /-- Paper: Proposition B.2.1.5(1), p. 594. The Mellin transform is
 holomorphic in the open right half-plane. -/
 theorem differentiableOn_mellin_of_forwardSemiExponentialDecay :
-    DifferentiableOn ℂ (mellin (fromLog f)) (Complex.re ⁻¹' Ioi 0) := by sorry
+    DifferentiableOn ℂ (mellin (fromLog f)) (Complex.re ⁻¹' Ioi 0) := by
+  intro s hs
+  have hs' : 0 < s.re := hs
+  apply DifferentiableAt.differentiableWithinAt
+  apply mellin_differentiableAt_of_isBigO_rpow (b := 0) (fromLog_locallyIntegrable f)
+    (isBigO_fromLog_atTop f hf (A := s.re + 1) (by linarith)) (lt_add_one _) _ hs'
+  apply Asymptotics.IsBigO.of_bound (SchwartzMap.seminorm ℂ 0 0 f)
+  filter_upwards with t
+  simpa using f.norm_le_seminorm ℂ (Real.log t)
 
 /-- Paper: Proposition B.2.1.5(2), p. 594. For each positive integer
 power, one constant gives the vertical decay bound throughout the prescribed closed strip. -/
@@ -325,7 +349,24 @@ before the exponential change of variables gives the ordinary iterated derivativ
 theorem iterate_eulerDeriv_comp_exp (φ : ℝ → ℂ) (hφ : ContDiffOn ℝ ∞ φ (Ioi 0))
     (N : ℕ) (hN : 1 ≤ N) (x : ℝ) :
     ((fun g : ℝ → ℂ ↦ fun t ↦ (t : ℂ) * deriv g t)^[N]) φ (Real.exp x) =
-      iteratedDeriv N (fun u : ℝ ↦ φ (Real.exp u)) x := by sorry
+      iteratedDeriv N (fun u : ℝ ↦ φ (Real.exp u)) x := by
+  clear hN
+  induction N generalizing φ x with
+  | zero => simp
+  | succ N ih =>
+    have hderiv : ContDiffOn ℝ ∞ (fun t : ℝ ↦ (t : ℂ) * deriv φ t) (Ioi 0) :=
+      (Complex.ofRealCLM.contDiff.contDiffOn).mul
+        ((hφ.derivWithin (uniqueDiffOn_Ioi 0) le_rfl).congr
+          fun t ht ↦ (derivWithin_of_isOpen isOpen_Ioi ht).symm)
+    have hchain : (fun u : ℝ ↦ ((Real.exp u : ℝ) : ℂ) * deriv φ (Real.exp u)) =
+        deriv (fun u : ℝ ↦ φ (Real.exp u)) := by
+      funext u
+      have hφu : HasDerivAt φ (deriv φ (Real.exp u)) (Real.exp u) :=
+        ((hφ.differentiableOn (by simp)).differentiableAt
+          (isOpen_Ioi.mem_nhds (Real.exp_pos u))).hasDerivAt
+      have h := HasDerivAt.scomp u hφu (Real.hasDerivAt_exp u)
+      exact (Complex.real_smul.symm.trans h.deriv.symm)
+    rw [Function.iterate_succ_apply, ih _ hderiv, hchain, ← iteratedDeriv_succ']
 
 -- TODO(paper-gap): Theorem B.2.1.7(1)(c) places a uniform bound on a strip
 -- containing the prescribed poles. Even on the punctured strip it rules out
@@ -395,6 +436,18 @@ theorem exists_mellin_of_holomorphicOn_isPolynomialDecay
         MemLp (fun x : ℝ ↦ logWeight σ x * φ (Real.exp x)) 2 volume) ∧
       ∀ s ∈ stripWithTop a b, HasMellin φ s (F s) := by sorry
 
+/-- Two-sided decay gives Schwartz profiles for weights of either sign. -/
+private theorem exponentialDecay_weighted_schwartz (f : 𝓢(ℝ, ℂ)) (hf : ExponentialDecay f) (c : ℝ) :
+    ∃ g : 𝓢(ℝ, ℂ), ∀ x : ℝ, g x = logWeight c x * f x := by
+  by_cases hc : 0 ≤ c
+  · exact (forwardSemiExponentialDecay_iff_weighted_schwartz f).mp hf.1 c hc
+  obtain ⟨R, hR, _⟩ := exists_schwartzLogReflection
+  have hr : ForwardSemiExponentialDecay (R f) :=
+    (backwardSemiExponentialDecay_iff_forward_reflected (R f) f
+      (fun x ↦ by rw [hR, neg_neg])).mp hf.2
+  obtain ⟨g, hg⟩ := (forwardSemiExponentialDecay_iff_weighted_schwartz (R f)).mp hr (-c) (by linarith)
+  exact ⟨R g, fun x ↦ by simp only [hR, hg, neg_neg, neg_mul_neg]⟩
+
 section ExponentialMellin
 
 variable (f : 𝓢(ℝ, ℂ)) (hf : ExponentialDecay f)
@@ -404,7 +457,10 @@ include hf
 /-- Paper: Equation (B.2.1.26), p. 598. The Mellin integral of an
 exponentially decaying function converges absolutely at every complex exponent. -/
 theorem mellinConvergent_of_exponentialDecay (s : ℂ) :
-    MellinConvergent (fromLog f) s := by sorry
+    MellinConvergent (fromLog f) s := by
+  obtain ⟨g, hg⟩ := exponentialDecay_weighted_schwartz f hf s.re
+  exact mellinConvergent_of_integrable_logWeight f s
+    ((g.integrable (μ := volume)).congr (Eventually.of_forall hg))
 
 /-- Paper: Proposition B.2.1.9(1), p. 598. The Mellin transform of an
 exponentially decaying function is entire. -/
@@ -943,12 +999,175 @@ theorem verticalIntegrable_mellinInv_of_schwartzOnVerticalStrips {Φ : ℂ → �
   exact (h.bdd_mul hphase.aestronglyMeasurable (Eventually.of_forall bound)).congr
     (Eventually.of_forall fun y ↦ mul_comm _ _)
 
+section InverseContour
+
+open scoped Interval
+
+local notation "invKernel" => (fun (Φ : ℂ → ℂ) (t : ℝ) (s : ℂ) ↦ Φ s * (t : ℂ) ^ (-s))
+local notation "invProfile" => (fun (Φ : ℂ → ℂ) ↦ Set.indicator (Ioi (0 : ℝ)) (fun t ↦
+  verticalLineIntegral (invKernel Φ t) 0))
+local notation "invDeriv" => (fun (Φ : ℂ → ℂ) (s : ℂ) ↦ (1 - s) * Φ (s - 1))
+
+/-- The transform corresponding to differentiation of the inverse Mellin integral. -/
+private theorem invDeriv_schwartz {Φ : ℂ → ℂ} (h : SchwartzOnVerticalStrips Φ) :
+    SchwartzOnVerticalStrips (invDeriv Φ) := by
+  have hd : Differentiable ℂ (invDeriv Φ) :=
+    ((differentiable_const (1 : ℂ)).sub differentiable_id).mul (h.1.comp (differentiable_id.sub_const 1))
+  refine ⟨hd, fun a b hab ↦ ⟨hab, hd.differentiableOn, ?_⟩⟩
+  intro ε hε hw n hn
+  obtain ⟨C, hC, hdec⟩ := (h.2 (a - 1) (b - 1) (by linarith)).2.2 ε hε (by linarith)
+    (n + 1) (by omega)
+  let M := max |a| |b|
+  have hM : 0 ≤ M := (abs_nonneg a).trans (le_max_left _ _)
+  refine ⟨(M + 2) * C, mul_pos (by linarith) hC, ?_⟩
+  have large : ∀ᶠ y : ℝ in atAbsInfty, 1 ≤ |y| := tendsto_comap.eventually (eventually_ge_atTop 1)
+  filter_upwards [hdec, large] with y hy hlarge x hx
+  have hxM : |x| ≤ M := abs_le.mpr ⟨by linarith [hx.1, neg_abs_le a, le_max_left |a| |b|],
+    by linarith [hx.2, le_abs_self b, le_max_right |a| |b|]⟩
+  have hle : ‖1 - verticalPoint x y‖ ≤ (M + 2) * |y| := by
+    calc ‖1 - verticalPoint x y‖ ≤ ‖(1 : ℂ)‖ + ‖verticalPoint x y‖ := norm_sub_le _ _
+      _ ≤ 1 + (|x| + |y|) := by
+        rw [norm_one]
+        gcongr
+        simpa using norm_add_le (x : ℂ) ((y : ℂ) * Complex.I)
+      _ ≤ _ := by nlinarith [mul_nonneg hM (sub_nonneg.mpr hlarge)]
+  have hshift : verticalPoint x y - 1 = verticalPoint (x - 1) y := by push_cast; ring
+  rw [norm_mul, hshift]
+  calc ‖1 - verticalPoint x y‖ * ‖Φ (verticalPoint (x - 1) y)‖ ≤ (M + 2) * |y| * (C / |y| ^ (n + 1)) :=
+      mul_le_mul hle (hy (x - 1) ⟨by linarith [hx.1], by linarith [hx.2]⟩) (norm_nonneg _) (by positivity)
+    _ = _ := by rw [pow_succ]; field_simp [(zero_lt_one.trans_le hlarge).ne']
+
+/-- Every vertical trace of an entire function with rapid strip decay is integrable. -/
+private theorem entireTrace_integrable {Φ : ℂ → ℂ} (h : SchwartzOnVerticalStrips Φ) (c : ℝ) :
+    Complex.VerticalIntegrable Φ c :=
+  (h.2 (c - 1) (c + 1) (by linarith)).verticalIntegrable c ⟨by linarith, by linarith⟩
+
+/-- On a vertical line the inverse Mellin phase has constant norm. -/
+private theorem invKernel_integrable {Φ : ℂ → ℂ} (h : SchwartzOnVerticalStrips Φ) {t : ℝ} (ht : 0 < t)
+    (c : ℝ) : Complex.VerticalIntegrable (invKernel Φ t) c := by
+  have hp : Continuous (fun y : ℝ ↦ (t : ℂ) ^ (-(verticalPoint c y))) :=
+    Continuous.const_cpow (by fun_prop) (.inl (by exact_mod_cast ht.ne'))
+  have bound (y : ℝ) : ‖(t : ℂ) ^ (-(verticalPoint c y))‖ ≤ t ^ (-c) := by
+    simp [Complex.norm_cpow_eq_rpow_re_of_pos ht]
+  exact ((entireTrace_integrable h c).bdd_mul hp.aestronglyMeasurable (Eventually.of_forall bound)).congr
+    (Eventually.of_forall fun y ↦ mul_comm _ _)
+
+/-- Shift the contour to any negative real part before differentiating or approaching zero. -/
+private theorem invProfile_eq_shift {Φ : ℂ → ℂ} (h : SchwartzOnVerticalStrips Φ) {t : ℝ} (ht : 0 < t)
+    {c : ℝ} (hc : c < 0) : invProfile Φ t = verticalLineIntegral (invKernel Φ t) c := by
+  change (Ioi (0 : ℝ)).indicator _ t = _
+  rw [indicator_of_mem (show t ∈ Ioi (0 : ℝ) from ht)]
+  refine verticalIntegral_eq_of_contour_shift hc.le ?_ (invKernel_integrable h ht c) (invKernel_integrable h ht 0) ?_
+  · have hp : Differentiable ℂ (fun s : ℂ ↦ (t : ℂ) ^ (-s)) :=
+      differentiable_id.neg.const_cpow (.inl (by exact_mod_cast ht.ne'))
+    exact (h.1.mul hp).differentiableOn
+  · obtain ⟨C, hC, hdec⟩ := (h.2 (c - 1) 1 (by linarith)).2.2 1 zero_lt_one (by linarith) 1 le_rfl
+    obtain ⟨B, hB⟩ := (isCompact_Icc (a := c) (b := 0)).bddAbove_image
+      ((Real.continuous_const_rpow ht.ne').comp continuous_neg).continuousOn
+    apply squeeze_zero_norm'
+    · filter_upwards [hdec] with y hy
+      apply intervalIntegral.norm_integral_le_of_norm_le_const
+      intro x hx
+      have hx' := Ioc_subset_Icc_self ((uIoc_of_le hc.le) ▸ hx)
+      have hx'' := hy x (show x ∈ Icc (c - 1 + 1) (1 - 1) by simpa using hx')
+      have hb := hB (mem_image_of_mem _ hx')
+      rw [norm_mul, Complex.norm_cpow_eq_rpow_re_of_pos ht]
+      simp only [Complex.neg_re, Complex.add_re, Complex.ofReal_re, Complex.mul_I_re, Complex.ofReal_im,
+        neg_zero, add_zero, pow_one] at *
+      exact mul_le_mul hx'' hb (Real.rpow_nonneg ht.le _) (by positivity)
+    · have hy : Tendsto (abs : ℝ → ℝ) atAbsInfty atTop := tendsto_comap
+      simpa using (((tendsto_const_nhds (x := C)).div_atTop hy).mul_const B).mul_const |0 - c|
+
+/-- Differentiation on the line of real part minus one produces the shifted multiplier. -/
+private theorem invProfile_hasDerivAt_pos {Φ : ℂ → ℂ} (h : SchwartzOnVerticalStrips Φ)
+    {t : ℝ} (ht : 0 < t) : HasDerivAt (invProfile Φ) (invProfile (invDeriv Φ) t) t := by
+  let p (y : ℝ) := verticalPoint (-1) y
+  let q (y : ℝ) := verticalPoint 0 y
+  let F (u y : ℝ) := invKernel Φ u (p y)
+  let F' (u y : ℝ) := invKernel (invDeriv Φ) u (q y)
+  have hs := invDeriv_schwartz h
+  have hpq (y : ℝ) : q y - 1 = p y := by dsimp [p, q]; push_cast; ring
+  have hexp (y : ℝ) : -(p y) - 1 = -(q y) := by rw [← hpq]; ring
+  have lim : HasDerivAt (fun u ↦ ∫ y, F u y) (∫ y, F' t y) t := by
+    refine (hasDerivAt_integral_of_dominated_loc_of_deriv_le (F := F) (F' := F')
+      (bound := fun y ↦ ‖invDeriv Φ (q y)‖) (Ioi_mem_nhds ht) ?_ (invKernel_integrable h ht (-1))
+      (invKernel_integrable hs ht 0).aestronglyMeasurable ?_ (entireTrace_integrable hs 0).norm ?_).2
+    · filter_upwards [Ioi_mem_nhds ht] with u hu
+      exact (invKernel_integrable h hu (-1)).aestronglyMeasurable
+    · filter_upwards with y u hu
+      simp [F', Complex.norm_cpow_eq_rpow_re_of_pos hu, q]
+    · filter_upwards with y u hu
+      have hne : -(p y) ≠ 0 := by
+        intro he
+        simpa [p] using congrArg Complex.re he
+      have hder := (hasDerivAt_ofReal_cpow_const (ne_of_gt hu) hne).const_mul (Φ (p y))
+      convert hder using 1
+      dsimp only [F']
+      rw [hexp, hpq, ← hpq]
+      ring
+  have hEq : invProfile Φ =ᶠ[𝓝 t] (fun u ↦ Complex.I * ∫ y, F u y) :=
+    (eventually_gt_nhds ht).mono fun u hu ↦ invProfile_eq_shift h hu (by norm_num : (-1 : ℝ) < 0)
+  change HasDerivAt _ ((Ioi (0 : ℝ)).indicator _ t) t
+  rw [indicator_of_mem ht]
+  exact (lim.const_mul Complex.I).congr_of_eventuallyEq hEq
+
+/-- A contour at real part minus two bounds the profile by a quadratic at the origin. -/
+private theorem invProfile_hasDerivAt_zero {Φ : ℂ → ℂ} (h : SchwartzOnVerticalStrips Φ) :
+    HasDerivAt (invProfile Φ) 0 0 := by
+  let C := ∫ y : ℝ, ‖Φ (verticalPoint (-2) y)‖
+  have hC : 0 ≤ C := integral_nonneg fun _ ↦ norm_nonneg _
+  have bound (u : ℝ) : ‖invProfile Φ u‖ ≤ C * |u| ^ 2 := by
+    by_cases hu : 0 < u
+    · rw [invProfile_eq_shift h hu (by norm_num : (-2 : ℝ) < 0), verticalLineIntegral, norm_mul,
+        Complex.norm_I, one_mul, abs_of_pos hu]
+      rw [show C * u ^ 2 = ∫ y : ℝ, ‖Φ (verticalPoint (-2) y)‖ * u ^ 2 from (integral_mul_const _ _).symm]
+      apply norm_integral_le_of_norm_le ((entireTrace_integrable h (-2)).norm.mul_const _) (Eventually.of_forall _)
+      intro y
+      simp [Complex.norm_cpow_eq_rpow_re_of_pos hu]
+    · change ‖(Ioi (0 : ℝ)).indicator _ u‖ ≤ _
+      rw [indicator_of_notMem (show u ∉ Ioi (0 : ℝ) from hu), norm_zero]
+      positivity
+  rw [hasDerivAt_iff_tendsto]
+  simp only [indicator_of_notMem (show (0 : ℝ) ∉ Ioi 0 by simp), sub_zero, smul_zero]
+  apply squeeze_zero (g := fun u : ℝ ↦ C * |u|) (fun u ↦ mul_nonneg (by positivity) (norm_nonneg _))
+  · intro u
+    by_cases hu : u = 0
+    · simp [hu]
+    · calc ‖u‖⁻¹ * ‖invProfile Φ u‖ ≤ ‖u‖⁻¹ * (C * |u| ^ 2) := by gcongr; exact bound u
+        _ = C * |u| := by rw [Real.norm_eq_abs]; field_simp [abs_ne_zero.mpr hu]
+  · have cont : Continuous (fun u : ℝ ↦ C * |u|) := continuous_const.mul continuous_abs
+    simpa only [abs_zero, mul_zero] using cont.tendsto 0
+
+/-- The zero-extended inverse Mellin profile differentiates by a shifted multiplier. -/
+private theorem invProfile_hasDerivAt {Φ : ℂ → ℂ} (h : SchwartzOnVerticalStrips Φ) (t : ℝ) :
+    HasDerivAt (invProfile Φ) (invProfile (invDeriv Φ) t) t := by
+  rcases lt_trichotomy t 0 with ht | rfl | ht
+  · change HasDerivAt _ ((Ioi (0 : ℝ)).indicator _ t) t
+    rw [indicator_of_notMem (show t ∉ Ioi (0 : ℝ) from ht.not_gt)]
+    exact (hasDerivAt_const t (0 : ℂ)).congr_of_eventuallyEq
+      ((eventually_lt_nhds ht).mono fun u hu ↦ indicator_of_notMem (show u ∉ Ioi (0 : ℝ) from (le_of_lt hu).not_gt) _)
+  · simpa using invProfile_hasDerivAt_zero h
+  · exact invProfile_hasDerivAt_pos h ht
+
 /-- Paper: Remark B.2.2.5, p. 603. The zero extension of the imaginary-axis
 contour integral is smooth on the real line. -/
 theorem contDiff_zeroExtension_mellinInv_of_schwartzOnVerticalStrips {Φ : ℂ → ℂ}
     (hΦ : SchwartzOnVerticalStrips Φ) :
     ContDiff ℝ ∞ ((Ioi (0 : ℝ)).indicator fun t ↦
-      verticalLineIntegral (fun s ↦ Φ s * (t : ℂ) ^ (-s)) 0) := by sorry
+      verticalLineIntegral (fun s ↦ Φ s * (t : ℂ) ^ (-s)) 0) := by
+  change ContDiff ℝ ∞ (invProfile Φ)
+  apply contDiff_of_differentiable_iteratedDeriv
+  intro n _
+  induction n generalizing Φ with
+  | zero =>
+    rw [iteratedDeriv_zero]
+    exact fun t ↦ (invProfile_hasDerivAt hΦ t).differentiableAt
+  | succ n ih =>
+    have he : deriv (invProfile Φ) = invProfile (invDeriv Φ) := funext fun t ↦ (invProfile_hasDerivAt hΦ t).deriv
+    rw [iteratedDeriv_succ', he]
+    exact ih (invDeriv_schwartz hΦ) le_top
+
+end InverseContour
 
 /-- Apply the strip estimate to a compact interval of arbitrary placement. -/
 private theorem closedSubstrip_decay {Φ : ℂ → ℂ} {a b c d : ℝ} (h : UniformlySchwartzOnStrip Φ a b)

@@ -261,12 +261,22 @@ theorem isDPrimeSequence_openSubgroup_iff [μ.IsHaarMeasure] :
 /-- Paper: Proposition A.5.2.3(2), p. 570. Openness agrees in the open subgroup
 and in the ambient group. -/
 theorem isOpen_sequence_openSubgroup_iff :
-    (∀ k, IsOpen (U k)) ↔ ∀ k, IsOpen (inclusion '' U k) := by sorry
+    (∀ k, IsOpen (U k)) ↔ ∀ k, IsOpen (inclusion '' U k) :=
+  forall_congr' fun _ ↦ H.isOpen.isOpenEmbedding_subtypeVal.isOpen_iff_image_isOpen
 
 /-- Paper: Proposition A.5.2.3(2), p. 570. Inversion symmetry agrees in the open
 subgroup and in the ambient group. -/
 theorem inv_eq_sequence_openSubgroup_iff :
-    (∀ k, (U k)⁻¹ = U k) ↔ ∀ k, (inclusion '' U k)⁻¹ = inclusion '' U k := by sorry
+    (∀ k, (U k)⁻¹ = U k) ↔ ∀ k, (inclusion '' U k)⁻¹ = inclusion '' U k := by
+  have key (s : Set H) : (inclusion '' s)⁻¹ = inclusion '' s⁻¹ := by
+    ext x
+    simp only [Set.mem_inv, Set.mem_image]
+    constructor
+    · rintro ⟨y, hy, hyx⟩
+      exact ⟨y⁻¹, by simpa using hy, by simp [hyx]⟩
+    · rintro ⟨y, hy, rfl⟩
+      exact ⟨y⁻¹, hy, by simp⟩
+  exact forall_congr' fun k ↦ by rw [key, Subtype.val_injective.image_injective.eq_iff]
 
 /-- Paper: Remark A.5.2.4, p. 570. The constant singleton of the identity
 is an open, symmetric D-sequence on a countable discrete abelian group. -/
@@ -284,13 +294,18 @@ theorem isDSequence_singleton_one [Countable G] [DiscreteTopology G] [μ.IsHaarM
 /-- Paper: Remark A.5.2.4, p. 570. The constant singleton of the identity
 forms a D′-sequence on a countable discrete abelian group. -/
 theorem isDPrimeSequence_singleton_one [Countable G] [DiscreteTopology G] [μ.IsHaarMeasure] :
-    IsDPrimeSequence μ (fun _ ↦ ({1} : Set G)) := by sorry
+    IsDPrimeSequence μ (fun _ ↦ ({1} : Set G)) :=
+  ⟨isDSequence_singleton_one μ, fun _ hW ↦ ⟨0, singleton_subset_iff.mpr (mem_of_mem_nhds hW)⟩⟩
 
 /-- Paper: Remark A.5.2.4, p. 570. The constant singleton of the identity, paired
 with itself, is a D″-sequence on a countable discrete abelian group. -/
 theorem isDDoublePrimeSequence_singleton_one [Countable G] [DiscreteTopology G]
     [μ.IsHaarMeasure] :
-    IsDDoublePrimeSequence μ (fun _ ↦ ({1} : Set G)) (fun _ ↦ ({1} : Set G)) := by sorry
+    IsDDoublePrimeSequence μ (fun _ ↦ ({1} : Set G)) (fun _ ↦ ({1} : Set G)) := by
+  refine ⟨isDPrimeSequence_singleton_one μ, 1, one_pos, fun _ ↦
+    ⟨(measurableSet_singleton 1).nullMeasurableSet, ?_, ?_⟩⟩
+  · simp
+  · simp
 
 end TopologicalGroups
 
@@ -546,7 +561,26 @@ theorem mem_all_infiniteIdeleLogNeighborhood_iff (g : N∞) :
 /-- Paper: Lemma A.5.2.13(2), p. 576. Each shrinking log cube pulls back
 to an inversion-invariant subset of the archimedean norm-one group. -/
 theorem inv_infiniteIdeleLogNeighborhood (k : ℕ) :
-    (infiniteIdeleLogNeighborhood F b k)⁻¹ = infiniteIdeleLogNeighborhood F b k := by sorry
+    (infiniteIdeleLogNeighborhood F b k)⁻¹ = infiniteIdeleLogNeighborhood F b k := by
+  have hlog (x : (InfiniteAdeleRing F)ˣ) : infiniteIdeleLog F x⁻¹ = -infiniteIdeleLog F x := by
+    have h1 : infiniteIdeleLog F 1 = 0 := by
+      funext v
+      show (v.mult : ℝ) * Real.log ‖(1 : v.Completion)‖ = 0
+      simp
+    have := infiniteIdeleLog_mul F x⁻¹ x
+    rw [inv_mul_cancel, h1] at this
+    exact eq_neg_of_add_eq_zero_left this.symm
+  have key (g : N∞) (hg : g ∈ infiniteIdeleLogNeighborhood F b k) :
+      g⁻¹ ∈ infiniteIdeleLogNeighborhood F b k := by
+    obtain ⟨t, ht, hgt⟩ := hg
+    refine ⟨-t, fun i ↦ ?_, fun w ↦ ?_⟩
+    · have := ht i
+      simp only [Set.mem_Ioo, Pi.neg_apply] at this ⊢
+      constructor <;> linarith [this.1, this.2]
+    · rw [InvMemClass.coe_inv, hlog, Pi.neg_apply, hgt w]
+      simp [Finset.sum_neg_distrib]
+  ext g
+  exact ⟨fun h ↦ by simpa using key _ h, fun h ↦ key _ h⟩
 
 -- TODO(paper-gap): The D′ and D″ assertions of Lemma A.5.2.13(2) fail. All the
 -- preimages in (A.5.2.19) contain the log kernel, including the nonidentity element −1.
@@ -577,7 +611,18 @@ theorem inv_sLocalIdeleLogNeighborhood
     (B : ℕ → Set (((v : {v : HeightOneSpectrum (𝓞 F) // v ∈ S}) → v.val.adicCompletion F)ˣ))
     (k : ℕ) (hB : (B k)⁻¹ = B k) :
     (sLocalIdeleLogNeighborhood F b S B k)⁻¹ =
-      sLocalIdeleLogNeighborhood F b S B k := by sorry
+      sLocalIdeleLogNeighborhood F b S B k := by
+  have key (g : Nₛ) (hg : g ∈ sLocalIdeleLogNeighborhood F b S B k) :
+      g⁻¹ ∈ sLocalIdeleLogNeighborhood F b S B k := by
+    obtain ⟨⟨h, hh, hgh⟩, hfin⟩ := hg
+    refine ⟨⟨h⁻¹, ?_, ?_⟩, ?_⟩
+    · exact (Set.ext_iff.mp (inv_infiniteIdeleLogNeighborhood F b k) h⁻¹).mp
+        (Set.inv_mem_inv.mpr hh)
+    · rw [map_inv, hgh, InvMemClass.coe_inv, map_inv]
+    · rw [InvMemClass.coe_inv, map_inv, ← hB]
+      exact Set.inv_mem_inv.mpr hfin
+  ext g
+  exact ⟨fun h ↦ by simpa using key _ h, fun h ↦ key _ h⟩
 
 -- TODO(paper-gap): Lemma A.5.2.14(1) inherits the nonshrinking log kernel.
 -- For ℚ(i) the persistent circle also has nontrivial image in J_F,S¹ for S = S∞,
@@ -603,7 +648,18 @@ the product neighborhood in the global norm-one ideles is symmetric.
 Deviation: The D′ condition fails for the printed sequence. -/
 theorem inv_ideleLogNeighborhood (B : ℕ → Set (FiniteAdeleRing (𝓞 F) F)ˣ)
     (k : ℕ) (hB : (B k)⁻¹ = B k) :
-    (ideleLogNeighborhood F b B k)⁻¹ = ideleLogNeighborhood F b B k := by sorry
+    (ideleLogNeighborhood F b B k)⁻¹ = ideleLogNeighborhood F b B k := by
+  have key (g : N₁) (hg : g ∈ ideleLogNeighborhood F b B k) :
+      g⁻¹ ∈ ideleLogNeighborhood F b B k := by
+    obtain ⟨⟨h, hh, hgh⟩, hfin⟩ := hg
+    refine ⟨⟨h⁻¹, ?_, ?_⟩, ?_⟩
+    · exact (Set.ext_iff.mp (inv_infiniteIdeleLogNeighborhood F b k) h⁻¹).mp
+        (Set.inv_mem_inv.mpr hh)
+    · rw [map_inv, hgh, InvMemClass.coe_inv, map_inv]
+    · rw [InvMemClass.coe_inv, map_inv, ← hB]
+      exact Set.inv_mem_inv.mpr hfin
+  ext g
+  exact ⟨fun h ↦ by simpa using key _ h, fun h ↦ key _ h⟩
 
 -- TODO(paper-gap): The D′ assertions of Lemma A.5.2.16 fail. Over ℚ(i) every set
 -- contains the archimedean circle, whose images in the class groups are nontrivial.
@@ -624,7 +680,14 @@ theorem norm_image_normSectionNeighborhood {G : Type*} [Group G] (n : G →* ℝ
     (τ : ℝ≥0ˣ →* G) (hτ : RightInverse τ n) (U : ℕ → Set G) (k : ℕ+)
     (hU₁ : 1 ∈ U k) (hU : U k ⊆ n.ker) :
     n '' normSectionNeighborhood τ U k =
-      {t : ℝ≥0ˣ | (t.val : ℝ) ∈ Ioo (1 - 1 / (k : ℝ)) (1 + 1 / (k : ℝ))} := by sorry
+      {t : ℝ≥0ˣ | (t.val : ℝ) ∈ Ioo (1 - 1 / (k : ℝ)) (1 + 1 / (k : ℝ))} := by
+  ext t
+  simp only [normSectionNeighborhood, Set.mem_image, Set.mem_mul]
+  constructor
+  · rintro ⟨_, ⟨_, ⟨s, hs, rfl⟩, u, hu, rfl⟩, rfl⟩
+    rwa [map_mul, hτ s, MonoidHom.mem_ker.mp (hU hu), mul_one]
+  · intro ht
+    exact ⟨τ t * 1, ⟨τ t, ⟨t, ht, rfl⟩, 1, hU₁, rfl⟩, by rw [mul_one, hτ t]⟩
 
 -- TODO(paper-gap): Lemma A.5.2.17 has the same interval problems as A.5.2.15 and
 -- retains the log kernel in each norm-one factor and in its class-group images.

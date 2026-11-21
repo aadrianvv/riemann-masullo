@@ -5,6 +5,7 @@
 | Integrator | [`integrator.md`](integrator.md) | the whole repository; one long-running session | merges, issues |
 | Merger | [`merger.md`](merger.md) | the pull-request queue; one long-running session | merged proofs, reviews of splits |
 | Progress tracker | [`progress-tracker.md`](progress-tracker.md) | the public progress map | updated Claude artifact |
+| Reviewer | [`reviewer.md`](reviewer.md) | one statement pull request | a review against the paper, posted on the pull request |
 | Scout | [`scout.md`](scout.md) | one issue | a comment listing existing Lean and literature |
 | Digester | [`digester.md`](digester.md) | one `section` issue | a pull request of statements with `sorry` |
 | Prover | [`prover.md`](prover.md) | one `proof` issue | a pull request that proves or splits it |
@@ -42,5 +43,10 @@ prompts/merger.md and start"). The merger never touches the working tree there.
 Start the progress tracker by hand in the main checkout, in a Claude session with the Artifact
 tool. Give it the instruction “You are the progress tracker. Read `prompts/progress-tracker.md`
 and start.”
+
+A reviewer is launched with `scripts/review.sh <pull request> --model gpt-6.2-astra --effort xhigh`.
+It gets the pull request's files, the paper pages and the digester's report in a scratch
+directory, can read the built `main` but change nothing, and its review is posted on the pull
+request.
 
 Every agent also reads [`AGENTS.md`](../AGENTS.md), which holds the rules common to all roles.

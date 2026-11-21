@@ -108,7 +108,20 @@ def infiniteLocalEulerFactor (w : InfinitePlace F) (c : QuasiCharacter w.Complet
 at a real place is the unshifted real gamma factor. -/
 theorem infiniteLocalEulerFactor_real_norm (w : InfinitePlace F) (_hw : w.IsReal) (s : ℂ) :
     infiniteLocalEulerFactor w (chart∞[w, (1 : PontryaginDual w.Completionˣ)] s) =
-      Complex.Gammaℝ s := by sorry
+      Complex.Gammaℝ s := by
+  have hshape : realShape[_hw, (chart∞[w, (1 : PontryaginDual w.Completionˣ)] s), s,
+      (0 : Fin 2)] := by
+    intro x
+    have hn : ‖((realModel(_hw)).symm (x : ℝ) : w.Completion)‖ = ‖(x : ℝ)‖ :=
+      (InfinitePlace.Completion.isometryEquivRealOfIsReal _hw).symm.isometry.norm_map_of_map_zero
+        (map_zero (realModel(_hw)).symm) (x : ℝ)
+    change (((1 : PontryaginDual w.Completionˣ)
+      (Units.map (realModel(_hw)).symm.toMonoidHom x) : Circle) : ℂ) *
+      (((m∞(w) (Units.map (realModel(_hw)).symm.toMonoidHom x) : ℝ≥0) : ℝ) : ℂ) ^ s = _
+    simp [InfinitePlace.mult, _hw, hn]
+  have h := (realLocalEulerParameters w _hw _).unique
+    (realLocalEulerParameters w _hw _).exists.choose_spec (y₂ := (s, 0)) hshape
+  simp only [infiniteLocalEulerFactor, _hw, ↓reduceDIte, h, Fin.val_zero, Nat.cast_zero, add_zero]
 
 /-- Paper: Equation (3.3.1.25), p. 134. The finite local Euler factor of an
 unramified character is the reciprocal of one minus its value at a uniformizer.
@@ -257,7 +270,10 @@ the constant epsilon factor i with the existing Fourier transform.
 Deviation: The printed phase is conjugated. -/
 theorem infiniteLocalEpsilonFactor_real_odd (w : InfinitePlace F) (hw : w.IsReal)
     (c : QuasiCharacter w.Completionˣ) (s : ℂ) (hc : realShape[hw, c, s, 1]) :
-    infiniteLocalEpsilonFactor w c = Complex.I := by sorry
+    infiniteLocalEpsilonFactor w c = Complex.I := by
+  have h := (realLocalEulerParameters w hw c).unique
+    (realLocalEulerParameters w hw c).exists.choose_spec (y₂ := (s, 1)) hc
+  simp only [infiniteLocalEpsilonFactor, hw, ↓reduceDIte, h, Fin.val_one, pow_one]
 
 /-- Paper: Lemma 3.3.1.7(3)(a)(iii), pp. 135–136. The finite epsilon factor
 is the local Tate factor with the two local Euler factors removed.
@@ -412,7 +428,8 @@ archimedean Z-function gives the integral using the multiplicative Tamagawa meas
 theorem infiniteLocalIdelicZFunction_eq_integral (w : InfinitePlace F) (f : ℬ(w.Completion))
     (χ : PontryaginDual w.Completionˣ) {s : ℂ} (hs : s ∈ rightHalf) :
     infiniteLocalIdelicZFunction w f (chart∞[w, χ] s) =
-      localIdelicZetaIntegral μ∞(w) test(f) (chart∞[w, χ] s) := by sorry
+      localIdelicZetaIntegral μ∞(w) test(f) (chart∞[w, χ] s) :=
+  ((infiniteLocalIdelicZFunction_existsUnique w f).exists.choose_spec χ).2 hs
 
 /-- Paper: §3.3.2, p. 137. The finite local integral (3.3.2.1) has a unique
 meromorphic continuation, in normal form in every norm-twist chart. -/
@@ -433,7 +450,8 @@ finite local Z-function gives the integral using the multiplicative Tamagawa mea
 theorem finiteLocalIdelicZFunction_eq_integral (v : Primes) (f : ℬ(v.adicCompletion F))
     (χ : PontryaginDual (v.adicCompletion F)ˣ) {s : ℂ} (hs : s ∈ rightHalf) :
     finiteLocalIdelicZFunction v f (chart𝔭[v, χ] s) =
-      localIdelicZetaIntegral μ𝔭(v) test(f) (chart𝔭[v, χ] s) := by sorry
+      localIdelicZetaIntegral μ𝔭(v) test(f) (chart𝔭[v, χ] s) :=
+  ((finiteLocalIdelicZFunction_existsUnique v f).exists.choose_spec χ).2 hs
 
 /-- Paper: §3.3.2, p. 137. In each archimedean chart the local zeta function
 is meromorphic with values in the strong dual of the test space.

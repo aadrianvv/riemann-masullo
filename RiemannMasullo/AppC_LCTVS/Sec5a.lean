@@ -3,6 +3,7 @@ module
 public import RiemannMasullo.AppC_LCTVS.Sec4
 public import Mathlib.Analysis.Calculus.ContDiff.Basic
 public import Mathlib.Analysis.Calculus.Deriv.Basic
+import Mathlib.Analysis.Calculus.Deriv.Slope
 public import Mathlib.Analysis.InnerProductSpace.PiL2
 public import Mathlib.Topology.Compactness.Paracompact
 public import RiemannMasullo.ForMathlib.Topology.ContinuousMap.CompactlySupported
@@ -743,7 +744,26 @@ theorem vectorDifferentials_complex_id :
       HasWeakDirectionalDerivativesOn (k := ℂ) id D ∧
       WeakGateauxDifferentiableOn (k := ℂ) univ (id : ℂ → ℂ) ∧
       HasStrongDifferentialOn (k := ℂ) (Ω := (univ : Set ℂ)) id Prod.snd ∧
-      VectorContDiffOn (k := ℂ) univ (id : ℂ → ℂ) := by sorry
+      VectorContDiffOn (k := ℂ) univ (id : ℂ → ℂ) := by
+  let L := toPettisWeakCompletion ℂ
+  let D (p : ↥(univ : Set ℂ) × ℂ) := L p.2
+  have hc : HasWeakCompletionDifferentialOn (k := ℂ) id D := by
+    refine ⟨(continuous_toPettisWeakCompletion (E := ℂ)).comp continuous_snd, fun x ↦ ?_⟩
+    refine ⟨⟨L, fun _ ↦ rfl⟩, ?_⟩
+    simpa [D, L, map_sub] using
+      (tendsto_const_nhds (x := (0 : PettisWeakCompletion ℂ))
+        (f := 𝓝[(univ : Set ℂ) \ {(x : ℂ)}] (x : ℂ)))
+  have hd : HasWeakDirectionalDerivativesOn (k := ℂ) id D := by
+    intro x v
+    apply tendsto_const_nhds.congr'
+    filter_upwards [self_mem_nhdsWithin] with h hh
+    have hn : h ≠ 0 := hh.1
+    change L v = algebraMap ℂ ℂ h⁻¹ • L ((x : ℂ) + h • v - x)
+    rw [add_sub_cancel_left, map_smul]
+    exact (inv_smul_smul₀ hn (L v)).symm
+  have hs : HasStrongDifferentialOn (k := ℂ) (Ω := (univ : Set ℂ)) id Prod.snd :=
+    ⟨continuous_snd, hc⟩
+  exact ⟨hc, hd, ⟨D, hd⟩, hs, ⟨Prod.snd, hs⟩⟩
 
 variable {d : ℕ}
 
@@ -1038,18 +1058,63 @@ theorem weaklyContDiffOn_iff_continuous_weakPartials {Ω : Set V} (hΩ : IsOpen 
         ((EuclideanSpace.proj (𝕜 := k) i).continuous.comp continuous_snd)).smul
         ((hPc i).comp continuous_fst)
 
+/-- Paper: Lemma C.5.1.16(1), p. 729. Evaluating a weak directional limit at a
+continuous functional gives the scalar line derivative in that direction. -/
+theorem HasWeakDirectionalDerivativesOn.hasDerivWithinAt
+    {W : Type*} [NormedAddCommGroup W] [NormedSpace k W] {Ω : Set W}
+    {f : W → E} {D : Ω × W → PettisWeakCompletion E}
+    (hD : HasWeakDirectionalDerivativesOn (k := k) f D)
+    (φ : StrongDual ℂ E) (x : Ω) (v : W) :
+    HasDerivWithinAt (fun t : k ↦ φ (f ((x : W) + t • v)))
+      ((show Module.Dual ℂ (StrongDual ℂ E) from D (x, v)) φ)
+      ((fun t : k ↦ (x : W) + t • v) ⁻¹' Ω) 0 := by
+  apply hasDerivWithinAt_iff_tendsto_slope.mpr
+  have h := (WeakBilin.tendsto_iff_forall_eval_tendsto _ injective_id).1 (hD x v) φ
+  change Tendsto (fun h : k ↦ algebraMap k ℂ h⁻¹ * φ (f ((x : W) + h • v) - f x))
+    (𝓝[{h : k | h ≠ 0 ∧ (x : W) + h • v ∈ Ω}] 0)
+    (𝓝 ((show Module.Dual ℂ (StrongDual ℂ E) from D (x, v)) φ)) at h
+  have hs : ((fun t : k ↦ (x : W) + t • v) ⁻¹' Ω) \ {0} =
+      {t : k | t ≠ 0 ∧ (x : W) + t • v ∈ Ω} := by
+    ext t
+    simp [and_comm]
+  rw [hs, slope_fun_def]
+  simpa only [sub_zero, vsub_eq_sub, zero_smul, add_zero, Algebra.smul_def,
+    map_sub] using! h
+
 /-- Paper: Lemma C.5.1.16(1), p. 729. Weak Gâteaux differentiability gives weak
 differentiability in each standard coordinate direction. -/
 theorem WeakGateauxDifferentiableOn.weaklyPartialDifferentiableOn {Ω : Set V}
     (hΩ : IsOpen Ω) {f : V → E} (hf : WeakGateauxDifferentiableOn (k := k) Ω f) (i : Fin d) :
-    WeaklyPartialDifferentiableOn i f Ω := by sorry
+    WeaklyPartialDifferentiableOn i f Ω := by
+  obtain ⟨D, hD⟩ := hf
+  intro φ x
+  exact (hD.hasDerivWithinAt φ x (EuclideanSpace.single i 1)).differentiableWithinAt
+
+/-- Continuity of a weak directional derivative on the coordinate slices suffices to
+identify all its values with the scalar Fréchet differentials. -/
+theorem HasWeakDirectionalDerivativesOn.hasWeakDifferentialOn {Ω : Set V} (hΩ : IsOpen Ω)
+    (hd : 1 ≤ d) {f : V → E} {D : Ω × V → PettisWeakCompletion E}
+    (hD : HasWeakDirectionalDerivativesOn (k := k) f D)
+    (hc : ∀ i : Fin d, Continuous (fun x : Ω ↦ D (x, EuclideanSpace.single i 1))) :
+    HasWeakDifferentialOn k f D := by
+  have hf : WeaklyContDiffOn k f Ω := (weaklyContDiffOn_iff_continuous_weakPartials hΩ hd f).2
+    fun i ↦ ⟨_, fun φ x ↦ hD.hasDerivWithinAt φ x (EuclideanSpace.single i 1), hc i⟩
+  obtain ⟨_, hA, _⟩ := hf
+  intro φ x
+  obtain ⟨L, hL, _⟩ := hA φ x
+  refine ⟨L, hL, fun v ↦ ?_⟩
+  have hline : HasLineDerivWithinAt k (φ ∘ f)
+      ((show Module.Dual ℂ (StrongDual ℂ E) from D (x, v)) φ) Ω x v := hD.hasDerivWithinAt φ x v
+  exact (hline.hasLineDerivAt (hΩ.mem_nhds x.property)).unique
+    ((hL.hasFDerivAt (hΩ.mem_nhds x.property)).hasLineDerivAt v)
 
 /-- Paper: Lemma C.5.1.16(2), p. 729. A jointly continuous weak Gâteaux derivative
 is the weak differential. -/
 theorem hasWeakDifferentialOn_of_continuous_directional {Ω : Set V} (hΩ : IsOpen Ω)
     (hd : 1 ≤ d) {f : V → E} {D : Ω × V → PettisWeakCompletion E}
     (hD : HasWeakDirectionalDerivativesOn (k := k) f D) (hc : Continuous D) :
-    HasWeakDifferentialOn k f D := by sorry
+    HasWeakDifferentialOn k f D := by
+  exact hD.hasWeakDifferentialOn hΩ hd fun _ ↦ hc.comp (continuous_id.prodMk continuous_const)
 
 variable [IsTopologicalAddGroup E] [ContinuousSMul ℂ E] [PolynormableSpace ℂ E] [T2Space E]
 
@@ -1066,7 +1131,9 @@ preserves weak differentiability. -/
 theorem WeaklyDifferentiableOn.comp {Ω₁ Ω₂ : Set V} (hΩ₁ : IsOpen Ω₁) (hΩ₂ : IsOpen Ω₂)
     {f : V → E} {g : V → V} (hf : WeaklyDifferentiableOn k f Ω₂)
     (hg : DifferentiableOn k g Ω₁) (hmap : MapsTo g Ω₁ Ω₂) :
-    WeaklyDifferentiableOn k (f ∘ g) Ω₁ := by sorry
+    WeaklyDifferentiableOn k (f ∘ g) Ω₁ := by
+  intro φ
+  exact (hf φ).comp hg hmap
 
 -- TODO(paper-gap): In C.5.1.17(2), taking f to be the scalar inclusion and g(t) =
 -- t² sin(1/t) (with g(0) = 0) disproves continuous differentiability of the composite.
@@ -1081,7 +1148,13 @@ theorem HasStrongDifferentialOn.comp_weak {Ω₁ Ω₂ : Set V}
     (hg : DifferentiableOn k g Ω₁) (hmap : MapsTo g Ω₁ Ω₂) :
     HasWeakDifferentialOn k (f ∘ g) (fun xv : Ω₁ × V ↦
       toPettisWeakCompletion E (D (⟨g xv.1, hmap xv.1.property⟩,
-        fderivWithin k g Ω₁ xv.1 xv.2))) := by sorry
+        fderivWithin k g Ω₁ xv.1 xv.2))) := by
+  intro φ x
+  have hf := ((hasWeakCompletionDifferentialOn_iff (k := k) hΩ₂ f _).1 hD.2).1
+  obtain ⟨L, hL, heval⟩ := hf φ ⟨g x, hmap x.property⟩
+  refine ⟨L.comp (fderivWithin k g Ω₁ x), hL.comp (x : V) (hg x x.property).hasFDerivWithinAt hmap, ?_⟩
+  intro v
+  exact heval (fderivWithin k g Ω₁ x v)
 
 -- TODO(paper-gap): For Lemma C.5.1.19, f(x) = x and γ(t) = t² sin(1/t²), extended by
 -- zero, give a differentiable curve with a discontinuous, non-Lebesgue-integrable derivative.
