@@ -50,8 +50,9 @@ checks above suggest it is well below that. What could plausibly still be wrong:
 - a symbol inside a **diagram label**: the 88 diagrams are outside the glyph-by-glyph checks (they
   were compared with the page image twice, and the side of every label was checked against the
   PDF);
-- a difference that keeps every glyph, its size and its height, and changes only the grouping, such
-  as which of two formulas an exponent belongs to when both render the same;
+- two symbols swapped where the PDF stores its glyphs in a different order from the LaTeX (limits
+  of sums and integrals, numerators and denominators), so that the alignment reads the swap as a
+  difference in reading order;
 - the paper's own **misprints**, which are kept as printed on purpose (a formula can be wrong
   because the paper is).
 
