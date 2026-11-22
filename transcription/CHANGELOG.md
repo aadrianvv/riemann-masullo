@@ -332,3 +332,14 @@ From the maintainers' spot check in #2471 and the checks it suggested.
 - **Digits.** Every difference of digits only inside a formula was listed (the earlier pass had
   set digits aside with the footnote marks): none apart from footnote marks.
 - p. 628: `\varepsilon/2` (twice) printed as a fraction.
+- **Words, one to three at a time.** The prose was aligned word by word with the PDF text (words
+  in `\text{…}` inside formulas included), and every difference of one to three words was listed;
+  the earlier check had looked at runs of two or more words in context. Apart from words the
+  print sets in maths, there were four: "as" missing on p. 606 ("tend to 0 as |k|→∞"), the
+  print's doubled "is" on p. 345 that the transcription had tidied, and two misspellings of the
+  print ("neighorhood" p. 794, "completness" p. 797) that the transcription had corrected. All
+  four now as printed.
+- **Diagram layout.** Each diagram's glyphs were grouped into rows and compared, row by row and
+  left to right, with the print, to catch two nodes or labels swapped. Every diagram whose rows
+  did not match exactly (pages with several diagrams, mostly) was compared with the page image
+  again: none has a node or label in the wrong place.

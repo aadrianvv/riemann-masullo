@@ -1177,7 +1177,7 @@ $$
 -\frac{1}{2\pi i}\int_{a+\varepsilon_1-iT_k}^{a+\varepsilon_1+iT_k}+\frac{1}{2\pi i}\int_{b-\varepsilon_2-iT_k}^{b-\varepsilon_2+iT_k}-\frac{1}{2\pi i}\int_{a+\varepsilon_1-iT_k}^{b-\varepsilon_2-iT_k}+\frac{1}{2\pi i}\int_{a+\varepsilon_1+iT_k}^{b-\varepsilon_2+iT_k}(\Phi(s)f(s)\,\mathrm{d}s), \tag{B.3.2.4}
 $$
 
-The uniformly Schwartz condition on $\Phi$ and slow growth condition on $f$ (which includes at most polynomial growth along vertical lines) ensure that $\Phi(s)f(s)$ is absolutely integrable on the two vertical lines $\operatorname{Re}(s)=a+\varepsilon_1,b-\varepsilon_2$, and if we let $|k|\to+\infty$ then by Lemma B.3.1.2 the third and fourth integrals in (B.3.2.4) tend to $0$ $|k|\to\infty$, so as $|k|\to\infty$ the left side of (B.3.2.3) has a limit that is equal to
+The uniformly Schwartz condition on $\Phi$ and slow growth condition on $f$ (which includes at most polynomial growth along vertical lines) ensure that $\Phi(s)f(s)$ is absolutely integrable on the two vertical lines $\operatorname{Re}(s)=a+\varepsilon_1,b-\varepsilon_2$, and if we let $|k|\to+\infty$ then by Lemma B.3.1.2 the third and fourth integrals in (B.3.2.4) tend to $0$ as $|k|\to\infty$, so as $|k|\to\infty$ the left side of (B.3.2.3) has a limit that is equal to
 
 $$
 -\frac{1}{2\pi i}\int_{a+\varepsilon_1-i\infty}^{a+\varepsilon_1+i\infty}\Phi(s)f(s)\,\mathrm{d}s+\frac{1}{2\pi i}\int_{b-\varepsilon_2-i\infty}^{b-\varepsilon_2+i\infty}\Phi(s)f(s)\,\mathrm{d}s. \tag{B.3.2.5}
