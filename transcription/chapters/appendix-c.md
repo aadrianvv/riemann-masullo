@@ -3496,7 +3496,7 @@ $$
 
 by the Fundamental Theorem of Calculus. Since the space $E'$ separates the points of $E$, (C.5.1.37) holds. $\square$
 
-**C.5.1.4. Vector-valued differentiability criterion.** We will now discuss a differentiability criterion, extending Lemma C.5.1.13 to higher order directional derivatives. Such a criterion will hold under the additional assumption on the Hausdorff locally convex topological $\mathbf{C}$-vector space $E$ being quasi-complete. The following Lemma is the key ingredient upon which the differentiability criterion of Theorem C.5.1.24 below rests.
+C.5.1.4. *Vector-valued differentiability criterion.* We will now discuss a differentiability criterion, extending Lemma C.5.1.13 to higher order directional derivatives. Such a criterion will hold under the additional assumption on the Hausdorff locally convex topological $\mathbf{C}$-vector space $E$ being quasi-complete. The following Lemma is the key ingredient upon which the differentiability criterion of Theorem C.5.1.24 below rests.
 
 We record here the following consequence of Lemma C.5.1.12, Lemma C.5.1.13, Lemma C.5.1.15 and Lemma C.5.1.16:
 
@@ -3664,7 +3664,7 @@ so for $E$ quasi-complete the two notions are equivalent by Corollary C.5.1.25. 
 
 For the purposes of this work, $E$ will always be quasi-complete. Thus, there will be no ambiguity as to the meaning of “smooth $E$-valued function”.
 
-**C.5.1.5. Spaces of smooth vector-valued functions.** In this subsection we record a few facts about spaces of smooth vector-valued functions with values in a Hausdorff locally convex quasi-complete topological $\mathbf{C}$-vector space $E$.
+C.5.1.5. *Spaces of smooth vector-valued functions.* In this subsection we record a few facts about spaces of smooth vector-valued functions with values in a Hausdorff locally convex quasi-complete topological $\mathbf{C}$-vector space $E$.
 
 Recall that we write $\mathbf{T}$ for the 1-dimensional compact real torus $\mathbf{R}/\mathbf{Z}$, which is smoothly isomorphic to $\mathrm{U}(1)$ under the exponential function $t \mapsto \exp(2\pi i t)$.
 
@@ -3752,7 +3752,7 @@ We will be using Theorem C.5.1.30(4) in Appendix D (see the proof of Lemma D.1.3
 
 **C.5.2. Holomorphic vector-valued functions.** We start by defining basic concepts of continuity and holomorphy for vector-valued functions on open subsets of $\mathbf{C}$.
 
-**C.5.2.1. Grothendieck’s criterion for holomorphy.** For a Hausdorff locally convex topological $\mathbf{C}$-vector space $E$, we will be identifying $E$ as a linear subspace of $(E')^*$ (although not topologically) under the linear map $\iota_E : E \to (E')^*$ from (C.4.1.1) and studied in Lemma C.4.1.1, when saying that certain linear forms on $E'$ are “elements of $E$”, or are “contained in $E$”. These will ordinarily be integrals in the sense of Pettis, which, recall, are defined for general $E$ as elements of $(E')^*$. The concept of integrability was defined in Definition C.4.2.1(3) via such integrals being contained in $E$.
+C.5.2.1. *Grothendieck’s criterion for holomorphy.* For a Hausdorff locally convex topological $\mathbf{C}$-vector space $E$, we will be identifying $E$ as a linear subspace of $(E')^*$ (although not topologically) under the linear map $\iota_E : E \to (E')^*$ from (C.4.1.1) and studied in Lemma C.4.1.1, when saying that certain linear forms on $E'$ are “elements of $E$”, or are “contained in $E$”. These will ordinarily be integrals in the sense of Pettis, which, recall, are defined for general $E$ as elements of $(E')^*$. The concept of integrability was defined in Definition C.4.2.1(3) via such integrals being contained in $E$.
 
 Recall that we call $\Omega \subset \mathbf{C}$ a domain, or a complex domain, if $\Omega \subset \mathbf{C}$ is non-empty open and connected.
 
@@ -3904,7 +3904,7 @@ $$\frac{f(\xi)}{(\xi - \xi_0)^{k+1}} = \frac{(\xi - \xi_0)^N f(\xi)}{(\xi - \xi_
 
 we’re reduced to the settled holomorphic case. $\square$
 
-**C.5.3.1. Vector-valued residues.** We construct the following operators on $\mathscr{M}(\Omega, E)$:
+C.5.3.1. *Vector-valued residues.* We construct the following operators on $\mathscr{M}(\Omega, E)$:
 
 $$
 \operatorname{Res}_\xi(f) := a_{-1}(\xi, f), \quad \xi \in \Omega. \tag{C.5.3.5}
@@ -3972,7 +3972,7 @@ Here too quasi-completeness is being used to know holomorphic is equivalent to w
 
 We will, throughout this work, always be able to assume quasi-completeness of the Hausdorff locally convex topological $\mathbf{C}$-vector space of values of the holomorphic and meromorphic functions of interest since these spaces will always be the strong dual of a quotient of the Schwartz-Bruhat space of the global, respectively $S$-local, adeles of a number field $F$, for $F$ a finite set of places containing all the Archimedean places. Such duals are quasi-complete, and even complete.
 
-**C.5.4.1. Vector-valued Identity Theorem.** We record here below the following analog of the Identity Theorem from classical complex analysis:
+C.5.4.1. *Vector-valued Identity Theorem.* We record here below the following analog of the Identity Theorem from classical complex analysis:
 
 **Lemma C.5.4.3.** *Let $E$ be a Hausdorff quasi-complete locally convex topological $\mathbf{C}$-vector space, $\Omega \subset \mathbf{C}$ a domain, $(f_1, D_1)$ and $(f_2, D_2)$ two meromorphic $E$-valued functions on $\Omega$. Let $B \subset \Omega - (D_1 \cup D_2)$ be a non-empty open disc such that*
 

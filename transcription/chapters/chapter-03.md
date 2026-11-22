@@ -992,7 +992,7 @@ REMARK 3.3.1.6 (On partial Euler products). For any choice of connected componen
 
 Indeed, upon calling $\chi_S$ such composition, this is a continuous character of the open, hence closed (by [DE, Lemma 1.1.7(c)]) subgroup $C_{F,S}\subset C_F$, and by [DE, Cor.3.6.2], there exists a continuous character $\chi'\in\widehat{C_F}$ extending $\chi_S$ from $C_{F,S}$ to $C_F$. There therefore exists a finite set of places $S'$ of $F$ containing $S$ such that $\chi'$ is unramified outside $S'$, and large enough so as to have that $\mathrm{Pic}(\mathcal{O}_{F,S'})=1$ holds.
 
-3.3.1.2. $\epsilon_S$-factors and the $S$-local functional equation. In the Lemma below, we revisit the $S$-local functional equation from Theorem 3.3.1.1, and rewrite it in terms of $\epsilon_S$-factors.
+3.3.1.2. *$\epsilon_S$-factors and the $S$-local functional equation.* In the Lemma below, we revisit the $S$-local functional equation from Theorem 3.3.1.1, and rewrite it in terms of $\epsilon_S$-factors.
 
 LEMMA 3.3.1.7 ($\epsilon_S$-factors and the $S$-local functional equation). *Let $F$ be a number field, $S$ a finite set of places containing all Archimedean places. Let $\omega$ be a continuous unitary character of $J_{F,S}^1$.*
 
@@ -1524,7 +1524,7 @@ $^{3}$Why do such identities hold? Must say more about how this follows.
 
 **3.4. EIGENDISTRIBUTIONS AND WEIL’S IDENTITY** · **145**
 
-3.4.2.1. Convergence on the relative 1-line. We record here below an application of Weil’s Identity from Theorem 3.4.1.1: an observation that, while not used throughout this work, we find opportune to mention here. It concerns the validity of the identity in (3.2.2.1) from Theorem 3.2.2.1, which is taken as the definition of $Z(f, c)$ over $\Omega(C_F)_{>1}$, over the relative 1-line, i.e. the discretely-parametrized family of vertical lines:
+3.4.2.1. *Convergence on the relative 1-line.* We record here below an application of Weil’s Identity from Theorem 3.4.1.1: an observation that, while not used throughout this work, we find opportune to mention here. It concerns the validity of the identity in (3.2.2.1) from Theorem 3.2.2.1, which is taken as the definition of $Z(f, c)$ over $\Omega(C_F)_{>1}$, over the relative 1-line, i.e. the discretely-parametrized family of vertical lines:
 
 $$
 \{\sigma(c) = 1, c \in \Omega(C_F)\} \subset \Omega(C_F)
@@ -1570,7 +1570,7 @@ for the Hecke $L$-function $L(s, \chi)$, as $S'$ varies over all finite sets of 
 
 This is indeed the case by Corollary B.7.2.5 (a consequence of Perron’s Formula; see also [T2, Ch.III, §3.15, p.66] for the special case $F = \mathbf{Q}$ and $\chi = 1$). $\square$
 
-3.4.2.2. Estimates on adelic $\theta$-functions, uniformly on Schwartz-Bruhat-bounded subsets. We record here the following result as another application of Theorem 3.4.1.1, presenting a different method to establish some
+3.4.2.2. *Estimates on adelic $\theta$-functions, uniformly on Schwartz-Bruhat-bounded subsets.* We record here the following result as another application of Theorem 3.4.1.1, presenting a different method to establish some
 
 ## PDF page 146
 

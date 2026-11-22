@@ -2052,7 +2052,7 @@ i_{F,S}:C_{F,S}\to C_F
 $$
 *with finite cokernel $\mathrm{Pic}(\mathcal{O}_{F,S})$ (so it is an isomorphism between identity components $C_{F,S}^0\simeq C_F^0$ for all $S$, and an isomorphism for all sufficiently large $S$).*
 
-D.1.10.1. Complements on the locally convex topology on Schwartz-Bruhat spaces. For convenient reference, we wish to record several families of seminorms that define the topology on $\mathcal{S}(G)$ for some classes of Hausdorff locally compact abelian groups $G$. To get started, the Hausdorff locally convex topology on $\mathcal{S}(\mathbf{R})$ (whose construction is reviewed in Definition 2.1.1.4 for $\mathbf{R}^m$ with any $m\ge 1$) is usually defined using sup-norms but it can also be defined by a family of seminorms involving the Fourier transform and $L^2$-norms:
+D.1.10.1. *Complements on the locally convex topology on Schwartz-Bruhat spaces.* For convenient reference, we wish to record several families of seminorms that define the topology on $\mathcal{S}(G)$ for some classes of Hausdorff locally compact abelian groups $G$. To get started, the Hausdorff locally convex topology on $\mathcal{S}(\mathbf{R})$ (whose construction is reviewed in Definition 2.1.1.4 for $\mathbf{R}^m$ with any $m\ge 1$) is usually defined using sup-norms but it can also be defined by a family of seminorms involving the Fourier transform and $L^2$-norms:
 
 Proposition D.1.10.2. *Let $\mathcal{F}_{\mathbf{R}}:\mathcal{S}(\mathbf{R})\simeq\mathcal{S}(\mathbf{R})$ be the Fourier transform $\mathcal{F}_{\mathbf{R}}(f):x\mapsto\int_{\mathbf{R}}f(y)e^{-2\pi ixy}\,\mathrm{d}y$, and for integers $m,n\ge 0$ let $\nu_{m,n}:\mathcal{S}(\mathbf{R})\to\mathbf{R}_{\ge 0}$ be the seminorm*
 $$
@@ -2304,7 +2304,7 @@ $$
 $$
 In particular, the seminorms on the left side are all continuous on $\mathcal{S}(G)$. This proves that the $L^q$-seminorms on $\mathcal{S}(G)$ are each controlled by finitely many of the usual sup-norms on $\mathcal{S}(G)$, as desired. $\square$
 
-D.1.10.2. Families of continuous seminorms on $\mathcal{S}(C_F)$. Let $F$ be a number field, $S$ a finite set of places of $F$ containing all the Archimedean places. We denote by $C_F^1$, respectively $C_{F,S}^1$, the closed subgroups of idele classes of idelic norm 1 of the Hausdorff locally compact abelian groups $C_F$, respectively $C_{F,S}$ of idele classes. $C_F^1$ and $C_{F,S}^1$ are compact Hausdorff (see Theorem A.1.4.3).
+D.1.10.2. *Families of continuous seminorms on $\mathcal{S}(C_F)$.* Let $F$ be a number field, $S$ a finite set of places of $F$ containing all the Archimedean places. We denote by $C_F^1$, respectively $C_{F,S}^1$, the closed subgroups of idele classes of idelic norm 1 of the Hausdorff locally compact abelian groups $C_F$, respectively $C_{F,S}$ of idele classes. $C_F^1$ and $C_{F,S}^1$ are compact Hausdorff (see Theorem A.1.4.3).
 
 The following are families of seminorms that generate the Hausdorff locally convex topology on $\mathcal{S}(C_{F,S}^0)$ and $\mathcal{S}(C_F^0)$, where $G^0$ denotes the identity component of a topological group $G$.
 
@@ -2395,7 +2395,7 @@ $$
 $$
 generate the Hausdorff locally convex topology on $\mathcal{S}(C_F)$. That the Schwartz-Bruhat topology on $\mathcal{S}(C_F)$ remains unaltered upon changing the seminorms $\nu_{r,m,\alpha}^p$ into the seminorms from (D.1.10.17), or those obtained upon replacing $(1+|\log(t)|^r)$ from (D.1.10.17) by $|\log(t)|^r$, is a consequence of the triangle inequality for $L^p$-norms. $\square$
 
-D.1.10.3. Families of continuous seminorms on $\mathcal{S}(C_{F,S})$. The following is the analog of Proposition D.1.10.9 in the case of $C_{F,S}$, for $S$ a finite set of places of $F$ containing the Archimedean places.
+D.1.10.3. *Families of continuous seminorms on $\mathcal{S}(C_{F,S})$.* The following is the analog of Proposition D.1.10.9 in the case of $C_{F,S}$, for $S$ a finite set of places of $F$ containing the Archimedean places.
 
 Proposition D.1.10.10 (Fundamental family of continuous seminorms on $\mathcal{S}(k,C_{F,S})$). *Let $F$ be a number field, $S$ a finite set of places containing the Archimedean places. Let $\gamma_1,\dots,\gamma_{r_1+2r_2-1}$ be the continuous 1-parameter subgroups of the open subgroup $C_{F,S}^1\subset C_F^1$ of finite index provided by Proposition D.1.10.7. Let $\tau$ be a continuous homomorphic section to the $S$-idelic norm.*
 
@@ -2671,7 +2671,7 @@ The completeness of $E(\omega)$ holds because the natural map $\mathrm H^0(\omeg
 
 $\square$
 
-D.2.2.1. A kernel Theorem for $\mathbf R_{>0}$-modulated groups. Lemma D.2.2.2 takes the following form for $G$ any modulated group such that the module $|\cdot|_G$ is surjective; i.e., for which $\Gamma=\mathbf R_{>0}$. (Examples of interest include $G=C_F,C_{F,S},J_{F,S}$.) We refer to these modulated groups as $\mathbf R_{>0}$-modulated.
+D.2.2.1. *A kernel Theorem for $\mathbf R_{>0}$-modulated groups.* Lemma D.2.2.2 takes the following form for $G$ any modulated group such that the module $|\cdot|_G$ is surjective; i.e., for which $\Gamma=\mathbf R_{>0}$. (Examples of interest include $G=C_F,C_{F,S},J_{F,S}$.) We refer to these modulated groups as $\mathbf R_{>0}$-modulated.
 
 COROLLARY D.2.2.3.$^{11}$ *Let $G$ be a second-countable $\mathbf R_{>0}$-modulated group; i.e., $\Gamma=\mathbf R_{>0}$. Fix a choice of $\omega\in\widehat{G^1}$ and a continuous homomorphic section $\tau$ to $|\cdot|_G$, and let $\chi:G=G^1\times\Gamma\to\mathbf C^{\times}$ be the character $\chi(g^1\tau(\gamma))=\overline{\omega}(g^1)$. Let $M_{\chi}:\mathcal S(G)\simeq\mathcal S(G)$ be multiplication by $\chi$.*
 
@@ -2723,7 +2723,25 @@ $$
 
 where the right side of (D.3.1.2) is finite for $T\ne\mathrm{Im}(z)$.
 
-*[Figure not reproduced; see the PDF, p. 798. Labels in the figure: $c+iT$, $c'+iT$, $0$, $c$, $c'$, $c-iT$, $c'-iT$.]*
+*[Figure, redrawn from the PDF, p. 798:]*
+
+```latex
+\begin{tikzpicture}[x=1.5cm,y=1.2cm,>=stealth,mid/.style={decoration={markings,mark=at position 0.55 with {\arrow[scale=1.4]{>}}},postaction={decorate}},midv/.style={decoration={markings,mark=at position 0.66 with {\arrow[scale=1.4]{>}}},postaction={decorate}}]
+\draw[<->] (0,0) -- (2.6,0);
+\draw[<->] (0,-1.9) -- (0,1.9);
+\draw[mid] (2, 1.5) -- (1, 1.5);
+\draw[midv] (1, 1.5) -- (1, -1.5);
+\draw[mid] (1, -1.5) -- (2, -1.5);
+\draw[midv] (2, -1.5) -- (2, 1.5);
+\fill (1,1.5) circle (1.5pt) node[left] {$c+iT$};
+\fill (2,1.5) circle (1.5pt) node[right] {$c'+iT$};
+\fill (1,0) circle (1.5pt) node[above left] {$c$};
+\fill (2,0) circle (1.5pt) node[above right] {$c'$};
+\fill (1,-1.5) circle (1.5pt) node[left] {$c-iT$};
+\fill (2,-1.5) circle (1.5pt) node[right] {$c'-iT$};
+\fill (0,0) circle (1.5pt) node[above left] {$0$};
+\end{tikzpicture}
+```
 
 FIGURE 1. A counterclockwise rectangular contour, with $c=a+\varepsilon$, $c'=b-\varepsilon$
 
@@ -3350,7 +3368,7 @@ Thus, $(g.f)(x)=f(g^{-1}x)$ preserves $\mathcal{S}_I(G)\subset\prod_{a\in I}\mat
 
 Since $|\cdot|_G$ is trivial on $G^1$, a direct calculation shows $\Phi_{G,\omega}(|\cdot|^a_G f)=|\cdot|^a_G\Phi_{G,\omega}(f)$, so if $f\in\mathcal{S}_I(G)$ then $\Phi_{G,\omega}(f) : G\to\mathbf{C}$ belongs to $\mathcal{S}_I(G)$ and is certainly $\omega$-isotypic. The injectivity of the horizontal maps in (D.3.3.10) shows that this is the unique $\Phi^I_{G,\omega}$ and that it is a continuous projector. Any continuous projector of a topological space onto a subspace is a quotient mapping (since the inclusion of the subspace is a continuous section), so in the topological group setting it is open. $\square$
 
-D.3.3.2. Fourier-Melllin transform on $\mathcal{S}_I(G)$. We conclude this subsection on the structure of $\mathcal{S}_I(G)$ for second-countable $\mathbf{R}_{>0}$-modulated groups $G$ with the following result on the Fourier-Mellin transform in analogy with, and generalizing, Proposition D.3.2.5 that treats the case $G=\mathbf{R}_{>0}$.
+D.3.3.2. *Fourier-Melllin transform on $\mathcal{S}_I(G)$.* We conclude this subsection on the structure of $\mathcal{S}_I(G)$ for second-countable $\mathbf{R}_{>0}$-modulated groups $G$ with the following result on the Fourier-Mellin transform in analogy with, and generalizing, Proposition D.3.2.5 that treats the case $G=\mathbf{R}_{>0}$.
 
 Theorem D.3.3.13 (Fourier-Mellin transform on $\mathcal{S}_I(G)$). *Let $G$ be a second-countable $\mathbf{R}_{>0}$-modulated group. Let $I\subset\mathbf{R}$ be a non-empty open interval, and let $\mu$ be a choice of Haar measure on $G$.*
 

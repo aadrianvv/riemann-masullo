@@ -575,7 +575,25 @@ $$
 
 *Then $M(\phi)(s)$ admits a meromorphic function over $\mathbf{C}_{(A,b)}$ with a pole at $s=-\alpha$ of order $m_\alpha$.*
 
-*[Figure not reproduced; see the PDF, p. 596. Labels in the figure: $A+\varepsilon+iT$, $\beta+iT$, $A+\varepsilon$, $0$, $\beta$, $A+\varepsilon-iT'$, $\beta-iT'$.]*
+*[Figure, redrawn from the PDF, p. 596:]*
+
+```latex
+\begin{tikzpicture}[x=1.5cm,y=1.2cm,>=stealth,mid/.style={decoration={markings,mark=at position 0.55 with {\arrow[scale=1.4]{>}}},postaction={decorate}},midv/.style={decoration={markings,mark=at position 0.66 with {\arrow[scale=1.4]{>}}},postaction={decorate}}]
+\draw[<->] (-1,0) -- (2.6,0);
+\draw[<->] (0.8,-1.9) -- (0.8,1.9);
+\draw[mid] (0, 1.5) -- (2, 1.5);
+\draw[midv] (0, -1.5) -- (0, 1.5);
+\draw[mid] (0, -1.5) -- (2, -1.5);
+\draw[midv] (2, -1.5) -- (2, 1.5);
+\fill (0,1.5) circle (1.5pt) node[left] {$A+\varepsilon+iT$};
+\fill (2,1.5) circle (1.5pt) node[right] {$\beta+iT$};
+\fill (0,0) circle (1.5pt) node[above left] {$A+\varepsilon$};
+\fill (2,0) circle (1.5pt) node[above right] {$\beta$};
+\fill (0,-1.5) circle (1.5pt) node[left] {$A+\varepsilon-iT'$};
+\fill (2,-1.5) circle (1.5pt) node[right] {$\beta-iT'$};
+\fill (0.8,0) circle (1.5pt) node[above left] {$0$};
+\end{tikzpicture}
+```
 
 FIGURE 1. A contour with upward vertical sides in $\sigma=A+\varepsilon<0$ and $\sigma=\beta>1$
 
@@ -941,7 +959,24 @@ $$
 \int_{a+\varepsilon}^{b-\varepsilon}|\Phi(\sigma+iT)|\,\mathrm{d}\sigma\le C_{M,\varepsilon}\int_{a+\varepsilon}^{b-\varepsilon}\frac{1}{|T|^M}\,\mathrm{d}\sigma\le C_{M,\varepsilon}(b-a)|T|^{-M}. \tag{B.2.2.9}
 $$
 
-*[Figure not reproduced; see the PDF, p. 602. Labels in the figure: $a+\varepsilon+iT$, $b-\varepsilon+iT$, $a+\varepsilon$, $b-\varepsilon$, $a+\varepsilon-iT$, $b-\varepsilon-iT$.]*
+*[Figure, redrawn from the PDF, p. 602:]*
+
+```latex
+\begin{tikzpicture}[x=1.5cm,y=1.2cm,>=stealth,mid/.style={decoration={markings,mark=at position 0.55 with {\arrow[scale=1.4]{>}}},postaction={decorate}},midv/.style={decoration={markings,mark=at position 0.66 with {\arrow[scale=1.4]{>}}},postaction={decorate}}]
+\draw[<->] (-1,0) -- (2.6,0);
+\draw[<->] (0.8,-1.9) -- (0.8,1.9);
+\draw[mid] (2, 1.5) -- (0, 1.5);
+\draw[midv] (0, 1.5) -- (0, -1.5);
+\draw[mid] (0, -1.5) -- (2, -1.5);
+\draw[midv] (2, -1.5) -- (2, 1.5);
+\fill (0,1.5) circle (1.5pt) node[left] {$a+\varepsilon+iT$};
+\fill (2,1.5) circle (1.5pt) node[right] {$b-\varepsilon+iT$};
+\fill (0,0) circle (1.5pt) node[above left] {$a+\varepsilon$};
+\fill (2,0) circle (1.5pt) node[above right] {$b-\varepsilon$};
+\fill (0,-1.5) circle (1.5pt) node[left] {$a+\varepsilon-iT$};
+\fill (2,-1.5) circle (1.5pt) node[right] {$b-\varepsilon-iT$};
+\end{tikzpicture}
+```
 
 FIGURE 2. A contour $\Gamma_T$ with counterclockwise orientation (it may or may not enclose $0$)
 
@@ -1081,7 +1116,24 @@ $\square$
 
 B.3.2.1. *Residues over asymptotic contours.* Consider a vertical strip $\mathbf{C}_{(a,b)}$ with real $a<b$, a meromorphic function $f:\mathbf{C}_{(a,b)}\to\mathbf{C}$ with slow growth near its poles, and a holomorphic function $\Phi$ on $\mathbf{C}_{(a-\varepsilon,b+\varepsilon)}$ that is uniformly Schwartz.
 
-*[Figure not reproduced; see the PDF, p. 605. Labels in the figure: $a+\varepsilon_1+iT$, $b-\varepsilon_2+iT$, $a+\varepsilon_1$, $b-\varepsilon_2$, $a+\varepsilon_1-iT$, $b-\varepsilon_2-iT$.]*
+*[Figure, redrawn from the PDF, p. 605:]*
+
+```latex
+\begin{tikzpicture}[x=1.5cm,y=1.2cm,>=stealth,mid/.style={decoration={markings,mark=at position 0.55 with {\arrow[scale=1.4]{>}}},postaction={decorate}},midv/.style={decoration={markings,mark=at position 0.66 with {\arrow[scale=1.4]{>}}},postaction={decorate}}]
+\draw[<->] (-1,0) -- (2.6,0);
+\draw[<->] (0.8,-1.9) -- (0.8,1.9);
+\draw[mid] (2, 1.5) -- (0, 1.5);
+\draw[midv] (0, 1.5) -- (0, -1.5);
+\draw[mid] (0, -1.5) -- (2, -1.5);
+\draw[midv] (2, -1.5) -- (2, 1.5);
+\fill (0,1.5) circle (1.5pt) node[left] {$a+\varepsilon_1+iT$};
+\fill (2,1.5) circle (1.5pt) node[right] {$b-\varepsilon_2+iT$};
+\fill (0,0) circle (1.5pt) node[above left] {$a+\varepsilon_1$};
+\fill (2,0) circle (1.5pt) node[above right] {$b-\varepsilon_2$};
+\fill (0,-1.5) circle (1.5pt) node[left] {$a+\varepsilon_1-iT$};
+\fill (2,-1.5) circle (1.5pt) node[right] {$b-\varepsilon_2-iT$};
+\end{tikzpicture}
+```
 
 FIGURE 3. A contour $\Gamma_{T,\varepsilon_1,\varepsilon_2}$ with counterclockwise orientation (it may or may not enclose 0)
 
@@ -2023,7 +2075,7 @@ $$
 
 because $J_v|_{\mathcal{O}_{F_v}^\times} = 0$. $\square$
 
-B.4.4.2. Change of local additive character. Upon replacing $\alpha_{v,0}$ with a different additive character of the local field $F_v$, the following Lemma explains how the Connes-Weil Principal Value changes. We refer the reader to the calculation in [Co, Lemma 3, p.76].
+B.4.4.2. *Change of local additive character.* Upon replacing $\alpha_{v,0}$ with a different additive character of the local field $F_v$, the following Lemma explains how the Connes-Weil Principal Value changes. We refer the reader to the calculation in [Co, Lemma 3, p.76].
 
 LEMMA B.4.4.4 (Change of additive character Lemma). *Let $F$ be a number field, $v$ a fixed finite place of $F$. We write $q_v$ for the size of the residue field at $v$. Let $\alpha_{v,0}$ be the standard additive character of the local*
 
@@ -2081,7 +2133,7 @@ $$
 
 and so (B.4.4.11) follows from (B.4.4.10). $\square$
 
-B.4.4.3. Calculation of Weil's Principal Values.
+B.4.4.3. *Calculation of Weil's Principal Values.*
 
 LEMMA B.4.4.5 (Weil's Principal Values at the non-Archimedean places). *Let $F$ be a number field, $v$ a non-Archimedean place of $F$, $q_v$ the size of the residue field at $v$, and $p$ the residue characteristic of $F_v$.*
 
@@ -2121,7 +2173,7 @@ $$
 
 and shows that (B.4.4.14) holds in this case too. $\square$
 
-B.4.4.4. Reformulation of Weil's Explicit Formulas. We can now rewrite Weil's Explicit Formulas as an identity of distributions on the idele class group; i.e., as elements of $\mathcal{D}(C_F)'$.
+B.4.4.4. *Reformulation of Weil's Explicit Formulas.* We can now rewrite Weil's Explicit Formulas as an identity of distributions on the idele class group; i.e., as elements of $\mathcal{D}(C_F)'$.
 
 THEOREM B.4.4.7 (Idelic Explicit Formulas). *Let $F$ be a number field. For every $\varphi \in \mathcal{D}(C_F)$, the sums on each side of the identity:*
 
@@ -2337,7 +2389,7 @@ When $\tau_1,\dots,\tau_N$ are $\mathbf{Q}$-linearly independent, $\overline{\ga
 
 **B.5.2. Kronecker-Weyl.** The following Theorem is the multi-dimensional version of [HK, Part 1, Thm.4.1.15] and its method of proof is analogous to the argument [HK, Part 1, §4.1.6]. We will only be requiring the case when $(\tau_1,\dots,\tau_N)\in\mathbf{R}^N$ has $\mathbf{Q}$-independent coordinates. A full proof in the general case when the vector $(\tau_1,\dots,\tau_N)\in\mathbf{R}^N$ in the statement has not necessarily $\mathbf{Q}$-independent coordinates can be found in the appendix of [Hu1, §4.3, Proof of Lemma 4.3], and we will be following it closely to establish the case of continuous functions.
 
-**B.5.2.1. The classical Kronecker-Weyl Theorem.** For any integer $N\ge 1$, we say a function $u:\mathbf{T}^N\to\mathbf{C}$ is Riemann-integrable if and only if the composition $u\circ\theta:[0,1)^N\to\mathbf{C}$ is a function whose real and imaginary parts are both Riemann-integrable on the half-open cube $[0,1)^N$ in the standard sense of Riemann-integrability on convex subsets within Euclidean spaces.
+B.5.2.1. *The classical Kronecker-Weyl Theorem.* For any integer $N\ge 1$, we say a function $u:\mathbf{T}^N\to\mathbf{C}$ is Riemann-integrable if and only if the composition $u\circ\theta:[0,1)^N\to\mathbf{C}$ is a function whose real and imaginary parts are both Riemann-integrable on the half-open cube $[0,1)^N$ in the standard sense of Riemann-integrability on convex subsets within Euclidean spaces.
 
 We denote by $\mu_N$ the volume-1 Haar measure on $\mathbf{T}^N$, and recall that $\mu_N$ agrees under $\theta_N$ with the measure induced by restriction to $[0,1)^N$ of the Lebesgue measure $\lambda_N$ on $\mathbf{R}^N$, i.e.
 
@@ -2597,7 +2649,7 @@ REMARK B.5.2.5. There is a discrete-time version of both Theorem B.5.2.1 and Cor
 
 **B.5.3. Strong recurrence of non-Archimedean Euler factors.** We begin by recalling basic concepts on self-approximation properties of holomorphic and meromorphic functions on an open non-empty vertical strip in $\mathbf{C}$.
 
-B.5.3.1. Strong recurrence. Let $I\subset\mathbf{R}$ be a non-empty interval. Recall that we write $\mathbf{C}_I$ to denote the vertical strip
+B.5.3.1. *Strong recurrence.* Let $I\subset\mathbf{R}$ be a non-empty interval. Recall that we write $\mathbf{C}_I$ to denote the vertical strip
 
 $$
 \mathbf{C}_I:=\{s\in\mathbf{C}:\mathrm{Re}(s)\in I\}. \tag{B.5.3.1}
@@ -2671,7 +2723,7 @@ $$
 
 both have positive upper-density.
 
-B.5.3.3. Preparations on recurrence. We begin with a few permanence properties of strong recurrence for holomorphic functions on non-empty open vertical strips of bounded width.$^{28}$
+B.5.3.3. *Preparations on recurrence.* We begin with a few permanence properties of strong recurrence for holomorphic functions on non-empty open vertical strips of bounded width.$^{28}$
 
 LEMMA B.5.3.4. *Let $I\subset\mathbf{R}$ be an open non-empty bounded interval, and $f:\mathbf{C}_I\to\mathbf{C}$ a holomorphic function.*
 
@@ -2755,7 +2807,7 @@ Since (B.5.3.10) implies (B.5.3.11) we therefore have $A_{\overline{U},2}(c(X),T
 
 $\square$
 
-B.5.3.4. Strong recurrence of reciprocal finite Euler products. We can now prove Proposition B.5.3.3.
+B.5.3.4. *Strong recurrence of reciprocal finite Euler products.* We can now prove Proposition B.5.3.3.
 
 PROOF of Proposition B.5.3.3. We denote by $\lambda$ the Lebesgue measure on the real line, normalized so as to give the interval $[0,1]$ volume 1. We define:
 
@@ -2849,7 +2901,7 @@ In this section, we recall well known results on the existence of classical zero
 
 **B.6.1. Zero-free regions for Hecke $L$-functions and estimates on $L'_f(s,\chi)/L_f(s,\chi)$.** We record here analogs of the main results on zero-free regions for the Riemann $\zeta$-function, and estimates for $\zeta'(s)/\zeta(s)$ on the $1$-line, adapted to the case of finite Hecke $L$-functions.
 
-**B.6.1.1. Classical zero-free region for $L_f(s,\chi)$.** We recall the statement of the following well-known result, whose proof goes back to the argument of Hadamard and de la Vallée Poussin:
+B.6.1.1. *Classical zero-free region for $L_f(s,\chi)$.* We recall the statement of the following well-known result, whose proof goes back to the argument of Hadamard and de la Vallée Poussin:
 
 Proposition B.6.1.1 (Classical zero-free region for $L_f(s,\chi)$). *Let $F$ be a number field, $\chi\in\widehat{C_F}$ a continuous character. There exists an absolute constant $A>0$, and a real number $A_{F,\chi}>0$ depending only on $F$ and $\chi$, such that $L_f(s,\chi)$ has no complex zeros in the region:*
 
@@ -2861,7 +2913,7 @@ $$
 
 The real number $A_{F,\chi}$ can in fact be chosen to be $|N(\mathfrak{d}_{F/\mathbf Q})||N_{F/\mathbf Q}(\mathfrak f_\chi)|$ where $\mathfrak f_\chi$ is the conductor of $\chi$ [IK, Ch. 5, §5.1, (5.4)]. Proposition B.6.1.1 can be deduced from [IK, §5.4, Thm. 5.10, p. 106] upon setting $d=[F:\mathbf Q]$, $A_{F,\chi}:=\mathfrak{q}(f,0)$ in the notation of loc.cit. to denote the analytic conductor of the $L$-function (see [IK, Ch. 5, (5.7), p. 95]), and noting that the Rankin-Selberg convolutions $L_f(s,\chi\otimes\chi)$ and $L_f(s,\chi\otimes\bar\chi)$ both exist with the former entire when $\chi\ne\overline{\chi}$ (equivalently, when $\chi^2\ne 1$) since $L_f(s,\chi^2)$ is entire when $\chi$ is not quadratic, and the latter is $\zeta_F(s)$ (so it has a simple pole at $s=1$).
 
-**B.6.1.2. Estimates for $L'_f(s,\chi)/L_f(s,\chi)$.** Let $F$ be a number field and $\chi\in\widehat{C_F}$ a continuous character.
+B.6.1.2. *Estimates for $L'_f(s,\chi)/L_f(s,\chi)$.* Let $F$ be a number field and $\chi\in\widehat{C_F}$ a continuous character.
 
 On $\mathbf C_{>1}$, the Dirichlet series expansion of the associated “finite” Hecke $L$-function is
 
@@ -3085,7 +3137,7 @@ satisfies $\eta(\mathbf R_{\ge 0})\subset(0,1/2]$. By Proposition B.6.1.1 and Th
 
 **640** · **CHAPTER B. PREPARATIONS FROM ANALYTIC NUMBER THEORY**
 
-**B.6.1.3. Polynomial growth of the reciprocal finite Hecke $L$-function on the $1$-line.** We record here below a polynomial growth estimate for the reciprocal of the finite Hecke $L$-function over the $1$-line. We will not be needing sharper sub-polynomial estimates.
+B.6.1.3. *Polynomial growth of the reciprocal finite Hecke $L$-function on the $1$-line.* We record here below a polynomial growth estimate for the reciprocal of the finite Hecke $L$-function over the $1$-line. We will not be needing sharper sub-polynomial estimates.
 
 Theorem B.6.1.6 (Polynomial growth of reciprocals on the $1$-line). *Let $F$ be a number field, $\chi\in\widehat{C_F}$ a continuous character. There exists an integer $N=N_\chi>0$ such that we have:*
 
@@ -3291,7 +3343,7 @@ Let $F$ be a number field, $\chi\in\widehat{C_F}$ a continuous character. In thi
 
 B.7.1. The Dirichlet polynomials of $L'_f(s,\chi)/L_f(s,\chi)$ on the 1-line. Leading to the analysis of partial Euler products and their reciprocals, for $L_f(s,\chi)$, we need to study the Dirichlet polynomials of the Dirichlet series that sums to $L'_f(s,\chi)/L_f(s,\chi)$.
 
-B.7.1.1. Logarithmic derivatives of finite Hecke $L$-functions. We consider the following Dirichlet series:
+B.7.1.1. *Logarithmic derivatives of finite Hecke $L$-functions.* We consider the following Dirichlet series:
 
 $$
 \sum_{0\ne I\subset\mathcal{O}_F}\frac{\Lambda_{F,\chi}(I)}{N(I)^s} \tag{B.7.1.1}
@@ -3305,7 +3357,7 @@ $^{29}$This should be spelled out in some more precision/detail.
 
 **644** · **CHAPTER B. PREPARATIONS FROM ANALYTIC NUMBER THEORY**
 
-B.7.1.2. A version of Perron's Formula from Titchmarsh. We recall the following result from [T2, Ch. III]:
+B.7.1.2. *A version of Perron's Formula from Titchmarsh.* We recall the following result from [T2, Ch. III]:
 
 Lemma B.7.1.1. *Let $\{a_n\}_{n\ge 1}$ be a sequence of complex numbers such that:*
 
@@ -3397,7 +3449,7 @@ $$
 
 by the assumption on $\psi$ being non-decreasing, with all the implied constants depending only on $\alpha$ and the one in (1). $\square$
 
-B.7.1.3. Convergence and oscillation of the Dirichlet polynomials of $L'_f(s,\chi)/L_f(s,\chi)$. By closely following the method in [T2, Ch.3,§3.14], we now prove the following:
+B.7.1.3. *Convergence and oscillation of the Dirichlet polynomials of $L'_f(s,\chi)/L_f(s,\chi)$.* By closely following the method in [T2, Ch.3,§3.14], we now prove the following:
 
 Theorem B.7.1.2 (Convergence and oscillation on the 1-line). *Let $F$ be a number field, $\chi\in\widehat{C_F}$ a continuous character. Fix a compact subset $K\subset 1+i\mathbf{R}$.*
 
@@ -3593,7 +3645,7 @@ $^{30}$Maybe something needs to be said about this process escaping from any cho
 
 **B.7. RECIPROCALS AND PARTIAL EULER PRODUCTS ON THE 1-LINE** · **649**
 
-B.7.2.1. Mode of convergence of partial Euler products on subsets of the 1-line. Let $F$ be a number field, $\chi\in\widehat{C_F}$ a continuous character. In this subsection we analyze the mode of convergence of reciprocal partial Euler products of the finite Hecke $L$-function $L(s,\chi)$ on the line $\sigma=1$ in $\mathbf{C}$.
+B.7.2.1. *Mode of convergence of partial Euler products on subsets of the 1-line.* Let $F$ be a number field, $\chi\in\widehat{C_F}$ a continuous character. In this subsection we analyze the mode of convergence of reciprocal partial Euler products of the finite Hecke $L$-function $L(s,\chi)$ on the line $\sigma=1$ in $\mathbf{C}$.
 
 Theorem B.7.2.1 (Euler products on the 1-line - I). *Let $F$ be a number field, $\chi\in\widehat{C_F}$ a continuous character. Let $S_{\chi}$ be the finite set of finite places at which $\chi$ is ramified.*
 
@@ -3781,7 +3833,7 @@ $$
 
 with each sum defined as in Remark B.7.2.2. $\square$
 
-B.7.2.3. Partial Euler products on the 1-line. Let $F$ be a number field, $\chi\in\widehat{C_F}$ a continuous character. Let $S_{\chi}$ be the finite set of finite places of $F$ at which $\chi$ is ramified. Let $x>1$ be an integer. We define
+B.7.2.3. *Partial Euler products on the 1-line.* Let $F$ be a number field, $\chi\in\widehat{C_F}$ a continuous character. Let $S_{\chi}$ be the finite set of finite places of $F$ at which $\chi$ is ramified. Let $x>1$ be an integer. We define
 
 $$
 E_{f,x}(s,\chi):=\prod_{\mathfrak{p}\subset\mathcal{O}_F:N(\mathfrak{p})<x}(1-\chi(\mathfrak{p})N(\mathfrak{p})^{-s}). \tag{B.7.2.17}

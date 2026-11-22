@@ -220,3 +220,12 @@ From the maintainers' spot check in #2471 and the checks it suggested.
   told apart this way (both readings give the same hat), and the 5 that disagreed were looked at
   on the page image: 2 are fixed (`\widehat{F}_v`, p. 619), the other 3 (pp. 391, 558) are right
   as they are.
+- **Section titles.** Sub-subsection titles (four-part numbers such as 9.3.3.2 or B.5.3.4) are
+  italic in the print: 40 that were upright and 39 that were bold are now `*…*`, like the other
+  132. One statement on p. 493 that the print italicizes after a colon is marked too.
+- **Figures.** The four contour figures (pp. 596, 602, 605, 798) are redrawn as TikZ pictures, with
+  the points, labels and direction of every edge as printed, instead of a placeholder;
+  `tools/diagrams.py` now compiles them with the diagrams (88 blocks).
+- **Accents in diagrams.** With the diagram blocks included, the number of hats and of tildes
+  matches the PDF on every page.
+

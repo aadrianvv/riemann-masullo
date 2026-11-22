@@ -967,7 +967,7 @@ Let $p$ be a prime number such that $\chi$ is unramified at every finite place o
 
 **11.3.1. Calculation of the Orbital Kernels by global to $S$-local degeneration on the orbital basis elements.**
 
-**11.3.1.1. Divisorial stratification of the ideles.** The next step now is to split $k_{\mathrm{geom},I,\varphi}(x,y)$ into an infinite sum of pieces indexed by the places of $F$:
+11.3.1.1. *Divisorial stratification of the ideles.* The next step now is to split $k_{\mathrm{geom},I,\varphi}(x,y)$ into an infinite sum of pieces indexed by the places of $F$:
 
 $$
 k_{\mathrm{geom},I,\varphi}(x,y)=k_{S,\varphi}(x,y)+\sum_{p\nmid S}k_{p,\varphi}(x,y)
@@ -1095,7 +1095,7 @@ and hence multiplication by $\alpha_k$ replaces the Zeta function of $f$ with th
 
 We call such multiplication process “restriction” from one stratum to the next, of the primary divisorial filtration.
 
-In particular, and this is the main observation of this subsection: the $(k+1)$st iteration of the restriction to the strata of the primary divisorial filtration is obtained from the $k$th, on the forward side of the Mellin transform, by multiplication by
+In particular, and this is the main observation of this subsection: *the $(k+1)$st iteration of the restriction to the strata of the primary divisorial filtration is obtained from the $k$th, on the forward side of the Mellin transform, by multiplication by*
 
 $$
 \prod_{v\in S_{p_{k+1}}}L_v(\chi_v\lvert\cdot\rvert^s_v)^{-1}.

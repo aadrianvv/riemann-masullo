@@ -974,7 +974,7 @@ We will later introduce a locally convex analog of the spaces $R(G)(\omega)$, wh
 
 **4.3. PREPARATIONS ON ISOTYPIC PROJECTORS** · **175**
 
-4.3.1.1. Left-regular representation of $G$ on $L^2(G,\nu)$. Before we arrive at the main construction, we need information on the left-regular representation of $G$ on $L^2(G,\nu)$.
+4.3.1.1. *Left-regular representation of $G$ on $L^2(G,\nu)$.* Before we arrive at the main construction, we need information on the left-regular representation of $G$ on $L^2(G,\nu)$.
 
 DEFINITION 4.3.1.1. Let $G$ be a second-countable $\mathbf{R}_{>0}$-modulated group, with module $\lvert\cdot\rvert_G$, closed subgroup of module-$1$ elements $G^1$. Let $\nu$ be a choice of Haar measure on $G$, and $\nu_1$ a choice of Haar measure on $G^1$.
 
@@ -1477,7 +1477,7 @@ which reads $u = \overline{\omega}(g)\rho_G(g,u)$, equivalently $\rho_G(g,u) = \
 
 These observations having been made, Lemma 4.3.3.1 implies all the assertions of the Corollary. $\square$
 
-4.3.3.1. Hilbertian and locally convex isotypic projectors. We now show how to recover the orthogonal projectors $\Pi_{G,\omega}$ from (4.3.2.1) and Lemma 4.3.2.2, using Lemma 4.3.3.1 and Corollary 4.3.3.3.
+4.3.3.1. *Hilbertian and locally convex isotypic projectors.* We now show how to recover the orthogonal projectors $\Pi_{G,\omega}$ from (4.3.2.1) and Lemma 4.3.2.2, using Lemma 4.3.3.1 and Corollary 4.3.3.3.
 
 Corollary 4.3.3.4 (Hilbertian and locally convex isotypic projectors). *Let $G$ be a second-countable $\mathbf{R}_{>0}$-modulated group, with module $|\cdot|_G$ and compact Hausdorff closed subgroup of module-1 elements $G^1$. Let $R(G)$ be the Hilbert space $L^2(G,\nu)$, for $\mu_G$ a choice of Haar measure on $G$. Let $\nu_1$ be a choice of Haar measure on $G^1$.*
 
@@ -1521,7 +1521,7 @@ Example 4.3.3.6 (Finite dimensional representations of finite groups). Let $G$ b
 
 Let $E := \mathbf{C}[G]$, the finite dimensional regular representation of $G$, equipped with the Euclidean topology. The linear operator $\mu_G(G)^{-1}\Phi_{G,\omega}$ does not depend on the choice of Haar measure $\mu_G$, and we may therefore assume $r = 1$. The linear operator $\mu_G(G)^{-1}\Phi_{G,\omega}$ is, therefore, the isotypic projector $u \mapsto \frac{1}{\lvert G\rvert}\sum_{g\in G} \overline{\omega}(g)g.v$ where $g.v$ is the effect of the action of $G$ on $\mathbf{C}[G]$ by left-translation on itself.
 
-4.3.3.2. Averaging over relatively compact locally closed subsets of a Hausdorff locally compact abelian group. We conclude this subsection by recording here below and integrability and continuity criterion for the
+4.3.3.2. *Averaging over relatively compact locally closed subsets of a Hausdorff locally compact abelian group.* We conclude this subsection by recording here below and integrability and continuity criterion for the
 
 ## PDF page 186
 
@@ -1847,7 +1847,7 @@ As $s$ varies over $i\mathbf{R}$, (4.4.2.3) provides a smooth parametrization fo
 Since $G$ is $\mathbf{R}_{>0}$-modulated, it is isomorphic, as a Hausdorff locally compact abelian group, to $\mathbf{R}_{>0}\times G^1$, with $G^1$ compact Hausdorff, under the choice $\tau$ of continuous homomorphic section to the module $\lvert\cdot\rvert_G$. The dual group of $\mathbf{R}_{>0}$ is smoothly isomorphic to $\mathbf{R}$, and the continuous quasi-characters of $\mathbf{R}_{>0}$ are of the form $t\mapsto t^s$, with $\widehat{\mathbf{R}_{>0}}$ embedding as $i\mathbf{R}$ within the complex $s$-plane of all continuous quasi-characters.
 Note that such section $\tau$ exists by Remark D.2.1.2.
 
-4.4.2.1. The exponential system on $\mathcal{S}(G/\gamma^{\mathbf{Z}})$. We let $G$ be an $\mathbf{R}_{>0}$-modulated group. We fix an element $\gamma\in G$ such that $\lvert\gamma\rvert_G>1$.
+4.4.2.1. *The exponential system on $\mathcal{S}(G/\gamma^{\mathbf{Z}})$.* We let $G$ be an $\mathbf{R}_{>0}$-modulated group. We fix an element $\gamma\in G$ such that $\lvert\gamma\rvert_G>1$.
 We begin with the following description of the orthogonal $(\gamma^{\mathbf{Z}})^\perp\subset\widehat{G}$, i.e. the subgroup:
 
 $$
@@ -2036,7 +2036,7 @@ This, we will be doing throughout the following subsection, along with establish
 
 4.5.1. Periodic Schauder Bases: the monogenic case. Let $G$ be an $\mathbf{R}_{>0}$-modulated group, $\gamma\in G$ an element such that $\lvert\gamma\rvert_G>1$, and $\chi\in\widehat{G}$ a continuous character.
 
-4.5.1.1. Monogenic periodization on $\mathbf{R}_{>0}$-modulated groups. In this section, we use the exponential system on $\mathcal{S}_\mathrm{E}(G/\gamma^{\mathbf{Z}})$ to source absolute Schauder bases for the ranges of the periodization operators $\Phi_\gamma$, $\Phi_{\gamma,\chi}$ from Definition 4.4.2.1, for then extending the constructions and results to the case of finitely many elements $\{\gamma_1,\dots,\gamma_N\}\subset G$ such that $\lvert\gamma_k\rvert_G>1$ for $1\le k\le N$, in the next subsection.
+4.5.1.1. *Monogenic periodization on $\mathbf{R}_{>0}$-modulated groups.* In this section, we use the exponential system on $\mathcal{S}_\mathrm{E}(G/\gamma^{\mathbf{Z}})$ to source absolute Schauder bases for the ranges of the periodization operators $\Phi_\gamma$, $\Phi_{\gamma,\chi}$ from Definition 4.4.2.1, for then extending the constructions and results to the case of finitely many elements $\{\gamma_1,\dots,\gamma_N\}\subset G$ such that $\lvert\gamma_k\rvert_G>1$ for $1\le k\le N$, in the next subsection.
 
 Proposition 4.5.1.1 (Sourcing Periodic Schauder Bases - I). *Let $G$ be an $\mathbf{R}_{>0}$-modulated group. We adopt the conditions and choices from Situation 4.4.2.3.
 Then:*

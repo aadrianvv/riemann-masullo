@@ -2244,7 +2244,7 @@ The assumptions on the test function are as follows:
 
 (2) $\varphi(C_F^1)=0$.
 
-**1.8.4.1. Character by character.** For $\varphi$ homogeneous with respect to the right-translation action of $C_F^1$ on $\mathcal D(C_F)$, with weight $\overline{\chi}|_{C_F^1}$, for $\chi\in\widehat{C_F}$ fixed, and satisfying assumptions (a) and (b) above, the Trace Formula turns into:
+1.8.4.1. *Character by character.* For $\varphi$ homogeneous with respect to the right-translation action of $C_F^1$ on $\mathcal D(C_F)$, with weight $\overline{\chi}|_{C_F^1}$, for $\chi\in\widehat{C_F}$ fixed, and satisfying assumptions (a) and (b) above, the Trace Formula turns into:
 
 $$
 \begin{aligned}
@@ -2256,7 +2256,7 @@ $$
 
 where $M(\varphi)(\lvert\cdot\rvert_F^{1/2})+M(\varphi)(\lvert\cdot\rvert_F^{-1/2})$ vanishes if $\varphi$ is not $C_F^1$-invariant.
 
-**1.8.4.2. An explicit holomorphic family of test functions.** The idea now is to consider the following holomorphic family of piece-wise smooth functions on $C_F$:
+1.8.4.2. *An explicit holomorphic family of test functions.* The idea now is to consider the following holomorphic family of piece-wise smooth functions on $C_F$:
 
 $$
 \varphi_z(t):=t^{-z}
@@ -2278,7 +2278,7 @@ $$
 
 tends to $\varphi_z(t)$ point-wise (for $t\neq1$) as $\varepsilon\to 0$ and $h\to 1_{(1,+\infty)}$ pointwise, as $h$ (which will be an explicit collection of bump functions) remains valued in $[0,1]$ and below $1_{(1,+\infty)}$, converging point-wise monotonically.
 
-**1.8.4.3. Montel’s Theorem.** Fix a compact subset $K\subset\mathbf C_{>\sup(I)}$ with nonempty interior intersecting with nonempty interior the half-plane $\mathbf C_{>1}$.
+1.8.4.3. *Montel’s Theorem.* Fix a compact subset $K\subset\mathbf C_{>\sup(I)}$ with nonempty interior intersecting with nonempty interior the half-plane $\mathbf C_{>1}$.
 
 Write $\varphi=\chi\cdot(\varphi_{h,\varepsilon,z}\circ\lvert\cdot\rvert_F)$; note the dependence on $z\in\mathbf C$.
 
@@ -2326,7 +2326,7 @@ $$
 
 1.8. A VIEW FROM THE SKY: FROM A LETTER TO PETER SARNAK    55
 
-**1.8.5.1. Putting everything together.** Putting everything together from §5.1, we obtain that for $I=[-a,a]$ for a fixed real number $a>0$, the logarithmic derivative of $L_f(s,\chi)$ satisfies, over the interior of $K$:
+1.8.5.1. *Putting everything together.* Putting everything together from §5.1, we obtain that for $I=[-a,a]$ for a fixed real number $a>0$, the logarithmic derivative of $L_f(s,\chi)$ satisfies, over the interior of $K$:
 
 (1.8.5.1)
 

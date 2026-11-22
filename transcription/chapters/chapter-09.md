@@ -808,7 +808,7 @@ Proof. This is a consequence of Theorem 9.2.1.5 and Corollary 9.2.1.4.
 
 $\square$
 
-9.2.1.1. Duality. We now provide a description of the continuous dual of $W^s_I(G)$ for $G$ a second-countable $\mathbf R_{>0}$-modulated group, $I\subset\mathbf R$ a closed non-empty interval, $s\ge 0$ a real number. We discuss here below the special case $G = \mathbf R_{>0}$.
+9.2.1.1. *Duality.* We now provide a description of the continuous dual of $W^s_I(G)$ for $G$ a second-countable $\mathbf R_{>0}$-modulated group, $I\subset\mathbf R$ a closed non-empty interval, $s\ge 0$ a real number. We discuss here below the special case $G = \mathbf R_{>0}$.
 
 Proposition 9.2.1.8 (Hardy-Sobolev duality - I). *Let $I\subset\mathbf R$ be a closed non-empty interval, $s\ge 0$ a real number. Assume $I$ is compact, of the form $I = [a,b]$, for $a < b$ real numbers.*
 
@@ -964,7 +964,7 @@ $(-\infty,b)$ with $b$ as an accumulation point). We further refer the reader to
 
 Similar assertions hold on the topology of $H^{2N,2}(\mathbf{C}_{>b})$ and are obtained from the foregoing upon acting on the complex $s$-plane using the bi-holomorphic involution $s \mapsto -s$ (and applying the result to $-b$).
 
-9.2.2.1. The Hardy-Sobolev spaces $W^s_I(\mathbf{R}_{>0})$. We will now be revisiting the Hardy-Sobolev spaces $H^{2N,2}(\mathbf{C}_{>b})$ and $H^{2N,2}(\mathbf{C}_{<b})$, allowing general real numbers $s \ge 0$ in place of the even integer degree $2N$, and allowing arbitrary vertical strips of base interval $I$, as opposed to the half-planes $\mathbf{C}_{>b}$ and $\mathbf{C}_{<b}$.
+9.2.2.1. *The Hardy-Sobolev spaces $W^s_I(\mathbf{R}_{>0})$.* We will now be revisiting the Hardy-Sobolev spaces $H^{2N,2}(\mathbf{C}_{>b})$ and $H^{2N,2}(\mathbf{C}_{<b})$, allowing general real numbers $s \ge 0$ in place of the even integer degree $2N$, and allowing arbitrary vertical strips of base interval $I$, as opposed to the half-planes $\mathbf{C}_{>b}$ and $\mathbf{C}_{<b}$.
 
 DEFINITION 9.2.2.1 (Sobolev $W^s_I$-spaces of $\mathbf{R}_{>0}$). Let $I \subset \mathbf{R}$ be a non-empty closed interval, $s \ge 0$ a real number.
 
@@ -1227,7 +1227,7 @@ $$
 
 PROOF. This is a consequence of Corollary 9.2.2.5.$^4$ $\square$
 
-9.2.2.2. The Hardy-Sobolev spaces $W^s_I(G)$. We now return to the generality of $G$ an $\mathbf{R}_{>0}$-modulated group with module $|\cdot|_G$ and compact subgroup of module-$1$ elements $G^1$ (i.e. $G^1 := \ker(|\cdot|_G)$). Recall that the Mellin transform is a linear topological isomorphism:
+9.2.2.2. *The Hardy-Sobolev spaces $W^s_I(G)$.* We now return to the generality of $G$ an $\mathbf{R}_{>0}$-modulated group with module $|\cdot|_G$ and compact subgroup of module-$1$ elements $G^1$ (i.e. $G^1 := \ker(|\cdot|_G)$). Recall that the Mellin transform is a linear topological isomorphism:
 
 $$
 M : \mathcal{S}_I(G) \to A\mathcal{S}(\mathbf{C}_I) \overline{\otimes} \mathcal{S}(G^1)
@@ -1578,7 +1578,7 @@ $\square$
 
 Within $W^s_I(G)$, we have the ability to approximate the identity with respect to the strong operator topology, by means of special continuous operators. We record this approximation result for later use.
 
-9.3.2.1. The case $I=\{b\}$. The following Lemma is a consequence of [Co, Lemma 5].
+9.3.2.1. *The case $I=\{b\}$.* The following Lemma is a consequence of [Co, Lemma 5].
 
 Lemma 9.3.2.1 (Bounded Approximation of the identity). *Let $G$ be a second-countable $\mathbf{R}_{>0}$-modulated group, $\mu_G$ a choice of Haar measure on $G$. Let $b,s\in\mathbf{R}$ be real numbers, $s\ge 0$. The continuous linear operator $A$ from (9.3.1.1) with target $\mathscr{L}_\beta(W^s_{\{b\}}(G))$, extends uniquely to a continuous linear operator*
 
@@ -1734,7 +1734,7 @@ Let $\tau$ be a continuous homomorphic section to the idelic norm. We define $x_
 
 $\square$
 
-9.3.2.2. The general case: approximate units in $W^s_I(G)$. In this subsection we construct approximate units in $\mathscr{L}_\sigma(W^s_I(G))$ using a divisor on the Riemann surface $\Omega(G)$ supported on a vertical strip of bounded width contained in a single connected component.
+9.3.2.2. *The general case: approximate units in $W^s_I(G)$.* In this subsection we construct approximate units in $\mathscr{L}_\sigma(W^s_I(G))$ using a divisor on the Riemann surface $\Omega(G)$ supported on a vertical strip of bounded width contained in a single connected component.
 
 We begin with the following:
 
@@ -1774,7 +1774,7 @@ Proof. Using the basis projectors provided by Lemma 9.3.2.5 we see that $\bigcup
 
 9.3.3. Trace of the regular representation on $W^s_I(G)$. Let $G$ be an $\mathbf{R}_{>0}$-modulated Hausdorff locally compact abelian group, with module $\lvert\cdot\rvert_G$. Let $\mu_G$ be a choice of Haar measure on $G$. Let $I \subset \mathbf{R}$ be a non-empty closed interval, $s \ge 0$ a real number. The continuous left-translation action $\rho_G$ of on $\mathcal{S}_{\mathrm{E}}(G)$ extends by continuity to $W^s_I(G)$. We refer to this continuous representation of $G$ as the regular representation of $G$ on $W^s_I(G)$.
 
-9.3.3.1. Cutoffs. The purpose of this subsection is to introduce truncation operators, to be reprised later. We let $\varphi: G \to \mathbf{C}$ be a bounded function, whose support is compact. The operator
+9.3.3.1. *Cutoffs.* The purpose of this subsection is to introduce truncation operators, to be reprised later. We let $\varphi: G \to \mathbf{C}$ be a bounded function, whose support is compact. The operator
 
 $$
 A_G(\varphi): \psi \mapsto \int_G \varphi(g)\psi(g^{-1}x)\,\mathrm{d}\mu_G(g)
@@ -1906,7 +1906,7 @@ its global form, Theorem A.5.3.7) leads to the concept of "smoothening" of a loc
 
 We refer the reader to §A.5.3, §A.5.4, and to [Bris-a, §3], where a generalization of the same instruments leads to trace formulas for nuclear integral operators on the $L^2$-space of a Hausdorff locally compact second-countable topological space equipped with a Radon measure; see also [Bris-a, §3.1,Thm.3.1], and the special case of subdomains of Euclidean spaces from [Bris-b, Thm.3.1].
 
-9.3.3.2. Calculation of the trace of $M_{\rho} \circ A(\varphi)$. We have the following:
+9.3.3.2. *Calculation of the trace of $M_{\rho} \circ A(\varphi)$.* We have the following:
 
 THEOREM 9.3.3.5 (Nuclearity of the smoothly truncated regular representation on $W^s_I(G)$). *Let $G$ be an $\mathbf{R}_{>0}$-modulated group, with module $\lvert\cdot\rvert_G$. Assume $G$ is second-countable. Let $I$ be a non-empty closed interval. We let $\mu_G$ be a choice of Haar measure on $G$. Let $\Lambda,\varepsilon > 0$ and $s \ge 0$ real numbers. Assume $0 < 1/\Lambda+\varepsilon < \Lambda-\varepsilon$. Let $\rho: G \to \mathbf{R}_{\ge 0}$ be a $(\Lambda,\varepsilon)$-cutoff. Then:*
 
