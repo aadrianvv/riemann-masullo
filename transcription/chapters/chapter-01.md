@@ -653,7 +653,7 @@ $^{3}$P. Sarnak. *Asymptotic Behavior of Periodic Orbits of the Horocycle Flow a
 (3) For all $x\in G$, the integral:
 
 $$
-\mathrm{(1.3.1.1)}\qquad\int_H u_0(h^{-1}x)\,\mathrm{d}\mu_H(h)
+\int_H u_0(h^{-1}x)\,\mathrm{d}\mu_H(h) \tag{1.3.1.1}
 $$
 
 converges, and upon denoting $u_0^H$ its value function on $G$, we have that $u_0^H$ is continuous on $G$, invariant under the continuous left-translation action by $H$ on $G$, and identically $1$ as a function on $G/H$.
@@ -661,7 +661,7 @@ converges, and upon denoting $u_0^H$ its value function on $G$, we have that $u_
 For every continuous function $u\in C(G/H)$, we have that for all $x\in G$, the integral
 
 $$
-\mathrm{(1.3.1.2)}\qquad\int_H\bigl(u_0\cdot(u\circ\pi)\bigr)(h^{-1}x)\,\mathrm{d}\mu_H(h)
+\int_H\bigl(u_0\cdot(u\circ\pi)\bigr)(h^{-1}x)\,\mathrm{d}\mu_H(h) \tag{1.3.1.2}
 $$
 
 converges, and its value is $u(\pi(x))$.

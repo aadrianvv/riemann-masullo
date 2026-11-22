@@ -282,3 +282,25 @@ From the maintainers' spot check in #2471 and the checks it suggested.
   preceding number.
 - **Inline formulas.** 96 inline formulas of 40 or more characters, drawn at random (seed 4242),
   were compiled and compared with the page image: all 96 agree with the print.
+- **Small differences at every level.** With every page's maths compiled, each glyph of the PDF
+  was aligned with the compiled transcription (same fonts on both sides), and every insertion,
+  deletion or replacement of up to three glyphs was listed, on the baseline as well as in scripts
+  (the earlier pass had only looked at scripts and operators). After removing what is set as text
+  in one and as maths in the other (footnote marks, `§`, `id`, punctuation, running heads), each
+  remaining case was checked on the page image. Fixed:
+  - p. 349: `\sigma(E', E)` where the print has `\sigma(E, E')` (the prime was on the wrong
+    argument of the weak topology);
+  - p. 353: `|\tau(t)|_{v_0}` where the print has `|\xi\tau(t)|_{v_0}`;
+  - p. 553: `\to` where the print has `\hookrightarrow`;
+  - p. 449: `m'_{k',j'}` (twice) where the print has `m_{k',j'}`;
+  - p. 244: `(F_k)'_\beta` where the print has `(F'_k)_\beta` (one of four places; the other
+    three are as printed);
+  - p. 327: the prime on the restricted product now on the `\prod`, as printed;
+  - pp. 540, 556: `\sqcup` where the print has `\coprod`;
+  - p. 631: `\mathrm dx_1\cdot\ldots\cdot\mathrm dx_N` where the print has `\mathrm dx_1\cdots\mathrm dx_N`.
+- **Following up each kind of error.** Every kind found was searched for across the whole
+  transcription. Insertions of four or more glyphs in the transcription that are not in the print
+  (the kind on pp. 244 and 354): none apart from text set as maths, and the two equation numbers
+  on p. 22 that were written into the formula as `\mathrm{(1.3.1.1)}` instead of `\tag`, now
+  tags. Arrows (`\hookrightarrow`, `\mapsto`, `\to` and the others), counted on every page: they
+  agree outside the diagrams. `\sqcup`: no other occurrence.

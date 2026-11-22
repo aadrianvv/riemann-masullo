@@ -2594,7 +2594,7 @@ for a unique $a=(a_1,\dots,a_N)\in\mathbf{Z}^N$. We write $\chi_a$ for the conti
 We have
 
 $$
-\widehat u(\chi_b)=\int_{\mathbf{T}^N}u(\xi)\cdot\overline{\chi_b(\xi)}\,\mathrm{d}\mu(\xi)=\int_{[0,1)^N}\sum_{a\in\mathbf{Z}^N}c_a\cdot e^{2\pi i a_1 x_1}\cdot\ldots\cdot e^{2\pi i a_N x_N}\cdot\overline{e^{2\pi i b_1 x_1}\cdot\ldots\cdot e^{2\pi i b_N x_N}}\,\mathrm{d}x_1\cdot\ldots\cdot \mathrm{d}x_N. \tag{B.5.2.11}
+\widehat u(\chi_b)=\int_{\mathbf{T}^N}u(\xi)\cdot\overline{\chi_b(\xi)}\,\mathrm{d}\mu(\xi)=\int_{[0,1)^N}\sum_{a\in\mathbf{Z}^N}c_a\cdot e^{2\pi i a_1 x_1}\cdot\ldots\cdot e^{2\pi i a_N x_N}\cdot\overline{e^{2\pi i b_1 x_1}\cdot\ldots\cdot e^{2\pi i b_N x_N}}\,\mathrm{d}x_1\cdots\mathrm{d}x_N. \tag{B.5.2.11}
 $$
 
 By orthogonality of the exponentials $\{e^{2\pi i t N}, N\in\mathbf{Z}\}\subset L^2([0,1))$, we obtain

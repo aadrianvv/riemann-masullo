@@ -174,7 +174,7 @@ We recall the following description of the topology on the restricted product of
 
 (3) *A subset $H \subset \widehat{\prod}_{i \in I}(G_i, K_i)$ has compact closure if and only if there exists an $I$-indexed collection $\{H_i\}_{i \in I}$ with $H_i \subset G_i$ a compact subset for every $i \in I$, and $H_i = K_i$ for all but finitely many $i \in I$, and we have $H \subset \prod_{i \in I} H_i$.*
 
-(4) *For any partition $I = J_1 \sqcup J_2$ with $J_1$ a finite subset, the canonical map*
+(4) *For any partition $I = J_1 \coprod J_2$ with $J_1$ a finite subset, the canonical map*
 
 $$
 \prod_{j \in J_1} G_i \times \widehat{\prod}_{j \in J_2}(G_j, K_j) \to \widehat{\prod}_{i \in I}(G_i, K_i) \tag{A.1.1.4}
@@ -182,7 +182,7 @@ $$
 
 *is an isomorphism of Hausdorff locally compact abelian groups.*
 
-(5) *For any partition $I = J_1 \sqcup J_2$ with $J_1$ a finite subset, the subset*
+(5) *For any partition $I = J_1 \coprod J_2$ with $J_1$ a finite subset, the subset*
 
 $$
 \prod_{j \in J_1} U_i \times \prod_{j \in J_2} K_j \subset \widehat{\prod}_{i \in I}(G_i, K_i) \tag{A.1.1.5}
@@ -1041,7 +1041,7 @@ $$
 
 the hyperplane of those elements $x \in \mathbf{A}_{F,S_{\infty}}$ whose coordinate indexed by the Archimedean place $v$ is zero.
 
-Lemma A.2.3.13. *We fix an Archimedean place $v_0$ of $F$, and let $T_{v_0} \subset F_{v_0}^{\times} \to \mathbf{A}_{F,S_{\infty}}^{\times}$ be the canonical copy of $\mathbf{R}_{>0}$. Let $K_{v_0} \subset T_{v_0,\infty}$ be a compact subset.*
+Lemma A.2.3.13. *We fix an Archimedean place $v_0$ of $F$, and let $T_{v_0} \subset F_{v_0}^{\times} \hookrightarrow \mathbf{A}_{F,S_{\infty}}^{\times}$ be the canonical copy of $\mathbf{R}_{>0}$. Let $K_{v_0} \subset T_{v_0,\infty}$ be a compact subset.*
 
 (1) *The subset $K_{v_0} \cdot \overline{E}_0 \subset \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ is compact. If $K_{v_0}$ has non-empty interior in $T_{v_0,\infty}$, then so does $K_{v_0} \cdot \overline{E}_0$ in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$.*
 
@@ -1199,7 +1199,7 @@ where $\bar{\nu}$ is the Haar measure induced on $\mathbf{A}_F/F$ by $\nu$ on $\
 
 **556** · **CHAPTER A. PREPARATIONS FROM ALGEBRAIC NUMBER THEORY**
 
-The Tamagawa measure on $\mathbf{A}_F$ can be described explicitly as follows. Recall first that for $G$ a Hausdorff locally compact abelian group isomorphic to the restricted product $\widehat{\prod}_{i\in I}(G_i,K_i)$, with $I = I_0\times I_1$ with $I_0$ a finite set, where $K_i = 1$ for all $i\in I_0$ and $K_i\subset G_i$ is a compact open subgroup for every $i\in I_1$, and for $\mu_{G_i}$ Haar measures on each $G_i$ such that $\mu_{G_i}(K_i) = 1$ for all but finitely many $i\in I_1$, there exists a unique Haar measure $\mu_G$ on $G$ such that for every partition $J_1\sqcup J_2 = I$ with $J_1$ finite and containing $I_0$, the restriction of $\mu_G$ to the Borel set
+The Tamagawa measure on $\mathbf{A}_F$ can be described explicitly as follows. Recall first that for $G$ a Hausdorff locally compact abelian group isomorphic to the restricted product $\widehat{\prod}_{i\in I}(G_i,K_i)$, with $I = I_0\times I_1$ with $I_0$ a finite set, where $K_i = 1$ for all $i\in I_0$ and $K_i\subset G_i$ is a compact open subgroup for every $i\in I_1$, and for $\mu_{G_i}$ Haar measures on each $G_i$ such that $\mu_{G_i}(K_i) = 1$ for all but finitely many $i\in I_1$, there exists a unique Haar measure $\mu_G$ on $G$ such that for every partition $J_1\coprod J_2 = I$ with $J_1$ finite and containing $I_0$, the restriction of $\mu_G$ to the Borel set
 
 $$
 \prod_{i\in J_1}G_i\times\prod_{i\in J_2}K_i

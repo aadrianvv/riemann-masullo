@@ -1006,7 +1006,7 @@ if $m_{k,j}<m'_{k,j}\le N_s(\rho_{\chi_k,t_{k,j}})-1$.
 From the Markushevich basis $\{\psi_{\chi_k,t_{k,j},m_{k,j}}\}$ for $\mathscr H^s_{F,a}$, we define the subset:
 
 $$
-B_K := \{\psi_{\chi_{k'},t_{k',j'},m'_{k',j'}}\}_{0\le m'_{k',j'}\le N_s(\rho_{\chi_{k'},t_{k',j'}})-1,(k',j')\in K}
+B_K := \{\psi_{\chi_{k'},t_{k',j'},m_{k',j'}}\}_{0\le m_{k',j'}\le N_s(\rho_{\chi_{k'},t_{k',j'}})-1,(k',j')\in K}
 $$
 
 for each fixed finite subset $K\subset\mathbf N\times\mathbf N$.

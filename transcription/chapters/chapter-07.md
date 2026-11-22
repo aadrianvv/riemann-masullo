@@ -789,7 +789,7 @@ $$
 where $\delta_\chi = 0$ if $\chi|_{C^1_F}$ is non-trivial, and $\delta_\chi = 1$ if $\chi|_{C^1_F} = 1$:
 
 $$
-\Lambda(s,\chi) = \Lambda(0,\chi)\prod_{\rho\in\mathbf C:L(\rho,\chi)=0}{}'\left(1-\frac{s}{\rho}\right) \tag{7.1.4.9}
+\Lambda(s,\chi) = \Lambda(0,\chi)\prod'_{\rho\in\mathbf C:L(\rho,\chi)=0}\left(1-\frac{s}{\rho}\right) \tag{7.1.4.9}
 $$
 
 where the convergence of the product on the right side ($\prod'$ meaning that the factors are indexed by the pairs of conjugate zeros, counted with multiplicity, whose imaginary part has absolute value $\le T$, for $T\in\mathbf R_{>0}$, and the product is the limit of the resulting finite products as $T\to +\infty$) is uniform on the compact subsets of the complex $s$-plane (note that in [Bar, Thm.2] the exponent $\delta_\chi$ vanishes if and only if $\chi$ is the principal character: any unitary Hecke character $\chi$ such that $\chi|_{C^1_F} = 1$ is of the form $\chi = |\cdot|^{ix_0}_F$, and hence $\chi|\cdot|^{-ix_0}_F$ is trivial. We are using [Bar, Thm.2] upon replacing $\chi$ with $\chi|\cdot|^{-ix_0}_F$).
@@ -2010,7 +2010,7 @@ $$
 \langle \mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}}), \mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}})'\rangle
 $$
 
-is trivial. It follows that $P_X\mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}})$ is $\sigma(\mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}})', \mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}}))$-dense in $\mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}})$. Since, by Theorem D.3.3.7(1), $\mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}})$ is Montel, $P_X\mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}})$ is strongly dense by [Jar, Part II,Ch.11,§11.5,Prop.1,p.230], and being a closed subspace by Lemma 4.6.1.3(1) applies to $G = J_{F,S}$, $|\cdot|_G = |\cdot|_{F,S}$, $S_0 = X$, we indeed have $P_X\mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}}) = \mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}})$.
+is trivial. It follows that $P_X\mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}})$ is $\sigma(\mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}}), \mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}})')$-dense in $\mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}})$. Since, by Theorem D.3.3.7(1), $\mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}})$ is Montel, $P_X\mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}})$ is strongly dense by [Jar, Part II,Ch.11,§11.5,Prop.1,p.230], and being a closed subspace by Lemma 4.6.1.3(1) applies to $G = J_{F,S}$, $|\cdot|_G = |\cdot|_{F,S}$, $S_0 = X$, we indeed have $P_X\mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}}) = \mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}})$.
 
 In light of the foregoing, we know that the continuous linear map:
 
@@ -2230,7 +2230,7 @@ We then obtain that $\xi$ must vary over the nonzero elements of a fractional id
 
 Since $E^1_F$, and hence its image in $\mathrm{GL}_1(\mathbf A_{F,S})$ under the continuous quotient $\mathrm{GL}_1(\mathbf A_F)\to\mathrm{GL}_1(\mathbf A_{F,S})$, is relatively compact, we deduce that for (7.3.2.11) to hold, we must have $|\xi|_v\le X_v$ for each $v\in S-\{v_0\}$ and for real numbers $X_v\ge X$. There exists a real number $X_{v_0}\ge X$ such that $|\xi(g_0)_{v_0}\tau(t)|_{v_0}\le X$ for every $g_0\in E^1_F$, implies that $|\xi\tau(t)|_{v_0}\le X_{v_0}$ also holds.
 
-Since, for any fixed $Y > 0$, $|\xi|_{v_0}\le Y$ holds for at most finitely many $\xi\in I_{S,\chi}$, in light of discreteness of $I_{S,\chi}$ and the fact that the boundedness conditions $|\xi|_v\le X_v$ for all Archimedean places $v\neq v_0$ already all hold, we deduce that the condition $t = |\tau(t)|_{v_0}\le X_{v_0}$ holds only for $t\in (0,\lambda(X))$ for some $\lambda(X) > 0$. Formation of $I_{S,\chi}$ does not depend on $f_1$, but only on $\chi$.
+Since, for any fixed $Y > 0$, $|\xi|_{v_0}\le Y$ holds for at most finitely many $\xi\in I_{S,\chi}$, in light of discreteness of $I_{S,\chi}$ and the fact that the boundedness conditions $|\xi|_v\le X_v$ for all Archimedean places $v\neq v_0$ already all hold, we deduce that the condition $t = |\xi\tau(t)|_{v_0}\le X_{v_0}$ holds only for $t\in (0,\lambda(X))$ for some $\lambda(X) > 0$. Formation of $I_{S,\chi}$ does not depend on $f_1$, but only on $\chi$.
 
 Alternatively, we observe that we have $|I_{S,\chi}|_{F,S} = \prod_{v\in S}|I_{S,\chi}|_v\subset [a,+\infty)$ for some real number $a > 0$. Moreover, we have:
 

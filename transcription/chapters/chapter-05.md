@@ -1150,7 +1150,7 @@ The canonical continuous linear operator $F\to\varprojlim_{k\ge 0}F_k$ is a line
 
 The Mackey dual $F'_{\tau(F',F)}$ is therefore linearly and topologically isomorphic to the locally convex inductive limit $\varinjlim_{k\ge 0}(F_k)_{\tau(F_k',F_k)}'$ where the transition continuous operators are the continuous adjoints of the continuous operators $F_{k+1}\to F_k$ for each integer $k\ge 0$, in turn induced by the containments $U_{k+1}\subset U_k$.
 
-By reflexivity of $(F_k)_\beta'$, $\tau(F_k',F_k)=\beta(F_k',F_k)$ by [Jar, Part II,Ch.11,§11.4,Prop.1.(2),p.227]. In particular, $(F_k)_{\tau(F_k',F_k)}'$ is a (reflexive) Banach space, since it is linearly and topologically isomorphic to $(F_k)_\beta'$, and hence, by [Scha, Ch.IV,§4,Thm.4.4,p.139], $F_{\tau(F',F)}'$ is linearly and topologically isomorphic to the locally convex inductive limit $\varinjlim_{k\ge 0}(F_k)_\beta'$, a countable locally convex inductive limit of Banach spaces, hence an LF-space.
+By reflexivity of $(F_k)_\beta'$, $\tau(F_k',F_k)=\beta(F_k',F_k)$ by [Jar, Part II,Ch.11,§11.4,Prop.1.(2),p.227]. In particular, $(F_k)_{\tau(F_k',F_k)}'$ is a (reflexive) Banach space, since it is linearly and topologically isomorphic to $(F_k)_\beta'$, and hence, by [Scha, Ch.IV,§4,Thm.4.4,p.139], $F_{\tau(F',F)}'$ is linearly and topologically isomorphic to the locally convex inductive limit $\varinjlim_{k\ge 0}(F'_k)_\beta$, a countable locally convex inductive limit of Banach spaces, hence an LF-space.
 
 Since, by [Jar, Part II,Ch.11,§11.4,Prop.1(2),p.227], $\beta(F',F)=\tau(F',F)$, being $F$ reflexive, then $F_\beta'$ is an LF-space.
 
