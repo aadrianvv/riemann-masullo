@@ -1595,7 +1595,7 @@ as $g \in C_F$ is such that $|g|_F \to +\infty$.
 (2) *For every integer $N \ge 0$, there exists a real number $C_N > 0$ depending on $N$ and $f$, such that for every $g \in C_F$, we have*
 
 $$
-|\Phi_{F,\omega}(f)(g) - (|g|^{-1}_F \hat{f}(0) - f(0)) \delta_\omega(g)| \le C_N |g|^N_F \tag{3.4.2.4}
+|\Phi_{F,\omega}(f)(g) - (|g|^{-1}_F \widehat{f}(0) - f(0)) \delta_\omega(g)| \le C_N |g|^N_F \tag{3.4.2.4}
 $$
 
 as $g \in C_F$ is such that $|g|_F \to 0^+$, where
@@ -1642,19 +1642,19 @@ adhering to the notation $M(\phi)(s) := \int_{\mathbf{R}_{>0}} \phi(t) t^s \,\fr
 
 By Theorem 3.2.2.1(3), we know that, for $\phi := \Phi_{F,\omega=1}(f)\circ\tau$, $M(\phi)(s)$ converges absolutely and uniformly on the compact subsets of $\mathbf{C}_{>1}$.
 
-By Theorem 3.2.2.1(1), the Mellin transform $M(\phi)(s)$ extends to a meromorphic function over the entire complex $s$-plane, with simple poles at most at $s = 0, 1$, whose residues are $-\overline{\mu}_1(C_F)f(0)$ and $\overline{\mu}_1(C_F)\hat{f}(0)$, respectively.
+By Theorem 3.2.2.1(1), the Mellin transform $M(\phi)(s)$ extends to a meromorphic function over the entire complex $s$-plane, with simple poles at most at $s = 0, 1$, whose residues are $-\overline{\mu}_1(C_F)f(0)$ and $\overline{\mu}_1(C_F)\widehat{f}(0)$, respectively.
 
 We now use Weil’s Identity. Let $S$ be a finite set of places of $F$ containing all the Archimedean places. We fix $f \in \mathcal{S}(\mathbf{A}_F)$ of the form $f = f_\infty \otimes \bigotimes_{v \in \Sigma_{F,f}} f_v$ with $f_v = 1_{K_v}$ for $K_v \subset F_v$ a compact open subset for every finite place $v$, and $K_v = \mathcal{O}_{F_v}$ for every $v \notin S$. This we can arrange once such $f$ is chosen, up to enlarging $S$.
 
 We denote by $f_S$ the Schwartz-Bruhat function in $\mathcal{S}(\mathbf{A}_{F,S})$ defined as $f_S := f_\infty \otimes \bigotimes_{v \in S_f} 1_{K_v}$. For simplicity, we choose $S$ containing $S_\infty$ and minimal with respect to the above property (i.e. that $K_v \ne \mathcal{O}_{F_v}$ should occur for $v \in S$).
 
-As a consequence of (3.4.1.6) from Theorem 3.4.1.1 (applied to a large enough finite set of places $S$ of $F$ containing all the Archimedean places), we have, as meromorphic functions on the complex $s$-plane, away from the zeros of $\prod_{v \in S_f} (1 - q_v^{-s})$ and the poles of $\zeta_F(s)$ and $\tilde{Z}_v(1_{K_v}, |\cdot|^s_v)$ (if any):
+As a consequence of (3.4.1.6) from Theorem 3.4.1.1 (applied to a large enough finite set of places $S$ of $F$ containing all the Archimedean places), we have, as meromorphic functions on the complex $s$-plane, away from the zeros of $\prod_{v \in S_f} (1 - q_v^{-s})$ and the poles of $\zeta_F(s)$ and $\widetilde{Z}_v(1_{K_v}, |\cdot|^s_v)$ (if any):
 
 $$
-Z(f, |\cdot|^s_F) = Z_S(f_S, |\cdot|^s_{F,S}) \prod_{v \in S_f} (1 - q_v^{-s}) \zeta_F(s) \prod_{v \in S_f} \tilde{Z}_v(1_{K_v}, |\cdot|^s_v) \tag{3.4.2.7}
+Z(f, |\cdot|^s_F) = Z_S(f_S, |\cdot|^s_{F,S}) \prod_{v \in S_f} (1 - q_v^{-s}) \zeta_F(s) \prod_{v \in S_f} \widetilde{Z}_v(1_{K_v}, |\cdot|^s_v) \tag{3.4.2.7}
 $$
 
-where $\zeta_F(s)$ is the Dedekind zeta function of $F$, $q_v := N(\mathfrak{p}_v)$ and $\mathfrak{p}_v$ the prime ideal of $\mathcal{O}_F$ corresponding to the finite place $v$, and $\tilde{Z}_v$ was defined in (3.4.1.3). It is the meromorphic function $\frac{Z_v(1_{K_v}, |\cdot|^s_v)}{1-q_v^{-s}}$ (which turns out to be entire).
+where $\zeta_F(s)$ is the Dedekind zeta function of $F$, $q_v := N(\mathfrak{p}_v)$ and $\mathfrak{p}_v$ the prime ideal of $\mathcal{O}_F$ corresponding to the finite place $v$, and $\widetilde{Z}_v$ was defined in (3.4.1.3). It is the meromorphic function $\frac{Z_v(1_{K_v}, |\cdot|^s_v)}{1-q_v^{-s}}$ (which turns out to be entire).
 
 ## PDF page 148
 
@@ -1678,7 +1678,7 @@ $$
 
 over a slightly larger open vertical strip $\mathbf{C}_J$ of bounded width containing $\mathbf{C}_I$, with $\Phi$ holomorphic over $\mathbf{C}_J$ and $u$ meromorphic on $\mathbf{C}_J$ with slow growth near its poles (for this concept, the reader is referred to Definition B.3.1.1). The function $\Phi$ must further satisfy the assumption that $\Phi$ is Schwartz uniformly on any open vertical strip of bounded width contained within $\mathbf{C}_J$.
 
-Indeed, $\prod_{v \in S_f} (1 - q_v^{-s})$ is bounded uniformly on vertical strips of bounded width, together with all of its derivatives, and its zeros resolve the singularities of $Z_S(f_S, |\cdot|^s_{F,S})$ located on the imaginary line of the complex $s$-plane, with the sole possible exception of a single point, i.e. $s = 0$. The meromorphic function $\zeta_F(s)$ grows polynomially uniformly over the vertical strips of bounded width of the complex $s$-plane (see Proposition B.1.1.3), and it has simple poles at $s = 0$ and $s = 1$. The functions $\tilde{Z}_v(1_{K_v}, |\cdot|^s_v)$ are, for each $v \in S_f$, entire (by (3.4.1.3) combined with the local functional equation, see [CF, Ch.XV, Thm.2.4.1] and [CF, Ch.XV, §2.5]) and bounded uniformly on vertical strips (by vertical periodicity) together with all of their derivatives.
+Indeed, $\prod_{v \in S_f} (1 - q_v^{-s})$ is bounded uniformly on vertical strips of bounded width, together with all of its derivatives, and its zeros resolve the singularities of $Z_S(f_S, |\cdot|^s_{F,S})$ located on the imaginary line of the complex $s$-plane, with the sole possible exception of a single point, i.e. $s = 0$. The meromorphic function $\zeta_F(s)$ grows polynomially uniformly over the vertical strips of bounded width of the complex $s$-plane (see Proposition B.1.1.3), and it has simple poles at $s = 0$ and $s = 1$. The functions $\widetilde{Z}_v(1_{K_v}, |\cdot|^s_v)$ are, for each $v \in S_f$, entire (by (3.4.1.3) combined with the local functional equation, see [CF, Ch.XV, Thm.2.4.1] and [CF, Ch.XV, §2.5]) and bounded uniformly on vertical strips (by vertical periodicity) together with all of their derivatives.
 
 Finally, $Z_S(f_S, |\cdot|^s_{F,S})$ is Schwartz uniformly over the vertical strips of bounded width of the complex half-plane $\mathbf{C}_{>0}$ by the Uniform Riemann-Lebesgue Lemma of Proposition B.2.2.3, which applies as a consequence of Theorem 2.3.1.4 and Proposition 2.3.2.2. The $S$-local functional equation (see (3.3.1.3) from Theorem 3.3.1.1) together with the estimates on $\rho_S$ and its derivatives from Proposition 3.3.1.5) then exhibit $Z_S(f_S, |\cdot|^s_{F,S})$ as being indeed of the form $\Phi(s)u(s)$ with $\Phi$ Schwartz uniformly on the vertical strips of bounded width of the complex half-plane $\mathbf{C}_{>-N}$ for each fixed $N > 0$, and $u$ meromorphic with slow growth near its poles therein.
 

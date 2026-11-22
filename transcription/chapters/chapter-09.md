@@ -64,10 +64,10 @@ We will be discussing the resulting Banach spaces in the generality of $\mathbf{
 
 **9.1.1. Sobolev spaces of Hausdorff locally compact abelian groups.** We begin with a definition, following [GR, §1,2], with an eye on [Co, Appendix I, p.59].
 
-DEFINITION 9.1.1.1. Let $G$ be a Hausdorff locally compact abelian group, $\mu_G$ a choice of Haar measure on $G$, $\mu_{\hat G}$ the corresponding Plancherel measure. Let $s\in\mathbf{R}$ a real number. We define a Sobolev weight on $G$ to be a continuous function:
+DEFINITION 9.1.1.1. Let $G$ be a Hausdorff locally compact abelian group, $\mu_G$ a choice of Haar measure on $G$, $\mu_{\widehat G}$ the corresponding Plancherel measure. Let $s\in\mathbf{R}$ a real number. We define a Sobolev weight on $G$ to be a continuous function:
 
 $$
-w:\hat G\to[0,+\infty) \tag{9.1.1.1}
+w:\widehat G\to[0,+\infty) \tag{9.1.1.1}
 $$
 
 such that there exists a real number $C_w>0$ such that:
@@ -76,23 +76,23 @@ $$
 w(\chi\chi')\le C_w(w(\chi)+w(\chi')) \tag{9.1.1.2}
 $$
 
-for all $\chi,\chi'\in\hat G$. We define $H^s_w(G,\mu_G)$ to be the completion of $C_c(\hat G)$ with respect to the linear topology induced by the norm:
+for all $\chi,\chi'\in\widehat G$. We define $H^s_w(G,\mu_G)$ to be the completion of $C_c(\widehat G)$ with respect to the linear topology induced by the norm:
 
 $$
-\lVert f\rVert_{H^s_w(G,\mu_G)}:=\left(\int_{\hat G}\lvert\hat f(\chi)\rvert^2(1+w(\chi)^2)^{s/2}\,\mathrm{d}\mu_{\hat G}(\chi)\right)^{1/2}. \tag{9.1.1.3}
+\lVert f\rVert_{H^s_w(G,\mu_G)}:=\left(\int_{\widehat G}\lvert\widehat f(\chi)\rvert^2(1+w(\chi)^2)^{s/2}\,\mathrm{d}\mu_{\widehat G}(\chi)\right)^{1/2}. \tag{9.1.1.3}
 $$
 
-LEMMA 9.1.1.2. *Let $G$ be a Hausdorff locally compact abelian group, $w:\hat G\to[0,+\infty)$ a Sobolev weight, $s\in\mathbf{R}$ a real number. Then $H^s_w(G,\mu_G)$ is a Hilbert space. If $G$ is second-countable, then $H^s_w(G,\mu_G)$ is a separable Hilbert space.*
+LEMMA 9.1.1.2. *Let $G$ be a Hausdorff locally compact abelian group, $w:\widehat G\to[0,+\infty)$ a Sobolev weight, $s\in\mathbf{R}$ a real number. Then $H^s_w(G,\mu_G)$ is a Hilbert space. If $G$ is second-countable, then $H^s_w(G,\mu_G)$ is a separable Hilbert space.*
 
-PROOF. Since $w$ is continuous, so is $(1+w^2)^{s/2}$: this is so if $s\ge 0$, and since $1+w^2$ is real valued, nonnegative and nowhere vanishing over $\hat G$, $(1+w^2)^{s/2}$ is continuous for negative $s$ too. As such, $\mu:=(1+w^2)^{s/2}\mu_{\hat G}$ is a Radon measure on $\hat G$.
+PROOF. Since $w$ is continuous, so is $(1+w^2)^{s/2}$: this is so if $s\ge 0$, and since $1+w^2$ is real valued, nonnegative and nowhere vanishing over $\widehat G$, $(1+w^2)^{s/2}$ is continuous for negative $s$ too. As such, $\mu:=(1+w^2)^{s/2}\mu_{\widehat G}$ is a Radon measure on $\widehat G$.
 
-By [Fol, Prop.7.9], we have $H^s_w(G,\mu_G)=L^2(\hat G,(1+w^2)^{s/2}\mu_{\hat G})$. We deduce that $H^s_w(G,\mu_G)$ is a Hilbert space for any $s\in\mathbf{R}$. Being $\hat G$ Hausdorff locally compact, if $G$ is second-countable then so is $\hat G$. We deduce, by [Fol, Thm.7.8], that $\mu$ is a regular $\sigma$-finite Radon measure on $\hat G$, and by [Coh, Prop.3.4.5] we deduce that $H^s_w(G,\mu_G)$ is a separable metric space, hence separable as a Hilbert space. $\square$
+By [Fol, Prop.7.9], we have $H^s_w(G,\mu_G)=L^2(\widehat G,(1+w^2)^{s/2}\mu_{\widehat G})$. We deduce that $H^s_w(G,\mu_G)$ is a Hilbert space for any $s\in\mathbf{R}$. Being $\widehat G$ Hausdorff locally compact, if $G$ is second-countable then so is $\widehat G$. We deduce, by [Fol, Thm.7.8], that $\mu$ is a regular $\sigma$-finite Radon measure on $\widehat G$, and by [Coh, Prop.3.4.5] we deduce that $H^s_w(G,\mu_G)$ is a separable metric space, hence separable as a Hilbert space. $\square$
 
 We refer the reader to [GR, §1,2] for more on the Sobolev spaces $H^s_w(G,\mu_G)$ attached to a Hausdorff locally compact abelian group, and to [FG, §2]. We observe that the Sobolev weight $w$ from Definition 9.1.1.1 is denoted $\gamma$ in [GR, §1(3), Def.1], and that the real number $s$ in [GR, §1], assumed to be only nonnegative in loc.cit., and the results contained therein, is related to our $s$ by doubling, i.e. the space $H^s_\gamma(G)$ from [GR, §1, Def.1] is our $H^{s/2}_w(G,\mu_G)$ for $w=\gamma$.
 
 We have the following basic properties of $H^s_w(G,\mu_G)$:
 
-PROPOSITION 9.1.1.3. *Let $G$ be a Hausdorff locally compact abelian group, $\mu_G$ a choice of Haar measure on $G$, $\mu_{\hat G}$ its Plancherel measure on $\hat G$. Let $s\in\mathbf{R}$ be a real number, and $w:\hat G\to[0,+\infty)$ a Sobolev weight. Assume $s$ is nonnegative.*
+PROPOSITION 9.1.1.3. *Let $G$ be a Hausdorff locally compact abelian group, $\mu_G$ a choice of Haar measure on $G$, $\mu_{\widehat G}$ its Plancherel measure on $\widehat G$. Let $s\in\mathbf{R}$ be a real number, and $w:\widehat G\to[0,+\infty)$ a Sobolev weight. Assume $s$ is nonnegative.*
 
 *(1) The inclusion:*
 
@@ -118,7 +118,7 @@ $$
 
 and the inclusion $H^{s'}_w(G,\mu_G)\subset H^s_w(G,\mu_G)$ is continuous.
 
-(3) *(Sobolev Embedding) If $(1+w^2)^{-s/2}\in L^1(\hat G,\mu_{\hat G})$, then every element of $H^s_w(G,\mu_G)$ is represented by a unique continuous function on $G$ vanishing at infinity, resulting in a canonical linear inclusion:*
+(3) *(Sobolev Embedding) If $(1+w^2)^{-s/2}\in L^1(\widehat G,\mu_{\widehat G})$, then every element of $H^s_w(G,\mu_G)$ is represented by a unique continuous function on $G$ vanishing at infinity, resulting in a canonical linear inclusion:*
 
 $$
 H^s_w(G,\mu_G)\to C_0(G). \tag{9.1.1.7}
@@ -133,31 +133,31 @@ $$
 PROOF. (1) : We have, by [DE, Thm.3.4.8], for every $f\in H^s_w(G,\mu_G)$:
 
 $$
-\lVert f\rVert_{L^2(G,\mu_G)}=\lVert\hat f\rVert_{L^2(\hat G,\mu_{\hat G})}=\left(\int_{\hat G}\lvert\hat f(\chi)\rvert^2\,\mathrm{d}\mu_{\hat G}(\chi)\right)^{1/2}\le\left(\int_{\hat G}\lvert\hat f(\chi)\rvert^2(1+w(\chi)^2)^{s/2}\,\mathrm{d}\mu_{\hat G}(\chi)\right)^{1/2}=\lVert f\rVert_{H^s_w(G,\mu_G)}
+\lVert f\rVert_{L^2(G,\mu_G)}=\lVert\widehat f\rVert_{L^2(\widehat G,\mu_{\widehat G})}=\left(\int_{\widehat G}\lvert\widehat f(\chi)\rvert^2\,\mathrm{d}\mu_{\widehat G}(\chi)\right)^{1/2}\le\left(\int_{\widehat G}\lvert\widehat f(\chi)\rvert^2(1+w(\chi)^2)^{s/2}\,\mathrm{d}\mu_{\widehat G}(\chi)\right)^{1/2}=\lVert f\rVert_{H^s_w(G,\mu_G)}
 $$
 
-where we have used the assumption $s\ge 0$ to deduce the inequality $1\le(1+w(\chi)^2)^{s/2}$ as functions on $\hat G$.
+where we have used the assumption $s\ge 0$ to deduce the inequality $1\le(1+w(\chi)^2)^{s/2}$ as functions on $\widehat G$.
 
 (2) : Since $s'>s$, we have $(1+w(\chi)^2)^{s/2}\le(1+w(\chi)^2)^{s'/2}$ since $s\ge 0$. The inequality in (9.1.1.6) therefore follows from the definition of $\lVert\cdot\rVert_{H^s_w(G,\mu_G)}$, which proves that $H^{s'}_w(G,\mu_G)$ is contained in $H^s_w(G,\mu_G)$ as a linear subspace of $L^2(G,\mu_G)$, and the inclusion $H^{s'}_w(G,\mu_G)\subset H^s_w(G,\mu_G)$ is continuous.
 
-(3) : Let $f\in H^s_w(G,\mu_G)$ be an arbitrary element, and call $u:=\hat f$. By [Ru, Thm.1.2.4(d)] (see also the proof of [DE, Thm.3.2.1] on [DE, p.65]), we have, for $\mu_G$-almost all $g\in G$:
+(3) : Let $f\in H^s_w(G,\mu_G)$ be an arbitrary element, and call $u:=\widehat f$. By [Ru, Thm.1.2.4(d)] (see also the proof of [DE, Thm.3.2.1] on [DE, p.65]), we have, for $\mu_G$-almost all $g\in G$:
 
 $$
-\lvert u(g)\rvert\le\lVert\hat u\rVert_{L^1(\hat G,\mu_{\hat G})}=\int_{\hat G}\lvert\hat u(\chi)\rvert\frac{(1+w(\chi)^2)^{s/4}}{(1+w(\chi)^2)^{s/4}}\,\mathrm{d}\mu_{\hat G}(\chi)\le\left(\int_{\hat G}\lvert\hat u(\chi)\rvert^2(1+w(\chi)^2)^{s/2}\,\mathrm{d}\mu_{\hat G}(\chi)\right)^{1/2}\left(\int_{\hat G}\frac{1}{(1+w(\chi)^2)^{s/2}}\,\mathrm{d}\mu_{\hat G}(\chi)\right)^{1/2}
+\lvert u(g)\rvert\le\lVert\widehat u\rVert_{L^1(\widehat G,\mu_{\widehat G})}=\int_{\widehat G}\lvert\widehat u(\chi)\rvert\frac{(1+w(\chi)^2)^{s/4}}{(1+w(\chi)^2)^{s/4}}\,\mathrm{d}\mu_{\widehat G}(\chi)\le\left(\int_{\widehat G}\lvert\widehat u(\chi)\rvert^2(1+w(\chi)^2)^{s/2}\,\mathrm{d}\mu_{\widehat G}(\chi)\right)^{1/2}\left(\int_{\widehat G}\frac{1}{(1+w(\chi)^2)^{s/2}}\,\mathrm{d}\mu_{\widehat G}(\chi)\right)^{1/2}
 $$
 
 $$
-=\lVert f\rVert_{H^s_w(G,\mu_G)}\lVert(1+w^2)^{-s/2}\rVert^{1/2}_{L^1(\hat G,\mu_{\hat G})}.
+=\lVert f\rVert_{H^s_w(G,\mu_G)}\lVert(1+w^2)^{-s/2}\rVert^{1/2}_{L^1(\widehat G,\mu_{\widehat G})}.
 $$
 
-and we deduce that $u$ is uniformly bounded over $G$. By (1) and [DE, Thm.3.4.8], we have $u\in L^2(G,\mu_G)$. From the above inequalities, we deduce that $\hat u$ is absolutely $\mu_{\hat G}$-integrable over $\hat G$, and so $u$ is an element of $C_0(G)$ by [DE, Thm.3.2.1]. Upon calling $C(w,s):=\lVert(1+w^2)^{-s/2}\rVert^{1/2}_{L^1(\hat G,\mu_{\hat G})}$, the above inequalities imply that (9.1.1.8) holds. Formation of $u$ is linear with respect to $f\in H^s_w(G,\mu_G)$, and (9.1.1.8) implies that the resulting linear operator $H^s_w(G,\mu_G)\to C_0(G)$ is continuous. It is injective by [DE, Thm.3.2.1] (see the proof of injectivity on [DE, p.65]). $\square$
+and we deduce that $u$ is uniformly bounded over $G$. By (1) and [DE, Thm.3.4.8], we have $u\in L^2(G,\mu_G)$. From the above inequalities, we deduce that $\widehat u$ is absolutely $\mu_{\widehat G}$-integrable over $\widehat G$, and so $u$ is an element of $C_0(G)$ by [DE, Thm.3.2.1]. Upon calling $C(w,s):=\lVert(1+w^2)^{-s/2}\rVert^{1/2}_{L^1(\widehat G,\mu_{\widehat G})}$, the above inequalities imply that (9.1.1.8) holds. Formation of $u$ is linear with respect to $f\in H^s_w(G,\mu_G)$, and (9.1.1.8) implies that the resulting linear operator $H^s_w(G,\mu_G)\to C_0(G)$ is continuous. It is injective by [DE, Thm.3.2.1] (see the proof of injectivity on [DE, p.65]). $\square$
 
 REMARK 9.1.1.4. We further refer the reader to [GR, Prop.1,2] for (1) and (2) in Proposition 9.1.1.3.
 
 LEMMA 9.1.1.5. *Let $G$ be a Hausdorff locally compact abelian group. Let $s\ge 0$ be a real number. The pairing:*
 
 $$
-C_c(\hat G)\times C_c(\hat G)\to\mathbf{C} \tag{9.1.1.9}
+C_c(\widehat G)\times C_c(\widehat G)\to\mathbf{C} \tag{9.1.1.9}
 $$
 
 ## PDF page 398
@@ -167,7 +167,7 @@ $$
 defined by the assignment:
 
 $$
-(\phi,\psi)\mapsto\int_{\hat G}\phi(\chi)\psi(\chi)\,\mathrm{d}\mu_{\hat G}(\chi) \tag{9.1.1.10}
+(\phi,\psi)\mapsto\int_{\widehat G}\phi(\chi)\psi(\chi)\,\mathrm{d}\mu_{\widehat G}(\chi) \tag{9.1.1.10}
 $$
 
 *extends uniquely to a continuous non-degenerate bi-linear form:*
@@ -186,43 +186,43 @@ $$
 
 PROOF. By [Fol, Thm.6.15], the pairing:
 
-$$\langle\cdot,\cdot\rangle:L^2(\hat G,\mu)\times L^2(\hat G,\mu)\to\mathbf{C}$$
+$$\langle\cdot,\cdot\rangle:L^2(\widehat G,\mu)\times L^2(\widehat G,\mu)\to\mathbf{C}$$
 
 defined by:
 
 $$
-\langle\phi,\psi\rangle:=\int_{\hat G}\phi(\chi)\psi(\chi)\,\mu(\chi) \tag{9.1.1.13}
+\langle\phi,\psi\rangle:=\int_{\widehat G}\phi(\chi)\psi(\chi)\,\mu(\chi) \tag{9.1.1.13}
 $$
 
-upon choosing the measure space $(X,\mathcal{M},\mu)$ to be $X:=\hat G$, $\mathcal{M}$ the Borel $\sigma$-algebra, and $\mu_s:=(1+w^2)^{s/2}\mu_{\hat G}$, with $p=q=2$, is separately continuous and induces an isometry between $L^2(\hat G,\mu_s)'_\beta=H^s_w(G,\mu_G)'_\beta$ equipped with the dual norm (defined in [Fol, Prop.6.13]) and $L^2(\hat G,(1+w^2)^{s/2}\mu_{\hat G})$ itself, which is $H^s_w(G,\mu_G)$.
+upon choosing the measure space $(X,\mathcal{M},\mu)$ to be $X:=\widehat G$, $\mathcal{M}$ the Borel $\sigma$-algebra, and $\mu_s:=(1+w^2)^{s/2}\mu_{\widehat G}$, with $p=q=2$, is separately continuous and induces an isometry between $L^2(\widehat G,\mu_s)'_\beta=H^s_w(G,\mu_G)'_\beta$ equipped with the dual norm (defined in [Fol, Prop.6.13]) and $L^2(\widehat G,(1+w^2)^{s/2}\mu_{\widehat G})$ itself, which is $H^s_w(G,\mu_G)$.
 
-For every $\phi\in L^2(\hat G,\mu_s)$ and $\psi\in L^2(\hat G,\mu_{-s})$, the integral:
-
-$$
-\int_{\hat G}\lvert\phi(\chi)\psi(\chi)\rvert\,\mathrm{d}\mu_{\hat G}(\chi) \tag{9.1.1.14}
-$$
-
-converges, i.e. $\phi\cdot\psi$, as a complex-valued measurable function on $\hat G$, is absolutely integrable. Indeed, we have:
+For every $\phi\in L^2(\widehat G,\mu_s)$ and $\psi\in L^2(\widehat G,\mu_{-s})$, the integral:
 
 $$
-\int_{\hat G}\lvert\phi(\chi)\psi(\chi)\rvert\,\mathrm{d}\mu_{\hat G}(\chi)=\int_{\hat G}\lvert\phi(\chi)\psi(\chi)\rvert\frac{(1+w(\chi)^2)^{s/4}}{(1+w(\chi)^2)^{s/4}}\,\mathrm{d}\mu_{\hat G}(\chi)\le\lVert\phi\rVert^{1/2}_{L^2(\hat G,\mu_s)}\lVert\psi\rVert^{1/2}_{L^2(\hat G,\mu_{-s})}. \tag{9.1.1.15}
+\int_{\widehat G}\lvert\phi(\chi)\psi(\chi)\rvert\,\mathrm{d}\mu_{\widehat G}(\chi) \tag{9.1.1.14}
 $$
 
-We define $\langle\phi,\psi\rangle_{s,w}$ to be the value of the integral $\int_{\hat G}\phi(\chi)\psi(\chi)\,\mathrm{d}\mu_{\hat G}(\chi)$. The notation is justified since the restriction of $\langle\cdot,\cdot\rangle_{s,w}$ to $C_c(\hat G)\times C_c(\hat G)$ is the pairing defined in (9.1.1.10).
+converges, i.e. $\phi\cdot\psi$, as a complex-valued measurable function on $\widehat G$, is absolutely integrable. Indeed, we have:
 
-We have, for all such $\phi,\psi\in L^2(\hat G,\mu_s)$:
+$$
+\int_{\widehat G}\lvert\phi(\chi)\psi(\chi)\rvert\,\mathrm{d}\mu_{\widehat G}(\chi)=\int_{\widehat G}\lvert\phi(\chi)\psi(\chi)\rvert\frac{(1+w(\chi)^2)^{s/4}}{(1+w(\chi)^2)^{s/4}}\,\mathrm{d}\mu_{\widehat G}(\chi)\le\lVert\phi\rVert^{1/2}_{L^2(\widehat G,\mu_s)}\lVert\psi\rVert^{1/2}_{L^2(\widehat G,\mu_{-s})}. \tag{9.1.1.15}
+$$
+
+We define $\langle\phi,\psi\rangle_{s,w}$ to be the value of the integral $\int_{\widehat G}\phi(\chi)\psi(\chi)\,\mathrm{d}\mu_{\widehat G}(\chi)$. The notation is justified since the restriction of $\langle\cdot,\cdot\rangle_{s,w}$ to $C_c(\widehat G)\times C_c(\widehat G)$ is the pairing defined in (9.1.1.10).
+
+We have, for all such $\phi,\psi\in L^2(\widehat G,\mu_s)$:
 
 $$
 \langle\phi(1+w^2)^{-s/2},\psi\rangle=\langle\phi,\psi(1+w^2)^{-s/2}\rangle=\langle\phi,\psi\rangle_{s,w} \tag{9.1.1.16}
 $$
 
-where the products $\phi(1+w^2)^{-s/2}$, respectively $\psi(1+w^2)^{-s/2}$, are as complex-valued measurable functions on $\hat G$, noting that the pairing $\langle\cdot,\cdot\rangle$ in (9.1.1.16) is defined on $(\phi,\psi(1+w^2)^{-s/2})$, respectively $(\phi(1+w^2)^{-s/2},\psi)$.
+where the products $\phi(1+w^2)^{-s/2}$, respectively $\psi(1+w^2)^{-s/2}$, are as complex-valued measurable functions on $\widehat G$, noting that the pairing $\langle\cdot,\cdot\rangle$ in (9.1.1.16) is defined on $(\phi,\psi(1+w^2)^{-s/2})$, respectively $(\phi(1+w^2)^{-s/2},\psi)$.
 
 By Proposition 9.1.1.3(1), the pairing $\langle\cdot,\cdot\rangle_{s,w}$ is sequentially continuous with respect to each argument, hence indeed separately sequentially continuous with respect to the norm topology defined by $\lVert\cdot\rVert_{H^s_w(G,\mu_G)}$ in each argument, since $\langle\cdot,\cdot\rangle$ is.
 
 Sequential continuity of linear functionals implies continuity, the topology on $H^s_w(G,\mu_G)$ being metric. Since $H^s_w(G,\mu_G)$ is a Banach space, being a Hilbert space by Lemma 9.1.1.2, hence so is its strong dual, normed with the dual norm, and by the Uniform Boundedness Theorem the pairing $\langle\cdot,\cdot\rangle_{s,w}$ is continuous, being separately continuous (see [Bou-TVS, Ch.IV, §4.6, IV.26, Thm.2]). The same conclusion also follows from Proposition C.2.3.11.
 
-The linear endomorphism $C_c(\hat G)\to C_c(\hat G)$ sending $\psi$ to $(1+w^2)^{-s/2}\psi$ therefore extends to a continuous linear operator $H^s_w(G,\mu_G)'_\beta\to H^{-s}_w(G,\mu_G)$.
+The linear endomorphism $C_c(\widehat G)\to C_c(\widehat G)$ sending $\psi$ to $(1+w^2)^{-s/2}\psi$ therefore extends to a continuous linear operator $H^s_w(G,\mu_G)'_\beta\to H^{-s}_w(G,\mu_G)$.
 
 ## PDF page 399
 
@@ -246,9 +246,9 @@ the last equality being provided by [Fol, Prop.6.13].
 
 The identities in (9.1.1.17) imply that the continuous linear operator from (9.1.1.12) is an isometry, hence injective.
 
-It is bijective on $C_c(\hat G)$ being $(1+w^2)^{-s/2}$ continuous and nowhere vanishing, with continuous and nowhere vanishing reciprocal. It follows that it has dense range, and it is therefore surjective, being its range closed (as is the range of any linear topological embedding of a complete Hausdorff locally convex topological vector space into another). It is therefore an isometric isomorphism. $\square$
+It is bijective on $C_c(\widehat G)$ being $(1+w^2)^{-s/2}$ continuous and nowhere vanishing, with continuous and nowhere vanishing reciprocal. It follows that it has dense range, and it is therefore surjective, being its range closed (as is the range of any linear topological embedding of a complete Hausdorff locally convex topological vector space into another). It is therefore an isometric isomorphism. $\square$
 
-**9.1.2. Sobolev spaces $W^{s,2}$ of $\mathbf{R}_{>0}$-modulated groups.** We will be specializing the Sobolev spaces defined in Definition 9.1.1.1 and discussed in Proposition 9.1.1.3, to the case $G=\widehat{C_F}$, for $F$ a number field, for $\mu_G=\hat{\bar\mu}$ the Plancherel measure associated to the Haar measure $\bar\mu$ on $C_F$, whose Plancherel measure is $\bar\mu$ by Fourier inversion, and for $w:\hat G=C_F\to[0,+\infty)$ of the following form:
+**9.1.2. Sobolev spaces $W^{s,2}$ of $\mathbf{R}_{>0}$-modulated groups.** We will be specializing the Sobolev spaces defined in Definition 9.1.1.1 and discussed in Proposition 9.1.1.3, to the case $G=\widehat{C_F}$, for $F$ a number field, for $\mu_G=\widehat{\bar\mu}$ the Plancherel measure associated to the Haar measure $\bar\mu$ on $C_F$, whose Plancherel measure is $\bar\mu$ by Fourier inversion, and for $w:\widehat G=C_F\to[0,+\infty)$ of the following form:
 
 $$
 w(g):=\lvert\log\lvert g\rvert_F\rvert \tag{9.1.2.1}
@@ -262,10 +262,10 @@ We do so by discussing the intermediate case of $\mathbf{R}_{>0}$-modulated Haus
 
 We refer the reader to Theorem D.3.3.7 for more on function spaces of Schwartz-Bruhat functions (with $I$-exponential decay) on $\mathbf{R}_{>0}$-modulated groups.
 
-DEFINITION 9.1.2.1 (Sobolev Spaces of $\mathbf{R}_{>0}$-modulated groups). Let $G$ be an $\mathbf{R}_{>0}$-modulated group, with module $\lvert\cdot\rvert_G$. We let $\mu_G$ be a choice of Haar measure on $G$, and $\mu_{\hat G}$ its Plancherel measure. Let $s\ge 0$ be a real number. We define:
+DEFINITION 9.1.2.1 (Sobolev Spaces of $\mathbf{R}_{>0}$-modulated groups). Let $G$ be an $\mathbf{R}_{>0}$-modulated group, with module $\lvert\cdot\rvert_G$. We let $\mu_G$ be a choice of Haar measure on $G$, and $\mu_{\widehat G}$ its Plancherel measure. Let $s\ge 0$ be a real number. We define:
 
 $$
-W^{s,2}(G):=H^s_w(\hat G,\mu_{\hat G}) \tag{9.1.2.2}
+W^{s,2}(G):=H^s_w(\widehat G,\mu_{\widehat G}) \tag{9.1.2.2}
 $$
 
 for $w$ the choice of Sobolev weight from (9.1.2.1). We denote by $\lVert\cdot\rVert_{s,2}$ the norm:
@@ -282,15 +282,15 @@ We refer to $s$ as the Sobolev degree of $W^{s,2}(G)$.
 
 Before stating the next Lemma, we observe the following. For $G$ an $\mathbf{R}_{>0}$-modulated group, and for any choice $\tau$ of continuous homomorphic section to the module $\lvert\cdot\rvert_G$ (noting that such sections exist by Remark D.2.1.2), we have an isomorphism, induced by the choice of $\tau$, of Hausdorff locally compact abelian groups $G\simeq\mathbf{R}_{>0}\times G^1$, with $G^1:=\ker(\lvert\cdot\rvert_G)$ a compact Hausdorff abelian group.
 
-The choice of Haar measure $\mu_G$ on $G$ is pushed forward to $\mathrm{d}t/t\otimes\mu_1$ for a unique Haar measure $\mu_1$ on $G^1$. This isomorphism is compatible with formation of dual groups (see [DE, Cor.3.6.2] combined with functoriality of formation of the dual group with respect to continuous group homomorphisms), giving an isomorphism of Hausdorff locally compact abelian groups $\hat G\simeq\widehat{\mathbf{R}_{>0}}\times\widehat{G^1}$ where $\widehat{\mathbf{R}_{>0}}\simeq\mathbf{R}$ upon choosing the basic character $t\mapsto t^{2\pi i}$ to choose the isomorphism $\widehat{\mathbf{R}_{>0}}\simeq\mathbf{R}$.
+The choice of Haar measure $\mu_G$ on $G$ is pushed forward to $\mathrm{d}t/t\otimes\mu_1$ for a unique Haar measure $\mu_1$ on $G^1$. This isomorphism is compatible with formation of dual groups (see [DE, Cor.3.6.2] combined with functoriality of formation of the dual group with respect to continuous group homomorphisms), giving an isomorphism of Hausdorff locally compact abelian groups $\widehat G\simeq\widehat{\mathbf{R}_{>0}}\times\widehat{G^1}$ where $\widehat{\mathbf{R}_{>0}}\simeq\mathbf{R}$ upon choosing the basic character $t\mapsto t^{2\pi i}$ to choose the isomorphism $\widehat{\mathbf{R}_{>0}}\simeq\mathbf{R}$.
 
-Since $\widehat{G^1}$ is a discrete abelian group, every continuous $1$-parameter group $\mathbf{R}_{>0}\to\widehat{G^1}$ is constant (since its image is connected and contains the neutral element), and every continuous $1$-parameter group $\mathbf{R}_{>0}\to\hat G$ has image contained within $\widehat{\mathbf{R}_{>0}}\times 1$, which is the connected component of the neutral element of $\hat G$.
+Since $\widehat{G^1}$ is a discrete abelian group, every continuous $1$-parameter group $\mathbf{R}_{>0}\to\widehat{G^1}$ is constant (since its image is connected and contains the neutral element), and every continuous $1$-parameter group $\mathbf{R}_{>0}\to\widehat G$ has image contained within $\widehat{\mathbf{R}_{>0}}\times 1$, which is the connected component of the neutral element of $\widehat G$.
 
-The $\mathbf{C}$-algebra of differential operators on $\hat G$ is therefore generated by a single degree-$1$ differential operator, which we call $D$. Under the isomorphism $\widehat{\mathbf{R}_{>0}}\simeq\mathbf{R}$, $D$ matches a generator for the $\mathbf{C}$-algebra of differential operators on $\mathbf{R}$, and we can renormalize $D$ so as to arrange such generator to be $\partial_x$.
+The $\mathbf{C}$-algebra of differential operators on $\widehat G$ is therefore generated by a single degree-$1$ differential operator, which we call $D$. Under the isomorphism $\widehat{\mathbf{R}_{>0}}\simeq\mathbf{R}$, $D$ matches a generator for the $\mathbf{C}$-algebra of differential operators on $\mathbf{R}$, and we can renormalize $D$ so as to arrange such generator to be $\partial_x$.
 
 We further refer the reader to Definition D.1.6.5 and Definition D.1.6.8 of §D.1.6 from Appendix D, for more on differential operators on Hausdorff locally compact abelian groups.
 
-LEMMA 9.1.2.2. *Let $G$ be an $\mathbf{R}_{>0}$-modulated group, with module $\lvert\cdot\rvert_G$. We let $\mu_G$ be a choice of Haar measure on $G$, and $\mu_{\hat G}$ its Plancherel measure. Let $s=2N\ge 0$ an even integer. The normed topology on the Hilbert space $W^{s,2}(G)$ is equivalently induced by the finite family of seminorms:*
+LEMMA 9.1.2.2. *Let $G$ be an $\mathbf{R}_{>0}$-modulated group, with module $\lvert\cdot\rvert_G$. We let $\mu_G$ be a choice of Haar measure on $G$, and $\mu_{\widehat G}$ its Plancherel measure. Let $s=2N\ge 0$ an even integer. The normed topology on the Hilbert space $W^{s,2}(G)$ is equivalently induced by the finite family of seminorms:*
 
 $$
 \{\lVert\cdot\rVert_{s,k,2}\}_{0\le k\le N} \tag{9.1.2.4}
@@ -299,10 +299,10 @@ $$
 *assigned by, for each $f\in W^{s,2}(C_F)$:*
 
 $$
-\lVert f\rVert_{s,k,2}:=\left(\int_{\hat G}\lvert D^k\hat f(\chi)\rvert^2\,\mathrm{d}\mu_{\hat G}(\chi)\right)^{1/2} \tag{9.1.2.5}
+\lVert f\rVert_{s,k,2}:=\left(\int_{\widehat G}\lvert D^k\widehat f(\chi)\rvert^2\,\mathrm{d}\mu_{\widehat G}(\chi)\right)^{1/2} \tag{9.1.2.5}
 $$
 
-*where $D$ is any generator of the $\mathbf{C}$-algebra of differential operators on $\hat G$.*
+*where $D$ is any generator of the $\mathbf{C}$-algebra of differential operators on $\widehat G$.*
 
 PROOF. An equivalent topology on $W^{s,2}(G)$ is induced by the finite family of seminorms:
 
@@ -339,14 +339,14 @@ The constant $C_s>0$ is obtained as follows: upon calling $a_k^2:=\binom{s/2}{k}
 By [DE, Thm.3.4.8], we have:
 
 $$
-\lVert f\rVert'_{s,k,2}=\left(\int_{\hat G}\lvert\mathcal{F}(f(g)(\log\lvert g\rvert_G)^k)(\chi)\rvert^2\,\mathrm{d}\mu_{\hat G}(\chi)\right)^{1/2} \tag{9.1.2.10}
+\lVert f\rVert'_{s,k,2}=\left(\int_{\widehat G}\lvert\mathcal{F}(f(g)(\log\lvert g\rvert_G)^k)(\chi)\rvert^2\,\mathrm{d}\mu_{\widehat G}(\chi)\right)^{1/2} \tag{9.1.2.10}
 $$
 
-for each integer $0\le k\le s/2$, where $\mathcal{F}:L^2(G,\mu_G)\to L^2(\hat G,\mu_{\hat G})$ is the Fourier transform, normalized according to the assignment $\phi\mapsto\mathcal{F}(\phi)(\chi):=\int_G\phi(g)\bar\chi(g)\,\mathrm{d}\mu_{\hat G}(\chi)$.
+for each integer $0\le k\le s/2$, where $\mathcal{F}:L^2(G,\mu_G)\to L^2(\widehat G,\mu_{\widehat G})$ is the Fourier transform, normalized according to the assignment $\phi\mapsto\mathcal{F}(\phi)(\chi):=\int_G\phi(g)\bar\chi(g)\,\mathrm{d}\mu_{\widehat G}(\chi)$.
 
-Upon choosing a continuous homomorphic section $\tau$ to the idelic norm, we normalize the choice of generator $D$ of the $\mathbf{C}$-algebra of differential operators on $\hat G$, so as to match under the isomorphism of Hausdorff locally compact abelian groups $\hat G\simeq\mathbf{R}\times\widehat{G^1}$ induced by $\tau$ and by the choice of basic character $t\mapsto t^{2\pi i}$ on $\mathbf{R}_{>0}$, the differential operators $-(2\pi i)^{-1}\partial_x\otimes 1$.
+Upon choosing a continuous homomorphic section $\tau$ to the idelic norm, we normalize the choice of generator $D$ of the $\mathbf{C}$-algebra of differential operators on $\widehat G$, so as to match under the isomorphism of Hausdorff locally compact abelian groups $\widehat G\simeq\mathbf{R}\times\widehat{G^1}$ induced by $\tau$ and by the choice of basic character $t\mapsto t^{2\pi i}$ on $\mathbf{R}_{>0}$, the differential operators $-(2\pi i)^{-1}\partial_x\otimes 1$.
 
-We have, as functions on $\hat G$:
+We have, as functions on $\widehat G$:
 
 $$
 \mathcal{F}(f(g)(\log\lvert g\rvert_G)^k)(\chi)=\int_{\mathbf{R}_{>0}}t^{-2\pi ix}\left(\int_{G^1}\overline{\chi}(g_0)f(\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\right)(\log(t))^k\frac{\mathrm{d}t}{t} \tag{9.1.2.11}
@@ -357,7 +357,7 @@ where $x\in\mathbf{R}$ is a real number uniquely determined by $\chi$ such that 
 We now assume $f\in C_c^\infty(C_F)$. The rightmost integral from (9.1.2.11) then in turn equals, by [Fol, Thm.8.22(d)]:
 
 $$
-(-2\pi i)^{-k}\partial_x^k\int_{\mathbf{R}_{>0}}t^{-2\pi ix}\left(\int_{G^1}\overline{\chi}(g_0)f(\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\right)\frac{\mathrm{d}t}{t}=(D^k\hat f)(\chi). \tag{9.1.2.12}
+(-2\pi i)^{-k}\partial_x^k\int_{\mathbf{R}_{>0}}t^{-2\pi ix}\left(\int_{G^1}\overline{\chi}(g_0)f(\tau(t)g_0)\,\mathrm{d}\mu_1(g_0)\right)\frac{\mathrm{d}t}{t}=(D^k\widehat f)(\chi). \tag{9.1.2.12}
 $$
 
 We further refer the reader to Lemma D.1.6.19.
@@ -366,7 +366,7 @@ Upon combining this with (9.1.2.10) we obtain $\lVert f\rVert'_{s,k,2}=\lVert f\
 
 This shows that the seminorms $\{\lVert\cdot\rVert_{s,k,2}\}_{0\le k\le s/2}$ generate the same topology defined on $W^{s,2}(G)$ by the norm $\lVert\cdot\rVert_{s,2}$. $\square$
 
-REMARK 9.1.2.3. Lemma 9.1.2.2 holds more generally for all Hausdorff locally compact abelian groups, upon generalizing the definition of $\lVert\cdot\rVert_{s,k,2}$. Namely, upon using all monomial elements of the $\mathbf{C}$-algebra of differential operators of $G$, in place of the sole $D^k$ from (9.1.2.5). This recovers the definition in (9.1.2.5) for $\mathbf{R}_{>0}$-modulated $G$, the kernel $G^1$ of the module $\lvert\cdot\rvert_G$ is compact Hausdorff, with, therefore, discrete dual. The only non-trivial differential operators on $\hat G$ are therefore contributed by $G/G^1\simeq\mathbf{R}_{>0}$, and generated by $D$, up to a choice of normalization for $D$.
+REMARK 9.1.2.3. Lemma 9.1.2.2 holds more generally for all Hausdorff locally compact abelian groups, upon generalizing the definition of $\lVert\cdot\rVert_{s,k,2}$. Namely, upon using all monomial elements of the $\mathbf{C}$-algebra of differential operators of $G$, in place of the sole $D^k$ from (9.1.2.5). This recovers the definition in (9.1.2.5) for $\mathbf{R}_{>0}$-modulated $G$, the kernel $G^1$ of the module $\lvert\cdot\rvert_G$ is compact Hausdorff, with, therefore, discrete dual. The only non-trivial differential operators on $\widehat G$ are therefore contributed by $G/G^1\simeq\mathbf{R}_{>0}$, and generated by $D$, up to a choice of normalization for $D$.
 
 For $G=\mathbf{R}$, the seminorms $\lVert\cdot\rVert_{s,k,2}$ recovers the classical Sobolev seminorms on $\mathbf{R}$, i.e. $\lVert f\rVert_{s,k,2}=\lVert\partial_x^k f\rVert_{L^2(\mathbf{R},\mathrm{d}x)}$ for all $0\le k\le s/2$.
 
@@ -414,7 +414,7 @@ $$
 m<\frac{s-1}{2}. \tag{9.1.2.16}
 $$
 
-PROOF. By Lemma 9.1.1.5, indeed the linear operator in (9.1.2.14) exists and it is defined in (9.1.1.12) applied to $\hat G$ and to the Plancherel measure of the Haar measure $\mu_G$, and $w=\lvert\log\lvert\cdot\rvert_G\rvert$. By the Lemma, it is an isometry.
+PROOF. By Lemma 9.1.1.5, indeed the linear operator in (9.1.2.14) exists and it is defined in (9.1.1.12) applied to $\widehat G$ and to the Plancherel measure of the Haar measure $\mu_G$, and $w=\lvert\log\lvert\cdot\rvert_G\rvert$. By the Lemma, it is an isometry.
 
 To identify the unique continuous action on $W^{-s,2}(G)$ promoting (9.1.2.14) into an equivariant isometry, we observe that the continuous pairing $\langle\cdot,\cdot\rangle_{s,w}$ from (9.1.1.11) which uniquely determines (9.1.2.14) is invariant upon letting $G$ act through $\rho_G$ on the leftmost argument, and through the right-translation action of $G$ on $W^{-s,2}(G)$, by invariance of the Haar measure $\mu_G$. Since the pairing is nondegenerate, this uniquely identifies the desired action on $W^{-s,2}(G)$ with the continuous right-translation action of $G$ on $W^{-s,2}(G)$.
 
@@ -1982,7 +1982,7 @@ for $\mu_G$-almost all $x \in G$, which indeed shows, by of Hilbert-Schmidt kern
 
 When $\rho$ and $\varphi$ are smooth, see also [Tre, Part III,Ch.51,Cor.51.7], Corollary to [Tre, Part III,Ch.51,Thm.51.6], and Theorem C.2.4.19), noting that $K_{\varphi,\rho}$ maps from an element of $L^2((G)_x \times (G)_y)$ to the Schwartz kernel of the operator from (9.3.3.13) restricted to $\mathcal{S}(G)$ and valued in tempered distributions over $G$, as an element of $\mathcal{S}(G)'_{\beta} \widehat{\otimes}_{\pi} \mathcal{S}(G)'_{\beta}$.
 
-As such, the given operator is Hilbert-Schmidt, and $K_{\varphi,\rho}$ is its Hilbert-Schmidt kernel. The function $K_{\varphi,\rho}$ is smooth over $G \times G$ away from a $(\mu_G \otimes \mu_G)$-negligible subset of the form $(\bigcup_{1 \le k \le N}\{g \in G : \lvert g\rvert = t_k\}) \times (\bigcup_{1 \le k \le N}\{g \in G : \lvert g\rvert = t_k\})$ for $\{t_1,\dots,t_N\} \subset \mathbf{R}_{>0}$ a finite subset, and it is $(\mu_G \otimes \mu_G)$-integrable. In particular, the diagonal in $G_x \times G_y$ is contained in the Lebesgue set of $K_{\varphi,\rho}$, up to a subset of $\mu_G$-measure zero (see Theorem A.5.4.1 and Remark A.5.4.2). Along the diagonal in $(G)_x \times (G)_y$, the smoothening $\tilde{K}_{\varphi,\rho}$ (in the sense of Theorem A.5.4.1 and [Bris-a, §3]; see also [Bris-a, §3.1,Thm.3.1]) vanishes $\mu_G$-almost everywhere. In fact, $K_{\varphi,\rho}$ is itself already defined $\mu_G$-almost everywhere along the diagonal at its points of continuity, a subset of the diagonal whose complement in the diagonal is $\mu_G$-negligible. Away from a $\mu_G$-negligible subset, $K_{\varphi,\rho}$ and $\tilde{K}_{\varphi,\rho}$ agree. The operator from (9.3.3.13) is therefore an integral Hilbert-Schmidt operator whose kernel has an absolutely integrable smoothening along the diagonal, whose mass vanishes.
+As such, the given operator is Hilbert-Schmidt, and $K_{\varphi,\rho}$ is its Hilbert-Schmidt kernel. The function $K_{\varphi,\rho}$ is smooth over $G \times G$ away from a $(\mu_G \otimes \mu_G)$-negligible subset of the form $(\bigcup_{1 \le k \le N}\{g \in G : \lvert g\rvert = t_k\}) \times (\bigcup_{1 \le k \le N}\{g \in G : \lvert g\rvert = t_k\})$ for $\{t_1,\dots,t_N\} \subset \mathbf{R}_{>0}$ a finite subset, and it is $(\mu_G \otimes \mu_G)$-integrable. In particular, the diagonal in $G_x \times G_y$ is contained in the Lebesgue set of $K_{\varphi,\rho}$, up to a subset of $\mu_G$-measure zero (see Theorem A.5.4.1 and Remark A.5.4.2). Along the diagonal in $(G)_x \times (G)_y$, the smoothening $\widetilde{K}_{\varphi,\rho}$ (in the sense of Theorem A.5.4.1 and [Bris-a, §3]; see also [Bris-a, §3.1,Thm.3.1]) vanishes $\mu_G$-almost everywhere. In fact, $K_{\varphi,\rho}$ is itself already defined $\mu_G$-almost everywhere along the diagonal at its points of continuity, a subset of the diagonal whose complement in the diagonal is $\mu_G$-negligible. Away from a $\mu_G$-negligible subset, $K_{\varphi,\rho}$ and $\widetilde{K}_{\varphi,\rho}$ agree. The operator from (9.3.3.13) is therefore an integral Hilbert-Schmidt operator whose kernel has an absolutely integrable smoothening along the diagonal, whose mass vanishes.
 
 If both $\rho$ and $\varphi$ are smooth, then it is nuclear on $L^2(G)$ (because the kernel is smooth and compactly supported over $G \times G$, and hence an element of $\mathcal{S}(G) \widehat{\otimes}_{\pi} \mathcal{S}(G)$ (in fact an element of the smaller $\mathcal{S}(G) \overline{\otimes} \mathcal{S}(G)$, since $\varphi$ is contained in some $\mathcal{D}_K(G,k)$ for a compact subgroup $k \subset G$ with compactly generated orthogonal $k^{\perp}$, with $K \subset G$ a compact subset with non-empty interior, and $\mathcal{D}_K(G,k)$ is a Fréchet space), which therefore
 

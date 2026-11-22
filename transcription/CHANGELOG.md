@@ -209,6 +209,14 @@ From the maintainers' spot check in #2471 and the checks it suggested.
   differences in how the glyphs are read, not in the formulas: words set in math ("for all",
   "holomorphic over"), `\varinjlim`/`\varprojlim`, limits and subscripts read in a different order,
   footnote numbers, and figure labels.
-- **Not yet done.** Whether a small hat or tilde covers a subscript (`\widehat{f}_0` or
-  `\widehat{f_0}`) could not be measured reliably from the glyph positions; it still has to be
-  checked page by page.
+- **Small accents.** The print uses only the wide accents (`\widehat`, `\widetilde`, from the CMEX
+  font; it has no CMR accent glyph at all). 244 `\hat` and 163 `\tilde` are now `\widehat` and
+  `\widetilde`; with this, the number of hats and of tildes on every page matches the PDF, apart
+  from accents inside diagrams.
+- **Hat or tilde over a subscripted symbol.** TeX picks the widest accent that fits what it covers,
+  so the size of the printed hat (small, medium or large CMEX glyph) tells whether it covers the
+  letter alone or the letter with its subscript. Each of the 680 accents over a one-letter base
+  with a subscript was paired with its PDF glyph: 495 agree with the transcription, 167 cannot be
+  told apart this way (both readings give the same hat), and the 5 that disagreed were looked at
+  on the page image: 2 are fixed (`\widehat{F}_v`, p. 619), the other 3 (pp. 391, 558) are right
+  as they are.

@@ -1893,13 +1893,13 @@ $^{16}$Brian needs to recheck the proof, both for factors of 2 and $2\pi$ in the
 
 $^{17}$For part (1), should we tell the reader that Weil defines the right side to be the meaning of $\int_{F_v^\times} f(g)|g|_v^{1/2}/|1-g|_v\,\mathrm{d}\mu_v(g)$?
 
-$^{18}$It would be much more convenient to give the definition directly here for $\mathrm{C}_\alpha$ for all non-trivial $\alpha \in \widehat{F_v}$, not just for $\alpha = \alpha_{v,0}$. We should also then comment that the definition below using $\alpha$ is unaffected by pre-composing $\alpha$ with multiplication by $\{|x| = 1\}$!
+$^{18}$It would be much more convenient to give the definition directly here for $\mathrm{C}_\alpha$ for all non-trivial $\alpha \in \widehat{F}_v$, not just for $\alpha = \alpha_{v,0}$. We should also then comment that the definition below using $\alpha$ is unaffected by pre-composing $\alpha$ with multiplication by $\{|x| = 1\}$!
 
 $^{19}$Continuity of right side in $f$ must be proved as a separate lemma before this definition, treating $v\mid\infty$ and $v\nmid\infty$ separately
 
 $^{20}$In a clear way, should emphasize that the notation $\mu_v$ on the left side is just notation, and that the choice of $\alpha$ is baked into the right side.
 
-$^{21}$This should go similarly for all $\alpha \in \widehat{F_v}-\{1\}$ and the associated self-dual measure $\nu$.
+$^{21}$This should go similarly for all $\alpha \in \widehat{F}_v-\{1\}$ and the associated self-dual measure $\nu$.
 
 ## PDF page 620
 
@@ -2397,9 +2397,9 @@ since we assumed $\mu(\partial U)=0$. This completes the proof of the Lemma.
 
 $\square$
 
-REMARK B.5.2.3. (1) Let $U\subset[0,1)^N$ be a subset such that $\partial U$ (in $[0,1)^N$) is a Lebesgue null-set. Then, upon denoting by $\hat U$ the image of $U$ under $\theta_N$ in $\mathbf{T}^N$, we have $\mu_N(\partial\hat U)=0$. To see this, we proceed as follows. Since $\theta_N:\mathbf{R}^N\to\mathbf{T}^N$ is a covering map, it is open. When restricted to $[0,1]^N$, it is also closed since $\mathbf{T}^N$ is compact and $[0,1]^N$ is Hausdorff. Upon calling $\bar U$ the closure of $U$ in $[0,1]^N$, the Lebesgue measure of the boundary of $U$ in $[0,1]^N$ is again zero, since $(\bar U-U)\cap[0,1)^N$ has measure zero by assumption, and $[0,1]^N-[0,1)^N$ is a null-set. Since we have $\theta_N(\bar U-U)=\partial\hat U$, it follows that $\partial\hat U$ is a $\mu_N$-null set.
+REMARK B.5.2.3. (1) Let $U\subset[0,1)^N$ be a subset such that $\partial U$ (in $[0,1)^N$) is a Lebesgue null-set. Then, upon denoting by $\widehat U$ the image of $U$ under $\theta_N$ in $\mathbf{T}^N$, we have $\mu_N(\partial\widehat U)=0$. To see this, we proceed as follows. Since $\theta_N:\mathbf{R}^N\to\mathbf{T}^N$ is a covering map, it is open. When restricted to $[0,1]^N$, it is also closed since $\mathbf{T}^N$ is compact and $[0,1]^N$ is Hausdorff. Upon calling $\bar U$ the closure of $U$ in $[0,1]^N$, the Lebesgue measure of the boundary of $U$ in $[0,1]^N$ is again zero, since $(\bar U-U)\cap[0,1)^N$ has measure zero by assumption, and $[0,1]^N-[0,1)^N$ is a null-set. Since we have $\theta_N(\bar U-U)=\partial\widehat U$, it follows that $\partial\widehat U$ is a $\mu_N$-null set.
 
-(2) For any Jordan-measurable subset $\Delta\subset[0,1)^N$, we deduce that the image $\hat\Delta$ in $\mathbf{T}^N$ has boundary of $\mu_N$-measure zero, and so its interior qualifies for the $U$ in Lemma B.5.2.2 and has the same $\mu_N$-measure as $\hat\Delta$.
+(2) For any Jordan-measurable subset $\Delta\subset[0,1)^N$, we deduce that the image $\widehat\Delta$ in $\mathbf{T}^N$ has boundary of $\mu_N$-measure zero, and so its interior qualifies for the $U$ in Lemma B.5.2.2 and has the same $\mu_N$-measure as $\widehat\Delta$.
 
 The proof recorded below follows closely the argument provided in [Hu1, §4.3, Proof of Lemma 4.3].
 
@@ -2429,19 +2429,19 @@ In the general case, let $G$ be the closure of the image of $\overline{\gamma}$.
 
 Then $\chi$ is of the form $\chi(z_1\cdots z_N)=\prod_{1\le k\le N}z_k^{a_k}$ for a unique vector $(a_k)_{1\le k\le N}\in\mathbf{Z}^N$, and the defining condition of $G^\perp$ is $1=\chi(e^{2\pi i\tau_1 t}\cdots e^{2\pi i\tau_N t})=e^{2\pi i t(\sum\tau_k a_k)}$ for all $t\in\mathbf{R}$, which reads $\sum_{1\le k\le N}\tau_k a_k=0$.
 
-It follows that $G^\perp$ is contained within a $\mathbf{Q}$-linear subspace of $\mathbf{Q}^N$ of codimension $d$, and it equals the intersection of such a subspace with $\mathbf{Z}^N$. The rank of $G^\perp$ is therefore $N-d$, and $\widehat{\mathbf{T}^N}/G^\perp\simeq\hat G$ by [DE, Prop. 3.6.1(c)] (see also Lemma D.1.4.6(3)), from which it follows that $G$ is a $d$-dimensional closed subtorus of $\mathbf{T}^N$.
+It follows that $G^\perp$ is contained within a $\mathbf{Q}$-linear subspace of $\mathbf{Q}^N$ of codimension $d$, and it equals the intersection of such a subspace with $\mathbf{Z}^N$. The rank of $G^\perp$ is therefore $N-d$, and $\widehat{\mathbf{T}^N}/G^\perp\simeq\widehat G$ by [DE, Prop. 3.6.1(c)] (see also Lemma D.1.4.6(3)), from which it follows that $G$ is a $d$-dimensional closed subtorus of $\mathbf{T}^N$.
 
-(2): We first assume that the coordinates of $\tau$ are $\mathbf{Q}$-linearly independent, so $\overline{\gamma(\mathbf{R})}$ has closure $\mathbf{T}^N$ by (1). Assume that (B.5.2.1) holds for all continuous functions $u\in C(\mathbf{T}^N)$. Let $\Delta\subset[0,1)^N$ be any Jordan-measurable open subset (so $\mu(\partial\Delta)=0$) and denote by $\hat\Delta$ its image in $\mathbf{T}^N$.
+(2): We first assume that the coordinates of $\tau$ are $\mathbf{Q}$-linearly independent, so $\overline{\gamma(\mathbf{R})}$ has closure $\mathbf{T}^N$ by (1). Assume that (B.5.2.1) holds for all continuous functions $u\in C(\mathbf{T}^N)$. Let $\Delta\subset[0,1)^N$ be any Jordan-measurable open subset (so $\mu(\partial\Delta)=0$) and denote by $\widehat\Delta$ its image in $\mathbf{T}^N$.
 
-Since $\Delta$ is Jordan-measurable, its boundary is a null-set for the Lebesgue measure on $\mathbf{R}^N$, and hence $\mu_N(\partial\hat\Delta)=0$. Since integration on $\mathbf{T}^N$ with respect to $\mu_N$ is insensitive to $\mu_N$-null-sets, by openness of $\theta$ (a continuous quotient homomorphism of topological groups) we may replace $\Delta$ by its interior, to the effect of replacing $\hat\Delta$ by its interior.
+Since $\Delta$ is Jordan-measurable, its boundary is a null-set for the Lebesgue measure on $\mathbf{R}^N$, and hence $\mu_N(\partial\widehat\Delta)=0$. Since integration on $\mathbf{T}^N$ with respect to $\mu_N$ is insensitive to $\mu_N$-null-sets, by openness of $\theta$ (a continuous quotient homomorphism of topological groups) we may replace $\Delta$ by its interior, to the effect of replacing $\widehat\Delta$ by its interior.
 
 By Lemma B.5.2.2, for every $\varepsilon>0$ there exist continuous functions $u_1,u_2\in C(\mathbf{T}^N)$ such that $u_1,u_2$ are real-valued, and
 
 $$
-u_1(\xi)\le\mathrm{1}_{\hat\Delta}(\xi)\le u_2(\xi) \tag{B.5.2.4}
+u_1(\xi)\le\mathrm{1}_{\widehat\Delta}(\xi)\le u_2(\xi) \tag{B.5.2.4}
 $$
 
-for all $\xi\in\mathbf{T}^N$, $\mathrm{1}_{\hat\Delta}$ being the indicator function of $\hat\Delta\subset\mathbf{T}^N$, and such that
+for all $\xi\in\mathbf{T}^N$, $\mathrm{1}_{\widehat\Delta}$ being the indicator function of $\widehat\Delta\subset\mathbf{T}^N$, and such that
 
 $$
 \int_{\mathbf{T}^N}(u_2-u_1)(\xi)\,\mathrm{d}\mu_N(\xi)<\varepsilon. \tag{B.5.2.5}
@@ -2456,36 +2456,36 @@ $$
 and therefore
 
 $$
-\lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T u_2(\overline{\gamma}(t))\,\mathrm{d}t-\varepsilon<\lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T\mathrm{1}_{\hat\Delta}(\overline{\gamma}(t))\,\mathrm{d}t<\lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T u_1(\overline{\gamma}(t))\,\mathrm{d}t+\varepsilon, \tag{B.5.2.7}
+\lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T u_2(\overline{\gamma}(t))\,\mathrm{d}t-\varepsilon<\lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T\mathrm{1}_{\widehat\Delta}(\overline{\gamma}(t))\,\mathrm{d}t<\lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T u_1(\overline{\gamma}(t))\,\mathrm{d}t+\varepsilon, \tag{B.5.2.7}
 $$
 
 and likewise
 
 $$
-\int_{\mathbf{T}^N}u_2(\xi)\,\mathrm{d}\mu(\xi)-\varepsilon<\int_{\mathbf{T}^N}\mathrm{1}_{\hat\Delta}(\xi)\,\mathrm{d}\mu_N(\xi)<\int_{\mathbf{T}^N}u_1(\xi)\,\mathrm{d}\mu_N(\xi)+\varepsilon \tag{B.5.2.8}
+\int_{\mathbf{T}^N}u_2(\xi)\,\mathrm{d}\mu(\xi)-\varepsilon<\int_{\mathbf{T}^N}\mathrm{1}_{\widehat\Delta}(\xi)\,\mathrm{d}\mu_N(\xi)<\int_{\mathbf{T}^N}u_1(\xi)\,\mathrm{d}\mu_N(\xi)+\varepsilon \tag{B.5.2.8}
 $$
 
-Upon letting $\varepsilon$ tend to zero, we deduce from the assumed continuous case (applied to $u_1$ and $u_2$) that (B.5.2.1) holds for the indicator function of $\hat\Delta$, for any Jordan-measurable subset $\Delta\subset[0,1)^N$.
+Upon letting $\varepsilon$ tend to zero, we deduce from the assumed continuous case (applied to $u_1$ and $u_2$) that (B.5.2.1) holds for the indicator function of $\widehat\Delta$, for any Jordan-measurable subset $\Delta\subset[0,1)^N$.
 
 This case then propagates (B.5.2.1) to arbitrary Riemann sums, since each Riemann sum is an integral on $\mathbf{T}^N$ with respect to $\mu_N$, of a finite $\mathbf{C}$-linear combination of indicator functions of images in $\mathbf{T}^N$ of Jordan-measurable subsets in $[0,1)^N$.
 
-We next deduce that (B.5.2.1) holds for all Riemann-integrable $\mathbf{R}$-valued functions $u$ on $\mathbf{T}^N$. For $\varepsilon>0$, we can pick a Riemann step function $\tilde u$ on $\mathbf{T}^N$ so that $|\tilde u-u|\le\varepsilon$ pointwise on $\mathbf{T}^N$. Thus,
+We next deduce that (B.5.2.1) holds for all Riemann-integrable $\mathbf{R}$-valued functions $u$ on $\mathbf{T}^N$. For $\varepsilon>0$, we can pick a Riemann step function $\widetilde u$ on $\mathbf{T}^N$ so that $|\widetilde u-u|\le\varepsilon$ pointwise on $\mathbf{T}^N$. Thus,
 
 $$
-\left|\frac{1}{T}\int_0^T\tilde u(\overline{\gamma}(t))\,\mathrm{d}t-\frac{1}{T}\int_0^T u(\overline{\gamma}(t))\,\mathrm{d}t\right|\le\frac{1}{T}\int_0^T|\tilde u-u|\circ\overline{\gamma}(t)\,\mathrm{d}t\le\varepsilon,
+\left|\frac{1}{T}\int_0^T\widetilde u(\overline{\gamma}(t))\,\mathrm{d}t-\frac{1}{T}\int_0^T u(\overline{\gamma}(t))\,\mathrm{d}t\right|\le\frac{1}{T}\int_0^T|\widetilde u-u|\circ\overline{\gamma}(t)\,\mathrm{d}t\le\varepsilon,
 $$
 
-and similarly with $(1/(2T))\int_{-T}^T$ and $\int_{\mathbf{T}^N}\mathrm{d}\mu_N$. By the settled Riemann step-function case for $\tilde u$, if $T$ is sufficiently large then
+and similarly with $(1/(2T))\int_{-T}^T$ and $\int_{\mathbf{T}^N}\mathrm{d}\mu_N$. By the settled Riemann step-function case for $\widetilde u$, if $T$ is sufficiently large then
 
 $$
-\left|\int_{\mathbf{T}^N}\tilde u\,\mathrm{d}\mu_N-\frac{1}{T}\int_0^T\tilde u(\overline{\gamma}(t))\,\mathrm{d}t\right|\le\varepsilon,\quad\left|\int_{\mathbf{T}^N}\tilde u\,\mathrm{d}\mu_N-\frac{1}{2T}\int_{-T}^T\tilde u(\overline{\gamma}(t))\,\mathrm{d}t\right|\le\varepsilon.
+\left|\int_{\mathbf{T}^N}\widetilde u\,\mathrm{d}\mu_N-\frac{1}{T}\int_0^T\widetilde u(\overline{\gamma}(t))\,\mathrm{d}t\right|\le\varepsilon,\quad\left|\int_{\mathbf{T}^N}\widetilde u\,\mathrm{d}\mu_N-\frac{1}{2T}\int_{-T}^T\widetilde u(\overline{\gamma}(t))\,\mathrm{d}t\right|\le\varepsilon.
 $$
 
 ## PDF page 630
 
 **630** · **CHAPTER B. PREPARATIONS FROM ANALYTIC NUMBER THEORY**
 
-Thus, we get analogous estimates for $3\varepsilon$ with $u$ in place of $\tilde u$, so the desired conclusion holds for $u$. By $\mathbf{R}$-linearity, this conclusion holds for general $\mathbf{C}$-valued Riemann-integrable functions on $\mathbf{T}^N$ by analyzing real and imaginary parts separately.
+Thus, we get analogous estimates for $3\varepsilon$ with $u$ in place of $\widetilde u$, so the desired conclusion holds for $u$. By $\mathbf{R}$-linearity, this conclusion holds for general $\mathbf{C}$-valued Riemann-integrable functions on $\mathbf{T}^N$ by analyzing real and imaginary parts separately.
 
 We are thereby reduced to the case of continuous $u$ in (B.5.2.1) when the coordinates of $\tau$ are $\mathbf{Q}$-linearly independent. For a $\mathbf{C}$-sub-algebra $A\subset C(\mathbf{T}^N)$ dense with respect to the uniform-norm topology on $C(\mathbf{T}^N)$, with $A$ to be chosen, we now assume that (B.5.2.1) holds for all the elements of $A$ and deduce it for all continuous functions $u$ on $\mathbf{T}^N$. Pick $\varepsilon>0$ and $v\in A$ such that $|v-u|\le\varepsilon$ pointwise on $\mathbf{T}^N$. We then have $\left|\int_{\mathbf{T}^N}v\,\mathrm{d}\mu_N-\int_{\mathbf{T}^N}u\,\mathrm{d}\mu_N\right|\le\varepsilon$ and for all sufficiently large $T$ (depending on $\varepsilon$ and $v$) we have
 
@@ -2536,13 +2536,13 @@ for a unique $a=(a_1,\dots,a_N)\in\mathbf{Z}^N$. We write $\chi_a$ for the conti
 We have
 
 $$
-\hat u(\chi_b)=\int_{\mathbf{T}^N}u(\xi)\cdot\overline{\chi_b(\xi)}\,\mathrm{d}\mu(\xi)=\int_{[0,1)^N}\sum_{a\in\mathbf{Z}^N}c_a\cdot e^{2\pi i a_1 x_1}\cdot\ldots\cdot e^{2\pi i a_N x_N}\cdot\overline{e^{2\pi i b_1 x_1}\cdot\ldots\cdot e^{2\pi i b_N x_N}}\,\mathrm{d}x_1\cdot\ldots\cdot \mathrm{d}x_N. \tag{B.5.2.11}
+\widehat u(\chi_b)=\int_{\mathbf{T}^N}u(\xi)\cdot\overline{\chi_b(\xi)}\,\mathrm{d}\mu(\xi)=\int_{[0,1)^N}\sum_{a\in\mathbf{Z}^N}c_a\cdot e^{2\pi i a_1 x_1}\cdot\ldots\cdot e^{2\pi i a_N x_N}\cdot\overline{e^{2\pi i b_1 x_1}\cdot\ldots\cdot e^{2\pi i b_N x_N}}\,\mathrm{d}x_1\cdot\ldots\cdot \mathrm{d}x_N. \tag{B.5.2.11}
 $$
 
 By orthogonality of the exponentials $\{e^{2\pi i t N}, N\in\mathbf{Z}\}\subset L^2([0,1))$, we obtain
 
 $$
-\hat u(\chi_b)=c_b. \tag{B.5.2.12}
+\widehat u(\chi_b)=c_b. \tag{B.5.2.12}
 $$
 
 We have
@@ -2567,7 +2567,7 @@ $$
 \lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T u(e^{2\pi i t\tau_1},\dots,e^{2\pi i t\tau_N})\,\mathrm{d}t=\lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T u(\overline{\gamma}(t))\,\mathrm{d}t.
 $$
 
-But $\sum_{b:b_1\tau_1+\cdots+b_N\tau_N=0}c_b=\int_{G^\perp}\hat u(\chi)\chi(1)\,\mathrm{d}\mu_{G^\perp}(\chi)$ with $\mu_{G^\perp}$ the counting measure on $G^\perp$ dual to the volume-1 measure on $\mathbf{T}^N/G$. This integral over $G^\perp$ is equal to
+But $\sum_{b:b_1\tau_1+\cdots+b_N\tau_N=0}c_b=\int_{G^\perp}\widehat u(\chi)\chi(1)\,\mathrm{d}\mu_{G^\perp}(\chi)$ with $\mu_{G^\perp}$ the counting measure on $G^\perp$ dual to the volume-1 measure on $\mathbf{T}^N/G$. This integral over $G^\perp$ is equal to
 
 $$
 \int_G u(\xi)\,\mathrm{d}\mu_G(\xi)
@@ -2579,13 +2579,13 @@ $\square$
 
 COROLLARY B.5.2.4 (Uniform distribution). *Pick $\tau=(\tau_1,\dots,\tau_N)\subset\mathbf{R}^N$. Let $\gamma_\tau:\mathbf{R}\to\mathbf{T}^N$ be the continuous 1-parameter group generated by $\tau$. Let $G$ be the closure of the image of $\gamma_\tau$ in $\mathbf{T}^N$, and $\mu_G$ the volume-1 Haar measure on $G$.*
 
-*For every open subset $U\subset[0,1)^N$, upon denoting by $\hat U$ the image of $U$ in $\mathbf{T}^N$ under the quotient map $\theta$, if $\mu_G(\partial(\hat U\cap G))=0$ then we have:*
+*For every open subset $U\subset[0,1)^N$, upon denoting by $\widehat U$ the image of $U$ in $\mathbf{T}^N$ under the quotient map $\theta$, if $\mu_G(\partial(\widehat U\cap G))=0$ then we have:*
 
 $$
-\lim_{T\to+\infty}\frac{\lambda([-T,T]_U)}{2T}=\lim_{T\to+\infty}\frac{\lambda([0,T]_U)}{T}=\mu_G(\hat U\cap G). \tag{B.5.2.15}
+\lim_{T\to+\infty}\frac{\lambda([-T,T]_U)}{2T}=\lim_{T\to+\infty}\frac{\lambda([0,T]_U)}{T}=\mu_G(\widehat U\cap G). \tag{B.5.2.15}
 $$
 
-PROOF. The function $u:=\mathrm{1}_{\hat U\cap G}$ is Riemann-integrable on $G$ since $\mu_G(\partial(\hat U\cap G))=0$. The identities in (B.5.2.15) are then a special case of (B.5.2.1) from Theorem B.5.2.1.
+PROOF. The function $u:=\mathrm{1}_{\widehat U\cap G}$ is Riemann-integrable on $G$ since $\mu_G(\partial(\widehat U\cap G))=0$. The identities in (B.5.2.15) are then a special case of (B.5.2.1) from Theorem B.5.2.1.
 
 $\square$
 

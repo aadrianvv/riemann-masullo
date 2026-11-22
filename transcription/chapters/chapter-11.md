@@ -332,7 +332,7 @@ $$
 \rho(g) \sum_{\xi \in F^\times} (f \otimes \prod_{v\notin S} 1_{\mathcal O_{F_v}^\times})(\xi g) \tag{11.1.2.7}
 $$
 
-*for $f \in \mathcal S(\mathbf A_{F,S}) \cap \ker(\delta_0) \cap \ker(\hat\delta_0)$.*
+*for $f \in \mathcal S(\mathbf A_{F,S}) \cap \ker(\delta_0) \cap \ker(\widehat\delta_0)$.*
 
 Remark 11.1.2.2. We recall that a cofinal sequence $\{S_k\}_{k\ge 0} \subset I_S$ consists of the datum of a sequence $\{S_k\}_{k\ge 0} \subset I_S$, i.e. with each $S_k$ a finite subset of finite places of $F$, such that $S_k \subset S_{k+1}$ for each integer $k \ge 0$, and $\bigcup_{k\ge 0} S_k = \Sigma_F - S$.
 
