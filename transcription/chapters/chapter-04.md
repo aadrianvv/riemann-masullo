@@ -2846,7 +2846,7 @@ an entire function with zeros at the zeros of $\prod_{1\le k\le N}(1-\chi(\gamma
 We have
 
 $$
-\frac{\partial^j}{\partial s^j}\prod_{1\le k\le N}(1-\chi(\gamma_k)\lvert\gamma_k\rvert_G^{-s}) = \sum_{k_1+\dots+k_N=j}\frac{j!}{k_1!\cdots k_N!}\prod_{1\le k\le N}\partial_s^{k_r}(1-\chi(\gamma_k)\lvert\gamma_k\rvert_G^{-s})
+\frac{\partial^j}{\partial s^j}\prod_{1\le k\le N}(1-\chi(\gamma_k)\lvert\gamma_k\rvert_G^{-s}) = \sum_{k_1+\ldots+k_N=j}\frac{j!}{k_1!\cdots k_N!}\prod_{1\le k\le N}\partial_s^{k_r}(1-\chi(\gamma_k)\lvert\gamma_k\rvert_G^{-s})
 $$
 
 and since $\partial_s^{k_r}(1-\chi(\gamma_k)\lvert\gamma_k\rvert_G^{-s}) = (-1)^{k_r-1}\chi(\gamma_k)(\log\lvert\gamma_k\rvert_G)^{k_r}\lvert\gamma_k\rvert_G^{-s}$ is bounded on vertical strips of bounded width within the complex $s$-plane, we deduce that both $\prod_{1\le k\le N}(1-\chi(\gamma_k)\lvert\gamma_k\rvert_G^{-s})$ and its holomorphic derivatives of any order, are bounded uniformly over each vertical strip of bounded width of the complex $s$-plane.

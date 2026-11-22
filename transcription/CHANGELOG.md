@@ -315,3 +315,20 @@ From the maintainers' spot check in #2471 and the checks it suggested.
   full stop that ends them in the print. Every display was then checked for a trailing full stop
   or comma, against the print: also fixed, p. 371 (`,` for the printed `.`) and p. 650 (a comma
   that is not in the print).
+
+
+## 11. After the second merge
+
+- **Positions inside displays.** For every displayed formula (4,003), each PDF glyph's height
+  relative to its neighbours was compared with the compiled transcription, which catches a
+  numerator and denominator, or upper and lower limits, swapped. No formula had its parts swapped.
+  The comparison did show limits typeset beside the operator where the print sets them below: the
+  restricted product `\widehat{\prod}` (8 displays, pp. 7, 290, 539, 540, 541; written
+  `\mathop{\widehat{\prod}}\limits`) and `\mathrm{Res}` (5 displays, pp. 138, 606); the prime of
+  the restricted product on p. 327 now beside the `\prod` with the index below, as printed.
+- **Low and centred dots.** Counted on every page: where the print has low dots between binary
+  operators (`+\ldots+`, `\cup\ldots\cup`, `\cap\ldots\cap`) the transcription had centred ones on
+  pp. 133, 213, 243, 336, 342, 450, 549, 571, 583, 631 (17 places), now `\ldots`.
+- **Digits.** Every difference of digits only inside a formula was listed (the earlier pass had
+  set digits aside with the footnote marks): none apart from footnote marks.
+- p. 628: `\varepsilon/2` (twice) printed as a fraction.

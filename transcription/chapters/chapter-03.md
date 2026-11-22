@@ -851,7 +851,7 @@ and since $\chi(-1)\ne 0$, we deduce from (3.3.1.14) that (3.3.1.9) holds. It fo
 (3) : We fix a real number $\sigma>0$. Upon choosing an enumeration for the finitely many places of $F$ contained in $S$, i.e. $S=\{v_1,\dots,v_N\}$, we have, as meromorphic functions of $s\in\mathbf{C}$:
 
 $$
-\frac{\partial^k}{\partial s^k}\rho_S(\chi\lvert\cdot\rvert_{F,S}^s)=\sum_{(i_1,\dots,i_N)\in\mathbf{N}^N,k=i_1+\dots+i_N}\binom{k}{i_1,\dots,i_N}\prod_{1\le j\le N}\frac{\partial^{i_j}}{\partial s^{i_j}}\rho_{v_j}(\chi_{v_j}\lvert\cdot\rvert_{v_j}^s) \tag{3.3.1.15}
+\frac{\partial^k}{\partial s^k}\rho_S(\chi\lvert\cdot\rvert_{F,S}^s)=\sum_{(i_1,\dots,i_N)\in\mathbf{N}^N,k=i_1+\ldots+i_N}\binom{k}{i_1,\dots,i_N}\prod_{1\le j\le N}\frac{\partial^{i_j}}{\partial s^{i_j}}\rho_{v_j}(\chi_{v_j}\lvert\cdot\rvert_{v_j}^s) \tag{3.3.1.15}
 $$
 
 the sum in (3.3.1.15) being finite.
@@ -1171,7 +1171,7 @@ $$
 (1) *If $v$ is real:*
 
 $$
-\operatorname{Res}_{c=c_{a,m}}Z_v(\cdot,c)=A_{v,a,m}D^{a+m}\delta_0,\; a\in\{0,1\},\; m\in 2\mathbf{N} \tag{3.3.2.6}
+\mathop{\mathrm{Res}}\limits_{c=c_{a,m}}Z_v(\cdot,c)=A_{v,a,m}D^{a+m}\delta_0,\; a\in\{0,1\},\; m\in 2\mathbf{N} \tag{3.3.2.6}
 $$
 
 *where $D:\mathcal{S}(F_v)\to\mathcal{S}(F_v)$ is the differential operator $\frac{1}{2\pi i}\partial_x$ on $\mathcal{S}(\mathbf{R})$, where $A_{v,a,m}\in\mathbf{C}^{\times}$ is a constant depending only on the quasi-character, given by the following formula:*
@@ -1183,13 +1183,13 @@ $$
 (2) *If $v$ is complex, for $r\ge 0$, and:*
 
 $$
-\operatorname{Res}_{c=c_{r,m}}Z_v(\cdot,c)=A_{v,r,m}\overline{D}^{\,r+m}D^{m}\delta_0 \tag{3.3.2.8}
+\mathop{\mathrm{Res}}\limits_{c=c_{r,m}}Z_v(\cdot,c)=A_{v,r,m}\overline{D}^{\,r+m}D^{m}\delta_0 \tag{3.3.2.8}
 $$
 
 *and:*
 
 $$
-\operatorname{Res}_{c=c_{-r,m}}Z_v(\cdot,c)=A_{v,r,m}D^{r+m}\overline{D}^{\,m}\delta_0 \tag{3.3.2.9}
+\mathop{\mathrm{Res}}\limits_{c=c_{-r,m}}Z_v(\cdot,c)=A_{v,r,m}D^{r+m}\overline{D}^{\,m}\delta_0 \tag{3.3.2.9}
 $$
 
 ## PDF page 139

@@ -1150,7 +1150,7 @@ THEOREM B.3.2.1 (Asymptotic Residue Theorem). *Let $a<b$ be real numbers, $f:\ma
 (1) *the following limit exists:*
 
 $$
-\lim_{|k|\to+\infty}\sum_{\rho\in U_{T_k,\varepsilon_1,\varepsilon_2}}\Phi(\rho)\operatorname{Res}_{s=\rho}f(s) \tag{B.3.2.1}
+\lim_{|k|\to+\infty}\sum_{\rho\in U_{T_k,\varepsilon_1,\varepsilon_2}}\Phi(\rho)\mathop{\mathrm{Res}}\limits_{s=\rho}f(s) \tag{B.3.2.1}
 $$
 
 (*where the sum in* (B.3.2.1) *is indexed by the poles of $f$ contained in $U_{T_k,\varepsilon_1,\varepsilon_2}$*),
@@ -1158,7 +1158,7 @@ $$
 (2)
 
 $$
--\frac{1}{2\pi i}\int_{a+\varepsilon_1-i\infty}^{a+\varepsilon_1+i\infty}\Phi(s)f(s)\,\mathrm{d}s+\frac{1}{2\pi i}\int_{b-\varepsilon_2-i\infty}^{b-\varepsilon_2+i\infty}\Phi(s)f(s)\,\mathrm{d}s=\lim_{|k|\to+\infty}\sum_{\rho\in U_{T_k,\varepsilon_1,\varepsilon_2}}\Phi(\rho)\operatorname{Res}_{s=\rho}f(s) \tag{B.3.2.2}
+-\frac{1}{2\pi i}\int_{a+\varepsilon_1-i\infty}^{a+\varepsilon_1+i\infty}\Phi(s)f(s)\,\mathrm{d}s+\frac{1}{2\pi i}\int_{b-\varepsilon_2-i\infty}^{b-\varepsilon_2+i\infty}\Phi(s)f(s)\,\mathrm{d}s=\lim_{|k|\to+\infty}\sum_{\rho\in U_{T_k,\varepsilon_1,\varepsilon_2}}\Phi(\rho)\mathop{\mathrm{Res}}\limits_{s=\rho}f(s) \tag{B.3.2.2}
 $$
 
 *with absolutely convergent integrals on the left side.*
@@ -2454,7 +2454,7 @@ $$
 for all $x\in X$. We now observe that we have
 
 $$
-\int_X (u_2-u_1)(x)\,\mathrm{d}\mu(x)\le\mu(U')-\mu(K_1)=\mu(U'-\bar U)+\mu(\partial U)+\mu(U)-\mu(K_1)<\varepsilon/2+\mu(\partial U)+\varepsilon/2=\varepsilon
+\int_X (u_2-u_1)(x)\,\mathrm{d}\mu(x)\le\mu(U')-\mu(K_1)=\mu(U'-\bar U)+\mu(\partial U)+\mu(U)-\mu(K_1)<\frac{\varepsilon}{2}+\mu(\partial U)+\frac{\varepsilon}{2}=\varepsilon
 $$
 
 since we assumed $\mu(\partial U)=0$. This completes the proof of the Lemma.
@@ -2606,26 +2606,26 @@ $$
 We have
 
 $$
-\lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T u(e^{2\pi i t\tau_1},\dots,e^{2\pi i t\tau_N})\,\mathrm{d}t=\lim_{T\to+\infty}\frac{1}{2T}\sum_{b\in\mathbf{Z}^N}c_b\int_{-T}^T e^{2\pi i(b_1\tau_1+\cdots+b_N\tau_N)t}\,\mathrm{d}t \tag{B.5.2.13}
+\lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T u(e^{2\pi i t\tau_1},\dots,e^{2\pi i t\tau_N})\,\mathrm{d}t=\lim_{T\to+\infty}\frac{1}{2T}\sum_{b\in\mathbf{Z}^N}c_b\int_{-T}^T e^{2\pi i(b_1\tau_1+\ldots+b_N\tau_N)t}\,\mathrm{d}t \tag{B.5.2.13}
 $$
 
 where we are allowed to interchange the summation and the integral since $c_b=0$ for all but finitely many $b$.
 
-Suppose $b_1\tau_1+\cdots+b_N\tau_N\ne 0$ for one of the finitely many $b$ such that $c_b\ne 0$. Then we have:
+Suppose $b_1\tau_1+\ldots+b_N\tau_N\ne 0$ for one of the finitely many $b$ such that $c_b\ne 0$. Then we have:
 
 $$
-\left|\frac{1}{2T}\int_{-T}^T e^{2\pi i(b_1\tau_1+\cdots+b_N\tau_N)t}\mathrm{d}t\right|\le\frac{1}{2T\pi(b_1\tau_1+\cdots+b_N\tau_N)}|e^{2\pi i(b_1\tau_1+\cdots+b_N\tau_N)T}-e^{-2\pi i(b_1\tau_1+\cdots+b_N\tau_N)T}|=o_b(1) \tag{B.5.2.14}
+\left|\frac{1}{2T}\int_{-T}^T e^{2\pi i(b_1\tau_1+\ldots+b_N\tau_N)t}\mathrm{d}t\right|\le\frac{1}{2T\pi(b_1\tau_1+\ldots+b_N\tau_N)}|e^{2\pi i(b_1\tau_1+\ldots+b_N\tau_N)T}-e^{-2\pi i(b_1\tau_1+\ldots+b_N\tau_N)T}|=o_b(1) \tag{B.5.2.14}
 $$
 
 as $T\to+\infty$.
 
-The right side of (B.5.2.13) therefore equals $\sum_{b:b_1\tau_1+\cdots+b_N\tau_N=0}c_b$. The left side of (B.5.2.13) is also written as
+The right side of (B.5.2.13) therefore equals $\sum_{b:b_1\tau_1+\ldots+b_N\tau_N=0}c_b$. The left side of (B.5.2.13) is also written as
 
 $$
 \lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T u(e^{2\pi i t\tau_1},\dots,e^{2\pi i t\tau_N})\,\mathrm{d}t=\lim_{T\to+\infty}\frac{1}{2T}\int_{-T}^T u(\overline{\gamma}(t))\,\mathrm{d}t.
 $$
 
-But $\sum_{b:b_1\tau_1+\cdots+b_N\tau_N=0}c_b=\int_{G^\perp}\widehat u(\chi)\chi(1)\,\mathrm{d}\mu_{G^\perp}(\chi)$ with $\mu_{G^\perp}$ the counting measure on $G^\perp$ dual to the volume-1 measure on $\mathbf{T}^N/G$. This integral over $G^\perp$ is equal to
+But $\sum_{b:b_1\tau_1+\ldots+b_N\tau_N=0}c_b=\int_{G^\perp}\widehat u(\chi)\chi(1)\,\mathrm{d}\mu_{G^\perp}(\chi)$ with $\mu_{G^\perp}$ the counting measure on $G^\perp$ dual to the volume-1 measure on $\mathbf{T}^N/G$. This integral over $G^\perp$ is equal to
 
 $$
 \int_G u(\xi)\,\mathrm{d}\mu_G(\xi)

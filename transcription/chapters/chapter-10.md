@@ -1057,7 +1057,7 @@ $$
 \begin{bmatrix}
 \widehat\varphi(it_{k,j}) & 0 & 0 & 0 & 0 & \cdots & 0 \\
 \widehat\varphi^{(1)}(it_{k,j}) & \widehat\varphi(it_{k,j}) & 0 & 0 & 0 & \cdots & 0 \\
-\widehat\varphi^{(2)}(it_{k,j}) & \binom{2}{1}\widehat\varphi^{(1)}(it_{k,j}) & \widehat\varphi(it_{k,j}) & 0 & 0 & \cdots & 0 \\
+\widehat\varphi^{(2)}(it_{k,j}) & \binom{2}{1}\widehat\varphi^{(1)}(it_{k,j}) & \widehat\varphi(it_{k,j}) & 0 & 0 & \ldots & 0 \\
 \widehat\varphi^{(3)}(it_{k,j}) & \binom{3}{2}\widehat\varphi^{(2)}(it_{k,j}) & \binom{3}{1}\widehat\varphi^{(1)}(it_{k,j}) & \widehat\varphi(it_{k}) & 0 & \cdots & 0 \\
 \cdots & \cdots & \cdots & \cdots & \cdots & \cdots & \cdots \\
 \widehat\varphi^{(N-1)}(it_{k,j}) & \binom{N-1}{N-2}\widehat\varphi^{(N-2)}(it_{k,j}) & \binom{N-1}{N-3}\widehat\varphi^{(N-3)}(it_{k,j}) & \binom{N-1}{N-4}\widehat\varphi^{(N-4)}(it_{k,j}) & \binom{N-1}{N-5}\widehat\varphi^{(N-5)}(it_{k,j}) & \cdots & \widehat\varphi(it_{k,j})
