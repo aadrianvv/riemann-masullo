@@ -266,3 +266,14 @@ From the maintainers' spot check in #2471 and the checks it suggested.
   candidate was checked on the page image: 89 more formulas displayed in the print are now `$$`
   blocks (pp. 74–854, most of them in Chapters 5–7 and 9). Where one printed display holds two
   formulas separated by a comma (pp. 363, 473), they are one block.
+- **Limits of operators.** For every big operator (∑, ∏, ∫, ⋃, ⨁, …) and every lim, sup, inf,
+  max, min and det, the glyphs set as its limits were read off the PDF and off the compiled
+  transcription and compared page by page. Two inductive limits had a subscript the print does not
+  have: `\varinjlim_i` twice on p. 685 and `\varinjlim_m` on p. 816, now plain `\varinjlim` as
+  printed. The rest agree.
+- **Cross-references.** Every dotted number in the text (equation, theorem and section numbers,
+  and the numbers in citations such as `[DE, Thm. 3.6.3]`) was compared page by page with the PDF
+  text: they all agree. The only differences are footnote marks that the PDF text runs into the
+  preceding number.
+- **Inline formulas.** 96 inline formulas of 40 or more characters, drawn at random (seed 4242),
+  were compiled and compared with the page image: all 96 agree with the print.
