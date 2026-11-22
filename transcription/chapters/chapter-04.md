@@ -1179,7 +1179,7 @@ $$
 to the Hausdorff locally convex product factors through a continuous operator valued into the linear subspace
 
 $$
-\Pi_\tau : L^2(G,\nu) \to \widehat{\bigoplus}_{\omega \in \widehat{G^1}} L^2_\omega(\mathbf{R}_{>0},\mathrm{d}t/t) \tag{4.3.2.7}
+\Pi_\tau : L^2(G,\nu) \to \mathop{\widehat{\bigoplus}}\limits_{\omega \in \widehat{G^1}} L^2_\omega(\mathbf{R}_{>0},\mathrm{d}t/t) \tag{4.3.2.7}
 $$
 
 the Hilbert sum of the Hilbert spaces $L^2_\omega(\mathbf{R}_{>0},\mathrm{d}t/t)$.
