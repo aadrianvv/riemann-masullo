@@ -52,6 +52,9 @@ checks above suggest it is well below that. What could plausibly still be wrong:
 - two symbols swapped where the PDF stores its glyphs in a different order from the LaTeX (limits
   of sums and integrals, numerators and denominators), so that the alignment reads the swap as a
   difference in reading order;
+- in a diagram, two nodes or labels swapped with each other: the diagram check matches the glyphs,
+  not their places (the diagrams were also compared with the page image twice, and the side of
+  every label was checked against the PDF);
 - the paper's own **misprints**, which are kept as printed on purpose (a formula can be wrong
   because the paper is).
 
