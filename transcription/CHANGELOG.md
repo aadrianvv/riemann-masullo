@@ -355,3 +355,9 @@ From the maintainers' spot check in #2471 and the checks it suggested.
   it where the print sets it below (p. 178), is fixed, and the other two displayed hatted direct
   sums (pp. 131, 179) are beside, as printed. The 17 displays with matrices, cases or several
   aligned lines were also each compared with the page image: all agree.
+- **A figure that had not been redrawn.** Glyph runs of four or more that differ between the PDF and
+  the compiled transcription were listed; outside running heads, citation keys and words set in
+  maths, they showed that Figure 4 (p. 646, the rectangle for the contour shift in §B.7) was still
+  three lines of labels. It is now a TikZ picture with the points, labels and the direction of
+  every edge as printed, like the other four figures. Every page of the PDF with line drawings was
+  checked for a figure or diagram in the transcription: there are no others.

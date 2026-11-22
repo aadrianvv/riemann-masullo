@@ -3494,17 +3494,25 @@ because we can choose $\psi(x)\ll_F\log(x)$: the implied constants in (B.7.1.11)
 
 We now perform a contour-shift to $\int_{-\delta-iT}^{-\delta+iT}$ (with $\delta>0$ to be chosen) via the Residue Theorem for the integrand $-(\zeta'_F(s-it_0+w)/\zeta_F(s-it_0+w))(x^w/w)$ using the counterclockwise rectangle in Figure 4. We'll pick $\delta$ to ensure the rectangle is contained inside a classical zero-free region for $w\mapsto\zeta_F(s-it_0+w)$. Estimates for the integrals over the top, bottom, and left sides of the rectangle will then yield what we need.
 
-$$
--\delta+iT \qquad c+iT
-$$
+*[Figure, redrawn from the PDF, p. 646:]*
 
-$$
--\delta \qquad 0 \qquad c
-$$
-
-$$
--\delta-iT \qquad c-iT
-$$
+```latex
+\begin{tikzpicture}[x=1.2cm,y=1.2cm,>=stealth,mid/.style={decoration={markings,mark=at position 0.64 with {\arrow[scale=1.4]{>}}},postaction={decorate}}]
+\draw[<->] (-2,0) -- (2,0);
+\draw[<->] (0,-1.7) -- (0,1.7);
+\draw[mid] (1.5, 1.35) -- (-1, 1.35);
+\draw[mid] (-1, 1.35) -- (-1, -1.35);
+\draw[mid] (-1, -1.35) -- (1.5, -1.35);
+\draw[mid] (1.5, -1.35) -- (1.5, 1.35);
+\fill (-1,1.35) circle (1.5pt) node[left=6pt] {$-\delta+iT$};
+\fill (1.5,1.35) circle (1.5pt) node[right=6pt] {$c+iT$};
+\fill (-1,0) circle (1.5pt) node[above left] {$-\delta$};
+\fill (0,0) circle (1.5pt) node[above left] {$0$};
+\fill (1.5,0) circle (1.5pt) node[above right] {$c$};
+\fill (-1,-1.35) circle (1.5pt) node[left=6pt] {$-\delta-iT$};
+\fill (1.5,-1.35) circle (1.5pt) node[right=6pt] {$c-iT$};
+\end{tikzpicture}
+```
 
 Figure 4. A rectangle oriented counterclockwise for shifting a vertical contour of integration
 

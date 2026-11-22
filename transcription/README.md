@@ -28,7 +28,7 @@ the physical PDF page markers kept (`## PDF page N`; printed page number = PDF p
 | φ/ϕ, ε/ϵ | every aligned glyph | the printed shape (the paper uses both phis) |
 | ⇒ and ⇉ | every double-arrow glyph of the PDF (the text layer reports both as ⇒; the font tells them apart) | 136 `\Rightarrow` and 131 `\rightrightarrows`, same count on every page |
 | ∅ shapes | every empty-set glyph of the PDF, by font | `\varnothing` and `\emptyset` as printed, same count on every page |
-| Commutative diagrams | all 84 `latex` blocks | compared with the page image at 200 dpi; every block compiles with pdflatex + tikz-cd (`tools/diagrams.py`) |
+| Commutative diagrams | all 84 diagram blocks (and the 5 figures) | compared with the page image at 200 dpi; every block compiles with pdflatex + tikz-cd (`tools/diagrams.py`) |
 | Page-by-page visual review | all 940 pages | every page read against its image at 200–300 dpi by AI reviewers (Claude, and Gemini on 485 pages; 420 pages read by both); ≈ 1,030 corrections on 354 pages, then all the checks above run again |
 | Random sample | 45 tagged equations drawn at random before the visual review (43 exact), 50 more drawn after all corrections, then 100 more tagged equations and 40 untagged displays, each compiled and compared with the page image | second sample: 49 exact, the wrong one (an extra square) corrected; third sample: 140 of 140 agree. Over the last 190 equations that is 1 error, about 0.5% per equation (95% interval roughly 0.01–3%) |
 
@@ -60,7 +60,7 @@ suggest it is well below that. What could plausibly still be wrong:
   because the paper is).
 
 Check any formula you formalize against the page image. Prose typography is collapsed except for italic paragraphs and italic section titles, which
-follow the print; the four contour figures (pp. 596, 602, 605, 798) are redrawn in TikZ.
+follow the print; the five contour figures (pp. 596, 602, 605, 646, 798) are redrawn in TikZ.
 
 Run the checks yourself (from the repository root, needs `pip install pymupdf`):
 
@@ -114,7 +114,7 @@ Recurring symbols, for orientation: `G^1` is the kernel of the module (superscri
   compile with pdflatex and tikz-cd (`tools/diagrams.py`): brace a label that contains a comma
   (`"{(a,b)}"`) and wrap a cell that starts with `[` in braces (`{[X/G]}`). GitHub does not render
   `tikzcd`; read the source, compile it, or look at the PDF.
-- **Figures** (the contour pictures on pp. 596, 602, 605, 798) are redrawn as `tikzpicture` blocks
+- **Figures** (the contour pictures on pp. 596, 602, 605, 646, 798) are redrawn as `tikzpicture` blocks
   (points, labels and the direction of each edge as printed), after the line
   `*[Figure, redrawn from the PDF, p. N:]*`.
 - **Footnotes** are written `$^{n}$text` at the end of the page on which they are printed; the
