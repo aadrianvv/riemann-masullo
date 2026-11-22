@@ -754,7 +754,13 @@ $$
 \Pi_S : \mathcal{S}(\mathbf{A}_F) \to \pi_S(\mathcal{S}(\mathbf{A}_{F,S})) \tag{2.1.4.14}
 $$
 
-*be any continuous projection onto the linear image of $\pi_S$ from (2.1.4.5) satisfying $\Pi_S\circ\pi_S = \pi_S$. Then the net $\{\Pi_S\}_{S\subset\Sigma_F}\subset \mathscr{L}_\beta(\mathcal{S}(\mathbf{A}_F))$ indexed by the finite subsets of $\Sigma_F$ containing $S_\infty$, converges to the identity on $\mathcal{S}(\mathbf{A}_F)$ with respect to the topology of uniform convergence on bounded susbsets.*
+*be any continuous projection onto the linear image of $\pi_S$ from (2.1.4.5) satisfying $\Pi_S\circ\pi_S = \pi_S$. Then the net*
+
+$$
+\{\Pi_S\}_{S\subset\Sigma_F}\subset \mathscr{L}_\beta(\mathcal{S}(\mathbf{A}_F))
+$$
+
+*indexed by the finite subsets of $\Sigma_F$ containing $S_\infty$, converges to the identity on $\mathcal{S}(\mathbf{A}_F)$ with respect to the topology of uniform convergence on bounded susbsets.*
 
 PROOF. To see this, we let $B\subset\mathcal{S}(\mathbf{A}_F)$ be a bounded subset. By Proposition 2.1.4.1(4), and by [Scha, Ch.II,§6,6.5], there exits $B_0\subset\mathcal{S}(\mathbf{A}_{F,S_0})$ bounded, for $S_0$ large enough, such that $B = \pi_{S_0}(B_0)$.
 

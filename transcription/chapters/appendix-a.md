@@ -855,7 +855,13 @@ $$
 
 which is the kernel of the continuous group homomorphism $|\cdot|_{\infty} := \prod_{v\in S_{\infty}} |\cdot|_v : \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}}) \to \mathbf{R}_{>0}$.
 
-Further recall that the continuous group homomorphism $\mathscr{L} : \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}}) \to \mathbf{R}^{S_{\infty}}$ from (A.2.3.3) is a smooth and surjective.
+Further recall that the continuous group homomorphism
+
+$$
+\mathscr{L} : \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}}) \to \mathbf{R}^{S_{\infty}}
+$$
+
+from (A.2.3.3) is a smooth and surjective.
 
 The parallelotope $P$ from (A.2.3.9) within the hyperplane $H_{\log}$ is relatively compact and has non-empty interior (see Lemma A.2.3.5(1)), so the pre-image $\mathscr{L}^{-1}(P)$ also has non-empty interior within the pre-image $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1 = \mathscr{L}^{-1}(H_{\log})$.
 
@@ -903,7 +909,13 @@ $$
 E_0 = \mathscr{L}^{-1}(P) \cap \left(\iota_{v_0}^{-1}(\mathbf{R}_{>0} e^{i[0,2\pi/w_F)}) \times \prod_{k=1}^{r_1+r_2-1} F_{v_k}^{\times}\right). \tag{A.2.3.21}
 $$
 
-(1): If $v_0$ is real, we define $U_0 := \iota_{v_0}^{-1}(\mathbf{R}_{>0}) \times \prod_{k=1}^{r_1+r_2-1} F_{v_k}^{\times}$. If $v_0$ is complex, we define $U_0 := \iota_{v_0}^{-1}(\mathbf{R}_{>0} e^{i(0,2\pi/w_F)}) \times \prod_{k=1}^{r_1+r_2-1} F_{v_k}^{\times}$. In either case, $U_0 \subset \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ is open and non-empty. It follows that $U_0 \cap \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$ is open in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$, and it is non-empty since it contains $g_{\infty} := (\iota_{v_0}^{-1}(\zeta a)\varepsilon, \prod_{k=1}^{r_1+r_2-1} \{a_k \varepsilon\})$ where $\zeta = 1$ if $v_0$ is real, and $\zeta \in e^{i(0,2\pi/w_F)}$ if $v_0$ is complex, with $a, a_k \in \mathbf{R}_{>0} - \{1\}$ chosen so as to have $a^{N_0} \prod_{k=1}^{r_1+r_2-1} a_k^{N_k} = 1$ where, for each $0 \le k \le r_1+r_2-1$, $N_k = 1$ if $v_k$ is real, and $N_k = 2$ if $v_k$ is complex, and with $\varepsilon \in \mathcal{O}_F^{\times}/\mu_F$.
+(1): If $v_0$ is real, we define $U_0 := \iota_{v_0}^{-1}(\mathbf{R}_{>0}) \times \prod_{k=1}^{r_1+r_2-1} F_{v_k}^{\times}$. If $v_0$ is complex, we define $U_0 := \iota_{v_0}^{-1}(\mathbf{R}_{>0} e^{i(0,2\pi/w_F)}) \times \prod_{k=1}^{r_1+r_2-1} F_{v_k}^{\times}$. In either case, $U_0 \subset \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$ is open and non-empty. It follows that $U_0 \cap \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$ is open in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$, and it is non-empty since it contains
+
+$$
+g_{\infty} := (\iota_{v_0}^{-1}(\zeta a)\varepsilon, \prod_{k=1}^{r_1+r_2-1} \{a_k \varepsilon\})
+$$
+
+where $\zeta = 1$ if $v_0$ is real, and $\zeta \in e^{i(0,2\pi/w_F)}$ if $v_0$ is complex, with $a, a_k \in \mathbf{R}_{>0} - \{1\}$ chosen so as to have $a^{N_0} \prod_{k=1}^{r_1+r_2-1} a_k^{N_k} = 1$ where, for each $0 \le k \le r_1+r_2-1$, $N_k = 1$ if $v_k$ is real, and $N_k = 2$ if $v_k$ is complex, and with $\varepsilon \in \mathcal{O}_F^{\times}/\mu_F$.
 
 By Lemma A.2.3.5(2), we may and do choose $\varepsilon \in \mathcal{O}_F^{\times}/\mu_F$ so as to have $\mathscr{L}(g_{\infty}) \in \mathrm{Int}(P)$, the interior of $P$ in $H_{\log}$.
 
@@ -913,7 +925,13 @@ In light of (A.2.3.20) and (A.2.3.21), $\mathscr{L}^{-1}(\mathrm{Int}(P)) \cap (
 
 By Lemma A.2.3.2(3), $\mathscr{L}$ is a proper smooth submersion, and hence $\mathscr{L}^{-1}(P)$ is relatively compact in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$. Since $E_0 \subset \mathscr{L}^{-1}(P)$, then $E_0$ is also relatively compact in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$. As $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$ is closed in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$, $E_0$ is relatively compact in $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})$.
 
-(2): Since $\mathscr{L}(\mathcal{O}_F^{\times}) = \mathrm{Reg}(\mathcal{O}_F^{\times})$ tessellates $H_{\log} = \mathscr{L}(\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1)$ by copies of $P$ by Lemma A.2.3.5(2), and since $\mathcal{O}_F^{\times} \to \mathscr{L}(\mathcal{O}_F^{\times})$ is surjective with kernel $\mu_F \subset \mathcal{O}_F^{\times}$ by Lemma A.2.3.4(2), then $(\mathcal{O}_F^{\times}/\mu_F)\mathscr{L}^{-1}(P) = \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$. Indeed, we have $\mathscr{L}((\mathcal{O}_F^{\times}/\mu_F)\mathscr{L}^{-1}(P)) = \mathscr{L}(\mathcal{O}_F^{\times}/\mu_F)\mathscr{L}(\mathscr{L}^{-1}(P)) = \mathscr{L}(\mathcal{O}_F^{\times})P = \mathrm{Reg}(\mathcal{O}_F^{\times})P = H_{\log}$ by Lemma A.2.3.5(2) and since $\mathscr{L}^{-1}(P)$ is stable under the action of $\ker(\mathscr{L})$ (and hence of $\mu_F$), then $(\mathcal{O}_F^{\times}/\mu_F)\mathscr{L}^{-1}(P)$ is stable under the action of $\mathcal{O}_F^{\times}\ker(\mathscr{L})$ and since $\mathcal{O}_F^{\times}\ker(\mathscr{L}) = \mathscr{L}^{-1}(\mathscr{L}(\mathcal{O}_F^{\times}))$, then $(\mathcal{O}_F^{\times}/\mu_F)\mathscr{L}^{-1}(P)$ contains $\mathscr{L}^{-1}(\mathscr{L}((\mathcal{O}_F^{\times}/\mu_F)\mathscr{L}^{-1}(P))) = \mathscr{L}^{-1}(H_{\log}) = \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$, and hence $(\mathcal{O}_F^{\times}/\mu_F)\mathscr{L}^{-1}(P) = \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$.
+(2): Since $\mathscr{L}(\mathcal{O}_F^{\times}) = \mathrm{Reg}(\mathcal{O}_F^{\times})$ tessellates $H_{\log} = \mathscr{L}(\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1)$ by copies of $P$ by Lemma A.2.3.5(2), and since $\mathcal{O}_F^{\times} \to \mathscr{L}(\mathcal{O}_F^{\times})$ is surjective with kernel $\mu_F \subset \mathcal{O}_F^{\times}$ by Lemma A.2.3.4(2), then $(\mathcal{O}_F^{\times}/\mu_F)\mathscr{L}^{-1}(P) = \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$. Indeed, we have
+
+$$
+\mathscr{L}((\mathcal{O}_F^{\times}/\mu_F)\mathscr{L}^{-1}(P)) = \mathscr{L}(\mathcal{O}_F^{\times}/\mu_F)\mathscr{L}(\mathscr{L}^{-1}(P)) = \mathscr{L}(\mathcal{O}_F^{\times})P = \mathrm{Reg}(\mathcal{O}_F^{\times})P = H_{\log}
+$$
+
+by Lemma A.2.3.5(2) and since $\mathscr{L}^{-1}(P)$ is stable under the action of $\ker(\mathscr{L})$ (and hence of $\mu_F$), then $(\mathcal{O}_F^{\times}/\mu_F)\mathscr{L}^{-1}(P)$ is stable under the action of $\mathcal{O}_F^{\times}\ker(\mathscr{L})$ and since $\mathcal{O}_F^{\times}\ker(\mathscr{L}) = \mathscr{L}^{-1}(\mathscr{L}(\mathcal{O}_F^{\times}))$, then $(\mathcal{O}_F^{\times}/\mu_F)\mathscr{L}^{-1}(P)$ contains $\mathscr{L}^{-1}(\mathscr{L}((\mathcal{O}_F^{\times}/\mu_F)\mathscr{L}^{-1}(P))) = \mathscr{L}^{-1}(H_{\log}) = \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$, and hence $(\mathcal{O}_F^{\times}/\mu_F)\mathscr{L}^{-1}(P) = \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$.
 
 Since $\mathcal{O}_F^{\times} \cap \ker(\mathscr{L}) = \mu_F$, the union $(\mathcal{O}_F^{\times}/\mu_F)\mathscr{L}^{-1}(P)$ is disjoint, i.e. the finite free abelian group $\mathcal{O}_F^{\times}/\mu_F$ tessellates $\mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}})^1$ by copies of $\mathscr{L}^{-1}(P)$.
 
@@ -1007,7 +1025,13 @@ $$
 
 The following is immediate from Proposition A.2.3.10(2).
 
-Lemma A.2.3.12. *Let $F$ be a number field. Let $s_{\infty}$ be any continuous homomorphic section to the continuous homomorphism $|\cdot|_{\infty} : \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}}) \to \mathbf{R}_{>0}$. The natural map $F^{\times} \times \mathbf{R}_{>0} \times E_F^1 \to \mathrm{GL}_1(\mathbf{A}_F)$ via $(\xi,t,g_0) \mapsto \xi s_{\infty}(t) g_0$ is bijective.*
+Lemma A.2.3.12. *Let $F$ be a number field. Let $s_{\infty}$ be any continuous homomorphic section to the continuous homomorphism $|\cdot|_{\infty} : \mathrm{GL}_1(\mathbf{A}_{F,S_{\infty}}) \to \mathbf{R}_{>0}$. The natural map*
+
+$$
+F^{\times} \times \mathbf{R}_{>0} \times E_F^1 \to \mathrm{GL}_1(\mathbf{A}_F)
+$$
+
+*via $(\xi,t,g_0) \mapsto \xi s_{\infty}(t) g_0$ is bijective.*
 
 A.2.3.7. *Product loci, interiors and compactness.* For each Archimedean place, we denote by
 

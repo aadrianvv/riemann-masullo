@@ -260,7 +260,13 @@ $$
 \Phi_{F,\omega}(f_k)(g) = \int_{E^1_F} \Phi_F(f_k)(gh)\,\omega(gh)\,\mathrm{d}\mu_1(h)
 $$
 
-as $E^1_F$ is a fundamental domain for the continuous action of $F^\times$ by left translation on $\mathrm{GL}_1(\mathbf A_F)^1$, we have $\Phi_{F,\omega}(f)(x) - \Phi_{F,\omega}(f_k)(x) = \omega(x) \int_{E^1_F} (\Phi_F(f_k)(g') - \Phi_F(f)(g'))\,\omega(g'x^{-1})\,\mathrm{d}(\delta_x\otimes\mu_1)(g')$ and hence
+as $E^1_F$ is a fundamental domain for the continuous action of $F^\times$ by left translation on $\mathrm{GL}_1(\mathbf A_F)^1$, we have
+
+$$
+\Phi_{F,\omega}(f)(x) - \Phi_{F,\omega}(f_k)(x) = \omega(x) \int_{E^1_F} (\Phi_F(f_k)(g') - \Phi_F(f)(g'))\,\omega(g'x^{-1})\,\mathrm{d}(\delta_x\otimes\mu_1)(g')
+$$
+
+and hence
 
 $$
 \|\Phi_{F,\omega}(f) - \Phi_{F,\omega}(f_k)\|_{L^1(T_{v_0},\delta_x)} \le |c(x)|\,\|\Phi_F(f) - \Phi_F(f_k)\|_{L^1(T\cdot E^1_F,(\delta_x\otimes\mu_1))} \tag{11.1.1.15}
@@ -361,7 +367,13 @@ $$
 
 To see this, it is enough to observe that since the topology on $W^{s,2}_0 \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ is induced by the $\|\cdot\|_{s,2}$-norm on $W^{s,2}(C_F)(\chi|_{C^1_F})$, then the pull-back of the norm $\|\cdot\|_{s,2}$ along $M_\rho$ from (11.1.2.8) is a seminorm $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$, which generates a locally convex topology whose separated completion is closed and dense within $M_\rho W^{s,2}_0 \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$, and hence agrees with it.
 
-Such pull-back seminorm is computed as: $\phi \mapsto \|\rho\cdot\phi\|_{s,2} = \left( \int_{C_F} |\rho(g)\phi(g)|^2 (1+|\log|g|_F|^2)^{s/2}\,\mathrm{d}\bar\mu(g) \right)^{1/2}$ which gives the formula for $\|\cdot\|_{s,2,\rho}$ in (11.1.2.9), since the indicator function $\rho$ of $C^{>1/\Lambda}_F$, respectively of $C^{(1/\Lambda,\Lambda)}_F$, is its own square.
+Such pull-back seminorm is computed as:
+
+$$
+\phi \mapsto \|\rho\cdot\phi\|_{s,2} = \left( \int_{C_F} |\rho(g)\phi(g)|^2 (1+|\log|g|_F|^2)^{s/2}\,\mathrm{d}\bar\mu(g) \right)^{1/2}
+$$
+
+which gives the formula for $\|\cdot\|_{s,2,\rho}$ in (11.1.2.9), since the indicator function $\rho$ of $C^{>1/\Lambda}_F$, respectively of $C^{(1/\Lambda,\Lambda)}_F$, is its own square.
 
 Since $\{g \in C_F : |g|_F = 1/\Lambda,\Lambda\}$ has $\bar\mu$-measure zero, indeed the formula in (11.1.2.9) for $\|\cdot\|_{s,2,\rho}$ computes the pull-back of $\|\cdot\|_{s,2}$ on $W^{s,2}_0 \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$ along $M_\rho$ from (11.1.2.8).
 
@@ -979,7 +991,11 @@ This subsection is aimed at conveying the main ideas on how to accomplish this, 
 
 We start by identifying an interesting stratification of the global ideles $\mathrm{GL}_1(\mathbf A_F)$, which is found only on $\mathrm{GL}_1(\mathbf A_F)$ as opposed to its quotient $C_F$, since it is defined by leveraging crucially the restricted product nature of $\mathrm{GL}_1(\mathbf A_F)$.
 
-This stratification will adapt itself nicely to the structure of the Schwartz-Bruhat functions representing the global adelic $\theta$-functions in $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal{S}_0(\mathbf A_F))$.
+This stratification will adapt itself nicely to the structure of the Schwartz-Bruhat functions representing the global adelic $\theta$-functions in
+
+$$
+\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal{S}_0(\mathbf A_F)).
+$$
 
 Recall that there exists a finite set of finite places $S$ of $F$ satisfying the following conditions:
 
@@ -1011,7 +1027,13 @@ This is the last of the five Structure Theorems, proved at the end of Chapter 5 
 
 The stratification of the global ideles $\mathrm{GL}_1(\mathbf A_F)$ that we are about to define will weld itself perfectly well with the non-Archimedean “transversal” (i.e. tensor component) $\bigotimes_{v\notin S}1_{\mathcal O_{F_v}}$ which all the global Schwartz-Bruhat functions on $\mathbf A_F$ representing the $\chi|_{C^1_F}$-homogeneous global $\theta$-functions can be made to share in common.
 
-The guiding principle is simple: since $\mathcal O_{F_v}^\times\subset F_v^\times$ is compact and open, hence so it is in $F_v$, and we have $1_{\mathcal O_{F_v}^\times}\cdot 1_{\mathcal O_{F_v}}=1_{\mathcal O_{F_v}^\times}$ as Schwartz-Bruhat functions on $F_v$. Under the local Mellin transform, $Z_v(1_{\mathcal O_{F_v}^\times},c)$ and $Z_v(1_{\mathcal O_{F_v}},c)$ are related by “Weil’s Identity”:
+The guiding principle is simple: since $\mathcal O_{F_v}^\times\subset F_v^\times$ is compact and open, hence so it is in $F_v$, and we have
+
+$$
+1_{\mathcal O_{F_v}^\times}\cdot 1_{\mathcal O_{F_v}}=1_{\mathcal O_{F_v}^\times}
+$$
+
+as Schwartz-Bruhat functions on $F_v$. Under the local Mellin transform, $Z_v(1_{\mathcal O_{F_v}^\times},c)$ and $Z_v(1_{\mathcal O_{F_v}},c)$ are related by “Weil’s Identity”:
 
 $$
 \mu_v(\mathcal O_{F_v}^\times)\cdot Z_v(1_{\mathcal O_{F_v}^\times},\chi_v\lvert\cdot\rvert^s_v)=L_v(\chi_v\lvert\cdot\rvert^s_v)^{-1}Z_v(1_{\mathcal O_{F_v}},\chi_v\lvert\cdot\rvert^s_v)

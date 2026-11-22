@@ -244,3 +244,25 @@ From the maintainers' spot check in #2471 and the checks it suggested.
   continuation line of a multi-line display were also listed: two more ((B.4.2.4) p. 615,
   (B.4.4.8) p. 621), now on the first line as printed.
 
+- **Symbol counts per page.** Each maths symbol was counted on every page of the PDF and of the
+  transcription (running heads and diagram pages left out), which catches an extra or missing
+  symbol whatever the reading order. Two formulas had more than the print: on p. 244 the Mackey
+  dual was written `F_\tau'=F_{\tau(F',F)}'` where the print has only `F'_{\tau(F',F)}`, and on
+  p. 354 a trailing `\subset \mathbf A_{F,S}` had been added to the definition of
+  `\widetilde{Q}_Y`. Both are now as printed.
+- **Third random sample.** 100 more tagged equations (seed 777) and 40 untagged displays (seed
+  2026112202), each compiled and compared with the page image: all 140 agree with the print,
+  apart from where a multi-line display breaks its lines.
+- **Sub- and superscript levels.** Every page's maths was compiled and each glyph's size (normal,
+  script, scriptscript) and position (raised or lowered) compared with the same glyph in the PDF.
+  This finds structure the glyph alignment cannot see, such as an exponent ending one symbol
+  early. No formula had a glyph on the wrong level. It did find notation that differs from the
+  print: `\frac{\mathrm d t}{t}` where the print has `\mathrm dt/t` (pp. 178–180, 16 places)
+  and the other way round (pp. 400, 424, 428, 5 places); `[F:\mathbf Q]/2` and
+  `|a_m|/(m^{\sigma+c}\ldots)` printed as fractions (pp. 642, 644, 645). All now as printed.
+- **Displays run into the text, third pass.** The same comparison showed formulas set in display
+  style in the print but inline in the transcription, so the search for run-in displays was redone
+  on every centred line of maths in the PDF, matched glyph by glyph with the transcription. Every
+  candidate was checked on the page image: 89 more formulas displayed in the print are now `$$`
+  blocks (pp. 74–854, most of them in Chapters 5–7 and 9). Where one printed display holds two
+  formulas separated by a comma (pp. 363, 473), they are one block.

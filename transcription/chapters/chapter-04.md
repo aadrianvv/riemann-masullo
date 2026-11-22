@@ -1140,10 +1140,10 @@ In the special case $G$ satisfies the assumptions from Situation 4.3.0.1, then $
 
 We choose a continuous homomorphic section $\tau$ to the module $|\cdot|_G$.
 
-The operator $\Pi_{G,\omega}$ is defined on $R(G) := L^2(G,\nu)$ and its composition with the pull-back along $\tau$ is valued in $L^2_\omega(\mathbf{R}_{>0},\frac{\mathrm{d}t}{t})$, where we define the action of $G$ on $L^2_\omega(\mathbf{R}_{>0},\frac{\mathrm{d}t}{t})$ as:
+The operator $\Pi_{G,\omega}$ is defined on $R(G) := L^2(G,\nu)$ and its composition with the pull-back along $\tau$ is valued in $L^2_\omega(\mathbf{R}_{>0},\mathrm{d}t/t)$, where we define the action of $G$ on $L^2_\omega(\mathbf{R}_{>0},\mathrm{d}t/t)$ as:
 
 $$
-\bar\rho_{G,\omega} : G \times L^2_\omega(\mathbf{R}_{>0},\frac{\mathrm{d}t}{t}) \to L^2_\omega(\mathbf{R}_{>0},\frac{\mathrm{d}t}{t}) \tag{4.3.2.2}
+\bar\rho_{G,\omega} : G \times L^2_\omega(\mathbf{R}_{>0},\mathrm{d}t/t) \to L^2_\omega(\mathbf{R}_{>0},\mathrm{d}t/t) \tag{4.3.2.2}
 $$
 
 on $\phi \in C_c(\mathbf{R}_{>0})$, by:
@@ -1152,12 +1152,12 @@ $$
 \bar\rho_{G,\omega}(g,\phi)(x) := \omega(g)\phi(|g|_G^{-1}x) \tag{4.3.2.3}
 $$
 
-and extending $\bar\rho_{G,\omega}$ to $L^2(\mathbf{R}_{>0},\frac{\mathrm{d}t}{t})$ by continuity and denseness of $C_c(\mathbf{R}_{>0})$ in $L^2(\mathbf{R}_{>0},\frac{\mathrm{d}t}{t})$.
+and extending $\bar\rho_{G,\omega}$ to $L^2(\mathbf{R}_{>0},\mathrm{d}t/t)$ by continuity and denseness of $C_c(\mathbf{R}_{>0})$ in $L^2(\mathbf{R}_{>0},\mathrm{d}t/t)$.
 
 The composition of $\Pi_{G,\omega}$ with the pull-back along $\tau$, which we denote by $\Pi_{G,\omega,\tau}$, is therefore promoted to a continuous operator:
 
 $$
-\Pi_{G,\omega,\tau} : L^2(G,\nu) \to L^2_\omega(\mathbf{R}_{>0},\frac{\mathrm{d}t}{t}) \tag{4.3.2.4}
+\Pi_{G,\omega,\tau} : L^2(G,\nu) \to L^2_\omega(\mathbf{R}_{>0},\mathrm{d}t/t) \tag{4.3.2.4}
 $$
 
 equivariant with respect to the action of $G^1$ obtained by restriction of $\rho_G$ to $G^1$, on the source and the action of $G^1$ obtained by restriction of the action $\bar\rho_{G,\omega}$ to $G^1$, on the target.
@@ -1165,7 +1165,7 @@ equivariant with respect to the action of $G^1$ obtained by restriction of $\rho
 On $\phi \in C_c(G)$, we see that we have
 
 $$
-\|\Pi_{G,\omega,\tau}(\phi)\|_{L^2_\omega(\mathbf{R}_{>0},\frac{\mathrm{d}t}{t})} \le \|\phi\|_{L^2(G,\nu)} \tag{4.3.2.5}
+\|\Pi_{G,\omega,\tau}(\phi)\|_{L^2_\omega(\mathbf{R}_{>0},\mathrm{d}t/t)} \le \|\phi\|_{L^2(G,\nu)} \tag{4.3.2.5}
 $$
 
 and so this remains true on all $\phi \in L^2(\Gamma,\nu)$ by continuity.
@@ -1173,21 +1173,21 @@ and so this remains true on all $\phi \in L^2(\Gamma,\nu)$ by continuity.
 In particular, the unique continuous operator:
 
 $$
-\Pi_\tau : L^2(G,\nu) \to \prod_{\omega \in \widehat{G^1}} L^2_\omega(\mathbf{R}_{>0},\frac{\mathrm{d}t}{t}) \tag{4.3.2.6}
+\Pi_\tau : L^2(G,\nu) \to \prod_{\omega \in \widehat{G^1}} L^2_\omega(\mathbf{R}_{>0},\mathrm{d}t/t) \tag{4.3.2.6}
 $$
 
 to the Hausdorff locally convex product factors through a continuous operator valued into the linear subspace
 
 $$
-\Pi_\tau : L^2(G,\nu) \to \widehat{\bigoplus}_{\omega \in \widehat{G^1}} L^2_\omega(\mathbf{R}_{>0},\frac{\mathrm{d}t}{t}) \tag{4.3.2.7}
+\Pi_\tau : L^2(G,\nu) \to \widehat{\bigoplus}_{\omega \in \widehat{G^1}} L^2_\omega(\mathbf{R}_{>0},\mathrm{d}t/t) \tag{4.3.2.7}
 $$
 
-the Hilbert sum of the Hilbert spaces $L^2_\omega(\mathbf{R}_{>0},\frac{\mathrm{d}t}{t})$.
+the Hilbert sum of the Hilbert spaces $L^2_\omega(\mathbf{R}_{>0},\mathrm{d}t/t)$.
 
 This is the linear subspace
 
 $$
-\{(\phi_\omega)_{\omega \in \widehat{C_F^1}} : \phi_\omega \in L^2_\omega(\mathbf{R}_{>0},\frac{\mathrm{d}t}{t}) \text{ for all } \omega \in \widehat{C_F^1},\ \sum_{\omega \in \widehat{C_F^1}} \|\phi_\omega\|^2_{L^2(\mathbf{R}_{>0},\frac{\mathrm{d}t}{t})} < \infty\}
+\{(\phi_\omega)_{\omega \in \widehat{C_F^1}} : \phi_\omega \in L^2_\omega(\mathbf{R}_{>0},\mathrm{d}t/t) \text{ for all } \omega \in \widehat{C_F^1},\ \sum_{\omega \in \widehat{C_F^1}} \|\phi_\omega\|^2_{L^2(\mathbf{R}_{>0},\mathrm{d}t/t)} < \infty\}
 $$
 
 ## PDF page 179
@@ -1220,7 +1220,7 @@ where $I$ is a set, and each $H_i$ is in turn a Hilbert space, isometric to a co
 
 For every nonzero $\phi \in L^2(G,\nu)$ there exists $i \in I$ such that the image $\phi_i$ of $\phi$ under the isomorphism of Hilbert spaces from (4.3.2.8), is nonzero. $G^1$ acts on $\phi_i$ by multiplication by the continuous unitary character $\omega_i$, since the isomorphism of Hilbert spaces in (4.3.2.8) is compatible with the continuous representation of $G^1$ structure on source and target.
 
-Each $H_i$ is isometric under $\Pi_{G,\omega_i,\tau}$ to $L^2_{\omega_i}(\mathbf{R}_{>0},\frac{\mathrm{d}t}{t})$. We further deduce that the map $i \mapsto \omega_i$ is an injective map $I \to \widehat{G^1}$. On the other hand, for each continuous character $\omega \in \widehat{G^1}$, the closed subspace $H_\omega \subset L^2(G,\nu)$ defined as:
+Each $H_i$ is isometric under $\Pi_{G,\omega_i,\tau}$ to $L^2_{\omega_i}(\mathbf{R}_{>0},\mathrm{d}t/t)$. We further deduce that the map $i \mapsto \omega_i$ is an injective map $I \to \widehat{G^1}$. On the other hand, for each continuous character $\omega \in \widehat{G^1}$, the closed subspace $H_\omega \subset L^2(G,\nu)$ defined as:
 
 $$
 H_\omega := \{\phi \in L^2(G,\nu) : \rho_G(g,\phi) = \omega(g)\phi,\ g \in G^1\} \subset L^2(G,\nu)
@@ -1248,7 +1248,7 @@ $$
 
 We refer to $R(G)(\omega)$ as the $\omega$-isotype of $R(G)$, and to the orthogonal projector $\nu_1(G^1)^{-1}\Pi_{G^1,\omega}$ as the projection onto the $\omega$-isotype.
 
-We note that for each $\omega \in \widehat{G^1}$, the closed subspace $R(G)(\omega)$ is isometric to $L^2_\omega(\mathbf{R}_{>0},\frac{\mathrm{d}t}{t})$ under the operator $\Pi_{G,\omega,\tau}$ of (4.3.2.7): the operator $\Pi_{G,\omega,\tau}$ factors through an isometry $R(G)(\omega) \to L^2_\omega(\mathbf{R}_{>0},\frac{\mathrm{d}t}{t})$, and the kernel of $\Pi_{G,\omega,\tau}$ is linearly and topologically generated within $R(G)$ by the elements of the form $\phi - \overline{\omega}(g)\rho_G(g,\phi)$ as $(\phi,g)$ varies over $R(G) \times G^1$.
+We note that for each $\omega \in \widehat{G^1}$, the closed subspace $R(G)(\omega)$ is isometric to $L^2_\omega(\mathbf{R}_{>0},\mathrm{d}t/t)$ under the operator $\Pi_{G,\omega,\tau}$ of (4.3.2.7): the operator $\Pi_{G,\omega,\tau}$ factors through an isometry $R(G)(\omega) \to L^2_\omega(\mathbf{R}_{>0},\mathrm{d}t/t)$, and the kernel of $\Pi_{G,\omega,\tau}$ is linearly and topologically generated within $R(G)$ by the elements of the form $\phi - \overline{\omega}(g)\rho_G(g,\phi)$ as $(\phi,g)$ varies over $R(G) \times G^1$.
 
 4.3.3. $G$-invariants in a quasi-complete Hausdorff locally convex topological vector space. Using the results on integration in the sense of Pettis from §C.4), the following Lemma 4.3.3.1 studies formation of continuous invariants and co-invariants under the continuous action of a compact Hausdorff abelian group $G$, on a quasi-complete Hausdorff locally convex topological $\mathbf{C}$-vector space $E$.
 

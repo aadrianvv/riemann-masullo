@@ -1308,9 +1308,19 @@ We fix a real number $s\ge 0$, and we assume $s>1$ to ensure that every element 
 
 We further fix a real number $a\in\mathbf{R}$. We will be strengthening the assumptions on $s$ and $a$ as the need arises.
 
-In this section we compute the contribution to the trace of the effect of the convolution action of the kernel $\varphi(xy^{-1})$ on $W^s_I(C_F)$, for $\varphi\in\mathcal{D}(C_F)$ a test function, on the dual of the quotient of the (closed) range of the multiplication operator $M_{\rho}$ by a smooth $(\Lambda,\varepsilon)$-cutoff $\rho$, modulo the closure of the range of $M_{\rho}$ restricted to $|\cdot|^{1/2}_F \mathrm{H}_{0,\mathrm{cont}}(F^{\times},\mathcal{S}_0(\mathbf{A}_F))$.
+In this section we compute the contribution to the trace of the effect of the convolution action of the kernel $\varphi(xy^{-1})$ on $W^s_I(C_F)$, for $\varphi\in\mathcal{D}(C_F)$ a test function, on the dual of the quotient of the (closed) range of the multiplication operator $M_{\rho}$ by a smooth $(\Lambda,\varepsilon)$-cutoff $\rho$, modulo the closure of the range of $M_{\rho}$ restricted to
 
-We first introduce orthogonal projections $P^{\mathrm{geom}}_a$ on $W^s_I(C_F)(\chi|_{C^1_F})$ onto $W^s_{a,I}\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal{S}_0(\mathbf{A}_F))$ and its orthogonal complement, $P^{\mathrm{spec}}_a:=\mathrm{Id}-P^{\mathrm{geom}}_a$, and study the operators $P^{\mathrm{geom}}_a\circ A(\varphi)$ and $P^{\mathrm{spec}}_a\circ A(\varphi)$, for any test function $\varphi\in\mathcal{D}(C_F)$.
+$$
+|\cdot|^{1/2}_F \mathrm{H}_{0,\mathrm{cont}}(F^{\times},\mathcal{S}_0(\mathbf{A}_F)).
+$$
+
+We first introduce orthogonal projections $P^{\mathrm{geom}}_a$ on $W^s_I(C_F)(\chi|_{C^1_F})$ onto
+
+$$
+W^s_{a,I}\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal{S}_0(\mathbf{A}_F))
+$$
+
+and its orthogonal complement, $P^{\mathrm{spec}}_a:=\mathrm{Id}-P^{\mathrm{geom}}_a$, and study the operators $P^{\mathrm{geom}}_a\circ A(\varphi)$ and $P^{\mathrm{spec}}_a\circ A(\varphi)$, for any test function $\varphi\in\mathcal{D}(C_F)$.
 
 We shall prove in Theorem 10.4.2.1 that the latter is a nuclear operator on $W^s_I(C_F)$, and we will be computing its trace in Proposition 10.4.2.4.
 
@@ -1334,7 +1344,11 @@ $$
 P^{\mathrm{geom}}_a: W^s_I(C_F)\to W^s_I(C_F) \tag{10.4.1.1}
 $$
 
-assigned by sending $\phi\in W^s_I(C_F)$ to the orthogonal projection onto the closed subspace $W^s_{a,I}\mathrm{H}_{0,\mathrm{cont}}(F^{\times},\mathcal{S}_0(\mathbf{A}_F))\subset W^s_I(C_F)$.
+assigned by sending $\phi\in W^s_I(C_F)$ to the orthogonal projection onto the closed subspace
+
+$$
+W^s_{a,I}\mathrm{H}_{0,\mathrm{cont}}(F^{\times},\mathcal{S}_0(\mathbf{A}_F))\subset W^s_I(C_F).
+$$
 
 (2) The spectral projection operator to be the orthogonal projector:
 
@@ -1468,7 +1482,13 @@ $$
 
 to be the composition of $P^{\mathrm{spec}}_a:W^s_I(C_F)\to W^s_I(C_F)$ followed by the convolution operator $A(\varphi)$ and by the multiplication operator $M_{\rho}$.
 
-Geometric and spectral restrictions are those that will be the main focus of this Chapter. It will turn out that the nuclear trace $\mathrm{Trace}\,M_{\rho}\circ A^{\mathrm{spec}}_a(\varphi)$ satisfies:
+Geometric and spectral restrictions are those that will be the main focus of this Chapter. It will turn out that the nuclear trace
+
+$$
+\mathrm{Trace}\,M_{\rho}\circ A^{\mathrm{spec}}_a(\varphi)
+$$
+
+satisfies:
 
 $$\lim_{\Lambda\to+\infty,\varepsilon\Lambda=o(1)}\mathrm{Trace}\,M_{\rho}\circ A^{\mathrm{spec}}_a(\varphi)=\mathrm{Trace}\,A^{\mathrm{spec}}_a(\varphi)$$
 
@@ -2052,7 +2072,13 @@ $$
 S^{-1}_a(\widetilde\psi_{\chi,t,m})=S^{-1}_a(P^{\mathrm{spec}}_a(\widetilde\psi_{\chi,t,m}))=Q_a(P^{\mathrm{spec}}_a(\widetilde\psi_{\chi,t,m}))=\psi_{\chi,t,m} \tag{10.4.3.17}
 $$
 
-where the first identity is a consequence of the containment $P^{\mathrm{geom}}_aW^{s,2}(C_F)=W^{s,2}_a\mathrm H_{0,\mathrm{cont}}(F^{\times},\mathcal S_0(\mathbf A_F))\subset\ker(Q_a)$ and orthogonality in $W^{s,2}(C_F)$ of $P^{\mathrm{geom}}_aW^{s,2}(C_F)$ to the range of $S_a$.
+where the first identity is a consequence of the containment
+
+$$
+P^{\mathrm{geom}}_aW^{s,2}(C_F)=W^{s,2}_a\mathrm H_{0,\mathrm{cont}}(F^{\times},\mathcal S_0(\mathbf A_F))\subset\ker(Q_a)
+$$
+
+and orthogonality in $W^{s,2}(C_F)$ of $P^{\mathrm{geom}}_aW^{s,2}(C_F)$ to the range of $S_a$.
 
 Upon evaluating $S_a$ on both the sides of the rightmost identity (10.4.3.17), we obtain:
 
@@ -2276,7 +2302,13 @@ where we have used (10.4.3.28) from Remark 10.4.3.3 to identify $\int_{C_F}k^{\m
 
 Since $A(\varphi)-P^{\mathrm{spec}}_a\circ A(\varphi)=(\mathrm{Id}-P^{\mathrm{spec}}_a)\circ A(\varphi)$, and $\mathrm{Id}-P^{\mathrm{spec}}_a=P^{\mathrm{geom}}_a$, we deduce that (10.4.3.29) holds.
 
-(2) : Since $(P^{\mathrm{spec}}_a\circ A(\varphi))(\phi)(x)=\int_{C_F}(1+|\log|y|_F|^2)^{-s/2}k^{\mathrm{spec}}_{\varphi,a,s}(x,y)\,(1+|\log|y|_F|^2)^{s/2}\mathrm{d}\overline{\mu}(y)$ we deduce, by uniqueness of the Hilbert-Schmidt kernel associated to the nuclear, hence Hilbert-Schmidt, operator $P^{\mathrm{spec}}_a\circ A(\varphi)$, that $(1+|\log|y|_F|^2)^{-s/2}k^{\mathrm{spec}}_{\varphi,a,s}(x,y)$ is a representative kernel function for the Hilbert-Schmidt kernel of $P^{\mathrm{spec}}_a\circ A(\varphi)$ (i.e. any other such function agrees with $(1+|\log|y|_F|^2)^{-s/2}k^{\mathrm{spec}}_{\varphi,a,s}(x,y)$ almost everywhere over $C_F\times C_F$ with respect to the product measure $(1+|\log|\cdot|_F|^2)^{-s/2}\overline{\mu})^{\otimes 2}$, equivalently $\overline{\mu}\otimes\overline{\mu}$, since the two measures have the same null sets in $C_F\times C_F$).
+(2) : Since
+
+$$
+(P^{\mathrm{spec}}_a\circ A(\varphi))(\phi)(x)=\int_{C_F}(1+|\log|y|_F|^2)^{-s/2}k^{\mathrm{spec}}_{\varphi,a,s}(x,y)\,(1+|\log|y|_F|^2)^{s/2}\mathrm{d}\overline{\mu}(y)
+$$
+
+we deduce, by uniqueness of the Hilbert-Schmidt kernel associated to the nuclear, hence Hilbert-Schmidt, operator $P^{\mathrm{spec}}_a\circ A(\varphi)$, that $(1+|\log|y|_F|^2)^{-s/2}k^{\mathrm{spec}}_{\varphi,a,s}(x,y)$ is a representative kernel function for the Hilbert-Schmidt kernel of $P^{\mathrm{spec}}_a\circ A(\varphi)$ (i.e. any other such function agrees with $(1+|\log|y|_F|^2)^{-s/2}k^{\mathrm{spec}}_{\varphi,a,s}(x,y)$ almost everywhere over $C_F\times C_F$ with respect to the product measure $(1+|\log|\cdot|_F|^2)^{-s/2}\overline{\mu})^{\otimes 2}$, equivalently $\overline{\mu}\otimes\overline{\mu}$, since the two measures have the same null sets in $C_F\times C_F$).
 
 A similar argument shows that $\rho(x)\,(1+|\log|y|_F|^2)^{-s/2}k^{\mathrm{spec}}_{\varphi,a,s}(x,y)$ is a representative function over $C_F\times C_F$ for the Hilbert-Schmidt kernel of $P^{\mathrm{spec}}_{\rho,a}\circ A(\varphi)$.
 
@@ -2382,7 +2414,11 @@ As a Corollary, we obtain:
 
 Theorem 10.4.3.6. *Let $F$ be a number field, $a,s$ real numbers, $a>0$, $s>1$. Let $\Lambda,\varepsilon>0$ be real numbers, such that $0<1/\Lambda+\varepsilon<\Lambda-\varepsilon$. Let $\rho:C_F\to\mathbf C$ be a $(\Lambda,\varepsilon)$-cutoff.*
 
-*Let $w_{I,s}$ is the weight function defined in (9.2.2.41) as: $w_{I,s}(g):=\max\{|g|^{2a}_F,|g|^{2b}_F\}\,(1+|\log|g|_F|^2)^{s/2}$, $g\in C_F$.*
+*Let $w_{I,s}$ is the weight function defined in (9.2.2.41) as:*
+
+$$
+w_{I,s}(g):=\max\{|g|^{2a}_F,|g|^{2b}_F\}\,(1+|\log|g|_F|^2)^{s/2},\ g\in C_F.
+$$
 
 Then:
 
@@ -2420,7 +2456,11 @@ $$
 k^{\mathrm{spec}}_{\varphi,a,I,s}(x,y):=k(x,y)\,w_{I,s}(y)^{-1} \tag{10.4.3.49}
 $$
 
-where $w_{I,s}$ is the weight function defined in (9.2.2.41) as: $w_{I,s}(g):=\max\{|g|^{2a}_F,|g|^{2b}_F\}\,(1+|\log|g|_F|^2)^{s/2}$, $g\in C_F$.
+where $w_{I,s}$ is the weight function defined in (9.2.2.41) as:
+
+$$
+w_{I,s}(g):=\max\{|g|^{2a}_F,|g|^{2b}_F\}\,(1+|\log|g|_F|^2)^{s/2},\ g\in C_F.
+$$
 
 We refer to $k^{\mathrm{spec}}_{\varphi,a,I,s}$ as the Global Spectral Kernel of the $\varphi$-regularized action of $C_F$ on $W^s_I(C_F)$.
 

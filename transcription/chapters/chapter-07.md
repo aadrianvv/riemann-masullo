@@ -326,7 +326,13 @@ Lemma 7.1.2.2. *Let $F$ be a number field, $S$ a finite set of places of $F$ con
 
 **7.1. POLAR MULTIPLICITIES** · **317**
 
-(1) *for $v$ Archimedean we write $\chi_v = \chi_0|\cdot|^{it_{\chi_v}}_v$ with a unique $t_{\chi_v}\in\mathbf{R}$ and a unitary $\chi_0$ that is either trivial or the sign character of $F^\times_v = \mathbf{R}^\times$ for real $v$ and $\chi_0 : z\mapsto (z/|z|)^k$ for a unique integer $k\in\mathbf{Z}$ for complex $v$, and define $c_{v,m,\chi} = \chi|\cdot|^{m-it_{\chi_v}}_{F,S}$ where $m$ varies as follows depending on $\chi_0$: $m\in -2\mathbf{N}$ when $\chi_0 = 1$ for real $v$, $m\in -1-2\mathbf{N}$ when $\chi_0 = \mathrm{sgn}$ for real $v$, and $m\in (|k|/2)-\mathbf{N}$ for complex $v$;*
+(1) *for $v$ Archimedean we write $\chi_v = \chi_0|\cdot|^{it_{\chi_v}}_v$ with a unique $t_{\chi_v}\in\mathbf{R}$ and a unitary $\chi_0$ that is either trivial or the sign character of $F^\times_v = \mathbf{R}^\times$ for real $v$ and $\chi_0 : z\mapsto (z/|z|)^k$ for a unique integer $k\in\mathbf{Z}$ for complex $v$, and define*
+
+$$
+c_{v,m,\chi} = \chi|\cdot|^{m-it_{\chi_v}}_{F,S}
+$$
+
+*where $m$ varies as follows depending on $\chi_0$: $m\in -2\mathbf{N}$ when $\chi_0 = 1$ for real $v$, $m\in -1-2\mathbf{N}$ when $\chi_0 = \mathrm{sgn}$ for real $v$, and $m\in (|k|/2)-\mathbf{N}$ for complex $v$;*
 
 (2) *for $v$ non-Archimedean (so $\chi$ is unramified at $v$: $v\not\in S_\chi$) and $q_v$ the size of the residue field at $v$, we write $\chi_v = |\cdot|^{it_{\chi_v}}_v$ with a unique $t_{\chi_v}\in[0,2\pi/\log(q_v))$ and define*
 
@@ -410,7 +416,13 @@ $\Gamma$ acts on $T^1\mathbf{H} \simeq \mathrm{PSL}_2(\mathbf{R})$ through tange
 
 This is done in [Sarnak, §2,(2.1)] by integrating over a fundamental domain within the standard fundamental domain for the $\Gamma$-action on $T^1\mathbf{H}$, for the closed orbit of period $1/t$ on $T^1M$ of the horocyclic flow, the generic automorphic function $f$ on $T^1\mathbf{H}$.
 
-The $J_{F,S}$-parametrized families of continuous functionals $a_m(\cdot, \chi|\cdot|^{\frac{2\pi i m}{\log(q_v)}-it_v}_{F,S})\, \overline{\chi}(g)|g|^{-\frac{2\pi i m}{\log(q_v)}+it_v}_{F,S} (\log|g|_{F,S})^k$ are the direct analogs of the measures $\nu^{(k)}(t)$.
+The $J_{F,S}$-parametrized families of continuous functionals
+
+$$
+a_m(\cdot, \chi|\cdot|^{\frac{2\pi i m}{\log(q_v)}-it_v}_{F,S})\, \overline{\chi}(g)|g|^{-\frac{2\pi i m}{\log(q_v)}+it_v}_{F,S} (\log|g|_{F,S})^k
+$$
+
+are the direct analogs of the measures $\nu^{(k)}(t)$.
 
 Throughout this Chapter, the Riemann surface $M$ is replaced by the $S$-adeles $\mathbf{A}_{F,S}$ for all large enough $S$, the automorphic function is replaced by the arbitrary $S$-local $\theta$-function $\Phi_{F,S}(f)$ for $f$ a Schwartz-Bruhat function on $\mathbf{A}_{F,S}$ (noting that the continuous functionals $a_m(\cdot, c)$ are $\mathcal{O}_{F,S}^{\times}$-invariant and hence are continuous on $\mathrm{H}_{0,\mathrm{cont}}(\mathcal{O}_{F,S}^{\times}, \mathcal{S}(\mathbf{A}_{F,S}))$; see Definition 5.5.1.1 and Theorem 5.5.1.2 of the previous Chapter, discussing $S$-local eigendistributions; see also Theorem 7.2.1.4 in this Chapter).
 
@@ -420,7 +432,13 @@ Throughout [Sarnak, §2], Sarnak proves continuity on $\mathcal{D}(T^1M)$ of the
 
 Sarnak then studies the measures $\nu^{(k)}(t)$ for all small enough $t > 0$ by means of their Mellin transform, relating them to certain functional families of Eisenstein series and recasting them as residue functionals of the meromorphic vector valued functions $E^{(k)}(s)$ introduced throughout [Sarnak, §2] (see [Sarnak, §2,(2.2),p.724]) which, when evaluated on the generic automorphic function, are seen to be related to classical Eisenstein series in [Sarnak, §2,Prop.2.6,p.726], which gives access to Selberg's work informing us on their singularities and asymptotic behavior, as well as vector-valued functional equations (see [Sarnak, §2,Thm.2.7,p.726], [Sarnak, §2,Thm.2.11,p.729], and the family of functional equations in [Sarnak, §2,Thm.2.16,p.731], as well as the section on poles and residues in [Sarnak, §2.17]). We further refer the reader to [Iwaniec, Ch.6,§6.3,6.4] and [Kubota, Ch.IV,§4.4]. We further refer the reader to Zagier's [Zagier, §1].
 
-This is what we have also done concerning the functionals $a_m(\cdot, c)$ for $c \in \Omega(J_{F,S})$ and $m \in \mathbf{N}$, by analyzing the functional properties of the $S$-local $\theta$-functions $\Phi_{F,S}(f)$ (the $\mathrm{GL}_1$-analogs of the Eisenstein series arising in Sarnak's paper) through their $S$-idelic Mellin transforms $Z_S(f, c)$, from which $a_m(f, c)$ are obtained as coefficients of principal parts.
+This is what we have also done concerning the functionals
+
+$$
+a_m(\cdot, c)
+$$
+
+for $c \in \Omega(J_{F,S})$ and $m \in \mathbf{N}$, by analyzing the functional properties of the $S$-local $\theta$-functions $\Phi_{F,S}(f)$ (the $\mathrm{GL}_1$-analogs of the Eisenstein series arising in Sarnak's paper) through their $S$-idelic Mellin transforms $Z_S(f, c)$, from which $a_m(f, c)$ are obtained as coefficients of principal parts.
 
 Following the dictionary being outlined above, Theorem 7.1.2.3 is then analogous to the main Theorem in Sarnak's paper, namely [Sarnak, §0,Thm.1], relating the measures $\nu^{(k)}(t)$ to the canonical Riemannian measure $\mu$ on $T^1M$, and to residue functionals $\mu^{(k)}_m$ (obtained in [Sarnak, §2] in a similar manner as our
 
@@ -762,7 +780,13 @@ $$
 
 Then $H_\chi$ is equicontinuous and bounded.
 
-Proof. (1) : By [Bar, Thm.2], we have, for every $s\in\mathbf C$ and upon defining $\Lambda(s,\chi) := \left(\frac{1}{2}(s+ix_0)(s-1-ix_0)\right)^{\delta_\chi}L(s,\chi)$ where $\delta_\chi = 0$ if $\chi|_{C^1_F}$ is non-trivial, and $\delta_\chi = 1$ if $\chi|_{C^1_F} = 1$:
+Proof. (1) : By [Bar, Thm.2], we have, for every $s\in\mathbf C$ and upon defining
+
+$$
+\Lambda(s,\chi) := \left(\frac{1}{2}(s+ix_0)(s-1-ix_0)\right)^{\delta_\chi}L(s,\chi)
+$$
+
+where $\delta_\chi = 0$ if $\chi|_{C^1_F}$ is non-trivial, and $\delta_\chi = 1$ if $\chi|_{C^1_F} = 1$:
 
 $$
 \Lambda(s,\chi) = \Lambda(0,\chi)\prod_{\rho\in\mathbf C:L(\rho,\chi)=0}{}'\left(1-\frac{s}{\rho}\right) \tag{7.1.4.9}
@@ -804,7 +828,19 @@ Since $\mathbf C[s]$ is dense in $\mathscr{O}(\mathbf C)$ by [Cnw-b, Ch.VIII,Cor
 
 As a $\mathbf C$-vector space, the quotient $\mathscr{O}(\mathbf C)/\Lambda(s,\chi)\,\mathscr{O}(\mathbf C)$ is linearly isomorphic to the countable product of the $K_\rho$, i.e. to $\prod_{\rho\in\mathbf C:L(\rho,\chi)=0}K_\rho$.
 
-To see this, we note that since $\mathbf C$ is Stein, then upon denoting by $\mathscr{J}\subset\mathscr{O}$ the ideal sheaf globally generated by $\Lambda(s,\chi)$, we have $\check{\mathrm{H}}(\mathbf C,\mathscr{O}/\mathscr{J}) = \mathrm{H}^1(\mathbf C,\mathscr{O}/\mathscr{J}) = 0$ and hence upon choosing a locally finite countable open cover $\{B_m\}_{m\ge 0}$ of the complex $s$-plane by open balls each of which contains at most one of the zeros $\rho$ of $L(s,\chi)$, then, upon denoting by $B_{\underline{k}}$ the intersection $\bigcap_{m\in \underline{k}}B_m$ for $\underline{k}$ varying over all non-empty finite subsets of the nonnegative integer, we deduce that $\mathrm{H}^0(B_{\underline{k}},\mathscr{J})$ is trivial if $\underline{k}$ contains at least two elements, and it is either trivial or $K_\rho$ if $\underline{k}$ contains one element exactly. This computes $\mathscr{O}(\mathbf C)/\Lambda(s,\chi)\,\mathscr{O}(\mathbf C) = \check{\mathrm{H}}^0(\mathbf C,\mathscr{O}/\mathscr{J})$ to be $\prod_{\rho:L(\rho,\chi)=0}K_\rho$. The quotient topology $\mathscr{O}(\mathbf C)/\Lambda(s,\chi)\,\mathscr{O}(\mathbf C)$ is the product topology, since any compact subset $K\subset\mathbf C$ is contained in the union of at most finitely many of the $B_m$, and hence the linear bijection $\mathscr{O}(\mathbf C)/\Lambda(s,\chi)\,\mathscr{O}(\mathbf C)\to\prod_{\rho:L(\rho,\chi)=0}K_\rho$ is continuous. Being source and target Fréchet spaces, it is a linear topological isomorphism by [NB, Thm.14.4.5(b)].
+To see this, we note that since $\mathbf C$ is Stein, then upon denoting by $\mathscr{J}\subset\mathscr{O}$ the ideal sheaf globally generated by $\Lambda(s,\chi)$, we have
+
+$$
+\check{\mathrm{H}}(\mathbf C,\mathscr{O}/\mathscr{J}) = \mathrm{H}^1(\mathbf C,\mathscr{O}/\mathscr{J}) = 0
+$$
+
+and hence upon choosing a locally finite countable open cover $\{B_m\}_{m\ge 0}$ of the complex $s$-plane by open balls each of which contains at most one of the zeros $\rho$ of $L(s,\chi)$, then, upon denoting by $B_{\underline{k}}$ the intersection $\bigcap_{m\in \underline{k}}B_m$ for $\underline{k}$ varying over all non-empty finite subsets of the nonnegative integer, we deduce that $\mathrm{H}^0(B_{\underline{k}},\mathscr{J})$ is trivial if $\underline{k}$ contains at least two elements, and it is either trivial or $K_\rho$ if $\underline{k}$ contains one element exactly. This computes
+
+$$
+\mathscr{O}(\mathbf C)/\Lambda(s,\chi)\,\mathscr{O}(\mathbf C) = \check{\mathrm{H}}^0(\mathbf C,\mathscr{O}/\mathscr{J})
+$$
+
+to be $\prod_{\rho:L(\rho,\chi)=0}K_\rho$. The quotient topology $\mathscr{O}(\mathbf C)/\Lambda(s,\chi)\,\mathscr{O}(\mathbf C)$ is the product topology, since any compact subset $K\subset\mathbf C$ is contained in the union of at most finitely many of the $B_m$, and hence the linear bijection $\mathscr{O}(\mathbf C)/\Lambda(s,\chi)\,\mathscr{O}(\mathbf C)\to\prod_{\rho:L(\rho,\chi)=0}K_\rho$ is continuous. Being source and target Fréchet spaces, it is a linear topological isomorphism by [NB, Thm.14.4.5(b)].
 
 To compute the orthogonal of $\Lambda(s,\chi)\,\mathscr{O}(\mathbf C)$ it is therefore enough to compute the continuous dual of $\prod_{\rho\in\mathbf C:L(\rho,\chi)=0}\mathbf C[s]/(s-\rho)^{N(\rho)}$ with respect to the product topology: by [Tre, Part II,Ch.22,Thm.22.1(b)], this is exactly the locally convex direct sum of the finite dimensional $\mathbf C$-vector spaces:
 
@@ -818,13 +854,23 @@ Each such functional $D^m_\rho$ is the image of $\delta^{(m)}_\rho$ under the li
 
 The subspace topology on $(\Lambda(s,\chi)\,\mathscr{O}(\mathbf C))^\perp$ inherited from the strong topology on $\mathscr{O}(\mathbf C)'_\beta$ promotes the continuous linear bijection $(\Lambda(s,\chi)\,\mathscr{O}(\mathbf C))^\perp\to (\prod_{\rho\in\mathbf C:L(\rho,\chi)=0}\mathbf C[s]/(s-\rho)^{N(\rho)})'_\beta$ to a linear topological isomorphism.
 
-(2) : Since every element $\phi\in A\mathcal S(\mathbf C)$ is the Mellin transform of some Schwartz-Bruhat function $f\in\mathcal S(\mathbf R_{>0})$ with exponential decay (i.e. such that $f$ decays more rapidly than any positive power of $e^{-|\log(t)|}$ as $|\log(t)|\to +\infty$, see Definition B.2.1.1), and we have, by Fourier Inversion: $f(t) = \frac{1}{2\pi i}\int^{+i\infty}_{-i\infty}t^{-s}\phi(s)\,\mathrm{d}s$
+(2) : Since every element $\phi\in A\mathcal S(\mathbf C)$ is the Mellin transform of some Schwartz-Bruhat function $f\in\mathcal S(\mathbf R_{>0})$ with exponential decay (i.e. such that $f$ decays more rapidly than any positive power of $e^{-|\log(t)|}$ as $|\log(t)|\to +\infty$, see Definition B.2.1.1), and we have, by Fourier Inversion:
+
+$$
+f(t) = \frac{1}{2\pi i}\int^{+i\infty}_{-i\infty}t^{-s}\phi(s)\,\mathrm{d}s
+$$
 
 ## PDF page 329
 
 **7.1. POLAR MULTIPLICITIES** · **329**
 
-then we compute: $\delta^{(m)}_\rho(\phi) = (\partial^m_s\phi)(\rho) = \left(\partial^m_s\int_{\mathbf R_{>0}}f(t)t^s\,\frac{\mathrm{d}t}{t}\right)|_{s=\rho} = \left(\int_{\mathbf R_{>0}}f(t)t^s(\log(t))^m\,\frac{\mathrm{d}t}{t}\right)|_{s=\rho} = \frac{1}{2\pi i}\int_{\mathbf R_{>0}}\left(\int^{+i\infty}_{-i\infty}t^{-s}\phi(s)\,\mathrm{d}s\right)t^\rho(\log(t))^m\,\frac{\mathrm{d}t}{t}$ and hence (7.1.4.6) holds. Denseness of the range of $U$ follows from the observation that, by Theorem 6.3.2.1(1), the functionals $U(\delta^{(m)}_\rho)$ separate the points of $A\mathcal S(\mathbf C)/\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$.
+then we compute:
+
+$$
+\delta^{(m)}_\rho(\phi) = (\partial^m_s\phi)(\rho) = \left(\partial^m_s\int_{\mathbf R_{>0}}f(t)t^s\,\frac{\mathrm{d}t}{t}\right)|_{s=\rho} = \left(\int_{\mathbf R_{>0}}f(t)t^s(\log(t))^m\,\frac{\mathrm{d}t}{t}\right)|_{s=\rho} = \frac{1}{2\pi i}\int_{\mathbf R_{>0}}\left(\int^{+i\infty}_{-i\infty}t^{-s}\phi(s)\,\mathrm{d}s\right)t^\rho(\log(t))^m\,\frac{\mathrm{d}t}{t}
+$$
+
+and hence (7.1.4.6) holds. Denseness of the range of $U$ follows from the observation that, by Theorem 6.3.2.1(1), the functionals $U(\delta^{(m)}_\rho)$ separate the points of $A\mathcal S(\mathbf C)/\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))$.
 
 (3) : We consider, for $\rho$ a zero of $\Lambda(s,\chi)$, of multiplicity $N(\rho)$, and for $m$ an integer such that $0\le m\le N(\rho)-1$, the meromorphic function on the complex $s$-plane:
 
@@ -892,11 +938,23 @@ $$
 \sum_{(\rho',m')}c_{(\rho',m')}U(\delta^{(m')}_{\rho'}) = \sum_{(\rho',m')}c'_{(\rho',m')}U(\delta^{(m')}_{\rho'}). \tag{7.1.4.20}
 $$
 
-Since the convergence is with respect to the strong topology, evaluation at $\phi_{\rho,m}$ is a continuous functional on $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))^\perp$ equipped with this topology, and we may therefore evaluate each series in (7.1.4.20) term by term, to obtain the finite sums: $\sum_{(\rho',m'):\rho'=\rho,m\le m'\le N(\rho)-1}c_{(\rho',m')}U(\delta^{(m')}_{\rho'}) = \sum_{(\rho',m'):\rho'=\rho,m\le m'\le N(\rho)-1}c'_{(\rho',m')}U(\delta^{(m')}_{\rho'})$ and since the $U(\delta^{(m')}_{\rho'})$ are $\mathbf C$-linearly independent, we obtain $c_{(\rho,m)} = c'_{(\rho,m)}$ for all pairs $(\rho,m)$.
+Since the convergence is with respect to the strong topology, evaluation at $\phi_{\rho,m}$ is a continuous functional on $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))^\perp$ equipped with this topology, and we may therefore evaluate each series in (7.1.4.20) term by term, to obtain the finite sums:
+
+$$
+\sum_{(\rho',m'):\rho'=\rho,m\le m'\le N(\rho)-1}c_{(\rho',m')}U(\delta^{(m')}_{\rho'}) = \sum_{(\rho',m'):\rho'=\rho,m\le m'\le N(\rho)-1}c'_{(\rho',m')}U(\delta^{(m')}_{\rho'})
+$$
+
+and since the $U(\delta^{(m')}_{\rho'})$ are $\mathbf C$-linearly independent, we obtain $c_{(\rho,m)} = c'_{(\rho,m)}$ for all pairs $(\rho,m)$.
 
 This implies that for any enumeration of the pairs $(\rho,m)$, the resulting sequence of functionals $\{U(\delta^{(m)}_\rho)\}$ is topologically free within $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F},\mathcal S_0(\mathbf A_F))^\perp$ (since it admits a bi-orthogonal sequence, which can, in light of the foregoing, be constructed by replacing each $\phi_{(\rho,m)}$ with a finite linear combination of the finitely many elements $\phi_{(\rho,m')}$ as $m'$ varies over the integers $0\le m'\le N(\rho)-1$; see [Jar, Part II,Ch.14,§14.1,Prop.1,p.290]).
 
-(4) : Let $\phi\in\mathcal S_\mathrm{E}(C_F)(\chi|_{C^1_F})$ be an arbitrary element. Since $\phi$ has exponential decay (see Definition D.3.3.1), its Mellin transform: $\Phi(s) := \int_{C_F}\phi(g)\chi(g)|g|^s_F\,\mathrm{d}\overline{\mu}(g)$ is entire and Schwartz uniformly over each vertical strip of bounded width of the complex $s$-plane. In particular, the set of values of $\Phi$ over the vertical strip $\mathbf C_{(-\varepsilon,1+\varepsilon)}$, for any fixed real number $\varepsilon > 0$, is bounded with respect to the Euclidean topology.
+(4) : Let $\phi\in\mathcal S_\mathrm{E}(C_F)(\chi|_{C^1_F})$ be an arbitrary element. Since $\phi$ has exponential decay (see Definition D.3.3.1), its Mellin transform:
+
+$$
+\Phi(s) := \int_{C_F}\phi(g)\chi(g)|g|^s_F\,\mathrm{d}\overline{\mu}(g)
+$$
+
+is entire and Schwartz uniformly over each vertical strip of bounded width of the complex $s$-plane. In particular, the set of values of $\Phi$ over the vertical strip $\mathbf C_{(-\varepsilon,1+\varepsilon)}$, for any fixed real number $\varepsilon > 0$, is bounded with respect to the Euclidean topology.
 
 We have, by the Asymptotic Residue Theorem (see Theorem B.3.2.1):
 
@@ -910,7 +968,11 @@ $$
 |\Phi^{(k)}(s)|\le \frac{k!}{2\pi\varepsilon^{k+1}}\left\{\int^{-\varepsilon+i\infty}_{-\varepsilon-i\infty}|\Phi(z)|\,|\mathrm{d}z| + \int^{\varepsilon+i\infty}_{\varepsilon-i\infty}|\Phi(z)|\,|\mathrm{d}z|\right\} \tag{7.1.4.22}
 $$
 
-which implies that, for all $s\in\mathbf C_{[0,1]}$, we have, upon choosing $\varepsilon = 1$: $\left|\frac{\Phi^{(k)}(s)}{k!}\right|\le \frac{1}{2\pi}\max\{\|\Phi\|_{L^1(-1+i\mathbf R,\mathrm{d}x)},\|\Phi\|_{L^1(2+i\mathbf R,\mathrm{d}x)}\}$.
+which implies that, for all $s\in\mathbf C_{[0,1]}$, we have, upon choosing $\varepsilon = 1$:
+
+$$
+\left|\frac{\Phi^{(k)}(s)}{k!}\right|\le \frac{1}{2\pi}\max\{\|\Phi\|_{L^1(-1+i\mathbf R,\mathrm{d}x)},\|\Phi\|_{L^1(2+i\mathbf R,\mathrm{d}x)}\}.
+$$
 
 ## PDF page 331
 
@@ -926,7 +988,13 @@ The following extension of Theorem 7.1.4.2 incorporates the inversion of finitel
 
 Theorem 7.1.4.3 (Global Orbital bi-orthogonal sequences). *Let $F$ be a number field, $\chi\in \widehat{C_F}$ a unitary character. Let $S_\chi$ be the finite set of finite places of $F$ at which $\chi$ is ramified. Let $S_0$ be a finite set of finite places of $F$.*
 
-(1) *The orthogonal $Z_{S_0,\chi}$ of the ideal $\prod_{v\in S_0-(S_0\cap S_\chi)}(1-q^{-s-it_v}_v)(s+it_0)^{\delta_\chi}(1-s-it_0)^{\delta_\chi}L(s,\chi)\,\mathscr{O}(\mathbf C)\subset\mathscr{O}(\mathbf C)$ with respect to the topology of uniform convergence on compact subsets of the complex $s$-plane, with $\delta_\chi = 1$ if $\chi|_{C^1_F} = 1$, and $\delta_\chi = 0$ otherwise, is linearly and topologically isomorphic to the locally convex product:*
+(1) *The orthogonal $Z_{S_0,\chi}$ of the ideal*
+
+$$
+\prod_{v\in S_0-(S_0\cap S_\chi)}(1-q^{-s-it_v}_v)(s+it_0)^{\delta_\chi}(1-s-it_0)^{\delta_\chi}L(s,\chi)\,\mathscr{O}(\mathbf C)\subset\mathscr{O}(\mathbf C)
+$$
+
+*with respect to the topology of uniform convergence on compact subsets of the complex $s$-plane, with $\delta_\chi = 1$ if $\chi|_{C^1_F} = 1$, and $\delta_\chi = 0$ otherwise, is linearly and topologically isomorphic to the locally convex product:*
 
 $$
 \prod_{p:(p,S_0)\ne 1}J_{S_0,p}\times\prod_{\rho:L(\rho,\chi)=0}J_\rho \tag{7.1.4.23}
@@ -1488,7 +1556,11 @@ Then:
 
 $$\mathrm{PV}_{S,S_0}\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))^\perp\subset\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))'_\beta \tag{7.3.1.1}$$
 
-*with respect to the duality $\langle\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S})),\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))'\rangle$ is linearly and topologically generated by the eigendistributions $\{a_k(\cdot,c)\}$ as $c$ ranges over the points in $\mathcal{U}_S$ and, for each $c\in \mathcal{U}_S$, $k$ ranges over the integers $m_S(c)-m_{S_0}(c)<k\le m_S(c)$. The set $\{a_k(\cdot,c)\}$ admits a bi-orthogonal set in $\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))/\mathrm{PV}_{S,S_0}\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))$.*
+*with respect to the duality $\langle\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S})),\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))'\rangle$ is linearly and topologically generated by the eigendistributions $\{a_k(\cdot,c)\}$ as $c$ ranges over the points in $\mathcal{U}_S$ and, for each $c\in \mathcal{U}_S$, $k$ ranges over the integers $m_S(c)-m_{S_0}(c)<k\le m_S(c)$. The set $\{a_k(\cdot,c)\}$ admits a bi-orthogonal set in*
+
+$$
+\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))/\mathrm{PV}_{S,S_0}\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S})).
+$$
 
 *In particular, it is topologically free.*
 
@@ -1674,7 +1746,13 @@ and:
 
 $$E_{S,S_p}(\chi|_{J^1_{F,S}}):=\{\widehat\delta^{(k)}_c:0\le k\le N_p(c)-1\}\subset\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))'_\beta \tag{7.3.1.13}$$
 
-*where $\widehat\delta^{(k)}_c$ is the continuous functional obtained as the composition of the Fourier transform $\mathcal F_S:\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))\to\mathrm H_{0,\mathrm{cont}}(\overline{\chi}|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))$ followed by the Mellin transform $L_S$, and by the $k$th derivative of the point-evaluation functional at $\widehat c\in\Omega(J_{F,S})$, i.e. $\widehat\delta^{(k)}_c$ is uniquely determined by the assignment, on the arbitrary $f\in\mathcal S(\mathbf A_{F,S})$:*
+*where $\widehat\delta^{(k)}_c$ is the continuous functional obtained as the composition of the Fourier transform*
+
+$$
+\mathcal F_S:\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))\to\mathrm H_{0,\mathrm{cont}}(\overline{\chi}|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))
+$$
+
+*followed by the Mellin transform $L_S$, and by the $k$th derivative of the point-evaluation functional at $\widehat c\in\Omega(J_{F,S})$, i.e. $\widehat\delta^{(k)}_c$ is uniquely determined by the assignment, on the arbitrary $f\in\mathcal S(\mathbf A_{F,S})$:*
 
 $$\widehat\delta^{(k)}_c(f):=\partial^k_s Z_S(\widehat f,\overline{\chi}|\cdot|^{1-s}_{F,S})|_{s=s_c} \tag{7.3.1.14}$$
 
@@ -1686,7 +1764,11 @@ $$\widehat\delta^{(k)}_c(f):=\partial^k_s Z_S(\widehat f,\overline{\chi}|\cdot|^
 
 *Then the sets in (7.3.1.12), respectively (7.3.1.13), satisfy the following properties:*
 
-(1) *$P_{S,S_p}(\chi|_{J^1_{F,S}})$ and $E_{S,S_p}(\chi|_{J^1_{F,S}})$ are contained within the range of the continuous linear inclusion $\mathscr{E}_{S,S_p}(\chi|_{J^1_{F,S}})'_\beta\to\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))'_\beta$.*
+(1) *$P_{S,S_p}(\chi|_{J^1_{F,S}})$ and $E_{S,S_p}(\chi|_{J^1_{F,S}})$ are contained within the range of the continuous linear inclusion*
+
+$$
+\mathscr{E}_{S,S_p}(\chi|_{J^1_{F,S}})'_\beta\to\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))'_\beta.
+$$
 
 (2) *Any enumeration of either countable set $P_{S,S_p}(\chi|_{J^1_{F,S}})$ and $E_{S,S_p}(\chi|_{J^1_{F,S}})$ is an unconditional Schauder basis for*
 
@@ -1746,7 +1828,13 @@ $\mathcal S_\mathrm{E}(J_{F,S})(\overline{\chi}|_{J^1_{F,S}})$ is, as a linear s
 
 Since the linear map $\mathrm H_{0,\mathrm{cont}}(\overline{\chi}|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))\to\mathcal S_I(J_{F,S})(\overline{\chi}|_{J^1_{F,S}})$ is injective, we identify $W$ with its pre-image in $\mathrm H_{0,\mathrm{cont}}(\overline{\chi}|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))$ and rename such linear subspace of $\mathrm H_{0,\mathrm{cont}}(\overline{\chi}|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))$ as $W$.
 
-We further denote by $\widehat W$ the pre-image of $W$ in $\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))$ under the Fourier transform $\mathcal F_S:\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))\to\mathrm H_{0,\mathrm{cont}}(\overline{\chi}|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))$ from (5.2.4.1) of Theorem 5.2.4.1, a linear topological isomorphism by Theorem 5.2.4.1.
+We further denote by $\widehat W$ the pre-image of $W$ in $\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))$ under the Fourier transform
+
+$$
+\mathcal F_S:\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))\to\mathrm H_{0,\mathrm{cont}}(\overline{\chi}|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))
+$$
+
+from (5.2.4.1) of Theorem 5.2.4.1, a linear topological isomorphism by Theorem 5.2.4.1.
 
 We are not topologizing $W$ nor $\widehat W$.
 
@@ -1858,7 +1946,13 @@ $$Z_S(\mathcal F_S(\phi),\overline{\chi}|\cdot|^{1-s}_{F,S})=Z_S(\mathcal F_S(\m
 
 where we used the $S$-local functional equation from (3.3.1.2) of Theorem 3.3.1.1, and Weil's Identity from (3.4.1.6) of Theorem 3.4.1.1, to deduce the second of the two identities in (7.3.1.23).
 
-We now use the assumption $\phi\in\widehat W$. We deduce that $|\cdot|_{F,S}\mathcal F_S(\phi)\in\mathcal S_\mathrm{E}(J_{F,S})(\overline{\chi}|_{J^1_{F,S}})$ (where the linear space $\mathcal S_\mathrm{E}(J_{F,S})(\overline{\chi}|_{J^1_{F,S}})$ is thought as a linear subspace of $\mathcal F_S\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))$). In particular, $(1-\chi(\mathfrak p_v)q^{-s}_v)Z_S(\mathcal F_S(\psi),\overline{\chi}|\cdot|^{1-s}_{F,S})$ is entire, and since $Z_S(\mathcal F_S(\psi),\overline{\chi}|\cdot|^{1-s}_{F,S})$ can only have poles located over $\widehat{\mathcal{U}}_S=\{\widehat c,c\in \mathcal{U}_S\}$ by Theorem 3.3.1.1(1), where $(1-\chi(\mathfrak p_v)q^{-s}_v)$ has no zeros for every $v\in S_p$, we deduce that $Z_S(\mathcal F_S(\psi),\overline{\chi}|\cdot|^{1-s}_{F,S})$ is itself entire.
+We now use the assumption $\phi\in\widehat W$. We deduce that $|\cdot|_{F,S}\mathcal F_S(\phi)\in\mathcal S_\mathrm{E}(J_{F,S})(\overline{\chi}|_{J^1_{F,S}})$ (where the linear space $\mathcal S_\mathrm{E}(J_{F,S})(\overline{\chi}|_{J^1_{F,S}})$ is thought as a linear subspace of $\mathcal F_S\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))$). In particular, $(1-\chi(\mathfrak p_v)q^{-s}_v)Z_S(\mathcal F_S(\psi),\overline{\chi}|\cdot|^{1-s}_{F,S})$ is entire, and since $Z_S(\mathcal F_S(\psi),\overline{\chi}|\cdot|^{1-s}_{F,S})$ can only have poles located over
+
+$$
+\widehat{\mathcal{U}}_S=\{\widehat c,c\in \mathcal{U}_S\}
+$$
+
+by Theorem 3.3.1.1(1), where $(1-\chi(\mathfrak p_v)q^{-s}_v)$ has no zeros for every $v\in S_p$, we deduce that $Z_S(\mathcal F_S(\psi),\overline{\chi}|\cdot|^{1-s}_{F,S})$ is itself entire.
 
 It follows that we have $|\cdot|_{F,S}\mathcal F_S(\psi)\in\mathcal S_\mathrm{E}(J_{F,S})(\overline{\chi}|_{J^1_{F,S}})$ by Proposition 5.3.4.4, and hence $\psi\in\mathcal S_\mathrm{E}(J_{F,S})(\overline{\chi}|_{J^1_{F,S}})$ by Remark D.3.3.6 and Lemma 5.3.4.2(3) (as earlier in the argument, $\mathcal S_\mathrm{E}(J_{F,S})(\overline{\chi}|_{J^1_{F,S}})$ is identified with its linear copy within $|\cdot|_{F,S}\mathcal F_S\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))$).
 
@@ -2189,7 +2283,7 @@ for $\rho_{S_0}$ as defined in (7.3.2.5) and $f_S\in\mathcal S_0(\mathbf A_{F,S}
 See Theorem 6.2.1.1) to have Fourier transform $\widehat{f}_S$ that is supported over the compact hypercube $Q_X\subset\mathbf A_{F,S}$ of (7.3.2.3), as opposed to being supported over the closed $\mathcal O^{\times}_{F,S}$-invariant subset
 
 $$
-\widetilde{Q}_Y := \{x\in\mathbf A_{F,S} : \prod_{v\in S}|x|_v\le Y\} \subset \mathbf A_{F,S}.
+\widetilde{Q}_Y := \{x\in\mathbf A_{F,S} : \prod_{v\in S}|x|_v\le Y\}.
 $$
 
 Note that for $Y = X^{|S|}$, the latter contains the former.
@@ -2523,7 +2617,13 @@ $$
 E_{S',S_p}(\chi|_{J^1_{F,S'}}):=\{\widehat\delta^{(k)}_c:0\le k\le N_p(c)-1\}\subset\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S'}},\mathcal S(\mathbf A_{F,S'}))'_\beta \tag{7.3.3.8}
 $$
 
-*where $\widehat\delta^{(k)}_c$ is the continuous functional obtained as the composition of the Fourier transform $\mathcal F_{S'}:\mathrm H_{0,\mathrm{cont}}(\chi_{S'}|_{J^1_{F,S'}},\mathcal S(\mathbf A_{F,S'}))\to\mathrm H_{0,\mathrm{cont}}(\overline\chi_{S'}|_{J^1_{F,S'}},\mathcal S(\mathbf A_{F,S}))$ followed by the Mellin transform $L_{S'}$, and by the $k$th derivative of the point-evaluation functional at $\widehat c\in\Omega(J_{F,S'})$, i.e. $\widehat\delta^{(k)}_c$ is uniquely determined by the assignment, on the arbitrary $f\in\mathcal S(\mathbf A_{F,S'})$:*
+*where $\widehat\delta^{(k)}_c$ is the continuous functional obtained as the composition of the Fourier transform*
+
+$$
+\mathcal F_{S'}:\mathrm H_{0,\mathrm{cont}}(\chi_{S'}|_{J^1_{F,S'}},\mathcal S(\mathbf A_{F,S'}))\to\mathrm H_{0,\mathrm{cont}}(\overline\chi_{S'}|_{J^1_{F,S'}},\mathcal S(\mathbf A_{F,S}))
+$$
+
+*followed by the Mellin transform $L_{S'}$, and by the $k$th derivative of the point-evaluation functional at $\widehat c\in\Omega(J_{F,S'})$, i.e. $\widehat\delta^{(k)}_c$ is uniquely determined by the assignment, on the arbitrary $f\in\mathcal S(\mathbf A_{F,S'})$:*
 
 $$
 \widehat\delta^{(k)}_c(f):=\partial^k_s L_{S'}(\widehat f,\overline\chi_{S'}|\cdot|^{1-s}_{F,S'})|_{s=s_c} \tag{7.3.3.9}
@@ -2619,7 +2719,11 @@ $$
 \widetilde{\mathrm{PW}}_{S,Y,0}(\chi_{S'}|_{J^1_{F,S'}},\mathcal S(\mathbf A_{F,S'}))\cap\mathrm{PV}_{S',S_p}\mathrm H_{0,\mathrm{cont}}(\chi_{S'}|_{J^1_{F,S'}},\mathcal S_0(\mathbf A_{F,S'})) \tag{7.3.3.19}
 $$
 
-respectively, where $\mathcal F_{S'}$ is the Fourier transform: $\mathcal F_{S'}:\mathrm H_{0,\mathrm{cont}}(\chi_{S'}|_{J^1_{F,S'}},\mathcal S(\mathbf A_{F,S'}))\to\mathrm H_{0,\mathrm{cont}}(\overline{\chi}_{S'}|_{J^1_{F,S'}},\mathcal S(\mathbf A_{F,S'}))$
+respectively, where $\mathcal F_{S'}$ is the Fourier transform:
+
+$$
+\mathcal F_{S'}:\mathrm H_{0,\mathrm{cont}}(\chi_{S'}|_{J^1_{F,S'}},\mathcal S(\mathbf A_{F,S'}))\to\mathrm H_{0,\mathrm{cont}}(\overline{\chi}_{S'}|_{J^1_{F,S'}},\mathcal S(\mathbf A_{F,S'}))
+$$
 
 ## PDF page 362
 
@@ -2715,13 +2819,25 @@ $$
 \mathcal D(J_{F,S})(\overline{\chi}_S|_{J_{F,S}})\to\mathcal{S}_{\mathrm{E}}(J_{F,S})(\overline{\chi}_S|_{J^1_{F,S}})\to\mathcal{S}_I(J_{F,S})(\overline{\chi}_S|_{J^1_{F,S}})
 $$
 
-is contained in the image of $\mathcal F_S(\mathcal S_0(\mathbf A_{F,S})_X)$, $\mathcal F_S(\widetilde{\mathcal S}_0(\mathbf A_{F,S})_Y)$ into $\mathcal{S}_I(J_{F,S})(\overline{\chi}_S|_{J^1_{F,S}})$ under $\Phi_{F,S,\overline{\chi}_S|_{J^1_{F,S}}}$.
+is contained in the image of
+
+$$
+\mathcal F_S(\mathcal S_0(\mathbf A_{F,S})_X),\ \mathcal F_S(\widetilde{\mathcal S}_0(\mathbf A_{F,S})_Y)
+$$
+
+into $\mathcal{S}_I(J_{F,S})(\overline{\chi}_S|_{J^1_{F,S}})$ under $\Phi_{F,S,\overline{\chi}_S|_{J^1_{F,S}}}$.
 
 The argument provided in the proof of Theorem 7.3.1.6 then applies, and by the choice made for $K_S$, by Theorem 4.6.2.1 and Corollary 4.6.3.1 we obtain that the composition of the four rightmost vertical arrows is surjective, which implies that the composition of (f) and (i) is surjective, hence open by [NB, Thm.14.4.5], being source and target Fréchet spaces.
 
 The vertical arrows (c), (f) and (i) are injective by design of the closed subspaces $E_{S',S_p}$ and $\mathcal F_{S'}E_{S',S_p}$ from (7.3.3.18), respectively (7.3.3.19).
 
-Indeed, since $0\in -1+I$, the composition of the vertical arrows (b), (e), (h) and (k), for the definition of which we refer the reader to the proof of Theorem 7.3.1.6, the linear subspace $\widehat W\subset E$ is sent onto the linear subspace $\mathcal D_{K_S}(J_{F,S})(\overline{\chi}_S|_{J^1_{F,S}})\subset\mathcal{S}_{\mathrm{E}}(J_{F,S'})(\overline{\chi}_{S'}|_{J^1_{F,S'}})$ where the inclusion is induced by the inclusion $\mathcal D_{K_S}(J_{F,S})(\overline{\chi}_S|_{J^1_{F,S}})\subset\mathcal{S}_{\mathrm{E}}(J_{F,S})(\overline{\chi}_S|_{J^1_{F,S}})$, followed by the linear topological isomorphism:
+Indeed, since $0\in -1+I$, the composition of the vertical arrows (b), (e), (h) and (k), for the definition of which we refer the reader to the proof of Theorem 7.3.1.6, the linear subspace $\widehat W\subset E$ is sent onto the linear subspace
+
+$$
+\mathcal D_{K_S}(J_{F,S})(\overline{\chi}_S|_{J^1_{F,S}})\subset\mathcal{S}_{\mathrm{E}}(J_{F,S'})(\overline{\chi}_{S'}|_{J^1_{F,S'}})
+$$
+
+where the inclusion is induced by the inclusion $\mathcal D_{K_S}(J_{F,S})(\overline{\chi}_S|_{J^1_{F,S}})\subset\mathcal{S}_{\mathrm{E}}(J_{F,S})(\overline{\chi}_S|_{J^1_{F,S}})$, followed by the linear topological isomorphism:
 
 $$
 \mathcal{S}_{\mathrm{E}}(J_{F,S})(\overline{\chi}_S|_{J^1_{F,S}})\to\mathcal{S}_{\mathrm{E}}(J_{F,S'})(\overline{\chi}_{S'}|_{J^1_{F,S'}}) \tag{7.3.3.30}
@@ -2777,13 +2893,23 @@ Theorem 7.3.4.1 (S-local Polar Orbital Schauder Basis - II). *Let $F$ be a numbe
 
 (1) The subspace $F^{(\underline{n},\underline{p})}_S(\chi|_{J^1_{F,S}})$ of $\mathrm{PV}_{S,S_f}\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))$ is closed.
 
-(2) *The orthogonal $F^{(\underline{n},\underline{p})}_S(\chi|_{J^1_{F,S}})^\perp$ with respect to the duality $\langle\mathrm{PV}_{S,S_f}\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S})),\mathrm{PV}_{S,S_f}\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))'_\beta\rangle$*
+(2) *The orthogonal $F^{(\underline{n},\underline{p})}_S(\chi|_{J^1_{F,S}})^\perp$ with respect to the duality*
+
+$$
+\langle\mathrm{PV}_{S,S_f}\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S})),\mathrm{PV}_{S,S_f}\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))'_\beta\rangle
+$$
 
 ## PDF page 365
 
 **7.3. PALEY-WIENER LEVELS AND SCHAUDER BASES OF PRINCIPAL PARTS** · **365**
 
-*endowed with the strong topology on the continuous dual of the quotient $\mathrm{PV}_{S,S_f}\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))/F^{(\underline{n},\underline{p})}_S(\chi|_{J^1_{F,S}})$ is linearly and topologically generated by the finitely many $\mathbf C$-linearly independent continuous functionals:*
+*endowed with the strong topology on the continuous dual of the quotient*
+
+$$
+\mathrm{PV}_{S,S_f}\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}},\mathcal S(\mathbf A_{F,S}))/F^{(\underline{n},\underline{p})}_S(\chi|_{J^1_{F,S}})
+$$
+
+*is linearly and topologically generated by the finitely many $\mathbf C$-linearly independent continuous functionals:*
 
 $$
 \{a_k(\cdot,c),c\in\mathcal U_{\le (\underline{n},\underline{p})},1\le k\le m_{S_\infty}(c)\}. \tag{7.3.4.4}
@@ -2947,7 +3073,13 @@ $$
 N_{S_\infty}(c) := \sum_{v \in S_\infty} \mathrm{ord}_{c'=\psi_v(c)} L_v(\psi_v(c')). \tag{7.4.3.3}
 $$
 
-*We write $\chi|\cdot|^{s_c}_F$ for the parametrization of each $c \in \mathcal{U}_{S_\infty}$. Then the orthogonal $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_{\infty,0}(\mathbf A_F))$ with respect to the duality $\langle \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_0(\mathbf A_F)), \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_0(\mathbf A_F))'_\beta \rangle$ equipped with the subspace topology inherited from the strong topology, is linearly and topologically generated by the continuous functionals:*
+*We write $\chi|\cdot|^{s_c}_F$ for the parametrization of each $c \in \mathcal{U}_{S_\infty}$. Then the orthogonal $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_{\infty,0}(\mathbf A_F))$ with respect to the duality*
+
+$$
+\langle \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_0(\mathbf A_F)), \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_0(\mathbf A_F))'_\beta \rangle
+$$
+
+*equipped with the subspace topology inherited from the strong topology, is linearly and topologically generated by the continuous functionals:*
 
 $$
 D^m_c(f) := \partial^m_s Z(f,\chi|\cdot|^s_F)|_{s=s_c} = \int_{\mathbf R_{>0}} \left(\int^{+i\infty}_{-i\infty} t^{-s} Z(\phi,\chi|\cdot|^s_F)\,\mathrm{d}s \right) t^{s_c} (\log(t))^m \,\frac{\mathrm{d}t}{t} \tag{7.4.3.4}
@@ -2965,7 +3097,11 @@ $$
 
 where $\Lambda_f(s,\chi) := (s-1-it_0)^{\delta_\chi} L_f(s,\chi)$, with $\delta_\chi = 1$ if $\chi|_{C^1_F}=1$, and $\delta_\chi = 0$ if $\chi|_{C^1_F} \ne 1$.
 
-(5) *The strong dual of the quotient: $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_0(\mathbf A_F))/\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_{\infty,0}(\mathbf A_F))$*
+(5) *The strong dual of the quotient:*
+
+$$
+\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_0(\mathbf A_F))/\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_{\infty,0}(\mathbf A_F))
+$$
 
 ## PDF page 369
 
@@ -3007,7 +3143,11 @@ $$
 u(s) = \int_{\mathbf R_{>0}} t^s \,\Psi_{F,S,\chi_{S,\infty}}(f_0)(\tau(t))\,\frac{\mathrm{d}t}{t}
 $$
 
-as entire functions on the complex $s$-plane (see Theorem 6.2.2.1 for a study of the operator $\Psi_{F,S,\chi_{S,\infty}}$). The $\Gamma$-factor $\Gamma_F(\chi,s) := \prod_{v \in S_\infty} L_v(\psi_v(\chi|\cdot|^s_F))$
+as entire functions on the complex $s$-plane (see Theorem 6.2.2.1 for a study of the operator $\Psi_{F,S,\chi_{S,\infty}}$). The $\Gamma$-factor
+
+$$
+\Gamma_F(\chi,s) := \prod_{v \in S_\infty} L_v(\psi_v(\chi|\cdot|^s_F))
+$$
 
 ## PDF page 370
 
@@ -3053,13 +3193,25 @@ $$
 
 equipped with the Euclidean topology, for $z$ in the discrete set of zeros of $\Lambda_f(s,\chi)$, with multiplicity $N(z)$. $K_z$ is linearly and topologically isomorphic to $\mathscr{O}(\mathbf C)/(1-s/z)^{N(z)}\mathscr{O}(\mathbf C)$, which is seen by the same argument as for Theorem 7.1.4.2(1), using faithful flatness of $\mathbf C[s] \to \mathscr{O}(\mathbf C)$ and denseness of $\mathbf C[s] \subset \mathscr{O}(\mathbf C)$, by [Cnw-b, Ch.VIII, Cor.1.15, p.200].
 
-As a $\mathbf C$-vector space, the quotient $\mathscr{O}(\mathbf C)/\Lambda_f(s,\chi)\,\mathscr{O}(\mathbf C)$ is linearly isomorphic to the direct product of the $K_z$, i.e. to $\prod_{z \in \mathbf C: \Lambda_f(\rho,\chi)=0} K_z$. This is seen as in the argument for Theorem 7.1.4.2(1), since $\mathbf C$ is Stein and the set of zeros of $\Lambda_f(s,\chi)$ is countable and discrete: upon denoting by $\mathscr{J} \subset \mathscr{O}$ the ideal sheaf globally generated by $\Lambda_f(s,\chi)$, we have $\check{\mathrm{H}}(\mathbf C,\mathscr{O}/\mathscr{J}) = \mathrm{H}^1(\mathbf C,\mathscr{O}/\mathscr{J}) = 0$ and hence upon choosing a locally finite countable open cover $\{B_m\}_{m \ge 0}$ of the complex $s$-plane by open balls each of which contains at most one of the zeros $z$ of $\Lambda_f(s,\chi)$, then, upon denoting by $B_{\underline{k}}$ the intersection $\bigcap_{m \in \underline{k}} B_m$ for $\underline{k}$ varying over all non-empty finite subsets of the nonnegative integer, we deduce that $\mathrm{H}^0(B_{\underline{k}},\mathscr{J})$ is trivial if $\underline{k}$ contains at least two elements, and it is either trivial or $K_z$ if $\underline{k}$ contains one element exactly.
+As a $\mathbf C$-vector space, the quotient $\mathscr{O}(\mathbf C)/\Lambda_f(s,\chi)\,\mathscr{O}(\mathbf C)$ is linearly isomorphic to the direct product of the $K_z$, i.e. to $\prod_{z \in \mathbf C: \Lambda_f(\rho,\chi)=0} K_z$. This is seen as in the argument for Theorem 7.1.4.2(1), since $\mathbf C$ is Stein and the set of zeros of $\Lambda_f(s,\chi)$ is countable and discrete: upon denoting by $\mathscr{J} \subset \mathscr{O}$ the ideal sheaf globally generated by $\Lambda_f(s,\chi)$, we have
+
+$$
+\check{\mathrm{H}}(\mathbf C,\mathscr{O}/\mathscr{J}) = \mathrm{H}^1(\mathbf C,\mathscr{O}/\mathscr{J}) = 0
+$$
+
+and hence upon choosing a locally finite countable open cover $\{B_m\}_{m \ge 0}$ of the complex $s$-plane by open balls each of which contains at most one of the zeros $z$ of $\Lambda_f(s,\chi)$, then, upon denoting by $B_{\underline{k}}$ the intersection $\bigcap_{m \in \underline{k}} B_m$ for $\underline{k}$ varying over all non-empty finite subsets of the nonnegative integer, we deduce that $\mathrm{H}^0(B_{\underline{k}},\mathscr{J})$ is trivial if $\underline{k}$ contains at least two elements, and it is either trivial or $K_z$ if $\underline{k}$ contains one element exactly.
 
 ## PDF page 371
 
 **7.4. NUCLEARITY** · **371**
 
-This computes $\mathscr{O}(\mathbf C)/\Lambda_f(s,\chi)\,\mathscr{O}(\mathbf C) = \check{\mathrm{H}}^0(\mathbf C,\mathscr{O}/\mathscr{J})$ to be $\prod_{z: \Lambda_f(z,\chi)=0} K_z$. The quotient topology $\mathscr{O}(\mathbf C)/\Lambda_f(s,\chi)\,\mathscr{O}(\mathbf C)$ is the product topology, since any compact subset $K \subset \mathbf C$ is contained in the union of at most finitely many of the $B_m$, and hence the linear bijection $\mathscr{O}(\mathbf C)/\Lambda_f(s,\chi)\,\mathscr{O}(\mathbf C) \to \prod_{z: \Lambda_f(z,\chi)=0} K_z$ is continuous. Being source and target Fréchet spaces, it is a linear topological isomorphism by [NB, Thm.14.4.5(b)].
+This computes
+
+$$
+\mathscr{O}(\mathbf C)/\Lambda_f(s,\chi)\,\mathscr{O}(\mathbf C) = \check{\mathrm{H}}^0(\mathbf C,\mathscr{O}/\mathscr{J})
+$$
+
+to be $\prod_{z: \Lambda_f(z,\chi)=0} K_z$. The quotient topology $\mathscr{O}(\mathbf C)/\Lambda_f(s,\chi)\,\mathscr{O}(\mathbf C)$ is the product topology, since any compact subset $K \subset \mathbf C$ is contained in the union of at most finitely many of the $B_m$, and hence the linear bijection $\mathscr{O}(\mathbf C)/\Lambda_f(s,\chi)\,\mathscr{O}(\mathbf C) \to \prod_{z: \Lambda_f(z,\chi)=0} K_z$ is continuous. Being source and target Fréchet spaces, it is a linear topological isomorphism by [NB, Thm.14.4.5(b)].
 
 The orthogonal of $\Lambda_f(s,\chi)\,\mathscr{O}(\mathbf C)$ in $\mathscr{O}(\mathbf C)'_\beta$, equipped with the subspace topology of the strong topology, is linearly isomorphic to the direct sum $\bigoplus_{z: \Lambda_f(z,\chi)=0} K'_z$. The subspace topology on the orthogonal $(\Lambda_f(s,\chi)\,\mathscr{O}(\mathbf C))^\perp$ inherited from the strong topology on $\mathscr{O}(\mathbf C)'_\beta$ is the finest locally convex topology, and hence the continuous linear bijection $(\mathscr{O}(\mathbf C)/\Lambda_f(s,\chi)\,\mathscr{O}(\mathbf C))'_\beta \to (\Lambda_f(s,\chi)\,\mathscr{O}(\mathbf C))^\perp$ is a linear topological isomorphism.
 
@@ -3069,7 +3221,13 @@ $$
 (\Lambda_f(s,\chi)\,\mathscr{O}(\mathbf C))^\perp \to \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_{\infty,0}(\mathbf A_F))^\perp \tag{7.4.3.11}
 $$
 
-adjoint to the continuous linear map: $A\mathcal S^p(\mathbf C)/L \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_{\infty,0}(\mathbf A_F)) \to \mathscr{O}(\mathbf C)/\Lambda_f(s,\chi)\,\mathscr{O}(\mathbf C)$, which is, in turn, injective with dense linear image, by denseness of $A\mathcal S^p(\mathbf C)$ in $\mathscr{O}(\mathbf C)$ and openness of the quotient linear operators, is injective with weakly dense range by [NB, Thm.8.13.1].
+adjoint to the continuous linear map:
+
+$$
+A\mathcal S^p(\mathbf C)/L \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_{\infty,0}(\mathbf A_F)) \to \mathscr{O}(\mathbf C)/\Lambda_f(s,\chi)\,\mathscr{O}(\mathbf C),
+$$
+
+which is, in turn, injective with dense linear image, by denseness of $A\mathcal S^p(\mathbf C)$ in $\mathscr{O}(\mathbf C)$ and openness of the quotient linear operators, is injective with weakly dense range by [NB, Thm.8.13.1].
 
 Since $A\mathcal S^p(\mathbf C)$ is a Fréchet space by Lemma D.3.1.2, nuclear by Proposition D.3.2.5, its quotient by the closed subspace $L \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_{\infty,0}(\mathbf A_F))$ is also nuclear Fréchet, hence Montel, and by [Jar, Part II, Ch.11, §11.5, Prop.1, p.230] the range of the continuous linear operator from (7.4.3.11) is strongly dense. This implies that the continuous functionals from (7.4.3.4) are indeed linear topological generators for $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_{\infty,0}(\mathbf A_F))^\perp$ in $A\mathcal S^p(\mathbf C)'_\beta$.
 
@@ -3091,7 +3249,13 @@ $$
 \mathrm{PV}_{S,S_f} \mathrm{H}_{0,\mathrm{cont}}(\chi_S|_{J^1_{F,S}}, \mathcal{S}_0(\mathbf A_{F,S}))/\mathrm{H}_{0,\mathrm{cont}}(\chi_S|_{J^1_{F,S}}, \mathcal{S}_{00}(\mathbf A_{F,S})\cap\ker(\widehat\delta_0)) \to \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_0(\mathbf A_F))/\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_{\infty,0}(\mathbf A_F)). \tag{7.4.3.12}
 $$
 
-In particular, the orthogonal of the subquotient on the rightmost side of (7.4.3.12) carries the finest locally convex topology, and it is linearly and topologically isomorphic to the strong dual of the quotient: $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_0(\mathbf A_F))/\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_{\infty,0}(\mathbf A_F))$ by Theorem 7.3.4.1(3).
+In particular, the orthogonal of the subquotient on the rightmost side of (7.4.3.12) carries the finest locally convex topology, and it is linearly and topologically isomorphic to the strong dual of the quotient:
+
+$$
+\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_0(\mathbf A_F))/\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_{\infty,0}(\mathbf A_F))
+$$
+
+by Theorem 7.3.4.1(3).
 
 ## PDF page 372
 
@@ -3099,13 +3263,25 @@ In particular, the orthogonal of the subquotient on the rightmost side of (7.4.3
 
 We now use calculations similar to those made in (8.1.0.10) from the proof of Theorem 7.5.0.1 and the formula for the coefficients of the principal parts of the $S$-idelic Zeta functions provided by Theorem 7.2.1.4. We write, for $\phi \in \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_0(\mathbf A_F))$, $Z(\phi,\chi|\cdot|^s_F) = u(s) L_f(s,\chi)$ where $u(s) = Z_S(\phi_0,\chi_S|\cdot|^s_{F,S})$ for a unique $\phi_0 \in \mathrm{PV}_{S,S_f} \mathrm{H}_{0,\mathrm{cont}}(\chi_S|_{J^1_{F,S}}, \mathcal{S}_0(\mathbf A_{F,S}))$.
 
-We therefore have, upon denoting by $\widehat u(s) := Z_S(\widehat\phi_0,\overline{\chi}_S|\cdot|^{1-s}_{F,S})$: $Z(\widehat\phi,\overline{\chi}|\cdot|^{1-s}_F) = \widehat u(s)\,\widehat L_f(\chi,s)$ and by the same calculation in the proof of Theorem 7.5.0.1 (see (8.1.0.10)) using that $\widehat L_f(\chi,s)$ does not vanish for $s \in i\mathbf R$, equivalently $L_f(\overline{\chi},s)$ does not vanish for $s \in 1+i\mathbf R$, we deduce that the continuous functionals in (7.4.3.4) are indeed topologically free by Theorem 7.3.4.1(4), and hence any enumeration is a Schauder basis for $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_{\infty,0}(\mathbf A_F))^\perp$ equipped with the subspace topology inherited from the strong topology, by [Jar, Part II, Ch.14, §14.2, Prop.3, p.292] (since, in this special case, such topology is the finest locally convex topology, and the convergence axiom for Schauder bases is satisfies since the possibly infinite sums involved in it are all convergent, being finite).
+We therefore have, upon denoting by $\widehat u(s) := Z_S(\widehat\phi_0,\overline{\chi}_S|\cdot|^{1-s}_{F,S})$:
+
+$$
+Z(\widehat\phi,\overline{\chi}|\cdot|^{1-s}_F) = \widehat u(s)\,\widehat L_f(\chi,s)
+$$
+
+and by the same calculation in the proof of Theorem 7.5.0.1 (see (8.1.0.10)) using that $\widehat L_f(\chi,s)$ does not vanish for $s \in i\mathbf R$, equivalently $L_f(\overline{\chi},s)$ does not vanish for $s \in 1+i\mathbf R$, we deduce that the continuous functionals in (7.4.3.4) are indeed topologically free by Theorem 7.3.4.1(4), and hence any enumeration is a Schauder basis for $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_{\infty,0}(\mathbf A_F))^\perp$ equipped with the subspace topology inherited from the strong topology, by [Jar, Part II, Ch.14, §14.2, Prop.3, p.292] (since, in this special case, such topology is the finest locally convex topology, and the convergence axiom for Schauder bases is satisfies since the possibly infinite sums involved in it are all convergent, being finite).
 
 This also shows that the linear image of the continuous linear operator in (7.4.3.11) is strongly dense, because all the functionals $D^m_c$ from (7.4.3.4) are in the image. By [NB, Thm.8.10.6(e)], the linear image of $\mathcal{S}_{\infty,0}(\mathbf A_F)$ under the global Mellin transform $L$ to $A\mathcal S^p(\mathbf C)$, equivalently of $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_{\infty,0}(\mathbf A_F))$, is weakly dense in the closed subspace of $A\mathcal S^p(\mathbf C)$ from (7.4.3.5) (because its continuous adjoint maps a sequence of topologically free topological generators into a topologically free set and it is therefore injective, and hence the Theorem applies).
 
 By [Jar, Part II, Ch.11, §11.5, Prop.1, p.230], it is strongly dense, and hence it agrees with the closed subspace from (7.4.3.5), since it is itself closed (since $L$ has closed range by Theorem 7.1.4.3 and $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_{\infty,0}(\mathbf A_F)) \subset \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_0(\mathbf A_F))$ is closed). This finishes the proof of (2) and hence of (3), (4) and (5). $\square$
 
-We recall that we defined the closed subspace: $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_{\infty,0}(\mathbf A_F)) \subset \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_0(\mathbf A_F))$ in (7.4.3.1), and Theorem 7.4.3.1 exhibits a Schauder basis for the strong dual of the subquotient:
+We recall that we defined the closed subspace:
+
+$$
+\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_{\infty,0}(\mathbf A_F)) \subset \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_0(\mathbf A_F))
+$$
+
+in (7.4.3.1), and Theorem 7.4.3.1 exhibits a Schauder basis for the strong dual of the subquotient:
 
 $$
 \mathscr{E}_{S_\infty} := \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_0(\mathbf A_F))/\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_{\infty,0}(\mathbf A_F)) \tag{7.4.3.13}
@@ -3117,7 +3293,13 @@ The following is an Archimedean analog of Theorem 7.4.2.1.
 
 Theorem 7.4.3.2 (Strong Topologies and Nuclearity - III). *Let $F$ be a number field, $\chi \in \widehat{C_F}$ a continuous character. Let $\tau$ be a choice of continuous homomorphic section to the idelic norm.*
 
-(1) *The linear subspace $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_{\infty,0}(\mathbf A_F)) \subset \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_0(\mathbf A_F))$ defined in (7.4.3.1), is a closed $\mathcal D(C_F)$-submodule.*
+(1) *The linear subspace*
+
+$$
+\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_{\infty,0}(\mathbf A_F)) \subset \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_0(\mathbf A_F))
+$$
+
+*defined in (7.4.3.1), is a closed $\mathcal D(C_F)$-submodule.*
 
 (2) *Let $\varphi \in \mathcal D(C_F)$ be a test function. Assume $\varphi$ is supported over $C^{>1}_F$. Upon denoting by $A_{\mathrm{geom},\infty,\chi}(\varphi)$ the operator induced on $\mathscr{E}_{S_\infty}$ by $A(\varphi)$ on $\mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_0(\mathbf A_F))$, then $A_{\mathrm{geom},\infty,\chi}(\varphi)$ is a continuous operator whose matrix trace with respect to the Schauder basis provided by*
 
@@ -3137,7 +3319,13 @@ Remark 7.4.3.3. We note that since the strong dual $(\mathscr{E}_{S_\infty})'_\b
 
 Proof. We are to show that the sum in the right side of (7.4.3.14) is absolutely convergent: it formally agrees with the matrix trace of $A_{\mathrm{geom},\infty,\chi}(\varphi)$ by following the same calculation in (10.3.1.8) from the proof of (10.3.1.3) of Theorem 10.3.1.1. This is a consequence of the assumption made on the support of $\varphi$.
 
-Indeed, upon fixing real numbers $a,b > 0$, then by Proposition B.2.1.9(4), upon writing: $\Phi(s) := \int_{C_F} \varphi(g)\chi(g)|g|^s_F\,\mathrm{d}\overline{\mu}(g)$ the entire function $\Phi$ is an element of $H^p(\mathbf{C}_{<b})$ for every $p \ge 1$ (see §B.2.1), and hence the Asymptotic Residue Theorem (see Theorem B.3.2.1) implies that we have, upon defining $\Gamma_F(\chi,s) := \prod_{v \in S_\infty} L_v(\chi_v|\cdot|^s_v)$:
+Indeed, upon fixing real numbers $a,b > 0$, then by Proposition B.2.1.9(4), upon writing:
+
+$$
+\Phi(s) := \int_{C_F} \varphi(g)\chi(g)|g|^s_F\,\mathrm{d}\overline{\mu}(g)
+$$
+
+the entire function $\Phi$ is an element of $H^p(\mathbf{C}_{<b})$ for every $p \ge 1$ (see §B.2.1), and hence the Asymptotic Residue Theorem (see Theorem B.3.2.1) implies that we have, upon defining $\Gamma_F(\chi,s) := \prod_{v \in S_\infty} L_v(\chi_v|\cdot|^s_v)$:
 
 $$
 -\frac{1}{2\pi i} \int^{-a+i\infty}_{-a-i\infty} \Phi(s)\frac{\Gamma_F(\chi,s)'}{\Gamma_F(\chi,s)}\,\mathrm{d}s + \frac{1}{2\pi i} \int^{b+i\infty}_{b-i\infty} \Phi(s)\frac{\Gamma_F(\chi,s)'}{\Gamma_F(\chi,s)}\,\mathrm{d}s = \sum_{z: \mathrm{Re}(z) \in (-a,b)} N(\chi|\cdot|^z_F)\Phi(z) \tag{7.4.3.15}
@@ -3155,7 +3343,13 @@ $$
 
 which is valid over $\mathbf C - \mathbf N_{<0}$ and is a consequence of Euler's Duplication Formula, the convergence of the sum in the right side of (7.4.3.16) being uniform over the compact subsets of $\mathbf C - \mathbf N_{<0}$.
 
-By (B.4.1.22) from Lemma B.4.1.9, the sum also satisfies the estimate: $\sum_{m \le -1} \left|\frac{1}{m} + \frac{1}{s-m}\right| \ll |s|$. We further refer the reader to [Den, §2, Lemma 2.11, p.8] for a stronger estimate.
+By (B.4.1.22) from Lemma B.4.1.9, the sum also satisfies the estimate:
+
+$$
+\sum_{m \le -1} \left|\frac{1}{m} + \frac{1}{s-m}\right| \ll |s|.
+$$
+
+We further refer the reader to [Den, §2, Lemma 2.11, p.8] for a stronger estimate.
 
 Since $\Phi(s)$ is Schwartz uniformly on the vertical strips of bounded width of the complex $s$-plane, the integral $\int^{b+i\infty}_{b-i\infty} |\Phi(s)|\,|s|\,|\mathrm{d}s|$ converges, and bounds from above the sum:
 

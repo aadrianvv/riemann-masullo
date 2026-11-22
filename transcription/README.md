@@ -22,13 +22,15 @@ the physical PDF page markers kept (`## PDF page N`; printed page number = PDF p
 | Math delimiters, LaTeX | all pages | every `$`/`$$` balanced; every formula outside the diagram blocks parses (KaTeX) |
 | Footnotes, equation tags | all pages | every footnote and every `(X.Y.Z)` tag is under the page it is printed on |
 | Bars and underlines | all pages, from the rules drawn in the PDF | present where printed, absent where not |
+| Symbol counts | every page outside the diagrams: count of each maths symbol in the PDF and in the transcription | equal, apart from words set in maths and running heads; catches extra or missing symbols the alignment misses |
+| Sub/superscript levels | every page's maths compiled; each glyph's size and raised/lowered position compared with the PDF | no glyph on the wrong level; notation such as `dt/t` vs `\frac{dt}{t}` and display vs inline style follows the print |
 | Accents | every hat, tilde and check glyph of the PDF | same kind and same count on every page |
 | φ/ϕ, ε/ϵ | every aligned glyph | the printed shape (the paper uses both phis) |
 | ⇒ and ⇉ | every double-arrow glyph of the PDF (the text layer reports both as ⇒; the font tells them apart) | 136 `\Rightarrow` and 131 `\rightrightarrows`, same count on every page |
 | ∅ shapes | every empty-set glyph of the PDF, by font | `\varnothing` and `\emptyset` as printed, same count on every page |
 | Commutative diagrams | all 84 `latex` blocks | compared with the page image at 200 dpi; every block compiles with pdflatex + tikz-cd (`tools/diagrams.py`) |
 | Page-by-page visual review | all 940 pages | every page read against its image at 200–300 dpi by AI reviewers (Claude, and Gemini on 485 pages; 420 pages read by both); ≈ 1,030 corrections on 354 pages, then all the checks above run again |
-| Random sample | 45 tagged equations drawn at random before the visual review (43 exact), and 50 more drawn after all corrections, each compiled and compared with the page image | second sample: 49 exact, the wrong one (an extra square) corrected; read this as a residual error rate of about 2% per equation (95% interval roughly 0.05–11%) |
+| Random sample | 45 tagged equations drawn at random before the visual review (43 exact), 50 more drawn after all corrections, then 100 more tagged equations and 40 untagged displays, each compiled and compared with the page image | second sample: 49 exact, the wrong one (an extra square) corrected; third sample: 140 of 140 agree. Over the last 190 equations that is 1 error, about 0.5% per equation (95% interval roughly 0.01–3%) |
 
 **Not verified:** a symbol-by-symbol reading of every page by a person. The page-by-page review was
 done by AI models, not by a person, and reviewers can miss things. About 3% of the

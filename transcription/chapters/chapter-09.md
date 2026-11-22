@@ -236,7 +236,19 @@ $$
 
 
 
-The functional on $H^s_w(G,\mu_G)$: $(1+w^2)^{-s/2}T$ assigned by: $(1+w^2)^{-s/2}T(\phi):=\langle(1+w^2)^{-s/2}\phi,\psi\rangle$ is continuous on $H^{-s}(G,\mu_G)$, and hence there exists a unique $\psi_0\in H^{-s}(G,\mu_G)$ representing it. The continuous linear operator $H^s_w(G,\mu_G)'_\beta\to H^{-s}_w(G,\mu_G)$ induced by $\langle\cdot,\cdot\rangle_{s,w}$ sends $T=T_\psi$ to $\psi_0$. We have $\psi_0=(1+w^2)^{s/2}\psi$, and we compute:
+The functional on $H^s_w(G,\mu_G)$:
+
+$$
+(1+w^2)^{-s/2}T
+$$
+
+assigned by:
+
+$$
+(1+w^2)^{-s/2}T(\phi):=\langle(1+w^2)^{-s/2}\phi,\psi\rangle
+$$
+
+is continuous on $H^{-s}(G,\mu_G)$, and hence there exists a unique $\psi_0\in H^{-s}(G,\mu_G)$ representing it. The continuous linear operator $H^s_w(G,\mu_G)'_\beta\to H^{-s}_w(G,\mu_G)$ induced by $\langle\cdot,\cdot\rangle_{s,w}$ sends $T=T_\psi$ to $\psi_0$. We have $\psi_0=(1+w^2)^{s/2}\psi$, and we compute:
 
 $$
 \lVert\psi_0\rVert_{H^{-s}_w(G,\mu_G)}=\lVert\psi\rVert_{H^s_w(G,\mu_G)}=\lVert T\rVert_{H^s_w(G,\mu_G)'_\beta} \tag{9.1.1.17}
@@ -282,7 +294,7 @@ We refer to $s$ as the Sobolev degree of $W^{s,2}(G)$.
 
 Before stating the next Lemma, we observe the following. For $G$ an $\mathbf{R}_{>0}$-modulated group, and for any choice $\tau$ of continuous homomorphic section to the module $\lvert\cdot\rvert_G$ (noting that such sections exist by Remark D.2.1.2), we have an isomorphism, induced by the choice of $\tau$, of Hausdorff locally compact abelian groups $G\simeq\mathbf{R}_{>0}\times G^1$, with $G^1:=\ker(\lvert\cdot\rvert_G)$ a compact Hausdorff abelian group.
 
-The choice of Haar measure $\mu_G$ on $G$ is pushed forward to $\mathrm{d}t/t\otimes\mu_1$ for a unique Haar measure $\mu_1$ on $G^1$. This isomorphism is compatible with formation of dual groups (see [DE, Cor.3.6.2] combined with functoriality of formation of the dual group with respect to continuous group homomorphisms), giving an isomorphism of Hausdorff locally compact abelian groups $\widehat G\simeq\widehat{\mathbf{R}_{>0}}\times\widehat{G^1}$ where $\widehat{\mathbf{R}_{>0}}\simeq\mathbf{R}$ upon choosing the basic character $t\mapsto t^{2\pi i}$ to choose the isomorphism $\widehat{\mathbf{R}_{>0}}\simeq\mathbf{R}$.
+The choice of Haar measure $\mu_G$ on $G$ is pushed forward to $\frac{\mathrm{d}t}{t}\otimes\mu_1$ for a unique Haar measure $\mu_1$ on $G^1$. This isomorphism is compatible with formation of dual groups (see [DE, Cor.3.6.2] combined with functoriality of formation of the dual group with respect to continuous group homomorphisms), giving an isomorphism of Hausdorff locally compact abelian groups $\widehat G\simeq\widehat{\mathbf{R}_{>0}}\times\widehat{G^1}$ where $\widehat{\mathbf{R}_{>0}}\simeq\mathbf{R}$ upon choosing the basic character $t\mapsto t^{2\pi i}$ to choose the isomorphism $\widehat{\mathbf{R}_{>0}}\simeq\mathbf{R}$.
 
 Since $\widehat{G^1}$ is a discrete abelian group, every continuous $1$-parameter group $\mathbf{R}_{>0}\to\widehat{G^1}$ is constant (since its image is connected and contains the neutral element), and every continuous $1$-parameter group $\mathbf{R}_{>0}\to\widehat G$ has image contained within $\widehat{\mathbf{R}_{>0}}\times 1$, which is the connected component of the neutral element of $\widehat G$.
 
@@ -1140,7 +1152,11 @@ $$
 u \mapsto (\partial^k_z u)(z_0) \tag{9.2.2.24}
 $$
 
-*is continuous if and only if the integer $k \ge 0$ satisfies: for every integer $0 \le k \le \left[\frac{s-1}{2}\right]$.*
+*is continuous if and only if the integer $k \ge 0$ satisfies: for every integer*
+
+$$
+0 \le k \le \left[\frac{s-1}{2}\right].
+$$
 
 PROOF. The proof of Corollary 9.2.2.5 mirrors the argument for Corollary 9.2.1.4, using Proposition 9.2.2.4.$^2$ $\square$
 
@@ -1223,7 +1239,11 @@ $$
 u \mapsto (\partial^k_z u)(z_0) \tag{9.2.2.30}
 $$
 
-*is continuous if and only if the integer $k \ge 0$ satisfies: for every integer $0 \le k \le \left[\frac{s-1}{2}\right]$.*
+*is continuous if and only if the integer $k \ge 0$ satisfies: for every integer*
+
+$$
+0 \le k \le \left[\frac{s-1}{2}\right].
+$$
 
 PROOF. This is a consequence of Corollary 9.2.2.5.$^4$ $\square$
 
@@ -1706,11 +1726,11 @@ We have therefore shown that the net $B:=\{\varphi_{m,\omega}\}_{(m,\omega)\in\m
 
 Since, by Lemma 4.3.2.2, the operators $\{1/\overline{\mu}_1(G^1)P_{F,\omega}\}_{\omega\in\widehat{G^1}}$ are projectors and the closure of their convex hull within $\mathscr{B}_{\mathrm{SOT}}(W^{s,2}(G))$ contains the identity, in order to show that $B$ fulfills (4) it is enough to show that the net $\{\varphi_{m,\omega}\}_{m\ge 0}$, for each fixed $\omega$, of $\omega$-homogeneous Schwartz-Bruhat functions on $G$ is such that the identity is in the closure in $\mathscr{B}_{\mathrm{SOT}}(W^{s,2}(G)(\omega))$ of $A(\{\varphi_{m,\omega}\}_{m\ge 0})$.
 
-In turn, it is enough to show that the identity in $\mathscr{B}_{\mathrm{SOT}}(L^2(\mathbf{R}_{>0},(1+|\log(t)|^2)^{s/2}\mathrm{d}t/t))$ is in the closure of the linear span of the sequence of operators:
+In turn, it is enough to show that the identity in $\mathscr{B}_{\mathrm{SOT}}(L^2(\mathbf{R}_{>0},(1+|\log(t)|^2)^{s/2}\frac{\mathrm{d}t}{t}))$ is in the closure of the linear span of the sequence of operators:
 
 $$u\mapsto T(\beta_m)(u):=\int_{\mathbf{R}_{>0}}\beta_m(t)u(t^{-1}x)\,\frac{\mathrm{d}t}{t},\quad x\in\mathbf{R}_{>0}.$$
 
-Since the identity in $\mathscr{B}_{\mathrm{SOT}}(L^2(\mathbf{R}_{>0},(1+|\log(t)|^2)^{s/2}\mathrm{d}t/t))$ is in the closure of the convex hull of the orthogonal projectors defined by multiplication by $\mathcal{F}^{-1}\circ M_{\mathrm{1}_{[-N,N]}}\circ\mathcal{F}$, for $\mathcal{F}$ the Fourier transform on $L^2(\mathbf{R}_{>0},\mathrm{d}t/t)$, and $N\ge 1$ an integer, then it is enough to show that for any integer $N\ge 1$ and for any $u\in L^2(\mathbf{R}_{>0},(1+|\log(t)|^2)^{s/2}\mathrm{d}t/t)$ whose Fourier transform is supported over $[-N,N]$, then $T(\beta_m)(u)\to u$ as $m\to+\infty$ in $\|\cdot\|_{L^2(\mathbf{R}_{>0},(1+|\log(t)|^2)^{s/2}\mathrm{d}t/t)}$-norm. This holds by Dominated Convergence and uniform boundedness (by $2$) of the operator norms $\|T(\beta_m)\|$ for every $m\ge 1$.
+Since the identity in $\mathscr{B}_{\mathrm{SOT}}(L^2(\mathbf{R}_{>0},(1+|\log(t)|^2)^{s/2}\frac{\mathrm{d}t}{t}))$ is in the closure of the convex hull of the orthogonal projectors defined by multiplication by $\mathcal{F}^{-1}\circ M_{\mathrm{1}_{[-N,N]}}\circ\mathcal{F}$, for $\mathcal{F}$ the Fourier transform on $L^2(\mathbf{R}_{>0},\mathrm{d}t/t)$, and $N\ge 1$ an integer, then it is enough to show that for any integer $N\ge 1$ and for any $u\in L^2(\mathbf{R}_{>0},(1+|\log(t)|^2)^{s/2}\frac{\mathrm{d}t}{t})$ whose Fourier transform is supported over $[-N,N]$, then $T(\beta_m)(u)\to u$ as $m\to+\infty$ in $\|\cdot\|_{L^2(\mathbf{R}_{>0},(1+|\log(t)|^2)^{s/2}\frac{\mathrm{d}t}{t})}$-norm. This holds by Dominated Convergence and uniform boundedness (by $2$) of the operator norms $\|T(\beta_m)\|$ for every $m\ge 1$.
 
 $\square$
 
@@ -1894,7 +1914,7 @@ $$
 
 and hence $M_{\rho}$ is valued in $W^{s,2}(G)$ and bounded. Each $M_{\rho}$ is a positive operator. By [Cnw-a, Ch.II,§2,Prop.2.12,p.33], it is self-adjoint (as noted in Remark 9.3.3.2, more generally, every multiplication operator is normal by [Cnw-a, Ch.II,§2,Prop.2.16(b),p.35], and by [Cnw-a, Ch.II,§2,Example 2.8,p.32] it is self-adjoint if and only if it is real valued). It is injective, since each choice of $\rho$ vanishes only on a $\mu_G$-negligible subset of $G$. By [Cnw-a, Ch.II,§1,Thm.1.5,p.28], we have $\lVert M_{\rho}\rVert = \lVert\rho\rVert_{\infty} = 1$. Moreover, since each of the three given choices of $\rho$ is, for each $\Lambda > 0$, essentially bounded below away from $0$, then $M_{\rho}$ has closed range. Another way to see this is to observe that $M^2_{\rho} = M_{\rho}$, from which it follows by [Cnw-a, Ch.II,§3,Pop.3.2,(b),p.37] that $M_{\rho}$ has closed range. In fact, by [Cnw-a, Ch.II,§3,Pop.3.3,p.37], it is an orthogonal projector.
 
-For $G$ an $\mathbf{R}_{>0}$-modulated group, and $\mu_G$ a choice of Haar measure on $G$, continuous homomorphic sections $\tau$ to the module $\lvert\cdot\rvert_G$ exist (see Remark D.2.1.2). We define $\mu_1$ to be the unique Haar measure on $G^1$ such that, under the isomorphism of Hausdorff locally compact abelian groups $G \simeq \mathbf{R}_{>0} \times G^1$ induced by one such choice of $\tau$, $\mu_G$ is pushed-forward to $\mathrm{d}t/t \otimes \mu_1$.
+For $G$ an $\mathbf{R}_{>0}$-modulated group, and $\mu_G$ a choice of Haar measure on $G$, continuous homomorphic sections $\tau$ to the module $\lvert\cdot\rvert_G$ exist (see Remark D.2.1.2). We define $\mu_1$ to be the unique Haar measure on $G^1$ such that, under the isomorphism of Hausdorff locally compact abelian groups $G \simeq \mathbf{R}_{>0} \times G^1$ induced by one such choice of $\tau$, $\mu_G$ is pushed-forward to $\frac{\mathrm{d}t}{t} \otimes \mu_1$.
 
 Theorem A.5.4.1, which is Lebesgue's Differentiation Theorem for Hausdorff locally compact abelian groups, and which rests on an analog of the Hardy-Littlewood Maximal Theorem (see Theorem A.5.3.6 and
 
@@ -1982,7 +2002,13 @@ for $\mu_G$-almost all $x \in G$, which indeed shows, by of Hilbert-Schmidt kern
 
 When $\rho$ and $\varphi$ are smooth, see also [Tre, Part III,Ch.51,Cor.51.7], Corollary to [Tre, Part III,Ch.51,Thm.51.6], and Theorem C.2.4.19), noting that $K_{\varphi,\rho}$ maps from an element of $L^2((G)_x \times (G)_y)$ to the Schwartz kernel of the operator from (9.3.3.13) restricted to $\mathcal{S}(G)$ and valued in tempered distributions over $G$, as an element of $\mathcal{S}(G)'_{\beta} \widehat{\otimes}_{\pi} \mathcal{S}(G)'_{\beta}$.
 
-As such, the given operator is Hilbert-Schmidt, and $K_{\varphi,\rho}$ is its Hilbert-Schmidt kernel. The function $K_{\varphi,\rho}$ is smooth over $G \times G$ away from a $(\mu_G \otimes \mu_G)$-negligible subset of the form $(\bigcup_{1 \le k \le N}\{g \in G : \lvert g\rvert = t_k\}) \times (\bigcup_{1 \le k \le N}\{g \in G : \lvert g\rvert = t_k\})$ for $\{t_1,\dots,t_N\} \subset \mathbf{R}_{>0}$ a finite subset, and it is $(\mu_G \otimes \mu_G)$-integrable. In particular, the diagonal in $G_x \times G_y$ is contained in the Lebesgue set of $K_{\varphi,\rho}$, up to a subset of $\mu_G$-measure zero (see Theorem A.5.4.1 and Remark A.5.4.2). Along the diagonal in $(G)_x \times (G)_y$, the smoothening $\widetilde{K}_{\varphi,\rho}$ (in the sense of Theorem A.5.4.1 and [Bris-a, §3]; see also [Bris-a, §3.1,Thm.3.1]) vanishes $\mu_G$-almost everywhere. In fact, $K_{\varphi,\rho}$ is itself already defined $\mu_G$-almost everywhere along the diagonal at its points of continuity, a subset of the diagonal whose complement in the diagonal is $\mu_G$-negligible. Away from a $\mu_G$-negligible subset, $K_{\varphi,\rho}$ and $\widetilde{K}_{\varphi,\rho}$ agree. The operator from (9.3.3.13) is therefore an integral Hilbert-Schmidt operator whose kernel has an absolutely integrable smoothening along the diagonal, whose mass vanishes.
+As such, the given operator is Hilbert-Schmidt, and $K_{\varphi,\rho}$ is its Hilbert-Schmidt kernel. The function $K_{\varphi,\rho}$ is smooth over $G \times G$ away from a $(\mu_G \otimes \mu_G)$-negligible subset of the form
+
+$$
+(\bigcup_{1 \le k \le N}\{g \in G : \lvert g\rvert = t_k\}) \times (\bigcup_{1 \le k \le N}\{g \in G : \lvert g\rvert = t_k\})
+$$
+
+for $\{t_1,\dots,t_N\} \subset \mathbf{R}_{>0}$ a finite subset, and it is $(\mu_G \otimes \mu_G)$-integrable. In particular, the diagonal in $G_x \times G_y$ is contained in the Lebesgue set of $K_{\varphi,\rho}$, up to a subset of $\mu_G$-measure zero (see Theorem A.5.4.1 and Remark A.5.4.2). Along the diagonal in $(G)_x \times (G)_y$, the smoothening $\widetilde{K}_{\varphi,\rho}$ (in the sense of Theorem A.5.4.1 and [Bris-a, §3]; see also [Bris-a, §3.1,Thm.3.1]) vanishes $\mu_G$-almost everywhere. In fact, $K_{\varphi,\rho}$ is itself already defined $\mu_G$-almost everywhere along the diagonal at its points of continuity, a subset of the diagonal whose complement in the diagonal is $\mu_G$-negligible. Away from a $\mu_G$-negligible subset, $K_{\varphi,\rho}$ and $\widetilde{K}_{\varphi,\rho}$ agree. The operator from (9.3.3.13) is therefore an integral Hilbert-Schmidt operator whose kernel has an absolutely integrable smoothening along the diagonal, whose mass vanishes.
 
 If both $\rho$ and $\varphi$ are smooth, then it is nuclear on $L^2(G)$ (because the kernel is smooth and compactly supported over $G \times G$, and hence an element of $\mathcal{S}(G) \widehat{\otimes}_{\pi} \mathcal{S}(G)$ (in fact an element of the smaller $\mathcal{S}(G) \overline{\otimes} \mathcal{S}(G)$, since $\varphi$ is contained in some $\mathcal{D}_K(G,k)$ for a compact subgroup $k \subset G$ with compactly generated orthogonal $k^{\perp}$, with $K \subset G$ a compact subset with non-empty interior, and $\mathcal{D}_K(G,k)$ is a Fréchet space), which therefore
 

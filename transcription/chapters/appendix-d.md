@@ -2326,7 +2326,13 @@ $$
 $$
 defined as $\overline{\theta}_{\tau}(t,g):=\tau(t)g$.
 
-By [AT, Ch. IX, §1. Thm. 3], the compact norm-1 subgroup $G\subset C_F^0$ is $(\mathbf{R}/\mathbf{Z})^{r_2}\times\mathbf{S}^{r_1+r_2-1}$ where $\mathbf{S}=\lim_{x\mapsto Nx}\mathbf{R}/\mathbf{Z}\simeq\mathbf{A}_{\mathbf{Q}}/\mathbf{Q}$. Since $G$ is compact, so all elementary abelian Lie group quotients of $G$ are compact, $\mathcal{S}(G)=C^{\infty}(G)$. Thus, Lemma D.1.8.1(1) identifies the Schwartz-Bruhat space $\mathcal{S}(G)=C^{\infty}(G)$ with $C^{\infty}((\mathbf{R}/\mathbf{Z})^{r_2})\overline{\otimes} C^{\infty}(\mathbf{S}^{r_1+r_2-1})$ where $C^{\infty}((\mathbf{R}/\mathbf{Z})^{r_2})$ is equipped with the Fréchet topology of uniform convergence of functions and their derivatives or arbitrary order.
+By [AT, Ch. IX, §1. Thm. 3], the compact norm-1 subgroup $G\subset C_F^0$ is $(\mathbf{R}/\mathbf{Z})^{r_2}\times\mathbf{S}^{r_1+r_2-1}$ where $\mathbf{S}=\lim_{x\mapsto Nx}\mathbf{R}/\mathbf{Z}\simeq\mathbf{A}_{\mathbf{Q}}/\mathbf{Q}$. Since $G$ is compact, so all elementary abelian Lie group quotients of $G$ are compact, $\mathcal{S}(G)=C^{\infty}(G)$. Thus, Lemma D.1.8.1(1) identifies the Schwartz-Bruhat space $\mathcal{S}(G)=C^{\infty}(G)$ with
+
+$$
+C^{\infty}((\mathbf{R}/\mathbf{Z})^{r_2})\overline{\otimes} C^{\infty}(\mathbf{S}^{r_1+r_2-1})
+$$
+
+where $C^{\infty}((\mathbf{R}/\mathbf{Z})^{r_2})$ is equipped with the Fréchet topology of uniform convergence of functions and their derivatives or arbitrary order.
 
 ## PDF page 790
 
@@ -3388,7 +3394,11 @@ $$
 
 *where $\mathcal{F}_{G^1}$ is the Fourier transform on $\mathcal{S}(G^1)$ and $\check{\mathcal{F}}_{G^1}$ is the composition of $\mathcal{F}_{G^1}$ with the inversion automorphism on $G^1$.*
 
-Proof. Pick a continuous section $\tau$ to $|\cdot|_G$ and use it to define a linear topological isomorphism $C^\infty(G^1)\overline{\otimes}\mathcal{S}_I(\mathbf{R}_{>0})=\mathcal{S}(G^1)\overline{\otimes}\mathcal{S}_I(\mathbf{R}_{>0})\simeq\mathcal{S}_I(G)$
+Proof. Pick a continuous section $\tau$ to $|\cdot|_G$ and use it to define a linear topological isomorphism
+
+$$
+C^\infty(G^1)\overline{\otimes}\mathcal{S}_I(\mathbf{R}_{>0})=\mathcal{S}(G^1)\overline{\otimes}\mathcal{S}_I(\mathbf{R}_{>0})\simeq\mathcal{S}_I(G)
+$$
 
 ## PDF page 813
 
@@ -3396,7 +3406,13 @@ Proof. Pick a continuous section $\tau$ to $|\cdot|_G$ and use it to define a li
 
 from (D.3.3.3). We shall use this to show that $M(\phi)$ is absolutely convergent pointwise on $\Omega(G)_I$ and holomorphic on this open domain inside $\Omega(G)$. Scale the Haar measure on $G=G^1\times\mathbf{R}_{>0}$ to be $\mu_1\times(\mathrm{d}t/t)$ where $\mu_1$ is the volume-$1$ Haar measure on $G^1$.
 
-We may and do pick a compact subgroup $k\subset G^1$ such that $\phi\in\mathcal{S}_I(k,G)$, so $\phi$ arises from $C^\infty(G^1/k)\overline{\otimes}\mathcal{S}_I(\mathbf{R}_{>0})=C^\infty(G^1/k)\widehat{\otimes}_\pi\mathcal{S}_I(\mathbf{R}_{>0})$ (topological isomorphism by (D.3.3.5)). By Grothendieck’s description of elements of completed projective tensor products as infinite series [Scha, Ch. III, 6.4], we have
+We may and do pick a compact subgroup $k\subset G^1$ such that $\phi\in\mathcal{S}_I(k,G)$, so $\phi$ arises from
+
+$$
+C^\infty(G^1/k)\overline{\otimes}\mathcal{S}_I(\mathbf{R}_{>0})=C^\infty(G^1/k)\widehat{\otimes}_\pi\mathcal{S}_I(\mathbf{R}_{>0})
+$$
+
+(topological isomorphism by (D.3.3.5)). By Grothendieck’s description of elements of completed projective tensor products as infinite series [Scha, Ch. III, 6.4], we have
 
 $$
 \phi=\sum_{n\ge 1}\lambda_n h_n\otimes f_n
@@ -3454,7 +3470,13 @@ $$
 \prod_{\omega\in\widehat{G^1}}(\check{\mathcal{F}}_{G^1}(h))(\omega)M_I(f)\in\prod_{\omega\in\widehat{G^1}}A\mathcal{S}(\mathbf{C}_I).
 $$
 
-For any (discrete) set $\Sigma$ and $\mathbf{C}$-vector space $V$, the natural map $\mathrm{Map}(\Sigma,\mathbf{C})\otimes V\to\prod_{\sigma\in\Sigma}V$ defined by $h\otimes v\mapsto (h(\sigma)v)$ is injective (via passage to the direct limit from the case of finite-dimensional $V$), so in particular we have
+For any (discrete) set $\Sigma$ and $\mathbf{C}$-vector space $V$, the natural map
+
+$$
+\mathrm{Map}(\Sigma,\mathbf{C})\otimes V\to\prod_{\sigma\in\Sigma}V
+$$
+
+defined by $h\otimes v\mapsto (h(\sigma)v)$ is injective (via passage to the direct limit from the case of finite-dimensional $V$), so in particular we have
 
 $$
 \mathcal{S}(\widehat{G^1})\otimes A\mathcal{S}(\mathbf{C}_I)\hookrightarrow\prod_{\omega\in\widehat{G^1}}A\mathcal{S}(\mathbf{C}_I)
@@ -3468,7 +3490,11 @@ $$
 \check{\mathcal{F}}_{G^1}\otimes M_I : \mathcal{S}(G^1)\otimes\mathcal{S}(\mathbf{R}_{>0})\simeq\mathcal{S}(\widehat{G^1})\otimes A\mathcal{S}(\mathbf{C}_I)
 $$
 
-followed by the injection of the latter into $\prod_{\omega\in\widehat{G^1}}A\mathcal{S}(\mathbf{C}_I)\subset\prod_{\omega\in\widehat{G^1}}\mathscr{H}(\mathbf{C}_I)=\mathscr{H}(\Omega(G)_I)$. Since the Fourier transform $\check{\mathcal{F}}_{G^1} : \mathcal{S}(G^1)\to\mathcal{S}(\widehat{G^1})$ is a linear topological isomorphism (Lemma D.1.6.19(2)) and likewise for $M_I : \mathcal{S}_I(\mathbf{R}_{>0})\simeq A\mathcal{S}(\mathbf{C}_I)$ by (D.3.2.2) It follows that $M$ restricts to a linear topological isomorphism $\mathcal{S}(G^1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})\simeq\mathcal{S}(\widehat{G^1})\otimes A\mathcal{S}(\mathbf{C}_I)$
+followed by the injection of the latter into $\prod_{\omega\in\widehat{G^1}}A\mathcal{S}(\mathbf{C}_I)\subset\prod_{\omega\in\widehat{G^1}}\mathscr{H}(\mathbf{C}_I)=\mathscr{H}(\Omega(G)_I)$. Since the Fourier transform $\check{\mathcal{F}}_{G^1} : \mathcal{S}(G^1)\to\mathcal{S}(\widehat{G^1})$ is a linear topological isomorphism (Lemma D.1.6.19(2)) and likewise for $M_I : \mathcal{S}_I(\mathbf{R}_{>0})\simeq A\mathcal{S}(\mathbf{C}_I)$ by (D.3.2.2) It follows that $M$ restricts to a linear topological isomorphism
+
+$$
+\mathcal{S}(G^1)\otimes\mathcal{S}_I(\mathbf{R}_{>0})\simeq\mathcal{S}(\widehat{G^1})\otimes A\mathcal{S}(\mathbf{C}_I)
+$$
 
 ## PDF page 815
 
@@ -3554,7 +3580,13 @@ Thus, $C_{\mathcal{B},D,I}:=NC'_{\mathcal{B},D,I}$ and $M_{\omega,\mathcal{B},D,
 
 Now we may and do assume $D=\partial^{r_1}_{a_1}\cdots\partial^{r_n}_{a_n}$ for some exponents $r_i\in\mathbf{N}$. Next we reduce to the case that $G$ is an elementary abelian Lie group. By second-countability, there is a cofinal decreasing sequence $\{k_m\}$ of compact subgroups of $G$ with compactly generated orthogonal such that $\mathcal{S}_{\overline{I}}(G)=\varinjlim_m\mathcal{S}_{\overline{I}}(k_m,G)$ as a countable strict inductive limit, so $\mathcal{B}\subset\mathcal{S}_{\overline{I}}(k_{m_0},G)$ for some $m_0$ by [Scha, Ch. II, 6.5]. Increasing $m_0$ if necessary allows us to also arrange that $\omega(k_{m_0})=1$. In particular, for $k=k_{m_0}$ we see that every $\phi\in \mathcal{B}$ is $k$-invariant and $\omega\in\widehat{(G/k)}^1$. Clearly also $D(\phi)$ is $k$-invariant since $D$ is an invariant differential operator, and $D(\phi)\in\mathcal{S}_{\overline{I}}(G)$ by Remark D.3.4.1, so $D(\phi)\in\mathcal{S}_{\overline{I}}(k,G)\simeq\mathcal{S}_{\overline{I}}(G/k)$. The quotient $G/k$ is an elementary abelian Lie group and it is $\mathbf{R}_{>0}$-modulated because $k\subset G^1$.
 
-For any $1$-parameter subgroup $b : \mathbf{R}\to G$ with composite $1$-parameter subgroup $\bar b : \mathbf{R}\to G/k$, we have $(\partial_b\phi)(x)=\lim_{t\to 0}\frac{\phi(b(t)x)-\phi(x)}{t}=(\partial_{\bar b}\bar\phi)(x\bmod k)$ for $\bar\phi : G/k\to\mathbf{C}$ the corresponding element of $\mathcal{S}_{\overline{I}}(G/k)$ (see Lemma D.1.5.4). Thus, $D(\phi)\in\mathcal{S}_{\overline{I}}(k,G)$ corresponding to $\bar D(\bar\phi)\in\mathcal{S}_{\overline{I}}(G/k)$ where $\bar D:=\partial^{r_1}_{\bar a_1}\cdots\partial^{r_n}_{\bar a_n}$ as an invariant differential operator on $C^\infty(G/k)$. (The $\bar a_i$’s may merely span $\mathcal{L}(G/k)$ rather than be a basis for it, but that doesn’t matter because once we reduce to studying $\overline{D}$ and $\mathcal{B}\subset\mathcal{S}_{\overline{I}}(G/k)$ we can go again through the reduction to a product among the first-order operators associated to a basis of $\mathcal{L}(G/k)$.)
+For any $1$-parameter subgroup $b : \mathbf{R}\to G$ with composite $1$-parameter subgroup $\bar b : \mathbf{R}\to G/k$, we have
+
+$$
+(\partial_b\phi)(x)=\lim_{t\to 0}\frac{\phi(b(t)x)-\phi(x)}{t}=(\partial_{\bar b}\bar\phi)(x\bmod k)
+$$
+
+for $\bar\phi : G/k\to\mathbf{C}$ the corresponding element of $\mathcal{S}_{\overline{I}}(G/k)$ (see Lemma D.1.5.4). Thus, $D(\phi)\in\mathcal{S}_{\overline{I}}(k,G)$ corresponding to $\bar D(\bar\phi)\in\mathcal{S}_{\overline{I}}(G/k)$ where $\bar D:=\partial^{r_1}_{\bar a_1}\cdots\partial^{r_n}_{\bar a_n}$ as an invariant differential operator on $C^\infty(G/k)$. (The $\bar a_i$’s may merely span $\mathcal{L}(G/k)$ rather than be a basis for it, but that doesn’t matter because once we reduce to studying $\overline{D}$ and $\mathcal{B}\subset\mathcal{S}_{\overline{I}}(G/k)$ we can go again through the reduction to a product among the first-order operators associated to a basis of $\mathcal{L}(G/k)$.)
 
 By using Weil’s coset integration formula from Theorem D.1.2.1 exactly as in the passage to elementary abelian Lie groups in the proof of Theorem D.3.3.13, we see from the $k$-invariance of $\phi$ that $M(\phi)(c)=0$
 
@@ -3680,7 +3712,13 @@ We equip $\mathcal{D}(G)$ with the usual countable strict inductive limit topolo
 
 Proof. Each $\phi\in\mathcal{D}(G)$ certainly satisfies $|\cdot|^a_G\phi\in\mathcal{S}(G)$ for every $a\in\mathbf{R}$, so $\mathcal{D}(G)\subset\mathcal{S}_I(G)$.
 
-For every $a\in\mathbf{R}$, multiplication by the smooth function $|\cdot|^a_G$ is continuous and continuously invertible on $\mathcal{D}(G)$. Thus, the composition of $T_a : \mathcal{S}_I(G)\to\mathcal{S}(G)$ with the injective linear inclusion $\mathcal{D}(G)\subset\mathcal{S}_I(G)$ is continuous for every $a\in\mathbf{R}$. By design of the projective topology on $\mathcal{S}_I(G)$, the inclusion $j_G : \mathcal{D}(G)\to\mathcal{S}_I(G)$ is therefore continuous.
+For every $a\in\mathbf{R}$, multiplication by the smooth function $|\cdot|^a_G$ is continuous and continuously invertible on $\mathcal{D}(G)$. Thus, the composition of $T_a : \mathcal{S}_I(G)\to\mathcal{S}(G)$ with the injective linear inclusion $\mathcal{D}(G)\subset\mathcal{S}_I(G)$ is continuous for every $a\in\mathbf{R}$. By design of the projective topology on $\mathcal{S}_I(G)$, the inclusion
+
+$$
+j_G : \mathcal{D}(G)\to\mathcal{S}_I(G)
+$$
+
+is therefore continuous.
 
 Upon choosing a continuous homomorphic section $\tau$ to $|\cdot|_G$, by Theorem D.3.3.7(1) (which uses second-countability of $G$) we have a linear topological isomorphism $\mathcal{S}_I(G)\simeq\mathcal{S}(G^1)\overline{\otimes}\mathcal{S}_I(\mathbf{R}_{>0})=\mathcal{D}(G^1)\overline{\otimes}\mathcal{S}_I(\mathbf{R}_{>0})$ (the final equality using that $G^1$ is compact). We similarly have a linear topological isomorphism $\mathcal{D}(G)\simeq\mathcal{D}(G^1)\overline{\otimes}\mathcal{D}(\mathbf{R}_{>0})$ by [Bru, §5, Thm.3(a), p. 55]. The continuous inclusion $\mathcal{D}(G)\to\mathcal{S}_I(G)$ is thereby identified with the natural continuous map
 

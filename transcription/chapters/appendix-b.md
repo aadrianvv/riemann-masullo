@@ -1559,7 +1559,13 @@ $$
 z:=\frac{1}{2\pi i}(s\log N(\mathfrak p)-\log\chi(\mathfrak p)) \tag{B.4.1.31}
 $$
 
-in (B.4.1.21), since $\mathrm{d}/\mathrm{d}s=((\log N(\mathfrak p))/(2\pi i))\,\mathrm{d}/\mathrm{d}z$ and $L_{\mathfrak p}(s,\chi)=\frac{1}{1-\chi(\mathfrak p)(N\mathfrak p)^{-s}}=\frac{1}{1-e^{-2\pi iz}}$ has $z$-derivative $2\pi i/(1-e^{2\pi iz})$, we obtain
+in (B.4.1.21), since $\mathrm{d}/\mathrm{d}s=((\log N(\mathfrak p))/(2\pi i))\,\mathrm{d}/\mathrm{d}z$ and
+
+$$
+L_{\mathfrak p}(s,\chi)=\frac{1}{1-\chi(\mathfrak p)(N\mathfrak p)^{-s}}=\frac{1}{1-e^{-2\pi iz}}
+$$
+
+has $z$-derivative $2\pi i/(1-e^{2\pi iz})$, we obtain
 
 $$
 \frac{L'_{\mathfrak p}(s,\chi)}{L_{\mathfrak p}(s,\chi)}=\frac{1}{2}\log N(\mathfrak p)-\frac{1}{s-\frac{\log\chi(\mathfrak p)}{\log N(\mathfrak p)}}-\sum_{m\in\mathbf Z-\{0\}}\left(\frac{1}{s-\frac{\log\chi(\mathfrak p)+2\pi im}{\log N(\mathfrak p)}}+\frac{\log N(\mathfrak p)}{2\pi im}\right). \tag{B.4.1.32}
@@ -1567,7 +1573,13 @@ $$
 
 The change of variables in (B.4.1.31) is affine-linear and hence by Lemma B.4.1.9 the series on the right side of (B.4.1.32) is absolutely and locally uniformly convergent on compact subsets away from the image of the integers under the inverse of (B.4.1.31), which is the discrete set $\log\chi(\mathfrak p)+(2\pi i/N(\mathfrak p))\mathbf Z$.
 
-For any $\sigma\ne 0$, the estimate in (B.4.1.23) from Lemma B.4.1.9 applied to $z=\left(\frac{\log N(\mathfrak p)}{2\pi}t-\frac{\log\chi(\mathfrak p)}{2\pi i}\right)+\frac{\log N\mathfrak p}{2\pi}\sigma i$ (decomposition into real and imaginary parts) translates into the estimate over $\sigma+i\mathbf R$:
+For any $\sigma\ne 0$, the estimate in (B.4.1.23) from Lemma B.4.1.9 applied to
+
+$$
+z=\left(\frac{\log N(\mathfrak p)}{2\pi}t-\frac{\log\chi(\mathfrak p)}{2\pi i}\right)+\frac{\log N\mathfrak p}{2\pi}\sigma i
+$$
+
+(decomposition into real and imaginary parts) translates into the estimate over $\sigma+i\mathbf R$:
 
 $$
 \frac{1}{\left|\sigma+it-\frac{\log\chi(\mathfrak p)}{\log N(\mathfrak p)}\right|}+\sum_{m\in\mathbf Z-\{0\}}\left|\frac{1}{\sigma+it-\frac{\log\chi(\mathfrak p)+2\pi im}{\log N(\mathfrak p)}}+\frac{\log N(\mathfrak p)}{2\pi im}\right|\le C_{\mathfrak p,\sigma}|t|. \tag{B.4.1.33}
@@ -3049,7 +3061,13 @@ as a sum over the ideals of $\mathcal O_F$ whose norm is $m$ (so $A_1=0$ since $
 
 Lemma B.6.1.4. *For $A_m$ as in* (B.6.1.14), $A_m=O_F(\log m)$ *as $m\to\infty$, where the $O$-constant depends on $[F:\mathbf Q]$ but not $\chi$.*
 
-*Proof.* From the definition, $|A_m|\le\sum_{\mathfrak p,k:N(\mathfrak p^k)=m}\log(N\mathfrak p)$ where the sum is over prime ideals $\mathfrak p$ and integers $k\ge 1$ (recall $A_1=0$). If $m$ is not a prime power $>1$ then $A_m=0$, so we can assume $m=p^r$ with a rational prime $p$ and exponent $r\ge 1$. Then the equality $N(\mathfrak p^k)=m=p^r$ forces $\mathfrak p\mid p$, allowing at most $[F:\mathbf Q]$ possibilities for $\mathfrak p$ (given $m=p^r$), and for each such $\mathfrak p$ there is at most one possibility for $k$. Thus, $|A_m|\le[F:\mathbf Q]\max_{\mathfrak p\mid p}\log(N\mathfrak p)\le[F:\mathbf Q]^2\log(p)\le[F:\mathbf Q]^2\log(m)$. $\square$
+*Proof.* From the definition, $|A_m|\le\sum_{\mathfrak p,k:N(\mathfrak p^k)=m}\log(N\mathfrak p)$ where the sum is over prime ideals $\mathfrak p$ and integers $k\ge 1$ (recall $A_1=0$). If $m$ is not a prime power $>1$ then $A_m=0$, so we can assume $m=p^r$ with a rational prime $p$ and exponent $r\ge 1$. Then the equality $N(\mathfrak p^k)=m=p^r$ forces $\mathfrak p\mid p$, allowing at most $[F:\mathbf Q]$ possibilities for $\mathfrak p$ (given $m=p^r$), and for each such $\mathfrak p$ there is at most one possibility for $k$. Thus,
+
+$$
+|A_m|\le[F:\mathbf Q]\max_{\mathfrak p\mid p}\log(N\mathfrak p)\le[F:\mathbf Q]^2\log(p)\le[F:\mathbf Q]^2\log(m).
+$$
+
+$\square$
 
 We will now be using Proposition B.1.1.3 and the method of proof of [Ingh3, Thm.20] to establish the Theorem. Without loss of generality, we may assume $t>0$ (e.g., pass to $\overline{L_f(s,\chi)}=L_f(\bar s,\bar\chi)$). Assume first that $\sigma>1+\alpha\eta(t)$. Then we have, from the absolute and locally uniform convergence of the Dirichlet series in (B.6.1.12):
 
@@ -3105,7 +3123,13 @@ $$
 
 over $D_2(T)$ for all $T>T_2$, since $T-1<t<T+1$ for each $s=\sigma+it\in D_2(T)$ (as $r_2(T)<1$ and $\mathrm{Im}(s_0)=T$).
 
-We further note that since $\#\{\mathfrak p\mid p\}\le[F:\mathbf Q]$ for all rational primes $p$, $|{\rm R\mathrm{e}}(Z_{F,\chi}(s_0))|\le|Z_{F,\chi}(s_0)|\le\sum_{\mathfrak p,m}\frac{1}{mN(\mathfrak p)^{1+\alpha\eta(T)}}<[F:\mathbf Q]\sum_{m\ge 2}\frac{1}{m^{1+\alpha\eta(T)}}=[F:\mathbf Q](\zeta_{\mathbf Q}(1+\alpha\eta(T))-1)<\frac{2[F:\mathbf Q]}{\alpha\eta(T)}\le C_F\log(T)$ for all sufficiently large $T$.
+We further note that since $\#\{\mathfrak p\mid p\}\le[F:\mathbf Q]$ for all rational primes $p$,
+
+$$
+|{\rm R\mathrm{e}}(Z_{F,\chi}(s_0))|\le|Z_{F,\chi}(s_0)|\le\sum_{\mathfrak p,m}\frac{1}{mN(\mathfrak p)^{1+\alpha\eta(T)}}<[F:\mathbf Q]\sum_{m\ge 2}\frac{1}{m^{1+\alpha\eta(T)}}=[F:\mathbf Q](\zeta_{\mathbf Q}(1+\alpha\eta(T))-1)<\frac{2[F:\mathbf Q]}{\alpha\eta(T)}\le C_F\log(T)
+$$
+
+for all sufficiently large $T$.
 
 By [Ingh3, Thm. E, p. 50] applied to $f=Z_{F,\chi}$, $z_0=s_0$, $r=r_1(T)$, $R=r_2(T)$, $U=C_F\log(T)$, we obtain
 
@@ -3235,7 +3259,13 @@ for all $|t|>T$. This proves that (B.6.1.22) holds, with an implied constant tha
 
 The next result is an analog for the reciprocal $1/L_f(s,\chi)$ of the finite Hecke $L$-function, of [Lang-b, Ch. XVII, §2, Prop. 2.7] on the existence of horizontal segments on which the logarithmic derivative of the completed Hecke $L$-function has no singularities and grows at most polynomially with respect to the absolute ordinate. In the special $F=\mathbf Q$ and $\chi=1$ it recovers [T2, Thm. 9.7].
 
-We recall the following definition from (6.3.1.6) of Terminology 6.3.1.1: for $F$ a number field, $\chi\in\widehat{C_F}$ a continuous character, and $S$ a finite set of places of $F$ containing all the Archimedean places and with $S_f$ its subset of finite places, we define: $L_{\Sigma_F-S}(\chi,s):=\prod_{v\in S}L_v(\chi_v|\cdot|^s_v)^{-1}L(s,\chi)$ a meromorphic function on $\mathbf C$ which agrees with the product of the finite Hecke $L$-function $L_f(s,\chi)$ and the finite product of entire functions $\prod_{v\in S_f}L_v(\chi_v|\cdot|^s_v)^{-1}$, where $L_v(\chi_v|\cdot|^s_v)$ is the local Euler factor at $v\in S_f$ of the Hecke $L$-function $L(s,\chi)$. The follow
+We recall the following definition from (6.3.1.6) of Terminology 6.3.1.1: for $F$ a number field, $\chi\in\widehat{C_F}$ a continuous character, and $S$ a finite set of places of $F$ containing all the Archimedean places and with $S_f$ its subset of finite places, we define:
+
+$$
+L_{\Sigma_F-S}(\chi,s):=\prod_{v\in S}L_v(\chi_v|\cdot|^s_v)^{-1}L(s,\chi)
+$$
+
+a meromorphic function on $\mathbf C$ which agrees with the product of the finite Hecke $L$-function $L_f(s,\chi)$ and the finite product of entire functions $\prod_{v\in S_f}L_v(\chi_v|\cdot|^s_v)^{-1}$, where $L_v(\chi_v|\cdot|^s_v)$ is the local Euler factor at $v\in S_f$ of the Hecke $L$-function $L(s,\chi)$. The follow
 
 Theorem B.6.1.7 (Slow growth near the poles of $1/L_{\Sigma_F-S}(\chi,s)$ - I). *Let $F$ be a number field, $\chi\in\widehat{C_F}$ a continuous character. Let $S$ be a finite set of places of $F$ containing all the Archimedean places. There exists a real number $A>0$ such that for all sufficiently large $T$ (depending on $\chi$ and $S$), the interval $(T,T+1)$ contains a real number $t$ such that*
 
@@ -3257,7 +3287,7 @@ $$
 
 **642** · **CHAPTER B. PREPARATIONS FROM ANALYTIC NUMBER THEORY**
 
-*Proof.* Pick $\sigma_0\ge 2$ and let $r=4\sqrt{1+(\sigma_0+1)^2}>4(\sigma_0+1)$. We fix an integer $N>[F:\mathbf Q]/2$ and choose $A_1>0$ with the following property: there exists $T_0>1$ such that:
+*Proof.* Pick $\sigma_0\ge 2$ and let $r=4\sqrt{1+(\sigma_0+1)^2}>4(\sigma_0+1)$. We fix an integer $N>\frac{[F:\mathbf Q]}{2}$ and choose $A_1>0$ with the following property: there exists $T_0>1$ such that:
 
 $$
 |L_{\Sigma_F-S}(\chi,s)|\le A_1|{\rm I\mathrm{m}}(s)|^N \tag{B.6.1.37}
@@ -3271,7 +3301,13 @@ $$
 
 for all $s\in\mathbf C_{[\sigma_0-r,\sigma_0+r]}$ with $|{\rm I\mathrm{m}}(s)|>T_0$.
 
-We fix $T\in\mathbf R$ such that $|T|>T_0$. By (B.6.1.37) and [T2, Ch. III, §3, Lemma $\alpha$, p. 56] applied to $f(s)=L_{\Sigma_F-S}(\chi,s)$ with $s_0=\sigma_0+iT$, $M=A_2\log(T)$, $r=4((\sigma_0+1)^2+1)^{1/2}$, with $A_2:=\sup_{T\ge T_0+r}\left(N+\frac{1}{\log T}\log(A_1\zeta_F(\sigma_0))\right)$ (noting that $|1/L_{\Sigma_F-S}(\chi,\sigma_0+iT)|\le\zeta_F(\sigma_0)$), we obtain
+We fix $T\in\mathbf R$ such that $|T|>T_0$. By (B.6.1.37) and [T2, Ch. III, §3, Lemma $\alpha$, p. 56] applied to $f(s)=L_{\Sigma_F-S}(\chi,s)$ with $s_0=\sigma_0+iT$, $M=A_2\log(T)$, $r=4((\sigma_0+1)^2+1)^{1/2}$, with
+
+$$
+A_2:=\sup_{T\ge T_0+r}\left(N+\frac{1}{\log T}\log(A_1\zeta_F(\sigma_0))\right)
+$$
+
+(noting that $|1/L_{\Sigma_F-S}(\chi,\sigma_0+iT)|\le\zeta_F(\sigma_0)$), we obtain
 
 $$
 \left|\frac{L'_{\Sigma_F-S}(\chi,s)}{L_{\Sigma_F-S}(\chi,s)}-\sum_{\rho:|\rho-\sigma_0-iT|\le r/2}\frac{1}{s-\rho}\right|\le \frac{AA_2}{r}\log(T) \tag{B.6.1.39}
@@ -3405,7 +3441,7 @@ where the $O$-constant is $1/\pi$.
 
 The formula in (B.7.1.6) follows from [QQ, Ch. 4, Thm. 4.2.3], applied as follows. We choose the coefficients $a_m$ in loc. cit. to be $a_mm^{-s}$, in which case the abscissa of absolute convergence $\sigma_a$ in loc. cit. is $\sigma_a-\sigma$. The positive real number $\rho$ in loc. cit. is $c$, and the $s$-variable of integration is $w$ in (B.7.1.6). With these notational changes, (B.7.1.6) is [QQ, Ch. 4, (4.2.5)] up to recognizing the $O$-constant as $1/\pi$, which emerges from the method of proof.
 
-If $m<x/2$ or $m>2x$, we have $|\log(x/m)|>A:=\log(2)>0$, so the parts of the sum $\sum_{m\ge 1}|a_m|/(m^{\sigma+c}|\log(x/m)|)$ indexed by these integers are $O(\sum_{m\ge 1}|a_m|m^{-\sigma-c})$, the implied constant being $1/\log(2)$. By (B.7.1.3), this is $O(1/(\sigma+c-1)^{\alpha})$, the implied constant depending on $\alpha$ and the $O$-constant in (1): this gives the first O-term in (B.7.1.4).
+If $m<x/2$ or $m>2x$, we have $|\log(x/m)|>A:=\log(2)>0$, so the parts of the sum $\sum_{m\ge 1}\frac{|a_m|}{m^{\sigma+c}|\log(x/m)|}$ indexed by these integers are $O(\sum_{m\ge 1}|a_m|m^{-\sigma-c})$, the implied constant being $1/\log(2)$. By (B.7.1.3), this is $O(1/(\sigma+c-1)^{\alpha})$, the implied constant depending on $\alpha$ and the $O$-constant in (1): this gives the first O-term in (B.7.1.4).
 
 In the range $N<m\le 2x$, the relevant estimate is contained at the top of [T2, Ch. III, p. 62], and the implied constant can be taken to be an absolute constant times the implied constant in $a_n=O(\psi(n))$
 
@@ -3427,7 +3463,7 @@ $$
 \log\left(\frac{x}{m}\right) \ge \log\left(\frac{N-1/2}{N-r}\right) = \log\left(1+\frac{r-1/2}{N-r}\right) \ge \frac12\left(\frac{r-1/2}{N-r}\right) \ge \frac12\,\frac{r}{N} \ge \frac13\,\frac{r}{x}.
 $$
 
-The part of the sum $\sum_{m\ge 1}|a_m|/(m^{\sigma+c}|\log(x/m)|)$ indexed by the integers $m$ in that range is therefore
+The part of the sum $\sum_{m\ge 1}\frac{|a_m|}{m^{\sigma+c}|\log(x/m)|}$ indexed by the integers $m$ in that range is therefore
 
 $$
 O\left(\frac{\psi(x)}{x^{-1+\sigma+c}}\sum_{1\le r\le N-x/2}\frac{1}{r}\right)

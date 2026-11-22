@@ -212,7 +212,13 @@ using the strong $(2,2)$ inequality from (A.5.3.18)), the argument for (1) is no
 
 (2) : We first assume $\rho\in C_c(G)$. Since $\rho(x)k(x,y)$ is a representative function for the Hilbert-Schmidt kernel of $M_\rho\circ T$ on $L^2(G,\lambda)$, and $\widetilde{k}(x,y)$ equals $k(x,y)$ on $(\mu_G\otimes\mu_G)$-almost every point, we have $k(x,y) = \widetilde{k}(x,y)$ also $(\lambda\otimes\lambda)$-almost everywhere, since $\lambda$ and $\mu_G$ have the same null sets (indeed, both $\lambda$ and $\mu_G$ are $\sigma$-finite Radon measures on $G$ since $G$ is second countable, and $f$ is the Radon-Nikodym derivative of $\lambda$ with respect to $\mu_G$. Since it is nowhere vanishing, $\lambda$ and $\mu_G$ are equivalent: a subset $A\subset G$ is $\mu_G$-measurable if and only if it is $\lambda$-measurable, and $\mu_G(A) = \int_A f(x)\,\mu_G(x) = 0$ if and only if $1_A(x)f(x) = 0$ for $\mu_G$-almost all $x\in A$, which forces $\mu_G(A) = 0$).
 
-It follows that we have $\rho(x)\int_G \widetilde{k}(x,y)\phi(y)\,\mathrm{d}\lambda(y) = \rho(x)\int_G k(x,y)\phi(y)\,\mathrm{d}\lambda(y) = (M_\rho\circ T\phi)(x)$ for $\lambda$-almost all $x\in G$, which shows that $\rho(x)\widetilde{k}(x,y)$ is another representative function for the Hilbert-Schmidt kernel of $M_\rho\circ T$. We write $k_\rho(x,y) := \rho(x)k(x,y)$, and compute $\widetilde{k}_\rho(x,y)$. Upon showing that we have, for $\mu_G$-almost all $x\in G$, $\widetilde{k}_\rho(x,x) = \rho(x)\widetilde{k}(x,x)$, then the same identity holds for $\lambda$-almost all $x\in G$, and then (12.1.1.3) follows from (12.1.1.2) of (1).
+It follows that we have
+
+$$
+\rho(x)\int_G \widetilde{k}(x,y)\phi(y)\,\mathrm{d}\lambda(y) = \rho(x)\int_G k(x,y)\phi(y)\,\mathrm{d}\lambda(y) = (M_\rho\circ T\phi)(x)
+$$
+
+for $\lambda$-almost all $x\in G$, which shows that $\rho(x)\widetilde{k}(x,y)$ is another representative function for the Hilbert-Schmidt kernel of $M_\rho\circ T$. We write $k_\rho(x,y) := \rho(x)k(x,y)$, and compute $\widetilde{k}_\rho(x,y)$. Upon showing that we have, for $\mu_G$-almost all $x\in G$, $\widetilde{k}_\rho(x,x) = \rho(x)\widetilde{k}(x,x)$, then the same identity holds for $\lambda$-almost all $x\in G$, and then (12.1.1.3) follows from (12.1.1.2) of (1).
 
 We have, for $(\mu_G\otimes\mu_G)$-almost every $(x,y)\in G$ (in fact, for any regular point $(x,y)\in G\times G$ for $k$):
 

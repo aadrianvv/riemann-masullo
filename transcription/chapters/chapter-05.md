@@ -1148,7 +1148,7 @@ In particular, by [Jar, Part II,Ch.11,§11.5,Cor.6(b),p.229], $(F_k)_\beta'$ is 
 
 The canonical continuous linear operator $F\to\varprojlim_{k\ge 0}F_k$ is a linear topological isomorphism. The projective limit is reduced in the sense of [Scha, Ch.IV,§4,p.139].
 
-The Mackey dual $F_\tau'=F_{\tau(F',F)}'$ is therefore linearly and topologically isomorphic to the locally convex inductive limit $\varinjlim_{k\ge 0}(F_k)_{\tau(F_k',F_k)}'$ where the transition continuous operators are the continuous adjoints of the continuous operators $F_{k+1}\to F_k$ for each integer $k\ge 0$, in turn induced by the containments $U_{k+1}\subset U_k$.
+The Mackey dual $F'_{\tau(F',F)}$ is therefore linearly and topologically isomorphic to the locally convex inductive limit $\varinjlim_{k\ge 0}(F_k)_{\tau(F_k',F_k)}'$ where the transition continuous operators are the continuous adjoints of the continuous operators $F_{k+1}\to F_k$ for each integer $k\ge 0$, in turn induced by the containments $U_{k+1}\subset U_k$.
 
 By reflexivity of $(F_k)_\beta'$, $\tau(F_k',F_k)=\beta(F_k',F_k)$ by [Jar, Part II,Ch.11,§11.4,Prop.1.(2),p.227]. In particular, $(F_k)_{\tau(F_k',F_k)}'$ is a (reflexive) Banach space, since it is linearly and topologically isomorphic to $(F_k)_\beta'$, and hence, by [Scha, Ch.IV,§4,Thm.4.4,p.139], $F_{\tau(F',F)}'$ is linearly and topologically isomorphic to the locally convex inductive limit $\varinjlim_{k\ge 0}(F_k)_\beta'$, a countable locally convex inductive limit of Banach spaces, hence an LF-space.
 
@@ -2077,7 +2077,13 @@ Making the choice of integrating over $E_{S_\infty,0}$ and the choice of the $\{
 
 We may choose the continuous homomorphic section $\tau$ to the $S$-idelic norm to have image in the closed subgroup $\mathrm{GL}_1(\mathbf A_{F,S_\infty})$ (for example, by choosing it to be of the form $\tau=\tau_{v_0}$, for $v_0$ a fixed choice of Archimedean place of $F$; see Definition A.2.2.5, where $\tau_{v_0}$ is denoted $s_{F,v_0}$).
 
-The linear space $\mathcal D(\mathbf R^{r_1+r_2}_{>0})$ is contained in $\mathcal S_I(\mathbf R_{>0})^{\widehat\otimes^{r_1+r_2}_\pi}$ (up to the linear topological isomorphism to the nuclear Fréchet space $\mathcal S_{I^{r_1+r_2}}(\mathbf R^{r_1+r_2}_{>0})$ defined similarly as in Lemma 5.3.3.3(2) (see also the proof of Lemma 5.3.3.3(3)), compatibly with the continuous left-translation action of $\mathbf R^{r_1+r_2}_{>0}$ on itself, and by [Tre, Part III,Ch.39,Thm.39.2], the choice of continuous homomorphic section $\tau$ to the $S$-idelic norm induces a continuous linear operator $\mathcal D(\mathbf R^{r_1+r_2-1})\otimes\mathcal D(\mathbf R_{>0})$ with sequentially dense range into $\mathcal D(\mathbf R^{r_1+r_2}_{>0})$, where $(\mathbf R^{r_1+r_2}_{>0})^1:=\ker(\prod_{1\le k\le r_1}\prod_{1\le m\le r_2}|\cdot|_{r,k}|\cdot|_{c,m}:\mathbf R^{r_1+r_2}\to\mathbf R_{>0})$ acts by continuous left-translation on $\mathbf R^{r_1+r_2-1}_{>0}$ up to the isomorphism $(\mathbf R^{r_1+r_2}_{>0})^1\simeq\mathbf R^{r_1+r_2-1}_{>0}$, and $\mathbf R_{>0}$ acts on $\mathcal D(\mathbf R_{>0})$ by continuous left-translation.
+The linear space $\mathcal D(\mathbf R^{r_1+r_2}_{>0})$ is contained in $\mathcal S_I(\mathbf R_{>0})^{\widehat\otimes^{r_1+r_2}_\pi}$ (up to the linear topological isomorphism to the nuclear Fréchet space $\mathcal S_{I^{r_1+r_2}}(\mathbf R^{r_1+r_2}_{>0})$ defined similarly as in Lemma 5.3.3.3(2) (see also the proof of Lemma 5.3.3.3(3)), compatibly with the continuous left-translation action of $\mathbf R^{r_1+r_2}_{>0}$ on itself, and by [Tre, Part III,Ch.39,Thm.39.2], the choice of continuous homomorphic section $\tau$ to the $S$-idelic norm induces a continuous linear operator $\mathcal D(\mathbf R^{r_1+r_2-1})\otimes\mathcal D(\mathbf R_{>0})$ with sequentially dense range into $\mathcal D(\mathbf R^{r_1+r_2}_{>0})$, where
+
+$$
+(\mathbf R^{r_1+r_2}_{>0})^1:=\ker(\prod_{1\le k\le r_1}\prod_{1\le m\le r_2}|\cdot|_{r,k}|\cdot|_{c,m}:\mathbf R^{r_1+r_2}\to\mathbf R_{>0})
+$$
+
+acts by continuous left-translation on $\mathbf R^{r_1+r_2-1}_{>0}$ up to the isomorphism $(\mathbf R^{r_1+r_2}_{>0})^1\simeq\mathbf R^{r_1+r_2-1}_{>0}$, and $\mathbf R_{>0}$ acts on $\mathcal D(\mathbf R_{>0})$ by continuous left-translation.
 
 We now observe that $\Phi_{\log}$ can therefore further be written on $\mathcal D(\mathbf R^{r_1+r_2-1})\otimes\mathcal S_I(\mathbf R_{>0})\subset\mathcal S_I(\mathbf R_{>0})^{\widehat\otimes^{r_1+r_2}_\pi}$ (the containment being intended up to linear topological automorphism on the source) as $\Phi_{r_1+r_2-1}\otimes\mathrm{Id}$.
 
@@ -2223,7 +2229,13 @@ $$
 
 Remark 5.4.1.2. We note that, in describing the continuous left-translation action of $J_{F,S}$ on the target of $U_{S,\tau,\omega}$, it is understood that $J_{F,S}$ acts through the isomorphism $J_{F,S} \to \mathbf R_{>0} \times J^1_{F,S}$ induced by the choice of $\tau$.
 
-We could choose a holomorphic parametrization $\{\chi|\cdot|^s_{F,S}, (\chi, s) \in \widetilde{J^1_{F,S}} \times \mathbf C\}$ for the Riemann surface $\Omega(J_{F,S})$, where $\widetilde{J^1_{F,S}}$ is a choice of lift to $J_{F,S}$ for each continuous character $\omega$ of $J^1_{F,S}$, equivalently a choice of base point for each connected component of $\Omega(J_{F,S})$, and upon calling $x_0(\chi) \in \mathbf R$ the unique real number such that $\chi(\tau(t)) = t^{ix_0(\chi)}$ as smooth functions on $\mathbf R_{>0}$, for each $\chi \in \widetilde{J^1_{F,S}}$, then the composition of $U_{S,\tau,\omega}$ with the vertical translation on the complex half $s$-plane $\mathbf C_{>0}$ by $ix_0(\chi)$, and on the complex half $s$-plane $\mathbf C_{<1}$ by $-ix_0(\chi)$, is the operator sending $\Phi_{F,S,\chi|_{J^1_{F,S}}}(f)$ to $(Z_S(f, \chi|\cdot|^s_{F,S}), Z_S(\widehat f, \bar\chi|\cdot|^{1-s}_{F,S}))$.
+We could choose a holomorphic parametrization
+
+$$
+\{\chi|\cdot|^s_{F,S}, (\chi, s) \in \widetilde{J^1_{F,S}} \times \mathbf C\}
+$$
+
+for the Riemann surface $\Omega(J_{F,S})$, where $\widetilde{J^1_{F,S}}$ is a choice of lift to $J_{F,S}$ for each continuous character $\omega$ of $J^1_{F,S}$, equivalently a choice of base point for each connected component of $\Omega(J_{F,S})$, and upon calling $x_0(\chi) \in \mathbf R$ the unique real number such that $\chi(\tau(t)) = t^{ix_0(\chi)}$ as smooth functions on $\mathbf R_{>0}$, for each $\chi \in \widetilde{J^1_{F,S}}$, then the composition of $U_{S,\tau,\omega}$ with the vertical translation on the complex half $s$-plane $\mathbf C_{>0}$ by $ix_0(\chi)$, and on the complex half $s$-plane $\mathbf C_{<1}$ by $-ix_0(\chi)$, is the operator sending $\Phi_{F,S,\chi|_{J^1_{F,S}}}(f)$ to $(Z_S(f, \chi|\cdot|^s_{F,S}), Z_S(\widehat f, \bar\chi|\cdot|^{1-s}_{F,S}))$.
 
 The action of $g \in J_{F,S}$ described on $A\mathcal S(\mathbf C_{>0}) \times A\mathcal S(\mathbf C_{<1})$ in the statement of the Proposition, then matches the multiplication action by the pair of entire functions $(\chi(g)|g|^s_{F,S}, \bar\chi(g)|g|^{1-s}_{F,S})$.
 
@@ -2391,7 +2403,11 @@ $$
 \widetilde{\mathrm{PV}}_{S,S_f}(\phi(s), \psi(s)) := \left(\frac{\phi(s)}{\prod_{v\in S_f} L_v(\chi_v|\cdot|^{s}_v)}, \frac{\psi(s)}{\prod_{v\in S_f} L_v(\chi_v|\cdot|^{s}_v)}\right) \tag{5.4.1.10}
 $$
 
-We note that the Fourier transform of $\mathrm{PV}_{S,S_f}(f)$ indeed satisfies $Z_S(\mathcal F_S(\mathrm{PV}_{S,S_f}(f)), \overline{\chi}|\cdot|^{1-s}_{F,S}) = \prod_{v\in S_f} L_v(\chi_v|\cdot|^s_v)^{-1}Z_S(\widehat f, \overline{\chi}|\cdot|^{1-s}_{F,S})$.
+We note that the Fourier transform of $\mathrm{PV}_{S,S_f}(f)$ indeed satisfies
+
+$$
+Z_S(\mathcal F_S(\mathrm{PV}_{S,S_f}(f)), \overline{\chi}|\cdot|^{1-s}_{F,S}) = \prod_{v\in S_f} L_v(\chi_v|\cdot|^s_v)^{-1}Z_S(\widehat f, \overline{\chi}|\cdot|^{1-s}_{F,S}).
+$$
 
 This follows from the calculation:
 
@@ -2588,7 +2604,13 @@ $$
 M_{(\underline{n},\underline{p})} := \bigotimes_{v\in\Sigma_{F,r}} M_{x^{2n_v}_v} \otimes \bigotimes_{v\in\Sigma_{F,c}} M_{z^{p_v}_v\bar z^{p_v}_v} : \mathcal S(\mathbf A_{F,S_\infty}) \to \mathcal S(\mathbf A_{F,S_\infty}). \tag{5.4.1.23}
 $$
 
-We further define $M^S_{(\underline{n},\underline{p})} := M_{(\underline{n},\underline{p})} \otimes \bigotimes_{v\in S_f - S_\chi} 1_{\mathcal O^\times_{F_v}} \otimes \bigotimes_{v\in S_\chi} \omega^{-1}_v 1_{\mathcal O^\times_{F_v}} : \mathcal S(\mathbf A_{F,S_\infty}) \to \mathcal S(\mathbf A_{F,S_\infty}) \otimes \bigotimes_{v\in S_f} \mathcal S(F^\times_v)$ and, upon calling $f_\infty := \bigotimes_{v\in S_\infty}f_v$ for $f_v \in \mathcal S(F_v)$ the above choice of "self-dual" Schwartz-Bruhat function, the Schwartz-Bruhat functions on $\mathbf A_{F,S}$ obtained as $M^S_{(\underline{n}',\underline{p}')}(f_\infty)$ for each $(\underline{n}', \underline{p}') \le (\underline{n}, \underline{p})$, satisfy the desired spanning properties (see Proposition 5.3.3.4).
+We further define
+
+$$
+M^S_{(\underline{n},\underline{p})} := M_{(\underline{n},\underline{p})} \otimes \bigotimes_{v\in S_f - S_\chi} 1_{\mathcal O^\times_{F_v}} \otimes \bigotimes_{v\in S_\chi} \omega^{-1}_v 1_{\mathcal O^\times_{F_v}} : \mathcal S(\mathbf A_{F,S_\infty}) \to \mathcal S(\mathbf A_{F,S_\infty}) \otimes \bigotimes_{v\in S_f} \mathcal S(F^\times_v)
+$$
+
+and, upon calling $f_\infty := \bigotimes_{v\in S_\infty}f_v$ for $f_v \in \mathcal S(F_v)$ the above choice of "self-dual" Schwartz-Bruhat function, the Schwartz-Bruhat functions on $\mathbf A_{F,S}$ obtained as $M^S_{(\underline{n}',\underline{p}')}(f_\infty)$ for each $(\underline{n}', \underline{p}') \le (\underline{n}, \underline{p})$, satisfy the desired spanning properties (see Proposition 5.3.3.4).
 
 This proves that $\bar U_S$ is surjective, hence a linear topological isomorphism, which proves that the middle horizontal arrow in (5.4.1.21) is also a linear topological isomorphism. In turn, we proved that this suffices to show that $U_S$ from (5.4.1.2) is a linear topological isomorphism, finishing the proof of Theorem 5.4.1.1.
 
@@ -2646,7 +2668,13 @@ $$
 
 restricts to $\mathcal F_S$ from (5.4.2.3) on $\mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}})$.
 
-Proof. (1) : We choose a continuous homomorphic section $\tau : \mathbf R_{>0} \to J_{F,S}$ to the $S$-idelic norm, and we denote by $x_0$ the unique real number such that $\chi(\tau(t)) = t^{ix_0}$ as smooth functions of $t \in \mathbf R_{>0}$. For $\phi \in \mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}})$, the Fourier transform $\mathcal F(\phi)(x) = \int_{\mathbf R_{>0}} \phi(\tau(t))t^{ix}\,\frac{\mathrm{d}t}{t}$ extends to $M_I(\phi)(s) = \int_{\mathbf R_{>0}} \phi(\tau(t))t^s\,\frac{\mathrm{d}t}{t}$ by Theorem D.3.3.7 (see also Proposition D.3.2.5) for $\mathrm{Re}(s) \in I$, with $M(\phi)(s)$ holomorphic over $\mathbf C_I$ and Schwartz uniformly on every vertical strip of bounded width strictly contained within $\mathbf C_I$.
+Proof. (1) : We choose a continuous homomorphic section $\tau : \mathbf R_{>0} \to J_{F,S}$ to the $S$-idelic norm, and we denote by $x_0$ the unique real number such that $\chi(\tau(t)) = t^{ix_0}$ as smooth functions of $t \in \mathbf R_{>0}$. For $\phi \in \mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}})$, the Fourier transform
+
+$$
+\mathcal F(\phi)(x) = \int_{\mathbf R_{>0}} \phi(\tau(t))t^{ix}\,\frac{\mathrm{d}t}{t}
+$$
+
+extends to $M_I(\phi)(s) = \int_{\mathbf R_{>0}} \phi(\tau(t))t^s\,\frac{\mathrm{d}t}{t}$ by Theorem D.3.3.7 (see also Proposition D.3.2.5) for $\mathrm{Re}(s) \in I$, with $M(\phi)(s)$ holomorphic over $\mathbf C_I$ and Schwartz uniformly on every vertical strip of bounded width strictly contained within $\mathbf C_I$.
 
 We let $\{\phi_m\}_{m\ge 0} \in \mathcal D(J_{F,S})(\chi|_{J^1_{F,S}})$ be such that $\phi_m \to \phi$ in $\mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}})$, which is possible by Lemma D.3.6.1.
 
@@ -2676,7 +2704,13 @@ We define $\mathcal F_S(\phi)$ to be the limit in $\mathcal S_{1-I}(J_{F,S})(\ov
 
 (2) : Since $1/2 \in I$, for any $\phi \in \mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}})$ we have $|\cdot|^{1/2}_{F,S}\phi \in \mathcal S(J_{F,S})(\chi|_{J^1_{F,S}})$. In particular, $\phi \in L^2(J_{F,S}, |\cdot|_{F,S}\overline{\mu}_S)(\chi|_{J^1_{F,S}})$.
 
-Since $|\cdot|^{1/2}_{F,S}\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}}, \mathcal S(\mathbf A_{F,S})) \subset L^2(J_{F,S}, \overline{\mu}_S)$ is dense, since it contains $C^\infty_c(J_{F,S})$, we deduce that the continuous linear inclusion $|\cdot|^{1/2}_{F,S}\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}}, \mathcal S(\mathbf A_{F,S})) \subset L^2(J_{F,S}, |\cdot|_{F,S}\overline{\mu}_S)(\chi|_{J^1_{F,S}})$ extends by continuity to a linear topological embedding $L^2\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}}, \mathcal S(\mathbf A_{F,S})) \to L^2(J_{F,S}, |\cdot|_{F,S}\overline{\mu}_S)(\chi|_{J^1_{F,S}})$ with dense range, hence a linear topological isomorphism between Hilbert spaces (in fact, up to pre-composing by $c_S\mathrm{Id}$, a surjective isometry).
+Since $|\cdot|^{1/2}_{F,S}\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}}, \mathcal S(\mathbf A_{F,S})) \subset L^2(J_{F,S}, \overline{\mu}_S)$ is dense, since it contains $C^\infty_c(J_{F,S})$, we deduce that the continuous linear inclusion $|\cdot|^{1/2}_{F,S}\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}}, \mathcal S(\mathbf A_{F,S})) \subset L^2(J_{F,S}, |\cdot|_{F,S}\overline{\mu}_S)(\chi|_{J^1_{F,S}})$ extends by continuity to a linear topological embedding
+
+$$
+L^2\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}}, \mathcal S(\mathbf A_{F,S})) \to L^2(J_{F,S}, |\cdot|_{F,S}\overline{\mu}_S)(\chi|_{J^1_{F,S}})
+$$
+
+with dense range, hence a linear topological isomorphism between Hilbert spaces (in fact, up to pre-composing by $c_S\mathrm{Id}$, a surjective isometry).
 
 We deduce that the injective continuous linear operator $\mathcal S_I(J_{F,S})(\chi|_{J^1_{F,S}}) \to L^2(J_{F,S}, |\cdot|_{F,S}\overline{\mu}_S)(\chi|_{J^1_{F,S}})$ factors through $L^2\mathrm H_{0,\mathrm{cont}}(\chi|_{J^1_{F,S}}, \mathcal S(\mathbf A_{F,S}))$. By (1), the result follows upon observing that $\mathcal F_S$ on $L^2\mathrm H_{0,\mathrm{cont}}(\mathcal O^\times_{F,S}, \mathcal S(\mathbf A_{F,S}))$ restricts to $\mathcal F_S$ on $\mathrm H_{0,\mathrm{cont}}(\mathcal O^\times_{F,S}, \mathcal S(\mathbf A_{F,S}))$. $\square$
 
