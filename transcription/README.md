@@ -35,11 +35,27 @@ the physical PDF page markers kept (`## PDF page N`; printed page number = PDF p
 **Not verified:** a symbol-by-symbol reading of every page by a person. The page-by-page review was
 done by AI models, not by a person, and reviewers can miss things. About 3% of the
 PDF's math glyphs do not align one-to-one with the transcription; most of those differences are
-harmless (reading order of limits and fractions, words set in math, footnote numbers), and the
-larger ones were checked (every run of 3 or more such glyphs outside the diagrams was looked at:
-they are differences in reading order and tokenization, not in the formulas). Expect some remaining
-errors of the kinds listed in `CHANGELOG.md`, and check any formula you formalize against the page
-image. Prose typography is collapsed except for italic paragraphs and italic section titles, which
+harmless (reading order of limits and fractions, words set in math, footnote numbers). Every
+difference of one to three glyphs, at any level, and every run of three or more was looked at on the
+page image (see `CHANGELOG.md` §10).
+
+**How reliable it is.** Outside the diagrams, the formulas have been compared with the PDF glyph by
+glyph in several independent ways: the symbol counts on every page, the size and height of every
+glyph, the alphabet of every letter, the limits of every operator, every arrow, accent and bar, and
+every cross-reference number. Each kind of error found was then searched for on every page. After
+the last corrections, 236 formulas drawn at random were compared by eye with the page image and all
+were right. That bounds the error rate at about 1.3% per formula (95% confidence); the exhaustive
+checks above suggest it is well below that. What could plausibly still be wrong:
+
+- a symbol inside a **diagram label**: the 88 diagrams are outside the glyph-by-glyph checks (they
+  were compared with the page image twice, and the side of every label was checked against the
+  PDF);
+- a difference that keeps every glyph, its size and its height, and changes only the grouping, such
+  as which of two formulas an exponent belongs to when both render the same;
+- the paper's own **misprints**, which are kept as printed on purpose (a formula can be wrong
+  because the paper is).
+
+Check any formula you formalize against the page image. Prose typography is collapsed except for italic paragraphs and italic section titles, which
 follow the print; the four contour figures (pp. 596, 602, 605, 798) are redrawn in TikZ.
 
 Run the checks yourself (from the repository root, needs `pip install pymupdf`):
