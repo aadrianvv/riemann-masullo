@@ -128,34 +128,30 @@ LEMMA B.1.1.1. *Let $a,b\in\mathbf{R}$ be real numbers, $a<b$, $f:\mathbf{C}_{>a
 
 *(2) There exists a real number $\xi>0$ such that*
 
-(B.1.1.1)
 $$
-f(\sigma+it)\ll\lvert t\rvert^{\xi}
+f(\sigma+it)\ll\lvert t\rvert^{\xi} \tag{B.1.1.1}
 $$
 
 *as $\lvert t\rvert\to+\infty$, uniformly with respect to $\sigma>a$.*
 
 *Then for every $\sigma_1<\sigma_2\in(a,+\infty)$ the function*
 
-(B.1.1.2)
 $$
-\mu(\sigma):=\inf\{k\in\mathbf{R}_{\ge 0}:f(\sigma+it)\ll\lvert t\rvert^k\text{ as }\lvert t\rvert\to\infty\}<\infty
+\mu(\sigma):=\inf\{k\in\mathbf{R}_{\ge 0}:f(\sigma+it)\ll\lvert t\rvert^k\text{ as }\lvert t\rvert\to\infty\}<\infty \tag{B.1.1.2}
 $$
 
 *satisfies*
 
-(B.1.1.3)
 $$
-\mu(\sigma)\le t\mu(\sigma_2)+(1-t)\mu(\sigma_1)
+\mu(\sigma)\le t\mu(\sigma_2)+(1-t)\mu(\sigma_1) \tag{B.1.1.3}
 $$
 
 *for every $t\in[0,1]$ and $\sigma:=t\sigma_2+(1-t)\sigma_1\in[\sigma_1,\sigma_2]$. Moreover, $\mu$ is continuous as a function $(a,+\infty)\to\mathbf{R}_{\ge 0}$ and for all $\varepsilon>0$ we have $f(\sigma+it)=O_{\varepsilon,\sigma_1,\sigma_2}(\lvert t\rvert^{\mu(\sigma)+\varepsilon})$ as $\lvert t\rvert\to\infty$ uniformly in $\sigma\in[\sigma_1,\sigma_2]$.*
 
 PROOF. Let $s_1,\dots,s_N$ be the poles of $f$. We consider the function
 
-(B.1.1.4)
 $$
-g(s):=\prod_{1\le k\le N}(s-s_k)f(s)
+g(s):=\prod_{1\le k\le N}(s-s_k)f(s) \tag{B.1.1.4}
 $$
 
 that is a holomorphic function over $\mathbf{C}_{>a}$ by assumption (1). We call $\mu_g$ the $\mu$-function of $g$, which is defined (and finite) by assumption (2).
@@ -186,16 +182,14 @@ $$
 
 from which we deduce $\mu_g(\sigma)\le k_{\varepsilon}(\sigma)$ for all $\sigma\in[\sigma_1,\sigma_2]$. Since $\varepsilon>0$ is arbitrary, we may let $\varepsilon\to 0^+$ to obtain:
 
-(B.1.1.5)
 $$
-\mu(\sigma)+N=\mu_g(\sigma)\le\lim_{\varepsilon\to 0^+}k_{\varepsilon}(\sigma)=\frac{(\sigma_2-\sigma)\mu(\sigma_1)+(\sigma-\sigma_1)\mu(\sigma_2)}{\sigma_2-\sigma_1}+N
+\mu(\sigma)+N=\mu_g(\sigma)\le\lim_{\varepsilon\to 0^+}k_{\varepsilon}(\sigma)=\frac{(\sigma_2-\sigma)\mu(\sigma_1)+(\sigma-\sigma_1)\mu(\sigma_2)}{\sigma_2-\sigma_1}+N \tag{B.1.1.5}
 $$
 
 which gives
 
-(B.1.1.6)
 $$
-\mu(\sigma)\le\frac{(\sigma_2-\sigma)\mu(\sigma_1)+(\sigma-\sigma_1)\mu(\sigma_2)}{\sigma_2-\sigma_1}.
+\mu(\sigma)\le\frac{(\sigma_2-\sigma)\mu(\sigma_1)+(\sigma-\sigma_1)\mu(\sigma_2)}{\sigma_2-\sigma_1}. \tag{B.1.1.6}
 $$
 
 Upon calling $t:=(\sigma-\sigma_1)/(\sigma_2-\sigma_1)$ in (B.1.1.6), we see that (B.1.1.3) holds. Continuity of $\mu$ follows from (B.1.1.3) by [T1, Ch. V, §5.31].
@@ -210,41 +204,36 @@ In light of Lemma B.1.1.2, the function $\mu$ is defined for every Hecke $L$-fun
 
 Recall that the function $\gamma(\chi,s)$ defined in (3.2.1.3) is a product of $\Gamma$-functions of the form
 
-(B.1.1.7)
 $$
-L(\lvert\cdot\rvert_v^s):=\pi^{-s/2}\Gamma(s/2),\; L(\mathrm{sgn}\lvert\cdot\rvert_v^s)=\pi^{-(s+1)/2}\Gamma\left(\frac{s+1}{2}\right)
+L(\lvert\cdot\rvert_v^s):=\pi^{-s/2}\Gamma(s/2),\; L(\mathrm{sgn}\lvert\cdot\rvert_v^s)=\pi^{-(s+1)/2}\Gamma\left(\frac{s+1}{2}\right) \tag{B.1.1.7}
 $$
 
 for $v$ real and $\chi_v=1$, respectively $\chi_v=\mathrm{sgn}$, and
 
-(B.1.1.8)
 $$
-L(\chi_v\lvert\cdot\rvert_v^s):=(2\pi)^{-(s+\frac{\lvert n\rvert}{2})}\Gamma\left(s+\frac{\lvert n\rvert}{2}\right)
+L(\chi_v\lvert\cdot\rvert_v^s):=(2\pi)^{-(s+\frac{\lvert n\rvert}{2})}\Gamma\left(s+\frac{\lvert n\rvert}{2}\right) \tag{B.1.1.8}
 $$
 
 for $v$ complex and $\chi_v\lvert\cdot\rvert_v^s=\chi_{n,s}$, the continuous quasi-character character of $\mathbf{C}^{\times}$ defined as $(r,\theta)\mapsto r^s e^{in\theta}$. On $\mathbf{C}_{>0}$ the function $\gamma(\chi,s)$ is holomorphic and nowhere vanishing.
 
 In light of Proposition 3.2.1.3 and (3.2.1.8)-(3.2.1.10), the finite Hecke $L$-function $L_f(s,\chi)$ extends to a meromorphic function on the complex $s$-plane and satisfies the functional equation
 
-(B.1.1.9)
 $$
-L_f(s,\chi)=W(s,\chi)L_f(1-s,\chi^{-1}).
+L_f(s,\chi)=W(s,\chi)L_f(1-s,\chi^{-1}). \tag{B.1.1.9}
 $$
 
 where for $a,b\in\mathbf{R}$ with $a<b$ fixed arbitrary real numbers we have
 
-(B.1.1.10)
 $$
-\lvert W(s,\chi)\rvert\ll_{a,b}\lvert t\rvert^{[F:\mathbf{Q}](\frac12-\sigma)}
+\lvert W(s,\chi)\rvert\ll_{a,b}\lvert t\rvert^{[F:\mathbf{Q}](\frac12-\sigma)} \tag{B.1.1.10}
 $$
 
 uniformly as $s=\sigma+it$ satisfies $\lvert t\rvert\to+\infty$ with $\sigma\in[a,b]$.
 
 Up to a constant multiplier $W(\chi)$ of absolute value 1 (see [Neu, Ch. VII, Thm. 8.5]), the function $W(s,\chi)$ is equal to
 
-(B.1.1.11)
 $$
-\lvert d_F\rvert^{\frac12-s}\frac{N(\mathfrak{f}_{\overline{\chi}})^{\frac{1-s}{2}}}{N(\mathfrak{f}_{\chi})^{\frac{s}{2}}}\frac{\gamma(\overline{\chi},1-s)}{\gamma(\chi,s)}
+\lvert d_F\rvert^{\frac12-s}\frac{N(\mathfrak{f}_{\overline{\chi}})^{\frac{1-s}{2}}}{N(\mathfrak{f}_{\chi})^{\frac{s}{2}}}\frac{\gamma(\overline{\chi},1-s)}{\gamma(\chi,s)} \tag{B.1.1.11}
 $$
 
 ## PDF page 591
@@ -1763,10 +1752,8 @@ B.4.2.4. *Explicit Formulas for Hecke $L$-functions.* We can now collect the res
 
 THEOREM B.4.2.2 (Explicit Formulas for Hecke $L$-functions). *Let $F$ be a number field, $\chi \in \widehat{C_F}$ a continuous character, $\phi \in \mathcal{S}(\mathbf{R})$ a Schwartz function with exponential decay, $\Phi(s) := M(\phi)(s)$ its Mellin transform. The following identity holds:*
 
-(B.4.2.17)
-
 $$
--\Phi(-1/2) - \Phi(1/2) + \sum_{\rho:L(\rho,\chi)=0} \Phi(\rho-1/2) = \phi(1)\log(A_\chi)
+-\Phi(-1/2) - \Phi(1/2) + \sum_{\rho:L(\rho,\chi)=0} \Phi(\rho-1/2) = \phi(1)\log(A_\chi) \tag{B.4.2.17}
 $$
 
 $$
@@ -1857,10 +1844,8 @@ $$
 
 We compute
 
-(B.4.3.8)
-
 $$
-\langle J_v,|g|_v\rho_v(g^{-1},\widehat{f})\rangle_{\mathcal{S}(F_v),\mathcal{S}(F_v)'} = |g|_v\int_{F_v} \widehat{f}(gx)\frac{\log|x|_v}{\log(q_v)}\,\mathrm{d}\nu_v(x) = \int_{F_v} \widehat{f}(x)\frac{\log|x|_v}{\log(q_v)}\,\mathrm{d}\nu_v(x) - \frac{\log|g|_v}{\log(q_v)}f(0)
+\langle J_v,|g|_v\rho_v(g^{-1},\widehat{f})\rangle_{\mathcal{S}(F_v),\mathcal{S}(F_v)'} = |g|_v\int_{F_v} \widehat{f}(gx)\frac{\log|x|_v}{\log(q_v)}\,\mathrm{d}\nu_v(x) = \int_{F_v} \widehat{f}(x)\frac{\log|x|_v}{\log(q_v)}\,\mathrm{d}\nu_v(x) - \frac{\log|g|_v}{\log(q_v)}f(0) \tag{B.4.3.8}
 $$
 
 for all $g \in F_v^\times$, so the left side of (B.4.3.7) equals
@@ -1887,10 +1872,8 @@ $$
 
 We write $1_{\mathcal{O}_{F_v}^\times} = 1_{\mathcal{O}_{F_v}} - \rho_v(\pi_v,1_{\mathcal{O}_{F_v}})$ and from (B.4.3.4) we obtain
 
-(B.4.3.10)
-
 $$
-\langle\widehat{J_v},1_{\mathcal{O}_{F_v}^\times}\rangle_{\mathcal{S}(F_v),\mathcal{S}(F_v)'} = \langle\widehat{J_v},1_{\mathcal{O}_{F_v}} - \rho_v(\pi_v,1_{\mathcal{O}_{F_v}})\rangle_{\mathcal{S}(F_v),\mathcal{S}(F_v)'} = \langle\widehat{J_v},1_{\mathcal{O}_{F_v}}\rangle_{\mathcal{S}(F_v),\mathcal{S}(F_v)'} - \langle\widehat{J_v},1_{\mathcal{O}_{F_v}}\rangle_{\mathcal{S}(F_v),\mathcal{S}(F_v)'} - 1
+\langle\widehat{J_v},1_{\mathcal{O}_{F_v}^\times}\rangle_{\mathcal{S}(F_v),\mathcal{S}(F_v)'} = \langle\widehat{J_v},1_{\mathcal{O}_{F_v}} - \rho_v(\pi_v,1_{\mathcal{O}_{F_v}})\rangle_{\mathcal{S}(F_v),\mathcal{S}(F_v)'} = \langle\widehat{J_v},1_{\mathcal{O}_{F_v}}\rangle_{\mathcal{S}(F_v),\mathcal{S}(F_v)'} - \langle\widehat{J_v},1_{\mathcal{O}_{F_v}}\rangle_{\mathcal{S}(F_v),\mathcal{S}(F_v)'} - 1 \tag{B.4.3.10}
 $$
 
 which reads:
@@ -2113,10 +2096,8 @@ $$
 
 PROOF. (1) : The Lemma follows from (B.4.3.4) from Proposition B.4.3.1, as we now explain. The measure $|x_v|_v^{1/2}\nu_v$ is self-dual relative to the choice of character $\alpha$ (by Plancherel's Theorem), using [**CF**, Ch. XV, Ch. 4, §4.1, Thm. 4.1.2]. Thus,
 
-(B.4.4.12)
-
 $$
-\mathrm{C}_\alpha\int_{F_v^\times} f(g)\,\mathrm{d}\mu_v(g) = \mu_v(\mathcal{O}_{F_v}^\times)\int_{F_v} \left\{\frac{-\log|y|_v}{\log(q_v)}\int_{F_v} f(u)\overline{\alpha}(uy)\,(|x_v|_v^{1/2}\,\mathrm{d}\nu_v(u))\right\}(|x_v|_v^{1/2}\,\mathrm{d}\nu_v(y))
+\mathrm{C}_\alpha\int_{F_v^\times} f(g)\,\mathrm{d}\mu_v(g) = \mu_v(\mathcal{O}_{F_v}^\times)\int_{F_v} \left\{\frac{-\log|y|_v}{\log(q_v)}\int_{F_v} f(u)\overline{\alpha}(uy)\,(|x_v|_v^{1/2}\,\mathrm{d}\nu_v(u))\right\}(|x_v|_v^{1/2}\,\mathrm{d}\nu_v(y)) \tag{B.4.4.12}
 $$
 
 $$
@@ -2189,10 +2170,8 @@ B.4.4.4. *Reformulation of Weil's Explicit Formulas.* We can now rewrite Weil's 
 
 THEOREM B.4.4.7 (Idelic Explicit Formulas). *Let $F$ be a number field. For every $\varphi \in \mathcal{D}(C_F)$, the sums on each side of the identity:*
 
-(B.4.4.16)
-
 $$
-\sum_{c\in\Omega(C_F):L(c)=0} \frac{1}{\overline{\mu}_1(C_F^1)}\int_{C_F} \varphi(g)c(g)|g|_F^{-1/2}\,\mathrm{d}\overline{\mu}(g) = \frac{1}{\overline{\mu}_1(C_F^1)}\int_{C_F} \varphi(g)|g|_F^{-1/2}\,\mathrm{d}\overline{\mu}(g) + \frac{1}{\overline{\mu}_1(C_F^1)}\int_{C_F} \varphi(g)|g|_F^{1/2}\,\mathrm{d}\overline{\mu}(g)
+\sum_{c\in\Omega(C_F):L(c)=0} \frac{1}{\overline{\mu}_1(C_F^1)}\int_{C_F} \varphi(g)c(g)|g|_F^{-1/2}\,\mathrm{d}\overline{\mu}(g) = \frac{1}{\overline{\mu}_1(C_F^1)}\int_{C_F} \varphi(g)|g|_F^{-1/2}\,\mathrm{d}\overline{\mu}(g) + \frac{1}{\overline{\mu}_1(C_F^1)}\int_{C_F} \varphi(g)|g|_F^{1/2}\,\mathrm{d}\overline{\mu}(g) \tag{B.4.4.16}
 $$
 
 $$
@@ -3098,11 +3077,7 @@ $$
 and define the two circle
 
 $$
-\gamma_1(T):=\{s\in\mathbf C:|s-s_0|=2\alpha\eta(T)\}, \tag{B.6.1.18}
-$$
-
-$$
-\gamma_2(T):=\left\{s\in\mathbf C:|s-s_0|=\frac{1+3\alpha}{2}\eta(T)\right\}.
+\gamma_1(T):=\{s\in\mathbf C:|s-s_0|=2\alpha\eta(T)\},\quad \gamma_2(T):=\left\{s\in\mathbf C:|s-s_0|=\frac{1+3\alpha}{2}\eta(T)\right\}. \tag{B.6.1.18}
 $$
 
 The two circles $\gamma_1(T),\gamma_2(T)$, whose radii we call $r_1(T)<r_2(T)<1$, are the same as in the proof of [Ingh3, Thm. 20, p. 62] (see [Ingh3, Thm. 20, Fig. 4, p. 61]), they share the same center $s_0$ defined in (B.6.1.17), and $\gamma_1(T)$ is enclosed within $\gamma_2(T)$.

@@ -343,3 +343,9 @@ From the maintainers' spot check in #2471 and the checks it suggested.
   left to right, with the print, to catch two nodes or labels swapped. Every diagram whose rows
   did not match exactly (pages with several diagrams, mostly) was compared with the page image
   again: none has a node or label in the wrong place.
+- **Equation numbers on the right formula.** For every equation number printed in the margin, the
+  formula on that line of the PDF was located in the transcription and checked to carry that
+  `\tag`. All do. Two numbered displays that hold two formulas on one line in the print had been
+  split into two displays (pp. 507, 639): each is one display again, with its number. 140 equation
+  numbers that had been written as a line of text above the display, `(D.1.4.15)`, are now
+  `\tag{D.1.4.15}` like the other 2,300; numbers of diagrams stay as text above the diagram.
