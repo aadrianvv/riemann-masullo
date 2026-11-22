@@ -194,3 +194,53 @@ From the maintainers' spot check in #2471 and the checks it suggested.
   proofs on pp. 258–263, 796–800 and elsewhere) are not. 98.7% of paragraphs now agree with the
   print; the rest mix italic and upright. Literal `(*)` in citations is escaped as `(\*)`.
 
+
+## 10. Follow-up checks
+
+- **More displayed formulas.** A looser search for run-in displays, with every candidate checked on
+  the page image, found 18 more: pp. 328, 334, 340, 363, 371, 422, 443, 446, 476 (two), 543, 549,
+  553 (two), 637, 638, 728, 873.
+- **More italic paragraphs.** Theorems whose numbers start with a letter (THEOREM A.5.1.3, Lemma
+  D.3.6.1, …) had been skipped by the italics pass: 12 more statements are now in `*…*`. 8 more
+  paragraphs that were in `*…*` but are upright in the print, mostly definitions (pp. 542, 593,
+  600, 619, 685, 704), are not. 98.9% of paragraphs now agree with the print.
+- **Unaligned math glyphs.** Every run of 3 or more PDF math glyphs that does not align with the
+  transcription, outside the diagrams, was looked at. Apart from the display on p. 873, they are
+  differences in how the glyphs are read, not in the formulas: words set in math ("for all",
+  "holomorphic over"), `\varinjlim`/`\varprojlim`, limits and subscripts read in a different order,
+  footnote numbers, and figure labels.
+- **Small accents.** The print uses only the wide accents (`\widehat`, `\widetilde`, from the CMEX
+  font; it has no CMR accent glyph at all). 244 `\hat` and 163 `\tilde` are now `\widehat` and
+  `\widetilde`; with this, the number of hats and of tildes on every page matches the PDF, apart
+  from accents inside diagrams.
+- **Hat or tilde over a subscripted symbol.** TeX picks the widest accent that fits what it covers,
+  so the size of the printed hat (small, medium or large CMEX glyph) tells whether it covers the
+  letter alone or the letter with its subscript. Each of the 680 accents over a one-letter base
+  with a subscript was paired with its PDF glyph: 495 agree with the transcription, 167 cannot be
+  told apart this way (both readings give the same hat), and the 5 that disagreed were looked at
+  on the page image: 2 are fixed (`\widehat{F}_v`, p. 619), the other 3 (pp. 391, 558) are right
+  as they are.
+- **Section titles.** Sub-subsection titles (four-part numbers such as 9.3.3.2 or B.5.3.4) are
+  italic in the print: 40 that were upright and 39 that were bold are now `*…*`, like the other
+  132. One statement on p. 493 that the print italicizes after a colon is marked too.
+- **Figures.** The four contour figures (pp. 596, 602, 605, 798) are redrawn as TikZ pictures, with
+  the points, labels and direction of every edge as printed, instead of a placeholder;
+  `tools/diagrams.py` now compiles them with the diagrams (88 blocks).
+- **Accents in diagrams.** With the diagram blocks included, the number of hats and of tildes
+  matches the PDF on every page.
+- **Second random sample.** 50 tagged equations drawn at random from the 2,261 (seed 20261122)
+  after all the corrections above, each compiled and compared with the page image symbol by
+  symbol: 49 exact. The wrong one, (9.2.1.15) p. 407, had `|\phi(t)(\log t)^k|^2` where the print
+  has no square: a misprint of the paper silently "corrected" in the transcription, now as
+  printed. One displayed formula ((B.4.4.9), p. 621) had its tag on the second line instead of the
+  first. Read this as a residual error rate of about 2% per equation (95% interval roughly
+  0.05–11%).
+- **What the sample suggested.** The glyph alignment never flagged a single extra or missing glyph
+  (it only reports substitutions), which is how the square in (9.2.1.15) got through. All
+  one- and two-glyph insertions and deletions in the alignment were therefore listed and those
+  in sub- and superscripts and the operators (−, +, ′, ×, ⊂, …) were reviewed: apart from
+  (9.2.1.15), they are reading order, `≠`/`∉` read as `=`/`∈`, footnote numbers and numbers set
+  in text, except `S\setminus S_0` for the printed `S-S_0` (p. 242), now fixed. Tags on the
+  continuation line of a multi-line display were also listed: two more ((B.4.2.4) p. 615,
+  (B.4.4.8) p. 621), now on the first line as printed.
+

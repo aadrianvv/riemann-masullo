@@ -2220,7 +2220,13 @@ Lemma E.3.2.3. *Let $S_0$ be a set of compactly generated weakly Hausdorff topol
 
 *(1) $S_0$ is contained in $V_{\alpha}$.*
 
-*(2) For any $\alpha$-small space $X$ and any compactly generated weakly Hausdorff topological space $Y$ with $\mathrm{size}(Y)\le\mathrm{Bound}(\mathrm{size}(X))$ (see (E.3.1.1)) there exists an $\alpha$-small space $X'$ and a homeomorphism $X'\to Y$.*
+*(2) For any $\alpha$-small space $X$ and any compactly generated weakly Hausdorff topological space $Y$ with*
+
+$$
+\mathrm{size}(Y)\le\mathrm{Bound}(\mathrm{size}(X))
+$$
+
+*(see (E.3.1.1)) there exists an $\alpha$-small space $X'$ and a homeomorphism $X'\to Y$.*
 
 *(3) $\nu$-small limits and colimits are representable in $\mathbf{CGWH}_{\alpha}$ and the forgetful functor to $\mathbf{CGWH}$ preserves them.*
 

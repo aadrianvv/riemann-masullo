@@ -28,16 +28,17 @@ the physical PDF page markers kept (`## PDF page N`; printed page number = PDF p
 | ∅ shapes | every empty-set glyph of the PDF, by font | `\varnothing` and `\emptyset` as printed, same count on every page |
 | Commutative diagrams | all 84 `latex` blocks | compared with the page image at 200 dpi; every block compiles with pdflatex + tikz-cd (`tools/diagrams.py`) |
 | Page-by-page visual review | all 940 pages | every page read against its image at 200–300 dpi by AI reviewers (Claude, and Gemini on 485 pages; 420 pages read by both); ≈ 1,030 corrections on 354 pages, then all the checks above run again |
-| Random sample | 45 tagged equations drawn at random (before the visual review) | 43 exact, 2 wrong (now corrected): read this as a residual error rate of a few percent per equation (95% interval roughly 1–15%) |
+| Random sample | 45 tagged equations drawn at random before the visual review (43 exact), and 50 more drawn after all corrections, each compiled and compared with the page image | second sample: 49 exact, the wrong one (an extra square) corrected; read this as a residual error rate of about 2% per equation (95% interval roughly 0.05–11%) |
 
 **Not verified:** a symbol-by-symbol reading of every page by a person. The page-by-page review was
 done by AI models, not by a person, and reviewers can miss things. About 3% of the
 PDF's math glyphs do not align one-to-one with the transcription; most of those differences are
 harmless (reading order of limits and fractions, words set in math, footnote numbers), and the
-larger ones were checked, but not every small one was. Expect some remaining errors of the kinds
-listed in `CHANGELOG.md`, and check any formula you formalize against the page image. Text
-typography (bold/italic/small caps in prose) is collapsed; the four contour figures (pp. 596, 602,
-605, 798) are not reproduced.
+larger ones were checked (every run of 3 or more such glyphs outside the diagrams was looked at:
+they are differences in reading order and tokenization, not in the formulas). Expect some remaining
+errors of the kinds listed in `CHANGELOG.md`, and check any formula you formalize against the page
+image. Prose typography is collapsed except for italic paragraphs and italic section titles, which
+follow the print; the four contour figures (pp. 596, 602, 605, 798) are redrawn in TikZ.
 
 Run the checks yourself (from the repository root, needs `pip install pymupdf`):
 
@@ -91,8 +92,9 @@ Recurring symbols, for orientation: `G^1` is the kernel of the module (superscri
   compile with pdflatex and tikz-cd (`tools/diagrams.py`): brace a label that contains a comma
   (`"{(a,b)}"`) and wrap a cell that starts with `[` in braces (`{[X/G]}`). GitHub does not render
   `tikzcd`; read the source, compile it, or look at the PDF.
-- **Figures** (the contour pictures on pp. 596, 602, 605, 798) are replaced by
-  `*[Figure not reproduced; see the PDF, p. N. Labels in the figure: …]*`.
+- **Figures** (the contour pictures on pp. 596, 602, 605, 798) are redrawn as `tikzpicture` blocks
+  (points, labels and the direction of each edge as printed), after the line
+  `*[Figure, redrawn from the PDF, p. N:]*`.
 - **Footnotes** are written `$^{n}$text` at the end of the page on which they are printed; the
   marker in the text is `$^{n}$` (separated from a preceding formula by one space).
 - A sentence that runs across a page break is split at the break.

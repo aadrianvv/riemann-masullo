@@ -102,9 +102,21 @@ $$
 
 Remark 11.1.1.3. We note that the orbit of the Borel set $Z \subset \mathrm{GL}_1(\mathbf A_F)$ under the free and proper left-translation action of $F^\times$ on $\mathrm{GL}_1(\mathbf A_F)$ from Proposition 11.1.1.2, is also a Borel set, since $F^\times Z$ is a countable union of Borel sets.
 
-*Proof.* (1) : We let $g \in Z$ be fixed, and we denote by $\delta_{\{g\}}$ the finite, positive Radon measure on $\mathrm{GL}_1(\mathbf A_F)$ determined under [Fol, Thm.7.2] by the assignment of the functional $\delta_{\{g\}} : C_c(\mathrm{GL}_1(\mathbf A_F)) \to \mathbf C$ defined by $\delta_{\{g\}}(f) := f(g)$.
+*Proof.* (1) : We let $g \in Z$ be fixed, and we denote by $\delta_{\{g\}}$ the finite, positive Radon measure on $\mathrm{GL}_1(\mathbf A_F)$ determined under [Fol, Thm.7.2] by the assignment of the functional
 
-Since the continuous action of $F^\times$ on $\mathrm{GL}_1(\mathbf A_F)$ by left-translation is free and discrete, the orbit $F^\times g = \{\xi g\}_{\xi \in F^\times}$ is a discrete subset of $\mathrm{GL}_1(\mathbf A_F)$. We endow it with the following Radon measure. We consider the $\mathbf C$-linear space $C_c(F^\times g)$ of continuous compactly supported functions, and define: $\Delta_{\{g\}} : C_c(F^\times g) \to \mathbf C$ by $\Delta_{\{g\}}(\varphi) := \sum_{\xi \in F^\times} \varphi(\xi g)$. By [Fol, Thm.7.2], $\Delta_{\{g\}}$ determines a unique complex Radon measure on $F^\times g$, which we denote $\mu_g$. The Radon measure $\mu_g$ is real, positive, and it agrees with the counting measure on $F^\times g$ by uniqueness (see [Bou-II, INT VII.31, §2, Prop.4(a)], applied to $X = F^\times g$ endowed with the discrete topology, $H = F^\times$ as a discrete topological group acting freely and properly on $X$ by left-translation), since it is $F^\times$-invariant (in the sense of [Bou-II, INT VII.2, §1, Def.1(a)]).
+$$
+\delta_{\{g\}} : C_c(\mathrm{GL}_1(\mathbf A_F)) \to \mathbf C
+$$
+
+defined by $\delta_{\{g\}}(f) := f(g)$.
+
+Since the continuous action of $F^\times$ on $\mathrm{GL}_1(\mathbf A_F)$ by left-translation is free and discrete, the orbit $F^\times g = \{\xi g\}_{\xi \in F^\times}$ is a discrete subset of $\mathrm{GL}_1(\mathbf A_F)$. We endow it with the following Radon measure. We consider the $\mathbf C$-linear space $C_c(F^\times g)$ of continuous compactly supported functions, and define:
+
+$$
+\Delta_{\{g\}} : C_c(F^\times g) \to \mathbf C
+$$
+
+by $\Delta_{\{g\}}(\varphi) := \sum_{\xi \in F^\times} \varphi(\xi g)$. By [Fol, Thm.7.2], $\Delta_{\{g\}}$ determines a unique complex Radon measure on $F^\times g$, which we denote $\mu_g$. The Radon measure $\mu_g$ is real, positive, and it agrees with the counting measure on $F^\times g$ by uniqueness (see [Bou-II, INT VII.31, §2, Prop.4(a)], applied to $X = F^\times g$ endowed with the discrete topology, $H = F^\times$ as a discrete topological group acting freely and properly on $X$ by left-translation), since it is $F^\times$-invariant (in the sense of [Bou-II, INT VII.2, §1, Def.1(a)]).
 
 ## PDF page 477
 
@@ -320,7 +332,7 @@ $$
 \rho(g) \sum_{\xi \in F^\times} (f \otimes \prod_{v\notin S} 1_{\mathcal O_{F_v}^\times})(\xi g) \tag{11.1.2.7}
 $$
 
-*for $f \in \mathcal S(\mathbf A_{F,S}) \cap \ker(\delta_0) \cap \ker(\hat\delta_0)$.*
+*for $f \in \mathcal S(\mathbf A_{F,S}) \cap \ker(\delta_0) \cap \ker(\widehat\delta_0)$.*
 
 Remark 11.1.2.2. We recall that a cofinal sequence $\{S_k\}_{k\ge 0} \subset I_S$ consists of the datum of a sequence $\{S_k\}_{k\ge 0} \subset I_S$, i.e. with each $S_k$ a finite subset of finite places of $F$, such that $S_k \subset S_{k+1}$ for each integer $k \ge 0$, and $\bigcup_{k\ge 0} S_k = \Sigma_F - S$.
 
@@ -955,7 +967,7 @@ Let $p$ be a prime number such that $\chi$ is unramified at every finite place o
 
 **11.3.1. Calculation of the Orbital Kernels by global to $S$-local degeneration on the orbital basis elements.**
 
-**11.3.1.1. Divisorial stratification of the ideles.** The next step now is to split $k_{\mathrm{geom},I,\varphi}(x,y)$ into an infinite sum of pieces indexed by the places of $F$:
+11.3.1.1. *Divisorial stratification of the ideles.* The next step now is to split $k_{\mathrm{geom},I,\varphi}(x,y)$ into an infinite sum of pieces indexed by the places of $F$:
 
 $$
 k_{\mathrm{geom},I,\varphi}(x,y)=k_{S,\varphi}(x,y)+\sum_{p\nmid S}k_{p,\varphi}(x,y)
@@ -1083,7 +1095,7 @@ and hence multiplication by $\alpha_k$ replaces the Zeta function of $f$ with th
 
 We call such multiplication process “restriction” from one stratum to the next, of the primary divisorial filtration.
 
-In particular, and this is the main observation of this subsection: the $(k+1)$st iteration of the restriction to the strata of the primary divisorial filtration is obtained from the $k$th, on the forward side of the Mellin transform, by multiplication by
+In particular, and this is the main observation of this subsection: *the $(k+1)$st iteration of the restriction to the strata of the primary divisorial filtration is obtained from the $k$th, on the forward side of the Mellin transform, by multiplication by*
 
 $$
 \prod_{v\in S_{p_{k+1}}}L_v(\chi_v\lvert\cdot\rvert^s_v)^{-1}.
