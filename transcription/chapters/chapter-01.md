@@ -1520,7 +1520,7 @@ Such topologies, however, render *all* point-masses (and their derivatives) at a
 
 Now look at the situation with our chosen Schwartz-Bruhat function. We choose an enumeration $\{v_k\}_{k\ge 0}$ of all the places of $F$ outside $S$.
 
-Assume we have fixed a continuous (unitary) character $\chi\in\widehat{C_F}$, and that $S$ contains all the Archimedean places, all the primes at which $\chi$ is ramified, and all the ramified places of $F$ over $\mathbf Q$ (for other technical reasons it is also important in the main work to make $S$ big enough to ensure $\mathrm{Pic}(\mathcal O_{F,S})=1$, but the need for this isn't addressed here). Going from $f=f_S\otimes(\bigotimes_{v\notin S}1_{\mathcal O_{F_v}})$ restricted to the idele group to
+Assume we have fixed a continuous (unitary) character $\chi\in\widehat{C_F}$, and that $S$ contains all the Archimedean places, all the primes at which $\chi$ is ramified, and all the ramified places of $F$ over $\mathbf Q$ (for other technical reasons it is also important in the main work to make $S$ big enough to ensure $\mathrm{Pic}(\mathcal O_{F,S})=1$, but the need for this isn't addressed here). Going from $f=f_S\otimes(\otimes_{v\notin S}1_{\mathcal O_{F_v}})$ restricted to the idele group to
 
 $$
 f':=f_S\otimes\otimes\bigotimes_{k\ge 0}1_{\mathcal O_{F_{v_k}}^\times} \tag{1.8.1.1}

@@ -2160,7 +2160,7 @@ $$
 \overline{\pi}_{S'}(\Phi_{F,\chi_{S'}|_{J^1_{F,S'}}}(f)) = \Phi_{F,\chi_{S'}|_{J^1_{F,S'}}}(f\otimes\rho_{\Sigma_F-S'})
 $$
 
-*for $\rho_{\Sigma_F-S'} := \otimes_{v\notin S'}1_{\mathcal O_{F_v}}$, as a function of $g\in C_F$, is supported over $C^{\ge 1/\lambda(X)}_F$, for every $f\in\mathcal S_0(\mathbf A_{F,S'})_X$.*
+*for $\rho_{\Sigma_F-S'} := \bigotimes_{v\notin S'}1_{\mathcal O_{F_v}}$, as a function of $g\in C_F$, is supported over $C^{\ge 1/\lambda(X)}_F$, for every $f\in\mathcal S_0(\mathbf A_{F,S'})_X$.*
 
 *(3) There exists a real number $\lambda(X) > 0$ depending on $X$ and $\chi$, such that $\Phi_{F,\chi_{S'}|_{J^1_{F,S'}}}(\widehat{f})$, as a function of $g\in J_{F,S'}$, is supported over $J^{\le\lambda(X)}_{F,S'}$.*
 

@@ -2477,13 +2477,7 @@ $$
 
 gives a $\mathbf{Q}$-linear dependence relation among the $N$ coordinates of $\tau$ since $N>1$, a contradiction. Thus, $\overline{\gamma}$ is injective.
 
-We now call $G$ the closure of the image of $\overline{\gamma}$ in $\mathbf{T}^N$. This is a closed connected subgroup of $\mathbf{T}^N$ and as such it is contained in the kernel a non-trivial character $\chi:\mathbf{T}^N\to\mathbf{T}$ if the dimension of $G$ is less than $N$. But
-
-$$
-\chi(z_1,\dots,z_N)=\prod_j z_j^{a_j}
-$$
-
-for some nonzero $a\in\mathbf{Z}^N$ (viewing $\mathbf{T}$ multiplicatively), so this would give a $\mathbf{Q}$-linear dependence relation on the coordinates of $\tau$, contradicting the assumption. We deduce that we have $G=\mathbf{T}^N$.
+We now call $G$ the closure of the image of $\overline{\gamma}$ in $\mathbf{T}^N$. This is a closed connected subgroup of $\mathbf{T}^N$ and as such it is contained in the kernel a non-trivial character $\chi:\mathbf{T}^N\to\mathbf{T}$ if the dimension of $G$ is less than $N$. But $\chi(z_1,\dots,z_N)=\prod z_j^{a_j}$ for some nonzero $a\in\mathbf{Z}^N$ (viewing $\mathbf{T}$ multiplicatively), so this would give a $\mathbf{Q}$-linear dependence relation on the coordinates of $\tau$, contradicting the assumption. We deduce that we have $G=\mathbf{T}^N$.
 
 In the general case, let $G$ be the closure of the image of $\overline{\gamma}$. This is a closed connected subgroup of $\mathbf{T}^N$, and as such it is itself a torus. We call $r$ its dimension. Then $G^\perp\subset\widehat{\mathbf{T}^N}$ is a finitely generated free subgroup of rank $N-r$. Let $\chi\in G^\perp$.
 

@@ -270,7 +270,12 @@ From the maintainers' spot check in #2471 and the checks it suggested.
   max, min and det, the glyphs set as its limits were read off the PDF and off the compiled
   transcription and compared page by page. Two inductive limits had a subscript the print does not
   have: `\varinjlim_i` twice on p. 685 and `\varinjlim_m` on p. 816, now plain `\varinjlim` as
-  printed. The rest agree.
+  printed. With the big operators read from their font codes (4,254 operators in all), three
+  more differ in notation only: `\prod_j z_j^{a_j}` on p. 628 is `\prod z_j^{a_j}`, inline, in the
+  print; the print has a small `\otimes_{v\notin S}` on p. 39 and a large `\bigotimes_{v\notin S'}`
+  on p. 352, the other way round from the transcription. All three now as printed. The rest agree.
+  The reverse check, formulas displayed in the transcription but run into the text in the print,
+  found only p. 628.
 - **Cross-references.** Every dotted number in the text (equation, theorem and section numbers,
   and the numbers in citations such as `[DE, Thm. 3.6.3]`) was compared page by page with the PDF
   text: they all agree. The only differences are footnote marks that the PDF text runs into the
