@@ -349,3 +349,5 @@ From the maintainers' spot check in #2471 and the checks it suggested.
   split into two displays (pp. 507, 639): each is one display again, with its number. 140 equation
   numbers that had been written as a line of text above the display, `(D.1.4.15)`, are now
   `\tag{D.1.4.15}` like the other 2,300; numbers of diagrams stay as text above the diagram.
+- **Fourth random sample.** 96 more inline formulas of 22 or more characters (seed 99), compiled
+  and compared with the page image: all agree with the print.

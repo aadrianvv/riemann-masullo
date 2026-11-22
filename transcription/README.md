@@ -44,10 +44,11 @@ independent ways: the symbol counts on every page, the size and height of every
 glyph, the alphabet of every letter, the limits of every operator, every arrow, accent and bar, and
 every cross-reference number; the 88 diagrams too, by compiling each one and matching its glyphs
 (letter, alphabet) against the glyphs of the page that the rest of the transcription does not
-account for. Each kind of error found was then searched for on every page. After
-the last corrections, 236 formulas drawn at random were compared by eye with the page image and all
-were right. That bounds the error rate at about 1.3% per formula (95% confidence); the exhaustive
-checks above suggest it is well below that. What could plausibly still be wrong:
+account for. Each kind of error found was then searched for on every page. Since the
+last error found by sampling, 332 formulas drawn at random (100 numbered equations, 40 unnumbered
+displays, 192 inline formulas) were compared by eye with the page image and all were right. That
+bounds the error rate at about 0.9% per formula (95% confidence); the exhaustive checks above
+suggest it is well below that. What could plausibly still be wrong:
 
 - two symbols swapped where the PDF stores its glyphs in a different order from the LaTeX (limits
   of sums and integrals, numerators and denominators), so that the alignment reads the swap as a
