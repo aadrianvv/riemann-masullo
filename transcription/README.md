@@ -28,7 +28,7 @@ the physical PDF page markers kept (`## PDF page N`; printed page number = PDF p
 | ∅ shapes | every empty-set glyph of the PDF, by font | `\varnothing` and `\emptyset` as printed, same count on every page |
 | Commutative diagrams | all 84 `latex` blocks | compared with the page image at 200 dpi; every block compiles with pdflatex + tikz-cd (`tools/diagrams.py`) |
 | Page-by-page visual review | all 940 pages | every page read against its image at 200–300 dpi by AI reviewers (Claude, and Gemini on 485 pages; 420 pages read by both); ≈ 1,030 corrections on 354 pages, then all the checks above run again |
-| Random sample | 45 tagged equations drawn at random (before the visual review) | 43 exact, 2 wrong (now corrected): read this as a residual error rate of a few percent per equation (95% interval roughly 1–15%) |
+| Random sample | 45 tagged equations drawn at random before the visual review (43 exact), and 50 more drawn after all corrections, each compiled and compared with the page image | second sample: 49 exact, the wrong one (an extra square) corrected; read this as a residual error rate of about 2% per equation (95% interval roughly 0.05–11%) |
 
 **Not verified:** a symbol-by-symbol reading of every page by a person. The page-by-page review was
 done by AI models, not by a person, and reviewers can miss things. About 3% of the

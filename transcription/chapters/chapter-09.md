@@ -674,7 +674,7 @@ $$
 by see [Fol, Thm.8.22(d)] and another application of Plancherel's Theorem for all real numbers $b' < b$, and hence we have:
 
 $$
-\int_{\mathbf R_{>0}} |\phi(t)(\log(t))^k|^2 t^{2b'}\,\frac{\mathrm{d}t}{t} = \int_{b'-i\infty}^{b'+i\infty} |\partial^k_s M(\phi)(s)|^2\,|\mathrm{d}s| \tag{9.2.1.15}
+\int_{\mathbf R_{>0}} |\phi(t)(\log(t))^k|t^{2b'}\,\frac{\mathrm{d}t}{t} = \int_{b'-i\infty}^{b'+i\infty} |\partial^k_s M(\phi)(s)|^2\,|\mathrm{d}s| \tag{9.2.1.15}
 $$
 
 which implies that $\partial^k_s\phi$ is also square-integrable on all vertical lines of $\mathbf C_{<b}$.

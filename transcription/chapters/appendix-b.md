@@ -1652,11 +1652,11 @@ $^{13}$Should a precise reference be given here for the expression for $\epsilon
 Thus, the following identity holds:
 
 $$
-\frac{\log(A_{\chi})}{2\pi i}\int_{1-a-i\infty}^{1-a+i\infty}\Phi(s)\,\mathrm{d}s+\frac{1}{2\pi i}\int_{a-i\infty}^{a+i\infty}\Phi(1-s)\frac{L'(s,\bar\chi)}{L(s,\bar\chi)}\,\mathrm{d}s+\frac{1}{2\pi i}\int_{a-i\infty}^{a+i\infty}\Phi(s)\frac{L'(s,\chi)}{L(s,\chi)}\,\mathrm{d}s
+\frac{\log(A_{\chi})}{2\pi i}\int_{1-a-i\infty}^{1-a+i\infty}\Phi(s)\,\mathrm{d}s+\frac{1}{2\pi i}\int_{a-i\infty}^{a+i\infty}\Phi(1-s)\frac{L'(s,\bar\chi)}{L(s,\bar\chi)}\,\mathrm{d}s+\frac{1}{2\pi i}\int_{a-i\infty}^{a+i\infty}\Phi(s)\frac{L'(s,\chi)}{L(s,\chi)}\,\mathrm{d}s \tag{B.4.2.4}
 $$
 
 $$
-=-\delta_{\chi}(\Phi(0)+\Phi(1))+\sum_{\rho:L(\rho,\chi)=0}\Phi(\rho). \tag{B.4.2.4}
+=-\delta_{\chi}(\Phi(0)+\Phi(1))+\sum_{\rho:L(\rho,\chi)=0}\Phi(\rho).
 $$
 
 Since $a>1$, absolute and uniform convergence of the Euler product for $L_f(s,\chi)$ in right half-planes $\operatorname{Re}(s)\ge 1+\varepsilon$ implies the absolute and uniform convergence of the series:
@@ -2042,11 +2042,11 @@ $$
 (which vanishes near $x = -1$ since $f$ vanishes near $0$), we have $u(0) = 0$ and $u \in C_c^\infty(F_v^\times)$. Thus, by (B.4.3.5) from Proposition B.4.3.1 and (B.4.4.1) we have that (B.4.4.2) is equal to
 
 $$
-\mathrm{C}_{\alpha_{v,0}}\int_{F_v^\times} u(x)\,\mathrm{d}\mu_v(x) = \int_{F_v^\times} \frac{f(1+x)}{|1+x|_v^{1/2}}\,\mathrm{d}\mu_v(x)
+\mathrm{C}_{\alpha_{v,0}}\int_{F_v^\times} u(x)\,\mathrm{d}\mu_v(x) = \int_{F_v^\times} \frac{f(1+x)}{|1+x|_v^{1/2}}\,\mathrm{d}\mu_v(x) \tag{B.4.4.8}
 $$
 
 $$
-\tag{B.4.4.8} = \frac{N(\mathfrak{p}_v)}{N(\mathfrak{p}_v)-1}\int_{F_v} \frac{f(1+x)}{|1+x|_v^{1/2}}\frac{\mathrm{d}\nu_v(x)}{|x|_v} = \frac{N(\mathfrak{p}_v)}{N(\mathfrak{p}_v)-1}\int_{F_v} \frac{f(1+y-1)}{|1+y-1|_v^{1/2}}\frac{\mathrm{d}\nu_v(y-1)}{|y-1|_v} = \frac{N(\mathfrak{p}_v)}{N(\mathfrak{p}_v)-1}\int_{F_v} \frac{f(y)|y|_v}{|y-1|_v|y|_v^{1/2}}\frac{\mathrm{d}\nu_v(y)}{|y|_v} = \int_{F_v^\times} \frac{f(x)|x|_v^{1/2}}{|1-x|_v}\,\mathrm{d}\mu_v(x),
+= \frac{N(\mathfrak{p}_v)}{N(\mathfrak{p}_v)-1}\int_{F_v} \frac{f(1+x)}{|1+x|_v^{1/2}}\frac{\mathrm{d}\nu_v(x)}{|x|_v} = \frac{N(\mathfrak{p}_v)}{N(\mathfrak{p}_v)-1}\int_{F_v} \frac{f(1+y-1)}{|1+y-1|_v^{1/2}}\frac{\mathrm{d}\nu_v(y-1)}{|y-1|_v} = \frac{N(\mathfrak{p}_v)}{N(\mathfrak{p}_v)-1}\int_{F_v} \frac{f(y)|y|_v}{|y-1|_v|y|_v^{1/2}}\frac{\mathrm{d}\nu_v(y)}{|y|_v} = \int_{F_v^\times} \frac{f(x)|x|_v^{1/2}}{|1-x|_v}\,\mathrm{d}\mu_v(x),
 $$
 
 We deduce that (B.4.4.5) holds on the hyperplane $\ker(\delta_1) \subset C_c^\infty(F_v^\times)$.
@@ -2054,11 +2054,11 @@ We deduce that (B.4.4.5) holds on the hyperplane $\ker(\delta_1) \subset C_c^\in
 We have:
 
 $$
-\langle\widehat{J_v},f(1+x)|1+x|_v^{-1/2}\rangle_{\mathcal{D}(F_v^\times),\mathcal{D}(F_v^\times)'} = \langle J_v,\int_{F_v} f(1+y)|1+y|_v^{-1/2}\overline{\alpha_{v,0}(xy)}\,\mathrm{d}\nu_v(y)\rangle_{\mathcal{D}(F_v^\times),\mathcal{D}(F_v^\times)'}
+\langle\widehat{J_v},f(1+x)|1+x|_v^{-1/2}\rangle_{\mathcal{D}(F_v^\times),\mathcal{D}(F_v^\times)'} = \langle J_v,\int_{F_v} f(1+y)|1+y|_v^{-1/2}\overline{\alpha_{v,0}(xy)}\,\mathrm{d}\nu_v(y)\rangle_{\mathcal{D}(F_v^\times),\mathcal{D}(F_v^\times)'} \tag{B.4.4.9}
 $$
 
 $$
-\tag{B.4.4.9} = \langle J_v,\alpha_{v,0}(x)\int_{F_v} f(z)|z|_v^{-1/2}\overline{\alpha_{v,0}(xz)}\,\mathrm{d}\nu_v(z)\rangle_{\mathcal{D}(F_v^\times),\mathcal{D}(F_v^\times)'} = \langle\widehat{\alpha_{v,0}\cdot J_v},f(x)|x|_v^{-1/2}\rangle_{\mathcal{D}(F_v^\times),\mathcal{D}(F_v^\times)'}
+= \langle J_v,\alpha_{v,0}(x)\int_{F_v} f(z)|z|_v^{-1/2}\overline{\alpha_{v,0}(xz)}\,\mathrm{d}\nu_v(z)\rangle_{\mathcal{D}(F_v^\times),\mathcal{D}(F_v^\times)'} = \langle\widehat{\alpha_{v,0}\cdot J_v},f(x)|x|_v^{-1/2}\rangle_{\mathcal{D}(F_v^\times),\mathcal{D}(F_v^\times)'}
 $$
 
 which, combined with (B.4.4.5), shows that $T := \widehat{\alpha_{v,0}\cdot J_v}$ is the unique element in $\mathcal{D}(F_v^\times)'$ that restricts on $\ker(\delta_1) \subset \mathcal{D}(F_v^\times)$ to the functional:

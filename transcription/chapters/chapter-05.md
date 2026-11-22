@@ -1036,7 +1036,7 @@ $$
 \mathcal S(\mathbf A_{F,S})\simeq\mathcal S(\mathbf A_{F,S_\infty})\otimes_\pi\bigotimes_{v\in S_f}\mathcal S(F_v) \tag{5.3.1.7}
 $$
 
-provided by (2.1.4.1) from Proposition 2.1.4.1, followed by the tensor product of the identity $\mathrm{Id}_{\mathcal S(\mathbf A_{F,S_\infty})}$ on $\mathcal S(\mathbf A_{F,S_\infty})$ and the unique continuous linear operator on $\bigotimes_{v\in S_f}\mathcal S(F_v)$ obtained as the tensor product of the identity $\mathrm{Id}_{\mathcal S(F_v)}$ if $v\in S\setminus S_0$, and of $\mathrm{PV}_v$ if $v\in S_0$.
+provided by (2.1.4.1) from Proposition 2.1.4.1, followed by the tensor product of the identity $\mathrm{Id}_{\mathcal S(\mathbf A_{F,S_\infty})}$ on $\mathcal S(\mathbf A_{F,S_\infty})$ and the unique continuous linear operator on $\bigotimes_{v\in S_f}\mathcal S(F_v)$ obtained as the tensor product of the identity $\mathrm{Id}_{\mathcal S(F_v)}$ if $v\in S-S_0$, and of $\mathrm{PV}_v$ if $v\in S_0$.
 
 (2) Weil’s Global Principal Value operator:
 

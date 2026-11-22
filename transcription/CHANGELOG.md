@@ -228,4 +228,19 @@ From the maintainers' spot check in #2471 and the checks it suggested.
   `tools/diagrams.py` now compiles them with the diagrams (88 blocks).
 - **Accents in diagrams.** With the diagram blocks included, the number of hats and of tildes
   matches the PDF on every page.
+- **Second random sample.** 50 tagged equations drawn at random from the 2,261 (seed 20261122)
+  after all the corrections above, each compiled and compared with the page image symbol by
+  symbol: 49 exact. The wrong one, (9.2.1.15) p. 407, had `|\phi(t)(\log t)^k|^2` where the print
+  has no square: a misprint of the paper silently "corrected" in the transcription, now as
+  printed. One displayed formula ((B.4.4.9), p. 621) had its tag on the second line instead of the
+  first. Read this as a residual error rate of about 2% per equation (95% interval roughly
+  0.05–11%).
+- **What the sample suggested.** The glyph alignment never flagged a single extra or missing glyph
+  (it only reports substitutions), which is how the square in (9.2.1.15) got through. All
+  one- and two-glyph insertions and deletions in the alignment were therefore listed and those
+  in sub- and superscripts and the operators (−, +, ′, ×, ⊂, …) were reviewed: apart from
+  (9.2.1.15), they are reading order, `≠`/`∉` read as `=`/`∈`, footnote numbers and numbers set
+  in text, except `S\setminus S_0` for the printed `S-S_0` (p. 242), now fixed. Tags on the
+  continuation line of a multi-line display were also listed: two more ((B.4.2.4) p. 615,
+  (B.4.4.8) p. 621), now on the first line as printed.
 
