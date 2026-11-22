@@ -2400,7 +2400,7 @@ We now observe that by Proposition 5.3.4.5(1), combined with the fact that recip
 Indeed, let $(\phi, \psi)$ be the arbitrary element of $W_{F,S,\omega}$. We then define:
 
 $$
-\widetilde{\mathrm{PV}}_{S,S_f}(\phi(s), \psi(s)) := \left(\frac{\phi(s)}{\prod_{v\in S_f} L_v(\chi_v|\cdot|^{s}_v)}, \frac{\psi(s)}{\prod_{v\in S_f} L_v(\chi_v|\cdot|^{s}_v)}\right) \tag{5.4.1.10}
+\widetilde{\mathrm{PV}}_{S,S_f}(\phi(s), \psi(s)) := \left(\frac{\phi(s)}{\prod_{v\in S_f} L_v(\chi_v|\cdot|^{s}_v)}, \frac{\psi(s)}{\prod_{v\in S_f} L_v(\chi_v|\cdot|^{s}_v)}\right). \tag{5.4.1.10}
 $$
 
 We note that the Fourier transform of $\mathrm{PV}_{S,S_f}(f)$ indeed satisfies
@@ -2439,7 +2439,7 @@ We already know from Proposition 5.4.1.4 that the restriction of $U_S$ to $\math
 It therefore suffices to show that the induced continuous linear map:
 
 $$
-\bar U_S : \mathrm{PV}_{S,S_f}\mathrm H_{0,\mathrm{cont}}(\omega, \mathcal S(\mathbf A_{F,S}))/\mathrm H_{0,\mathrm{cont}}(\omega, \mathcal S_{00}(\mathbf A_{F,S})) \to \widetilde{\mathrm{PV}}_{S,S_f}(W_{F,S,\omega})/V_{F,S,\omega} \tag{5.4.1.13}
+\bar U_S : \mathrm{PV}_{S,S_f}\mathrm H_{0,\mathrm{cont}}(\omega, \mathcal S(\mathbf A_{F,S}))/\mathrm H_{0,\mathrm{cont}}(\omega, \mathcal S_{00}(\mathbf A_{F,S})) \to \widetilde{\mathrm{PV}}_{S,S_f}(W_{F,S,\omega})/V_{F,S,\omega}. \tag{5.4.1.13}
 $$
 
 is surjective.

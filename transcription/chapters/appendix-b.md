@@ -3778,7 +3778,7 @@ $$
 where
 
 $$
-h(s):=-\frac{\zeta'_F(s-it_0)}{\zeta_F(s-it_0)} + \frac{1}{1+it_0-s},\quad g_m(s):=-\frac{1-m^{1+it_0-s}}{1+it_0-s}, \tag{B.7.2.12}
+h(s):=-\frac{\zeta'_F(s-it_0)}{\zeta_F(s-it_0)} + \frac{1}{1+it_0-s},\quad g_m(s):=-\frac{1-m^{1+it_0-s}}{1+it_0-s} \tag{B.7.2.12}
 $$
 
 and $h$ extends to an analytic function across the removable singularity at $s=1+it_0$, as does the function $g_m$, and $f_m(s)$ is analytic over $1+i\mathbf{R}$ as per Theorem B.7.1.2.

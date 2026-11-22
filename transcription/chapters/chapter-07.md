@@ -3224,7 +3224,7 @@ $$
 adjoint to the continuous linear map:
 
 $$
-A\mathcal S^p(\mathbf C)/L \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_{\infty,0}(\mathbf A_F)) \to \mathscr{O}(\mathbf C)/\Lambda_f(s,\chi)\,\mathscr{O}(\mathbf C),
+A\mathcal S^p(\mathbf C)/L \mathrm{H}_{0,\mathrm{cont}}(\chi|_{C^1_F}, \mathcal{S}_{\infty,0}(\mathbf A_F)) \to \mathscr{O}(\mathbf C)/\Lambda_f(s,\chi)\,\mathscr{O}(\mathbf C).
 $$
 
 which is, in turn, injective with dense linear image, by denseness of $A\mathcal S^p(\mathbf C)$ in $\mathscr{O}(\mathbf C)$ and openness of the quotient linear operators, is injective with weakly dense range by [NB, Thm.8.13.1].

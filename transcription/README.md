@@ -39,17 +39,16 @@ harmless (reading order of limits and fractions, words set in math, footnote num
 difference of one to three glyphs, at any level, and every run of three or more was looked at on the
 page image (see `CHANGELOG.md` §10).
 
-**How reliable it is.** Outside the diagrams, the formulas have been compared with the PDF glyph by
-glyph in several independent ways: the symbol counts on every page, the size and height of every
+**How reliable it is.** The formulas have been compared with the PDF glyph by glyph in several
+independent ways: the symbol counts on every page, the size and height of every
 glyph, the alphabet of every letter, the limits of every operator, every arrow, accent and bar, and
-every cross-reference number. Each kind of error found was then searched for on every page. After
+every cross-reference number; the 88 diagrams too, by compiling each one and matching its glyphs
+(letter, alphabet) against the glyphs of the page that the rest of the transcription does not
+account for. Each kind of error found was then searched for on every page. After
 the last corrections, 236 formulas drawn at random were compared by eye with the page image and all
 were right. That bounds the error rate at about 1.3% per formula (95% confidence); the exhaustive
 checks above suggest it is well below that. What could plausibly still be wrong:
 
-- a symbol inside a **diagram label**: the 88 diagrams are outside the glyph-by-glyph checks (they
-  were compared with the page image twice, and the side of every label was checked against the
-  PDF);
 - two symbols swapped where the PDF stores its glyphs in a different order from the LaTeX (limits
   of sums and integrals, numerators and denominators), so that the alignment reads the swap as a
   difference in reading order;

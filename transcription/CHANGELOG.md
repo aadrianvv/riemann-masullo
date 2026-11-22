@@ -304,3 +304,14 @@ From the maintainers' spot check in #2471 and the checks it suggested.
   on p. 22 that were written into the formula as `\mathrm{(1.3.1.1)}` instead of `\tag`, now
   tags. Arrows (`\hookrightarrow`, `\mapsto`, `\to` and the others), counted on every page: they
   agree outside the diagrams. `\sqcup`: no other occurrence.
+- **Diagrams, glyph by glyph.** Each of the 88 diagram blocks was compiled on its own (on a page
+  wide enough for the widest one) and its glyphs, with their alphabet, were matched against the
+  glyphs of the PDF page that the rest of the transcription does not account for. Every glyph of
+  every diagram is in the print, and every print glyph left over is accounted for: running heads,
+  numbers set in maths in the text ("2-morphism", "1-parameter"), `\mathrm{id}`/`\mathrm{Hom}`
+  set in the text font in the print. The three diagrams where a glyph count was off by one
+  (pp. 273, 276, 361) were compared with the page image again and agree.
+- **Punctuation at the end of displays.** The same pass showed two displays on p. 270 without the
+  full stop that ends them in the print. Every display was then checked for a trailing full stop
+  or comma, against the print: also fixed, p. 371 (`,` for the printed `.`) and p. 650 (a comma
+  that is not in the print).
