@@ -42,7 +42,7 @@ page image (see `CHANGELOG.md` §10).
 **How reliable it is.** The formulas have been compared with the PDF glyph by glyph in several
 independent ways: the symbol counts on every page, the size and height of every
 glyph, the alphabet of every letter, the limits of every operator, every arrow, accent and bar, and
-every cross-reference number; the 88 diagrams too, by compiling each one and matching its glyphs
+every cross-reference number; the 89 diagram and figure blocks too, by compiling each one and matching its glyphs
 (letter, alphabet) against the glyphs of the page that the rest of the transcription does not
 account for. Each kind of error found was then searched for on every page. Since the
 last error found by sampling, 392 formulas drawn at random (160 numbered equations, 40 unnumbered
